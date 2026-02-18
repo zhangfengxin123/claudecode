@@ -1,0 +1,20 @@
+{
+  "case_id": "662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad",
+  "title_hint": "月卡改价实验数据分析",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "月卡改价实验结果-202601.xlsx",
+      "status": 200,
+      "size_bytes": 13374,
+      "source_url": "https://pardusai.org/v1/api/public/project/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad/files/%E6%9C%88%E5%8D%A1%E6%94%B9%E4%BB%B7%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C-202601.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/662522ed9fd8_月卡改价实验数据分析/月卡改价实验结果-202601.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:05:41Z"
+}

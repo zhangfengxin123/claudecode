@@ -1,0 +1,47 @@
+{
+  "case_id": "77c1850288a9d82e3b4b5bd0c866809ffa96f0f8c2f3b579aa70b1759fd9f7c6",
+  "title_hint": "Uber Financial Report",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 4,
+  "files_ok_count": 4,
+  "files": [
+    {
+      "idx": 0,
+      "name": "Uber-Q4-25-Earnings-Call-Transcript.pdf",
+      "status": 200,
+      "size_bytes": 294400,
+      "source_url": "https://pardusai.org/v1/api/public/project/77c1850288a9d82e3b4b5bd0c866809ffa96f0f8c2f3b579aa70b1759fd9f7c6/files/Uber-Q4-25-Earnings-Call-Transcript.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Call-Transcript.pdf",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "Uber-Q4-25-Earnings-Press-Release.pdf",
+      "status": 200,
+      "size_bytes": 487301,
+      "source_url": "https://pardusai.org/v1/api/public/project/77c1850288a9d82e3b4b5bd0c866809ffa96f0f8c2f3b579aa70b1759fd9f7c6/files/Uber-Q4-25-Earnings-Press-Release.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Press-Release.pdf",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "Uber-Q4-25-Earnings-Supplemental-Data.pdf",
+      "status": 200,
+      "size_bytes": 23193665,
+      "source_url": "https://pardusai.org/v1/api/public/project/77c1850288a9d82e3b4b5bd0c866809ffa96f0f8c2f3b579aa70b1759fd9f7c6/files/Uber-Q4-25-Earnings-Supplemental-Data.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Supplemental-Data.pdf",
+      "downloaded_now": true
+    },
+    {
+      "idx": 3,
+      "name": "Uber-Q4-25-Earnings-AV-Spotlight.pdf",
+      "status": 200,
+      "size_bytes": 22604191,
+      "source_url": "https://pardusai.org/v1/api/public/project/77c1850288a9d82e3b4b5bd0c866809ffa96f0f8c2f3b579aa70b1759fd9f7c6/files/Uber-Q4-25-Earnings-AV-Spotlight.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-AV-Spotlight.pdf",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:34:21Z"
+}

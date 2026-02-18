@@ -1,0 +1,47 @@
+请你扮演一位专业的生物统计学家和临床研究员，利用上传的数据集 COPDDataUsed4.xlsx 协助我完成一篇目标投递中科院三区 SCI 期刊的回顾性临床研究论文。本研究旨在探讨炎症指标对 COPD 患者围术期预后的影响，结局变量为 outcome_aecopd_final（0=未发生，1=发生急性加重）。鉴于初步分析显示 siri_index (SIRI) 的预测能力（AUC=0.702）优于 SII、NLR 及 WBC，请将其确定为核心暴露变量。
+
+请严格遵循 STROBE 指南，执行以下全套统计分析，并直接输出相应的分析结果表格及 Python 绘图代码：
+
+Figure 1: 研究对象筛选流程图 (Study Flowchart)
+
+请绘制或生成详细的筛选逻辑说明。起点为总样本量 1716 例。
+
+第一层排除：年龄 < 40 岁，或存在严重/不稳定的全身性并发症（如严重心衰 NYHA IV 级、近期心梗、脑卒中、严重肝肾衰竭）。
+
+第二层排除：无 AECOPD 既往史、有恶性肿瘤病史、或关键数据（如血常规）缺失。
+
+终点：明确标注最终纳入分析的非 AECOPD 组（n=1087）和 AECOPD 组（n=184）。
+
+Table 1: 患者基线特征表 (Baseline Characteristics)
+
+制作标准三线表，横向比较“总体人群 (n=1271)”、“非 AECOPD 组”和“AECOPD 组”。
+
+纳入变量：人口学（年龄、性别、BMI）；临床/实验室指标（住院天数 LOS、血糖、WBC、血小板、血红蛋白、肌酐、RBC、中性粒细胞、淋巴细胞、单核细胞）；既往合并症（吸烟、饮酒、哮喘、高血压、糖尿病、心衰、冠心病）；核心指标（SIRI）。
+
+统计方法：正态分布连续变量用 Mean ± SD（T检验）；偏态分布变量（尤其是 SIRI, LOS）用 Median (P25, P75)（Mann-Whitney U 检验）；分类变量用 n (%)（卡方检验）。请计算并列出 P 值。
+
+Table 2: 危险因素逻辑回归分析 (Logistic Regression)
+
+单因素分析：展示所有变量的 Crude OR (95% CI) 和 P 值。
+
+多因素分析：纳入单因素有意义的变量（如 Age, BMI, LOS, Glucose, HTN, DM, HF, CAD）。
+
+关键约束：由于中性粒细胞、淋巴细胞和单核细胞与 SIRI 存在多重共线性（VIF > 10），多因素模型中必须剔除这三个具体细胞计数变量，仅保留 SIRI 指数，以验证其作为独立危险因素的有效性。
+
+Table 3: 剂量反应关系分析 (Dose-response Relationship)
+
+将 SIRI 按三分位数转化为分类变量（Q1, Q2, Q3），以 Q1 为参照。
+
+构建三个模型：Model 1（未调整）、Model 2（调整 Age, BMI）、Model 3（全调整：Age, BMI, DM, HF, CAD, LOS, Glucose）。
+
+输出各组 OR (95% CI) 及 P for trend，验证风险随 SIRI 升高而上升的趋势。
+
+图表绘制 (Figures for Publication)
+
+Figure 2 (ROC Comparison)：绘制并对比 SIRI, SII, NLR, WBC 的 ROC 曲线及 AUC，展示 SIRI 的预测优势。
+
+Figure 3 (RCS Analysis)：基于全调整模型，绘制 SIRI 与 AECOPD 风险的限制性立方样条（RCS）曲线，展示非线性关系并标注 P for non-linearity（预期 P < 0.001）。
+
+Figure 4 (Subgroup Forest Plot)：按 Age (<65/≥65), Gender, BMI (Normal/Obese), Smoking, Hypertension 分层，绘制森林图展示 SIRI 在各亚组中的 OR 值，并标注 P for interaction 以证明稳健性。
+
+Figure 5 (Violin Plot & DCA)：(可选) 绘制分组小提琴图展示 SIRI 分布差异，以及决策曲线分析 (DCA) 评估临床净获益。

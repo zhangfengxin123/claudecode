@@ -1,0 +1,20 @@
+{
+  "case_id": "dcb6a29b31385e093b8dba1b3c7b81b826810b8e42629e319a6f061f63faa06e",
+  "title_hint": "20251206-how AI is wiring childhood",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "20251206-how AI is wiring childhood.pdf",
+      "status": 200,
+      "size_bytes": 127920,
+      "source_url": "https://pardusai.org/v1/api/public/project/dcb6a29b31385e093b8dba1b3c7b81b826810b8e42629e319a6f061f63faa06e/files/20251206-how%20AI%20is%20wiring%20childhood.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/dcb6a29b3138_20251206-how AI is wiring childhood/20251206-how AI is wiring childhood.pdf",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:06:52Z"
+}

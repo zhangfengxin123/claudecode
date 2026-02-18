@@ -1,0 +1,47 @@
+{
+  "case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+  "title_hint": "FEDFUNDS",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 4,
+  "files_ok_count": 4,
+  "files": [
+    {
+      "idx": 0,
+      "name": "NASDAQCOM.xlsx",
+      "status": 200,
+      "size_bytes": 27455,
+      "source_url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/files/NASDAQCOM.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/NASDAQCOM.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 56,
+      "source_url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/description.txt",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "FEDFUNDS.csv",
+      "status": 200,
+      "size_bytes": 13831,
+      "source_url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/files/FEDFUNDS.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/FEDFUNDS.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 3,
+      "name": "IR.csv",
+      "status": 200,
+      "size_bytes": 8429,
+      "source_url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/files/IR.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/IR.csv",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:04:29Z"
+}

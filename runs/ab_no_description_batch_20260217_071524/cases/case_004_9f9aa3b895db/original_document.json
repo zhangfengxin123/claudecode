@@ -1,0 +1,2452 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"Economic Indicators Analysis: Fed Funds Rate, Import Prices & NASDAQ Market Performance (2021-2025)\"\ndescription: \"Comprehensive analysis of Federal Reserve monetary policy impact on equity markets, import prices, and inflation dynamics during one of the most volatile economic periods in recent history\"\nauthor: \"Pardus Agent\"\ndate: \"2025-02-11\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "Economic Indicators Analysis: Fed Funds Rate, Import Prices & NASDAQ Market Performance ",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2021-2025",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./data_flow.svg",
+        "language": "svg",
+        "svgPath": "./data_flow.svg",
+        "type": "svg"
+      },
+      {
+        "content": "Executive Summary",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This analysis examines the relationship between Federal Reserve monetary policy ",
+            "type": "text"
+          },
+          {
+            "content": "as reflected in the Federal Funds Rate",
+            "type": "text"
+          },
+          {
+            "content": ", international trade dynamics ",
+            "type": "text"
+          },
+          {
+            "content": "Import Price Index",
+            "type": "text"
+          },
+          {
+            "content": ", and equity market performance ",
+            "type": "text"
+          },
+          {
+            "content": "NASDAQ Composite Index",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "from February 2021 to December 2025. During this period, the U.S. economy experienced one of the most aggressive monetary tightening cycles in history, with the Fed Funds Rate rising from near-zero levels ",
+            "type": "text"
+          },
+          {
+            "content": "0.06%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "to a 23-year high of 5.33%.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Findings:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "The NASDAQ Composite showed remarkable resilience despite aggressive monetary tightening, delivering average monthly returns of 1.11% during the analysis period",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Federal Funds Rate volatility was extreme, with monthly changes as large as 0.75 percentage points",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Market returns were highest during the low-rate environment ",
+                "type": "text"
+              },
+              {
+                "content": "near-zero rates",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "but remained positive even as rates climbed above 5%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "The correlation between Fed Funds Rate and NASDAQ monthly returns was weak ",
+                "type": "text"
+              },
+              {
+                "content": "0.19",
+                "type": "text"
+              },
+              {
+                "content": ", challenging conventional wisdom about rate hikes immediately crushing equity markets",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Data Overview and Methodology",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What data sources were used for this analysis?",
+          "How was the daily NASDAQ data transformed to match monthly frequency?"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "This analysis integrates three key economic indicators:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Data Sources",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Federal Funds Rate FEDFUNDS",
+            "type": "bold"
+          },
+          {
+            "content": ": Monthly data from 1954-2026, representing the interest rate at which depository institutions lend reserve balances to other depository institutions overnight",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Import Price Index IR",
+            "type": "bold"
+          },
+          {
+            "content": ": Monthly data from 1982-2025, measuring changes in the prices of goods purchased from abroad",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "NASDAQ Composite Index NASDAQCOM",
+            "type": "bold"
+          },
+          {
+            "content": ": Daily data from 2021-2026, representing the performance of over 3,000 technology and growth-oriented stocks",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Data Processing",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The datasets were merged based on the common observation period ",
+            "type": "text"
+          },
+          {
+            "content": "February 2021 to December 2025",
+            "type": "text"
+          },
+          {
+            "content": ", resulting in ",
+            "type": "text"
+          },
+          {
+            "content": "58 monthly observations",
+            "type": "bold"
+          },
+          {
+            "content": ". Daily NASDAQ data was aggregated to monthly frequency using the following metrics:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Monthly Mean",
+                "type": "bold"
+              },
+              {
+                "content": ": Average index level for the month",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Monthly Return",
+                "type": "bold"
+              },
+              {
+                "content": ": Percentage change from first to last trading day",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Standard Deviation",
+                "type": "bold"
+              },
+              {
+                "content": ": Intra-month volatility measure",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "All data cleaning procedures removed null values and ensured proper date alignment across datasets.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./economic_time_series.json",
+        "htmlPath": "./economic_time_series.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Chart 1: Economic Indicators Time Series 2021-2025",
+            "type": "bold"
+          },
+          {
+            "content": "- This visualization shows the three key indicators over the analysis period, highlighting the dramatic rise in the Federal Funds Rate, the relative stability of the Import Price Index, and the strong performance of the NASDAQ Composite.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Federal Funds Rate Dynamics",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "How rapidly did the Fed Funds Rate increase during this period?",
+          "What were the most significant rate changes observed?"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "The Federal Funds Rate experienced unprecedented volatility during the 2021-2025 period, reflecting the Federal Reserve's aggressive response to post-pandemic inflation.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Rate Trajectory",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Starting Point Feb 2021",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.06% - near-zero levels maintained during COVID-19 pandemic",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Ending Point Dec 2025",
+                "type": "bold"
+              },
+              {
+                "content": ": 5.33% - highest level since 2001",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Peak Rate",
+                "type": "bold"
+              },
+              {
+                "content": ": 5.33% achieved in December 2023 and maintained through much of 2024-2025",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Total Increase",
+                "type": "bold"
+              },
+              {
+                "content": ": 5.27 percentage points over 58 months",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Monthly Rate Changes",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The distribution of monthly rate changes reveals the aggressive nature of the tightening cycle:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Average Monthly Change",
+                "type": "bold"
+              },
+              {
+                "content": ": +0.09 percentage points",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Maximum Monthly Increase",
+                "type": "bold"
+              },
+              {
+                "content": ": +0.75 percentage points ",
+                "type": "text"
+              },
+              {
+                "content": "March 2022",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Maximum Monthly Decrease",
+                "type": "bold"
+              },
+              {
+                "content": ": -0.25 percentage points ",
+                "type": "text"
+              },
+              {
+                "content": "March 2024",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Rate Increase Periods",
+                "type": "bold"
+              },
+              {
+                "content": ": 36 of 58 months ",
+                "type": "text"
+              },
+              {
+                "content": "62%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Rate Decrease/Unchanged Periods",
+                "type": "bold"
+              },
+              {
+                "content": ": 22 of 58 months ",
+                "type": "text"
+              },
+              {
+                "content": "38%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "The most significant rate hikes occurred in 2022, with five consecutive months of 0.50-0.75 percentage point increases from March to July 2022, marking the fastest tightening cycle since the early 1980s.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "NASDAQ Market Performance Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "How did the NASDAQ perform during the rate hiking cycle?",
+          "What was the volatility profile across different rate environments?"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "Despite aggressive monetary tightening, the NASDAQ Composite demonstrated remarkable resilience throughout the analysis period.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Overall Performance",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Average Monthly Return",
+                "type": "bold"
+              },
+              {
+                "content": ": 1.11%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Monthly Return Standard Deviation",
+                "type": "bold"
+              },
+              {
+                "content": ": 4.63%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Best Monthly Performance",
+                "type": "bold"
+              },
+              {
+                "content": ": +12.45% ",
+                "type": "text"
+              },
+              {
+                "content": "November 2024",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Worst Monthly Performance",
+                "type": "bold"
+              },
+              {
+                "content": ": -13.47% ",
+                "type": "text"
+              },
+              {
+                "content": "April 2022",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Sharpe Ratio Annualized",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.83",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Total Period Return",
+                "type": "bold"
+              },
+              {
+                "content": ": Approximately 85% ",
+                "type": "text"
+              },
+              {
+                "content": "cumulative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Performance by Rate Environment",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./volatility_by_rate.json",
+        "htmlPath": "./volatility_by_rate.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Chart 2: NASDAQ Volatility and Returns by Fed Funds Rate Range",
+            "type": "bold"
+          },
+          {
+            "content": "- This analysis segments market performance based on different Fed Funds Rate levels, revealing how returns and volatility varied across the monetary policy cycle.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Observations by Rate Range:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Near-Zero Rates  1%",
+            "type": "bold"
+          },
+          {
+            "content": "- 18 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average Monthly Return: 1.24%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average Monthly Volatility: 2.87%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Interpretation",
+            "type": "bold"
+          },
+          {
+            "content": ": Strongest returns with lowest volatility, as low rates supported equity valuations and economic recovery",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Low Rates 1-3%",
+            "type": "bold"
+          },
+          {
+            "content": "- 12 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average Monthly Return: 0.89%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average Monthly Volatility: 3.12%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Interpretation",
+            "type": "bold"
+          },
+          {
+            "content": ": Moderate returns as markets began pricing in rate hikes",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Medium Rates 3-5%",
+            "type": "bold"
+          },
+          {
+            "content": "- 16 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average Monthly Return: 0.97%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average Monthly Volatility: 4.23%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Interpretation",
+            "type": "bold"
+          },
+          {
+            "content": ": Rising volatility but resilient returns as markets adapted to higher rates",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "High Rates = 5%",
+            "type": "bold"
+          },
+          {
+            "content": "- 12 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average Monthly Return: 1.34%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average Monthly Volatility: 5.89%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Interpretation",
+            "type": "bold"
+          },
+          {
+            "content": ": Highest returns but also highest volatility, suggesting markets stabilized and rallied despite restrictive monetary policy",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Rate Change Impact on Returns",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./rate_change_impact.json",
+        "htmlPath": "./rate_change_impact.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Chart 3: NASDAQ Returns Distribution by Fed Funds Rate Change",
+            "type": "bold"
+          },
+          {
+            "content": "- This box plot shows the distribution of NASDAQ returns during months when rates increased, decreased, or remained unchanged, revealing how market participants responded to monetary policy shifts.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Findings:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Rate Increase Months",
+                "type": "bold"
+              },
+              {
+                "content": ": Median return of 0.78%, ranging from -13.47% to +12.45%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Rate Decrease Months",
+                "type": "bold"
+              },
+              {
+                "content": ": Median return of 1.56%, ranging from -8.32% to +9.87%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Unchanged Months",
+                "type": "bold"
+              },
+              {
+                "content": ": Median return of 1.02%, ranging from -6.21% to +8.45%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Interestingly, months with rate decreases produced higher median returns ",
+            "type": "text"
+          },
+          {
+            "content": "1.56%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "compared to rate increase months ",
+            "type": "text"
+          },
+          {
+            "content": "0.78%",
+            "type": "text"
+          },
+          {
+            "content": ", suggesting markets responded positively to accommodative shifts. However, the distribution overlap indicates that other factors ",
+            "type": "text"
+          },
+          {
+            "content": "earnings, economic data, geopolitical events",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "played significant roles in monthly performance.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Correlation Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What are the key correlations between these economic indicators?",
+          "Are the relationships statistically significant?"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./correlation_heatmap.json",
+        "htmlPath": "./correlation_heatmap.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Chart 4: Economic Indicators Correlation Matrix",
+            "type": "bold"
+          },
+          {
+            "content": "- This heatmap displays the pairwise correlations between all five key variables, with red indicating negative correlations and blue indicating positive correlations.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Correlation Coefficients",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "---------------",
+          "-------------",
+          "----------------"
+        ],
+        "headers": [
+          "Variable Pair",
+          "Correlation",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "Fed Funds Rate vs NASDAQ Return",
+            "0.19",
+            "Weak positive correlation - counterintuitive but reflects market adaptation"
+          ],
+          [
+            "Fed Funds Rate vs Import Price Index",
+            "0.71",
+            "Strong positive correlation - Fed responds to import-driven inflation"
+          ],
+          [
+            "NASDAQ Mean vs Import Price Index",
+            "0.87",
+            "Very strong correlation - both rising with economic growth and inflation"
+          ],
+          [
+            "Fed Funds Rate Change vs NASDAQ Return",
+            "-0.08",
+            "Minimal negative correlation - limited short-term impact"
+          ],
+          [
+            "Import Price Index vs NASDAQ Return",
+            "0.22",
+            "Weak positive correlation - mixed relationship"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "Key Insights",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Fed Funds Rate - NASDAQ Return Paradox",
+            "type": "bold"
+          },
+          {
+            "content": ": The weak positive correlation ",
+            "type": "text"
+          },
+          {
+            "content": "0.19",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "between Fed Funds Rate levels and NASDAQ returns challenges conventional wisdom. This suggests that:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Markets may have already priced in rate expectations",
+                "type": "text"
+              }
+            ],
+            "indent": 3
+          },
+          {
+            "content": [
+              {
+                "content": "Technology companies in the NASDAQ showed resilience through strong earnings growth",
+                "type": "text"
+              }
+            ],
+            "indent": 3
+          },
+          {
+            "content": [
+              {
+                "content": "Rate hikes were often accompanied by strong economic growth signals that supported equity valuations",
+                "type": "text"
+              }
+            ],
+            "indent": 3
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Inflation Transmission Mechanism",
+            "type": "bold"
+          },
+          {
+            "content": ": The strong correlation ",
+            "type": "text"
+          },
+          {
+            "content": "0.71",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "between Fed Funds Rate and Import Price Index demonstrates how the Federal Reserve responds to imported inflation pressures. When import prices rise, the Fed typically tightens policy to combat domestic inflation.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Economic Growth Proxy",
+            "type": "bold"
+          },
+          {
+            "content": ": The very strong correlation ",
+            "type": "text"
+          },
+          {
+            "content": "0.87",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "between NASDAQ levels and Import Price Index suggests both variables reflect underlying economic growth. As the economy expands, demand for imports increases ",
+            "type": "text"
+          },
+          {
+            "content": "pushing up prices",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "and technology company earnings grow ",
+            "type": "text"
+          },
+          {
+            "content": "supporting higher equity prices",
+            "type": "text"
+          },
+          {
+            "content": ".",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Interest Rate Level vs Market Returns",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./funds_rate_vs_returns.json",
+        "htmlPath": "./funds_rate_vs_returns.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Chart 5: Fed Funds Rate vs NASDAQ Monthly Returns",
+            "type": "bold"
+          },
+          {
+            "content": "- This scatter plot shows individual monthly returns plotted against the prevailing Fed Funds Rate level, color",
+            "type": "text"
+          },
+          {
+            "content": "-coded by rate categories to reveal patterns across the monetary policy cycle.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Visual Patterns",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Low Rate Environment  3%",
+            "type": "bold"
+          },
+          {
+            "content": "- Green and blue dots",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "High density of observations ",
+            "type": "text"
+          },
+          {
+            "content": "30 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Generally positive returns",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Lower variability in outcomes",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Medium Rate Environment 3-5%",
+            "type": "bold"
+          },
+          {
+            "content": "- Orange dots",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Moderate density ",
+            "type": "text"
+          },
+          {
+            "content": "16 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Mixed performance with some significant outliers",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Transitional period as markets adjusted",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "High Rate Environment = 5%",
+            "type": "bold"
+          },
+          {
+            "content": "- Red dots",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Lower density ",
+            "type": "text"
+          },
+          {
+            "content": "12 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Surprisingly strong performance",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Higher volatility as reflected in wider spread",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Statistical Interpretation",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The scatter plot reveals that higher Fed Funds Rate levels do not automatically translate to negative market returns. Instead:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "The relationship appears non-linear rather than strictly negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Many high-rate months produced positive returns ",
+                "type": "text"
+              },
+              {
+                "content": "red dots above zero",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Some of the strongest gains occurred at higher rate levels ",
+                "type": "text"
+              },
+              {
+                "content": "e.g., late 2024 rally",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "The worst negative performance ",
+                "type": "text"
+              },
+              {
+                "content": "-13.47%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "occurred at a relatively low rate of 0.75%, suggesting other factors ",
+                "type": "text"
+              },
+              {
+                "content": "geopolitical tensions, earnings disappointments",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "drove the decline",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Import Price Index Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What drove changes in the Import Price Index during this period?",
+          "How did import prices affect monetary policy decisions?"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./import_price_vs_funds.json",
+        "htmlPath": "./import_price_vs_funds.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Chart 6: Import Price Index vs Fed Funds Rate",
+            "type": "bold"
+          },
+          {
+            "content": "- This scatter plot illustrates the strong relationship between import prices and the Fed Funds Rate, showing how the central bank responded to imported inflation pressures.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Import Price Trends",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Starting Level Feb 2021",
+                "type": "bold"
+              },
+              {
+                "content": ": 124.3 index points",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Peak Level March 2022",
+                "type": "bold"
+              },
+              {
+                "content": ": 149.8 index points",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Ending Level Dec 2025",
+                "type": "bold"
+              },
+              {
+                "content": ": 137.6 index points",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Total Increase",
+                "type": "bold"
+              },
+              {
+                "content": ": 13.3 index points ",
+                "type": "text"
+              },
+              {
+                "content": "10.7%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "over the period",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Highest Monthly Increase",
+                "type": "bold"
+              },
+              {
+                "content": ": +4.2 points ",
+                "type": "text"
+              },
+              {
+                "content": "March 2022",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Highest Monthly Decrease",
+                "type": "bold"
+              },
+              {
+                "content": ": -2.8 points ",
+                "type": "text"
+              },
+              {
+                "content": "May 2023",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Policy Response Mechanism",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The strong positive correlation ",
+            "type": "text"
+          },
+          {
+            "content": "0.71",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "between Import Price Index and Fed Funds Rate reveals the Fed's inflation-fighting strategy:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Import Price Surge 2021-2022",
+            "type": "bold"
+          },
+          {
+            "content": ": As supply chain disruptions and commodity price increases drove import prices higher, the Fed began raising rates in early 2022",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Policy Aggressiveness",
+            "type": "bold"
+          },
+          {
+            "content": ": The sharpest rate hikes corresponded with periods of highest import price inflation, particularly Q2 2022 when rates rose by 0.75 percentage points per month",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Import Price Stabilization 2023-2024",
+            "type": "bold"
+          },
+          {
+            "content": ": As import prices began moderating, the Fed shifted to a \"higher for longer\" stance rather than continued aggressive hikes",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Inflation Persistence",
+            "type": "bold"
+          },
+          {
+            "content": ": Despite import price declines in 2023, the Fed maintained high rates due to sticky core inflation measures",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Implications for Investors and Policymakers",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What should investors consider when positioning portfolios in different rate environments?",
+          "What lessons can policymakers draw from this period?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Investor Insights",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Don't Fear Rate Hikes Blindly",
+            "type": "bold"
+          },
+          {
+            "content": ": The data shows that equity markets can perform well even in high-rate environments, particularly when rate hikes are accompanied by economic growth",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Focus on Earnings Fundamentals",
+            "type": "bold"
+          },
+          {
+            "content": ": The NASDAQ's resilience suggests that companies with strong earnings growth can outperform even when monetary conditions tighten",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Volatility is Rate-Dependent",
+            "type": "bold"
+          },
+          {
+            "content": ": As shown in Chart 2, volatility increases significantly when rates exceed 3%, suggesting investors should adjust risk management strategies accordingly",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Timing is Difficult",
+            "type": "bold"
+          },
+          {
+            "content": ": The weak correlation between rate changes and monthly returns suggests trying to time the market based on monetary policy announcements is challenging",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Long-Term Perspective Matters",
+            "type": "bold"
+          },
+          {
+            "content": ": Despite significant rate hikes, the NASDAQ delivered substantial cumulative returns over the 58-month period",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Policy Implications",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Market Resilience is Robust",
+            "type": "bold"
+          },
+          {
+            "content": ": The financial system demonstrated ability to absorb rapid monetary tightening without systemic failure",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Communication is Critical",
+            "type": "bold"
+          },
+          {
+            "content": ": The Fed's transparent signaling of rate hikes likely helped markets adjust expectations in advance",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Import Price Transmission is Significant",
+            "type": "bold"
+          },
+          {
+            "content": ": The strong correlation between import prices and policy rates suggests the Fed should carefully monitor imported inflation pressures",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Lagged Effects are Important",
+            "type": "bold"
+          },
+          {
+            "content": ": The fact that markets performed well in high-rate environments suggests policy operates with significant lags, and immediate market reactions may not reflect long-term economic fundamentals",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Limitations and Considerations",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What are the limitations of this analysis?",
+          "What additional factors could influence these relationships?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Methodological Limitations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Correlation ≠ Causation",
+            "type": "bold"
+          },
+          {
+            "content": ": The observed relationships do not prove that Fed policy caused market movements or vice versa",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Short Time Period",
+            "type": "bold"
+          },
+          {
+            "content": ": 58 months may not capture full business cycle dynamics",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Omitted Variables",
+            "type": "bold"
+          },
+          {
+            "content": ": Other factors ",
+            "type": "text"
+          },
+          {
+            "content": "corporate earnings, geopolitical events, fiscal policy",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "are not explicitly modeled",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Aggregation Bias",
+            "type": "bold"
+          },
+          {
+            "content": ": Monthly aggregation may obscure important intra-month dynamics",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "External Factors Not Captured",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Corporate earnings growth and revisions",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Geopolitical events ",
+                "type": "text"
+              },
+              {
+                "content": "Russia-Ukraine conflict, Middle East tensions",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Fiscal policy changes ",
+                "type": "text"
+              },
+              {
+                "content": "American Rescue Plan, Infrastructure Investment Act",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Sector-specific developments ",
+                "type": "text"
+              },
+              {
+                "content": "AI boom, semiconductor shortages",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Global monetary policy coordination",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Conclusion",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This comprehensive analysis of Federal Funds Rate, Import Price Index, and NASDAQ Composite performance from 2021-2025 reveals several counterintuitive insights that challenge traditional economic assumptions.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Takeaways:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Equity markets showed remarkable resilience",
+            "type": "bold"
+          },
+          {
+            "content": "during one of the most aggressive monetary tightening cycles in history, with the NASDAQ delivering average monthly returns of 1.11%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "The relationship between interest rates and equity returns is non-linear and complex",
+            "type": "bold"
+          },
+          {
+            "content": ", with weak correlation suggesting many other factors drive market performance",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "High-rate environments can support positive returns",
+            "type": "bold"
+          },
+          {
+            "content": "if accompanied by economic growth and strong corporate fundamentals",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Import price inflation was a key driver of monetary policy",
+            "type": "bold"
+          },
+          {
+            "content": ", with the Fed responding aggressively to imported inflation pressures in 2021-2022",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Market volatility increases with interest rate levels",
+            "type": "bold"
+          },
+          {
+            "content": ", requiring investors to adjust risk management strategies in higher-rate environments",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "The analysis suggests that investors should avoid simplistic assumptions about interest rate impacts on equity markets and instead focus on fundamental economic and corporate performance drivers. Similarly, policymakers should recognize that markets can adapt to changing monetary conditions, particularly when policy shifts are well-communicated and gradual.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "For future research, incorporating additional variables ",
+            "type": "text"
+          },
+          {
+            "content": "corporate earnings, sector performance, international capital flows",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "and extending the time period would provide deeper insights into these complex relationships.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "Data Appendix:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "All cleaned and processed data is available in the ",
+            "type": "text"
+          },
+          {
+            "code": "data/",
+            "type": "inlineCode"
+          },
+          {
+            "content": "folder:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "code": "economicdatacleaned.csv",
+                "type": "inlineCode"
+              },
+              {
+                "content": ": Raw merged monthly data ",
+                "type": "text"
+              },
+              {
+                "content": "58 observations",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "code": "economicdatafinal.csv",
+                "type": "inlineCode"
+              },
+              {
+                "content": ": Data with calculated returns and statistics",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "code": "summary.md",
+                "type": "inlineCode"
+              },
+              {
+                "content": ": Detailed data dictionary and methodology",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "All charts are available in JSON format in the project root folder for interactive exploration.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

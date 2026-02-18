@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-02-17T07:38:57Z",
+  "ab_case": {
+    "template_case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+    "rerun_case_id": "8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9",
+    "title": "反向调价实验数据分析 (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+    "inputs": [
+      "description.txt",
+      "反向调价实验结果-202601.xlsx"
+    ],
+    "description_present": true,
+    "chart_assets_count": 6,
+    "trace_type_hist": {
+      "bar": 10,
+      "scatterpolar": 2
+    },
+    "h2_sections": [
+      "执行摘要",
+      "1. 实验设计与背景",
+      "2. 核心指标分析",
+      "3. 套餐表现与蚕食效应分析",
+      "4. 综合对比与决策建议",
+      "5. 附录：数据摘要"
+    ],
+    "first_paragraph": "本报告对2026年1月23日至29日期间进行的反向调价A/B测试进行了全面分析。实验将连续包月价格从19元上调至21元，旨在验证涨价对关键业务指标的影响。数据分析表明：",
+    "assets": [
+      {
+        "name": "arpu_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6/assets/arpu_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "ARPU对比"
+      },
+      {
+        "name": "payment_rate_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6/assets/payment_rate_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "整体付费率对比"
+      },
+      {
+        "name": "arppu_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6/assets/arppu_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "ARPPU对比"
+      },
+      {
+        "name": "package_orders_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6/assets/package_orders_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "各套餐订单数量对比"
+      },
+      {
+        "name": "package_rates_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6/assets/package_rates_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "各套餐付费率对比"
+      },
+      {
+        "name": "radar_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6/assets/radar_comparison.json",
+        "trace_types": [
+          "scatterpolar",
+          "scatterpolar"
+        ],
+        "trace_count": 2,
+        "title": "关键指标综合对比"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9",
+    "inputs": [
+      "反向调价实验结果-202601.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 9,
+    "trace_type_hist": {
+      "bar": 14,
+      "sankey": 1,
+      "scatter": 4
+    },
+    "h2_sections": [
+      "执行摘要",
+      "实验概况",
+      "规模指标分析",
+      "收入指标分析",
+      "转化率分析",
+      "付费类型分布",
+      "预测分析：规模效应评估",
+      "综合评估与建议",
+      "结论"
+    ],
+    "first_paragraph": "本报告对2026年1月进行的反向调价策略A/B测试实验进行了全面分析。实验分为A组（对照组）和B组（实验组），通过对比两组在规模、转化、收入、付费行为等关键指标上的表现，评估反向调价策略的效果。",
+    "assets": [
+      {
+        "name": "metrics_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/metrics_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "关键指标对比"
+      },
+      {
+        "name": "user_journey_sankey.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/user_journey_sankey.json",
+        "trace_types": [
+          "sankey"
+        ],
+        "trace_count": 1,
+        "title": "用户旅程流向图"
+      },
+      {
+        "name": "revenue_arpu_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/revenue_arpu_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "收入与ARPU对比"
+      },
+      {
+        "name": "rate_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/rate_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "转化率对比"
+      },
+      {
+        "name": "payment_type_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/payment_type_distribution.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "付费类型订单数分布"
+      },
+      {
+        "name": "arppu_payment_rate.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/arppu_payment_rate.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "ARPPU与付费率对比"
+      },
+      {
+        "name": "scale_effect_prediction.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/scale_effect_prediction.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "规模效应预测"
+      },
+      {
+        "name": "revenue_prediction_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/revenue_prediction_comparison.json",
+        "trace_types": [
+          "bar",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "收入预测对比"
+      },
+      {
+        "name": "funnel_prediction.json",
+        "url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/funnel_prediction.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "转化漏斗预测"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 3,
+    "sections_delta": 3,
+    "description_removed_ok": true,
+    "asset_name_overlap": 0,
+    "asset_old_only": [
+      "arppu_comparison.json",
+      "arpu_comparison.json",
+      "package_orders_comparison.json",
+      "package_rates_comparison.json",
+      "payment_rate_comparison.json",
+      "radar_comparison.json"
+    ],
+    "asset_new_only": [
+      "arppu_payment_rate.json",
+      "funnel_prediction.json",
+      "metrics_comparison.json",
+      "payment_type_distribution.json",
+      "rate_comparison.json",
+      "revenue_arpu_comparison.json",
+      "revenue_prediction_comparison.json",
+      "scale_effect_prediction.json",
+      "user_journey_sankey.json"
+    ]
+  }
+}

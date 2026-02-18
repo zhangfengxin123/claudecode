@@ -1,0 +1,29 @@
+{
+  "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+  "title_hint": "SSCOM L02 AnalyticsCase_Meyer",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 1377,
+      "source_url": "https://pardusai.org/v1/api/public/project/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/description.txt",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "SSCOM L02 AnalyticsCase_Meyer.xlsx",
+      "status": 200,
+      "size_bytes": 1177259,
+      "source_url": "https://pardusai.org/v1/api/public/project/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b/files/SSCOM%20L02%20AnalyticsCase_Meyer.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/SSCOM L02 AnalyticsCase_Meyer.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:04:50Z"
+}

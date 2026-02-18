@@ -1,0 +1,20 @@
+{
+  "case_id": "0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3",
+  "title_hint": "债券借贷",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "【华西固收】债券借贷更新-20260123.xlsx",
+      "status": 200,
+      "size_bytes": 1764210,
+      "source_url": "https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/files/%E3%80%90%E5%8D%8E%E8%A5%BF%E5%9B%BA%E6%94%B6%E3%80%91%E5%80%BA%E5%88%B8%E5%80%9F%E8%B4%B7%E6%9B%B4%E6%96%B0-20260123.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0a3a46347386_债券借贷/【华西固收】债券借贷更新-20260123.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:11:08Z"
+}

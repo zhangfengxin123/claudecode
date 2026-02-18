@@ -1,0 +1,228 @@
+{
+  "generated_at": "2026-02-17T23:17:49",
+  "sample_size": 20,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "1759c0255f26a83e01643389f751d277620f6ae231651effec6bdb0c814fdb55",
+      "title": "超级大乐透",
+      "chart_count": 16,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_1759c0255f26.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "17faad37ce6bf04378012190d8c563e8611827132b0944643f44af1350abb758",
+      "title": "jinteki",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_002_17faad37ce6b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "1b701776ed003bdff1fdae76b09b29c563d99ced6af02fa763b87f53e43d7800",
+      "title": "JP election",
+      "chart_count": 10,
+      "upload_count": 0,
+      "doc_status": 200,
+      "up_status": 404,
+      "html": "",
+      "status": "failed",
+      "error": "uploads endpoint unavailable: case=1b701776ed003bdff1fdae76b09b29c563d99ced6af02fa763b87f53e43d7800 status=404"
+    },
+    {
+      "idx": 4,
+      "case_id": "627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d",
+      "title": "netrunner",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_627489b15cf3.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "a24f96566352f56e7fc34e4203690ce1ddb8d5cb1fa78c4bc804bdc7382836b8",
+      "title": "amazon",
+      "chart_count": 8,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_a24f96566352.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe",
+      "title": "amazon",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_db42ed7fbcda.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "e33e2db8d619b9f2301768245e6fe0efdf810ce39036630c35a2baaa374cb7f6",
+      "title": "Future market in China",
+      "chart_count": 0,
+      "upload_count": 0,
+      "doc_status": 200,
+      "up_status": 404,
+      "html": "",
+      "status": "failed",
+      "error": "uploads endpoint unavailable: case=e33e2db8d619b9f2301768245e6fe0efdf810ce39036630c35a2baaa374cb7f6 status=404"
+    },
+    {
+      "idx": 8,
+      "case_id": "964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834",
+      "title": "中国癌症患者分析",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_964e64e1c41e.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387",
+      "title": "Newyork Marathon top 500 analysis",
+      "chart_count": 8,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_e61e140fd33d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "32ee75a88254b46f2cbd02ede9735011c4e053571c7c25597b82583b4befd38c",
+      "title": "Amazon Financial Analysis",
+      "chart_count": 10,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_32ee75a88254.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "fa19c538b421112c351c21f4018d955513b8dbd75c0b0b3a2a64bee4b7fc4080",
+      "title": "AI Agent prediction",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_fa19c538b421.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "d24928110bfb9c4ac3256452419595ad80e7bec8eb78ffcef007efad629db4c8",
+      "title": "Barclays Impact Series 14 - AI Gets Physical",
+      "chart_count": 8,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_d24928110bfb.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "afa11bd78c8faeef38adbbe8f2b9830fba0f67c7c8c3553a1a84ef125be92d20",
+      "title": "Unemployment in different area analysis",
+      "chart_count": 9,
+      "upload_count": 6,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_afa11bd78c8f.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "645dab2b590ad4d056bcd900aff45e3f069de525bbcbb5dd397cd5d628d517aa",
+      "title": "Foodpanda Analysis",
+      "chart_count": 20,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_645dab2b590a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "74fb672ca369d9cd53cd459951592bf48f57d0c3feed1a0e458440a5bb3b3074",
+      "title": "NIO Inc",
+      "chart_count": 6,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_74fb672ca369.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "89357cf83bbc7a685f53cf87ce96c172a426eff5787e4dd810096ce5a09c920a",
+      "title": "大乐透透透",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_89357cf83bbc.html",
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "case_id": "76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d",
+      "title": "LS HAF贴胶及MESH贴胶设备过程问题记录",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_76112f91b96e.html",
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "case_id": "dae89b508977e39879d3956315061d60551227d78d09400176670fbb53725bd0",
+      "title": "bilt",
+      "chart_count": 5,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_dae89b508977.html",
+      "status": "ok"
+    },
+    {
+      "idx": 19,
+      "case_id": "c5d74c5c2976af994fb174e5384e1873895059a0a7e6ae56860f62c867319529",
+      "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_c5d74c5c2976.html",
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "case_id": "a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e",
+      "title": "2026-02-07",
+      "chart_count": 8,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_a66a96a46ee2.html",
+      "status": "ok"
+    }
+  ]
+}

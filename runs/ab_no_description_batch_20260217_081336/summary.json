@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-02-17T08:20:32Z",
+  "run_id": "ab_no_description_batch_20260217_081336",
+  "source_run": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007",
+  "selected_count": 1,
+  "success_count": 1,
+  "failed_count": 0,
+  "stop_reason": null,
+  "results": [
+    {
+      "case_index": 1,
+      "title": "2024 vs 2025 CAP Review report",
+      "template_case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+      "rerun_case_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+      "status": "ok",
+      "elapsed_sec": 416.12,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_081336/cases/case_001_64914baf5ff5",
+      "a_chart_count": 11,
+      "b_chart_count": 21,
+      "description_removed_ok": true
+    }
+  ],
+  "errors": []
+}

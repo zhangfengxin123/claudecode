@@ -1,0 +1,18 @@
+{
+  "case_id": "412edcf0e3aedb85c775d41e01d1b236a21a461a885e365f218cfb35fbb5e684",
+  "title": "RAW MARKS SCHEDULE 2026_011022",
+  "source_cache_manifest": "2026-02-17T14:16:33Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "RAW MARKS SCHEDULE 2026_011022.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/412edcf0e3ae_RAW MARKS SCHEDULE 2026_011022/RAW MARKS SCHEDULE 2026_011022.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/412edcf0e3ae_RAW MARKS SCHEDULE 2026_011022/RAW MARKS SCHEDULE 2026_011022.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

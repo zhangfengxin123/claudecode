@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-02-17T14:34:29Z",
+  "runs_root": "Pardus/.codex_session/runs",
+  "cache_root": "Pardus/.codex_session/datasets/public_inputs_cache",
+  "run_count": 9,
+  "unique_case_count": 72,
+  "cache_ok_cases": 20,
+  "cache_partial_failed_cases": 0,
+  "runs": [
+    {
+      "run_name": "ab_no_description_batch_20260217_055216",
+      "case_count": 13,
+      "ok_cases": 13,
+      "partial_failed_cases": 0
+    },
+    {
+      "run_name": "ab_no_description_batch_20260217_071524",
+      "case_count": 17,
+      "ok_cases": 17,
+      "partial_failed_cases": 0
+    },
+    {
+      "run_name": "ab_no_description_batch_20260217_080506",
+      "case_count": 2,
+      "ok_cases": 2,
+      "partial_failed_cases": 0
+    },
+    {
+      "run_name": "ab_no_description_batch_20260217_081336",
+      "case_count": 2,
+      "ok_cases": 2,
+      "partial_failed_cases": 0
+    },
+    {
+      "run_name": "ab_no_description_retry_merged_20260217_082140",
+      "case_count": 20,
+      "ok_cases": 20,
+      "partial_failed_cases": 0
+    },
+    {
+      "run_name": "ab_no_description_retry_merged_20260217_082241",
+      "case_count": 22,
+      "ok_cases": 22,
+      "partial_failed_cases": 0
+    },
+    {
+      "run_name": "chart_evidence_extra40_20260217",
+      "case_count": 40,
+      "ok_cases": 40,
+      "partial_failed_cases": 0
+    },
+    {
+      "run_name": "chart_evidence_multisheet1000_20260217_010007",
+      "case_count": 30,
+      "ok_cases": 30,
+      "partial_failed_cases": 0
+    },
+    {
+      "run_name": "chart_evidence_multisheet31_20260210_102903",
+      "case_count": 31,
+      "ok_cases": 31,
+      "partial_failed_cases": 0
+    }
+  ]
+}

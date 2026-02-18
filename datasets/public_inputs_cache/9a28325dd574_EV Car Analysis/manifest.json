@@ -1,0 +1,20 @@
+{
+  "case_id": "9a28325dd5748adb9b36a4ff78812bb926f5b613fdf3022bdf70ee5335c31f4b",
+  "title_hint": "EV Car Analysis",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "ev_vs_petrol_dataset_v3.csv",
+      "status": 200,
+      "size_bytes": 149363,
+      "source_url": "https://pardusai.org/v1/api/public/project/9a28325dd5748adb9b36a4ff78812bb926f5b613fdf3022bdf70ee5335c31f4b/files/ev_vs_petrol_dataset_v3.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9a28325dd574_EV Car Analysis/ev_vs_petrol_dataset_v3.csv",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:06:41Z"
+}

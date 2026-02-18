@@ -1,0 +1,91 @@
+{
+  "source_row": {
+    "idx": 24,
+    "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+    "title": "KA品牌下探数据汇总",
+    "chart_count": 6,
+    "upload_count": 2,
+    "doc_status": 200,
+    "up_status": 200,
+    "html": "case_024_4bc65ee64081.html"
+  },
+  "queue_log": {
+    "case_index": 6,
+    "template_case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+    "title": "KA品牌下探数据汇总",
+    "started_at": "2026-02-17T07:38:57Z",
+    "rerun_case_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+    "upload_response": {
+      "message": "Files uploaded successfully"
+    },
+    "queue_history": [
+      {
+        "at": "2026-02-17T07:39:00Z",
+        "status": "pending",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:39:21Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:39:42Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:40:03Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:40:24Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:40:46Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:41:07Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:41:27Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:41:48Z",
+        "status": "completed",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      }
+    ],
+    "final_status": "completed",
+    "last_queue": {
+      "project_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+      "status": "completed",
+      "tasks_ahead": 0,
+      "queue_by_tier": [],
+      "total_pending": 0,
+      "currently_processing": 0,
+      "estimated_wait_minutes": 0,
+      "priority_level": "premium",
+      "created_at": "2026-02-17T07:39:00.220057Z",
+      "started_at": "2026-02-17T07:39:14.132026Z"
+    }
+  }
+}

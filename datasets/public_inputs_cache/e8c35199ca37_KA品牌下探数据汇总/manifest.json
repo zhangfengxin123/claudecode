@@ -1,0 +1,20 @@
+{
+  "case_id": "e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a",
+  "title_hint": "KA品牌下探数据汇总",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "KA品牌下探数据汇总.xlsx",
+      "status": 200,
+      "size_bytes": 33777,
+      "source_url": "https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/files/KA%E5%93%81%E7%89%8C%E4%B8%8B%E6%8E%A2%E6%95%B0%E6%8D%AE%E6%B1%87%E6%80%BB.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e8c35199ca37_KA品牌下探数据汇总/KA品牌下探数据汇总.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:36:47Z"
+}

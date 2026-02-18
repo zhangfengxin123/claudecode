@@ -1,0 +1,29 @@
+{
+  "case_id": "0c25465f6a6239be09d40bb66d0db9ca6551859d31c1c240610ad36201c22667",
+  "title_hint": "za",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "f0d70b00-aafc-424f-9e6f-3408a1290a74.pdf",
+      "status": 200,
+      "size_bytes": 10508480,
+      "source_url": "https://pardusai.org/v1/api/public/project/0c25465f6a6239be09d40bb66d0db9ca6551859d31c1c240610ad36201c22667/files/f0d70b00-aafc-424f-9e6f-3408a1290a74.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0c25465f6a62_za/f0d70b00-aafc-424f-9e6f-3408a1290a74.pdf",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 73,
+      "source_url": "https://pardusai.org/v1/api/public/project/0c25465f6a6239be09d40bb66d0db9ca6551859d31c1c240610ad36201c22667/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0c25465f6a62_za/description.txt",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:15:06Z"
+}

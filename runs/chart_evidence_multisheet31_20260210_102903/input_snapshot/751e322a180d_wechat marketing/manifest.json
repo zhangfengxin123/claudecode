@@ -1,0 +1,39 @@
+{
+  "case_id": "751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9",
+  "title": "wechat marketing",
+  "source_cache_manifest": "2026-02-17T14:24:51Z",
+  "status": "ok",
+  "copied_files": 4,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "topic_plan_processed.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/751e322a180d_wechat marketing/topic_plan_processed.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/751e322a180d_wechat marketing/topic_plan_processed.csv",
+      "ok": true
+    },
+    {
+      "name": "topic_plan_clean.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/751e322a180d_wechat marketing/topic_plan_clean.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/751e322a180d_wechat marketing/topic_plan_clean.csv",
+      "ok": true
+    },
+    {
+      "name": "topic_plan.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/751e322a180d_wechat marketing/topic_plan.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/751e322a180d_wechat marketing/topic_plan.csv",
+      "ok": true
+    },
+    {
+      "name": "2026微信公众号选题计划.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/751e322a180d_wechat marketing/2026微信公众号选题计划.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/751e322a180d_wechat marketing/2026微信公众号选题计划.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

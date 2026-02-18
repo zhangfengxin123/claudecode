@@ -1,0 +1,6 @@
+Use the data file “AnalyticsCase_Meyer.xlsx” on Moodle for your analysis. Perform scenario analyses by evaluating the performance as if the change had been made in 2023. Prepare ~3 slides with the answers to the following questions:
+(a) Current Situation: What are the average carbon emissions per customer visit? How many technicians are needed at maximum on a single day? Field technicians use mini vans for driving, which have an average emissions level of 176 gCO2e/km. For simplicity, you can assume that a technician visits a single city per day. For driving, also consider the return trip.
+(b) NetworkExpansion:TheMeyerAGconsidersbuildingupanewservicebase,inadditiontothe one in Bergisch-Gladbach. It considers either one of the following cities: Cottbus or Hanover. Ms. Meyer would like know which city to choose, and by how much CO2 emissions (in %) would reduce. How many technicians would be required in the two bases? Note that technicians can only operate from their home base, not from other bases.
+(c) Lead Times: Ms. Meyer would like to know the impact on CO2 emissions (in %) if the company reduces its service promise of “same-day service” to “same or next-day service” for (i) all customers or
+(ii) only standard customers (keep the “same-day” service for premium customers).
+Use the scenario with Bergisch-Gladbach as only site for part (c).

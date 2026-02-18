@@ -1,0 +1,20 @@
+{
+  "case_id": "79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5",
+  "title_hint": "总承包",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "环研院（老项目）-EPC项目信息统计及管理台账20250930.xlsx",
+      "status": 200,
+      "size_bytes": 227227,
+      "source_url": "https://pardusai.org/v1/api/public/project/79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5/files/%E7%8E%AF%E7%A0%94%E9%99%A2%EF%BC%88%E8%80%81%E9%A1%B9%E7%9B%AE%EF%BC%89-EPC%E9%A1%B9%E7%9B%AE%E4%BF%A1%E6%81%AF%E7%BB%9F%E8%AE%A1%E5%8F%8A%E7%AE%A1%E7%90%86%E5%8F%B0%E8%B4%A620250930.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/79abb110cddb_总承包/环研院（老项目）-EPC项目信息统计及管理台账20250930.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:34:25Z"
+}

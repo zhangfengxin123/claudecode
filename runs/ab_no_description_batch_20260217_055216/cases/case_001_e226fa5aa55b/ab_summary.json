@@ -1,0 +1,340 @@
+{
+  "generated_at": "2026-02-17T06:03:10Z",
+  "ab_case": {
+    "template_case_id": "e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+    "rerun_case_id": "76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f",
+    "title": "2024-2025 CAP review (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+    "inputs": [
+      "description.txt",
+      "2025 CAP overview.xlsx",
+      "SHA CHRONO_CAP.xlsx"
+    ],
+    "description_present": true,
+    "chart_assets_count": 15,
+    "trace_type_hist": {
+      "table": 1,
+      "bar": 10,
+      "pie": 2,
+      "scatter": 1,
+      "sunburst": 1,
+      "sankey": 2,
+      "icicle": 1,
+      "heatmap": 1
+    },
+    "h2_sections": [
+      "执行摘要",
+      "数据概览与处理流程",
+      "年度对比分析",
+      "成本构成深度分析",
+      "CAP类型分布对比",
+      "部门表现分析",
+      "高级可视化分析",
+      "深度洞察与建议",
+      "风险预警",
+      "行动计划",
+      "总结"
+    ],
+    "first_paragraph": "本报告对2024年和2025年的CAPA记录进行了全面的对比分析。分析显示，2025年在CAPA管理方面取得了显著改进：总成本降低了 43.21% ，记录数量减少了 78.26% 。这表明公司在质量管理和成本控制方面取得了实质性进展。",
+    "assets": [
+      {
+        "name": "summary_table.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/summary_table.json",
+        "trace_types": [
+          "table"
+        ],
+        "trace_count": 1,
+        "title": "2024 vs 2025年CAPA综合对比总览"
+      },
+      {
+        "name": "annual_total_cost_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/annual_total_cost_comparison.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2024 vs 2025年CAPA总成本对比"
+      },
+      {
+        "name": "record_count_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/record_count_comparison.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2024 vs 2025年CAPA记录数量对比"
+      },
+      {
+        "name": "cost_structure_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cost_structure_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "2024 vs 2025年成本构成对比"
+      },
+      {
+        "name": "cost_pie_2024.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cost_pie_2024.json",
+        "trace_types": [
+          "pie"
+        ],
+        "trace_count": 1,
+        "title": "2024年CAPA成本构成占比"
+      },
+      {
+        "name": "cost_pie_2025.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cost_pie_2025.json",
+        "trace_types": [
+          "pie"
+        ],
+        "trace_count": 1,
+        "title": "2025年CAPA成本构成占比"
+      },
+      {
+        "name": "cap_type_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cap_type_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "2024 vs 2025年CAP类型分布对比"
+      },
+      {
+        "name": "monthly_trend_2024.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/monthly_trend_2024.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "2024年CAPA成本月度趋势"
+      },
+      {
+        "name": "department_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/department_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "2024 vs 2025年部门CAPA分布对比"
+      },
+      {
+        "name": "top_issuer_cost_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/top_issuer_cost_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "2024 vs 2025年TOP 10负责人CAPA成本对比"
+      },
+      {
+        "name": "cap_cost_sunburst.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cap_cost_sunburst.json",
+        "trace_types": [
+          "sunburst"
+        ],
+        "trace_count": 1,
+        "title": "2024-2025年CAPA成本层次结构分布"
+      },
+      {
+        "name": "cap_flow_sankey.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cap_flow_sankey.json",
+        "trace_types": [
+          "sankey"
+        ],
+        "trace_count": 1,
+        "title": "2025年CAPA流向：部门 → CAP类型"
+      },
+      {
+        "name": "cap_flow_sankey_2024.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cap_flow_sankey_2024.json",
+        "trace_types": [
+          "sankey"
+        ],
+        "trace_count": 1,
+        "title": "2024年CAPA流向：部门 → CAP类型"
+      },
+      {
+        "name": "cap_cost_icicle_2025.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cap_cost_icicle_2025.json",
+        "trace_types": [
+          "icicle"
+        ],
+        "trace_count": 1,
+        "title": "2025年CAPA成本冰柱图"
+      },
+      {
+        "name": "cap_cost_heatmap.json",
+        "url": "https://pardusai.org/v1/api/public/project/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7/assets/cap_cost_heatmap.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "2024-2025年各部门CAP类型成本热力图"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f",
+    "inputs": [
+      "2025 CAP overview.xlsx",
+      "SHA CHRONO_CAP.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 9,
+    "trace_type_hist": {
+      "scatter": 2,
+      "bar": 17,
+      "histogram": 1
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Data Overview",
+      "Temporal Trends",
+      "CAP Types Analysis",
+      "Departmental Analysis",
+      "Issuer Performance",
+      "Customer Analysis",
+      "Cost Distribution Analysis",
+      "Efficiency Analysis",
+      "Closure Timeliness",
+      "Conclusions and Recommendations",
+      "Appendix"
+    ],
+    "first_paragraph": "This report provides a comprehensive analysis of Corrective and Preventive Actions CAP data spanning 2011 to 2025. The analysis covers 591 historical CAPs from the ChronoCAP database and 10 recent CAPs from the 2025 overview, offering insights into trends, costs, departmental performance, and efficiency metrics.",
+    "assets": [
+      {
+        "name": "cap_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/cap_trend.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "CAP Trend Over Time"
+      },
+      {
+        "name": "cost_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/cost_trend.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "CAP Cost Trend Over Time"
+      },
+      {
+        "name": "cap_types.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/cap_types.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "CAP Types Distribution"
+      },
+      {
+        "name": "cost_by_type.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/cost_by_type.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Total Cost by CAP Type"
+      },
+      {
+        "name": "departments.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/departments.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "CAPs by Department"
+      },
+      {
+        "name": "dept_year_stacked.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/dept_year_stacked.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 12,
+        "title": "CAP Distribution by Department and Year"
+      },
+      {
+        "name": "top_issuers.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/top_issuers.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top Issuers by CAP Count"
+      },
+      {
+        "name": "top_customers.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/top_customers.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top 15 Customers by CAP Count"
+      },
+      {
+        "name": "cost_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f/assets/cost_distribution.json",
+        "trace_types": [
+          "histogram"
+        ],
+        "trace_count": 1,
+        "title": "CAP Cost Distribution"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": -6,
+    "sections_delta": 1,
+    "description_removed_ok": true,
+    "asset_name_overlap": 0,
+    "asset_old_only": [
+      "annual_total_cost_comparison.json",
+      "cap_cost_heatmap.json",
+      "cap_cost_icicle_2025.json",
+      "cap_cost_sunburst.json",
+      "cap_flow_sankey.json",
+      "cap_flow_sankey_2024.json",
+      "cap_type_comparison.json",
+      "cost_pie_2024.json",
+      "cost_pie_2025.json",
+      "cost_structure_comparison.json",
+      "department_comparison.json",
+      "monthly_trend_2024.json",
+      "record_count_comparison.json",
+      "summary_table.json",
+      "top_issuer_cost_comparison.json"
+    ],
+    "asset_new_only": [
+      "cap_trend.json",
+      "cap_types.json",
+      "cost_by_type.json",
+      "cost_distribution.json",
+      "cost_trend.json",
+      "departments.json",
+      "dept_year_stacked.json",
+      "top_customers.json",
+      "top_issuers.json"
+    ]
+  }
+}

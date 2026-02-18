@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus 多 Sheet 样本聚合总览</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --line: #e5e7eb;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .wrap {
+      max-width: 1480px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+    h1, h2, h3 { margin: 0 0 10px 0; }
+    .muted { color: var(--muted); }
+    .small { font-size: 12px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: #fff;
+    }
+    .metric .k {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+    .metric .v {
+      font-weight: 700;
+      font-size: 22px;
+    }
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .plot {
+      min-height: 360px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 13px;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f3f4f6;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    code {
+      background: #f3f4f6;
+      border-radius: 6px;
+      padding: 1px 6px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .table-wrap {
+      max-height: 65vh;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    @media (max-width: 980px) {
+      .grid2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class='wrap'>
+    <div class='card'>
+      <h1>Pardus 多 Sheet 样本聚合总览</h1>
+      <div class='muted'>
+        generated_at: <code>2026-02-10 15:38:01</code> |
+        source_summary: <code>/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/summary.json</code> |
+        source_scan: <code>/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/multisheet_scan500_fast2_20260210_102544/scan_results_qualified.json</code>
+      </div>
+      <div class='small muted' style='margin-top:6px;'>
+        说明：本页基于 31 个 case 证据页自动聚合，不重新抓取新样本。
+      </div>
+      <div style='margin-top:8px;'>
+        <a href='index.html'>返回样本索引</a>
+      </div>
+    </div>
+
+    <div class='card'>
+      <h2>核心指标</h2>
+      <div class='metrics'>
+        <div class='metric'><div class='k'>样本 case 数</div><div class='v'>31</div></div>
+        <div class='metric'><div class='k'>总图表数</div><div class='v'>255</div></div>
+        <div class='metric'><div class='k'>平均图表/Case</div><div class='v'>8.23</div></div>
+        <div class='metric'><div class='k'>中位图表/Case</div><div class='v'>7</div></div>
+        <div class='metric'><div class='k'>最大图表数</div><div class='v'>15</div></div>
+        <div class='metric'><div class='k'>最小图表数</div><div class='v'>5</div></div>
+        <div class='metric'><div class='k'>总上传文件数</div><div class='v'>61</div></div>
+        <div class='metric'><div class='k'>多 Sheet Excel 数</div><div class='v'>37</div></div>
+      </div>
+      <div class='small muted' style='margin-top:8px;'>
+        语言分布（按标题粗分）：中文 15 / 非中文 16
+      </div>
+    </div>
+
+    <div class='grid2'>
+      <div class='card'>
+        <h3>图表数量分布（每个 Case）</h3>
+        <div id='plot-chart-count' class='plot'></div>
+      </div>
+      <div class='card'>
+        <h3>Sheet 最大值 vs 图表数量</h3>
+        <div id='plot-sheet-vs-chart' class='plot'></div>
+      </div>
+    </div>
+
+    <div class='grid2'>
+      <div class='card'>
+        <h3>Trace Type 频次 Top 20</h3>
+        <div id='plot-trace-types' class='plot'></div>
+      </div>
+      <div class='card'>
+        <h3>上传文件扩展名分布 Top 20</h3>
+        <div id='plot-file-ext' class='plot'></div>
+      </div>
+    </div>
+
+    <div class='card'>
+      <h2>31 条样本明细（可直达证据页）</h2>
+      <div class='table-wrap'>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th><th>case_id</th><th>title</th><th>charts</th><th>uploads</th>
+              <th>sheet</th><th>top trace types</th><th>sample chart titles</th><th>links</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td><code>e226fa5aa55b</code></td><td>2024-2025 CAP review</td><td>15</td><td>3</td><td>max=4 / excel=2</td><td>bar, pie, sankey, table</td><td>2024 vs 2025年CAPA综合对比总览 | 2024 vs 2025年CAPA总成本对比 | 2024 vs 2025年CAPA记录数量对比</td><td><a href='items/case_001_e226fa5aa55b.html'>open</a> | <a href='https://pardusai.org/view/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>2</td><td><code>ae3bf09e493f</code></td><td>CAP Analysis</td><td>14</td><td>2</td><td>max=2 / excel=1</td><td>bar, box, scatter</td><td>CAPA 记录数量对比 | 成本对比 | 成本分布对比</td><td><a href='items/case_002_ae3bf09e493f.html'>open</a> | <a href='https://pardusai.org/view/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>3</td><td><code>0a3a46347386</code></td><td>债券借贷</td><td>13</td><td>1</td><td>max=3 / excel=1</td><td>scatter, bar, pie, histogram</td><td>债券借贷市场每日交易趋势 | 债券借贷加权平均费率走势 | 最新日按债券类型成交量分布</td><td><a href='items/case_003_0a3a46347386.html'>open</a> | <a href='https://pardusai.org/view/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>4</td><td><code>739cc701921d</code></td><td>用户反馈</td><td>11</td><td>1</td><td>max=5 / excel=1</td><td>bar, pie, sunburst, scatterpolar</td><td>Brand Distribution | Most Used Training Systems | System Hierarchy</td><td><a href='items/case_004_739cc701921d.html'>open</a> | <a href='https://pardusai.org/view/739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>5</td><td><code>64914baf5ff5</code></td><td>2024 vs 2025 CAP Review report</td><td>11</td><td>3</td><td>max=5 / excel=2</td><td>bar</td><td>CAP数量对比 | 成本对比 | 平均成本对比</td><td><a href='items/case_005_64914baf5ff5.html'>open</a> | <a href='https://pardusai.org/view/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>6</td><td><code>e8c35199ca37</code></td><td>KA品牌下探数据汇总</td><td>11</td><td>1</td><td>max=3 / excel=1</td><td>bar, scatter, heatmap, scatterpolar</td><td>1月GMV TOP 10品牌 | 门店规模 vs 订单量关系 | 营业门店数TOP 10</td><td><a href='items/case_006_e8c35199ca37.html'>open</a> | <a href='https://pardusai.org/view/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>7</td><td><code>b9c4c3a493f4</code></td><td>arbitrage</td><td>11</td><td>1</td><td>max=3 / excel=1</td><td>scatter, bar, box, histogram</td><td>Price Evolution: Underlying vs Synthetic | Option Prices | Cumulative Returns</td><td><a href='items/case_007_b9c4c3a493f4.html'>open</a> | <a href='https://pardusai.org/view/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>8</td><td><code>b93dae71bcf0</code></td><td>id市场投放效果与转化数据分析</td><td>10</td><td>2</td><td>max=6 / excel=1</td><td>scatter, bar, pie, heatmap</td><td>目标达成 | 总体趋势 | ROI趋势</td><td><a href='items/case_008_b93dae71bcf0.html'>open</a> | <a href='https://pardusai.org/view/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>9</td><td><code>249b12b9deda</code></td><td>国际贸易</td><td>10</td><td>1</td><td>max=2 / excel=1</td><td>bar, histogram, heatmap, sankey</td><td>Top 20 Countries by Trade Surplus | Top 20 Countries by Trade Deficit | Trade Balance Distribution</td><td><a href='items/case_009_249b12b9deda.html'>open</a> | <a href='https://pardusai.org/view/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>10</td><td><code>67784329e507</code></td><td>order submitted</td><td>10</td><td>1</td><td>max=6 / excel=1</td><td>bar, pie, heatmap</td><td>数据集类别分布 | 混淆矩阵：标签预测效果 | 分类性能指标</td><td><a href='items/case_010_67784329e507.html'>open</a> | <a href='https://pardusai.org/view/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>11</td><td><code>0c7131d0cbdc</code></td><td>2022-2026 Case Data</td><td>9</td><td>3</td><td>max=6 / excel=3</td><td>bar, scatter, histogram</td><td>Yearly Funding Trends | Funding by Application Type | Funding by Priority</td><td><a href='items/case_011_0c7131d0cbdc.html'>open</a> | <a href='https://pardusai.org/view/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>12</td><td><code>bc9096fe2102</code></td><td>Microsoft is Falling Down</td><td>9</td><td>4</td><td>max=13 / excel=1</td><td>bar, sunburst, scatter</td><td>Profitability Metrics Comparison | Revenue Comparison by Segment | Segment Performance Q2 2026</td><td><a href='items/case_012_bc9096fe2102.html'>open</a> | <a href='https://pardusai.org/view/bc9096fe2102fcf754cb47c1631aed3576bf8ca6aef0c3d78e6f40b72d38fc92' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>13</td><td><code>3f3ac24519b2</code></td><td>Twitter和YouTube的数据</td><td>9</td><td>2</td><td>max=3 / excel=2</td><td>bar, scatter, sankey</td><td>Platform Performance Comparison | Twitter Daily Traffic Trend | Twitter Device Usage Over Time</td><td><a href='items/case_013_3f3ac24519b2.html'>open</a> | <a href='https://pardusai.org/view/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>14</td><td><code>129eef16c57a</code></td><td>email experiment</td><td>8</td><td>2</td><td>max=6 / excel=2</td><td>bar, scatterpolar, sankey, sunburst</td><td>教师基本信息桑基图 | 人才类型旭日图 | 科研成果柱状图</td><td><a href='items/case_014_129eef16c57a.html'>open</a> | <a href='https://pardusai.org/view/129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>15</td><td><code>79abb110cddb</code></td><td>总承包</td><td>8</td><td>1</td><td>max=11 / excel=1</td><td>bar, pie</td><td>项目状态分布 | 项目合同额、收入与成本对比 | 项目组合总览 (百万元)</td><td><a href='items/case_015_79abb110cddb.html'>open</a> | <a href='https://pardusai.org/view/79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>16</td><td><code>ca9493d910dd</code></td><td>月卡改价实验数据分析</td><td>7</td><td>2</td><td>max=2 / excel=1</td><td>bar, scatter</td><td>各组核心指标对比 | 流量分布 | 付费率对比</td><td><a href='items/case_016_ca9493d910dd.html'>open</a> | <a href='https://pardusai.org/view/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>17</td><td><code>fd64064b9ffb</code></td><td>辅酶q10</td><td>7</td><td>1</td><td>max=3 / excel=1</td><td>scatter, heatmap, box, bar</td><td>Time Series by Group | Peak Analysis | Box Plot by Group</td><td><a href='items/case_017_fd64064b9ffb.html'>open</a> | <a href='https://pardusai.org/view/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>18</td><td><code>6a109b2edad7</code></td><td>Book1</td><td>7</td><td>2</td><td>max=6 / excel=1</td><td>scatter, bar</td><td>Monthly Sales Trend | Monthly Sales Breakdown | Items Sold vs Active Products</td><td><a href='items/case_018_6a109b2edad7.html'>open</a> | <a href='https://pardusai.org/view/6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>19</td><td><code>fec7a23e6933</code></td><td>588000159915510050</td><td>7</td><td>2</td><td>max=3 / excel=1</td><td>scattergl, bar, scatter, histogram</td><td>Three ETFs Price Trend (Normalized to 100) | Performance Metrics Comparison | Implied Volatility (IV) Comparison</td><td><a href='items/case_019_fec7a23e6933.html'>open</a> | <a href='https://pardusai.org/view/fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>20</td><td><code>caaf784429d7</code></td><td>new</td><td>6</td><td>5</td><td>max=3 / excel=1</td><td>scatter, bar, heatmap</td><td>Precision Analysis CV | Precision vs Reflectance | Mean Spectra Comparison</td><td><a href='items/case_020_caaf784429d7.html'>open</a> | <a href='https://pardusai.org/view/caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>21</td><td><code>fdec4b4d26cb</code></td><td>Copy of Project</td><td>6</td><td>1</td><td>max=9 / excel=1</td><td>bar, scatter</td><td>Linac Operational Gradient | Klystron Peak Power | Power vs Gradient</td><td><a href='items/case_021_fdec4b4d26cb.html'>open</a> | <a href='https://pardusai.org/view/fdec4b4d26cbac9f558b3e47449089e928bda4188427b70587586a59dd6687e3' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>22</td><td><code>96f9d88da186</code></td><td>Linac setup overview</td><td>6</td><td>1</td><td>max=9 / excel=1</td><td>bar, scatter</td><td>Linac Operational Gradient | Klystron Peak Power | Power vs Gradient</td><td><a href='items/case_022_96f9d88da186.html'>open</a> | <a href='https://pardusai.org/view/96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>23</td><td><code>1b89e7d1ffb4</code></td><td>反向调价实验数据分析</td><td>6</td><td>2</td><td>max=2 / excel=1</td><td>bar, scatterpolar</td><td>ARPU对比 | 整体付费率对比 | ARPPU对比</td><td><a href='items/case_023_1b89e7d1ffb4.html'>open</a> | <a href='https://pardusai.org/view/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>24</td><td><code>568921634187</code></td><td>卫生统计年鉴</td><td>6</td><td>1</td><td>max=17 / excel=1</td><td>scatter, bar, heatmap</td><td>中国人口统计趋势 (1955-2023) | 中国人口分年代平均出生率与死亡率对比 | 中国人口出生率与死亡率差距变化 (阴影表示自然增长空间)</td><td><a href='items/case_024_568921634187.html'>open</a> | <a href='https://pardusai.org/view/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>25</td><td><code>4bc65ee64081</code></td><td>KA品牌下探数据汇总</td><td>6</td><td>2</td><td>max=3 / excel=1</td><td>bar, scatter</td><td>茶饮品牌1月GMV排名 | 茶饮品牌1月广告投放金额排名 | 广告投放与GMV关系</td><td><a href='items/case_025_4bc65ee64081.html'>open</a> | <a href='https://pardusai.org/view/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>26</td><td><code>f5171f88125c</code></td><td>陕西能源职业技术学院招生就业专业排序</td><td>6</td><td>2</td><td>max=3 / excel=1</td><td>bar, scatter, scatterpolar, histogram</td><td>TOP 20 专业综合排名 | 各学院平均综合得分对比 | 就业率与一志愿率关系图</td><td><a href='items/case_026_f5171f88125c.html'>open</a> | <a href='https://pardusai.org/view/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>27</td><td><code>e8263ae221ad</code></td><td>竞品分析</td><td>6</td><td>3</td><td>max=9 / excel=1</td><td>bar, table, histogram, box</td><td>Creator Statistics Summary | Follower Count Distribution | Creator Tier Distribution</td><td><a href='items/case_027_e8263ae221ad.html'>open</a> | <a href='https://pardusai.org/view/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>28</td><td><code>a77d543b4e14</code></td><td>年卡改价实验数据分析</td><td>5</td><td>2</td><td>max=2 / excel=1</td><td>scatter, bar, scatterpolar</td><td>ARPU对比 | 预期验证雷达图 | 蚕食效应分析</td><td><a href='items/case_028_a77d543b4e14.html'>open</a> | <a href='https://pardusai.org/view/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>29</td><td><code>e79c8f00ffa4</code></td><td>SSCOM L02 AnalyticsCase_Meyer</td><td>5</td><td>2</td><td>max=2 / excel=1</td><td>bar</td><td>CO2 Emissions Comparison | Technician Requirements | Cities per Base</td><td><a href='items/case_029_e79c8f00ffa4.html'>open</a> | <a href='https://pardusai.org/view/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>30</td><td><code>df7592361534</code></td><td>dam monitoring data analysis</td><td>5</td><td>1</td><td>max=2 / excel=1</td><td>scatter, bar</td><td>渗透压力月度趋势分析 (2017-2025) | 各渗压计平均渗透压力对比 (前12位) | P01渗压计: 库水位与渗透压力关系 (颜色表示温度)</td><td><a href='items/case_030_df7592361534.html'>open</a> | <a href='https://pardusai.org/view/df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c' target='_blank' rel='noopener noreferrer'>view</a></td></tr><tr><td>31</td><td><code>751e322a180d</code></td><td>wechat marketing</td><td>5</td><td>4</td><td>max=3 / excel=1</td><td>scatter, bar, pie, histogram2d</td><td>Monthly Publishing Timeline | Category Distribution | Department Workload Distribution</td><td><a href='items/case_031_751e322a180d.html'>open</a> | <a href='https://pardusai.org/view/751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9' target='_blank' rel='noopener noreferrer'>view</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const CHARTS = {"chart_counts": [15, 14, 13, 11, 11, 11, 11, 10, 10, 10, 9, 9, 9, 8, 8, 7, 7, 7, 7, 6, 6, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5], "sheet_max": [4, 2, 3, 5, 5, 3, 3, 6, 2, 6, 6, 13, 3, 6, 11, 2, 3, 6, 3, 3, 9, 9, 2, 17, 3, 3, 9, 2, 2, 2, 3], "case_short": ["e226fa", "ae3bf0", "0a3a46", "739cc7", "64914b", "e8c351", "b9c4c3", "b93dae", "249b12", "677843", "0c7131", "bc9096", "3f3ac2", "129eef", "79abb1", "ca9493", "fd6406", "6a109b", "fec7a2", "caaf78", "fdec4b", "96f9d8", "1b89e7", "568921", "4bc65e", "f5171f", "e8263a", "a77d54", "e79c8f", "df7592", "751e32"], "case_title": ["2024-2025 CAP review", "CAP Analysis", "债券借贷", "用户反馈", "2024 vs 2025 CAP Review report", "KA品牌下探数据汇总", "arbitrage", "id市场投放效果与转化数据分析", "国际贸易", "order submitted", "2022-2026 Case Data", "Microsoft is Falling Down", "Twitter和YouTube的数据", "email experiment", "总承包", "月卡改价实验数据分析", "辅酶q10", "Book1", "588000159915510050", "new", "Copy of Project", "Linac setup overview", "反向调价实验数据分析", "卫生统计年鉴", "KA品牌下探数据汇总", "陕西能源职业技术学院招生就业专业排序", "竞品分析", "年卡改价实验数据分析", "SSCOM L02 AnalyticsCase_Meyer", "dam monitoring data analysis", "wechat marketing"], "trace_type_names": ["bar", "scatter", "heatmap", "pie", "histogram", "scatterpolar", "sunburst", "sankey", "box", "scattergl", "table", "histogram2d", "icicle", "scatter3d"], "trace_type_values": [141, 62, 11, 10, 7, 7, 6, 5, 4, 3, 2, 2, 1, 1], "file_ext_names": [".xlsx", ".txt", ".csv", ".pdf", ".md"], "file_ext_values": [37, 12, 8, 3, 1]};
+
+    Plotly.newPlot('plot-chart-count', [{
+      type: 'histogram',
+      x: CHARTS.chart_counts,
+      marker: {color: '#2563eb'},
+      nbinsx: 12
+    }], {
+      xaxis: {title: 'charts per case'},
+      yaxis: {title: 'count of cases'},
+      margin: {l: 50, r: 20, t: 20, b: 50},
+      paper_bgcolor: '#fff',
+      plot_bgcolor: '#fff'
+    }, {displaylogo:false, responsive:true});
+
+    Plotly.newPlot('plot-sheet-vs-chart', [{
+      type: 'scatter',
+      mode: 'markers+text',
+      x: CHARTS.sheet_max,
+      y: CHARTS.chart_counts,
+      text: CHARTS.case_short,
+      textposition: 'top center',
+      marker: {size: 9, color: '#16a34a'},
+      hovertemplate: '%{customdata}<br>sheet_max=%{x}<br>charts=%{y}<extra></extra>',
+      customdata: CHARTS.case_title
+    }], {
+      xaxis: {title: 'max sheet count (per case)'},
+      yaxis: {title: 'chart count'},
+      margin: {l: 50, r: 20, t: 20, b: 50},
+      paper_bgcolor: '#fff',
+      plot_bgcolor: '#fff'
+    }, {displaylogo:false, responsive:true});
+
+    Plotly.newPlot('plot-trace-types', [{
+      type: 'bar',
+      x: CHARTS.trace_type_names,
+      y: CHARTS.trace_type_values,
+      marker: {color: '#7c3aed'}
+    }], {
+      xaxis: {title: 'trace type', tickangle: -28},
+      yaxis: {title: 'frequency'},
+      margin: {l: 50, r: 20, t: 20, b: 90},
+      paper_bgcolor: '#fff',
+      plot_bgcolor: '#fff'
+    }, {displaylogo:false, responsive:true});
+
+    Plotly.newPlot('plot-file-ext', [{
+      type: 'bar',
+      x: CHARTS.file_ext_names,
+      y: CHARTS.file_ext_values,
+      marker: {color: '#ea580c'}
+    }], {
+      xaxis: {title: 'file extension', tickangle: -28},
+      yaxis: {title: 'frequency'},
+      margin: {l: 50, r: 20, t: 20, b: 90},
+      paper_bgcolor: '#fff',
+      plot_bgcolor: '#fff'
+    }, {displaylogo:false, responsive:true});
+  </script>
+</body>
+</html>

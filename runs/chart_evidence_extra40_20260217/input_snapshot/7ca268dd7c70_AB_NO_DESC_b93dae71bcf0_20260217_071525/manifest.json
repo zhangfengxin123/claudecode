@@ -1,0 +1,18 @@
+{
+  "case_id": "7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b",
+  "title": "AB_NO_DESC_b93dae71bcf0_20260217_071525",
+  "source_cache_manifest": "2026-02-17T14:05:40Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "id市场广告投放与转化数据.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/7ca268dd7c70_id市场投放效果与转化数据分析/id市场广告投放与转化数据.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/7ca268dd7c70_AB_NO_DESC_b93dae71bcf0_20260217_071525/id市场广告投放与转化数据.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

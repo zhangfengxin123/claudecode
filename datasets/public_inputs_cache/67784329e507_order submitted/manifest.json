@@ -1,0 +1,20 @@
+{
+  "case_id": "67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3",
+  "title_hint": "order submitted",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "混淆矩阵完整分析.xlsx",
+      "status": 200,
+      "size_bytes": 1768244,
+      "source_url": "https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/files/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%98%B5%E5%AE%8C%E6%95%B4%E5%88%86%E6%9E%90.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/67784329e507_order submitted/混淆矩阵完整分析.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:22:17Z"
+}

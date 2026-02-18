@@ -1,0 +1,20 @@
+{
+  "case_id": "4babbe396f2a2672e725eb0632ae3e38607deb397d148e730baedee54b82deef",
+  "title_hint": "2025 Global Robotics Leaders — Technology Roadmap Comparison",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "robotics_companies.csv",
+      "status": 200,
+      "size_bytes": 6507,
+      "source_url": "https://pardusai.org/v1/api/public/project/4babbe396f2a2672e725eb0632ae3e38607deb397d148e730baedee54b82deef/files/robotics_companies.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4babbe396f2a_2025 Global Robotics Leaders — Technology Roadmap Comparison/robotics_companies.csv",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:16:59Z"
+}

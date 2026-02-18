@@ -1,0 +1,95 @@
+{
+  "case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+  "title": "月卡改价实验数据分析",
+  "with_description": true,
+  "input_files": [
+    "月卡改价实验结果-202601.xlsx",
+    "description.txt"
+  ],
+  "input_data_files": [
+    "月卡改价实验结果-202601.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 7,
+  "assets": [
+    {
+      "name": "metrics_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 5,
+      "title": "各组核心指标对比"
+    },
+    {
+      "name": "flow_distribution.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "流量分布"
+    },
+    {
+      "name": "payment_rate_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 3,
+      "title": "付费率对比"
+    },
+    {
+      "name": "price_elasticity.json",
+      "trace_types": [
+        "scatter"
+      ],
+      "trace_count": 1,
+      "title": "价格弹性曲线"
+    },
+    {
+      "name": "price_impact.json",
+      "trace_types": [
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "价格与指标关系"
+    },
+    {
+      "name": "cannibalization_effect.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "蚕食效应分析"
+    },
+    {
+      "name": "revenue_impact.json",
+      "trace_types": [
+        "bar",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "收入影响分析"
+    }
+  ],
+  "h2_sections": [
+    "执行摘要",
+    "实验概况",
+    "核心指标对比",
+    "实验预期验证",
+    "价格弹性分析",
+    "蚕食效应分析",
+    "收入影响分析",
+    "业务建议",
+    "局限性与后续研究",
+    "附录"
+  ],
+  "first_paragraph": "本次实验为期7天（2026-01-23至2026-01-29），旨在验证模型判断的连续包月最优价格（23元）对业务指标的影响。实验分为四组：控制组（25元，50%流量）、最优价格组（23元，30%流量）、激进降价组（19元，10%流量）、反向涨价组（29元，10%流量）。"
+}

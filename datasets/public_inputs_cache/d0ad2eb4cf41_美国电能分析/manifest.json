@@ -1,0 +1,20 @@
+{
+  "case_id": "d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131",
+  "title_hint": "美国电能分析",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "table (1).csv",
+      "status": 200,
+      "size_bytes": 608,
+      "source_url": "https://pardusai.org/v1/api/public/project/d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131/files/table%20%281%29.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d0ad2eb4cf41_美国电能分析/table (1).csv",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:36:23Z"
+}

@@ -1,0 +1,82 @@
+{
+  "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+  "title": "KA品牌下探数据汇总",
+  "with_description": true,
+  "input_files": [
+    "description.txt",
+    "KA品牌下探数据汇总.xlsx"
+  ],
+  "input_data_files": [
+    "KA品牌下探数据汇总.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 6,
+  "assets": [
+    {
+      "name": "gmv_ranking.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "茶饮品牌1月GMV排名"
+    },
+    {
+      "name": "ad_spend_ranking.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "茶饮品牌1月广告投放金额排名"
+    },
+    {
+      "name": "ad_gmv_scatter.json",
+      "trace_types": [
+        "scatter"
+      ],
+      "trace_count": 1,
+      "title": "广告投放与GMV关系"
+    },
+    {
+      "name": "cpc_contribution_ranking.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "各品牌CPC广告占近15天GMV比例排名（Top 10）"
+    },
+    {
+      "name": "top6_multidimension.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 5,
+      "title": "Top 6 品牌多维度综合表现对比（得分0-100）"
+    },
+    {
+      "name": "price_orders_scatter.json",
+      "trace_types": [
+        "scatter"
+      ],
+      "trace_count": 1,
+      "title": "客单价与订单量关系（气泡大小代表GMV）"
+    }
+  ],
+  "h2_sections": [
+    "执行摘要",
+    "数据概览",
+    "GMV排名分析",
+    "广告投放分析",
+    "广告与GMV关系分析",
+    "CPC广告贡献分析",
+    "多维度综合表现对比",
+    "客单价与订单量关系分析",
+    "月环比变化分析",
+    "关键发现与建议",
+    "附录：数据说明"
+  ],
+  "first_paragraph": "本报告基于19个茶饮KA品牌的2025年1月运营数据，从营收规模、广告投放效率、市场表现等多个维度进行深入分析。数据显示，瑞幸咖啡以2.45亿元GMV位居榜首，蜜雪冰城紧随其后达到2.32亿元。在广告投入效率方面，不同品牌表现差异显著，瑞幸咖啡的CPC广告贡献率高达57.16%，显示出强大的广告转化能力。"
+}

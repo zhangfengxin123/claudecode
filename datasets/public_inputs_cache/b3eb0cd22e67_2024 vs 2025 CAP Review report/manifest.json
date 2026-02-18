@@ -1,0 +1,29 @@
+{
+  "case_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+  "title_hint": "2024 vs 2025 CAP Review report",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "2025 CAP overview.xlsx",
+      "status": 200,
+      "size_bytes": 45302,
+      "source_url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/files/2025%20CAP%20overview.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b3eb0cd22e67_2024 vs 2025 CAP Review report/2025 CAP overview.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "SHA CHRONO_CAP.xlsx",
+      "status": 200,
+      "size_bytes": 549970,
+      "source_url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/files/SHA%20CHRONO_CAP.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b3eb0cd22e67_2024 vs 2025 CAP Review report/SHA CHRONO_CAP.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:06:28Z"
+}

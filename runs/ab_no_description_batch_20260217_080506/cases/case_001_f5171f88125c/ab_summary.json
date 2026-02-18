@@ -1,0 +1,267 @@
+{
+  "generated_at": "2026-02-17T08:09:58Z",
+  "ab_case": {
+    "template_case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+    "rerun_case_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+    "title": "陕西能源职业技术学院招生就业专业排序 (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+    "inputs": [
+      "description.txt",
+      "26年招生就业数据（高考单招单列） (1).xlsx"
+    ],
+    "description_present": true,
+    "chart_assets_count": 6,
+    "trace_type_hist": {
+      "bar": 22,
+      "scatter": 9,
+      "scatterpolar": 5,
+      "histogram": 1
+    },
+    "h2_sections": [
+      "执行摘要",
+      "1. 数据概况",
+      "3. 综合排名分析",
+      "5. 深入洞察分析",
+      "6. 关键指标统计",
+      "8. 结论与建议"
+    ],
+    "first_paragraph": "本报告对高校50个专业的招生与就业数据进行了深入分析，通过建立多维度评价模型，基于就业率、一志愿率、就业稳定性、发展趋势和招生规模等五大核心指标，对专业进行了综合排序。研究发现： 医学技术学院 在综合表现上最为突出， 大数据与会计 、 医学影像技术 和 机电一体化技术 位列专业综合排名前三。报告为专业设置优化和招生计划制定提供了数据支撑。",
+    "assets": [
+      {
+        "name": "top20_ranking.json",
+        "url": "https://pardusai.org/v1/api/public/project/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41/assets/top20_ranking.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 20,
+        "title": "TOP 20 专业综合排名"
+      },
+      {
+        "name": "college_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41/assets/college_comparison.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "各学院平均综合得分对比"
+      },
+      {
+        "name": "employment_scatter.json",
+        "url": "https://pardusai.org/v1/api/public/project/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41/assets/employment_scatter.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 9,
+        "title": "就业率与一志愿率关系图"
+      },
+      {
+        "name": "top5_radar.json",
+        "url": "https://pardusai.org/v1/api/public/project/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41/assets/top5_radar.json",
+        "trace_types": [
+          "scatterpolar",
+          "scatterpolar",
+          "scatterpolar",
+          "scatterpolar",
+          "scatterpolar"
+        ],
+        "trace_count": 5,
+        "title": "TOP 5 专业综合能力雷达图"
+      },
+      {
+        "name": "scale_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41/assets/scale_distribution.json",
+        "trace_types": [
+          "histogram"
+        ],
+        "trace_count": 1,
+        "title": "各专业招生规模分布"
+      },
+      {
+        "name": "employment_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41/assets/employment_trend.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "就业率正向增长TOP 10专业"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+    "inputs": [
+      "26年招生就业数据（高考单招单列） (1).xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 10,
+    "trace_type_hist": {
+      "scatter": 8,
+      "sunburst": 1,
+      "bar": 8
+    },
+    "h2_sections": [
+      "数据概览",
+      "2025年招生分析",
+      "就业率分析",
+      "三年招生趋势分析",
+      "2026年招生计划建议",
+      "关键洞察与建议",
+      "总结"
+    ],
+    "first_paragraph": "本报告对某院校2023-2025年的招生就业数据进行了全面分析，涵盖9个学院、50个专业项目，旨在为2026年招生计划提供数据支持。",
+    "assets": [
+      {
+        "name": "enrollment_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/enrollment_trend.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Total Enrollment Trends (2023-2025)"
+      },
+      {
+        "name": "enrollment_by_college.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/enrollment_by_college.json",
+        "trace_types": [
+          "sunburst"
+        ],
+        "trace_count": 1,
+        "title": "2025 Enrollment Distribution by College"
+      },
+      {
+        "name": "top10_programs.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/top10_programs.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top 10 Programs by 2025 Enrollment"
+      },
+      {
+        "name": "recruitment_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/recruitment_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Independent Recruitment vs College Entrance Exam"
+      },
+      {
+        "name": "employment_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/employment_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Employment Rate Comparison by Year"
+      },
+      {
+        "name": "college_employment_rates.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/college_employment_rates.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "2025 Employment Rates by College"
+      },
+      {
+        "name": "top10_employment_rates.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/top10_employment_rates.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top 10 Programs by Employment Rate"
+      },
+      {
+        "name": "college_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/college_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 5,
+        "title": "Three-Year Enrollment Trend by College"
+      },
+      {
+        "name": "preference_vs_enrollment.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/preference_vs_enrollment.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "First Choice Preference vs Enrollment"
+      },
+      {
+        "name": "2025_vs_2026_plan.json",
+        "url": "https://pardusai.org/v1/api/public/project/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf/assets/2025_vs_2026_plan.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "2025 Actual vs 2026 Proposed Enrollment"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 4,
+    "sections_delta": 1,
+    "description_removed_ok": true,
+    "asset_name_overlap": 0,
+    "asset_old_only": [
+      "college_comparison.json",
+      "employment_scatter.json",
+      "employment_trend.json",
+      "scale_distribution.json",
+      "top20_ranking.json",
+      "top5_radar.json"
+    ],
+    "asset_new_only": [
+      "2025_vs_2026_plan.json",
+      "college_employment_rates.json",
+      "college_trend.json",
+      "employment_comparison.json",
+      "enrollment_by_college.json",
+      "enrollment_trend.json",
+      "preference_vs_enrollment.json",
+      "recruitment_comparison.json",
+      "top10_employment_rates.json",
+      "top10_programs.json"
+    ]
+  }
+}

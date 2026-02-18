@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-02-17T08:05:06Z",
+  "run_id": "ab_no_description_batch_20260217_080506",
+  "source_run": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007",
+  "selected_count": 1,
+  "batch_size": 1,
+  "cases": [
+    {
+      "idx": 25,
+      "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+      "title": "陕西能源职业技术学院招生就业专业排序",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_025_f5171f88125c.html"
+    }
+  ]
+}

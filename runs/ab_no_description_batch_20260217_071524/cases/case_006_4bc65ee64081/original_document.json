@@ -1,0 +1,2641 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"茶饮KA品牌2025年1月运营数据分析报告\"\ndescription: \"深入分析19个茶饮品牌的GMV、广告投放、ROI等核心指标，揭示市场竞争格局与增长机会\"\nauthor: \"Pardus Agent\"\ndate: \"2025-01-13\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "茶饮KA品牌2025年1月运营数据分析报告",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告基于19个茶饮KA品牌的2025年1月运营数据，从营收规模、广告投放效率、市场表现等多个维度进行深入分析。数据显示，瑞幸咖啡以2.45亿元GMV位居榜首，蜜雪冰城紧随其后达到2.32亿元。在广告投入效率方面，不同品牌表现差异显著，瑞幸咖啡的CPC广告贡献率高达57.16%，显示出强大的广告转化能力。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "哪些品牌的表现超出预期？",
+          "广告投入与GMV之间的关系是怎样的？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "数据概览",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本分析涵盖19个茶饮品牌的运营数据，包括以下核心指标：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "GMV规模",
+                "type": "bold"
+              },
+              {
+                "content": "：1月总成交额约为13.1亿元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "广告投放",
+                "type": "bold"
+              },
+              {
+                "content": "：总广告消耗约1.18亿元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "订单量",
+                "type": "bold"
+              },
+              {
+                "content": "：1月完成订单总量约2380万单",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "门店规模",
+                "type": "bold"
+              },
+              {
+                "content": "：总营业门店数超过14,500家",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "平均客单价",
+                "type": "bold"
+              },
+              {
+                "content": "：约26.76元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "code": "./data_flow_diagram.svg",
+        "language": "svg",
+        "svgPath": "./data_flow_diagram.svg",
+        "type": "svg"
+      },
+      {
+        "children": [
+          {
+            "content": "数据流程说明",
+            "type": "bold"
+          },
+          {
+            "content": "：数据从原始Excel文件导入后，经过清洗（缺失值处理、类型转换）生成清洗后的CSV文件，再进行多维度分析，最终生成可视化图表和综合报告。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "茶饮市场的整体规模如何？",
+          "哪个维度的数据最有价值？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "GMV排名分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./gmv_ranking.json",
+        "htmlPath": "./gmv_ranking.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "头部品牌优势明显",
+            "type": "bold"
+          },
+          {
+            "content": "：瑞幸咖啡和蜜雪冰城形成第一梯队，GMV均超过2亿元，远超其他品牌",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "市场份额集中",
+            "type": "bold"
+          },
+          {
+            "content": "：前3名品牌（瑞幸、蜜雪冰城、库迪）GMV合计达6.13亿元，占总GMV的46.8%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "中位品牌差距",
+            "type": "bold"
+          },
+          {
+            "content": "：第4名到第8名品牌GMV在4000-7000万元区间，竞争激烈",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "长尾品牌",
+            "type": "bold"
+          },
+          {
+            "content": "：排名第9-19位的品牌GMV均低于3000万元，需要寻找突破点",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "市场格局特征",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "茶饮市场呈现明显的金字塔结构，头部品牌占据半壁江山",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "瑞幸咖啡作为新兴连锁咖啡品牌，已超越传统茶饮品牌成为市场领导者",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "蜜雪冰城凭借极致性价比策略，在下沉市场表现强劲",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "前3名品牌的成功因素是什么？",
+          "排名中后的品牌应该如何突破？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "广告投放分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./ad_spend_ranking.json",
+        "htmlPath": "./ad_spend_ranking.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "广告投入与GMV基本匹配",
+            "type": "bold"
+          },
+          {
+            "content": "：排名前列的品牌（瑞幸、蜜雪冰城、库迪）也是广告投入最大的",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "瑞幸咖啡广告投入领先",
+            "type": "bold"
+          },
+          {
+            "content": "：以1227万元广告消耗位居第一，占GMV的5.02%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "库迪咖啡广告策略激进",
+            "type": "bold"
+          },
+          {
+            "content": "：虽然GMV排名第三（1.37亿元），但广告消耗655万元，占比4.79%，显示出较强的市场扩张意图",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "小品牌广告谨慎",
+            "type": "bold"
+          },
+          {
+            "content": "：尾部品牌广告消耗普遍较低，多在10万元以下",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "广告效率分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "高效率品牌",
+                "type": "bold"
+              },
+              {
+                "content": "：星巴克、古茗等品牌虽然广告消耗较低，但GMV表现不错，说明品牌力较强",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "扩张型品牌",
+                "type": "bold"
+              },
+              {
+                "content": "：库迪、沪上阿姨等广告占比较高，处于快速扩张期",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "保守型品牌",
+                "type": "bold"
+              },
+              {
+                "content": "：部分品牌广告消耗不到1万元，可能依赖自然流量或线下渠道",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "哪个品牌的广告投入效率最高？",
+          "广告投入与GMV之间是否存在最优比例？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "广告与GMV关系分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./ad_gmv_scatter.json",
+        "htmlPath": "./ad_gmv_scatter.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "正向相关关系",
+            "type": "bold"
+          },
+          {
+            "content": "：广告投入与GMV呈明显正相关，但存在边际效应递减",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "规模效应明显",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "瑞幸咖啡（右上象限）：高广告、高GMV、大规模（2000+门店）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "蜜雪冰城：中等广告、超高GMV、超大规模（6000+门店），显示出强大的规模效应",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "库迪咖啡：高广告、中高GMV、中等规模（2000+门店），处于快速扩张期",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "效率分群",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "高效率区：蜜雪冰城、古茗（广告投入相对较低但GMV高）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "扩张区：库迪、瑞幸（高广告投入驱动增长）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "潜力区：部分小品牌（广告投入低，但增长空间大）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "异常值分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "星巴克：广告消耗极低（几乎为0），但GMV仍有2000万+，说明品牌自带流量",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "战略建议",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "规模品牌",
+                "type": "bold"
+              },
+              {
+                "content": "（门店",
+                "type": "text"
+              },
+              {
+                "content": "2000）：应优化广告效率，提高ROI",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "扩张品牌",
+                "type": "bold"
+              },
+              {
+                "content": "（门店500-2000）：可适当加大广告投入，抢占市场份额",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "小规模品牌",
+                "type": "bold"
+              },
+              {
+                "content": "（门店",
+                "type": "text"
+              },
+              {
+                "content": "500）：应聚焦差异化策略，避免同质化竞争",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "哪个品牌的广告效率最高？",
+          "不同规模的品牌应该采取什么样的广告策略？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "CPC广告贡献分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./cpc_contribution_ranking.json",
+        "htmlPath": "./cpc_contribution_ranking.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "瑞幸咖啡CPC表现突出",
+            "type": "bold"
+          },
+          {
+            "content": "：CPC广告带来近15天GMV为6996万元，占近15天总GMV的57.16%，说明其数字营销能力极强",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "两极分化明显",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "高依赖度：瑞幸（57.16%）、挪瓦咖啡（24.14%）、沪上阿姨（28%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "中等依赖度：库迪（23.75%）、幸运咖（33.86%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "低依赖度：蜜雪冰城（7.5%）、古茗（2.37%）、星巴克（0%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "品牌策略差异",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "数字营销导向",
+            "type": "bold"
+          },
+          {
+            "content": "：瑞幸、库迪等新锐品牌高度依赖线上广告",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "全渠道运营",
+            "type": "bold"
+          },
+          {
+            "content": "：蜜雪冰城、古茗等品牌线下渠道强大，不依赖单一广告",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "品牌导向",
+            "type": "bold"
+          },
+          {
+            "content": "：星巴克依靠品牌力，几乎不需要付费广告",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "CPC广告ROI分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "高ROI品牌",
+                "type": "bold"
+              },
+              {
+                "content": "：瑞幸、库迪（高占比、高GMV）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "低效投入",
+                "type": "bold"
+              },
+              {
+                "content": "：部分品牌CPC占比和GMV双低，需要优化广告策略",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "优化空间",
+                "type": "bold"
+              },
+              {
+                "content": "：多数品牌CPC占比在5-20%之间，仍有提升空间",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "为什么瑞幸的CPC贡献率如此之高？",
+          "不同品牌应该如何平衡线上线下渠道？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "多维度综合表现对比",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./top6_multidimension.json",
+        "htmlPath": "./top6_multidimension.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Top 6 品牌综合得分分析：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "🏆 瑞幸咖啡",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "GMV规模",
+                "type": "bold"
+              },
+              {
+                "content": "：100分（2.45亿元）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "订单量",
+                "type": "bold"
+              },
+              {
+                "content": "：100分（736万单）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "广告ROI",
+                "type": "bold"
+              },
+              {
+                "content": "：52分（GMV/广告消耗=19.9倍）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CPC贡献",
+                "type": "bold"
+              },
+              {
+                "content": "：100分（57.16%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "门店规模",
+                "type": "bold"
+              },
+              {
+                "content": "：100分（2983家）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "综合评价",
+                "type": "bold"
+              },
+              {
+                "content": "：全维度领先，数字营销能力卓越",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "🥈 蜜雪冰城",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "GMV规模",
+                "type": "bold"
+              },
+              {
+                "content": "：95分（2.32亿元）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "订单量",
+                "type": "bold"
+              },
+              {
+                "content": "：100分（876万单，订单量最高）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "广告ROI",
+                "type": "bold"
+              },
+              {
+                "content": "：100分（GMV/广告消耗=38倍，效率最高）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CPC贡献",
+                "type": "bold"
+              },
+              {
+                "content": "：13分（7.5%，低依赖）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "门店规模",
+                "type": "bold"
+              },
+              {
+                "content": "：100分（6299家，门店最多）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "综合评价",
+                "type": "bold"
+              },
+              {
+                "content": "：规模与效率双优，性价比王者",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "🥉 COTTI COFFEE库迪咖啡",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "GMV规模",
+                "type": "bold"
+              },
+              {
+                "content": "：56分（1.37亿元）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "订单量",
+                "type": "bold"
+              },
+              {
+                "content": "：63分（318万单）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "广告ROI",
+                "type": "bold"
+              },
+              {
+                "content": "：52分（GMV/广告消耗=20.9倍）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CPC贡献",
+                "type": "bold"
+              },
+              {
+                "content": "：42分（23.75%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "门店规模",
+                "type": "bold"
+              },
+              {
+                "content": "：68分（2228家）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "综合评价",
+                "type": "bold"
+              },
+              {
+                "content": "：快速扩张，与瑞幸形成直接竞争",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "🏅 沪上阿姨鲜果茶",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "GMV规模",
+                "type": "bold"
+              },
+              {
+                "content": "：30分（7333万元）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "订单量",
+                "type": "bold"
+              },
+              {
+                "content": "：52分（242万单）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "广告ROI",
+                "type": "bold"
+              },
+              {
+                "content": "：49分（GMV/广告消耗=13.6倍）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CPC贡献",
+                "type": "bold"
+              },
+              {
+                "content": "：49分（28%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "门店规模",
+                "type": "bold"
+              },
+              {
+                "content": "：38分（526家）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "综合评价",
+                "type": "bold"
+              },
+              {
+                "content": "：细分赛道表现不错，增长潜力大",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "🏅 古茗",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "GMV规模",
+                "type": "bold"
+              },
+              {
+                "content": "：30分（7226万元）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "订单量",
+                "type": "bold"
+              },
+              {
+                "content": "：45分（214万单）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "广告ROI",
+                "type": "bold"
+              },
+              {
+                "content": "：0分（GMV/广告消耗=1.1倍，效率最低）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CPC贡献",
+                "type": "bold"
+              },
+              {
+                "content": "：4分（2.37%，几乎不依赖CPC）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "门店规模",
+                "type": "bold"
+              },
+              {
+                "content": "：68分（2191家）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "综合评价",
+                "type": "bold"
+              },
+              {
+                "content": "：依赖线下渠道，广告效率待提升",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "🏅 霸王茶姬",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "GMV规模",
+                "type": "bold"
+              },
+              {
+                "content": "：21分（5151万元）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "订单量",
+                "type": "bold"
+              },
+              {
+                "content": "：32分（139万单）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "广告ROI",
+                "type": "bold"
+              },
+              {
+                "content": "：100分（GMV/广告消耗=49倍，效率极高）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CPC贡献",
+                "type": "bold"
+              },
+              {
+                "content": "：4分（2.06%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "门店规模",
+                "type": "bold"
+              },
+              {
+                "content": "：40分（549家）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "综合评价",
+                "type": "bold"
+              },
+              {
+                "content": "：小而美，精准定位",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "战略洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "第一梯队",
+            "type": "bold"
+          },
+          {
+            "content": "（瑞幸、蜜雪冰城）：市场规模和运营效率双优，行业标杆",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "第二梯队",
+            "type": "bold"
+          },
+          {
+            "content": "（库迪、沪上阿姨）：快速扩张，竞争激烈",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "第三梯队",
+            "type": "bold"
+          },
+          {
+            "content": "（古茗、霸王茶姬）：各有特色，但规模有限",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "哪个品牌在所有维度上都表现均衡？",
+          "各品牌应该如何发挥自己的优势？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "客单价与订单量关系分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./price_orders_scatter.json",
+        "htmlPath": "./price_orders_scatter.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "价格带分布",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "高端市场",
+            "type": "bold"
+          },
+          {
+            "content": "（客单价",
+            "type": "text"
+          },
+          {
+            "content": "30元）：星巴克（35.5元）、瑞幸（26.8元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "中端市场",
+            "type": "bold"
+          },
+          {
+            "content": "（客单价20-30元）：库迪、沪上阿姨、古茗等",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "大众市场",
+            "type": "bold"
+          },
+          {
+            "content": "（客单价",
+            "type": "text"
+          },
+          {
+            "content": "20元）：蜜雪冰城（8.4元）、幸运咖（8.8元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "订单量特征",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "超高量型",
+            "type": "bold"
+          },
+          {
+            "content": "：蜜雪冰城（876万单，客单价8.4元）、瑞幸（736万单，客单价26.8元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "中高量型",
+            "type": "bold"
+          },
+          {
+            "content": "：库迪（318万单）、古茗（214万单）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "中低量型",
+            "type": "bold"
+          },
+          {
+            "content": "：多数品牌在50-200万单之间",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "市场定位分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "极致性价比",
+            "type": "bold"
+          },
+          {
+            "content": "：蜜雪冰城 - 低客单价、超高订单量，下沉市场王者",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "品质性价比",
+            "type": "bold"
+          },
+          {
+            "content": "：瑞幸、库迪 - 中等客单价、高订单量，瞄准白领市场",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "品质溢价",
+            "type": "bold"
+          },
+          {
+            "content": "：星巴克 - 高客单价、中等订单量，品牌溢价明显",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "细分市场",
+            "type": "bold"
+          },
+          {
+            "content": "：沪上阿姨、古茗 - 中等客单价、中等订单量，特色饮品",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "增长机会",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "蜜雪冰城有潜力提升客单价（通过产品升级）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "高端品牌可以通过价格下探扩大市场",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "中端品牌竞争激烈，需要差异化定位",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "为什么蜜雪冰城能以最低客单价获得最高订单量？",
+          "客单价与品牌定位之间应该保持怎样的关系？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "月环比变化分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "GMV月环比洞察：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "增长品牌",
+                "type": "bold"
+              },
+              {
+                "content": "（月环比",
+                "type": "text"
+              },
+              {
+                "content": "0）：库迪（+46.99%）、幸运咖（+3.49%）、挪瓦咖啡（+2.2%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "下降品牌",
+                "type": "bold"
+              },
+              {
+                "content": "（月环比",
+                "type": "text"
+              },
+              {
+                "content": "0）：瑞幸（-22.78%）、蜜雪冰城（-7.77%）、古茗（-10.95%）、茶百道（-18.87%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "库迪增长迅猛",
+            "type": "bold"
+          },
+          {
+            "content": "：1月GMV增长46.99%，显示出强劲的扩张势头",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "头部品牌回调",
+            "type": "bold"
+          },
+          {
+            "content": "：瑞幸、蜜雪冰城虽然GMV绝对值高，但环比下降，可能受季节性因素影响",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "中小品牌分化",
+            "type": "bold"
+          },
+          {
+            "content": "：部分品牌实现增长（幸运咖、挪瓦），部分品牌下滑严重",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "广告消耗月环比：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "增加投放",
+                "type": "bold"
+              },
+              {
+                "content": "：库迪（+37.79%）、沪上阿姨（+16.08%）、星巴克（+56.9%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "减少投放",
+                "type": "bold"
+              },
+              {
+                "content": "：瑞幸（-9.53%）、蜜雪冰城（-16.02%）、茶百道（-10.07%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "战略动向",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "扩张期品牌",
+                "type": "bold"
+              },
+              {
+                "content": "（库迪、沪上阿姨）：增加广告投放，抢占市场",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "成熟期品牌",
+                "type": "bold"
+              },
+              {
+                "content": "（瑞幸、蜜雪冰城）：优化广告效率，降低成本",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "调整期品牌",
+                "type": "bold"
+              },
+              {
+                "content": "（星巴克）：重新启动广告投入，寻求增长",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "库迪咖啡为什么能在1月实现近47%的增长？",
+          "不同阶段的品牌应该采取什么样的月度策略？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "关键发现与建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "核心发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "市场集中度提升",
+            "type": "bold"
+          },
+          {
+            "content": "：前3名品牌占据近47%的市场份额，头部效应明显",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "广告效率差异巨大",
+            "type": "bold"
+          },
+          {
+            "content": "：蜜雪冰城广告ROI达到38倍，而部分品牌仅1-2倍",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "数字营销成关键",
+            "type": "bold"
+          },
+          {
+            "content": "：瑞幸CPC贡献率57.16%远超行业平均，数字化能力决定成败",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "价格带竞争激烈",
+            "type": "bold"
+          },
+          {
+            "content": "：蜜雪冰城的极致性价比策略成功，但中端市场竞争白热化",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "战略建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "对于头部品牌（瑞幸、蜜雪冰城）",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "✅ 优化广告效率，提升ROI",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "✅ 巩固市场份额，防范新兴品牌冲击",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "✅ 探索下沉市场（瑞幸）或提升客单价（蜜雪冰城）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "对于中腰部品牌（库迪、古茗、沪上阿姨）",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "✅ 加强数字化营销，提升CPC转化率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "✅ 差异化定位，避免与头部品牌正面竞争",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "✅ 优化门店布局，提升单店效率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "对于小规模品牌",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "✅ 聚焦细分市场，打造爆品",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "✅ 精准广告投放，提升获客效率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "✅ 考虑区域深耕或特色品类",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "行业趋势预测",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "数字化加速",
+            "type": "bold"
+          },
+          {
+            "content": "：CPC广告占比将持续提升，预计2025年平均达到15-20%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "整合加速",
+            "type": "bold"
+          },
+          {
+            "content": "：头部品牌可能通过并购整合市场",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "价格战趋缓",
+            "type": "bold"
+          },
+          {
+            "content": "：品牌将从价格竞争转向价值竞争",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "供应链整合",
+            "type": "bold"
+          },
+          {
+            "content": "：门店规模将成为核心竞争力",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "未来6个月茶饮市场会如何演变？",
+          "哪个细分赛道最有机会？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "附录：数据说明",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "数据来源",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "KA品牌下探数据汇总（2025年1月）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "涵盖19个茶饮KA品牌",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "数据清洗记录",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 将'消耗金额月环比'列中的缺失值（'?'）替换为0",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 统一数据类型，确保数值列可进行计算",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "指标定义",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "GMV（成交总额）",
+                "type": "bold"
+              },
+              {
+                "content": "：商品交易总额，反映市场规模",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CPC（点击付费广告）",
+                "type": "bold"
+              },
+              {
+                "content": "：按点击付费的在线广告形式",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "ROI（投资回报率）",
+                "type": "bold"
+              },
+              {
+                "content": "：GMV/广告消耗，衡量广告效率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "月环比",
+                "type": "bold"
+              },
+              {
+                "content": "：较上月的变化率，反映增长趋势",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "免责声明",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告基于提供的数据进行分析，仅供参考。实际经营决策请结合多维度信息综合判断。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "报告生成时间",
+            "type": "bold"
+          },
+          {
+            "content": "：2025年1月13日",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "分析师",
+            "type": "bold"
+          },
+          {
+            "content": "：Pardus AI",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "版本",
+            "type": "bold"
+          },
+          {
+            "content": "：v1.0",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

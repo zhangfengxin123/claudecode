@@ -1,0 +1,29 @@
+{
+  "case_id": "3749c60993fd8bb289251698a42fceb684316e3c60c372b754eb70b2f48043a3",
+  "title_hint": "AI Chips, Energy, Nuclear Index",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "AI_Economy_Complete_Index.csv",
+      "status": 200,
+      "size_bytes": 6340623,
+      "source_url": "https://pardusai.org/v1/api/public/project/3749c60993fd8bb289251698a42fceb684316e3c60c372b754eb70b2f48043a3/files/AI_Economy_Complete_Index.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/3749c60993fd_AI Chips, Energy, Nuclear Index/AI_Economy_Complete_Index.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 8,
+      "source_url": "https://pardusai.org/v1/api/public/project/3749c60993fd8bb289251698a42fceb684316e3c60c372b754eb70b2f48043a3/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/3749c60993fd_AI Chips, Energy, Nuclear Index/description.txt",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:16:24Z"
+}

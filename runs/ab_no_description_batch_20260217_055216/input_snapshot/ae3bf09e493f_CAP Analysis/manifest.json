@@ -1,0 +1,25 @@
+{
+  "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+  "title": "CAP Analysis",
+  "source_cache_manifest": "2026-02-17T13:58:02Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ae3bf09e493f_CAP Analysis/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/ae3bf09e493f_CAP Analysis/description.txt",
+      "ok": true
+    },
+    {
+      "name": "CAP 2023-2025.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ae3bf09e493f_CAP Analysis/CAP 2023-2025.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/ae3bf09e493f_CAP Analysis/CAP 2023-2025.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:33Z"
+}

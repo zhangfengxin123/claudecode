@@ -1,0 +1,25 @@
+{
+  "case_id": "fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e",
+  "title": "588000159915510050",
+  "source_cache_manifest": "2026-02-17T14:37:02Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "全套数据.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/fec7a23e6933_588000159915510050/全套数据.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/fec7a23e6933_588000159915510050/全套数据.xlsx",
+      "ok": true
+    },
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/fec7a23e6933_588000159915510050/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/fec7a23e6933_588000159915510050/description.txt",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

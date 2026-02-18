@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-02-17T07:08:57Z",
+  "results": [
+    {
+      "case_index": 1,
+      "title": "CAP Analysis",
+      "template_case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+      "rerun_case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+      "status": "ok",
+      "elapsed_sec": 264.45,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_070432/cases/case_001_ae3bf09e493f",
+      "a_chart_count": 14,
+      "b_chart_count": 14,
+      "description_removed_ok": true
+    }
+  ],
+  "errors": [],
+  "stop_reason": null
+}

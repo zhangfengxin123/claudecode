@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence d0ad2eb4cf41</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>美国电能分析</h1>
+  <div class='muted'>case_id: <span class='code'>d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单与预览。</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>table (1).csv</code></td><td>200</td><td>608</td><td>text/csv</td><td><a href='https://pardusai.org/v1/api/public/project/d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131/files/table%20%281%29.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>table (1).csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>年份</th><th>数据中心总耗电 (TWh)</th><th>占美国总电力比例 (%)</th><th>AI行业耗电 (TWh, training+inference)</th><th>美国总发电量 (TWh)</th><th>数据中心功率需求 (GW)</th><th>主要来源</th></tr></thead><tbody><tr><td>2023</td><td>176</td><td>4.4%</td><td>~30-50 (AI起步)</td><td>~4,178</td><td>~40-50</td><td>LBNL, EIA</td></tr><tr><td>2024</td><td>183</td><td>4.0%</td><td>53-76</td><td>~4,200-4,300</td><td>~50-55</td><td>IEA, AIMultiple</td></tr><tr><td>2025</td><td>220-280 (估算)</td><td>5.0-6.0%</td><td>100-150</td><td>4,260</td><td>61.8</td><td>EIA, S&amp;P Global, Goldman Sachs</td></tr><tr><td>2026</td><td>280-350 (估算)</td><td>6.0-7.5%</td><td>150-220</td><td>~4,300</td><td>75.8</td><td>EIA STEO, S&amp;P Global</td></tr><tr><td>2028</td><td>325-580</td><td>6.7-12.0%</td><td>165-326</td><td>~4,400-4,500</td><td>108</td><td>LBNL, IEA</td></tr><tr><td>2030</td><td>426-600+</td><td>8-12%</td><td>300-500+</td><td>~4,600-5,000</td><td>134</td><td>IEA, S&amp;P Global, Deloitte, Goldman Sachs</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td colspan="7">no assets</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <p class="muted">no renderable charts</p>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

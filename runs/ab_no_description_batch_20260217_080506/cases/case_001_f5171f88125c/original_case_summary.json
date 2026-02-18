@@ -1,0 +1,104 @@
+{
+  "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+  "title": "陕西能源职业技术学院招生就业专业排序",
+  "with_description": true,
+  "input_files": [
+    "description.txt",
+    "26年招生就业数据（高考单招单列） (1).xlsx"
+  ],
+  "input_data_files": [
+    "26年招生就业数据（高考单招单列） (1).xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 6,
+  "assets": [
+    {
+      "name": "top20_ranking.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 20,
+      "title": "TOP 20 专业综合排名"
+    },
+    {
+      "name": "college_comparison.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "各学院平均综合得分对比"
+    },
+    {
+      "name": "employment_scatter.json",
+      "trace_types": [
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 9,
+      "title": "就业率与一志愿率关系图"
+    },
+    {
+      "name": "top5_radar.json",
+      "trace_types": [
+        "scatterpolar",
+        "scatterpolar",
+        "scatterpolar",
+        "scatterpolar",
+        "scatterpolar"
+      ],
+      "trace_count": 5,
+      "title": "TOP 5 专业综合能力雷达图"
+    },
+    {
+      "name": "scale_distribution.json",
+      "trace_types": [
+        "histogram"
+      ],
+      "trace_count": 1,
+      "title": "各专业招生规模分布"
+    },
+    {
+      "name": "employment_trend.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "就业率正向增长TOP 10专业"
+    }
+  ],
+  "h2_sections": [
+    "执行摘要",
+    "1. 数据概况",
+    "3. 综合排名分析",
+    "5. 深入洞察分析",
+    "6. 关键指标统计",
+    "8. 结论与建议"
+  ],
+  "first_paragraph": "本报告对高校50个专业的招生与就业数据进行了深入分析，通过建立多维度评价模型，基于就业率、一志愿率、就业稳定性、发展趋势和招生规模等五大核心指标，对专业进行了综合排序。研究发现： 医学技术学院 在综合表现上最为突出， 大数据与会计 、 医学影像技术 和 机电一体化技术 位列专业综合排名前三。报告为专业设置优化和招生计划制定提供了数据支撑。"
+}

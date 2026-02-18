@@ -1,0 +1,18 @@
+{
+  "case_id": "739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6",
+  "title": "用户反馈",
+  "source_cache_manifest": "2026-02-17T14:24:46Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "新建 Microsoft Excel 工作表.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/739cc701921d_用户反馈/新建 Microsoft Excel 工作表.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/739cc701921d_用户反馈/新建 Microsoft Excel 工作表.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

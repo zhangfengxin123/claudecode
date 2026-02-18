@@ -1,0 +1,20 @@
+{
+  "case_id": "fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a",
+  "title_hint": "辅酶q10",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "xueye-Q10(1).xlsx",
+      "status": 200,
+      "size_bytes": 74004,
+      "source_url": "https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/files/xueye-Q10%281%29.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/fd64064b9ffb_辅酶q10/xueye-Q10(1).xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:36:53Z"
+}

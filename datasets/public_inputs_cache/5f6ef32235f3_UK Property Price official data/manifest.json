@@ -1,0 +1,20 @@
+{
+  "case_id": "5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c",
+  "title_hint": "UK Property Price official data",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "April 2025 data.csv",
+      "status": 200,
+      "size_bytes": 16456110,
+      "source_url": "https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/files/April%202025%20data.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/5f6ef32235f3_UK Property Price official data/April 2025 data.csv",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:22:08Z"
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428",
+  "title": "email experiment",
+  "source_cache_manifest": "2026-02-17T14:15:21Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "2编码数据.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/129eef16c57a_email experiment/2编码数据.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/129eef16c57a_email experiment/2编码数据.xlsx",
+      "ok": true
+    },
+    {
+      "name": "1问卷数据.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/129eef16c57a_email experiment/1问卷数据.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/129eef16c57a_email experiment/1问卷数据.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

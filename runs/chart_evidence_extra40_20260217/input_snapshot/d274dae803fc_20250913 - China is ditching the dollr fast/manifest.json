@@ -1,0 +1,18 @@
+{
+  "case_id": "d274dae803fc8c97f82c60a4aba3084eec7aba09feadd32f63baba5092ab442e",
+  "title": "20250913 - China is ditching the dollr fast",
+  "source_cache_manifest": "2026-02-17T14:06:55Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "20250913 - China is ditching the dollr fast.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d274dae803fc_20250913 - China is ditching the dollr fast/20250913 - China is ditching the dollr fast.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/d274dae803fc_20250913 - China is ditching the dollr fast/20250913 - China is ditching the dollr fast.pdf",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

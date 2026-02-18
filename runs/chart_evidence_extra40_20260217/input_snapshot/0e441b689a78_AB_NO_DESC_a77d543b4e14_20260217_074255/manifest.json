@@ -1,0 +1,18 @@
+{
+  "case_id": "0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702",
+  "title": "AB_NO_DESC_a77d543b4e14_20260217_074255",
+  "source_cache_manifest": "2026-02-17T14:05:52Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "年卡改价实验结果-202601.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0e441b689a78_年卡改价实验数据分析/年卡改价实验结果-202601.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0e441b689a78_AB_NO_DESC_a77d543b4e14_20260217_074255/年卡改价实验结果-202601.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

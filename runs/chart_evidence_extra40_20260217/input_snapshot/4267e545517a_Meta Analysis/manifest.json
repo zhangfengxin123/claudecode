@@ -1,0 +1,46 @@
+{
+  "case_id": "4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a",
+  "title": "Meta Analysis",
+  "source_cache_manifest": "2026-02-17T14:16:44Z",
+  "status": "ok",
+  "copied_files": 5,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "Downloadable-BS-Q4-25-FINAL.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Downloadable-BS-Q4-25-FINAL.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/Downloadable-BS-Q4-25-FINAL.xlsx",
+      "ok": true
+    },
+    {
+      "name": "Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+      "ok": true
+    },
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/description.txt",
+      "ok": true
+    },
+    {
+      "name": "Earnings-Presentation-Q4-2025-FINAL.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Earnings-Presentation-Q4-2025-FINAL.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/Earnings-Presentation-Q4-2025-FINAL.pdf",
+      "ok": true
+    },
+    {
+      "name": "Downloadable-PL-Q4-25-FINAL.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Downloadable-PL-Q4-25-FINAL.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/Downloadable-PL-Q4-25-FINAL.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

@@ -1,0 +1,47 @@
+{
+  "case_id": "751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9",
+  "title_hint": "wechat marketing",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 4,
+  "files_ok_count": 4,
+  "files": [
+    {
+      "idx": 0,
+      "name": "topic_plan_processed.csv",
+      "status": 200,
+      "size_bytes": 2549,
+      "source_url": "https://pardusai.org/v1/api/public/project/751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9/files/topic_plan_processed.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/751e322a180d_wechat marketing/topic_plan_processed.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "topic_plan_clean.csv",
+      "status": 200,
+      "size_bytes": 2479,
+      "source_url": "https://pardusai.org/v1/api/public/project/751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9/files/topic_plan_clean.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/751e322a180d_wechat marketing/topic_plan_clean.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "topic_plan.csv",
+      "status": 200,
+      "size_bytes": 2678,
+      "source_url": "https://pardusai.org/v1/api/public/project/751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9/files/topic_plan.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/751e322a180d_wechat marketing/topic_plan.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 3,
+      "name": "2026微信公众号选题计划.xlsx",
+      "status": 200,
+      "size_bytes": 21863,
+      "source_url": "https://pardusai.org/v1/api/public/project/751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9/files/2026%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E9%80%89%E9%A2%98%E8%AE%A1%E5%88%92.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/751e322a180d_wechat marketing/2026微信公众号选题计划.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:24:51Z"
+}

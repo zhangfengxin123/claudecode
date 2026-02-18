@@ -1,0 +1,29 @@
+{
+  "case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+  "title_hint": "id市场投放效果与转化数据分析",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "id市场广告投放与转化数据.xlsx",
+      "status": 200,
+      "size_bytes": 18908896,
+      "source_url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/files/id%E5%B8%82%E5%9C%BA%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE%E4%B8%8E%E8%BD%AC%E5%8C%96%E6%95%B0%E6%8D%AE.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b93dae71bcf0_id市场投放效果与转化数据分析/id市场广告投放与转化数据.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 445,
+      "source_url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b93dae71bcf0_id市场投放效果与转化数据分析/description.txt",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:04:13Z"
+}

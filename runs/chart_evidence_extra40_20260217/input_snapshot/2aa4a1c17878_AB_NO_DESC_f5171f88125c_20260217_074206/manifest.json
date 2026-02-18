@@ -1,0 +1,18 @@
+{
+  "case_id": "2aa4a1c17878da16636d057ea682656438ee01e50a9b56fbbee8aac72e5bd2c9",
+  "title": "AB_NO_DESC_f5171f88125c_20260217_074206",
+  "source_cache_manifest": "2026-02-17T14:06:42Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "26年招生就业数据（高考单招单列） (1).xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/2aa4a1c17878_AB_NO_DESC_f5171f88125c_20260217_074206/26年招生就业数据（高考单招单列） (1).xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/2aa4a1c17878_AB_NO_DESC_f5171f88125c_20260217_074206/26年招生就业数据（高考单招单列） (1).xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

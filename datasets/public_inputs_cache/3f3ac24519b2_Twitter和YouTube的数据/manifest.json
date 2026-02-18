@@ -1,0 +1,29 @@
+{
+  "case_id": "3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e",
+  "title_hint": "Twitter和YouTube的数据",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "6月Twitter数据.xlsx",
+      "status": 200,
+      "size_bytes": 36112,
+      "source_url": "https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/files/6%E6%9C%88Twitter%E6%95%B0%E6%8D%AE.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/3f3ac24519b2_Twitter和YouTube的数据/6月Twitter数据.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "6月YouTube数据.xlsx",
+      "status": 200,
+      "size_bytes": 46496,
+      "source_url": "https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/files/6%E6%9C%88YouTube%E6%95%B0%E6%8D%AE.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/3f3ac24519b2_Twitter和YouTube的数据/6月YouTube数据.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:16:27Z"
+}

@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-02-17T07:42:05Z",
+  "processed": 6,
+  "results": [
+    {
+      "case_index": 1,
+      "title": "id市场投放效果与转化数据分析",
+      "template_case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+      "rerun_case_id": "7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b",
+      "status": "ok",
+      "elapsed_sec": 270.43,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_001_b93dae71bcf0",
+      "a_chart_count": 10,
+      "b_chart_count": 12,
+      "description_removed_ok": true
+    },
+    {
+      "case_index": 2,
+      "title": "月卡改价实验数据分析",
+      "template_case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+      "rerun_case_id": "662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad",
+      "status": "ok",
+      "elapsed_sec": 204.85,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_002_ca9493d910dd",
+      "a_chart_count": 7,
+      "b_chart_count": 7,
+      "description_removed_ok": true
+    },
+    {
+      "case_index": 3,
+      "title": "Book1",
+      "template_case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+      "rerun_case_id": "e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743",
+      "status": "ok",
+      "elapsed_sec": 187.97,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_003_6a109b2edad7",
+      "a_chart_count": 7,
+      "b_chart_count": 8,
+      "description_removed_ok": true
+    },
+    {
+      "case_index": 4,
+      "title": "FEDFUNDS",
+      "template_case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+      "rerun_case_id": "524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9",
+      "status": "ok",
+      "elapsed_sec": 311.07,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_004_9f9aa3b895db",
+      "a_chart_count": 6,
+      "b_chart_count": 8,
+      "description_removed_ok": true
+    },
+    {
+      "case_index": 5,
+      "title": "反向调价实验数据分析",
+      "template_case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+      "rerun_case_id": "8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9",
+      "status": "ok",
+      "elapsed_sec": 437.98,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_005_1b89e7d1ffb4",
+      "a_chart_count": 6,
+      "b_chart_count": 9,
+      "description_removed_ok": true
+    },
+    {
+      "case_index": 6,
+      "title": "KA品牌下探数据汇总",
+      "template_case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+      "rerun_case_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+      "status": "ok",
+      "elapsed_sec": 188.4,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_006_4bc65ee64081",
+      "a_chart_count": 6,
+      "b_chart_count": 10,
+      "description_removed_ok": true
+    }
+  ],
+  "errors": []
+}

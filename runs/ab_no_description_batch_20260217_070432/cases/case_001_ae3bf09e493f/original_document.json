@@ -1,0 +1,6045 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"CAPA 数据分析报告：2024 与 2025 年深度对比与改进建议\"\ndescription: \"全面对比分析 2024 和 2025 年的 CAPA（纠正和预防措施）数据，揭示关键趋势、成本变化和效率指标，并提供具体的改进建议\"\nauthor: \"Pardus Agent\"\ndate: \"2025-01-13\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "CAPA 数据分析报告：2024 与 2025 年深度对比与改进建议",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告对 2024 年和 2025 年的 CAPA（Corrective and Preventive Actions，纠正和预防措施）数据进行了全面对比分析，旨在识别关键趋势、评估性能变化，并提供可行的改进建议。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "2024 到 2025 年 CAPA 整体表现有何主要变化？",
+          "哪些方面表现良好，哪些需要改进？",
+          "最关键的改进建议是什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "通过对 2024 年（48 条记录）和 2025 年（40 条记录）的 CAPA 数据进行对比分析，我们发现了以下关键洞察：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "📊 关键发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "积极方面：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "总成本降低 18.4%（从 €614,315 降至 €501,414）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "记录数量减少 16.7%（从 48 降至 40）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "单条记录平均成本降低 2.1%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "需要关注：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "延期率显著上升：从 37.5% 增加到 55.0%（+17.5 个百分点）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "3 个月内封闭率下降：从 72.9% 降至 67.5%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Claim 类型占比上升：从 41.7% 增加到 57.5%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "成本分布：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2025 年出现超高成本项目（CAP 25020：€286,529），比 2024 年最高成本高出 76%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 年前三大项目占总成本的 87.2%，成本集中度极高",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "🎯 紧急改进建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "降低延期率",
+            "type": "bold"
+          },
+          {
+            "content": "：实施延期预警机制和项目管理流程改进",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "控制异常高成本",
+            "type": "bold"
+          },
+          {
+            "content": "：对超过 €100,000 的项目实施额外审批流程",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "减少 Claim 类型 CAPA",
+            "type": "bold"
+          },
+          {
+            "content": "：加强预防措施，降低客户投诉发生频率",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "数据概览",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "数据的时间范围和规模如何？",
+          "数据包含哪些关键指标？",
+          "数据质量如何？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "基本信息",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "数据来源",
+                "type": "bold"
+              },
+              {
+                "content": "：CAP 2023-2025.xlsx",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "分析期间",
+                "type": "bold"
+              },
+              {
+                "content": "：2024 年 1 月 - 2025 年 12 月",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "总记录数",
+                "type": "bold"
+              },
+              {
+                "content": "：88 条（2024 年：48 条，2025 年：40 条）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "关键指标",
+                "type": "bold"
+              },
+              {
+                "content": "：记录数量、成本、延期率、封闭时间、CAP 类型、7M 分析方法",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "数据质量",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "数据已进行清洗和标准化处理，包括：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "填充缺失的文本值（使用 \"Unknown\"）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "标准化日期格式",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "转换数值列并处理异常值",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "清理列名中的换行符",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "记录数量与成本对比",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "为什么 2025 年记录数量减少了？",
+          "成本降低主要来自哪些方面？",
+          "平均成本的下降是否可持续？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./capa_count_comparison.json",
+        "htmlPath": "./capa_count_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "记录数量变化",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2025 年记录数量减少了 16.7%（从 48 条降至 40 条）。这可能由以下原因造成：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "正面因素",
+                "type": "bold"
+              },
+              {
+                "content": "：预防措施生效，问题数量减少",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "负面因素",
+                "type": "bold"
+              },
+              {
+                "content": "：部分问题未记录或延迟记录",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "code": "./cost_comparison.json",
+        "htmlPath": "./cost_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "成本分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "总成本变化：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2024 年：€614,315.77",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 年：€501,414.11",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "变化：-18.4% ↓",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "成本构成变化：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "---------",
+          "---------",
+          "---------",
+          "------"
+        ],
+        "headers": [
+          "成本类型",
+          "2024 年",
+          "2025 年",
+          "变化"
+        ],
+        "rows": [
+          [
+            "人工成本",
+            "€119,120",
+            "€83,168",
+            "-30.2% ↓"
+          ],
+          [
+            "设备成本",
+            "€495,196",
+            "€418,246",
+            "-15.5% ↓"
+          ],
+          [
+            "总成本",
+            "€614,316",
+            "€501,414",
+            "-18.4% ↓"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "平均成本对比：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2024 年单条记录平均成本：€12,798.25",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 年单条记录平均成本：€12,535.35",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "变化：-2.1% ↓",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "分析结论：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "成本降低主要来自人工成本的大幅减少（-30.2%），这表明可能采取了以下措施：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "提高了处理效率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "优化了人员配置",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "减少了重复性工作",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "code": "./cost_distribution.json",
+        "htmlPath": "./cost_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "成本分布分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "从箱线图可以看出：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2025 年的成本分布更加分散，存在显著的离群值",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024 年成本分布相对均匀",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 年最高成本项目（€286,529）显著拉高了整体成本",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "风险提示：",
+            "type": "bold"
+          },
+          {
+            "content": "2025 年成本集中度高，前三项占总成本的 87.2%，存在单点风险。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "CAP 类型分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Claim 类型占比上升说明了什么？",
+          "Safety 类型 CAPA 的减少是否合理？",
+          "Prevent/improve 类型的消失是否意味着预防措施被忽视？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./cap_type_comparison.json",
+        "htmlPath": "./cap_type_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "CAP 类型分布对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2024 年 CAP 类型：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Claim（客户索赔）：20 条（41.7%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Internal Anomaly（内部异常）：13 条（27.1%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Supplier Dysfonctionning（供应商故障）：8 条（16.7%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Prevent / improve（预防/改进）：4 条（8.3%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Safety（安全）：3 条（6.2%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2025 年 CAP 类型：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Claim（客户索赔）：23 条（57.5%）↑ +15.8%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Internal Anomaly（内部异常）：10 条（25.0%）↓ -2.1%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Supplier Dysfonctionning（供应商故障）：6 条（15.0%）↓ -1.7%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Safety（安全）：1 条（2.5%）↓ -3.7%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Prevent / improve（预防/改进）：0 条（0.0%）↓ -8.3%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "关键洞察",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "🔴 令人担忧的趋势：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Claim 类型显著上升",
+            "type": "bold"
+          },
+          {
+            "content": "（41.7% → 57.5%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "表明客户问题增加，产品或服务质量可能下降",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "可能导致客户满意度下降和声誉受损",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Prevent/improve 类型完全消失",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "这是最令人担忧的发现",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "表明预防措施和持续改进被忽视",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "可能导致未来问题增加",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Safety 类型大幅减少",
+            "type": "bold"
+          },
+          {
+            "content": "（3 条 → 1 条）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "需要确认这是好事（安全改善）还是坏事（安全意识下降）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "7M 分析方法对比",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "为什么 Method（方法）问题仍然是主要问题？",
+          "Manpower（人力）问题的增加说明了什么？",
+          "Environment（环境）问题的消失是否真实？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./seven_m_comparison.json",
+        "htmlPath": "./seven_m_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "7M 分析方法分布",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2024 年 7M 分析：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Method / Méthode（方法）：21 条（43.8%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Material / Matière（材料）：13 条（27.1%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Management / Management（管理）：5 条（10.4%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Environment / Milieu（环境）：4 条（8.3%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Equipment / Matériel（设备）：4 条（8.3%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Manpower / Main d'œuvre（人力）：1 条（2.1%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2025 年 7M 分析：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Method / Méthode（方法）：20 条（50.0%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Material / Matière（材料）：15 条（37.5%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Manpower / Main d'œuvre（人力）：4 条（10.0%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Management / Management（管理）：1 条（2.5%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Environment / Milieu（环境）：0 条（0.0%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Equipment / Matériel（设备）：0 条（0.0%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "关键发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "持续的主要问题：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "方法问题占主导地位",
+            "type": "bold"
+          },
+          {
+            "content": "（2024：43.8%，2025：50.0%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "流程和程序需要优化",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "标准化程度可能不足",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "材料问题增加",
+            "type": "bold"
+          },
+          {
+            "content": "（27.1% → 37.5%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "供应商质量控制需要加强",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "原材料检验流程需要改进",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "新出现的趋势：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "人力问题显著增加",
+            "type": "bold"
+          },
+          {
+            "content": "（1 条 → 4 条）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "培训不足？",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "人员流动？",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "工作量过载？",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "时间效率分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "为什么延期率上升了这么多？",
+          "3个月内封闭率下降的根本原因是什么？",
+          "哪些类型的 CAPA 最容易延期？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./closure_efficiency.json",
+        "htmlPath": "./closure_efficiency.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "封闭时间对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2024 年：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "3 个月内封闭：35/48（72.9%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "超过 3 个月封闭：13/48（27.1%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "延期：18/48（37.5%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2025 年：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "3 个月内封闭：27/40（67.5%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "超过 3 个月封闭：13/40（32.5%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "延期：22/40（55.0%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "关键指标变化",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-----",
+          "---------",
+          "---------",
+          "------"
+        ],
+        "headers": [
+          "指标",
+          "2024 年",
+          "2025 年",
+          "变化"
+        ],
+        "rows": [
+          [
+            "3 个月内封闭率",
+            "72.9%",
+            "67.5%",
+            "-5.4% ↓"
+          ],
+          [
+            "延期率",
+            "37.5%",
+            "55.0%",
+            "+17.5% ↑"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "延期率上升的原因分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "延期率从 37.5% 飙升至 55.0%，这是一个",
+            "type": "text"
+          },
+          {
+            "content": "严重的问题",
+            "type": "bold"
+          },
+          {
+            "content": "，可能的原因包括：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "资源不足",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "人员减少或工作量增加",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "优先级管理不当",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "项目复杂性增加",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "2025 年高成本项目增多",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "需要更多时间和资源",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "流程效率下降",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "审批流程变慢",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "跨部门协作不畅",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "缺乏有效的项目管理",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "无延期预警机制",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "无进度追踪系统",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "按月趋势分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "2025 年的月份分布是否更均匀？",
+          "哪些月份问题最多？",
+          "是否存在季节性模式？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./monthly_trend.json",
+        "htmlPath": "./monthly_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "月度分布对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2024 年月度分布：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2 月：9 条（最多）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "7 月、11 月：各 7 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "12 月：5 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "4 月、6 月、10 月：各 4 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "9 月：2 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "1 月、3 月、5 月、8 月：各 1 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "（10 月无数据）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2025 年月度分布：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "3 月、4 月、7 月、9 月：各 5-6 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "5 月：4 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "6 月、8 月、11 月：各 3-4 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2 月：2 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "1 月、12 月：各 1-2 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "（10 月无数据）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "趋势分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2024 年特点：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "年初（2 月）出现高峰，随后下降",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "年中（7 月）再次上升",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "年底（11-12 月）有所增加",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "波动较大，显示不稳定性",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2025 年特点：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "分布相对均匀",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "3-4 月和 7-9 月较多",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "整体波动较小",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "可能显示问题趋于稳定化",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "综合仪表板",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪个指标的变化最令人担忧？",
+          "哪些指标显示积极的改进？",
+          "如何平衡成本降低和质量控制？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./capa_dashboard.json",
+        "htmlPath": "./capa_dashboard.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "关键指标总结",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-----",
+          "---------",
+          "---------",
+          "------",
+          "------"
+        ],
+        "headers": [
+          "指标",
+          "2024 年",
+          "2025 年",
+          "变化",
+          "趋势"
+        ],
+        "rows": [
+          [
+            "记录数",
+            "48",
+            "40",
+            "-16.7%",
+            "✅ 积极下降"
+          ],
+          [
+            "总成本 €",
+            "614,316",
+            "501,414",
+            "-18.4%",
+            "✅ 显著降低"
+          ],
+          [
+            "平均成本 €",
+            "12,798",
+            "12,535",
+            "-2.1%",
+            "✅ 轻微降低"
+          ],
+          [
+            "延期率 %",
+            "37.5",
+            "55.0",
+            "+46.7%",
+            "❌ 大幅恶化"
+          ],
+          [
+            "3 个月内封闭率 %",
+            "72.9",
+            "67.5",
+            "-7.4%",
+            "⚠️ 轻微下降"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "综合评估",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "🟢 表现良好的方面：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 记录数量减少 - 可能表明问题减少",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 总成本显著降低 - 资源利用效率提高",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 平均成本微降 - 整体效率提升",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "🔴 需要紧急关注的方面：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "延期率飙升",
+            "type": "bold"
+          },
+          {
+            "content": "（+46.7%）- 最严重的问题",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "3 个月内封闭率下降",
+            "type": "bold"
+          },
+          {
+            "content": "- 效率问题",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Claim 类型占比上升",
+            "type": "bold"
+          },
+          {
+            "content": "- 客户满意度风险",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "预防措施消失",
+            "type": "bold"
+          },
+          {
+            "content": "- 长期风险",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "🟡 需要观察的方面：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 成本集中度过高 - 单点风险",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 月度分布变化 - 需要持续监控",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "高成本项目分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "为什么 2025 年出现超高成本项目？",
+          "这些高成本项目主要集中在哪些客户和供应商？",
+          "如何预防未来的高成本项目？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./top_cost_2024.json",
+        "htmlPath": "./top_cost_2024.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2024 年高成本项目 Top 10",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-----",
+          "--------",
+          "------",
+          "--------",
+          "----------",
+          "----------"
+        ],
+        "headers": [
+          "排名",
+          "CAP Nr",
+          "客户",
+          "供应商",
+          "CAP TYPE",
+          "成本 €"
+        ],
+        "rows": [
+          [
+            "1",
+            "24036",
+            "GXSF 2",
+            "Mitsubishi",
+            "Claim",
+            "162,500"
+          ],
+          [
+            "2",
+            "24043",
+            "SQ18",
+            "Dupont",
+            "Internal Anomaly",
+            "105,944"
+          ],
+          [
+            "3",
+            "24038",
+            "Yinmore",
+            "Mitsubishi",
+            "Claim",
+            "83,333"
+          ],
+          [
+            "4",
+            "24009",
+            "Via Separation",
+            "XM",
+            "Internal Anomaly",
+            "70,270"
+          ],
+          [
+            "5",
+            "24001",
+            "Omnia",
+            "Jinlong",
+            "Claim",
+            "27,566"
+          ],
+          [
+            "6",
+            "24035",
+            "Bénéo Chile",
+            "-",
+            "Claim",
+            "26,348"
+          ],
+          [
+            "7",
+            "24029",
+            "Via Separation",
+            "Bray",
+            "Claim",
+            "17,494"
+          ],
+          [
+            "8",
+            "24004",
+            "Etihad",
+            "CTI/Beugin",
+            "Supplier Dysfonctionning",
+            "15,808"
+          ],
+          [
+            "9",
+            "24020",
+            "Prolactal",
+            "Mega",
+            "Claim",
+            "11,712"
+          ],
+          [
+            "10",
+            "24003",
+            "SQ13",
+            "GREE",
+            "Claim",
+            "10,832"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./top_cost_2025.json",
+        "htmlPath": "./top_cost_2025.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2025 年高成本项目 Top 10",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-----",
+          "--------",
+          "------",
+          "--------",
+          "----------",
+          "----------"
+        ],
+        "headers": [
+          "排名",
+          "CAP Nr",
+          "客户",
+          "供应商",
+          "CAP TYPE",
+          "成本 €"
+        ],
+        "rows": [
+          [
+            "1",
+            "25020",
+            "Yinmore",
+            "-",
+            "Claim",
+            "286,530"
+          ],
+          [
+            "2",
+            "25017",
+            "DAKOTA BioWorx",
+            "-",
+            "Claim",
+            "105,726"
+          ],
+          [
+            "3",
+            "25014",
+            "Taiyixin DUOWEI",
+            "-",
+            "Claim",
+            "38,777"
+          ],
+          [
+            "4",
+            "25024",
+            "Zukan",
+            "-",
+            "Claim",
+            "31,119"
+          ],
+          [
+            "5",
+            "25002",
+            "Cargill Haubourdin",
+            "-",
+            "Claim",
+            "11,827"
+          ],
+          [
+            "6",
+            "25005",
+            "Zukan",
+            "-",
+            "Claim",
+            "5,447"
+          ],
+          [
+            "7",
+            "25004",
+            "BMA Oman",
+            "-",
+            "Internal Anomaly",
+            "3,892"
+          ],
+          [
+            "8",
+            "25019",
+            "Eppen",
+            "-",
+            "Supplier Dysfonctionning",
+            "2,589"
+          ],
+          [
+            "9",
+            "25009",
+            "SQ26",
+            "-",
+            "Claim",
+            "2,382"
+          ],
+          [
+            "10",
+            "25023",
+            "Nestlé",
+            "-",
+            "Internal Anomaly",
+            "1,500"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "关键发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "🚨 2025 年高成本项目的特点：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "超高成本项目出现",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "CAP 25020 成本 €286,530，比 2024 年最高成本高出 76%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "前三项占总成本的 87.2%（2024 年为 57.5%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "供应商信息缺失",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "2025 年 Top 10 中 8 项供应商信息缺失",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "2024 年所有项目都有供应商信息",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "这表明数据完整性问题",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Claim 类型主导",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "2025 年 Top 10 中 7 项是 Claim",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "2024 年 Top 10 中 6 项是 Claim",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "风险提示：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "高成本集中度过高，单点风险严重",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Yinmore 客户连续两年出现高成本项目",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "数据完整性下降，影响分析和改进",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "客户分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪些客户问题最多？",
+          "客户分布是否有明显变化？",
+          "高成本客户是谁？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./customer_2024.json",
+        "htmlPath": "./customer_2024.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2024 年客户统计 Top 10",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-----",
+          "------",
+          "--------",
+          "------"
+        ],
+        "headers": [
+          "排名",
+          "客户",
+          "记录数",
+          "占比"
+        ],
+        "rows": [
+          [
+            "1",
+            "Via Separation",
+            "5",
+            "10.4%"
+          ],
+          [
+            "2",
+            "Etihad",
+            "3",
+            "6.3%"
+          ],
+          [
+            "3",
+            "Bénéo Chile",
+            "3",
+            "6.3%"
+          ],
+          [
+            "4",
+            "Huaantang",
+            "3",
+            "6.3%"
+          ],
+          [
+            "5",
+            "BMA Bengladesh",
+            "2",
+            "4.2%"
+          ],
+          [
+            "6",
+            "ADM",
+            "2",
+            "4.2%"
+          ],
+          [
+            "7",
+            "LIER",
+            "2",
+            "4.2%"
+          ],
+          [
+            "8",
+            "Omnia",
+            "1",
+            "2.1%"
+          ],
+          [
+            "9",
+            "Xinlv",
+            "1",
+            "2.1%"
+          ],
+          [
+            "10",
+            "SQ13",
+            "1",
+            "2.1%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./customer_2025.json",
+        "htmlPath": "./customer_2025.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2025 年客户统计 Top 10",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-----",
+          "------",
+          "--------",
+          "------"
+        ],
+        "headers": [
+          "排名",
+          "客户",
+          "记录数",
+          "占比"
+        ],
+        "rows": [
+          [
+            "1",
+            "Zukan",
+            "5",
+            "12.5%"
+          ],
+          [
+            "2",
+            "Eppen",
+            "3",
+            "7.5%"
+          ],
+          [
+            "3",
+            "Nestlé",
+            "3",
+            "7.5%"
+          ],
+          [
+            "4",
+            "Friesland",
+            "3",
+            "7.5%"
+          ],
+          [
+            "5",
+            "Cargill Haubourdin",
+            "2",
+            "5.0%"
+          ],
+          [
+            "6",
+            "Azucarera",
+            "2",
+            "5.0%"
+          ],
+          [
+            "7",
+            "ADM US",
+            "2",
+            "5.0%"
+          ],
+          [
+            "8",
+            "Lesaffre",
+            "2",
+            "5.0%"
+          ],
+          [
+            "9",
+            "Bénéo Orafti",
+            "1",
+            "2.5%"
+          ],
+          [
+            "10",
+            "BMA Lantic",
+            "1",
+            "2.5%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "客户分析要点",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "客户集中度：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2024 年：前 4 客户占 29.3%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 年：前 4 客户占 35.0%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "客户集中度略有上升",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "重复客户：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Bénéo 系列客户：2024 年 Bénéo Chile，2025 年 Bénéo Orafti",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "ADM：2024 年 ADM，2025 年 ADM US",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "BMA：2024 年 BMA Bengladesh，2025 年 BMA Lantic",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "新问题客户：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2025 年新出现：Zukan（5 条）、Nestlé（3 条）、Friesland（3 条）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024 年主要客户大部分不再是 Top 10",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "高成本客户：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2024：GXSF 2、SQ18、Yinmore、Via Separation",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025：Yinmore、DAKOTA BioWorx、Taiyixin（DUOWEI）、Zukan",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "供应商分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪些供应商问题最多？",
+          "供应商分布是否有明显变化？",
+          "是否需要更换或重新评估某些供应商？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./supplier_2024.json",
+        "htmlPath": "./supplier_2024.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2024 年供应商统计 Top 10",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-----",
+          "--------",
+          "--------",
+          "------"
+        ],
+        "headers": [
+          "排名",
+          "供应商",
+          "记录数",
+          "占比"
+        ],
+        "rows": [
+          [
+            "1",
+            "Bolloré",
+            "3",
+            "6.3%"
+          ],
+          [
+            "2",
+            "Mitsubishi",
+            "3",
+            "6.3%"
+          ],
+          [
+            "3",
+            "SPA",
+            "3",
+            "6.3%"
+          ],
+          [
+            "4",
+            "FDS",
+            "2",
+            "4.2%"
+          ],
+          [
+            "5",
+            "Jinlong",
+            "1",
+            "2.1%"
+          ],
+          [
+            "6",
+            "GREE",
+            "1",
+            "2.1%"
+          ],
+          [
+            "7",
+            "CTI/Beugin",
+            "1",
+            "2.1%"
+          ],
+          [
+            "8",
+            "XM",
+            "1",
+            "2.1%"
+          ],
+          [
+            "9",
+            "STCL",
+            "1",
+            "2.1%"
+          ],
+          [
+            "10",
+            "IWAKI",
+            "1",
+            "2.1%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./supplier_2025.json",
+        "htmlPath": "./supplier_2025.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2025 年供应商统计 Top 10",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-----",
+          "--------",
+          "--------",
+          "------"
+        ],
+        "headers": [
+          "排名",
+          "供应商",
+          "记录数",
+          "占比"
+        ],
+        "rows": [
+          [
+            "1",
+            "FDS",
+            "3",
+            "7.5%"
+          ],
+          [
+            "2",
+            "SPA",
+            "2",
+            "5.0%"
+          ],
+          [
+            "3",
+            "Metalko",
+            "2",
+            "5.0%"
+          ],
+          [
+            "4",
+            "Kaiyuan",
+            "2",
+            "5.0%"
+          ],
+          [
+            "5",
+            "kaiyuan",
+            "2",
+            "5.0%"
+          ],
+          [
+            "6",
+            "Scate",
+            "2",
+            "5.0%"
+          ],
+          [
+            "7",
+            "Jacobi",
+            "1",
+            "2.5%"
+          ],
+          [
+            "8",
+            "KSB",
+            "1",
+            "2.5%"
+          ],
+          [
+            "9",
+            "CORUN",
+            "1",
+            "2.5%"
+          ],
+          [
+            "10",
+            "Mitsubishi",
+            "1",
+            "2.5%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "供应商分析要点",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "供应商集中度：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2024 年：前 3 供应商占 18.9%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 年：前 3 供应商占 17.5%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "集中度略有下降",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "重复问题供应商：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "SPA：2024 年 3 条，2025 年 2 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "FDS：2024 年 2 条，2025 年 3 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Mitsubishi：2024 年 3 条（高成本），2025 年 1 条",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "新增问题供应商：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2025 年新出现：Kaiyuan（重复名称需规范化）、Metalko、Scate",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "高成本供应商：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2024：Mitsubishi（2 项高成本，总计 €245,833）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025：大部分高成本项目供应商信息缺失",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "数据质量问题：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Kaiyuan/kaiyuan 名称不一致",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 年高成本项目供应商信息大量缺失",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "改进建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "最紧急需要实施的改进措施是什么？",
+          "哪些改进措施可以快速见效？",
+          "长期来看需要建立哪些机制？"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "基于上述分析，我们提出以下分层次的改进建议：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "🚨 紧急优先级（1-3 个月内）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "1. 降低延期率（最高优先级）",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "将延期率从 55% 降至 40% 以下",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "在 CAPA 创建时设置自动提醒",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "逾期前 7 天、3 天、1 天发送预警",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "项目经理和负责人同时收到提醒",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施延期预警系统",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "每周一审查所有延期项目",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "识别延期根本原因",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "制定恢复计划",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "建立每周延期审查会议",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "超过预期时间 30% 的项目标记为\"红灯\"",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "需要高级管理层批准才能继续",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "分配额外资源",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施\"红灯\"项目机制",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "3 个月内延期率降低至 40%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "2. 控制异常高成本",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "消除超过 €100,000 的项目或显著减少其数量",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "预计成本超过 €50,000 的项目需要部门主管审批",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "预计成本超过 €100,000 的项目需要副总裁审批",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施高成本审批流程",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "每月审查所有高成本项目",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "分析成本超支原因",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "制定预防措施",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "建立成本监控机制",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "将大型项目分为多个阶段",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "每阶段完成后进行审查",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "防止成本失控",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施分段审批",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "6 个月内高成本项目数量减少 50%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "3. 恢复预防措施",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "Prevent/improve 类型 CAPA 占比恢复至 5% 以上",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "每个 Claim CAPA 必须附带预防措施",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "Internal Anomaly 必须分析系统性原因",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "强制要求预防性分析",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "收集所有有效的预防措施",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "分类归档便于查找",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "定期分享给相关部门",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "建立预防措施库",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "识别和奖励提出有效预防措施的员工",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "将预防措施纳入绩效评估",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "奖励预防性行为",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "6 个月内 Prevent/improve 类型 CAPA 占比达到 5%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "⚠️ 高优先级（3-6 个月）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "4. 优化 CAP 类型分布",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "将 Claim 类型占比从 57.5% 降至 45% 以下",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "客户投诉后 24 小时内响应",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "提供临时解决方案以减轻影响",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "定期向客户更新进展",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "加强客户沟通",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "分析 Claim 类型 CAPA 的根本原因",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "实施质量改进项目",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "加强出厂检验",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "改进产品质量",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "制定清晰的客户投诉处理 SOP",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "培训相关人员",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "定期审查流程有效性",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "标准化客户投诉处理流程",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "6 个月内 Claim 类型占比降至 45%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "5. 改进数据完整性",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "确保所有关键字段 100% 填写",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "在 CAPA 系统中设置必填字段",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "不允许保存缺失信息",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "提供实时验证反馈",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施必填字段验证",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "统一供应商名称（如 Kaiyuan/kaiyuan）",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "标准化分类和描述",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "提供下拉菜单和自动填充",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "规范化数据录入",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "每月自动生成数据质量报告",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "识别缺失或错误数据",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "责令相关人员修正",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "定期数据质量检查",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "3 个月内关键字段完整性达到 95%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "6. 降低方法相关问题",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "将 Method 类型占比从 50% 降至 40%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "识别高频出错的流程",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "简化和标准化流程",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "增加检查点",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "流程优化项目",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "定期审查和更新 SOP",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "确保所有员工接受最新培训",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "建立培训记录系统",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "SOP 更新和培训",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "识别可以自动化的流程",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "减少人为错误",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "提高效率和一致性",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施流程自动化",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "6 个月内 Method 类型占比降至 40%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "📊 中优先级（6-12 个月）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "7. 提高封闭效率",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "将 3 个月内封闭率从 67.5% 提升至 75%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "简单问题（预计成本 ",
+                      "type": "text"
+                    },
+                    {
+                      "content": " ",
+                      "type": "text"
+                    },
+                    {
+                      "content": "€5,000）使用快速通道",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "减少审批层级",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "加速处理流程",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施快速通道流程",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "分析项目瓶颈",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "合理分配资源",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "避免资源冲突",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "优化资源配置",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "记录所有 CAPA 的解决方案",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "便于快速查找参考方案",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "减少重复工作",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "建立知识库",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "6 个月内 3 个月内封闭率达到 75%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "8. 降低材料相关问题",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "将 Material 类型占比从 37.5% 降至 30%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "建立供应商评估体系",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "定期评估供应商表现",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "对不合格供应商进行整改或更换",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "供应商评估和选择",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "提高来料检验标准",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "增加检验频率",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "实施供应商质量报告",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "加强来料检验",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "记录所有材料的来源和批次",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "便于问题追溯和分析",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "快速定位问题源头",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "建立材料追溯系统",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "6 个月内 Material 类型占比降至 30%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "9. 客户和供应商管理",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "降低问题客户和供应商的集中度",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "根据历史记录对客户进行风险分级",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "高风险客户实施额外监控",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "制定针对性的服务策略",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "客户风险分级",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "建立供应商绩效指标（KPI）",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "定期评估供应商表现",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "对优秀供应商给予奖励，对不合格供应商采取行动",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "供应商绩效管理",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "提供在线问题报告系统",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "实时跟踪问题进展",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "提高透明度和沟通效率",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "建立客户和供应商门户",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "12 个月内客户和供应商集中度降低 20%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "🔬 低优先级/长期（12 个月以上）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "10. 建立预测分析系统",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "预测可能发生的 CAPA 问题，提前预防",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "收集历史 CAPA 数据",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "识别问题模式和趋势",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "建立预测模型",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "数据收集和分析",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "基于设备使用情况和历史数据",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "预测设备故障",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "提前安排维护",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施预防性维护",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "基于生产参数和历史数据",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "预测可能的质量问题",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "调整生产参数",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "质量预测",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "18 个月内建立初步预测系统",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "11. 数字化转型",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "目标：",
+            "type": "bold"
+          },
+          {
+            "content": "全面数字化 CAPA 管理流程",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "具体措施：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "集成所有 CAPA 相关功能",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "提供实时数据和分析",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "支持移动端访问",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "实施先进的 CAPA 管理系统",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "自动化审批流程",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "自动发送提醒和通知",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "自动生成报告",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "自动化工作流",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "与其他系统集成（ERP、CRM 等）",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "实现数据共享",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "提供全面的视图",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "数据集成",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "预期效果：",
+            "type": "bold"
+          },
+          {
+            "content": "24 个月内完成数字化转型",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "结论",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "2024 到 2025 年的整体表现是改善还是恶化？",
+          "最需要关注的核心问题是什么？",
+          "成功实施改进建议的关键因素是什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "总体评估",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2024 到 2025 年的 CAPA 表现呈现出",
+            "type": "text"
+          },
+          {
+            "content": "复杂的混合结果",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "✅ 改善的方面：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "总成本降低 18.4%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "记录数量减少 16.7%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "平均成本降低 2.1%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "❌ 恶化的方面：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "延期率飙升 46.7%（从 37.5% 到 55.0%）- ",
+                "type": "text"
+              },
+              {
+                "content": "最严重的问题",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Claim 类型占比上升 15.8%（从 41.7% 到 57.5%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "预防措施完全消失",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "3 个月内封闭率下降 7.4%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "⚠️ 风险增加的方面：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "成本集中度过高（前三项占总成本 87.2%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "数据完整性下降",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "高成本项目出现（€286,530）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "核心问题",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "延期率上升是当前最紧迫的问题",
+            "type": "bold"
+          },
+          {
+            "content": "，它表明：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 项目管理能力下降",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 资源配置不当",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 流程效率降低",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. 可能影响客户满意度",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "成功的关键因素",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "成功实施改进建议的关键在于：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "领导层的承诺",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "高级管理层必须支持和推动变革",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "提供必要的资源和支持",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "员工参与",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "让员工参与改进过程",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "听取他们的意见和建议",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "提供培训和激励",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "持续监控和调整",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "定期跟踪关键指标",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "根据结果调整策略",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "分享成功和失败的经验",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "系统化方法",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "不要依赖临时措施",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立长期的系统和流程",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "确保改进可持续",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "最终建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "立即行动（本周）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 启动延期率降低项目",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 实施高成本项目审批流程",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 恢复预防措施要求",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "短期目标（3 个月）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 延期率降至 40%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 高成本项目数量减少 50%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 数据完整性达到 95%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "中期目标（6 个月）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Claim 类型占比降至 45%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 3 个月内封闭率达到 75%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 预防措施占比达到 5%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "长期目标（12 个月）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 建立全面的 CAPA 管理系统",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 实现持续改进文化",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 建立预测分析能力",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "通过系统化的改进措施，可以在保持成本优势的同时，显著提高 CAPA 管理的效率和质量。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

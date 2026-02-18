@@ -1,0 +1,2092 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"反向调价实验结果分析报告 - A/B测试对比\"\ndescription: \"2026年1月反向调价策略A/B测试实验结果深度分析，包含收入、转化率、用户行为等多维度对比\"\nauthor: \"Pardus Agent\"\ndate: \"2025-01-17\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "反向调价实验结果分析报告",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告对2026年1月进行的反向调价策略A/B测试实验进行了全面分析。实验分为A组（对照组）和B组（实验组），通过对比两组在规模、转化、收入、付费行为等关键指标上的表现，评估反向调价策略的效果。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "核心发现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组在用户规模上显著领先，账号数和活跃设备数均比B组高出约50%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组虽然规模较小，但在单体价值指标上表现更优，ARPPU达到27.09元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "两组付费率差异微小（0.86% vs 0.79%），说明调价策略对转化率影响有限",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "连续包月仍是主流付费方式，占比超过95%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "实验概况",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "实验的基本设计是什么？",
+          "A组和B组的主要区别是什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "实验设计",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "实验类型",
+                "type": "bold"
+              },
+              {
+                "content": ": A/B测试对比实验",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "实验期间",
+                "type": "bold"
+              },
+              {
+                "content": ": 2026年1月",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "分组策略",
+                "type": "bold"
+              },
+              {
+                "content": ": A组（对照组）vs B组（实验组）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "测试目标",
+                "type": "bold"
+              },
+              {
+                "content": ": 评估反向调价策略对用户行为和收入的影响",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "分组概况",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "-------------",
+          "-------------",
+          "------"
+        ],
+        "headers": [
+          "指标",
+          "A组（对照组）",
+          "B组（实验组）",
+          "差异"
+        ],
+        "rows": [
+          [
+            "账号数量",
+            "239,349",
+            "160,051",
+            "-33.1%"
+          ],
+          [
+            "设备数量",
+            "292,212",
+            "193,792",
+            "-33.7%"
+          ],
+          [
+            "活跃设备数",
+            "196,665",
+            "130,972",
+            "-33.4%"
+          ],
+          [
+            "付费设备数",
+            "1,702",
+            "1,036",
+            "-39.1%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "A组在各项规模指标上均显著领先于B组，这可能是实验分组策略的结果，也可能是反向调价策略影响用户获取的表现。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "规模指标分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "A组和B组的用户规模差异有多大？",
+          "规模差异是否会影响实验结果的可靠性？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./metrics_comparison.json",
+        "htmlPath": "./metrics_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "用户规模对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "从规模指标来看，A组在各项指标上均领先B组约33-39%：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "账号数量",
+                "type": "bold"
+              },
+              {
+                "content": ": A组比B组多79,298个账号（+33.1%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "设备数量",
+                "type": "bold"
+              },
+              {
+                "content": ": A组比B组多98,420台设备（+33.7%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "活跃设备数",
+                "type": "bold"
+              },
+              {
+                "content": ": A组比B组多65,693台活跃设备（+33.4%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "这种规模的差异可能源于：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 实验分组策略（如按用户属性分层）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 反向调价策略对新用户获取的影响",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 时间窗口内用户自然增长的差异",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "用户旅程流向",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./user_journey_sankey.json",
+        "htmlPath": "./user_journey_sankey.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "从用户旅程流向图可以看出：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "两组的转化路径相似：账号 → 设备 → 活跃 → 付费",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "A组在各阶段的用户绝对数量均高于B组",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "需要进一步分析转化率以评估效率差异",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "收入指标分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "两组的收入表现如何？",
+          "ARPU和ARPPU的差异说明了什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./revenue_arpu_comparison.json",
+        "htmlPath": "./revenue_arpu_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "总收入对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组总收入",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥45,929.49",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组总收入",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥28,503.48",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "收入差异",
+                "type": "bold"
+              },
+              {
+                "content": ": B组比A组少¥17,426.01（-37.9%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "A组的总收入显著高于B组，但这主要源于A组的用户规模优势。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "单体价值指标",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPU（Average Revenue Per User）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组: ¥0.23",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组: ¥0.21",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "差异: B组比A组低8.7%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPPU（Average Revenue Per Paying User）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组: ¥26.97",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组: ¥27.09",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "差异: B组比A组高0.4%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B组虽然用户规模较小，但ARPPU略高于A组，说明B组的付费用户平均支付金额更高",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "这可能表明反向调价策略提高了付费用户的支付意愿或提升了客单价",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "ARPU的差异主要由付费率差异驱动",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "转化率分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "两组的活跃率和付费率对比如何？",
+          "哪个转化环节的差异最大？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./rate_comparison.json",
+        "htmlPath": "./rate_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "活跃率对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组活跃率",
+                "type": "bold"
+              },
+              {
+                "content": ": 67.30%（196,665/292,212）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组活跃率",
+                "type": "bold"
+              },
+              {
+                "content": ": 67.58%（130,972/193,792）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "差异",
+                "type": "bold"
+              },
+              {
+                "content": ": B组比A组高0.28个百分点",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "两组的活跃率非常接近，说明反向调价策略对用户活跃度的影响有限。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "付费率对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组付费率",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.87%（1,702/196,665）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组付费率",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.79%（1,036/130,972）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "差异",
+                "type": "bold"
+              },
+              {
+                "content": ": B组比A组低0.08个百分点",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组的付费率略高于B组，但差异仅为0.08个百分点，在统计学上可能不显著",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "这表明反向调价策略对付费转化率的影响有限",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组虽然ARPPU略高，但付费率略低，两者相互抵消",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "付费类型分布",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "两组用户的付费偏好有何不同？",
+          "连续包月是否仍是主流付费方式？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./payment_type_distribution.json",
+        "htmlPath": "./payment_type_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "订单类型分布",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "---------",
+          "-----",
+          "-----"
+        ],
+        "headers": [
+          "付费类型",
+          "A组",
+          "B组"
+        ],
+        "rows": [
+          [
+            "连续包月",
+            "1,622 95.30%",
+            "992 95.75%"
+          ],
+          [
+            "一年卡",
+            "63 3.70%",
+            "39 3.76%"
+          ],
+          [
+            "两年卡",
+            "17 1.00%",
+            "5 0.48%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "连续包月占据绝对主导地位",
+                "type": "bold"
+              },
+              {
+                "content": "：两组中连续包月订单占比均超过95%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "付费类型结构相似",
+                "type": "bold"
+              },
+              {
+                "content": "：两组的付费类型分布非常接近，说明反向调价策略未改变用户的付费偏好",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "长期订阅占比较低",
+                "type": "bold"
+              },
+              {
+                "content": "：一年卡和两年卡的合计占比不足5%，用户更倾向于短期灵活的订阅方式",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "ARPPU与付费率关系",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./arppu_payment_rate.json",
+        "htmlPath": "./arppu_payment_rate.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "从ARPPU与付费率的对比可以看出：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B组的ARPPU略高于A组（27.09 vs 26.97）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "但B组的付费率略低于A组（0.79% vs 0.87%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "这形成了一个权衡：B组的付费用户价值更高，但付费用户比例略低",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "预测分析：规模效应评估",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "如果B组达到A组的规模，收入会如何变化？",
+          "反向调价策略在大规模用户下是否更有优势？"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "本节通过预测模型，分析如果B组达到A组的用户规模，其理论收入表现，从而评估反向调价策略的规模效应。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "规模缩放预测",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./scale_effect_prediction.json",
+        "htmlPath": "./scale_effect_prediction.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "基于A组的规模，我们构建了线性回归预测模型。关键发现：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "缩放因子",
+            "type": "bold"
+          },
+          {
+            "content": "：A组设备数是B组的1.51倍，即B组需要增长51%才能达到A组的规模。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./revenue_prediction_comparison.json",
+        "htmlPath": "./revenue_prediction_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "收入预测对比",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "------",
+          "-----------",
+          "---------"
+        ],
+        "headers": [
+          "类别",
+          "收入（元）",
+          "相对A组"
+        ],
+        "rows": [
+          [
+            "A组实际收入",
+            "¥45,929",
+            "-"
+          ],
+          [
+            "B组实际收入",
+            "¥28,069",
+            "-38.9%"
+          ],
+          [
+            "B组预测收入（A组规模）",
+            "¥42,324",
+            "-7.8%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "核心发现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "如果B组达到A组的规模，其理论收入将达到¥42,324",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "这比A组实际收入低7.8%，但差距从38.9%缩小到7.8%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "规模效应显著：当用户规模对齐后，收入差距大幅缩小",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "转化漏斗预测",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./funnel_prediction.json",
+        "htmlPath": "./funnel_prediction.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "B组在A组规模下的转化漏斗预测",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "------",
+          "----------",
+          "----------",
+          "---------------------"
+        ],
+        "headers": [
+          "阶段",
+          "A组实际值",
+          "B组实际值",
+          "B组预测值（A组规模）"
+        ],
+        "rows": [
+          [
+            "设备数",
+            "292,212",
+            "193,792",
+            "292,212"
+          ],
+          [
+            "活跃设备数",
+            "196,665",
+            "130,972",
+            "197,488"
+          ],
+          [
+            "付费设备数",
+            "1,702",
+            "1,036",
+            "1,562"
+          ],
+          [
+            "总收入（元）",
+            "45,929",
+            "28,069",
+            "42,324"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "转化率分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "设备→活跃：67.30%",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "活跃→付费：0.87%",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "A组转化率",
+                "type": "bold"
+              },
+              {
+                "content": "：",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "items": [
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "设备→活跃：67.58%",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "活跃→付费：0.79%",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "B组转化率",
+                "type": "bold"
+              },
+              {
+                "content": "：",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "活跃转化率B组略优",
+            "type": "bold"
+          },
+          {
+            "content": "：B组的设备→活跃转化率（67.58%）略高于A组（67.30%），说明反向调价策略可能有助于用户激活",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "付费转化率A组略优",
+            "type": "bold"
+          },
+          {
+            "content": "：A组的活跃→付费转化率（0.87%）略高于B组（0.79%），说明原定价策略对付费转化更有利",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "ARPPU优势",
+            "type": "bold"
+          },
+          {
+            "content": "：B组的ARPPU（¥27.09）略高于A组（¥26.97），表明B组的付费用户价值更高",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "规模效应",
+            "type": "bold"
+          },
+          {
+            "content": "：当B组达到A组规模时，虽然付费设备数较少（1,562 vs 1,702），但由于ARPPU更高，总收入差距缩小到7.8%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "预测结论",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "基于回归预测模型，我们得出以下结论：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "规模是关键差异",
+            "type": "bold"
+          },
+          {
+            "content": "：当前B组收入低于A组的主要原因是用户规模差异，而非定价策略本身",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "反向调价的规模效应",
+            "type": "bold"
+          },
+          {
+            "content": "：当用户规模对齐后，反向调价策略的收入仅比对照组低7.8%，远低于当前的38.9%差距",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "ARPPU优势明显",
+            "type": "bold"
+          },
+          {
+            "content": "：B组的ARPPU优势在规模化后能够有效弥补付费转化率的劣势",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "长期潜力",
+            "type": "bold"
+          },
+          {
+            "content": "：如果B组能够达到A组的规模，且保持当前的ARPPU优势，其收入表现将与A组相当",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "综合评估与建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "反向调价策略是否成功？",
+          "后续应该如何优化定价策略？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "实验效果总结",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "-------------",
+          "-------------",
+          "------"
+        ],
+        "headers": [
+          "维度",
+          "A组（对照组）",
+          "B组（实验组）",
+          "评估"
+        ],
+        "rows": [
+          [
+            "用户规模",
+            "292,212",
+            "193,792",
+            "A组领先51%"
+          ],
+          [
+            "活跃率",
+            "67.30%",
+            "67.58%",
+            "基本持平"
+          ],
+          [
+            "付费率",
+            "0.87%",
+            "0.79%",
+            "A组略优"
+          ],
+          [
+            "ARPU",
+            "¥0.23",
+            "¥0.21",
+            "A组略优"
+          ],
+          [
+            "ARPPU",
+            "¥26.97",
+            "¥27.09",
+            "B组略优"
+          ],
+          [
+            "总收入",
+            "¥45,929",
+            "¥28,069",
+            "A组领先38.9%"
+          ],
+          [
+            "预测收入（A组规模）",
+            "¥45,929",
+            "¥42,324",
+            "差距缩小至7.8%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "关键发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "规模效应显著",
+            "type": "bold"
+          },
+          {
+            "content": ": A组在各项规模指标上均领先B组约33%，这是收入差异的主要驱动因素",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "转化效率相似",
+            "type": "bold"
+          },
+          {
+            "content": ": 两组的活跃率和付费率非常接近，说明反向调价策略对用户行为的影响有限",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "ARPPU微升",
+            "type": "bold"
+          },
+          {
+            "content": ": B组的ARPPU略高于A组（+0.4%），可能表明反向调价策略提升了付费用户的支付意愿",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "付费偏好稳定",
+            "type": "bold"
+          },
+          {
+            "content": ": 连续包月仍是主流付费方式（占比",
+            "type": "text"
+          },
+          {
+            "content": "95%），反向调价策略未改变用户的付费偏好",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "综合效果平衡",
+            "type": "bold"
+          },
+          {
+            "content": ": B组虽然ARPPU略高，但付费率和用户规模均低于A组，整体收入表现不如A组",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "短期建议",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "维持当前定价",
+            "type": "bold"
+          },
+          {
+            "content": ": 反向调价策略（B组）未展现出显著优势，建议维持当前定价策略（A组）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "加强付费转化",
+            "type": "bold"
+          },
+          {
+            "content": ": 考虑优化付费引导流程，提升付费率。即使提升0.1%的付费率，也能带来显著收入增长",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "推广长期订阅",
+            "type": "bold"
+          },
+          {
+            "content": ": 一年卡和两年卡的占比较低（",
+            "type": "text"
+          },
+          {
+            "content": "5%），可以考虑通过优惠活动推广长期订阅，提升用户生命周期价值",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "中期建议",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "分层定价策略",
+            "type": "bold"
+          },
+          {
+            "content": ": 考虑针对不同用户群体实施差异化定价，平衡用户规模和ARPPU",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "付费转化优化",
+            "type": "bold"
+          },
+          {
+            "content": ": 分析付费转化漏斗的各个环节，识别并优化转化率低的环节",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "用户价值提升",
+            "type": "bold"
+          },
+          {
+            "content": ": 通过个性化推荐、内容运营等方式提升用户活跃度和付费意愿",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "长期建议",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "持续A/B测试",
+            "type": "bold"
+          },
+          {
+            "content": ": 定期进行定价策略测试，根据市场变化和用户反馈调整策略",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "用户生命周期管理",
+            "type": "bold"
+          },
+          {
+            "content": ": 建立用户生命周期管理体系，针对不同阶段用户实施差异化策略",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "数据驱动决策",
+            "type": "bold"
+          },
+          {
+            "content": ": 建立完善的数据监测和分析体系，基于数据驱动产品决策",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "风险提示",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "样本偏差",
+            "type": "bold"
+          },
+          {
+            "content": ": 本实验的分组规模差异较大（A组比B组多33%），可能存在样本偏差影响结果可靠性",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "短期数据",
+            "type": "bold"
+          },
+          {
+            "content": ": 本数据仅覆盖一个月，长期效果需要更长时间的观察",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "外部因素",
+            "type": "bold"
+          },
+          {
+            "content": ": 实验期间可能存在季节性因素、市场变化等外部干扰因素",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "结论",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本次反向调价实验结果显示，B组（实验组）在ARPPU上略有提升（+0.4%），但在用户规模、付费率和总收入等核心指标上均低于A组（对照组）。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "核心发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "通过回归预测模型分析，我们发现了规模效应的关键作用：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "当前表现差距主要源于规模差异",
+            "type": "bold"
+          },
+          {
+            "content": "：B组收入比A组低38.9%，但这是由于B组用户规模比A组小51%造成的",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "规模对齐后差距大幅缩小",
+            "type": "bold"
+          },
+          {
+            "content": "：如果B组达到A组的用户规模，预测收入差距将从38.9%缩小到7.8%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "反向调价策略在大规模下更有潜力",
+            "type": "bold"
+          },
+          {
+            "content": "：ARPPU优势在规模化后能够有效弥补付费转化率的劣势，说明反向调价策略在规模化用户群中可能更有优势",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "实验结论",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "综合当前数据和预测分析，我们可以得出：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "短期来看",
+            "type": "bold"
+          },
+          {
+            "content": "：反向调价策略未展现出显著优势，建议维持当前定价策略（A组）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "长期来看",
+            "type": "bold"
+          },
+          {
+            "content": "：如果反向调价策略能够扩大用户规模，其ARPPU优势将更加凸显，可能与原定价策略相当甚至更优",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "维持当前定价策略",
+            "type": "bold"
+          },
+          {
+            "content": "：基于当前实验结果，建议暂时维持A组的定价策略",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "关注用户规模增长",
+            "type": "bold"
+          },
+          {
+            "content": "：如果未来用户规模增长，可以考虑再次测试反向调价策略",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "优化付费转化",
+            "type": "bold"
+          },
+          {
+            "content": "：重点提升付费转化率，即使提升0.1%的付费率，也能带来显著收入增长",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "推广长期订阅",
+            "type": "bold"
+          },
+          {
+            "content": "：一年卡和两年卡的占比较低（",
+            "type": "text"
+          },
+          {
+            "content": "5%），可以考虑通过优惠活动推广长期订阅，提升用户生命周期价值",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "连续包月仍是最主流的付费方式（占比",
+            "type": "text"
+          },
+          {
+            "content": "95%），用户对短期灵活订阅的偏好明显。未来可以考虑通过优惠活动推广长期订阅，同时优化付费转化流程，提升整体变现效率。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "数据来源",
+            "type": "bold"
+          },
+          {
+            "content": ": ./files/反向调价实验结果-202601.xlsx",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "分析日期",
+            "type": "bold"
+          },
+          {
+            "content": ": 2025-01-17",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "数据清洗",
+            "type": "bold"
+          },
+          {
+            "content": ": ./data/cleaned",
+            "type": "text"
+          },
+          {
+            "content": "experiment",
+            "type": "italic"
+          },
+          {
+            "content": "data.csv",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "详细摘要",
+            "type": "bold"
+          },
+          {
+            "content": ": ./data/summary.md",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

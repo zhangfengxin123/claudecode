@@ -1,0 +1,78 @@
+{
+  "case_id": "a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+  "title": "年卡改价实验数据分析",
+  "with_description": true,
+  "input_files": [
+    "年卡改价实验结果-202601.xlsx",
+    "description.txt"
+  ],
+  "input_data_files": [
+    "年卡改价实验结果-202601.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 5,
+  "assets": [
+    {
+      "name": "arpu_comparison.json",
+      "trace_types": [
+        "bar",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "ARPU对比"
+    },
+    {
+      "name": "expectation_validation.json",
+      "trace_types": [
+        "scatterpolar",
+        "scatterpolar",
+        "scatterpolar",
+        "scatterpolar"
+      ],
+      "trace_count": 4,
+      "title": "预期验证雷达图"
+    },
+    {
+      "name": "cannibalization_effect.json",
+      "trace_types": [
+        "bar",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 3,
+      "title": "蚕食效应分析"
+    },
+    {
+      "name": "daily_arpu_trend.json",
+      "trace_types": [
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 4,
+      "title": "日度ARPU趋势"
+    },
+    {
+      "name": "daily_payrate_trend.json",
+      "trace_types": [
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 4,
+      "title": "日度付费率趋势"
+    }
+  ],
+  "h2_sections": [
+    "实验设计概述",
+    "核心指标分析",
+    "蚕食效应深度分析",
+    "日度趋势分析",
+    "收入模拟与优化建议",
+    "结论",
+    "附录"
+  ],
+  "first_paragraph": "本报告分析了2026年1月23日至29日进行的年卡改价A/B测试实验结果，通过对比4个实验组（A控制组、B1最优价格组、B2激进降价组、B3反向涨价组）的核心指标，验证了定价模型的有效性，并量化了套餐间的蚕食效应。"
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+  "title": "SSCOM L02 AnalyticsCase_Meyer",
+  "source_cache_manifest": "2026-02-17T14:04:50Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/description.txt",
+      "ok": true
+    },
+    {
+      "name": "SSCOM L02 AnalyticsCase_Meyer.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/SSCOM L02 AnalyticsCase_Meyer.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/SSCOM L02 AnalyticsCase_Meyer.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

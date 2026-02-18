@@ -1,0 +1,20 @@
+{
+  "case_id": "7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b",
+  "title_hint": "id市场投放效果与转化数据分析",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "id市场广告投放与转化数据.xlsx",
+      "status": 200,
+      "size_bytes": 18908896,
+      "source_url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/files/id%E5%B8%82%E5%9C%BA%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE%E4%B8%8E%E8%BD%AC%E5%8C%96%E6%95%B0%E6%8D%AE.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/7ca268dd7c70_id市场投放效果与转化数据分析/id市场广告投放与转化数据.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:05:40Z"
+}

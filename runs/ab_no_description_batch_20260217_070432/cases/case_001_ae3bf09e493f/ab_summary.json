@@ -1,0 +1,384 @@
+{
+  "generated_at": "2026-02-17T07:08:57Z",
+  "ab_case": {
+    "template_case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+    "rerun_case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+    "title": "CAP Analysis (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+    "inputs": [
+      "description.txt",
+      "CAP 2023-2025.xlsx"
+    ],
+    "description_present": true,
+    "chart_assets_count": 14,
+    "trace_type_hist": {
+      "bar": 18,
+      "box": 2,
+      "scatter": 2
+    },
+    "h2_sections": [
+      "执行摘要",
+      "数据概览",
+      "记录数量与成本对比",
+      "CAP 类型分析",
+      "7M 分析方法对比",
+      "时间效率分析",
+      "按月趋势分析",
+      "综合仪表板",
+      "高成本项目分析",
+      "客户分析",
+      "供应商分析",
+      "改进建议",
+      "结论"
+    ],
+    "first_paragraph": "本报告对 2024 年和 2025 年的 CAPA（Corrective and Preventive Actions，纠正和预防措施）数据进行了全面对比分析，旨在识别关键趋势、评估性能变化，并提供可行的改进建议。",
+    "assets": [
+      {
+        "name": "capa_count_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/capa_count_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "CAPA 记录数量对比"
+      },
+      {
+        "name": "cost_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/cost_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "成本对比"
+      },
+      {
+        "name": "cost_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/cost_distribution.json",
+        "trace_types": [
+          "box",
+          "box"
+        ],
+        "trace_count": 2,
+        "title": "成本分布对比"
+      },
+      {
+        "name": "cap_type_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/cap_type_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "CAP TYPE 分布对比"
+      },
+      {
+        "name": "seven_m_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/seven_m_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "7M 分析方法分布对比"
+      },
+      {
+        "name": "closure_efficiency.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/closure_efficiency.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "封闭时间效率对比"
+      },
+      {
+        "name": "monthly_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/monthly_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "按月趋势"
+      },
+      {
+        "name": "capa_dashboard.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/capa_dashboard.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "CAPA 关键指标对比"
+      },
+      {
+        "name": "top_cost_2024.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/top_cost_2024.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2024年高成本项目 Top 10"
+      },
+      {
+        "name": "top_cost_2025.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/top_cost_2025.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2025年高成本项目 Top 10"
+      },
+      {
+        "name": "customer_2024.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/customer_2024.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2024年按客户统计 Top 10"
+      },
+      {
+        "name": "customer_2025.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/customer_2025.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2025年按客户统计 Top 10"
+      },
+      {
+        "name": "supplier_2024.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/supplier_2024.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2024年按供应商统计 Top 10"
+      },
+      {
+        "name": "supplier_2025.json",
+        "url": "https://pardusai.org/v1/api/public/project/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996/assets/supplier_2025.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2025年按供应商统计 Top 10"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+    "inputs": [
+      "CAP 2023-2025.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 14,
+    "trace_type_hist": {
+      "bar": 19,
+      "scatter": 6,
+      "heatmap": 1,
+      "pie": 1,
+      "histogram": 1
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Overview and Data Summary",
+      "CAP Type Analysis",
+      "Temporal Trends and Patterns",
+      "Supplier Performance Analysis",
+      "Customer Analysis",
+      "Root Cause Analysis",
+      "Process and Scope Analysis",
+      "Closure Performance Analysis",
+      "Cost Analysis and Trends",
+      "Strategic Recommendations",
+      "Conclusion",
+      "Appendix: Data Dictionary",
+      "Methodology"
+    ],
+    "first_paragraph": "This report provides a comprehensive analysis of 37 Corrective Action Plans CAPs recorded between February 2023 and September 2025. The analysis reveals key trends, cost patterns, supplier performance, and closure efficiency metrics that can inform strategic quality management decisions.",
+    "assets": [
+      {
+        "name": "cap_type_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/cap_type_distribution.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "CAP Type Distribution"
+      },
+      {
+        "name": "cost_by_type.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/cost_by_type.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "Total Cost by CAP Type"
+      },
+      {
+        "name": "yearly_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/yearly_trend.json",
+        "trace_types": [
+          "bar",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "Yearly CAP Count and Cost Trend"
+      },
+      {
+        "name": "monthly_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/monthly_trend.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Monthly CAP Recording Trend"
+      },
+      {
+        "name": "top_suppliers_cost.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/top_suppliers_cost.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top 10 Suppliers by CAP Cost"
+      },
+      {
+        "name": "supplier_type_heatmap.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/supplier_type_heatmap.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "CAP Type Distribution by Supplier"
+      },
+      {
+        "name": "top_customers.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/top_customers.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top 10 Customers by CAP Count"
+      },
+      {
+        "name": "cause_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/cause_distribution.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "7M Root Cause Distribution"
+      },
+      {
+        "name": "process_cost.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/process_cost.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Total CAP Cost by Process"
+      },
+      {
+        "name": "scope_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/scope_distribution.json",
+        "trace_types": [
+          "pie"
+        ],
+        "trace_count": 1,
+        "title": "CAP Distribution by Scope"
+      },
+      {
+        "name": "closure_time_dist.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/closure_time_dist.json",
+        "trace_types": [
+          "histogram"
+        ],
+        "trace_count": 1,
+        "title": "CAP Closure Time Distribution"
+      },
+      {
+        "name": "closure_performance.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/closure_performance.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "CAP Closure Performance"
+      },
+      {
+        "name": "cost_vs_closure.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/cost_vs_closure.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 4,
+        "title": "CAP Cost vs Closure Time"
+      },
+      {
+        "name": "yoy_cost_by_type.json",
+        "url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/assets/yoy_cost_by_type.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "Year-over-Year Cost by CAP Type"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 0,
+    "sections_delta": 1,
+    "description_removed_ok": true,
+    "asset_name_overlap": 1,
+    "asset_old_only": [
+      "cap_type_comparison.json",
+      "capa_count_comparison.json",
+      "capa_dashboard.json",
+      "closure_efficiency.json",
+      "cost_comparison.json",
+      "cost_distribution.json",
+      "customer_2024.json",
+      "customer_2025.json",
+      "seven_m_comparison.json",
+      "supplier_2024.json",
+      "supplier_2025.json",
+      "top_cost_2024.json",
+      "top_cost_2025.json"
+    ],
+    "asset_new_only": [
+      "cap_type_distribution.json",
+      "cause_distribution.json",
+      "closure_performance.json",
+      "closure_time_dist.json",
+      "cost_by_type.json",
+      "cost_vs_closure.json",
+      "process_cost.json",
+      "scope_distribution.json",
+      "supplier_type_heatmap.json",
+      "top_customers.json",
+      "top_suppliers_cost.json",
+      "yearly_trend.json",
+      "yoy_cost_by_type.json"
+    ]
+  }
+}

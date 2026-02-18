@@ -1,0 +1,38 @@
+{
+  "case_id": "ee6dec1a80a24b848d636d4cd59b9a8deb01bdd6a49befc7f62263d05e6a6425",
+  "title_hint": "All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 3,
+  "files_ok_count": 3,
+  "files": [
+    {
+      "idx": 0,
+      "name": "interest_rate_forecasts.csv",
+      "status": 200,
+      "size_bytes": 3723,
+      "source_url": "https://pardusai.org/v1/api/public/project/ee6dec1a80a24b848d636d4cd59b9a8deb01bdd6a49befc7f62263d05e6a6425/files/interest_rate_forecasts.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/interest_rate_forecasts.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "stock_market_forecasts.csv",
+      "status": 200,
+      "size_bytes": 4270,
+      "source_url": "https://pardusai.org/v1/api/public/project/ee6dec1a80a24b848d636d4cd59b9a8deb01bdd6a49befc7f62263d05e6a6425/files/stock_market_forecasts.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/stock_market_forecasts.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "search_results.csv",
+      "status": 200,
+      "size_bytes": 12501,
+      "source_url": "https://pardusai.org/v1/api/public/project/ee6dec1a80a24b848d636d4cd59b9a8deb01bdd6a49befc7f62263d05e6a6425/files/search_results.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/search_results.csv",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:36:50Z"
+}

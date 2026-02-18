@@ -1,0 +1,18 @@
+{
+  "case_id": "96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38",
+  "title": "Linac setup overview",
+  "source_cache_manifest": "2026-02-17T14:35:44Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "RF Parameters_summary.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/96f9d88da186_Linac setup overview/RF Parameters_summary.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/96f9d88da186_Linac setup overview/RF Parameters_summary.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

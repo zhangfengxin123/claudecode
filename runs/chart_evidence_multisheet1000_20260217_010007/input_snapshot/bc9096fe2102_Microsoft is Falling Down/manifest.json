@@ -1,0 +1,39 @@
+{
+  "case_id": "bc9096fe2102fcf754cb47c1631aed3576bf8ca6aef0c3d78e6f40b72d38fc92",
+  "title": "Microsoft is Falling Down",
+  "source_cache_manifest": "2026-02-17T14:36:04Z",
+  "status": "ok",
+  "copied_files": 4,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "PressReleaseFY26Q2.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bc9096fe2102_Microsoft is Falling Down/PressReleaseFY26Q2.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/bc9096fe2102_Microsoft is Falling Down/PressReleaseFY26Q2.pdf",
+      "ok": true
+    },
+    {
+      "name": "pdfhandler.ashx.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bc9096fe2102_Microsoft is Falling Down/pdfhandler.ashx.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/bc9096fe2102_Microsoft is Falling Down/pdfhandler.ashx.pdf",
+      "ok": true
+    },
+    {
+      "name": "TranscriptQandAFY26q2.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bc9096fe2102_Microsoft is Falling Down/TranscriptQandAFY26q2.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/bc9096fe2102_Microsoft is Falling Down/TranscriptQandAFY26q2.pdf",
+      "ok": true
+    },
+    {
+      "name": "FinancialStatementFY26Q2.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bc9096fe2102_Microsoft is Falling Down/FinancialStatementFY26Q2.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/bc9096fe2102_Microsoft is Falling Down/FinancialStatementFY26Q2.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

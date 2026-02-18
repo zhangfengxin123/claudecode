@@ -1,0 +1,18 @@
+{
+  "case_id": "fdec4b4d26cbac9f558b3e47449089e928bda4188427b70587586a59dd6687e3",
+  "title": "Copy of Project",
+  "source_cache_manifest": "2026-02-17T14:36:55Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "RF Parameters_summary.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/fdec4b4d26cb_Copy of Project/RF Parameters_summary.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/fdec4b4d26cb_Copy of Project/RF Parameters_summary.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

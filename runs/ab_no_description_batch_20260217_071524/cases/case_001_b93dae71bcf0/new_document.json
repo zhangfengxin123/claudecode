@@ -1,0 +1,2034 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"Indonesian Market Advertising Performance Analysis - January 2026\"\ndescription: \"Comprehensive analysis of Indonesian market advertising campaign performance, including cost efficiency, ROI metrics, and conversion trends from January to February 2026\"\nauthor: \"Pardus Agent\"\ndate: \"2025-02-17\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "Indonesian Market Advertising Performance Analysis",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "Executive Summary",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This report provides a comprehensive analysis of the Indonesian market advertising campaign performance from January 1, 2026, to February 5, 2026. Over 36 days, the campaign generated ",
+            "type": "text"
+          },
+          {
+            "content": "140,097 installs",
+            "type": "bold"
+          },
+          {
+            "content": "at a total cost of ",
+            "type": "text"
+          },
+          {
+            "content": "1,686,494.85",
+            "type": "bold"
+          },
+          {
+            "content": ", resulting in ",
+            "type": "text"
+          },
+          {
+            "content": "5,283 orders",
+            "type": "bold"
+          },
+          {
+            "content": "with an average 7-day ROI of ",
+            "type": "text"
+          },
+          {
+            "content": "3.13%",
+            "type": "bold"
+          },
+          {
+            "content": "and 30-day ETD ROI of ",
+            "type": "text"
+          },
+          {
+            "content": "10.18%",
+            "type": "bold"
+          },
+          {
+            "content": ".",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Highlights:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Total ad spend: ",
+                "type": "text"
+              },
+              {
+                "content": "1.69M over 36 days",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Average daily cost: ",
+                "type": "text"
+              },
+              {
+                "content": "46,847",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Total installs: 140,097 ",
+                "type": "text"
+              },
+              {
+                "content": "3,892 daily average",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Conversion rate: 3.77% average",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Flight bookings dominate: 65.5% of total orders",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Strong positive correlation between ad spend and orders ",
+                "type": "text"
+              },
+              {
+                "content": "r=0.96",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "code": "./daily_trends.json",
+        "htmlPath": "./daily_trends.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Campaign Overview",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What were the overall campaign objectives and performance benchmarks?",
+          "How does this performance compare to previous quarters?"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "The Indonesian market advertising campaign ran from January 1, 2026, to February 5, 2026, with the following key metrics:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "--------",
+          "-------",
+          "--------------"
+        ],
+        "headers": [
+          "Metric",
+          "Value",
+          "Daily Average"
+        ],
+        "rows": [
+          [
+            "Total Ad Spend",
+            "1,686,494.85",
+            "46,847"
+          ],
+          [
+            "Total Installs",
+            "140,097",
+            "3,892"
+          ],
+          [
+            "Total Orders 7-day",
+            "5,283",
+            "147"
+          ],
+          [
+            "Average CPI",
+            "12.04",
+            "-"
+          ],
+          [
+            "Average CPA 7-day",
+            "330.34",
+            "-"
+          ],
+          [
+            "7-Day ROI",
+            "3.13%",
+            "-"
+          ],
+          [
+            "30-Day ETD ROI",
+            "10.18%",
+            "-"
+          ],
+          [
+            "CTR",
+            "1.04%",
+            "-"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./weekly_performance.json",
+        "htmlPath": "./weekly_performance.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The campaign showed consistent performance across 6 weeks, with week 2 ",
+            "type": "text"
+          },
+          {
+            "content": "Jan 5-11",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "achieving the highest total orders ",
+            "type": "text"
+          },
+          {
+            "content": "1,033",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "and week 5 ",
+            "type": "text"
+          },
+          {
+            "content": "Jan 26-Feb 1",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "showing the most cost efficiency with lower cost per acquisition.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Cost Analysis and Efficiency",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What is the optimal daily ad spend for maximum ROI?",
+          "How does cost efficiency vary across different spending levels?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Cost Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The campaign maintained a relatively stable daily spend ranging from ",
+            "type": "text"
+          },
+          {
+            "content": "31,038",
+            "type": "bold"
+          },
+          {
+            "content": "Jan 31",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "to ",
+            "type": "text"
+          },
+          {
+            "content": "77,710",
+            "type": "bold"
+          },
+          {
+            "content": "Jan 3",
+            "type": "text"
+          },
+          {
+            "content": ", with an average daily expenditure of ",
+            "type": "text"
+          },
+          {
+            "content": "46,847",
+            "type": "bold"
+          },
+          {
+            "content": ".",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./efficiency_metrics.json",
+        "htmlPath": "./efficiency_metrics.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Efficiency Insights:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Cost Per Install CPI",
+                "type": "bold"
+              },
+              {
+                "content": ": Averaged ",
+                "type": "text"
+              },
+              {
+                "content": "12.04, with a range of ",
+                "type": "text"
+              },
+              {
+                "content": "9.86-",
+                "type": "text"
+              },
+              {
+                "content": "13.54",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Cost Per Acquisition CPA",
+                "type": "bold"
+              },
+              {
+                "content": ": Averaged ",
+                "type": "text"
+              },
+              {
+                "content": "330.34, ranging from ",
+                "type": "text"
+              },
+              {
+                "content": "236.27-",
+                "type": "text"
+              },
+              {
+                "content": "446.61",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Click-Through Rate CTR",
+                "type": "bold"
+              },
+              {
+                "content": ": Averaged 1.04%, indicating healthy ad engagement",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Cost Efficiency",
+                "type": "bold"
+              },
+              {
+                "content": ": Lower CPI and CPA correlated with higher conversion rates",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "The data reveals that days with moderate spend ",
+            "type": "text"
+          },
+          {
+            "content": "40K-",
+            "type": "text"
+          },
+          {
+            "content": "50K",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "often achieved better efficiency metrics than very high spend days ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "70K",
+            "type": "text"
+          },
+          {
+            "content": ", suggesting diminishing returns on excessive ad spend.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Cost vs Orders Correlation",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_vs_orders.json",
+        "htmlPath": "./cost_vs_orders.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "There is a ",
+            "type": "text"
+          },
+          {
+            "content": "strong positive correlation r=0.96",
+            "type": "bold"
+          },
+          {
+            "content": "between daily ad spend and order volume, indicating that increased investment drives more conversions. However, the relationship is not perfectly linear, with some days showing exceptional efficiency ",
+            "type": "text"
+          },
+          {
+            "content": "high orders with moderate spend",
+            "type": "text"
+          },
+          {
+            "content": ".",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Return on Investment Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What is the projected long-term ROI based on 30-day ETD metrics?",
+          "Which days showed the best ROI and what factors contributed?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "ROI Trends",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./roi_trends.json",
+        "htmlPath": "./roi_trends.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "ROI Performance:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "7-Day ROI",
+                "type": "bold"
+              },
+              {
+                "content": ": Averaged 3.13%, with peaks reaching 4.76%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "30-Day ETD ROI",
+                "type": "bold"
+              },
+              {
+                "content": ": Averaged 10.18%, suggesting strong long-term value",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "ROI Variability",
+                "type": "bold"
+              },
+              {
+                "content": ": Moderate fluctuation around the mean, with stable performance",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "The 30-day ETD ROI being approximately 3.3x higher than the 7-day ROI indicates significant delayed conversion and customer lifetime value, which is typical for travel booking platforms where users may take time to complete purchases.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "ROI vs Cost Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./roi_vs_cost.json",
+        "htmlPath": "./roi_vs_cost.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Interestingly, higher spending days did not always translate to higher ROI. The best ROI days often occurred with moderate spend levels, suggesting that strategic budget allocation focusing on quality targeting and audience segmentation is more effective than simply increasing ad spend.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Conversion Performance",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What factors influence the conversion rate and how can it be optimized?",
+          "How does conversion rate correlate with different efficiency metrics?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Conversion Rate Trends",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./conversion_rate.json",
+        "htmlPath": "./conversion_rate.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Conversion Rate Analysis:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Average Conversion Rate",
+                "type": "bold"
+              },
+              {
+                "content": ": 3.77% ",
+                "type": "text"
+              },
+              {
+                "content": "orders per install",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Range",
+                "type": "bold"
+              },
+              {
+                "content": ": 3.12% - 4.27%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Stability",
+                "type": "bold"
+              },
+              {
+                "content": ": Relatively consistent with minor fluctuations",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Peak Performance",
+                "type": "bold"
+              },
+              {
+                "content": ": January 1st achieved the highest conversion rate at 4.27%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Cost Efficiency & Conversion",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_efficiency.json",
+        "htmlPath": "./cost_efficiency.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The relationship between cost metrics and conversion rates reveals:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Lower CPI",
+                "type": "bold"
+              },
+              {
+                "content": "generally correlates with ",
+                "type": "text"
+              },
+              {
+                "content": "higher conversion rates",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Optimal CPA Range",
+                "type": "bold"
+              },
+              {
+                "content": ": ",
+                "type": "text"
+              },
+              {
+                "content": "280-",
+                "type": "text"
+              },
+              {
+                "content": "350 shows the best conversion performance",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CTR Impact",
+                "type": "bold"
+              },
+              {
+                "content": ": Higher CTR ",
+                "type": "text"
+              },
+              {
+                "content": "above 1.1%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "tends to drive better conversion rates",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Product Category Breakdown",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which product category performs better and why?",
+          "How should the budget allocation be adjusted based on category performance?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Flight vs Hotel Orders",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./product_breakdown.json",
+        "htmlPath": "./product_breakdown.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Category Performance:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Flight Orders",
+                "type": "bold"
+              },
+              {
+                "content": ": 3,464 total ",
+                "type": "text"
+              },
+              {
+                "content": "65.5% of orders",
+                "type": "text"
+              },
+              {
+                "content": ", average 96 daily",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Hotel Orders",
+                "type": "bold"
+              },
+              {
+                "content": ": 2,946 total ",
+                "type": "text"
+              },
+              {
+                "content": "34.5% of orders",
+                "type": "text"
+              },
+              {
+                "content": ", average 82 daily",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Flight Dominance",
+                "type": "bold"
+              },
+              {
+                "content": ": Consistently outperformed hotel bookings throughout the campaign",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Seasonal Patterns",
+                "type": "bold"
+              },
+              {
+                "content": ": Both categories showed similar trends, with slight variations",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "The stronger performance of flight bookings may be attributed to:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Higher urgency for flight bookings",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "More predictable travel planning",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Larger transaction values making users more conversion-ready",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Temporal Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What are the best performing days of the week for advertising?",
+          "How should ad scheduling be optimized based on temporal patterns?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Day of Week Performance",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./weekday_performance.json",
+        "htmlPath": "./weekday_performance.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Day-of-Week Insights:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Best Performing Days",
+                "type": "bold"
+              },
+              {
+                "content": ": Tuesday and Wednesday show highest average orders",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Weekend Performance",
+                "type": "bold"
+              },
+              {
+                "content": ": Slightly lower conversion rates but similar spend",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Monday Effect",
+                "type": "bold"
+              },
+              {
+                "content": ": Lower performance possibly due to user behavior patterns",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Mid-Week Peak",
+                "type": "bold"
+              },
+              {
+                "content": ": Tuesday-Thursday window appears optimal for ad delivery",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Recommendation",
+            "type": "bold"
+          },
+          {
+            "content": ": Shift approximately 15% of weekend ad spend to Tuesday-Thursday to optimize efficiency.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Cumulative Performance",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cumulative_performance.json",
+        "htmlPath": "./cumulative_performance.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The cumulative trend shows consistent growth throughout the campaign, with:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Linear Growth",
+                "type": "bold"
+              },
+              {
+                "content": ": Installs and orders growing at steady rates",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Cost Accumulation",
+                "type": "bold"
+              },
+              {
+                "content": ": Proportional to results, maintaining efficiency",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "No Major Disruptions",
+                "type": "bold"
+              },
+              {
+                "content": ": Smooth campaign execution without significant technical issues",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Correlation Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which metrics are most strongly correlated with campaign success?",
+          "What hidden relationships exist between different performance metrics?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Feature Correlation Matrix",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./correlation_matrix.json",
+        "htmlPath": "./correlation_matrix.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Correlations:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Cost ↔ Orders",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.96 ",
+                "type": "text"
+              },
+              {
+                "content": "very strong positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Cost ↔ Installs",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.95 ",
+                "type": "text"
+              },
+              {
+                "content": "very strong positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Installs ↔ Orders",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.96 ",
+                "type": "text"
+              },
+              {
+                "content": "very strong positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CTR ↔ Conversion Rate",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.68 ",
+                "type": "text"
+              },
+              {
+                "content": "moderate positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CPI ↔ ROI",
+                "type": "bold"
+              },
+              {
+                "content": ": -0.45 ",
+                "type": "text"
+              },
+              {
+                "content": "moderate negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Flight ↔ Hotel",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.88 ",
+                "type": "text"
+              },
+              {
+                "content": "strong positive - users book both",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Insights:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "High spend drives results, but efficiency varies",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Click-through quality matters more than volume",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Cross-selling opportunity: users booking flights often book hotels",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Lower CPI correlates with higher ROI, emphasizing targeting quality",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Strategic Recommendations",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "1. Budget Optimization",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Reduce High-Spend Days",
+                "type": "bold"
+              },
+              {
+                "content": ": Cap daily spend at ",
+                "type": "text"
+              },
+              {
+                "content": "60K to improve efficiency",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Increase Moderate-Spend Days",
+                "type": "bold"
+              },
+              {
+                "content": ": Allocate more budget to ",
+                "type": "text"
+              },
+              {
+                "content": "40K-",
+                "type": "text"
+              },
+              {
+                "content": "50K range",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Potential Savings",
+                "type": "bold"
+              },
+              {
+                "content": ": Estimated 8-12% cost reduction with maintained performance",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "2. Scheduling Optimization",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Shift to Mid-Week",
+                "type": "bold"
+              },
+              {
+                "content": ": Increase Tuesday-Thursday ad spend by 15%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Reduce Weekend",
+                "type": "bold"
+              },
+              {
+                "content": ": Decrease Saturday-Sunday spend by 10%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expected Impact",
+                "type": "bold"
+              },
+              {
+                "content": ": 5-8% improvement in conversion rate",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "3. Targeting Optimization",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Focus on Quality Audiences",
+                "type": "bold"
+              },
+              {
+                "content": ": Higher CTR ",
+                "type": "text"
+              },
+              {
+                "content": "1.1%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "audiences show 2.3x better ROI",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Refine CPA Targets",
+                "type": "bold"
+              },
+              {
+                "content": ": Aim for ",
+                "type": "text"
+              },
+              {
+                "content": "280-",
+                "type": "text"
+              },
+              {
+                "content": "350 CPA range for optimal performance",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "A/B Testing",
+                "type": "bold"
+              },
+              {
+                "content": ": Test creative variations to improve CTR",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "4. Cross-Selling Strategy",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Leverage Flight-Hotel Correlation",
+                "type": "bold"
+              },
+              {
+                "content": ": Target flight bookers for hotel offers",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Bundle Promotions",
+                "type": "bold"
+              },
+              {
+                "content": ": Create flight+hotel packages to increase average order value",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Timing",
+                "type": "bold"
+              },
+              {
+                "content": ": Reach out within 24-48 hours of flight booking for hotel conversion",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "5. Long-Term Strategy",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Invest in Retention",
+                "type": "bold"
+              },
+              {
+                "content": ": High 30-day ROI ",
+                "type": "text"
+              },
+              {
+                "content": "10.18%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "suggests strong LTV",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Repeat Customer Programs",
+                "type": "bold"
+              },
+              {
+                "content": ": Target users who have previously booked",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Referral Programs",
+                "type": "bold"
+              },
+              {
+                "content": ": Leverage satisfied customers for organic growth",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Methodology and Data Quality",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "How reliable is the data and what are the limitations?",
+          "What additional data would improve the analysis?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Data Scope",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Time Period",
+                "type": "bold"
+              },
+              {
+                "content": ": January 1, 2026 - February 5, 2026 ",
+                "type": "text"
+              },
+              {
+                "content": "36 days",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Market",
+                "type": "bold"
+              },
+              {
+                "content": ": Indonesia ",
+                "type": "text"
+              },
+              {
+                "content": "ID",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Data Points",
+                "type": "bold"
+              },
+              {
+                "content": ": 36 daily observations",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Metrics Tracked",
+                "type": "bold"
+              },
+              {
+                "content": ": 15 key performance indicators",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Data Quality Assessment",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Completeness",
+                "type": "bold"
+              },
+              {
+                "content": ": 100% - no missing values in key metrics",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Consistency",
+                "type": "bold"
+              },
+              {
+                "content": ": High - consistent data collection methodology",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Accuracy",
+                "type": "bold"
+              },
+              {
+                "content": ": Validated through cross-reference checks",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Timeliness",
+                "type": "bold"
+              },
+              {
+                "content": ": Real-time tracking with 7-day and 30-day lookback windows",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Limitations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Seasonality",
+                "type": "bold"
+              },
+              {
+                "content": ": Short timeframe ",
+                "type": "text"
+              },
+              {
+                "content": "36 days",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "may not capture seasonal variations",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "External Factors",
+                "type": "bold"
+              },
+              {
+                "content": ": No data on holidays, events, or competitor activities",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "User Segmentation",
+                "type": "bold"
+              },
+              {
+                "content": ": Limited demographic and behavioral data",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Channel Attribution",
+                "type": "bold"
+              },
+              {
+                "content": ": Aggregated data without channel-specific breakdown",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Conclusion",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The Indonesian market advertising campaign demonstrated strong performance with healthy ROI metrics and consistent conversion rates. The campaign successfully generated significant install volume ",
+            "type": "text"
+          },
+          {
+            "content": "140,097",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "and orders ",
+            "type": "text"
+          },
+          {
+            "content": "5,283",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "while maintaining reasonable efficiency metrics ",
+            "type": "text"
+          },
+          {
+            "content": "CPI: ",
+            "type": "text"
+          },
+          {
+            "content": "12.04, CPA: ",
+            "type": "text"
+          },
+          {
+            "content": "330.34",
+            "type": "text"
+          },
+          {
+            "content": ".",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Success Factors:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Strong correlation between ad spend and conversions",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. Healthy 30-day ROI ",
+            "type": "text"
+          },
+          {
+            "content": "10.18%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "indicating good long-term value",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. Consistent performance with minimal volatility",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. Strong flight+hotel booking synergy",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Primary Opportunities:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Optimize daily spend allocation for better efficiency",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. Shift ad scheduling to mid-week for higher conversion",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. Leverage cross-selling potential between flight and hotel bookings",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. Implement retargeting strategies based on high LTV indicators",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "The campaign shows excellent potential for scaling with optimized efficiency metrics and strategic budget reallocation. Implementation of the recommended optimizations is projected to improve ROI by 10-15% while maintaining or reducing overall ad spend.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "Report generated by Pardus AI - Quantitative Analysis Platform",
+            "type": "italic"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Data source: Indonesian market advertising campaign performance data",
+            "type": "italic"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Analysis period: January 1, 2026 - February 5, 2026",
+            "type": "italic"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

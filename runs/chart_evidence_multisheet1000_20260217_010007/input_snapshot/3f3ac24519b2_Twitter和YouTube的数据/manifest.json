@@ -1,0 +1,25 @@
+{
+  "case_id": "3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e",
+  "title": "Twitter和YouTube的数据",
+  "source_cache_manifest": "2026-02-17T14:16:27Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "6月Twitter数据.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/3f3ac24519b2_Twitter和YouTube的数据/6月Twitter数据.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/3f3ac24519b2_Twitter和YouTube的数据/6月Twitter数据.xlsx",
+      "ok": true
+    },
+    {
+      "name": "6月YouTube数据.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/3f3ac24519b2_Twitter和YouTube的数据/6月YouTube数据.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/3f3ac24519b2_Twitter和YouTube的数据/6月YouTube数据.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

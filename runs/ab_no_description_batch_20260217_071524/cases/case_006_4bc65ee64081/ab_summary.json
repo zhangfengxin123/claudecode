@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-02-17T07:42:05Z",
+  "ab_case": {
+    "template_case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+    "rerun_case_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+    "title": "KA品牌下探数据汇总 (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+    "inputs": [
+      "description.txt",
+      "KA品牌下探数据汇总.xlsx"
+    ],
+    "description_present": true,
+    "chart_assets_count": 6,
+    "trace_type_hist": {
+      "bar": 8,
+      "scatter": 2
+    },
+    "h2_sections": [
+      "执行摘要",
+      "数据概览",
+      "GMV排名分析",
+      "广告投放分析",
+      "广告与GMV关系分析",
+      "CPC广告贡献分析",
+      "多维度综合表现对比",
+      "客单价与订单量关系分析",
+      "月环比变化分析",
+      "关键发现与建议",
+      "附录：数据说明"
+    ],
+    "first_paragraph": "本报告基于19个茶饮KA品牌的2025年1月运营数据，从营收规模、广告投放效率、市场表现等多个维度进行深入分析。数据显示，瑞幸咖啡以2.45亿元GMV位居榜首，蜜雪冰城紧随其后达到2.32亿元。在广告投入效率方面，不同品牌表现差异显著，瑞幸咖啡的CPC广告贡献率高达57.16%，显示出强大的广告转化能力。",
+    "assets": [
+      {
+        "name": "gmv_ranking.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c/assets/gmv_ranking.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "茶饮品牌1月GMV排名"
+      },
+      {
+        "name": "ad_spend_ranking.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c/assets/ad_spend_ranking.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "茶饮品牌1月广告投放金额排名"
+      },
+      {
+        "name": "ad_gmv_scatter.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c/assets/ad_gmv_scatter.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "广告投放与GMV关系"
+      },
+      {
+        "name": "cpc_contribution_ranking.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c/assets/cpc_contribution_ranking.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "各品牌CPC广告占近15天GMV比例排名（Top 10）"
+      },
+      {
+        "name": "top6_multidimension.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c/assets/top6_multidimension.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 5,
+        "title": "Top 6 品牌多维度综合表现对比（得分0-100）"
+      },
+      {
+        "name": "price_orders_scatter.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c/assets/price_orders_scatter.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "客单价与订单量关系（气泡大小代表GMV）"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+    "inputs": [
+      "KA品牌下探数据汇总.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 10,
+    "trace_type_hist": {
+      "bar": 11,
+      "sunburst": 1,
+      "scatter": 2,
+      "heatmap": 1,
+      "sankey": 1
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Market Overview",
+      "GMV Analysis & Market Share",
+      "Advertising Performance Analysis",
+      "Operational Performance Analysis",
+      "Market Conversion Funnel",
+      "Strategic Recommendations",
+      "Conclusion"
+    ],
+    "first_paragraph": "This report provides a comprehensive analysis of 19 tea and coffee brands within the KA brand downward exploration program, examining their January 2025 performance across key metrics including GMV, advertising efficiency, store operations, and growth trends.",
+    "assets": [
+      {
+        "name": "store_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/store_distribution.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "Store Count Distribution"
+      },
+      {
+        "name": "gmv_top15.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/gmv_top15.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Top 15 Brands by GMV"
+      },
+      {
+        "name": "gmv_growth.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/gmv_growth.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "GMV Growth Rate by Brand"
+      },
+      {
+        "name": "market_share.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/market_share.json",
+        "trace_types": [
+          "sunburst"
+        ],
+        "trace_count": 1,
+        "title": "Market Share by Store Scale (GMV)"
+      },
+      {
+        "name": "ad_vs_gmv.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/ad_vs_gmv.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Ad Spend vs GMV Analysis"
+      },
+      {
+        "name": "ad_efficiency.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/ad_efficiency.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "CPC Ad Efficiency"
+      },
+      {
+        "name": "cpc_investment.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/cpc_investment.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "CPC Investment Distribution"
+      },
+      {
+        "name": "business_model.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/business_model.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Business Model Analysis"
+      },
+      {
+        "name": "performance_matrix.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/performance_matrix.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "Performance Matrix"
+      },
+      {
+        "name": "total_funnel.json",
+        "url": "https://pardusai.org/v1/api/public/project/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126/assets/total_funnel.json",
+        "trace_types": [
+          "sankey"
+        ],
+        "trace_count": 1,
+        "title": "Total Market Funnel: Stores → Orders → GMV"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 4,
+    "sections_delta": -3,
+    "description_removed_ok": true,
+    "asset_name_overlap": 0,
+    "asset_old_only": [
+      "ad_gmv_scatter.json",
+      "ad_spend_ranking.json",
+      "cpc_contribution_ranking.json",
+      "gmv_ranking.json",
+      "price_orders_scatter.json",
+      "top6_multidimension.json"
+    ],
+    "asset_new_only": [
+      "ad_efficiency.json",
+      "ad_vs_gmv.json",
+      "business_model.json",
+      "cpc_investment.json",
+      "gmv_growth.json",
+      "gmv_top15.json",
+      "market_share.json",
+      "performance_matrix.json",
+      "store_distribution.json",
+      "total_funnel.json"
+    ]
+  }
+}

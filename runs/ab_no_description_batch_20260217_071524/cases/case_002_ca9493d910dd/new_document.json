@@ -1,0 +1,3915 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"Monthly Card Pricing Experiment Analysis - A/B Testing Results\"\ndescription: \"Comprehensive analysis of monthly subscription card pricing experiment comparing control Group A with test groups B1, B2, B3. Key metrics include payment rate, ARPU, ARPPU, revenue, and subscription type distribution.\"\nauthor: \"Pardus Agent\"\ndate: \"2025-01-17\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "Monthly Card Pricing Experiment Analysis",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "Executive Summary",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This report presents a comprehensive analysis of an A/B testing experiment evaluating different pricing strategies for monthly subscription cards. The experiment compares a control group ",
+            "type": "text"
+          },
+          {
+            "content": "Group A",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "with three test groups ",
+            "type": "text"
+          },
+          {
+            "content": "B1, B2, B3",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "to assess the impact of pricing changes on key performance metrics.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Findings:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": "achieved the highest payment rate at 4.44% ",
+                "type": "text"
+              },
+              {
+                "content": "+6.63% improvement vs control",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": "maintained the highest ARPU at ¥1.17, demonstrating strong revenue efficiency",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": "showed the highest ARPPU at ¥29.26 ",
+                "type": "text"
+              },
+              {
+                "content": "+3.93% vs control",
+                "type": "text"
+              },
+              {
+                "content": ", indicating higher value per paying user",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Continuous monthly subscriptions",
+                "type": "bold"
+              },
+              {
+                "content": "dominate all groups ",
+                "type": "text"
+              },
+              {
+                "content": "96-99% of subscriptions",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Two-year cards",
+                "type": "bold"
+              },
+              {
+                "content": "showed zero adoption across all groups",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "code": "./revenue_comparison.json",
+        "htmlPath": "./revenue_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Experiment Overview",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What are the key differences between the control group and test groups?",
+          "Why are sample sizes significantly different across groups?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Experimental Design",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The experiment采用了",
+            "type": "text"
+          },
+          {
+            "content": "A/B测试设计",
+            "type": "bold"
+          },
+          {
+            "content": "，将用户分为4个组别：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": 控制组，使用基准价格策略",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1, B2, B3",
+                "type": "bold"
+              },
+              {
+                "content": ": 测试组，采用不同的价格变体",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Sample Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./user_funnel.json",
+        "htmlPath": "./user_funnel.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Sample Size Analysis:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": 122,216 accounts ",
+                "type": "text"
+              },
+              {
+                "content": "largest sample, provides stable baseline",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1",
+                "type": "bold"
+              },
+              {
+                "content": ": 73,221 accounts ",
+                "type": "text"
+              },
+              {
+                "content": "59.9% of control size",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": 24,327 accounts ",
+                "type": "text"
+              },
+              {
+                "content": "19.9% of control size",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": 24,631 accounts ",
+                "type": "text"
+              },
+              {
+                "content": "20.2% of control size",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "The significant variation in sample sizes suggests this may be a ",
+            "type": "text"
+          },
+          {
+            "content": "gradual rollout experiment",
+            "type": "bold"
+          },
+          {
+            "content": "or a ",
+            "type": "text"
+          },
+          {
+            "content": "sequential testing approach",
+            "type": "bold"
+          },
+          {
+            "content": ". While Group A provides the most reliable baseline, the smaller test groups may have higher statistical variance.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Revenue Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Why do all test groups show lower total revenue compared to Group A?",
+          "How should we interpret revenue differences given the varying sample sizes?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Total Revenue by Group",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./revenue_comparison.json",
+        "htmlPath": "./revenue_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Revenue Breakdown:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥116,860 ",
+                "type": "text"
+              },
+              {
+                "content": "baseline",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥67,472 ",
+                "type": "text"
+              },
+              {
+                "content": "-42.26% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥18,763 ",
+                "type": "text"
+              },
+              {
+                "content": "-83.94% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥22,030 ",
+                "type": "text"
+              },
+              {
+                "content": "-81.15% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Interpretation",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The apparent revenue decline in test groups is ",
+            "type": "text"
+          },
+          {
+            "content": "not indicative of pricing failure",
+            "type": "bold"
+          },
+          {
+            "content": "but rather reflects:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Smaller sample sizes",
+            "type": "bold"
+          },
+          {
+            "content": "- direct revenue comparison is misleading",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Short experiment duration",
+            "type": "bold"
+          },
+          {
+            "content": "- pricing changes may have different long",
+            "type": "text"
+          },
+          {
+            "content": "-term effects",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Progressive rollout",
+            "type": "bold"
+          },
+          {
+            "content": "- test groups likely started later or have limited exposure",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": Focus on ",
+            "type": "text"
+          },
+          {
+            "content": "per-user metrics",
+            "type": "bold"
+          },
+          {
+            "content": "ARPU, ARPPU",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "rather than absolute revenue to assess pricing effectiveness.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Payment Rate Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which pricing strategy achieved the highest conversion rate?",
+          "What does the 6.63% improvement in Group B2 indicate about pricing sensitivity?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Payment Rate Comparison",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./payment_rate_comparison.json",
+        "htmlPath": "./payment_rate_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Payment Rate Performance:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": 4.44% ",
+                "type": "text"
+              },
+              {
+                "content": "+6.63% vs Group A",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "⭐ ",
+                "type": "text"
+              },
+              {
+                "content": "Best Performer",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1",
+                "type": "bold"
+              },
+              {
+                "content": ": 4.24% ",
+                "type": "text"
+              },
+              {
+                "content": "+1.90% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": 4.16% ",
+                "type": "text"
+              },
+              {
+                "content": "baseline",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": 3.74% ",
+                "type": "text"
+              },
+              {
+                "content": "-10.16% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Key Insights",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Success Story - Group B2:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Achieved the highest conversion rate across all groups",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "6.63% improvement suggests ",
+                "type": "text"
+              },
+              {
+                "content": "optimal pricing point",
+                "type": "bold"
+              },
+              {
+                "content": "discovered",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "This pricing strategy appears to maximize user willingness to convert",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Mixed Results - Group B1:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Modest improvement of 1.90% over control",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Indicates the pricing change is ",
+                "type": "text"
+              },
+              {
+                "content": "somewhat effective",
+                "type": "bold"
+              },
+              {
+                "content": "but not optimal",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Concerning - Group B3:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "10.16% decline in payment rate suggests ",
+                "type": "text"
+              },
+              {
+                "content": "pricing too high",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Users may perceive this option as poor value for money",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Statistical Significance Note",
+            "type": "bold"
+          },
+          {
+            "content": ": With smaller sample sizes, the results for B2 and B3 should be validated with additional testing to confirm statistical significance.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "ARPU and ARPPU Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Why does Group A have the highest ARPU despite lower payment rates?",
+          "How should we balance ARPU and payment rate when evaluating pricing strategies?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Revenue Per User Metrics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./arpu_arppu_comparison.json",
+        "htmlPath": "./arpu_arppu_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "ARPU Analysis ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Revenue Per Active User",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPU Performance:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥1.17 ",
+                "type": "text"
+              },
+              {
+                "content": "baseline",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "⭐ ",
+                "type": "text"
+              },
+              {
+                "content": "Highest",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥1.13 ",
+                "type": "text"
+              },
+              {
+                "content": "-3.42% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥1.09 ",
+                "type": "text"
+              },
+              {
+                "content": "-6.84% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥0.95 ",
+                "type": "text"
+              },
+              {
+                "content": "-18.80% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Interpretation:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group A's pricing strategy generates the most revenue per active user",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B2's lower ARPU ",
+                "type": "text"
+              },
+              {
+                "content": "despite higher payment rate",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "suggests ",
+                "type": "text"
+              },
+              {
+                "content": "lower average transaction value",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "This indicates Group B2 may use ",
+                "type": "text"
+              },
+              {
+                "content": "lower entry pricing",
+                "type": "bold"
+              },
+              {
+                "content": "to boost conversion",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "ARPPU Analysis ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Revenue Per Paying User",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPPU Performance:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥29.26 ",
+                "type": "text"
+              },
+              {
+                "content": "+3.93% vs Group A",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "⭐ ",
+                "type": "text"
+              },
+              {
+                "content": "Highest",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥28.15 ",
+                "type": "text"
+              },
+              {
+                "content": "baseline",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥26.68 ",
+                "type": "text"
+              },
+              {
+                "content": "-5.22% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥21.39 ",
+                "type": "text"
+              },
+              {
+                "content": "-23.99% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Interpretation:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group B3 users who convert spend ",
+                "type": "text"
+              },
+              {
+                "content": "significantly more",
+                "type": "bold"
+              },
+              {
+                "content": "than other groups",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Suggests ",
+                "type": "text"
+              },
+              {
+                "content": "premium pricing strategy",
+                "type": "bold"
+              },
+              {
+                "content": "for users who value the service",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Low payment rate but high spending power indicates ",
+                "type": "text"
+              },
+              {
+                "content": "targeted audience",
+                "type": "bold"
+              },
+              {
+                "content": "approach",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Strategic Trade-offs",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./key_metrics_comparison.json",
+        "htmlPath": "./key_metrics_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The ARPU vs. Payment Rate Dilemma:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "-------",
+          "----------",
+          "--------------",
+          "------",
+          "-------"
+        ],
+        "headers": [
+          "Group",
+          "Strategy",
+          "Payment Rate",
+          "ARPU",
+          "ARPPU"
+        ],
+        "rows": [
+          [
+            "A",
+            "Balanced",
+            "4.16%",
+            "¥1.17",
+            "¥28.15"
+          ],
+          [
+            "B1",
+            "Slightly Lower Price",
+            "4.24%",
+            "¥1.13",
+            "¥26.68"
+          ],
+          [
+            "B2",
+            "Low Entry Price",
+            "4.44%",
+            "¥0.95",
+            "¥21.39"
+          ],
+          [
+            "B3",
+            "Premium Price",
+            "3.74%",
+            "¥1.09",
+            "¥29.26"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "Strategic Implications:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": Volume strategy - lower ARPU but higher conversion",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": Premium strategy - lower conversion but higher value users",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group A/B1",
+                "type": "bold"
+              },
+              {
+                "content": ": Balanced approach - moderate performance on all metrics",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Subscription Type Distribution",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Why are continuous monthly subscriptions so dominant across all groups?",
+          "What strategies could increase longer-term subscription adoption?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Subscription Preferences by Group",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./subscription_distribution.json",
+        "htmlPath": "./subscription_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Subscription Type Breakdown",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Continuous Monthly Subscription:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": 4.04% ",
+                "type": "text"
+              },
+              {
+                "content": "baseline",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": 4.38% ",
+                "type": "text"
+              },
+              {
+                "content": "+8.42% vs Group A",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "⭐ ",
+                "type": "text"
+              },
+              {
+                "content": "Highest",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1",
+                "type": "bold"
+              },
+              {
+                "content": ": 4.12% ",
+                "type": "text"
+              },
+              {
+                "content": "+2.00% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": 3.62% ",
+                "type": "text"
+              },
+              {
+                "content": "-10.40% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "One-Year Card:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.083% ",
+                "type": "text"
+              },
+              {
+                "content": "baseline",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.079% ",
+                "type": "text"
+              },
+              {
+                "content": "-4.82% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.035% ",
+                "type": "text"
+              },
+              {
+                "content": "-57.83% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.075% ",
+                "type": "text"
+              },
+              {
+                "content": "-9.64% vs Group A",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Two-Year Card:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "All Groups",
+                "type": "bold"
+              },
+              {
+                "content": ": 0.00% ",
+                "type": "text"
+              },
+              {
+                "content": "no adoption",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Key Observations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Dominance of Monthly Subscriptions",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "96-99% of all subscriptions are continuous monthly plans",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Users strongly prefer ",
+                "type": "text"
+              },
+              {
+                "content": "flexibility",
+                "type": "bold"
+              },
+              {
+                "content": "and ",
+                "type": "text"
+              },
+              {
+                "content": "lower commitment",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Suggests high price sensitivity and preference for trying before committing",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2. Minimal Long-term Adoption",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "One-year cards show extremely low adoption ",
+                "type": "text"
+              },
+              {
+                "content": "0.1%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Two-year cards show zero adoption",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Current pricing or value proposition may not be compelling for long-term commitments",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "3. Group B2's Success",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Highest continuous monthly subscription rate",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Reinforces that ",
+                "type": "text"
+              },
+              {
+                "content": "accessible pricing",
+                "type": "bold"
+              },
+              {
+                "content": "drives recurring revenue",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Volume approach appears effective for this user segment",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Strategic Recommendations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "To Increase Long-term Subscriptions:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Offer significant discounts",
+            "type": "bold"
+          },
+          {
+            "content": "for annual commitments ",
+            "type": "text"
+          },
+          {
+            "content": "30-50% off",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Provide value-added features",
+            "type": "bold"
+          },
+          {
+            "content": "exclusive to long-term subscribers",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Implement tiered pricing",
+            "type": "bold"
+          },
+          {
+            "content": "with clear differentiation between monthly and annual plans",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Create limited-time offers",
+            "type": "bold"
+          },
+          {
+            "content": "to encourage annual upgrades",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Educate users",
+            "type": "bold"
+          },
+          {
+            "content": "about the savings potential of long-term commitments",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Performance Uplift Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which pricing strategy shows the most balanced performance across all metrics?",
+          "How can we combine the strengths of different pricing strategies?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Comprehensive Performance Comparison",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./uplift_heatmap.json",
+        "htmlPath": "./uplift_heatmap.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Metric-by-Metric Uplift vs. Group A",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Payment Rate:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1: +1.90% ",
+                "type": "text"
+              },
+              {
+                "content": "green - positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2: +6.63% ",
+                "type": "text"
+              },
+              {
+                "content": "dark green - highly positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3: -10.16% ",
+                "type": "text"
+              },
+              {
+                "content": "red - negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPU:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1: -3.42% ",
+                "type": "text"
+              },
+              {
+                "content": "light red - slightly negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2: -18.80% ",
+                "type": "text"
+              },
+              {
+                "content": "dark red - strongly negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3: -6.84% ",
+                "type": "text"
+              },
+              {
+                "content": "red - negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPPU:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1: -5.22% ",
+                "type": "text"
+              },
+              {
+                "content": "light red - slightly negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2: -23.99% ",
+                "type": "text"
+              },
+              {
+                "content": "dark red - strongly negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3: +3.93% ",
+                "type": "text"
+              },
+              {
+                "content": "green - positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Continuous Monthly Rate:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1: +2.00% ",
+                "type": "text"
+              },
+              {
+                "content": "light green - slightly positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2: +8.42% ",
+                "type": "text"
+              },
+              {
+                "content": "dark green - highly positive",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3: -10.40% ",
+                "type": "text"
+              },
+              {
+                "content": "red - negative",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Strategic Positioning Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Group A - The Balanced Baseline:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Strengths",
+                "type": "bold"
+              },
+              {
+                "content": ": Consistent performance across all metrics",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Weaknesses",
+                "type": "bold"
+              },
+              {
+                "content": ": Not leading in any specific metric",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Positioning",
+                "type": "bold"
+              },
+              {
+                "content": ": Safe, stable option",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Group B1 - The Moderate Challenger:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Strengths",
+                "type": "bold"
+              },
+              {
+                "content": ": Slight improvement in payment rate and continuous monthly subscriptions",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Weaknesses",
+                "type": "bold"
+              },
+              {
+                "content": ": Lower ARPU and ARPPU",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Positioning",
+                "type": "bold"
+              },
+              {
+                "content": ": Cautious pricing adjustment with modest gains",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Group B2 - The Volume King:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Strengths",
+                "type": "bold"
+              },
+              {
+                "content": ": Highest payment rate ",
+                "type": "text"
+              },
+              {
+                "content": "+6.63%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "and continuous monthly rate ",
+                "type": "text"
+              },
+              {
+                "content": "+8.42%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Weaknesses",
+                "type": "bold"
+              },
+              {
+                "content": ": Significantly lower ARPU ",
+                "type": "text"
+              },
+              {
+                "content": "-18.80%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "and ARPPU ",
+                "type": "text"
+              },
+              {
+                "content": "-23.99%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Positioning",
+                "type": "bold"
+              },
+              {
+                "content": ": Low-price, high-volume strategy for market penetration",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Group B3 - The Premium Play:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Strengths",
+                "type": "bold"
+              },
+              {
+                "content": ": Highest ARPPU ",
+                "type": "text"
+              },
+              {
+                "content": "+3.93%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "- maximizes value from paying users",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Weaknesses",
+                "type": "bold"
+              },
+              {
+                "content": ": Lowest payment rate ",
+                "type": "text"
+              },
+              {
+                "content": "-10.16%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "and continuous monthly rate ",
+                "type": "text"
+              },
+              {
+                "content": "-10.40%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Positioning",
+                "type": "bold"
+              },
+              {
+                "content": ": Premium strategy targeting high-value segments",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Hybrid Strategy Recommendations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Option 1: Dynamic Pricing",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Implement ",
+                "type": "text"
+              },
+              {
+                "content": "Group B2 pricing",
+                "type": "bold"
+              },
+              {
+                "content": "for new users ",
+                "type": "text"
+              },
+              {
+                "content": "boost conversion",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Offer ",
+                "type": "text"
+              },
+              {
+                "content": "Group B3 pricing",
+                "type": "bold"
+              },
+              {
+                "content": "upgrades to engaged users ",
+                "type": "text"
+              },
+              {
+                "content": "maximize value",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Use ",
+                "type": "text"
+              },
+              {
+                "content": "Group A pricing",
+                "type": "bold"
+              },
+              {
+                "content": "as fallback for uncertain segments",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Option 2: Segmented Approach",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Price-sensitive users",
+                "type": "bold"
+              },
+              {
+                "content": ": Use B2 strategy ",
+                "type": "text"
+              },
+              {
+                "content": "low entry, high volume",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Value-seeking users",
+                "type": "bold"
+              },
+              {
+                "content": ": Use B3 strategy ",
+                "type": "text"
+              },
+              {
+                "content": "premium features, higher ARPPU",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Mainstream users",
+                "type": "bold"
+              },
+              {
+                "content": ": Use A/B1 strategy ",
+                "type": "text"
+              },
+              {
+                "content": "balanced approach",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Option 3: Tiered Pricing Tiers",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Basic Tier",
+                "type": "bold"
+              },
+              {
+                "content": ": B2 pricing for entry-level access",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Standard Tier",
+                "type": "bold"
+              },
+              {
+                "content": ": A/B1 pricing for regular users",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Premium Tier",
+                "type": "bold"
+              },
+              {
+                "content": ": B3 pricing with exclusive features",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Statistical Significance and Limitations",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "How do varying sample sizes affect the reliability of our conclusions?",
+          "What additional data would strengthen this analysis?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Statistical Considerations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Sample Size Impact:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Group A",
+                "type": "bold"
+              },
+              {
+                "content": ": Large sample ",
+                "type": "text"
+              },
+              {
+                "content": "n=122,216",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "→ High statistical power, reliable estimates",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B1",
+                "type": "bold"
+              },
+              {
+                "content": ": Moderate sample ",
+                "type": "text"
+              },
+              {
+                "content": "n=73,221",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "→ Reasonable reliability",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B2",
+                "type": "bold"
+              },
+              {
+                "content": ": Small sample ",
+                "type": "text"
+              },
+              {
+                "content": "n=24,327",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "→ Higher variance, less reliable",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Group B3",
+                "type": "bold"
+              },
+              {
+                "content": ": Small sample ",
+                "type": "text"
+              },
+              {
+                "content": "n=24,631",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "→ Higher variance, less reliable",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Confidence in Results:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "High Confidence",
+            "type": "bold"
+          },
+          {
+            "content": ": Group A baseline metrics, Group B1 results",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Moderate Confidence",
+            "type": "bold"
+          },
+          {
+            "content": ": Group B2 and B3 payment rates",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Low Confidence",
+            "type": "bold"
+          },
+          {
+            "content": ": Group B2 and B3 ARPU/ARPPU differences",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Methodological Limitations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Sample Size Disparity",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Direct revenue comparisons are misleading",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Per-user metrics more reliable but still affected by sample variance",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Need normalization or weighted analysis",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2. Unknown Experimental Duration",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "unclear how long each group was exposed to pricing",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Short-term effects may differ from long-term user behavior",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Seasonal variations not accounted for",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "3. Lack of Cohort Analysis",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Cannot track user behavior over time",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Unable to measure retention, churn, or lifetime value",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "First-time vs. returning users not distinguished",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "4. Missing Context",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Price points for each group not provided",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "User demographics and segmentation unknown",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Competitive landscape and market conditions unclear",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Recommended Additional Data",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "For Robust Analysis:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Price points",
+            "type": "bold"
+          },
+          {
+            "content": "for each group",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "User demographics",
+            "type": "bold"
+          },
+          {
+            "content": "and segmentation",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Cohort analysis",
+            "type": "bold"
+          },
+          {
+            "content": "over time",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Retention and churn metrics",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Lifetime value LTV",
+            "type": "bold"
+          },
+          {
+            "content": "calculations",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "6. ",
+            "type": "text"
+          },
+          {
+            "content": "Competitor pricing",
+            "type": "bold"
+          },
+          {
+            "content": "and market benchmarks",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "7. ",
+            "type": "text"
+          },
+          {
+            "content": "Seasonal adjustments",
+            "type": "bold"
+          },
+          {
+            "content": "and trend analysis",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Strategic Recommendations",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which pricing strategy should be implemented based on this analysis?",
+          "How can we optimize the pricing strategy for different user segments?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Primary Recommendation: Hybrid Dynamic Pricing",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Implement a segmented pricing strategy combining strengths from all groups:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Phase 1: New User Acquisition ",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Group B2 Model",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Use B2 pricing",
+                "type": "bold"
+              },
+              {
+                "content": "for new user signups",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Objective",
+                "type": "bold"
+              },
+              {
+                "content": ": Maximize conversion and user base growth",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Target",
+                "type": "bold"
+              },
+              {
+                "content": ": Price-sensitive, new-to-service users",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expected Outcome",
+                "type": "bold"
+              },
+              {
+                "content": ": Higher payment rate ",
+                "type": "text"
+              },
+              {
+                "content": "+6.63%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Phase 2: User Engagement & Upselling ",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Group B3 Model",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Implement premium tiers",
+                "type": "bold"
+              },
+              {
+                "content": "with B3 pricing characteristics",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Objective",
+                "type": "bold"
+              },
+              {
+                "content": ": Maximize revenue from engaged users",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Target",
+                "type": "bold"
+              },
+              {
+                "content": ": Active users with demonstrated engagement",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expected Outcome",
+                "type": "bold"
+              },
+              {
+                "content": ": Higher ARPPU ",
+                "type": "text"
+              },
+              {
+                "content": "+3.93%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Phase 3: Retention & Optimization ",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Group A/B1 Model",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Use balanced pricing",
+                "type": "bold"
+              },
+              {
+                "content": "for mainstream users",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Objective",
+                "type": "bold"
+              },
+              {
+                "content": ": Maintain stable revenue and user satisfaction",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Target",
+                "type": "bold"
+              },
+              {
+                "content": ": Average users without strong price sensitivity",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expected Outcome",
+                "type": "bold"
+              },
+              {
+                "content": ": Consistent performance across metrics",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Secondary Recommendations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Pricing Experiment Expansion",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Increase sample sizes for B2 and B3 groups",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Run longer-duration experiments to observe long-term effects",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Test additional price points between current strategies",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2. Long-term Subscription Incentives",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Create compelling value propositions for annual subscriptions",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Offer 30-50% discounts for 1-year commitments",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Develop exclusive features for long-term subscribers",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "3. User Segmentation",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Identify price-sensitive vs. value-seeking user segments",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Implement behavioral targeting for personalized pricing",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Use predictive analytics to match users with optimal pricing",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "4. Continuous Optimization",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Implement A/B testing as an ongoing process",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Monitor key metrics in real-time",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Adjust pricing based on performance data",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Implementation Roadmap",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Week 1-2:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Roll out B2 pricing for new users",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Set up tracking and monitoring systems",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Week 3-4:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Design premium tier packages ",
+                "type": "text"
+              },
+              {
+                "content": "B3 model",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Develop upsell and cross-sell strategies",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Week 5-8:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Implement segmented pricing by user behavior",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Monitor performance and iterate",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Month 3:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Conduct full experiment with larger samples",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Analyze long-term effects on retention and LTV",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Conclusion",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This A/B testing experiment provides valuable insights into pricing strategy effectiveness for monthly subscription cards. The data reveals three distinct pricing approaches, each with unique strengths and weaknesses:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Takeaways:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Group B2's volume strategy",
+            "type": "bold"
+          },
+          {
+            "content": "successfully increases conversion rates ",
+            "type": "text"
+          },
+          {
+            "content": "+6.63%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Group B3's premium strategy",
+            "type": "bold"
+          },
+          {
+            "content": "maximizes revenue from paying users ",
+            "type": "text"
+          },
+          {
+            "content": "+3.93% ARPPU",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Group A's balanced approach",
+            "type": "bold"
+          },
+          {
+            "content": "provides stable, predictable performance",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "The optimal solution is not a single pricing strategy",
+            "type": "bold"
+          },
+          {
+            "content": "but rather a ",
+            "type": "text"
+          },
+          {
+            "content": "dynamic, segmented approach",
+            "type": "bold"
+          },
+          {
+            "content": "that matches pricing to user behavior and preferences. By combining the strengths of all tested strategies, the business can maximize both conversion and revenue while maintaining user satisfaction.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Next Steps:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Implement hybrid pricing strategy with segmentation",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expand testing with larger sample sizes",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Monitor long-term effects on retention and lifetime value",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Continuously optimize based on performance data",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "The foundation laid by this experiment provides a strong starting point for data-driven pricing decisions. With ongoing testing and optimization, the business can refine its pricing strategy to maximize revenue while maintaining competitive advantage in the market.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Appendix: Data Dictionary",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-------------",
+          "--------------",
+          "-------------",
+          "------"
+        ],
+        "headers": [
+          "Column Name",
+          "Chinese Name",
+          "Description",
+          "Type"
+        ],
+        "rows": [
+          [
+            "组别",
+            "Group",
+            "Experimental group identifier A, B1, B2, B3",
+            "String"
+          ],
+          [
+            "账号数量",
+            "Accounts",
+            "Total number of user accounts",
+            "Integer"
+          ],
+          [
+            "设备数量",
+            "Devices",
+            "Total number of devices",
+            "Integer"
+          ],
+          [
+            "活跃设备数",
+            "Active Devices",
+            "Number of active devices",
+            "Integer"
+          ],
+          [
+            "付费设备数",
+            "Paying Devices",
+            "Number of devices that made a purchase",
+            "Integer"
+          ],
+          [
+            "付费订单数",
+            "Total Orders",
+            "Total number of paid orders",
+            "Integer"
+          ],
+          [
+            "两年卡付费订单数",
+            "2-Year Card Orders",
+            "Orders for 2-year subscription cards",
+            "Integer"
+          ],
+          [
+            "一年卡付费订单数",
+            "1-Year Card Orders",
+            "Orders for 1-year subscription cards",
+            "Integer"
+          ],
+          [
+            "连续包月付费订单数",
+            "Continuous Monthly Orders",
+            "Orders for continuous monthly subscription",
+            "Integer"
+          ],
+          [
+            "总收入",
+            "Total Revenue",
+            "Total revenue generated CNY",
+            "Integer"
+          ],
+          [
+            "付费率",
+            "Payment Rate",
+            "Conversion rate Paying Devices / Total Devices",
+            "Float"
+          ],
+          [
+            "连续包月付费率",
+            "Continuous Monthly Rate",
+            "Rate of continuous monthly subscriptions",
+            "Float"
+          ],
+          [
+            "一年卡付费率",
+            "1-Year Card Rate",
+            "Rate of 1-year card subscriptions",
+            "Float"
+          ],
+          [
+            "两年卡付费率",
+            "2-Year Card Rate",
+            "Rate of 2-year card subscriptions",
+            "Integer"
+          ],
+          [
+            "ARPU",
+            "ARPU",
+            "Average Revenue Per User per active device",
+            "Float"
+          ],
+          [
+            "ARPPU",
+            "ARPPU",
+            "Average Revenue Per Paying User per paying device",
+            "Float"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "Analysis completed by Pardus Agent on 2025-01-17",
+            "type": "italic"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

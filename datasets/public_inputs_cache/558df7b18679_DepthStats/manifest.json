@@ -1,0 +1,29 @@
+{
+  "case_id": "558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9",
+  "title_hint": "DepthStats",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "DepthStats.xlsx",
+      "status": 200,
+      "size_bytes": 21589,
+      "source_url": "https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/files/DepthStats.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/558df7b18679_DepthStats/DepthStats.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "check_with_label.xlsx",
+      "status": 200,
+      "size_bytes": 11456,
+      "source_url": "https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/files/check_with_label.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/558df7b18679_DepthStats/check_with_label.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:17:14Z"
+}

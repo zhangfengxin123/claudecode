@@ -1,0 +1,18 @@
+{
+  "case_id": "b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d",
+  "title": "arbitrage",
+  "source_cache_manifest": "2026-02-17T14:35:50Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "510050_underlying_合成期权_策略示例.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b9c4c3a493f4_arbitrage/510050_underlying_合成期权_策略示例.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/b9c4c3a493f4_arbitrage/510050_underlying_合成期权_策略示例.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

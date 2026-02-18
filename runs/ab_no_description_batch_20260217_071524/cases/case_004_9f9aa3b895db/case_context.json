@@ -1,0 +1,127 @@
+{
+  "source_row": {
+    "idx": 18,
+    "case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+    "title": "FEDFUNDS",
+    "chart_count": 6,
+    "upload_count": 4,
+    "doc_status": 200,
+    "up_status": 200,
+    "html": "case_018_9f9aa3b895db.html"
+  },
+  "queue_log": {
+    "case_index": 4,
+    "template_case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+    "title": "FEDFUNDS",
+    "started_at": "2026-02-17T07:26:28Z",
+    "rerun_case_id": "524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9",
+    "upload_response": {
+      "message": "Files uploaded successfully"
+    },
+    "queue_history": [
+      {
+        "at": "2026-02-17T07:26:32Z",
+        "status": "pending",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:26:53Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:27:14Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:27:34Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:27:55Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:28:16Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:28:37Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:28:58Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:29:19Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:29:39Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:30:01Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:30:21Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:30:43Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:31:03Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:31:24Z",
+        "status": "completed",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      }
+    ],
+    "final_status": "completed",
+    "last_queue": {
+      "project_id": "524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9",
+      "status": "completed",
+      "tasks_ahead": 0,
+      "queue_by_tier": [],
+      "total_pending": 0,
+      "currently_processing": 0,
+      "estimated_wait_minutes": 0,
+      "priority_level": "premium",
+      "created_at": "2026-02-17T07:26:32.231475Z",
+      "started_at": "2026-02-17T07:26:34.321927Z"
+    }
+  }
+}

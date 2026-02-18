@@ -1,0 +1,29 @@
+{
+  "case_id": "d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874",
+  "title_hint": "AB_NO_DESC_64914baf5ff5_20260217_070858",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "2025 CAP overview.xlsx",
+      "status": 200,
+      "size_bytes": 45302,
+      "source_url": "https://pardusai.org/v1/api/public/project/d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874/files/2025%20CAP%20overview.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d4e6949ea9fa_AB_NO_DESC_64914baf5ff5_20260217_070858/2025 CAP overview.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "SHA CHRONO_CAP.xlsx",
+      "status": 200,
+      "size_bytes": 549970,
+      "source_url": "https://pardusai.org/v1/api/public/project/d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874/files/SHA%20CHRONO_CAP.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d4e6949ea9fa_AB_NO_DESC_64914baf5ff5_20260217_070858/SHA CHRONO_CAP.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:06:49Z"
+}

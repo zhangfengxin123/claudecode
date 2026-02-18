@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence bf097dd935d3</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>问卷结果</h1>
+  <div class='muted'>case_id: <span class='code'>bf097dd935d3f45096bcaf3b47ea8ee56824cedea15cb66d38e4b9b48cf65017</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/bf097dd935d3f45096bcaf3b47ea8ee56824cedea15cb66d38e4b9b48cf65017' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/bf097dd935d3f45096bcaf3b47ea8ee56824cedea15cb66d38e4b9b48cf65017</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单与预览。</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>description.txt</code></td><td>200</td><td>4510</td><td>text/plain</td><td><a href='https://pardusai.org/v1/api/public/project/bf097dd935d3f45096bcaf3b47ea8ee56824cedea15cb66d38e4b9b48cf65017/files/description.txt' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>问卷结果.xlsx</code></td><td>200</td><td>36699</td><td>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</td><td><a href='https://pardusai.org/v1/api/public/project/bf097dd935d3f45096bcaf3b47ea8ee56824cedea15cb66d38e4b9b48cf65017/files/%E9%97%AE%E5%8D%B7%E7%BB%93%E6%9E%9C.xlsx' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>description.txt</code> · HTTP 200 · text</summary><pre>问卷题目为：喀什地区高中生人工智能（AI）辅助学习现状调查
+
+同学你好：
+本问卷旨在客观了解大家对人工智能（尤其是像豆包、DeepSeek、文心一言等生成式AI）在学习中的认知与使用看法。问卷匿名，无对错之分，请根据真实情况填写。
+请在符合你实际情况的选项前画√。如无特殊说明，题目皆为单选题。
+
+ 
+第一部分：基础硬件环境
+1. 你的年级？
+(   ) 高一 (   ) 高二 (   ) 高三
+2. 关于手机的使用情况，符合你现状的是？
+(   ) 完全没有智能手机。
+(   ) 有智能手机，但仅周末/假期能用。
+(   ) 有智能手机，在校期间也能有限度地使用。
+3. 关于电脑的使用情况，符合你现状的是？
+(   ) 教室/机房有电脑，且学生可以由老师指导使用或自由使用。
+(   ) 教室/机房有电脑，但仅限老师使用，学生接触不到。
+(   ) 教室/机房没有可用的电脑。
+
+第二部分：对AI的认知程度
+4. 提到“生成式人工智能（AI）”，你首先想到的是？
+(   ) 完全陌生：没听说过，不知道是什么。
+(   ) 模糊印象：听说过名字，感觉很高大上，但不知道具体能干嘛。
+(   ) 工具认知：知道它能聊天、写作文、回答问题。
+(   ) 原理认知：不仅知道能干嘛，还大致知道它是通过大数据训练出来的。
+5. （可多选）你是否听说过以下具体的AI产品？
+[   ] ChatGPT 
+[   ] Gemini 
+[   ] 豆包
+[   ] Kimi
+[   ] DeepSeek
+[   ] 通义千问
+[   ] 文心一言
+[   ] 其它：                           
+[   ] 上述所有都没有听说过
+6. （可多选）你认为目前的AI技术能做到以下哪些事？
+[   ] 帮我写出一篇完整的议论文
+[   ] 解答复杂的数学压轴题并给出步骤
+[   ] 像心理老师一样安慰我的情绪
+[   ] 预测高考具体会考哪道原题
+[   ] 我不确定它能做什么
+第三部分：AI在学习中的应用
+7. 截止目前，你自己实际使用过这类AI工具吗？
+(   ) 经常使用（每周都会用）[若选择该选项，请回答第8-10题，无需回答第11题]
+(   ) 偶尔尝试（只用过一两次）[若选择该选项，请回答第8-10题，无需回答第11题]
+(   ) 从未接触 [若选择该选项，请回答第11题，无需回答第8-10题]
+8. （可多选）你主要用AI来辅助什么？
+[   ] 语言类：查单词、翻译句子、润色作文。
+[   ] 理科类：搜题、查公式、看解题步骤。
+[   ] 信息类：查资料、整理知识点、做PPT。
+[   ] 娱乐类：聊天、画画、写小说（非学习用途）。
+[   ] 其它：                           
+9. 使用AI后，你觉得对学习效果的影响是？
+(   ) 正向提升：效率变高了，以前搞不懂的现在能懂了。
+(   ) 没啥变化：感觉还是得靠自己背和练，AI帮不上大忙。
+(   ) 负面干扰：浪费了时间，或者给了错误的答案误导我。
+10. 在使用AI直接给出答案或文章时，你有过以下哪种感受？
+(   ) 我会先看AI的答案，然后思考它是怎么做出来的，学它的思路。
+(   ) 我主要是为了赶时间完成任务，直接复制并没有太多思考。
+(   ) 我担心长期这样用，自己会变懒，失去独立思考能力。
+回答完第10题后，请跳至第四部分。
+11. （选择2项）你没有使用过AI工具的主要原因是？
+[   ] 环境限制：学校管理严格/没有设备/网络受限。
+[   ] 渠道缺失：不知道有什么软件，也不知道去哪里下载。
+[   ] 主观意愿：觉得现阶段学习只需要课本和老师，不需要AI。
+[   ] 合规担忧：担心被视为作弊或违规。
+[   ] 其它：                           
+
+第四部分：态度与期待
+12. 如果允许使用AI辅助学习，你最希望它扮演什么角色？
+(   ) 苏格拉底式导师：不要直接给答案，而是通过提问引导我自己想出来。
+(   ) 全能资料库：帮我瞬间整理好所有考点和笔记，节省抄写时间。
+(   ) 个性化出题人：根据我的错题，自动生成一堆相似的题让我练。
+(   ) 不需要：我认为传统的学习方式对高考最有效。
+13. 对于“中学生使用AI”，你更倾向于哪种观点？
+(   ) 支持：这是未来的必备技能，越早掌握越好。
+(   ) 中立：作为辅助工具可以，但不能依赖，要有度。
+(   ) 反对：会削弱人的思考能力，也会破坏考试公平，应该禁止。</pre></details><details><summary><code>问卷结果.xlsx</code> · HTTP 200 · binary</summary><em>binary content; preview skipped</em></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td colspan="7">no assets</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <p class="muted">no renderable charts</p>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

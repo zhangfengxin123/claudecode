@@ -1,0 +1,25 @@
+{
+  "case_id": "bf097dd935d3f45096bcaf3b47ea8ee56824cedea15cb66d38e4b9b48cf65017",
+  "title": "问卷结果",
+  "source_cache_manifest": "2026-02-17T14:36:06Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bf097dd935d3_问卷结果/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/bf097dd935d3_问卷结果/description.txt",
+      "ok": true
+    },
+    {
+      "name": "问卷结果.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bf097dd935d3_问卷结果/问卷结果.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/bf097dd935d3_问卷结果/问卷结果.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

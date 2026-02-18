@@ -1,0 +1,417 @@
+{
+  "generated_at": "2026-02-17T08:20:32Z",
+  "ab_case": {
+    "template_case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+    "rerun_case_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+    "title": "2024 vs 2025 CAP Review report (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+    "inputs": [
+      "description.txt",
+      "2025 CAP overview.xlsx",
+      "SHA CHRONO_CAP.xlsx"
+    ],
+    "description_present": true,
+    "chart_assets_count": 11,
+    "trace_type_hist": {
+      "bar": 23
+    },
+    "h2_sections": [
+      "数据流程概览",
+      "执行摘要",
+      "CAP数量趋势分析",
+      "成本分析",
+      "部门对比分析",
+      "CAP类型分析",
+      "流程分析",
+      "成本结构分析",
+      "高成本CAP案例研究",
+      "CAP关闭率分析",
+      "关键客户分析",
+      "结论与建议"
+    ],
+    "first_paragraph": "本分析报告基于从Excel文件中提取的CAP数据，经过数据清洗、标准化和深度分析，提供了2023年与2024年间的全面对比。数据处理流程包括从Chrono CAP工作表提取23xxx（2023年）和24xxx（2024年）数据，进行质量验证和标准化，最终生成交互式可视化报告。",
+    "assets": [
+      {
+        "name": "cap_count_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/cap_count_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "CAP数量对比"
+      },
+      {
+        "name": "cost_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/cost_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "成本对比"
+      },
+      {
+        "name": "avg_cost_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/avg_cost_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "平均成本对比"
+      },
+      {
+        "name": "dept_total_cost_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/dept_total_cost_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "各部门总成本对比"
+      },
+      {
+        "name": "dept_avg_cost_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/dept_avg_cost_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "各部门平均成本对比"
+      },
+      {
+        "name": "cap_type_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/cap_type_distribution.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "CAP TYPE分布对比"
+      },
+      {
+        "name": "avg_cost_by_type.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/avg_cost_by_type.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "各CAP类型平均成本对比"
+      },
+      {
+        "name": "process_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/process_distribution.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Process分布对比"
+      },
+      {
+        "name": "avg_cost_by_process.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/avg_cost_by_process.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "各流程平均成本对比"
+      },
+      {
+        "name": "cost_structure_ratio.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/cost_structure_ratio.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "成本结构对比"
+      },
+      {
+        "name": "top_10_expensive_caps.json",
+        "url": "https://pardusai.org/v1/api/public/project/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06/assets/top_10_expensive_caps.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2024年成本最高的10个CAP"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+    "inputs": [
+      "2025 CAP overview.xlsx",
+      "SHA CHRONO_CAP.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 21,
+    "trace_type_hist": {
+      "scatter": 10,
+      "bar": 11,
+      "sankey": 1,
+      "histogram": 2,
+      "heatmap": 1
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "CAP Overview and Data Scope",
+      "CAP Type Distribution Analysis",
+      "7M Root Cause Analysis",
+      "Temporal Trends and Patterns",
+      "Cost Analysis and Financial Impact",
+      "Process and Departmental Analysis",
+      "Issuer and Customer Analysis",
+      "Performance Metrics and Closure Analysis",
+      "7M Category Trends Over Time",
+      "2025 CAP Analysis",
+      "CAP Process Flow",
+      "Recommendations and Action Items",
+      "Conclusion"
+    ],
+    "first_paragraph": "This report provides a comprehensive analysis of Corrective and Preventive Actions CAP data from 2011 to 2025, covering 591 historical records and 10 current 2025 records. The analysis reveals key patterns in CAP types, root causes, costs, and performance metrics that can inform quality improvement initiatives.",
+    "assets": [
+      {
+        "name": "yearly_cap_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/yearly_cap_trend.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "CAP Records by Year (2011-2024)"
+      },
+      {
+        "name": "cap_types_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cap_types_distribution.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Distribution of CAP Types (Historical)"
+      },
+      {
+        "name": "cost_by_cap_type.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cost_by_cap_type.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Total Cost by CAP Type"
+      },
+      {
+        "name": "seven_m_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/seven_m_distribution.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Distribution of 7M Categories (Top 10)"
+      },
+      {
+        "name": "cost_by_7m_category.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cost_by_7m_category.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Total Cost by 7M Category (Top 10)"
+      },
+      {
+        "name": "cap_flow_sankey.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cap_flow_sankey.json",
+        "trace_types": [
+          "sankey"
+        ],
+        "trace_count": 1,
+        "title": "CAP Flow Sankey Diagram"
+      },
+      {
+        "name": "cost_by_year_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cost_by_year_trend.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Total CAP Costs by Year"
+      },
+      {
+        "name": "monthly_trend_recent.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/monthly_trend_recent.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Monthly CAP Records (2020-2024)"
+      },
+      {
+        "name": "cost_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cost_distribution.json",
+        "trace_types": [
+          "histogram"
+        ],
+        "trace_count": 1,
+        "title": "Distribution of CAP Costs"
+      },
+      {
+        "name": "avg_cost_by_year_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/avg_cost_by_year_trend.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Average CAP Cost by Year"
+      },
+      {
+        "name": "process_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/process_distribution.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Distribution of Processes (Top 10)"
+      },
+      {
+        "name": "cap_type_by_year_heatmap.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cap_type_by_year_heatmap.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "CAP Type by Year Heatmap"
+      },
+      {
+        "name": "top_issuers.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/top_issuers.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top 10 CAP Issuers"
+      },
+      {
+        "name": "cost_by_issuer.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cost_by_issuer.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Total Cost by Issuer (Top 10)"
+      },
+      {
+        "name": "top_customers.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/top_customers.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top 15 Customers by CAP Count"
+      },
+      {
+        "name": "cost_by_customer.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cost_by_customer.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Total Cost by Customer (Top 10)"
+      },
+      {
+        "name": "closure_performance.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/closure_performance.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "CAP Closure Performance"
+      },
+      {
+        "name": "cap_duration_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cap_duration_distribution.json",
+        "trace_types": [
+          "histogram"
+        ],
+        "trace_count": 1,
+        "title": "CAP Closure Duration Distribution (Days)"
+      },
+      {
+        "name": "avg_duration_by_year.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/avg_duration_by_year.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Average CAP Closure Duration by Year"
+      },
+      {
+        "name": "seven_m_yearly_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/seven_m_yearly_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 5,
+        "title": "7M Categories Yearly Trend"
+      },
+      {
+        "name": "cap_2025_costs.json",
+        "url": "https://pardusai.org/v1/api/public/project/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3/assets/cap_2025_costs.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "2025 CAP Costs by CAP Number"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 10,
+    "sections_delta": 2,
+    "description_removed_ok": true,
+    "asset_name_overlap": 1,
+    "asset_old_only": [
+      "avg_cost_by_process.json",
+      "avg_cost_by_type.json",
+      "avg_cost_comparison.json",
+      "cap_count_comparison.json",
+      "cap_type_distribution.json",
+      "cost_comparison.json",
+      "cost_structure_ratio.json",
+      "dept_avg_cost_comparison.json",
+      "dept_total_cost_comparison.json",
+      "top_10_expensive_caps.json"
+    ],
+    "asset_new_only": [
+      "avg_cost_by_year_trend.json",
+      "avg_duration_by_year.json",
+      "cap_2025_costs.json",
+      "cap_duration_distribution.json",
+      "cap_flow_sankey.json",
+      "cap_type_by_year_heatmap.json",
+      "cap_types_distribution.json",
+      "closure_performance.json",
+      "cost_by_7m_category.json",
+      "cost_by_cap_type.json",
+      "cost_by_customer.json",
+      "cost_by_issuer.json",
+      "cost_by_year_trend.json",
+      "cost_distribution.json",
+      "monthly_trend_recent.json",
+      "seven_m_distribution.json",
+      "seven_m_yearly_trend.json",
+      "top_customers.json",
+      "top_issuers.json",
+      "yearly_cap_trend.json"
+    ]
+  }
+}

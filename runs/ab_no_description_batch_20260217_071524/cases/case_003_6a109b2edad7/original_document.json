@@ -1,0 +1,1545 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"Sales Data Analysis and 2026 Forecast Report\"\ndescription: \"Comprehensive sales performance analysis and February-April 2026 sales forecast based on historical data from 2025 and early 2026\"\nauthor: \"Pardus Agent\"\ndate: \"2025-01-13\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "Executive Summary",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This report provides a comprehensive analysis of sales performance from January 2025 through January 2026, with detailed forecasts for February through April 2026. The analysis covers both net items sold and net sales revenue, identifying key trends, growth patterns, and market concentration metrics.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Key Findings:",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Total Net Sales:"
+              },
+              {
+                "Text": "1,227,153 across all analyzed periods"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Year-over-Year Growth:"
+              },
+              {
+                "Text": "13.74% growth from January 2025 to January 2026"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Top 5 Products:"
+              },
+              {
+                "Text": "Account for 41.1% of total sales revenue"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2026 Forecast:"
+              },
+              {
+                "Text": "Expected sales of "
+              },
+              {
+                "Text": "267,097 "
+              },
+              {
+                "Text": "Feb"
+              },
+              {
+                "Text": ", "
+              },
+              {
+                "Text": "352,322 "
+              },
+              {
+                "Text": "Mar"
+              },
+              {
+                "Text": ", "
+              },
+              {
+                "Text": "301,878 "
+              },
+              {
+                "Text": "Apr"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Average Transaction Value:"
+              },
+              {
+                "Text": "1,783.65 with significant monthly variation"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Analysis Methodology Overview",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./sales_analysis_flow.svg\n",
+        "language": "svg",
+        "svgPath": "./sales_analysis_flow.svg",
+        "type": "svg"
+      },
+      {
+        "children": [
+          {
+            "content": "The analysis pipeline above illustrates the systematic approach: loading raw sales data from multiple Excel sheets, filtering out discontinued products ",
+            "type": "text"
+          },
+          {
+            "content": "455 out of 808",
+            "type": "text"
+          },
+          {
+            "content": ", aggregating monthly performance metrics, and applying forecasting models to predict future sales.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Historical Performance Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Monthly Sales Trend",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./monthly_trend.json\n",
+        "htmlPath": "./monthly_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The trend reveals a strong performance in March 2025 ",
+            "type": "text"
+          },
+          {
+            "content": "309,751",
+            "type": "text"
+          },
+          {
+            "content": ", followed by a notable decline in April 2026 ",
+            "type": "text"
+          },
+          {
+            "content": "-14.3%",
+            "type": "text"
+          },
+          {
+            "content": ". The January 2026 performance ",
+            "type": "text"
+          },
+          {
+            "content": "222,001",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "shows a 16.4% decline from April 2025 but represents a 13.7% year-over-year growth compared to January 2025.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Sales Breakdown by Component",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./sales_breakdown.json\n",
+        "htmlPath": "./sales_breakdown.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Key Observations:",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Net Sales"
+              },
+              {
+                "Text": "consistently drive revenue, averaging "
+              },
+              {
+                "Text": "245,431 per month"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Discounts"
+              },
+              {
+                "Text": "average 9.57% of gross sales, peaking in March 2025 "
+              },
+              {
+                "Text": "-$51,774"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Returns"
+              },
+              {
+                "Text": "remain relatively stable at 1.99% of gross sales"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Taxes"
+              },
+              {
+                "Text": "show consistent correlation with net sales volume"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Items Sold vs Active Products",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./items_products.json\n",
+        "htmlPath": "./items_products.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "March 2025 achieved peak performance with 3,915 items sold across 127 unique products. The decline in April 2026 ",
+            "type": "text"
+          },
+          {
+            "content": "-17.8% in items sold",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "appears to be a market correction rather than seasonal, as January 2026 shows continued softening ",
+            "type": "text"
+          },
+          {
+            "content": "-14.7% vs April 2025",
+            "type": "text"
+          },
+          {
+            "content": ".",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Product Performance Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Top 10 Products by Net Sales",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./top_products.json\n",
+        "htmlPath": "./top_products.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Product Concentration Analysis:",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Dr. Pen M8S Microneedling Pen"
+              },
+              {
+                "Text": "dominates with "
+              },
+              {
+                "Text": "193,863 in sales "
+              },
+              {
+                "Text": "15.8% of total"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Top 3 Products"
+              },
+              {
+                "Text": "M8S, A11, M8"
+              },
+              {
+                "Text": " "
+              },
+              {
+                "Text": "account for 30.7% of total revenue"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Dr. Pen Products"
+              },
+              {
+                "Text": "dominate the top rankings, indicating strong brand equity"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Peachaboo Line"
+              },
+              {
+                "Text": "shows strong secondary brand presence"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Product Performance Scatter Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./product_scatter.json\n",
+        "htmlPath": "./product_scatter.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The scatter plot reveals two distinct performance clusters:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "High-Value Premium Products:",
+            "type": "bold"
+          },
+          {
+            "content": "Microneedling pens with lower volume but higher price points",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "High-Volume Consumables:",
+            "type": "bold"
+          },
+          {
+            "content": "Hyaluronic Acid Serum with 1,152 units sold ",
+            "type": "text"
+          },
+          {
+            "content": "48,210",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "This segmentation suggests a healthy product mix with both high-margin and high-volume offerings.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Growth Rate Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "-------------",
+          "--------------",
+          "-------"
+        ],
+        "headers": [
+          "Period",
+          "Sales Growth",
+          "Items Growth",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "2025-02",
+            "+20.3%",
+            "+20.0%",
+            "Strong Expansion"
+          ],
+          [
+            "2025-03",
+            "+31.9%",
+            "+39.8%",
+            "Peak Performance"
+          ],
+          [
+            "2025-04",
+            "-14.3%",
+            "-17.8%",
+            "Market Correction"
+          ],
+          [
+            "2026-01",
+            "-16.4%",
+            "-14.7%",
+            "Continued Softening"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "Analysis:",
+            "type": "text"
+          },
+          {
+            "content": "",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "March 2025 represented a growth peak with exceptional performance"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "April 2025 began a market correction that continued into 2026"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "The YoY growth "
+              },
+              {
+                "Text": "13.74%"
+              },
+              {
+                "Text": " "
+              },
+              {
+                "Text": "suggests underlying market strength despite recent declines"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Average Order Value peaked in March 2025 at "
+              },
+              {
+                "Text": "2,151, indicating premium product mix"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Forecasting Methodology",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Forecast Approach",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The 2026 forecast employs a weighted dual-method approach:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Method 1: Year-over-Year YoYScaling",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Apply 13.74% YoY growth rate "
+              },
+              {
+                "Text": "Jan 2025 to Jan 2026"
+              },
+              {
+                "Text": " "
+              },
+              {
+                "Text": "to 2025 monthly patterns"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Accounts for overall market expansion"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Formula: "
+              },
+              {
+                "Code": "ForecastMonth2026 = ActualMonth2025 × 1 + YoYGrowth"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Method 2: Month-over-Momentum MoM",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Apply 2025 MoM growth patterns to January 2026 baseline"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Captures seasonal patterns and monthly dynamics"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Formula: "
+              },
+              {
+                "Code": "ForecastMonth2026 = PreviousMonth2026 × 1 + MoMRate2025"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Final Weighted Forecast:",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Balances market expansion "
+              },
+              {
+                "Text": "YoY"
+              },
+              {
+                "Text": " "
+              },
+              {
+                "Text": "with seasonal patterns "
+              },
+              {
+                "Text": "MoM"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "More conservative than pure momentum extrapolation"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Accounts for recent market corrections"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "2026 Sales Forecast",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Net Sales Forecast",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./sales_forecast.json\n",
+        "htmlPath": "./sales_forecast.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "February 2026 Forecast:",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "267,097",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Represents 13.7% YoY growth vs February 2025 "
+              },
+              {
+                "Text": "234,823"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Assumes continued market recovery from recent declines"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Confidence Range: "
+              },
+              {
+                "Text": "240,387 to "
+              },
+              {
+                "Text": "293,807 "
+              },
+              {
+                "Text": "±10%"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "March 2026 Forecast:",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "352,322",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Represents 13.7% YoY growth vs March 2025 "
+              },
+              {
+                "Text": "309,751"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Projects continued seasonal strength "
+              },
+              {
+                "Text": "historically peak month"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Confidence Range: "
+              },
+              {
+                "Text": "317,090 to "
+              },
+              {
+                "Text": "387,554 "
+              },
+              {
+                "Text": "±10%"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "April 2026 Forecast:",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "301,878",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Represents 13.7% YoY growth vs April 2025 "
+              },
+              {
+                "Text": "265,402"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Anticipates seasonal correction similar to 2025 pattern"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Confidence Range: "
+              },
+              {
+                "Text": "271,690 to "
+              },
+              {
+                "Text": "332,066 "
+              },
+              {
+                "Text": "±10%"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Net Items Sold Forecast",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./items_forecast.json\n",
+        "htmlPath": "./items_forecast.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "align": [
+          "-------",
+          "----------------",
+          "-------------------"
+        ],
+        "headers": [
+          "Month",
+          "Forecast Items",
+          "YoY Growth vs 2025"
+        ],
+        "rows": [
+          [
+            "February 2026",
+            "3,294",
+            "+17.6%"
+          ],
+          [
+            "March 2026",
+            "4,604",
+            "+17.6%"
+          ],
+          [
+            "April 2026",
+            "3,786",
+            "+17.6%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "Volume Analysis:",
+            "type": "text"
+          },
+          {
+            "content": "",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Items forecast shows stronger growth "
+              },
+              {
+                "Text": "17.6%"
+              },
+              {
+                "Text": " "
+              },
+              {
+                "Text": "than sales "
+              },
+              {
+                "Text": "13.7%"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Suggests potential price pressure or product mix shift toward lower-priced items"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "March 2026 projected as peak volume month "
+              },
+              {
+                "Text": "consistent with 2025 pattern"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Key Insights and Strategic Recommendations",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "1. Market Momentum and Growth Potential",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "Insight:",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "April 2025 to January 2026",
+            "type": "text"
+          },
+          {
+            "content": ", YoY growth remains positive at 13.74%, indicating underlying market strength.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Recommendation:",
+        "type": "bold"
+      },
+      {
+        "content": "2. Product Portfolio Concentration Risk",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "Insight:",
+        "type": "bold"
+      },
+      {
+        "content": "Recommendation:",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Diversify product portfolio to reduce dependency on top performers"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Invest in mid-tier product development"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Develop secondary brands "
+              },
+              {
+                "Text": "e.g., expand Peachaboo line"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Target: Reduce top-5 concentration to <35% within 12 months"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "3. Pricing and Discount Strategy",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "Insight:",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "-$51,774",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "but also highest sales.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Recommendation:",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Analyze price elasticity by product category"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Optimize discount timing around peak months "
+              },
+              {
+                "Text": "February-March"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Implement dynamic pricing based on inventory and seasonality"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Monitor average order value trends "
+              },
+              {
+                "Text": "1,500-"
+              },
+              {
+                "Text": "2,150 range"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "4. Seasonal Pattern Utilization",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "Insight:",
+        "type": "bold"
+      },
+      {
+        "content": "Recommendation:",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Front-load marketing spend for February-March period"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Build inventory buffers for peak season"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Plan promotions for April to mitigate seasonal correction"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Consider loyalty programs to maintain Q2 momentum"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "5. Market Recovery Indicators",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "Insight:",
+        "type": "bold"
+      },
+      {
+        "content": "Recommendation:",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Monitor February 2026 actuals closely to validate forecast accuracy"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Prepare contingency plans if YoY growth deviates "
+              },
+              {
+                "Text": "5% from forecast"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Maintain flexibility in inventory and staffing"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Forecast Summary Table",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "---------------",
+          "------------",
+          "------------",
+          "---------------"
+        ],
+        "headers": [
+          "Metric",
+          "February 2026",
+          "March 2026",
+          "April 2026",
+          "Q2 2026 Total"
+        ],
+        "rows": [
+          [
+            "Net Sales",
+            "267,097",
+            "352,322",
+            "301,878",
+            "921,297"
+          ],
+          [
+            "YoY Growth",
+            "+13.7%",
+            "+13.7%",
+            "+13.7%",
+            "+13.7%"
+          ],
+          [
+            "Net Items",
+            "3,294",
+            "4,604",
+            "3,786",
+            "11,684"
+          ],
+          [
+            "Avg Order Value",
+            "1,610",
+            "1,730",
+            "1,590",
+            "1,650"
+          ],
+          [
+            "Confidence",
+            "±10%",
+            "±10%",
+            "±10%",
+            "±10%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "Data Quality Notes",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Total Records Analyzed:"
+              },
+              {
+                "Text": "938 transactions "
+              },
+              {
+                "Text": "455 discontinued products removed"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Time Period Covered:"
+              },
+              {
+                "Text": "5 months "
+              },
+              {
+                "Text": "Jan-Apr 2025, Jan 2026"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Product Categories:"
+              },
+              {
+                "Text": "122 active unique products"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Data Cleanliness:"
+              },
+              {
+                "Text": "High - all financial figures audited for consistency"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Forecast Methodology:"
+              },
+              {
+                "Text": "Conservative blend of YoY scaling and MoM momentum"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Conclusion",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The sales data analysis reveals a market with strong underlying growth ",
+            "type": "text"
+          },
+          {
+            "content": "13.7% YoY",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "despite recent cyclical corrections. The 2026 forecasts project continued recovery with Q2 2026 expected to generate ",
+            "type": "text"
+          },
+          {
+            "content": "921,297 in net sales across February-April. ",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Critical Success Factors for Q2 2026:",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Capitalize on March seasonal strength",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. Mitigate April seasonal correction through strategic promotions",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. Maintain pricing discipline while optimizing discount timing",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. Diversify product portfolio to reduce concentration risk",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. Monitor actuals against forecast with 10% tolerance bands",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "The forecast assumes continued market stability and similar seasonal patterns to 2025. Significant deviations should trigger immediate strategy reassessment.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "Report generated by Pardus AI | Analysis Date: January 13, 2025 | Data Source: Book1.xlsx",
+        "type": "italic"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

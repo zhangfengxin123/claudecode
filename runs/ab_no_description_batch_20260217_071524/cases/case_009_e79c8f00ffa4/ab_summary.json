@@ -1,0 +1,260 @@
+{
+  "generated_at": "2026-02-17T07:50:58Z",
+  "ab_case": {
+    "template_case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+    "rerun_case_id": "4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c",
+    "title": "SSCOM L02 AnalyticsCase_Meyer (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+    "inputs": [
+      "description.txt",
+      "SSCOM L02 AnalyticsCase_Meyer.xlsx"
+    ],
+    "description_present": true,
+    "chart_assets_count": 5,
+    "trace_type_hist": {
+      "bar": 13
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Current Situation Analysis",
+      "Network Expansion Analysis",
+      "Lead Time Optimization Analysis",
+      "Strategic Recommendations",
+      "Financial Implications",
+      "Risk Assessment",
+      "Implementation Roadmap",
+      "Success Metrics and KPIs",
+      "Conclusion",
+      "Appendix: Data Summary"
+    ],
+    "first_paragraph": "This report presents a comprehensive analysis of Meyer AG's 2023 service operations, examining opportunities to reduce carbon emissions through strategic network expansion and lead time optimization. Based on 30,295 daily records across 83 cities, we evaluated two key optimization strategies:",
+    "assets": [
+      {
+        "name": "network_expansion_co2.json",
+        "url": "https://pardusai.org/v1/api/public/project/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b/assets/network_expansion_co2.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "CO2 Emissions Comparison"
+      },
+      {
+        "name": "technician_requirements.json",
+        "url": "https://pardusai.org/v1/api/public/project/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b/assets/technician_requirements.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Technician Requirements"
+      },
+      {
+        "name": "cities_per_base.json",
+        "url": "https://pardusai.org/v1/api/public/project/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b/assets/cities_per_base.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "Cities per Base"
+      },
+      {
+        "name": "reduction_percentage.json",
+        "url": "https://pardusai.org/v1/api/public/project/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b/assets/reduction_percentage.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "CO2 Reduction Percentage"
+      },
+      {
+        "name": "lead_time_impact.json",
+        "url": "https://pardusai.org/v1/api/public/project/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b/assets/lead_time_impact.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "Lead Time Impact"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c",
+    "inputs": [
+      "SSCOM L02 AnalyticsCase_Meyer.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 12,
+    "trace_type_hist": {
+      "histogram": 1,
+      "scatter": 9,
+      "bar": 9,
+      "heatmap": 1
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Data Overview and Methodology",
+      "Temporal Analysis: Monthly and Quarterly Trends",
+      "Day-of-Week Patterns",
+      "Geographic Analysis: City Performance",
+      "Monthly Heatmap: City-Level Seasonal Patterns",
+      "Geographic Distance Analysis",
+      "Strategic Recommendations",
+      "Conclusion"
+    ],
+    "first_paragraph": "This report provides a comprehensive analysis of service visit operations across 83 German cities during calendar year 2023. The dataset contains 30,295 daily observations tracking premium and standard service visits, along with distance metrics to three strategic hub locations Bergisch Gladbach, Cottbus, and Hanover .",
+    "assets": [
+      {
+        "name": "daily_visits_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/daily_visits_distribution.json",
+        "trace_types": [
+          "histogram"
+        ],
+        "trace_count": 1,
+        "title": "Distribution of Daily Service Visits"
+      },
+      {
+        "name": "monthly_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/monthly_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "Monthly Service Visits: Premium vs Standard"
+      },
+      {
+        "name": "quarterly_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/quarterly_trend.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Quarterly Service Visits by Type"
+      },
+      {
+        "name": "weekly_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/weekly_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "Weekly Service Visits Trend (2023)"
+      },
+      {
+        "name": "trend_analysis.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/trend_analysis.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "Service Visits Trend Analysis with Moving Averages"
+      },
+      {
+        "name": "day_pattern.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/day_pattern.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Average Daily Visits by Day of Week"
+      },
+      {
+        "name": "top_cities.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/top_cities.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Top 20 Cities by Total Service Visits"
+      },
+      {
+        "name": "premium_vs_standard.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/premium_vs_standard.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Premium vs Standard Visits: Top 15 Cities"
+      },
+      {
+        "name": "premium_ratio.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/premium_ratio.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "Premium Visit Ratio by City (Top 20)"
+      },
+      {
+        "name": "city_month_heatmap.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/city_month_heatmap.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "Monthly Service Visits Heatmap: Top 20 Cities"
+      },
+      {
+        "name": "hub_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/hub_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "Hub Distance Statistics Comparison"
+      },
+      {
+        "name": "distance_scatter.json",
+        "url": "https://pardusai.org/v1/api/public/project/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c/assets/distance_scatter.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Distance to Hanover Hub vs Total Visits"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 7,
+    "sections_delta": -2,
+    "description_removed_ok": true,
+    "asset_name_overlap": 0,
+    "asset_old_only": [
+      "cities_per_base.json",
+      "lead_time_impact.json",
+      "network_expansion_co2.json",
+      "reduction_percentage.json",
+      "technician_requirements.json"
+    ],
+    "asset_new_only": [
+      "city_month_heatmap.json",
+      "daily_visits_distribution.json",
+      "day_pattern.json",
+      "distance_scatter.json",
+      "hub_comparison.json",
+      "monthly_trend.json",
+      "premium_ratio.json",
+      "premium_vs_standard.json",
+      "quarterly_trend.json",
+      "top_cities.json",
+      "trend_analysis.json",
+      "weekly_trend.json"
+    ]
+  }
+}

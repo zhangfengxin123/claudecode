@@ -1,0 +1,47 @@
+{
+  "case_id": "52db6a2ed8f42242afb042eacb69e22b584862059cb08465b2f35776cdf7876d",
+  "title_hint": "Fred Report analysis",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 4,
+  "files_ok_count": 4,
+  "files": [
+    {
+      "idx": 0,
+      "name": "CPALTT01USM657N.csv",
+      "status": 200,
+      "size_bytes": 27519,
+      "source_url": "https://pardusai.org/v1/api/public/project/52db6a2ed8f42242afb042eacb69e22b584862059cb08465b2f35776cdf7876d/files/CPALTT01USM657N.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/52db6a2ed8f4_Fred Report analysis/CPALTT01USM657N.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "NGDPRSAXDCDEQ.csv",
+      "status": 200,
+      "size_bytes": 3811,
+      "source_url": "https://pardusai.org/v1/api/public/project/52db6a2ed8f42242afb042eacb69e22b584862059cb08465b2f35776cdf7876d/files/NGDPRSAXDCDEQ.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/52db6a2ed8f4_Fred Report analysis/NGDPRSAXDCDEQ.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "NGDPRSAXDCCAQ.csv",
+      "status": 200,
+      "size_bytes": 5226,
+      "source_url": "https://pardusai.org/v1/api/public/project/52db6a2ed8f42242afb042eacb69e22b584862059cb08465b2f35776cdf7876d/files/NGDPRSAXDCCAQ.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/52db6a2ed8f4_Fred Report analysis/NGDPRSAXDCCAQ.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 3,
+      "name": "NGDPSAXDCUSQ.csv",
+      "status": 200,
+      "size_bytes": 6236,
+      "source_url": "https://pardusai.org/v1/api/public/project/52db6a2ed8f42242afb042eacb69e22b584862059cb08465b2f35776cdf7876d/files/NGDPSAXDCUSQ.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/52db6a2ed8f4_Fred Report analysis/NGDPSAXDCUSQ.csv",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:06:38Z"
+}

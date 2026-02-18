@@ -1,0 +1,3910 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"CAP Analysis Report: Corrective and Preventive Actions 2011-2025\"\ndescription: \"Comprehensive analysis of CAP data including trends, cost distributions, departmental performance, and efficiency metrics from 2011 to 2025.\"\nauthor: \"Pardus Agent\"\ndate: \"2025-02-17\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "CAP Analysis Report: Corrective and Preventive Actions 2011-2025",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "Executive Summary",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This report provides a comprehensive analysis of Corrective and Preventive Actions ",
+            "type": "text"
+          },
+          {
+            "content": "CAP",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "data spanning 2011 to 2025. The analysis covers 591 historical CAPs from the ChronoCAP database and 10 recent CAPs from the 2025 overview, offering insights into trends, costs, departmental performance, and efficiency metrics.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Highlights:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Total CAPs Analyzed",
+                "type": "bold"
+              },
+              {
+                "content": ": 601 ",
+                "type": "text"
+              },
+              {
+                "content": "591 historical + 10 recent",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Total Financial Impact",
+                "type": "bold"
+              },
+              {
+                "content": ": €3,598,082.90",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Most Active Period",
+                "type": "bold"
+              },
+              {
+                "content": ": 2015-2017 with high CAP volumes",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Primary Issue Type",
+                "type": "bold"
+              },
+              {
+                "content": ": Internal Anomalies ",
+                "type": "text"
+              },
+              {
+                "content": "35.4% of total",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Leading Department",
+                "type": "bold"
+              },
+              {
+                "content": ": IER with 262 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "52% of departmental CAPs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Data Overview",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What time period does the data cover?",
+          "How many CAPs are included in the analysis?",
+          "What is the total cost of all CAPs?"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "The analysis draws from two complementary datasets:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "2025 CAP Overview",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "10 CAPs",
+                "type": "bold"
+              },
+              {
+                "content": "with total costs of €333,718.11",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "5 Issuers",
+                "type": "bold"
+              },
+              {
+                "content": ": YLI, MPE, MHA, FMH, DWA",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2 Departments",
+                "type": "bold"
+              },
+              {
+                "content": ": IER ",
+                "type": "text"
+              },
+              {
+                "content": "Industrial Equipment & Repair",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "and S&C ",
+                "type": "text"
+              },
+              {
+                "content": "Supply Chain",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Recent data showing ongoing CAP activity in 2025",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "ChronoCAP ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2011-2024",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "591 CAPs",
+                "type": "bold"
+              },
+              {
+                "content": "spanning 14 years",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Total Cost",
+                "type": "bold"
+              },
+              {
+                "content": ": €3,264,364.79",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Date Range",
+                "type": "bold"
+              },
+              {
+                "content": ": April 1, 2011 to December 2, 2024",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Comprehensive tracking",
+                "type": "bold"
+              },
+              {
+                "content": "of CAP types, departments, issuers, customers, and outcomes",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Temporal Trends",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What year had the highest number of CAPs?",
+          "How has CAP activity changed over the years?",
+          "What caused the dip in 2020?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "CAP Volume Trend",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_trend.json",
+        "htmlPath": "./cap_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The CAP volume trend reveals significant patterns:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2016 Peak",
+                "type": "bold"
+              },
+              {
+                "content": ": 59 CAPs - highest annual volume",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2020 Decline",
+                "type": "bold"
+              },
+              {
+                "content": ": 22 CAPs - lowest activity, likely due to COVID-19 pandemic impact",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Recent Recovery",
+                "type": "bold"
+              },
+              {
+                "content": ": Increase from 22 ",
+                "type": "text"
+              },
+              {
+                "content": "2020",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "to 46 ",
+                "type": "text"
+              },
+              {
+                "content": "2024",
+                "type": "text"
+              },
+              {
+                "content": ", showing renewed activity",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 Data",
+                "type": "bold"
+              },
+              {
+                "content": ": 10 CAPs already recorded, indicating ongoing high activity",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": The 2020 dip aligns with global pandemic disruptions, suggesting reduced operational activity and reporting. The steady increase from 2021-2024 demonstrates business recovery and heightened quality management focus.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Cost Trend Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_trend.json",
+        "htmlPath": "./cost_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Financial impact analysis shows:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Cost Tracking Evolution",
+                "type": "bold"
+              },
+              {
+                "content": ": Zero costs recorded 2011-2016 ",
+                "type": "text"
+              },
+              {
+                "content": "likely data not tracked",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2017 Breakthrough",
+                "type": "bold"
+              },
+              {
+                "content": ": First year with comprehensive cost tracking - €781K",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2021 Peak",
+                "type": "bold"
+              },
+              {
+                "content": ": €527,161.33 highest annual cost",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Recent Stability",
+                "type": "bold"
+              },
+              {
+                "content": ": Consistent cost levels 2022-2024 ",
+                "type": "text"
+              },
+              {
+                "content": "€278K-€588K",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Average Annual Cost",
+                "type": "bold"
+              },
+              {
+                "content": "2017-2024",
+                "type": "text"
+              },
+              {
+                "content": ": €408K",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Critical Finding",
+            "type": "bold"
+          },
+          {
+            "content": ": Cost data quality improved significantly from 2017 onwards. The 2021 peak coincides with business recovery and potentially increased issue complexity.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "CAP Types Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What are the most common types of CAPs?",
+          "Which CAP type costs the most?",
+          "How do different CAP types compare in frequency and cost?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "CAP Type Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_types.json",
+        "htmlPath": "./cap_types.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "CAP type breakdown reveals six primary categories:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Internal Anomaly",
+            "type": "bold"
+          },
+          {
+            "content": "209 CAPs, 35.4%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Most frequent issue type",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €1.15M",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average cost: €5,515 per CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Claim",
+            "type": "bold"
+          },
+          {
+            "content": "161 CAPs, 27.2%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Second most frequent",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Highest total cost: €1.64M",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average cost: €10,182 per CAP - 85% higher than internal anomalies",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Supplier Dysfonctionning",
+            "type": "bold"
+          },
+          {
+            "content": "159 CAPs, 26.9%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Close third in frequency",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €390K",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average cost: €2,453 per CAP - lowest among major types",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Safety",
+            "type": "bold"
+          },
+          {
+            "content": "28 CAPs, 4.7%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Critical but less frequent",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €14K",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average cost: €503 per CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Pdt unconformity",
+            "type": "bold"
+          },
+          {
+            "content": "18 CAPs, 3.0%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Product quality issues",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €12K",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average cost: €640 per CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "6. ",
+            "type": "text"
+          },
+          {
+            "content": "Prevent / improve",
+            "type": "bold"
+          },
+          {
+            "content": "16 CAPs, 2.7%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Proactive improvements",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €57K",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Average cost: €3,535 per CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Strategic Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": Claims, despite being 23% less frequent than internal anomalies, cost 42% more. This suggests claims involve higher financial stakes or more complex resolution processes.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Cost by CAP Type",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_by_type.json",
+        "htmlPath": "./cost_by_type.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The cost distribution highlights significant variance:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Claims dominate costs",
+                "type": "bold"
+              },
+              {
+                "content": "at 50.2% of total financial impact",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Internal Anomalies",
+                "type": "bold"
+              },
+              {
+                "content": "represent 35.3% of total costs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Supplier issues",
+                "type": "bold"
+              },
+              {
+                "content": "account for 11.9% of costs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Other types",
+                "type": "bold"
+              },
+              {
+                "content": "combined: 2.6%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Recommendation",
+            "type": "bold"
+          },
+          {
+            "content": ": Prioritize claim prevention and early intervention strategies, as they represent the largest financial impact area.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Departmental Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which department handles the most CAPs?",
+          "How do departments compare in CAP costs?",
+          "What does this reveal about departmental workload?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Department Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./departments.json",
+        "htmlPath": "./departments.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Departmental CAP distribution:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "IER Industrial Equipment & Repair",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "262 CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "52% of departmental CAPs",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €1.69M ",
+            "type": "text"
+          },
+          {
+            "content": "52% of total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Primary CAP handler",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "CS Customer Service",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "116 CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "23%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €1.14M ",
+            "type": "text"
+          },
+          {
+            "content": "35%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "High cost per CAP average: €9,834",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "R&D Research & Development",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "30 CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "6%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €97K ",
+            "type": "text"
+          },
+          {
+            "content": "3%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Higher technical complexity",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "STP Support/Technical",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "14 CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "3%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Total cost: €21K ",
+            "type": "text"
+          },
+          {
+            "content": "1%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Other Departments",
+            "type": "bold"
+          },
+          {
+            "content": "Achat, NVSA, ADV, Sales, Process, Innov, SC, QC",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Combined: 169 CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "16%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Varying costs, mostly smaller amounts",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": IER and CS handle 75% of all CAPs between them, indicating they are the primary operational departments. CS's higher average cost per CAP ",
+            "type": "text"
+          },
+          {
+            "content": "€9,834 vs IER's €6,450",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "suggests customer-facing issues are more expensive to resolve.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Department-Year Trend",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./dept_year_stacked.json",
+        "htmlPath": "./dept_year_stacked.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The stacked bar chart shows departmental contributions over time:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "IER consistently dominates",
+                "type": "bold"
+              },
+              {
+                "content": ": Highest CAP count every year",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CS growth",
+                "type": "bold"
+              },
+              {
+                "content": ": Significant presence from 2015 onwards",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "R&D sporadic",
+                "type": "bold"
+              },
+              {
+                "content": ": Appears in specific years with technical issues",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Multi-year trends",
+                "type": "bold"
+              },
+              {
+                "content": ": Most departments show consistent patterns",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Observation",
+            "type": "bold"
+          },
+          {
+            "content": ": The 2020 decline affected all departments proportionally, confirming the pandemic impact hypothesis.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Issuer Performance",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Who are the top CAP issuers?",
+          "How do issuers compare in CAP costs?",
+          "What does issuer distribution reveal about accountability?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Top Issuers by CAP Count",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./top_issuers.json",
+        "htmlPath": "./top_issuers.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Top 15 issuers by CAP volume:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "EWI",
+            "type": "bold"
+          },
+          {
+            "content": ": 37 CAPs - €60K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "WWE",
+            "type": "bold"
+          },
+          {
+            "content": ": 26 CAPs - €18K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "SGU",
+            "type": "bold"
+          },
+          {
+            "content": ": 26 CAPs - €110K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "SMR",
+            "type": "bold"
+          },
+          {
+            "content": ": 19 CAPs - €135K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "SML",
+            "type": "bold"
+          },
+          {
+            "content": ": 18 CAPs - €19K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "6. ",
+            "type": "text"
+          },
+          {
+            "content": "LPR",
+            "type": "bold"
+          },
+          {
+            "content": ": 17 CAPs - €21K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "7. ",
+            "type": "text"
+          },
+          {
+            "content": "CVO",
+            "type": "bold"
+          },
+          {
+            "content": ": 16 CAPs - €0 ",
+            "type": "text"
+          },
+          {
+            "content": "costs not tracked",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "8. ",
+            "type": "text"
+          },
+          {
+            "content": "PBO",
+            "type": "bold"
+          },
+          {
+            "content": ": 16 CAPs - €34K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "9. ",
+            "type": "text"
+          },
+          {
+            "content": "NPA",
+            "type": "bold"
+          },
+          {
+            "content": ": 16 CAPs - €66K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "10. ",
+            "type": "text"
+          },
+          {
+            "content": "MGL",
+            "type": "bold"
+          },
+          {
+            "content": ": 16 CAPs - €192K total ",
+            "type": "text"
+          },
+          {
+            "content": "highest total cost",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Performance Metrics",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Top 5 issuers",
+                "type": "bold"
+              },
+              {
+                "content": ": 126 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "21% of total",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "MGL highest cost",
+                "type": "bold"
+              },
+              {
+                "content": ": €192K from just 16 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "€12K average",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CVO no costs",
+                "type": "bold"
+              },
+              {
+                "content": ": 16 CAPs with zero cost tracking",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": Issuer MGL, despite having the same CAP count as others, incurs 3x higher average costs, suggesting more complex issues or less efficient resolution processes.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Customer Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which customers generate the most CAPs?",
+          "How are CAPs distributed across customers?",
+          "What does customer CAP frequency indicate?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Top Customers by CAP Count",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./top_customers.json",
+        "htmlPath": "./top_customers.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Top 15 customers by CAP frequency:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "ADM",
+            "type": "bold"
+          },
+          {
+            "content": ": 14 CAPs - €42K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Tanichem",
+            "type": "bold"
+          },
+          {
+            "content": ": 12 CAPs - €7K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Agrana",
+            "type": "bold"
+          },
+          {
+            "content": ": 11 CAPs - €54K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "AGRANA",
+            "type": "bold"
+          },
+          {
+            "content": ": 9 CAPs - €69K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "FUFENG",
+            "type": "bold"
+          },
+          {
+            "content": ": 8 CAPs - €198K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "6. ",
+            "type": "text"
+          },
+          {
+            "content": "Cevital",
+            "type": "bold"
+          },
+          {
+            "content": ": 7 CAPs - €19K total",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "7. ",
+            "type": "text"
+          },
+          {
+            "content": "MEFSCO, Rousselot, TEROES NESLE, Friesland Campina, GOI, OLON, Via Separation",
+            "type": "bold"
+          },
+          {
+            "content": ": 6 CAPs each",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "8. ",
+            "type": "text"
+          },
+          {
+            "content": "Biospringer, CJ US",
+            "type": "bold"
+          },
+          {
+            "content": ": 5 CAPs each",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Notable Patterns",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "FUFENG highest cost",
+                "type": "bold"
+              },
+              {
+                "content": ": €198K from 8 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "€25K average",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "High-volume customers",
+                "type": "bold"
+              },
+              {
+                "content": ": ADM, Tanichem, Agrana consistent issues",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Varied costs",
+                "type": "bold"
+              },
+              {
+                "content": ": €0 ",
+                "type": "text"
+              },
+              {
+                "content": "CJ US",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "to €198K ",
+                "type": "text"
+              },
+              {
+                "content": "FUFENG",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "for similar CAP counts",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Customer Risk Assessment",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "High-risk accounts",
+                "type": "bold"
+              },
+              {
+                "content": ": FUFENG ",
+                "type": "text"
+              },
+              {
+                "content": "high cost",
+                "type": "text"
+              },
+              {
+                "content": ", Agrana/AGRANA ",
+                "type": "text"
+              },
+              {
+                "content": "combined 20 CAPs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Low-risk accounts",
+                "type": "bold"
+              },
+              {
+                "content": ": Tanichem ",
+                "type": "text"
+              },
+              {
+                "content": "12 CAPs, only €7K",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Customer relationship patterns",
+                "type": "bold"
+              },
+              {
+                "content": "suggest some accounts require more intervention",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Cost Distribution Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What is the typical CAP cost?",
+          "How are CAP costs distributed?",
+          "Are there extreme cost outliers?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "CAP Cost Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_distribution.json",
+        "htmlPath": "./cost_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Cost distribution analysis ",
+            "type": "text"
+          },
+          {
+            "content": "298 CAPs with cost data",
+            "type": "text"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Cost Range",
+                "type": "bold"
+              },
+              {
+                "content": ": €48 to €200,261.50",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Average Cost",
+                "type": "bold"
+              },
+              {
+                "content": ": €10,954.24",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Distribution Pattern",
+                "type": "bold"
+              },
+              {
+                "content": ": Right-skewed with several high-cost outliers",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Observations",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "50.4% of CAPs",
+                "type": "bold"
+              },
+              {
+                "content": "have cost data ",
+                "type": "text"
+              },
+              {
+                "content": "298 out of 591",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Zero-cost CAPs",
+                "type": "bold"
+              },
+              {
+                "content": ": 293 CAPs with no cost recorded",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "High-cost outliers",
+                "type": "bold"
+              },
+              {
+                "content": ": CAPs exceeding €50K significantly impact averages",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Cost Categories",
+            "type": "bold"
+          },
+          {
+            "content": "estimated from distribution",
+            "type": "text"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Low cost",
+                "type": "bold"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "€5K",
+                "type": "text"
+              },
+              {
+                "content": ": Majority of CAPs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Medium cost",
+                "type": "bold"
+              },
+              {
+                "content": "€5K-€20K",
+                "type": "text"
+              },
+              {
+                "content": ": Significant portion",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "High cost",
+                "type": "bold"
+              },
+              {
+                "content": "€20K-€50K",
+                "type": "text"
+              },
+              {
+                "content": ": Fewer CAPs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Very high cost",
+                "type": "bold"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "€50K",
+                "type": "text"
+              },
+              {
+                "content": ": Outliers requiring special attention",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Recommendation",
+            "type": "bold"
+          },
+          {
+            "content": ": Implement stricter cost tracking to improve data completeness from 50% to ",
+            "type": "text"
+          },
+          {
+            "content": "90%. High-cost CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "€20K",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "warrant root cause analysis to prevent recurrence.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Efficiency Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What percentage of CAPs are efficient?",
+          "How does efficiency correlate with CAP types?",
+          "What drives inefficient CAPs?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Efficiency Metrics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Efficiency assessment data:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Efficient Actions YES",
+                "type": "bold"
+              },
+              {
+                "content": ": 296 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "50.1%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "- €1.21M total",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Not Efficient NO",
+                "type": "bold"
+              },
+              {
+                "content": ": 15 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "2.5%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "- €162K total",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Not Recorded",
+                "type": "bold"
+              },
+              {
+                "content": ": 280 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "47.4%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "- €1.90M total",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Critical Findings",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Half of CAPs assessed",
+            "type": "bold"
+          },
+          {
+            "content": ": Only 52.6% have efficiency data",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "High efficiency rate",
+            "type": "bold"
+          },
+          {
+            "content": ": 95.2% of assessed CAPs are efficient ",
+            "type": "text"
+          },
+          {
+            "content": "296/311",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Inefficient CAPs costly",
+            "type": "bold"
+          },
+          {
+            "content": ": Average cost €10,800 ",
+            "type": "text"
+          },
+          {
+            "content": "vs efficient €4,086",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": The small percentage of inefficient CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "2.5%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "costs disproportionately more per CAP, suggesting complex issues or inadequate root cause analysis. The 47.4% lack of efficiency data represents a significant reporting gap.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Closure Timeliness",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "How many CAPs are closed on time?",
+          "What percentage exceed closure deadlines?",
+          "How can closure timeliness be improved?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Timeliness Metrics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Closure deadline data:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Closed in Delay YES",
+                "type": "bold"
+              },
+              {
+                "content": ": 78 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "13.2%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Closed on Time NO",
+                "type": "bold"
+              },
+              {
+                "content": ": 26 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "4.4%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Not Recorded",
+                "type": "bold"
+              },
+              {
+                "content": ": 487 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "82.4%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Data Quality Concern",
+            "type": "bold"
+          },
+          {
+            "content": ": 82.4% of CAPs lack timeliness data, making it impossible to draw meaningful conclusions about closure performance.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Available Data Analysis",
+            "type": "bold"
+          },
+          {
+            "content": "from 104 CAPs with data",
+            "type": "text"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Delay Rate",
+                "type": "bold"
+              },
+              {
+                "content": ": 75% ",
+                "type": "text"
+              },
+              {
+                "content": "78/104 CAPs exceeded deadlines",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "On-time Rate",
+                "type": "bold"
+              },
+              {
+                "content": ": 25% ",
+                "type": "text"
+              },
+              {
+                "content": "26/104 CAPs met deadlines",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Recommendation",
+            "type": "bold"
+          },
+          {
+            "content": ": Implement mandatory closure deadline tracking to improve data quality. The high delay rate in available data suggests systemic issues with CAP resolution timelines.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Conclusions and Recommendations",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Key Conclusions",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "CAP Management Maturation",
+            "type": "bold"
+          },
+          {
+            "content": ": The system has evolved significantly, with improved cost tracking from 2017 onwards and comprehensive data collection.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Financial Impact",
+            "type": "bold"
+          },
+          {
+            "content": ": €3.6M total impact over 14 years, with claims representing the highest cost category despite being less frequent than internal anomalies.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Departmental Focus",
+            "type": "bold"
+          },
+          {
+            "content": ": IER and CS handle 75% of CAPs, indicating these departments bear the primary quality management responsibility.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Data Quality Gaps",
+            "type": "bold"
+          },
+          {
+            "content": ": Significant gaps in efficiency ",
+            "type": "text"
+          },
+          {
+            "content": "47% missing",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "and timeliness ",
+            "type": "text"
+          },
+          {
+            "content": "82% missing",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "metrics limit comprehensive analysis.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "External vs Internal",
+            "type": "bold"
+          },
+          {
+            "content": ": Internal anomalies are most frequent, but claims ",
+            "type": "text"
+          },
+          {
+            "content": "external issues",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "cost significantly more to resolve.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Strategic Recommendations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "Short-term ",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "3-6 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Improve Data Completeness",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Mandate cost tracking for all CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "currently 50%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Implement efficiency assessment for all closed CAPs ",
+            "type": "text"
+          },
+          {
+            "content": "currently 53% missing",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Require closure deadline tracking ",
+            "type": "text"
+          },
+          {
+            "content": "currently 82% missing",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Focus on High-Cost CAPs",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Analyze CAPs costing ",
+            "type": "text"
+          },
+          {
+            "content": "€20K ",
+            "type": "text"
+          },
+          {
+            "content": "outliers",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Implement special review for FUFENG account ",
+            "type": "text"
+          },
+          {
+            "content": "€198K from 8 CAPs",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Review MGL issuer processes ",
+            "type": "text"
+          },
+          {
+            "content": "highest cost per CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Address Claims",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Prioritize claim prevention strategies",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Implement early intervention for claim-type CAPs",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Analyze claim root causes to reduce frequency and cost",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Medium-term ",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "6-12 months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Process Optimization",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Benchmark efficient vs inefficient CAP processes",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Develop best practices based on 95% efficiency rate",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Address 75% delay rate in available timeliness data",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Departmental Support",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Analyze CS department's higher average costs ",
+            "type": "text"
+          },
+          {
+            "content": "€9,834 vs IER's €6,450",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Provide additional resources to high-volume departments ",
+            "type": "text"
+          },
+          {
+            "content": "IER, CS",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Cross-train departments to balance workload",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Customer Relationship Management",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Develop special protocols for high-CAP customers ",
+            "type": "text"
+          },
+          {
+            "content": "ADM, Tanichem, Agrana",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Implement proactive quality monitoring for FUFENG account",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Create customer-specific CAP reduction plans",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Long-term ",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "12+ months",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Predictive Analytics",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Develop CAP prediction models based on historical trends",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Identify early warning indicators for high-cost CAPs",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Implement risk-based monitoring for suppliers and customers",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Continuous Improvement",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Establish CAP reduction targets ",
+            "type": "text"
+          },
+          {
+            "content": "e.g., 10% annual reduction",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Implement preventive maintenance based on CAP patterns",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Develop supplier quality management program",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "System Integration",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Integrate CAP system with ERP and quality management systems",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Automate cost tracking and deadline monitoring",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "Implement real-time dashboard for CAP metrics",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Success Metrics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Track the following KPIs to measure improvement:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "CAP Volume",
+                "type": "bold"
+              },
+              {
+                "content": ": Target 10% annual reduction",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "CAP Cost",
+                "type": "bold"
+              },
+              {
+                "content": ": Target 15% annual cost reduction",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Data Completeness",
+                "type": "bold"
+              },
+              {
+                "content": ": Achieve ",
+                "type": "text"
+              },
+              {
+                "content": "95% cost, efficiency, and timeliness tracking",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Closure Timeliness",
+                "type": "bold"
+              },
+              {
+                "content": ": Target ",
+                "type": "text"
+              },
+              {
+                "content": "30% delay rate ",
+                "type": "text"
+              },
+              {
+                "content": "vs current 75% in available data",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Efficiency Rate",
+                "type": "bold"
+              },
+              {
+                "content": ": Maintain ",
+                "type": "text"
+              },
+              {
+                "content": "95% while improving assessment coverage",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Appendix",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Data Sources",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2025 CAP Overview.xlsx",
+                "type": "bold"
+              },
+              {
+                "content": ": 10 recent CAPs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "SHA CHRONOCAP.xlsx",
+                "type": "bold"
+              },
+              {
+                "content": ": 591 historical CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "2011-2024",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Methodology",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Data cleaning: Removed null CAP entries, standardized column names",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Cost conversion: Unified currency to EUR, converted decimal separators",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Date parsing: Standardized date formats across datasets",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Statistical analysis: Descriptive statistics, trend analysis, distribution analysis",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Limitations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2011-2016 cost data not available ",
+                "type": "text"
+              },
+              {
+                "content": "likely not tracked",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "47.4% of CAPs lack efficiency assessment",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "82.4% of CAPs lack timeliness data",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Some customer names appear duplicated ",
+                "type": "text"
+              },
+              {
+                "content": "e.g., Agrana/AGRANA",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Zero-cost CAPs may represent data quality issues rather than actual zero cost",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "Report generated by Pardus AI - Quantitative Analyst",
+            "type": "italic"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Date: February 17, 2025",
+            "type": "italic"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

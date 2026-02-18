@@ -1,0 +1,1085 @@
+{
+  "generated_at": "2026-02-10T15:38:01",
+  "source_summary": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/summary.json",
+  "source_scan": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/multisheet_scan500_fast2_20260210_102544/scan_results_qualified.json",
+  "metrics": {
+    "case_count": 31,
+    "total_charts": 255,
+    "avg_charts": 8.23,
+    "median_charts": 7,
+    "min_charts": 5,
+    "max_charts": 15,
+    "total_upload_files": 61,
+    "excel_files_count": 37,
+    "title_cjk_count": 15,
+    "title_non_cjk_count": 16
+  },
+  "charts": {
+    "chart_counts": [
+      15,
+      14,
+      13,
+      11,
+      11,
+      11,
+      11,
+      10,
+      10,
+      10,
+      9,
+      9,
+      9,
+      8,
+      8,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5,
+      5,
+      5
+    ],
+    "sheet_max": [
+      4,
+      2,
+      3,
+      5,
+      5,
+      3,
+      3,
+      6,
+      2,
+      6,
+      6,
+      13,
+      3,
+      6,
+      11,
+      2,
+      3,
+      6,
+      3,
+      3,
+      9,
+      9,
+      2,
+      17,
+      3,
+      3,
+      9,
+      2,
+      2,
+      2,
+      3
+    ],
+    "case_short": [
+      "e226fa",
+      "ae3bf0",
+      "0a3a46",
+      "739cc7",
+      "64914b",
+      "e8c351",
+      "b9c4c3",
+      "b93dae",
+      "249b12",
+      "677843",
+      "0c7131",
+      "bc9096",
+      "3f3ac2",
+      "129eef",
+      "79abb1",
+      "ca9493",
+      "fd6406",
+      "6a109b",
+      "fec7a2",
+      "caaf78",
+      "fdec4b",
+      "96f9d8",
+      "1b89e7",
+      "568921",
+      "4bc65e",
+      "f5171f",
+      "e8263a",
+      "a77d54",
+      "e79c8f",
+      "df7592",
+      "751e32"
+    ],
+    "case_title": [
+      "2024-2025 CAP review",
+      "CAP Analysis",
+      "债券借贷",
+      "用户反馈",
+      "2024 vs 2025 CAP Review report",
+      "KA品牌下探数据汇总",
+      "arbitrage",
+      "id市场投放效果与转化数据分析",
+      "国际贸易",
+      "order submitted",
+      "2022-2026 Case Data",
+      "Microsoft is Falling Down",
+      "Twitter和YouTube的数据",
+      "email experiment",
+      "总承包",
+      "月卡改价实验数据分析",
+      "辅酶q10",
+      "Book1",
+      "588000159915510050",
+      "new",
+      "Copy of Project",
+      "Linac setup overview",
+      "反向调价实验数据分析",
+      "卫生统计年鉴",
+      "KA品牌下探数据汇总",
+      "陕西能源职业技术学院招生就业专业排序",
+      "竞品分析",
+      "年卡改价实验数据分析",
+      "SSCOM L02 AnalyticsCase_Meyer",
+      "dam monitoring data analysis",
+      "wechat marketing"
+    ],
+    "trace_type_names": [
+      "bar",
+      "scatter",
+      "heatmap",
+      "pie",
+      "histogram",
+      "scatterpolar",
+      "sunburst",
+      "sankey",
+      "box",
+      "scattergl",
+      "table",
+      "histogram2d",
+      "icicle",
+      "scatter3d"
+    ],
+    "trace_type_values": [
+      141,
+      62,
+      11,
+      10,
+      7,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      2,
+      1,
+      1
+    ],
+    "file_ext_names": [
+      ".xlsx",
+      ".txt",
+      ".csv",
+      ".pdf",
+      ".md"
+    ],
+    "file_ext_values": [
+      37,
+      12,
+      8,
+      3,
+      1
+    ]
+  },
+  "cases": [
+    {
+      "idx": 1,
+      "case_id": "e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+      "title": "2024-2025 CAP review",
+      "chart_count": 15,
+      "upload_count": 3,
+      "sheet_counts": [
+        2,
+        4
+      ],
+      "sheet_max": 4,
+      "excel_file_count": 2,
+      "top_trace_types": [
+        "bar",
+        "pie",
+        "sankey",
+        "table",
+        "scatter",
+        "sunburst",
+        "icicle",
+        "heatmap"
+      ],
+      "sample_titles": [
+        "2024 vs 2025年CAPA综合对比总览",
+        "2024 vs 2025年CAPA总成本对比",
+        "2024 vs 2025年CAPA记录数量对比",
+        "2024 vs 2025年成本构成对比",
+        "2024年CAPA成本构成占比",
+        "2025年CAPA成本构成占比",
+        "2024 vs 2025年CAP类型分布对比",
+        "2024年CAPA成本月度趋势"
+      ],
+      "html": "items/case_001_e226fa5aa55b.html",
+      "view_url": "https://pardusai.org/view/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7"
+    },
+    {
+      "idx": 2,
+      "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+      "title": "CAP Analysis",
+      "chart_count": 14,
+      "upload_count": 2,
+      "sheet_counts": [
+        2
+      ],
+      "sheet_max": 2,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "box",
+        "scatter"
+      ],
+      "sample_titles": [
+        "CAPA 记录数量对比",
+        "成本对比",
+        "成本分布对比",
+        "CAP TYPE 分布对比",
+        "7M 分析方法分布对比",
+        "封闭时间效率对比",
+        "按月趋势",
+        "CAPA 关键指标对比"
+      ],
+      "html": "items/case_002_ae3bf09e493f.html",
+      "view_url": "https://pardusai.org/view/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996"
+    },
+    {
+      "idx": 3,
+      "case_id": "0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3",
+      "title": "债券借贷",
+      "chart_count": 13,
+      "upload_count": 1,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar",
+        "pie",
+        "histogram",
+        "heatmap"
+      ],
+      "sample_titles": [
+        "债券借贷市场每日交易趋势",
+        "债券借贷加权平均费率走势",
+        "最新日按债券类型成交量分布",
+        "最新日按债券类型余额分布",
+        "各债券类型加权平均费率",
+        "最新日债券借贷余额Top 15",
+        "最新日当日成交量Top 15",
+        "债券集中度分布"
+      ],
+      "html": "items/case_003_0a3a46347386.html",
+      "view_url": "https://pardusai.org/view/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3"
+    },
+    {
+      "idx": 4,
+      "case_id": "739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6",
+      "title": "用户反馈",
+      "chart_count": 11,
+      "upload_count": 1,
+      "sheet_counts": [
+        5
+      ],
+      "sheet_max": 5,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "pie",
+        "sunburst",
+        "scatterpolar",
+        "histogram2d"
+      ],
+      "sample_titles": [
+        "Brand Distribution",
+        "Most Used Training Systems",
+        "System Hierarchy",
+        "Satisfaction Distribution",
+        "System Pain Points",
+        "Desired Features",
+        "Course Enhancement",
+        "AI Features"
+      ],
+      "html": "items/case_004_739cc701921d.html",
+      "view_url": "https://pardusai.org/view/739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6"
+    },
+    {
+      "idx": 5,
+      "case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+      "title": "2024 vs 2025 CAP Review report",
+      "chart_count": 11,
+      "upload_count": 3,
+      "sheet_counts": [
+        2,
+        5
+      ],
+      "sheet_max": 5,
+      "excel_file_count": 2,
+      "top_trace_types": [
+        "bar"
+      ],
+      "sample_titles": [
+        "CAP数量对比",
+        "成本对比",
+        "平均成本对比",
+        "各部门总成本对比",
+        "各部门平均成本对比",
+        "CAP TYPE分布对比",
+        "各CAP类型平均成本对比",
+        "Process分布对比"
+      ],
+      "html": "items/case_005_64914baf5ff5.html",
+      "view_url": "https://pardusai.org/view/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06"
+    },
+    {
+      "idx": 6,
+      "case_id": "e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a",
+      "title": "KA品牌下探数据汇总",
+      "chart_count": 11,
+      "upload_count": 1,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "scatter",
+        "heatmap",
+        "scatterpolar"
+      ],
+      "sample_titles": [
+        "1月GMV TOP 10品牌",
+        "门店规模 vs 订单量关系",
+        "营业门店数TOP 10",
+        "1月订单量TOP 10",
+        "CPC广告贡献率TOP 10",
+        "CPC广告占比 vs GMV关系",
+        "客单价TOP 10品牌",
+        "GMV月环比增长TOP 10"
+      ],
+      "html": "items/case_006_e8c35199ca37.html",
+      "view_url": "https://pardusai.org/view/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a"
+    },
+    {
+      "idx": 7,
+      "case_id": "b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d",
+      "title": "arbitrage",
+      "chart_count": 11,
+      "upload_count": 1,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar",
+        "box",
+        "histogram",
+        "heatmap"
+      ],
+      "sample_titles": [
+        "Price Evolution: Underlying vs Synthetic",
+        "Option Prices",
+        "Cumulative Returns",
+        "Daily Performance",
+        "Spread Distribution",
+        "Return Distribution",
+        "Win Rate Analysis",
+        "Volatility Analysis"
+      ],
+      "html": "items/case_007_b9c4c3a493f4.html",
+      "view_url": "https://pardusai.org/view/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d"
+    },
+    {
+      "idx": 8,
+      "case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+      "title": "id市场投放效果与转化数据分析",
+      "chart_count": 10,
+      "upload_count": 2,
+      "sheet_counts": [
+        6
+      ],
+      "sheet_max": 6,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar",
+        "pie",
+        "heatmap"
+      ],
+      "sample_titles": [
+        "目标达成",
+        "总体趋势",
+        "ROI趋势",
+        "时期对比",
+        "每日变化率",
+        "CPI与CPA趋势",
+        "CTR与CPC趋势",
+        "订单构成"
+      ],
+      "html": "items/case_008_b93dae71bcf0.html",
+      "view_url": "https://pardusai.org/view/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31"
+    },
+    {
+      "idx": 9,
+      "case_id": "249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e",
+      "title": "国际贸易",
+      "chart_count": 10,
+      "upload_count": 1,
+      "sheet_counts": [
+        2
+      ],
+      "sheet_max": 2,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "histogram",
+        "heatmap",
+        "sankey",
+        "scatter",
+        "sunburst"
+      ],
+      "sample_titles": [
+        "Top 20 Countries by Trade Surplus",
+        "Top 20 Countries by Trade Deficit",
+        "Trade Balance Distribution",
+        "Top Import Destinations by Trade Balance Impact",
+        "Trade Balance Heatmap",
+        "Global Trade Flow: Top Exporters & Importers",
+        "Global Trade Balance Overview",
+        "China's Top Trade Relationships"
+      ],
+      "html": "items/case_009_249b12b9deda.html",
+      "view_url": "https://pardusai.org/view/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e"
+    },
+    {
+      "idx": 10,
+      "case_id": "67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3",
+      "title": "order submitted",
+      "chart_count": 10,
+      "upload_count": 1,
+      "sheet_counts": [
+        6
+      ],
+      "sheet_max": 6,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "pie",
+        "heatmap"
+      ],
+      "sample_titles": [
+        "数据集类别分布",
+        "混淆矩阵：标签预测效果",
+        "分类性能指标",
+        "两类错误对比分析",
+        "FP (有单无标签) - Call Result Tags 分布",
+        "FN (无单有标签) - Call Result Tags 分布",
+        "FN (无单有标签) - 真实订单数量分布",
+        "FN (无单有标签) - Order Modification 标记分布"
+      ],
+      "html": "items/case_010_67784329e507.html",
+      "view_url": "https://pardusai.org/view/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3"
+    },
+    {
+      "idx": 11,
+      "case_id": "0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695",
+      "title": "2022-2026 Case Data",
+      "chart_count": 9,
+      "upload_count": 3,
+      "sheet_counts": [
+        4,
+        5,
+        6
+      ],
+      "sheet_max": 6,
+      "excel_file_count": 3,
+      "top_trace_types": [
+        "bar",
+        "scatter",
+        "histogram"
+      ],
+      "sample_titles": [
+        "Yearly Funding Trends",
+        "Funding by Application Type",
+        "Funding by Priority",
+        "Applications by Year",
+        "Award Rate Trend",
+        "Top Organizations",
+        "Award Rate by Type",
+        "Award Rate by Priority"
+      ],
+      "html": "items/case_011_0c7131d0cbdc.html",
+      "view_url": "https://pardusai.org/view/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695"
+    },
+    {
+      "idx": 12,
+      "case_id": "bc9096fe2102fcf754cb47c1631aed3576bf8ca6aef0c3d78e6f40b72d38fc92",
+      "title": "Microsoft is Falling Down",
+      "chart_count": 9,
+      "upload_count": 4,
+      "sheet_counts": [
+        13
+      ],
+      "sheet_max": 13,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "sunburst",
+        "scatter"
+      ],
+      "sample_titles": [
+        "Profitability Metrics Comparison",
+        "Revenue Comparison by Segment",
+        "Segment Performance Q2 2026",
+        "Microsoft Cloud Revenue Composition",
+        "Global Cloud Market Share Q2 2025",
+        "Azure Growth vs Market",
+        "Capital Expenditure Trend",
+        "Operating Margin by Segment"
+      ],
+      "html": "items/case_012_bc9096fe2102.html",
+      "view_url": "https://pardusai.org/view/bc9096fe2102fcf754cb47c1631aed3576bf8ca6aef0c3d78e6f40b72d38fc92"
+    },
+    {
+      "idx": 13,
+      "case_id": "3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e",
+      "title": "Twitter和YouTube的数据",
+      "chart_count": 9,
+      "upload_count": 2,
+      "sheet_counts": [
+        1,
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 2,
+      "top_trace_types": [
+        "bar",
+        "scatter",
+        "sankey"
+      ],
+      "sample_titles": [
+        "Platform Performance Comparison",
+        "Twitter Daily Traffic Trend",
+        "Twitter Device Usage Over Time",
+        "Conversion Rate Comparison",
+        "Twitter User Journey Funnel",
+        "Twitter Funnel Conversion Rates",
+        "YouTube Campaign Performance",
+        "Top YouTube Campaigns Breakdown"
+      ],
+      "html": "items/case_013_3f3ac24519b2.html",
+      "view_url": "https://pardusai.org/view/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e"
+    },
+    {
+      "idx": 14,
+      "case_id": "129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428",
+      "title": "email experiment",
+      "chart_count": 8,
+      "upload_count": 2,
+      "sheet_counts": [
+        6,
+        5
+      ],
+      "sheet_max": 6,
+      "excel_file_count": 2,
+      "top_trace_types": [
+        "bar",
+        "scatterpolar",
+        "sankey",
+        "sunburst"
+      ],
+      "sample_titles": [
+        "教师基本信息桑基图",
+        "人才类型旭日图",
+        "科研成果柱状图",
+        "教学社会服务柱状图",
+        "政策态度分组柱状图",
+        "行为意向雷达图",
+        "人才类型态度对比",
+        "三大职能得分雷达图"
+      ],
+      "html": "items/case_014_129eef16c57a.html",
+      "view_url": "https://pardusai.org/view/129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428"
+    },
+    {
+      "idx": 15,
+      "case_id": "79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5",
+      "title": "总承包",
+      "chart_count": 8,
+      "upload_count": 1,
+      "sheet_counts": [
+        11
+      ],
+      "sheet_max": 11,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "pie"
+      ],
+      "sample_titles": [
+        "项目状态分布",
+        "项目合同额、收入与成本对比",
+        "项目组合总览 (百万元)",
+        "项目进度对比：验工、收入与收款",
+        "项目完成率分析",
+        "各项目预计利润分析",
+        "项目费用构成分析",
+        "收入与收款差额分析"
+      ],
+      "html": "items/case_015_79abb110cddb.html",
+      "view_url": "https://pardusai.org/view/79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5"
+    },
+    {
+      "idx": 16,
+      "case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+      "title": "月卡改价实验数据分析",
+      "chart_count": 7,
+      "upload_count": 2,
+      "sheet_counts": [
+        2
+      ],
+      "sheet_max": 2,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "scatter"
+      ],
+      "sample_titles": [
+        "各组核心指标对比",
+        "流量分布",
+        "付费率对比",
+        "价格弹性曲线",
+        "价格与指标关系",
+        "蚕食效应分析",
+        "收入影响分析"
+      ],
+      "html": "items/case_016_ca9493d910dd.html",
+      "view_url": "https://pardusai.org/view/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e"
+    },
+    {
+      "idx": 17,
+      "case_id": "fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a",
+      "title": "辅酶q10",
+      "chart_count": 7,
+      "upload_count": 1,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "heatmap",
+        "box",
+        "bar"
+      ],
+      "sample_titles": [
+        "Time Series by Group",
+        "Peak Analysis",
+        "Box Plot by Group",
+        "Comparison Metrics",
+        "Heatmap by Group and Time",
+        "Correlation Heatmap",
+        "All Observations Scatter"
+      ],
+      "html": "items/case_017_fd64064b9ffb.html",
+      "view_url": "https://pardusai.org/view/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a"
+    },
+    {
+      "idx": 18,
+      "case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+      "title": "Book1",
+      "chart_count": 7,
+      "upload_count": 2,
+      "sheet_counts": [
+        6
+      ],
+      "sheet_max": 6,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar"
+      ],
+      "sample_titles": [
+        "Monthly Sales Trend",
+        "Monthly Sales Breakdown",
+        "Items Sold vs Active Products",
+        "Top 10 Products by Net Sales",
+        "Product Performance Scatter",
+        "2026 Sales Forecast",
+        "2026 Items Sold Forecast"
+      ],
+      "html": "items/case_018_6a109b2edad7.html",
+      "view_url": "https://pardusai.org/view/6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b"
+    },
+    {
+      "idx": 19,
+      "case_id": "fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e",
+      "title": "588000159915510050",
+      "chart_count": 7,
+      "upload_count": 2,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scattergl",
+        "bar",
+        "scatter",
+        "histogram",
+        "scatter3d"
+      ],
+      "sample_titles": [
+        "Three ETFs Price Trend (Normalized to 100)",
+        "Performance Metrics Comparison",
+        "Implied Volatility (IV) Comparison",
+        "上证50ETF: IV vs HV20",
+        "IV vs HV20 Relationship",
+        "Daily Return Distribution",
+        "上证50ETF: Price vs IV vs Time"
+      ],
+      "html": "items/case_019_fec7a23e6933.html",
+      "view_url": "https://pardusai.org/view/fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e"
+    },
+    {
+      "idx": 20,
+      "case_id": "caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872",
+      "title": "new",
+      "chart_count": 6,
+      "upload_count": 5,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar",
+        "heatmap"
+      ],
+      "sample_titles": [
+        "Precision Analysis CV",
+        "Precision vs Reflectance",
+        "Mean Spectra Comparison",
+        "Spectral Heatmap All Samples",
+        "Sample Statistics Comparison",
+        "CV Spectrum Analysis"
+      ],
+      "html": "items/case_020_caaf784429d7.html",
+      "view_url": "https://pardusai.org/view/caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872"
+    },
+    {
+      "idx": 21,
+      "case_id": "fdec4b4d26cbac9f558b3e47449089e928bda4188427b70587586a59dd6687e3",
+      "title": "Copy of Project",
+      "chart_count": 6,
+      "upload_count": 1,
+      "sheet_counts": [
+        9
+      ],
+      "sheet_max": 9,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "scatter"
+      ],
+      "sample_titles": [
+        "Linac Operational Gradient",
+        "Klystron Peak Power",
+        "Power vs Gradient",
+        "Repetition Rate",
+        "RF Pulse Width",
+        "Linac Frequency"
+      ],
+      "html": "items/case_021_fdec4b4d26cb.html",
+      "view_url": "https://pardusai.org/view/fdec4b4d26cbac9f558b3e47449089e928bda4188427b70587586a59dd6687e3"
+    },
+    {
+      "idx": 22,
+      "case_id": "96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38",
+      "title": "Linac setup overview",
+      "chart_count": 6,
+      "upload_count": 1,
+      "sheet_counts": [
+        9
+      ],
+      "sheet_max": 9,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "scatter"
+      ],
+      "sample_titles": [
+        "Linac Operational Gradient",
+        "Klystron Peak Power",
+        "Power vs Gradient",
+        "Repetition Rate",
+        "RF Pulse Width",
+        "Linac Frequency"
+      ],
+      "html": "items/case_022_96f9d88da186.html",
+      "view_url": "https://pardusai.org/view/96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38"
+    },
+    {
+      "idx": 23,
+      "case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+      "title": "反向调价实验数据分析",
+      "chart_count": 6,
+      "upload_count": 2,
+      "sheet_counts": [
+        2
+      ],
+      "sheet_max": 2,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "scatterpolar"
+      ],
+      "sample_titles": [
+        "ARPU对比",
+        "整体付费率对比",
+        "ARPPU对比",
+        "各套餐订单数量对比",
+        "各套餐付费率对比",
+        "关键指标综合对比"
+      ],
+      "html": "items/case_023_1b89e7d1ffb4.html",
+      "view_url": "https://pardusai.org/view/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6"
+    },
+    {
+      "idx": 24,
+      "case_id": "56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6",
+      "title": "卫生统计年鉴",
+      "chart_count": 6,
+      "upload_count": 1,
+      "sheet_counts": [
+        17
+      ],
+      "sheet_max": 17,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar",
+        "heatmap"
+      ],
+      "sample_titles": [
+        "中国人口统计趋势 (1955-2023)",
+        "中国人口分年代平均出生率与死亡率对比",
+        "中国人口出生率与死亡率差距变化 (阴影表示自然增长空间)",
+        "中国人口统计指标相关性分析",
+        "中国关键年份人口统计对比",
+        "中国人口出生率与死亡率关系 (近20年趋势)"
+      ],
+      "html": "items/case_024_568921634187.html",
+      "view_url": "https://pardusai.org/view/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6"
+    },
+    {
+      "idx": 25,
+      "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+      "title": "KA品牌下探数据汇总",
+      "chart_count": 6,
+      "upload_count": 2,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "scatter"
+      ],
+      "sample_titles": [
+        "茶饮品牌1月GMV排名",
+        "茶饮品牌1月广告投放金额排名",
+        "广告投放与GMV关系",
+        "各品牌CPC广告占近15天GMV比例排名（Top 10）",
+        "Top 6 品牌多维度综合表现对比（得分0-100）",
+        "客单价与订单量关系（气泡大小代表GMV）"
+      ],
+      "html": "items/case_025_4bc65ee64081.html",
+      "view_url": "https://pardusai.org/view/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c"
+    },
+    {
+      "idx": 26,
+      "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+      "title": "陕西能源职业技术学院招生就业专业排序",
+      "chart_count": 6,
+      "upload_count": 2,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "scatter",
+        "scatterpolar",
+        "histogram"
+      ],
+      "sample_titles": [
+        "TOP 20 专业综合排名",
+        "各学院平均综合得分对比",
+        "就业率与一志愿率关系图",
+        "TOP 5 专业综合能力雷达图",
+        "各专业招生规模分布",
+        "就业率正向增长TOP 10专业"
+      ],
+      "html": "items/case_026_f5171f88125c.html",
+      "view_url": "https://pardusai.org/view/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41"
+    },
+    {
+      "idx": 27,
+      "case_id": "e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746",
+      "title": "竞品分析",
+      "chart_count": 6,
+      "upload_count": 3,
+      "sheet_counts": [
+        9
+      ],
+      "sheet_max": 9,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar",
+        "table",
+        "histogram",
+        "box",
+        "pie"
+      ],
+      "sample_titles": [
+        "Creator Statistics Summary",
+        "Follower Count Distribution",
+        "Creator Tier Distribution",
+        "Follower Count by Tier",
+        "Top 15 Creators by Follower Count",
+        "Content Category Distribution"
+      ],
+      "html": "items/case_027_e8263ae221ad.html",
+      "view_url": "https://pardusai.org/view/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746"
+    },
+    {
+      "idx": 28,
+      "case_id": "a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+      "title": "年卡改价实验数据分析",
+      "chart_count": 5,
+      "upload_count": 2,
+      "sheet_counts": [
+        2
+      ],
+      "sheet_max": 2,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar",
+        "scatterpolar"
+      ],
+      "sample_titles": [
+        "ARPU对比",
+        "预期验证雷达图",
+        "蚕食效应分析",
+        "日度ARPU趋势",
+        "日度付费率趋势"
+      ],
+      "html": "items/case_028_a77d543b4e14.html",
+      "view_url": "https://pardusai.org/view/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c"
+    },
+    {
+      "idx": 29,
+      "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+      "title": "SSCOM L02 AnalyticsCase_Meyer",
+      "chart_count": 5,
+      "upload_count": 2,
+      "sheet_counts": [
+        2
+      ],
+      "sheet_max": 2,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "bar"
+      ],
+      "sample_titles": [
+        "CO2 Emissions Comparison",
+        "Technician Requirements",
+        "Cities per Base",
+        "CO2 Reduction Percentage",
+        "Lead Time Impact"
+      ],
+      "html": "items/case_029_e79c8f00ffa4.html",
+      "view_url": "https://pardusai.org/view/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b"
+    },
+    {
+      "idx": 30,
+      "case_id": "df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c",
+      "title": "dam monitoring data analysis",
+      "chart_count": 5,
+      "upload_count": 1,
+      "sheet_counts": [
+        2
+      ],
+      "sheet_max": 2,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar"
+      ],
+      "sample_titles": [
+        "渗透压力月度趋势分析 (2017-2025)",
+        "各渗压计平均渗透压力对比 (前12位)",
+        "P01渗压计: 库水位与渗透压力关系 (颜色表示温度)",
+        "应力计 (SG系列) 月度变化趋势",
+        "库水位与流量月度变化趋势"
+      ],
+      "html": "items/case_030_df7592361534.html",
+      "view_url": "https://pardusai.org/view/df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c"
+    },
+    {
+      "idx": 31,
+      "case_id": "751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9",
+      "title": "wechat marketing",
+      "chart_count": 5,
+      "upload_count": 4,
+      "sheet_counts": [
+        3
+      ],
+      "sheet_max": 3,
+      "excel_file_count": 1,
+      "top_trace_types": [
+        "scatter",
+        "bar",
+        "pie",
+        "histogram2d",
+        "sunburst"
+      ],
+      "sample_titles": [
+        "Monthly Publishing Timeline",
+        "Category Distribution",
+        "Department Workload Distribution",
+        "Department Monthly Workload Heatmap",
+        "2026年微信公众号内容策略全景图"
+      ],
+      "html": "items/case_031_751e322a180d.html",
+      "view_url": "https://pardusai.org/view/751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9"
+    }
+  ]
+}

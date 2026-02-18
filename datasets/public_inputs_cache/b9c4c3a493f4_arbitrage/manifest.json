@@ -1,0 +1,20 @@
+{
+  "case_id": "b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d",
+  "title_hint": "arbitrage",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "510050_underlying_合成期权_策略示例.xlsx",
+      "status": 200,
+      "size_bytes": 91878,
+      "source_url": "https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/files/510050_underlying_%E5%90%88%E6%88%90%E6%9C%9F%E6%9D%83_%E7%AD%96%E7%95%A5%E7%A4%BA%E4%BE%8B.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b9c4c3a493f4_arbitrage/510050_underlying_合成期权_策略示例.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:35:50Z"
+}

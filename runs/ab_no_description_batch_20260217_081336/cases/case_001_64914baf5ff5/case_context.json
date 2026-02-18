@@ -1,0 +1,151 @@
+{
+  "source_row": {
+    "idx": 4,
+    "case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+    "title": "2024 vs 2025 CAP Review report",
+    "chart_count": 11,
+    "upload_count": 3,
+    "doc_status": 200,
+    "up_status": 200,
+    "html": "case_004_64914baf5ff5.html"
+  },
+  "queue_log": {
+    "case_index": 1,
+    "template_case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+    "title": "2024 vs 2025 CAP Review report",
+    "started_at": "2026-02-17T08:13:36Z",
+    "rerun_case_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+    "upload_response": {
+      "message": "Files uploaded successfully"
+    },
+    "queue_history": [
+      {
+        "at": "2026-02-17T08:13:42Z",
+        "status": "pending",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:14:03Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:14:24Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:14:46Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:15:06Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:15:27Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:15:48Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:16:09Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:16:30Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:16:50Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:17:11Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:17:32Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:17:52Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:18:14Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:18:35Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:18:57Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:19:18Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:19:39Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:19:59Z",
+        "status": "completed",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      }
+    ],
+    "final_status": "completed",
+    "last_queue": {
+      "project_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+      "status": "completed",
+      "tasks_ahead": 0,
+      "queue_by_tier": [],
+      "total_pending": 0,
+      "currently_processing": 0,
+      "estimated_wait_minutes": 0,
+      "priority_level": "premium",
+      "created_at": "2026-02-17T08:13:42.136397Z",
+      "started_at": "2026-02-17T08:13:47.168065Z"
+    }
+  }
+}

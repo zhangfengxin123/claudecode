@@ -1,0 +1,39 @@
+{
+  "case_id": "15056f91b1a82030bddb2a5257af4c93c8b339e8d256776a1cf6f9950d69439d",
+  "title": "Google Analysis",
+  "source_cache_manifest": "2026-02-17T14:15:49Z",
+  "status": "ok",
+  "copied_files": 4,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "GOOG-10-K-2025.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/GOOG-10-K-2025.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/15056f91b1a8_Google Analysis/GOOG-10-K-2025.pdf",
+      "ok": true
+    },
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/15056f91b1a8_Google Analysis/description.txt",
+      "ok": true
+    },
+    {
+      "name": "2025q4-alphabet-earnings-release.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-release.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-release.pdf",
+      "ok": true
+    },
+    {
+      "name": "2025q4-alphabet-earnings-slides.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-slides.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-slides.pdf",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

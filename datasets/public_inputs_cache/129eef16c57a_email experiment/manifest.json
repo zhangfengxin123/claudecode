@@ -1,0 +1,29 @@
+{
+  "case_id": "129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428",
+  "title_hint": "email experiment",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "2编码数据.xlsx",
+      "status": 200,
+      "size_bytes": 242440,
+      "source_url": "https://pardusai.org/v1/api/public/project/129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428/files/2%E7%BC%96%E7%A0%81%E6%95%B0%E6%8D%AE.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/129eef16c57a_email experiment/2编码数据.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "1问卷数据.xlsx",
+      "status": 200,
+      "size_bytes": 249242,
+      "source_url": "https://pardusai.org/v1/api/public/project/129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428/files/1%E9%97%AE%E5%8D%B7%E6%95%B0%E6%8D%AE.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/129eef16c57a_email experiment/1问卷数据.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:15:21Z"
+}

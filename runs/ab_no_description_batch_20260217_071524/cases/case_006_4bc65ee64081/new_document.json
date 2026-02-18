@@ -1,0 +1,2403 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"KA Brand Downward Exploration Data Analysis | 茶饮业务组品牌下探数据分析\"\ndescription: \"Comprehensive analysis of 19 tea and coffee brands' performance, including GMV trends, ad spend efficiency, and growth patterns\"\nauthor: \"Pardus Agent\"\ndate: \"2025-02-17\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "KA Brand Downward Exploration Analysis Report",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "茶饮业务组品牌下探数据分析报告",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "Executive Summary",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This report provides a comprehensive analysis of 19 tea and coffee brands within the KA brand downward exploration program, examining their January 2025 performance across key metrics including GMV, advertising efficiency, store operations, and growth trends.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Key Findings 核心发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Market Scale",
+                "type": "bold"
+              },
+              {
+                "content": ": 147,234 stores generating ¥1.04B GMV in January 2025",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Concentration",
+                "type": "bold"
+              },
+              {
+                "content": ": Top 3 brands ",
+                "type": "text"
+              },
+              {
+                "content": "瑞幸咖啡, 蜜雪冰城, COTTI COFFEE",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "account for ",
+                "type": "text"
+              },
+              {
+                "content": "59.1%",
+                "type": "bold"
+              },
+              {
+                "content": "of total GMV",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Growth Divergence",
+                "type": "bold"
+              },
+              {
+                "content": ": 11 brands growing, 6 declining - average growth of ",
+                "type": "text"
+              },
+              {
+                "content": "10.2%",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Ad Efficiency",
+                "type": "bold"
+              },
+              {
+                "content": ": Industry-wide CPC ad ROI of ",
+                "type": "text"
+              },
+              {
+                "content": "¥13.08 per ¥1",
+                "type": "bold"
+              },
+              {
+                "content": "ad spend",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Performance Gap",
+                "type": "bold"
+              },
+              {
+                "content": ": Small brands ",
+                "type": "text"
+              },
+              {
+                "content": "5K stores",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "achieve 1.48x higher GMV per store than large brands ",
+                "type": "text"
+              },
+              {
+                "content": "≥10K stores",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Market Overview",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "What is the total market size and concentration?",
+          "How are brands distributed across different store scale categories?",
+          "What is the average performance across all brands?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Market Metrics Summary",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The tea and coffee sector represents a massive market with 19 brands operating 147,234 stores nationwide. January 2025 saw total GMV of ¥1.04B across 122.3M orders, with an average order value of ¥8.48.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Market Statistics:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Total Brands",
+                "type": "bold"
+              },
+              {
+                "content": ": 19 ",
+                "type": "text"
+              },
+              {
+                "content": "4 large, 6 medium, 9 small",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Total Stores",
+                "type": "bold"
+              },
+              {
+                "content": ": 147,234",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "January GMV",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥1,037,366,237",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Average GMV per Store",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥7,046",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Average Order Value",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥8.48",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Average Orders per Store",
+                "type": "bold"
+              },
+              {
+                "content": ": 831",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Brand Scale Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./store_distribution.json",
+        "htmlPath": "./store_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The market is highly segmented by store count:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Large Brands ≥10K stores",
+                "type": "bold"
+              },
+              {
+                "content": ": 4 brands ",
+                "type": "text"
+              },
+              {
+                "content": "蜜雪冰城, 瑞幸咖啡, COTTI COFFEE, 古茗",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "- 73.9% of stores",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Medium Brands 5K-10K stores",
+                "type": "bold"
+              },
+              {
+                "content": ": 6 brands - 16.8% of stores",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Small Brands 5K stores",
+                "type": "bold"
+              },
+              {
+                "content": ": 9 brands - 9.3% of stores",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "GMV Analysis & Market Share",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which brands are the market leaders by GMV?",
+          "How has GMV changed month-over-month across brands?",
+          "What is the market share distribution?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Top 15 Brands by GMV",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./gmv_top15.json",
+        "htmlPath": "./gmv_top15.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Top 5 GMV Leaders:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "瑞幸咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥244.8M ",
+            "type": "text"
+          },
+          {
+            "content": "-22.8%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "- 23.6% market share",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "蜜雪冰城（京东店）",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥231.7M ",
+            "type": "text"
+          },
+          {
+            "content": "-7.8%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "- 22.3% market share",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "COTTI COFFEE库迪咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥136.9M ",
+            "type": "text"
+          },
+          {
+            "content": "+47.0%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "- 13.2% market share",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "沪上阿姨鲜果茶",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥73.3M ",
+            "type": "text"
+          },
+          {
+            "content": "+16.1%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "- 7.1% market share",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "古茗",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥72.3M ",
+            "type": "text"
+          },
+          {
+            "content": "-10.9%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "- 7.0% market share",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "The top 3 brands control ",
+            "type": "text"
+          },
+          {
+            "content": "59.1%",
+            "type": "bold"
+          },
+          {
+            "content": "of total market GMV, indicating high market concentration.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "GMV Growth Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./gmv_growth.json",
+        "htmlPath": "./gmv_growth.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Growth Leaders Top 5:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "书亦烧仙草总部",
+            "type": "bold"
+          },
+          {
+            "content": ": +59.6%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "甜啦啦鲜果茶",
+            "type": "bold"
+          },
+          {
+            "content": ": +53.5%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "COTTI COFFEE库迪咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": +47.0%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "1点点",
+            "type": "bold"
+          },
+          {
+            "content": ": +35.9%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "CoCo都可",
+            "type": "bold"
+          },
+          {
+            "content": ": +30.4%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Declining Brands Top 5:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "瑞幸咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": -22.8%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "茶百道",
+            "type": "bold"
+          },
+          {
+            "content": ": -18.9%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "星巴克（中国）有限公司",
+            "type": "bold"
+          },
+          {
+            "content": ": -13.3%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "霸王茶姬",
+            "type": "bold"
+          },
+          {
+            "content": ": -12.1%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "古茗",
+            "type": "bold"
+          },
+          {
+            "content": ": -10.9%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": Even large established brands are experiencing significant declines, while emerging brands like COTTI COFFEE show aggressive growth ",
+            "type": "text"
+          },
+          {
+            "content": "+47%",
+            "type": "text"
+          },
+          {
+            "content": ", indicating market disruption.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Market Share Hierarchy",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./market_share.json",
+        "htmlPath": "./market_share.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The sunburst visualization reveals:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Large Brands",
+                "type": "bold"
+              },
+              {
+                "content": ": 59.4% of total GMV",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Medium Brands",
+                "type": "bold"
+              },
+              {
+                "content": ": 23.9% of total GMV",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Small Brands",
+                "type": "bold"
+              },
+              {
+                "content": ": 16.7% of total GMV",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Despite having only 4 brands, the large segment dominates market share, demonstrating the power of scale in this industry.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Advertising Performance Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "Which brands invest most in advertising?",
+          "How efficient is advertising spend across brands?",
+          "What is the correlation between ad spend and GMV?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Ad Spend vs GMV Correlation",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./ad_vs_gmv.json",
+        "htmlPath": "./ad_vs_gmv.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Ad Spend Leaders Top 5:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "瑞幸咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥2.86M ",
+            "type": "text"
+          },
+          {
+            "content": "-9.5%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "- 36.0% of total ad spend",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "COTTI COFFEE库迪咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥1.60M ",
+            "type": "text"
+          },
+          {
+            "content": "+37.8%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "益禾堂",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥1.33M ",
+            "type": "text"
+          },
+          {
+            "content": "+139.1%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "蜜雪冰城（京东店）",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥1.14M ",
+            "type": "text"
+          },
+          {
+            "content": "-16.0%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "挪瓦咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥350K ",
+            "type": "text"
+          },
+          {
+            "content": "-24.5%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "The top 3 brands account for ",
+            "type": "text"
+          },
+          {
+            "content": "73.0%",
+            "type": "bold"
+          },
+          {
+            "content": "of total advertising spend, mirroring the GMV concentration.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Ad Efficiency by ROI",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./ad_efficiency.json",
+        "htmlPath": "./ad_efficiency.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Top 5 Ad ROI Brands:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "瑞幸咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥24.50/¥1 ",
+            "type": "text"
+          },
+          {
+            "content": "CPC GMV: ¥69.96M",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "霸王茶姬",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥12.57/¥1 ",
+            "type": "text"
+          },
+          {
+            "content": "CPC GMV: ¥529K",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "COTTI COFFEE库迪咖啡",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥10.16/¥1 ",
+            "type": "text"
+          },
+          {
+            "content": "CPC GMV: ¥16.26M",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "书亦烧仙草总部",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥7.95/¥1 ",
+            "type": "text"
+          },
+          {
+            "content": "CPC GMV: ¥560K",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "蜜雪冰城（京东店）",
+            "type": "bold"
+          },
+          {
+            "content": ": ¥7.63/¥1 ",
+            "type": "text"
+          },
+          {
+            "content": "CPC GMV: ¥8.69M",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": 瑞幸咖啡's superior ad ROI ",
+            "type": "text"
+          },
+          {
+            "content": "¥24.50",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "demonstrates the power of scale and brand equity in advertising efficiency, despite its overall GMV decline.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "CPC Investment Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cpc_investment.json",
+        "htmlPath": "./cpc_investment.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Brands with ",
+            "type": "text"
+          },
+          {
+            "content": "10% CPC GMV contribution",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "瑞幸咖啡",
+                "type": "bold"
+              },
+              {
+                "content": ": 57.2%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "挪瓦咖啡",
+                "type": "bold"
+              },
+              {
+                "content": ": 24.1%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "益禾堂",
+                "type": "bold"
+              },
+              {
+                "content": ": 35.2%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "COTTI COFFEE库迪咖啡",
+                "type": "bold"
+              },
+              {
+                "content": ": 23.8%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "These brands are heavily reliant on CPC advertising for GMV generation, indicating strong digital marketing focus.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Operational Performance Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "How do business models differ across brands?",
+          "What is the relationship between order value and store performance?",
+          "Which brands are operationally most efficient?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Business Model Analysis: Ticket Size vs GMV per Store",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./business_model.json",
+        "htmlPath": "./business_model.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "High-Ticket, High-Efficiency Brands:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "星巴克（中国）有限公司",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥45.59/order, ¥2,879/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "霸王茶姬",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥24.77/order, ¥8,011/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "1点点",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥22.65/order, ¥5,432/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "High-Volume, Low-Ticket Brands:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "蜜雪冰城（京东店）",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥6.23/order, ¥6,983/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "幸运咖",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥4.37/order, ¥6,254/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "七鲜咖啡",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥15.76/order, ¥28,085/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": Premium brands ",
+            "type": "text"
+          },
+          {
+            "content": "星巴克, 霸王茶姬",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "focus on high-value customers, while mass-market brands ",
+            "type": "text"
+          },
+          {
+            "content": "蜜雪冰城, 幸运咖",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "compete on volume with lower ticket sizes.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Performance Matrix",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./performance_matrix.json",
+        "htmlPath": "./performance_matrix.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The normalized performance matrix reveals distinct strategic clusters:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "High Performers Top Right:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "COTTI COFFEE库迪咖啡: High growth, strong CPC efficiency",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "瑞幸咖啡: Best ad ROI, high order volume",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "沪上阿姨鲜果茶: Balanced performance across metrics",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Value Players:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "蜜雪冰城: Low ticket size, high volume",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "幸运咖: Lowest ticket size, strong operational efficiency",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Premium Positioning:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "星巴克: Highest ticket size, selective store strategy",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "霸王茶姬: High ticket size, strong brand equity",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Market Conversion Funnel",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "How efficient is the conversion from stores to orders to GMV?",
+          "What are the conversion rates at each stage?",
+          "Which brands have the most efficient funnels?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Total Market Funnel",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./total_funnel.json",
+        "htmlPath": "./total_funnel.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Conversion Metrics:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Average Orders per Store",
+                "type": "bold"
+              },
+              {
+                "content": ": 831 orders/month",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Average GMV per Order",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥8.48",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Average GMV per Store",
+                "type": "bold"
+              },
+              {
+                "content": ": ¥7,046/month",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Conversion Efficiency by Brand Scale:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Large Brands",
+                "type": "bold"
+              },
+              {
+                "content": ": 1,019 orders/store, ¥8,009 GMV/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Medium Brands",
+                "type": "bold"
+              },
+              {
+                "content": ": 845 orders/store, ¥8,033 GMV/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Small Brands",
+                "type": "bold"
+              },
+              {
+                "content": ": 921 orders/store, ¥11,858 GMV/store",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Critical Insight",
+            "type": "bold"
+          },
+          {
+            "content": ": Small brands outperform large brands by ",
+            "type": "text"
+          },
+          {
+            "content": "48%",
+            "type": "bold"
+          },
+          {
+            "content": "in GMV per store ",
+            "type": "text"
+          },
+          {
+            "content": "¥11,858 vs ¥8,009",
+            "type": "text"
+          },
+          {
+            "content": ", suggesting advantages in:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Premium positioning",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Geographic concentration",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Operational efficiency",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Target market focus",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Strategic Recommendations",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "For Large Brands ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "≥10K stores",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Challenge",
+            "type": "bold"
+          },
+          {
+            "content": ": Scale is creating efficiency gaps vs. smaller competitors",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Recommendations",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Premiumization",
+            "type": "bold"
+          },
+          {
+            "content": ": Increase average order value through upselling and premium product lines",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Optimize Ad Spend",
+            "type": "bold"
+          },
+          {
+            "content": ": Learn from 瑞幸咖啡's ¥24.50/¥1 ROI model",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Store Performance Analysis",
+            "type": "bold"
+          },
+          {
+            "content": ": Identify underperforming stores for optimization or closure",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Digital Transformation",
+            "type": "bold"
+          },
+          {
+            "content": ": Enhance CPC advertising efficiency",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "For Medium Brands ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "5K-10K stores",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Opportunity",
+            "type": "bold"
+          },
+          {
+            "content": ": Sweet spot for growth optimization",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Recommendations",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Scale Up",
+            "type": "bold"
+          },
+          {
+            "content": ": Aggressive store expansion to reach large brand economies of scale",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Ad Investment",
+            "type": "bold"
+          },
+          {
+            "content": ": Increase CPC ad spend to capture market share from declining large brands",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Brand Differentiation",
+            "type": "bold"
+          },
+          {
+            "content": ": Leverage COTTI COFFEE's growth playbook ",
+            "type": "text"
+          },
+          {
+            "content": "+47% YoY",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Operational Excellence",
+            "type": "bold"
+          },
+          {
+            "content": ": Maintain superior GMV/store efficiency while scaling",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "For Small Brands ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "5K stores",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Advantage",
+            "type": "bold"
+          },
+          {
+            "content": ": Superior per-store efficiency",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Recommendations",
+            "type": "bold"
+          },
+          {
+            "content": ":",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Premium Focus",
+            "type": "bold"
+          },
+          {
+            "content": ": Double down on high-value positioning ",
+            "type": "text"
+          },
+          {
+            "content": "七鲜咖啡 model: ¥28,085/store",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Strategic Expansion",
+            "type": "bold"
+          },
+          {
+            "content": ": Targeted expansion in high-performing markets",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Data-Driven Growth",
+            "type": "bold"
+          },
+          {
+            "content": ": Invest in customer analytics to optimize marketing",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Partnership Opportunities",
+            "type": "bold"
+          },
+          {
+            "content": ": Consider strategic partnerships or acquisition by larger brands",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Conclusion",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The tea and coffee market exhibits clear polarization:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Scale Leaders",
+                "type": "bold"
+              },
+              {
+                "content": ": 瑞幸咖啡 and 蜜雪冰城 dominate with 45.9% market share",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Growth Champions",
+                "type": "bold"
+              },
+              {
+                "content": ": COTTI COFFEE ",
+                "type": "text"
+              },
+              {
+                "content": "+47%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "and 书亦烧仙草总部 ",
+                "type": "text"
+              },
+              {
+                "content": "+59.6%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "disrupting the market",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Premium Players",
+                "type": "bold"
+              },
+              {
+                "content": ": 星巴克 and 霸王茶姬 maintaining high-value positioning",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Efficiency Leaders",
+                "type": "bold"
+              },
+              {
+                "content": ": Small brands outperforming on per-store metrics",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Success Factors:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Scale",
+            "type": "bold"
+          },
+          {
+            "content": "drives market share but not necessarily efficiency",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Ad Efficiency",
+            "type": "bold"
+          },
+          {
+            "content": "CPC ROI",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "is a critical competitive advantage",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Premium Positioning",
+            "type": "bold"
+          },
+          {
+            "content": "enables superior per-store economics",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Aggressive Growth",
+            "type": "bold"
+          },
+          {
+            "content": "COTTI COFFEE model",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "can challenge established leaders",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "The market remains highly dynamic with significant opportunities for both growth and consolidation. Brands that combine scale advantages with operational efficiency and smart advertising will emerge as winners.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "Data Sources",
+            "type": "bold"
+          },
+          {
+            "content": ": KA Brand Downward Exploration Data ",
+            "type": "text"
+          },
+          {
+            "content": "January 2025",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Analysis Date",
+            "type": "bold"
+          },
+          {
+            "content": ": February 17, 2025",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Total Brands Analyzed",
+            "type": "bold"
+          },
+          {
+            "content": ": 19",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Total Stores",
+            "type": "bold"
+          },
+          {
+            "content": ": 147,234",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "For detailed data and calculations, refer to:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Cleaned Data",
+                "type": "bold"
+              },
+              {
+                "content": ": ",
+                "type": "text"
+              },
+              {
+                "code": "./data/cleaneddata.csv",
+                "type": "inlineCode"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Detailed Summary",
+                "type": "bold"
+              },
+              {
+                "content": ": ",
+                "type": "text"
+              },
+              {
+                "code": "./data/summary.md",
+                "type": "inlineCode"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

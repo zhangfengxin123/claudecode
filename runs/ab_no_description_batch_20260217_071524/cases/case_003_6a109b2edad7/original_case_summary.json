@@ -1,0 +1,93 @@
+{
+  "case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+  "title": "Book1",
+  "with_description": true,
+  "input_files": [
+    "description.txt",
+    "Book1.xlsx"
+  ],
+  "input_data_files": [
+    "Book1.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 7,
+  "assets": [
+    {
+      "name": "monthly_trend.json",
+      "trace_types": [
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "Monthly Sales Trend"
+    },
+    {
+      "name": "sales_breakdown.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 4,
+      "title": "Monthly Sales Breakdown"
+    },
+    {
+      "name": "items_products.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "Items Sold vs Active Products"
+    },
+    {
+      "name": "top_products.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "Top 10 Products by Net Sales"
+    },
+    {
+      "name": "product_scatter.json",
+      "trace_types": [
+        "scatter"
+      ],
+      "trace_count": 1,
+      "title": "Product Performance Scatter"
+    },
+    {
+      "name": "sales_forecast.json",
+      "trace_types": [
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 4,
+      "title": "2026 Sales Forecast"
+    },
+    {
+      "name": "items_forecast.json",
+      "trace_types": [
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "2026 Items Sold Forecast"
+    }
+  ],
+  "h2_sections": [
+    "Analysis Methodology Overview",
+    "Historical Performance Analysis",
+    "Product Performance Analysis",
+    "Growth Rate Analysis",
+    "Forecasting Methodology",
+    "2026 Sales Forecast",
+    "Key Insights and Strategic Recommendations",
+    "Forecast Summary Table",
+    "Conclusion"
+  ],
+  "first_paragraph": "This report provides a comprehensive analysis of sales performance from January 2025 through January 2026, with detailed forecasts for February through April 2026. The analysis covers both net items sold and net sales revenue, identifying key trends, growth patterns, and market concentration metrics."
+}

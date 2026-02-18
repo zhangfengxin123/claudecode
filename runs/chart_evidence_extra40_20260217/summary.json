@@ -1,0 +1,406 @@
+{
+  "generated_at": "2026-02-17T20:37:33",
+  "sample_size": 40,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "52db6a2ed8f42242afb042eacb69e22b584862059cb08465b2f35776cdf7876d",
+      "title": "Fred Report analysis",
+      "chart_count": 8,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_52db6a2ed8f4.html"
+    },
+    {
+      "idx": 2,
+      "case_id": "9a28325dd5748adb9b36a4ff78812bb926f5b613fdf3022bdf70ee5335c31f4b",
+      "title": "EV Car Analysis",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_9a28325dd574.html"
+    },
+    {
+      "idx": 3,
+      "case_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+      "title": "AB_NO_DESC_64914baf5ff5_20260217_081337",
+      "chart_count": 21,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_b3eb0cd22e67.html"
+    },
+    {
+      "idx": 4,
+      "case_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+      "title": "AB_NO_DESC_f5171f88125c_20260217_080507",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_b02c5dc59d0a.html"
+    },
+    {
+      "idx": 5,
+      "case_id": "4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c",
+      "title": "AB_NO_DESC_e79c8f00ffa4_20260217_074541",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_4bd0c69269fd.html"
+    },
+    {
+      "idx": 6,
+      "case_id": "0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702",
+      "title": "AB_NO_DESC_a77d543b4e14_20260217_074255",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_0e441b689a78.html"
+    },
+    {
+      "idx": 7,
+      "case_id": "2aa4a1c17878da16636d057ea682656438ee01e50a9b56fbbee8aac72e5bd2c9",
+      "title": "AB_NO_DESC_f5171f88125c_20260217_074206",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_007_2aa4a1c17878.html"
+    },
+    {
+      "idx": 8,
+      "case_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+      "title": "AB_NO_DESC_4bc65ee64081_20260217_073857",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_fd1856ce887a.html"
+    },
+    {
+      "idx": 9,
+      "case_id": "8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9",
+      "title": "AB_NO_DESC_1b89e7d1ffb4_20260217_073140",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_8d66748ee47d.html"
+    },
+    {
+      "idx": 10,
+      "case_id": "524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9",
+      "title": "AB_NO_DESC_9f9aa3b895db_20260217_072628",
+      "chart_count": 8,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_524602cbd53c.html"
+    },
+    {
+      "idx": 11,
+      "case_id": "e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743",
+      "title": "AB_NO_DESC_6a109b2edad7_20260217_072320",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_e49f52c3c5b2.html"
+    },
+    {
+      "idx": 12,
+      "case_id": "662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad",
+      "title": "AB_NO_DESC_ca9493d910dd_20260217_071955",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_662522ed9fd8.html"
+    },
+    {
+      "idx": 13,
+      "case_id": "7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b",
+      "title": "AB_NO_DESC_b93dae71bcf0_20260217_071525",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_7ca268dd7c70.html"
+    },
+    {
+      "idx": 14,
+      "case_id": "d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874",
+      "title": "AB_NO_DESC_64914baf5ff5_20260217_070858",
+      "chart_count": 0,
+      "upload_count": 2,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_014_d4e6949ea9fa.html"
+    },
+    {
+      "idx": 15,
+      "case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+      "title": "AB_NO_DESC_ae3bf09e493f_20260217_070433",
+      "chart_count": 14,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_bffd9ee5ebab.html"
+    },
+    {
+      "idx": 16,
+      "case_id": "76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f",
+      "title": "AB_NO_DESC_e226fa5aa55b_20260217_055217",
+      "chart_count": 9,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_76b5e284a2a3.html"
+    },
+    {
+      "idx": 17,
+      "case_id": "dcb6a29b31385e093b8dba1b3c7b81b826810b8e42629e319a6f061f63faa06e",
+      "title": "20251206-how AI is wiring childhood",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_017_dcb6a29b3138.html"
+    },
+    {
+      "idx": 18,
+      "case_id": "d274dae803fc8c97f82c60a4aba3084eec7aba09feadd32f63baba5092ab442e",
+      "title": "20250913 - China is ditching the dollr fast",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_d274dae803fc.html"
+    },
+    {
+      "idx": 19,
+      "case_id": "0bbadf267cf4445355d79aab47636826cc511b7cca8411a83d1a7c5863fbe471",
+      "title": "AB_NO_DESC_CAP_e226_20260217",
+      "chart_count": 11,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_0bbadf267cf4.html"
+    },
+    {
+      "idx": 20,
+      "case_id": "c5dbe8277d9f91dfbe9a83ccd5e510a5c338c78f82ae1d0da909dff435a7a0d2",
+      "title": "试题2",
+      "chart_count": 6,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_c5dbe8277d9f.html"
+    },
+    {
+      "idx": 21,
+      "case_id": "1c20b20528323d424cbcd811279f64f3f95ee77ea86ff7c703aff598b1282e39",
+      "title": "题目2-数据分析",
+      "chart_count": 0,
+      "upload_count": 3,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_021_1c20b2052832.html"
+    },
+    {
+      "idx": 22,
+      "case_id": "6eebb451a72c76d9cc02d5b2c6157940314f0d381c102a686aa3c5fbdababd79",
+      "title": "促销预测AI训练数据样本",
+      "chart_count": 0,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_022_6eebb451a72c.html"
+    },
+    {
+      "idx": 23,
+      "case_id": "5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c",
+      "title": "UK Property Price official data",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_023_5f6ef32235f3.html"
+    },
+    {
+      "idx": 24,
+      "case_id": "b5271a70bd03772c5a2b68d64993550be390a559182bdec4fea5b393a1412ce6",
+      "title": "Gold Feb 16 2026 Analysis",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_024_b5271a70bd03.html"
+    },
+    {
+      "idx": 25,
+      "case_id": "ee6dec1a80a24b848d636d4cd59b9a8deb01bdd6a49befc7f62263d05e6a6425",
+      "title": "All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market",
+      "chart_count": 6,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_025_ee6dec1a80a2.html"
+    },
+    {
+      "idx": 26,
+      "case_id": "3749c60993fd8bb289251698a42fceb684316e3c60c372b754eb70b2f48043a3",
+      "title": "AI Chips, Energy, Nuclear Index",
+      "chart_count": 11,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_026_3749c60993fd.html"
+    },
+    {
+      "idx": 27,
+      "case_id": "412edcf0e3aedb85c775d41e01d1b236a21a461a885e365f218cfb35fbb5e684",
+      "title": "RAW MARKS SCHEDULE 2026_011022",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_027_412edcf0e3ae.html"
+    },
+    {
+      "idx": 28,
+      "case_id": "558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9",
+      "title": "DepthStats",
+      "chart_count": 12,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_028_558df7b18679.html"
+    },
+    {
+      "idx": 29,
+      "case_id": "0c25465f6a6239be09d40bb66d0db9ca6551859d31c1c240610ad36201c22667",
+      "title": "za",
+      "chart_count": 8,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_029_0c25465f6a62.html"
+    },
+    {
+      "idx": 30,
+      "case_id": "bf097dd935d3f45096bcaf3b47ea8ee56824cedea15cb66d38e4b9b48cf65017",
+      "title": "问卷结果",
+      "chart_count": 0,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_030_bf097dd935d3.html"
+    },
+    {
+      "idx": 31,
+      "case_id": "4babbe396f2a2672e725eb0632ae3e38607deb397d148e730baedee54b82deef",
+      "title": "2025 Global Robotics Leaders — Technology Roadmap Comparison",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_031_4babbe396f2a.html"
+    },
+    {
+      "idx": 32,
+      "case_id": "8a850cc5b8631d3219cd736c5c62d99607641c49acc0b1839289ad5e6e4b69b9",
+      "title": "2025 Global Robotics Leaders — Technology Roadmap Comparison",
+      "chart_count": 21,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_032_8a850cc5b863.html"
+    },
+    {
+      "idx": 33,
+      "case_id": "0bdbf01ebd185116305337850b11fdaca0c139e012af3be3cabbf5902480c48d",
+      "title": "NXP ANNUAL REPORT",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_033_0bdbf01ebd18.html"
+    },
+    {
+      "idx": 34,
+      "case_id": "5a97dacdb00ada80acebaf0f3cfb0d22568d78c08852d33af223a8c18780c1b4",
+      "title": "power",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_034_5a97dacdb00a.html"
+    },
+    {
+      "idx": 35,
+      "case_id": "d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131",
+      "title": "美国电能分析",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_035_d0ad2eb4cf41.html"
+    },
+    {
+      "idx": 36,
+      "case_id": "1c22b0ecf41c03c4527e3e2a5754753735f05fa732150a653d1e9b48f50b650e",
+      "title": "American power",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_036_1c22b0ecf41c.html"
+    },
+    {
+      "idx": 37,
+      "case_id": "4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d",
+      "title": "SPX and VIX",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_037_4404a8e35f1c.html"
+    },
+    {
+      "idx": 38,
+      "case_id": "4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a",
+      "title": "Meta Analysis",
+      "chart_count": 0,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_038_4267e545517a.html"
+    },
+    {
+      "idx": 39,
+      "case_id": "15056f91b1a82030bddb2a5257af4c93c8b339e8d256776a1cf6f9950d69439d",
+      "title": "Google Analysis",
+      "chart_count": 0,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_039_15056f91b1a8.html"
+    },
+    {
+      "idx": 40,
+      "case_id": "77c1850288a9d82e3b4b5bd0c866809ffa96f0f8c2f3b579aa70b1759fd9f7c6",
+      "title": "Uber Financial Report",
+      "chart_count": 0,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_040_77c1850288a9.html"
+    }
+  ]
+}

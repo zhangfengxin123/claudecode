@@ -1,0 +1,18 @@
+{
+  "case_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+  "title": "陕西能源职业技术学院招生就业专业排序",
+  "source_cache_manifest": "2026-02-17T14:06:22Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "26年招生就业数据（高考单招单列） (1).xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b02c5dc59d0a_陕西能源职业技术学院招生就业专业排序/26年招生就业数据（高考单招单列） (1).xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_retry_merged_20260217_082241/input_snapshot/b02c5dc59d0a_陕西能源职业技术学院招生就业专业排序/26年招生就业数据（高考单招单列） (1).xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

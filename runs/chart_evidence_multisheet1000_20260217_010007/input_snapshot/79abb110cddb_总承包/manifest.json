@@ -1,0 +1,18 @@
+{
+  "case_id": "79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5",
+  "title": "总承包",
+  "source_cache_manifest": "2026-02-17T14:34:25Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "环研院（老项目）-EPC项目信息统计及管理台账20250930.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/79abb110cddb_总承包/环研院（老项目）-EPC项目信息统计及管理台账20250930.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/79abb110cddb_总承包/环研院（老项目）-EPC项目信息统计及管理台账20250930.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

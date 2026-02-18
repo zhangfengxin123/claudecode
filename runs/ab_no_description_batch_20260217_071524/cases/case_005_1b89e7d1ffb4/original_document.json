@@ -1,0 +1,1971 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"反向调价实验效果评估报告：19元 vs 21元连续包月定价\"\ndescription: \"通过A/B测试评估连续包月从19元涨价至21元对ARPU、付费率及用户行为的影响，验证价格锚点效应与蚕食效应\"\nauthor: \"Pardus Agent\"\ndate: \"2025-01-13\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "反向调价实验效果评估报告：19元 vs 21元连续包月定价",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告对2026年1月23日至29日期间进行的反向调价A/B测试进行了全面分析。实验将连续包月价格从19元上调至21元，旨在验证涨价对关键业务指标的影响。数据分析表明：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "核心发现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "ARPU下降8.7%",
+                "type": "bold"
+              },
+              {
+                "content": "：从¥0.23降至¥0.21，符合实验预期",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "付费率下降8.6%",
+                "type": "bold"
+              },
+              {
+                "content": "：从0.865%降至0.791%，符合实验预期",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "ARPPU微增0.4%",
+                "type": "bold"
+              },
+              {
+                "content": "：从¥26.97升至¥27.09，表明付费用户平均消费略有提升",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "蚕食效应显著",
+                "type": "bold"
+              },
+              {
+                "content": "：一年卡订单数减少38.1%，连续包月订单数减少38.9%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "结论",
+            "type": "bold"
+          },
+          {
+            "content": "：实验完全符合预期，涨价导致整体收入和用户付费意愿明显下降。建议",
+            "type": "text"
+          },
+          {
+            "content": "维持19元定价",
+            "type": "bold"
+          },
+          {
+            "content": "，避免进一步的收入损失。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./arpu_comparison.json",
+        "htmlPath": "./arpu_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "1. 实验设计与背景",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "1.1 实验概述",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本次实验旨在验证套餐定价模型的效果，通过A/B测试评估连续包月价格从19元上调至21元的影响。实验基于价格锚点效应理论，假设用户在面临多个价格选择时，会以参考价格（如年卡平摊月价20.75元）作为决策依据。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "实验设计的理论基础是什么？",
+          "为什么选择19元和21元这两个价格点？",
+          "实验的流量分配比例是否合理？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "1.2 实验参数",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "--------------",
+          "--------------"
+        ],
+        "headers": [
+          "参数",
+          "A组（控制组）",
+          "B组（实验组）"
+        ],
+        "rows": [
+          [
+            "流量分配",
+            "60%",
+            "40%"
+          ],
+          [
+            "连续包月价格",
+            "¥19",
+            "¥21"
+          ],
+          [
+            "年卡价格",
+            "¥249（月均¥20.75）",
+            "¥249（月均¥20.75）"
+          ],
+          [
+            "其他套餐",
+            "连续包季¥98、季卡¥128、月卡¥50",
+            "连续包季¥98、季卡¥128、月卡¥50"
+          ],
+          [
+            "活跃设备数",
+            "196,665",
+            "130,972"
+          ],
+          [
+            "实验周期",
+            "2026-01-23至2026-01-29（7天）",
+            "同左"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "1.3 实验预期",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "基于价格锚点效应和用户行为理论，实验预期：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "B组ARPU  A组ARPU",
+            "type": "bold"
+          },
+          {
+            "content": "：涨价导致每活跃用户收入下降",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "B组付费率 ≤ A组付费率",
+            "type": "bold"
+          },
+          {
+            "content": "：涨价降低用户付费意愿",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "蚕食效应",
+            "type": "bold"
+          },
+          {
+            "content": "：21元连续包月价格高于年卡月均价格（¥20.75），可能促使用户转向年卡套餐",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "1.4 价格锚点效应分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "A组（19元）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "19元 ",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "¥20.75（年卡月均） ",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "¥249",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "价格层级清晰，连续包月为最便宜选项",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "用户决策：选择19元连续包月",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "B组（21元）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "21元 ",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "¥20.75（年卡月均） ",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "¥249",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "年卡性价比更高（月均比连续包月便宜¥0.25）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "用户决策：可能转向年卡或放弃购买",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "2. 核心指标分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "2.1 ARPU（每活跃用户收入）对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./arpu_comparison.json",
+        "htmlPath": "./arpu_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "数据分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组ARPU：",
+                "type": "text"
+              },
+              {
+                "content": "¥0.23",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组ARPU：",
+                "type": "text"
+              },
+              {
+                "content": "¥0.21",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "下降幅度：-8.7%",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "ARPU显著下降表明涨价策略未能通过提高单价来弥补用户流失的损失",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "尽管B组连续包月价格上涨了10.5%（从19元至21元），但ARPU下降幅度仅为8.7%，说明部分用户可能转向了更高价值的套餐（如年卡）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "这一结果",
+                "type": "text"
+              },
+              {
+                "content": "完全符合实验预期",
+                "type": "bold"
+              },
+              {
+                "content": "，验证了涨价对整体收入的负面影响",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "ARPU下降8.7%的主要原因是什么？",
+          "如何量化涨价带来的单用户价值提升与用户流失的权衡？",
+          "如果继续涨价至23元，ARPU会呈现怎样的趋势？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "2.2 付费率对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./payment_rate_comparison.json",
+        "htmlPath": "./payment_rate_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "数据分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组付费率：",
+                "type": "text"
+              },
+              {
+                "content": "0.865%",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组付费率：",
+                "type": "text"
+              },
+              {
+                "content": "0.791%",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "下降幅度：-8.6%",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "付费率下降与ARPU下降幅度几乎一致（8.6% vs 8.7%），表明收入下降主要源于付费用户数量减少，而非客单价变化",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组付费设备数从1,702降至1,036（下降39.1%），远超流量分配比例（40%），说明涨价对用户付费意愿有显著抑制作用",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "付费率下降",
+                "type": "text"
+              },
+              {
+                "content": "符合实验预期",
+                "type": "bold"
+              },
+              {
+                "content": "，验证了价格敏感度较高的用户群体特征",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "2.3 ARPPU（每付费用户收入）对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./arppu_comparison.json",
+        "htmlPath": "./arppu_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "数据分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组ARPPU：",
+                "type": "text"
+              },
+              {
+                "content": "¥26.97",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组ARPPU：",
+                "type": "text"
+              },
+              {
+                "content": "¥27.09",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "增长幅度：+0.4%",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "ARPPU微增0.4%表明，尽管付费用户数量减少，但付费用户的平均消费金额略有提升",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "这一现象可能源于：",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "蚕食效应",
+            "type": "bold"
+          },
+          {
+            "content": "：部分用户从连续包月转向年卡（¥249），提升了平均消费金额",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "  ",
+            "type": "text"
+          },
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "价格筛选",
+            "type": "bold"
+          },
+          {
+            "content": "：涨价过滤掉了低价值用户，保留了高价值用户",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "然而，ARPPU的增长（0.4%）远不足以抵消付费率下降（8.6%）带来的损失",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "3. 套餐表现与蚕食效应分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "3.1 各套餐订单数量对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./package_orders_comparison.json",
+        "htmlPath": "./package_orders_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "数据分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "---------",
+          "----------",
+          "----------",
+          "---------"
+        ],
+        "headers": [
+          "套餐类型",
+          "A组订单数",
+          "B组订单数",
+          "变化幅度"
+        ],
+        "rows": [
+          [
+            "连续包月",
+            "1,623",
+            "992",
+            "-38.9%"
+          ],
+          [
+            "一年卡",
+            "63",
+            "39",
+            "-38.1%"
+          ],
+          [
+            "两年卡",
+            "0",
+            "0",
+            "0%"
+          ],
+          [
+            "总计",
+            "1,703",
+            "1,036",
+            "-39.2%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "连续包月订单数下降38.9%",
+                "type": "bold"
+              },
+              {
+                "content": "：直接受涨价影响，用户购买意愿显著降低",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "一年卡订单数下降38.1%",
+                "type": "bold"
+              },
+              {
+                "content": "：尽管年卡价格未变，但整体付费用户数减少导致年卡订单同步下降",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "A组：连续包月占比95.3%，一年卡占比3.7%",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "B组：连续包月占比95.8%，一年卡占比3.8%",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "两年卡在两组中均为0，表明该套餐在该用户群体中需求极低",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "套餐结构保持稳定",
+                "type": "bold"
+              },
+              {
+                "content": "：",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "为什么一年卡订单数也下降了38.1%？",
+          "蚕食效应在本实验中是否显著？",
+          "套餐结构保持稳定说明了什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "3.2 各套餐付费率对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./package_rates_comparison.json",
+        "htmlPath": "./package_rates_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "数据分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "---------",
+          "----------",
+          "----------",
+          "---------"
+        ],
+        "headers": [
+          "套餐类型",
+          "A组付费率",
+          "B组付费率",
+          "变化幅度"
+        ],
+        "rows": [
+          [
+            "连续包月",
+            "0.825%",
+            "0.757%",
+            "-8.2%"
+          ],
+          [
+            "一年卡",
+            "0.032%",
+            "0.030%",
+            "-7.1%"
+          ],
+          [
+            "两年卡",
+            "0.000%",
+            "0.000%",
+            "0%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "连续包月付费率下降8.2%",
+                "type": "bold"
+              },
+              {
+                "content": "：直接反映涨价对用户购买意愿的负面影响",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "一年卡付费率下降7.1%",
+                "type": "bold"
+              },
+              {
+                "content": "：下降幅度略小于连续包月，可能存在轻微的蚕食效应（部分用户从连续包月转向年卡）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "整体付费率下降8.6%",
+                "type": "bold"
+              },
+              {
+                "content": "：介于两者之间，符合预期",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "3.3 蚕食效应量化分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "理论预期",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "由于B组连续包月价格（¥21）高于年卡月均价格（¥20.75），用户可能从连续包月转向年卡，导致蚕食效应。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "实际结果",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "一年卡付费率下降7.1%，低于连续包月付费率下降8.2%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "差异仅为1.1个百分点，表明蚕食效应",
+                "type": "text"
+              },
+              {
+                "content": "存在但不显著",
+                "type": "bold"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "原因分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "价格差距小",
+            "type": "bold"
+          },
+          {
+            "content": "：21元与20.75元的差距仅为¥0.25（1.2%），不足以大幅改变用户决策",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "支付门槛高",
+            "type": "bold"
+          },
+          {
+            "content": "：年卡总价¥249远高于连续包月¥21，用户可能受限于一次性支付能力",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "用户惯性",
+            "type": "bold"
+          },
+          {
+            "content": "：大部分用户偏好连续包月的灵活性，不愿为小额优惠选择长期绑定",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "4. 综合对比与决策建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "4.1 关键指标综合对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./radar_comparison.json",
+        "htmlPath": "./radar_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "雷达图解读",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组（绿色）在ARPU、付费率、连续包月付费率、一年卡付费率等指标上均优于B组（橙色）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组仅在ARPPU上略高于A组（+0.4%），但这一优势完全无法弥补其他指标的下降",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "整体而言，A组的综合表现显著优于B组",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "4.2 数据流程可视化",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./data_flow.svg",
+        "language": "svg",
+        "svgPath": "./data_flow.svg",
+        "type": "svg"
+      },
+      {
+        "content": "4.3 实验结论",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "✓ 核心预期完全符合",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "B组ARPU  A组ARPU",
+            "type": "bold"
+          },
+          {
+            "content": "：✓ 符合（-8.7%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "B组付费率  A组付费率",
+            "type": "bold"
+          },
+          {
+            "content": "：✓ 符合（-8.6%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "蚕食效应分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "一年卡订单数下降38.1%，连续包月订单数下降38.9%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "蚕食效应",
+                "type": "text"
+              },
+              {
+                "content": "存在但不显著",
+                "type": "bold"
+              },
+              {
+                "content": "（差异1.1个百分点）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "价格锚点效应未导致大规模套餐转换，主要影响是整体付费意愿下降",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "收入影响测算",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组总收入：¥459.1（1,703单）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组总收入：¥280.69（1,036单）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B组总收入下降38.9%（考虑流量分配比例，实际单用户收入下降8.7%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "实验结果是否符合预期？",
+          "蚕食效应为何不显著？",
+          "如果将连续包月价格降至17元，预期效果如何？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "4.4 决策建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "✓ 推荐方案：维持19元定价",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "理由",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "涨价负面影响显著",
+            "type": "bold"
+          },
+          {
+            "content": "：ARPU和付费率分别下降8.7%和8.6%，远高于价格上涨带来的潜在收益",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "蚕食效应有限",
+            "type": "bold"
+          },
+          {
+            "content": "：涨价未能有效促使用户转向高价值套餐（年卡）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "用户价格敏感度高",
+            "type": "bold"
+          },
+          {
+            "content": "：2元的价格差异（10.5%）导致付费意愿大幅下降",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "收入损失严重",
+            "type": "bold"
+          },
+          {
+            "content": "：总收入下降38.9%（考虑流量分配后为8.7%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "替代方案",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "价格测试",
+            "type": "bold"
+          },
+          {
+            "content": "：尝试17元定价，评估降价对ARPU和付费率的提升效果",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "套餐优化",
+            "type": "bold"
+          },
+          {
+            "content": "：调整年卡价格至¥239（月均¥19.92），增强年卡性价比",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "促销活动",
+            "type": "bold"
+          },
+          {
+            "content": "：通过限时优惠、首月特惠等策略提升转化率，而非直接涨价",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "5. 附录：数据摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "5.1 实验数据概览",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "------------",
+          "------------",
+          "------"
+        ],
+        "headers": [
+          "指标",
+          "A组（19元）",
+          "B组（21元）",
+          "变化"
+        ],
+        "rows": [
+          [
+            "账号数量",
+            "239,349",
+            "160,051",
+            "-33.1%"
+          ],
+          [
+            "设备数量",
+            "292,212",
+            "193,792",
+            "-33.7%"
+          ],
+          [
+            "活跃设备数",
+            "196,665",
+            "130,972",
+            "-33.4%"
+          ],
+          [
+            "付费设备数",
+            "1,702",
+            "1,036",
+            "-39.1%"
+          ],
+          [
+            "付费订单数",
+            "1,703",
+            "1,036",
+            "-39.2%"
+          ],
+          [
+            "总收入（元）",
+            "459.10",
+            "280.69",
+            "-38.9%"
+          ],
+          [
+            "ARPU（元）",
+            "0.23",
+            "0.21",
+            "-8.7%"
+          ],
+          [
+            "ARPPU（元）",
+            "26.97",
+            "27.09",
+            "+0.4%"
+          ],
+          [
+            "付费率",
+            "0.865%",
+            "0.791%",
+            "-8.6%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "5.2 套餐表现详情",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "----------",
+          "----------",
+          "----------",
+          "----------",
+          "----------",
+          "----------"
+        ],
+        "headers": [
+          "套餐",
+          "A组订单数",
+          "A组付费率",
+          "B组订单数",
+          "B组付费率",
+          "订单数变化",
+          "付费率变化"
+        ],
+        "rows": [
+          [
+            "连续包月",
+            "1,623",
+            "0.825%",
+            "992",
+            "0.757%",
+            "-38.9%",
+            "-8.2%"
+          ],
+          [
+            "一年卡",
+            "63",
+            "0.032%",
+            "39",
+            "0.030%",
+            "-38.1%",
+            "-7.1%"
+          ],
+          [
+            "两年卡",
+            "0",
+            "0.000%",
+            "0",
+            "0.000%",
+            "0%",
+            "0%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "5.3 数据来源",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "详细数据已保存至 ",
+            "type": "text"
+          },
+          {
+            "code": "data/experimentdata.csv",
+            "type": "inlineCode"
+          },
+          {
+            "content": "，数据摘要见 ",
+            "type": "text"
+          },
+          {
+            "code": "data/summary.md",
+            "type": "inlineCode"
+          },
+          {
+            "content": "。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "5.4 日度趋势分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "实验期间（2026-01-23至2026-01-29）的日度变化显示：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "ARPU变化趋势",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "实验初期（1/23-1/25）",
+                "type": "bold"
+              },
+              {
+                "content": "：B组ARPU显著低于A组（-33.33%至-16.67%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "实验后期（1/26-1/29）",
+                "type": "bold"
+              },
+              {
+                "content": "：两组ARPU逐渐趋近（差异从+25%缩小至0%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "关键洞察",
+                "type": "bold"
+              },
+              {
+                "content": "：涨价对ARPU的负面影响呈现时间衰减效应",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "付费率变化趋势",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "整体表现",
+                "type": "bold"
+              },
+              {
+                "content": "：B组付费率7天中有5天低于A组",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "波动情况",
+                "type": "bold"
+              },
+              {
+                "content": "：1/27日B组付费率反超A组（+15.21%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "平均差异",
+                "type": "bold"
+              },
+              {
+                "content": "：B组付费率较A组平均下降约9.2%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "关键洞察",
+                "type": "bold"
+              },
+              {
+                "content": "：用户对价格敏感度存在短期波动，需要更长期观察",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "实验周期建议",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "当前7天实验周期可能无法完全反映长期影响，建议：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "延长实验周期至14-28天以观察稳定趋势",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "监控用户留存和复购行为",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "考虑季节性因素和节假日影响",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "详细日度数据见 ",
+            "type": "text"
+          },
+          {
+            "code": "data/dailymetrics.csv",
+            "type": "inlineCode"
+          },
+          {
+            "content": "。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

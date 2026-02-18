@@ -1,0 +1,20 @@
+{
+  "case_id": "249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e",
+  "title_hint": "国际贸易",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "国际贸易顺差矩阵.xlsx",
+      "status": 200,
+      "size_bytes": 856989,
+      "source_url": "https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/files/%E5%9B%BD%E9%99%85%E8%B4%B8%E6%98%93%E9%A1%BA%E5%B7%AE%E7%9F%A9%E9%98%B5.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/249b12b9deda_国际贸易/国际贸易顺差矩阵.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:16:13Z"
+}

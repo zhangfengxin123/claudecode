@@ -1,0 +1,968 @@
+{
+  "run_name": "chart_evidence_extra40_20260217",
+  "run_dir": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217",
+  "case_count": 40,
+  "ok_cases": 40,
+  "partial_failed_cases": 0,
+  "generated_at": "2026-02-17T14:37:34Z",
+  "cases": [
+    {
+      "case_id": "52db6a2ed8f42242afb042eacb69e22b584862059cb08465b2f35776cdf7876d",
+      "title": "Fred Report analysis",
+      "source_cache_manifest": "2026-02-17T14:06:38Z",
+      "status": "ok",
+      "copied_files": 4,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "CPALTT01USM657N.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/52db6a2ed8f4_Fred Report analysis/CPALTT01USM657N.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/52db6a2ed8f4_Fred Report analysis/CPALTT01USM657N.csv",
+          "ok": true
+        },
+        {
+          "name": "NGDPRSAXDCDEQ.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/52db6a2ed8f4_Fred Report analysis/NGDPRSAXDCDEQ.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/52db6a2ed8f4_Fred Report analysis/NGDPRSAXDCDEQ.csv",
+          "ok": true
+        },
+        {
+          "name": "NGDPRSAXDCCAQ.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/52db6a2ed8f4_Fred Report analysis/NGDPRSAXDCCAQ.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/52db6a2ed8f4_Fred Report analysis/NGDPRSAXDCCAQ.csv",
+          "ok": true
+        },
+        {
+          "name": "NGDPSAXDCUSQ.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/52db6a2ed8f4_Fred Report analysis/NGDPSAXDCUSQ.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/52db6a2ed8f4_Fred Report analysis/NGDPSAXDCUSQ.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "9a28325dd5748adb9b36a4ff78812bb926f5b613fdf3022bdf70ee5335c31f4b",
+      "title": "EV Car Analysis",
+      "source_cache_manifest": "2026-02-17T14:06:41Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "ev_vs_petrol_dataset_v3.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9a28325dd574_EV Car Analysis/ev_vs_petrol_dataset_v3.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/9a28325dd574_EV Car Analysis/ev_vs_petrol_dataset_v3.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+      "title": "AB_NO_DESC_64914baf5ff5_20260217_081337",
+      "source_cache_manifest": "2026-02-17T14:06:28Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "2025 CAP overview.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b3eb0cd22e67_2024 vs 2025 CAP Review report/2025 CAP overview.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/b3eb0cd22e67_AB_NO_DESC_64914baf5ff5_20260217_081337/2025 CAP overview.xlsx",
+          "ok": true
+        },
+        {
+          "name": "SHA CHRONO_CAP.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b3eb0cd22e67_2024 vs 2025 CAP Review report/SHA CHRONO_CAP.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/b3eb0cd22e67_AB_NO_DESC_64914baf5ff5_20260217_081337/SHA CHRONO_CAP.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+      "title": "AB_NO_DESC_f5171f88125c_20260217_080507",
+      "source_cache_manifest": "2026-02-17T14:06:22Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "26年招生就业数据（高考单招单列） (1).xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b02c5dc59d0a_陕西能源职业技术学院招生就业专业排序/26年招生就业数据（高考单招单列） (1).xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/b02c5dc59d0a_AB_NO_DESC_f5171f88125c_20260217_080507/26年招生就业数据（高考单招单列） (1).xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c",
+      "title": "AB_NO_DESC_e79c8f00ffa4_20260217_074541",
+      "source_cache_manifest": "2026-02-17T14:06:20Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "SSCOM L02 AnalyticsCase_Meyer.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4bd0c69269fd_SSCOM L02 AnalyticsCase_Meyer/SSCOM L02 AnalyticsCase_Meyer.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4bd0c69269fd_AB_NO_DESC_e79c8f00ffa4_20260217_074541/SSCOM L02 AnalyticsCase_Meyer.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702",
+      "title": "AB_NO_DESC_a77d543b4e14_20260217_074255",
+      "source_cache_manifest": "2026-02-17T14:05:52Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "年卡改价实验结果-202601.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0e441b689a78_年卡改价实验数据分析/年卡改价实验结果-202601.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0e441b689a78_AB_NO_DESC_a77d543b4e14_20260217_074255/年卡改价实验结果-202601.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "2aa4a1c17878da16636d057ea682656438ee01e50a9b56fbbee8aac72e5bd2c9",
+      "title": "AB_NO_DESC_f5171f88125c_20260217_074206",
+      "source_cache_manifest": "2026-02-17T14:06:42Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "26年招生就业数据（高考单招单列） (1).xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/2aa4a1c17878_AB_NO_DESC_f5171f88125c_20260217_074206/26年招生就业数据（高考单招单列） (1).xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/2aa4a1c17878_AB_NO_DESC_f5171f88125c_20260217_074206/26年招生就业数据（高考单招单列） (1).xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+      "title": "AB_NO_DESC_4bc65ee64081_20260217_073857",
+      "source_cache_manifest": "2026-02-17T14:05:51Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "KA品牌下探数据汇总.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/fd1856ce887a_KA品牌下探数据汇总/KA品牌下探数据汇总.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/fd1856ce887a_AB_NO_DESC_4bc65ee64081_20260217_073857/KA品牌下探数据汇总.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9",
+      "title": "AB_NO_DESC_1b89e7d1ffb4_20260217_073140",
+      "source_cache_manifest": "2026-02-17T14:05:49Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "反向调价实验结果-202601.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/8d66748ee47d_反向调价实验数据分析/反向调价实验结果-202601.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/8d66748ee47d_AB_NO_DESC_1b89e7d1ffb4_20260217_073140/反向调价实验结果-202601.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9",
+      "title": "AB_NO_DESC_9f9aa3b895db_20260217_072628",
+      "source_cache_manifest": "2026-02-17T14:05:47Z",
+      "status": "ok",
+      "copied_files": 3,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "NASDAQCOM.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/524602cbd53c_FEDFUNDS/NASDAQCOM.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/524602cbd53c_AB_NO_DESC_9f9aa3b895db_20260217_072628/NASDAQCOM.xlsx",
+          "ok": true
+        },
+        {
+          "name": "FEDFUNDS.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/524602cbd53c_FEDFUNDS/FEDFUNDS.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/524602cbd53c_AB_NO_DESC_9f9aa3b895db_20260217_072628/FEDFUNDS.csv",
+          "ok": true
+        },
+        {
+          "name": "IR.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/524602cbd53c_FEDFUNDS/IR.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/524602cbd53c_AB_NO_DESC_9f9aa3b895db_20260217_072628/IR.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743",
+      "title": "AB_NO_DESC_6a109b2edad7_20260217_072320",
+      "source_cache_manifest": "2026-02-17T14:05:44Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "Book1.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e49f52c3c5b2_Book1/Book1.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/e49f52c3c5b2_AB_NO_DESC_6a109b2edad7_20260217_072320/Book1.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad",
+      "title": "AB_NO_DESC_ca9493d910dd_20260217_071955",
+      "source_cache_manifest": "2026-02-17T14:05:41Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "月卡改价实验结果-202601.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/662522ed9fd8_月卡改价实验数据分析/月卡改价实验结果-202601.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/662522ed9fd8_AB_NO_DESC_ca9493d910dd_20260217_071955/月卡改价实验结果-202601.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b",
+      "title": "AB_NO_DESC_b93dae71bcf0_20260217_071525",
+      "source_cache_manifest": "2026-02-17T14:05:40Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "id市场广告投放与转化数据.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/7ca268dd7c70_id市场投放效果与转化数据分析/id市场广告投放与转化数据.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/7ca268dd7c70_AB_NO_DESC_b93dae71bcf0_20260217_071525/id市场广告投放与转化数据.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874",
+      "title": "AB_NO_DESC_64914baf5ff5_20260217_070858",
+      "source_cache_manifest": "2026-02-17T14:06:49Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "2025 CAP overview.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d4e6949ea9fa_AB_NO_DESC_64914baf5ff5_20260217_070858/2025 CAP overview.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/d4e6949ea9fa_AB_NO_DESC_64914baf5ff5_20260217_070858/2025 CAP overview.xlsx",
+          "ok": true
+        },
+        {
+          "name": "SHA CHRONO_CAP.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d4e6949ea9fa_AB_NO_DESC_64914baf5ff5_20260217_070858/SHA CHRONO_CAP.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/d4e6949ea9fa_AB_NO_DESC_64914baf5ff5_20260217_070858/SHA CHRONO_CAP.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+      "title": "AB_NO_DESC_ae3bf09e493f_20260217_070433",
+      "source_cache_manifest": "2026-02-17T14:06:33Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "CAP 2023-2025.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bffd9ee5ebab_CAP Analysis/CAP 2023-2025.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/bffd9ee5ebab_AB_NO_DESC_ae3bf09e493f_20260217_070433/CAP 2023-2025.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f",
+      "title": "AB_NO_DESC_e226fa5aa55b_20260217_055217",
+      "source_cache_manifest": "2026-02-17T13:57:56Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "2025 CAP overview.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/76b5e284a2a3_2024-2025 CAP review/2025 CAP overview.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/76b5e284a2a3_AB_NO_DESC_e226fa5aa55b_20260217_055217/2025 CAP overview.xlsx",
+          "ok": true
+        },
+        {
+          "name": "SHA CHRONO_CAP.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/76b5e284a2a3_2024-2025 CAP review/SHA CHRONO_CAP.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/76b5e284a2a3_AB_NO_DESC_e226fa5aa55b_20260217_055217/SHA CHRONO_CAP.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "dcb6a29b31385e093b8dba1b3c7b81b826810b8e42629e319a6f061f63faa06e",
+      "title": "20251206-how AI is wiring childhood",
+      "source_cache_manifest": "2026-02-17T14:06:52Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "20251206-how AI is wiring childhood.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/dcb6a29b3138_20251206-how AI is wiring childhood/20251206-how AI is wiring childhood.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/dcb6a29b3138_20251206-how AI is wiring childhood/20251206-how AI is wiring childhood.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "d274dae803fc8c97f82c60a4aba3084eec7aba09feadd32f63baba5092ab442e",
+      "title": "20250913 - China is ditching the dollr fast",
+      "source_cache_manifest": "2026-02-17T14:06:55Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "20250913 - China is ditching the dollr fast.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d274dae803fc_20250913 - China is ditching the dollr fast/20250913 - China is ditching the dollr fast.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/d274dae803fc_20250913 - China is ditching the dollr fast/20250913 - China is ditching the dollr fast.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "0bbadf267cf4445355d79aab47636826cc511b7cca8411a83d1a7c5863fbe471",
+      "title": "AB_NO_DESC_CAP_e226_20260217",
+      "source_cache_manifest": "2026-02-17T14:07:00Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "2025 CAP overview.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0bbadf267cf4_AB_NO_DESC_CAP_e226_20260217/2025 CAP overview.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0bbadf267cf4_AB_NO_DESC_CAP_e226_20260217/2025 CAP overview.xlsx",
+          "ok": true
+        },
+        {
+          "name": "SHA CHRONO_CAP.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0bbadf267cf4_AB_NO_DESC_CAP_e226_20260217/SHA CHRONO_CAP.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0bbadf267cf4_AB_NO_DESC_CAP_e226_20260217/SHA CHRONO_CAP.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "c5dbe8277d9f91dfbe9a83ccd5e510a5c338c78f82ae1d0da909dff435a7a0d2",
+      "title": "试题2",
+      "source_cache_manifest": "2026-02-17T14:09:53Z",
+      "status": "ok",
+      "copied_files": 3,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "试题2-促销预测AI训练数据样本.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/c5dbe8277d9f_试题2/试题2-促销预测AI训练数据样本.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/c5dbe8277d9f_试题2/试题2-促销预测AI训练数据样本.xlsx",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/c5dbe8277d9f_试题2/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/c5dbe8277d9f_试题2/description.txt",
+          "ok": true
+        },
+        {
+          "name": "试题2.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/c5dbe8277d9f_试题2/试题2.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/c5dbe8277d9f_试题2/试题2.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "1c20b20528323d424cbcd811279f64f3f95ee77ea86ff7c703aff598b1282e39",
+      "title": "题目2-数据分析",
+      "source_cache_manifest": "2026-02-17T14:16:01Z",
+      "status": "ok",
+      "copied_files": 3,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "试题2-促销预测AI训练数据样本.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1c20b2052832_题目2-数据分析/试题2-促销预测AI训练数据样本.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/1c20b2052832_题目2-数据分析/试题2-促销预测AI训练数据样本.xlsx",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1c20b2052832_题目2-数据分析/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/1c20b2052832_题目2-数据分析/description.txt",
+          "ok": true
+        },
+        {
+          "name": "试题2.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1c20b2052832_题目2-数据分析/试题2.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/1c20b2052832_题目2-数据分析/试题2.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "6eebb451a72c76d9cc02d5b2c6157940314f0d381c102a686aa3c5fbdababd79",
+      "title": "促销预测AI训练数据样本",
+      "source_cache_manifest": "2026-02-17T14:24:43Z",
+      "status": "ok",
+      "copied_files": 3,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "试题2-促销预测AI训练数据样本.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6eebb451a72c_促销预测AI训练数据样本/试题2-促销预测AI训练数据样本.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/6eebb451a72c_促销预测AI训练数据样本/试题2-促销预测AI训练数据样本.xlsx",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6eebb451a72c_促销预测AI训练数据样本/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/6eebb451a72c_促销预测AI训练数据样本/description.txt",
+          "ok": true
+        },
+        {
+          "name": "试题2.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6eebb451a72c_促销预测AI训练数据样本/试题2.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/6eebb451a72c_促销预测AI训练数据样本/试题2.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c",
+      "title": "UK Property Price official data",
+      "source_cache_manifest": "2026-02-17T14:22:08Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "April 2025 data.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/5f6ef32235f3_UK Property Price official data/April 2025 data.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/5f6ef32235f3_UK Property Price official data/April 2025 data.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "b5271a70bd03772c5a2b68d64993550be390a559182bdec4fea5b393a1412ce6",
+      "title": "Gold Feb 16 2026 Analysis",
+      "source_cache_manifest": "2026-02-17T14:35:48Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "gold_prices_10y.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b5271a70bd03_Gold Feb 16 2026 Analysis/gold_prices_10y.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/b5271a70bd03_Gold Feb 16 2026 Analysis/gold_prices_10y.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "ee6dec1a80a24b848d636d4cd59b9a8deb01bdd6a49befc7f62263d05e6a6425",
+      "title": "All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market",
+      "source_cache_manifest": "2026-02-17T14:36:50Z",
+      "status": "ok",
+      "copied_files": 3,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "interest_rate_forecasts.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/interest_rate_forecasts.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/interest_rate_forecasts.csv",
+          "ok": true
+        },
+        {
+          "name": "stock_market_forecasts.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/stock_market_forecasts.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/stock_market_forecasts.csv",
+          "ok": true
+        },
+        {
+          "name": "search_results.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/search_results.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/ee6dec1a80a2_All 2026 Financial Analysis related to Federal Interest Rate and The Stock Market/search_results.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "3749c60993fd8bb289251698a42fceb684316e3c60c372b754eb70b2f48043a3",
+      "title": "AI Chips, Energy, Nuclear Index",
+      "source_cache_manifest": "2026-02-17T14:16:24Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "AI_Economy_Complete_Index.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/3749c60993fd_AI Chips, Energy, Nuclear Index/AI_Economy_Complete_Index.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/3749c60993fd_AI Chips, Energy, Nuclear Index/AI_Economy_Complete_Index.csv",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/3749c60993fd_AI Chips, Energy, Nuclear Index/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/3749c60993fd_AI Chips, Energy, Nuclear Index/description.txt",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "412edcf0e3aedb85c775d41e01d1b236a21a461a885e365f218cfb35fbb5e684",
+      "title": "RAW MARKS SCHEDULE 2026_011022",
+      "source_cache_manifest": "2026-02-17T14:16:33Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "RAW MARKS SCHEDULE 2026_011022.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/412edcf0e3ae_RAW MARKS SCHEDULE 2026_011022/RAW MARKS SCHEDULE 2026_011022.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/412edcf0e3ae_RAW MARKS SCHEDULE 2026_011022/RAW MARKS SCHEDULE 2026_011022.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9",
+      "title": "DepthStats",
+      "source_cache_manifest": "2026-02-17T14:17:14Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "DepthStats.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/558df7b18679_DepthStats/DepthStats.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/558df7b18679_DepthStats/DepthStats.xlsx",
+          "ok": true
+        },
+        {
+          "name": "check_with_label.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/558df7b18679_DepthStats/check_with_label.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/558df7b18679_DepthStats/check_with_label.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "0c25465f6a6239be09d40bb66d0db9ca6551859d31c1c240610ad36201c22667",
+      "title": "za",
+      "source_cache_manifest": "2026-02-17T14:15:06Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "f0d70b00-aafc-424f-9e6f-3408a1290a74.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0c25465f6a62_za/f0d70b00-aafc-424f-9e6f-3408a1290a74.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0c25465f6a62_za/f0d70b00-aafc-424f-9e6f-3408a1290a74.pdf",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0c25465f6a62_za/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0c25465f6a62_za/description.txt",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "bf097dd935d3f45096bcaf3b47ea8ee56824cedea15cb66d38e4b9b48cf65017",
+      "title": "问卷结果",
+      "source_cache_manifest": "2026-02-17T14:36:06Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bf097dd935d3_问卷结果/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/bf097dd935d3_问卷结果/description.txt",
+          "ok": true
+        },
+        {
+          "name": "问卷结果.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bf097dd935d3_问卷结果/问卷结果.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/bf097dd935d3_问卷结果/问卷结果.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "4babbe396f2a2672e725eb0632ae3e38607deb397d148e730baedee54b82deef",
+      "title": "2025 Global Robotics Leaders — Technology Roadmap Comparison",
+      "source_cache_manifest": "2026-02-17T14:16:59Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "robotics_companies.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4babbe396f2a_2025 Global Robotics Leaders — Technology Roadmap Comparison/robotics_companies.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4babbe396f2a_2025 Global Robotics Leaders — Technology Roadmap Comparison/robotics_companies.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "8a850cc5b8631d3219cd736c5c62d99607641c49acc0b1839289ad5e6e4b69b9",
+      "title": "2025 Global Robotics Leaders — Technology Roadmap Comparison",
+      "source_cache_manifest": "2026-02-17T14:34:28Z",
+      "status": "ok",
+      "copied_files": 4,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "technology_matrix.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/8a850cc5b863_2025 Global Robotics Leaders — Technology Roadmap Comparison/technology_matrix.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/8a850cc5b863_2025 Global Robotics Leaders — Technology Roadmap Comparison/technology_matrix.csv",
+          "ok": true
+        },
+        {
+          "name": "operations.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/8a850cc5b863_2025 Global Robotics Leaders — Technology Roadmap Comparison/operations.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/8a850cc5b863_2025 Global Robotics Leaders — Technology Roadmap Comparison/operations.csv",
+          "ok": true
+        },
+        {
+          "name": "ai_capabilities.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/8a850cc5b863_2025 Global Robotics Leaders — Technology Roadmap Comparison/ai_capabilities.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/8a850cc5b863_2025 Global Robotics Leaders — Technology Roadmap Comparison/ai_capabilities.csv",
+          "ok": true
+        },
+        {
+          "name": "companies_overview.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/8a850cc5b863_2025 Global Robotics Leaders — Technology Roadmap Comparison/companies_overview.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/8a850cc5b863_2025 Global Robotics Leaders — Technology Roadmap Comparison/companies_overview.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "0bdbf01ebd185116305337850b11fdaca0c139e012af3be3cabbf5902480c48d",
+      "title": "NXP ANNUAL REPORT",
+      "source_cache_manifest": "2026-02-17T14:13:05Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "2024PROXYAGM.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0bdbf01ebd18_NXP ANNUAL REPORT/2024PROXYAGM.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0bdbf01ebd18_NXP ANNUAL REPORT/2024PROXYAGM.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "5a97dacdb00ada80acebaf0f3cfb0d22568d78c08852d33af223a8c18780c1b4",
+      "title": "power",
+      "source_cache_manifest": "2026-02-17T14:17:20Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "table (1).csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/5a97dacdb00a_power/table (1).csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/5a97dacdb00a_power/table (1).csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131",
+      "title": "美国电能分析",
+      "source_cache_manifest": "2026-02-17T14:36:23Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "table (1).csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d0ad2eb4cf41_美国电能分析/table (1).csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/d0ad2eb4cf41_美国电能分析/table (1).csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "1c22b0ecf41c03c4527e3e2a5754753735f05fa732150a653d1e9b48f50b650e",
+      "title": "American power",
+      "source_cache_manifest": "2026-02-17T14:16:03Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "table.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1c22b0ecf41c_American power/table.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/1c22b0ecf41c_American power/table.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d",
+      "title": "SPX and VIX",
+      "source_cache_manifest": "2026-02-17T14:16:57Z",
+      "status": "ok",
+      "copied_files": 1,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "rtp_rossi_0126_web_final_feb.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4404a8e35f1c_SPX and VIX/rtp_rossi_0126_web_final_feb.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4404a8e35f1c_SPX and VIX/rtp_rossi_0126_web_final_feb.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a",
+      "title": "Meta Analysis",
+      "source_cache_manifest": "2026-02-17T14:16:44Z",
+      "status": "ok",
+      "copied_files": 5,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "Downloadable-BS-Q4-25-FINAL.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Downloadable-BS-Q4-25-FINAL.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/Downloadable-BS-Q4-25-FINAL.xlsx",
+          "ok": true
+        },
+        {
+          "name": "Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/description.txt",
+          "ok": true
+        },
+        {
+          "name": "Earnings-Presentation-Q4-2025-FINAL.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Earnings-Presentation-Q4-2025-FINAL.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/Earnings-Presentation-Q4-2025-FINAL.pdf",
+          "ok": true
+        },
+        {
+          "name": "Downloadable-PL-Q4-25-FINAL.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Downloadable-PL-Q4-25-FINAL.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4267e545517a_Meta Analysis/Downloadable-PL-Q4-25-FINAL.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "15056f91b1a82030bddb2a5257af4c93c8b339e8d256776a1cf6f9950d69439d",
+      "title": "Google Analysis",
+      "source_cache_manifest": "2026-02-17T14:15:49Z",
+      "status": "ok",
+      "copied_files": 4,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "GOOG-10-K-2025.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/GOOG-10-K-2025.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/15056f91b1a8_Google Analysis/GOOG-10-K-2025.pdf",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/15056f91b1a8_Google Analysis/description.txt",
+          "ok": true
+        },
+        {
+          "name": "2025q4-alphabet-earnings-release.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-release.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-release.pdf",
+          "ok": true
+        },
+        {
+          "name": "2025q4-alphabet-earnings-slides.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-slides.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-slides.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    },
+    {
+      "case_id": "77c1850288a9d82e3b4b5bd0c866809ffa96f0f8c2f3b579aa70b1759fd9f7c6",
+      "title": "Uber Financial Report",
+      "source_cache_manifest": "2026-02-17T14:34:21Z",
+      "status": "ok",
+      "copied_files": 4,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "Uber-Q4-25-Earnings-Call-Transcript.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Call-Transcript.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Call-Transcript.pdf",
+          "ok": true
+        },
+        {
+          "name": "Uber-Q4-25-Earnings-Press-Release.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Press-Release.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Press-Release.pdf",
+          "ok": true
+        },
+        {
+          "name": "Uber-Q4-25-Earnings-Supplemental-Data.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Supplemental-Data.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-Supplemental-Data.pdf",
+          "ok": true
+        },
+        {
+          "name": "Uber-Q4-25-Earnings-AV-Spotlight.pdf",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-AV-Spotlight.pdf",
+          "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/77c1850288a9_Uber Financial Report/Uber-Q4-25-Earnings-AV-Spotlight.pdf",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:34Z"
+    }
+  ]
+}

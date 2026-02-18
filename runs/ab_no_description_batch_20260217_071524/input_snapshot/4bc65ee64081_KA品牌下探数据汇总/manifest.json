@@ -1,0 +1,25 @@
+{
+  "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+  "title": "KA品牌下探数据汇总",
+  "source_cache_manifest": "2026-02-17T14:04:36Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4bc65ee64081_KA品牌下探数据汇总/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/input_snapshot/4bc65ee64081_KA品牌下探数据汇总/description.txt",
+      "ok": true
+    },
+    {
+      "name": "KA品牌下探数据汇总.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4bc65ee64081_KA品牌下探数据汇总/KA品牌下探数据汇总.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/input_snapshot/4bc65ee64081_KA品牌下探数据汇总/KA品牌下探数据汇总.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:33Z"
+}

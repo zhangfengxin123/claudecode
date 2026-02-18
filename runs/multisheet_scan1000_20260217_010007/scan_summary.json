@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-02-17T01:02:11",
+  "recent_limit": 1000,
+  "sample_size": 1000,
+  "start_index": 0,
+  "workers": 8,
+  "min_chart_count": 5,
+  "total_tasks": 500,
+  "multisheet_count": 38,
+  "qualified_count": 30,
+  "preview_bytes": 4000000,
+  "full_retry_threshold_mb": 25
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+  "title_hint": "CAP Analysis",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "CAP 2023-2025.xlsx",
+      "status": 200,
+      "size_bytes": 324456,
+      "source_url": "https://pardusai.org/v1/api/public/project/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1/files/CAP%202023-2025.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bffd9ee5ebab_CAP Analysis/CAP 2023-2025.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:06:33Z"
+}

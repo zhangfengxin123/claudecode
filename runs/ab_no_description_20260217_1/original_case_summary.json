@@ -1,0 +1,138 @@
+{
+  "case_id": "e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+  "title": "2024-2025 CAP review",
+  "with_description": true,
+  "input_files": [
+    "description.txt",
+    "2025 CAP overview.xlsx",
+    "SHA CHRONO_CAP.xlsx"
+  ],
+  "input_data_files": [
+    "2025 CAP overview.xlsx",
+    "SHA CHRONO_CAP.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 15,
+  "assets": [
+    {
+      "name": "summary_table.json",
+      "trace_types": [
+        "table"
+      ],
+      "trace_count": 1,
+      "title": "2024 vs 2025年CAPA综合对比总览"
+    },
+    {
+      "name": "annual_total_cost_comparison.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2024 vs 2025年CAPA总成本对比"
+    },
+    {
+      "name": "record_count_comparison.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2024 vs 2025年CAPA记录数量对比"
+    },
+    {
+      "name": "cost_structure_comparison.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "2024 vs 2025年成本构成对比"
+    },
+    {
+      "name": "cost_pie_2024.json",
+      "trace_types": [
+        "pie"
+      ],
+      "trace_count": 1,
+      "title": "2024年CAPA成本构成占比"
+    },
+    {
+      "name": "cost_pie_2025.json",
+      "trace_types": [
+        "pie"
+      ],
+      "trace_count": 1,
+      "title": "2025年CAPA成本构成占比"
+    },
+    {
+      "name": "cap_type_comparison.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "2024 vs 2025年CAP类型分布对比"
+    },
+    {
+      "name": "monthly_trend_2024.json",
+      "trace_types": [
+        "scatter"
+      ],
+      "trace_count": 1,
+      "title": "2024年CAPA成本月度趋势"
+    },
+    {
+      "name": "department_comparison.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "2024 vs 2025年部门CAPA分布对比"
+    },
+    {
+      "name": "top_issuer_cost_comparison.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "2024 vs 2025年TOP 10负责人CAPA成本对比"
+    },
+    {
+      "name": "cap_cost_sunburst.json",
+      "trace_types": [
+        "sunburst"
+      ],
+      "trace_count": 1,
+      "title": "2024-2025年CAPA成本层次结构分布"
+    },
+    {
+      "name": "cap_flow_sankey.json",
+      "trace_types": [
+        "sankey"
+      ],
+      "trace_count": 1,
+      "title": "2025年CAPA流向：部门 → CAP类型"
+    },
+    {
+      "name": "cap_flow_sankey_2024.json",
+      "trace_types": [
+        "sankey"
+      ],
+      "trace_count": 1,
+      "title": "2024年CAPA流向：部门 → CAP类型"
+    },
+    {
+      "name": "cap_cost_icicle_2025.json",
+      "trace_types": [
+        "icicle"
+      ],
+      "trace_count": 1,
+      "title": "2025年CAPA成本冰柱图"
+    },
+    {
+      "name": "cap_cost_heatmap.json",
+      "trace_types": [
+        "heatmap"
+      ],
+      "trace_count": 1,
+      "title": "2024-2025年各部门CAP类型成本热力图"
+    }
+  ]
+}

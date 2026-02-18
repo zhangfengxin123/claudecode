@@ -1,0 +1,38 @@
+{
+  "case_id": "1c20b20528323d424cbcd811279f64f3f95ee77ea86ff7c703aff598b1282e39",
+  "title_hint": "题目2-数据分析",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 3,
+  "files_ok_count": 3,
+  "files": [
+    {
+      "idx": 0,
+      "name": "试题2-促销预测AI训练数据样本.xlsx",
+      "status": 200,
+      "size_bytes": 11802413,
+      "source_url": "https://pardusai.org/v1/api/public/project/1c20b20528323d424cbcd811279f64f3f95ee77ea86ff7c703aff598b1282e39/files/%E8%AF%95%E9%A2%982-%E4%BF%83%E9%94%80%E9%A2%84%E6%B5%8BAI%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E6%A0%B7%E6%9C%AC.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1c20b2052832_题目2-数据分析/试题2-促销预测AI训练数据样本.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 247,
+      "source_url": "https://pardusai.org/v1/api/public/project/1c20b20528323d424cbcd811279f64f3f95ee77ea86ff7c703aff598b1282e39/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1c20b2052832_题目2-数据分析/description.txt",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "试题2.pdf",
+      "status": 200,
+      "size_bytes": 501664,
+      "source_url": "https://pardusai.org/v1/api/public/project/1c20b20528323d424cbcd811279f64f3f95ee77ea86ff7c703aff598b1282e39/files/%E8%AF%95%E9%A2%982.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1c20b2052832_题目2-数据分析/试题2.pdf",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:16:01Z"
+}

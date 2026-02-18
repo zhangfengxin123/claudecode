@@ -1,0 +1,775 @@
+[
+  {
+    "idx": 4,
+    "case_id": "caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872",
+    "title": "new",
+    "view_url": "https://pardusai.org/view/caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872",
+    "uploads_status": 200,
+    "upload_count": 5,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 6,
+    "excel_infos": [
+      {
+        "name": "Sample scanning energy spectrum.xlsx",
+        "http": 200,
+        "bytes_head": 964724,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 9,
+    "case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+    "title": "id市场投放效果与转化数据分析",
+    "view_url": "https://pardusai.org/view/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 10,
+    "excel_infos": [
+      {
+        "name": "id市场广告投放与转化数据.xlsx",
+        "http": 200,
+        "bytes_head": 4000000,
+        "sheets": -1,
+        "full_retry": true,
+        "http_full": 200,
+        "bytes_full": 18908896,
+        "sheets_full": 6
+      }
+    ]
+  },
+  {
+    "idx": 16,
+    "case_id": "739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6",
+    "title": "用户反馈",
+    "view_url": "https://pardusai.org/view/739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 11,
+    "excel_infos": [
+      {
+        "name": "新建 Microsoft Excel 工作表.xlsx",
+        "http": 200,
+        "bytes_head": 112530,
+        "sheets": 5,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 60,
+    "case_id": "0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695",
+    "title": "2022-2026 Case Data",
+    "view_url": "https://pardusai.org/view/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695",
+    "uploads_status": 200,
+    "upload_count": 3,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 9,
+    "excel_infos": [
+      {
+        "name": "2022-2026 Case Data.xlsx",
+        "http": 200,
+        "bytes_head": 185792,
+        "sheets": 4,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      },
+      {
+        "name": "2021 Trend Data.xlsx",
+        "http": 200,
+        "bytes_head": 346523,
+        "sheets": 5,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      },
+      {
+        "name": "2016-2022 Case Data.xlsx",
+        "http": 200,
+        "bytes_head": 334114,
+        "sheets": 6,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 75,
+    "case_id": "129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428",
+    "title": "email experiment",
+    "view_url": "https://pardusai.org/view/129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 8,
+    "excel_infos": [
+      {
+        "name": "2编码数据.xlsx",
+        "http": 200,
+        "bytes_head": 242440,
+        "sheets": 6,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      },
+      {
+        "name": "1问卷数据.xlsx",
+        "http": 200,
+        "bytes_head": 249242,
+        "sheets": 5,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 89,
+    "case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+    "title": "月卡改价实验数据分析",
+    "view_url": "https://pardusai.org/view/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 7,
+    "excel_infos": [
+      {
+        "name": "月卡改价实验结果-202601.xlsx",
+        "http": 200,
+        "bytes_head": 13374,
+        "sheets": 2,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 101,
+    "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+    "title": "CAP Analysis",
+    "view_url": "https://pardusai.org/view/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 14,
+    "excel_infos": [
+      {
+        "name": "CAP 2023-2025.xlsx",
+        "http": 200,
+        "bytes_head": 324456,
+        "sheets": 2,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 102,
+    "case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+    "title": "2024 vs 2025 CAP Review report",
+    "view_url": "https://pardusai.org/view/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+    "uploads_status": 200,
+    "upload_count": 3,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 11,
+    "excel_infos": [
+      {
+        "name": "2025 CAP overview.xlsx",
+        "http": 200,
+        "bytes_head": 45302,
+        "sheets": 2,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      },
+      {
+        "name": "SHA CHRONO_CAP.xlsx",
+        "http": 200,
+        "bytes_head": 549970,
+        "sheets": 5,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 103,
+    "case_id": "a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+    "title": "年卡改价实验数据分析",
+    "view_url": "https://pardusai.org/view/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 5,
+    "excel_infos": [
+      {
+        "name": "年卡改价实验结果-202601.xlsx",
+        "http": 200,
+        "bytes_head": 13924,
+        "sheets": 2,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 107,
+    "case_id": "fdec4b4d26cbac9f558b3e47449089e928bda4188427b70587586a59dd6687e3",
+    "title": "Copy of Project",
+    "view_url": "https://pardusai.org/view/fdec4b4d26cbac9f558b3e47449089e928bda4188427b70587586a59dd6687e3",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 6,
+    "excel_infos": [
+      {
+        "name": "RF Parameters_summary.xlsx",
+        "http": 200,
+        "bytes_head": 31310,
+        "sheets": 9,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 108,
+    "case_id": "96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38",
+    "title": "Linac setup overview",
+    "view_url": "https://pardusai.org/view/96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 6,
+    "excel_infos": [
+      {
+        "name": "RF Parameters_summary.xlsx",
+        "http": 200,
+        "bytes_head": 31310,
+        "sheets": 9,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 146,
+    "case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+    "title": "反向调价实验数据分析",
+    "view_url": "https://pardusai.org/view/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 6,
+    "excel_infos": [
+      {
+        "name": "反向调价实验结果-202601.xlsx",
+        "http": 200,
+        "bytes_head": 12130,
+        "sheets": 2,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 150,
+    "case_id": "56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6",
+    "title": "卫生统计年鉴",
+    "view_url": "https://pardusai.org/view/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 6,
+    "excel_infos": [
+      {
+        "name": "卫生统计年鉴.xlsx",
+        "http": 200,
+        "bytes_head": 236887,
+        "sheets": 17,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 151,
+    "case_id": "249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e",
+    "title": "国际贸易",
+    "view_url": "https://pardusai.org/view/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 10,
+    "excel_infos": [
+      {
+        "name": "国际贸易顺差矩阵.xlsx",
+        "http": 200,
+        "bytes_head": 856989,
+        "sheets": 2,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 159,
+    "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+    "title": "SSCOM L02 AnalyticsCase_Meyer",
+    "view_url": "https://pardusai.org/view/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 5,
+    "excel_infos": [
+      {
+        "name": "SSCOM L02 AnalyticsCase_Meyer.xlsx",
+        "http": 200,
+        "bytes_head": 1177259,
+        "sheets": 2,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 163,
+    "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+    "title": "KA品牌下探数据汇总",
+    "view_url": "https://pardusai.org/view/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 6,
+    "excel_infos": [
+      {
+        "name": "KA品牌下探数据汇总.xlsx",
+        "http": 200,
+        "bytes_head": 33777,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 166,
+    "case_id": "e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a",
+    "title": "KA品牌下探数据汇总",
+    "view_url": "https://pardusai.org/view/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 11,
+    "excel_infos": [
+      {
+        "name": "KA品牌下探数据汇总.xlsx",
+        "http": 200,
+        "bytes_head": 33777,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 238,
+    "case_id": "b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d",
+    "title": "arbitrage",
+    "view_url": "https://pardusai.org/view/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 11,
+    "excel_infos": [
+      {
+        "name": "510050_underlying_合成期权_策略示例.xlsx",
+        "http": 200,
+        "bytes_head": 91878,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 242,
+    "case_id": "df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c",
+    "title": "dam monitoring data analysis",
+    "view_url": "https://pardusai.org/view/df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 5,
+    "excel_infos": [
+      {
+        "name": "内观数据_总汇总.xlsx",
+        "http": 200,
+        "bytes_head": 4000000,
+        "sheets": -1,
+        "full_retry": true,
+        "http_full": 200,
+        "bytes_full": 6799945,
+        "sheets_full": 2
+      }
+    ]
+  },
+  {
+    "idx": 297,
+    "case_id": "bc9096fe2102fcf754cb47c1631aed3576bf8ca6aef0c3d78e6f40b72d38fc92",
+    "title": "Microsoft is Falling Down",
+    "view_url": "https://pardusai.org/view/bc9096fe2102fcf754cb47c1631aed3576bf8ca6aef0c3d78e6f40b72d38fc92",
+    "uploads_status": 200,
+    "upload_count": 4,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 9,
+    "excel_infos": [
+      {
+        "name": "FinancialStatementFY26Q2.xlsx",
+        "http": 200,
+        "bytes_head": 82816,
+        "sheets": 13,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 304,
+    "case_id": "e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+    "title": "2024-2025 CAP review",
+    "view_url": "https://pardusai.org/view/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+    "uploads_status": 200,
+    "upload_count": 3,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 15,
+    "excel_infos": [
+      {
+        "name": "2025 CAP overview.xlsx",
+        "http": 200,
+        "bytes_head": 45302,
+        "sheets": 2,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      },
+      {
+        "name": "SHA CHRONO_CAP.xlsx",
+        "http": 200,
+        "bytes_head": 296394,
+        "sheets": 4,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 305,
+    "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+    "title": "陕西能源职业技术学院招生就业专业排序",
+    "view_url": "https://pardusai.org/view/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 6,
+    "excel_infos": [
+      {
+        "name": "26年招生就业数据（高考单招单列） (1).xlsx",
+        "http": 200,
+        "bytes_head": 35431,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 308,
+    "case_id": "fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a",
+    "title": "辅酶q10",
+    "view_url": "https://pardusai.org/view/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 7,
+    "excel_infos": [
+      {
+        "name": "xueye-Q10(1).xlsx",
+        "http": 200,
+        "bytes_head": 74004,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 312,
+    "case_id": "751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9",
+    "title": "wechat marketing",
+    "view_url": "https://pardusai.org/view/751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9",
+    "uploads_status": 200,
+    "upload_count": 4,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 5,
+    "excel_infos": [
+      {
+        "name": "2026微信公众号选题计划.xlsx",
+        "http": 200,
+        "bytes_head": 21863,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 320,
+    "case_id": "3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e",
+    "title": "Twitter和YouTube的数据",
+    "view_url": "https://pardusai.org/view/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 9,
+    "excel_infos": [
+      {
+        "name": "6月Twitter数据.xlsx",
+        "http": 200,
+        "bytes_head": 36112,
+        "sheets": 1,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      },
+      {
+        "name": "6月YouTube数据.xlsx",
+        "http": 200,
+        "bytes_head": 46496,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 322,
+    "case_id": "e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746",
+    "title": "竞品分析",
+    "view_url": "https://pardusai.org/view/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746",
+    "uploads_status": 200,
+    "upload_count": 3,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 6,
+    "excel_infos": [
+      {
+        "name": "站外汇总.xlsx",
+        "http": 200,
+        "bytes_head": 106534,
+        "sheets": 9,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 347,
+    "case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+    "title": "Book1",
+    "view_url": "https://pardusai.org/view/6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 7,
+    "excel_infos": [
+      {
+        "name": "Book1.xlsx",
+        "http": 200,
+        "bytes_head": 102999,
+        "sheets": 6,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 415,
+    "case_id": "67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3",
+    "title": "order submitted",
+    "view_url": "https://pardusai.org/view/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 10,
+    "excel_infos": [
+      {
+        "name": "混淆矩阵完整分析.xlsx",
+        "http": 200,
+        "bytes_head": 1768244,
+        "sheets": 6,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 443,
+    "case_id": "79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5",
+    "title": "总承包",
+    "view_url": "https://pardusai.org/view/79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 8,
+    "excel_infos": [
+      {
+        "name": "环研院（老项目）-EPC项目信息统计及管理台账20250930.xlsx",
+        "http": 200,
+        "bytes_head": 227227,
+        "sheets": 11,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 464,
+    "case_id": "0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3",
+    "title": "债券借贷",
+    "view_url": "https://pardusai.org/view/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3",
+    "uploads_status": 200,
+    "upload_count": 1,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 13,
+    "excel_infos": [
+      {
+        "name": "【华西固收】债券借贷更新-20260123.xlsx",
+        "http": 200,
+        "bytes_head": 1764210,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  },
+  {
+    "idx": 473,
+    "case_id": "fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e",
+    "title": "588000159915510050",
+    "view_url": "https://pardusai.org/view/fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e",
+    "uploads_status": 200,
+    "upload_count": 2,
+    "has_multisheet": true,
+    "document_status": 200,
+    "chart_count": 7,
+    "excel_infos": [
+      {
+        "name": "全套数据.xlsx",
+        "http": 200,
+        "bytes_head": 960786,
+        "sheets": 3,
+        "full_retry": false,
+        "http_full": 0,
+        "bytes_full": 0,
+        "sheets_full": -1
+      }
+    ]
+  }
+]

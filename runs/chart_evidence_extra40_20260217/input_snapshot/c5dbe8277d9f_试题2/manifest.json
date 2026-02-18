@@ -1,0 +1,32 @@
+{
+  "case_id": "c5dbe8277d9f91dfbe9a83ccd5e510a5c338c78f82ae1d0da909dff435a7a0d2",
+  "title": "试题2",
+  "source_cache_manifest": "2026-02-17T14:09:53Z",
+  "status": "ok",
+  "copied_files": 3,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "试题2-促销预测AI训练数据样本.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/c5dbe8277d9f_试题2/试题2-促销预测AI训练数据样本.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/c5dbe8277d9f_试题2/试题2-促销预测AI训练数据样本.xlsx",
+      "ok": true
+    },
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/c5dbe8277d9f_试题2/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/c5dbe8277d9f_试题2/description.txt",
+      "ok": true
+    },
+    {
+      "name": "试题2.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/c5dbe8277d9f_试题2/试题2.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/c5dbe8277d9f_试题2/试题2.pdf",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

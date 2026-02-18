@@ -1,0 +1,25 @@
+{
+  "case_id": "0bbadf267cf4445355d79aab47636826cc511b7cca8411a83d1a7c5863fbe471",
+  "title": "AB_NO_DESC_CAP_e226_20260217",
+  "source_cache_manifest": "2026-02-17T14:07:00Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "2025 CAP overview.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0bbadf267cf4_AB_NO_DESC_CAP_e226_20260217/2025 CAP overview.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0bbadf267cf4_AB_NO_DESC_CAP_e226_20260217/2025 CAP overview.xlsx",
+      "ok": true
+    },
+    {
+      "name": "SHA CHRONO_CAP.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0bbadf267cf4_AB_NO_DESC_CAP_e226_20260217/SHA CHRONO_CAP.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/0bbadf267cf4_AB_NO_DESC_CAP_e226_20260217/SHA CHRONO_CAP.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

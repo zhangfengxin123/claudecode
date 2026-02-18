@@ -1,0 +1,18 @@
+{
+  "case_id": "249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e",
+  "title": "国际贸易",
+  "source_cache_manifest": "2026-02-17T14:16:13Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "国际贸易顺差矩阵.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/249b12b9deda_国际贸易/国际贸易顺差矩阵.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/249b12b9deda_国际贸易/国际贸易顺差矩阵.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

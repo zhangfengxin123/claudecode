@@ -1,0 +1,18 @@
+{
+  "case_id": "56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6",
+  "title": "卫生统计年鉴",
+  "source_cache_manifest": "2026-02-17T14:17:17Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "卫生统计年鉴.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/568921634187_卫生统计年鉴/卫生统计年鉴.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/568921634187_卫生统计年鉴/卫生统计年鉴.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

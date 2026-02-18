@@ -1,0 +1,32 @@
+{
+  "case_id": "e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+  "title": "2024-2025 CAP review",
+  "source_cache_manifest": "2026-02-17T13:57:50Z",
+  "status": "ok",
+  "copied_files": 3,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e226fa5aa55b_2024-2025 CAP review/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/e226fa5aa55b_2024-2025 CAP review/description.txt",
+      "ok": true
+    },
+    {
+      "name": "2025 CAP overview.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e226fa5aa55b_2024-2025 CAP review/2025 CAP overview.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/e226fa5aa55b_2024-2025 CAP review/2025 CAP overview.xlsx",
+      "ok": true
+    },
+    {
+      "name": "SHA CHRONO_CAP.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e226fa5aa55b_2024-2025 CAP review/SHA CHRONO_CAP.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/e226fa5aa55b_2024-2025 CAP review/SHA CHRONO_CAP.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:33Z"
+}

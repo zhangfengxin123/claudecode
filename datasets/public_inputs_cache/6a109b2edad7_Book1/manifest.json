@@ -1,0 +1,29 @@
+{
+  "case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+  "title_hint": "Book1",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 516,
+      "source_url": "https://pardusai.org/v1/api/public/project/6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6a109b2edad7_Book1/description.txt",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "Book1.xlsx",
+      "status": 200,
+      "size_bytes": 102999,
+      "source_url": "https://pardusai.org/v1/api/public/project/6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b/files/Book1.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6a109b2edad7_Book1/Book1.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:04:22Z"
+}

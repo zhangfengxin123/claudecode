@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-02-17T07:31:39Z",
+  "ab_case": {
+    "template_case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+    "rerun_case_id": "524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9",
+    "title": "FEDFUNDS (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+    "inputs": [
+      "NASDAQCOM.xlsx",
+      "description.txt",
+      "FEDFUNDS.csv",
+      "IR.csv"
+    ],
+    "description_present": true,
+    "chart_assets_count": 6,
+    "trace_type_hist": {
+      "scatter": 9,
+      "bar": 1,
+      "box": 3,
+      "heatmap": 1
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Data Overview and Methodology",
+      "Federal Funds Rate Dynamics",
+      "NASDAQ Market Performance Analysis",
+      "Correlation Analysis",
+      "Interest Rate Level vs Market Returns",
+      "Import Price Index Analysis",
+      "Implications for Investors and Policymakers",
+      "Limitations and Considerations",
+      "Conclusion"
+    ],
+    "first_paragraph": "2021-2025",
+    "assets": [
+      {
+        "name": "economic_time_series.json",
+        "url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/assets/economic_time_series.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "Economic Indicators Time Series (2021-2025)"
+      },
+      {
+        "name": "volatility_by_rate.json",
+        "url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/assets/volatility_by_rate.json",
+        "trace_types": [
+          "bar",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "Volatility and Returns by Fed Funds Rate"
+      },
+      {
+        "name": "rate_change_impact.json",
+        "url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/assets/rate_change_impact.json",
+        "trace_types": [
+          "box",
+          "box",
+          "box"
+        ],
+        "trace_count": 3,
+        "title": "NASDAQ Returns by Rate Change"
+      },
+      {
+        "name": "correlation_heatmap.json",
+        "url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/assets/correlation_heatmap.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "Economic Indicators Correlation Matrix"
+      },
+      {
+        "name": "funds_rate_vs_returns.json",
+        "url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/assets/funds_rate_vs_returns.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 4,
+        "title": "Fed Funds Rate vs NASDAQ Returns"
+      },
+      {
+        "name": "import_price_vs_funds.json",
+        "url": "https://pardusai.org/v1/api/public/project/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475/assets/import_price_vs_funds.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Import Price vs Fed Funds Rate"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9",
+    "inputs": [
+      "NASDAQCOM.xlsx",
+      "FEDFUNDS.csv",
+      "IR.csv"
+    ],
+    "description_present": false,
+    "chart_assets_count": 8,
+    "trace_type_hist": {
+      "scatter": 9,
+      "heatmap": 1,
+      "histogram": 1,
+      "bar": 2
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Data Overview",
+      "Federal Funds Rate Analysis",
+      "Inflation Rate Analysis",
+      "NASDAQ Composite Index Performance",
+      "Correlation Analysis",
+      "Market Implications",
+      "Annual Summary",
+      "Conclusion",
+      "Data Files"
+    ],
+    "first_paragraph": "2021-2025",
+    "assets": [
+      {
+        "name": "three_metric_overview.json",
+        "url": "https://pardusai.org/v1/api/public/project/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9/assets/three_metric_overview.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "Three-Metric Overview"
+      },
+      {
+        "name": "correlation_heatmap.json",
+        "url": "https://pardusai.org/v1/api/public/project/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9/assets/correlation_heatmap.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "Correlation Heatmap"
+      },
+      {
+        "name": "fedfunds_nasdaq_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9/assets/fedfunds_nasdaq_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "Federal Funds Rate vs NASDAQ Composite"
+      },
+      {
+        "name": "inflation_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9/assets/inflation_trend.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Inflation Rate Trend"
+      },
+      {
+        "name": "real_interest_rate.json",
+        "url": "https://pardusai.org/v1/api/public/project/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9/assets/real_interest_rate.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Real Interest Rate"
+      },
+      {
+        "name": "nasdaq_volatility.json",
+        "url": "https://pardusai.org/v1/api/public/project/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9/assets/nasdaq_volatility.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "NASDAQ Volatility"
+      },
+      {
+        "name": "nasdaq_returns_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9/assets/nasdaq_returns_distribution.json",
+        "trace_types": [
+          "histogram"
+        ],
+        "trace_count": 1,
+        "title": "NASDAQ Returns Distribution"
+      },
+      {
+        "name": "annual_summary.json",
+        "url": "https://pardusai.org/v1/api/public/project/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9/assets/annual_summary.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Annual Summary"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 2,
+    "sections_delta": 0,
+    "description_removed_ok": true,
+    "asset_name_overlap": 1,
+    "asset_old_only": [
+      "economic_time_series.json",
+      "funds_rate_vs_returns.json",
+      "import_price_vs_funds.json",
+      "rate_change_impact.json",
+      "volatility_by_rate.json"
+    ],
+    "asset_new_only": [
+      "annual_summary.json",
+      "fedfunds_nasdaq_trend.json",
+      "inflation_trend.json",
+      "nasdaq_returns_distribution.json",
+      "nasdaq_volatility.json",
+      "real_interest_rate.json",
+      "three_metric_overview.json"
+    ]
+  }
+}

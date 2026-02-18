@@ -1,0 +1,5 @@
+Unemployment Rate in California (LAUST060000000000003A)
+Unemployment Rate in Florida (LAUST120000000000003A)
+Unemployment Rate in Texas (LAUST480000000000003A)
+Unemployment Rate in New York (LAUST360000000000003A)
+DFF (interest rate)

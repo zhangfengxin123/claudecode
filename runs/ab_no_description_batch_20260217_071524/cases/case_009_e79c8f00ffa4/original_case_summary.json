@@ -1,0 +1,78 @@
+{
+  "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+  "title": "SSCOM L02 AnalyticsCase_Meyer",
+  "with_description": true,
+  "input_files": [
+    "description.txt",
+    "SSCOM L02 AnalyticsCase_Meyer.xlsx"
+  ],
+  "input_data_files": [
+    "SSCOM L02 AnalyticsCase_Meyer.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 5,
+  "assets": [
+    {
+      "name": "network_expansion_co2.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 3,
+      "title": "CO2 Emissions Comparison"
+    },
+    {
+      "name": "technician_requirements.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "Technician Requirements"
+    },
+    {
+      "name": "cities_per_base.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 3,
+      "title": "Cities per Base"
+    },
+    {
+      "name": "reduction_percentage.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "CO2 Reduction Percentage"
+    },
+    {
+      "name": "lead_time_impact.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 3,
+      "title": "Lead Time Impact"
+    }
+  ],
+  "h2_sections": [
+    "Executive Summary",
+    "Current Situation Analysis",
+    "Network Expansion Analysis",
+    "Lead Time Optimization Analysis",
+    "Strategic Recommendations",
+    "Financial Implications",
+    "Risk Assessment",
+    "Implementation Roadmap",
+    "Success Metrics and KPIs",
+    "Conclusion",
+    "Appendix: Data Summary"
+  ],
+  "first_paragraph": "This report presents a comprehensive analysis of Meyer AG's 2023 service operations, examining opportunities to reduce carbon emissions through strategic network expansion and lead time optimization. Based on 30,295 daily records across 83 cities, we evaluated two key optimization strategies:"
+}

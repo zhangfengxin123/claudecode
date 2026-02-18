@@ -1,0 +1,56 @@
+{
+  "case_id": "caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872",
+  "title_hint": "new",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 5,
+  "files_ok_count": 5,
+  "files": [
+    {
+      "idx": 0,
+      "name": "Sample scanning energy spectrum standard value.csv",
+      "status": 200,
+      "size_bytes": 0,
+      "source_url": "https://pardusai.org/v1/api/public/project/caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872/files/Sample%20scanning%20energy%20spectrum%20standard%20value.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/Sample scanning energy spectrum standard value.csv",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "Coal Quality Rapid Testing Indicators and Requirements.md",
+      "status": 200,
+      "size_bytes": 1631,
+      "source_url": "https://pardusai.org/v1/api/public/project/caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872/files/Coal%20Quality%20Rapid%20Testing%20Indicators%20and%20Requirements.md",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/Coal Quality Rapid Testing Indicators and Requirements.md",
+      "downloaded_now": false
+    },
+    {
+      "idx": 2,
+      "name": "spectroscopic data.csv",
+      "status": 200,
+      "size_bytes": 1512628,
+      "source_url": "https://pardusai.org/v1/api/public/project/caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872/files/spectroscopic%20data.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/spectroscopic data.csv",
+      "downloaded_now": false
+    },
+    {
+      "idx": 3,
+      "name": "spectroscopic dataSample standard value.csv",
+      "status": 200,
+      "size_bytes": 1512628,
+      "source_url": "https://pardusai.org/v1/api/public/project/caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872/files/spectroscopic%20dataSample%20standard%20value.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/spectroscopic dataSample standard value.csv",
+      "downloaded_now": false
+    },
+    {
+      "idx": 4,
+      "name": "Sample scanning energy spectrum.xlsx",
+      "status": 200,
+      "size_bytes": 964724,
+      "source_url": "https://pardusai.org/v1/api/public/project/caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872/files/Sample%20scanning%20energy%20spectrum.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/Sample scanning energy spectrum.xlsx",
+      "downloaded_now": false
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:33Z"
+}

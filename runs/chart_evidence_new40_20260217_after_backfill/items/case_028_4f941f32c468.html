@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 4f941f32c468</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>Crypto Currencies Analysis</h1>
+  <div class='muted'>case_id: <span class='code'>4f941f32c468b66391aa9cbc55bf54e8b9b19e6c37e3195bbefebc175b01edb2</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/4f941f32c468b66391aa9cbc55bf54e8b9b19e6c37e3195bbefebc175b01edb2' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/4f941f32c468b66391aa9cbc55bf54e8b9b19e6c37e3195bbefebc175b01edb2</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_028_4f941f32c468</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>market_data.json</code></td><td>200</td><td>8552</td><td>application/json</td><td><code>input/case_028_4f941f32c468/market_data.json</code></td><td><a href='https://pardusai.org/v1/api/public/project/4f941f32c468b66391aa9cbc55bf54e8b9b19e6c37e3195bbefebc175b01edb2/files/market_data.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>market_data.json</code> · HTTP 200 · text</summary><pre>[{&quot;id&quot;:&quot;bitcoin&quot;,&quot;symbol&quot;:&quot;btc&quot;,&quot;name&quot;:&quot;Bitcoin&quot;,&quot;image&quot;:&quot;https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400&quot;,&quot;current_price&quot;:70028,&quot;market_cap&quot;:1399356359648,&quot;market_cap_rank&quot;:1,&quot;fully_diluted_valuation&quot;:1399358950150,&quot;total_volume&quot;:53938360565,&quot;high_24h&quot;:71266,&quot;low_24h&quot;:68428,&quot;price_change_24h&quot;:-692.82382895099,&quot;price_change_percentage_24h&quot;:-0.97966,&quot;market_cap_change_24h&quot;:-14096867407.942139,&quot;market_cap_change_percentage_24h&quot;:-0.99734,&quot;circulating_supply&quot;:19986931.0,&quot;total_supply&quot;:19986968.0,&quot;max_supply&quot;:21000000.0,&quot;ath&quot;:126080,&quot;ath_change_percentage&quot;:-44.45769,&quot;ath_date&quot;:&quot;2025-10-06T18:57:42.558Z&quot;,&quot;atl&quot;:67.81,&quot;atl_change_percentage&quot;:103171.96188,&quot;atl_date&quot;:&quot;2013-07-06T00:00:00.000Z&quot;,&quot;roi&quot;:null,&quot;last_updated&quot;:&quot;2026-02-10T02:47:29.547Z&quot;,&quot;price_change_percentage_24h_in_currency&quot;:-0.9796646603213187},{&quot;id&quot;:&quot;ethereum&quot;,&quot;symbol&quot;:&quot;eth&quot;,&quot;name&quot;:&quot;Ethereum&quot;,&quot;image&quot;:&quot;https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628&quot;,&quot;current_price&quot;:2104.34,&quot;market_cap&quot;:253881485871,&quot;market_cap_rank&quot;:2,&quot;fully_diluted_valuation&quot;:253881485871,&quot;total_volume&quot;:24483548594,&quot;high_24h&quot;:2140.2,&quot;low_24h&quot;:2012.58,&quot;price_change_24h&quot;:18.05,&quot;price_change_percentage_24h&quot;:0.86529,&quot;market_cap_change_24h&quot;:2080619439,&quot;market_cap_change_percentage_24h&quot;:0.8263,&quot;circulating_supply&quot;:120692588.7575344,&quot;total_supply&quot;:120692588.7575344,&quot;max_supply&quot;:null,&quot;ath&quot;:4946.05,&quot;ath_change_percentage&quot;:-57.45413,&quot;ath_date&quot;:&quot;2025-08-24T19:21:03.333Z&quot;,&quot;atl&quot;:0.432979,&quot;atl_change_percentage&quot;:485914.38933,&quot;atl_date&quot;:&quot;2015-10-20T00:00:00.000Z&quot;,&quot;roi&quot;:{&quot;times&quot;:39.17537959298874,&quot;currency&quot;:&quot;btc&quot;,&quot;percentage&quot;:3917.5379592988743},&quot;last_updated&quot;:&quot;2026-02-10T02:47:31.905Z&quot;,&quot;price_change_percentage_24h_in_currency&quot;:0.8652893269390515},{&quot;id&quot;:&quot;tether&quot;,&quot;symbol&quot;:&quot;usdt&quot;,&quot;name&quot;:&quot;Tether&quot;,&quot;image&quot;:&quot;https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661&quot;,&quot;current_price&quot;:0.999523,&quot;market_cap&quot;:184426105270,&quot;market_cap_rank&quot;:3,&quot;fully_diluted_valuation&quot;:189890321698,&quot;total_volume&quot;:85178765107,&quot;high_24h&quot;:0.999699,&quot;low_24h&quot;:0.999051,&quot;price_change_24h&quot;:0.00019831,&quot;price_change_percentage_24h&quot;:0.01984,&quot;market_cap_change_24h&quot;:-32707384.411743164,&quot;market_cap_change_percentage_24h&quot;:-0.01773,&quot;circulating_supply&quot;:184517936950.033,&quot;total_supply&quot;:189984874186.7962,&quot;max_supply&quot;:null,&quot;ath&quot;:1.32,&quot;ath_change_percentage&quot;:-24.45659,&quot;ath_date&quot;:&quot;2018-07-24T00:00:00.000Z&quot;,&quot;atl&quot;:0.572521,&quot;atl_change_percentage&quot;:74.58072,&quot;atl_date&quot;:&quot;2015-03-02T00:00:00.000Z&quot;,&quot;roi&quot;:null,&quot;last_updated&quot;:&quot;2026-02-10T02:47:24.759Z&quot;,&quot;price_change_percentage_24h_in_currency&quot;:0.01984446238529774},{&quot;id&quot;:&quot;ripple&quot;,&quot;symbol&quot;:&quot;xrp&quot;,&quot;name&quot;:&quot;XRP&quot;,&quot;image&quot;:&quot;https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442&quot;,&quot;current_price&quot;:1.44,&quot;market_cap&quot;:87999740782,&quot;market_cap_rank&quot;:4,&quot;fully_diluted_valuation&quot;:144437053463,&quot;total_volume&quot;:3399126720,&quot;high_24h&quot;:1.46,&quot;low_24h&quot;:1.38,&quot;price_change_24h&quot;:0.0006832,&quot;price_change_percentage_24h&quot;:0.04731,&quot;market_cap_change_24h&quot;:-89982514.37387085,&quot;market_cap_change_percentage_24h&quot;:-0.10215,&quot;circulating_supply&quot;:60917315351.0,&quot;total_supply&quot;:99985721048.0,&quot;max_supply&quot;:100000000000.0,&quot;ath&quot;:3.65,&quot;ath_change_percentage&quot;:-60.37884,&quot;ath_date&quot;:&quot;2025-07-18T03:40:53.808Z&quot;,&quot;atl&quot;:0.00268621,&quot;atl_change_percentage&quot;:53683.55354,&quot;atl_date&quot;:&quot;2014-05-22T00:00:00.000Z&quot;,&quot;roi&quot;:null,&quot;last_updated&quot;:&quot;2026-02-10T02:47:29.588Z&quot;,&quot;price_change_percentage_24h_in_currency&quot;:0.04731114165989405},{&quot;id&quot;:&quot;binancecoin&quot;,&quot;symbol&quot;:&quot;bnb&quot;,&quot;name&quot;:&quot;BNB&quot;,&quot;image&quot;:&quot;https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970&quot;,&quot;current_price&quot;:637.52,&quot;market_cap&quot;:86911780897,&quot;market_cap_rank&quot;:5,&quot;fully_diluted_valuation&quot;:86911779999,&quot;total_volume&quot;:1202468805,&quot;high_24h&quot;:644.68,&quot;low_24h&quot;:616.74,&quot;price_change_24h&quot;:-5.15214676248695,&quot;price_change_percentage_24h&quot;:-0.80168,&quot;market_cap_change_24h&quot;:-677290874.1766205,&quot;market_cap_change_percentage_24h&quot;:-0.77326,&quot;circulating_supply&quot;:136359556.42,&quot;total_supply&quot;:136359555.01,&quot;max_supply&quot;:200000000.0,&quot;ath&quot;:1369.99,&quot;ath_change_percentage&quot;:-53.46565,&quot;ath_date&quot;:&quot;2025-10-13T08:41:24.131Z&quot;,&quot;atl&quot;:0.0398177,&quot;atl_change_percentage&quot;:1600988.86289,&quot;atl_date&quot;:&quot;2017-10-19T00:00:00.000Z&quot;,&quot;roi&quot;:null,&quot;last_updated&quot;:&quot;2026-02-10T02:47:31.597Z&quot;,&quot;price_change_percentage_24h_in_currency&quot;:-0.8016798491309649},{&quot;id&quot;:&quot;usd-coin&quot;,&quot;symbol&quot;:&quot;usdc&quot;,&quot;name&quot;:&quot;USDC&quot;,&quot;image&quot;:&quot;https://coin-images.coingecko.com/coins/images/6319/large/USDC.png?1769615602&quot;,&quot;current_price&quot;:0.999833,&quot;market_cap&quot;:73030301612,&quot;market_cap_rank&quot;:6,&quot;fully_diluted_valuation&quot;:73042487090,&quot;total_volume&quot;:8878153386,&quot;high_24h&quot;:0.999941,&quot;low_24h&quot;:0.999606,&quot;price_change_24h&quot;:4.193e-05,&quot;price_change_percentage_24h&quot;:0.00419,&quot;market_cap_change_24h&quot;:149733846,&quot;market_cap_change_percentage_24h&quot;:0.20545,&quot;circulating_supply&quot;:73044421592.33458,&quot;total_supply&quot;:73056609426.73755,&quot;max_supply&quot;:null,&quot;ath&quot;:1.17,&quot;ath_change_percentage&quot;:-14.74253,&quot;ath_date&quot;:&quot;2019-05-08T00:40:28.300Z&quot;,&quot;atl&quot;:0.877647,&quot;atl_change_percentage&quot;:13.92051,&quot;atl_date&quot;:&quot;2023-03-11T08:02:13.981Z&quot;,&quot;roi&quot;:null,&quot;last_updated&quot;:&quot;2026-02-10T02:47:24.730Z&quot;,&quot;price_change_percentage_24h_in_currency&quot;:0.004193812644915911},{&quot;id&quot;:&quot;solana&quot;,&quot;symbol&quot;:&quot;sol&quot;,&quot;name&quot;:&quot;Solana&quot;,&quot;image&quot;:&quot;https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756&quot;,&quot;current_price&quot;:86.5,&quot;market_cap&quot;:49092712470,&quot;market_cap_rank&quot;:7,&quot;fully_diluted_valuation&quot;:53642659070,&quot;total_volume&quot;:4187194622,&quot;high_24h&quot;:88.27,&quot;low_24h&quot;:82.99,&quot;price_change_24h&quot;:-0.6229499269941243,&quot;price_change_percentage_24h&quot;:-0.715,&quot;market_cap_change_24h&quot;:-400521852.26511383,&quot;market_cap_change_percentage_24h&quot;:-0.80925,&quot;circulating_supply&quot;:567524465.2172211,&quot;total_supply&quot;:620123025.8080505,&quot;max_supply&quot;:null,&quot;ath&quot;:293.31,&quot;ath_change_percentage&quot;:-70.50828,&quot;ath_date&quot;:&quot;2025-01-19T11:15:27.957Z&quot;,&quot;atl&quot;:0.500801,&quot;atl_change_percentage&quot;:17172.8692,&quot;atl_date&quot;:&quot;2020-05-11T19:35:23.449Z&quot;,&quot;roi&quot;:null,&quot;last_updated&quot;:&quot;2026-02-10T02:47:24.490Z&quot;,&quot;price_change_percentage_24h_in_currency&quot;:-0.7150021228357408},{&quot;id&quot;:&quot;tron&quot;,&quot;symbol&quot;:&quot;trx&quot;,&quot;name&quot;:&quot;TRON&quot;,&quot;ima</pre></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td colspan="7">no assets</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <p class="muted">no renderable charts</p>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

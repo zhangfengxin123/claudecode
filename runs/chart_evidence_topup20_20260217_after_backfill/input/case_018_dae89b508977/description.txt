@@ -1,0 +1,1 @@
+analyze what are the recurring billings of this credit card account's activity, because we need to switch those recurring purchases to another credit card.

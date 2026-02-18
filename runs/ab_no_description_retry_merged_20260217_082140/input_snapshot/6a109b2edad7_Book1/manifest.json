@@ -1,0 +1,25 @@
+{
+  "case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+  "title": "Book1",
+  "source_cache_manifest": "2026-02-17T14:04:22Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6a109b2edad7_Book1/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_retry_merged_20260217_082140/input_snapshot/6a109b2edad7_Book1/description.txt",
+      "ok": true
+    },
+    {
+      "name": "Book1.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6a109b2edad7_Book1/Book1.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_retry_merged_20260217_082140/input_snapshot/6a109b2edad7_Book1/Book1.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

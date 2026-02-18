@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AB 中文全量对照总览</title>
+  <style>
+    :root {
+      --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280;
+      --a-bg:#e0f2fe; --a-text:#075985; --b-bg:#ffedd5; --b-text:#9a3412;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:20px; background:var(--bg); color:var(--text); font-family:Arial,-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif; }
+    .container { max-width:1400px; margin:0 auto; }
+    .header { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:14px; }
+    h1 { margin:0 0 8px; font-size:28px; }
+    .muted { color:var(--muted); }
+    .case-card { background:var(--card); border:1px solid var(--line); border-radius:12px; margin-bottom:14px; overflow:hidden; }
+    .case-card > summary { cursor:pointer; list-style:none; padding:14px 16px; display:flex; gap:12px; align-items:center; border-bottom:1px solid var(--line); }
+    .case-card > summary::-webkit-details-marker { display:none; }
+    .num { font-weight:700; color:#2563eb; min-width:42px; }
+    .title { font-weight:700; flex:1; }
+    .meta { color:var(--muted); font-size:13px; }
+    .case-body { padding:14px; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; font-size:13px; }
+    th { width:220px; background:#f3f4f6; }
+    code { background:#f3f4f6; padding:2px 6px; border-radius:6px; }
+    a { color:#2563eb; text-decoration:none; }
+    .io-grid { margin:12px 0; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .io-grid section { border:1px solid var(--line); border-radius:10px; padding:10px; background:#fff; }
+    .io-grid h4 { margin:0 0 8px; }
+    ul { margin:8px 0 0 18px; }
+    .compare-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .pane { border:1px solid var(--line); border-radius:10px; padding:10px; background:#fff; }
+    .pane-title { font-size:12px; font-weight:700; display:inline-block; border-radius:999px; padding:3px 10px; margin-bottom:8px; }
+    .tag-a { background:var(--a-bg); color:var(--a-text); }
+    .tag-b { background:var(--b-bg); color:var(--b-text); }
+    iframe { width:100%; height:980px; border:1px solid var(--line); border-radius:8px; background:#fff; }
+    .empty { min-height:120px; display:flex; align-items:center; justify-content:center; border:1px dashed var(--line); color:var(--muted); border-radius:8px; }
+    @media (max-width:1200px) {
+      .compare-grid, .io-grid { grid-template-columns:1fr; }
+      iframe { height:760px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="header">
+      <h1>AB 中文全量对照总览（有 description vs 无 description）</h1>
+      <div class="muted">生成时间：2026-02-17 19:36:11 ｜ 样本数：11 ｜ 基于已有结果离线生成（不重跑）</div>
+      <div class="muted">入口索引：<code>/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_retry_merged_20260217_082241/index.html</code></div>
+    </section>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#01</span>
+        <span class='title'>CAP Analysis</span>
+        <span class='meta'>charts 14 / 14</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_070432/cases/case_001_ae3bf09e493f/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_070432/cases/case_001_ae3bf09e493f/items/case_ab_001_ae3bf09e493f_vs_bffd9ee5ebab.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_070432/cases/case_001_ae3bf09e493f/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_070432/cases/case_001_ae3bf09e493f/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>description.txt</li><li>CAP 2023-2025.xlsx</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>执行摘要</li><li>数据概览</li><li>记录数量与成本对比</li><li>CAP 类型分析</li><li>7M 分析方法对比</li><li>时间效率分析</li><li>按月趋势分析</li><li>综合仪表板</li><li>高成本项目分析</li><li>客户分析</li><li>供应商分析</li><li>改进建议</li><li>结论</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>CAP 2023-2025.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Overview and Data Summary</li><li>CAP Type Analysis</li><li>Temporal Trends and Patterns</li><li>Supplier Performance Analysis</li><li>Customer Analysis</li><li>Root Cause Analysis</li><li>Process and Scope Analysis</li><li>Closure Performance Analysis</li><li>Cost Analysis and Trends</li><li>Strategic Recommendations</li><li>Conclusion</li><li>Appendix: Data Dictionary</li><li>Methodology</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_070432/cases/case_001_ae3bf09e493f/items/report_full_A_zh.html' title='A 1'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_070432/cases/case_001_ae3bf09e493f/items/report_full_B_zh.html' title='B 1'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#02</span>
+        <span class='title'>2024 vs 2025 CAP Review report</span>
+        <span class='meta'>charts 11 / 21</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_081336/cases/case_001_64914baf5ff5/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_081336/cases/case_001_64914baf5ff5/items/case_ab_001_64914baf5ff5_vs_b3eb0cd22e67.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_081336/cases/case_001_64914baf5ff5/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_081336/cases/case_001_64914baf5ff5/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>description.txt</li><li>2025 CAP overview.xlsx</li><li>SHA CHRONO_CAP.xlsx</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>数据流程概览</li><li>执行摘要</li><li>CAP数量趋势分析</li><li>成本分析</li><li>部门对比分析</li><li>CAP类型分析</li><li>流程分析</li><li>成本结构分析</li><li>高成本CAP案例研究</li><li>CAP关闭率分析</li><li>关键客户分析</li><li>结论与建议</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>2025 CAP overview.xlsx</li><li>SHA CHRONO_CAP.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>CAP Overview and Data Scope</li><li>CAP Type Distribution Analysis</li><li>7M Root Cause Analysis</li><li>Temporal Trends and Patterns</li><li>Cost Analysis and Financial Impact</li><li>Process and Departmental Analysis</li><li>Issuer and Customer Analysis</li><li>Performance Metrics and Closure Analysis</li><li>7M Category Trends Over Time</li><li>2025 CAP Analysis</li><li>CAP Process Flow</li><li>Recommendations and Action Items</li><li>Conclusion</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_081336/cases/case_001_64914baf5ff5/items/report_full_A_zh.html' title='A 2'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_081336/cases/case_001_64914baf5ff5/items/report_full_B_zh.html' title='B 2'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#03</span>
+        <span class='title'>id市场投放效果与转化数据分析</span>
+        <span class='meta'>charts 10 / 12</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_001_b93dae71bcf0/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_001_b93dae71bcf0/items/case_ab_001_b93dae71bcf0_vs_7ca268dd7c70.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_001_b93dae71bcf0/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_001_b93dae71bcf0/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>id市场广告投放与转化数据.xlsx</li><li>description.txt</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>执行摘要</li><li>一、2026年目标达成情况分析</li><li>二、投放效果时间趋势分析</li><li>三、成本效益深度分析</li><li>四、订单类型与产品表现</li><li>五、指标相关性分析</li><li>六、近一周优化重点</li><li>七、GGads分系列调控计划</li><li>八、GGads分广告组调控计划</li><li>九、综合优化路线图</li><li>十、风险与应对</li><li>十一、总结与建议</li><li>附录：数据说明</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>id市场广告投放与转化数据.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Campaign Overview</li><li>Cost Analysis and Efficiency</li><li>Return on Investment Analysis</li><li>Conversion Performance</li><li>Product Category Breakdown</li><li>Temporal Analysis</li><li>Correlation Analysis</li><li>Strategic Recommendations</li><li>Methodology and Data Quality</li><li>Conclusion</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_001_b93dae71bcf0/items/report_full_A_zh.html' title='A 3'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_001_b93dae71bcf0/items/report_full_B_zh.html' title='B 3'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#04</span>
+        <span class='title'>月卡改价实验数据分析</span>
+        <span class='meta'>charts 7 / 7</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_002_ca9493d910dd/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_002_ca9493d910dd/items/case_ab_001_ca9493d910dd_vs_662522ed9fd8.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_002_ca9493d910dd/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_002_ca9493d910dd/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>月卡改价实验结果-202601.xlsx</li><li>description.txt</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>执行摘要</li><li>实验概况</li><li>核心指标对比</li><li>实验预期验证</li><li>价格弹性分析</li><li>蚕食效应分析</li><li>收入影响分析</li><li>业务建议</li><li>局限性与后续研究</li><li>附录</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>月卡改价实验结果-202601.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Experiment Overview</li><li>Revenue Analysis</li><li>Payment Rate Analysis</li><li>ARPU and ARPPU Analysis</li><li>Subscription Type Distribution</li><li>Performance Uplift Analysis</li><li>Statistical Significance and Limitations</li><li>Strategic Recommendations</li><li>Conclusion</li><li>Appendix: Data Dictionary</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_002_ca9493d910dd/items/report_full_A_zh.html' title='A 4'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_002_ca9493d910dd/items/report_full_B_zh.html' title='B 4'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#05</span>
+        <span class='title'>Book1</span>
+        <span class='meta'>charts 7 / 8</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_003_6a109b2edad7/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_003_6a109b2edad7/items/case_ab_001_6a109b2edad7_vs_e49f52c3c5b2.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_003_6a109b2edad7/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_003_6a109b2edad7/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>description.txt</li><li>Book1.xlsx</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>Analysis Methodology Overview</li><li>Historical Performance Analysis</li><li>Product Performance Analysis</li><li>Growth Rate Analysis</li><li>Forecasting Methodology</li><li>2026 Sales Forecast</li><li>Key Insights and Strategic Recommendations</li><li>Forecast Summary Table</li><li>Conclusion</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>Book1.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Overview of Sales Performance</li><li>Discount Strategy Analysis</li><li>Return Rate Analysis</li><li>Items Sold vs Revenue Correlation</li><li>Price Range Analysis</li><li>Tax Rate Distribution</li><li>Advanced Statistical Analysis</li><li>Recommendations</li><li>Conclusion</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_003_6a109b2edad7/items/report_full_A_zh.html' title='A 5'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_003_6a109b2edad7/items/report_full_B_zh.html' title='B 5'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#06</span>
+        <span class='title'>FEDFUNDS</span>
+        <span class='meta'>charts 6 / 8</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_004_9f9aa3b895db/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_004_9f9aa3b895db/items/case_ab_001_9f9aa3b895db_vs_524602cbd53c.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_004_9f9aa3b895db/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_004_9f9aa3b895db/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/524602cbd53ccb7b9e7b30a4a7dfc7743f288f168ef3cdecaa024f398d0a54d9' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>NASDAQCOM.xlsx</li><li>description.txt</li><li>FEDFUNDS.csv</li><li>IR.csv</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Data Overview and Methodology</li><li>Federal Funds Rate Dynamics</li><li>NASDAQ Market Performance Analysis</li><li>Correlation Analysis</li><li>Interest Rate Level vs Market Returns</li><li>Import Price Index Analysis</li><li>Implications for Investors and Policymakers</li><li>Limitations and Considerations</li><li>Conclusion</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>NASDAQCOM.xlsx</li><li>FEDFUNDS.csv</li><li>IR.csv</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Data Overview</li><li>Federal Funds Rate Analysis</li><li>Inflation Rate Analysis</li><li>NASDAQ Composite Index Performance</li><li>Correlation Analysis</li><li>Market Implications</li><li>Annual Summary</li><li>Conclusion</li><li>Data Files</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_004_9f9aa3b895db/items/report_full_A_zh.html' title='A 6'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_004_9f9aa3b895db/items/report_full_B_zh.html' title='B 6'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#07</span>
+        <span class='title'>反向调价实验数据分析</span>
+        <span class='meta'>charts 6 / 9</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_005_1b89e7d1ffb4/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_005_1b89e7d1ffb4/items/case_ab_001_1b89e7d1ffb4_vs_8d66748ee47d.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_005_1b89e7d1ffb4/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_005_1b89e7d1ffb4/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>description.txt</li><li>反向调价实验结果-202601.xlsx</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>执行摘要</li><li>1. 实验设计与背景</li><li>2. 核心指标分析</li><li>3. 套餐表现与蚕食效应分析</li><li>4. 综合对比与决策建议</li><li>5. 附录：数据摘要</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>反向调价实验结果-202601.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>执行摘要</li><li>实验概况</li><li>规模指标分析</li><li>收入指标分析</li><li>转化率分析</li><li>付费类型分布</li><li>预测分析：规模效应评估</li><li>综合评估与建议</li><li>结论</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_005_1b89e7d1ffb4/items/report_full_A_zh.html' title='A 7'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_005_1b89e7d1ffb4/items/report_full_B_zh.html' title='B 7'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#08</span>
+        <span class='title'>KA品牌下探数据汇总</span>
+        <span class='meta'>charts 6 / 10</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_006_4bc65ee64081/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_006_4bc65ee64081/items/case_ab_001_4bc65ee64081_vs_fd1856ce887a.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_006_4bc65ee64081/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_006_4bc65ee64081/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>description.txt</li><li>KA品牌下探数据汇总.xlsx</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>执行摘要</li><li>数据概览</li><li>GMV排名分析</li><li>广告投放分析</li><li>广告与GMV关系分析</li><li>CPC广告贡献分析</li><li>多维度综合表现对比</li><li>客单价与订单量关系分析</li><li>月环比变化分析</li><li>关键发现与建议</li><li>附录：数据说明</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>KA品牌下探数据汇总.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Market Overview</li><li>GMV Analysis &amp; Market Share</li><li>Advertising Performance Analysis</li><li>Operational Performance Analysis</li><li>Market Conversion Funnel</li><li>Strategic Recommendations</li><li>Conclusion</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_006_4bc65ee64081/items/report_full_A_zh.html' title='A 8'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_006_4bc65ee64081/items/report_full_B_zh.html' title='B 8'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#09</span>
+        <span class='title'>陕西能源职业技术学院招生就业专业排序</span>
+        <span class='meta'>charts 6 / 10</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_080506/cases/case_001_f5171f88125c/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_080506/cases/case_001_f5171f88125c/items/case_ab_001_f5171f88125c_vs_b02c5dc59d0a.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_080506/cases/case_001_f5171f88125c/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_080506/cases/case_001_f5171f88125c/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>description.txt</li><li>26年招生就业数据（高考单招单列） (1).xlsx</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>执行摘要</li><li>1. 数据概况</li><li>3. 综合排名分析</li><li>5. 深入洞察分析</li><li>6. 关键指标统计</li><li>8. 结论与建议</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>26年招生就业数据（高考单招单列） (1).xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>数据概览</li><li>2025年招生分析</li><li>就业率分析</li><li>三年招生趋势分析</li><li>2026年招生计划建议</li><li>关键洞察与建议</li><li>总结</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_080506/cases/case_001_f5171f88125c/items/report_full_A_zh.html' title='A 9'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_080506/cases/case_001_f5171f88125c/items/report_full_B_zh.html' title='B 9'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#10</span>
+        <span class='title'>年卡改价实验数据分析</span>
+        <span class='meta'>charts 5 / 6</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_008_a77d543b4e14/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_008_a77d543b4e14/items/case_ab_001_a77d543b4e14_vs_0e441b689a78.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_008_a77d543b4e14/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_008_a77d543b4e14/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>年卡改价实验结果-202601.xlsx</li><li>description.txt</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>实验设计概述</li><li>核心指标分析</li><li>蚕食效应深度分析</li><li>日度趋势分析</li><li>收入模拟与优化建议</li><li>结论</li><li>附录</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>年卡改价实验结果-202601.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>执行摘要</li><li>实验设计概览</li><li>收入表现分析</li><li>付费转化分析</li><li>订阅类型分布分析</li><li>用户活跃与付费行为</li><li>综合性能评估</li><li>实验结论与建议</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_008_a77d543b4e14/items/report_full_A_zh.html' title='A 10'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_008_a77d543b4e14/items/report_full_B_zh.html' title='B 10'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+    <details class='case-card' open>
+      <summary>
+        <span class='num'>#11</span>
+        <span class='title'>SSCOM L02 AnalyticsCase_Meyer</span>
+        <span class='meta'>charts 5 / 12</span>
+      </summary>
+      <div class='case-body'>
+        <div class='stats'>
+          <table>
+            <tr><th>template_case_id</th><td><code>e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b</code></td></tr>
+            <tr><th>rerun_case_id</th><td><code>4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c</code></td></tr>
+            <tr><th>description_removed_ok</th><td>True</td></tr>
+            <tr><th>links</th><td><a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_009_e79c8f00ffa4/items/report_full_bundle.html' target='_blank'>总页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_009_e79c8f00ffa4/items/case_ab_001_e79c8f00ffa4_vs_4bd0c69269fd.html' target='_blank'>图表对照页</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_009_e79c8f00ffa4/items/report_full_A_capture.html' target='_blank'>A原文抓取</a> | <a href='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_009_e79c8f00ffa4/items/report_full_B_capture.html' target='_blank'>B原文抓取</a> | <a href='https://pardusai.org/view/e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b' target='_blank'>A原站</a> | <a href='https://pardusai.org/view/4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c' target='_blank'>B原站</a></td></tr>
+          </table>
+        </div>
+        <div class='io-grid'>
+          <section>
+            <h4>A 输入（含 description）</h4>
+            <ul><li>description.txt</li><li>SSCOM L02 AnalyticsCase_Meyer.xlsx</li></ul>
+            <h4>A 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Current Situation Analysis</li><li>Network Expansion Analysis</li><li>Lead Time Optimization Analysis</li><li>Strategic Recommendations</li><li>Financial Implications</li><li>Risk Assessment</li><li>Implementation Roadmap</li><li>Success Metrics and KPIs</li><li>Conclusion</li><li>Appendix: Data Summary</li></ul>
+          </section>
+          <section>
+            <h4>B 输入（去 description）</h4>
+            <ul><li>SSCOM L02 AnalyticsCase_Meyer.xlsx</li></ul>
+            <h4>B 章节（H2）</h4>
+            <ul><li>Executive Summary</li><li>Data Overview and Methodology</li><li>Temporal Analysis: Monthly and Quarterly Trends</li><li>Day-of-Week Patterns</li><li>Geographic Analysis: City Performance</li><li>Monthly Heatmap: City-Level Seasonal Patterns</li><li>Geographic Distance Analysis</li><li>Strategic Recommendations</li><li>Conclusion</li></ul>
+          </section>
+        </div>
+        <div class='compare-grid'>
+          <section class='pane'>
+            <div class='pane-title tag-a'>A（含 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_009_e79c8f00ffa4/items/report_full_A_zh.html' title='A 11'></iframe>
+          </section>
+          <section class='pane'>
+            <div class='pane-title tag-b'>B（去 description）中文报告</div>
+            <iframe loading='lazy' src='file:///Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_071524/cases/case_009_e79c8f00ffa4/items/report_full_B_zh.html' title='B 11'></iframe>
+          </section>
+        </div>
+      </div>
+    </details>
+    
+  </div>
+</body>
+</html>

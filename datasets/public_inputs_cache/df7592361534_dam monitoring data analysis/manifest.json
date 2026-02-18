@@ -1,0 +1,20 @@
+{
+  "case_id": "df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c",
+  "title_hint": "dam monitoring data analysis",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "内观数据_总汇总.xlsx",
+      "status": 200,
+      "size_bytes": 6799945,
+      "source_url": "https://pardusai.org/v1/api/public/project/df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c/files/%E5%86%85%E8%A7%82%E6%95%B0%E6%8D%AE_%E6%80%BB%E6%B1%87%E6%80%BB.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/df7592361534_dam monitoring data analysis/内观数据_总汇总.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:36:42Z"
+}

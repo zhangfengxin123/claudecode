@@ -1,0 +1,2543 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"高校专业综合实力评估与排名分析报告\"\ndescription: \"基于招生就业数据的专业综合评价建模与排名分析\"\nauthor: \"Pardus Agent\"\ndate: \"2025-01-13\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告对高校50个专业的招生与就业数据进行了深入分析，通过建立多维度评价模型，基于就业率、一志愿率、就业稳定性、发展趋势和招生规模等五大核心指标，对专业进行了综合排序。研究发现：",
+            "type": "text"
+          },
+          {
+            "content": "医学技术学院",
+            "type": "bold"
+          },
+          {
+            "content": "在综合表现上最为突出，",
+            "type": "text"
+          },
+          {
+            "content": "大数据与会计",
+            "type": "bold"
+          },
+          {
+            "content": "、",
+            "type": "text"
+          },
+          {
+            "content": "医学影像技术",
+            "type": "bold"
+          },
+          {
+            "content": "和",
+            "type": "text"
+          },
+          {
+            "content": "机电一体化技术",
+            "type": "bold"
+          },
+          {
+            "content": "位列专业综合排名前三。报告为专业设置优化和招生计划制定提供了数据支撑。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "1. 数据概况",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "1.1 数据来源与范围",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本分析基于2023-2025年三年招生与就业数据，涵盖：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "9个学院"
+              },
+              {
+                "Text": "，共"
+              },
+              {
+                "Text": "50个专业"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "招生数据：单招录取、高考录取、一志愿情况"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "就业数据：初次就业率、年底就业率"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "计划数据：拟列计划、拟列单招"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "1.2 学院分布",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "----------",
+          "------------"
+        ],
+        "headers": [
+          "学院",
+          "专业数量",
+          "总招生规模"
+        ],
+        "rows": [
+          [
+            "信息商务学院",
+            "9",
+            "466.3"
+          ],
+          [
+            "能源化工学院",
+            "8",
+            "844.7"
+          ],
+          [
+            "建筑测绘学院",
+            "8",
+            "325.8"
+          ],
+          [
+            "新型能源学院",
+            "6",
+            "550.7"
+          ],
+          [
+            "医学康养学院",
+            "5",
+            "650.0"
+          ],
+          [
+            "智能机电学院",
+            "5",
+            "942.0"
+          ],
+          [
+            "医学技术学院",
+            "4",
+            "874.0"
+          ],
+          [
+            "医学护理学院",
+            "4",
+            "852.8"
+          ],
+          [
+            "人文教育学院",
+            "1",
+            "47.3"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 分析方法论",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "2.1 评价指标体系",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "建立了包含5个维度的综合评价体系：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "2.1.1 核心指标定义",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "------",
+          "------"
+        ],
+        "headers": [
+          "指标",
+          "定义",
+          "权重"
+        ],
+        "rows": [
+          [
+            "就业率",
+            "三年平均年底就业率",
+            "35%"
+          ],
+          [
+            "一志愿率",
+            "2025年综合一志愿率（单招+高考）",
+            "25%"
+          ],
+          [
+            "稳定性",
+            "就业率标准差的反向指标（越稳定得分越高）",
+            "15%"
+          ],
+          [
+            "发展趋势",
+            "2025-2023年就业率增长率",
+            "15%"
+          ],
+          [
+            "招生规模",
+            "近三年招生总数平均（使用高斯归一化，中等规模最优）",
+            "10%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "2.1.2 数据标准化方法",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Min-Max标准化"
+              },
+              {
+                "Text": "：将所有指标归一化到"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "反向处理"
+              },
+              {
+                "Text": "：就业率稳定性采用 1-标准化（标准差越小越好）"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "高斯归一化"
+              },
+              {
+                "Text": "：招生规模使用高斯函数，均值设为100，标准差150，使中等规模专业获得较高得分"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "2.2 综合得分计算",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "综合得分 = 0.35 × 就业率 + 0.25 × 一志愿率 + 0.15 × 稳定性 + 0.15 × 趋势 + 0.10 × 招生规模\n",
+        "language": "latex",
+        "type": "codeBlock"
+      },
+      {
+        "content": "3. 综合排名分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "3.1 TOP 20专业排名",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./top20_ranking.json\n",
+        "htmlPath": "./top20_ranking.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "关键发现：",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "大数据与会计",
+            "type": "bold"
+          },
+          {
+            "content": "（信息商务学院）位列榜首",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "综合得分：0.783",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "就业率：96.90%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "一志愿率：130.77%（远超100%，显示极强吸引力）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "招生规模：47.7人（小规模精品专业）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "医学影像技术",
+            "type": "bold"
+          },
+          {
+            "content": "（医学技术学院）排名第二",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "综合得分：0.739",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "就业率：93.61%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "一志愿率：138.00%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "招生规模：224.3人（大规模专业）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "机电一体化技术",
+            "type": "bold"
+          },
+          {
+            "content": "（智能机电学院）位列第三",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "综合得分：0.728",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "就业率：96.11%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "一志愿率：152.58%（最高的一志愿率）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "招生规模：714.7人（全校最大规模）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "3.2 按招生规模分类排名",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "大规模专业（",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "text": "200人）",
+        "type": "blockquote"
+      },
+      {
+        "align": [
+          "------",
+          "------",
+          "------",
+          "----------"
+        ],
+        "headers": [
+          "排名",
+          "专业",
+          "学院",
+          "综合得分"
+        ],
+        "rows": [
+          [
+            "1",
+            "医学影像技术",
+            "医学技术学院",
+            "0.739"
+          ],
+          [
+            "2",
+            "机电一体化技术",
+            "智能机电学院",
+            "0.728"
+          ],
+          [
+            "3",
+            "口腔医学技术",
+            "医学技术学院",
+            "0.715"
+          ],
+          [
+            "4",
+            "康复治疗技术",
+            "医学康养学院",
+            "0.662"
+          ],
+          [
+            "5",
+            "医学检验技术",
+            "医学技术学院",
+            "0.656"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "中等规模专业（50-200人）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "------",
+          "------",
+          "------",
+          "----------"
+        ],
+        "headers": [
+          "排名",
+          "专业",
+          "学院",
+          "综合得分"
+        ],
+        "rows": [
+          [
+            "1",
+            "煤田地质勘查",
+            "能源化工学院",
+            "0.718"
+          ],
+          [
+            "2",
+            "医学美容技术",
+            "医学技术学院",
+            "0.713"
+          ],
+          [
+            "3",
+            "煤化工技术",
+            "能源化工学院",
+            "0.706"
+          ],
+          [
+            "4",
+            "新能源汽车技术",
+            "新型能源学院",
+            "0.703"
+          ],
+          [
+            "5",
+            "应用化工技术",
+            "能源化工学院",
+            "0.691"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "小规模专业（<50人）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "------",
+          "------",
+          "------",
+          "----------"
+        ],
+        "headers": [
+          "排名",
+          "专业",
+          "学院",
+          "综合得分"
+        ],
+        "rows": [
+          [
+            "1",
+            "大数据与会计",
+            "信息商务学院",
+            "0.783"
+          ],
+          [
+            "2",
+            "热能动力工程技术",
+            "新型能源学院",
+            "0.698"
+          ],
+          [
+            "3",
+            "电子商务",
+            "信息商务学院",
+            "0.691"
+          ],
+          [
+            "4",
+            "大数据与财务管理",
+            "信息商务学院",
+            "0.689"
+          ],
+          [
+            "5",
+            "建筑室内设计",
+            "建筑测绘学院",
+            "0.641"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "4. 学院对比分析",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./college_comparison.json\n",
+        "htmlPath": "./college_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "4.1 各学院平均得分排名",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "------",
+          "----------",
+          "----------",
+          "----------",
+          "----------"
+        ],
+        "headers": [
+          "排名",
+          "学院",
+          "平均得分",
+          "专业数量",
+          "最高排名",
+          "最低排名"
+        ],
+        "rows": [
+          [
+            "1",
+            "医学技术学院",
+            "0.706",
+            "4",
+            "2",
+            "17"
+          ],
+          [
+            "2",
+            "新型能源学院",
+            "0.676",
+            "3",
+            "8",
+            "22"
+          ],
+          [
+            "3",
+            "信息商务学院",
+            "0.672",
+            "7",
+            "1",
+            "28"
+          ],
+          [
+            "4",
+            "能源化工学院",
+            "0.666",
+            "6",
+            "4",
+            "26"
+          ],
+          [
+            "5",
+            "医学康养学院",
+            "0.643",
+            "3",
+            "13",
+            "31"
+          ],
+          [
+            "6",
+            "医学护理学院",
+            "0.616",
+            "1",
+            "27",
+            "27"
+          ],
+          [
+            "7",
+            "建筑测绘学院",
+            "0.613",
+            "5",
+            "19",
+            "32"
+          ],
+          [
+            "8",
+            "人文教育学院",
+            "0.589",
+            "1",
+            "30",
+            "30"
+          ],
+          [
+            "9",
+            "智能机电学院",
+            "0.582",
+            "3",
+            "3",
+            "33"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察：",
+            "type": "text"
+          },
+          {
+            "content": "",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "医学技术学院",
+            "type": "bold"
+          },
+          {
+            "content": "表现最佳，虽然只有4个专业，但整体质量均衡",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "智能机电学院",
+            "type": "bold"
+          },
+          {
+            "content": "拥有最高排名的专业（第3名），但因部分专业表现不佳，平均得分偏低",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "信息商务学院",
+            "type": "bold"
+          },
+          {
+            "content": "专业最多（9个），且拥有第1名专业，整体表现稳定",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "能源化工学院",
+            "type": "bold"
+          },
+          {
+            "content": "专业数量多且覆盖面广，是学校的传统优势领域",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "5. 深入洞察分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "5.1 就业率与一志愿率关系",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./employment_scatter.json\n",
+        "htmlPath": "./employment_scatter.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "关键发现：",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "弱相关性",
+            "type": "bold"
+          },
+          {
+            "content": "：就业率与一志愿率的相关系数仅为 -0.04，说明两者并不强相关",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "四个象限分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "右上象限",
+            "type": "bold"
+          },
+          {
+            "content": "：就业率高、一志愿率高（理想状态）- 如：机电一体化技术、医学影像技术",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "右下象限",
+            "type": "bold"
+          },
+          {
+            "content": "：就业率低、一志愿率高 - 需要关注就业质量",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "左上象限",
+            "type": "bold"
+          },
+          {
+            "content": "：就业率高、一志愿率低 - 需要加强宣传",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "左下象限",
+            "type": "bold"
+          },
+          {
+            "content": "：两者均低 - 需要全面改进",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "异常值发现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "部分专业一志愿率超过100%（如机电一体化技术152.58%），说明实际录取数量超过计划，专业热度极高",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "这可能反映了市场需求旺盛或专业特色突出",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "5.2 TOP 5专业综合能力分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./top5_radar.json\n",
+        "htmlPath": "./top5_radar.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "雷达图解读：",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "大数据与会计",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "优势：一志愿率极高、就业趋势向好",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "特点：小规模精品专业，各项指标均衡",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "医学影像技术",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "优势：招生规模适中、就业率稳定",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "特点：大规模专业的典型代表",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "机电一体化技术",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "优势：一志愿率最高（152.58%）、就业率优异",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "特点：大规模、高热度、高质量",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "煤田地质勘查",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "优势：就业率最高（97.92%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "特点：传统强势专业，就业保障强",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "口腔医学技术",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "优势：就业率高、一志愿率高",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "特点：医学技术类专业的优势体现",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "5.3 招生规模分布",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./scale_distribution.json\n",
+        "htmlPath": "./scale_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "分布特征：",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "小规模专业（<50人）"
+              },
+              {
+                "Text": "：24个，占比48%"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "中等规模专业（50-200人）"
+              },
+              {
+                "Text": "：17个，占比34%"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "大规模专业（200人）"
+              },
+              {
+                "Text": "：8个，占比16%"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "分析：",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "学校整体以小规模专业为主，有利于精细化培养"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "大规模专业集中在医学、机电等热门领域"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "招生规模呈现两极分化趋势"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "5.4 就业率增长趋势",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./employment_trend.json\n",
+        "htmlPath": "./employment_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "增长最快TOP 5专业：",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 智能医疗装备技术：+9.5%（基数较低，但增长迅猛）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 现代物流管理：+0.86%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 城市燃气工程技术：+0.73%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. 安全技术与管理：+0.68%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. 婴幼儿托育服务与管理：+0.65%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "趋势分析：",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "新兴技术领域"
+              },
+              {
+                "Text": "（如智能医疗）就业率增长最快"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "传统工科专业"
+              },
+              {
+                "Text": "（如城市燃气）表现稳健"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "服务类专业"
+              },
+              {
+                "Text": "（如托育服务）市场需求增长"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "6. 关键指标统计",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "6.1 综合得分分布",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "-----"
+        ],
+        "headers": [
+          "统计量",
+          "值"
+        ],
+        "rows": [
+          [
+            "平均分",
+            "0.651"
+          ],
+          [
+            "最低分",
+            "0.356"
+          ],
+          [
+            "最高分",
+            "0.783"
+          ],
+          [
+            "标准差",
+            "0.114"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "6.2 各学院就业率表现",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "------",
+          "------------",
+          "--------"
+        ],
+        "headers": [
+          "学院",
+          "平均就业率",
+          "标准差"
+        ],
+        "rows": [
+          [
+            "医学康养学院",
+            "96.93%",
+            "0.011"
+          ],
+          [
+            "医学护理学院",
+            "96.14%",
+            "0.008"
+          ],
+          [
+            "新型能源学院",
+            "97.70%",
+            "0.020"
+          ],
+          [
+            "医学技术学院",
+            "95.61%",
+            "0.022"
+          ],
+          [
+            "建筑测绘学院",
+            "96.14%",
+            "0.034"
+          ],
+          [
+            "信息商务学院",
+            "96.36%",
+            "0.034"
+          ],
+          [
+            "能源化工学院",
+            "96.64%",
+            "0.027"
+          ],
+          [
+            "智能机电学院",
+            "86.38%",
+            "0.156"
+          ],
+          [
+            "人文教育学院",
+            "97.85%",
+            "-"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "7. 数据流分析",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./data_flow.svg\n",
+        "language": "svg",
+        "svgPath": "./data_flow.svg",
+        "type": "svg"
+      },
+      {
+        "content": "数据流程说明：",
+        "type": "bold"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "数据采集",
+            "type": "bold"
+          },
+          {
+            "content": "：从Excel文件读取原始招生就业数据",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "数据清洗",
+            "type": "bold"
+          },
+          {
+            "content": "：处理缺失值、异常值，统一数据格式",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "特征工程",
+            "type": "bold"
+          },
+          {
+            "content": "：计算衍生指标（一志愿率、稳定性、趋势等）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "数据标准化",
+            "type": "bold"
+          },
+          {
+            "content": "：Min-Max归一化，使不同指标可比",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "模型计算",
+            "type": "bold"
+          },
+          {
+            "content": "：加权求和得到综合得分",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "6. ",
+            "type": "text"
+          },
+          {
+            "content": "排序分析",
+            "type": "bold"
+          },
+          {
+            "content": "：按综合得分进行排名",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "7. ",
+            "type": "text"
+          },
+          {
+            "content": "可视化展示",
+            "type": "bold"
+          },
+          {
+            "content": "：生成多种图表呈现分析结果",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "8. 结论与建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "8.1 主要结论",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "整体质量良好",
+            "type": "bold"
+          },
+          {
+            "content": "：33个有完整数据的专业中，平均综合得分0.651，就业率平均95.70%，表现优异",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "医学技术类专业突出",
+            "type": "bold"
+          },
+          {
+            "content": "：医学技术学院在所有学院中平均得分最高，其4个专业中有3个进入TOP 10",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "一志愿率与就业率不相关",
+            "type": "bold"
+          },
+          {
+            "content": "：两者相关系数为-0.04，说明考生选择不一定基于就业率，可能受专业兴趣、社会认知等因素影响",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "规模效应不显著",
+            "type": "bold"
+          },
+          {
+            "content": "：大规模专业并不一定优于小规模专业，各规模档次都有优秀代表",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "传统专业与新兴专业并存",
+            "type": "bold"
+          },
+          {
+            "content": "：既有煤田地质勘查等传统优势专业，也有智能医疗装备技术等新兴增长点",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "8.2 战略建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "8.2.1 专业建设建议",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "content": "优先发展类（TOP 10专业）：",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "大数据与会计"
+              },
+              {
+                "Text": "、"
+              },
+              {
+                "Text": "医学影像技术"
+              },
+              {
+                "Text": "、"
+              },
+              {
+                "Text": "机电一体化技术"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "建议：保持优势，扩大影响力，可作为学校名片"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "重点扶持类（排名11-20）：",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "热能动力工程技术"
+              },
+              {
+                "Text": "、"
+              },
+              {
+                "Text": "电子商务"
+              },
+              {
+                "Text": "、"
+              },
+              {
+                "Text": "医学美容技术"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "建议：分析短板，精准改进，争取进入TOP 10"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "优化调整类（排名21-33）：",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "建议：深入诊断问题，必要时进行专业转型或合并"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "8.2.2 招生策略建议",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "一志愿率提升",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "加强专业特色宣传",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "开展专业体验活动",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "邀请优秀毕业生分享",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "招生规模优化",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "小规模专业：考虑扩大规模或合并相似专业",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "大规模专业：确保教学质量，避免稀释资源",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "中等规模专业：保持现有规模，注重内涵建设",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "8.2.3 就业质量提升",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "就业率高但一志愿率低的专业",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "加强专业宣传和品牌建设",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "突出就业优势，提升社会认知度",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "就业率待提升的专业",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "加强校企合作",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "优化课程设置",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "提升实践能力培养",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "8.2.4 学院发展建议",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "医学技术学院",
+            "type": "bold"
+          },
+          {
+            "content": "：保持领先优势，打造标杆学院",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "信息商务学院",
+            "type": "bold"
+          },
+          {
+            "content": "：发挥专业数量多、覆盖面广的优势",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "能源化工学院",
+            "type": "bold"
+          },
+          {
+            "content": "：巩固传统优势，引入新技术方向",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "智能机电学院",
+            "type": "bold"
+          },
+          {
+            "content": "：提升弱势专业表现，实现均衡发展",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "8.3 研究局限",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "数据完整性",
+            "type": "bold"
+          },
+          {
+            "content": "：部分专业缺少三年完整就业数据，可能影响评估准确性",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "评价维度",
+            "type": "bold"
+          },
+          {
+            "content": "：未考虑专业设置与区域经济发展的匹配度",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "时间跨度",
+            "type": "bold"
+          },
+          {
+            "content": "：仅三年数据，难以反映长期趋势",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "指标权重",
+            "type": "bold"
+          },
+          {
+            "content": "：权重设置基于经验判断，可能需要进一步优化",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "8.4 未来研究方向",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 引入更多评价维度：师资力量、科研水平、社会声誉等",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 建立动态评估模型：实时跟踪专业表现变化",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 开展毕业生追踪调查：获取更详细的就业质量数据",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. 对比分析：与其他同类院校进行横向对比",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "报告编制",
+        "type": "bold"
+      },
+      {
+        "content": "数据日期",
+        "type": "bold"
+      },
+      {
+        "content": "分析周期",
+        "type": "bold"
+      },
+      {
+        "content": "模型版本",
+        "type": "bold"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

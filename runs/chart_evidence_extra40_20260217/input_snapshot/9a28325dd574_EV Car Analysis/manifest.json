@@ -1,0 +1,18 @@
+{
+  "case_id": "9a28325dd5748adb9b36a4ff78812bb926f5b613fdf3022bdf70ee5335c31f4b",
+  "title": "EV Car Analysis",
+  "source_cache_manifest": "2026-02-17T14:06:41Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "ev_vs_petrol_dataset_v3.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9a28325dd574_EV Car Analysis/ev_vs_petrol_dataset_v3.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/9a28325dd574_EV Car Analysis/ev_vs_petrol_dataset_v3.csv",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

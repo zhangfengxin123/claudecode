@@ -1,0 +1,1659 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"年卡改价实验效果分析报告\"\ndescription: \"深度解析年卡定价策略A/B测试实验结果，比较不同定价方案对收入、用户行为和付费转化率的影响\"\nauthor: \"Pardus Agent\"\ndate: \"2025-02-17\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "年卡改价实验效果分析报告",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告对年卡改价实验的A/B测试结果进行了全面分析。实验包含对照组（A组）和三个实验组（B1、B2、B3），总计85,322个账号。分析显示，",
+            "type": "text"
+          },
+          {
+            "content": "B1组表现最佳",
+            "type": "bold"
+          },
+          {
+            "content": "，在ARPU、ARPPU和总收入等关键指标上均领先其他组别，ARPU较对照组提升10.9%，ARPPU提升8.6%，总收入增长10.7%。实验结果表明，合理的定价调整能够显著提升单位用户价值和整体收入。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "实验设计概览",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "实验的样本量和分组设计是否具有统计学意义？",
+          "对照组和实验组在用户基数上是否存在差异？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "实验分组结构",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本次实验采用经典的A/B测试设计，将用户随机分配到四个组别：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组（对照组）",
+                "type": "bold"
+              },
+              {
+                "content": ": 27,529个账号，维持原有定价策略",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组（实验组1）",
+                "type": "bold"
+              },
+              {
+                "content": ": 27,460个账号，采用定价策略1",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组（实验组2）",
+                "type": "bold"
+              },
+              {
+                "content": ": 18,217个账号，采用定价策略2",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组（实验组3）",
+                "type": "bold"
+              },
+              {
+                "content": ": 18,116个账号，采用定价策略3",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "各组在账号数量、设备数量和活跃用户数等基础指标上保持相对平衡，确保实验结果的可比性。B1组与A组样本量相当，B2组和B3组样本量略小但仍然具有统计学意义。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./total_revenue_by_group.json",
+        "htmlPath": "./total_revenue_by_group.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "收入表现分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "B1组的收入优势是否具有统计显著性？",
+          "收入增长主要来自用户数量增加还是ARPU提升？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "总收入对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "从总收入维度来看，各实验组的表现呈现明显差异：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "--------",
+          "-------------",
+          "-------------"
+        ],
+        "headers": [
+          "实验组",
+          "总收入 元",
+          "相对A组变化"
+        ],
+        "rows": [
+          [
+            "A组",
+            "69,417",
+            "基准"
+          ],
+          [
+            "B1组",
+            "76,870",
+            "+10.7%"
+          ],
+          [
+            "B2组",
+            "48,564",
+            "-30.0%"
+          ],
+          [
+            "B3组",
+            "47,142",
+            "-32.1%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "核心发现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1组表现突出",
+                "type": "bold"
+              },
+              {
+                "content": "：收入达到76,870元，较A组增长7,453元（+10.7%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组和B3组收入下降：主要受样本量影响，其账号数较A组减少约33%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "考虑样本量因素，需要进一步分析单位用户收入指标",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "ARPU与ARPPU对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "为了排除样本量影响，我们对比单位用户收入指标：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./arpu_arppu_comparison.json",
+        "htmlPath": "./arpu_arppu_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPU（平均每活跃用户收入）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1组：5.61元（",
+                "type": "text"
+              },
+              {
+                "content": "最高",
+                "type": "bold"
+              },
+              {
+                "content": "）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组：5.35元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组：5.22元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "A组：5.06元（基准）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPPU（平均每付费用户收入）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1组：64.11元（",
+                "type": "text"
+              },
+              {
+                "content": "最高",
+                "type": "bold"
+              },
+              {
+                "content": "）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组：61.55元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "A组：59.03元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组：59.00元",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1组的ARPU较A组提升10.9%（0.55元），表明定价策略1有效提升了单位活跃用户价值",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组的ARPPU较A组提升8.6%（5.08元），说明付费用户的平均消费金额显著增加",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组ARPU提升5.7%，但ARPPU提升4.2%，表现次之",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组在两项指标上均略高于A组，但提升幅度较小",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "付费转化分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪个定价策略最能促进付费转化？",
+          "不同订阅类型的付费率变化趋势如何？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "总体付费率",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "各实验组的总体付费率（付费设备数/活跃设备数）：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "--------",
+          "--------",
+          "-------------"
+        ],
+        "headers": [
+          "实验组",
+          "付费率",
+          "相对A组变化"
+        ],
+        "rows": [
+          [
+            "A组",
+            "8.58%",
+            "基准"
+          ],
+          [
+            "B1组",
+            "8.75%",
+            "+0.17pp"
+          ],
+          [
+            "B3组",
+            "8.85%",
+            "+0.27pp"
+          ],
+          [
+            "B2组",
+            "8.70%",
+            "+0.12pp"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "值得注意的是，虽然B1组在收入指标上表现最佳，但B3组的付费率最高（8.85%），较A组提升0.27个百分点。这表明不同定价策略可能影响了用户的付费意愿，但付费率与收入的提升并非完全正相关。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "订阅类型付费率对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./payment_rate_comparison.json",
+        "htmlPath": "./payment_rate_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "深入分析不同订阅类型的付费率：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "连续包月付费率",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "A组：7.52%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组：7.37%（-0.15pp）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组：7.38%（-0.14pp）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组：7.84%（",
+                "type": "text"
+              },
+              {
+                "content": "+0.32pp",
+                "type": "bold"
+              },
+              {
+                "content": "）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "一年卡付费率",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1组：1.00%（",
+                "type": "text"
+              },
+              {
+                "content": "最高",
+                "type": "bold"
+              },
+              {
+                "content": "）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组：0.91%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "A组：0.63%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组：0.42%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "两年卡付费率",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B3组：0.133%（",
+                "type": "text"
+              },
+              {
+                "content": "最高",
+                "type": "bold"
+              },
+              {
+                "content": "）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "A组：0.044%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组：0.022%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组：0.015%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "关键发现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1组",
+                "type": "bold"
+              },
+              {
+                "content": "在一年卡付费率上表现突出，达到1.00%，较A组提升58%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组",
+                "type": "bold"
+              },
+              {
+                "content": "在连续包月和两年卡付费率上均领先，尤其是两年卡付费率是A组的3倍",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组的连续包月付费率略有下降，可能是因为部分用户转向了一年卡",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "两年卡虽然单价高，但付费率普遍较低，属于高价值低频产品",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "订阅类型分布分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "不同定价策略对用户订阅类型选择有何影响？",
+          "连续包月与长期卡的替代关系如何？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "订阅订单数量分布",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./subscription_type_distribution.json",
+        "htmlPath": "./subscription_type_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "从订单数量来看，连续包月仍是主要的订阅方式：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "----------",
+          "-----",
+          "------",
+          "------",
+          "------"
+        ],
+        "headers": [
+          "订阅类型",
+          "A组",
+          "B1组",
+          "B2组",
+          "B3组"
+        ],
+        "rows": [
+          [
+            "连续包月",
+            "863",
+            "872",
+            "580",
+            "629"
+          ],
+          [
+            "一年卡",
+            "73",
+            "115",
+            "68",
+            "34"
+          ],
+          [
+            "两年卡",
+            "5",
+            "2",
+            "2",
+            "11"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "洞察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "连续包月订单数在各组中占主导地位（约86-88%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组的一年卡订单数达到115个，较A组增长57.5%，说明定价策略1有效促进了一年卡转化",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组的两年卡订单数最多（11个），是A组的2.2倍，表明定价策略3可能更适合长期卡推广",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组的连续包月订单数略高于A组，但一年卡的大幅增长才是其收入增长的主要驱动力",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "用户活跃与付费行为",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "活跃用户与付费用户的转化漏斗是否健康？",
+          "各组的用户活跃度是否存在显著差异？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "活跃用户与付费用户对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./active_vs_paying_users.json",
+        "htmlPath": "./active_vs_paying_users.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "align": [
+          "--------",
+          "------------",
+          "------------",
+          "------------"
+        ],
+        "headers": [
+          "实验组",
+          "活跃设备数",
+          "付费设备数",
+          "付费转化率"
+        ],
+        "rows": [
+          [
+            "A组",
+            "13,709",
+            "1,176",
+            "8.58%"
+          ],
+          [
+            "B1组",
+            "13,697",
+            "1,199",
+            "8.75%"
+          ],
+          [
+            "B2组",
+            "9,074",
+            "789",
+            "8.70%"
+          ],
+          [
+            "B3组",
+            "9,032",
+            "799",
+            "8.85%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "观察",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "各组的活跃用户数与账号数量成正比，说明用户活跃度基本一致",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "付费转化率在各组间差异较小（8.58%-8.85%），表明定价调整对付费转化率影响有限",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组的付费转化率最高，但ARPU和ARPPU相对较低，可能是因为该组吸引了更多低价值付费用户",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "综合性能评估",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "如何平衡ARPU、ARPPU和付费率之间的关系？",
+          "哪个定价策略综合表现最优？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "ARPU与付费率关系",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./arpu_vs_payment_rate.json",
+        "htmlPath": "./arpu_vs_payment_rate.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "通过散点图分析ARPU与付费率的关系，可以得出以下结论：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "B1组",
+                "type": "bold"
+              },
+              {
+                "content": "：高ARPU（5.61）+ 中等付费率（8.75%）= 高收入表现",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组",
+                "type": "bold"
+              },
+              {
+                "content": "：中等ARPU（5.22）+ 高付费率（8.85%）= 收入表现中等",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "A组",
+                "type": "bold"
+              },
+              {
+                "content": "：低ARPU（5.06）+ 低付费率（8.58%）= 收入表现基准",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组",
+                "type": "bold"
+              },
+              {
+                "content": "：中等ARPU（5.35）+ 中等付费率（8.70%）= 收入表现中等偏上",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "权衡分析",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "提高ARPU比提高付费率对总收入的影响更大",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组成功实现了ARPU的显著提升，同时保持付费率不降，是最佳策略",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B3组通过提高付费率来弥补ARPU的不足，但效果不如B1组",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "实验结论与建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "核心发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "B1组定价策略最优",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "总收入增长10.7%（+7,453元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "ARPU提升10.9%（+0.55元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "ARPPU提升8.6%（+5.08元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "一年卡付费率提升58%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "收入增长驱动因素",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "主要驱动力：一年卡订单数增长57.5%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "次要驱动力：付费用户平均消费金额提升",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "付费转化率提升相对较小（+0.17pp）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "不同定价策略的影响",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B1组：促进一年卡转化，适合追求短期收入增长",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B2组：均衡策略，各项指标均有小幅提升",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B3组：促进长期卡转化，适合追求用户生命周期价值",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "业务建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "短期策略（3-6个月）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "全面推广B1组定价策略，预计可提升总收入10%以上",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "加强一年卡的营销推广，引导用户从连续包月转向一年卡",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "监控付费率变化，确保ARPU提升不会导致用户流失",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "中长期策略（6-12个月）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "对不同用户画像实施差异化定价策略",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "对高价值用户推广B3组策略，提升两年卡渗透率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "对中等价值用户推广B1组策略，提升一年卡转化率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "风险控制",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "持续监控用户流失率和续费率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "定期评估ARPU提升对用户满意度的长期影响",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "预留20%用户继续使用原定价，作为持续对照组",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "后续实验方向",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "细分人群测试",
+            "type": "bold"
+          },
+          {
+            "content": "：按用户活跃度、历史付费金额进行分层测试",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "定价区间优化",
+            "type": "bold"
+          },
+          {
+            "content": "：在B1组基础上微调价格，寻找最优定价点",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "组合策略测试",
+            "type": "bold"
+          },
+          {
+            "content": "：尝试连续包月+长期卡的组合定价",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "动态定价探索",
+            "type": "bold"
+          },
+          {
+            "content": "：基于用户行为数据的个性化定价",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "数据说明",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "本分析基于实验期间的实际数据，样本量充足（n=85,322账号）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "所有数据已清洗并保存在 ",
+                "type": "text"
+              },
+              {
+                "code": "./data/cleanedexperimentdata.csv",
+                "type": "inlineCode"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "详细数据字典和统计信息请参考 ",
+                "type": "text"
+              },
+              {
+                "code": "./data/summary.md",
+                "type": "inlineCode"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

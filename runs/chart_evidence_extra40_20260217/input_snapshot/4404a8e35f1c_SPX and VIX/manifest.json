@@ -1,0 +1,18 @@
+{
+  "case_id": "4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d",
+  "title": "SPX and VIX",
+  "source_cache_manifest": "2026-02-17T14:16:57Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "rtp_rossi_0126_web_final_feb.pdf",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4404a8e35f1c_SPX and VIX/rtp_rossi_0126_web_final_feb.pdf",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/4404a8e35f1c_SPX and VIX/rtp_rossi_0126_web_final_feb.pdf",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

@@ -1,0 +1,152 @@
+{
+  "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+  "title": "CAP Analysis",
+  "with_description": true,
+  "input_files": [
+    "description.txt",
+    "CAP 2023-2025.xlsx"
+  ],
+  "input_data_files": [
+    "CAP 2023-2025.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 14,
+  "assets": [
+    {
+      "name": "capa_count_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "CAPA 记录数量对比"
+    },
+    {
+      "name": "cost_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "成本对比"
+    },
+    {
+      "name": "cost_distribution.json",
+      "trace_types": [
+        "box",
+        "box"
+      ],
+      "trace_count": 2,
+      "title": "成本分布对比"
+    },
+    {
+      "name": "cap_type_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "CAP TYPE 分布对比"
+    },
+    {
+      "name": "seven_m_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "7M 分析方法分布对比"
+    },
+    {
+      "name": "closure_efficiency.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "封闭时间效率对比"
+    },
+    {
+      "name": "monthly_trend.json",
+      "trace_types": [
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "按月趋势"
+    },
+    {
+      "name": "capa_dashboard.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "CAPA 关键指标对比"
+    },
+    {
+      "name": "top_cost_2024.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2024年高成本项目 Top 10"
+    },
+    {
+      "name": "top_cost_2025.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2025年高成本项目 Top 10"
+    },
+    {
+      "name": "customer_2024.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2024年按客户统计 Top 10"
+    },
+    {
+      "name": "customer_2025.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2025年按客户统计 Top 10"
+    },
+    {
+      "name": "supplier_2024.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2024年按供应商统计 Top 10"
+    },
+    {
+      "name": "supplier_2025.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2025年按供应商统计 Top 10"
+    }
+  ],
+  "h2_sections": [
+    "执行摘要",
+    "数据概览",
+    "记录数量与成本对比",
+    "CAP 类型分析",
+    "7M 分析方法对比",
+    "时间效率分析",
+    "按月趋势分析",
+    "综合仪表板",
+    "高成本项目分析",
+    "客户分析",
+    "供应商分析",
+    "改进建议",
+    "结论"
+  ],
+  "first_paragraph": "本报告对 2024 年和 2025 年的 CAPA（Corrective and Preventive Actions，纠正和预防措施）数据进行了全面对比分析，旨在识别关键趋势、评估性能变化，并提供可行的改进建议。"
+}

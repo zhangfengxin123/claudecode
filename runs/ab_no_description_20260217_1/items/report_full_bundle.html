@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>AB Full Report Bundle</title>
+<style>
+  :root{--bg:#f6f8fc;--card:#fff;--line:#e5e7eb;--text:#111827;--muted:#6b7280;--a:#0ea5e9;--b:#f97316}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif}
+  .wrap{max-width:1280px;margin:0 auto;padding:20px}
+  h1{margin:0 0 8px;font-size:30px}
+  h2{margin:20px 0 10px;font-size:24px}
+  .muted{color:var(--muted)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;border-radius:999px;padding:2px 8px;margin-bottom:8px}
+  .tag-a{background:#e0f2fe;color:#075985}
+  .tag-b{background:#ffedd5;color:#9a3412}
+  .snap{width:100%;border:1px solid var(--line);border-radius:8px;background:#fff}
+  .links a{display:inline-block;margin-right:10px;margin-bottom:8px;text-decoration:none;color:#2563eb}
+  .pane{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px}
+  .pane h3{margin:4px 0 8px;font-size:16px}
+  .pane iframe{width:100%;height:1200px;border:1px solid var(--line);border-radius:8px;background:#fff}
+  .full-iframe{width:100%;height:1800px;border:1px solid var(--line);border-radius:8px;background:#fff}
+  .img-preview{width:100%;border:1px solid var(--line);border-radius:8px;background:#fff}
+  @media (max-width:1080px){.grid,.compare-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <h1>完整报告抓取包（A/B）</h1>
+  <p class='muted'>你要的“整体报告抓取 + 字体统一 + 中文译文”入口。先看原站完整长截图，再看可检索的抓取页和中文译文页。</p>
+
+  <div class='card'>
+    <h2>可点击入口</h2>
+    <div class='links'>
+      <a href='./report_full_A_capture.html' target='_blank'>A 完整报告抓取（原文）</a>
+      <a href='./report_full_B_capture.html' target='_blank'>B 完整报告抓取（原文）</a>
+      <a href='./report_full_B_zh.html' target='_blank'>B 中文译文（信达雅）</a>
+      <a href='https://pardusai.org/view/e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7' target='_blank'>A 原站页</a>
+      <a href='https://pardusai.org/view/0bbadf267cf4445355d79aab47636826cc511b7cca8411a83d1a7c5863fbe471' target='_blank'>B 原站页</a>
+    </div>
+  </div>
+
+  <div class='card'>
+    <h2>原站完整报告长截图（含全部图表）</h2>
+    <div class='grid'>
+      <section>
+        <span class='tag tag-a'>A（含 description）</span>
+        <img class='snap' src='./report_A_full_live.png' alt='A full live report screenshot'/>
+      </section>
+      <section>
+        <span class='tag tag-b'>B（去 description）</span>
+        <img class='snap' src='./report_B_full_live.png' alt='B full live report screenshot'/>
+      </section>
+    </div>
+  </div>
+
+  <div class='card'>
+    <h2>简体中文报告左右对比（必看）</h2>
+    <p class='muted'>上方链接用于查看原文；下面是你要的中文版本并排对照，左 A、右 B，可独立滚动查看全文。</p>
+    <div class='compare-grid'>
+      <section class='pane'>
+        <span class='tag tag-a'>A 简体中文版本</span>
+        <h3>含 description 的报告（中文原文）</h3>
+        <iframe src='./report_full_A_capture.html' title='A Chinese report'></iframe>
+      </section>
+      <section class='pane'>
+        <span class='tag tag-b'>B 简体中文版本</span>
+        <h3>去掉 description 后报告（中文译文）</h3>
+        <iframe src='./report_full_B_zh.html' title='B Chinese report'></iframe>
+      </section>
+    </div>
+  </div>
+
+  <div class='card'>
+    <h2>图表结果全量对照（图片+交互）</h2>
+    <p class='muted'>你强调要“图片也看全”，这里直接嵌入 A/B 图表对照页（含大量图表）。图上英文暂不翻译，报告英文已完成中文翻译。</p>
+    <div class='links'>
+      <a href='./case_ab_001_e226fa5aa55b_vs_0bbadf267cf4.html' target='_blank'>打开图表对照原页</a>
+      <a href='./case_ab_visual_preview_full.png' target='_blank'>打开图表对照全长大图</a>
+      <a href='./case_ab_visual_preview_top.png' target='_blank'>打开图表对照顶部预览</a>
+    </div>
+    <img class='img-preview' src='./case_ab_visual_preview_top.png' alt='A/B chart compare top preview'/>
+    <div style='height:10px'></div>
+    <iframe class='full-iframe' src='./case_ab_001_e226fa5aa55b_vs_0bbadf267cf4.html' title='A/B chart full compare'></iframe>
+  </div>
+</div>
+</body>
+</html>

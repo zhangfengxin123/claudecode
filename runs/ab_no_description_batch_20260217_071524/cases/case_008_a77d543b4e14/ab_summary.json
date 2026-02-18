@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-02-17T07:45:40Z",
+  "ab_case": {
+    "template_case_id": "a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+    "rerun_case_id": "0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702",
+    "title": "年卡改价实验数据分析 (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+    "inputs": [
+      "年卡改价实验结果-202601.xlsx",
+      "description.txt"
+    ],
+    "description_present": true,
+    "chart_assets_count": 5,
+    "trace_type_hist": {
+      "bar": 2,
+      "scatter": 11,
+      "scatterpolar": 4
+    },
+    "h2_sections": [
+      "实验设计概述",
+      "核心指标分析",
+      "蚕食效应深度分析",
+      "日度趋势分析",
+      "收入模拟与优化建议",
+      "结论",
+      "附录"
+    ],
+    "first_paragraph": "本报告分析了2026年1月23日至29日进行的年卡改价A/B测试实验结果，通过对比4个实验组（A控制组、B1最优价格组、B2激进降价组、B3反向涨价组）的核心指标，验证了定价模型的有效性，并量化了套餐间的蚕食效应。",
+    "assets": [
+      {
+        "name": "arpu_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c/assets/arpu_comparison.json",
+        "trace_types": [
+          "bar",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "ARPU对比"
+      },
+      {
+        "name": "expectation_validation.json",
+        "url": "https://pardusai.org/v1/api/public/project/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c/assets/expectation_validation.json",
+        "trace_types": [
+          "scatterpolar",
+          "scatterpolar",
+          "scatterpolar",
+          "scatterpolar"
+        ],
+        "trace_count": 4,
+        "title": "预期验证雷达图"
+      },
+      {
+        "name": "cannibalization_effect.json",
+        "url": "https://pardusai.org/v1/api/public/project/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c/assets/cannibalization_effect.json",
+        "trace_types": [
+          "bar",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "蚕食效应分析"
+      },
+      {
+        "name": "daily_arpu_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c/assets/daily_arpu_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 4,
+        "title": "日度ARPU趋势"
+      },
+      {
+        "name": "daily_payrate_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c/assets/daily_payrate_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 4,
+        "title": "日度付费率趋势"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702",
+    "inputs": [
+      "年卡改价实验结果-202601.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 6,
+    "trace_type_hist": {
+      "bar": 12,
+      "scatter": 4
+    },
+    "h2_sections": [
+      "执行摘要",
+      "实验设计概览",
+      "收入表现分析",
+      "付费转化分析",
+      "订阅类型分布分析",
+      "用户活跃与付费行为",
+      "综合性能评估",
+      "实验结论与建议"
+    ],
+    "first_paragraph": "本报告对年卡改价实验的A/B测试结果进行了全面分析。实验包含对照组（A组）和三个实验组（B1、B2、B3），总计85,322个账号。分析显示， B1组表现最佳 ，在ARPU、ARPPU和总收入等关键指标上均领先其他组别，ARPU较对照组提升10.9%，ARPPU提升8.6%，总收入增长10.7%。实验结果表明，合理的定价调整能够显著提升单位用户价值和整体收入。",
+    "assets": [
+      {
+        "name": "total_revenue_by_group.json",
+        "url": "https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/total_revenue_by_group.json",
+        "trace_types": [
+          "bar"
+        ],
+        "trace_count": 1,
+        "title": "各实验组总收入对比"
+      },
+      {
+        "name": "arpu_arppu_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/arpu_arppu_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "各实验组ARPU和ARPPU对比"
+      },
+      {
+        "name": "payment_rate_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/payment_rate_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "各实验组付费率指标对比"
+      },
+      {
+        "name": "subscription_type_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/subscription_type_distribution.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "各实验组订阅类型订单数对比"
+      },
+      {
+        "name": "active_vs_paying_users.json",
+        "url": "https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/active_vs_paying_users.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "各实验组活跃用户与付费用户对比"
+      },
+      {
+        "name": "arpu_vs_payment_rate.json",
+        "url": "https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/arpu_vs_payment_rate.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 4,
+        "title": "各实验组ARPU与付费率关系"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 1,
+    "sections_delta": 1,
+    "description_removed_ok": true,
+    "asset_name_overlap": 0,
+    "asset_old_only": [
+      "arpu_comparison.json",
+      "cannibalization_effect.json",
+      "daily_arpu_trend.json",
+      "daily_payrate_trend.json",
+      "expectation_validation.json"
+    ],
+    "asset_new_only": [
+      "active_vs_paying_users.json",
+      "arpu_arppu_comparison.json",
+      "arpu_vs_payment_rate.json",
+      "payment_rate_comparison.json",
+      "subscription_type_distribution.json",
+      "total_revenue_by_group.json"
+    ]
+  }
+}

@@ -1,0 +1,2061 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"2024 vs 2025年CAPA记录对比分析报告\"\ndescription: \"全面对比分析公司2024年和2025年的CAPA（Corrective and Preventive Actions）记录情况，包括成本分析、类型分布、部门表现及关键洞察\"\nauthor: \"Pardus Agent\"\ndate: \"2025-01-13\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告对2024年和2025年的CAPA记录进行了全面的对比分析。分析显示，2025年在CAPA管理方面取得了显著改进：总成本降低了",
+            "type": "text"
+          },
+          {
+            "content": "43.21%",
+            "type": "bold"
+          },
+          {
+            "content": "，记录数量减少了",
+            "type": "text"
+          },
+          {
+            "content": "78.26%",
+            "type": "bold"
+          },
+          {
+            "content": "。这表明公司在质量管理和成本控制方面取得了实质性进展。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "关键发现",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "总成本降幅显著"
+              },
+              {
+                "Text": "：从2024年的€587,620.77降至2025年的€333,718.11"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "记录数量大幅减少"
+              },
+              {
+                "Text": "：从46条降至10条"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "设备成本占比增加"
+              },
+              {
+                "Text": "：2025年设备成本占比达97.18%（vs 2024年的82.92%）"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "部门集中度提高"
+              },
+              {
+                "Text": "：2025年所有CAPA记录仅涉及IER和S&C两个部门"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "数据概览与处理流程",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "CAPA（Corrective and Preventive Actions，纠正和预防措施）是质量管理体系的核心组成部分。以下流程图展示了CAPA从问题发现到关闭的处理流程：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./simple_flow.svg\n",
+        "language": "svg",
+        "svgPath": "./simple_flow.svg",
+        "type": "svg"
+      },
+      {
+        "content": "年度对比分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "综合对比总览",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./summary_table.json\n",
+        "htmlPath": "./summary_table.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "1. 总成本对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./annual_total_cost_comparison.json\n",
+        "htmlPath": "./annual_total_cost_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "分析",
+        "type": "bold"
+      },
+      {
+        "content": "43.21%",
+        "type": "bold"
+      },
+      {
+        "content": "2. 记录数量对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./record_count_comparison.json\n",
+        "htmlPath": "./record_count_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "分析",
+        "type": "bold"
+      },
+      {
+        "content": "78.26%",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "前期预防措施的有效实施"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "流程优化减少了问题发生的频率"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "员工质量意识的提高"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "成本构成深度分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "3. 成本构成对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_structure_comparison.json\n",
+        "htmlPath": "./cost_structure_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2024年成本构成",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_pie_2024.json\n",
+        "htmlPath": "./cost_pie_2024.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2025年成本构成",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_pie_2025.json\n",
+        "htmlPath": "./cost_pie_2025.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "详细对比",
+        "type": "bold"
+      },
+      {
+        "align": [
+          "---------",
+          "--------",
+          "--------",
+          "------",
+          "--------"
+        ],
+        "headers": [
+          "成本类型",
+          "2024年",
+          "2025年",
+          "变化",
+          "变化率"
+        ],
+        "rows": [
+          [
+            "人工成本 Hours",
+            "€100,303.00",
+            "€9,397.44",
+            "-€90,905.56",
+            "-90.63%"
+          ],
+          [
+            "设备成本 Equipment",
+            "€487,317.77",
+            "€324,320.67",
+            "-€162,997.10",
+            "-33.45%"
+          ],
+          [
+            "总成本",
+            "€587,620.77",
+            "€333,718.11",
+            "-€253,902.66",
+            "-43.21%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "text"
+          },
+          {
+            "content": "：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "人工成本大幅下降"
+              },
+              {
+                "Text": "：2025年人工成本减少了90.63%，说明问题解决的效率大幅提升"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "设备成本占比上升"
+              },
+              {
+                "Text": "：2025年设备成本占总成本的97.18%（vs 2024年的82.92%），表明2025年的问题更多需要设备更换而非人工修复"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "平均单条成本上升"
+              },
+              {
+                "Text": "：从2024年的€12,774/条增至2025年的€33,372/条，说明剩余问题可能更复杂或更重要"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "CAP类型分布对比",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "4. CAP类型对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_type_comparison.json\n",
+        "htmlPath": "./cap_type_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "类型分布详情",
+        "type": "bold"
+      },
+      {
+        "align": [
+          "---------",
+          "--------",
+          "--------",
+          "------",
+          "----------"
+        ],
+        "headers": [
+          "CAP类型",
+          "2024年",
+          "2025年",
+          "变化",
+          "占比变化"
+        ],
+        "rows": [
+          [
+            "Claim（客户索赔）",
+            "19",
+            "7",
+            "-12",
+            "41.30% → 70.00%"
+          ],
+          [
+            "Internal Anomaly（内部异常）",
+            "12",
+            "2",
+            "-10",
+            "26.09% → 20.00%"
+          ],
+          [
+            "Supplier Dysfonctionning（供应商问题）",
+            "8",
+            "1",
+            "-7",
+            "17.39% → 10.00%"
+          ],
+          [
+            "Prevent / improve（预防改进）",
+            "4",
+            "0",
+            "-4",
+            "8.70% → 0.00%"
+          ],
+          [
+            "Safety（安全事故）",
+            "3",
+            "0",
+            "-3",
+            "6.52% → 0.00%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "text"
+          },
+          {
+            "content": "：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "客户索赔占比显著增加"
+              },
+              {
+                "Text": "：从41.30%升至70.00%，说明外部质量问题相对增加"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "预防性和安全事故记录归零"
+              },
+              {
+                "Text": "：这是一个积极信号，表明预防措施有效，安全管理体系健全"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "所有类型均减少"
+              },
+              {
+                "Text": "：表明整体质量状况全面改善"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "4.5 2024年月度趋势",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./monthly_trend_2024.json\n",
+        "htmlPath": "./monthly_trend_2024.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "分析",
+        "type": "bold"
+      },
+      {
+        "content": "部门表现分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "5. 部门分布对比",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./department_comparison.json\n",
+        "htmlPath": "./department_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "部门分布详情",
+        "type": "bold"
+      },
+      {
+        "align": [
+          "------",
+          "--------",
+          "--------",
+          "------",
+          "----------"
+        ],
+        "headers": [
+          "部门",
+          "2024年",
+          "2025年",
+          "变化",
+          "部门职责"
+        ],
+        "rows": [
+          [
+            "IER（工业工程部）",
+            "26",
+            "5",
+            "-21",
+            "工业工程与研发"
+          ],
+          [
+            "CS（客户服务部）",
+            "13",
+            "0",
+            "-13",
+            "客户服务支持"
+          ],
+          [
+            "S&C（销售与合同部）",
+            "0",
+            "5",
+            "+5",
+            "销售与合同管理"
+          ],
+          [
+            "R&D（研发部）",
+            "5",
+            "0",
+            "-5",
+            "产品研发"
+          ],
+          [
+            "Achat（采购部）",
+            "1",
+            "0",
+            "-1",
+            "采购管理"
+          ],
+          [
+            "Process（工艺部）",
+            "1",
+            "0",
+            "-1",
+            "工艺优化"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "关键洞察",
+            "type": "text"
+          },
+          {
+            "content": "：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "IER部门问题持续存在"
+              },
+              {
+                "Text": "：从26条降至5条，仍是主要问题部门"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "S&C部门问题凸显"
+              },
+              {
+                "Text": "：2024年无记录，2025年有5条，需重点关注"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "CS部门问题完全解决"
+              },
+              {
+                "Text": "：从13条降至0条，表现优异"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "R&A部门问题显著减少"
+              },
+              {
+                "Text": "：从5条降至0条"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "5.5 负责人表现对比（TOP 10）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./top_issuer_cost_comparison.json\n",
+        "htmlPath": "./top_issuer_cost_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "分析",
+        "type": "bold"
+      },
+      {
+        "content": "高级可视化分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "6. 成本层次结构（旭日图）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_cost_sunburst.json\n",
+        "htmlPath": "./cap_cost_sunburst.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "分析",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2024年的成本分布更分散，涉及多个部门和类型"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2025年的成本高度集中，主要来自IER和S&C部门的Claim类型"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "7. CAPA流向分析（桑基图）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "2025年流向",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_flow_sankey.json\n",
+        "htmlPath": "./cap_flow_sankey.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2024年流向",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_flow_sankey_2024.json\n",
+        "htmlPath": "./cap_flow_sankey_2024.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "对比洞察",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2025年流向简化"
+              },
+              {
+                "Text": "：仅IER和S&C两个部门，流向更清晰"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2024年流向复杂"
+              },
+              {
+                "Text": "：涉及IER、CS、R&D、Achat、Process五个部门"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "Claim流向占比"
+              },
+              {
+                "Text": "：2025年两个部门的Claim流向占总流出的70%，与2024年相比更集中"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "8. 2025年成本冰柱图",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_cost_icicle_2025.json\n",
+        "htmlPath": "./cap_cost_icicle_2025.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "分析",
+        "type": "bold"
+      },
+      {
+        "content": "9. 成本热力图",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_cost_heatmap.json\n",
+        "htmlPath": "./cap_cost_heatmap.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "分析",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2024年IER部门的Claim类型成本最高"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2025年IER和S&C部门的Claim类型仍然是主要成本来源"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2025年的整体热力强度明显低于2024年，反映成本下降"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "深度洞察与建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "1. 成本效率提升",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "发现",
+        "type": "bold"
+      },
+      {
+        "content": "解释",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "高频次、低成本的问题（如预防改进、小型内部异常）已得到有效控制"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "剩余的CAPA记录多为复杂、高价值的问题，需要深入解决"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "人工成本的大幅下降表明问题识别和响应速度显著提升"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "建议",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "继续关注高频次问题的预防措施"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "对剩余的复杂问题进行根因分析，防止复发"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "2. 部门绩效差异",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "发现",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "IER部门"
+              },
+              {
+                "Text": "：持续是主要问题源（26→5条），但改善显著"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "CS部门"
+              },
+              {
+                "Text": "：完全解决（13→0条），可作为最佳实践案例"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "S&C部门"
+              },
+              {
+                "Text": "：新出现问题（0→5条），需要立即关注"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "R&D部门"
+              },
+              {
+                "Text": "：完全解决（5→0条）"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "建议",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "IER部门"
+              },
+              {
+                "Text": "：分享CS部门的成功经验，进一步优化流程"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "S&C部门"
+              },
+              {
+                "Text": "：立即开展根因分析，制定预防措施"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "跨部门学习"
+              },
+              {
+                "Text": "：组织CS和S&C部门之间的经验分享会"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "3. CAP类型转变",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "发现",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "预防改进和安全事故记录完全消失"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "客户索赔占比从41.30%升至70.00%"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "内部异常和供应商问题显著减少"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "建议",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "客户索赔"
+              },
+              {
+                "Text": "：加强与客户的早期沟通，建立预检机制"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "供应商问题"
+              },
+              {
+                "Text": "：虽然减少但仍需维持供应商管理体系的严格性"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "预防措施"
+              },
+              {
+                "Text": "：继续保持预防改进项目的投入，确保不反弹"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "4. 设备成本分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "发现",
+        "type": "bold"
+      },
+      {
+        "content": "可能原因",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "2025年的CAPA问题更多涉及设备故障或缺陷"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "人工效率提升，减少了人工修复的需求"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "可能存在一次性大型设备更换案例"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "建议",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "分析设备故障的根本原因，改进设备维护计划"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "评估设备采购质量标准"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "加强设备的预防性维护"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "风险预警",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "1. S&C部门新问题",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "风险等级",
+        "type": "bold"
+      },
+      {
+        "content": "说明",
+        "type": "bold"
+      },
+      {
+        "content": "建议",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "立即对S&C部门的流程进行全面审计"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "分析这5条Claim的共同特征和根本原因"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "制定针对性的预防措施"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "2. 单条成本上升",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "风险等级",
+        "type": "bold"
+      },
+      {
+        "content": "说明",
+        "type": "bold"
+      },
+      {
+        "content": "建议",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "持续监控单条成本趋势"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "确保高昂的成本投入能带来相应的质量改善"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "考虑引入成本效益分析机制"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "3. 设备成本依赖",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "风险等级",
+        "type": "bold"
+      },
+      {
+        "content": "说明",
+        "type": "bold"
+      },
+      {
+        "content": "建议",
+        "type": "bold"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "评估是否有通过流程优化减少设备成本的方案"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "加强设备生命周期管理"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "考虑设备租赁或共享的可能性"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "行动计划",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "短期行动（1-3个月）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "S&C部门专项调查",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "完成5条Claim的根因分析",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "制定并实施改进措施",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立月度跟踪机制",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "设备管理优化",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "审查2025年设备成本明细",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "制定设备维护计划",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立设备故障预警系统",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "IER部门改进",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "学习CS部门的成功经验",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "对剩余5条问题制定预防措施",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立IER部门CAPA减少目标",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "中期行动（3-6个月）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "跨部门经验分享",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "组织CS和S&C部门经验交流会",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立部门间最佳实践共享平台",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "制定统一的CAPA管理标准",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "预防体系强化",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "评估预防措施的有效性",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "更新风险识别清单",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立预防措施效果评估机制",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "成本效益分析",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立CAPA成本跟踪系统",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "定期评估成本效益",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "优化资源配置",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "长期行动（6-12个月）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "全面质量管理体系升级",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "整合CAPA管理到QMS中",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立自动化预警系统",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "实现实时数据可视化",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "持续改进文化",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立员工激励计划",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "推广零缺陷理念",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "定期培训和知识更新",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "供应商协同",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "与关键供应商建立CAPA协作机制",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "共同制定质量改进目标",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立供应商质量评分系统",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "总结",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "2025年CAPA管理取得了令人瞩目的成就：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "✅ 总成本降低43.21%"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "✅ 记录数量减少78.26%"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "✅ 预防性和安全事故记录归零"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "✅ CS和R&D部门问题完全解决"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "然而，仍需关注：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "⚠️ S&C部门新出现的5条Claim"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "⚠️ 客户索赔占比上升至70.00%"
+              }
+            ],
+            "Indent": 0
+          },
+          {
+            "Children": null,
+            "Content": [
+              {
+                "Text": "⚠️ 设备成本占比高达97.18%"
+              }
+            ],
+            "Indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "总体评价",
+        "type": "bold"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "content": "报告生成日期",
+        "type": "bold"
+      },
+      {
+        "content": "数据来源",
+        "type": "bold"
+      },
+      {
+        "content": "分析工具",
+        "type": "bold"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

@@ -1,0 +1,18 @@
+{
+  "case_id": "5a97dacdb00ada80acebaf0f3cfb0d22568d78c08852d33af223a8c18780c1b4",
+  "title": "power",
+  "source_cache_manifest": "2026-02-17T14:17:20Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "table (1).csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/5a97dacdb00a_power/table (1).csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/5a97dacdb00a_power/table (1).csv",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

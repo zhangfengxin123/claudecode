@@ -1,0 +1,18 @@
+{
+  "case_id": "e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743",
+  "title": "AB_NO_DESC_6a109b2edad7_20260217_072320",
+  "source_cache_manifest": "2026-02-17T14:05:44Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "Book1.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e49f52c3c5b2_Book1/Book1.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/e49f52c3c5b2_AB_NO_DESC_6a109b2edad7_20260217_072320/Book1.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

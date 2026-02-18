@@ -1,0 +1,125 @@
+{
+  "case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+  "title": "id市场投放效果与转化数据分析",
+  "with_description": true,
+  "input_files": [
+    "id市场广告投放与转化数据.xlsx",
+    "description.txt"
+  ],
+  "input_data_files": [
+    "id市场广告投放与转化数据.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 10,
+  "assets": [
+    {
+      "name": "goal_achievement.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 4,
+      "title": "目标达成"
+    },
+    {
+      "name": "overall_trend.json",
+      "trace_types": [
+        "scatter",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 3,
+      "title": "总体趋势"
+    },
+    {
+      "name": "roi_trend.json",
+      "trace_types": [
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "ROI趋势"
+    },
+    {
+      "name": "period_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 3,
+      "title": "时期对比"
+    },
+    {
+      "name": "daily_change_rate.json",
+      "trace_types": [
+        "scatter",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 3,
+      "title": "每日变化率"
+    },
+    {
+      "name": "cpa_trend.json",
+      "trace_types": [
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "CPI与CPA趋势"
+    },
+    {
+      "name": "ctr_cpc_trend.json",
+      "trace_types": [
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "CTR与CPC趋势"
+    },
+    {
+      "name": "order_composition.json",
+      "trace_types": [
+        "pie"
+      ],
+      "trace_count": 1,
+      "title": "订单构成"
+    },
+    {
+      "name": "flight_hotel_comparison.json",
+      "trace_types": [
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "航班酒店对比"
+    },
+    {
+      "name": "correlation_heatmap.json",
+      "trace_types": [
+        "heatmap"
+      ],
+      "trace_count": 1,
+      "title": "相关性热力图"
+    }
+  ],
+  "h2_sections": [
+    "执行摘要",
+    "一、2026年目标达成情况分析",
+    "二、投放效果时间趋势分析",
+    "三、成本效益深度分析",
+    "四、订单类型与产品表现",
+    "五、指标相关性分析",
+    "六、近一周优化重点",
+    "七、GGads分系列调控计划",
+    "八、GGads分广告组调控计划",
+    "九、综合优化路线图",
+    "十、风险与应对",
+    "十一、总结与建议",
+    "附录：数据说明"
+  ],
+  "first_paragraph": "本报告分析了ID市场2026年1月1日至2月5日的GG广告投放数据。总体而言，ID市场在安装量方面表现出色，超额完成2026年目标的159.44%，但在ROI方面仍有提升空间。近期（1月31日-2月5日）投放效果明显下滑，需要立即采取优化措施。"
+}

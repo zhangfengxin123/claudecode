@@ -1,0 +1,89 @@
+{
+  "case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+  "title": "FEDFUNDS",
+  "with_description": true,
+  "input_files": [
+    "NASDAQCOM.xlsx",
+    "description.txt",
+    "FEDFUNDS.csv",
+    "IR.csv"
+  ],
+  "input_data_files": [
+    "NASDAQCOM.xlsx",
+    "FEDFUNDS.csv",
+    "IR.csv"
+  ],
+  "description_present": true,
+  "asset_count": 6,
+  "assets": [
+    {
+      "name": "economic_time_series.json",
+      "trace_types": [
+        "scatter",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 3,
+      "title": "Economic Indicators Time Series (2021-2025)"
+    },
+    {
+      "name": "volatility_by_rate.json",
+      "trace_types": [
+        "bar",
+        "scatter"
+      ],
+      "trace_count": 2,
+      "title": "Volatility and Returns by Fed Funds Rate"
+    },
+    {
+      "name": "rate_change_impact.json",
+      "trace_types": [
+        "box",
+        "box",
+        "box"
+      ],
+      "trace_count": 3,
+      "title": "NASDAQ Returns by Rate Change"
+    },
+    {
+      "name": "correlation_heatmap.json",
+      "trace_types": [
+        "heatmap"
+      ],
+      "trace_count": 1,
+      "title": "Economic Indicators Correlation Matrix"
+    },
+    {
+      "name": "funds_rate_vs_returns.json",
+      "trace_types": [
+        "scatter",
+        "scatter",
+        "scatter",
+        "scatter"
+      ],
+      "trace_count": 4,
+      "title": "Fed Funds Rate vs NASDAQ Returns"
+    },
+    {
+      "name": "import_price_vs_funds.json",
+      "trace_types": [
+        "scatter"
+      ],
+      "trace_count": 1,
+      "title": "Import Price vs Fed Funds Rate"
+    }
+  ],
+  "h2_sections": [
+    "Executive Summary",
+    "Data Overview and Methodology",
+    "Federal Funds Rate Dynamics",
+    "NASDAQ Market Performance Analysis",
+    "Correlation Analysis",
+    "Interest Rate Level vs Market Returns",
+    "Import Price Index Analysis",
+    "Implications for Investors and Policymakers",
+    "Limitations and Considerations",
+    "Conclusion"
+  ],
+  "first_paragraph": "2021-2025"
+}

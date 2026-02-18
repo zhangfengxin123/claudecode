@@ -1,0 +1,18 @@
+{
+  "case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+  "title": "AB_NO_DESC_ae3bf09e493f_20260217_070433",
+  "source_cache_manifest": "2026-02-17T14:06:33Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "CAP 2023-2025.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/bffd9ee5ebab_CAP Analysis/CAP 2023-2025.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/bffd9ee5ebab_AB_NO_DESC_ae3bf09e493f_20260217_070433/CAP 2023-2025.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

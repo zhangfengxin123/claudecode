@@ -1,0 +1,20 @@
+{
+  "case_id": "d274dae803fc8c97f82c60a4aba3084eec7aba09feadd32f63baba5092ab442e",
+  "title_hint": "20250913 - China is ditching the dollr fast",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "20250913 - China is ditching the dollr fast.pdf",
+      "status": 200,
+      "size_bytes": 222232,
+      "source_url": "https://pardusai.org/v1/api/public/project/d274dae803fc8c97f82c60a4aba3084eec7aba09feadd32f63baba5092ab442e/files/20250913%20-%20China%20is%20ditching%20the%20dollr%20fast.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/d274dae803fc_20250913 - China is ditching the dollr fast/20250913 - China is ditching the dollr fast.pdf",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:06:55Z"
+}

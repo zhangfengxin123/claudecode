@@ -1,0 +1,29 @@
+[2026-02-17T01:00:53] recent=500 tasks=500 workers=8
+[2026-02-17T01:00:55] progress 20/500 multisheet=0 qualified=0
+[2026-02-17T01:00:57] progress 40/500 multisheet=0 qualified=0
+[2026-02-17T01:01:01] progress 60/500 multisheet=1 qualified=1
+[2026-02-17T01:01:05] progress 80/500 multisheet=5 qualified=3
+[2026-02-17T01:01:07] progress 100/500 multisheet=6 qualified=4
+[2026-02-17T01:01:10] progress 120/500 multisheet=6 qualified=4
+[2026-02-17T01:01:12] progress 140/500 multisheet=6 qualified=4
+[2026-02-17T01:01:16] progress 160/500 multisheet=11 qualified=9
+[2026-02-17T01:01:19] progress 180/500 multisheet=13 qualified=11
+[2026-02-17T01:01:22] progress 200/500 multisheet=13 qualified=11
+[2026-02-17T01:01:26] progress 220/500 multisheet=17 qualified=15
+[2026-02-17T01:01:28] progress 240/500 multisheet=20 qualified=18
+[2026-02-17T01:01:30] progress 260/500 multisheet=20 qualified=18
+[2026-02-17T01:01:32] progress 280/500 multisheet=20 qualified=18
+[2026-02-17T01:01:34] progress 300/500 multisheet=20 qualified=18
+[2026-02-17T01:01:37] progress 320/500 multisheet=21 qualified=19
+[2026-02-17T01:01:39] progress 340/500 multisheet=21 qualified=19
+[2026-02-17T01:01:42] progress 360/500 multisheet=23 qualified=21
+[2026-02-17T01:01:45] progress 380/500 multisheet=28 qualified=25
+[2026-02-17T01:01:48] progress 400/500 multisheet=31 qualified=27
+[2026-02-17T01:01:51] progress 420/500 multisheet=33 qualified=28
+[2026-02-17T01:01:53] progress 440/500 multisheet=33 qualified=28
+[2026-02-17T01:01:56] progress 460/500 multisheet=34 qualified=28
+[2026-02-17T01:02:00] progress 480/500 multisheet=35 qualified=29
+[2026-02-17T01:02:11] progress 500/500 multisheet=38 qualified=30
+saved: Pardus/.codex_session/runs/multisheet_scan1000_20260217_010007/scan_summary.json
+saved: Pardus/.codex_session/runs/multisheet_scan1000_20260217_010007/scan_results_qualified.json
+saved: Pardus/.codex_session/runs/multisheet_scan1000_20260217_010007/selected_for_evidence.json

@@ -1,0 +1,18 @@
+{
+  "case_id": "df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c",
+  "title": "dam monitoring data analysis",
+  "source_cache_manifest": "2026-02-17T14:36:42Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "内观数据_总汇总.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/df7592361534_dam monitoring data analysis/内观数据_总汇总.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/df7592361534_dam monitoring data analysis/内观数据_总汇总.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

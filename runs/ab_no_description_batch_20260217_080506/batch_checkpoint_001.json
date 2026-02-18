@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-02-17T08:09:58Z",
+  "processed": 1,
+  "results": [
+    {
+      "case_index": 1,
+      "title": "陕西能源职业技术学院招生就业专业排序",
+      "template_case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+      "rerun_case_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+      "status": "ok",
+      "elapsed_sec": 292.27,
+      "case_dir": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/ab_no_description_batch_20260217_080506/cases/case_001_f5171f88125c",
+      "a_chart_count": 6,
+      "b_chart_count": 10,
+      "description_removed_ok": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6",
+  "title_hint": "用户反馈",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "新建 Microsoft Excel 工作表.xlsx",
+      "status": 200,
+      "size_bytes": 112530,
+      "source_url": "https://pardusai.org/v1/api/public/project/739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6/files/%E6%96%B0%E5%BB%BA%20Microsoft%20Excel%20%E5%B7%A5%E4%BD%9C%E8%A1%A8.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/739cc701921d_用户反馈/新建 Microsoft Excel 工作表.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:24:46Z"
+}

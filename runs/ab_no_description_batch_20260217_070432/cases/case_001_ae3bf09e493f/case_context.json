@@ -1,0 +1,109 @@
+{
+  "source_row": {
+    "idx": 2,
+    "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+    "title": "CAP Analysis",
+    "chart_count": 14,
+    "upload_count": 2,
+    "doc_status": 200,
+    "up_status": 200,
+    "html": "case_002_ae3bf09e493f.html"
+  },
+  "queue_log": {
+    "case_index": 1,
+    "template_case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+    "title": "CAP Analysis",
+    "started_at": "2026-02-17T07:04:32Z",
+    "rerun_case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+    "upload_response": {
+      "message": "Files uploaded successfully"
+    },
+    "queue_history": [
+      {
+        "at": "2026-02-17T07:04:37Z",
+        "status": "pending",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:04:58Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:05:18Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:05:39Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:06:00Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:06:21Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:06:42Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:07:03Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:07:24Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:07:45Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:08:06Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T07:08:26Z",
+        "status": "completed",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      }
+    ],
+    "final_status": "completed",
+    "last_queue": {
+      "project_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+      "status": "completed",
+      "tasks_ahead": 0,
+      "queue_by_tier": [],
+      "total_pending": 0,
+      "currently_processing": 0,
+      "estimated_wait_minutes": 0,
+      "priority_level": "premium",
+      "created_at": "2026-02-17T07:04:36.520258Z",
+      "started_at": "2026-02-17T07:04:41.528018Z"
+    }
+  }
+}

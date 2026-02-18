@@ -1,0 +1,20 @@
+{
+  "case_id": "e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743",
+  "title_hint": "Book1",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "Book1.xlsx",
+      "status": 200,
+      "size_bytes": 102999,
+      "source_url": "https://pardusai.org/v1/api/public/project/e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743/files/Book1.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e49f52c3c5b2_Book1/Book1.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:05:44Z"
+}

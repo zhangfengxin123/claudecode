@@ -1,0 +1,363 @@
+{
+  "run_name": "ab_no_description_batch_20260217_055216",
+  "run_dir": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216",
+  "case_count": 13,
+  "ok_cases": 13,
+  "partial_failed_cases": 0,
+  "generated_at": "2026-02-17T14:37:33Z",
+  "cases": [
+    {
+      "case_id": "e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+      "title": "2024-2025 CAP review",
+      "source_cache_manifest": "2026-02-17T13:57:50Z",
+      "status": "ok",
+      "copied_files": 3,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e226fa5aa55b_2024-2025 CAP review/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/e226fa5aa55b_2024-2025 CAP review/description.txt",
+          "ok": true
+        },
+        {
+          "name": "2025 CAP overview.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e226fa5aa55b_2024-2025 CAP review/2025 CAP overview.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/e226fa5aa55b_2024-2025 CAP review/2025 CAP overview.xlsx",
+          "ok": true
+        },
+        {
+          "name": "SHA CHRONO_CAP.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e226fa5aa55b_2024-2025 CAP review/SHA CHRONO_CAP.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/e226fa5aa55b_2024-2025 CAP review/SHA CHRONO_CAP.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "76b5e284a2a383fe8ef5de36a79e74bd5179008265c218596c20b29e97311c3f",
+      "title": "2024-2025 CAP review",
+      "source_cache_manifest": "2026-02-17T13:57:56Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "2025 CAP overview.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/76b5e284a2a3_2024-2025 CAP review/2025 CAP overview.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/76b5e284a2a3_2024-2025 CAP review/2025 CAP overview.xlsx",
+          "ok": true
+        },
+        {
+          "name": "SHA CHRONO_CAP.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/76b5e284a2a3_2024-2025 CAP review/SHA CHRONO_CAP.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/76b5e284a2a3_2024-2025 CAP review/SHA CHRONO_CAP.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+      "title": "CAP Analysis",
+      "source_cache_manifest": "2026-02-17T13:58:02Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ae3bf09e493f_CAP Analysis/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/ae3bf09e493f_CAP Analysis/description.txt",
+          "ok": true
+        },
+        {
+          "name": "CAP 2023-2025.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ae3bf09e493f_CAP Analysis/CAP 2023-2025.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/ae3bf09e493f_CAP Analysis/CAP 2023-2025.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+      "title": "2024 vs 2025 CAP Review report",
+      "source_cache_manifest": "2026-02-17T13:58:11Z",
+      "status": "ok",
+      "copied_files": 3,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/64914baf5ff5_2024 vs 2025 CAP Review report/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/64914baf5ff5_2024 vs 2025 CAP Review report/description.txt",
+          "ok": true
+        },
+        {
+          "name": "2025 CAP overview.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/64914baf5ff5_2024 vs 2025 CAP Review report/2025 CAP overview.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/64914baf5ff5_2024 vs 2025 CAP Review report/2025 CAP overview.xlsx",
+          "ok": true
+        },
+        {
+          "name": "SHA CHRONO_CAP.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/64914baf5ff5_2024 vs 2025 CAP Review report/SHA CHRONO_CAP.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/64914baf5ff5_2024 vs 2025 CAP Review report/SHA CHRONO_CAP.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+      "title": "id市场投放效果与转化数据分析",
+      "source_cache_manifest": "2026-02-17T14:04:13Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "id市场广告投放与转化数据.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b93dae71bcf0_id市场投放效果与转化数据分析/id市场广告投放与转化数据.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/b93dae71bcf0_id市场投放效果与转化数据分析/id市场广告投放与转化数据.xlsx",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b93dae71bcf0_id市场投放效果与转化数据分析/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/b93dae71bcf0_id市场投放效果与转化数据分析/description.txt",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+      "title": "月卡改价实验数据分析",
+      "source_cache_manifest": "2026-02-17T14:04:16Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "月卡改价实验结果-202601.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ca9493d910dd_月卡改价实验数据分析/月卡改价实验结果-202601.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/ca9493d910dd_月卡改价实验数据分析/月卡改价实验结果-202601.xlsx",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/ca9493d910dd_月卡改价实验数据分析/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/ca9493d910dd_月卡改价实验数据分析/description.txt",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+      "title": "Book1",
+      "source_cache_manifest": "2026-02-17T14:04:22Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6a109b2edad7_Book1/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/6a109b2edad7_Book1/description.txt",
+          "ok": true
+        },
+        {
+          "name": "Book1.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/6a109b2edad7_Book1/Book1.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/6a109b2edad7_Book1/Book1.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+      "title": "FEDFUNDS",
+      "source_cache_manifest": "2026-02-17T14:04:29Z",
+      "status": "ok",
+      "copied_files": 4,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "NASDAQCOM.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/NASDAQCOM.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/9f9aa3b895db_FEDFUNDS/NASDAQCOM.xlsx",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/9f9aa3b895db_FEDFUNDS/description.txt",
+          "ok": true
+        },
+        {
+          "name": "FEDFUNDS.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/FEDFUNDS.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/9f9aa3b895db_FEDFUNDS/FEDFUNDS.csv",
+          "ok": true
+        },
+        {
+          "name": "IR.csv",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/IR.csv",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/9f9aa3b895db_FEDFUNDS/IR.csv",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+      "title": "反向调价实验数据分析",
+      "source_cache_manifest": "2026-02-17T14:04:33Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1b89e7d1ffb4_反向调价实验数据分析/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/1b89e7d1ffb4_反向调价实验数据分析/description.txt",
+          "ok": true
+        },
+        {
+          "name": "反向调价实验结果-202601.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/1b89e7d1ffb4_反向调价实验数据分析/反向调价实验结果-202601.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/1b89e7d1ffb4_反向调价实验数据分析/反向调价实验结果-202601.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+      "title": "KA品牌下探数据汇总",
+      "source_cache_manifest": "2026-02-17T14:04:36Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4bc65ee64081_KA品牌下探数据汇总/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/4bc65ee64081_KA品牌下探数据汇总/description.txt",
+          "ok": true
+        },
+        {
+          "name": "KA品牌下探数据汇总.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4bc65ee64081_KA品牌下探数据汇总/KA品牌下探数据汇总.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/4bc65ee64081_KA品牌下探数据汇总/KA品牌下探数据汇总.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+      "title": "陕西能源职业技术学院招生就业专业排序",
+      "source_cache_manifest": "2026-02-17T14:04:38Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/f5171f88125c_陕西能源职业技术学院招生就业专业排序/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/f5171f88125c_陕西能源职业技术学院招生就业专业排序/description.txt",
+          "ok": true
+        },
+        {
+          "name": "26年招生就业数据（高考单招单列） (1).xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/f5171f88125c_陕西能源职业技术学院招生就业专业排序/26年招生就业数据（高考单招单列） (1).xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/f5171f88125c_陕西能源职业技术学院招生就业专业排序/26年招生就业数据（高考单招单列） (1).xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+      "title": "年卡改价实验数据分析",
+      "source_cache_manifest": "2026-02-17T14:04:43Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "年卡改价实验结果-202601.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/a77d543b4e14_年卡改价实验数据分析/年卡改价实验结果-202601.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/a77d543b4e14_年卡改价实验数据分析/年卡改价实验结果-202601.xlsx",
+          "ok": true
+        },
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/a77d543b4e14_年卡改价实验数据分析/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/a77d543b4e14_年卡改价实验数据分析/description.txt",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    },
+    {
+      "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+      "title": "SSCOM L02 AnalyticsCase_Meyer",
+      "source_cache_manifest": "2026-02-17T14:04:50Z",
+      "status": "ok",
+      "copied_files": 2,
+      "failed_files": 0,
+      "files": [
+        {
+          "name": "description.txt",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/description.txt",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/description.txt",
+          "ok": true
+        },
+        {
+          "name": "SSCOM L02 AnalyticsCase_Meyer.xlsx",
+          "status": 200,
+          "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/SSCOM L02 AnalyticsCase_Meyer.xlsx",
+          "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_batch_20260217_055216/input_snapshot/e79c8f00ffa4_SSCOM L02 AnalyticsCase_Meyer/SSCOM L02 AnalyticsCase_Meyer.xlsx",
+          "ok": true
+        }
+      ],
+      "generated_at": "2026-02-17T14:37:33Z"
+    }
+  ]
+}

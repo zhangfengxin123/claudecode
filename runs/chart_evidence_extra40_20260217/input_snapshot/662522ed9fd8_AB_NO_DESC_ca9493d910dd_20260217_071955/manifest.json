@@ -1,0 +1,18 @@
+{
+  "case_id": "662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad",
+  "title": "AB_NO_DESC_ca9493d910dd_20260217_071955",
+  "source_cache_manifest": "2026-02-17T14:05:41Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "月卡改价实验结果-202601.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/662522ed9fd8_月卡改价实验数据分析/月卡改价实验结果-202601.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/662522ed9fd8_AB_NO_DESC_ca9493d910dd_20260217_071955/月卡改价实验结果-202601.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

@@ -1,0 +1,20 @@
+{
+  "case_id": "b5271a70bd03772c5a2b68d64993550be390a559182bdec4fea5b393a1412ce6",
+  "title_hint": "Gold Feb 16 2026 Analysis",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "gold_prices_10y.csv",
+      "status": 200,
+      "size_bytes": 539139,
+      "source_url": "https://pardusai.org/v1/api/public/project/b5271a70bd03772c5a2b68d64993550be390a559182bdec4fea5b393a1412ce6/files/gold_prices_10y.csv",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/b5271a70bd03_Gold Feb 16 2026 Analysis/gold_prices_10y.csv",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:35:48Z"
+}

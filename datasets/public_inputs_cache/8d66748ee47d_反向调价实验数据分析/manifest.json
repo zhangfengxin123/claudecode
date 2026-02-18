@@ -1,0 +1,20 @@
+{
+  "case_id": "8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9",
+  "title_hint": "反向调价实验数据分析",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "反向调价实验结果-202601.xlsx",
+      "status": 200,
+      "size_bytes": 12130,
+      "source_url": "https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/files/%E5%8F%8D%E5%90%91%E8%B0%83%E4%BB%B7%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C-202601.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/8d66748ee47d_反向调价实验数据分析/反向调价实验结果-202601.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:05:49Z"
+}

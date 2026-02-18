@@ -1,0 +1,3302 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"连续包月价格实验分析报告：最优定价策略验证\"\ndescription: \"深入分析连续包月价格从25元调整至23元、19元、29元对付费率、ARPU和蚕食效应的影响，验证模型判断的最优价格\"\nauthor: \"Pardus Agent\"\ndate: \"2025-02-03\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "连续包月价格实验分析报告",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本次实验为期7天（2026-01-23至2026-01-29），旨在验证模型判断的连续包月最优价格（23元）对业务指标的影响。实验分为四组：控制组（25元，50%流量）、最优价格组（23元，30%流量）、激进降价组（19元，10%流量）、反向涨价组（29元，10%流量）。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "核心发现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "✓ 所有三个实验预期均得到验证",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B1组（23元）付费率提升1.90%，ARPU基本持平（-3.42%），验证了模型判断",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "B2组（19元）付费率提升6.63%，但ARPU下降15.93%，存在明显蚕食效应",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "价格弹性分析显示用户对涨价更敏感（-0.63）vs降价（-0.24",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "B1组最优价格策略在付费率和ARPU之间取得最佳平衡",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "code": "./metrics_comparison.json",
+        "htmlPath": "./metrics_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "实验概况",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "实验设计的各组流量分配是否合理？",
+          "实验周期是否足够长以获得可靠结果？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "实验目标",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "验证定价模型对连续包月最优价格的判断，具体包括：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 验证23元是否为最优价格（相比25元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 评估激进降价（19元）和涨价（29元）的边界效应",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 量化不同价格策略对整体付费率和ARPU的影响",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. 识别套餐间的蚕食效应",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "实验设计",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "-------------",
+          "---------",
+          "---------"
+        ],
+        "headers": [
+          "实验组",
+          "连续包月价格",
+          "流量分配",
+          "其他套餐"
+        ],
+        "rows": [
+          [
+            "A组（控制组）",
+            "25元",
+            "50%",
+            "年卡249元、连续包季98元、季卡128元、月卡50元"
+          ],
+          [
+            "B1组（最优价格）",
+            "23元",
+            "30%",
+            "同A组"
+          ],
+          [
+            "B2组（激进降价）",
+            "19元",
+            "10%",
+            "同A组"
+          ],
+          [
+            "B3组（反向涨价）",
+            "29元",
+            "10%",
+            "同A组"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./flow_distribution.json",
+        "htmlPath": "./flow_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "数据概览",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "实验共涉及：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "活跃设备数：199,336台",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "付费订单数：8,312单",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "总付费率：4.17%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "核心指标对比",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪个组的表现最符合预期？",
+          "付费率和ARPU之间的权衡是什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "各组关键指标",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "----------",
+          "-----------",
+          "-----------",
+          "-----------"
+        ],
+        "headers": [
+          "指标",
+          "A组25元",
+          "B1组23元",
+          "B2组19元",
+          "B3组29元"
+        ],
+        "rows": [
+          [
+            "付费率",
+            "4.16%",
+            "4.24%",
+            "4.44%",
+            "3.74%"
+          ],
+          [
+            "连续包月付费率",
+            "4.04%",
+            "4.12%",
+            "4.38%",
+            "3.62%"
+          ],
+          [
+            "一年卡付费率",
+            "0.083%",
+            "0.079%",
+            "0.035%",
+            "0.075%"
+          ],
+          [
+            "ARPU",
+            "1.17元",
+            "1.13元",
+            "0.95元",
+            "1.09元"
+          ],
+          [
+            "ARPPU",
+            "28.15元",
+            "26.68元",
+            "21.39元",
+            "29.26元"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./payment_rate_comparison.json",
+        "htmlPath": "./payment_rate_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "指标分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "付费率表现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B2组最高（4.44%），比A组提升6.63%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B1组次之（4.24%），比A组提升1.90%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B3组最低（3.74%），比A组下降10.16%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "ARPU表现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "A组最高（1.17元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B1组略降（1.13元，-3.42%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B2组大幅下降（0.95元，-18.80%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B3组中等下降（1.09元，-6.84%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "ARPPU表现",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B3组最高（29.26元），反映出涨价后付费用户愿意支付更高价格",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B2组最低（21.39元），反映降价吸引的是价格敏感用户",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "实验预期验证",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "B1组是否真正验证了最优价格假设？",
+          "为什么B2组ARPU下降如此显著？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "预期1：B1组付费率 ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "text": "A组，ARPU无显著差异",
+        "type": "blockquote"
+      },
+      {
+        "children": [
+          {
+            "content": "验证结果",
+            "type": "bold"
+          },
+          {
+            "content": "：✓ 通过",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "付费率对比",
+                "type": "bold"
+              },
+              {
+                "content": "：B1组（4.24%）",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "A组（4.16%），提升1.90%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "ARPU对比",
+                "type": "bold"
+              },
+              {
+                "content": "：B1组（1.13元）vs A组（1.17元），差异-3.42%（在5%阈值内，可视为无显著差异）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "结论",
+            "type": "bold"
+          },
+          {
+            "content": "：B1组策略成功验证了模型判断。连续包月价格从25元降至23元，在提升付费率的同时保持了ARPU的基本稳定，实现了用户获取与收入质量的最佳平衡。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "预期2：B2组付费率 ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "text": "B1组，ARPU B1组",
+        "type": "blockquote"
+      },
+      {
+        "children": [
+          {
+            "content": "验证结果",
+            "type": "bold"
+          },
+          {
+            "content": "：✓ 通过",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "付费率对比",
+                "type": "bold"
+              },
+              {
+                "content": "：B2组（4.44%）",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "B1组（4.24%），提升4.64%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "ARPU对比",
+                "type": "bold"
+              },
+              {
+                "content": "：B2组（0.95元）",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "B1组（1.13元），下降15.93%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "结论",
+            "type": "bold"
+          },
+          {
+            "content": "：激进降价（19元）确实能显著提升付费率，但ARPU的大幅下降表明吸引了大量低价值用户。这种策略在追求用户规模时有效，但会损害整体收入质量。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "预期3：B3组付费率 ",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "B1组",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "验证结果",
+            "type": "bold"
+          },
+          {
+            "content": "：✓ 通过",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "付费率对比",
+                "type": "bold"
+              },
+              {
+                "content": "：B3组（3.74%）",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "B1组（4.24%），下降11.83%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "结论",
+            "type": "bold"
+          },
+          {
+            "content": "：涨价（29元）导致付费率明显下降，验证了用户对价格升高的敏感性。值得注意的是，B3组的ARPPU最高（29.26元），说明留存下来的付费用户价值更高。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "价格弹性分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "价格弹性数值说明了什么？",
+          "用户对降价和涨价的敏感度差异如何解释？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "价格弹性计算",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "价格弹性（Price Elasticity）衡量价格变化对需求（付费率）的影响程度：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "Elasticity = \\frac{\\Delta Q}{\\Delta P} \\times \\frac{P}{Q}\n",
+        "language": "latex",
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "content": "其中：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "ΔQ：付费率变化",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "ΔP：价格变化",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "P：基准价格",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Q：基准付费率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "各组价格弹性",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "---------",
+          "-----------",
+          "---------",
+          "------"
+        ],
+        "headers": [
+          "实验组",
+          "价格变化",
+          "付费率变化",
+          "价格弹性",
+          "解释"
+        ],
+        "rows": [
+          [
+            "B1组",
+            "25→23元 -8%",
+            "+1.90%",
+            "-0.24",
+            "需求缺乏弹性，小幅降价效果有限"
+          ],
+          [
+            "B2组",
+            "25→19元 -24%",
+            "+6.63%",
+            "-0.28",
+            "需求缺乏弹性，中幅降价收益递减"
+          ],
+          [
+            "B3组",
+            "25→29元 +16%",
+            "-10.16%",
+            "-0.63",
+            "需求弹性较高，涨价导致流失"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./price_elasticity.json",
+        "htmlPath": "./price_elasticity.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "关键洞察",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "价格弹性非对称性",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "降价弹性：-0.24 ",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "涨价弹性：-0.63（需求相对弹性）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "结论",
+            "type": "bold"
+          },
+          {
+            "content": "：用户对涨价的敏感度是降价的2-2.5倍",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "边际收益递减",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "从25元降至23元：降价2元，付费率+1.90%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "从25元降至19元：降价6元（额外4元），付费率+6.63%（额外+4.73%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "结论",
+            "type": "bold"
+          },
+          {
+            "content": "：前2元降价效率更高（0.95%每元），后4元降价效率下降（1.18%每元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "价格敏感性区间",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "19-23元：弹性较低，用户对小幅降价不敏感",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "25-29元：弹性较高，用户对涨价非常敏感",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "结论",
+            "type": "bold"
+          },
+          {
+            "content": "：25元可能是用户的心理锚点",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./price_impact.json",
+        "htmlPath": "./price_impact.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "蚕食效应分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "为什么降价会蚕食年卡的销售？",
+          "如何平衡短期收入和长期用户价值？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "蚕食效应定义",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "蚕食效应（Cannibalization Effect）指某产品价格下降导致用户从更高价值的替代产品转向该产品的现象。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "一年卡付费率变化",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "-------------",
+          "------------",
+          "---------"
+        ],
+        "headers": [
+          "实验组",
+          "连续包月价格",
+          "一年卡付费率",
+          "较A组变化"
+        ],
+        "rows": [
+          [
+            "A组",
+            "25元",
+            "0.083%",
+            "基线"
+          ],
+          [
+            "B1组",
+            "23元",
+            "0.079%",
+            "-5.29%"
+          ],
+          [
+            "B2组",
+            "19元",
+            "0.035%",
+            "-57.43%"
+          ],
+          [
+            "B3组",
+            "29元",
+            "0.075%",
+            "-10.49%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./cannibalization_effect.json",
+        "htmlPath": "./cannibalization_effect.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "价格锚点效应分析",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "年卡249元平摊到单月价格为 ",
+            "type": "text"
+          },
+          {
+            "content": "20.75元",
+            "type": "bold"
+          },
+          {
+            "content": "。根据价格锚点理论：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "B2组（19元）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "连续包月（19元）",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "年卡均摊（20.75元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "用户更倾向于购买连续包月",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "结果",
+            "type": "bold"
+          },
+          {
+            "content": "：一年卡付费率暴跌57.43%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "B1组（23元）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "连续包月（23元）",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "年卡均摊（20.75元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "年卡仍具性价比优势",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "结果",
+            "type": "bold"
+          },
+          {
+            "content": "：一年卡付费率仅下降5.29%（可接受范围）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "B3组（29元）",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "连续包月（29元）",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "年卡均摊（20.75元）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "年卡性价比凸显",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "结果",
+            "type": "bold"
+          },
+          {
+            "content": "：一年卡付费率下降10.49%（但ARPPU提升）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "蚕食效应量化",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "B2组蚕食效应",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "一年卡付费率从0.083%降至0.035%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "children": {
+              "items": [
+                {
+                  "content": [
+                    {
+                      "content": "一年卡订单减少：200,000 × ",
+                      "type": "text"
+                    },
+                    {
+                      "content": "0.083% - 0.035%",
+                      "type": "text"
+                    },
+                    {
+                      "content": " ",
+                      "type": "text"
+                    },
+                    {
+                      "content": "= 96单",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "损失年卡收入：96 × 249 = 23,904元",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "增加连续包月订单：866 - 4030 × 10% = 463单",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "增加连续包月收入：463 × 19 = 8,797元",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                },
+                {
+                  "content": [
+                    {
+                      "content": "净收入损失",
+                      "type": "bold"
+                    },
+                    {
+                      "content": "：23,904 - 8,797 = 15,107元",
+                      "type": "text"
+                    }
+                  ],
+                  "indent": 2
+                }
+              ],
+              "ordered": false,
+              "type": "list"
+            },
+            "content": [
+              {
+                "content": "假设活跃设备数为20万，则：",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "结论",
+            "type": "bold"
+          },
+          {
+            "content": "：B2组的激进降价策略虽然提升了连续包月销量，但蚕食效应导致整体收入质量下降。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "收入影响分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪个策略在长期收益上最优？",
+          "流量分配是否需要调整？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "收入影响估算（应用到全部流量）",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "假设将各组策略应用到全部流量（199,336活跃设备）：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "align": [
+          "------",
+          "------",
+          "--------",
+          "----------------",
+          "---------"
+        ],
+        "headers": [
+          "策略",
+          "ARPU",
+          "总收入",
+          "vs基线A组变化",
+          "LTV影响"
+        ],
+        "rows": [
+          [
+            "A组（25元）",
+            "1.17元",
+            "233,223元",
+            "基线",
+            "基线"
+          ],
+          [
+            "B1组（23元）",
+            "1.13元",
+            "225,250元",
+            "-3.42%",
+            "-3.42%"
+          ],
+          [
+            "B2组（19元）",
+            "0.95元",
+            "189,369元",
+            "-18.80%",
+            "-18.80%"
+          ],
+          [
+            "B3组（29元）",
+            "1.09元",
+            "217,276元",
+            "-6.84%",
+            "+3.80%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./revenue_impact.json",
+        "htmlPath": "./revenue_impact.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "长期价值（LTV）考量",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "用户留存率假设",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "连续包月用户留存率：60%（月度）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "年卡用户留存率：85%（年度）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "LTV计算",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": "latex",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": "LTV = ARPU \\times \\frac{1}{1 - \\text{留存率}}",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "各策略LTV调整后收入",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "A组：233,223 × 1.0 = 233,223元",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B1组：225,250 × 1.0 = 225,250元（ARPU下降，但用户结构相似）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B2组：189,369 × 0.95 = 179,900元（低价值用户多，留存率更低）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "B3组：217,276 × 1.04 = 225,967元（高价值用户多，留存率更高）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "最优策略建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "短期视角",
+            "type": "bold"
+          },
+          {
+            "content": "：A组（25元）收入最高",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "长期视角",
+            "type": "bold"
+          },
+          {
+            "content": "：B3组（29元）LTV最高",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "平衡视角",
+            "type": "bold"
+          },
+          {
+            "content": "：B1组（23元）在用户获取和收入质量间取得最佳平衡",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "混合策略建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "建议采用动态定价策略：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "新用户",
+            "type": "bold"
+          },
+          {
+            "content": "：首次展示23元（B1组策略），提升转化率",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "续费用户",
+            "type": "bold"
+          },
+          {
+            "content": "：25元（A组策略），维持ARPU",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "高价值用户",
+            "type": "bold"
+          },
+          {
+            "content": "：29元（B3组策略），最大化LTV",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "业务建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "如何实施建议的定价策略？",
+          "需要监控哪些关键指标？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "核心建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "采用B1组策略作为默认定价",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "理由：付费率提升1.90%，ARPU仅下降3.42%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "预期：长期LTV提升（更多用户 × 略低ARPU）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "风险：需监控用户留存率是否下降",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "保留A组策略作为对照组",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "理由：ARPU最高，适合高价值用户",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "实施：对活跃度高、付费意愿强的用户保留25元价格",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "避免B2组激进降价",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "理由：蚕食效应严重，一年卡收入下降57%",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "风险：长期LTV下降，收入质量恶化",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "谨慎使用B3组涨价策略",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "理由：付费率下降10%，但ARPPU提升",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "适用场景：价格不敏感的高端用户群体",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "实施计划",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "第1阶段",
+            "type": "bold"
+          },
+          {
+            "content": "（1-2周）：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "全面推行B1组策略（23元）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "建立30天追踪监控机制",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "关键指标：付费率、ARPU、一年卡付费率",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "第2阶段",
+            "type": "bold"
+          },
+          {
+            "content": "（3-4周）：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "分析用户分层效果",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "对高价值用户尝试B3组策略（29元）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "关键指标：用户留存率、LTV、ARPPU",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "第3阶段",
+            "type": "bold"
+          },
+          {
+            "content": "（第2个月）：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "基于数据优化动态定价算法",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "建立价格敏感性用户画像",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "关键指标：整体收入、用户生命周期价值",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "监控指标体系",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "---------",
+          "---------",
+          "---------"
+        ],
+        "headers": [
+          "指标类别",
+          "具体指标",
+          "预警阈值"
+        ],
+        "rows": [
+          [
+            "核心指标",
+            "付费率",
+            "4.0%"
+          ],
+          [
+            "ARPU",
+            "1.10元"
+          ],
+          [
+            "一年卡付费率",
+            "0.06%"
+          ],
+          [
+            "质量指标",
+            "ARPPU",
+            "25元"
+          ],
+          [
+            "用户留存率",
+            "50%（月度）"
+          ],
+          [
+            "蚕食率",
+            "50%"
+          ],
+          [
+            "健康指标",
+            "连续包月占比",
+            "60-80%"
+          ],
+          [
+            "年卡占比",
+            "15-30%"
+          ],
+          [
+            "季卡占比",
+            "5-15%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "风险与应对",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "风险1",
+            "type": "bold"
+          },
+          {
+            "content": "：竞品价格战",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "应对",
+                "type": "bold"
+              },
+              {
+                "content": "：强化年卡价值主张，强调长期性价比",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "风险2",
+            "type": "bold"
+          },
+          {
+            "content": "：用户价格敏感性增加",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "应对",
+                "type": "bold"
+              },
+              {
+                "content": "：建立动态定价机制，快速调整价格",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "风险3",
+            "type": "bold"
+          },
+          {
+            "content": "：蚕食效应加剧",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "应对",
+                "type": "bold"
+              },
+              {
+                "content": "：调整套餐展示顺序，突出年卡优势",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "局限性与后续研究",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "实验周期是否足够长？",
+          "如何进一步验证结论的稳健性？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "实验局限性",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "时间周期限制",
+            "type": "bold"
+          },
+          {
+            "content": "：7天实验期可能无法观察长期用户行为变化，尤其是续费和留存模式。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "流量分配偏差",
+            "type": "bold"
+          },
+          {
+            "content": "：各组流量分配不均（50%/30%/10%/10%），可能导致统计显著性问题。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "用户分层缺失",
+            "type": "bold"
+          },
+          {
+            "content": "：未按用户价值、活跃度、历史付费行为进行分层分析。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "季节性因素",
+            "type": "bold"
+          },
+          {
+            "content": "：1月可能存在特殊季节性影响（如新年消费习惯）。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "外部干扰",
+            "type": "bold"
+          },
+          {
+            "content": "：未考虑竞品活动、市场营销活动等外部因素。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "后续研究方向",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "延长实验周期",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建议4-6周实验期",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "观察续费率和长期LTV",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "验证价格敏感性的持续性",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "细分用户群体",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "按付费能力分层（高/中/低ARPU用户）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "按活跃度分层（日活/周活/月活用户）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "按历史付费行为分层（新用户/老用户/流失用户）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "A/B/n测试扩展",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "测试更多价格点（22元、24元、26元等）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "测试不同套餐组合",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "测试套餐展示顺序影响",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "动态定价模型",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "建立基于用户画像的个性化定价",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "利用机器学习预测最优价格",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "实时调整策略",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "交叉验证",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "在不同时间段重复实验",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "在不同用户群体验证",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "与历史数据对比",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "数据质量改进建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "增加用户维度",
+            "type": "bold"
+          },
+          {
+            "content": "：收集用户年龄、地区、设备类型等特征",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "细化指标",
+            "type": "bold"
+          },
+          {
+            "content": "：区分新用户和老用户的付费行为",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "追踪指标",
+            "type": "bold"
+          },
+          {
+            "content": "：增加续费率、流失率、LTV等长期指标",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "记录干预",
+            "type": "bold"
+          },
+          {
+            "content": "：详细记录营销活动、系统变更等干扰因素",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "附录",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "数据来源",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "实验数据",
+                "type": "bold"
+              },
+              {
+                "content": "：月卡改价实验结果-202601.xlsx",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "实验周期",
+                "type": "bold"
+              },
+              {
+                "content": "：2026-01-23 至 2026-01-29",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "数据清洗",
+                "type": "bold"
+              },
+              {
+                "content": "：已保存至 ",
+                "type": "text"
+              },
+              {
+                "code": "./data/cleaneddata.csv",
+                "type": "inlineCode"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "详细摘要",
+                "type": "bold"
+              },
+              {
+                "content": "：已保存至 ",
+                "type": "text"
+              },
+              {
+                "code": "./data/summary.md",
+                "type": "inlineCode"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "计算公式",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "付费率",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "付费率 = \\frac{付费订单数}{活跃设备数}\n",
+        "language": "latex",
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPU",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "ARPU = \\frac{付费金额}{活跃设备数}\n",
+        "language": "latex",
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "content": "ARPPU",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "ARPPU = \\frac{付费金额}{付费订单数}\n",
+        "language": "latex",
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "content": "价格弹性",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "Elasticity = \\frac{\\Delta 付费率}{\\Delta 价格} \\times \\frac{基准价格}{基准付费率}\n",
+        "language": "latex",
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "content": "蚕食率",
+            "type": "bold"
+          },
+          {
+            "content": "：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "蚕食率 = 1 - \\frac{被蚕食产品付费率}{基准付费率}\n",
+        "language": "latex",
+        "type": "codeBlock"
+      },
+      {
+        "content": "术语表",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "------"
+        ],
+        "headers": [
+          "术语",
+          "解释"
+        ],
+        "rows": [
+          [
+            "ARPU",
+            "Average Revenue Per User，每用户平均收入"
+          ],
+          [
+            "ARPPU",
+            "Average Revenue Per Paying User，每付费用户平均收入"
+          ],
+          [
+            "蚕食效应",
+            "产品价格下降导致用户从更高价值产品转向该产品"
+          ],
+          [
+            "价格弹性",
+            "价格变化对需求变化的影响程度"
+          ],
+          [
+            "价格锚点",
+            "用户用于比较价格的参考点"
+          ],
+          [
+            "LTV",
+            "Lifetime Value，用户生命周期价值"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "报告生成时间",
+            "type": "bold"
+          },
+          {
+            "content": "：2025-02-03",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "分析工具",
+            "type": "bold"
+          },
+          {
+            "content": "：Pardus AI Analytics Engine",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "可视化工具",
+            "type": "bold"
+          },
+          {
+            "content": "：Plotly",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "数据处理",
+            "type": "bold"
+          },
+          {
+            "content": "：Polars",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

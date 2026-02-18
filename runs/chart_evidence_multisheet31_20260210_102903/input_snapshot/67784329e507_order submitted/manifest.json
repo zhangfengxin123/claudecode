@@ -1,0 +1,18 @@
+{
+  "case_id": "67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3",
+  "title": "order submitted",
+  "source_cache_manifest": "2026-02-17T14:22:17Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "混淆矩阵完整分析.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/67784329e507_order submitted/混淆矩阵完整分析.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/67784329e507_order submitted/混淆矩阵完整分析.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

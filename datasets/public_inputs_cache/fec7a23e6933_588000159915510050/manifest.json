@@ -1,0 +1,29 @@
+{
+  "case_id": "fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e",
+  "title_hint": "588000159915510050",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 2,
+  "files_ok_count": 2,
+  "files": [
+    {
+      "idx": 0,
+      "name": "全套数据.xlsx",
+      "status": 200,
+      "size_bytes": 960786,
+      "source_url": "https://pardusai.org/v1/api/public/project/fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e/files/%E5%85%A8%E5%A5%97%E6%95%B0%E6%8D%AE.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/fec7a23e6933_588000159915510050/全套数据.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 432,
+      "source_url": "https://pardusai.org/v1/api/public/project/fec7a23e6933b0964a1b3c8fa6c50f658aa0aa2ae25df0e8c5b3ac93afa6085e/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/fec7a23e6933_588000159915510050/description.txt",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:02Z"
+}

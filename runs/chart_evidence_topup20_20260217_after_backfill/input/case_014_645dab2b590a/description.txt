@@ -1,0 +1,8 @@
+Description:
+This dataset show Foodpanda customer and order details. It includes customer age, city, food item, prices, payment metods, ratings, and delivery status. This data help to understand customer behavior, popular food, and service quality. It is useful for basic data analysis and student projects.
+
+Content:
+This dataset contains detaile information about Foodpanda customer and their food orders. It includes customer detals, order history, food items, payment methods, ratings and delivery status.
+
+Context:
+The dataset is designe for understanding customer behavior and food delivery performance. It can be used for analyzing ordering patterns, popular food categories, payment prefernces, and service quality. This dataset is suitable for beginners, students, and basic exploratory data analysis (EDA) projects.

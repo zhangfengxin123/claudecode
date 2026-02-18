@@ -1,0 +1,121 @@
+{
+  "source_row": {
+    "idx": 25,
+    "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+    "title": "陕西能源职业技术学院招生就业专业排序",
+    "chart_count": 6,
+    "upload_count": 2,
+    "doc_status": 200,
+    "up_status": 200,
+    "html": "case_025_f5171f88125c.html"
+  },
+  "queue_log": {
+    "case_index": 1,
+    "template_case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+    "title": "陕西能源职业技术学院招生就业专业排序",
+    "started_at": "2026-02-17T08:05:06Z",
+    "rerun_case_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+    "upload_response": {
+      "message": "Files uploaded successfully"
+    },
+    "queue_history": [
+      {
+        "at": "2026-02-17T08:05:10Z",
+        "status": "pending",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:05:31Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:05:52Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:06:12Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:06:34Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:06:54Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:07:16Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:07:36Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:07:57Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:08:18Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:08:38Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:08:59Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:09:20Z",
+        "status": "processing",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      },
+      {
+        "at": "2026-02-17T08:09:41Z",
+        "status": "completed",
+        "tasks_ahead": 0,
+        "estimated_wait_minutes": 0
+      }
+    ],
+    "final_status": "completed",
+    "last_queue": {
+      "project_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+      "status": "completed",
+      "tasks_ahead": 0,
+      "queue_by_tier": [],
+      "total_pending": 0,
+      "currently_processing": 0,
+      "estimated_wait_minutes": 0,
+      "priority_level": "premium",
+      "created_at": "2026-02-17T08:05:09.709927Z",
+      "started_at": "2026-02-17T08:05:14.715446Z"
+    }
+  }
+}

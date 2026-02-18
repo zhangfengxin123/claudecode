@@ -1,0 +1,32 @@
+{
+  "case_id": "e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746",
+  "title": "竞品分析",
+  "source_cache_manifest": "2026-02-17T14:36:46Z",
+  "status": "ok",
+  "copied_files": 3,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "content_analysis.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e8263ae221ad_竞品分析/content_analysis.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/e8263ae221ad_竞品分析/content_analysis.csv",
+      "ok": true
+    },
+    {
+      "name": "站外汇总.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e8263ae221ad_竞品分析/站外汇总.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/e8263ae221ad_竞品分析/站外汇总.xlsx",
+      "ok": true
+    },
+    {
+      "name": "cleaned_data.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/e8263ae221ad_竞品分析/cleaned_data.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/e8263ae221ad_竞品分析/cleaned_data.csv",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

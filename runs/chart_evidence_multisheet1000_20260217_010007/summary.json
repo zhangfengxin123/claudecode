@@ -1,0 +1,306 @@
+{
+  "generated_at": "2026-02-17T01:08:58",
+  "sample_size": 30,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "e226fa5aa55b9decfd58b42c0c8cb65dbcb46689b1f0b727ec232ee0083ee1c7",
+      "title": "2024-2025 CAP review",
+      "chart_count": 15,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_e226fa5aa55b.html"
+    },
+    {
+      "idx": 2,
+      "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+      "title": "CAP Analysis",
+      "chart_count": 14,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_ae3bf09e493f.html"
+    },
+    {
+      "idx": 3,
+      "case_id": "739cc701921df5e6b188cc2b4fca564dd56fcabf835776d790cb756bad7226a6",
+      "title": "用户反馈",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_739cc701921d.html"
+    },
+    {
+      "idx": 4,
+      "case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+      "title": "2024 vs 2025 CAP Review report",
+      "chart_count": 11,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_64914baf5ff5.html"
+    },
+    {
+      "idx": 5,
+      "case_id": "e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a",
+      "title": "KA品牌下探数据汇总",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_e8c35199ca37.html"
+    },
+    {
+      "idx": 6,
+      "case_id": "b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d",
+      "title": "arbitrage",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_b9c4c3a493f4.html"
+    },
+    {
+      "idx": 7,
+      "case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+      "title": "id市场投放效果与转化数据分析",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_b93dae71bcf0.html"
+    },
+    {
+      "idx": 8,
+      "case_id": "249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e",
+      "title": "国际贸易",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_249b12b9deda.html"
+    },
+    {
+      "idx": 9,
+      "case_id": "67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3",
+      "title": "order submitted",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_67784329e507.html"
+    },
+    {
+      "idx": 10,
+      "case_id": "0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695",
+      "title": "2022-2026 Case Data",
+      "chart_count": 9,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_0c7131d0cbdc.html"
+    },
+    {
+      "idx": 11,
+      "case_id": "bc9096fe2102fcf754cb47c1631aed3576bf8ca6aef0c3d78e6f40b72d38fc92",
+      "title": "Microsoft is Falling Down",
+      "chart_count": 9,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_bc9096fe2102.html"
+    },
+    {
+      "idx": 12,
+      "case_id": "3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e",
+      "title": "Twitter和YouTube的数据",
+      "chart_count": 9,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_3f3ac24519b2.html"
+    },
+    {
+      "idx": 13,
+      "case_id": "129eef16c57a7866b4b5df93f47226b1bb77dfb63c150e119b46afd994d87428",
+      "title": "email experiment",
+      "chart_count": 8,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_129eef16c57a.html"
+    },
+    {
+      "idx": 14,
+      "case_id": "79abb110cddb5629c4a18c96eaee9dc701901184b012a4979256758dedaccdc5",
+      "title": "总承包",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_79abb110cddb.html"
+    },
+    {
+      "idx": 15,
+      "case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+      "title": "月卡改价实验数据分析",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_ca9493d910dd.html"
+    },
+    {
+      "idx": 16,
+      "case_id": "fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a",
+      "title": "辅酶q10",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_fd64064b9ffb.html"
+    },
+    {
+      "idx": 17,
+      "case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+      "title": "Book1",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_6a109b2edad7.html"
+    },
+    {
+      "idx": 18,
+      "case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+      "title": "FEDFUNDS",
+      "chart_count": 6,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_9f9aa3b895db.html"
+    },
+    {
+      "idx": 19,
+      "case_id": "caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872",
+      "title": "new",
+      "chart_count": 6,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_caaf784429d7.html"
+    },
+    {
+      "idx": 20,
+      "case_id": "fdec4b4d26cbac9f558b3e47449089e928bda4188427b70587586a59dd6687e3",
+      "title": "Copy of Project",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_fdec4b4d26cb.html"
+    },
+    {
+      "idx": 21,
+      "case_id": "96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38",
+      "title": "Linac setup overview",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_021_96f9d88da186.html"
+    },
+    {
+      "idx": 22,
+      "case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+      "title": "反向调价实验数据分析",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_022_1b89e7d1ffb4.html"
+    },
+    {
+      "idx": 23,
+      "case_id": "56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6",
+      "title": "卫生统计年鉴",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_023_568921634187.html"
+    },
+    {
+      "idx": 24,
+      "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+      "title": "KA品牌下探数据汇总",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_024_4bc65ee64081.html"
+    },
+    {
+      "idx": 25,
+      "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+      "title": "陕西能源职业技术学院招生就业专业排序",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_025_f5171f88125c.html"
+    },
+    {
+      "idx": 26,
+      "case_id": "e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746",
+      "title": "竞品分析",
+      "chart_count": 6,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_026_e8263ae221ad.html"
+    },
+    {
+      "idx": 27,
+      "case_id": "a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+      "title": "年卡改价实验数据分析",
+      "chart_count": 5,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_027_a77d543b4e14.html"
+    },
+    {
+      "idx": 28,
+      "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+      "title": "SSCOM L02 AnalyticsCase_Meyer",
+      "chart_count": 5,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_028_e79c8f00ffa4.html"
+    },
+    {
+      "idx": 29,
+      "case_id": "df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c",
+      "title": "dam monitoring data analysis",
+      "chart_count": 5,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_029_df7592361534.html"
+    },
+    {
+      "idx": 30,
+      "case_id": "751e322a180d9729609b9c6003dc7ff4042517d031bc56681329ccd7c9a180e9",
+      "title": "wechat marketing",
+      "chart_count": 5,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_030_751e322a180d.html"
+    }
+  ]
+}

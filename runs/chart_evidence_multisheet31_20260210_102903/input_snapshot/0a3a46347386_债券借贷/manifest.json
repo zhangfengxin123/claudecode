@@ -1,0 +1,18 @@
+{
+  "case_id": "0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3",
+  "title": "债券借贷",
+  "source_cache_manifest": "2026-02-17T14:11:08Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "【华西固收】债券借贷更新-20260123.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0a3a46347386_债券借贷/【华西固收】债券借贷更新-20260123.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet31_20260210_102903/input_snapshot/0a3a46347386_债券借贷/【华西固收】债券借贷更新-20260123.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

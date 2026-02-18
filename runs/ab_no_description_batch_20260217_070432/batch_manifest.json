@@ -1,0 +1,119 @@
+{
+  "generated_at": "2026-02-17T07:04:32Z",
+  "run_id": "ab_no_description_batch_20260217_070432",
+  "source_run": "/Users/mac/PycharmProjects/claudecode/Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007",
+  "selected_count": 11,
+  "batch_size": 4,
+  "cases": [
+    {
+      "idx": 2,
+      "case_id": "ae3bf09e493f001b53e8b01c03cd52002a0dbd59a1a0d66b901ebd53c2641996",
+      "title": "CAP Analysis",
+      "chart_count": 14,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_ae3bf09e493f.html"
+    },
+    {
+      "idx": 4,
+      "case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+      "title": "2024 vs 2025 CAP Review report",
+      "chart_count": 11,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_64914baf5ff5.html"
+    },
+    {
+      "idx": 7,
+      "case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+      "title": "id市场投放效果与转化数据分析",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_b93dae71bcf0.html"
+    },
+    {
+      "idx": 15,
+      "case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+      "title": "月卡改价实验数据分析",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_ca9493d910dd.html"
+    },
+    {
+      "idx": 17,
+      "case_id": "6a109b2edad7898cf940592a008b727debb0942effcfef4f34915e7b2643744b",
+      "title": "Book1",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_6a109b2edad7.html"
+    },
+    {
+      "idx": 18,
+      "case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+      "title": "FEDFUNDS",
+      "chart_count": 6,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_9f9aa3b895db.html"
+    },
+    {
+      "idx": 22,
+      "case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+      "title": "反向调价实验数据分析",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_022_1b89e7d1ffb4.html"
+    },
+    {
+      "idx": 24,
+      "case_id": "4bc65ee64081f6588be256d0d752ef6ba7a77d53bad780aa3feed908ac50447c",
+      "title": "KA品牌下探数据汇总",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_024_4bc65ee64081.html"
+    },
+    {
+      "idx": 25,
+      "case_id": "f5171f88125cc8692e2d69abcac5d97c2769fdf299d984a0ec79b02bb0464f41",
+      "title": "陕西能源职业技术学院招生就业专业排序",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_025_f5171f88125c.html"
+    },
+    {
+      "idx": 27,
+      "case_id": "a77d543b4e14b1d25ae62466196499bda7b43a73aacbed0e94e20a8cabe8294c",
+      "title": "年卡改价实验数据分析",
+      "chart_count": 5,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_027_a77d543b4e14.html"
+    },
+    {
+      "idx": 28,
+      "case_id": "e79c8f00ffa45199831dcd8241415bc23c73a27dd7a4ae2cb5db87106d1a285b",
+      "title": "SSCOM L02 AnalyticsCase_Meyer",
+      "chart_count": 5,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_028_e79c8f00ffa4.html"
+    }
+  ]
+}

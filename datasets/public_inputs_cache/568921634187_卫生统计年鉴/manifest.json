@@ -1,0 +1,20 @@
+{
+  "case_id": "56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6",
+  "title_hint": "卫生统计年鉴",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "卫生统计年鉴.xlsx",
+      "status": 200,
+      "size_bytes": 236887,
+      "source_url": "https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/files/%E5%8D%AB%E7%94%9F%E7%BB%9F%E8%AE%A1%E5%B9%B4%E9%89%B4.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/568921634187_卫生统计年鉴/卫生统计年鉴.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:17:17Z"
+}

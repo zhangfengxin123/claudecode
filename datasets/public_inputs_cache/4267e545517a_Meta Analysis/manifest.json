@@ -1,0 +1,56 @@
+{
+  "case_id": "4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a",
+  "title_hint": "Meta Analysis",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 5,
+  "files_ok_count": 5,
+  "files": [
+    {
+      "idx": 0,
+      "name": "Downloadable-BS-Q4-25-FINAL.xlsx",
+      "status": 200,
+      "size_bytes": 16005,
+      "source_url": "https://pardusai.org/v1/api/public/project/4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a/files/Downloadable-BS-Q4-25-FINAL.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Downloadable-BS-Q4-25-FINAL.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+      "status": 200,
+      "size_bytes": 176957,
+      "source_url": "https://pardusai.org/v1/api/public/project/4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a/files/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 58,
+      "source_url": "https://pardusai.org/v1/api/public/project/4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/description.txt",
+      "downloaded_now": true
+    },
+    {
+      "idx": 3,
+      "name": "Earnings-Presentation-Q4-2025-FINAL.pdf",
+      "status": 200,
+      "size_bytes": 238777,
+      "source_url": "https://pardusai.org/v1/api/public/project/4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a/files/Earnings-Presentation-Q4-2025-FINAL.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Earnings-Presentation-Q4-2025-FINAL.pdf",
+      "downloaded_now": true
+    },
+    {
+      "idx": 4,
+      "name": "Downloadable-PL-Q4-25-FINAL.xlsx",
+      "status": 200,
+      "size_bytes": 15455,
+      "source_url": "https://pardusai.org/v1/api/public/project/4267e545517a74b10d3327cf664c4a58c12d02dbb419b17b6d97382d283a1a2a/files/Downloadable-PL-Q4-25-FINAL.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/4267e545517a_Meta Analysis/Downloadable-PL-Q4-25-FINAL.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:16:44Z"
+}

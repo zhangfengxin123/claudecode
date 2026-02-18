@@ -1,0 +1,631 @@
+{
+  "generated_at": "2026-02-17T15:18:55.812337Z",
+  "target": "continue capture after backfill",
+  "success_count": 52,
+  "failed_count": 8,
+  "input_complete_success_count": 52,
+  "success": [
+    {
+      "case_id": "050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa",
+      "title": "affirm",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_001_050f8f12a50d.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_001_050f8f12a50d",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "482b713ac9e581a78d2bcd783ec240f51f45875a8387d1f231be527bd0b34b1d",
+      "title": "Nastran help",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_002_482b713ac9e5.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_002_482b713ac9e5",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "6059a46e6558851c3b874505336eaa1b545ffd38313f6aa729a95f57718d3fa8",
+      "title": "CPIAUCSL",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_003_6059a46e6558.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_003_6059a46e6558",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "88ccdc326903b3a46c1ee211b798979b557cf120c5f265f26aa0a6535a3017b7",
+      "title": "USEPUINDXD",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_004_88ccdc326903.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_004_88ccdc326903",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "1d0473723abd604f54e6c07bfe48da8b01d64e817c75eddcd25e9bfa984673f7",
+      "title": "Fred Analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_005_1d0473723abd.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_005_1d0473723abd",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "42a8d7a65b922176fdf369ddf2e5fe990970301ae617d0e98a9e4ab38963fdb8",
+      "title": "Fred data Analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_006_42a8d7a65b92.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_006_42a8d7a65b92",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "0a52040dfd35159cff22f87186d5ece662dbc786f2134de311c541321c63d888",
+      "title": "21世纪以来美国在第一岛链地区水面舰艇部署变化情况",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_007_0a52040dfd35.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_007_0a52040dfd35",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf",
+      "title": "list of cricket players and prices for HBL PSL 2026",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_008_17235fe14346.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_008_17235fe14346",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "132f6ea52211466639f2c4215e76f17cb32f364f6259ff434be5c25d8b3f5939",
+      "title": "global_cybercrime_regulation_index_clean",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_009_132f6ea52211.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_009_132f6ea52211",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "2005fbaa3b31d0bcfbb9d76a99843c88166fe56f2ae64890c09e07b4a12e6bac",
+      "title": "background_noise_focus_dataset",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_010_2005fbaa3b31.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_010_2005fbaa3b31",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "8036c8fe31cbff1740c72a7083080ac3f32198e518fa97504f51496d450be457",
+      "title": "YC and Ivy League",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_011_8036c8fe31cb.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_011_8036c8fe31cb",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "7a1a4fa9b886c3208d7674c4b9ee2dd2be1791d751ac70d8c6eff6dd8ca5f7ed",
+      "title": "fortune500",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_012_7a1a4fa9b886.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_012_7a1a4fa9b886",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "ea591fae3bc1656bb35ce7bd8750649e6ea40be3cf861482c30a68811e022fde",
+      "title": "AI驱动的新经济中宏观与微观的脱节",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_013_ea591fae3bc1.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_013_ea591fae3bc1",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "7d3e64045132e2be47f631d1f34228b251c3d7ba9b7c6227a3ef95049f599b50",
+      "title": "纽约马拉松前200名选手成绩及数据分析报告",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_014_7d3e64045132.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_014_7d3e64045132",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0",
+      "title": "testelect",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_015_94cf95c0c5bc.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_015_94cf95c0c5bc",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "25c51794803d705c17d4e5c83caf02a823cb2797406beac8c7e577813fee32a6",
+      "title": "10970794",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_016_25c51794803d.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_016_25c51794803d",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "ea6c6d648fc830949c23dd0ba826e94b4c62d69b430ae792919152246a3678d7",
+      "title": "Newyork Marathon Player Data Analysis Report From 2000 to 2025",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_018_ea6c6d648fc8.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_018_ea6c6d648fc8",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "102699da486d6213ddae0f02a0e5df31d97f33148e94629dc1212f8e67d0e954",
+      "title": "Newyork Marathon Data Analysis From 2000-2025",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_019_102699da486d.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_019_102699da486d",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "c65e1761d736a3c232fc3519eb11c8a360fc92897dd4788e383cfb6751891ad8",
+      "title": "world_cup_last_50_years",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_020_c65e1761d736.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_020_c65e1761d736",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "e90e49395c9ee39973972226949e0d69cf3c7170e3dd77ce519b920b322ec79d",
+      "title": "COPD1",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_023_e90e49395c9e.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_023_e90e49395c9e",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "a24ec8e46d0de087eb4455eb07fa1ec946b31799f26380e84ca23ca3457d8bec",
+      "title": "test1",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_024_a24ec8e46d0d.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_024_a24ec8e46d0d",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9",
+      "title": "demand",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_025_b687e7946057.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_025_b687e7946057",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af",
+      "title": "tresp_pathways_generation_storage_published",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_026_d3e387c61406.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_026_d3e387c61406",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "72ef25410fd275be5b621fb1d0019787ec39c22c03217a8e333c107c1d07f2dd",
+      "title": "Crypto Currencies Analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_027_72ef25410fd2.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_027_72ef25410fd2",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "4f941f32c468b66391aa9cbc55bf54e8b9b19e6c37e3195bbefebc175b01edb2",
+      "title": "Crypto Currencies Analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_028_4f941f32c468.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_028_4f941f32c468",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "c16b5d7ab713de937ea00e5254b7cd6b6b08da40e5f70c78901f2ad3b320ed01",
+      "title": "测试",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/items/case_030_c16b5d7ab713.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill/input/case_030_c16b5d7ab713",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "466c55584f6bbb04d6d4d4abc4133066e3ba1af99d7da4749b67bb282008f0fa",
+      "title": "HK Alcohol",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/items/case_005_466c55584f6b.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/input/case_005_466c55584f6b",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "6752e496c7f4c5c55806244459dd3fb050d68ece742cf305b685e12e3cb06ef1",
+      "title": "Dynamic Factor",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/items/case_006_6752e496c7f4.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/input/case_006_6752e496c7f4",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b",
+      "title": "Henagliflozin post-hoc analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/items/case_007_a8851aeca7d6.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/input/case_007_a8851aeca7d6",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "35fe9f98a5565e83dd97e074beb7fd80d42b3e2467bde1dec7074a9aefe4e7cb",
+      "title": "ISP",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/items/case_008_35fe9f98a556.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/input/case_008_35fe9f98a556",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "6b4b51bd9afaa5d8f8512d51c00d3f5cde948f551ad09e3829457b2ab7a3e29b",
+      "title": "001",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/items/case_011_6b4b51bd9afa.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/input/case_011_6b4b51bd9afa",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "1f687eef8d313775ba0e88213696568433e05372980f59b78b9c03b2b1bbdc3c",
+      "title": "111",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/items/case_012_1f687eef8d31.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/input/case_012_1f687eef8d31",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86",
+      "title": "compare salary of software jobs",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/items/case_013_f930b0ba80d0.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/input/case_013_f930b0ba80d0",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "fc6bcedb54469f410d7ce38c36ccf9aff301f8b053a9dffcd9163eb6893d67dc",
+      "title": "RFM分层可视化呈现",
+      "status": "ok",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/items/case_014_fc6bcedb5446.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_new40_20260217_after_backfill_resume/input/case_014_fc6bcedb5446",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "1759c0255f26a83e01643389f751d277620f6ae231651effec6bdb0c814fdb55",
+      "title": "超级大乐透",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_001_1759c0255f26.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_001_1759c0255f26",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "17faad37ce6bf04378012190d8c563e8611827132b0944643f44af1350abb758",
+      "title": "jinteki",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_002_17faad37ce6b.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_002_17faad37ce6b",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d",
+      "title": "netrunner",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_004_627489b15cf3.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_004_627489b15cf3",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "a24f96566352f56e7fc34e4203690ce1ddb8d5cb1fa78c4bc804bdc7382836b8",
+      "title": "amazon",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_005_a24f96566352.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_005_a24f96566352",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe",
+      "title": "amazon",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_006_db42ed7fbcda.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_006_db42ed7fbcda",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834",
+      "title": "中国癌症患者分析",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_008_964e64e1c41e.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_008_964e64e1c41e",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387",
+      "title": "Newyork Marathon top 500 analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_009_e61e140fd33d.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_009_e61e140fd33d",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "32ee75a88254b46f2cbd02ede9735011c4e053571c7c25597b82583b4befd38c",
+      "title": "Amazon Financial Analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_010_32ee75a88254.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_010_32ee75a88254",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "fa19c538b421112c351c21f4018d955513b8dbd75c0b0b3a2a64bee4b7fc4080",
+      "title": "AI Agent prediction",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_011_fa19c538b421.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_011_fa19c538b421",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "d24928110bfb9c4ac3256452419595ad80e7bec8eb78ffcef007efad629db4c8",
+      "title": "Barclays Impact Series 14 - AI Gets Physical",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_012_d24928110bfb.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_012_d24928110bfb",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "afa11bd78c8faeef38adbbe8f2b9830fba0f67c7c8c3553a1a84ef125be92d20",
+      "title": "Unemployment in different area analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_013_afa11bd78c8f.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_013_afa11bd78c8f",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "645dab2b590ad4d056bcd900aff45e3f069de525bbcbb5dd397cd5d628d517aa",
+      "title": "Foodpanda Analysis",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_014_645dab2b590a.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_014_645dab2b590a",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "74fb672ca369d9cd53cd459951592bf48f57d0c3feed1a0e458440a5bb3b3074",
+      "title": "NIO Inc",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_015_74fb672ca369.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_015_74fb672ca369",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "89357cf83bbc7a685f53cf87ce96c172a426eff5787e4dd810096ce5a09c920a",
+      "title": "大乐透透透",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_016_89357cf83bbc.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_016_89357cf83bbc",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d",
+      "title": "LS HAF贴胶及MESH贴胶设备过程问题记录",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_017_76112f91b96e.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_017_76112f91b96e",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "dae89b508977e39879d3956315061d60551227d78d09400176670fbb53725bd0",
+      "title": "bilt",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_018_dae89b508977.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_018_dae89b508977",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "c5d74c5c2976af994fb174e5384e1873895059a0a7e6ae56860f62c867319529",
+      "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_019_c5d74c5c2976.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_019_c5d74c5c2976",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    },
+    {
+      "case_id": "a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e",
+      "title": "2026-02-07",
+      "status": "ok",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "html_path": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/items/case_020_a66a96a46ee2.html",
+      "input_dir": "Pardus/.codex_session/runs/chart_evidence_topup20_20260217_after_backfill/input/case_020_a66a96a46ee2",
+      "html_exists": true,
+      "input_exists": true,
+      "input_complete": true
+    }
+  ],
+  "failed": [
+    {
+      "case_id": "5d719d33f8e5835d9ef8e26bd0c7bf11f3b6f315124072dec109ada3430754a6",
+      "title": "X post",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "error": "uploads endpoint unavailable: case=5d719d33f8e5835d9ef8e26bd0c7bf11f3b6f315124072dec109ada3430754a6 status=404"
+    },
+    {
+      "case_id": "60f78c56d2edc9619daf292357cedf68b084b533d98b80062fa33ba476ec4203",
+      "title": "Nvidia Analysis",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "error": "uploads endpoint unavailable: case=60f78c56d2edc9619daf292357cedf68b084b533d98b80062fa33ba476ec4203 status=404"
+    },
+    {
+      "case_id": "8c94f687b73f0bdefb50952f6ac33e4d7f9fa285bbced303cbab9360ce99e808",
+      "title": "RAG paper",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "error": "uploads endpoint unavailable: case=8c94f687b73f0bdefb50952f6ac33e4d7f9fa285bbced303cbab9360ce99e808 status=404"
+    },
+    {
+      "case_id": "cac9cdb389276b802d29f5a87571b06373df368bdfae4931f19b870fd75dc1e9",
+      "title": "Citation network among Chinese Statisticians",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "error": "uploads endpoint unavailable: case=cac9cdb389276b802d29f5a87571b06373df368bdfae4931f19b870fd75dc1e9 status=404"
+    },
+    {
+      "case_id": "10872537e4e63becb13b431b67e079ae8e904379a894194566dde9105c4a9d55",
+      "title": "测试",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "error": "uploads endpoint unavailable: case=10872537e4e63becb13b431b67e079ae8e904379a894194566dde9105c4a9d55 status=404"
+    },
+    {
+      "case_id": "9d1f0d0d63f4dec79d1e39e38446484ae134b897c5bbba05e050ef4360780e3a",
+      "title": "0001",
+      "source_run": "chart_evidence_new40_20260217_after_backfill_resume",
+      "error": "uploads endpoint unavailable: case=9d1f0d0d63f4dec79d1e39e38446484ae134b897c5bbba05e050ef4360780e3a status=404"
+    },
+    {
+      "case_id": "1b701776ed003bdff1fdae76b09b29c563d99ced6af02fa763b87f53e43d7800",
+      "title": "JP election",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "error": "uploads endpoint unavailable: case=1b701776ed003bdff1fdae76b09b29c563d99ced6af02fa763b87f53e43d7800 status=404"
+    },
+    {
+      "case_id": "e33e2db8d619b9f2301768245e6fe0efdf810ce39036630c35a2baaa374cb7f6",
+      "title": "Future market in China",
+      "source_run": "chart_evidence_topup20_20260217_after_backfill",
+      "error": "uploads endpoint unavailable: case=e33e2db8d619b9f2301768245e6fe0efdf810ce39036630c35a2baaa374cb7f6 status=404"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "case_id": "caaf784429d79732a4f4602cc6ab086c377a35d4c20ba06071f084eba554f872",
+  "title": "new",
+  "source_cache_manifest": "2026-02-17T14:37:33Z",
+  "status": "ok",
+  "copied_files": 5,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "Sample scanning energy spectrum standard value.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/Sample scanning energy spectrum standard value.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/caaf784429d7_new/Sample scanning energy spectrum standard value.csv",
+      "ok": true
+    },
+    {
+      "name": "Coal Quality Rapid Testing Indicators and Requirements.md",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/Coal Quality Rapid Testing Indicators and Requirements.md",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/caaf784429d7_new/Coal Quality Rapid Testing Indicators and Requirements.md",
+      "ok": true
+    },
+    {
+      "name": "spectroscopic data.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/spectroscopic data.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/caaf784429d7_new/spectroscopic data.csv",
+      "ok": true
+    },
+    {
+      "name": "spectroscopic dataSample standard value.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/spectroscopic dataSample standard value.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/caaf784429d7_new/spectroscopic dataSample standard value.csv",
+      "ok": true
+    },
+    {
+      "name": "Sample scanning energy spectrum.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/caaf784429d7_new/Sample scanning energy spectrum.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_multisheet1000_20260217_010007/input_snapshot/caaf784429d7_new/Sample scanning energy spectrum.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

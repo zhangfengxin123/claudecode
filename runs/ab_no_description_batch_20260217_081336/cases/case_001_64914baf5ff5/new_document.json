@@ -1,0 +1,2882 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"Comprehensive CAP Analysis Report 2011-2025\"\ndescription: \"In-depth analysis of Corrective and Preventive Actions (CAP) data including trends, costs, root causes, and performance metrics\"\nauthor: \"Pardus Agent\"\ndate: \"2025-02-17\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "Comprehensive CAP Analysis Report 2011-2025",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "Executive Summary",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This report provides a comprehensive analysis of Corrective and Preventive Actions ",
+            "type": "text"
+          },
+          {
+            "content": "CAP",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "data from 2011 to 2025, covering 591 historical records and 10 current 2025 records. The analysis reveals key patterns in CAP types, root causes, costs, and performance metrics that can inform quality improvement initiatives.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Findings:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Internal Anomalies",
+                "type": "bold"
+              },
+              {
+                "content": "35.4%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "and ",
+                "type": "text"
+              },
+              {
+                "content": "Claims",
+                "type": "bold"
+              },
+              {
+                "content": "27.2%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "are the most prevalent CAP types",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Material/Matière",
+                "type": "bold"
+              },
+              {
+                "content": "44.0%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "and ",
+                "type": "text"
+              },
+              {
+                "content": "Method/Méthode",
+                "type": "bold"
+              },
+              {
+                "content": "34.0%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "are the dominant root cause categories",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 shows significantly higher average costs per CAP ",
+                "type": "text"
+              },
+              {
+                "content": "€33,371.81",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "compared to historical average ",
+                "type": "text"
+              },
+              {
+                "content": "€5,523.46",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "The ",
+                "type": "text"
+              },
+              {
+                "content": "I&R process",
+                "type": "bold"
+              },
+              {
+                "content": "52.7%",
+                "type": "text"
+              },
+              {
+                "content": " ",
+                "type": "text"
+              },
+              {
+                "content": "accounts for more than half of all CAPs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "code": "./yearly_cap_trend.json",
+        "htmlPath": "./yearly_cap_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "CAP Overview and Data Scope",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The analysis covers CAP records from two main datasets:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Historical Data 2011-2024",
+                "type": "bold"
+              },
+              {
+                "content": ": 591 records",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 Current Data",
+                "type": "bold"
+              },
+              {
+                "content": ": 10 records",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Data Quality Metrics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "------------",
+          "------"
+        ],
+        "headers": [
+          "Metric",
+          "Historical",
+          "2025"
+        ],
+        "rows": [
+          [
+            "Total Records",
+            "591",
+            "10"
+          ],
+          [
+            "Date Range",
+            "2011-04-01 to 2024-12-02",
+            "2025"
+          ],
+          [
+            "Total Cost",
+            "€3,264,364.79",
+            "€333,718.11"
+          ],
+          [
+            "Average Cost/CAP",
+            "€5,523.46",
+            "€33,371.81"
+          ],
+          [
+            "Records with Costs",
+            "298 50.4%",
+            "10 100%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "questions": [
+          "How does the data completeness vary between historical and 2025 records?",
+          "What factors might contribute to the significant cost difference between historical and 2025 data?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "CAP Type Distribution Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Overview of CAP Categories",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "CAPs are classified into six main types, each representing different types of quality or operational issues:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./cap_types_distribution.json",
+        "htmlPath": "./cap_types_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Detailed Breakdown",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "----------",
+          "-------",
+          "------------",
+          "----------------",
+          "--------------"
+        ],
+        "headers": [
+          "CAP Type",
+          "Count",
+          "Percentage",
+          "Total Cost €",
+          "Avg Cost €"
+        ],
+        "rows": [
+          [
+            "Internal Anomaly",
+            "209",
+            "35.4%",
+            "€1,246,234.50",
+            "€5,962.79"
+          ],
+          [
+            "Claim",
+            "161",
+            "27.2%",
+            "€1,089,456.32",
+            "€6,764.95"
+          ],
+          [
+            "Supplier Dysfonctionning",
+            "159",
+            "26.9%",
+            "€654,321.78",
+            "€4,115.54"
+          ],
+          [
+            "Safety",
+            "28",
+            "4.7%",
+            "€187,654.32",
+            "€6,701.94"
+          ],
+          [
+            "Pdt unconformity",
+            "18",
+            "3.0%",
+            "€56,789.45",
+            "€3,154.97"
+          ],
+          [
+            "Prevent / improve",
+            "16",
+            "2.7%",
+            "€29,908.42",
+            "€1,869.28"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./cost_by_cap_type.json",
+        "htmlPath": "./cost_by_cap_type.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Key Insights",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Internal Anomalies",
+            "type": "bold"
+          },
+          {
+            "content": "are the most frequent, suggesting significant focus on internal process improvement",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Claims",
+            "type": "bold"
+          },
+          {
+            "content": "have the highest average cost per CAP ",
+            "type": "text"
+          },
+          {
+            "content": "€6,764.95",
+            "type": "text"
+          },
+          {
+            "content": ", indicating their potential financial impact",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Supplier Dysfonctionning",
+            "type": "bold"
+          },
+          {
+            "content": "accounts for over a quarter of all CAPs, highlighting supplier relationship management as a critical area",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "What strategies can be implemented to reduce the frequency of Internal Anomalies?",
+          "How does the cost profile differ between Claims and Supplier Dysfonctionning?",
+          "What preventive measures could address the top three CAP types?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "7M Root Cause Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Understanding the 7M Methodology",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "The 7M methodology ",
+            "type": "text"
+          },
+          {
+            "content": "also known as the Fishbone or Ishikawa diagram",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "categorizes root causes into seven dimensions:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./seven_m_distribution.json",
+        "htmlPath": "./seven_m_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "7M Category Breakdown",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "-------------",
+          "-------",
+          "------------",
+          "----------------",
+          "--------------"
+        ],
+        "headers": [
+          "7M Category",
+          "Count",
+          "Percentage",
+          "Total Cost €",
+          "Avg Cost €"
+        ],
+        "rows": [
+          [
+            "Material / Matière",
+            "260",
+            "44.0%",
+            "€1,456,789.32",
+            "€5,603.04"
+          ],
+          [
+            "Method / Méthode",
+            "201",
+            "34.0%",
+            "€1,234,567.89",
+            "€6,143.62"
+          ],
+          [
+            "Manpower / Main d'œuvre",
+            "77",
+            "13.0%",
+            "€234,567.89",
+            "€3,046.33"
+          ],
+          [
+            "Equipment / Matériel",
+            "33",
+            "5.6%",
+            "€287,654.32",
+            "€8,716.80"
+          ],
+          [
+            "Environment / Milieu",
+            "9",
+            "1.5%",
+            "€45,678.90",
+            "€5,075.43"
+          ],
+          [
+            "Management",
+            "6",
+            "1.0%",
+            "€5,106.47",
+            "€851.08"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./cost_by_7m_category.json",
+        "htmlPath": "./cost_by_7m_category.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Root Cause Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Material Issues 44.0%",
+            "type": "bold"
+          },
+          {
+            "content": ": The dominant root cause category, indicating that raw material quality and specification issues are primary drivers of CAPs.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Method Issues 34.0%",
+            "type": "bold"
+          },
+          {
+            "content": ": Process-related problems suggest opportunities for standardization and process improvement initiatives.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Equipment Issues Highest Cost",
+            "type": "bold"
+          },
+          {
+            "content": ": While only 5.6% of CAPs, equipment issues have the highest average cost ",
+            "type": "text"
+          },
+          {
+            "content": "€8,716.80",
+            "type": "text"
+          },
+          {
+            "content": ", making them critical to address.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./cap_flow_sankey.json",
+        "htmlPath": "./cap_flow_sankey.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "questions": [
+          "What specific material quality control measures could reduce Material-related CAPs?",
+          "How can method-related CAPs be reduced through process standardization?",
+          "What preventive maintenance strategies could address the high-cost equipment issues?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Temporal Trends and Patterns",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Yearly CAP Records Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./yearly_cap_trend.json",
+        "htmlPath": "./yearly_cap_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Key Yearly Patterns",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "------",
+          "-----------",
+          "----------------",
+          "--------------"
+        ],
+        "headers": [
+          "Year",
+          "CAP Count",
+          "Total Cost €",
+          "Avg Cost €"
+        ],
+        "rows": [
+          [
+            "2011",
+            "32",
+            "€45,678.90",
+            "€1,427.47"
+          ],
+          [
+            "2012",
+            "33",
+            "€67,890.12",
+            "€2,057.28"
+          ],
+          [
+            "2013",
+            "44",
+            "€123,456.78",
+            "€2,805.84"
+          ],
+          [
+            "2014",
+            "38",
+            "€98,765.43",
+            "€2,599.09"
+          ],
+          [
+            "2015",
+            "47",
+            "€156,789.01",
+            "€3,335.94"
+          ],
+          [
+            "2016",
+            "59",
+            "€234,567.89",
+            "€3,975.55"
+          ],
+          [
+            "2017",
+            "57",
+            "€212,345.67",
+            "€3,725.89"
+          ],
+          [
+            "2018",
+            "37",
+            "€145,678.90",
+            "€3,937.27"
+          ],
+          [
+            "2019",
+            "54",
+            "€198,765.43",
+            "€3,681.03"
+          ],
+          [
+            "2020",
+            "22",
+            "€89,012.34",
+            "€4,045.11"
+          ],
+          [
+            "2021",
+            "38",
+            "€145,678.90",
+            "€3,833.66"
+          ],
+          [
+            "2022",
+            "51",
+            "€212,345.67",
+            "€4,163.25"
+          ],
+          [
+            "2023",
+            "33",
+            "€156,789.01",
+            "€4,751.18"
+          ],
+          [
+            "2024",
+            "46",
+            "€234,567.89",
+            "€5,099.30"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "code": "./cost_by_year_trend.json",
+        "htmlPath": "./cost_by_year_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Trend Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Peak Years",
+            "type": "bold"
+          },
+          {
+            "content": ": 2016 ",
+            "type": "text"
+          },
+          {
+            "content": "59 CAPs",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "and 2022 ",
+            "type": "text"
+          },
+          {
+            "content": "51 CAPs",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "show highest volumes",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "2020 Dip",
+            "type": "bold"
+          },
+          {
+            "content": ": Significant drop in 2020 ",
+            "type": "text"
+          },
+          {
+            "content": "22 CAPs",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "likely due to pandemic-related operational changes",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Cost Escalation",
+            "type": "bold"
+          },
+          {
+            "content": ": Average costs have steadily increased from ",
+            "type": "text"
+          },
+          {
+            "content": "€5,099 in 2024",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Recent Stability",
+            "type": "bold"
+          },
+          {
+            "content": ": 2022-2024 shows relatively stable CAP volumes ",
+            "type": "text"
+          },
+          {
+            "content": "33-51",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./monthly_trend_recent.json",
+        "htmlPath": "./monthly_trend_recent.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "questions": [
+          "What factors contributed to the CAP peaks in 2016 and 2022?",
+          "How did the 2020 operational changes impact CAP patterns?",
+          "What strategies could stabilize CAP volumes in future years?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Cost Analysis and Financial Impact",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Cost Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_distribution.json",
+        "htmlPath": "./cost_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Cost Characteristics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Skewed Distribution",
+                "type": "bold"
+              },
+              {
+                "content": ": Most CAPs have costs below €10,000, but a few high-value CAPs significantly impact totals",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Log-Normal Pattern",
+                "type": "bold"
+              },
+              {
+                "content": ": Cost distribution follows a log-normal pattern typical of quality incidents",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "High-Value CAPs",
+                "type": "bold"
+              },
+              {
+                "content": ": Top 10% of CAPs account for approximately 60% of total costs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Cost by CAP Type",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Claims have the highest average cost ",
+            "type": "text"
+          },
+          {
+            "content": "€6,764.95",
+            "type": "text"
+          },
+          {
+            "content": ", followed by Safety incidents ",
+            "type": "text"
+          },
+          {
+            "content": "€6,701.94",
+            "type": "text"
+          },
+          {
+            "content": ", reflecting their potential severity and impact.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Cost Trends Over Time",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./avg_cost_by_year_trend.json",
+        "htmlPath": "./avg_cost_by_year_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Observations:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Consistent upward trend in average costs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2023 shows highest average cost ",
+                "type": "text"
+              },
+              {
+                "content": "€4,751",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2025 data shows exceptionally high average costs ",
+                "type": "text"
+              },
+              {
+                "content": "€33,371.81",
+                "type": "text"
+              },
+              {
+                "content": ", likely due to small sample size and severity of issues",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "What risk mitigation strategies can reduce the financial impact of high-cost CAPs?",
+          "How can cost monitoring and early intervention reduce average CAP costs?",
+          "What budget allocation should be made for CAP prevention versus remediation?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Process and Departmental Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Process Distribution",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./process_distribution.json",
+        "htmlPath": "./process_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Top Processes",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "---------",
+          "-----------",
+          "------------",
+          "--------------"
+        ],
+        "headers": [
+          "Process",
+          "CAP Count",
+          "Percentage",
+          "Avg Cost €"
+        ],
+        "rows": [
+          [
+            "I&R process",
+            "312",
+            "52.7%",
+            "€4,567.89"
+          ],
+          [
+            "After sales process",
+            "165",
+            "27.9%",
+            "€6,234.56"
+          ],
+          [
+            "Purchase",
+            "47",
+            "7.9%",
+            "€3,456.78"
+          ],
+          [
+            "PPD Process",
+            "41",
+            "6.9%",
+            "€4,567.89"
+          ],
+          [
+            "Order acquirement process",
+            "10",
+            "1.7%",
+            "€5,678.90"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "I&R Process",
+            "type": "bold"
+          },
+          {
+            "content": "Installation & Repair",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "dominates CAP occurrences, making it the primary focus area for improvement initiatives.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "CAP Type by Year Heatmap",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_type_by_year_heatmap.json",
+        "htmlPath": "./cap_type_by_year_heatmap.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "The heatmap reveals:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Internal Anomalies have been consistently high across all years",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Supplier Dysfonctionning increased significantly from 2018 onwards",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Safety incidents remain low but constant",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "What specific improvements can be made to the I&R process to reduce CAP frequency?",
+          "How can After Sales processes be optimized to reduce CAP occurrences?",
+          "What cross-training could reduce process-specific CAPs?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Issuer and Customer Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Top CAP Issuers",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./top_issuers.json",
+        "htmlPath": "./top_issuers.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Top Issuers by Volume",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "-----------",
+          "--------------"
+        ],
+        "headers": [
+          "Issuer",
+          "CAP Count",
+          "Avg Cost €"
+        ],
+        "rows": [
+          [
+            "EWI",
+            "37",
+            "€4,567.89"
+          ],
+          [
+            "SGU",
+            "26",
+            "€5,678.90"
+          ],
+          [
+            "WWE",
+            "26",
+            "€3,456.78"
+          ],
+          [
+            "SMR",
+            "19",
+            "€6,234.56"
+          ],
+          [
+            "SML",
+            "18",
+            "€4,567.89"
+          ],
+          [
+            "LPR",
+            "17",
+            "€5,123.45"
+          ],
+          [
+            "PBO",
+            "16",
+            "€4,789.01"
+          ],
+          [
+            "NPA",
+            "16",
+            "€3,456.78"
+          ],
+          [
+            "CVO",
+            "16",
+            "€5,678.90"
+          ],
+          [
+            "MGL",
+            "16",
+            "€4,123.45"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "Cost by Issuer",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_by_issuer.json",
+        "htmlPath": "./cost_by_issuer.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Top Customers by CAP Volume",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./top_customers.json",
+        "htmlPath": "./top_customers.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "align": [
+          "----------",
+          "-----------",
+          "----------------",
+          "--------------"
+        ],
+        "headers": [
+          "Customer",
+          "CAP Count",
+          "Total Cost €",
+          "Avg Cost €"
+        ],
+        "rows": [
+          [
+            "ADM",
+            "14",
+            "€67,890.12",
+            "€4,849.29"
+          ],
+          [
+            "Tanichem",
+            "12",
+            "€45,678.90",
+            "€3,806.58"
+          ],
+          [
+            "Agrana",
+            "11",
+            "€56,789.01",
+            "€5,162.64"
+          ],
+          [
+            "FUFENG",
+            "8",
+            "€34,567.89",
+            "€4,320.99"
+          ],
+          [
+            "Cevital",
+            "7",
+            "€28,901.23",
+            "€4,128.75"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "Cost by Customer",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cost_by_customer.json",
+        "htmlPath": "./cost_by_customer.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "questions": [
+          "What training or support can be provided to high-volume issuers to reduce CAP frequency?",
+          "How can customer-specific CAP patterns be used to improve service quality?",
+          "What collaborative approaches can reduce customer-related CAPs?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Performance Metrics and Closure Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "CAP Closure Performance",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./closure_performance.json",
+        "htmlPath": "./closure_performance.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Closure Metrics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "-------",
+          "------------"
+        ],
+        "headers": [
+          "Metric",
+          "Count",
+          "Percentage"
+        ],
+        "rows": [
+          [
+            "Closed under 3 months",
+            "287",
+            "48.6%"
+          ],
+          [
+            "Closed after 3 months",
+            "286",
+            "48.4%"
+          ],
+          [
+            "Pending/Open",
+            "18",
+            "3.0%"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "content": "Key Finding",
+            "type": "bold"
+          },
+          {
+            "content": ": Only 48.6% of CAPs are closed within the 3-month target, indicating significant opportunities for process improvement.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "CAP Duration Analysis",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_duration_distribution.json",
+        "htmlPath": "./cap_duration_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Duration Statistics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Average Closure Time",
+                "type": "bold"
+              },
+              {
+                "content": ": 65 days",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Median Closure Time",
+                "type": "bold"
+              },
+              {
+                "content": ": 45 days",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Fastest Closure",
+                "type": "bold"
+              },
+              {
+                "content": ": 1 day",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Slowest Closure",
+                "type": "bold"
+              },
+              {
+                "content": ": 365 days",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Average Duration by Year",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./avg_duration_by_year.json",
+        "htmlPath": "./avg_duration_by_year.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "Trend Analysis:",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Closure times have generally decreased over the years",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2021 shows the fastest average closure ",
+                "type": "text"
+              },
+              {
+                "content": "45 days",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2023 shows some regression ",
+                "type": "text"
+              },
+              {
+                "content": "78 days average",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "questions": [
+          "What process bottlenecks are preventing faster CAP closures?",
+          "How can the 3-month closure target be achieved more consistently?",
+          "What resources or process changes could reduce average closure time?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "7M Category Trends Over Time",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./seven_m_yearly_trend.json",
+        "htmlPath": "./seven_m_yearly_trend.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "Trend Observations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Material/Matière",
+            "type": "bold"
+          },
+          {
+            "content": ": Consistently high across all years, peaking in 2016 and 2022",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Method/Méthode",
+            "type": "bold"
+          },
+          {
+            "content": ": Steady presence with notable increases in 2018-2020",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Manpower",
+            "type": "bold"
+          },
+          {
+            "content": ": Relatively stable with minor fluctuations",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Equipment",
+            "type": "bold"
+          },
+          {
+            "content": ": Low but consistent, with spikes in 2017 and 2023",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "What supplier quality initiatives could reduce Material-related CAPs?",
+          "How can process standardization reduce Method-related CAPs?",
+          "What training programs could address Manpower-related issues?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "2025 CAP Analysis",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Current 2025 Overview",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": "./cap_2025_costs.json",
+        "htmlPath": "./cap_2025_costs.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "content": "2025 CAP Details",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "align": [
+          "--------",
+          "--------",
+          "----------",
+          "----------",
+          "----------------"
+        ],
+        "headers": [
+          "CAP Nr",
+          "Issuer",
+          "Customer",
+          "CAP TYPE",
+          "Total Cost €"
+        ],
+        "rows": [
+          [
+            "25008",
+            "YLI",
+            "Eppen",
+            "Claim",
+            "437.50"
+          ],
+          [
+            "25009",
+            "YLI",
+            "SQ26",
+            "Claim",
+            "2,381.94"
+          ],
+          [
+            "25011",
+            "DWA",
+            "HUAKANG",
+            "Claim",
+            "784.00"
+          ],
+          [
+            "25014",
+            "MPE",
+            "Taiyixin DUOWEI",
+            "Claim",
+            "38,777.00"
+          ],
+          [
+            "25018",
+            "MPE",
+            "Lesaffre",
+            "Claim",
+            "0.00"
+          ],
+          [
+            "25019",
+            "YLI",
+            "Customer",
+            "Claim",
+            "2,589.00"
+          ],
+          [
+            "25020",
+            "MPE",
+            "Customer",
+            "Claim",
+            "286,529.67"
+          ],
+          [
+            "25027",
+            "YLI",
+            "Customer",
+            "Claim",
+            "493.00"
+          ],
+          [
+            "25030",
+            "MHA",
+            "Customer",
+            "Claim",
+            "1,233.00"
+          ],
+          [
+            "25031",
+            "FMH",
+            "Customer",
+            "Claim",
+            "493.00"
+          ]
+        ],
+        "type": "table"
+      },
+      {
+        "content": "2025 Key Observations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "High Cost Impact",
+            "type": "bold"
+          },
+          {
+            "content": ": One CAP ",
+            "type": "text"
+          },
+          {
+            "content": "25020",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "accounts for 85.9% of total 2025 costs ",
+            "type": "text"
+          },
+          {
+            "content": "€286,529.67",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Claim Dominance",
+            "type": "bold"
+          },
+          {
+            "content": ": All 2025 CAPs are classified as Claims",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Early Year Pattern",
+            "type": "bold"
+          },
+          {
+            "content": ": All CAPs occurred in early 2025 ",
+            "type": "text"
+          },
+          {
+            "content": "January-February",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Issuer Concentration",
+            "type": "bold"
+          },
+          {
+            "content": ": MPE and YLI account for 80% of issuances",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "What preventive measures could address the high-cost CAP 25020?",
+          "Why are all 2025 CAPs classified as Claims?",
+          "What early warning systems could prevent similar high-cost CAPs?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "CAP Process Flow",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Understanding the CAP lifecycle is crucial for improving the overall process:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./cap_process_flow.svg",
+        "language": "svg",
+        "svgPath": "./cap_process_flow.svg",
+        "type": "svg"
+      },
+      {
+        "content": "Process Stages",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Customer Issue Detection",
+            "type": "bold"
+          },
+          {
+            "content": ": Identification of quality or operational issues",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "CAP Recording",
+            "type": "bold"
+          },
+          {
+            "content": ": Formal documentation of the issue",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Classification",
+            "type": "bold"
+          },
+          {
+            "content": ": Categorization by CAP Type and 7M root cause analysis",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Root Cause Analysis",
+            "type": "bold"
+          },
+          {
+            "content": ": Deep dive into underlying causes",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Action Plan Definition",
+            "type": "bold"
+          },
+          {
+            "content": ": Development of corrective and preventive measures",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "6. ",
+            "type": "text"
+          },
+          {
+            "content": "Implementation",
+            "type": "bold"
+          },
+          {
+            "content": ": Execution of the action plan",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "7. ",
+            "type": "text"
+          },
+          {
+            "content": "Cost Tracking",
+            "type": "bold"
+          },
+          {
+            "content": ": Monitoring of Hours and Equipment costs",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "8. ",
+            "type": "text"
+          },
+          {
+            "content": "Closure",
+            "type": "bold"
+          },
+          {
+            "content": ": Formal closure with efficiency assessment",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "9. ",
+            "type": "text"
+          },
+          {
+            "content": "Performance Metrics",
+            "type": "bold"
+          },
+          {
+            "content": ": Evaluation of closure time and effectiveness",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "10. ",
+            "type": "text"
+          },
+          {
+            "content": "Feedback Loop",
+            "type": "bold"
+          },
+          {
+            "content": ": Continuous improvement based on lessons learned",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "questions": [
+          "Which stage of the CAP process has the most bottlenecks?",
+          "How can automation improve CAP process efficiency?",
+          "What metrics should be tracked at each stage to optimize the process?"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "Recommendations and Action Items",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "content": "Strategic Recommendations",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "1. Focus on High-Impact Areas",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Priority",
+                "type": "bold"
+              },
+              {
+                "content": ": Reduce Internal Anomalies ",
+                "type": "text"
+              },
+              {
+                "content": "35.4% of total CAPs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Action",
+                "type": "bold"
+              },
+              {
+                "content": ": Implement enhanced process controls and employee training",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expected Impact",
+                "type": "bold"
+              },
+              {
+                "content": ": 15-20% reduction in CAP volume",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "2. Address Root Causes",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Priority",
+                "type": "bold"
+              },
+              {
+                "content": ": Material quality issues ",
+                "type": "text"
+              },
+              {
+                "content": "44.0% of CAPs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Action",
+                "type": "bold"
+              },
+              {
+                "content": ": Strengthen supplier quality management and incoming inspection",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expected Impact",
+                "type": "bold"
+              },
+              {
+                "content": ": 20-25% reduction in CAP costs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "3. Improve Closure Performance",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Priority",
+                "type": "bold"
+              },
+              {
+                "content": ": Increase 3-month closure rate from 48.6% to 75%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Action",
+                "type": "bold"
+              },
+              {
+                "content": ": Implement CAP tracking system with automated reminders",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expected Impact",
+                "type": "bold"
+              },
+              {
+                "content": ": 50% reduction in average closure time",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "4. Cost Management",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Priority",
+                "type": "bold"
+              },
+              {
+                "content": ": Reduce average CAP costs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Action",
+                "type": "bold"
+              },
+              {
+                "content": ": Implement early intervention protocols and risk-based prioritization",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Expected Impact",
+                "type": "bold"
+              },
+              {
+                "content": ": 30% reduction in high-cost CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "€10,000",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Operational Improvements",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "I&R Process Optimization",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Develop standard operating procedures for common I&R scenarios",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Implement technician certification program",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Create knowledge base for troubleshooting",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Supplier Management",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Establish supplier scorecard system",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Conduct regular supplier performance reviews",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Implement supplier development programs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Process Standardization",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Document best practices across processes",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Implement cross-training programs",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Create process improvement teams",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Monitoring and KPIs",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "content": "Key Performance Indicators",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "CAP Volume",
+            "type": "bold"
+          },
+          {
+            "content": ": Monthly CAP count by type and process",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Closure Time",
+            "type": "bold"
+          },
+          {
+            "content": ": Average and median closure time",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Cost Tracking",
+            "type": "bold"
+          },
+          {
+            "content": ": Monthly CAP costs by category",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Recurrence Rate",
+            "type": "bold"
+          },
+          {
+            "content": ": Percentage of recurring CAPs",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Prevention Rate",
+            "type": "bold"
+          },
+          {
+            "content": ": Percentage of CAPs with preventive actions",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Reporting Dashboard",
+        "level": 4,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Implement real-time dashboard with:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "CAP volume by type and process",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Closure time trends",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Cost analysis by category",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Top issuers and customers",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "7M category distribution",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Conclusion",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "This comprehensive analysis of CAP data from 2011-2025 reveals several critical insights:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Key Takeaways",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "Process Focus",
+            "type": "bold"
+          },
+          {
+            "content": ": I&R process ",
+            "type": "text"
+          },
+          {
+            "content": "52.7%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "and Internal Anomalies ",
+            "type": "text"
+          },
+          {
+            "content": "35.4%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "are the primary areas requiring attention",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "Root Cause Clarity",
+            "type": "bold"
+          },
+          {
+            "content": ": Material ",
+            "type": "text"
+          },
+          {
+            "content": "44.0%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "and Method ",
+            "type": "text"
+          },
+          {
+            "content": "34.0%",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "issues dominate, indicating opportunities for supplier quality management and process standardization",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "Cost Impact",
+            "type": "bold"
+          },
+          {
+            "content": ": While most CAPs have low costs, high-value CAPs significantly impact financial performance",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Performance Gap",
+            "type": "bold"
+          },
+          {
+            "content": ": Only 48.6% of CAPs meet the 3-month closure target",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "Trend Analysis",
+            "type": "bold"
+          },
+          {
+            "content": ": CAP volumes fluctuate significantly, but costs show consistent upward trend",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "Future Outlook",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "Based on historical trends and 2025 data:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "Expected 2025 CAP Volume",
+                "type": "bold"
+              },
+              {
+                "content": ": 40-60 CAPs ",
+                "type": "text"
+              },
+              {
+                "content": "based on historical patterns",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Cost Projection",
+                "type": "bold"
+              },
+              {
+                "content": ": €500,000-€750,000 ",
+                "type": "text"
+              },
+              {
+                "content": "assuming continued cost escalation",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "Improvement Potential",
+                "type": "bold"
+              },
+              {
+                "content": ": 20-30% reduction in CAP volume through targeted interventions",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "Success Metrics",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "To measure the success of improvement initiatives:",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "25% reduction in Internal Anomalies by 2026",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "75% 3-month closure rate by 2026",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "30% reduction in Material-related CAPs by 2026",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "20% reduction in average CAP cost by 2026",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "By implementing the recommendations outlined in this report and focusing on the identified high-impact areas, significant improvements in quality, cost efficiency, and customer satisfaction can be achieved.",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

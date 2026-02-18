@@ -1,0 +1,39 @@
+{
+  "case_id": "9f9aa3b895db6345378693a554e847aa8de0afef47ca72b89872cdb815fa8475",
+  "title": "FEDFUNDS",
+  "source_cache_manifest": "2026-02-17T14:04:29Z",
+  "status": "ok",
+  "copied_files": 4,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "NASDAQCOM.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/NASDAQCOM.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_retry_merged_20260217_082140/input_snapshot/9f9aa3b895db_FEDFUNDS/NASDAQCOM.xlsx",
+      "ok": true
+    },
+    {
+      "name": "description.txt",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/description.txt",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_retry_merged_20260217_082140/input_snapshot/9f9aa3b895db_FEDFUNDS/description.txt",
+      "ok": true
+    },
+    {
+      "name": "FEDFUNDS.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/FEDFUNDS.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_retry_merged_20260217_082140/input_snapshot/9f9aa3b895db_FEDFUNDS/FEDFUNDS.csv",
+      "ok": true
+    },
+    {
+      "name": "IR.csv",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/9f9aa3b895db_FEDFUNDS/IR.csv",
+      "run_snapshot_path": "Pardus/.codex_session/runs/ab_no_description_retry_merged_20260217_082140/input_snapshot/9f9aa3b895db_FEDFUNDS/IR.csv",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

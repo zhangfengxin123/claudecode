@@ -1,0 +1,237 @@
+{
+  "generated_at": "2026-02-17T07:23:20Z",
+  "ab_case": {
+    "template_case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+    "rerun_case_id": "662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad",
+    "title": "月卡改价实验数据分析 (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e",
+    "inputs": [
+      "月卡改价实验结果-202601.xlsx",
+      "description.txt"
+    ],
+    "description_present": true,
+    "chart_assets_count": 7,
+    "trace_type_hist": {
+      "bar": 11,
+      "scatter": 6
+    },
+    "h2_sections": [
+      "执行摘要",
+      "实验概况",
+      "核心指标对比",
+      "实验预期验证",
+      "价格弹性分析",
+      "蚕食效应分析",
+      "收入影响分析",
+      "业务建议",
+      "局限性与后续研究",
+      "附录"
+    ],
+    "first_paragraph": "本次实验为期7天（2026-01-23至2026-01-29），旨在验证模型判断的连续包月最优价格（23元）对业务指标的影响。实验分为四组：控制组（25元，50%流量）、最优价格组（23元，30%流量）、激进降价组（19元，10%流量）、反向涨价组（29元，10%流量）。",
+    "assets": [
+      {
+        "name": "metrics_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e/assets/metrics_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 5,
+        "title": "各组核心指标对比"
+      },
+      {
+        "name": "flow_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e/assets/flow_distribution.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "流量分布"
+      },
+      {
+        "name": "payment_rate_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e/assets/payment_rate_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "付费率对比"
+      },
+      {
+        "name": "price_elasticity.json",
+        "url": "https://pardusai.org/v1/api/public/project/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e/assets/price_elasticity.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "价格弹性曲线"
+      },
+      {
+        "name": "price_impact.json",
+        "url": "https://pardusai.org/v1/api/public/project/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e/assets/price_impact.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "价格与指标关系"
+      },
+      {
+        "name": "cannibalization_effect.json",
+        "url": "https://pardusai.org/v1/api/public/project/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e/assets/cannibalization_effect.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "蚕食效应分析"
+      },
+      {
+        "name": "revenue_impact.json",
+        "url": "https://pardusai.org/v1/api/public/project/ca9493d910dd1d138600987080b68e46dac041246d8c8add30f60d01d5b9c16e/assets/revenue_impact.json",
+        "trace_types": [
+          "bar",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "收入影响分析"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad",
+    "inputs": [
+      "月卡改价实验结果-202601.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 7,
+    "trace_type_hist": {
+      "bar": 21,
+      "heatmap": 1
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Experiment Overview",
+      "Revenue Analysis",
+      "Payment Rate Analysis",
+      "ARPU and ARPPU Analysis",
+      "Subscription Type Distribution",
+      "Performance Uplift Analysis",
+      "Statistical Significance and Limitations",
+      "Strategic Recommendations",
+      "Conclusion",
+      "Appendix: Data Dictionary"
+    ],
+    "first_paragraph": "This report presents a comprehensive analysis of an A/B testing experiment evaluating different pricing strategies for monthly subscription cards. The experiment compares a control group Group A with three test groups B1, B2, B3 to assess the impact of pricing changes on key performance metrics.",
+    "assets": [
+      {
+        "name": "revenue_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad/assets/revenue_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "Total Revenue by Group"
+      },
+      {
+        "name": "user_funnel.json",
+        "url": "https://pardusai.org/v1/api/public/project/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad/assets/user_funnel.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "User Conversion Funnel by Group"
+      },
+      {
+        "name": "payment_rate_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad/assets/payment_rate_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "Payment Rate Comparison"
+      },
+      {
+        "name": "arpu_arppu_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad/assets/arpu_arppu_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "ARPU and ARPPU Comparison"
+      },
+      {
+        "name": "key_metrics_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad/assets/key_metrics_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "Key Metrics Comparison"
+      },
+      {
+        "name": "subscription_distribution.json",
+        "url": "https://pardusai.org/v1/api/public/project/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad/assets/subscription_distribution.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "Subscription Type Distribution by Group"
+      },
+      {
+        "name": "uplift_heatmap.json",
+        "url": "https://pardusai.org/v1/api/public/project/662522ed9fd872f1ded4174cda75d1c298ed80449174f94d65b6dab273ac93ad/assets/uplift_heatmap.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "Performance Uplift Heatmap"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 0,
+    "sections_delta": 1,
+    "description_removed_ok": true,
+    "asset_name_overlap": 1,
+    "asset_old_only": [
+      "cannibalization_effect.json",
+      "flow_distribution.json",
+      "metrics_comparison.json",
+      "price_elasticity.json",
+      "price_impact.json",
+      "revenue_impact.json"
+    ],
+    "asset_new_only": [
+      "arpu_arppu_comparison.json",
+      "key_metrics_comparison.json",
+      "revenue_comparison.json",
+      "subscription_distribution.json",
+      "uplift_heatmap.json",
+      "user_funnel.json"
+    ]
+  }
+}

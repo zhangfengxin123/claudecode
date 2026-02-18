@@ -1,0 +1,65 @@
+{
+  "results": [
+    {
+      "case_id": "5d719d33f8e5835d9ef8e26bd0c7bf11f3b6f315124072dec109ada3430754a6",
+      "title": "X post"
+    },
+    {
+      "case_id": "60f78c56d2edc9619daf292357cedf68b084b533d98b80062fa33ba476ec4203",
+      "title": "Nvidia Analysis"
+    },
+    {
+      "case_id": "8c94f687b73f0bdefb50952f6ac33e4d7f9fa285bbced303cbab9360ce99e808",
+      "title": "RAG paper"
+    },
+    {
+      "case_id": "cac9cdb389276b802d29f5a87571b06373df368bdfae4931f19b870fd75dc1e9",
+      "title": "Citation network among Chinese Statisticians"
+    },
+    {
+      "case_id": "466c55584f6bbb04d6d4d4abc4133066e3ba1af99d7da4749b67bb282008f0fa",
+      "title": "HK Alcohol"
+    },
+    {
+      "case_id": "6752e496c7f4c5c55806244459dd3fb050d68ece742cf305b685e12e3cb06ef1",
+      "title": "Dynamic Factor"
+    },
+    {
+      "case_id": "a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b",
+      "title": "Henagliflozin post-hoc analysis"
+    },
+    {
+      "case_id": "35fe9f98a5565e83dd97e074beb7fd80d42b3e2467bde1dec7074a9aefe4e7cb",
+      "title": "ISP"
+    },
+    {
+      "case_id": "10872537e4e63becb13b431b67e079ae8e904379a894194566dde9105c4a9d55",
+      "title": "测试"
+    },
+    {
+      "case_id": "9d1f0d0d63f4dec79d1e39e38446484ae134b897c5bbba05e050ef4360780e3a",
+      "title": "0001"
+    },
+    {
+      "case_id": "6b4b51bd9afaa5d8f8512d51c00d3f5cde948f551ad09e3829457b2ab7a3e29b",
+      "title": "001"
+    },
+    {
+      "case_id": "1f687eef8d313775ba0e88213696568433e05372980f59b78b9c03b2b1bbdc3c",
+      "title": "111"
+    },
+    {
+      "case_id": "f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86",
+      "title": "compare salary of software jobs"
+    },
+    {
+      "case_id": "fc6bcedb54469f410d7ce38c36ccf9aff301f8b053a9dffcd9163eb6893d67dc",
+      "title": "RFM分层可视化呈现"
+    }
+  ],
+  "meta": {
+    "resume_from": "chart_evidence_new40_20260217_after_backfill",
+    "done": 26,
+    "remain": 14
+  }
+}

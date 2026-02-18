@@ -1,0 +1,79 @@
+{
+  "case_id": "1b89e7d1ffb47fe51baa367594c44f3380fdfc2f15f6844a0af899f874144ec6",
+  "title": "反向调价实验数据分析",
+  "with_description": true,
+  "input_files": [
+    "description.txt",
+    "反向调价实验结果-202601.xlsx"
+  ],
+  "input_data_files": [
+    "反向调价实验结果-202601.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 6,
+  "assets": [
+    {
+      "name": "arpu_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "ARPU对比"
+    },
+    {
+      "name": "payment_rate_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "整体付费率对比"
+    },
+    {
+      "name": "arppu_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "ARPPU对比"
+    },
+    {
+      "name": "package_orders_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "各套餐订单数量对比"
+    },
+    {
+      "name": "package_rates_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "各套餐付费率对比"
+    },
+    {
+      "name": "radar_comparison.json",
+      "trace_types": [
+        "scatterpolar",
+        "scatterpolar"
+      ],
+      "trace_count": 2,
+      "title": "关键指标综合对比"
+    }
+  ],
+  "h2_sections": [
+    "执行摘要",
+    "1. 实验设计与背景",
+    "2. 核心指标分析",
+    "3. 套餐表现与蚕食效应分析",
+    "4. 综合对比与决策建议",
+    "5. 附录：数据摘要"
+  ],
+  "first_paragraph": "本报告对2026年1月23日至29日期间进行的反向调价A/B测试进行了全面分析。实验将连续包月价格从19元上调至21元，旨在验证涨价对关键业务指标的影响。数据分析表明："
+}

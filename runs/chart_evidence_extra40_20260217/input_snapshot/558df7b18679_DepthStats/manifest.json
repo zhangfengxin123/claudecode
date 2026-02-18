@@ -1,0 +1,25 @@
+{
+  "case_id": "558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9",
+  "title": "DepthStats",
+  "source_cache_manifest": "2026-02-17T14:17:14Z",
+  "status": "ok",
+  "copied_files": 2,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "DepthStats.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/558df7b18679_DepthStats/DepthStats.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/558df7b18679_DepthStats/DepthStats.xlsx",
+      "ok": true
+    },
+    {
+      "name": "check_with_label.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/558df7b18679_DepthStats/check_with_label.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/558df7b18679_DepthStats/check_with_label.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}

@@ -1,0 +1,1772 @@
+{
+  "document": {
+    "children": [
+      {
+        "metadata": "title: \"CAP数据分析报告：2023与2024年度对比\"\ndescription: \"对2023年和2024年的CAP（Customer Action Plan）数据进行全面对比分析，揭示成本趋势、部门分布和关键洞察\"\nauthor: \"Pardus Agent\"\ndate: \"2025-02-03\"\n",
+        "type": "yaml"
+      },
+      {
+        "content": "CAP数据分析报告：2023与2024年度对比",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "content": "数据流程概览",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": "./data_flow_diagram.svg",
+        "language": "svg",
+        "svgPath": "./data_flow_diagram.svg",
+        "type": "svg"
+      },
+      {
+        "questions": [
+          "数据处理流程的主要步骤是什么？",
+          "数据来源有哪些？",
+          "分析流程如何确保数据质量？"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "本分析报告基于从Excel文件中提取的CAP数据，经过数据清洗、标准化和深度分析，提供了2023年与2024年间的全面对比。数据处理流程包括从Chrono CAP工作表提取23xxx（2023年）和24xxx（2024年）数据，进行质量验证和标准化，最终生成交互式可视化报告。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "执行摘要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "2024年相比2023年的主要变化是什么？",
+          "哪个部门的CAP增长最快？",
+          "成本增长的主要原因是什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "2024年相比2023年，CAP数量增长了39.4%（从33条增至46条），但总成本增长更为显著，达到65.7%（从€354,746增至€587,621）。平均每个CAP的成本增加了18.8%，从€10,750升至€12,774。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "关键发现：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "CAP数量增长：+39.4%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "总成本增长：+65.7%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "平均CAP成本增长：+18.8%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "I&R流程占比上升至56.5%（2023年为48.5%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "NVSA部门CAP占比从30.3%增至37.0%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "CAP数量趋势分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪个年份的CAP数量更多？",
+          "CAP数量增长是否与成本增长成正比？",
+          "这种趋势对未来可能有什么影响？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./cap_count_comparison.json",
+        "htmlPath": "./cap_count_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "2024年的CAP数量（46条）比2023年（33条）增加了13条，增长率为39.4%。这表明2024年面临的客户问题或内部异常数量显著增加。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "部门分布变化：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "SMB部门：从23条（69.7%）降至27条（58.7%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "NVSA部门：从10条（30.3%）增至17条（37.0%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "PSA部门：新增2条（4.3%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "这种分布变化显示NVSA部门的问题在2024年有所增加，需要特别关注该部门的运营质量。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "成本分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "2024年的总成本相比2023年增长了多少？",
+          "人工成本和设备成本哪个增长更快？",
+          "成本增长是否在可接受范围内？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./cost_comparison.json",
+        "htmlPath": "./cost_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "2024年总成本达到€587,621，比2023年的€354,746增长了65.7%，远高于CAP数量的增长率（39.4%）。这表明每个CAP的平均成本显著增加。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "成本构成分析：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "人工成本：2023年€64,575 → 2024年€100,303（+55.3%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "设备成本：2023年€290,171 → 2024年€487,318（+67.9%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "平均CAP成本：2023年€10,750 → 2024年€12,774（+18.8%）",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "设备成本的增长率略高于人工成本，可能与2024年更多涉及设备更换或维修的CAP有关。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./avg_cost_comparison.json",
+        "htmlPath": "./avg_cost_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "平均成本分析显示，设备成本的均值从2023年的€8,792增至2024年的€10,593（+20.5%），人工成本均值从€1,957增至€2,181（+11.4%）。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "部门对比分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪个部门的成本最高？",
+          "SMB和NVSA部门的成本结构有什么差异？",
+          "各部门的成本增长趋势如何？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./dept_total_cost_comparison.json",
+        "htmlPath": "./dept_total_cost_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "code": "./dept_avg_cost_comparison.json",
+        "htmlPath": "./dept_avg_cost_comparison.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "部门分析揭示了以下重要洞察：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "SMB部门（最大的部门）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2023年：23条CAP，总成本€207,666，平均成本€9,029",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024年：27条CAP，总成本€206,445，平均成本€7,646",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "虽然2024年CAP数量增加，但总成本略有下降，平均成本下降了15.3%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "NVSA部门（问题最多的部门）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2023年：10条CAP，总成本€147,080，平均成本€14,708",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024年：17条CAP，总成本€380,464，平均成本€22,380",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "NVSA部门的成本增长最为显著，平均成本增加了52.1%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "PSA部门（新出现的部门）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2024年新增2条CAP，总成本€712，平均成本€356",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "NVSA部门的高平均成本和快速增长是需要重点关注的问题。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "CAP类型分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪种CAP类型的平均成本最高？",
+          "Claim类型的CAP为什么成本最高？",
+          "Internal Anomaly类型的CAP增长说明了什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./cap_type_distribution.json",
+        "htmlPath": "./cap_type_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "CAP类型分布显示，Claim和Internal Anomaly是两种最主要的类型，合计占比超过70%。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./avg_cost_by_type.json",
+        "htmlPath": "./avg_cost_by_type.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "各CAP类型的平均成本对比：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Claim类型：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2023年平均成本：€20,581",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024年平均成本：€18,463",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "虽然平均成本略有下降，但由于数量增加，总成本仍较高",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Internal Anomaly类型：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2023年平均成本：€1,454",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024年平均成本：€16,979",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "平均成本增长了10.7倍！这是一个需要特别关注的趋势",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "Internal Anomaly类型成本激增的原因可能包括：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2024年的内部异常问题更复杂，需要更多资源解决",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "部分内部异常可能涉及设备更换，导致成本大幅上升",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "可能反映了内部流程或质量控制方面的挑战",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "流程分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "I&R流程在2024年占比超过50%说明了什么？",
+          "After sales process的平均成本为什么会增加？",
+          "PPD Process的作用是什么？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./process_distribution.json",
+        "htmlPath": "./process_distribution.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "流程分布分析显示，I&R流程（Installation & Repair，安装与维修）在2024年成为主导流程，占比达到56.5%（2023年为48.5%）。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "code": "./avg_cost_by_process.json",
+        "htmlPath": "./avg_cost_by_process.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "各流程的平均成本对比：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "After sales process（售后流程）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2023年平均成本：€12,323",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024年平均成本：€26,370",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "平均成本增长了113.9%，表明2024年的售后问题更加复杂和昂贵",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "I&R process（安装与维修流程）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2023年平均成本：€11,040",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024年平均成本：€7,168",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "平均成本下降了35.1%，但由于数量增加，总成本仍在增长",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "PPD Process（采购流程）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2023年平均成本：€1,568",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024年平均成本：€1,139",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "成本相对较低，且呈下降趋势",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "成本结构分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "设备成本和人工成本的比例变化说明了什么？",
+          "为什么设备成本占比保持在约35%？",
+          "如何优化成本结构？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./cost_structure_ratio.json",
+        "htmlPath": "./cost_structure_ratio.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "成本结构分析显示，两年来的成本比例保持相对稳定：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2023年：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "设备成本占比：34.2%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "人工成本占比：69.1%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2024年：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "设备成本占比：34.7%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "人工成本占比：73.5%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "稳定的成本结构表明：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. CAP问题的性质在两年间保持一致",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 解决问题的方式和资源分配模式没有显著变化",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 人工成本是主要组成部分，说明CAP问题主要依赖人工解决",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "注意",
+            "type": "bold"
+          },
+          {
+            "content": "：由于部分CAP可能同时包含人工和设备成本，两者比例之和可能超过100%。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "高成本CAP案例研究",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "2024年成本最高的CAP是什么？",
+          "这些高成本CAP有什么共同特征？",
+          "如何避免类似的高成本CAP再次发生？"
+        ],
+        "type": "question"
+      },
+      {
+        "code": "./top_10_expensive_caps.json",
+        "htmlPath": "./top_10_expensive_caps.json",
+        "language": "plot",
+        "type": "plot"
+      },
+      {
+        "children": [
+          {
+            "content": "2024年成本最高的10个CAP中，前3名的成本均超过€80,000：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "24036 - High Pressure Drop in C120A upper cell",
+            "type": "bold"
+          },
+          {
+            "content": "（€162,500）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "客户：GXSF 2",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "类型：Claim",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "问题：C120A上单元高压降",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "24043 - SQ18 IRA458 Resin missing in SHA warehouse",
+            "type": "bold"
+          },
+          {
+            "content": "（€105,944）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "客户：SQ18",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "类型：Internal Anomaly",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "问题：SHA仓库中SQ18 IRA458树脂缺失",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "24038 - Large deviation in resin particle size distribution",
+            "type": "bold"
+          },
+          {
+            "content": "（€83,333）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "客户：Yinmore",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "类型：Claim",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "   ",
+            "type": "text"
+          },
+          {
+            "content": " ",
+            "type": "text"
+          },
+          {
+            "content": "问题：树脂粒径分布大幅偏差",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "高成本CAP的共同特征：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "大多涉及Claim类型",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "可能涉及设备更换或大规模维修",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "部分与树脂相关的问题",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "这些案例表明，预防性维护和质量控制在减少高成本CAP方面至关重要。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "CAP关闭率分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "2024年的CAP关闭率为什么下降？",
+          "未关闭的CAP可能带来什么风险？",
+          "如何提高CAP关闭率？"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "CAP关闭率对比：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "2023年关闭率：87.9%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "2024年关闭率：63.0%",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "2024年的CAP关闭率显著下降（下降24.9个百分点），这可能由于：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 2024年的部分CAP仍在处理中（截止数据提取时）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 2024年的CAP问题更加复杂，需要更长时间解决",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 可能存在资源分配或优先级管理的问题",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "未关闭的CAP可能带来以下风险：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "客户满意度下降",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "额外的成本累积",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "影响未来业务机会",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "content": "建议加强项目管理，制定明确的时间表和里程碑，确保CAP能够及时关闭。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "关键客户分析",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "哪些客户在2024年产生的CAP最多？",
+          "Via Separation客户的问题有什么特点？",
+          "如何改善高频率客户的问题？"
+        ],
+        "type": "question"
+      },
+      {
+        "children": [
+          {
+            "content": "2024年主要客户（按CAP数量排序）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Via Separation：5条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. Huaantang：3条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ADM：2条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. BMA Bengladesh：2条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. Bénéo Chili：2条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "6. Etihad：2条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "7. LIER：2条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2023年主要客户：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. Cevital：3条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. Inovyn：3条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. Sanofi：2条CAP",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "Via Separation在2024年成为产生CAP最多的客户，可能需要：",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "items": [
+          {
+            "content": [
+              {
+                "content": "深入分析该客户的特定问题模式",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "加强与该客户的沟通和预防措施",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          },
+          {
+            "content": [
+              {
+                "content": "考虑针对性的服务改进计划",
+                "type": "text"
+              }
+            ],
+            "indent": 0
+          }
+        ],
+        "ordered": false,
+        "type": "list"
+      },
+      {
+        "content": "结论与建议",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "questions": [
+          "基于分析结果，应该采取哪些优先行动？",
+          "如何预防未来CAP数量的增长？",
+          "成本控制措施应该从哪些方面入手？"
+        ],
+        "type": "question"
+      },
+      {
+        "content": "主要发现总结",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "1. ",
+            "type": "text"
+          },
+          {
+            "content": "CAP数量显著增长",
+            "type": "bold"
+          },
+          {
+            "content": "：2024年比2023年增长39.4%，表明问题数量在增加",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. ",
+            "type": "text"
+          },
+          {
+            "content": "成本增长更快",
+            "type": "bold"
+          },
+          {
+            "content": "：总成本增长率（65.7%）远高于数量增长率（39.4%）",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. ",
+            "type": "text"
+          },
+          {
+            "content": "NVSA部门问题突出",
+            "type": "bold"
+          },
+          {
+            "content": "：该部门的平均成本最高（€22,380）且增长最快",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "4. ",
+            "type": "text"
+          },
+          {
+            "content": "Internal Anomaly成本激增",
+            "type": "bold"
+          },
+          {
+            "content": "：平均成本增长了10.7倍",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "5. ",
+            "type": "text"
+          },
+          {
+            "content": "I&R流程占主导",
+            "type": "bold"
+          },
+          {
+            "content": "：占比达到56.5%，反映安装和维修阶段的问题较多",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "6. ",
+            "type": "text"
+          },
+          {
+            "content": "关闭率下降",
+            "type": "bold"
+          },
+          {
+            "content": "：从87.9%降至63.0%，需要加强项目管理",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "战略建议",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "短期行动（1-3个月）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 重点关注NVSA部门，分析其高成本CAP的根本原因",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 加强未关闭CAP的项目管理，提高关闭率",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 对Via Separation等高频客户进行专项分析，制定改进计划",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "中期措施（3-6个月）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 实施预防性维护计划，减少安装和维修阶段的问题",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 优化内部异常处理流程，控制Internal Anomaly成本",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 建立CAP成本预警机制，对高成本CAP进行早期干预",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "长期策略（6-12个月）：",
+            "type": "bold"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "1. 加强质量控制和预防措施，减少CAP数量的增长",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "2. 优化成本结构，在保持解决问题的有效性的同时控制成本",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "content": "3. 建立跨部门的问题共享机制，学习最佳实践，避免重复问题",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "content": "数据质量说明",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "content": "本分析基于2023年（33条）和2024年（46条）的完整CAP数据。所有数据经过验证和标准化，确保了分析结果的可靠性。数据来源于同一Excel文件的Chrono CAP工作表，保证了数据的一致性和可比性。",
+            "type": "text"
+          }
+        ],
+        "type": "paragraph"
+      },
+      {
+        "type": "horizontalRule"
+      },
+      {
+        "children": [
+          {
+            "content": "本报告由Pardus AI生成，基于CAP数据的深度分析。所有结论均基于提供的数据，建议结合实际情况进行决策。",
+            "type": "italic"
+          }
+        ],
+        "type": "paragraph"
+      }
+    ],
+    "type": "document"
+  },
+  "can_edit": false,
+  "format_version": "agentforge_v1",
+  "visibility": "public"
+}

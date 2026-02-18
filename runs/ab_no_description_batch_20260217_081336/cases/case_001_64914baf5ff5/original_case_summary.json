@@ -1,0 +1,133 @@
+{
+  "case_id": "64914baf5ff596209251d52d212a0d3052c416ed05aa2a5d6ad87d93b76e9a06",
+  "title": "2024 vs 2025 CAP Review report",
+  "with_description": true,
+  "input_files": [
+    "description.txt",
+    "2025 CAP overview.xlsx",
+    "SHA CHRONO_CAP.xlsx"
+  ],
+  "input_data_files": [
+    "2025 CAP overview.xlsx",
+    "SHA CHRONO_CAP.xlsx"
+  ],
+  "description_present": true,
+  "asset_count": 11,
+  "assets": [
+    {
+      "name": "cap_count_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "CAP数量对比"
+    },
+    {
+      "name": "cost_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 3,
+      "title": "成本对比"
+    },
+    {
+      "name": "avg_cost_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar",
+        "bar"
+      ],
+      "trace_count": 3,
+      "title": "平均成本对比"
+    },
+    {
+      "name": "dept_total_cost_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "各部门总成本对比"
+    },
+    {
+      "name": "dept_avg_cost_comparison.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "各部门平均成本对比"
+    },
+    {
+      "name": "cap_type_distribution.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "CAP TYPE分布对比"
+    },
+    {
+      "name": "avg_cost_by_type.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "各CAP类型平均成本对比"
+    },
+    {
+      "name": "process_distribution.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "Process分布对比"
+    },
+    {
+      "name": "avg_cost_by_process.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "各流程平均成本对比"
+    },
+    {
+      "name": "cost_structure_ratio.json",
+      "trace_types": [
+        "bar",
+        "bar"
+      ],
+      "trace_count": 2,
+      "title": "成本结构对比"
+    },
+    {
+      "name": "top_10_expensive_caps.json",
+      "trace_types": [
+        "bar"
+      ],
+      "trace_count": 1,
+      "title": "2024年成本最高的10个CAP"
+    }
+  ],
+  "h2_sections": [
+    "数据流程概览",
+    "执行摘要",
+    "CAP数量趋势分析",
+    "成本分析",
+    "部门对比分析",
+    "CAP类型分析",
+    "流程分析",
+    "成本结构分析",
+    "高成本CAP案例研究",
+    "CAP关闭率分析",
+    "关键客户分析",
+    "结论与建议"
+  ],
+  "first_paragraph": "本分析报告基于从Excel文件中提取的CAP数据，经过数据清洗、标准化和深度分析，提供了2023年与2024年间的全面对比。数据处理流程包括从Chrono CAP工作表提取23xxx（2023年）和24xxx（2024年）数据，进行质量验证和标准化，最终生成交互式可视化报告。"
+}

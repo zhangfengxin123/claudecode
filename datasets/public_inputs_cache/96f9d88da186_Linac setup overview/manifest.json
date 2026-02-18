@@ -1,0 +1,20 @@
+{
+  "case_id": "96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38",
+  "title_hint": "Linac setup overview",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "RF Parameters_summary.xlsx",
+      "status": 200,
+      "size_bytes": 31310,
+      "source_url": "https://pardusai.org/v1/api/public/project/96f9d88da186d9392d1344022d83f404eb17ca404f5f0507c41d039ba0d9ec38/files/RF%20Parameters_summary.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/96f9d88da186_Linac setup overview/RF Parameters_summary.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:35:44Z"
+}

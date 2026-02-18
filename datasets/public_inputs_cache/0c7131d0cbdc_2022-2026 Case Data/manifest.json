@@ -1,0 +1,38 @@
+{
+  "case_id": "0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695",
+  "title_hint": "2022-2026 Case Data",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 3,
+  "files_ok_count": 3,
+  "files": [
+    {
+      "idx": 0,
+      "name": "2022-2026 Case Data.xlsx",
+      "status": 200,
+      "size_bytes": 185792,
+      "source_url": "https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/files/2022-2026%20Case%20Data.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0c7131d0cbdc_2022-2026 Case Data/2022-2026 Case Data.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "2021 Trend Data.xlsx",
+      "status": 200,
+      "size_bytes": 346523,
+      "source_url": "https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/files/2021%20Trend%20Data.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0c7131d0cbdc_2022-2026 Case Data/2021 Trend Data.xlsx",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "2016-2022 Case Data.xlsx",
+      "status": 200,
+      "size_bytes": 334114,
+      "source_url": "https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/files/2016-2022%20Case%20Data.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/0c7131d0cbdc_2022-2026 Case Data/2016-2022 Case Data.xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:15:15Z"
+}

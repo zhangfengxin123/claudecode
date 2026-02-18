@@ -1,0 +1,145 @@
+{
+  "count": 14,
+  "rows": [
+    {
+      "idx": 3,
+      "case_id": "b3eb0cd22e673bf2a1efb180c3a31e797394d31ceb380c1861e5cd7353a45da3",
+      "title": "AB_NO_DESC_64914baf5ff5_20260217_081337",
+      "chart_count": 21,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_b3eb0cd22e67.html"
+    },
+    {
+      "idx": 32,
+      "case_id": "8a850cc5b8631d3219cd736c5c62d99607641c49acc0b1839289ad5e6e4b69b9",
+      "title": "2025 Global Robotics Leaders — Technology Roadmap Comparison",
+      "chart_count": 21,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_032_8a850cc5b863.html"
+    },
+    {
+      "idx": 15,
+      "case_id": "bffd9ee5ebabfab4b69dda48d31451d672d0528cf6b106d8b0c909071efe55b1",
+      "title": "AB_NO_DESC_ae3bf09e493f_20260217_070433",
+      "chart_count": 14,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_bffd9ee5ebab.html"
+    },
+    {
+      "idx": 2,
+      "case_id": "9a28325dd5748adb9b36a4ff78812bb926f5b613fdf3022bdf70ee5335c31f4b",
+      "title": "EV Car Analysis",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_9a28325dd574.html"
+    },
+    {
+      "idx": 5,
+      "case_id": "4bd0c69269fda702df17e55338bc7f77af043d6f8ca374ce1b07abae8b21876c",
+      "title": "AB_NO_DESC_e79c8f00ffa4_20260217_074541",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_4bd0c69269fd.html"
+    },
+    {
+      "idx": 13,
+      "case_id": "7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b",
+      "title": "AB_NO_DESC_b93dae71bcf0_20260217_071525",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_7ca268dd7c70.html"
+    },
+    {
+      "idx": 23,
+      "case_id": "5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c",
+      "title": "UK Property Price official data",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_023_5f6ef32235f3.html"
+    },
+    {
+      "idx": 28,
+      "case_id": "558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9",
+      "title": "DepthStats",
+      "chart_count": 12,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_028_558df7b18679.html"
+    },
+    {
+      "idx": 19,
+      "case_id": "0bbadf267cf4445355d79aab47636826cc511b7cca8411a83d1a7c5863fbe471",
+      "title": "AB_NO_DESC_CAP_e226_20260217",
+      "chart_count": 11,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_0bbadf267cf4.html"
+    },
+    {
+      "idx": 26,
+      "case_id": "3749c60993fd8bb289251698a42fceb684316e3c60c372b754eb70b2f48043a3",
+      "title": "AI Chips, Energy, Nuclear Index",
+      "chart_count": 11,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_026_3749c60993fd.html"
+    },
+    {
+      "idx": 34,
+      "case_id": "5a97dacdb00ada80acebaf0f3cfb0d22568d78c08852d33af223a8c18780c1b4",
+      "title": "power",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_034_5a97dacdb00a.html"
+    },
+    {
+      "idx": 37,
+      "case_id": "4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d",
+      "title": "SPX and VIX",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_037_4404a8e35f1c.html"
+    },
+    {
+      "idx": 4,
+      "case_id": "b02c5dc59d0a32d43bf3c937cd0dc97186d4c45f871c7515dd885611a8585caf",
+      "title": "AB_NO_DESC_f5171f88125c_20260217_080507",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_b02c5dc59d0a.html"
+    },
+    {
+      "idx": 8,
+      "case_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+      "title": "AB_NO_DESC_4bc65ee64081_20260217_073857",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_fd1856ce887a.html"
+    }
+  ]
+}

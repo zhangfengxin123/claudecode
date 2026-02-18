@@ -1,0 +1,20 @@
+{
+  "case_id": "2aa4a1c17878da16636d057ea682656438ee01e50a9b56fbbee8aac72e5bd2c9",
+  "title_hint": "AB_NO_DESC_f5171f88125c_20260217_074206",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 1,
+  "files_ok_count": 1,
+  "files": [
+    {
+      "idx": 0,
+      "name": "26年招生就业数据（高考单招单列） (1).xlsx",
+      "status": 200,
+      "size_bytes": 35431,
+      "source_url": "https://pardusai.org/v1/api/public/project/2aa4a1c17878da16636d057ea682656438ee01e50a9b56fbbee8aac72e5bd2c9/files/26%E5%B9%B4%E6%8B%9B%E7%94%9F%E5%B0%B1%E4%B8%9A%E6%95%B0%E6%8D%AE%EF%BC%88%E9%AB%98%E8%80%83%E5%8D%95%E6%8B%9B%E5%8D%95%E5%88%97%EF%BC%89%20%281%29.xlsx",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/2aa4a1c17878_AB_NO_DESC_f5171f88125c_20260217_074206/26年招生就业数据（高考单招单列） (1).xlsx",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:06:42Z"
+}

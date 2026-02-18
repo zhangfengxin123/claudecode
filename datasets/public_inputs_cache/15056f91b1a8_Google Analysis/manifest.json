@@ -1,0 +1,47 @@
+{
+  "case_id": "15056f91b1a82030bddb2a5257af4c93c8b339e8d256776a1cf6f9950d69439d",
+  "title_hint": "Google Analysis",
+  "status": "ok",
+  "uploads_status": 200,
+  "uploads_count": 4,
+  "files_ok_count": 4,
+  "files": [
+    {
+      "idx": 0,
+      "name": "GOOG-10-K-2025.pdf",
+      "status": 200,
+      "size_bytes": 940068,
+      "source_url": "https://pardusai.org/v1/api/public/project/15056f91b1a82030bddb2a5257af4c93c8b339e8d256776a1cf6f9950d69439d/files/GOOG-10-K-2025.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/GOOG-10-K-2025.pdf",
+      "downloaded_now": true
+    },
+    {
+      "idx": 1,
+      "name": "description.txt",
+      "status": 200,
+      "size_bytes": 38,
+      "source_url": "https://pardusai.org/v1/api/public/project/15056f91b1a82030bddb2a5257af4c93c8b339e8d256776a1cf6f9950d69439d/files/description.txt",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/description.txt",
+      "downloaded_now": true
+    },
+    {
+      "idx": 2,
+      "name": "2025q4-alphabet-earnings-release.pdf",
+      "status": 200,
+      "size_bytes": 151984,
+      "source_url": "https://pardusai.org/v1/api/public/project/15056f91b1a82030bddb2a5257af4c93c8b339e8d256776a1cf6f9950d69439d/files/2025q4-alphabet-earnings-release.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-release.pdf",
+      "downloaded_now": true
+    },
+    {
+      "idx": 3,
+      "name": "2025q4-alphabet-earnings-slides.pdf",
+      "status": 200,
+      "size_bytes": 1164664,
+      "source_url": "https://pardusai.org/v1/api/public/project/15056f91b1a82030bddb2a5257af4c93c8b339e8d256776a1cf6f9950d69439d/files/2025q4-alphabet-earnings-slides.pdf",
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/15056f91b1a8_Google Analysis/2025q4-alphabet-earnings-slides.pdf",
+      "downloaded_now": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:15:49Z"
+}

@@ -1,0 +1,397 @@
+{
+  "generated_at": "2026-02-17T07:19:55Z",
+  "ab_case": {
+    "template_case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+    "rerun_case_id": "7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b",
+    "title": "id市场投放效果与转化数据分析 (with description vs without description)"
+  },
+  "A_with_description": {
+    "case_id": "b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31",
+    "inputs": [
+      "id市场广告投放与转化数据.xlsx",
+      "description.txt"
+    ],
+    "description_present": true,
+    "chart_assets_count": 10,
+    "trace_type_hist": {
+      "bar": 7,
+      "scatter": 14,
+      "pie": 1,
+      "heatmap": 1
+    },
+    "h2_sections": [
+      "执行摘要",
+      "一、2026年目标达成情况分析",
+      "二、投放效果时间趋势分析",
+      "三、成本效益深度分析",
+      "四、订单类型与产品表现",
+      "五、指标相关性分析",
+      "六、近一周优化重点",
+      "七、GGads分系列调控计划",
+      "八、GGads分广告组调控计划",
+      "九、综合优化路线图",
+      "十、风险与应对",
+      "十一、总结与建议",
+      "附录：数据说明"
+    ],
+    "first_paragraph": "本报告分析了ID市场2026年1月1日至2月5日的GG广告投放数据。总体而言，ID市场在安装量方面表现出色，超额完成2026年目标的159.44%，但在ROI方面仍有提升空间。近期（1月31日-2月5日）投放效果明显下滑，需要立即采取优化措施。",
+    "assets": [
+      {
+        "name": "goal_achievement.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/goal_achievement.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 4,
+        "title": "目标达成"
+      },
+      {
+        "name": "overall_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/overall_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "总体趋势"
+      },
+      {
+        "name": "roi_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/roi_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "ROI趋势"
+      },
+      {
+        "name": "period_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/period_comparison.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "时期对比"
+      },
+      {
+        "name": "daily_change_rate.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/daily_change_rate.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "每日变化率"
+      },
+      {
+        "name": "cpa_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/cpa_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "CPI与CPA趋势"
+      },
+      {
+        "name": "ctr_cpc_trend.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/ctr_cpc_trend.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "CTR与CPC趋势"
+      },
+      {
+        "name": "order_composition.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/order_composition.json",
+        "trace_types": [
+          "pie"
+        ],
+        "trace_count": 1,
+        "title": "订单构成"
+      },
+      {
+        "name": "flight_hotel_comparison.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/flight_hotel_comparison.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "航班酒店对比"
+      },
+      {
+        "name": "correlation_heatmap.json",
+        "url": "https://pardusai.org/v1/api/public/project/b93dae71bcf007b0a09b21fbbcd2026859574d92f6507a50a5359e2cbc913a31/assets/correlation_heatmap.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "相关性热力图"
+      }
+    ]
+  },
+  "B_without_description": {
+    "case_id": "7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b",
+    "inputs": [
+      "id市场广告投放与转化数据.xlsx"
+    ],
+    "description_present": false,
+    "chart_assets_count": 12,
+    "trace_type_hist": {
+      "scatter": 87,
+      "bar": 8,
+      "heatmap": 1
+    },
+    "h2_sections": [
+      "Executive Summary",
+      "Campaign Overview",
+      "Cost Analysis and Efficiency",
+      "Return on Investment Analysis",
+      "Conversion Performance",
+      "Product Category Breakdown",
+      "Temporal Analysis",
+      "Correlation Analysis",
+      "Strategic Recommendations",
+      "Methodology and Data Quality",
+      "Conclusion"
+    ],
+    "first_paragraph": "This report provides a comprehensive analysis of the Indonesian market advertising campaign performance from January 1, 2026, to February 5, 2026. Over 36 days, the campaign generated 140,097 installs at a total cost of 1,686,494.85 , resulting in 5,283 orders with an average 7-day ROI of 3.13% and 30-day ETD ROI of 10.18% .",
+    "assets": [
+      {
+        "name": "daily_trends.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/daily_trends.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "Daily Ad Performance: Cost, Installs & Orders"
+      },
+      {
+        "name": "weekly_performance.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/weekly_performance.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "Weekly Aggregated Performance"
+      },
+      {
+        "name": "efficiency_metrics.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/efficiency_metrics.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "Advertising Efficiency Metrics"
+      },
+      {
+        "name": "cost_vs_orders.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/cost_vs_orders.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 36,
+        "title": "Cost vs Orders Correlation"
+      },
+      {
+        "name": "roi_trends.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/roi_trends.json",
+        "trace_types": [
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 2,
+        "title": "Return on Investment (ROI) Trends"
+      },
+      {
+        "name": "roi_vs_cost.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/roi_vs_cost.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 36,
+        "title": "ROI vs Cost Analysis"
+      },
+      {
+        "name": "conversion_rate.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/conversion_rate.json",
+        "trace_types": [
+          "scatter"
+        ],
+        "trace_count": 1,
+        "title": "Daily Conversion Rate"
+      },
+      {
+        "name": "cost_efficiency.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/cost_efficiency.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "Cost Efficiency & Conversion Analysis"
+      },
+      {
+        "name": "product_breakdown.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/product_breakdown.json",
+        "trace_types": [
+          "bar",
+          "bar"
+        ],
+        "trace_count": 2,
+        "title": "Order Breakdown by Product Category"
+      },
+      {
+        "name": "weekday_performance.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/weekday_performance.json",
+        "trace_types": [
+          "bar",
+          "bar",
+          "bar"
+        ],
+        "trace_count": 3,
+        "title": "Average Performance by Day of Week"
+      },
+      {
+        "name": "cumulative_performance.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/cumulative_performance.json",
+        "trace_types": [
+          "scatter",
+          "scatter",
+          "scatter"
+        ],
+        "trace_count": 3,
+        "title": "Cumulative Performance Over Time"
+      },
+      {
+        "name": "correlation_matrix.json",
+        "url": "https://pardusai.org/v1/api/public/project/7ca268dd7c70b97ffab6ff16c0e29293c513bf7fc46584948c6622e3a4ec216b/assets/correlation_matrix.json",
+        "trace_types": [
+          "heatmap"
+        ],
+        "trace_count": 1,
+        "title": "Feature Correlation Matrix"
+      }
+    ]
+  },
+  "diff": {
+    "chart_assets_delta": 2,
+    "sections_delta": -2,
+    "description_removed_ok": true,
+    "asset_name_overlap": 0,
+    "asset_old_only": [
+      "correlation_heatmap.json",
+      "cpa_trend.json",
+      "ctr_cpc_trend.json",
+      "daily_change_rate.json",
+      "flight_hotel_comparison.json",
+      "goal_achievement.json",
+      "order_composition.json",
+      "overall_trend.json",
+      "period_comparison.json",
+      "roi_trend.json"
+    ],
+    "asset_new_only": [
+      "conversion_rate.json",
+      "correlation_matrix.json",
+      "cost_efficiency.json",
+      "cost_vs_orders.json",
+      "cumulative_performance.json",
+      "daily_trends.json",
+      "efficiency_metrics.json",
+      "product_breakdown.json",
+      "roi_trends.json",
+      "roi_vs_cost.json",
+      "weekday_performance.json",
+      "weekly_performance.json"
+    ]
+  }
+}

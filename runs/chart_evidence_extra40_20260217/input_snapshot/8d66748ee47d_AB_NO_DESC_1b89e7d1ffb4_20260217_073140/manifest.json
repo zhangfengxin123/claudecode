@@ -1,0 +1,18 @@
+{
+  "case_id": "8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9",
+  "title": "AB_NO_DESC_1b89e7d1ffb4_20260217_073140",
+  "source_cache_manifest": "2026-02-17T14:05:49Z",
+  "status": "ok",
+  "copied_files": 1,
+  "failed_files": 0,
+  "files": [
+    {
+      "name": "反向调价实验结果-202601.xlsx",
+      "status": 200,
+      "cached_path": "Pardus/.codex_session/datasets/public_inputs_cache/8d66748ee47d_反向调价实验数据分析/反向调价实验结果-202601.xlsx",
+      "run_snapshot_path": "Pardus/.codex_session/runs/chart_evidence_extra40_20260217/input_snapshot/8d66748ee47d_AB_NO_DESC_1b89e7d1ffb4_20260217_073140/反向调价实验结果-202601.xlsx",
+      "ok": true
+    }
+  ],
+  "generated_at": "2026-02-17T14:37:34Z"
+}
