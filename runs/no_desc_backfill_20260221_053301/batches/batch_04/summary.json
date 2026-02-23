@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-02-21T14:00:50",
+  "sample_size": 18,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "d274dae803fc8c97f82c60a4aba3084eec7aba09feadd32f63baba5092ab442e",
+      "title": "",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_d274dae803fc.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af",
+      "title": "",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_d3e387c61406.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874",
+      "title": "",
+      "chart_count": 0,
+      "upload_count": 2,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_003_d4e6949ea9fa.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "dcb6a29b31385e093b8dba1b3c7b81b826810b8e42629e319a6f061f63faa06e",
+      "title": "",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_004_dcb6a29b3138.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "df7592361534678e55285c135a0b2d3866e64a9c056d92d90c1896b82271ce1c",
+      "title": "",
+      "chart_count": 5,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_df7592361534.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743",
+      "title": "",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_e49f52c3c5b2.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "e72ce87902fb49a7899df6872f983400ce4ee89bab41330e2fd22ff924eeaea0",
+      "title": "",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_007_e72ce87902fb.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746",
+      "title": "",
+      "chart_count": 6,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_e8263ae221ad.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a",
+      "title": "",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_e8c35199ca37.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "ea591fae3bc1656bb35ce7bd8750649e6ea40be3cf861482c30a68811e022fde",
+      "title": "",
+      "chart_count": 5,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_ea591fae3bc1.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "ee6dec1a80a24b848d636d4cd59b9a8deb01bdd6a49befc7f62263d05e6a6425",
+      "title": "",
+      "chart_count": 6,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_ee6dec1a80a2.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "ef45d93ed5cbd5546f82e0ce56b5f7dcf6f431d8c605dc393e2da836ef77b2dd",
+      "title": "",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_012_ef45d93ed5cb.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "fd1856ce887a370d365b56345ae0f0a54b63845123fc5c15bf617bd95a322126",
+      "title": "",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_fd1856ce887a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a",
+      "title": "",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_fd64064b9ffb.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "fdec4b4d26cbac9f558b3e47449089e928bda4188427b70587586a59dd6687e3",
+      "title": "",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_fdec4b4d26cb.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "92d6fdc0519978fbb0c3e8c7cc61aa6d57d4a77b7cef32cd7d1d391cb106b0de",
+      "title": "",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "",
+      "status": "failed",
+      "error": "required input file download failed: case=92d6fdc0519978fbb0c3e8c7cc61aa6d57d4a77b7cef32cd7d1d391cb106b0de file=第二部分：成绩考核表（数据已随机化）计算公式： 总评 = 笔记(40%) + 作业(40%) +....xlsx http=400"
+    },
+    {
+      "idx": 17,
+      "case_id": "6ba640522b28d0fb35686c42add411a89cc9fcaa29a1b90f317ec61b83b4ad07",
+      "title": "",
+      "chart_count": 0,
+      "upload_count": 0,
+      "doc_status": 404,
+      "up_status": 404,
+      "html": "",
+      "status": "failed",
+      "error": "uploads endpoint unavailable: case=6ba640522b28d0fb35686c42add411a89cc9fcaa29a1b90f317ec61b83b4ad07 status=404"
+    },
+    {
+      "idx": 18,
+      "case_id": "48ac71f1f6b30f40390ff783568b713be6bbc0589589bdfbcc20d467bdc89366",
+      "title": "",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "",
+      "status": "failed",
+      "error": "required input file download failed: case=48ac71f1f6b30f40390ff783568b713be6bbc0589589bdfbcc20d467bdc89366 file=The Valuation of Financial Companies Tools and Techniques to Measure the Value of Banks, Insurance Companies and Other... (Mario Massari, Gianfranco Gianfrate etc.) (Z-Library).pdf http=400"
+    }
+  ]
+}

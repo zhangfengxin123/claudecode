@@ -1,0 +1,176 @@
+{
+  "picks": [
+    {
+      "case_id": "10acec54e49e25b023eb5a606ba0aaa901e922021f236cb07303cd34bae6631a",
+      "title": "AI分析样本",
+      "chart_count_probe": 8,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272",
+      "title": "11",
+      "chart_count_probe": 13,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70",
+      "title": "비행운",
+      "chart_count_probe": 7,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "4b4324e20eb95889cb1f52577975d6e2005ef88212221ded9e1a72bc4b62f526",
+      "title": "阿里巴巴",
+      "chart_count_probe": 6,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8",
+      "title": "Gold price predict",
+      "chart_count_probe": 12,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "22325fc47c6eb7477a330bdca099761f3136530743bab7f178dd5256c5f6fedb",
+      "title": "央行黄金储备22Q1价格",
+      "chart_count_probe": 10,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b",
+      "title": "bug_dataset_50k",
+      "chart_count_probe": 8,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "cd84134d31bdec2a9b7fc5a13cd9219b949f721450fa07e85fd3478195a56719",
+      "title": "Semi-Autonomous Mathematics Discovery",
+      "chart_count_probe": 5,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948",
+      "title": "silver_prices_data",
+      "chart_count_probe": 8,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "52b677cdb46bd4f6ee70a63988faa9b2f1a3cda3569f858b8b9c556f84f045f0",
+      "title": "super system",
+      "chart_count_probe": 6,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "2e44cec7bc5ed214761a7a9cd59aed0ed54e9bf39a95dbf58d47fe6cb49e1fee",
+      "title": "mbti_1",
+      "chart_count_probe": 12,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "a0255a6109061e2c0643a270d14d03443f5db2ad0ab2e2d35425f909c2b29ee5",
+      "title": "raw2",
+      "chart_count_probe": 10,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30",
+      "title": "silver_prices_data",
+      "chart_count_probe": 10,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf",
+      "title": "Heart Attack Data Set",
+      "chart_count_probe": 10,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3",
+      "title": "loanapproval",
+      "chart_count_probe": 12,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f",
+      "title": "test",
+      "chart_count_probe": 9,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d",
+      "title": "乳腺癌",
+      "chart_count_probe": 8,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "c6990a63c441e82c1beff4d2df1667c05dbef381f339c62141e01996a0004537",
+      "title": "YC Companies",
+      "chart_count_probe": 5,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "fd7929581268419a7ad5f4261ae33b5de6c41f403726cb65771563451f6c5984",
+      "title": "earthquakes",
+      "chart_count_probe": 9,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "a07989b80415d4cfda6660e732aa0e87ce3864c05b662c8332be69caf2cd466a",
+      "title": "healthcare_patient_journey",
+      "chart_count_probe": 13,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad",
+      "title": "earthquakes",
+      "chart_count_probe": 11,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107",
+      "title": "healthcare_patient_journey",
+      "chart_count_probe": 14,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "9f010e9f7412032d098b15922906323b4a50c67580faa2ef9d290e4fe001021b",
+      "title": "2026年AI工程化路线图深度研究报告",
+      "chart_count_probe": 9,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "e83b6facdf2758e8d25683d12726e379eaee633868587054655fc9705f40bfd9",
+      "title": "SSAC-Report",
+      "chart_count_probe": 10,
+      "svg_count_probe": 0
+    },
+    {
+      "case_id": "92d6fdc0519978fbb0c3e8c7cc61aa6d57d4a77b7cef32cd7d1d391cb106b0de",
+      "title": "成绩",
+      "chart_count_probe": 8,
+      "svg_count_probe": 0
+    }
+  ],
+  "failed": [
+    {
+      "case_id": "c659dc3ff912e7572386204791a41ce1093bc8c90545993512656f753b9f162c",
+      "title": "Semi-Autonomous Mathematics Discovery",
+      "doc_status": 404
+    },
+    {
+      "case_id": "6efa134ba9c3b3dd798edb106ecb752e3fc6e94197983dd52b0fa8fb160b5ad7",
+      "title": "publication",
+      "doc_status": 404
+    },
+    {
+      "case_id": "f598a693dadcad711a536b804e826cf815763528e7f576fd6c900acb02531823",
+      "title": "publication",
+      "doc_status": 404
+    },
+    {
+      "case_id": "abc39c271d8fc9838a4cf63532a2d6f9c2b9f9b3b95bb398e15b57147e6ce164",
+      "title": "Hacker News Jan 2026",
+      "doc_status": 404
+    }
+  ]
+}

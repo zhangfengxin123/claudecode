@@ -1,0 +1,3 @@
+Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCSL)
+Average Price: Eggs, Grade A, Large (Cost per Dozen) in U.S. City Average (APU0000708111)
+Economic Policy Uncertainty Index for United States (USEPUINDXD)

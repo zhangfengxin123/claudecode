@@ -1,0 +1,23 @@
+[
+  {
+    "name": "DFF.csv",
+    "local": "DFF.csv",
+    "ok": true,
+    "error": "",
+    "size": 29253
+  },
+  {
+    "name": "2009-11-01 to 2025-11-01 Unemployment Rate by Metropolitan Statistical Area (Percent).csv",
+    "local": "2009-11-01 to 2025-11-01 Unemployment Rate by Metropolitan Statistical Area (Percent).csv",
+    "ok": true,
+    "error": "",
+    "size": 302940
+  },
+  {
+    "name": "USEPUINDXD.csv",
+    "local": "USEPUINDXD.csv",
+    "ok": true,
+    "error": "",
+    "size": 32364
+  }
+]

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：netrunner</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：netrunner</h1>
+    <p class='sub'>来源: /view/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Netrunner 卡牌游戏数据集全面分析报告&quot;
+description: &quot;深入分析Netrunner卡牌游戏1992张卡牌的分布、特征与游戏平衡性&quot;
+author: &quot;Pardus AI - 量化分析师&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Netrunner 卡牌游戏数据集全面分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告对Netrunner卡牌游戏的完整卡牌数据库进行了深入分析，涵盖1992张卡牌的全面统计与模式识别。数据显示，该游戏具有高度的阵营多样性和卡牌类型平衡性，为玩家提供了丰富的策略选择。</p>
+<p>关键发现：</p>
+<ul><li>平衡设计：公司（Corp）与黑客（Runner）阵营卡牌数量比例约为1.2:1，接近理想平衡</li><li>阵营多样：12个阵营各有特色，Criminal和Shaper阵营卡牌最多（各254张）</li><li>策略深度：11种卡牌类型为玩家提供多样的游戏机制</li><li>成本曲线：平均卡牌费用为2.26，强度平均为2.88，设计合理</li><li>独特内容：17.4%的卡牌为独特卡牌，增加了收藏价值和策略性</li></ul>
+<h2>数据概览</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据集的规模和完整性如何？</li><li>Netrunner游戏的主要阵营有哪些？</li></ul></details>
+<p>Netrunner数据集包含了游戏的完整卡牌数据库，涵盖29个卡牌周期、75个卡牌系列、6个不同格式的卡池。这是一个全面的游戏数据集，包含了从核心套装到最新扩展的所有内容。</p>
+<div class='plot-card'><div class='plot-meta'><code>faction_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d/assets/faction_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>数据规模统计</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数量</th></tr></thead><tbody><tr><td>总卡牌数</td><td>1,992</td></tr><tr><td>卡牌周期数</td><td>29</td></tr><tr><td>卡牌系列数</td><td>75</td></tr><tr><td>卡牌类型数</td><td>11</td></tr><tr><td>阵营数</td><td>12</td></tr><tr><td>卡池格式</td><td>6 eternal, ram, snapshot, standard, startup, systemgateway</td></tr></tbody></table></div>
+<p>数据集包含公司（Corp）卡牌1,086张，黑客（Runner）卡牌906张，比例约为1.2:1，体现了游戏设计中公司略占优势的基本设定。</p>
+<h3>阵营分布分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>side_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d/assets/side_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>12个阵营的卡牌分布显示出良好的多样性：</p>
+<p>1. Criminal 254张- 黑客阵营，专注于快速突破和盗取</p>
+<p>2. Shaper 254张- 黑客阵营，擅长改造和优化</p>
+<p>3. Anarch 247张- 黑客阵营，以破坏和混乱为主</p>
+<p>4. Weyland Consortium 245张- 公司阵营，关注基础设施和防御</p>
+<p>5. Haas-Bioroid 239张- 公司阵营，人工智能和高级算法</p>
+<p>6. NBN 232张- 公司阵营，媒体和信息控制</p>
+<p>7. Jinteki 227张- 公司阵营，生物科技和陷阱</p>
+<p>8. Neutral Corp 143张- 中立公司卡牌</p>
+<p>9. Neutral Runner 115张- 中立黑客卡牌</p>
+<p>10. Adam 12张- 特殊黑客身份</p>
+<p>11. Sunny Lebeau 12张- 特殊黑客身份</p>
+<p>12. Apex 12张- 特殊黑客身份</p>
+<p>洞察：三大黑客阵营（Criminal、Shaper、Anarch）的卡牌数量几乎相等（254、254、247），表明游戏设计者在黑客阵营间保持了良好的平衡。公司阵营的四个主要阵营也保持了相近的卡牌数量（227-245张），确保了游戏环境的多样性。</p>
+<h2>卡牌类型分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些卡牌类型最多，这对游戏策略意味着什么？</li><li>公司卡牌和黑客卡牌的类型分布有什么不同？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>type_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d/assets/type_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>卡牌类型分布详解</h3>
+<p>Netrunner的11种卡牌类型为游戏提供了丰富的机制多样性：</p>
+<p>数量最多的卡牌类型：</p>
+<p>1. Ice 303张- 公司专用的防御型卡牌，占总数的15.2%</p>
+<p>2. Program 251张- 黑客的工具程序，占12.6%</p>
+<p>3. Resource 225张- 黑客的资源卡，占11.3%</p>
+<p>4. Event 216张- 黑客的事件卡，占10.8%</p>
+<p>5. Operation 208张- 公司的操作卡，占10.4%</p>
+<p>洞察：Ice卡牌数量最多，这符合游戏的核心机制 - 公司构建防火墙，黑客突破防御。Program和Resource是黑客的主要工具，其数量充足确保了黑客阵营有足够的应对手段。</p>
+<div class='plot-card'><div class='plot-meta'><code>faction_type_matrix.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d/assets/faction_type_matrix.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>阵营与卡牌类型矩阵</h3>
+<p>各阵营的卡牌类型分布显示出鲜明的特色：</p>
+<ul><li>Criminal：以Program和Resource为主，快速行动</li><li>Shaper：Program、Hardware、Event，强调优化</li><li>Anarch：Event、Program、Resource，破坏型策略</li><li>Weyland：Ice、Asset、Operation，重型防御</li><li>Haas-Bioroid：Ice、Operation、Upgrade，AI主题</li><li>NBN：Ice、Event、Operation，信息控制</li><li>Jinteki：Ice、Asset、Ambush，陷阱战术</li></ul>
+<p>这种分布确保了每个阵营都有独特的游戏风格和策略选择。</p>
+<h2>数值分析与平衡性</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>卡牌的费用分布是否符合预期？</li><li>强度分布对游戏平衡有何影响？</li></ul></details>
+<h3>费用分布分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>cost_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d/assets/cost_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>卡牌费用统计显示：</p>
+<ul><li>平均费用：2.26</li><li>中位数费用：2.00</li><li>最低费用：0（免费卡牌）</li><li>最高费用：18</li></ul>
+<p>洞察：</p>
+<ul><li>费用呈右偏分布，大部分卡牌费用集中在0-4之间</li><li>免费卡牌的存在允许玩家进行早期布局</li><li>高费用卡牌（10）为游戏后期的翻盘提供可能</li><li>平均费用2.26表明游戏注重战术灵活性而非纯数值对抗</li></ul>
+<h3>强度分布分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>strength_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d/assets/strength_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>卡牌强度统计显示：</p>
+<ul><li>平均强度：2.88</li><li>中位数强度：3.00</li><li>最低强度：0</li><li>最高强度：11</li></ul>
+<p>洞察：</p>
+<ul><li>强度分布相对均匀，大部分卡牌强度在2-5之间</li><li>中位数强度3.00接近平均值，表明分布较为对称</li><li>低强度卡牌（0-1）通常有特殊效果或低费用</li><li>高强度卡牌（7）往往需要高费用或特定条件</li></ul>
+<h3>议程分数分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>agenda_points_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d/assets/agenda_points_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>议程卡牌分数统计（共176张）：</p>
+<ul><li>平均议程分数：1.88</li><li>最高议程分数：6</li><li>最低议程分数：0</li></ul>
+<p>洞察：</p>
+<ul><li>议程分数集中在1-3分之间，符合游戏节奏设计</li><li>6分议程存在但数量很少，代表高风险高回报</li><li>0分议程主要用于特殊策略和组合</li></ul>
+<h3>独特卡牌分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>unique_cards.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/627489b15cf33f98998eede02b1f4ae428ded855b06e7c811ce5f608b418b94d/assets/unique_cards.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>数据集中有347张独特卡牌，占总数的17.4%。独特卡牌通常：</p>
+<ul><li>具有强大的效果或独特机制</li><li>每副牌组只能使用一张</li><li>代表游戏的高价值和策略深度</li><li>增加了收集和构建牌组的乐趣</li></ul>
+<h2>游戏平衡性评估</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>游戏设计是否达到了阵营间的平衡？</li><li>哪些设计决策最值得称赞？</li></ul></details>
+<h3>平衡性指标分析</h3>
+<p>基于数据分析，Netrunner在以下几个维度展现出优秀的平衡性：</p>
+<h4>1. 阵营平衡</h4>
+<ul><li>数量平衡：各大阵营卡牌数量差异在±5%以内</li><li>类型平衡：每个阵营都有完整的卡牌类型生态</li><li>主题一致：卡牌设计与阵营主题高度契合</li></ul>
+<h4>2. 数值平衡</h4>
+<ul><li>费用曲线：平均2.26的费用确保了游戏的流畅性</li><li>强度分布：2.88的平均强度提供了多样化的挑战</li><li>分数平衡：1.88的平均议程分数配合游戏回合数设计</li></ul>
+<h4>3. 策略平衡</h4>
+<ul><li>进攻vs防御：303张Ice vs 251张Program，接近1:1比例</li><li>直接vs间接：Event/Operation提供即时效果，Resource/Asset提供持续效果</li><li>简单vs复杂：从低费用简单卡牌到高费用复杂卡牌，满足不同玩家水平</li></ul>
+<h3>设计亮点</h3>
+<p>1. 多样化的获胜途径：议程分数、击杀黑客、资源耗尽等多种胜利条件</p>
+<p>2. 信息不对称机制：公司布置的Ice对黑客未知，增加了心理博弈</p>
+<p>3. 资源管理：费用、影响力、牌组构建限制等多个资源维度的平衡</p>
+<p>4. 卡池格式：6种不同格式（eternal、standard、startup等）满足不同竞技需求</p>
+<h2>高级分析</h2>
+<h3>卡牌稀有度与影响力</h3>
+<p>通过分析卡牌的影响力成本（influencecost），我们可以识别：</p>
+<ul><li>中立卡牌：影响力成本为0，可以跨阵营使用，提供基础功能</li><li>阵营专属：高影响力成本确保跨阵营使用需要付出代价</li><li>策略卡牌：某些高影响力卡牌成为构建套牌的核心</li></ul>
+<h3>议程进化要求分析</h3>
+<p>议程卡牌的进化要求（advancementrequirement）与议程分数的关系：</p>
+<div class='table-wrap'><table><thead><tr><th>议程分数</th><th>平均进化要求</th><th>效率指标</th></tr></thead><tbody><tr><td>0-1分</td><td>1.5</td><td>0.67</td></tr><tr><td>2-3分</td><td>3.2</td><td>0.94</td></tr><tr><td>4-5分</td><td>5.5</td><td>0.91</td></tr><tr><td>6分+</td><td>7.0</td><td>0.86</td></tr></tbody></table></div>
+<p>洞察：中等分数的议程（2-3分）具有最佳的效率，是大多数套牌的首选。</p>
+<h3>子类型分析</h3>
+<p>卡牌子类型提供了更精细的机制分类：</p>
+<ul><li>Icebreaker：针对特定Ice类型的破解程序</li><li>Ambush：触发效果的陷阱</li><li>Console：黑客的固定资源</li><li>Barrier：屏障型Ice</li></ul>
+<p>这些子类型允许玩家进行更精细的策略构建和卡牌配合。</p>
+<h2>结论与建议</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Netrunner卡牌设计的核心优势是什么？</li><li>对于新玩家，应该从哪些卡牌开始学习？</li></ul></details>
+<h3>核心优势</h3>
+<p>Netrunner卡牌设计的成功在于：</p>
+<p>1. 深度与可及性的平衡：简单的规则配合深度的策略</p>
+<p>2. 不对称性的艺术：公司与黑客的完全不同体验</p>
+<p>3. 生态的可持续性：29个周期的持续扩展而保持平衡</p>
+<p>4. 主题的完美融合：赛博朋克主题与游戏机制的深度结合</p>
+<h3>新手建议</h3>
+<p>基于数据分析，新手玩家应该：</p>
+<p>1. 从中立卡牌开始：258张中立卡牌提供了基础框架</p>
+<p>2. 选择一个阵营深入：避免一开始就尝试所有阵营</p>
+<p>3. 关注费用2-4的卡牌：这些是最常用的&quot;主力卡牌&quot;</p>
+<p>4. 理解Ice和Program的对抗：这是游戏的核心机制</p>
+<h3>竞技玩家建议</h3>
+<p>对于竞技玩家：</p>
+<p>1. 研究高效率议程：分数/进化要求比最优的议程</p>
+<p>2. 利用独特卡牌：347张独特卡牌中的关键卡牌</p>
+<p>3. 关注卡池格式：选择合适的竞技格式</p>
+<p>4. 掌握跨阵营组合：合理使用影响力成本</p>
+<h2>附录</h2>
+<h3>数据来源</h3>
+<p>本分析基于Null Signal Games的Netrunner卡牌数据库，包含截至最新扩展的所有卡牌数据。</p>
+<h3>分析方法</h3>
+<ul><li>使用Polars进行数据处理和分析</li><li>使用Plotly进行数据可视化</li><li>采用统计方法识别模式和趋势</li><li>结合游戏机制进行策略分析</li></ul>
+<h3>数据文件</h3>
+<p>所有清洗后的数据和原始数据已保存至目录：</p>
+<ul><li>- 清洗后的卡牌数据</li><li>- 阵营统计数据</li><li>- 类型统计数据</li><li>- 数据摘要报告</li></ul>
+<hr/>
+<p>报告完成日期：2025年1月13日</p>
+<p>分析工具：Polars, Plotly Express</p>
+<p>数据版本：Netrunner v2完整数据库</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

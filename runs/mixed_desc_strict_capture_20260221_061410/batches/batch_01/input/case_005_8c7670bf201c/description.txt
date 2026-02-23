@@ -1,0 +1,5 @@
+This dataset explores how two commonly used fatigue-management strategies—power naps and coffee consumption—affect short-term alertness, mood, and self-reported productivity.
+
+The data simulates responses from students, working professionals, and freelancers, capturing sleep duration, intervention type, alertness scores before and after the intervention, productivity ratings, mood levels, and side effects.
+
+The dataset is designed for exploratory data analysis, regression, classification, and behavioral research, making it suitable for data science learners, researchers, and productivity analysts interested in evidence-based performance optimization.

@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：SNP500 analysis</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：SNP500 analysis</h1>
+    <p class='sub'>来源: /view/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;S&amp;P 500 Top 10 Stocks Comprehensive Performance Analysis 2010-2026&quot;
+description: &quot;In-depth analysis of the top 10 S&amp;P 500 stocks including performance metrics, risk analysis, correlation patterns, and investment insights covering 16 years of market data.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>S&amp;P 500 Top 10 Stocks: Comprehensive Performance Analysis </h1>
+<p>2010-2026</p>
+<h2>Executive Summary</h2>
+<p>This analysis examines the performance of the top 10 stocks by market capitalization in the S&amp;P 500 over a 16-year period from January 4, 2010, to February 13, 2026. The dataset includes daily price and volume data for technology and automotive leaders that have defined the modern market era.</p>
+<p>Key Findings:</p>
+<ul><li>NVIDIA NVDAdelivered extraordinary returns of 43,035%430x growth, making it the undisputed leader with a 45.7% annualized return</li><li>Tesla TSLAfollowed with 26,110%returns, demonstrating the power of disruptive innovation</li><li>Broadcom AVGOachieved 24,375%returns with the best risk-adjusted performance Sharpe Ratio: 1.02</li><li>Technology dominanceis clear, with 8 of 9 stocks being tech companies</li><li>High correlationexists between GOOG and GOOGL 99.6%, as expected for dual-class share structures</li><li>Volatility varies significantly: TSLA 57.7% most volatile, MSFT 25.6% most stable</li></ul>
+<p>Investment Insight:A 10,000 investment equally distributed across these 9 stocks in 2010 would have grown to approximately 478,000 by 2026, representing a 4,780%total return.</p>
+<h2>Dataset Overview</h2>
+<p>The analysis covers 35,756 daily trading records across 9 stocks:</p>
+<ul><li>Time Period:January 4, 2010 - February 13, 2026 16 years, 1 month</li><li>Stocks Analyzed:AAPL, AMZN, AVGO, GOOG, GOOGL, META, MSFT, NVDA, TSLA</li><li>Data Points:Daily OHLC prices, adjusted closing prices, and trading volume</li><li>Total Market Cap Covered:Trillions of dollars representing the largest public companies</li></ul>
+<p>Data Quality:Complete dataset with no missing values after cleaning. All prices adjusted for splits and dividends to ensure accurate return calculations.</p>
+<h2>Stock Price Performance</h2>
+<div class='plot-card'><div class='plot-meta'><code>price_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/price_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Normalized Price Trends</h3>
+<p>The chart above shows the dramatic performance differences when all stocks are normalized to a starting value of 100. Key observations:</p>
+<p>Outperformers:</p>
+<ul><li>NVDAGreen: Exponential growth, especially accelerating from 2016 onwards with AI boom</li><li>TSLAOrange: Volatile but powerful uptrend, massive surge in 2020-2021</li><li>AVGOYellow: Consistent strong performer with steady growth</li></ul>
+<p>Steady Growth:</p>
+<ul><li>AAPLBlue: Reliable compounder with strong but moderate growth</li><li>AMZNPurple: Strong growth with periods of rapid expansion</li><li>MSFTLight Blue: Consistent performer, especially strong post-2014</li></ul>
+<p>Mature Giants:</p>
+<ul><li>GOOG/GOOGLGreens: Solid growth but slower than peers</li><li>METAPink: Volatile with periods of both growth and decline</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which stocks showed the most consistent growth pattern?</li><li>How did the AI boom starting in 2016 impact NVDA&#x27;s performance?</li><li>What caused the volatility in TSLA&#x27;s price trajectory?</li></ul></details>
+<h2>Total Returns Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>total_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/total_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Return Hierarchy </h3>
+<p>2010-2026</p>
+<p>The total return analysis reveals a clear performance hierarchy:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Stock</th><th>Total Return</th><th>Annualized Return</th></tr></thead><tbody><tr><td>1</td><td>NVDA</td><td>43,035%</td><td>45.7%</td></tr><tr><td>2</td><td>TSLA</td><td>26,110%</td><td>42.9%</td></tr><tr><td>3</td><td>AVGO</td><td>24,375%</td><td>40.7%</td></tr><tr><td>4</td><td>AAPL</td><td>3,889%</td><td>25.7%</td></tr><tr><td>5</td><td>AMZN</td><td>2,869%</td><td>23.4%</td></tr><tr><td>6</td><td>GOOG</td><td>1,875%</td><td>20.4%</td></tr><tr><td>7</td><td>GOOGL</td><td>1,864%</td><td>20.4%</td></tr><tr><td>8</td><td>META</td><td>1,585%</td><td>23.9%</td></tr><tr><td>9</td><td>MSFT</td><td>1,635%</td><td>19.4%</td></tr></tbody></table></div>
+<p>Note: META&#x27;s higher volatility leads to lower risk-adjusted returns despite strong performance.</p>
+<p>Key Insights:</p>
+<ul><li>Top 3 dominance:NVDA, TSLA, and AVGO dramatically outperformed others</li><li>Performance gap:The gap between 3rd place AVGO and 4th place AAPL is substantial 24,375% vs 3,889%</li><li>Tech premium:Technology stocks showed superior returns across the board</li><li>Maturity factor:More established companies MSFT, GOOGL showed lower but still impressive returns</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why did NVDA outperform all other stocks by such a large margin?</li><li>What factors contributed to AVGO&#x27;s strong performance?</li><li>How does the performance gap between top 3 and the rest impact portfolio allocation?</li></ul></details>
+<h2>Risk vs Return Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>risk_return.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/risk_return.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Risk-Return Scatter Plot</h3>
+<p>This chart plots each stock&#x27;s annualized return against its volatility, with bubble size representing total return and color indicating Sharpe Ratio risk-adjusted return.</p>
+<p>Quadrants Analysis:</p>
+<p>High Risk / High Return Top Right:</p>
+<ul><li>TSLA:Highest volatility 57.7% with strong returns 42.9%</li><li>NVDA:Moderate volatility 45.6% with exceptional returns 45.7%</li></ul>
+<p>Moderate Risk / High Return Top Middle:</p>
+<ul><li>AVGO:Balanced profile - good returns 40.7% with moderate volatility 38.0%</li><li>META:Higher volatility 39.7% but solid returns 23.9%</li></ul>
+<p>Lower Risk / Moderate Return Bottom Middle:</p>
+<ul><li>AAPL:Lower volatility 28.2% with good returns 25.7%</li><li>MSFT:Lowest volatility 25.6% with steady returns 19.4%</li></ul>
+<p>Stability Leaders:</p>
+<ul><li>MSFT:Best for risk-averse investors</li><li>AAPL:Good balance of growth and stability</li></ul>
+<p>Key Takeaway:Higher returns generally require higher risk, but some stocks NVDA, AVGO achieved exceptional returns with manageable volatility.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which stock offers the best risk-adjusted return profile?</li><li>How should investors balance risk and return in their portfolio?</li><li>What makes AVGO&#x27;s risk-return profile particularly attractive?</li></ul></details>
+<h2>Correlation Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Stock Correlation Matrix</h3>
+<p>The correlation matrix reveals important relationships between stocks:</p>
+<p>High Correlation Pairs Strong Relationship:</p>
+<ul><li>GOOG/GOOGL:99.6% Expected - same company, different voting rights</li><li>MSFT/AAPL:57.3% Tech sector correlation</li><li>GOOG/AAPL:54.1% Tech giants move together</li><li>AMZN/GOOG:59.1% Tech sector alignment</li></ul>
+<p>Moderate Correlation:</p>
+<ul><li>Most stock pairs show correlations between 35-50%</li><li>Reflects general market movements and tech sector trends</li></ul>
+<p>Low Correlation Potential Diversification Benefits:</p>
+<ul><li>TSLA/All others:Lowest correlations 27-36%, acting as a diversifier</li><li>META/TSLA:27.4% lowest correlation</li></ul>
+<p>Portfolio Implications:</p>
+<ul><li>Tech concentration:High correlations reduce diversification within tech sector</li><li>TSLA diversification:Adding TSLA provides unique exposure</li><li>GOOG/GOOGL redundancy:Investing in both provides little diversification benefit</li><li>Sector risk:High sector concentration increases vulnerability to tech sector downturns</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does the high correlation between tech stocks impact diversification?</li><li>Should investors hold both GOOG and GOOGL given their 99.6% correlation?</li><li>What role does TSLA&#x27;s low correlation play in portfolio construction?</li></ul></details>
+<h2>Maximum Drawdown Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>max_drawdown.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/max_drawdown.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Peak-to-Trough Declines</h3>
+<p>Maximum drawdown represents the largest percentage decline from a peak to a trough. This is critical for understanding risk tolerance.</p>
+<p>Drawdown Rankings Lowest is Best:</p>
+<p>1. MSFT:96.8% - Most resilient</p>
+<p>2. GOOG/GOOGL:96.8% - Very similar to MSFT</p>
+<p>3. AMZN:97.9% - Moderate drawdowns</p>
+<p>4. AAPL:98.0% - Occasional large declines</p>
+<p>5. META:97.8% - Recent volatility</p>
+<p>6. AVGO:99.7% - Significant drawdowns</p>
+<p>7. TSLA:99.8% - Extreme volatility</p>
+<p>8. NVDA:99.9% - Largest drawdowns despite best returns</p>
+<p>Critical Insight:Even the best performers experienced massive drawdowns.</p>
+<p>Notable Drawdown Events:</p>
+<ul><li>COVID-19 Crash March 2020:All stocks experienced significant declines</li><li>Tech Crash 2022:META, NVDA, TSLA particularly hard hit</li><li>TSLA&#x27;s multiple 50%+ declines:Characteristic of high-growth, high-volatility stocks</li></ul>
+<p>Risk Management Implications:</p>
+<ul><li>Position sizing:Limit exposure to high-drawdown stocks</li><li>Dollar-cost averaging:Mitigate timing risk with systematic investing</li><li>Psychological preparedness:Investors must tolerate large temporary losses</li><li>Long-term perspective:All stocks recovered from drawdowns given time</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>How should investors prepare psychologically for maximum drawdowns?</li><li>What strategies can help mitigate the impact of large drawdowns?</li><li>Why do stocks with the highest returns also have the largest drawdowns?</li></ul></details>
+<h2>Yearly Returns Heatmap</h2>
+<div class='plot-card'><div class='plot-meta'><code>yearly_returns_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/yearly_returns_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Annual Performance Breakdown</h3>
+<p>This heatmap shows each stock&#x27;s yearly return percentage, revealing patterns across different market cycles.</p>
+<p>Best Years by Stock:</p>
+<ul><li>NVDA:2023 +239%, 2016 +224%, 2024 projected strong</li><li>TSLA:2020 +743%, 2013 +344%, 2019 +26%</li><li>AVGO:Multiple strong years, consistent performer</li><li>META:2020 +33%, 2019 +57%, volatile pattern</li><li>AAPL:Consistently positive, best years 2019 +86%, 2020 +81%</li></ul>
+<p>Worst Years:</p>
+<ul><li>TSLA:2022 -65%, 2011 -41%</li><li>META:2022 -64%</li><li>NVDA:2022 -50%</li><li>AAPL:2015 -4%, 2018 -7%</li></ul>
+<p>Market Cycle Analysis:</p>
+<ul><li>2010-2013:Recovery period, generally positive</li><li>2014-2019:Strong tech bull market</li><li>2020:COVID crash and recovery, massive volatility</li><li>2021:Peak euphoria, exceptional returns</li><li>2022:Tech bear market, widespread losses</li><li>2023-2024:AI-driven recovery, NVDA dominance</li></ul>
+<p>Pattern Recognition:</p>
+<ul><li>Volatility clustering:Bad years often affect multiple stocks 2022</li><li>Leadership rotation:Different stocks lead in different periods</li><li>AI theme:2023-2024 shows clear AI leadership NVDA, AVGO</li><li>Cyclical nature:Strong years followed by corrections</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What patterns emerge from the yearly performance data?</li><li>How did the AI revolution starting in 2023 impact different stocks?</li><li>What do the 2022 losses suggest about tech sector concentration risk?</li></ul></details>
+<h2>Sharpe Ratio Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>sharpe_ratio.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/sharpe_ratio.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Risk-Adjusted Performance Ranking</h3>
+<p>The Sharpe Ratio measures return per unit of risk, with 1.0 considered &quot;good&quot; and 2.0+ &quot;excellent.&quot;</p>
+<p>Sharpe Ratio Rankings:</p>
+<p>1. AVGO:1.02 - Only stock above 1.0 benchmark</p>
+<p>2. NVDA:0.96 - Nearly excellent despite high volatility</p>
+<p>3. AAPL:0.84 - Strong risk-adjusted returns</p>
+<p>4. MSFT:0.68 - Moderate risk-adjusted performance</p>
+<p>5. GOOG/GOOGL:0.67 - Similar profiles</p>
+<p>6. AMZN:0.65 - Lower due to volatility</p>
+<p>7. META:0.55 - Weakest risk-adjusted performance</p>
+<p>Key Insights:</p>
+<p>AVRO&#x27;s Superior Risk-Adjusted Performance:</p>
+<ul><li>Achieved exceptional returns with manageable volatility</li><li>Consistent compounding with fewer severe drawdowns</li><li>Ideal for long-term growth with moderate risk tolerance</li></ul>
+<p>NVDA&#x27;s Trade-off:</p>
+<ul><li>Highest returns but also high volatility</li><li>Sharpe of 0.96 is excellent for a growth stock</li><li>Suitable for aggressive growth investors</li></ul>
+<p>Stability Premium:</p>
+<ul><li>MSFT and AAPLoffer good risk-adjusted returns</li><li>Lower drawdowns and more consistent performance</li><li>Better for risk-averse investors</li></ul>
+<p>Portfolio Construction Implications:</p>
+<ul><li>Core holdings:AVRO, AAPL, MSFT for risk-adjusted returns</li><li>Growth allocation:NVDA, TSLA for aggressive growth</li><li>Balance:Mix high-Sharpe stocks with high-return stocks</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why does AVRO have the best risk-adjusted performance?</li><li>How should investors use Sharpe Ratio in portfolio construction?</li><li>What trade-offs exist between absolute returns and risk-adjusted returns?</li></ul></details>
+<h2>Trading Volume Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>volume_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/volume_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Liquidity and Investor Interest</h3>
+<p>Total trading volume reveals market interest and liquidity:</p>
+<p>Volume Rankings Total 2010-2026:</p>
+<p>1. NVDA:1.94 Trillion - Exceptionally high liquidity</p>
+<p>2. AAPL:882 Billion - Strong institutional and retail interest</p>
+<p>3. TSLA:379 Billion - High retail trading activity</p>
+<p>4. AMZN:327 Billion - Good liquidity</p>
+<p>5. GOOGL:222 Billion - Dual-class structure affects volume</p>
+<p>6. GOOG:207 Billion - Lower than GOOGL</p>
+<p>7. MSFT:143 Billion - Stable, institutional focus</p>
+<p>8. AVRO:106 Billion - Lower volume relative to market cap</p>
+<p>9. META:97 Billion - Recent volatility attracts traders</p>
+<p>Volume Insights:</p>
+<p>NVDA&#x27;s Trading Dominance:</p>
+<ul><li>AI boom drove massive trading interest</li><li>Institutional and retail participation</li><li>Options market activity increases notional volume</li></ul>
+<p>Liquidity Benefits:</p>
+<ul><li>High volume stocks easier to trade large positions</li><li>Lower bid-ask spreads reduce transaction costs</li><li>Better price discovery and execution</li></ul>
+<p>Volume as Sentiment Indicator:</p>
+<ul><li>Spikes in volume often precede major moves</li><li>Contrarian opportunities when volume diverges from price</li><li>Volume patterns confirm trend strength</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What explains NVDA&#x27;s exceptionally high trading volume?</li><li>How does trading volume impact transaction costs and execution quality?</li><li>What relationship exists between volume and price movements?</li></ul></details>
+<h2>Investment Flow Visualization</h2>
+<div class='plot-card'><div class='plot-meta'><code>investment_flow.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/investment_flow.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Hypothetical </h3>
+<p>90,000 Investment Growth</p>
+<p>This Sankey diagram visualizes how a 10,000 investment in each of the 9 stocks total 90,000 would have grown over the 16-year period.</p>
+<p>Final Portfolio Value Breakdown:</p>
+<ul><li>Initial Investment:90,000</li><li>Final Portfolio Value: Total Return:4,780%</li></ul>
+<p>Individual Stock Growth:</p>
+<ul><li>NVDA:10,000 → 440,352 43x</li><li>TSLA:10,000 → 271,101 27x</li><li>AVRO:10,000 → 253,753 25x</li><li>AAPL:10,000 → 48,889 4.9x</li><li>AMZN:10,000 → 38,692 3.9x</li><li>GOOG:10,000 → 28,751 2.9x</li><li>GOOGL:10,000 → 28,639 2.9x</li><li>META:10,000 → 25,852 2.6x</li><li>MSFT:10,000 → 26,351 2.6x</li></ul>
+<p>Portfolio Insights:</p>
+<ul><li>NVDA concentration risk:Would represent 92% of final portfolio value</li><li>Rebalancing importance:Periodic rebalancing would have reduced concentration</li><li>Winner-take-all dynamics:Top performers dominate long-term results</li><li>Diversification benefits:Equal weighting provides balanced exposure</li></ul>
+<p>Alternative Strategy Considerations:</p>
+<ul><li>Market-cap weighted:Would have increased concentration in winners</li><li>Rebalanced annually:Would have captured gains and maintained diversification</li><li>Value averaging:Would have added more to underperformers</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the risks of not rebalancing a highly concentrated portfolio?</li><li>How would periodic rebalancing have affected final returns?</li><li>What&#x27;s the optimal strategy for managing winner-take-all dynamics?</li></ul></details>
+<h2>Recent Performance </h2>
+<p>2023-2024</p>
+<div class='plot-card'><div class='plot-meta'><code>recent_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d/assets/recent_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>AI-Driven Market Leadership</h3>
+<p>Recent performance since January 1, 2023 shows the dramatic impact of the AI revolution:</p>
+<p>Top Performers 2023-2024:</p>
+<ul><li>NVDA:Exceptional gains driven by AI chip demand</li><li>AVRO:Strong performance from AI data center exposure</li><li>META:Recovery from 2022 lows, AI integration</li><li>MSFT:AI copilot driving growth</li><li>AAPL:Solid but modest gains</li></ul>
+<p>Laggards:</p>
+<ul><li>TSLA:Electric vehicle market challenges, competition</li><li>AMZN:Slower growth, cost pressures</li><li>GOOG/GOOGL:AI competition concerns</li></ul>
+<p>Market Regime Change:</p>
+<ul><li>AI theme dominance:Clear rotation into AI beneficiaries</li><li>TSLA underperformance:Shift away from previous growth darling</li><li>Tech bifurcation:AI leaders vs. traditional tech</li><li>Rotation patterns:Capital flows between subsectors</li></ul>
+<p>Investment Implications:</p>
+<ul><li>Theme investing:AI theme showing strong momentum</li><li>Sector rotation:Importance of adapting to market changes</li><li>Leadership transition:New leaders emerging NVDA, AVRO</li><li>Duration uncertainty:How long will AI dominance continue?</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What&#x27;s driving the dramatic outperformance of AI stocks?</li><li>How should investors adapt to the new AI-dominated market regime?</li><li>Is the current AI leadership sustainable long-term?</li></ul></details>
+<h2>Investment Recommendations</h2>
+<h3>Strategic Portfolio Allocation</h3>
+<p>Based on 16 years of performance data, here are strategic recommendations:</p>
+<p>Core Holdings 60-70% of Portfolio:</p>
+<p>1. NVDA 20-25%- AI leadership, exceptional returns</p>
+<p>2. AVRO 15-20%- Best risk-adjusted returns, AI exposure</p>
+<p>3. AAPL 15-20%- Stability, consistent growth, moderate risk</p>
+<p>4. MSFT 10-15%- Low volatility, reliable performance</p>
+<p>Growth Allocation 20-30% of Portfolio:</p>
+<p>1. TSLA 10-15%- High growth potential, high volatility</p>
+<p>2. META 5-10%- Recovery potential, AI integration</p>
+<p>Satellite Positions 10-15% of Portfolio:</p>
+<p>1. AMZN 5-8%- E-commerce and cloud exposure</p>
+<p>2. GOOG or GOOGL 5-7%- Search and cloud leadership choose one, not both</p>
+<h3>Risk Management Strategies</h3>
+<p>1. Position Sizing:</p>
+<p>    Limit any single stock to 25% maximum</p>
+<p>    High-volatility stocks TSLA to 10-15% maximum</p>
+<p>    Rebalance quarterly or semi-annually</p>
+<p>2. Diversification:</p>
+<p>    Consider adding non-tech sectors Healthcare, Finance, Energy</p>
+<p>    Include international exposure for geographic diversification</p>
+<p>    Maintain 10-15 stock minimum for true diversification</p>
+<p>3. Risk Mitigation:</p>
+<p>    Use dollar-cost averaging for entry</p>
+<p>    Maintain 5-10% cash for opportunities and rebalancing</p>
+<p>    Consider hedging strategies during high valuations</p>
+<h3>Time Horizon Considerations</h3>
+<p>Long-term 10+ years:</p>
+<ul><li>Focus:NVDA, AVRO, AAPL, MSFT</li><li>Strategy:Buy and hold with quarterly rebalancing</li><li>Tolerance:Accept large temporary drawdowns</li></ul>
+<p>Medium-term 3-7 years:</p>
+<ul><li>Focus:AAPL, MSFT, META, AMZN</li><li>Strategy:Cyclical awareness, trend following</li><li>Tolerance:Moderate volatility acceptance</li></ul>
+<p>Short-term 1-3 years:</p>
+<ul><li>Focus:All stocks based on momentum and valuation</li><li>Strategy:Technical analysis, market timing</li><li>Tolerance:Active management, frequent trading</li></ul>
+<h2>Conclusion</h2>
+<p>The 16-year analysis of S&amp;P 500 top 10 stocks reveals several critical insights:</p>
+<p>Performance Realities:</p>
+<ul><li>NVDA&#x27;s dominance43,035% returns demonstrates the power of secular growth trends</li><li>Tech sector superiorityis clear but comes with concentration risks</li><li>Volatility is the price of growth- all top performers experienced 95%+ drawdowns</li></ul>
+<p>Risk-Return Trade-offs:</p>
+<ul><li>AVROoffers the best risk-adjusted returns</li><li>NVDAprovides the highest absolute returns with manageable risk</li><li>TSLAoffers exceptional growth but requires maximum risk tolerance</li></ul>
+<p>Portfolio Construction:</p>
+<ul><li>Diversification remains crucialdespite high correlations</li><li>Rebalancing is essentialto manage concentration risk</li><li>Time horizon matters- long-term investors can tolerate volatility</li></ul>
+<p>Future Considerations:</p>
+<ul><li>AI revolutionis creating new leadership patterns</li><li>Market cycleswill create both opportunities and risks</li><li>Valuation disciplineremains important even in growth stocks</li></ul>
+<p>Final Recommendation:A balanced portfolio combining core holdings NVDA, AVRO, AAPL, MSFT with selective growth positions TSLA, META and periodic rebalancing offers the best risk-adjusted returns for most investors.</p>
+<hr/>
+<p>Data Sources:Daily OHLCV data from January 4, 2010 to February 13, 2026. All returns calculated using split-adjusted closing prices. Risk-free rate assumed at 2% for Sharpe Ratio calculations.</p>
+<p>Disclaimer:Past performance does not guarantee future results. This analysis is for informational purposes only and does not constitute investment advice.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

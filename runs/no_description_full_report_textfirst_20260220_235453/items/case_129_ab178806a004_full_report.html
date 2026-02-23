@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：비행운</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：비행운</h1>
+    <p class='sub'>来源: /view/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;NLP文本数据深度分析报告&quot;
+description: &quot;对韩国语叙事文本的全面统计分析，包含文本分段、段落结构和字符分布的详细洞察&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>NLP文本数据深度分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告对包含815个文本片段和212个段落的韩国语NLP数据进行了全面分析。数据来源于4个JSON文件，总计包含20,830个字符。分析揭示了文本的分布模式、段落结构特征以及各文件间的差异。该数据集呈现典型的叙事文本特征，平均每个片段25.56个字符，每个段落101.10个字符，反映了韩国语书面表达的特点。</p>
+<h2>数据概览</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据集的整体规模是多少？</li><li>这些数据的主要特征是什么？</li><li>四个文件之间是否有显著差异？</li></ul></details>
+<h3>数据集规模</h3>
+<p>本分析涵盖了从4个JSON文件中提取的NLP数据：</p>
+<p>总体统计：</p>
+<ul><li>文本片段总数：815个</li><li>段落数量：212个</li><li>总字符数：20,830个</li><li>语言：韩国语（韩语）</li><li>数据来源：4个分页JSON文件</li></ul>
+<p>质量指标：</p>
+<ul><li>无缺失值（null values）</li><li>数据结构完整一致</li><li>段落分割标记准确（lastInParagraph字段）</li><li>编码格式正确（UTF-8）</li></ul>
+<h3>文件分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>segments_by_file.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segments_by_file.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从上图可以看出，Page1包含最多的文本片段（271个），其次是Page2（244个）和Page0（213个），Page3包含最少的片段（87个）。这种分布可能是由于原始文档的页面划分导致的自然结果。</p>
+<p>各文件详细统计：</p>
+<div class='table-wrap'><table><thead><tr><th>文件</th><th>文本片段</th><th>段落</th><th>总字符数</th><th>平均片段长度</th></tr></thead><tbody><tr><td>Page0</td><td>213</td><td>42</td><td>5,987</td><td>28.11</td></tr><tr><td>Page1</td><td>271</td><td>93</td><td>6,252</td><td>23.07</td></tr><tr><td>Page2</td><td>244</td><td>61</td><td>6,047</td><td>24.78</td></tr><tr><td>Page3</td><td>87</td><td>16</td><td>2,544</td><td>29.24</td></tr></tbody></table></div>
+<h3>字符量分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>chars_by_file.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/chars_by_file.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>字符量分布与文本片段数量基本成正比，Page1包含最多字符（6,252个），Page3包含最少字符（2,544个）。这种一致性表明各文件的平均文本长度相对稳定。</p>
+<h2>文本片段分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>文本片段的长度分布特征是什么？</li><li>是否有异常长或异常短的片段？</li><li>哪个文件的片段平均长度最长？</li></ul></details>
+<h3>长度分布特征</h3>
+<p>文本片段的长度分析揭示了韩国语书面表达的模式：</p>
+<p>统计指标：</p>
+<ul><li>平均长度：25.56字符</li><li>中位数：24字符</li><li>最小值：1字符</li><li>最大值：80字符</li><li>标准差：13.69字符</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>segment_length_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segment_length_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>长度分布呈现轻微右偏的正态分布，大多数片段集中在20-40字符之间。这符合韩国语书面句子的典型长度特征。</p>
+<h3>长度区间分布</h3>
+<div class='table-wrap'><table><thead><tr><th>长度区间</th><th>数量</th><th>百分比</th></tr></thead><tbody><tr><td>0-9</td><td>95</td><td>11.7%</td></tr><tr><td>10-19</td><td>205</td><td>25.2%</td></tr><tr><td>20-29</td><td>224</td><td>27.5%</td></tr><tr><td>30-39</td><td>159</td><td>19.5%</td></tr><tr><td>40-49</td><td>78</td><td>9.6%</td></tr><tr><td>50+</td><td>54</td><td>6.6%</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>主要集中区：20-29字符区间（27.5%）</li><li>次要集中区：10-19字符区间（25.2%）</li><li>长片段：超过50字符的片段占6.6%</li><li>短片段：少于10字符的片段占11.7%，多为标点符号或独立词语</li></ul>
+<h3>最短与最长片段示例</h3>
+<p>最短片段（1字符）：</p>
+<p>（引号结束符）</p>
+<p>最长片段（80字符）：</p>
+<p>（这是一个复杂的复合句，包含引用和多层从句）</p>
+<h3>各文件片段平均长度对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>avg_length_by_file.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/avg_length_by_file.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>有趣的是，虽然Page3包含的片段数量最少，但其平均片段长度最长（29.24字符），这表明该页面的句子结构可能更为复杂或包含更多的描述性内容。</p>
+<h2>段落结构分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>段落的平均长度是多少？</li><li>每个段落通常包含多少个句子？</li><li>段落长度分布是否均匀？</li></ul></details>
+<h3>段落长度特征</h3>
+<p>段落是文本分析的重要单元，反映了作者的写作风格和文本的叙事节奏：</p>
+<p>统计指标：</p>
+<ul><li>平均长度：101.10字符</li><li>中位数：26.5字符</li><li>最小值：3字符</li><li>最大值：1,141字符</li><li>标准差：186.75字符</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>paragraph_length_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/paragraph_length_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>段落长度分布呈现高度右偏，存在少量非常长的段落（最长达1,141字符），这可能是叙事高潮或详细描述的部分。</p>
+<h3>段落长度区间分布</h3>
+<div class='table-wrap'><table><thead><tr><th>长度区间</th><th>数量</th><th>百分比</th></tr></thead><tbody><tr><td>0-49</td><td>144</td><td>67.9%</td></tr><tr><td>50-99</td><td>20</td><td>9.4%</td></tr><tr><td>100-149</td><td>12</td><td>5.7%</td></tr><tr><td>150-199</td><td>5</td><td>2.4%</td></tr><tr><td>200-299</td><td>10</td><td>4.7%</td></tr><tr><td>300+</td><td>21</td><td>9.9%</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>短段落主导：67.9%的段落少于50字符</li><li>长段落存在：14.6%的段落超过200字符</li><li>中等段落：100-199字符区间的段落占8.1%</li><li>超长段落：300字符以上的段落占9.9%</li></ul>
+<h3>句子数量分析</h3>
+<p>每个段落包含的句子数量反映了文本的复杂性和叙事节奏：</p>
+<p>统计指标：</p>
+<ul><li>平均句子数：3.84句/段</li><li>中位数：2句/段</li><li>范围：1-36句</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>sentences_per_para.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/sentences_per_para.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>大多数段落包含1-4个句子，这与短段落主导的现象一致。存在少量包含大量句子的长段落（最多36句），这些可能是密集的叙事或对话场景。</p>
+<h3>段落示例</h3>
+<p>最短段落（3字符）：</p>
+<p>（简短的疑问句，可能是对话）</p>
+<p>最长段落片段（1,141字符）：</p>
+<p>（这是一段内心独白，反映了角色的复杂情感和思考过程）</p>
+<h2>文本特征洞察</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>文本的内容类型是什么？</li><li>文本的语言特征有哪些？</li><li>从数据能推断出什么信息？</li></ul></details>
+<h3>内容类型推断</h3>
+<p>通过分析文本片段的内容，可以推断出以下特征：</p>
+<p>叙事文本特征：</p>
+<ul><li>包含对话标记（&quot;…&quot;、&quot;─&quot;、&quot; &quot;等）</li><li>描述性语言和内心独白</li><li>人物关系描述（如&quot;선배&quot; - 前辈）</li><li>时间标记和场景转换</li><li>情感表达和内心活动</li></ul>
+<p>典型内容片段示例：</p>
+<h3>语言特征</h3>
+<p>韩国语特征：</p>
+<ul><li>98.9%的片段包含韩文字符（가-힣）</li><li>使用正式和非正式敬语混合</li><li>包含标点符号（。、&quot;、&quot;、…、─）</li><li>包含对话引用（「」、&quot; &quot;）</li><li>数词和量词的使用</li></ul>
+<p>标点符号使用：</p>
+<ul><li>句号（。）用于陈述句结尾</li><li>问号（？）用于疑问句</li><li>引号（&quot; &quot;、「」）用于对话和引用</li><li>省略号（…）表示省略或沉默</li><li>破折号（─）用于强调或表示说话者</li></ul>
+<h3>文本复杂性</h3>
+<p>词汇丰富度：</p>
+<ul><li>使用多种动词时态和语态</li><li>包含复合句和复杂从句</li><li>使用形容词和副词进行描述</li><li>情感词汇和表达丰富</li></ul>
+<p>句式结构：</p>
+<ul><li>简单句和复杂句并存</li><li>使用连词和连接词</li><li>话题-说明结构（韩国语典型特征）</li><li>主语省略（语言经济性原则）</li></ul>
+<h2>数据质量评估</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据的质量如何？</li><li>是否存在数据质量问题？</li><li>数据是否适合NLP任务？</li></ul></details>
+<h3>数据完整性</h3>
+<p>✓ 优秀指标：</p>
+<ul><li>无缺失值：所有字段都完整</li><li>结构一致：4个文件的数据结构完全一致</li><li>编码正确：UTF-8编码，无乱码</li><li>分割准确：段落分割标记准确无误</li></ul>
+<h3>数据一致性</h3>
+<p>跨文件一致性：</p>
+<ul><li>文本片段长度分布相似</li><li>段落结构模式一致</li><li>标点符号使用规范统一</li><li>语言风格保持一致</li></ul>
+<p>内部一致性：</p>
+<ul><li>文本片段与段落的对应关系正确</li><li>lastInParagraph标记准确</li><li>无重复片段或段落</li></ul>
+<h3>潜在问题</h3>
+<p>需要注意的方面：</p>
+<p>1. 长段落处理：存在1,141字符的超长段落，可能需要分段处理</p>
+<p>2. 极短片段：部分片段仅1-2字符，多为标点符号</p>
+<p>3. 文件大小差异：Page3数据量较少，可能影响统计的代表性</p>
+<p>4. 上下文缺失：缺少完整的文档结构信息</p>
+<h3>适用性评估</h3>
+<p>适合的NLP任务：</p>
+<ul><li>✓ 文本分类（情感分析、主题分类）</li><li>✓ 语言模型预训练</li><li>✓ 句子分割和段落检测</li><li>✓ 对话识别和提取</li><li>✓ 文本生成（叙事文本）</li></ul>
+<p>需要额外处理的任务：</p>
+<ul><li>文本摘要（需要更长上下文）</li><li>机器翻译（需要平行语料）</li><li>问答系统（需要领域知识）</li></ul>
+<h2>各文件对比分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>四个文件之间有什么主要差异？</li><li>哪个文件包含最丰富的内容？</li><li>这种差异有什么意义？</li></ul></details>
+<h3>综合对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>segments_vs_paragraphs.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segments_vs_paragraphs.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>这个对比图清晰地展示了各文件的文本片段和段落数量的关系：</p>
+<p>关键发现：</p>
+<p>1. Page1：</p>
+<p>    文本片段最多（271个）</p>
+<p>    段落数量最多（93个）</p>
+<p>    平均片段长度较短（23.07字符）</p>
+<p>    推断：包含更多短句和对话</p>
+<p>2. Page0：</p>
+<p>    文本片段数量中等（213个）</p>
+<p>    段落数量较少（42个）</p>
+<p>    平均片段长度中等（28.11字符）</p>
+<p>    推断：叙事节奏较慢，段落较长</p>
+<p>3. Page2：</p>
+<p>    文本片段数量中等（244个）</p>
+<p>    段落数量中等（61个）</p>
+<p>    平均片段长度中等（24.78字符）</p>
+<p>    推断：内容平衡，结构稳定</p>
+<p>4. Page3：</p>
+<p>    文本片段最少（87个）</p>
+<p>    段落数量最少（16个）</p>
+<p>    平均片段长度最长（29.24字符）</p>
+<p>    推断：可能包含更多描述或复杂句式</p>
+<h3>内容类型推测</h3>
+<p>基于各文件的特征，可以推测：</p>
+<ul><li>Page1：对话密集型（片段多、段落多、片段短）</li><li>Page0：叙述描述型（段落较长，节奏较慢）</li><li>Page2：混合平衡型（各项指标居中）</li><li>Page3：复杂描述型（片段少但长，可能包含详细描述）</li></ul>
+<h2>应用建议</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如何最好地利用这些数据？</li><li>有哪些推荐的NLP任务？</li><li>数据预处理需要注意什么？</li></ul></details>
+<h3>数据预处理建议</h3>
+<p>推荐流程：</p>
+<p>1. 文本清洗：</p>
+<p>    移除纯标点符号片段（1-2字符）</p>
+<p>    标准化引号和标点符号</p>
+<p>    去除空白字符</p>
+<p>2. 分段处理：</p>
+<p>    将超长段落（300字符）拆分</p>
+<p>    合并过短段落（10字符）</p>
+<p>    保持段落完整性</p>
+<p>3. 标记化：</p>
+<p>    使用韩国语分词器（如KoNLPy、MeCab）</p>
+<p>    提取名词、动词、形容词</p>
+<p>    识别命名实体</p>
+<p>4. 特征提取：</p>
+<p>    词频-逆文档频率（TF-IDF）</p>
+<p>    词嵌入（Word2Vec、FastText）</p>
+<p>    句子嵌入（Sentence-BERT）</p>
+<h3>推荐的NLP任务</h3>
+<p>1. 情感分析：</p>
+<ul><li>文本包含丰富的情感表达</li><li>可以训练情感分类模型</li><li>应用：读者情感追踪、角色情感分析</li></ul>
+<p>2. 主题建模：</p>
+<ul><li>叙事文本适合主题发现</li><li>可以识别故事的主要主题</li><li>方法：LDA、BERTopic</li></ul>
+<p>3. 对话识别：</p>
+<ul><li>识别对话标记和模式</li><li>提取对话内容</li><li>应用：对话系统训练数据</li></ul>
+<p>4. 文本生成：</p>
+<ul><li>训练韩国语叙事文本生成模型</li><li>风格迁移（模仿写作风格）</li><li>创意写作辅助</li></ul>
+<p>5. 命名实体识别：</p>
+<ul><li>识别人物、地点、时间</li><li>构建角色关系图谱</li><li>应用：故事分析工具</li></ul>
+<h3>模型训练建议</h3>
+<p>基线模型：</p>
+<ul><li>逻辑回归（快速、可解释）</li><li>朴素贝叶斯（适合文本分类）</li><li>SVM（适合高维文本特征）</li></ul>
+<p>深度学习模型：</p>
+<ul><li>BiLSTM + Attention（序列建模）</li><li>BERT-based模型（预训练+微调）</li><li>GPT（文本生成）</li></ul>
+<p>评估指标：</p>
+<ul><li>准确率（Accuracy）</li><li>F1分数（F1-Score）</li><li>困惑度（Perplexity，语言模型）</li><li>BLEU/ROUGE（生成任务）</li></ul>
+<h2>结论</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据分析的主要发现是什么？</li><li>这些发现对NLP应用有什么意义？</li><li>未来的研究方向有哪些？</li></ul></details>
+<h3>主要发现</h3>
+<p>本分析对韩国语NLP数据进行了全面研究，得出以下主要结论：</p>
+<p>1. 数据质量优秀：</p>
+<ul><li>815个文本片段，212个段落，总计20,830字符</li><li>无缺失值，结构完整，编码正确</li><li>适合各种NLP任务</li></ul>
+<p>2. 文本特征清晰：</p>
+<ul><li>平均片段长度25.56字符，符合韩国语书面表达习惯</li><li>段落长度分布广泛（3-1,141字符），反映叙事多样性</li><li>67.9%的段落为短段落（50字符），节奏明快</li></ul>
+<p>3. 文件间存在差异：</p>
+<ul><li>Page1：对话密集（片段多、段落多、片段短）</li><li>Page0：叙述描述（段落长、节奏慢）</li><li>Page3：复杂描述（片段长、数量少）</li><li>这些差异可能对应不同的叙事场景</li></ul>
+<p>4. 内容类型明确：</p>
+<ul><li>叙事文本，包含对话和描述</li><li>情感表达丰富，适合情感分析</li><li>人物关系复杂，适合角色关系分析</li></ul>
+<h3>对NLP应用的意义</h3>
+<p>数据集价值：</p>
+<ul><li>提供了高质量的韩国语叙事文本</li><li>适合预训练语言模型</li><li>可用于多种NLP任务的研究和开发</li></ul>
+<p>应用场景：</p>
+<ul><li>韩国语文本分类和情感分析</li><li>对话系统和聊天机器人训练</li><li>文本生成和创意写作辅助</li><li>叙事文本理解和分析</li></ul>
+<p>技术启示：</p>
+<ul><li>韩国语NLP任务需要专门的分词工具</li><li>叙事文本的特点要求考虑上下文依赖</li><li>段落长度差异大，需要灵活的模型设计</li></ul>
+<h3>未来研究方向</h3>
+<p>1. 数据扩展：</p>
+<ul><li>收集更多韩国语叙事文本</li><li>构建更大规模的数据集</li><li>增加文本多样性（不同作者、风格、主题）</li></ul>
+<p>2. 深度分析：</p>
+<ul><li>情感随故事发展的变化</li><li>角色关系网络分析</li><li>叙事节奏和结构分析</li></ul>
+<p>3. 模型开发：</p>
+<ul><li>韩国语专用预训练模型</li><li>多模态叙事理解（文本+图像）</li><li>个性化文本生成</li></ul>
+<p>4. 应用开发：</p>
+<ul><li>韩国语写作辅助工具</li><li>故事分析和可视化平台</li><li>教育应用（阅读理解、写作训练）</li></ul>
+<h3>总结</h3>
+<p>本数据集是一个高质量的韩国语叙事文本资源，具有以下优势：</p>
+<p>✓ 数据完整- 无缺失值，结构一致</p>
+<p>✓ 内容丰富- 包含对话、描述、内心独白</p>
+<p>✓ 特征多样- 段落长度、句式结构变化丰富</p>
+<p>✓ 应用广泛- 适合多种NLP任务</p>
+<p>这些数据可以支持韩国语NLP研究的多个方向，为学术研究和实际应用提供有价值的基础资源。建议在未来的工作中，进一步扩展数据规模，深化文本分析，并开发更多实用的NLP应用。</p>
+<hr/>
+<h2>附录</h2>
+<h3>数据文件说明</h3>
+<ul><li>textsegments.csv- 文本片段详细数据（包含file, text, length, lastinparagraph字段）</li><li>paragraphs.csv- 完整段落数据（包含file, paragraph, length, sentences字段）</li><li>summary.md- 数据摘要和统计信息</li></ul>
+<h3>分析方法</h3>
+<p>本报告使用以下工具和方法：</p>
+<ul><li>数据处理：Polars（高性能数据处理）</li><li>统计分析：描述性统计、分布分析</li><li>可视化：Plotly交互式图表</li><li>图表类型：柱状图、直方图、分组柱状图</li></ul>
+<h3>技术栈</h3>
+<ul><li>Python 3.x</li><li>Polars- 数据处理</li><li>Plotly- 数据可视化</li><li>Plotly Skill- 图表生成</li></ul>
+<hr/>
+<p>报告生成时间：2025-01-13</p>
+<p>数据分析师：Pardus Agent</p>
+<p>版本：1.0</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

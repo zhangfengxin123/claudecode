@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：test</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：test</h1>
+    <p class='sub'>来源: /view/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Academic Citations Analysis: Image and Video Processing Research&quot;
+description: &quot;Comprehensive bibliometric analysis of 977 research publications focused on image/video quality assessment, perceptual metrics, and multimedia signal processing&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Academic Citations Analysis Report</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive bibliometric analysis of 977 academic citations focused on image and video processing research, spanning from 2001 to 2026. The dataset reveals a rapidly evolving research landscape with strong emphasis on quality assessment, perceptual metrics, and multimedia signal processing.</p>
+<p>Key Findings:</p>
+<ul><li>Strong Recent Growth: 673 publications 69% from 2020 onwards, with 2025 being the most productive year 230 papers</li><li>Quality Assessment Dominance: 36.6% of all publications focus on quality assessment and perceptual metrics</li><li>IEEE Leadership: IEEE publishes 44.7% of all papers, establishing its dominance in this field</li><li>Collaborative Research: Strong collaborative networks evident from multi-author papers</li><li>Research Focus: Primary themes include image quality assessment 358 papers, image processing 331 papers, and video processing 161 papers</li></ul>
+<h2>Overview</h2>
+<h3>Dataset Profile</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the scope and time coverage of this citations dataset?</li><li>How many publications are analyzed in this report?</li></ul></details>
+<p>This analysis examines 977 academic citations representing research in image and video processing, with a particular focus on quality assessment, perceptual metrics, and multimedia signal processing. The dataset spans 25 years 2001-2026 and provides insights into research trends, collaboration patterns, and publication venues.</p>
+<p>Data Processing:</p>
+<ul><li>Removed 30 records with missing year information</li><li>Extracted first author from multi-author citations</li><li>Created keyword flags based on title content analysis</li><li>Cleaned and normalized publication data</li></ul>
+<h3>Publications by Year</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does the temporal distribution of publications reveal about research activity?</li><li>Which years show the highest research productivity?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>publications_by_year.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/publications_by_year.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The temporal analysis reveals a dramatic accelerationin research activity from 2020 onwards. The years 2025 230 papers and 2024 138 papers alone account for 37.4% of all publications in the dataset. This surge likely reflects:</p>
+<ul><li>Increased focus on image/video processing applications</li><li>Growing importance of quality assessment in digital media</li><li>Expansion of multimedia technologies in industry and research</li></ul>
+<p>The period from 2018-2025 shows sustained growth, with the only notable peak in earlier years being 2014 37 papers.</p>
+<h2>Research Themes</h2>
+<h3>Research Topics Hierarchy</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the major research themes in this field?</li><li>How are different research topics organized hierarchically?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>research_themes.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/research_themes.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The research themes can be organized into three major categories:</p>
+<p>1. Image Processing 331 papers, 33.9%</p>
+<ul><li>Image Enhancement: Image quality improvement techniques</li><li>Image Restoration: Recovering degraded images</li><li>Image Super-Resolution: Enhancing image resolution</li><li>Image Denoising: Noise removal algorithms</li><li>Image Compression: Efficient image encoding</li></ul>
+<p>2. Video Processing 161 papers, 16.5%</p>
+<ul><li>Video Quality: Video quality assessment</li><li>Video Enhancement: Video quality improvement</li><li>Video Super-Resolution: Enhancing video resolution</li><li>Video Compression: Efficient video encoding</li></ul>
+<p>3. Quality Assessment 358 papers, 36.6%</p>
+<ul><li>Quality Assessment Metrics: Quantitative quality measures</li><li>Perceptual Quality: Human visual system-based assessment</li><li>Quality Metrics: Standardized quality evaluation methods</li></ul>
+<h3>Top Research Keywords</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which research keywords appear most frequently in publication titles?</li><li>What do the top keywords reveal about research priorities?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>top_keywords.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/top_keywords.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The keyword analysis reveals clear research priorities:</p>
+<ul><li>Quality358 papers, 36.6%: The dominant theme, reflecting the field&#x27;s focus on measuring and improving visual quality</li><li>Image331 papers, 33.9%: Core focus on image processing techniques</li><li>Assessment287 papers, 29.4%: Emphasis on evaluation and measurement methodologies</li><li>Video161 papers, 16.5%: Significant focus on video processing applications</li><li>Visual127 papers, 13.0%: Broader visual processing research</li></ul>
+<p>The top keywords align closely with the three major themes identified, confirming the coherence of research in this domain.</p>
+<h3>Keyword Trends Over Time</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>How have research priorities evolved over the years?</li><li>Which keywords show increasing or decreasing trends?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>keyword_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/keyword_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The stacked bar chart reveals the evolution of research themes over time:</p>
+<p>Key Observations:</p>
+<ul><li>Quality assessmentremains a consistent theme throughout the entire period</li><li>Image processingshows strong presence in recent years</li><li>Video processinghas gained prominence since 2010</li><li>Perceptual metricsshow steady growth, reflecting the shift toward human-centric evaluation</li><li>Enhancement techniqueshave become more prominent in recent work</li></ul>
+<p>The trends suggest the field has matured from basic image/video processing to more sophisticated perceptual quality assessment.</p>
+<h3>Keyword Co-occurrence Analysis</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which research topics frequently appear together in publications?</li><li>What does the keyword correlation reveal about research integration?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>keyword_correlation.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/keyword_correlation.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The correlation heatmap reveals strong relationships between research topics:</p>
+<p>Strong Correlations:</p>
+<ul><li>Quality + Assessment: These topics frequently co-occur, reflecting the dominant theme of quality assessment</li><li>Image + Quality: Strong connection between image processing and quality evaluation</li><li>Visual + Perceptual: These topics often appear together, reflecting the human visual system focus</li><li>Metric + Assessment: Methodological correlation in developing quality metrics</li></ul>
+<p>Research Integration:</p>
+<p>The heatmap shows that the field is well-integrated, with quality assessment serving as a unifying theme across image and video processing research.</p>
+<h2>Leading Researchers</h2>
+<h3>Top 10 Researchers by Publication Count</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>Who are the most prolific researchers in this field?</li><li>What does the distribution of publications among researchers suggest?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>top_authors.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/top_authors.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The analysis identifies leading contributors to the field:</p>
+<p>Top Researchers:</p>
+<p>1. Zhai, Guangtao53 papers, 5.4%: Dominant researcher with extensive work in image/video quality assessment</p>
+<p>2. Gu, Ke38 papers, 3.9%: Major contributor to perceptual quality research</p>
+<p>3. Zhang, Zicheng37 papers, 3.8%: Significant contributions to image/video processing</p>
+<p>4. Gao, Zhongpai21 papers, 2.1%: Active researcher in quality assessment</p>
+<p>5. Min, Xiongkuo20 papers, 2.0%: Contributor to multimedia processing</p>
+<p>Research Leadership:</p>
+<p>The top 10 researchers collectively contribute 24.2% of all publications, indicating strong individual contributions alongside collaborative research networks.</p>
+<h3>Research Specialization by Author</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the research specializations of leading researchers?</li><li>How do different researchers contribute to various research themes?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>author_keywords.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/author_keywords.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The heatmap reveals research specializations among top authors:</p>
+<p>Specialization Patterns:</p>
+<ul><li>Zhai, Guangtao: Broad contributions across quality, image, and video processing</li><li>Gu, Ke: Strong focus on quality assessment and perceptual metrics</li><li>Zhang, Zicheng: Contributions to image processing and enhancement</li><li>Gao, Zhongpai: Specialized in quality assessment and metrics</li><li>Min, Xiongkuo: Focus on image and video processing</li></ul>
+<p>The heatmap shows both specialization e.g., Gu, Ke in perceptual quality and broad expertise e.g., Zhai, Guangtao across multiple themes.</p>
+<h2>Publication Venues</h2>
+<h3>Top 10 Publishers</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which publishers dominate this research field?</li><li>What does the publisher distribution reveal about publication preferences?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>top_publishers.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/top_publishers.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The analysis of publication venues reveals clear preferences:</p>
+<p>Top Publishers:</p>
+<p>1. IEEE437 papers, 44.7%: Dominant publisher, reflecting its leadership in signal processing and multimedia</p>
+<p>2. Elsevier31 papers, 3.2%: Significant presence, particularly in image processing journals</p>
+<p>3. Springer NatureSwitzerland &amp; Singapore 34 papers combined, 3.5%: Active in conference proceedings and journals</p>
+<p>4. Pergamon15 papers, 1.5%: Historical publications</p>
+<p>5. ACM14 papers, 1.4%: Contributions in multimedia computing</p>
+<p>Publication Preferences:</p>
+<ul><li>IEEE&#x27;s dominance44.7% reflects its established reputation in signal processing and multimedia research</li><li>Conference proceedingsplay a significant role, particularly for Springer Nature publications</li><li>Journal publicationsthrough IEEE Transactions and Elsevier journals indicate sustained research impact</li></ul>
+<h3>Publisher Distribution</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>How is publication distribution structured across different publishers?</li><li>What does the treemap reveal about market share?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>publisher_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/51407e3adc6104b4285649bc05269e168548c8e6a9fccfc8882791edea07a62f/assets/publisher_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The treemap visualization shows the publisher market share:</p>
+<ul><li>IEEE&#x27;s dominanceis visually apparent, with nearly half of all publications</li><li>Long-tail distributionwith many smaller publishers contributing 2-3 papers each</li><li>Academic diversitywith publications across multiple publishers and venues</li></ul>
+<h2>Key Insights and Recommendations</h2>
+<h3>Research Trends</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the major research trends emerging from this analysis?</li><li>How can researchers leverage these trends for future work?</li></ul></details>
+<p>1. Quality Assessment as Core Theme</p>
+<ul><li>Quality assessment remains the dominant research theme 36.6% of publications</li><li>Shift from objective to perceptual quality metrics</li><li>Integration of human visual system models in quality evaluation</li></ul>
+<p>2. Perceptual-Centric Approaches</p>
+<ul><li>Growing emphasis on perceptual quality and human visual system</li><li>Development of no-reference quality metrics</li><li>Integration of psychovisual models in image/video processing</li></ul>
+<p>3. Multimedia Convergence</p>
+<ul><li>Convergence of image and video processing techniques</li><li>Cross-dimensional quality assessment image to video, and vice versa</li><li>Unified frameworks for multimedia quality evaluation</li></ul>
+<p>4. Deep Learning Integration</p>
+<ul><li>Recent trends suggest integration of deep learning for quality assessment</li><li>Super-resolution techniques increasingly using neural networks</li><li>End-to-end learning for perceptual quality optimization</li></ul>
+<h3>Collaborative Research</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>What collaboration patterns are evident in this research community?</li><li>How does collaboration impact research productivity?</li></ul></details>
+<p>Strong Collaborative Networks:</p>
+<ul><li>Multi-author papers suggest active collaboration</li><li>Top researchers work with diverse co-author networks</li><li>Cross-institution collaboration evident in conference publications</li></ul>
+<p>Recommendations:</p>
+<ul><li>Foster collaborative research to address complex quality assessment challenges</li><li>Establish interdisciplinary teams for perceptual quality research</li><li>Encourage cross-institution collaborations for broader impact</li></ul>
+<h3>Future Research Directions</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are promising future research directions based on current trends?</li><li>How can emerging technologies influence this research field?</li></ul></details>
+<p>Promising Directions:</p>
+<p>1. AI-Powered Quality Assessment</p>
+<ul><li>Deep learning for no-reference quality metrics</li><li>Adaptive quality assessment for different content types</li><li>Real-time quality monitoring for streaming applications</li></ul>
+<p>2. Perceptual Optimization</p>
+<ul><li>Perceptual coding for compression efficiency</li><li>Content-aware enhancement and restoration</li><li>Perceptually-driven super-resolution</li></ul>
+<p>3. Quality-Aware Applications</p>
+<ul><li>Quality-aware streaming and transmission</li><li>Adaptive multimedia delivery based on quality metrics</li><li>Quality-guided content selection and curation</li></ul>
+<p>4. Standardization and Benchmarking</p>
+<ul><li>Development of standardized quality metrics</li><li>Benchmark datasets for quality assessment</li><li>Cross-laboratory validation of quality metrics</li></ul>
+<h2>Conclusion</h2>
+<p>This bibliometric analysis of 977 academic citations reveals a vibrant and rapidly evolving research field focused on image/video quality assessment and multimedia signal processing. The strong recent growth 69% of publications from 2020 onwards, the dominance of quality assessment as a research theme 36.6% of papers, and IEEE&#x27;s leadership in publications 44.7% all point to a field with significant academic and practical importance.</p>
+<p>The research community shows strong collaborative patterns, with leading researchers making substantial contributions across multiple themes. The integration of perceptual models, the convergence of image and video processing techniques, and the growing emphasis on quality-aware applications suggest a field poised for continued growth and impact.</p>
+<p>As multimedia technologies continue to advance, quality assessment and perceptual processing will remain critical research areas, with opportunities for innovation in AI-powered metrics, real-time quality monitoring, and perceptual optimization across diverse applications.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

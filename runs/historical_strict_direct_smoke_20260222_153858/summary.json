@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-02-22T23:38:59",
+  "source": "Pardus/.codex_session/runs/historical_candidates_from_snapshots_20260222.json",
+  "target": 20,
+  "source_cases": 204,
+  "filtered_cases": 0,
+  "picked_cases": 0,
+  "actual_strict_count": 0,
+  "actual_strict_case_ids": [],
+  "strict_with_description": 0,
+  "strict_without_description": 0,
+  "failure_reasons": {},
+  "rows_all": [],
+  "rows_strict": []
+}

@@ -1,0 +1,123 @@
+I. Dictator / Ultimatum
+DICT vs “Dictator with Scrambled Sentence” (a.k.a. Dictator with God)
+
+Everyone plays DICT and the priming variant.
+
+Random prime: non-religious scrambled sentence vs religious scrambled sentence.
+
+Core analyses:
+
+Compare giving in DICT vs giving after the prime.
+
+Test whether the religious prime increases giving relative to the non-religious prime.
+
+Condition on self-reported identity and intensity:
+
+religious / spiritual / neither / both
+
+degree of religiosity/spirituality, religious practice, religion type.
+
+DICT vs ULT
+
+Benchmark “self-interested point maximizer” predictions:
+
+DICT: give (near) 0.
+
+ULT proposer: offer the minimum; responder: accept any positive (or any nonzero) offer.
+
+Empirical questions:
+
+Compare DICT gifts to ULT offers; explain why behavior changes moving to ULT (strategic rejection threat, fairness norms).
+
+In ULT, map offer size → acceptance/rejection, using rationales to explain rejections (“leave points on the table”).
+
+Display suggestion:
+
+Build a type transition table: DICT giving types → how they “fan out” into ULT proposer types + ULT responder acceptance thresholds.
+
+If too large, use alternative visuals, but keep the distribution of types legible at a glance.
+
+External comparisons:
+
+Compare your class to prior evidence on UCLA students (Colin Camerer & Ernst Fehr).
+
+Compare your class ULT offers to small-scale societies results (Joseph Henrich et al.; note the provided graphs are poorly designed—don’t emulate them).
+
+ULT vs “ULT with Robot”
+
+Three settings: baseline ULT, Human proposer–Robot responder (ROBRESP), Robot proposer–Human responder (ROBPROP).
+
+Compare offer distributions and rejection patterns across settings:
+
+Does it matter whether the proposer is human vs robot?
+
+Does it matter whether the responder is human vs robot?
+
+Explain mechanisms using player rationales (don’t speculate).
+
+Re-derive point-maximizer strategies for ROBRESP and ROBPROP.
+
+Provide a real-world analogue that matches the intuition (human moral emotions/intentions vs “machine” agency).
+
+I. Trust
+Read the data correctly: reciprocal vs round-robin pairing
+
+Trust-game data is round robin, not reciprocal.
+
+Each row ties together three roles/IDs: Player’s Sender → Player → Player’s Receiver.
+
+A player’s score aggregates what happened when someone sent to them and when they sent to someone else.
+
+Trust Game (TR)
+
+Point-maximizer benchmark strategies for Stage 1 (send) and Stage 2 (return).
+
+Interpretations:
+
+Stage 1 sent amount ≈ trust
+
+Stage 2 returned share ≈ trustworthiness
+
+Describe distributions; assess whether trust and trustworthiness “correlate” in the everyday sense (no coefficients).
+
+Use Random Row Picker: sample ~12 players and use rationales to refine what Stage 1/2 measure (beyond “trust/trustworthiness”).
+
+Demographics benchmark: compare trust/trustworthiness by gender and by race/ethnicity.
+
+Link survey attitudes to behavior:
+
+Diversity Survey “most people can be trusted…” vs actual TR behavior.
+
+Did the class anticipate the realized trustworthiness distribution?
+
+TR vs Trust with Gender + Race/Ethnicity (GRE)
+
+Two approaches:
+
+Across games: does adding identity info change trust/trustworthiness vs baseline TR?
+
+Within GRE: compare encounters by gender pairing (MM/MF/FM/FF) and by race/ethnicity combinations.
+
+Note measurement issue: gameplay uses free-form identity; dataset uses radio-button categories (thin statistical simplification of social reality).
+
+Test Robert Putnam’s homogeneity hypothesis:
+
+Are homogeneous pairs more trusting/trustworthy than heterogeneous pairs?
+
+Which matters more: gender homogeneity or race/ethnicity homogeneity?
+
+Identify highest/lowest trust & trustworthiness combinations.
+
+Compare to Chaim Fershtman & Uri Gneezy (gender × race/ethnicity result) and to international evidence (Croson/Buchan/Dawes studies).
+
+Trust with Hogwarts Houses (HH)
+
+Pairing is within-house (neighborhood-like sorting), unlike anonymous heterogeneous TR (city-like mixing).
+
+Use TR as benchmark: do same-house pairs show higher trust/trustworthiness?
+
+Confounds to keep explicit:
+
+HH reveals Pen Names + shared house membership; TR is anonymous and identity-blind.
+
+So differences may reflect familiarity + in-group identity, not just “sorting.”

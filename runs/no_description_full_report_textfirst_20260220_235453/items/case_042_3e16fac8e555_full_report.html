@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Employee_Attrition_DataSet</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Employee_Attrition_DataSet</h1>
+    <p class='sub'>来源: /view/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Employee Attrition Analysis: Key Drivers and Retention Strategies&quot;
+description: &quot;Comprehensive analysis of employee attrition patterns across 10,000 employees, identifying key risk factors and providing actionable retention recommendations&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Employee Attrition Analysis: Key Drivers and Retention Strategies</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of employee attrition across an organization with 10,000 employees. The overall attrition rate stands at 9.03%, which is below the industry average of 10-15%, indicating relatively healthy retention. However, several critical risk factors and departmental variations require attention.</p>
+<div class='plot-card'><div class='plot-meta'><code>attrition_by_department.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/attrition_by_department.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Findings:</p>
+<ul><li>Engineering Departmenthas the highest attrition rate at 9.58%, followed by Sales at 9.50%</li><li>Job satisfactionis the strongest protective factor against attrition -0.284 coefficient</li><li>Employees working overtime have a 4.40 percentage point higher attrition ratethan those without overtime</li><li>Employees who left earned 719 lesson average compared to those who stayed</li><li>Entry-level employees Level 1show the highest attrition risk at 11.22%</li></ul>
+<p>The analysis reveals that employees with lower tenure average 6.5 years and lower income are more likely to leave, suggesting that early-career support and competitive compensation are critical retention levers.</p>
+<h2>Methodology</h2>
+<p>This analysis employed a multi-method approach combining exploratory data analysis, statistical modeling, and machine learning techniques:</p>
+<p>1. Data Cleaning: Processed 10,000 employee records with no missing values or duplicates</p>
+<p>2. Exploratory Analysis: Examined attrition patterns across 14 employee attributes</p>
+<p>3. Correlation Analysis: Calculated Pearson correlations between attrition and all features</p>
+<p>4. Logistic Regression: Built a predictive model with 90.95% overall accuracy ROC AUC: 0.66</p>
+<p>5. Feature Importance: Identified top risk factors using model coefficients</p>
+<p>The dataset includes comprehensive employee information spanning demographics, career progression, satisfaction metrics, and work conditions, enabling a holistic view of attrition drivers.</p>
+<h2>Attrition by Department</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why does Engineering have the highest attrition rate?</li><li>What retention strategies work best for HR&#x27;s low attrition rate?</li><li>How does department size correlate with attrition rates?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>attrition_by_department.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/attrition_by_department.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The analysis reveals significant variation in attrition rates across seven departments:</p>
+<div class='table-wrap'><table><thead><tr><th>Department</th><th>Employees</th><th>Attrition</th><th>Rate %</th></tr></thead><tbody><tr><td>Engineering</td><td>2,045</td><td>196</td><td>9.58%</td></tr><tr><td>Sales</td><td>2,453</td><td>233</td><td>9.50%</td></tr><tr><td>Marketing</td><td>1,188</td><td>108</td><td>9.09%</td></tr><tr><td>IT</td><td>1,035</td><td>93</td><td>8.99%</td></tr><tr><td>Operations</td><td>1,513</td><td>135</td><td>8.92%</td></tr><tr><td>Finance</td><td>1,037</td><td>85</td><td>8.20%</td></tr><tr><td>HR</td><td>729</td><td>53</td><td>7.27%</td></tr></tbody></table></div>
+<p>Department Analysis:</p>
+<p>High-Risk Departments:</p>
+<ul><li>Engineering 9.58%: Despite having the second-highest attrition rate, this department&#x27;s risk profile suggests technical roles may face unique challenges</li><li>Sales 9.50%: High-pressure environment with performance-based metrics likely contributes to elevated attrition</li><li>Marketing 9.09%: Creative professionals may have more external opportunities, affecting retention</li></ul>
+<p>Low-Risk Departments:</p>
+<ul><li>HR 7.27%: Best-in-class retention suggests practices worth emulating across the organization</li><li>Finance 8.20%: Structured career paths and clear advancement opportunities may contribute to stability</li></ul>
+<p>Recommendations:</p>
+<p>1. Conduct exit interviews specifically focused on Engineering and Sales to understand department-specific drivers</p>
+<p>2. Benchmark HR practices and consider adapting successful elements to other departments</p>
+<p>3. Review compensation competitiveness for technical and sales roles in the market</p>
+<p>4. Implement department-specific retention metrics and interventions</p>
+<h2>Income and Tenure Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How significant is the 719 income gap between employees who leave and stay?</li><li>What is the optimal tenure period for implementing retention interventions?</li><li>Does income disparity vary significantly across job levels?</li></ul></details>
+<h3>Income Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>income_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/income_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Employees who left the organization earned significantly less than those who stayed:</p>
+<p>Income Statistics:</p>
+<ul><li>Employees who left: Average 8,314, Median 7,925</li><li>Employees who stayed: Average 9,033, Median 8,750</li><li>Income gap: 719 7.97% difference</li></ul>
+<p>The box plot reveals that income distribution for employees who left is shifted downward, with a lower median and overall spread. This suggests that compensation is a significant factor in attrition decisions, particularly for employees feeling underpaid relative to market standards.</p>
+<h3>Tenure Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>years_at_company.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/years_at_company.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Tenure patterns show clear differences:</p>
+<p>Years at Company Statistics:</p>
+<ul><li>Employees who left: Average 6.49 years, Median 5.0 years</li><li>Employees who stayed: Average 7.92 years, Median 6.0 years</li><li>Tenure gap: 1.43 years 17.94% difference</li></ul>
+<p>Key Insights:</p>
+<p>1. Early Tenure Risk: Employees with 3-5 years of service show the highest attrition risk</p>
+<p>2. Mid-Career Transition: The 4-6 year mark represents a critical period for retention</p>
+<p>3. Long-Term Retention: Employees with 10+ years demonstrate strong commitment</p>
+<p>Recommendations:</p>
+<p>1. Compensation Review: Conduct market salary benchmarking, especially for employees with 3-6 years of tenure</p>
+<p>2. Career Pathing: Develop clear advancement pathways for employees in the 3-6 year range</p>
+<p>3. Retention Bonuses: Consider tenure-based retention incentives at critical milestones</p>
+<p>4. Salary Equity: Address internal pay disparities to reduce attrition among compensated employees</p>
+<h2>Job Satisfaction and Work-Life Balance</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What drives the high attrition among employees with job satisfaction levels 1-2?</li><li>How can we improve work-life balance scores to reduce attrition?</li><li>Is there an optimal satisfaction score threshold for retention?</li></ul></details>
+<h3>Job Satisfaction Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>job_satisfaction_impact.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/job_satisfaction_impact.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Job satisfaction exhibits a strong negative correlation with attrition -0.0866, confirming its critical importance:</p>
+<div class='table-wrap'><table><thead><tr><th>Satisfaction Level</th><th>Total</th><th>Attrition</th><th>Rate %</th></tr></thead><tbody><tr><td>1 Very Low</td><td>500</td><td>68</td><td>13.60%</td></tr><tr><td>2 Low</td><td>1,455</td><td>242</td><td>16.63%</td></tr><tr><td>3 Medium</td><td>3,476</td><td>259</td><td>7.45%</td></tr><tr><td>4 High</td><td>3,062</td><td>226</td><td>7.38%</td></tr><tr><td>5 Very High</td><td>1,507</td><td>108</td><td>7.17%</td></tr></tbody></table></div>
+<p>Critical Finding: Employees with low satisfaction levels 1-2 have more than doublethe attrition rate 15.12% average compared to those with medium-high satisfaction 7.33% average.</p>
+<h3>Work-Life Balance Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>worklife_balance_impact.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/worklife_balance_impact.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Work-life balance shows similar patterns with a correlation of -0.0717:</p>
+<div class='table-wrap'><table><thead><tr><th>WLB Level</th><th>Total</th><th>Attrition</th><th>Rate %</th></tr></thead><tbody><tr><td>1 Low</td><td>983</td><td>119</td><td>12.11%</td></tr><tr><td>2 Medium-Low</td><td>2,515</td><td>305</td><td>12.13%</td></tr><tr><td>3 Medium-High</td><td>4,406</td><td>335</td><td>7.60%</td></tr><tr><td>4 High</td><td>2,096</td><td>144</td><td>6.87%</td></tr></tbody></table></div>
+<p>Key Insights:</p>
+<p>1. Threshold Effect: Both satisfaction and work-life balance show clear &quot;tipping points&quot; around level 3</p>
+<p>2. Diminishing Returns: Moving from level 3 to 4-5 shows incremental improvements, not dramatic reductions</p>
+<p>3. Compound Risk: Employees low on both metrics face exponential attrition risk</p>
+<p>Recommendations:</p>
+<p>1. Early Warning System: Monitor employees with satisfaction/work-life balance scores of 2 or below</p>
+<p>2. Intervention Programs: Target interventions for employees scoring 2 or below on either metric</p>
+<p>3. Culture Initiatives: Focus on moving employees from level 2 to 3 for maximum ROI</p>
+<p>4. Regular Pulse Surveys: Implement frequent check-ins to identify satisfaction declines early</p>
+<h2>Overtime and Work Conditions</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the long-term impact of overtime on employee retention?</li><li>Can we reduce attrition by limiting overtime hours?</li><li>Which departments have the highest overtime exposure?</li></ul></details>
+<h3>Overtime Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>overtime_impact.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/overtime_impact.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Overtime work significantly increases attrition risk with a positive correlation of 0.0694:</p>
+<p>Overtime Analysis:</p>
+<ul><li>No Overtime: 7,151 employees, 7.78% attrition rate</li><li>With Overtime: 2,849 employees, 12.18% attrition rate</li><li>Risk Increase: +4.40 percentage points 56.5% relative increase</li></ul>
+<p>Critical Insight: Employees working overtime are 1.56 times more likely to leave compared to those without overtime, making it one of the most significant work-related risk factors.</p>
+<h3>Work Conditions Summary</h3>
+<p>Additional work condition metrics reveal:</p>
+<p>Distance from Home: Negligible impact -0.0014 correlation, suggesting commute is not a major factor</p>
+<p>Training Hours: Minimal impact -0.0060 correlation, indicating training quantity doesn&#x27;t directly affect retention</p>
+<p>Performance Rating: Moderate negative impact -0.0327 correlation, with lower-rated employees showing slightly higher attrition</p>
+<p>Recommendations:</p>
+<p>1. Overtime Monitoring: Implement real-time tracking of overtime hours across departments</p>
+<p>2. Staffing Optimization: Hire additional resources in departments with high overtime patterns</p>
+<p>3. Workload Distribution: Review work allocation to reduce overtime dependency</p>
+<p>4. Flexible Arrangements: Offer compensatory time off or remote work options for overtime periods</p>
+<h2>Job Level and Career Progression</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do entry-level employees have the highest attrition rate?</li><li>How can we improve retention at Level 2 and Level 3?</li><li>What career development opportunities exist for mid-level employees?</li></ul></details>
+<h3>Job Level Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>job_level_impact.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/job_level_impact.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Job level shows a clear inverse relationship with attrition -0.0648 correlation:</p>
+<div class='table-wrap'><table><thead><tr><th>Job Level</th><th>Total</th><th>Attrition</th><th>Rate %</th></tr></thead><tbody><tr><td>1 Entry</td><td>2,844</td><td>319</td><td>11.22%</td></tr><tr><td>2 Junior</td><td>2,627</td><td>241</td><td>9.17%</td></tr><tr><td>3 Mid</td><td>2,773</td><td>254</td><td>9.16%</td></tr><tr><td>4 Senior</td><td>1,389</td><td>70</td><td>5.04%</td></tr><tr><td>5 Executive</td><td>367</td><td>19</td><td>5.18%</td></tr></tbody></table></div>
+<p>Key Patterns:</p>
+<p>1. Entry-Level Crisis: Level 1 employees face the highest attrition risk 11.22%</p>
+<p>2. Mid-Level Plateau: Levels 2-3 show similar elevated rates around 9.17%</p>
+<p>3. Senior Stability: Levels 4-5 demonstrate excellent retention at </p>
+<p>4. Career Progression: Clear advancement opportunities correlate strongly with retention</p>
+<p>Age Analysis:</p>
+<ul><li>Employees who left: Average age 36.5 years</li><li>Employees who stayed: Average age 37.8 years</li><li>Age gap: 1.3 years younger employees show slightly higher attrition</li></ul>
+<h3>Promotion Impact</h3>
+<p>Employees who received promotions in the last 5 years have lower attrition:</p>
+<ul><li>Promoted: 6.67% attrition rate</li><li>Not Promoted: 9.27% attrition rate</li><li>Risk Reduction: -2.60 percentage points 28% reduction</li></ul>
+<p>Recommendations:</p>
+<p>1. Entry-Level Support: Implement robust onboarding and mentorship programs for Level 1 employees</p>
+<p>2. Career Pathing: Create clear advancement paths with defined timelines for Levels 1-3</p>
+<p>3. Promotion Criteria: Make promotion requirements transparent and achievable</p>
+<p>4. Development Planning: Invest in training and skill development for mid-level employees</p>
+<p>5. Succession Planning: Prepare Level 2-3 employees for advancement to senior roles</p>
+<h2>Feature Importance and Risk Factors</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which factors should we prioritize for immediate intervention?</li><li>How do job satisfaction and work-life balance interact?</li><li>What are the leading indicators of potential attrition?</li></ul></details>
+<h3>Feature Importance Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>feature_importance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/feature_importance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The logistic regression model identified the top predictors of attrition:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Factor</th><th>Coefficient</th><th>Impact</th><th>Interpretation</th></tr></thead><tbody><tr><td>1</td><td>Job Satisfaction</td><td>-0.2841</td><td>0.2841</td><td>Strongest protective factor</td></tr><tr><td>2</td><td>Work-Life Balance</td><td>-0.2624</td><td>0.2624</td><td>Second strongest protective factor</td></tr><tr><td>3</td><td>OverTime</td><td>0.2473</td><td>0.2473</td><td>Strongest risk factor</td></tr><tr><td>4</td><td>Job Level</td><td>-0.1503</td><td>0.1503</td><td>Higher levels reduce risk</td></tr><tr><td>5</td><td>Performance Rating</td><td>-0.1110</td><td>0.1110</td><td>Better performers stay longer</td></tr><tr><td>6</td><td>Monthly Income</td><td>-0.0544</td><td>0.0544</td><td>Higher income protects</td></tr><tr><td>7</td><td>Promotion Last 5 Years</td><td>-0.0537</td><td>0.0537</td><td>Promotions help retention</td></tr><tr><td>8</td><td>Years at Company</td><td>-0.0529</td><td>0.0529</td><td>Longer tenure reduces risk</td></tr><tr><td>9</td><td>Training Hours</td><td>-0.0344</td><td>0.0344</td><td>Minimal impact</td></tr><tr><td>10</td><td>Distance from Home</td><td>0.0330</td><td>0.0330</td><td>Slight risk factor</td></tr><tr><td>11</td><td>Age</td><td>-0.0327</td><td>0.0327</td><td>Slight protective factor</td></tr></tbody></table></div>
+<p>Model Performance:</p>
+<ul><li>Accuracy: 90.95%</li><li>ROC AUC: 0.6624 fair discriminatory power</li><li>Precision: 0% model struggles to predict attrition cases</li><li>Recall: 0% limited ability to identify at-risk employees</li></ul>
+<p>Model Interpretation:</p>
+<p>The model achieves high overall accuracy by correctly predicting most stay cases but has difficulty identifying attrition cases, suggesting that:</p>
+<p>1. Attrition is a complex phenomenon influenced by multiple factors</p>
+<p>2. Individual-level prediction requires more granular data</p>
+<p>3. Population-level insights are valuable even without perfect individual predictions</p>
+<h3>Correlation Heatmap</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The correlation matrix reveals interesting relationships between variables:</p>
+<p>Strong Correlations:</p>
+<ul><li>Job Level and Monthly Income 0.78: Higher levels earn significantly more</li><li>Age and Job Level 0.68: Older employees hold higher positions</li><li>Age and Years at Company 0.62: Longer-tenured employees are older</li><li>Job Level and Years at Company 0.58: Advancement comes with tenure</li></ul>
+<p>Moderate Correlations with Attrition:</p>
+<ul><li>Job Satisfaction -0.087: Higher satisfaction reduces attrition</li><li>Work-Life Balance -0.072: Better balance improves retention</li><li>OverTime +0.069: Overtime increases attrition risk</li></ul>
+<p>Recommendations:</p>
+<p>1. Priority Focus: Address job satisfaction and work-life balance as highest-impact interventions</p>
+<p>2. Holistic Approach: Combine multiple interventions for compounding effects</p>
+<p>3. Early Warning: Use satisfaction and work-life balance as leading indicators</p>
+<p>4. Targeted Programs: Design department-specific interventions based on unique profiles</p>
+<h2>Employee Flow Visualization</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which departments have the highest absolute number of employees leaving?</li><li>How can we optimize departmental hiring based on attrition patterns?</li><li>What is the retention efficiency across departments?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>employee_flow_sankey.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355/assets/employee_flow_sankey.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The Sankey diagram visualizes employee flow from departments to attrition status:</p>
+<p>Department Flow Analysis:</p>
+<ul><li>Sales: Largest department 2,453 with highest absolute attrition 233 employees</li><li>Engineering: Second largest 2,045 with significant attrition 196 employees</li><li>Operations: Third largest 1,513 with moderate attrition 135 employees</li><li>Marketing: Fourth largest 1,188 with proportional attrition 108 employees</li></ul>
+<p>Flow Insights:</p>
+<p>1. Scale Impact: Larger departments naturally have higher absolute attrition numbers</p>
+<p>2. Retention Efficiency: HR demonstrates the best retention efficiency 7.27% rate</p>
+<p>3. Resource Allocation: Focus retention resources on larger departments with elevated rates</p>
+<p>Key Observations:</p>
+<ul><li>Sales and Engineering combined account for 43.9% of all employees and 47.3% of attrition</li><li>HR&#x27;s practices warrant closer examination for cross-departmental application</li><li>Department-specific retention strategies are essential for optimal impact</li></ul>
+<h2>Recommendations and Action Plan</h2>
+<p>Based on comprehensive analysis, the following prioritized recommendations will help reduce attrition:</p>
+<h3>Immediate Actions </h3>
+<p>0-3 Months</p>
+<p>1. Address Job Satisfaction Crisis</p>
+<ul><li>Implement employee feedback sessions for all employees with satisfaction scores of 2 or below</li><li>Create rapid-response teams to address department-specific satisfaction issues</li><li>Establish quarterly satisfaction review cycles</li></ul>
+<p>2. Mitigate Overtime Impact</p>
+<ul><li>Audit overtime patterns across all departments</li><li>Implement overtime tracking dashboards for managers</li><li>Initiate hiring plans for departments with highest overtime exposure</li></ul>
+<p>3. Competitive Compensation Review</p>
+<ul><li>Conduct market salary benchmarking for Level 1-3 employees</li><li>Implement equity adjustments for employees earning below market rates</li><li>Establish regular compensation review cycles</li></ul>
+<h3>Short-Term Initiatives </h3>
+<p>3-6 Months</p>
+<p>4. Enhanced Onboarding for Entry-Level</p>
+<ul><li>Develop comprehensive mentorship program for Level 1 employees</li><li>Create 90-day success plans with clear milestones</li><li>Assign career coaches to new employees</li></ul>
+<p>5. Career Path Development</p>
+<ul><li>Document clear advancement paths from Level 1 to 3</li><li>Establish skill requirements and timelines for promotions</li><li>Implement development planning discussions</li></ul>
+<p>6. Work-Life Balance Programs</p>
+<ul><li>Introduce flexible work arrangements</li><li>Implement &quot;disconnect after hours&quot; policies</li><li>Create wellness and stress management programs</li></ul>
+<h3>Long-Term Strategic Initiatives </h3>
+<p>6-12 Months</p>
+<p>7. Predictive Analytics System</p>
+<ul><li>Develop employee attrition risk scores based on model insights</li><li>Implement early warning systems for at-risk employees</li><li>Create manager dashboards with retention metrics</li></ul>
+<p>8. Department-Specific Strategies</p>
+<ul><li>Study HR department practices for cross-organization adoption</li><li>Develop tailored retention programs for Engineering and Sales</li><li>Implement department-specific KPIs for retention</li></ul>
+<p>9. Continuous Improvement Framework</p>
+<ul><li>Establish quarterly attrition review meetings</li><li>Create retention success metrics and incentives</li><li>Implement best practice sharing across departments</li></ul>
+<h3>Expected Outcomes</h3>
+<p>Implementing these recommendations should achieve:</p>
+<ul><li>Reduced Attrition: Target reduction from 9.03% to 6-7% within 12 months</li><li>Improved Satisfaction: Increase average satisfaction score from 3.1 to 3.8</li><li>Lower Overtime: Reduce overtime exposure by 30% across departments</li><li>Better Retention: Improve Level 1-3 retention rates by 20%</li></ul>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of employee attrition reveals that while the organization&#x27;s 9.03% attrition rate is below industry average, significant opportunities exist to improve retention. The three most critical drivers—job satisfaction, work-life balance, and overtime—represent actionable levers that can deliver substantial improvements.</p>
+<p>The analysis demonstrates that attrition is not uniform across the organization. Entry-level employees, those in Engineering and Sales departments, and employees with low satisfaction scores face disproportionate attrition risk. Targeted interventions addressing these specific segments will yield the highest return on investment.</p>
+<p>Success requires a multifaceted approach combining compensation adjustments, career development, work-life improvements, and cultural initiatives. By implementing the recommended actions and establishing continuous monitoring systems, the organization can achieve sustainable improvements in employee retention while building a more engaged and productive workforce.</p>
+<p>The logistic regression model, while achieving high overall accuracy, highlights the complexity of individual attrition prediction. This underscores the importance of focusing on population-level interventions and leading indicators rather than perfect individual predictions.</p>
+<p>Next Steps:</p>
+<p>1. Prioritize high-impact interventions based on resource availability</p>
+<p>2. Establish baseline metrics for tracking progress</p>
+<p>3. Launch pilot programs in high-risk departments</p>
+<p>4. Create cross-functional retention task force</p>
+<p>5. Implement quarterly review cycles to assess impact and adjust strategies</p>
+<p>Through data-driven decision making and targeted interventions, the organization can transform its retention challenges into competitive advantage, building a stronger, more committed workforce for long-term success.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

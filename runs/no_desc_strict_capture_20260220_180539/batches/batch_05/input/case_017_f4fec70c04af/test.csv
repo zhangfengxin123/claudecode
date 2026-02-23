@@ -1,0 +1,218 @@
+id,Rule_id,human_eval,sea_old,sea_old_compare,sea_new,sea_new_compare,CA_agree,re_evaluation,final_evaluation,final_compare,
+ｷｼ｡ﾐﾐﾍﾊﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾋﾎﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾉﾊﾎﾍ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾈﾐﾏﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,FALSE,Fail,Fail,Not Match,FALSE
+ｷｼ｡ﾏﾏﾊﾊﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾏﾊﾊﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾌ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾎ,Pass,Partial,Not Match,Fail,Not Match,FALSE,Pass,Pass,Match,FALSE
+ｷｼ｡ﾐﾈﾈﾇﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾎ,Pass,Partial,Not Match,Fail,Not Match,FALSE,Pass,Pass,Match,FALSE
+ｷｼ｡ﾏﾐﾉﾋﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾏﾊﾊﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾎ,Partial,Partial,Match,Partial,Match,FALSE,Partial,Partial,Match,TRUE
+ｷｼ｡ﾐﾐﾍﾊﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾍ,Partial,Partial,Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾍ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾌ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾋﾏﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾍ,Pass,Partial,Not Match,Partial,Not Match,FALSE,Partial,Partial,Not Match,TRUE
+ｷｼ｡ﾐﾋﾎﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾊﾎﾍ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾍ,Pass,Partial,Not Match,Partial,Not Match,FALSE,Pass,Pass,Match,FALSE
+ｷｼ｡ﾐﾈﾈﾇﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾍ,Pass,Partial,Not Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾇﾍﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾌ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾇﾐﾊﾊ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾏ｡ｮｫﾐﾐﾌ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾋﾎﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾎ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾐﾍﾊﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾏﾋﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾎﾇﾊﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾇﾍﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾐﾍﾊﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾎ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾋﾎﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾎ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾉﾇﾍﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾎ,NA,Partial,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾈﾌﾍﾍ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾎ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾏﾏﾊﾊﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾍ｡ｮｫﾐﾐﾎ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾈﾌﾍﾍ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾌ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾌ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Partial,Not Match,FALSE,Partial,Partial,Not Match,TRUE
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾌ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾐﾍﾊﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾋ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾏﾋﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾋ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾏﾊﾊﾐ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾎﾇﾊﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾋ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾋﾎﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾋ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾉﾊﾎﾍ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾋ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾉﾇﾍﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾋ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾏﾐﾉﾋﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾋ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,NA,Not Match,TRUE,NULL,NA,Not Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾋ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾈﾐﾏﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾎ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾊ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Fail,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾐﾋﾎﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾊ｡ｮｫﾐﾐﾏ,NA,Fail,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾉﾇﾍﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾊ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Partial,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾊ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Fail,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾐﾇﾐﾊﾊ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾊ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Fail,Not Match,FALSE,Pass,Pass,Match,FALSE
+ｷｼ｡ﾏﾏﾊﾊﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾐﾉﾋﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾊ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,NA,NA,Not Match,FALSE
+ｷｼ｡ﾐﾏﾋﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾊﾎﾍ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾈﾐﾏﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾎ,Fail,Partial,Not Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾋﾏﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾎ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾉ｡ｮｫﾐﾐﾎ,Fail,Pass,Not Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾈ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,FALSE,NA,NA,Match,TRUE
+ｷｼ｡ﾐﾋﾏﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾈ｡ｮｫﾐﾐﾏ,NA,NA,Match,Fail,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾈ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,FALSE,NA,NA,Match,TRUE
+ｷｼ｡ﾐﾉﾊﾎﾍ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾈ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾉﾇﾍﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾈ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾈﾏﾐﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾈ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,FALSE,NA,NA,Match,TRUE
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾍ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,FALSE,NA,NA,Not Match,FALSE
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾈ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Fail,Not Match,FALSE,Pass,Pass,Match,FALSE
+ｷｼ｡ﾏﾐﾉﾋﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾈ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,FALSE,NA,NA,Match,TRUE
+ｷｼ｡ﾐﾏﾋﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾇ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Fail,Fail,Not Match,FALSE
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾇ｡ｮｫﾐﾐﾏ,Fail,Fail,Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾈﾏﾐﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾇ｡ｮｫﾐﾐﾏ,NA,Fail,Not Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾇﾐﾊﾊ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾇ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾏﾐﾉﾋﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾐﾇ｡ｮｫﾐﾐﾏ,Partial,Pass,Not Match,Pass,Not Match,FALSE,Partial,Partial,Match,FALSE
+ｷｼ｡ﾐﾐﾍﾊﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Partial,Pass,Not Match,Pass,Not Match,FALSE,Pass,Pass,Not Match,TRUE
+ｷｼ｡ﾐﾋﾏﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Fail,NA,Not Match,NA,Not Match,FALSE,NA,NA,Not Match,TRUE
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,FALSE,NA,NA,Match,TRUE
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Pass,NA,Not Match,NA,Not Match,TRUE,NULL,NA,Not Match,
+ｷｼ｡ﾐﾉﾊﾈﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,NA,Not Match,TRUE,NULL,NA,Not Match,
+ｷｼ｡ﾐﾉﾈﾐﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Pass,Not Match,TRUE,NULL,Pass,Not Match,
+ｷｼ｡ﾐﾈﾌﾍﾍ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Partial,Pass,Not Match,Pass,Not Match,FALSE,Partial,Partial,Match,FALSE
+ｷｼ｡ﾐﾇﾏﾍﾊ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,NA,Not Match,FALSE,NA,NA,Not Match,TRUE
+ｷｼ｡ﾏﾐﾇﾏﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾎ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,NA,Not Match,FALSE,NA,NA,Not Match,TRUE
+ｷｼ｡ﾐﾎﾇﾊﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾍ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾋﾏﾐﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾍ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾉﾊﾈﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾍ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾇﾐﾊﾊ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾍ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾇﾏﾍﾊ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾍ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾐﾍﾊﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Fail,Not Match,FALSE,Pass,Pass,Not Match,FALSE
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,Fail,Fail,Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,NA,Fail,Not Match,Fail,Not Match,FALSE,Fail,Fail,Not Match,TRUE
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,NA,Fail,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾉﾇﾍﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,NA,Pass,Not Match,Pass,Not Match,FALSE,Pass,Pass,Not Match,TRUE
+ｷｼ｡ﾐﾈﾌﾊﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,NA,Fail,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾇﾏﾍﾊ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,NA,Not Match,TRUE,NULL,NA,Not Match,
+ｷｼ｡ﾐﾇﾏﾍﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾌ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,NA,Not Match,TRUE,NULL,NA,Not Match,
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾋ｡ｮｫﾐﾐﾏ,NA,Fail,Not Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾋ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾋ｡ｮｫﾐﾐﾎ,NA,Fail,Not Match,Fail,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾊ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Fail,Not Match,FALSE,Fail,Fail,Not Match,TRUE
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾊ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,FALSE,Pass,Pass,Match,FALSE
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾉ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,FALSE,Pass,Pass,Match,FALSE
+ｷｼ｡ﾐﾈﾐﾏﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾈ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾈﾐﾏﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾏﾇ｡ｮｫﾐﾐﾏ,Partial,Pass,Not Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾊﾈﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾇﾎﾋﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾈﾌﾊﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾇﾎﾋﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾎ,Pass,Partial,Not Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾐﾇﾏﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾎ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾊﾈﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾐﾍﾉﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾐ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾈﾐﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,FALSE,Partial,Partial,Match,TRUE
+ｷｼ｡ﾐﾈﾌﾊﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾇﾏﾐﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾇﾏﾍﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,Partial,Not Match,FALSE,Partial,Partial,Not Match,TRUE
+ｷｼ｡ﾏﾐﾍﾉﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,FALSE,Partial,Partial,Match,TRUE
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾇﾎﾋﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾎ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾇﾎﾋﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾎ,Pass,Partial,Not Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾐﾍﾉﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾎ,NA,Partial,Not Match,Partial,Not Match,FALSE,Partial,Partial,Not Match,TRUE
+ｷｼ｡ﾏﾐﾇﾏﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾎ,Fail,Partial,Not Match,Partial,Not Match,FALSE,NA,NA,Not Match,FALSE
+ｷｼ｡ﾐﾉﾊﾈﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾌ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾈﾌﾊﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾉﾈﾐﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾌ,NA,Fail,Not Match,Fail,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾏ｡ｮｫﾐﾐﾌ,NA,Fail,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾎ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾈﾐﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾎ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾇﾏﾍﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾎ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾇﾎﾋﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾎ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾍ｡ｮﾐﾍﾌ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾏﾐﾇﾏﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾎ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾈﾌﾊﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾏ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾇﾏﾐﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾐﾍﾉﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾏﾐﾇﾏﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾈﾌﾊﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾎ,NA,Partial,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾇﾏﾍﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾍ,Partial,Pass,Not Match,Pass,Not Match,TRUE,NULL,Pass,Not Match,
+ｷｼ｡ﾏﾐﾍﾉﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾋ｡ｮｫﾐﾐﾍ,Fail,Fail,Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾉ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾇﾏﾍﾊ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾉ｡ｮｫﾐﾐﾏ,Fail,Fail,Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾇﾏﾍﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾉ｡ｮｫﾐﾐﾏ,Fail,Fail,Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾏﾐﾇﾏﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾉ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾈﾌﾊﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾉ｡ｮｫﾐﾐﾏ,Pass,Fail,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾉﾈﾐﾐ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾇ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾇﾏﾐﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾇ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾇﾏﾍﾉ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾇ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾇﾎﾋﾇ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾇ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾏﾐﾇﾏﾈ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾇ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾊﾈﾎ,ﾍ｡ﾏﾊ｡ｮﾐﾎﾇ｡ｮｫﾐﾐﾏ,Fail,Pass,Not Match,Pass,Not Match,FALSE,Pass,Pass,Not Match,TRUE
+ｷｼ｡ﾐﾋﾎﾐﾏ,ﾍ｡ﾍ｡ｮﾐﾐﾎ｡ｮｫﾐﾐﾏ,Partial,Pass,Not Match,Partial,Match,FALSE,Pass,Pass,Not Match,FALSE
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾍ｡ｮﾐﾐﾎ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾇﾐﾊﾊ,ﾍ｡ﾍ｡ｮﾐﾐﾎ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾍ｡ｮﾐﾍﾌ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾇﾏﾍﾊ,ﾍ｡ﾍ｡ｮﾐﾍﾌ｡ｮｫﾐﾐﾏ,Fail,Partial,Not Match,Pass,Not Match,FALSE,Fail,Fail,Match,FALSE
+ｷｼ｡ﾐﾇﾏﾍﾉ,ﾍ｡ﾍ｡ｮﾐﾍﾌ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,FALSE,Partial,Partial,Match,TRUE
+ｷｼ｡ﾐﾇﾏﾐﾇ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾇﾏﾍﾊ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾏ,NA,Fail,Not Match,Fail,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾏﾐﾍﾉﾈ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾏﾐﾇﾏﾈ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾊﾈﾎ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾈﾐﾐ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾎ,Partial,NA,Not Match,NA,Not Match,TRUE,NULL,NA,Not Match,
+ｷｼ｡ﾐﾇﾏﾍﾊ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾎ,Fail,Fail,Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾐﾇﾏﾍﾉ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾎ,Fail,Partial,Not Match,Fail,Match,TRUE,NULL,Fail,Match,
+ｷｼ｡ﾏﾐﾍﾉﾈ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾎ,Partial,Partial,Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾉﾇﾍﾇ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾍ｡ｮﾐﾍﾋ｡ｮｫﾐﾐﾎ,Pass,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ﾍ｡ﾍ｡ｮﾐﾍﾊ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾉﾊﾈﾎ,ﾍ｡ﾍ｡ｮﾐﾍﾊ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾏﾐﾍﾉﾈ,ﾍ｡ﾍ｡ｮﾐﾍﾊ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾏﾍﾏﾎﾎ,ﾍ｡ﾍ｡ｮﾐﾍﾊ｡ｮｫﾐﾐﾏ,Fail,Fail,Match,Fail,Match,FALSE,NA,NA,Not Match,FALSE
+ｷｼ｡ﾐﾏﾋﾌﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,FALSE,Partial,Partial,Not Match,TRUE
+ｷｼ｡ﾐﾉﾊﾎﾍ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,FALSE,Pass,Pass,Not Match,FALSE
+ｷｼ｡ﾐﾈﾐﾏﾎ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Pass,Not Match,FALSE,Pass,Pass,Not Match,TRUE
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Fail,Not Match,FALSE,Fail,Fail,Not Match,TRUE
+ｷｼ｡ﾐﾏﾋﾌﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾎ,Partial,Pass,Not Match,Partial,Match,FALSE,Pass,Pass,Not Match,FALSE
+ｷｼ｡ﾐﾎﾇﾊﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾎ,NA,NA,Match,Pass,Not Match,TRUE,NULL,Pass,Not Match,
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾎ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾎ,NA,Partial,Not Match,Fail,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾐﾈﾌﾍﾍ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾎ,NA,NA,Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾍ｡ｮﾐﾍﾉ｡ｮｫﾐﾐﾎ,NA,Fail,Not Match,NA,Match,TRUE,NULL,NA,Match,
+ｷｼ｡ﾐﾐﾍﾊﾈ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾏﾋﾌﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾏ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾍﾎﾌﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾏ,Pass,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾋﾏﾐﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾈﾏﾐﾇ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾏ,Partial,Partial,Match,Partial,Match,TRUE,NULL,Partial,Match,
+ｷｼ｡ﾏﾎﾈﾈﾌ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾏ,NA,Partial,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾊﾊﾈﾏ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾎ,NA,Fail,Not Match,Fail,Not Match,TRUE,NULL,Fail,Not Match,
+ｷｼ｡ﾐﾈﾉﾍﾋ,ﾍ｡ﾍ｡ｮﾐﾍﾈ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Partial,Not Match,FALSE,Partial,Partial,Not Match,TRUE
+ｷｼ｡ﾐﾉﾋﾈﾋ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,FALSE,Pass,Pass,Match,TRUE
+ｷｼ｡ﾐﾈﾌﾊﾉ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾎ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾇﾏﾍﾊ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾎ,Partial,Partial,Match,Pass,Not Match,FALSE,Pass,Pass,Not Match,TRUE
+ｷｼ｡ﾐﾉﾈﾐﾐ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾎ,Pass,Fail,Not Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾉﾋﾈﾋ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾍ,NA,Partial,Not Match,Fail,Not Match,FALSE,Fail,Fail,Not Match,TRUE
+ｷｼ｡ﾐﾈﾌﾊﾉ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾍ,NA,Partial,Not Match,Fail,Not Match,FALSE,NA,NA,Match,FALSE
+ｷｼ｡ﾐﾇﾏﾐﾇ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾍ,Pass,Pass,Match,Partial,Not Match,TRUE,NULL,Partial,Not Match,
+ｷｼ｡ﾐﾇﾏﾍﾊ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾍ,NA,Partial,Not Match,Partial,Not Match,FALSE,Partial,Partial,Not Match,TRUE
+ｷｼ｡ﾐﾇﾎﾋﾇ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾍ,NA,Partial,Not Match,Partial,Not Match,FALSE,Fail,Fail,Not Match,FALSE
+ｷｼ｡ﾏﾍﾏﾎﾎ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾍ,Fail,Partial,Not Match,Partial,Not Match,FALSE,Fail,Fail,Match,FALSE
+ｷｼ｡ﾐﾉﾋﾈﾋ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾌ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾐﾍﾉﾈ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾌ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾏﾐﾇﾏﾈ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾌ,Pass,Pass,Match,Pass,Match,TRUE,NULL,Pass,Match,
+ｷｼ｡ﾐﾇﾎﾋﾇ,ｮﾐﾍﾍ｡ｮｫﾐﾐﾌ,Fail,Pass,Not Match,Pass,Not Match,FALSE,Fail,Fail,Match,FALSE

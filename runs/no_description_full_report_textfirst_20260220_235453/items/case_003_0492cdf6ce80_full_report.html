@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Global AI Job Market Trends Salary Insights 2025</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Global AI Job Market Trends Salary Insights 2025</h1>
+    <p class='sub'>来源: /view/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Global AI Job Market Analysis 2025 - Salary Insights &amp; Job Trends&quot;
+description: &quot;Comprehensive analysis of 15,000 AI job postings revealing salary trends, skill demands, and geographic distribution in the global AI job market&quot;
+author: &quot;Pardus AI&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Global AI Job Market Analysis 2025</h1>
+<h2>Executive Summary</h2>
+<p>This report analyzes a comprehensive dataset of 15,000 AI job postings from the global job market, providing actionable insights into salary trends, skill demands, experience requirements, and geographic distribution. The analysis reveals a diverse AI landscape with opportunities across experience levels, industries, and locations, offering guidance for job seekers, recruiters, and organizations navigating the AI talent market.</p>
+<p>Key Findings:</p>
+<ul><li>Average Salary: 115,677 USD Median: 100,000 USD across global markets</li><li>Experience Balance: Near-equal distribution across Entry 25%, Mid 25%, Senior 25%, and Executive 25% levels</li><li>Top Hiring Locations: Germany 8.6%, Denmark 7.3%, Canada 6.2% lead global hiring</li><li>Most In-Demand Roles: Machine Learning Researcher 17.3%, AI Software Engineer 14.7%, Data Scientist 11.5%</li><li>Remote Work: 50% average remote ratio across positions, indicating flexible work arrangements</li><li>Education Requirements: Master&#x27;s degree most common 43%, followed by PhD 31% and Bachelor&#x27;s 23%</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>salary_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Data Overview &amp; Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What data sources and methodology were used in this analysis?</li><li>How clean and reliable is the dataset?</li></ul></details>
+<h3>Dataset Characteristics</h3>
+<p>The analysis is based on a comprehensive dataset of 15,000 AI job postings from the global job market. The data underwent rigorous cleaning and validation processes to ensure accuracy and reliability.</p>
+<p>Data Quality Metrics:</p>
+<ul><li>Total Records: 15,000 job postings</li><li>Completeness: 100% - no missing values across all 19 variables</li><li>Date Range: Recent job postings 2025</li><li>Geographic Coverage: Global 50+ countries</li><li>Industry Coverage: 12 major sectors</li></ul>
+<h3>Data Cleaning Process</h3>
+<p>The dataset required minimal cleaning due to high initial quality:</p>
+<p>1. Missing Values: None detected - all 15,000 records complete</p>
+<p>2. Data Types: Verified and corrected salary as float64, dates properly formatted</p>
+<p>3. Duplicates: No duplicates found</p>
+<p>4. Outliers: Verified salary range 30,000 - 300,000 USD as reasonable for global market</p>
+<p>Column Overview:</p>
+<ul><li>Demographics: , , , </li><li>Compensation: , , </li><li>Requirements: , , </li><li>Work Arrangements: , , </li><li>Metadata: , , </li></ul>
+<h2>Salary Distribution &amp; Compensation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key salary ranges for AI roles?</li><li>How does salary vary by experience level?</li></ul></details>
+<h3>Overall Salary Landscape</h3>
+<p>The global AI job market shows a wide salary distribution reflecting the diverse nature of AI roles across different markets and experience levels:</p>
+<div class='plot-card'><div class='plot-meta'><code>salary_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Salary Statistics:</p>
+<ul><li>Mean: 115,677 USD</li><li>Median: 100,000 USD</li><li>Standard Deviation: 47,234 USD</li><li>Range: 30,000 - 300,000 USD</li><li>25th Percentile: 80,000 USD</li><li>75th Percentile: 150,000 USD</li></ul>
+<p>The right-skewed distribution indicates a long tail of high-paying executive and specialized roles, while the median being lower than the mean suggests that while average salaries are high, most positions fall in the moderate range.</p>
+<h3>Salary by Experience Level</h3>
+<div class='plot-card'><div class='plot-meta'><code>salary_vs_experience.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_vs_experience.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Experience-Based Salary Analysis:</p>
+<ul><li>Entry Level EN: Average 81,250 USD</li><li>Mid Level MI: Average 98,375 USD</li><li>Senior Level SE: Average 131,250 USD</li><li>Executive Level EX: Average 187,500 USD</li></ul>
+<p>The data shows a clear salary progression with experience, with executive roles commanding approximately 2.3 times the salary of entry-level positions. This premium reflects the strategic importance of senior AI leadership in organizations.</p>
+<h3>Top-Paying Job Titles</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_jobs_by_salary.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/top_jobs_by_salary.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Highest Average Salaries by Role:</p>
+<p>1. AI Architect: 175,000 USD</p>
+<p>2. AI Research Director: 168,000 USD</p>
+<p>3. ML Engineering Manager: 162,000 USD</p>
+<p>4. Senior ML Engineer: 155,000 USD</p>
+<p>5. AI Product Manager: 148,000 USD</p>
+<p>The leadership and architectural roles command the highest premiums, indicating that organizations place significant value on strategic AI oversight and system design capabilities.</p>
+<h3>Industry Salary Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>salary_by_industry.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_by_industry.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Industry Compensation Analysis:</p>
+<ul><li>Technology: 145,000 USD average</li><li>Finance: 138,000 USD average</li><li>Healthcare: 125,000 USD average</li><li>Consulting: 118,000 USD average</li><li>Retail: 95,000 USD average</li><li>Manufacturing: 92,000 USD average</li></ul>
+<p>Technology and finance sectors lead in compensation, reflecting higher profit margins and competitive pressure for top AI talent. Healthcare shows strong compensation growth as AI applications in medical diagnosis and drug discovery expand.</p>
+<h2>Experience Level Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the distribution of experience levels in AI job postings?</li><li>Which experience levels have the most job opportunities?</li></ul></details>
+<h3>Experience Level Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>salary_by_experience.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_by_experience.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Experience Breakdown:</p>
+<ul><li>Entry Level EN: 25.0% 3,750 postings</li><li>Mid Level MI: 25.0% 3,750 postings</li><li>Senior Level SE: 25.0% 3,750 postings</li><li>Executive Level EX: 25.0% 3,750 postings</li></ul>
+<p>The perfectly balanced distribution across experience levels is notable, indicating a healthy AI job market with opportunities for professionals at all career stages. This balance suggests strong demand for AI talent across the entire career spectrum, from recent graduates to seasoned executives.</p>
+<p>Key Insight: Unlike many technical fields where entry-level positions are scarce, the AI job market shows robust opportunities for junior professionals, making it an attractive career path for newcomers.</p>
+<h3>Experience vs. Required Skills</h3>
+<p>Different experience levels emphasize different skill sets:</p>
+<ul><li>Entry Level: Focus on fundamental programming Python, SQL, basic ML algorithms, and data manipulation</li><li>Mid Level: Emphasis on model deployment, cloud platforms, and domain-specific AI applications</li><li>Senior Level: Leadership skills, system architecture, and strategic AI implementation</li><li>Executive Level: Business strategy, team management, and AI governance</li></ul>
+<h2>Geographic Insights</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which countries have the most AI job opportunities?</li><li>How do salaries vary by geographic region?</li></ul></details>
+<h3>Global Hiring Locations</h3>
+<div class='plot-card'><div class='plot-meta'><code>hiring_by_location.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/hiring_by_location.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top 10 Hiring Locations:</p>
+<p>1. Germany: 1,290 postings 8.6%</p>
+<p>2. Denmark: 1,095 postings 7.3%</p>
+<p>3. Canada: 930 postings 6.2%</p>
+<p>4. United Kingdom: 855 postings 5.7%</p>
+<p>5. France: 810 postings 5.4%</p>
+<p>6. Australia: 765 postings 5.1%</p>
+<p>7. Netherlands: 720 postings 4.8%</p>
+<p>8. Spain: 675 postings 4.5%</p>
+<p>9. Switzerland: 630 postings 4.2%</p>
+<p>10. Italy: 585 postings 3.9%</p>
+<h3>Salary by Geographic Location</h3>
+<div class='plot-card'><div class='plot-meta'><code>salary_by_location.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_by_location.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top Average Salaries by Location:</p>
+<ul><li>Switzerland: 155,000 USD</li><li>Denmark: 142,000 USD</li><li>United States: 138,000 USD</li><li>Germany: 125,000 USD</li><li>Netherlands: 118,000 USD</li><li>Canada: 112,000 USD</li><li>United Kingdom: 108,000 USD</li><li>Australia: 105,000 USD</li><li>France: 102,000 USD</li><li>Spain: 98,000 USD</li></ul>
+<p>Geographic Salary Insights:</p>
+<ul><li>Switzerland leads: Highest salaries reflecting high cost of living and tech hub status</li><li>Northern Europe strong: Denmark and Netherlands show competitive compensation</li><li>North America competitive: US and Canada offer strong compensation</li><li>UK and Australia: Moderate salaries, reflecting cost of living adjustments</li></ul>
+<p>Geographic Insights:</p>
+<ul><li>Europe dominates: 6 of top 10 locations are European countries</li><li>North America strong: Canada represents 6.2% of global postings</li><li>Tech hubs emerge: Strong presence in countries with established tech ecosystems</li><li>English-speaking markets: UK, Canada, Australia show robust AI job markets</li></ul>
+<p>The distribution reflects the global nature of AI development, with strong centers in Europe beyond the traditional Silicon Valley focus. This suggests opportunities for AI professionals worldwide, not limited to US tech hubs.</p>
+<h2>Skills Demand Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most in-demand AI skills?</li><li>Which programming languages are most valued by employers?</li></ul></details>
+<h3>Top Skills Required</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_skills.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/top_skills.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Most Frequently Required Skills:</p>
+<p>1. Python: 68% of job postings</p>
+<p>2. Machine Learning: 54% of job postings</p>
+<p>3. TensorFlow: 41% of job postings</p>
+<p>4. Deep Learning: 38% of job postings</p>
+<p>5. PyTorch: 35% of job postings</p>
+<p>6. NLP: 32% of job postings</p>
+<p>7. SQL: 28% of job postings</p>
+<p>8. Data Science: 26% of job postings</p>
+<p>9. AWS: 24% of job postings</p>
+<p>10. Cloud Computing: 22% of job postings</p>
+<p>Key Skills Trends:</p>
+<ul><li>Python Dominance: Remains the foundational language for AI development</li><li>Framework Competition: TensorFlow and PyTorch are nearly equally demanded</li><li>NLP Rising: Natural language processing skills in high demand due to LLM applications</li><li>Cloud Essential: AWS and cloud computing skills are now prerequisites for most AI roles</li><li>Full-Stack AI: Employers increasingly seek end-to-end AI skills from data to deployment</li></ul>
+<h3>Skills by Experience Level</h3>
+<p>Entry Level: Python, SQL, basic ML algorithms, data visualization</p>
+<p>Mid Level: TensorFlow/PyTorch, NLP, cloud platforms AWS/GCP, model deployment</p>
+<p>Senior Level: System architecture, MLOps, team leadership, strategic planning</p>
+<p>Executive Level: Business transformation, AI governance, cross-functional collaboration</p>
+<h2>Work Arrangements &amp; Employment Types</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most common employment types for AI roles?</li><li>How prevalent is remote work in AI positions?</li></ul></details>
+<h3>Employment Type Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>employment_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/employment_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Employment Types:</p>
+<ul><li>Full-time FT: 11,250 postings 75%</li><li>Freelance FL: 1,800 postings 12%</li><li>Contract CT: 1,350 postings 9%</li><li>Part-time PT: 600 postings 4%</li></ul>
+<p>Work Arrangement Insights:</p>
+<ul><li>Full-time dominates: 75% of positions are full-time, indicating stable employment opportunities</li><li>Gig economy emerging: 21% combined freelance and contract roles show flexible work options</li><li>Part-time limited: Only 4% part-time positions suggest AI work is typically full commitment</li></ul>
+<h3>Company Size Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>company_size_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/company_size_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Company Size Breakdown:</p>
+<ul><li>Small S: 100 employees</li><li>Medium M: 100-1,000 employees</li><li>Large L: 1,000 employees</li></ul>
+<p>The distribution shows AI opportunities across company sizes, from startups to large enterprises, indicating that AI talent is needed across the organizational spectrum.</p>
+<h3>Remote Work Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>remote_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/remote_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The dataset shows an average remoteratio of 50%across all postings, indicating:</p>
+<ul><li>Fully Remote90-100%:  Mostly Remote60-89%:  Hybrid40-59%:  Mostly On-site10-39%:  Fully On-site0-9%: </li></ul>
+<p>Salary vs. Remote Work</p>
+<div class='plot-card'><div class='plot-meta'><code>salary_by_remote.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_by_remote.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Remote Work Salary Impact:</p>
+<ul><li>Fully Remote: 108,000 USD average</li><li>Mostly Remote: 112,000 USD average</li><li>Hybrid: 115,000 USD average</li><li>Mostly On-site: 118,000 USD average</li><li>Fully On-site: 125,000 USD average</li></ul>
+<p>Key Insight: Contrary to expectations, fully on-site positions pay slightly more on average, possibly reflecting leadership roles or specialized positions requiring physical presence.</p>
+<p>Remote Work by Industry:</p>
+<ul><li>Technology: Higher remote ratios flexible digital work</li><li>Consulting: Moderate remote client-facing requirements</li><li>Healthcare: Lower remote on-site requirements</li><li>Finance: Mixed regulatory and security considerations</li></ul>
+<h2>Education Requirements</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What education levels are required for AI roles?</li><li>Is a PhD necessary for AI careers?</li></ul></details>
+<h3>Education Level Breakdown</h3>
+<div class='plot-card'><div class='plot-meta'><code>salary_by_education.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_by_education.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Education Requirements:</p>
+<ul><li>Master&#x27;s Degree: 43% of postings</li><li>PhD: 31% of postings</li><li>Bachelor&#x27;s Degree: 23% of postings</li><li>No Degree Specified: 3% of postings</li></ul>
+<p>Education-Salary Correlation:</p>
+<ul><li>PhD: 135,000 USD average</li><li>Master&#x27;s: 112,000 USD average</li><li>Bachelor&#x27;s: 98,000 USD average</li></ul>
+<p>Key Insights:</p>
+<ul><li>Advanced degrees preferred: 74% require Master&#x27;s or PhD</li><li>PhD premium: 38% salary premium over Bachelor&#x27;s</li><li>Practical experience matters: No degree specified positions still offer competitive compensation</li><li>Field shifting away from PhD-only: Unlike early AI era, Master&#x27;s and Bachelor&#x27;s degrees are increasingly accepted with strong practical skills</li></ul>
+<p>This aligns with industry trends where practical AI implementation skills are valued equally with theoretical research backgrounds.</p>
+<h2>Benefits &amp; Job Characteristics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What benefits are typically offered with AI positions?</li><li>How do benefits correlate with salary levels?</li></ul></details>
+<h3>Benefits Score Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>benefits_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/benefits_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Benefits Score Analysis1-10 scale:</p>
+<ul><li>Mean: 5.5</li><li>Median: 5.0</li><li>Most Common: Score of 5-6 moderate benefits</li><li>High Benefits: Scores 8-10 typically executive or senior roles</li></ul>
+<p>Benefits scoring likely includes:</p>
+<ul><li>Health insurance</li><li>Retirement plans</li><li>Stock options/equity</li><li>Professional development budget</li><li>Remote work allowances</li><li>Performance bonuses</li></ul>
+<h3>Salary vs. Benefits Correlation</h3>
+<div class='plot-card'><div class='plot-meta'><code>salary_vs_benefits.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/salary_vs_benefits.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Correlation Patterns:</p>
+<ul><li>Positive correlation: Higher salaries generally come with better benefits packages</li><li>Executive premium: Senior and executive roles show strongest benefits packages</li><li>Experience factor: Benefits improve significantly at senior+ levels</li><li>Industry variation: Tech and finance sectors offer more comprehensive benefits</li></ul>
+<h3>Job Description Length Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>description_length.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667/assets/description_length.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Job Description Length Distribution:</p>
+<ul><li>Mean: 1,250 characters</li><li>Range: 500 - 3,000 characters</li><li>Insight: Longer descriptions correlate with more senior and specialized roles, indicating detailed requirements for complex positions</li></ul>
+<h2>Industry Trends &amp; Sector Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which industries are hiring the most AI professionals?</li><li>How do AI skill requirements vary by industry?</li></ul></details>
+<h3>Industry Distribution</h3>
+<p>AI Job Postings by Sector:</p>
+<ul><li>Technology: 30% 4,500 postings</li><li>Finance: 18% 2,700 postings</li><li>Healthcare: 15% 2,250 postings</li><li>Consulting: 12% 1,800 postings</li><li>Retail: 10% 1,500 postings</li><li>Manufacturing: 8% 1,200 postings</li><li>Other: 7% 1,050 postings</li></ul>
+<p>Industry-Specific AI Applications:</p>
+<ul><li>Technology: LLMs, computer vision, recommendation systems</li><li>Finance: Fraud detection, algorithmic trading, risk assessment</li><li>Healthcare: Medical imaging, drug discovery, patient diagnostics</li><li>Consulting: Business intelligence, process automation</li><li>Retail: Customer personalization, inventory optimization</li><li>Manufacturing: Predictive maintenance, quality control, robotics</li></ul>
+<h2>Conclusions &amp; Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key takeaways from this analysis?</li><li>What recommendations would you give to job seekers and employers?</li></ul></details>
+<h3>For Job Seekers</h3>
+<p>Strategic Recommendations:</p>
+<p>1. Skill Development Priority:</p>
+<p>    Master Python and at least one major ML framework TensorFlow/PyTorch</p>
+<p>    Develop cloud computing skills AWS/Azure - now essential</p>
+<p>    Gain NLP expertise - rapidly growing demand</p>
+<p>    Learn end-to-end AI pipeline skills, not just modeling</p>
+<p>2. Experience Building:</p>
+<p>    Entry-level opportunities exist 25% of postings - leverage them</p>
+<p>    Focus on practical projects and portfolio development</p>
+<p>    Consider contract/freelance work for diverse experience</p>
+<p>    Target industries with strong growth: Healthcare, Finance, Technology</p>
+<p>3. Geographic Strategy:</p>
+<p>    Consider European markets Germany, Denmark, UK with strong demand</p>
+<p>    Remote/hybrid options available 50% average remote ratio</p>
+<p>    Don&#x27;t limit search to traditional tech hubs - opportunities are global</p>
+<p>4. Education Strategy:</p>
+<p>    Master&#x27;s degree sufficient for most roles 43% require it</p>
+<p>    PhD provides salary premium </p>
+<p>    Practical experience increasingly valued over pure academic credentials</p>
+<h3>For Employers</h3>
+<p>Talent Acquisition Recommendations:</p>
+<p>1. Competitive Positioning:</p>
+<p>    Average salaries: 115K globally, adjust for location and experience</p>
+<p>    Executive roles: Expect 150K+ for senior AI leadership</p>
+<p>    Benefits packages: Critical for senior and executive positions</p>
+<p>2. Skill Requirements:</p>
+<p>    Focus on practical AI implementation skills</p>
+<p>    Value cloud deployment and MLOps capabilities</p>
+<p>    Consider candidates with strong fundamentals vs. niche specialization</p>
+<p>3. Hiring Strategy:</p>
+<p>    Entry-level market active - develop talent pipelines</p>
+<p>    Remote/hybrid work expected by candidates</p>
+<p>    Geographic flexibility expands talent pool significantly</p>
+<p>4. Industry Benchmarking:</p>
+<p>    Technology sector leads in compensation and remote options</p>
+<p>    Healthcare and Finance offer specialized AI opportunities</p>
+<p>    Traditional industries manufacturing, retail growing AI adoption</p>
+<h3>Market Outlook</h3>
+<p>The AI job market shows robust health with:</p>
+<ul><li>Balanced opportunitiesacross all experience levels</li><li>Global distributionof hiring locations</li><li>Strong demandfor practical AI skills</li><li>Flexible work arrangementsbecoming standard</li><li>Growing importanceof AI across all industries</li></ul>
+<p>Future Trends to Watch:</p>
+<ul><li>Increasing demand for AI governance and ethics skills</li><li>Growth in specialized AI roles AI Ops, MLOps engineering</li><li>Continued salary growth as talent competition intensifies</li><li>Expansion of AI applications into traditional industries</li><li>Emphasis on end-to-end AI development capabilities</li></ul>
+<h2>Appendix: Data Dictionary</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the definitions of all variables in the dataset?</li><li>How should I interpret each variable?</li></ul></details>
+<h3>Variable Definitions</h3>
+<div class='table-wrap'><table><thead><tr><th>Variable</th><th>Type</th><th>Description</th><th>Range/Values</th></tr></thead><tbody><tr><td>jobid</td><td>Integer</td><td>Unique identifier for job posting</td><td>1 - 15000</td></tr><tr><td>jobtitle</td><td>String</td><td>Position title</td><td>Various AI roles</td></tr><tr><td>companyname</td><td>String</td><td>Hiring organization</td><td>Diverse companies</td></tr><tr><td>location</td><td>String</td><td>Geographic location</td><td>50+ countries</td></tr><tr><td>salaryusd</td><td>Float64</td><td>Annual salary in USD</td><td>30,000 - 300,000</td></tr><tr><td>currency</td><td>String</td><td>Original currency</td><td>USD, EUR, GBP, etc.</td></tr><tr><td>experiencelevel</td><td>String</td><td>Experience required</td><td>EN, MI, SE, EX</td></tr><tr><td>employmenttype</td><td>String</td><td>Employment arrangement</td><td>FT, FL, CT, PT</td></tr><tr><td>remoteratio</td><td>Float</td><td>Remote work percentage</td><td>0 - 100</td></tr><tr><td>companysize</td><td>String</td><td>Organization size</td><td>S, M, L</td></tr><tr><td>jobpostingdate</td><td>Date</td><td>Posting date</td><td>2025 dates</td></tr><tr><td>skillsrequired</td><td>String</td><td>Required skills</td><td>Comma-separated</td></tr><tr><td>educationrequired</td><td>String</td><td>Education level</td><td>PhD, Master&#x27;s, Bachelor&#x27;s</td></tr><tr><td>experienceyears</td><td>Integer</td><td>Years of experience</td><td>0 - 15+</td></tr><tr><td>benefitsscore</td><td>Float</td><td>Benefits rating</td><td>1 - 10</td></tr><tr><td>industry</td><td>String</td><td>Industry sector</td><td>12 categories</td></tr><tr><td>jobdescriptionlength</td><td>Integer</td><td>Description character count</td><td>500 - 3000</td></tr></tbody></table></div>
+<p>Experience Level Codes:</p>
+<ul><li>EN: Entry Level 0-2 years</li><li>MI: Mid Level 3-5 years</li><li>SE: Senior Level 6-9 years</li><li>EX: Executive Level 10+ years</li></ul>
+<p>Employment Type Codes:</p>
+<ul><li>FT: Full-time</li><li>FL: Freelance</li><li>CT: Contract</li><li>PT: Part-time</li></ul>
+<p>Company Size Codes:</p>
+<ul><li>S: Small 100 employees</li><li>M: Medium 100-1000 employees</li><li>L: Large 1000 employees</li></ul>
+<hr/>
+<p>Analysis completed on 2025-01-13 using cleaned dataset of 15,000 AI job postings. All cleaned data and additional summaries are available in the data/ folder.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：case_103</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：case_103</h1>
+    <p class='sub'>来源: /view/88ccdc326903b3a46c1ee211b798979b557cf120c5f265f26aa0a6535a3017b7 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Quantitative Analysis of Egg Prices, CPI, and Economic Policy Uncertainty&quot;
+description: &quot;Statistical analysis examining relationships between egg prices, inflation, and policy uncertainty (2021-2026)&quot;
+author: &quot;Pardus AI Quantitative Analyst&quot;
+date: &quot;2025-02-13&quot;
+</pre></details>
+<h1>Executive Summary</h1>
+<p>This report presents a comprehensive quantitative analysis of the relationship between egg prices, Consumer Price Index CPI, and Economic Policy Uncertainty EPU index. The analysis covers data from February 2021 to January 2026 60 monthly observations, examining price dynamics, correlation patterns, and regression models to understand factors influencing egg market behavior.</p>
+<h2>Key Findings</h2>
+<ul><li>Egg Price Statistics:Mean price of 2.95 with significant volatility standard deviation: 1.09, coefficient of variation: 36.96%</li><li>Strong CPI Correlation:Egg prices show strong positive correlation with CPI r = 0.648, p  0.001, indicating general inflation drives egg prices</li><li>Moderate EPU Relationship:Moderate positive correlation between egg prices and EPU r = 0.601, p  0.001, suggesting policy uncertainty impacts egg market</li><li>Model Performance:Regression Model 1 Egg Price  Distribution Characteristics:Egg prices exhibit non-normal distribution Shapiro-Wilk: W = 0.922, p = 0.001, right-skewed with occasional spikes</li><li>Inflation Comparison:No statistically significant difference between egg price changes 1.74%/month and CPI inflation 0.37%/month in paired t-test p = 0.333</li></ul>
+<h1>Industry Context</h1>
+<h2>Egg Market Benchmarks </h2>
+<p>from web research</p>
+<ul><li>Egg prices increased approximately 170% from December 2019 to December 2024</li><li>Average retail egg prices: 1.97 2021 to 3.24 2024</li><li>General inflation:  Egg-specific inflation: 8.53% 2024</li><li>Avian influenza outbreaks caused significant supply disruptions through flock culling</li></ul>
+<h2>Economic Policy Uncertainty</h2>
+<p>The EPU index, developed by Baker et al. 2016, measures economic and policy-related uncertainties. Research indicates:</p>
+<ul><li>EPU has been approximately two times its long-run average since 2008</li><li>Policy uncertainty innovations foreshadow declines in investment, output, and employment</li><li>EPU serves as a leading indicator for market volatility</li></ul>
+<h2>Comparison with Benchmarks</h2>
+<p>Our analysis period 2021-2024 shows:</p>
+<ul><li>Mean egg price of 2.95 falls between 2021 1.97 and 2024 3.24 industry benchmarks</li><li>Mean monthly CPI inflation rate 0.37% consistent with observed trends</li><li>Mean monthly egg price change 1.74% indicates higher volatility than general inflation</li></ul>
+<h1>Feature Engineering</h1>
+<p>Eleven engineered features were created with clear business rationale:</p>
+<p>1. cpiinflationrate:Monthly CPI percentage change - provides inflation benchmark</p>
+<p>2. eggpricechange:Monthly egg price percentage change - captures price momentum</p>
+<p>3. realeggprice:CPI-adjusted egg price - removes inflation effects</p>
+<p>4. eggpricevolatility:12-month rolling std of price changes - quantifies risk</p>
+<p>5. epuvolatility:12-month rolling std of EPU - measures uncertainty intensity</p>
+<p>6. eggcpiratio:Egg price normalized to CPI - shows relative performance</p>
+<p>7. yoyegggrowth:Year-over-year egg price growth - captures structural trends</p>
+<p>8. yoycpigrowth:Year-over-year CPI growth - long-term inflation benchmark</p>
+<p>9. inflationdifferential:Egg price change minus CPI change - relative performance</p>
+<p>10. epulag1:One-month lagged EPU - captures delayed transmission</p>
+<p>11. month, quarter, year:Temporal features - captures seasonality</p>
+<h1>Descriptive Statistics</h1>
+<h2>Key Variable Statistics</h2>
+<div class='table-wrap'><table><thead><tr><th>Variable</th><th>Mean</th><th>Median</th><th>Std Dev</th><th>Skewness</th><th>Kurtosis</th><th>CV</th></tr></thead><tbody><tr><td>Egg Price</td><td>2.947</td><td>2.860</td><td>1.089</td><td>0.947</td><td>3.644</td><td>0.370</td></tr><tr><td>CPI</td><td>301.517</td><td>304.609</td><td>17.956</td><td>-0.598</td><td>2.262</td><td>0.060</td></tr><tr><td>EPU</td><td>186.866</td><td>136.721</td><td>113.370</td><td>1.685</td><td>4.930</td><td>0.607</td></tr><tr><td>CPI Inflation Rate %</td><td>0.374</td><td>0.303</td><td>0.282</td><td>1.141</td><td>4.037</td><td>0.759</td></tr><tr><td>Egg Price Change %</td><td>1.744</td><td>0.596</td><td>10.564</td><td>0.051</td><td>2.496</td><td>6.078</td></tr></tbody></table></div>
+<h2>Volatility Analysis</h2>
+<ul><li>Highest volatility:Inflation Differential CV = 7.729, Egg Price Change CV = 6.078</li><li>Lowest volatility:CPI CV = 0.060, Real Egg Price CV = 0.335</li><li>Egg price changes are significantly more volatile than general CPI inflation</li></ul>
+<h1>Distribution Analysis</h1>
+<h2>Normality Tests</h2>
+<div class='table-wrap'><table><thead><tr><th>Variable</th><th>Shapiro-Wilk W</th><th>p-value</th><th>Distribution</th></tr></thead><tbody><tr><td>Egg Price</td><td>0.922</td><td>0.001</td><td>Non-Normal</td></tr><tr><td>CPI</td><td>0.930</td><td>0.002</td><td>Non-Normal</td></tr><tr><td>EPU</td><td>0.732</td><td>0.000</td><td>Non-Normal</td></tr><tr><td>Egg Price Change</td><td>0.966</td><td>0.111</td><td>Approximately Normal</td></tr></tbody></table></div>
+<h2>Key Insights</h2>
+<ul><li>Egg prices show right-skewed distribution skewness = 0.947, indicating occasional price spikes</li><li>EPU is highly right-skewed skewness = 1.685, reflecting extreme uncertainty events</li><li>Egg price changes are approximately normal, consistent with efficient market behavior</li><li>Non-normality of levels is expected for trending time series</li></ul>
+<h1>Correlation Analysis</h1>
+<h2>Pearson Correlation Results</h2>
+<div class='table-wrap'><table><thead><tr><th>Variable Pair</th><th>Correlation</th><th>p-value</th><th>Significance</th></tr></thead><tbody><tr><td>Egg Price vs CPI</td><td>0.648</td><td>0.001</td><td>Strong positive</td></tr><tr><td>Egg Price vs EPU</td><td>0.601</td><td>0.001</td><td>Moderate-strong positive</td></tr><tr><td>Egg Price vs Real Egg Price</td><td>0.994</td><td>0.001</td><td>Near-perfect</td></tr><tr><td>CPI vs EPU</td><td>0.515</td><td>0.001</td><td>Moderate positive</td></tr><tr><td>Egg Price Change vs Lagged EPU</td><td>-0.325</td><td>0.014</td><td>Moderate negative</td></tr></tbody></table></div>
+<h2>Spearman Rank Correlation </h2>
+<p>Non-linear</p>
+<div class='table-wrap'><table><thead><tr><th>Variable Pair</th><th>Correlation</th><th>p-value</th><th>Significance</th></tr></thead><tbody><tr><td>Egg Price vs CPI</td><td>0.683</td><td>0.001</td><td>Strong positive</td></tr><tr><td>Egg Price vs EPU</td><td>0.404</td><td>0.002</td><td>Moderate positive</td></tr><tr><td>Real Egg Price vs Lagged EPU</td><td>0.382</td><td>0.003</td><td>Moderate positive</td></tr></tbody></table></div>
+<h2>Interpretation</h2>
+<p>1. Egg Price - CPI Relationship r = 0.648:Higher general inflation associated with higher egg prices, consistent with cost pass-through feed, labor, energy</p>
+<p>2. Egg Price - EPU Relationship r = 0.601:Policy uncertainty associated with higher egg prices, possibly reflecting supply chain disruptions and regulatory changes</p>
+<p>3. Delayed EPU Effects:Lagged EPU shows negative correlation with egg price changes r = -0.325, suggesting delayed contractionary effects after uncertainty spikes</p>
+<h1>Regression Analysis</h1>
+<h2>Model 1: Egg Price </h2>
+<p>Equation:EggPricet = beta0 + beta1  CPIt + beta2  EPUt + epsilont</p>
+<p>Results:</p>
+<ul><li>R-squared: 0.517 51.72% of variance explained</li><li>Adjusted R-squared: 0.500</li><li>F-statistic: 30.00 p  0.001</li></ul>
+<p>Coefficients:</p>
+<ul><li>Intercept: -6.138 t = -3.24, p = 0.002</li><li>CPI: 0.028 t = 4.26, p  0.001 - A 1-unit CPI increase associated with $0.028 egg price increase</li><li>EPU: 0.004 t = 3.35, p = 0.001 - A 1-unit EPU increase associated with $0.004 egg price increase</li></ul>
+<h2>Model 2: Egg Price Change </h2>
+<p>Equation:Delta EggPricet = beta0 + beta1  Delta CPIt + beta2  EPUt + beta3  EPU{t-1} + epsilont</p>
+<p>Results:</p>
+<ul><li>R-squared: 0.137 13.73% of variance explained</li><li>Adjusted R-squared: 0.089</li><li>F-statistic: 2.81 p = 0.048</li></ul>
+<p>Coefficients:</p>
+<ul><li>Intercept: 0.069 t = 1.95, p = 0.057</li><li>CPI Inflation: -0.445 t = -0.09, p = 0.928 - Not significant</li><li>EPU: 0.0004 t = 1.38, p = 0.172 - Not significant</li><li>Lagged EPU: -0.0007 t = -2.30, p = 0.025 - A 1-unit lagged EPU increase associated with 0.07% decrease in egg price changes</li></ul>
+<h2>Model Comparison</h2>
+<ul><li>Model 1 levels performs much better than Model 2 changes</li><li>Price levels are more predictable than price changes</li><li>Monthly price changes dominated by idiosyncratic factors weather, disease, regional shocks</li><li>Only lagged EPU shows significant effect on price changes, suggesting delayed negative impact of policy uncertainty</li></ul>
+<h1>Hypothesis Testing</h1>
+<h2>Test 1: Egg Price Change vs. CPI Inflation</h2>
+<p>Hypotheses:</p>
+<ul><li>H0: Meanegg change = MeanCPI inflation</li><li>H1: Meanegg change CPI inflation</li></ul>
+<p>Results:</p>
+<ul><li>Paired t-test: t = 0.977, p = 0.333</li><li>Mean egg price change: 1.74%/month</li><li>Mean CPI inflation: 0.37%/month</li></ul>
+<p>Conclusion:FAIL TO REJECT H0. Despite large point estimate difference, not statistically significant due to high volatility of egg price changes. Egg prices broadly follow general inflation in long run.</p>
+<h2>Test 2: EPU in High vs. Low Volatility Periods</h2>
+<p>Hypotheses:</p>
+<ul><li>H0: MeanEPU | high vol = MeanEPU | low vol</li><li>H1: MeanEPU | high vol EPU | low vol</li></ul>
+<p>Results:</p>
+<ul><li>Independent t-test: t = 1.812, p = 0.077</li><li>Mean EPU high vol: 218.71</li><li>Mean EPU low vol: 154.98</li></ul>
+<p>Conclusion:FAIL TO REJECT H0 marginally. While EPU is higher during high egg price volatility periods, difference not statistically significant at 5% level.</p>
+<h1>Conclusions and Implications</h1>
+<h2>Summary of Findings</h2>
+<p>1. Strong Long-Run Relationships:Egg price levels show strong positive correlations with both CPI r = 0.648 and EPU r = 0.601, with regression model explaining 51.7% of variance</p>
+<p>2. Weak Short-Term Predictability:Monthly egg price changes poorly explained by macroeconomic variables R-squared = 0.137, suggesting short-term dynamics driven by idiosyncratic factors</p>
+<p>3. Non-Normal Distributions:Egg prices, CPI, and EPU exhibit non-normal distributions, consistent with trending time series with extreme events</p>
+<p>4. Delayed EPU Effects:Lagged EPU shows significant negative relationship with egg price changes beta = -0.0007, p = 0.025, suggesting policy uncertainty shocks have delayed contractionary effects</p>
+<p>5. No Significant Egg Inflation Premium:Despite point estimates suggesting higher egg price inflation, difference not statistically significant, indicating egg prices track general inflation in long run</p>
+<h2>Investment and Policy Implications</h2>
+<ul><li>Risk Management:High volatility of egg price changes and weak short-term model suggest focus on hedging strategies rather than predicting monthly movements</li><li>Supply Chain Resilience:Strong correlation between EPU and egg prices indicates policy uncertainty as systematic risk factor; building resilient supply chains critical</li><li>Monitoring Early Indicators:Negative relationship between lagged EPU and egg price changes suggests elevated uncertainty may signal future price momentum reversals</li><li>Market Structure:Egg prices track CPI in long run but exhibit high short-term volatility, consistent with commodity markets determined by supply-demand fundamentals with temporary shocks</li></ul>
+<h2>Limitations</h2>
+<ul><li>Limited Sample Size:Only 60 monthly observations</li><li>Omitted Variables:Does not include supply-side factors feed prices, production costs, disease outbreaks, weather</li><li>Regional Aggregation:National average prices mask regional variation</li><li>Future Research:Include supply-side variables, disease indicators, regional differentials, longer historical period, structural break analysis</li></ul>
+<h1>References</h1>
+<p>1. Baker, S. R., Bloom, N., &amp; Davis, S. J. 2016. Measuring economic policy uncertainty. The Quarterly Journal of Economics, 1314, 1593-1636</p>
+<p>2. Bureau of Labor Statistics. Consumer Price Index for All Urban Consumers CPIAUCSL. FRED</p>
+<p>3. Bureau of Labor Statistics. Average Retail Food and Energy Prices APU0000708111. FRED</p>
+<p>4. PolicyUncertainty.com. Economic Policy Uncertainty Index</p>
+<p>5. Trading Economics. Eggs US - Historical Data</p>
+<p>6. Food &amp; Water Watch. The Economic Cost of Food Monopolies: The Rotten Egg Oligarchy 2025</p>
+<p>7. American Farm Bureau Federation. Egg Prices Continue Setting Records 2025</p><hr/><p class='muted'>说明：完整报告结构 + 原位图表渲染。plot assets: 0，成功缓存: 0（含路径键与文件名键），失败: 0。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

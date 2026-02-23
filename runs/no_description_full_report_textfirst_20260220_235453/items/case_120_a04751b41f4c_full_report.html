@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：bnpl_dataset</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：bnpl_dataset</h1>
+    <p class='sub'>来源: /view/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Buy Now Pay Later (BNPL) Market Analysis Report&quot;
+description: &quot;Comprehensive analysis of 50,000 BNPL transactions examining customer demographics, repayment patterns, risk factors, and provider market share&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-04&quot;
+</pre></details>
+<h1>Buy Now Pay Later </h1>
+<p>BNPL Market Analysis Report</p>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of 50,000 Buy Now Pay Later BNPL transactions across four major providers Klarna, Afterpay, Sezzle, and Affirm. The analysis reveals a healthy portfolio with 75.2% of payments made on time, 16.0% late, and 8.8% defaulted. Credit scores emerge as the strongest predictor of repayment behavior, with default rates ranging from 14.3% for poor credit customers to just 2.0% for those with excellent credit. The market shows balanced competition with providers maintaining nearly equal market share </p>
+<div class='plot-card'><div class='plot-meta'><code>repayment_status_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/repayment_status_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Dataset Overview</h2>
+<p>The BNPL dataset contains 50,000 transactions with comprehensive customer and transaction information. Data quality is excellent with no missing values or duplicates.</p>
+<p>Key Characteristics:</p>
+<ul><li>Total transactions: 50,000</li><li>Total purchase volume: 28,161,099</li><li>Average purchase amount: 563</li><li>Median purchase amount: 229</li><li>Data quality: Clean, complete records</li></ul>
+<p>Variables Analyzed:</p>
+<ul><li>Customer demographics age, gender, income</li><li>Financial profile credit score, annual income</li><li>Transaction details provider, category, amount</li><li>Repayment outcomes on-time, late, defaulted</li></ul>
+<h2>Repayment Performance Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors most strongly influence repayment success?</li><li>How do different purchase categories affect default rates?</li></ul></details>
+<h3>Overall Repayment Distribution</h3>
+<p>The portfolio demonstrates healthy repayment performance with three-quarters of all payments made on time:</p>
+<p>Breakdown:</p>
+<ul><li>Paid On Time: 37,612 transactions 75.2%</li><li>Late Payment: 8,009 transactions 16.0%</li><li>Defaulted: 4,379 transactions 8.8%</li></ul>
+<h3>Purchase Amount Impact</h3>
+<p>Interestingly, defaulted transactions have higher average purchase amounts 608 compared to on-time payments 555, suggesting a correlation between larger purchases and increased default risk.</p>
+<div class='plot-card'><div class='plot-meta'><code>avg_amount_by_status.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/avg_amount_by_status.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Finding:</p>
+<p>Defaulted loans average 53 more than on-time payments, a 9.6% increase. This pattern suggests that larger purchases may represent higher risk or greater financial burden for customers.</p>
+<h2>Customer Demographics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does customer age affect repayment behavior?</li><li>Is there a significant difference in repayment patterns between genders?</li></ul></details>
+<h3>Age Distribution</h3>
+<p>The customer base is evenly distributed across age groups from 18 to 64 years:</p>
+<div class='plot-card'><div class='plot-meta'><code>age_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/age_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Distribution by Age Group:</p>
+<ul><li>18-24: 7,362 customers 14.7%</li><li>25-34: 10,778 customers 21.6%</li><li>35-44: 10,690 customers 21.4%</li><li>45-54: 10,550 customers 21.1%</li><li>55-64: 10,620 customers 21.2%</li></ul>
+<p>The balanced age distribution suggests broad market appeal across all adult demographics.</p>
+<h3>Gender Distribution</h3>
+<p>Gender representation is nearly balanced:</p>
+<ul><li>Female: 24,139 customers 48.3%</li><li>Male: 23,952 customers 47.9%</li><li>Non-Binary: 1,909 customers 3.8%</li></ul>
+<h3>Repayment by Age Group</h3>
+<div class='plot-card'><div class='plot-meta'><code>repayment_by_age.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/repayment_by_age.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Analysis shows relatively consistent repayment patterns across age groups, with no dramatic variations in default rates by age cohort.</p>
+<h2>Financial Profile Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the relationship between credit score and default risk?</li><li>How does income level correlate with repayment behavior?</li></ul></details>
+<h3>Credit Score Distribution</h3>
+<p>Credit scores show significant variation, with a notable concentration in lower credit tiers:</p>
+<div class='plot-card'><div class='plot-meta'><code>credit_score_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/credit_score_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Credit Score Segments:</p>
+<ul><li>Poor 300-499: 18,402 customers 36.8%</li><li>Fair 500-649: 13,607 customers 27.2%</li><li>Good 650-749: 8,884 customers 17.8%</li><li>Excellent 750-849: 9,107 customers 18.2%</li></ul>
+<h3>Default Rate by Credit Score - Critical Finding</h3>
+<p>Credit score emerges as the strongest predictor of repayment success:</p>
+<div class='plot-card'><div class='plot-meta'><code>default_rate_by_credit.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/default_rate_by_credit.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Default Rates by Credit Score:</p>
+<ul><li>Poor 300-499: 14.3%default rate</li><li>Fair 500-649: 9.6%default rate</li><li>Good 650-749: 2.9%default rate</li><li>Excellent 750-849: 2.0%default rate</li></ul>
+<p>Key Insight:</p>
+<p>Default rates decrease by 85.7%from poor to excellent credit scores. Customers with poor credit are 7.1 times more likelyto default compared to those with excellent credit. This represents a dramatic risk gradient that should inform underwriting decisions.</p>
+<h3>Income Distribution</h3>
+<p>Annual income is evenly distributed across all income brackets:</p>
+<div class='plot-card'><div class='plot-meta'><code>income_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/income_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Income Segments:</p>
+<ul><li>40k: 10,057 customers 20.1%</li><li>40-60k: 9,980 customers 20.0%</li><li>60-80k: 9,908 customers 19.8%</li><li>80-100k: 9,973 customers 19.9%</li><li>100k: 10,082 customers 20.2%</li></ul>
+<p>The uniform income distribution indicates broad market accessibility across all socioeconomic segments.</p>
+<h2>Purchase Behavior Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which purchase categories generate the most revenue?</li><li>Are certain categories associated with higher default rates?</li></ul></details>
+<h3>Purchase Category Distribution</h3>
+<p>Transaction volume is evenly distributed across six major categories:</p>
+<div class='plot-card'><div class='plot-meta'><code>purchase_category_total.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/purchase_category_total.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>By Transaction Volume:</p>
+<ul><li>Travel: 8,401 transactions 16.8%</li><li>Beauty: 8,381 transactions 16.8%</li><li>Home &amp; Furniture: 8,368 transactions 16.7%</li><li>Fashion: 8,307 transactions 16.6%</li><li>Electronics: 8,303 transactions 16.6%</li><li>Groceries: 8,240 transactions 16.5%</li></ul>
+<p>By Total Purchase Volume:</p>
+<ul><li>Travel: 13,698,230 48.6% of total</li><li>Electronics: 9,155,487 32.5% of total</li><li>Beauty: 1,331,483 4.7% of total</li><li>Home &amp; Furniture: 1,335,027 4.7% of total</li><li>Fashion: 1,328,141 4.7% of total</li><li>Groceries: 1,312,731 4.7% of total</li></ul>
+<p>Key Insight:</p>
+<p>Despite having only 16.8% of transactions, Travel category accounts for 48.6% of total purchase volumedue to significantly higher average transaction amounts 1,631. This category represents both high revenue and high risk.</p>
+<h3>Default Rate by Purchase Category</h3>
+<div class='plot-card'><div class='plot-meta'><code>default_rate_by_category.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/default_rate_by_category.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Default Rates by Category:</p>
+<p>1. Electronics: 9.56%</p>
+<p>2. Travel: 9.46%</p>
+<p>3. Fashion: 8.78%</p>
+<p>4. Beauty: 8.47%</p>
+<p>5. Groceries: 8.46%</p>
+<p>6. Home &amp; Furniture: 7.82%</p>
+<p>Risk Assessment:</p>
+<ul><li>High Risk: Electronics 9.56% and Travel 9.46% due to larger average purchase amounts</li><li>Medium Risk: Fashion, Beauty, Groceries 8.4-8.8%</li><li>Low Risk: Home &amp; Furniture 7.82%</li></ul>
+<h3>Average Purchase Amount by Category and Status</h3>
+<div class='plot-card'><div class='plot-meta'><code>avg_amount_category_status.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/avg_amount_category_status.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>This chart reveals that higher-value categories Travel: 1,631, Electronics: 1,103 also carry higher default rates, confirming the correlation between purchase size and repayment risk.</p>
+<h3>Purchase Amount Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>purchase_amount_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/purchase_amount_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The distribution is highly right-skewed, with most transactions under 500 but a long tail extending to 2,999. This pattern is typical of discretionary spending where most purchases are modest but occasional large purchases drive significant revenue.</p>
+<h2>BNPL Provider Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How is market share distributed among BNPL providers?</li><li>Do different providers show different risk profiles?</li></ul></details>
+<h3>Provider Market Share</h3>
+<p>The BNPL market is highly competitive with nearly equal market share:</p>
+<div class='plot-card'><div class='plot-meta'><code>bnpl_provider_share.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/bnpl_provider_share.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Market Share by Provider:</p>
+<ul><li>Klarna: 12,545 transactions 25.1%</li><li>Afterpay: 12,536 transactions 25.1%</li><li>Sezzle: 12,501 transactions 25.0%</li><li>Affirm: 12,418 transactions 24.8%</li></ul>
+<p>Key Insight:</p>
+<p>The market is perfectly balanced with each provider commanding approximately one-quarter of all transactions. This suggests healthy competition and no dominant market leader.</p>
+<h2>Advanced Analytics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What correlations exist between key variables?</li><li>How do customer profiles cluster by repayment behavior?</li></ul></details>
+<h3>Correlation Matrix</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Correlations:</p>
+<ul><li>Credit Score vs Purchase Amount: Weak negative correlation -0.08</li><li>Annual Income vs Purchase Amount: Weak positive correlation +0.07</li><li>Customer Age vs Credit Score: Weak positive correlation +0.02</li></ul>
+<p>Interpretation:</p>
+<p>The low correlations indicate that purchase behavior is influenced by multiple factors rather than any single demographic or financial variable.</p>
+<h3>Credit Score vs Purchase Amount</h3>
+<div class='plot-card'><div class='plot-meta'><code>credit_vs_amount_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/credit_vs_amount_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot reveals that:</p>
+<ul><li>Defaulted transactions red are distributed across all credit scores but increase in frequency at lower credit scores</li><li>High-value transactions 1,000+ occur across all credit ranges but default rates are visibly higher for lower scores</li><li>Excellent credit customers 750+ have very few defaults even on large purchases</li></ul>
+<h3>Income vs Purchase Amount</h3>
+<div class='plot-card'><div class='plot-meta'><code>income_vs_amount_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/income_vs_amount_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>This analysis shows:</p>
+<ul><li>Purchase amounts increase with income up to 80-100k, then level off</li><li>Defaulted transactions occur across all income levels</li><li>High-income customers make more large purchases but don&#x27;t show proportionally higher default rates</li></ul>
+<h3>Age vs Credit Score</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_vs_credit_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/age_vs_credit_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The relationship between age and credit score shows:</p>
+<ul><li>No strong age-based pattern in credit scores</li><li>Customers in all age groups span the full credit score range 300-849</li><li>Defaulted transactions are concentrated in the lower credit score regions across all ages</li></ul>
+<h2>Risk Assessment and Recommendations</h2>
+<h3>Key Risk Factors Identified</h3>
+<p>1. Credit Score Highest Impact</p>
+<ul><li>Poor credit customers 300-499 default at 14.3% rate</li><li>Excellent credit customers 750-849 default at 2.0% rate</li><li>Risk Gradient: 7.1x difference between poorest and best credit</li></ul>
+<p>2. Purchase Amount Moderate Impact</p>
+<ul><li>Higher amounts correlate with increased default risk</li><li>Defaulted loans average 53 more 9.6% higher than on-time payments</li><li>Travel and Electronics show highest risk due to large average amounts</li></ul>
+<p>3. Purchase Category Moderate Impact</p>
+<ul><li>Electronics: 9.56% default rate</li><li>Travel: 9.46% default rate</li><li>Home &amp; Furniture: 7.82% default rate safest category</li></ul>
+<h3>Strategic Recommendations</h3>
+<p>For Risk Management:</p>
+<p>1. Implement Credit Score-Based Limits</p>
+<p>    Tighten approval thresholds for scores below 500</p>
+<p>    Reduce maximum purchase amounts for poor credit customers</p>
+<p>    Offer higher limits only for scores above 650</p>
+<p>2. Category-Based Risk Pricing</p>
+<p>    Apply higher fees for Electronics and Travel purchases</p>
+<p>    Consider dynamic interest rates based on purchase category</p>
+<p>    Implement additional verification for high-value travel purchases</p>
+<p>3. Purchase Amount Caps</p>
+<p>    Set category-specific maximum amounts</p>
+<p>    Implement graduated approval limits based on credit score</p>
+<p>    Require additional verification for purchases over 1,500</p>
+<p>For Portfolio Optimization:</p>
+<p>1. Balance High-Value Categories</p>
+<p>    While Travel generates 48.6% of revenue, it also carries 9.46% default risk</p>
+<p>    Maintain healthy mix across all categories to diversify risk</p>
+<p>    Focus on growing lower-risk categories Home &amp; Furniture</p>
+<p>2. Target High-Credit Customers</p>
+<p>    Prioritize marketing to excellent credit customers 750+</p>
+<p>    Develop premium products for this segment with higher limits</p>
+<p>    Their 2.0% default rate represents exceptional value</p>
+<p>3. Segmented Underwriting</p>
+<p>    Create distinct underwriting rules by credit score tier</p>
+<p>    Poor credit: Limit to 500, essential categories</p>
+<p>    Fair credit: Moderate limits, all categories</p>
+<p>    Good/Excellent credit: Full access to all features</p>
+<h2>System Flow Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do different components of the BNPL ecosystem interact?</li><li>Where are the key decision points in the customer journey?</li></ul></details>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/bnpl_ecosystem.svg' alt='bnpl_ecosystem.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea/assets/bnpl_ecosystem.svg' target='_blank' rel='noopener noreferrer'>bnpl_ecosystem.svg</a></figcaption></figure>
+<p>Ecosystem Flow:</p>
+<p>1. Customer Profile- Demographics and financial data form the foundation</p>
+<p>2. Provider Selection- Customers choose from four competing providers</p>
+<p>3. Transaction Processing- Providers facilitate purchases across six categories</p>
+<p>4. Repayment Outcomes- 75.2% success, 16.0% late, 8.8% default</p>
+<p>5. Risk Factors- Credit score and purchase category impact outcomes</p>
+<p>Key Decision Points:</p>
+<ul><li>Underwriting credit score assessment</li><li>Category approval risk-based limits</li><li>Purchase amount verification</li><li>Collection strategy based on default risk</li></ul>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of 50,000 BNPL transactions reveals a healthy, competitive market with balanced provider share and diverse customer demographics. The portfolio demonstrates solid repayment performance with 75.2% on-time payments.</p>
+<p>Critical Takeaways:</p>
+<p>1. Credit Score is King: Default rates vary from 2.0% excellent to 14.3% poor - a 7.1x difference</p>
+<p>2. Amount Matters: Larger purchases correlate with higher default rates</p>
+<p>3. Category Risk: Electronics and Travel carry </p>
+<p>4. Market Balance: Four providers compete evenly, preventing market concentration</p>
+<p>5. Broad Appeal: Balanced distribution across age, income, and gender segments</p>
+<p>Data Quality:</p>
+<ul><li>Clean dataset with no missing values or duplicates</li><li>Well-structured with comprehensive customer and transaction data</li><li>Representative sample showing balanced market dynamics</li></ul>
+<p>The BNPL market shows strong fundamentals with room for optimization through credit-score-based underwriting, category-specific risk pricing, and strategic focus on high-credit segments for premium offerings.</p>
+<hr/>
+<p>Report Generated: February 4, 2025</p>
+<p>Data Source: bnpldataset.csv 50,000 transactions</p>
+<p>Analysis Tool: Pardus AI Analytics Platform</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

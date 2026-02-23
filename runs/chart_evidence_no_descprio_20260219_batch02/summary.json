@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-02-20T13:03:39",
+  "sample_size": 20,
+  "rows": [
+    {
+      "idx": 21,
+      "case_id": "f65c122a6af466504b90676e0a41a66c7188cff6dc5db3dd6bc678f3cf4f4123",
+      "title": "中原农险投资分析2025",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_021_f65c122a6af4.html",
+      "status": "ok"
+    },
+    {
+      "idx": 22,
+      "case_id": "bdba6d468b80187c385f22ec0b6528729782d76891b1a4e21011a5bf8d98cebb",
+      "title": "Q4 2025 GAAP and Non-GAAP Earnings Tables",
+      "chart_count": 12,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_022_bdba6d468b80.html",
+      "status": "ok"
+    },
+    {
+      "idx": 23,
+      "case_id": "ce9b7681a372dcc55417377f806025106c53162249d5f6c5f455b1cdea5c7c68",
+      "title": "account",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_023_ce9b7681a372.html",
+      "status": "ok"
+    },
+    {
+      "idx": 24,
+      "case_id": "d072b670826453e16599800aec6634bc6c5907d76b0202af193e344151d3f459",
+      "title": "random walk",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_024_d072b6708264.html",
+      "status": "ok"
+    },
+    {
+      "idx": 25,
+      "case_id": "ef45d93ed5cbd5546f82e0ce56b5f7dcf6f431d8c605dc393e2da836ef77b2dd",
+      "title": "integrated_final_plan",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_025_ef45d93ed5cb.html",
+      "status": "ok"
+    },
+    {
+      "idx": 26,
+      "case_id": "4732de6cfb3a108a6a95dd93ac81cd2adc5a0d8a93e0c4daa06e6c2e61a3ffa2",
+      "title": "DataFrame_from__data_input_R_0_1_xlsx___sheet___Projects_Record_Table___",
+      "chart_count": 0,
+      "upload_count": 1,
+      "doc_status": 404,
+      "up_status": 200,
+      "html": "case_026_4732de6cfb3a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 27,
+      "case_id": "fc5bd6982b4c9b4205282ac9d945bf03f8135427c3cc5fa9b63ec0f33c1e0016",
+      "title": "再保数据2025",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_027_fc5bd6982b4c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 28,
+      "case_id": "f019626d8112a52569fc57a2961d8048ca936249a15a98bc512ac7b2502cb6f9",
+      "title": "UBS-China Banks and Property 2026 GCC takeaways",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_028_f019626d8112.html",
+      "status": "ok"
+    },
+    {
+      "idx": 29,
+      "case_id": "586dc399915391fb7b56d856fc9de006cb9159bf09f8496c089d29ba8ff90cd5",
+      "title": "bitcoin_alltime2",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_029_586dc3999153.html",
+      "status": "ok"
+    },
+    {
+      "idx": 30,
+      "case_id": "54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078",
+      "title": "Google Stock Analysis",
+      "chart_count": 8,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_030_54c6646b9e27.html",
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "case_id": "4d86d8de6dc86744bb88d854650348f733c3b36928c4508f5d3f4d25cfc329e1",
+      "title": "bitcoin",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_031_4d86d8de6dc8.html",
+      "status": "ok"
+    },
+    {
+      "idx": 32,
+      "case_id": "7362a937d750977f6355c9e980c4ca1897e6206c1d7e2088efd58fdf2dfa4818",
+      "title": "2026-02-05",
+      "chart_count": 7,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_032_7362a937d750.html",
+      "status": "ok"
+    },
+    {
+      "idx": 33,
+      "case_id": "967c94e24f0b1bf28a9b8c374df04e0a5980dd46178976ca7435b7c4a4203bae",
+      "title": "Uber",
+      "chart_count": 7,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_033_967c94e24f0b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 34,
+      "case_id": "a16a6fd625c62226a212e5416de52a484e88d4f479fb754d729524f985181ce5",
+      "title": "global_ads_performance_dataset",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_034_a16a6fd625c6.html",
+      "status": "ok"
+    },
+    {
+      "idx": 35,
+      "case_id": "a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea",
+      "title": "bnpl_dataset",
+      "chart_count": 16,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_035_a04751b41f4c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "case_id": "d75a80753e2f5c1cbaac3feb319d699ad7b725901490bc295a972fac38c2194c",
+      "title": "bnpl_dataset",
+      "chart_count": 17,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_036_d75a80753e2f.html",
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "case_id": "18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a",
+      "title": "WinterSD",
+      "chart_count": 15,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_037_18e0c06995d6.html",
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "case_id": "ffc9ef59a23023fdfb2c0b720a63cac57f2603c10ff3743e051e042f9a2939b9",
+      "title": "Fred Interest Rate and Software Job Market Analysis",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_038_ffc9ef59a230.html",
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "case_id": "38299b5402ab8c8271c057611c9c1f033ebd2ad5036a00c65f7d2042e41793db",
+      "title": "公司价值评估中财务模型的构建-中信证券培训",
+      "chart_count": 4,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_039_38299b5402ab.html",
+      "status": "ok"
+    },
+    {
+      "idx": 40,
+      "case_id": "88410fa7d3b6aff9d9b51dfd98ebf3713c332295c2ec0de9d1953d28b5b8910a",
+      "title": "Statistical-Review-of-World-Energy",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_040_88410fa7d3b6.html",
+      "status": "ok"
+    }
+  ]
+}

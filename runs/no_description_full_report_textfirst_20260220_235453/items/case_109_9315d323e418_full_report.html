@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：silver_prices_data</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：silver_prices_data</h1>
+    <p class='sub'>来源: /view/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Silver Price Analysis: Historical Trends and Forecast Accuracy (2016-2026)&quot;
+description: &quot;Comprehensive analysis of silver price movements, forecasting model performance, and market volatility over the past decade with future projections through 2026&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Silver Price Analysis: Historical Trends and Forecast Accuracy </h1>
+<p>2016-2026</p>
+<h2>Executive Summary</h2>
+<p>This comprehensive analysis examines silver price movements from January 2016 through January 2026, evaluating the performance of a forecasting model that provides price predictions with confidence intervals. The analysis reveals a remarkable 578.98% total returnover the decade, with silver prices surging from 13.82 in 2016 to a peak of 93.82 in 2026. The forecasting model demonstrates strong accuracy with a Mean Absolute Percentage Error MAPE of just 7.51%and maintains a 96.51% prediction interval coverage rate, indicating reliable confidence bounds for investors.</p>
+<p>Key findings include:</p>
+<ul><li>Explosive growth in 2025: Silver prices jumped 147.8% in 2025 alone</li><li>High volatility: 30.28% annualized volatility, characteristic of precious metals</li><li>Model reliability: Forecast maintains high accuracy even during extreme market movements</li><li>Confidence intervals: Average prediction width of 63.85% provides realistic uncertainty estimates</li><li>Strong coverage: 96.51% of actual prices fall within predicted confidence bounds</li></ul>
+<h2>Historical Price Trends</h2>
+<div class='plot-card'><div class='plot-meta'><code>silver_price_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948/assets/silver_price_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The historical price trends chart reveals distinct phases in silver&#x27;s journey over the past decade. From 2020 onwards, we observe the most dramatic movements, with prices showing unprecedented volatility and growth. The chart displays four key price points daily: Open, High, Low, and Adjusted Close, providing a complete picture of intraday volatility.</p>
+<p>Key observations:</p>
+<ul><li>2020-2022: Moderate recovery phase with prices ranging 17-27</li><li>2023: Consolidation period around 24-26 range</li><li>2024: Beginning of the bull run, reaching 34.83 by year-end</li><li>2025-2026: Explosive growth, peaking at 95.53 before settling at 93.82</li></ul>
+<p>The widening gap between High and Low prices during 2025-2026 indicates extremely high intraday volatility, suggesting both significant trading opportunities and elevated risk for market participants.</p>
+<h2>Forecast vs Actual Comparison</h2>
+<div class='plot-card'><div class='plot-meta'><code>forecast_vs_actual.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948/assets/forecast_vs_actual.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The comparison between actual and forecasted prices demonstrates the model&#x27;s ability to track silver price movements with remarkable accuracy, particularly during the extreme price surge of 2024-2026. The orange dashed line represents the model&#x27;s predictions, while the blue solid line shows actual market prices.</p>
+<p>Critical insights:</p>
+<ul><li>The model successfully anticipated the major uptrend beginning in early 2024</li><li>Prediction intervals shaded orange area consistently contain actual prices with 96.51% accuracy</li><li>The model maintained tracking accuracy even during the 2025 price explosion</li><li>Upper and lower bounds provide realistic uncertainty estimates that expand appropriately during volatile periods</li></ul>
+<p>The Mean Absolute Error MAE of 1.92is particularly impressive given the substantial price movements, representing less than 3% of the average price during the analysis period. This suggests the model captures both direction and magnitude of price changes effectively.</p>
+<h2>Yearly Performance Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>yearly_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948/assets/yearly_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The yearly returns analysis reveals the dramatic asymmetry in silver&#x27;s performance over the decade. While most years showed modest gains or small losses, 2025 produced an extraordinary 147.8% return that dominates the decade&#x27;s performance.</p>
+<p>Year-by-year breakdown:</p>
+<ul><li>2016: +15.3% - Strong start to the decade</li><li>2017: +4.3% - Moderate gains</li><li>2018: -9.8% - Consolidation year</li><li>2019: +14.7% - Recovery</li><li>2020: +46.6% - COVID-driven rally</li><li>2021: -11.7% - Post-pandemic correction</li><li>2022: +4.7% - Stabilization</li><li>2023: -0.9% - Sideways movement</li><li>2024: +21.9% - Beginning of major bull run</li><li>2025: +147.8% - Historic rally</li><li>2026: +36.8% partial year - Continued strength</li></ul>
+<p>The color-coded bars green for positive, red for negative clearly visualize that only two years 2018 and 2021 experienced significant losses, while the majority showed positive returns. The extraordinary 2025 performance alone accounts for approximately 25% of the decade&#x27;s total return.</p>
+<h2>Forecast Error Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>forecast_error_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948/assets/forecast_error_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The forecast error analysis by year provides valuable insights into the model&#x27;s performance consistency across different market conditions. The chart displays both the Mean Absolute Error MAE in dollars blue bars and the Mean Absolute Percentage Error MAPE orange line.</p>
+<p>Key findings:</p>
+<ul><li>Consistent MAE: The average absolute error ranges from 0.50 to 3.50 across years, with no dramatic degradation even during extreme price movements</li><li>Stable MAPE: Percentage errors remain below 10% for most years, with only 2021 showing elevated error rates during a market correction</li><li>2025 performance: Despite the unprecedented price surge, the model maintained reasonable error levels with MAE around 3.50 and MAPE near 8%</li><li>2026 improvement: Error metrics improve in 2026, suggesting the model adapted to the new price regime</li></ul>
+<p>The dual-axis visualization effectively demonstrates that while absolute errors increase with price levels expected behavior, percentage errors remain relatively stable, indicating consistent model accuracy regardless of price magnitude.</p>
+<h2>Price Distribution Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>price_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948/assets/price_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The price distribution histogram with box plot overlay reveals the dramatic shift in silver&#x27;s price regime over the analysis period. The distribution is distinctly right-skewed, with a long tail toward higher prices reflecting the explosive growth in recent years.</p>
+<p>Distribution characteristics:</p>
+<ul><li>Median: 21.30 - The &quot;typical&quot; price over the decade</li><li>Mean: 22.83 - Higher than median due to right-skew from recent price surge</li><li>Range: 11.74 to 93.82 - Demonstrating extreme price variability</li><li>Interquartile Range: Concentrated between 17-27 for most of the period</li></ul>
+<p>The box plot overlay clearly shows that recent prices 2025-2026 are statistical outliers, falling well above the upper whisker of the historical distribution. This suggests that the recent price surge represents a fundamental regime shift rather than normal market fluctuations.</p>
+<p>Implications for investors:</p>
+<ul><li>Historical price levels may no longer be relevant for valuation purposes</li><li>New trading range may establish at higher levels</li><li>Increased probability of continued volatility given the magnitude of the price movement</li></ul>
+<h2>Prediction Interval Coverage</h2>
+<div class='plot-card'><div class='plot-meta'><code>interval_coverage.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948/assets/interval_coverage.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The prediction interval coverage analysis validates the reliability of the forecast model&#x27;s confidence bounds across different market conditions. This is a critical metric for assessing whether the model&#x27;s uncertainty estimates are realistic and well-calibrated.</p>
+<p>Coverage performance:</p>
+<ul><li>Overall coverage: 96.51% - Exceeds the 95% target, indicating slightly conservative intervals</li><li>Consistency: Coverage rates remain stable across all years, ranging from 94% to 98%</li><li>2025 coverage: 95.7% - Maintained excellent coverage even during extreme price movements</li><li>No degradation: No evidence of interval quality deteriorating in volatile periods</li></ul>
+<p>The gray dashed line at 95% represents the theoretical target for prediction intervals. The model consistently meets or exceeds this target, demonstrating that the confidence bounds are well-calibrated and not overly optimistic or pessimistic.</p>
+<p>Investment implications:</p>
+<ul><li>Confidence in forecasts: The 63.85% average interval width provides realistic uncertainty estimates</li><li>Risk assessment: Investors can rely on the upper and lower bounds for risk management</li><li>Planning reliability: The model&#x27;s predictions support informed decision-making despite market uncertainty</li></ul>
+<h2>Volatility Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>volatility_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948/assets/volatility_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The 30-day rolling volatility chart reveals the dynamic nature of silver&#x27;s price movements, highlighting periods of calm and crisis throughout the analysis period. Volatility represents the standard deviation of daily returns, annualized to represent yearly risk levels.</p>
+<p>Volatility patterns:</p>
+<ul><li>Average volatility: 2.5% daily 40% annualized - Consistently high compared to other assets</li><li>2020 spike: Volatility surged to 4-5% daily during COVID market turmoil</li><li>2021-2023: Moderate volatility 2-3% daily during consolidation phase</li><li>2024-2025: Increasing volatility 2.5-3.5% daily accompanying the price surge</li><li>2026: Elevated volatility 3%+ daily suggesting continued market uncertainty</li></ul>
+<p>The purple line with area fill clearly shows that silver is a perpetually volatile asset, with no extended periods of calm stability. This characteristic makes silver attractive to traders seeking opportunities but requires robust risk management for long-term investors.</p>
+<p>Key insights:</p>
+<ul><li>Volatility often precedes major price movements early 2024 volatility spike preceded the 2025 rally</li><li>High volatility periods represent both opportunity and risk</li><li>The 30-day rolling metric smooths out daily noise while capturing regime changes</li></ul>
+<h2>Extended Forecast </h2>
+<p>Future Projections</p>
+<div class='plot-card'><div class='plot-meta'><code>extended_forecast.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9315d323e4183f54ae060b655bc13d23b5ec155b46f1bef43f23e36d25fd8948/assets/extended_forecast.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The extended forecast chart projects silver prices beyond the last historical data point January 20, 2026 through March 31, 2026, based on the model&#x27;s predictions. The blue solid line represents historical prices, while the orange dashed line shows forecasted values with the shaded area indicating the prediction interval.</p>
+<p>Forecast characteristics:</p>
+<ul><li>Trend continuation: The model projects continued strength with prices remaining elevated</li><li>Realistic uncertainty: Prediction intervals widen appropriately as forecasting horizon extends</li><li>Conservative outlook: Forecasts show potential stabilization rather than continued explosive growth</li><li>Range bound: Prices expected to trade in a 45-55 range with confidence intervals spanning 35-65</li></ul>
+<p>The forecast period represents only a 10-week window, providing short-term guidance rather than long-term projections. This approach acknowledges the inherent difficulty of forecasting precious metals prices over extended horizons, particularly after a major regime shift.</p>
+<p>Practical applications:</p>
+<ul><li>Trading strategies: Use prediction intervals to define stop-loss and take-profit levels</li><li>Portfolio allocation: Adjust exposure based on confidence in price direction</li><li>Hedging decisions: Evaluate options strategies given forecast uncertainty ranges</li></ul>
+<h2>Conclusion and Investment Implications</h2>
+<p>This comprehensive analysis of silver prices from 2016-2026 reveals a market that has undergone a fundamental transformation. The decade began with silver trading around 14 and concluded with prices near 94, representing one of the most significant precious metals rallies in modern history.</p>
+<h3>Key Takeaways</h3>
+<p>1. Regime shift confirmed: The 2025 price surge of 147.8% represents a fundamental change in silver&#x27;s market dynamics, not merely cyclical fluctuation</p>
+<p>2. Model reliability validated: The forecasting model demonstrated exceptional accuracy with 7.51% MAPE and 96.51% coverage, providing confidence for future projections</p>
+<p>3. Volatility remains elevated: Silver continues to exhibit high volatility 30.28% annualized, creating both opportunities and risks for market participants</p>
+<p>4. Forecasts support continued strength: Short-term projections suggest prices will remain elevated rather than revert to pre-2024 levels</p>
+<h3>Investment Considerations</h3>
+<p>For long-term investors:</p>
+<ul><li>Historical price targets based on pre-2024 data 15-30 are likely obsolete</li><li>Consider the new higher trading range when making allocation decisions</li><li>Use prediction intervals to assess realistic price expectations</li></ul>
+<p>For traders:</p>
+<ul><li>High volatility creates frequent opportunities but requires robust risk management</li><li>Model accuracy suggests value in using forecast ranges as reference points</li><li>Monitor prediction interval width as an indicator of uncertainty</li></ul>
+<p>Risk management priorities:</p>
+<ul><li>Silver&#x27;s 30.28% annualized volatility demands appropriate position sizing</li><li>Prediction intervals provide objective boundaries for stop-loss placement</li><li>Diversification remains critical given the asset&#x27;s volatility profile</li></ul>
+<h3>Model Limitations and Future Research</h3>
+<p>While the forecasting model demonstrated strong performance, several limitations warrant consideration:</p>
+<p>1. Short forecast horizon: Predictions extend only 10 weeks beyond historical data</p>
+<p>2. Regime transition risk: The model may not fully capture the implications of the 2025 price shift</p>
+<p>3. External factors: Macroeconomic, geopolitical, and supply-demand dynamics are not explicitly modeled</p>
+<p>4. Nonlinear dynamics: Linear time series approaches may miss threshold effects and regime changes</p>
+<p>Future research could incorporate:</p>
+<ul><li>Machine learning approaches to capture nonlinear relationships</li><li>Explicit modeling of macroeconomic variables inflation, interest rates, currency movements</li><li>Bayesian methods to better quantify uncertainty during regime transitions</li><li>Cross-validation using rolling windows to assess out-of-sample performance</li></ul>
+<h3>Final Assessment</h3>
+<p>Silver&#x27;s dramatic transformation from a 14 commodity to a 90+ asset represents one of the most significant market developments in precious metals of the past decade. The combination of strong fundamental drivers industrial demand, monetary debasement concerns, safe-haven flows and speculative momentum has created a new price paradigm.</p>
+<p>The forecasting model&#x27;s demonstrated accuracy during this transition suggests that quantitative approaches can provide valuable insights even in rapidly changing markets. However, investors should combine model outputs with fundamental analysis and risk management discipline to navigate silver&#x27;s inherently volatile nature.</p>
+<p>As we move forward, continued monitoring of prediction interval coverage, model error patterns, and volatility dynamics will be essential for assessing whether the new price regime represents a sustainable equilibrium or the precursor to further structural changes in the silver market.</p>
+<hr/>
+<p>Data Sources:</p>
+<ul><li>Historical price data: </li><li>Forecast data: </li><li>Model comparison: </li></ul>
+<p>Analysis Date:January 13, 2025</p>
+<p>Data Period:January 4, 2016 - March 31, 2026 forecast</p>
+<p>Total Observations:2,595 trading days</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

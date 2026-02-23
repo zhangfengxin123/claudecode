@@ -1,0 +1,58 @@
+Explore a match-level FIFA World Cup–style dataset spanning 50 years (1974–2022), built for EDA, storytelling dashboards, and ML experiments (win prediction, goal modeling, team performance trends).
+
+What’s inside
+
+Time range: 1974 to 2022
+
+Rows: 832 matches
+
+Granularity: One row per match
+
+Stages included: Group Stage, Round of 16, Quarter-finals, Semi-finals, Third Place, Final
+
+Columns
+
+year — Tournament year
+
+date — Match date (YYYY-MM-DD)
+
+stage — Competition round/stage
+
+home_team — Home team name
+
+away_team — Away team name
+
+home_goals — Goals scored by home team
+
+away_goals — Goals scored by away team
+
+winner — Match winner (team name or “Draw”)
+
+match_id — Unique match identifier
+
+Best use cases
+
+If you’re searching for:
+
+“World Cup match results dataset 1974–2022”
+
+“FIFA World Cup EDA dataset with goals and winners”
+
+“predict World Cup winners using match data”
+
+“football analytics dataset for classification and forecasting”
+…this dataset is designed to be an easy, clean starting point.
+
+Ideas for analysis & ML
+
+EDA: goals per match over time, stage difficulty, draw rates, top teams by wins/goals
+
+Feature engineering: goal difference, rolling form, stage encoding, head-to-head counts
+
+Models: win/draw/loss classification, Poisson goal models, tournament simulation
+
+Visuals: stage-wise goal distributions, heatmaps of team matchups, trend lines by era
+
+Important note (data authenticity)
+
+This file is formatted like historical World Cup match data, but some team-year combinations may not match official FIFA tournament participation. If you need official, fully verified historical results, treat this dataset as a modeling/visualization scaffold and cross-check against authoritative sources before publishing factual claims.

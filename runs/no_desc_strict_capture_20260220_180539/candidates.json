@@ -1,0 +1,427 @@
+{
+  "generated_at": "2026-02-21T02:05:58",
+  "meta": {
+    "target": 100,
+    "reserve": 260,
+    "recent_limit": 500,
+    "existing_unique_case_ids": 252,
+    "recent_new_pool": 252,
+    "probe_ok": 103,
+    "probe_fail": 149,
+    "picked": 103
+  },
+  "results": [
+    {
+      "case_id": "44ce5e42f9dbe80e94bb1145745ac91ed424d1b41cfa0ef6e40c05e29d6184de",
+      "title": "新注册:首次交易:日活用户三者留存对比"
+    },
+    {
+      "case_id": "7a00de4c7f6a02c774805007dfb044724493500b14e9dd7a04e16c9a342ec90b",
+      "title": "2512"
+    },
+    {
+      "case_id": "661c66d944300268ec276f0d02e1a4e16985191546fabca8526987e9a0458975",
+      "title": "2601"
+    },
+    {
+      "case_id": "0766d3501bc0af0bd378714446827ad824c8238e4a1c346f4f3add79a7dadf3b",
+      "title": "faang_stock_prices"
+    },
+    {
+      "case_id": "337781a75bbcdb2b1b01108f3bac1739278f94b038a14b01bcc40589b5143988",
+      "title": "daily_gym_attendance_workout_data"
+    },
+    {
+      "case_id": "918fb97954af073baf4ebc8c803eae2c2b085c452d617f4028578871f0cbc4d2",
+      "title": "goalscorers"
+    },
+    {
+      "case_id": "cf35921743b2665b5433d99f0b1ae55ce94fa0b88accb428be86bc6d6aba75f3",
+      "title": "Proxy_Statement_2026"
+    },
+    {
+      "case_id": "4074c8503e18096b8bd8b76d70c4379b8085ad0c651640e75143e5667e384f23",
+      "title": "阿里巴巴2025财报"
+    },
+    {
+      "case_id": "ed816373eec8589e6f39f1c3dec5db2e8d6ad9bffa7932a9b86113532c05136f",
+      "title": "Apple 2026 Analysis"
+    },
+    {
+      "case_id": "7f581ea1da6b03942099ac8656ea4d8aac8f37412909115e7c21cd55e3c2e80f",
+      "title": "财报测试"
+    },
+    {
+      "case_id": "f59dbd1ad7f401c8a145ca8aa26195555541bc4c9394b85b23cdce2392635843",
+      "title": "Interest Rate Uncertainty and Unemployment"
+    },
+    {
+      "case_id": "88275b0dd7669501cefd0689dc0553daf876d2fdabf0f2ea53299db84acb3a4e",
+      "title": "event-notification-rpt-lastmonth"
+    },
+    {
+      "case_id": "2f16fbfd48c6980241aa13b754863b498799a4dbeb4d2ae9b9d9368e110b6560",
+      "title": "1_调和分析及相关领域中的公开问题"
+    },
+    {
+      "case_id": "43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b",
+      "title": "流量数据1"
+    },
+    {
+      "case_id": "aaaefe6f4297e3532a8566e69a92d566109fdab872654ea8db68a9f9a59214b2",
+      "title": "流量数据1"
+    },
+    {
+      "case_id": "353771d011bebc12667802c7b2d9a625728b88a5080821bde492bdba14b4c6cc",
+      "title": "Visa Financial Statement"
+    },
+    {
+      "case_id": "1c5a1c3a794d75c88c76140da044dee4394f9c7967174623bd8617196581a592",
+      "title": "MAXS Meta-Adaptive Exploration with LLM Agents"
+    },
+    {
+      "case_id": "84628b6f991db56f5c008aea9b57cc5fe9e88b84511d855484fb7f2ef10e8d79",
+      "title": "multipleChoiceResponses"
+    },
+    {
+      "case_id": "259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d",
+      "title": "Visa Q1 Analysis"
+    },
+    {
+      "case_id": "08a672c08f41d0b1c103871f475a90c1f746355640abbcb340dc2e70fe1fb0fa",
+      "title": "Visa Financial Analysis Q1"
+    },
+    {
+      "case_id": "1684558c4d31d027b0cd61d17d5f9367d29890082de2bb004e939e40f2c4ce2f",
+      "title": "PPI Analysis"
+    },
+    {
+      "case_id": "1cdb52aa1f0dd1f33aa743eae7528ffb05a80c341921cc2ac389682a86027d4f",
+      "title": "Apple 2026 Q1 Financial Statement"
+    },
+    {
+      "case_id": "e104b387fd82759d21e6a647361e55cc5231793ca16fb4f4a0f0be2552a02b69",
+      "title": "BITCOIN HISTORICAL DATA"
+    },
+    {
+      "case_id": "06ccf0225754b9ba7105c674e93f8a13831ea446f4e0f7a6907470179606bbc1",
+      "title": "2026 gold price predict"
+    },
+    {
+      "case_id": "3f809c829a959fb1b3fb9e6441d49a7e7a7c7d9c1e1a63b5f6955f02d0d2d966",
+      "title": "123"
+    },
+    {
+      "case_id": "0791b6b6f9b20abb2ba627bbf3a02e33d5765da8898b2e577688cffe57f71817",
+      "title": "spline_new"
+    },
+    {
+      "case_id": "66658823e9c3ac49c2b485cb16ecc3094b1c7d6b60099f36392074bca34b25a2",
+      "title": "野村中国互联网应用追踪"
+    },
+    {
+      "case_id": "ec0a067dab1bee4c802957e1d5359939de224cb3eab7d1a629dbf74738eae949",
+      "title": "new_spline"
+    },
+    {
+      "case_id": "7bb90b94e9fe6d99fe4d2e05f069f4fda6b1ad7d7d2c182567e3bdea732b4308",
+      "title": "spline"
+    },
+    {
+      "case_id": "ca6daed389778689619f0497ab31ef48a72c0c679f3586f6e9c3e4b2c0508aac",
+      "title": "roll"
+    },
+    {
+      "case_id": "de2c6f2fd2e61093c206148436c3e1da9dc42ae7c63f7d17630320c85260833a",
+      "title": "gam"
+    },
+    {
+      "case_id": "d2cb2c615ce4fcb167063a9e4285ecc8ff60c65769bcc836b333d669ce617a3d",
+      "title": "rolling"
+    },
+    {
+      "case_id": "e47fcbfe4a48e1c3374c80a2d9716efd166d6b1e9af796ebe5af28b8a63e9dd4",
+      "title": "consinor"
+    },
+    {
+      "case_id": "3e5b8b524e7cd8750b03865bb17a1e61f5c2b18c1ef89f8babea8c0891d1425e",
+      "title": "spline"
+    },
+    {
+      "case_id": "70e94dd2b5d8f555416e49b4338476897920f848a25e5f138994e7ae1cc0e586",
+      "title": "世纪华通财报"
+    },
+    {
+      "case_id": "4254d2fd552b6554eba9de07164cbfa1b83b82ad98dcb6fd8a722ff7b24bb885",
+      "title": "savgol对比"
+    },
+    {
+      "case_id": "21bd9ee9a7c1c78dba47a3aa0853a7823bbd4dfe6e14a9314c8a10287d9e7abe",
+      "title": "test4"
+    },
+    {
+      "case_id": "484445fdd29b30c36ea4fa9321f30b92c133172ff3d617da4d0c0b648150ba56",
+      "title": "polymarket all markets"
+    },
+    {
+      "case_id": "f3b5d8e7f38d88e992e8f5988d59a1045d75f1b8dde7830281b3fd9db4b7be40",
+      "title": "长期多资产配置"
+    },
+    {
+      "case_id": "6c7c912356f2ca15e18d27fe1c87d4e05d1593bd8cbf9b48e14a31004d39b619",
+      "title": "ark"
+    },
+    {
+      "case_id": "02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13",
+      "title": "prices_monthly"
+    },
+    {
+      "case_id": "e442ac5dc36afa72da06e4472cda75538c079b8f17525a27be4772288a7da94b",
+      "title": "test3"
+    },
+    {
+      "case_id": "62eba17af735d00022fa10c58e6907a06a6aa495ad1f73c3d1704b451d1aa7e9",
+      "title": "谷歌季度财报分析"
+    },
+    {
+      "case_id": "424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be",
+      "title": "腾讯2024年报"
+    },
+    {
+      "case_id": "f2f58395168b8a02d32954e3356fa10db24d1fbc6a0812ed2bd3e5411f56b486",
+      "title": "提供了带有评审分数和选手信息的数据"
+    },
+    {
+      "case_id": "bcb11706ebd81a1210d296b44516c3d44460deb81d1deb6f692420061c4fdc24",
+      "title": "test1"
+    },
+    {
+      "case_id": "b4043a2026303f4a9dad5eeb4f0b77b2614576dcb805d7fd60411a552eafeed6",
+      "title": "test"
+    },
+    {
+      "case_id": "f2493386ae59f599a2534370f5cc2227aa61099f6280d9a9991d0183060d88e8",
+      "title": "WDC 2026 Q2"
+    },
+    {
+      "case_id": "e5999b0fd345c548fe44c4ab3dd27ae40a665419c8d59acf8749f45721ab866f",
+      "title": "dwts"
+    },
+    {
+      "case_id": "569887f4a0fe6b57484c91f0bfb9dc0c6e4064f2ade2e3dba31f54055b9bbc06",
+      "title": "problem_C"
+    },
+    {
+      "case_id": "07e17dbcabce93ff3c6c7d87a118bda9d3e72f1b8837c4736a2ad64eba86788b",
+      "title": "c_excal and pdf"
+    },
+    {
+      "case_id": "427e24654d2646e7867e7e7e3b25db58a981f8b870cf99bfcac35fe4e932b70d",
+      "title": "yc"
+    },
+    {
+      "case_id": "99a0ce3d24879b32500b47487c52da77f54e5120ddf4452055051d766954ce87",
+      "title": "Carrier contacts"
+    },
+    {
+      "case_id": "abd5dee0a4a21a7c0286090899907b46c8627265a71fba1557accd3d6395fc98",
+      "title": "Chemicals"
+    },
+    {
+      "case_id": "ed932dd7664ede4a6fb5a281cdebd99eccd0ac3cebf572f25ebea914d47f4219",
+      "title": "LastFM Contextual Network Analysis"
+    },
+    {
+      "case_id": "246925ab7ad3c933b0563f82a94e1c16931e3af3aa7175261bbb00fe24c0f4cf",
+      "title": "票据类别"
+    },
+    {
+      "case_id": "34ccb00c45b7bf29fe466e7caff5832b26ba6377724b20d93b9affb4d3975eab",
+      "title": "Copy of Project"
+    },
+    {
+      "case_id": "bc61dfcd9ea0bf844cbafd6a8e40766e586459b4f4ad8ea95690b3bb4f52ae38",
+      "title": "log analysis"
+    },
+    {
+      "case_id": "9e684cdb0bbdd62c00f2740702540f50efcab0162f7496fe631fc1f22e921a7f",
+      "title": "BRK"
+    },
+    {
+      "case_id": "862b9c5a9a70a4e6782557bdc4ce2a8bdba1273ca952a7aa76722e94610ff12a",
+      "title": "ProjectOne"
+    },
+    {
+      "case_id": "38d9a79aa1efee4afa1685c3920f0d6dcea636a291847c467c5254619f9725d4",
+      "title": "测试测试"
+    },
+    {
+      "case_id": "5ab6e34b8d7c7ed924f228b6e9f9dec520ac03ec477ca22179b080a7d607c5f2",
+      "title": "Copy of Project"
+    },
+    {
+      "case_id": "1c7c9204a51c0512e3882df293859759173b0a5ee388762fd17a0713b3af69f3",
+      "title": "2025 CAP review"
+    },
+    {
+      "case_id": "0f3878793501e60159219a5dbbc3c051d610f1f8fec7f0c13cfec280f5e4c112",
+      "title": "TEST3"
+    },
+    {
+      "case_id": "db87a39abaa93767a62e729302e2a39c5f2daa9d9a4c58d0ade8f46bb2beabb1",
+      "title": "mgs gold"
+    },
+    {
+      "case_id": "be1f880727139a6a85b680e06253e3c347e70f2bbdd71f7fe478014a5979e41a",
+      "title": "test2"
+    },
+    {
+      "case_id": "2fa97e37da4b0db824ff6806698b2d056cbcf0dd4c15093f6cf1f5c1b254bb4e",
+      "title": "test"
+    },
+    {
+      "case_id": "e5626d7e342849e89d2ab60846712443814aa3c86235c9af352f6bf9503a6884",
+      "title": "汾酒"
+    },
+    {
+      "case_id": "ab2ee0df32e9dde305e613185d92886b7d3c4f35fad7050436bc0fd6d4810535",
+      "title": "Triton Benchmark"
+    },
+    {
+      "case_id": "3bf4294e2dbd12bc7157f23960e7502f61019a813ed0ea3faaf748c035001fdc",
+      "title": "zhgc"
+    },
+    {
+      "case_id": "ec112465834df1dbfda2955cab461b2a0aab1d6137f9ad29e4fc2dc4486faa1b",
+      "title": "茅台q3"
+    },
+    {
+      "case_id": "5f6cb94e8ae0bc2f81237c3330bfc2459d7fd6b5c544b44bafd61966374ddcf0",
+      "title": "tesla q4"
+    },
+    {
+      "case_id": "159794e47b12d8acc9be5edbabf305b3a60fb5826dbfb9155f55a40acd5b3586",
+      "title": "te"
+    },
+    {
+      "case_id": "3250ebe5f778da40493b3476c710be7d558dcaf5b824bc6cc857e6e0cc63c738",
+      "title": "Copy of Project"
+    },
+    {
+      "case_id": "74a087560ba03ad19ce0a060878bf69ed602fcf4581c2d59942dd4fdd8c09f49",
+      "title": "PG Analysis"
+    },
+    {
+      "case_id": "16bfcbc52c9614139bbeff5aa3bfbdfc7ccb0f1ccd908dcdd2bd247dd1ba757e",
+      "title": "new"
+    },
+    {
+      "case_id": "cb56a06b4417fe8d97439f3c07b5028fed0eb7b46b7ab7c67238fa7b21453b2d",
+      "title": "Intel 2025 Final Year Analysis"
+    },
+    {
+      "case_id": "78a2cf12f4b237f34098b81687301b65c446f8dd904f0d5129618540b62857fa",
+      "title": "Boeing Company Analysis"
+    },
+    {
+      "case_id": "8d60963a01ab677aa2c76e8196abb28e8afc7e630ac4ccceaf54f25f38b4e512",
+      "title": "UnitedHealth Group 2025"
+    },
+    {
+      "case_id": "424a95ddd3e00a47218d864eb46c7d1f8f100ba076124e4191689b777e42343b",
+      "title": "RTA Financial Report Analysis"
+    },
+    {
+      "case_id": "3ad7b479bebd9d03f8b5cb194c0544e93a0ad4609cc77c74cd9b09f4302bc2dd",
+      "title": "Wine Data Set"
+    },
+    {
+      "case_id": "79106e044a65400e616761c5808d688374f0369f4ce2d008f64c7e05ca3c18a8",
+      "title": "Gold and Silver Price analysis"
+    },
+    {
+      "case_id": "eed503501f34b4d7b2544ba07cb6ea268d324896d7b242f19d3677060897d723",
+      "title": "Apple stock price analysis"
+    },
+    {
+      "case_id": "4bc86743fa91ff2b649da112d271f5c5e624c456aa820f9828bebaeb7c4a52b8",
+      "title": "analytics"
+    },
+    {
+      "case_id": "700c68186f352faf6013d91b35cf570df44631714ccd19da85e5211d89d7d741",
+      "title": "analytics"
+    },
+    {
+      "case_id": "a2069f9aa36290c69ad8a88f53cae6199f4090e987d25cefeac8a38d69d6dbf1",
+      "title": "registerInBeiJingTransportUniversity"
+    },
+    {
+      "case_id": "588f9b5616c57c2fdbde853cd8fb8b3beeeda81259a09ab2834ffce48018398f",
+      "title": "Interest rate and Nasdaq"
+    },
+    {
+      "case_id": "e8e186ceece682b9307ff1c9b1c0bcfcc94595fa29b14ae02a35a68a64fe7775",
+      "title": "Morgan Stanley Gold Price"
+    },
+    {
+      "case_id": "6838c51a1be3ea104838e1254fee897b302aff7d496df70d0dbb38f3b6f8ade7",
+      "title": "city"
+    },
+    {
+      "case_id": "85be59ddb326bc1af543f94c35a9b87b04c663aab24e707019c30f27624e6a4e",
+      "title": "Test"
+    },
+    {
+      "case_id": "6ee2bfcd88b93fb255abc922fa1c4f6038e5ffe982316f31e3441e7370f39a9e",
+      "title": "olympic test"
+    },
+    {
+      "case_id": "b79ad83fb57cfb034cb62608034793af260bb61c1c8e8d11c628c24592b5bcb9",
+      "title": "test"
+    },
+    {
+      "case_id": "f7e5608f205173b9e19937000e344e7fbdc438a47ad5c9e86661c95925e4c273",
+      "title": "exportData"
+    },
+    {
+      "case_id": "02bdbe02173aa5a4b87ea531f586f6afe63e899db14bd40cdd564637e9512479",
+      "title": "跨境json"
+    },
+    {
+      "case_id": "825432ae77bbd1e879ac8e954f6c1d59ebcde63ddf6bdce192e87fbfe18e2e89",
+      "title": "跨境电商测试"
+    },
+    {
+      "case_id": "a833bbfa2423b447dfacc7c7963e661e15a83504afb4e94ce93a08325b1438c9",
+      "title": "AML"
+    },
+    {
+      "case_id": "f4fec70c04afa64b3bcf41a2026e1f55fc7e6d937f1bd92accdc1615e23ba54b",
+      "title": "test"
+    },
+    {
+      "case_id": "5bda5f47fcd7fdc68bb2b81fb74a7bf3b5fec212052fe046b51b2fb340bef831",
+      "title": "House Price Index Analysis"
+    },
+    {
+      "case_id": "d92da4da145a57ced46b36cf490555d6fa723e5b5ccb7ba6b2934af5faf4c4d9",
+      "title": "ondo xstocks币种信息分析"
+    },
+    {
+      "case_id": "97fd8de9880ee09fa7fd50a2c0b24bca6f05f4a9f77ab42d64f4af419dbcccfd",
+      "title": "hk imo prelim"
+    },
+    {
+      "case_id": "2e3dca41e6c3c2addd4dc5fa61747a1d463b6545a9e9c4b3947d92efae5284f7",
+      "title": "hxc"
+    },
+    {
+      "case_id": "ade2768cea18abbd305543f0b629c7a096bb680ad280df685e254eb559d99252",
+      "title": "Shopping"
+    },
+    {
+      "case_id": "7dbcd5ca648b7773876d259a5e744a8d0fc8505c0582204a182b79aa4710be42",
+      "title": "delhi_ncr_aqi_dataset"
+    }
+  ]
+}

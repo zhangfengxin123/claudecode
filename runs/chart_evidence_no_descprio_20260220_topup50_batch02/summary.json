@@ -1,0 +1,282 @@
+{
+  "generated_at": "2026-02-20T14:29:23",
+  "sample_size": 25,
+  "rows": [
+    {
+      "idx": 26,
+      "case_id": "cb9c2152de12195c8a19d9dc25c589928dce64f7ff0833fc8f4f92e97096b773",
+      "title": "中国房地产",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_026_cb9c2152de12.html",
+      "status": "ok"
+    },
+    {
+      "idx": 27,
+      "case_id": "38e382f569c32044b05b3279135a33fa011b3f5a65e1a309048fd18e16d03d82",
+      "title": "NVIDIA Daily Stock Prices Dataset analysis",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_027_38e382f569c3.html",
+      "status": "ok"
+    },
+    {
+      "idx": 28,
+      "case_id": "910532ced6849590e4d4258527b1c3b389df2886f0210848f0b317b6dcc27af1",
+      "title": "global_ads_performance_dataset",
+      "chart_count": 15,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_028_910532ced684.html",
+      "status": "ok"
+    },
+    {
+      "idx": 29,
+      "case_id": "3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355",
+      "title": "Employee_Attrition_DataSet",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_029_3e16fac8e555.html",
+      "status": "ok"
+    },
+    {
+      "idx": 30,
+      "case_id": "f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9",
+      "title": "NVDA_yfinance_clean",
+      "chart_count": 9,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_030_f8ef70d937df.html",
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "case_id": "a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308",
+      "title": "top 5 big tech stock",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_031_a6c47e63cb6f.html",
+      "status": "ok"
+    },
+    {
+      "idx": 32,
+      "case_id": "69dcf9e9b0d75d8216260c0fb75afdca0be48c5a59cc4d4f0d59b81a6673de98",
+      "title": "apple fiscal report",
+      "chart_count": 10,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_032_69dcf9e9b0d7.html",
+      "status": "ok"
+    },
+    {
+      "idx": 33,
+      "case_id": "b3de23a1f41f737b94c95496228f9b2221e453700cf8946a818a9eaf5cac9939",
+      "title": "tb",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_033_b3de23a1f41f.html",
+      "status": "ok"
+    },
+    {
+      "idx": 34,
+      "case_id": "6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6",
+      "title": "startup_company_one_line_pitches",
+      "chart_count": 14,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_034_6ea93a07643c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 35,
+      "case_id": "c2a922dae78822e5cccf29ade8eaa62e4050dc8c80b1dbd9ced8b61446203b67",
+      "title": "Retail Fashion Boutique Data Sales Analytics 2025",
+      "chart_count": 13,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_035_c2a922dae788.html",
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "case_id": "26031cf7f3c58ffb4d9d99d4d1d79242d3d5b35c9b1d2e0924984ae5f7e1fef2",
+      "title": "meesho_supplier_returns_data",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_036_26031cf7f3c5.html",
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "case_id": "0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667",
+      "title": "Global AI Job Market Trends Salary Insights 2025",
+      "chart_count": 16,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_037_0492cdf6ce80.html",
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "case_id": "4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f",
+      "title": "dataset_fashion_store_customers",
+      "chart_count": 8,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_038_4688c52e4bb3.html",
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "case_id": "0a238701da01405a5482a2ab81470dab490cc81fd559ca5311e5d82ff7b3f69c",
+      "title": "黄金分析",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_039_0a238701da01.html",
+      "status": "ok"
+    },
+    {
+      "idx": 40,
+      "case_id": "78fe19583ebcc3c5e0caf680b1ac52793b5520a65ce81aa218d358b2f1caf834",
+      "title": "Womens Clothing E-Commerce Reviews",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_040_78fe19583ebc.html",
+      "status": "ok"
+    },
+    {
+      "idx": 41,
+      "case_id": "790f2a3d331d14773e4f28ed3fdd17f8f55a364ddc66c351d6d8dccf029a0dd0",
+      "title": "September Quarter 2025 Results",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_041_790f2a3d331d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 42,
+      "case_id": "3b3e6c09058adadf559d916783c720a95979c22726817153eb9cf7bacdb65208",
+      "title": "aemo",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_042_3b3e6c09058a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 43,
+      "case_id": "0c139f54bc6bf321d10d34f8ec6305c7bc03b55b17be3cdfdc1872d5bc7992ea",
+      "title": "aemo",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_043_0c139f54bc6b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 44,
+      "case_id": "5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5",
+      "title": "China Population And Education",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_044_5043a58a725b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 45,
+      "case_id": "0adfae3e9a0d57b2ad395bebdd46a6899252fe2f695c561ed39c32531b8a49ee",
+      "title": "Bitcoin and Interest Rate",
+      "chart_count": 5,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_045_0adfae3e9a0d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "case_id": "68b573a79555ba1f58ac68649b4d7dcb195f2aac7144f6b3f7f40f5f4c558c71",
+      "title": "Bitcoin and interest rate",
+      "chart_count": 5,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_046_68b573a79555.html",
+      "status": "ok"
+    },
+    {
+      "idx": 47,
+      "case_id": "48ac71f1f6b30f40390ff783568b713be6bbc0589589bdfbcc20d467bdc89366",
+      "title": "Ten",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "",
+      "status": "failed",
+      "error": "required input file download failed: case=48ac71f1f6b30f40390ff783568b713be6bbc0589589bdfbcc20d467bdc89366 file=The Valuation of Financial Companies Tools and Techniques to Measure the Value of Banks, Insurance Companies and Other... (Mario Massari, Gianfranco Gianfrate etc.) (Z-Library).pdf http=400"
+    },
+    {
+      "idx": 48,
+      "case_id": "4330d552a968b997f93ad0786f2a8beeeedc6e85b2aa3e3cf926ea1d5f898eae",
+      "title": "101 Formulaic Alphas",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_048_4330d552a968.html",
+      "status": "ok"
+    },
+    {
+      "idx": 49,
+      "case_id": "9c4310160dd21b6049ba4ac4797a958e09b4f31e705ed91bb5e5add04e78795f",
+      "title": "ai_skepticism_dataset",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_049_9c4310160dd2.html",
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "case_id": "7a50e4c756ee214b6061a4fcaadea2a73848f07b9d0320c1bdfc25c175b388ea",
+      "title": "Raw国家管网集团工银瑞信组合_20241231-20250331估值",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_050_7a50e4c756ee.html",
+      "status": "ok"
+    }
+  ]
+}

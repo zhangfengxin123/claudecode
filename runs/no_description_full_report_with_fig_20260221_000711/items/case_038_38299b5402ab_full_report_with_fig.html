@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：公司价值评估中财务模型的构建-中信证券培训</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：公司价值评估中财务模型的构建-中信证券培训</h1>
+    <p class='sub'>来源: /view/38299b5402ab8c8271c057611c9c1f033ebd2ad5036a00c65f7d2042e41793db ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;公司价值评估与财务模型构建深度分析&quot;
+description: &quot;基于中信证券培训资料的全面估值方法解析，涵盖现金流折现法、比较公司法、行业分析框架及财务模型建立流程&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-04&quot;
+</pre></details>
+<h1>公司价值评估与财务模型构建深度分析</h1>
+<h2>执行摘要</h2>
+<p>本报告基于中信证券研究部的内部培训资料，全面解析了公司价值评估的理论框架与实践方法。报告深入探讨了两种主流估值方法——现金流折现法和比较公司法的对比分析，并系统性地阐述了从行业分析到财务建模再到价值评估的完整流程。通过数据可视化和结构化分析，本报告为投资决策、并购重组、资本筹集等金融活动提供了实用的方法论指导。</p>
+<p>核心发现：</p>
+<ul><li>现金流折现法在准确性和重要性方面表现突出，但复杂性较高</li><li>比较公司法具有更强的实用性和便捷性，适合成熟市场环境</li><li>估值应采用区间估计而非点估计，以反映不确定性</li><li>价值与价格的相对关系是投资决策的最终依据</li></ul>
+<hr/>
+<h2>价值评估的必要性与应用场景</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>为什么价值评估对投资决策至关重要？</li><li>财务模型在不同金融交易中有哪些具体应用？</li></ul></details>
+<h3>价值评估的四大意义</h3>
+<p>价值评估不仅仅是财务工具，更是现代金融市场运行的基石。根据中信证券研究部的阐述，价值评估的必要性体现在四个维度：</p>
+<p>1. 测定公司资产价值的手段</p>
+<p>    量化企业真实价值</p>
+<p>    为资产定价提供客观依据</p>
+<p>    避免主观判断的偏差</p>
+<p>2. 投资决策的基础</p>
+<p>    确立买入/卖出的价格区间</p>
+<p>    评估投资项目的风险收益比</p>
+<p>    为资产配置提供数据支持</p>
+<p>3. 经济结构调整的条件</p>
+<p>    促进资源向高效益领域流动</p>
+<p>    支持产业升级和转型</p>
+<p>    优化国民经济整体布局</p>
+<p>4. 优化资源配置的导向</p>
+<p>    引导资本流向最有价值的企业</p>
+<p>    提高市场配置效率</p>
+<p>    促进良性竞争环境形成</p>
+<h3>财务模型的核心应用场景</h3>
+<p>财务模型与公司估值在实际金融活动中扮演着关键角色，主要应用于以下场景：</p>
+<div class='plot-card'><div class='plot-meta'><code>valuation_process.json</code></div><div id='plot-fig_1_valuation_process_json' class='plot' data-fig-key='fig_1_valuation_process_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38299b5402ab8c8271c057611c9c1f033ebd2ad5036a00c65f7d2042e41793db/assets/valuation_process.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>1. 筹集资金 Capital Raising</p>
+<ul><li>IPO定价：确定合理的发行价格区间</li><li>增发新股：评估增发对现有股东价值的影响</li><li>债务融资：确定债券发行利率和规模</li></ul>
+<p>2. 收购合并 Mergers &amp; Acquisitions</p>
+<ul><li>目标公司估值：确定合理的收购价格</li><li>协同效应评估：量化并购带来的价值增值</li><li>交易结构设计：优化支付方式和对赌安排</li></ul>
+<p>3. 公司重组 Corporate Restructuring</p>
+<ul><li>业务剥离：评估被剥离资产的价值</li><li>资产置换：确定置换比例和交易条件</li><li>股份回购：判断回购对剩余股东价值的影响</li></ul>
+<p>4. 出售资产或业务 Divestiture</p>
+<ul><li>资产定价：确定合理的出售价格</li><li>买方筛选：评估潜在买方的出价合理性</li><li>时机选择：判断最佳出售时机</li></ul>
+<hr/>
+<h2>估值方法的深度对比分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>现金流折现法和比较公司法各有什么优缺点？</li><li>在不同市场环境下应如何选择合适的估值方法？</li><li>两种估值方法的适用场景有哪些差异？</li></ul></details>
+<h3>估值方法的理论基础</h3>
+<p>公司估值主要分为两大类方法：现金流折现法和比较公司法。这两种方法基于不同的理论假设，适用于不同的市场环境和企业特征。</p>
+<p>现金流折现法的核心思想：</p>
+<p>企业的价值等于其未来能产生的所有现金流按照风险调整后的贴现率进行折现的现值总和。这一方法建立在价值分析和管理的基础上，反映了企业的整体未来盈利能力。</p>
+<p>比较公司法的核心理念：</p>
+<p>在有效的产品市场和资本市场中，可比公司的市场价格反映了市场对其价值的判断，因此可以通过对比分析来评估目标公司的价值。</p>
+<h3>多维度对比分析</h3>
+<p>我们从四个关键维度对两种方法进行量化对比：</p>
+<div class='plot-card'><div class='plot-meta'><code>valuation_methods_radar.json</code></div><div id='plot-fig_2_valuation_methods_radar_json' class='plot' data-fig-key='fig_2_valuation_methods_radar_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38299b5402ab8c8271c057611c9c1f033ebd2ad5036a00c65f7d2042e41793db/assets/valuation_methods_radar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h4>1. 重要性 </h4>
+<p>Importance</p>
+<ul><li>现金流折现法 9/10：作为理论最严谨的估值方法，重要性评分最高。它能够深入揭示企业价值的本质来源——未来现金流创造能力，是专业投资机构的首选方法。</li><li>比较公司法 8/10：作为市场化的估值方法，在投资银行和并购交易中广泛应用，特别是作为估值合理性验证的重要工具。</li></ul>
+<h4>2. 实用性 </h4>
+<p>Usability</p>
+<ul><li>比较公司法 9/10：实用性最强。只需要找到合适的可比公司和相关的价格倍数，可以快速得出估值结果，特别适合交易时间窗口短的情况。</li><li>现金流折现法 7/10：实用性相对较低。需要构建完整的财务模型，对未来多年进行详细预测，对分析员的专业要求较高。</li></ul>
+<h4>3. 准确性 </h4>
+<p>Accuracy</p>
+<ul><li>现金流折现法 8/10：在正确预测的前提下，能够得到最接近企业内在价值的估值结果。但准确性高度依赖对未来预测的准确性。</li><li>比较公司法 7/10：准确性受制于市场有效性和可比公司的选择。在市场定价合理时准确性较高，但在市场泡沫或恐慌时期可能偏离较大。</li></ul>
+<h4>4. 复杂性 </h4>
+<p>Complexity</p>
+<ul><li>现金流折现法 9/10：复杂性最高。需要深入的财务建模能力，对行业趋势、公司战略、竞争环境有深入理解，并且涉及大量的主观判断。</li><li>比较公司法 5/10：复杂性较低。主要是寻找可比公司和选择适当的估值倍数，技术门槛相对较低。</li></ul>
+<h3>详细对比表格</h3>
+<div class='table-wrap'><table><thead><tr><th>评估维度</th><th>现金流折现法</th><th>比较公司法</th></tr></thead><tbody><tr><td>假设前提</td><td>企业的价值是企业能产生未来收益的贴现值</td><td>产品市场和资本市场是有效的</td></tr><tr><td>使用方法</td><td>未来收益流量按照风险调整为贴现率贴现</td><td>市盈率、价格-账面价值比率、价格-销售收入比率等</td></tr><tr><td>数据来源</td><td>内部经营数据、会计数据</td><td>大量可比企业和可比数据</td></tr><tr><td>评估结果</td><td>内在价值</td><td>市场价值</td></tr><tr><td>优点</td><td>建立在价值分析和管理的基础上，反映企业整体未来盈利能力</td><td>方便直观，在成熟市场中比较有效，节省时间</td></tr><tr><td>缺点</td><td>主观性强，评估的正确性取决于对企业未来的预测能力</td><td>参考系选择和市场价格波动会影响准确性</td></tr><tr><td>适用场景</td><td>稳定现金流的成熟企业、战略性投资、长期估值决策</td><td>上市公司估值、并购交易定价、快速估值需求</td></tr><tr><td>所需时间</td><td>长（数周到数月）</td><td>短（数天到数周）</td></tr><tr><td>专业要求</td><td>高（财务建模、行业分析、战略分析）</td><td>中（市场数据收集、比较分析）</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>valuation_methods_bar.json</code></div><div id='plot-fig_3_valuation_methods_bar_json' class='plot' data-fig-key='fig_3_valuation_methods_bar_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38299b5402ab8c8271c057611c9c1f033ebd2ad5036a00c65f7d2042e41793db/assets/valuation_methods_bar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>方法选择的实践指导</h3>
+<p>选择现金流折现法的情形：</p>
+<p>1. 企业有稳定且可预测的现金流</p>
+<p>2. 投资决策具有长期战略性</p>
+<p>3. 需要评估企业的内在价值而非市场价格</p>
+<p>4. 行业缺乏足够的可比公司</p>
+<p>5. 市场定价存在明显偏差</p>
+<p>选择比较公司法的情形：</p>
+<p>1. 交易时间窗口有限，需要快速估值</p>
+<p>2. 行业内有大量可比上市公司</p>
+<p>3. 市场定价相对有效</p>
+<p>4. 估值结果需要被市场接受和理解</p>
+<p>5. 作为现金流折现法的验证和补充</p>
+<hr/>
+<h2>现金流折现法的实施框架</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如何构建完整的现金流折现模型？</li><li>财务模型建立的关键步骤有哪些？</li><li>如何确保财务模型的正确性？</li></ul></details>
+<h3>现金流折现的三步走战略</h3>
+<p>现金流折现法的实施遵循一个系统性的三步流程，每一步都建立在上一步的基础上，形成严密的逻辑链条。</p>
+<h3>第一步：行业分析——确定估值的外部环境</h3>
+<p>行业分析的核心目标：</p>
+<ul><li>评估行业的增长前景和盈利水平</li><li>识别行业成功的关键要素 Key Success Factors</li><li>理解行业竞争格局和演化趋势</li></ul>
+<p>行业分析的五个维度：</p>
+<p>1. 行业描述</p>
+<p>    行业范围和边界界定</p>
+<p>    主要客户类型分析</p>
+<p>    主要厂商和产品分布</p>
+<p>    主要原材料供应来源</p>
+<p>    主要供应商议价能力</p>
+<p>    主要技术特点和创新路径</p>
+<p>2. 行业环境分析</p>
+<p>    科技进步对行业的冲击</p>
+<p>    政府监管政策的影响</p>
+<p>    社会进步和消费升级</p>
+<p>    人口结构变化的长期影响</p>
+<p>    国外竞争者进入的可能性</p>
+<p>3. 关键成功因素识别</p>
+<p>    确定行业内企业取得成功必须具备的核心能力</p>
+<p>    通常包括3-5个决定性要素</p>
+<p>    例如：品牌影响力、渠道网络、研发能力、成本控制能力</p>
+<p>4. 竞争对手分析</p>
+<p>    竞争对手的竞争策略类型（成本领先/差别竞争/专注经营）</p>
+<p>    营销策略组合（产品、价格、渠道、宣传）</p>
+<p>    市场地位（销售额、市场份额、利润水平）</p>
+<p>    经营目标（长期/短期，财务/策略）</p>
+<p>    优势劣势评估</p>
+<p>    反应模式预判</p>
+<p>5. 策略性竞争集团划分</p>
+<p>    将业内公司按照产品特点、目标客户、经营地域、营销渠道、使用技术等进行归类</p>
+<p>    集团内企业间的竞争通常比集团外企业间更为激烈</p>
+<p>    有助于识别主要的竞争关系和威胁</p>
+<h3>第二步：公司分析——评估目标企业竞争力</h3>
+<p>公司分析的核心内容：</p>
+<p>1. 公司描述</p>
+<p>    主要产品和服务组合</p>
+<p>    客户类型和客户关系</p>
+<p>    生产要素供给能力</p>
+<p>    生产组织模式和技术水平</p>
+<p>    组织结构和管理体系</p>
+<p>    营销体系和渠道网络</p>
+<p>    竞争策略和市场定位</p>
+<p>2. 业绩回顾</p>
+<p>    历史财务业绩分析</p>
+<p>    业绩变动趋势识别</p>
+<p>    业绩波动原因解析</p>
+<p>    与行业平均水平对比</p>
+<p>3. 竞争策略评估</p>
+<p>    策略类型识别：成本领先、差别竞争、还是专注经营</p>
+<p>    策略有效性评价</p>
+<p>    策略与行业KSFs的匹配度</p>
+<p>    策略可持续性判断</p>
+<p>4. SWOT分析</p>
+<p>    优势 Strengths：核心竞争力、独特资源、品牌影响力</p>
+<p>    劣势 Weaknesses：能力短板、资源不足、市场地位弱</p>
+<p>    机会 Opportunities：市场扩张、技术变革、政策利好</p>
+<p>    威胁 Threats：竞争加剧、替代产品、监管变化</p>
+<p>5. 竞争优势评估</p>
+<p>    是否形成可持续竞争优势</p>
+<p>    竞争优势的护城河有多深</p>
+<p>    竞争优势能否持续</p>
+<p>    进一步发展竞争优势的计划</p>
+<h3>第三步：财务模型构建——量化未来价值创造</h3>
+<p>财务模型的基本定义：</p>
+<p>财务模型是指，利用EXCEL将我们对公司经营活动和资本结构的各种假设通过各种会计关系转化为对公司的三张财务报表预测的一种方法。</p>
+<p>财务模型的三大组成部分：</p>
+<p>1. 假设部分</p>
+<p>    经营活动假设：销售增长率、毛利率、营业费用率等</p>
+<p>    营运资金假设：应收账款周转天数、存货周转天数、应付账款周转天数</p>
+<p>    资本性投资假设：资本支出率、折旧率、资产处置计划</p>
+<p>    资本结构假设：债务权益比率、股利分配政策、融资成本</p>
+<p>2. 三大财务报表预测</p>
+<p>    利润表预测：预测收入、成本、费用、利润</p>
+<p>    资产负债表预测：预测资产、负债、权益的变动</p>
+<p>    现金流量表预测：预测经营、投资、筹资活动现金流</p>
+<p>3. 价值计算</p>
+<p>    自由现金流 FCF 计算</p>
+<p>    股权自由现金流 FCFE 计算</p>
+<p>    经济增加值 AE 计算</p>
+<p>    终值估算</p>
+<p>    贴现率 WACC 计算</p>
+<h3>财务模型建立的详细步骤</h3>
+<p>阶段一：经营活动预测</p>
+<p>1. 销售增长率预测</p>
+<p>    基于行业增长率</p>
+<p>    考虑公司历史增长趋势</p>
+<p>    结合公司竞争策略</p>
+<p>    调整市场份额预期</p>
+<p>2. 利润率预测</p>
+<p>    毛利率：基于成本结构和竞争环境</p>
+<p>    营业费用率：基于运营效率和营销策略</p>
+<p>    净利率：基于税率和非经常性项目</p>
+<p>3. 特殊处理</p>
+<p>    在利息费用和折旧/摊销项目先输入0</p>
+<p>    避免循环计算问题</p>
+<p>阶段二：营运资金预测</p>
+<p>1. 周转率/周转天数预测</p>
+<p>    应收账款周转天数 = 平均应收账款 / 年销售收入 × 365</p>
+<p>    存货周转天数 = 平均存货 / 年销售成本 × 365</p>
+<p>    应付账款周转天数 = 平均应付账款 / 年采购支出 × 365</p>
+<p>2. 营运资金项目预测</p>
+<p>    基于销售收入预测</p>
+<p>    基于周转天数预测</p>
+<p>    计算各营运资金项目的期末余额</p>
+<p>3. 数据转入</p>
+<p>    将营运资金预测结果转入资产负债表相应项目</p>
+<p>    确保资产负债表的平衡</p>
+<p>阶段三：资本性投资预测</p>
+<p>1. 固定资产投资预测</p>
+<p>    基于产能扩张计划</p>
+<p>    基于固定资产周转率</p>
+<p>    基于折旧政策</p>
+<p>2. 无形资产投资预测</p>
+<p>    研发支出资本化</p>
+<p>    品牌建设投入</p>
+<p>    数字化转型投资</p>
+<h3>财务模型正确性检验</h3>
+<p>核心检验方法：</p>
+<p>资产负债平衡检验：</p>
+<p>如果结果不等于0，则模型存在错误，需要检查：</p>
+<p>常见错误类型：</p>
+<p>1. 资产负债表项目变动未反映在现金流量表</p>
+<p>    应收账款变动未计入经营现金流</p>
+<p>    存货变动未计入经营现金流</p>
+<p>    固定资产变动未计入投资现金流</p>
+<p>2. 非现金项目处理错误</p>
+<p>    折旧和摊销未在现金流量表中加回</p>
+<p>    资产减值未正确处理</p>
+<p>    递延税款处理错误</p>
+<p>3. 循环计算问题</p>
+<p>    利息费用和净利润的相互依赖</p>
+<p>    需要使用迭代法或设定固定值</p>
+<hr/>
+<h2>竞争策略与估值影响分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>三种竞争策略各有什么特点？</li><li>不同竞争策略如何影响公司估值？</li><li>如何识别公司的竞争策略类型？</li></ul></details>
+<h3>三种基本竞争策略</h3>
+<p>根据迈克尔·波特的竞争战略理论，公司的竞争策略可以分为三种基本类型。这三种策略相互排斥，公司必须在其中做出明确选择。</p>
+<div class='plot-card'><div class='plot-meta'><code>strategy_comparison.json</code></div><div id='plot-fig_4_strategy_comparison_json' class='plot' data-fig-key='fig_4_strategy_comparison_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38299b5402ab8c8271c057611c9c1f033ebd2ad5036a00c65f7d2042e41793db/assets/strategy_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>1. 成本领先策略 </h3>
+<p>Cost Leadership</p>
+<p>核心特征：</p>
+<ul><li>竞争范围：在行业内的多个或全部细分市场参与竞争</li><li>战略目标：力争成为业内产品成本最低的公司</li><li>实现途径：</li></ul>
+<p>财务影响：</p>
+<ul><li>收入端：通常需要通过价格竞争获取市场份额，价格可能较低</li><li>成本端：各项成本指标应优于行业平均</li><li>利润率：毛利率可能较低，但通过规模效应提升净利润率</li><li>现金流：稳定且可预测，适合现金流折现法估值</li></ul>
+<p>估值要点：</p>
+<ul><li>重点评估成本优势的可持续性</li><li>关注规模效应的边际效益递减风险</li><li>分析市场份额的稳定性</li><li>评估行业价格战的潜在影响</li></ul>
+<p>适用行业：</p>
+<ul><li>标准化产品行业</li><li>价格敏感型市场</li><li>规模效应明显的行业</li><li>技术相对成熟的行业</li></ul>
+<h3>2. 差别竞争策略 </h3>
+<p>Differentiation</p>
+<p>核心特征：</p>
+<ul><li>竞争范围：在行业内的多个或全部细分市场参与竞争</li><li>战略目标：通过满足购买者重视的一个或多个特性收取较高价格</li><li>实现途径：</li></ul>
+<p>财务影响：</p>
+<ul><li>收入端：能够获得价格溢价，收入质量较高</li><li>成本端：研发和营销成本较高</li><li>利润率：毛利率和净利率通常较高</li><li>现金流：可能存在波动，需要更谨慎的预测</li></ul>
+<p>估值要点：</p>
+<ul><li>重点评估差异化优势的护城河深度</li><li>分析品牌价值和客户忠诚度</li><li>评估创新能力的前景</li><li>关注竞争者模仿的风险</li></ul>
+<p>适用行业：</p>
+<ul><li>品牌消费品行业</li><li>高科技产品行业</li><li>个性化需求强烈的行业</li><li>创新驱动的行业</li></ul>
+<h3>3. 专注经营策略 </h3>
+<p>Focus</p>
+<p>核心特征：</p>
+<ul><li>竞争范围：只在行业内的一个或少数细分市场参与竞争</li><li>战略目标：在选择的细分市场取得成本领先或进行差别竞争</li><li>实现途径：</li></ul>
+<p>财务影响：</p>
+<ul><li>收入端：市场规模相对有限，但客户粘性强</li><li>成本端：专注带来效率提升</li><li>利润率：在细分市场可能享有较高利润率</li><li>现金流：受细分市场波动影响较大</li></ul>
+<p>估值要点：</p>
+<ul><li>重点评估细分市场的成长空间</li><li>分析细分市场的竞争格局</li><li>评估专业化能力的价值</li><li>关注细分市场饱和的风险</li></ul>
+<p>适用行业：</p>
+<ul><li>细分市场较多的行业</li><li>专业服务行业</li><li>小众市场</li><li>新兴行业初期</li></ul>
+<h3>策略识别框架</h3>
+<p>通过以下指标判断公司采用的策略类型：</p>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>成本领先</th><th>差别竞争</th><th>专注经营</th></tr></thead><tbody><tr><td>产品线宽度</td><td>广泛</td><td>广泛</td><td>窄</td></tr><tr><td>客户类型</td><td>多样</td><td>多样</td><td>特定群体</td></tr><tr><td>价格水平</td><td>低</td><td>高</td><td>中等或高</td></tr><tr><td>研发投入比例</td><td>中等</td><td>高</td><td>中等</td></tr><tr><td>营销投入比例</td><td>低</td><td>高</td><td>中等</td></tr><tr><td>毛利率水平</td><td>低</td><td>高</td><td>中等</td></tr><tr><td>市场份额</td><td>高</td><td>中等</td><td>低但在细分市场高</td></tr></tbody></table></div>
+<h3>策略对估值模型参数的影响</h3>
+<p>收入增长率假设：</p>
+<ul><li>成本领先：基于行业平均或略低（通过市场份额增长弥补）</li><li>差别竞争：可能高于行业平均（得益于溢价和品牌）</li><li>专注经营：取决于细分市场成长性，可能高于或低于行业</li></ul>
+<p>利润率假设：</p>
+<ul><li>成本领先：毛利率较低，费用控制严格</li><li>差别竞争：毛利率较高，研发和营销费用较高</li><li>专注经营：中等偏上，细分市场溢价</li></ul>
+<p>资本支出假设：</p>
+<ul><li>成本领先：规模扩张相关资本支出较大</li><li>差别竞争：研发和创新相关资本支出较大</li><li>专注经营：专业化设备和技术投入</li></ul>
+<p>营运资金假设：</p>
+<ul><li>成本领先：周转率应优于行业平均</li><li>差别竞争：可能接受较长的应收账款周期（品牌溢价）</li><li>专注经营：根据细分市场特点确定</li></ul>
+<hr/>
+<h2>关键财务比率分析框架</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如何通过财务比率评估公司经营效率？</li><li>哪些比率对估值模型参数设定最有参考价值？</li><li>如何将历史比率转化为未来预测假设？</li></ul></details>
+<h3>利润率指标</h3>
+<p>利润率指标反映公司盈利能力和经营效率，是估值模型中预测利润率水平的重要参考。</p>
+<p>总资产回报率 ROA - Return on Total Assets</p>
+<ul><li>反映公司运用全部资产创造利润的能力</li><li>行业平均水平通常在5%-15%</li><li>估值意义：作为预测未来ROA的基准</li></ul>
+<p>投资资本回报率 ROIC - Return on Invested Capital</p>
+<ul><li>反映公司投入资本的使用效率</li><li>扣除了资本结构的影响</li><li>估值意义：WACC比较的重要指标，ROIC  WACC创造价值</li></ul>
+<p>净资产回报率 ROE - Return on Equity</p>
+<ul><li>反映股东权益的使用效率</li><li>受财务杠杆影响较大</li><li>估值意义：杜邦分析的起点，驱动价值创造的核心指标</li></ul>
+<p>毛利率 Gross Margin</p>
+<ul><li>反映产品或服务的定价能力和成本控制水平</li><li>行业差异很大</li><li>估值意义：预测未来毛利率的基础，反映竞争地位</li></ul>
+<p>净利率 Net Margin</p>
+<ul><li>反映最终的盈利能力</li><li>综合考虑了各项费用和税收</li><li>估值意义：预测未来净利率，反映公司整体运营效率</li></ul>
+<p>EBITDA Margin</p>
+<ul><li>不受折旧政策影响，更纯地反映经营业绩</li><li>常用于并购估值</li><li>估值意义：可比公司分析的重要指标</li></ul>
+<h3>经营效率指标</h3>
+<p>经营效率指标反映公司对资产的管理能力，直接影响现金流的产生。</p>
+<p>存货周转率 Inventory Turnover</p>
+<ul><li>反映存货管理效率</li><li>周转天数越短，资金占用越少</li><li>估值意义：预测未来存货周转天数，影响营运资金需求</li></ul>
+<p>应收账款周转率 Accounts Receivable Turnover</p>
+<ul><li>反映应收账款回收速度</li><li>周转天数越短，现金回收越快</li><li>估值意义：预测未来应收账款周转天数，影响现金流时间</li></ul>
+<p>应付账款周转率 Accounts Payable Turnover</p>
+<ul><li>反映对供应商的议价能力</li><li>周转天数越长，资金占用时间越长</li><li>估值意义：预测未来应付账款周转天数，影响营运资金需求</li></ul>
+<p>营运资金周转率 Working Capital Turnover</p>
+<ul><li>综合反映营运资金使用效率</li><li>周转率越高，资金使用效率越高</li><li>估值意义：预测营运资金需求的重要指标</li></ul>
+<p>总资产周转率 Total Asset Turnover</p>
+<ul><li>反映全部资产的使用效率</li><li>与利润率配合可分解为ROA</li><li>估值意义：预测未来资产使用效率，影响固定资产投资假设</li></ul>
+<p>固定资产周转率 Fixed Asset Turnover</p>
+<ul><li>反映固定资产的使用效率</li><li>资本密集型行业的重要指标</li><li>估值意义：预测资本支出需求</li></ul>
+<h3>历史比率转化为预测假设</h3>
+<p>方法论：</p>
+<p>1. 趋势分析</p>
+<p>    分析各项指标的历史趋势</p>
+<p>    识别改进或恶化的方向</p>
+<p>    判断趋势的可持续性</p>
+<p>2. 行业对比</p>
+<p>    与行业平均水平比较</p>
+<p>    与行业领先企业比较</p>
+<p>    评估公司的相对位置</p>
+<p>3. 策略调整</p>
+<p>    考虑公司策略对指标的影响</p>
+<p>    成本领先策略应提升周转率</p>
+<p>    差别竞争策略可能接受较低周转率</p>
+<p>4. 合理性检验</p>
+<p>    预测假设应符合商业逻辑</p>
+<p>    不应出现不切合实际的突然改善</p>
+<p>    应考虑竞争者的反应</p>
+<p>示例：应收账款周转天数的预测</p>
+<p>假设历史数据和预测：</p>
+<ul><li>2021年：60天</li><li>2022年：58天</li><li>2023年：55天</li><li>行业平均：50天</li><li>公司策略：加强应收账款管理，引入新的信用政策</li></ul>
+<p>预测2024-2028年：</p>
+<ul><li>考虑持续改进趋势</li><li>接近行业平均水平</li><li>设定为：52天、50天、48天、48天、48天</li></ul>
+<hr/>
+<h2>估值实施的最佳实践</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如何确保估值结果的可靠性？</li><li>估值结果应该以什么形式呈现？</li><li>如何处理估值中的不确定性？</li></ul></details>
+<h3>估值的区间估计原则</h3>
+<p>核心原则：使用不同方法得到的公司估值可能不尽相同，公司估值结果的表达最好采用区间估计，而非点估计。</p>
+<p>为什么采用区间估计？</p>
+<p>1. 未来不确定性</p>
+<p>    经济环境的不确定性</p>
+<p>    行业竞争的不确定性</p>
+<p>    公司经营的不确定性</p>
+<p>2. 方法差异性</p>
+<p>    不同估值方法基于不同假设</p>
+<p>    每种方法都有其局限性</p>
+<p>    单一方法可能存在偏差</p>
+<p>3. 主观判断差异</p>
+<p>    不同分析员可能得出不同结论</p>
+<p>    假设设定的主观性</p>
+<p>    参数选择的差异</p>
+<p>区间估计的构建方法：</p>
+<p>1. 多方法组合</p>
+<p>    现金流折现法：100-120亿</p>
+<p>    比较公司法：95-115亿</p>
+<p>    综合区间：95-120亿</p>
+<p>2. 情景分析</p>
+<p>    基准情景：100-110亿</p>
+<p>    乐观情景：110-130亿</p>
+<p>    悲观情景：80-100亿</p>
+<p>3. 敏感性分析</p>
+<p>    关键参数±10%的影响</p>
+<p>    构建敏感度范围</p>
+<p>    识别关键驱动因素</p>
+<h3>估值的现实检验</h3>
+<p>比较公司分析：</p>
+<ul><li>寻找可比上市公司的估值倍数</li><li>对比估值结果的市场合理性</li><li>评估目标公司的相对位置</li></ul>
+<p>比较交易分析：</p>
+<ul><li>参考近期并购交易的定价</li><li>考虑交易的溢价水平</li><li>分析交易的特殊背景</li></ul>
+<p>历史交易回顾：</p>
+<ul><li>回顾公司历史交易的定价</li><li>分析当时的估值逻辑</li><li>评估历史估值的准确性</li></ul>
+<h3>估值的决策应用</h3>
+<p>投资决策的基本原则：</p>
+<p>投资的最终取舍决定于价值与价格的相对关系</p>
+<p>决策矩阵：</p>
+<div class='table-wrap'><table><thead><tr><th>价格-价值关系</th><th>投资决策</th><th>理由</th></tr></thead><tbody><tr><td>价格 价值</td><td>强烈买入</td><td>显著低估，安全边际高</td></tr><tr><td>价格 价值</td><td>买入</td><td>合理低估，有上涨空间</td></tr><tr><td>价格 ≈ 价值</td><td>持有</td><td>合理定价，等待机会</td></tr><tr><td>价格 价值</td><td>卖出</td><td>高估，获利了结</td></tr><tr><td>价格 价值</td><td>强烈卖出</td><td>严重高估，风险高企</td></tr></tbody></table></div>
+<p>交易定价的艺术性：</p>
+<p>交易的最终订价往往最终取决于市场营销好坏或谈判力量的大小</p>
+<p>这说明估值虽然是科学，但最终交易定价是艺术。估值提供的是理性的价值基准，但实际交易价格还受到：</p>
+<ul><li>市场情绪</li><li>谈判能力</li><li>时间压力</li><li>战略价值</li><li>控制权溢价</li></ul>
+<h3>财务模型的艺术与科学</h3>
+<p>科学性体现：</p>
+<ul><li>严格的会计关系</li><li>完整的逻辑框架</li><li>量化的分析过程</li><li>可验证的计算结果</li></ul>
+<p>艺术性体现：</p>
+<ul><li>行业理解的深度</li><li>公司洞察的敏锐度</li><li>假设设定的合理性</li><li>判断的准确性</li></ul>
+<p>核心观点：</p>
+<p>只要相信市场是有效的（反映行业和公司的各种信息），那么在占有充分信息的基础上，应当相信自己的判断。</p>
+<p>这意味着：</p>
+<ul><li>估值需要充分的信息收集</li><li>需要深入的行业和公司分析</li><li>需要长期跟踪和持续修正</li><li>需要与公司管理层多次沟通</li><li>需要跟踪行业发展</li></ul>
+<h3>估值结果的呈现</h3>
+<p>完整估值报告应包括：</p>
+<p>1. 执行摘要</p>
+<p>    估值结论</p>
+<p>    估值区间</p>
+<p>    关键假设</p>
+<p>    投资建议</p>
+<p>2. 公司概况</p>
+<p>    公司基本信息</p>
+<p>    业务模式</p>
+<p>    竞争地位</p>
+<p>3. 行业分析</p>
+<p>    行业规模和增长</p>
+<p>    竞争格局</p>
+<p>    关键成功因素</p>
+<p>4. 公司分析</p>
+<p>    SWOT分析</p>
+<p>    竞争策略</p>
+<p>    历史业绩</p>
+<p>5. 财务模型</p>
+<p>    关键假设</p>
+<p>    预测结果</p>
+<p>    敏感性分析</p>
+<p>6. 估值分析</p>
+<p>    估值方法</p>
+<p>    估值过程</p>
+<p>    估值区间</p>
+<p>7. 投资建议</p>
+<p>    价值-价格比较</p>
+<p>    风险因素</p>
+<p>    投资决策</p>
+<hr/>
+<h2>结论与建议</h2>
+<h3>核心要点总结</h3>
+<p>1. 估值是投资决策的基础</p>
+<ul><li>价值评估测定公司资产价值</li><li>为投资决策提供理性依据</li><li>优化资源配置和市场效率</li></ul>
+<p>2. 两种方法各有优劣</p>
+<ul><li>现金流折现法：理论严谨，但复杂度高</li><li>比较公司法：实用便捷，但受市场影响</li><li>实际中应结合使用，相互验证</li></ul>
+<p>3. 系统性分析框架</p>
+<ul><li>行业分析 → 公司分析 → 财务建模 → 价值评估</li><li>每一步都是建立在上一步的基础上</li><li>确保逻辑的严密性和假设的合理性</li></ul>
+<p>4. 区间估计优于点估计</p>
+<ul><li>承认估值的不确定性</li><li>反映多种方法和情景</li><li>为投资决策提供灵活空间</li></ul>
+<p>5. 价值与价格的相对关系</p>
+<ul><li>估值揭示内在价值</li><li>市场价格反映供需关系</li><li>投资决策基于价值-价格比较</li></ul>
+<h3>实践建议</h3>
+<p>对于初级分析师：</p>
+<p>1. 打好基础</p>
+<p>    深入理解会计原理和财务报表</p>
+<p>    掌握财务建模的基本技巧</p>
+<p>    学习行业分析的基本方法</p>
+<p>2. 从简单开始</p>
+<p>    先使用比较公司法，快速建立概念</p>
+<p>    逐步引入现金流折现法</p>
+<p>    关注主要变量，避免过度复杂化</p>
+<p>3. 验证和修正</p>
+<p>    与行业资深分析师讨论</p>
+<p>    与公司管理层沟通</p>
+<p>    持续跟踪和修正假设</p>
+<p>对于中级分析师：</p>
+<p>1. 深化分析</p>
+<p>    发展行业专长</p>
+<p>    建立公司长期跟踪记录</p>
+<p>    完善财务模型的精细度</p>
+<p>2. 多维度验证</p>
+<p>    使用多种估值方法</p>
+<p>    进行情景分析和敏感性分析</p>
+<p>    参考市场交易定价</p>
+<p>3. 形成判断</p>
+<p>    基于充分信息做出判断</p>
+<p>    敢于表达明确的投资观点</p>
+<p>    承担判断的责任</p>
+<p>对于高级分析师：</p>
+<p>1. 战略洞察</p>
+<p>    超越财务数据，理解战略本质</p>
+<p>    预见行业演化趋势</p>
+<p>    识别颠覆性变化</p>
+<p>2. 方法论创新</p>
+<p>    改进和优化估值方法</p>
+<p>    开发新的分析框架</p>
+<p>    分享经验和知识</p>
+<p>3. 价值创造</p>
+<p>    帮助客户创造价值</p>
+<p>    成为可信赖的顾问</p>
+<p>    影响市场规则制定</p>
+<h3>未来展望</h3>
+<p>量化研究能力的重要性：</p>
+<p>采用该方法不仅可以促进公司核心竞争力的形成和发展，而且有助于公司成为国内资本市场游戏规则的制订者。</p>
+<p>这意味着：</p>
+<ul><li>量化研究是核心竞争力</li><li>能够主导定价权</li><li>影响市场规则</li></ul>
+<p>建议的发展方向：</p>
+<p>1. 技术整合</p>
+<p>    引入大数据和人工智能</p>
+<p>    提高数据处理效率</p>
+<p>    增强预测准确性</p>
+<p>2. 方法创新</p>
+<p>    开发更适合中国市场的估值方法</p>
+<p>    考虑新兴行业的特殊性</p>
+<p>    整合ESG因素</p>
+<p>3. 人才培养</p>
+<p>    建立系统的培训体系</p>
+<p>    强调理论与实践结合</p>
+<p>    培养复合型人才</p>
+<hr/>
+<h2>附录</h2>
+<h3>关键术语解释</h3>
+<ul><li>DCF Discounted Cash Flow：现金流折现法</li><li>WACC Weighted Average Cost of Capital：加权平均资本成本</li><li>FCF Free Cash Flow：自由现金流</li><li>KSFs Key Success Factors：关键成功因素</li><li>ROIC Return on Invested Capital：投资资本回报率</li><li>EBITDA Earnings Before Interest, Taxes, Depreciation and Amortization：息税折旧摊销前利润</li><li>NOPAT Net Operating Profit After Tax：税后营业净利润</li></ul>
+<h3>数据来源</h3>
+<p>本报告基于以下资料分析：</p>
+<ul><li>中信证券研究部培训资料：《公司价值评估中财务模型的构建》</li><li>海通证券研究所估值方法对比表</li></ul>
+<h3>免责声明</h3>
+<p>本报告仅供学习参考，不构成投资建议。实际投资决策应基于充分的研究和专业的财务顾问意见。</p>
+<hr/>
+<p>报告生成日期：2025年2月4日</p>
+<p>分析师：Pardus AI - 量化分析专家</p><hr/><p class='muted'>说明：完整报告结构 + 原位图表渲染。plot assets: 4，成功缓存: 4（含路径键与文件名键），失败: 0。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {"fig_1_valuation_process_json": {"data": [{"hovertemplate": "评估步骤=%{x}<br>y=%{y}<br>size=%{marker.size}<br>关键输出=%{text}<extra></extra>", "legendgroup": "", "marker": {"color": "#636efa", "size": [10, 10, 10, 10, 10], "sizemode": "area", "sizeref": 0.025, "symbol": "circle"}, "mode": "markers+text", "name": "", "orientation": "v", "showlegend": false, "text": ["行业前景、KSFs", "SWOT、竞争优势", "财务预测", "估值区间", "投资决策"], "x": ["行业分析", "公司分析", "财务建模", "价值评估", "决策制定"], "xaxis": "x", "y": [5, 5, 5, 5, 5], "yaxis": "y", "type": "scatter", "textposition": "top center"}], "layout": {"template": {"data": {"barpolar": [{"marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scattermap": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermap"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "white", "showlakes": true, "showland": true, "subunitcolor": "#C8D4E3"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "white", "polar": {"angularaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}, "bgcolor": "white", "radialaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "yaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "zaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "baxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "bgcolor": "white", "caxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "评估步骤", "font": {"size": 14}}, "showgrid": true, "zeroline": false, "showticklabels": true, "range": [0, 6], "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "y", "font": {"size": 14}}, "showgrid": true, "zeroline": false, "showticklabels": false, "range": [3, 7], "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "itemsizing": "constant", "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "公司价值评估流程", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}, "fig_2_valuation_methods_radar_json": {"data": [{"fill": "toself", "name": "现金流折现法", "r": [9, 7, 8, 9], "theta": ["重要性", "实用性", "准确性", "复杂性"], "type": "scatterpolar"}, {"fill": "toself", "name": "比较公司法", "r": [8, 9, 7, 5], "theta": ["重要性", "实用性", "准确性", "复杂性"], "type": "scatterpolar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "polar": {"radialaxis": {"visible": true, "range": [0, 10]}}, "font": {"size": 12, "family": "Arial"}, "showlegend": true, "title": {"text": "估值方法对比雷达图", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}, "fig_3_valuation_methods_bar_json": {"data": [{"alignmentgroup": "True", "hovertemplate": "估值方法=现金流折现法<br>评估指标=%{x}<br>评分 (1-10)=%{y}<extra></extra>", "legendgroup": "现金流折现法", "marker": {"color": "#636efa", "pattern": {"shape": ""}}, "name": "现金流折现法", "offsetgroup": "现金流折现法", "orientation": "v", "showlegend": true, "textposition": "auto", "x": ["重要性", "实用性", "准确性", "复杂性"], "xaxis": "x", "y": [9, 7, 8, 9], "yaxis": "y", "type": "bar"}, {"alignmentgroup": "True", "hovertemplate": "估值方法=比较公司法<br>评估指标=%{x}<br>评分 (1-10)=%{y}<extra></extra>", "legendgroup": "比较公司法", "marker": {"color": "#EF553B", "pattern": {"shape": ""}}, "name": "比较公司法", "offsetgroup": "比较公司法", "orientation": "v", "showlegend": true, "textposition": "auto", "x": ["重要性", "实用性", "准确性", "复杂性"], "xaxis": "x", "y": [8, 9, 7, 5], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "评估指标", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "评分 (1-10)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"title": {"text": "估值方法"}, "tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "估值方法指标对比", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "group", "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}, "fig_4_strategy_comparison_json": {"data": [{"cells": {"align": "center", "fill": {"color": [["#f8f9fa", "#e9ecef", "#f8f9fa", "#e9ecef", "#f8f9fa"], ["#f8f9fa", "#e9ecef", "#f8f9fa", "#e9ecef", "#f8f9fa"], ["#f8f9fa", "#e9ecef", "#f8f9fa", "#e9ecef", "#f8f9fa"]]}, "font": {"size": 12}, "values": [["成本领先", "差别竞争", "专注经营"], ["广泛", "广泛", "专注"], ["最低成本", "独特性", "细分市场领先"], ["中等", "低", "高"], ["成熟期", "成长期/成熟期", "成长期/初创期"]]}, "header": {"align": "center", "fill": {"color": "#264653"}, "font": {"color": "white", "size": 13}, "values": ["<b>策略类型</b>", "<b>竞争范围</b>", "<b>核心优势</b>", "<b>风险水平</b>", "<b>适合阶段</b>"]}, "type": "table"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "font": {"size": 12, "family": "Arial"}, "title": {"text": "竞争策略对比", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

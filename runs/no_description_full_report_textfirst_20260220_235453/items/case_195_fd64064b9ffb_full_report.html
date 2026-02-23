@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：辅酶q10</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：辅酶q10</h1>
+    <p class='sub'>来源: /view/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Time Series Experimental Data Analysis: Comparative Study of Four Treatment Groups&quot;
+description: &quot;Comprehensive statistical analysis of time-course data across four experimental groups (A, B, C, D) with 13 time points spanning 0-24 hours&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Experimental Time Series Data Analysis</h1>
+<h2>Overview</h2>
+<p>This report presents a comprehensive analysis of time-course experimental data collected from four treatment groups A, B, C, Dmonitored over 13 time points 0-24 hours. The study includes 78 observationsacross multiple biological replicates, providing robust statistical insights into temporal dynamics and group differences.</p>
+<p><strong>Experimental Workflow:</strong></p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/experimental_workflow.svg' alt='experimental_workflow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/experimental_workflow.svg' target='_blank' rel='noopener noreferrer'>experimental_workflow.svg</a></figcaption></figure>
+<h2>Executive Summary</h2>
+<p><strong>Key Findings:</strong></p>
+<ul><li>Group Ddemonstrates the highest overall response with mean value of 267.34and largest area under the curve 4,865.73</li><li>Group Cexhibits the most dramatic peak at 498.54units occurring at 1 hour, suggesting rapid initial response</li><li>Group Dshows the lowest relative variability CV = 66.79%, indicating most consistent behavior</li><li>Groups B, C, and D show strong positive correlation r = 0.66-0.81, suggesting similar response patterns</li><li>Area Under Curve ranking: D 4,865.73  C 3,850.12  A 3,775.32  B 1,446.20</li></ul>
+<p><strong>Strategic Recommendations:</strong></p>
+<p>1. Prioritize Group Dfor further investigation due to high overall response and consistency</p>
+<p>2. Investigate Group C&#x27;s early peakmechanism - potential for rapid-acting treatments</p>
+<p>3. Consider Group B&#x27;s lower AUCmay indicate reduced efficacy or faster clearance</p>
+<p>4. Explore synergistic effectsbetween high-performing groups B, C, D correlations</p>
+<hr/>
+<h2>Data Overview</h2>
+<h3>Dataset Characteristics</h3>
+<div class='table-wrap'><table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody><tr><td>Total Observations</td><td>78</td></tr><tr><td>Experimental Groups</td><td>4 A, B, C, D</td></tr><tr><td>Time Points</td><td>13 0, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 24 hours</td></tr><tr><td>Samples per Group</td><td>14-22</td></tr><tr><td>Measurement Type</td><td>Quantitative</td></tr></tbody></table></div>
+<p>Group Distribution</p>
+<div class='table-wrap'><table><thead><tr><th>Group</th><th>Observations</th><th>Mean</th><th>Std Dev</th><th>Min</th><th>Max</th><th>Median</th><th>CV</th></tr></thead><tbody><tr><td>A</td><td>20</td><td>122.80</td><td>104.99</td><td>39.85</td><td>393.00</td><td>84.59</td><td>85.49%</td></tr><tr><td>B</td><td>14</td><td>134.42</td><td>114.22</td><td>16.26</td><td>379.49</td><td>93.39</td><td>84.97%</td></tr><tr><td>C</td><td>22</td><td>198.72</td><td>152.37</td><td>67.54</td><td>573.73</td><td>128.08</td><td>76.68%</td></tr><tr><td>D</td><td>22</td><td>267.34</td><td>178.55</td><td>28.63</td><td>719.73</td><td>243.37</td><td>66.79%</td></tr></tbody></table></div>
+<h2>Temporal Dynamics Analysis</h2>
+<h3>Time Series Visualization</h3>
+<div class='plot-card'><div class='plot-meta'><code>timeseries_by_group.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/timeseries_by_group.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Key Observations:</strong></p>
+<p>1. Group Cshows explosive early response, peaking at 1 hour 498.54 unitsbefore declining</p>
+<p>2. Group Dmaintains elevated levels throughout, with steady increase to peak at 2 hours 581.08 units</p>
+<p>3. Group Ademonstrates gradual increase, reaching maximum at 6 hours 245.24 units</p>
+<p>4. Group Bexhibits early peak at 4 hours 246.64 unitsfollowed by rapid decline</p>
+<p><strong>Peak Response Analysis:</strong></p>
+<div class='plot-card'><div class='plot-meta'><code>peak_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/peak_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>Group</th><th>Peak Time h</th><th>Peak Value</th><th>Response Pattern</th></tr></thead><tbody><tr><td>C</td><td>1.0</td><td>498.54</td><td>Rapid spike, quick decline</td></tr><tr><td>D</td><td>2.0</td><td>581.08</td><td>Strong sustained response</td></tr><tr><td>B</td><td>4.0</td><td>246.64</td><td>Early peak, moderate decline</td></tr><tr><td>A</td><td>6.0</td><td>245.24</td><td>Gradual rise, prolonged</td></tr></tbody></table></div>
+<h2>Statistical Comparison</h2>
+<h3>Distribution Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>boxplot_by_group.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/boxplot_by_group.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Distribution Insights:</strong></p>
+<ul><li>Group Dshows highest median 243.37with wide interquartile range</li><li>Group Cexhibits extreme outlier at 573.73, indicating high variability in some replicates</li><li>Group Aand Bhave similar median values  All groups show significant overlap, indicating potential shared mechanisms</li></ul>
+<h3>Comparative Metrics</h3>
+<div class='plot-card'><div class='plot-meta'><code>comparison_metrics.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/comparison_metrics.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Metric Comparison Summary:</strong></p>
+<div class='table-wrap'><table><thead><tr><th>Group</th><th>Mean Value</th><th>Peak Value</th><th>AUC</th><th>Overall Rank</th></tr></thead><tbody><tr><td>D</td><td>267.34</td><td>581.08</td><td>4,865.73</td><td>1st</td></tr><tr><td>C</td><td>198.72</td><td>498.54</td><td>3,850.12</td><td>2nd</td></tr><tr><td>A</td><td>122.80</td><td>245.24</td><td>3,775.32</td><td>3rd</td></tr><tr><td>B</td><td>134.42</td><td>246.64</td><td>1,446.20</td><td>4th</td></tr></tbody></table></div>
+<h2>Heatmap Analysis</h2>
+<h3>Time-Group Interaction</h3>
+<div class='plot-card'><div class='plot-meta'><code>heatmap_group_time.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/heatmap_group_time.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Heatmap Insights:</strong></p>
+<ul><li>Early phase 0-2h:Group C dominates with intense response bright colors</li><li>Mid phase 3-6h:Groups A, B, D show moderate to high activity</li><li>Late phase 7-24h:Group D maintains elevated levels, others decline</li><li>Temporal patterns:Distinct phases suggest different response mechanisms</li></ul>
+<hr/>
+<h2>Correlation Analysis</h2>
+<h3>Group Correlations</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Correlation Matrix:</strong></p>
+<div class='table-wrap'><table><thead><tr><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead><tbody><tr><td>A</td><td>1.00</td><td>-0.22</td><td>-0.45</td><td>0.14</td></tr><tr><td>B</td><td>-0.22</td><td>1.00</td><td>0.81</td><td>0.80</td></tr><tr><td>C</td><td>-0.45</td><td>0.81</td><td>1.00</td><td>0.66</td></tr><tr><td>D</td><td>0.14</td><td>0.80</td><td>0.66</td><td>1.00</td></tr></tbody></table></div>
+<p>Interpretation:</p>
+<ul><li>Strong positive correlationbetween Groups B, C, and D r = 0.66-0.81</li><li>Group A shows negative correlationwith B and C, suggesting distinct mechanism</li><li>Clusters:{B, C, D} with similar patterns vs {A} with unique profile</li><li>Biological implication:Groups B, C, D may share pathways or targets</li></ul>
+<hr/>
+<h2>Detailed Statistical Findings</h2>
+<h3>1. Peak Time Analysis</h3>
+<div class='table-wrap'><table><thead><tr><th>Group</th><th>Peak Time</th><th>Peak Value</th><th>Rate of Change</th></tr></thead><tbody><tr><td>A</td><td>6.0h</td><td>245.24</td><td>-24.42 units/h</td></tr><tr><td>B</td><td>4.0h</td><td>246.64</td><td>-59.72 units/h</td></tr><tr><td>C</td><td>1.0h</td><td>498.54</td><td>+53.92 units/h</td></tr><tr><td>D</td><td>2.0h</td><td>581.08</td><td>-37.17 units/h</td></tr></tbody></table></div>
+<p>Key Insight: Only Group C shows positive average rate of change, indicating net increase over time. Groups A, B, and D show overall decline after peak.</p>
+<h3>2. Area Under Curve </h3>
+<p>AUC Analysis</p>
+<p>AUC represents total exposure or cumulative effect:</p>
+<p><strong>Significance:</strong></p>
+<p><strong>29.2% higher total exposure</strong></p>
+<p><strong>236% higher</strong></p>
+<h3>3. Variability Analysis</h3>
+<p>Coefficient of Variation CV indicates relative consistency:</p>
+<div class='table-wrap'><table><thead><tr><th>Group</th><th>CV</th><th>Interpretation</th></tr></thead><tbody><tr><td>D</td><td>66.79%</td><td>Most consistent response</td></tr><tr><td>C</td><td>76.68%</td><td>Moderate variability</td></tr><tr><td>B</td><td>84.97%</td><td>High variability</td></tr><tr><td>A</td><td>85.49%</td><td>Highest variability</td></tr></tbody></table></div>
+<p>Implication: Group D&#x27;s lower CV suggests more predictable, reproducible effects.</p>
+<h3>4. Rate of Change Dynamics</h3>
+<p><strong>Early phase 0-4h:</strong></p>
+<ul><li>Group C: Explosive increase +485 units/h</li><li>Group D: Strong increase +276 units/h</li><li>Groups A, B: Moderate increase</li></ul>
+<p><strong>Late phase 4-24h:</strong></p>
+<ul><li>Groups A, B, D: Negative rates</li><li>Group C: Stabilization near baseline</li></ul>
+<hr/>
+<h2>Individual Observations</h2>
+<h3>Scatter Plot Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>scatter_all_observations.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fd64064b9ffb6b527072bbb3c63d14bcb0649f8bf8da1ae998adc721ede7140a/assets/scatter_all_observations.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Data Quality Insights:</strong></p>
+<ul><li>Good spread:Observations distributed across time points</li><li>Replicate consistency:Similar values at same time points within groups</li><li>Outliers:Notable high values in Groups C and D at early time points</li><li>Missing data:Some time points have fewer observations biological variability</li></ul>
+<hr/>
+<h2>Conclusions and Recommendations</h2>
+<h3>Primary Findings</h3>
+<p>1. Superior Performance - Group D:</p>
+<p>    Highest mean response 267.34</p>
+<p>    Largest cumulative exposure AUC = 4,865.73</p>
+<p>    Most consistent behavior lowest CV = 66.79%</p>
+<p>    Strong correlation with other high-performing groups</p>
+<p>2. Rapid Response - Group C:</p>
+<p>    Dramatic early peak 498.54 at 1h</p>
+<p>    Suitable for acute treatment scenarios</p>
+<p>    High variability may require dose optimization</p>
+<p>3. Delayed Response - Group A:</p>
+<p>    Gradual increase to 6h peak</p>
+<p>    Potentially suitable for sustained-release formulations</p>
+<p>    Higher variability suggests formulation challenges</p>
+<p>4. Moderate Response - Group B:</p>
+<p>    Lower overall exposure AUC = 1,446.20</p>
+<p>    Early peak with rapid decline</p>
+<p>    May require dose adjustment or formulation optimization</p>
+<h3>Recommendations</h3>
+<p><strong>Immediate Actions:</strong></p>
+<p>1. Advance Group Dto next development phase</p>
+<p>    Leverage high AUC and consistency</p>
+<p>    Explore mechanism of sustained response</p>
+<p>2. Investigate Group Cfor acute applications</p>
+<p>    Characterize rapid-onset mechanism</p>
+<p>    Optimize dosing to reduce variability</p>
+<p>3. Consider combination approaches</p>
+<p>    Explore synergy between Group C rapid and Group D sustained</p>
+<p>    Potential for biphasic release profiles</p>
+<p><strong>Further Studies:</strong></p>
+<p>1. Mechanistic investigations:</p>
+<p>    Elucidate why Groups B, C, D are highly correlated</p>
+<p>    Understand Group A&#x27;s distinct response pattern</p>
+<p>2. Pharmacokinetic modeling:</p>
+<p>    Formal PK/PD analysis</p>
+<p>    Determine half-life, clearance, volume of distribution</p>
+<p>3. Dose-response studies:</p>
+<p>    Optimize dosing regimens</p>
+<p>    Investigate variability sources</p>
+<p>4. Long-term effects:</p>
+<p>    Extend observation period beyond 24h</p>
+<p>    Assess sustained release potential</p>
+<hr/>
+<h2>Methodology</h2>
+<p><strong>Data Processing:</strong></p>
+<ul><li>Raw Excel data parsed into structured Polars DataFrame</li><li>Missing values NC, NaN excluded from analysis</li><li>Time points standardized to hours</li><li>Sample identifiers decoded for group, type, and time extraction</li></ul>
+<p><strong>Statistical Methods:</strong></p>
+<ul><li>Descriptive statistics mean, SD, median, range</li><li>Area Under Curve calculation using trapezoidal rule</li><li>Pearson correlation for inter-group relationships</li><li>Coefficient of Variation for consistency assessment</li></ul>
+<p><strong>Visualization:</strong></p>
+<ul><li>Time series with error bars mean ± SD</li><li>Box plots for distribution comparison</li><li>Heatmap for time-group interactions</li><li>Scatter plots for individual observations</li><li>Correlation matrix for pattern analysis</li></ul>
+<hr/>
+<h2>Appendix</h2>
+<h3>Data Sources</h3>
+<ul><li>Original file: </li><li>78 observations across 4 groups, 13 time points</li></ul>
+<h3>Analysis Tools</h3>
+<ul><li>Polars for data manipulation</li><li>Plotly Express for visualizations</li><li>NumPy for statistical calculations</li></ul>
+<h3>Charts Generated</h3>
+<p>1. - Time series with confidence intervals</p>
+<p>2. - Distribution comparison</p>
+<p>3. - Time-group interaction heatmap</p>
+<p>4. - Individual data points</p>
+<p>5. - Group comparison mean, peak, AUC</p>
+<p>6. - Inter-group correlations</p>
+<p>7. - Peak timing and magnitude</p>
+<hr/>
+<p><em>Report generated by Pardus AI - Quantitative Analysis Agent</em></p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

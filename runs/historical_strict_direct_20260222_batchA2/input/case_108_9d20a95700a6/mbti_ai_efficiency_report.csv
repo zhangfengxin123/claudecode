@@ -1,0 +1,601 @@
+Employee_ID,MBTI,Dimension_EI,Dimension_SN,Dimension_TF,Dimension_JP,Department,Role,Seniority,Tenure_Years,AI_Tool_Usage_Daily_Hours,AI_Tool_Preference,Tool_Adoption_Score,Meeting_Hours_Weekly,Focus_Time_Hours_Weekly,Collaboration_Intensity,Context_Switching_Index,Project_Completion_Rate,Process_Adherence_Score,Innovation_Output_Score,Stakeholder_Satisfaction_Score,Weekly_Report_Submission_Offset,Overtime_Hours_Weekly,Learning_Hours_Monthly,Rework_Rate_Percent
+EMP1000,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,PM,Lead,8.2,4.1,Search/Research,52.2,20.4,17.1,56.2,6.0,99.7,53.6,51.8,64.8,1.7,7.2,6.3,6.4
+EMP1001,INFP,Introvert,Intuitive,Feeling,Perceiving,Sales,Account Manager,Mid,4.7,2.9,LLM Chatbot,70.7,17.4,14.4,68.0,6.3,33.9,34.3,47.8,63.9,-1.7,0.5,8.2,8.2
+EMP1002,ESTJ,Extravert,Sensing,Thinking,Judging,R&D,Data,Mid,3.9,4.3,LLM Chatbot,47.8,14.1,18.4,64.0,2.2,93.8,83.0,35.7,68.7,8.0,5.6,8.2,5.6
+EMP1003,INTJ,Introvert,Intuitive,Thinking,Judging,Product,Design,Junior,1.9,3.7,Visualization,80.4,10.9,23.2,36.6,2.2,85.8,59.5,71.3,50.7,3.1,6.5,10.2,1.0
+EMP1004,INTP,Introvert,Intuitive,Thinking,Perceiving,HR,Recruiter,Mid,3.9,3.0,LLM Chatbot,72.3,14.1,13.2,73.8,6.9,89.1,59.9,95.0,61.8,8.7,1.0,9.0,11.1
+EMP1005,INTJ,Introvert,Intuitive,Thinking,Judging,R&D,Frontend,Senior,7.7,3.6,Automation Script,67.4,2.3,30.3,38.3,3.2,79.3,62.6,77.4,69.6,3.9,3.4,7.7,7.3
+EMP1006,INFP,Introvert,Intuitive,Feeling,Perceiving,R&D,Data,Senior,5.8,5.5,LLM Chatbot,83.9,7.6,23.7,66.3,5.3,98.2,37.9,68.1,73.0,3.8,10.2,11.5,6.5
+EMP1007,ENTP,Extravert,Intuitive,Thinking,Perceiving,HR,L&D,Junior,0.5,2.5,Automation Script,88.6,19.5,13.2,72.9,7.3,75.9,58.7,67.8,63.3,5.0,8.3,9.6,12.7
+EMP1008,ESFP,Extravert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Junior,1.7,1.9,Automation Script,55.0,7.5,25.0,70.1,8.7,66.7,62.8,60.6,72.3,-0.8,5.8,9.0,6.3
+EMP1009,ISFJ,Introvert,Sensing,Feeling,Judging,Product,Design,Junior,0.5,3.2,Automation Script,55.5,12.0,25.4,61.7,0.7,91.1,79.1,33.3,79.3,4.8,0.3,8.9,6.8
+EMP1010,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Growth,Senior,7.9,2.4,Code Assistant,66.3,12.4,19.9,74.2,3.7,95.2,83.6,68.4,71.3,8.0,2.9,8.7,5.2
+EMP1011,ESTJ,Extravert,Sensing,Thinking,Judging,HR,L&D,Lead,13.8,1.9,Visualization,28.6,19.4,11.1,73.8,2.2,80.4,85.4,23.5,64.9,7.1,2.8,4.2,5.4
+EMP1012,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,Recruiter,Mid,2.3,1.2,Search/Research,49.5,14.2,18.8,41.7,3.5,82.0,57.6,54.9,76.4,0.1,9.1,8.3,4.9
+EMP1013,ESTP,Extravert,Sensing,Thinking,Perceiving,R&D,Backend,Junior,1.2,4.2,Automation Script,45.0,11.9,18.5,87.7,6.7,73.9,64.2,53.8,68.3,1.8,7.1,8.1,8.4
+EMP1014,ISTP,Introvert,Sensing,Thinking,Perceiving,R&D,Backend,Mid,2.8,4.2,Automation Script,69.1,8.0,23.9,54.1,4.7,73.6,48.6,58.7,56.4,-1.1,3.4,7.3,9.0
+EMP1015,ESFP,Extravert,Sensing,Feeling,Perceiving,Product,PM,Senior,5.2,3.5,Code Assistant,69.2,15.4,20.9,71.2,8.5,85.5,45.9,53.3,72.1,-6.0,0.8,6.6,10.9
+EMP1016,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Brand,Junior,1.2,2.9,Visualization,72.8,8.8,20.6,84.2,6.0,85.5,55.0,65.0,83.3,5.5,5.1,5.0,1.5
+EMP1017,ESFP,Extravert,Sensing,Feeling,Perceiving,HR,Recruiter,Lead,9.1,1.6,LLM Chatbot,44.0,24.0,6.0,71.5,5.2,90.8,84.0,47.3,72.2,-1.2,9.5,4.7,6.7
+EMP1018,INFJ,Introvert,Intuitive,Feeling,Judging,HR,HRBP,Senior,7.9,2.8,Code Assistant,36.8,21.3,15.9,62.9,0.0,93.8,77.9,59.7,81.1,5.1,2.5,5.9,8.9
+EMP1019,INTJ,Introvert,Intuitive,Thinking,Judging,Sales,AE,Mid,4.2,2.8,Search/Research,72.0,22.3,18.6,59.0,3.4,84.9,59.3,65.3,75.8,4.2,3.6,9.5,7.7
+EMP1020,ENTJ,Extravert,Intuitive,Thinking,Judging,Marketing,Brand,Mid,3.3,3.3,Search/Research,57.2,12.8,10.1,89.8,5.0,95.7,67.5,59.0,69.3,2.8,0.5,8.5,5.7
+EMP1021,ISTP,Introvert,Sensing,Thinking,Perceiving,Marketing,Content,Senior,5.3,2.7,LLM Chatbot,54.5,11.6,18.1,69.4,7.1,79.2,54.0,60.6,71.3,-1.0,9.7,7.2,7.6
+EMP1022,ENFP,Extravert,Intuitive,Feeling,Perceiving,HR,Recruiter,Senior,6.4,1.7,LLM Chatbot,64.9,16.8,12.7,88.7,10.0,57.5,53.1,81.5,70.5,0.0,4.6,4.1,12.9
+EMP1023,INFP,Introvert,Intuitive,Feeling,Perceiving,R&D,Backend,Junior,1.7,3.6,Code Assistant,68.9,8.2,20.5,70.9,3.9,71.1,54.3,83.0,72.0,0.9,3.8,14.6,13.4
+EMP1024,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,Frontend,Lead,11.0,4.0,Automation Script,45.4,15.9,17.3,48.0,0.4,77.9,85.0,46.8,64.2,7.6,11.1,6.3,4.8
+EMP1025,INFJ,Introvert,Intuitive,Feeling,Judging,Product,PM,Mid,4.6,3.0,LLM Chatbot,72.5,9.3,27.2,78.8,3.2,96.5,67.5,69.1,79.9,7.1,1.5,14.4,6.6
+EMP1026,ESFJ,Extravert,Sensing,Feeling,Judging,Operations,Finance Ops,Mid,3.5,1.5,LLM Chatbot,39.6,19.1,10.5,72.9,2.3,80.2,95.0,27.0,82.5,2.5,1.7,8.8,3.8
+EMP1027,INFJ,Introvert,Intuitive,Feeling,Judging,Product,UX Research,Mid,2.7,4.8,Visualization,70.0,9.9,18.5,71.5,2.0,74.8,65.4,69.5,82.3,6.0,1.2,11.4,8.8
+EMP1028,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Ops,Lead,11.4,2.6,Automation Script,71.6,13.6,31.5,47.7,1.1,85.1,61.1,73.5,81.0,5.4,2.9,7.6,8.0
+EMP1029,ESFJ,Extravert,Sensing,Feeling,Judging,Sales,Account Manager,Lead,13.0,2.1,LLM Chatbot,43.2,24.6,6.0,85.7,5.1,70.4,91.1,41.6,77.0,4.7,9.0,5.6,1.0
+EMP1030,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,PM,Mid,2.9,3.5,Search/Research,57.8,7.9,16.9,53.8,5.5,76.8,74.9,55.7,55.1,-3.0,0.9,7.7,10.2
+EMP1031,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Ops,Mid,3.3,1.6,Automation Script,76.1,8.2,11.0,65.8,7.4,70.3,63.6,31.8,63.0,5.7,5.9,8.0,8.7
+EMP1032,ESFP,Extravert,Sensing,Feeling,Perceiving,Product,PM,Mid,2.0,3.4,Search/Research,59.0,8.6,17.8,69.4,7.6,60.6,64.0,58.9,64.6,5.4,2.1,7.3,10.3
+EMP1033,ISFP,Introvert,Sensing,Feeling,Perceiving,Marketing,Growth,Mid,3.7,1.3,Search/Research,69.3,9.1,18.9,74.3,6.2,68.9,66.3,73.7,69.6,1.0,3.2,4.0,11.9
+EMP1034,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,AE,Junior,1.7,2.4,LLM Chatbot,37.0,16.4,10.1,58.6,9.4,55.1,53.0,56.7,58.8,3.9,1.7,7.3,9.3
+EMP1035,ISTP,Introvert,Sensing,Thinking,Perceiving,Sales,SDR,Senior,7.9,1.1,LLM Chatbot,51.9,16.4,13.5,50.1,6.5,87.4,47.3,38.9,60.8,-0.5,0.2,7.5,8.4
+EMP1036,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,HRBP,Junior,1.1,1.8,Search/Research,47.1,16.3,11.3,61.9,6.0,97.5,52.9,45.0,78.7,-0.3,7.5,3.5,7.3
+EMP1037,ISFP,Introvert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Lead,10.0,3.0,Search/Research,46.4,14.2,16.1,59.6,4.6,72.8,71.5,58.1,77.9,3.3,7.5,8.7,10.0
+EMP1038,INTJ,Introvert,Intuitive,Thinking,Judging,Product,PM,Mid,2.8,3.9,Code Assistant,64.5,15.6,16.2,36.4,1.7,73.8,56.4,69.5,61.1,3.6,0.2,8.1,8.5
+EMP1039,ENTJ,Extravert,Intuitive,Thinking,Judging,Marketing,Brand,Senior,5.3,3.5,Search/Research,60.1,21.4,6.7,72.3,5.7,89.8,71.9,58.9,67.7,8.0,5.3,7.8,8.8
+EMP1040,ESFP,Extravert,Sensing,Feeling,Perceiving,HR,L&D,Mid,3.8,2.1,Automation Script,40.7,17.0,16.0,80.3,7.2,54.5,65.4,54.3,72.2,-3.9,8.9,5.4,9.3
+EMP1041,ESFJ,Extravert,Sensing,Feeling,Judging,Sales,AE,Mid,3.3,2.3,Automation Script,44.6,20.3,15.3,79.5,3.1,77.3,76.0,38.8,74.9,5.3,0.4,4.9,3.1
+EMP1042,ISTJ,Introvert,Sensing,Thinking,Judging,Operations,Supply Ops,Senior,5.8,2.1,Automation Script,46.7,6.9,27.0,71.1,0.0,81.5,95.0,28.9,73.7,5.9,8.8,5.2,13.1
+EMP1043,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,HRBP,Mid,4.5,1.9,Visualization,40.6,14.4,17.5,53.4,2.0,61.5,69.0,40.9,70.3,4.8,3.1,9.4,6.7
+EMP1044,INTJ,Introvert,Intuitive,Thinking,Judging,Operations,Ops,Mid,2.6,2.5,Code Assistant,70.2,7.2,18.6,52.2,1.3,44.0,85.0,43.3,68.5,6.5,9.5,9.7,2.9
+EMP1045,ESTJ,Extravert,Sensing,Thinking,Judging,Marketing,Growth,Mid,3.6,1.9,Search/Research,66.9,18.8,16.7,70.0,6.3,89.9,80.2,39.7,73.6,3.3,0.4,10.1,1.0
+EMP1046,ENTJ,Extravert,Intuitive,Thinking,Judging,Product,UX Research,Junior,1.5,4.3,Visualization,61.9,7.8,19.7,79.1,3.6,89.3,57.7,67.7,69.9,5.5,4.7,11.0,1.0
+EMP1047,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Growth,Mid,4.7,3.5,Visualization,67.0,14.4,14.7,82.3,7.3,75.5,34.9,82.2,71.7,1.4,3.8,9.9,9.8
+EMP1048,INFJ,Introvert,Intuitive,Feeling,Judging,Product,Design,Mid,2.5,4.6,Visualization,71.3,12.3,18.9,55.2,1.3,98.9,66.6,63.7,87.2,7.7,7.1,8.1,1.0
+EMP1049,ISTP,Introvert,Sensing,Thinking,Perceiving,Operations,Finance Ops,Mid,4.0,1.6,Search/Research,32.7,5.6,19.2,41.7,4.2,90.4,74.4,51.7,57.9,-1.1,5.0,4.9,5.3
+EMP1050,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,HRBP,Senior,5.5,1.9,LLM Chatbot,58.3,13.4,20.6,71.8,2.2,73.9,64.8,37.5,73.9,-3.8,0.5,6.6,5.7
+EMP1051,ISFJ,Introvert,Sensing,Feeling,Judging,Product,UX Research,Mid,4.7,3.8,Search/Research,61.2,11.8,16.9,64.8,2.2,82.9,80.7,33.5,76.5,6.6,5.6,8.6,1.0
+EMP1052,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Growth,Mid,3.6,2.9,Search/Research,61.3,10.5,21.3,66.4,0.8,65.8,79.4,62.0,68.2,6.1,0.0,8.0,6.2
+EMP1053,INFJ,Introvert,Intuitive,Feeling,Judging,HR,Recruiter,Junior,0.5,2.6,Automation Script,53.0,18.8,14.0,67.9,1.5,68.3,78.6,53.8,79.8,1.6,1.3,7.0,8.9
+EMP1054,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Ops,Senior,7.5,2.7,Visualization,54.4,9.0,26.3,80.7,2.8,72.9,83.4,67.1,70.8,0.1,2.2,7.6,4.0
+EMP1055,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,SDR,Senior,5.7,2.3,Search/Research,59.0,18.1,17.2,69.6,3.6,91.9,80.2,25.1,73.2,6.0,1.3,9.1,1.6
+EMP1056,ESFJ,Extravert,Sensing,Feeling,Judging,Sales,SDR,Mid,2.4,1.5,LLM Chatbot,47.3,19.3,18.5,87.8,5.2,94.5,85.9,25.8,86.7,8.2,3.9,6.6,1.0
+EMP1057,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,Account Manager,Lead,9.0,1.6,Code Assistant,44.8,23.4,6.0,66.8,10.0,52.5,59.8,54.6,64.0,2.9,2.7,6.8,4.4
+EMP1058,ESFJ,Extravert,Sensing,Feeling,Judging,Marketing,Brand,Lead,9.0,2.5,Visualization,50.8,20.4,15.9,84.9,5.3,100.0,70.5,41.1,78.3,5.1,3.1,10.9,3.3
+EMP1059,ESFP,Extravert,Sensing,Feeling,Perceiving,HR,HRBP,Mid,3.0,0.7,Visualization,60.3,18.3,11.3,72.9,8.8,52.9,70.2,47.9,80.5,-0.6,1.4,10.4,12.0
+EMP1060,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,QA,Senior,5.2,3.7,Automation Script,43.1,16.4,23.8,68.2,1.8,91.0,75.4,57.7,73.3,6.6,3.5,8.1,5.3
+EMP1061,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,QA,Mid,4.4,3.8,Automation Script,72.8,8.7,13.3,62.7,4.8,82.4,75.2,85.3,77.5,3.2,3.8,10.7,6.6
+EMP1062,ISFJ,Introvert,Sensing,Feeling,Judging,HR,Recruiter,Senior,5.7,1.5,Automation Script,39.9,10.6,26.7,52.2,4.6,96.9,95.0,38.1,81.3,5.3,0.3,5.3,5.1
+EMP1063,ISFP,Introvert,Sensing,Feeling,Perceiving,Marketing,Brand,Mid,4.6,3.1,Code Assistant,63.5,10.0,15.3,73.0,7.7,76.6,58.7,71.9,61.1,-4.7,10.2,9.0,8.0
+EMP1064,INTJ,Introvert,Intuitive,Thinking,Judging,Sales,SDR,Mid,4.4,2.8,Code Assistant,70.4,16.5,21.4,74.7,2.4,81.1,63.2,50.3,69.9,4.1,2.5,7.2,4.8
+EMP1065,INTP,Introvert,Intuitive,Thinking,Perceiving,Marketing,Brand,Lead,8.0,2.7,Search/Research,50.1,13.1,16.3,56.9,7.0,92.7,44.2,79.6,62.4,0.7,8.2,9.8,9.9
+EMP1066,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Content,Junior,0.8,3.5,LLM Chatbot,57.1,9.1,10.6,68.4,8.6,55.1,30.6,73.4,79.8,-0.2,1.9,5.8,6.9
+EMP1067,INFP,Introvert,Intuitive,Feeling,Perceiving,R&D,QA,Junior,1.9,4.2,Search/Research,69.2,7.8,21.5,53.6,4.0,64.6,43.4,82.5,73.7,-4.4,3.1,10.6,9.1
+EMP1068,ENFP,Extravert,Intuitive,Feeling,Perceiving,Product,PM,Senior,5.0,4.0,Code Assistant,77.1,14.3,13.8,70.5,6.8,51.7,27.4,86.2,59.9,-1.9,0.1,10.4,15.0
+EMP1069,ISFP,Introvert,Sensing,Feeling,Perceiving,Operations,Ops,Lead,11.5,1.4,Visualization,60.6,14.3,16.7,67.3,2.9,65.9,56.2,57.3,60.9,-1.3,1.7,3.5,7.7
+EMP1070,ESTJ,Extravert,Sensing,Thinking,Judging,Product,PM,Senior,6.5,3.5,Visualization,67.7,11.9,16.3,83.4,2.9,74.9,95.0,46.0,72.1,6.1,1.6,7.1,4.8
+EMP1071,ENTP,Extravert,Intuitive,Thinking,Perceiving,HR,Recruiter,Mid,3.2,2.6,Code Assistant,66.4,17.6,7.7,86.4,7.4,81.9,52.5,88.8,61.5,-3.4,6.7,6.1,5.9
+EMP1072,ESTJ,Extravert,Sensing,Thinking,Judging,R&D,QA,Senior,7.2,3.9,Code Assistant,66.2,9.3,14.2,61.6,2.5,65.9,87.3,39.4,69.0,8.6,3.9,8.5,7.5
+EMP1073,INTP,Introvert,Intuitive,Thinking,Perceiving,Operations,Supply Ops,Mid,2.3,3.0,LLM Chatbot,57.1,4.0,23.1,50.2,5.9,62.3,48.5,55.7,70.7,-2.7,4.0,8.4,6.0
+EMP1074,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,Recruiter,Lead,8.6,2.9,Visualization,49.6,19.5,7.0,68.7,4.7,91.9,71.7,50.8,77.4,4.8,1.8,6.0,8.5
+EMP1075,ENTJ,Extravert,Intuitive,Thinking,Judging,Sales,SDR,Lead,12.1,3.1,LLM Chatbot,53.6,19.5,20.4,73.7,5.9,72.5,73.5,63.3,71.7,2.2,7.5,8.2,4.2
+EMP1076,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,Recruiter,Senior,6.5,2.4,LLM Chatbot,58.6,20.5,18.9,90.3,4.1,59.9,83.3,73.7,73.3,5.4,1.6,8.9,8.4
+EMP1077,ENTJ,Extravert,Intuitive,Thinking,Judging,Product,Design,Mid,4.3,4.2,Visualization,67.6,12.6,16.0,81.2,6.3,76.7,62.9,75.3,73.1,4.1,5.6,10.5,8.9
+EMP1078,ISTP,Introvert,Sensing,Thinking,Perceiving,Operations,Ops,Senior,5.5,2.5,Automation Script,41.5,6.8,23.0,52.5,5.1,66.4,50.9,45.8,47.8,0.8,0.7,8.4,5.1
+EMP1079,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,L&D,Senior,6.6,1.7,Automation Script,50.2,23.2,6.0,83.1,4.5,87.1,72.3,42.7,77.5,7.0,2.6,6.5,4.5
+EMP1080,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,HRBP,Mid,3.2,2.0,Visualization,64.5,14.6,17.5,74.6,0.6,51.0,62.8,45.5,76.5,2.7,1.6,4.3,13.0
+EMP1081,ESFP,Extravert,Sensing,Feeling,Perceiving,R&D,QA,Senior,7.6,3.4,Automation Script,64.1,7.2,21.3,95.0,5.0,75.1,50.5,53.7,84.5,3.2,4.3,8.9,8.5
+EMP1082,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,AE,Mid,4.5,1.4,LLM Chatbot,25.6,17.8,6.0,72.1,8.2,68.1,52.3,34.2,65.2,1.0,0.3,6.3,8.1
+EMP1083,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Supply Ops,Mid,4.4,2.5,Visualization,76.8,8.4,22.5,53.1,1.2,76.4,70.7,37.2,80.0,5.4,0.6,8.2,12.4
+EMP1084,ENTP,Extravert,Intuitive,Thinking,Perceiving,HR,HRBP,Senior,7.6,3.3,LLM Chatbot,58.8,17.4,11.9,60.7,8.7,68.5,48.8,55.1,67.8,1.6,2.0,7.2,11.5
+EMP1085,ESTJ,Extravert,Sensing,Thinking,Judging,Product,PM,Senior,5.9,3.2,LLM Chatbot,65.9,11.6,15.1,68.1,3.3,98.5,81.1,61.2,85.4,2.7,0.7,6.5,9.1
+EMP1086,ESFP,Extravert,Sensing,Feeling,Perceiving,Sales,Account Manager,Junior,1.6,2.5,LLM Chatbot,34.5,17.1,16.1,90.6,5.8,59.0,61.8,45.0,71.6,-0.2,6.6,7.2,13.1
+EMP1087,ENFP,Extravert,Intuitive,Feeling,Perceiving,Operations,Finance Ops,Lead,8.1,1.9,Automation Script,72.5,12.5,14.5,74.2,5.0,67.9,58.7,83.0,77.9,8.2,2.4,4.8,11.1
+EMP1088,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,L&D,Mid,2.9,2.8,LLM Chatbot,79.5,15.2,15.0,78.0,2.1,81.0,66.2,70.1,86.0,1.7,1.4,3.5,6.3
+EMP1089,ISTJ,Introvert,Sensing,Thinking,Judging,Product,Design,Senior,7.8,3.6,Visualization,53.6,10.6,23.2,39.6,4.6,72.5,79.3,57.6,67.3,7.1,2.0,5.1,3.1
+EMP1090,ESTP,Extravert,Sensing,Thinking,Perceiving,Product,Design,Junior,1.0,3.7,Visualization,61.6,15.7,12.7,74.0,5.4,79.7,51.0,42.3,59.6,2.3,1.3,8.2,1.3
+EMP1091,ISFJ,Introvert,Sensing,Feeling,Judging,Product,PM,Mid,4.4,3.7,Automation Script,55.0,11.0,23.0,70.7,3.3,85.7,91.2,52.1,80.9,6.6,2.5,8.0,4.7
+EMP1092,ESTJ,Extravert,Sensing,Thinking,Judging,Marketing,Brand,Junior,1.7,2.1,LLM Chatbot,69.5,15.2,18.7,64.1,4.4,85.3,69.8,35.2,73.1,1.3,0.1,5.8,1.0
+EMP1093,ESFP,Extravert,Sensing,Feeling,Perceiving,Product,PM,Junior,1.6,2.5,Visualization,66.0,13.5,9.7,79.2,9.2,71.0,58.0,63.6,79.2,-2.1,3.0,11.4,3.5
+EMP1094,ENFJ,Extravert,Intuitive,Feeling,Judging,Sales,AE,Lead,9.4,3.0,Visualization,53.2,18.1,16.1,89.2,6.9,100.0,70.4,62.9,83.8,7.3,4.3,8.0,1.0
+EMP1095,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,L&D,Mid,2.5,1.6,LLM Chatbot,76.5,16.9,14.7,90.5,3.4,61.9,68.6,64.5,71.7,4.8,1.5,7.6,4.2
+EMP1096,ENTP,Extravert,Intuitive,Thinking,Perceiving,Marketing,Content,Mid,2.6,2.7,Search/Research,73.4,19.5,6.0,83.2,9.3,53.0,27.5,95.0,58.5,1.3,1.1,8.7,6.8
+EMP1097,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Growth,Senior,6.2,2.4,Code Assistant,59.6,14.7,15.4,68.1,5.3,68.0,53.1,66.8,86.0,0.7,5.3,12.3,7.2
+EMP1098,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,AE,Mid,4.7,2.9,Automation Script,48.8,20.3,20.6,80.4,6.3,52.5,78.6,30.2,78.4,2.8,0.5,5.7,9.4
+EMP1099,ENTJ,Extravert,Intuitive,Thinking,Judging,Product,Design,Mid,2.6,4.6,LLM Chatbot,64.3,14.2,17.7,63.1,5.2,75.3,61.8,71.1,68.6,8.3,0.1,9.8,1.1
+EMP1100,ISFJ,Introvert,Sensing,Feeling,Judging,Product,Design,Junior,1.1,3.9,LLM Chatbot,68.6,9.6,24.3,57.4,0.0,59.7,95.0,56.7,69.3,6.4,2.4,7.4,8.2
+EMP1101,ENTP,Extravert,Intuitive,Thinking,Perceiving,Sales,Account Manager,Mid,3.7,1.5,Code Assistant,62.8,19.9,6.0,78.2,10.0,65.8,45.7,85.7,65.9,-0.9,0.7,7.4,17.1
+EMP1102,ENTJ,Extravert,Intuitive,Thinking,Judging,Marketing,Brand,Mid,2.2,2.7,Visualization,73.7,17.4,14.3,75.4,4.5,90.6,69.2,81.3,56.6,6.2,3.1,12.2,5.0
+EMP1103,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,QA,Mid,3.3,3.2,Automation Script,83.6,16.0,14.5,91.4,4.7,79.6,56.0,66.3,79.1,6.1,3.8,9.1,6.6
+EMP1104,ISTP,Introvert,Sensing,Thinking,Perceiving,R&D,Frontend,Senior,6.7,3.7,Automation Script,57.2,4.8,18.8,52.4,3.7,73.0,61.1,56.5,63.6,2.2,3.8,6.5,7.1
+EMP1105,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,Data,Senior,6.1,4.7,Automation Script,56.1,8.3,28.1,64.0,2.7,90.7,75.8,32.7,78.0,3.6,3.5,8.2,7.8
+EMP1106,ENTP,Extravert,Intuitive,Thinking,Perceiving,HR,L&D,Junior,1.9,2.6,Automation Script,34.9,15.3,11.5,63.9,6.1,48.1,53.2,81.9,54.4,3.1,2.7,5.7,11.4
+EMP1107,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Brand,Junior,1.7,2.7,Search/Research,68.9,22.6,11.9,89.5,7.5,62.9,35.6,93.0,67.8,0.5,1.7,7.3,11.9
+EMP1108,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Growth,Senior,6.2,2.5,Visualization,70.0,17.3,23.9,63.4,5.6,88.3,60.1,84.7,84.0,7.1,1.6,9.3,7.6
+EMP1109,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Supply Ops,Junior,1.5,2.1,Visualization,61.3,14.4,6.0,64.6,10.0,44.8,67.1,70.6,57.8,2.0,2.0,7.9,11.8
+EMP1110,ESFP,Extravert,Sensing,Feeling,Perceiving,R&D,Backend,Mid,2.9,4.0,LLM Chatbot,47.1,12.1,20.1,72.1,7.0,50.5,53.2,70.6,57.2,0.4,9.2,8.5,12.9
+EMP1111,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,L&D,Mid,4.3,1.6,LLM Chatbot,71.5,18.7,10.0,61.5,7.7,60.4,67.0,50.0,74.2,0.4,4.3,9.4,9.1
+EMP1112,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,Account Manager,Mid,4.2,2.1,LLM Chatbot,35.4,19.0,14.1,90.9,8.1,63.2,59.7,51.8,56.6,-2.9,3.2,6.3,12.4
+EMP1113,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Brand,Senior,6.1,3.6,LLM Chatbot,46.6,15.0,18.1,77.1,5.9,91.3,61.1,71.3,74.8,5.3,1.2,12.3,7.4
+EMP1114,ISFJ,Introvert,Sensing,Feeling,Judging,Sales,SDR,Mid,4.4,2.9,Search/Research,48.0,22.2,12.0,66.7,3.1,70.9,83.4,55.1,85.5,5.7,0.9,6.4,5.5
+EMP1115,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,Design,Lead,10.2,3.6,Search/Research,63.4,17.1,19.1,58.0,3.7,37.5,51.1,64.8,55.1,3.8,3.9,9.1,12.9
+EMP1116,INFP,Introvert,Intuitive,Feeling,Perceiving,Operations,Ops,Senior,7.5,2.2,Search/Research,64.1,12.3,13.2,73.6,6.3,25.8,53.5,78.0,53.1,-4.2,4.4,8.8,11.4
+EMP1117,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Growth,Lead,9.9,3.3,Visualization,71.8,13.2,24.7,55.4,2.8,82.2,71.5,66.5,74.5,5.1,3.3,9.0,9.8
+EMP1118,INTJ,Introvert,Intuitive,Thinking,Judging,Product,PM,Mid,4.8,4.9,Visualization,56.6,10.8,26.3,61.9,1.6,88.9,77.6,71.2,69.1,7.4,1.7,9.2,5.6
+EMP1119,INFP,Introvert,Intuitive,Feeling,Perceiving,HR,HRBP,Senior,7.4,1.7,Code Assistant,52.6,17.7,14.9,69.8,6.6,45.9,45.3,85.1,65.0,2.8,0.9,7.9,7.4
+EMP1120,ENTP,Extravert,Intuitive,Thinking,Perceiving,Operations,Ops,Junior,0.3,2.1,Automation Script,59.2,11.8,15.0,80.8,7.2,43.4,52.5,59.9,62.8,1.4,0.5,11.6,12.5
+EMP1121,INFJ,Introvert,Intuitive,Feeling,Judging,Product,Design,Senior,7.8,3.3,Search/Research,68.7,8.8,14.3,66.6,3.1,82.9,60.1,69.7,63.2,4.1,2.6,12.4,8.5
+EMP1122,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,Frontend,Junior,0.9,3.9,Code Assistant,75.7,3.2,26.2,45.5,0.6,73.9,80.1,42.7,75.4,1.6,5.2,8.7,1.0
+EMP1123,ENFP,Extravert,Intuitive,Feeling,Perceiving,R&D,Data,Senior,6.6,4.6,LLM Chatbot,72.4,11.0,12.7,82.9,7.2,84.7,39.2,92.3,75.9,-0.1,5.2,12.1,11.6
+EMP1124,ESTJ,Extravert,Sensing,Thinking,Judging,HR,L&D,Lead,10.6,2.3,Search/Research,34.9,19.0,19.6,56.1,5.3,82.0,89.3,34.3,75.0,8.0,6.6,7.3,2.6
+EMP1125,ISTP,Introvert,Sensing,Thinking,Perceiving,Marketing,Growth,Mid,3.5,2.7,Visualization,50.3,9.3,14.4,64.1,7.4,62.6,39.6,54.5,56.9,1.1,1.4,3.9,9.6
+EMP1126,ESTP,Extravert,Sensing,Thinking,Perceiving,Product,UX Research,Senior,6.4,3.4,Visualization,58.3,14.1,12.7,57.8,9.0,80.1,67.5,47.8,54.1,-2.6,2.3,9.7,8.6
+EMP1127,ISFJ,Introvert,Sensing,Feeling,Judging,HR,L&D,Mid,3.1,2.7,Visualization,44.5,7.7,27.5,67.3,2.6,79.9,95.0,43.0,70.0,6.3,0.4,7.7,1.4
+EMP1128,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Ops,Senior,6.3,0.9,Automation Script,60.3,12.5,18.4,71.0,6.6,76.3,54.0,54.4,65.7,-6.1,1.3,6.3,14.5
+EMP1129,ISTP,Introvert,Sensing,Thinking,Perceiving,Sales,SDR,Senior,6.9,0.8,Search/Research,33.0,14.1,22.6,64.8,8.7,68.4,46.3,47.7,61.4,-2.0,3.3,2.2,14.1
+EMP1130,INFJ,Introvert,Intuitive,Feeling,Judging,Sales,Account Manager,Junior,1.8,2.6,Search/Research,59.3,14.9,21.8,56.8,4.1,93.9,76.1,56.2,91.7,7.3,1.9,12.7,7.0
+EMP1131,INTJ,Introvert,Intuitive,Thinking,Judging,R&D,Frontend,Lead,8.2,4.2,Visualization,73.7,9.8,22.4,38.9,2.4,92.6,59.9,69.0,66.0,7.6,5.6,8.9,2.0
+EMP1132,ISTP,Introvert,Sensing,Thinking,Perceiving,Operations,Supply Ops,Mid,3.8,1.8,LLM Chatbot,50.2,11.8,17.9,49.8,5.6,73.3,73.7,53.7,51.2,-0.9,1.0,4.9,16.4
+EMP1133,INFP,Introvert,Intuitive,Feeling,Perceiving,Operations,Supply Ops,Senior,5.6,2.7,Automation Script,65.9,7.6,26.2,49.4,2.7,78.8,51.3,59.3,66.2,-2.8,3.4,5.8,13.8
+EMP1134,ENTJ,Extravert,Intuitive,Thinking,Judging,R&D,Frontend,Mid,3.9,3.6,Automation Script,95.0,11.3,20.3,52.0,3.5,91.2,58.4,61.8,69.2,3.4,3.7,10.3,2.7
+EMP1135,ISTP,Introvert,Sensing,Thinking,Perceiving,R&D,QA,Senior,5.9,4.7,LLM Chatbot,68.7,4.0,23.4,48.5,2.9,79.4,59.6,48.0,66.5,-3.1,4.2,6.5,8.3
+EMP1136,INFJ,Introvert,Intuitive,Feeling,Judging,Sales,Account Manager,Mid,3.4,2.6,Visualization,61.7,13.1,16.2,63.8,2.8,84.5,70.5,67.2,84.2,3.7,3.1,6.5,11.9
+EMP1137,INFP,Introvert,Intuitive,Feeling,Perceiving,Product,UX Research,Mid,4.8,2.9,Search/Research,84.1,13.2,14.4,71.2,3.5,32.3,35.4,80.3,78.4,2.6,0.6,10.2,13.1
+EMP1138,ENTP,Extravert,Intuitive,Thinking,Perceiving,Sales,SDR,Mid,4.5,2.8,Visualization,70.9,19.7,14.3,75.2,8.2,75.2,43.1,53.1,63.9,-1.8,1.1,10.5,10.0
+EMP1139,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,Recruiter,Junior,1.3,2.4,Automation Script,47.6,15.6,18.8,72.9,6.1,68.3,76.0,41.1,80.5,-2.9,1.9,7.9,7.9
+EMP1140,INFP,Introvert,Intuitive,Feeling,Perceiving,Product,UX Research,Junior,1.4,3.7,Visualization,77.9,9.1,17.8,64.5,6.2,63.9,46.7,92.6,74.6,2.5,0.3,11.0,7.4
+EMP1141,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Brand,Mid,2.5,2.6,Visualization,52.2,14.2,19.2,48.3,2.9,81.4,76.3,39.3,75.4,6.3,3.6,4.7,5.6
+EMP1142,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,Backend,Mid,4.6,4.1,LLM Chatbot,56.8,5.7,26.8,53.3,2.8,86.5,83.7,56.0,60.6,4.5,5.1,10.8,2.9
+EMP1143,ENFP,Extravert,Intuitive,Feeling,Perceiving,HR,Recruiter,Lead,9.8,3.1,Automation Script,58.4,19.5,10.1,87.1,6.2,91.9,49.0,81.0,79.3,-2.4,7.9,7.1,11.4
+EMP1144,INTJ,Introvert,Intuitive,Thinking,Judging,HR,HRBP,Mid,4.3,2.5,Visualization,47.4,17.4,21.3,47.9,1.4,62.3,72.8,66.0,72.0,5.3,1.9,9.7,7.7
+EMP1145,ESTJ,Extravert,Sensing,Thinking,Judging,R&D,Frontend,Senior,6.7,3.5,Code Assistant,54.6,12.5,20.6,50.5,4.3,91.7,73.9,32.1,75.1,7.6,4.4,4.3,3.3
+EMP1146,ESTP,Extravert,Sensing,Thinking,Perceiving,R&D,Data,Mid,4.3,5.0,Automation Script,50.9,9.8,16.4,61.0,8.3,86.7,53.4,64.6,62.8,-0.9,4.4,8.0,13.1
+EMP1147,INTJ,Introvert,Intuitive,Thinking,Judging,Product,Design,Lead,9.4,3.7,Search/Research,63.8,9.1,24.2,63.0,1.4,81.2,66.3,68.7,67.8,8.1,3.3,12.2,2.8
+EMP1148,ESTJ,Extravert,Sensing,Thinking,Judging,HR,Recruiter,Senior,6.3,2.5,Automation Script,51.0,13.8,20.0,72.4,4.4,85.3,92.9,44.9,77.7,9.1,2.4,8.0,5.9
+EMP1149,INFJ,Introvert,Intuitive,Feeling,Judging,HR,Recruiter,Lead,13.3,2.5,Search/Research,47.3,19.0,20.9,68.2,0.0,76.3,72.9,59.9,78.5,6.5,2.3,6.4,2.3
+EMP1150,ENFP,Extravert,Intuitive,Feeling,Perceiving,Operations,Ops,Senior,6.6,2.5,Automation Script,60.9,11.6,14.4,77.6,8.9,63.5,52.2,83.1,56.2,0.8,2.3,8.4,10.2
+EMP1151,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,L&D,Mid,3.9,1.9,LLM Chatbot,49.0,17.2,7.6,69.0,6.6,65.6,67.2,42.8,60.1,2.1,0.4,7.5,11.8
+EMP1152,ESFJ,Extravert,Sensing,Feeling,Judging,HR,Recruiter,Junior,1.8,2.9,Search/Research,41.5,18.8,8.5,79.3,5.5,87.2,95.0,47.4,87.1,2.3,3.4,7.9,5.5
+EMP1153,ENTJ,Extravert,Intuitive,Thinking,Judging,Sales,SDR,Mid,4.1,3.1,Search/Research,71.3,14.9,15.2,79.3,6.0,71.9,73.2,64.4,71.8,2.5,2.5,6.5,6.4
+EMP1154,INTJ,Introvert,Intuitive,Thinking,Judging,HR,L&D,Mid,2.5,2.5,LLM Chatbot,54.0,16.9,19.3,44.9,0.0,64.2,70.5,51.6,64.1,6.0,0.8,10.1,3.9
+EMP1155,ESFJ,Extravert,Sensing,Feeling,Judging,HR,L&D,Lead,10.4,1.8,Search/Research,52.7,21.0,11.8,90.3,3.6,77.6,95.0,15.0,83.5,6.2,5.4,6.7,3.8
+EMP1156,ESFJ,Extravert,Sensing,Feeling,Judging,HR,L&D,Mid,4.0,1.6,LLM Chatbot,52.2,15.7,11.5,72.4,7.6,78.2,90.2,45.7,81.1,6.6,0.2,5.9,1.0
+EMP1157,ENTJ,Extravert,Intuitive,Thinking,Judging,Operations,Finance Ops,Lead,8.3,2.6,Code Assistant,55.7,13.5,16.6,58.2,5.7,94.6,74.2,55.9,65.5,6.1,2.9,10.5,5.3
+EMP1158,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Supply Ops,Mid,4.3,2.2,Code Assistant,55.0,11.3,18.4,60.1,7.6,67.5,58.3,45.9,57.0,2.5,2.9,7.8,12.4
+EMP1159,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Growth,Mid,4.5,2.7,Visualization,89.7,9.1,24.0,49.6,5.3,91.7,60.8,72.5,78.1,3.8,0.4,10.7,7.1
+EMP1160,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,QA,Mid,3.4,2.9,Automation Script,36.2,4.7,26.0,60.0,0.2,70.4,92.2,39.9,62.7,6.4,3.3,7.3,4.8
+EMP1161,INFP,Introvert,Intuitive,Feeling,Perceiving,Operations,Supply Ops,Junior,1.8,2.0,Automation Script,64.2,8.2,21.4,66.4,4.7,44.7,37.5,69.1,76.2,3.5,0.9,9.1,3.5
+EMP1162,INTJ,Introvert,Intuitive,Thinking,Judging,HR,Recruiter,Mid,3.7,2.2,LLM Chatbot,59.6,15.7,15.6,63.5,2.4,56.6,81.0,42.5,56.8,4.9,6.3,9.4,6.4
+EMP1163,ENTP,Extravert,Intuitive,Thinking,Perceiving,Product,UX Research,Mid,4.3,4.0,Automation Script,82.8,7.7,7.6,62.6,6.7,70.4,51.5,84.2,61.2,2.5,1.4,8.6,10.1
+EMP1164,ESFJ,Extravert,Sensing,Feeling,Judging,Operations,Supply Ops,Mid,4.7,2.1,Visualization,50.7,17.2,22.0,71.3,3.0,79.0,84.7,34.5,72.1,3.7,9.7,8.5,6.6
+EMP1165,ESFJ,Extravert,Sensing,Feeling,Judging,R&D,Backend,Mid,2.6,4.0,Automation Script,44.6,14.6,13.4,72.0,3.3,78.7,76.5,40.3,77.2,7.6,4.4,9.6,7.8
+EMP1166,ENFJ,Extravert,Intuitive,Feeling,Judging,Sales,SDR,Mid,3.4,1.9,Automation Script,69.5,18.3,14.0,63.4,5.8,78.8,63.0,63.7,81.8,3.5,1.3,8.3,3.7
+EMP1167,ENTJ,Extravert,Intuitive,Thinking,Judging,HR,HRBP,Lead,8.2,2.3,Code Assistant,84.1,22.6,12.8,68.1,2.7,79.6,81.8,63.8,76.0,3.9,1.6,10.1,1.0
+EMP1168,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,L&D,Lead,10.1,2.0,Search/Research,38.2,16.9,9.5,69.2,7.4,51.3,65.2,36.6,64.3,1.6,3.0,0.2,5.7
+EMP1169,ISFJ,Introvert,Sensing,Feeling,Judging,Product,Design,Mid,3.6,3.1,Automation Script,39.0,11.1,24.8,60.6,0.0,91.1,73.1,56.2,86.5,3.8,4.0,8.6,1.0
+EMP1170,INFP,Introvert,Intuitive,Feeling,Perceiving,Sales,AE,Senior,5.6,2.4,Search/Research,79.2,14.0,17.8,61.4,3.8,57.8,42.4,67.1,65.6,-0.5,0.4,7.9,8.4
+EMP1171,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,AE,Mid,3.5,2.4,Visualization,45.5,19.7,6.0,79.4,9.8,58.7,56.0,73.9,63.1,-1.4,0.6,2.7,6.0
+EMP1172,ISTJ,Introvert,Sensing,Thinking,Judging,HR,Recruiter,Junior,1.8,1.4,LLM Chatbot,46.8,18.1,22.2,61.4,0.7,80.1,77.8,21.6,79.7,0.9,5.9,6.2,3.6
+EMP1173,ESFJ,Extravert,Sensing,Feeling,Judging,Sales,AE,Senior,5.7,1.3,Search/Research,54.3,15.7,19.3,79.3,7.1,86.7,83.2,35.8,77.8,8.3,2.9,1.0,6.3
+EMP1174,INTP,Introvert,Intuitive,Thinking,Perceiving,HR,Recruiter,Lead,14.0,2.7,Code Assistant,57.4,13.9,15.2,64.9,6.5,80.5,53.4,50.9,68.4,-3.7,2.7,5.9,11.7
+EMP1175,ESFP,Extravert,Sensing,Feeling,Perceiving,Operations,Finance Ops,Mid,2.3,3.0,Automation Script,48.0,12.4,22.2,82.0,6.4,42.9,79.7,42.0,78.1,1.7,1.9,7.0,8.0
+EMP1176,ENTJ,Extravert,Intuitive,Thinking,Judging,Sales,SDR,Mid,4.0,2.7,Code Assistant,69.8,18.2,22.5,70.0,5.8,88.1,63.8,38.7,81.1,6.2,1.4,3.9,9.3
+EMP1177,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,Backend,Mid,2.8,5.0,Visualization,67.0,13.4,21.9,79.3,2.8,96.2,68.2,86.7,75.4,4.2,4.2,10.1,2.5
+EMP1178,INTP,Introvert,Intuitive,Thinking,Perceiving,HR,L&D,Senior,7.1,2.4,LLM Chatbot,54.2,19.8,14.5,60.7,3.6,75.7,34.6,70.3,68.0,0.2,2.6,8.1,8.3
+EMP1179,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,Recruiter,Junior,1.8,2.8,Search/Research,37.9,15.6,16.9,56.2,5.1,47.0,61.8,51.3,55.5,2.8,3.0,7.0,11.5
+EMP1180,ENTJ,Extravert,Intuitive,Thinking,Judging,Sales,SDR,Senior,5.4,2.9,Automation Script,65.0,23.0,18.4,75.2,6.7,93.6,59.8,43.8,71.1,7.4,3.8,5.0,2.3
+EMP1181,ESFJ,Extravert,Sensing,Feeling,Judging,HR,Recruiter,Senior,6.9,2.0,LLM Chatbot,44.4,22.2,6.1,95.0,4.4,77.5,78.4,27.9,80.9,5.8,0.3,8.0,6.4
+EMP1182,ISFJ,Introvert,Sensing,Feeling,Judging,Product,Design,Mid,2.3,2.9,LLM Chatbot,73.0,11.3,33.2,49.1,0.5,94.8,74.9,53.9,80.7,5.6,3.0,7.0,6.5
+EMP1183,ENFJ,Extravert,Intuitive,Feeling,Judging,Product,UX Research,Lead,15.0,3.5,Visualization,59.3,19.4,12.7,75.2,2.8,92.7,76.8,84.9,76.0,8.2,3.1,7.6,7.0
+EMP1184,ESFJ,Extravert,Sensing,Feeling,Judging,Product,Design,Senior,7.5,4.0,Visualization,50.1,12.0,14.4,83.6,3.7,67.1,93.2,44.1,72.0,6.3,1.5,5.4,5.7
+EMP1185,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,Data,Senior,6.5,4.1,Code Assistant,44.6,4.2,30.0,44.9,2.1,79.4,82.5,61.8,63.8,1.9,6.6,8.6,5.0
+EMP1186,ESTJ,Extravert,Sensing,Thinking,Judging,Product,UX Research,Junior,1.8,3.6,LLM Chatbot,60.6,10.3,23.5,63.9,4.9,92.2,65.6,38.7,71.0,5.6,0.1,8.6,2.6
+EMP1187,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Ops,Mid,3.0,2.1,Search/Research,52.7,15.6,12.1,55.5,6.1,71.2,61.3,61.5,49.6,1.9,0.4,4.6,6.0
+EMP1188,ESFJ,Extravert,Sensing,Feeling,Judging,Sales,AE,Junior,1.2,1.0,Search/Research,54.6,18.2,14.9,78.0,7.5,81.0,72.6,30.2,70.6,4.9,3.0,10.0,4.3
+EMP1189,ESFJ,Extravert,Sensing,Feeling,Judging,Product,UX Research,Mid,2.6,3.7,Automation Script,56.2,11.4,14.9,71.6,3.0,83.8,81.6,47.6,73.4,2.9,2.2,5.9,5.4
+EMP1190,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Growth,Lead,8.9,2.5,Automation Script,59.4,15.4,6.8,60.3,4.4,100.0,79.5,33.7,72.3,7.1,1.7,0.5,1.0
+EMP1191,ENTP,Extravert,Intuitive,Thinking,Perceiving,Operations,Supply Ops,Senior,5.1,3.3,Visualization,85.2,14.2,12.5,55.5,6.3,51.5,40.4,68.7,57.0,0.7,1.0,9.7,13.2
+EMP1192,ISFP,Introvert,Sensing,Feeling,Perceiving,Product,UX Research,Lead,10.4,2.9,LLM Chatbot,40.4,7.2,29.4,57.1,7.2,47.8,55.4,59.6,73.1,3.0,1.5,8.6,5.5
+EMP1193,ISTP,Introvert,Sensing,Thinking,Perceiving,R&D,Frontend,Lead,9.9,3.9,Automation Script,38.6,14.6,12.1,53.1,6.5,34.5,63.4,44.2,62.8,-1.4,11.0,9.7,6.8
+EMP1194,INFJ,Introvert,Intuitive,Feeling,Judging,HR,HRBP,Senior,7.1,2.2,Search/Research,64.4,15.5,27.9,70.8,3.5,83.9,83.5,48.7,81.3,5.0,6.0,7.1,1.0
+EMP1195,ESFJ,Extravert,Sensing,Feeling,Judging,Sales,SDR,Junior,0.8,2.4,Visualization,42.7,17.6,19.0,95.0,6.2,82.3,75.3,38.0,81.8,7.8,0.6,5.5,5.2
+EMP1196,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Content,Junior,0.6,3.1,Automation Script,75.2,15.9,22.6,60.3,2.6,67.7,66.2,74.3,85.5,3.5,2.4,5.6,3.2
+EMP1197,INTP,Introvert,Intuitive,Thinking,Perceiving,HR,Recruiter,Mid,2.6,2.7,Automation Script,68.5,10.0,24.3,86.2,6.8,52.7,56.1,56.9,60.9,1.6,1.2,6.3,8.6
+EMP1198,INTJ,Introvert,Intuitive,Thinking,Judging,Marketing,Growth,Lead,8.1,2.9,Visualization,53.1,12.1,20.5,54.4,5.6,82.9,67.9,82.5,65.6,6.9,4.3,8.8,8.3
+EMP1199,INTP,Introvert,Intuitive,Thinking,Perceiving,Sales,SDR,Mid,2.9,2.2,Visualization,72.1,12.7,23.6,54.2,7.9,89.7,24.7,67.7,65.2,3.5,0.7,6.8,11.4
+EMP1200,INTJ,Introvert,Intuitive,Thinking,Judging,Marketing,Content,Junior,0.5,2.3,Visualization,66.1,16.4,19.4,65.5,4.0,84.9,67.3,74.7,66.3,5.3,3.2,8.9,4.3
+EMP1201,ESFP,Extravert,Sensing,Feeling,Perceiving,HR,L&D,Mid,3.4,1.9,LLM Chatbot,45.6,18.6,13.4,77.0,8.1,65.4,73.2,37.9,82.0,0.6,0.1,8.4,6.0
+EMP1202,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,QA,Mid,2.0,3.0,Visualization,62.2,8.3,20.6,66.8,0.0,94.2,71.5,44.8,72.6,5.0,3.2,5.1,8.7
+EMP1203,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Content,Senior,6.9,3.1,Automation Script,86.8,11.0,14.8,92.8,7.5,80.9,27.2,78.7,67.4,2.1,0.8,8.7,6.6
+EMP1204,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,Account Manager,Senior,7.2,2.0,LLM Chatbot,38.0,17.9,11.5,66.5,7.9,70.2,58.6,54.3,64.4,-3.5,9.2,4.4,9.0
+EMP1205,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,L&D,Lead,10.8,2.4,Search/Research,54.5,19.9,11.8,78.0,2.4,70.8,73.2,53.0,80.1,-1.1,3.7,7.4,13.8
+EMP1206,ENFP,Extravert,Intuitive,Feeling,Perceiving,Product,UX Research,Junior,1.6,3.4,LLM Chatbot,65.6,9.9,14.2,65.9,6.6,78.4,42.6,79.2,80.5,4.6,0.7,12.9,12.8
+EMP1207,INFJ,Introvert,Intuitive,Feeling,Judging,Product,PM,Mid,3.1,4.0,Search/Research,80.3,12.1,22.3,63.1,0.0,64.0,70.7,69.1,60.3,2.9,0.2,7.5,9.9
+EMP1208,ESFJ,Extravert,Sensing,Feeling,Judging,Product,Design,Junior,0.7,4.0,Code Assistant,55.8,12.0,19.0,75.3,5.4,79.2,69.7,44.1,77.0,3.8,0.6,8.0,7.6
+EMP1209,ESTJ,Extravert,Sensing,Thinking,Judging,Marketing,Growth,Lead,9.1,3.2,LLM Chatbot,64.2,15.9,15.5,68.8,7.5,100.0,80.7,59.5,83.8,6.3,3.2,3.6,4.0
+EMP1210,ENTP,Extravert,Intuitive,Thinking,Perceiving,HR,L&D,Mid,3.7,2.2,Search/Research,66.1,20.4,14.0,83.8,4.6,53.6,53.6,67.7,65.6,-0.0,2.0,5.9,11.1
+EMP1211,ENFP,Extravert,Intuitive,Feeling,Perceiving,Operations,Finance Ops,Mid,2.3,2.7,LLM Chatbot,82.9,16.4,10.9,68.3,6.1,65.0,38.5,60.9,73.3,5.4,0.9,8.9,14.8
+EMP1212,ESFJ,Extravert,Sensing,Feeling,Judging,Product,PM,Mid,3.5,2.6,Automation Script,55.7,13.1,12.7,74.5,5.3,65.1,79.8,30.2,89.9,6.1,4.3,8.9,3.8
+EMP1213,INFP,Introvert,Intuitive,Feeling,Perceiving,R&D,Data,Junior,1.6,5.4,LLM Chatbot,86.1,13.7,19.3,55.8,5.3,32.1,38.4,95.0,78.1,-4.2,4.3,9.5,9.6
+EMP1214,ESTJ,Extravert,Sensing,Thinking,Judging,HR,HRBP,Mid,3.6,2.4,LLM Chatbot,38.9,20.9,13.5,80.7,4.3,74.8,95.0,49.0,72.0,4.4,9.3,4.7,6.2
+EMP1215,ESFP,Extravert,Sensing,Feeling,Perceiving,HR,Recruiter,Lead,13.5,2.1,Visualization,36.0,24.7,6.0,73.6,9.2,28.4,67.4,52.8,68.0,6.0,2.8,9.2,12.2
+EMP1216,ISTJ,Introvert,Sensing,Thinking,Judging,HR,HRBP,Senior,5.9,2.3,LLM Chatbot,42.3,15.3,20.6,47.2,2.2,88.9,95.0,29.5,70.2,5.3,0.2,5.5,7.2
+EMP1217,INFP,Introvert,Intuitive,Feeling,Perceiving,Marketing,Growth,Lead,12.4,2.8,LLM Chatbot,41.0,19.7,10.6,69.9,7.8,42.4,25.9,71.3,77.0,-3.4,1.7,7.3,5.3
+EMP1218,ISFP,Introvert,Sensing,Feeling,Perceiving,Marketing,Content,Mid,4.3,3.0,Search/Research,31.7,12.5,17.2,69.1,6.4,60.9,59.8,54.5,66.2,-1.2,0.1,7.2,8.7
+EMP1219,ESFJ,Extravert,Sensing,Feeling,Judging,R&D,QA,Mid,4.0,4.0,LLM Chatbot,94.8,6.1,28.2,86.6,4.7,89.7,95.0,36.6,74.0,7.2,7.0,7.7,7.9
+EMP1220,ISTJ,Introvert,Sensing,Thinking,Judging,Product,Design,Lead,10.4,3.5,Search/Research,57.2,11.4,25.1,46.3,2.6,66.8,80.6,57.7,57.3,3.7,2.4,6.8,1.0
+EMP1221,INFP,Introvert,Intuitive,Feeling,Perceiving,Sales,Account Manager,Mid,2.3,2.3,LLM Chatbot,73.0,20.4,21.4,54.7,8.5,63.1,35.3,65.9,62.2,3.0,2.0,9.5,9.8
+EMP1222,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Finance Ops,Junior,1.7,2.5,Automation Script,52.7,10.4,16.4,59.3,1.9,75.1,80.5,63.8,76.9,6.2,0.0,7.4,2.6
+EMP1223,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,L&D,Lead,9.0,2.6,Search/Research,43.9,14.0,19.7,62.4,3.6,75.2,61.2,52.6,56.5,5.6,6.7,3.6,14.0
+EMP1224,ENFP,Extravert,Intuitive,Feeling,Perceiving,Product,Design,Lead,8.3,3.2,LLM Chatbot,69.4,23.0,16.3,94.3,8.9,34.4,43.4,88.7,65.5,-0.9,3.8,7.2,7.6
+EMP1225,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,Frontend,Mid,3.6,3.9,Visualization,82.2,15.0,13.5,77.1,3.9,81.6,55.7,41.5,75.5,6.3,5.5,8.7,9.3
+EMP1226,ESFP,Extravert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Senior,6.7,1.6,Automation Script,65.9,12.6,15.5,69.1,8.4,40.6,57.2,59.3,69.2,2.5,0.2,5.0,7.7
+EMP1227,ESTJ,Extravert,Sensing,Thinking,Judging,Operations,Supply Ops,Mid,3.1,1.8,Visualization,52.8,18.0,11.4,74.1,3.3,85.7,95.0,27.4,74.3,5.6,0.2,2.7,12.6
+EMP1228,INFP,Introvert,Intuitive,Feeling,Perceiving,HR,L&D,Lead,8.0,2.3,LLM Chatbot,55.9,18.8,16.0,60.5,1.8,59.9,30.8,67.0,66.7,-2.4,6.2,9.2,1.9
+EMP1229,ESFJ,Extravert,Sensing,Feeling,Judging,R&D,Backend,Senior,5.8,4.3,Automation Script,70.5,8.0,19.2,67.4,2.0,98.4,66.7,43.9,92.7,7.2,3.2,5.5,6.4
+EMP1230,INTP,Introvert,Intuitive,Thinking,Perceiving,R&D,Frontend,Mid,2.5,3.7,Visualization,67.0,11.3,17.8,54.8,5.3,54.6,44.8,89.2,60.3,-2.3,4.6,12.6,5.6
+EMP1231,ESTP,Extravert,Sensing,Thinking,Perceiving,Product,UX Research,Mid,2.8,3.2,LLM Chatbot,77.8,10.9,13.9,54.2,7.1,89.9,54.8,55.6,58.3,0.1,0.6,9.6,8.6
+EMP1232,ENFJ,Extravert,Intuitive,Feeling,Judging,Operations,Ops,Mid,3.6,1.6,Search/Research,62.4,10.8,16.8,64.9,2.6,86.9,66.9,60.0,79.9,2.1,0.4,5.1,7.0
+EMP1233,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Ops,Mid,2.5,1.9,Automation Script,39.4,18.7,8.3,70.6,9.4,48.2,56.5,46.1,56.8,-4.8,0.9,6.8,8.5
+EMP1234,ISTP,Introvert,Sensing,Thinking,Perceiving,Operations,Finance Ops,Lead,11.6,2.3,Visualization,33.3,15.7,12.9,39.7,5.3,74.3,63.6,34.9,55.4,1.3,3.8,5.0,7.7
+EMP1235,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,L&D,Mid,3.3,1.7,LLM Chatbot,38.2,12.1,20.1,62.8,5.4,81.5,56.4,37.9,81.5,-0.8,0.2,7.8,13.7
+EMP1236,ENTP,Extravert,Intuitive,Thinking,Perceiving,Sales,SDR,Mid,4.5,2.0,Visualization,54.6,11.2,22.3,80.3,7.0,47.0,43.3,70.2,59.3,-3.9,1.4,2.8,6.2
+EMP1237,INTJ,Introvert,Intuitive,Thinking,Judging,Marketing,Brand,Junior,0.9,3.2,Automation Script,75.3,12.5,31.1,61.3,2.0,83.2,64.7,75.5,71.2,4.6,0.0,8.0,3.9
+EMP1238,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Growth,Junior,1.8,2.4,LLM Chatbot,66.7,13.7,17.6,67.9,0.4,85.6,69.1,69.3,81.3,6.4,0.7,9.4,16.6
+EMP1239,INFP,Introvert,Intuitive,Feeling,Perceiving,Marketing,Content,Mid,3.5,3.0,Visualization,62.8,14.6,22.4,70.3,4.4,52.9,38.5,69.1,77.3,1.1,2.3,6.7,6.5
+EMP1240,ESFP,Extravert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Mid,5.0,2.2,Automation Script,53.7,12.3,9.9,68.1,8.0,55.0,51.3,49.8,71.0,2.3,0.7,4.2,11.8
+EMP1241,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,Frontend,Junior,1.3,4.6,Code Assistant,82.5,4.1,22.3,80.5,5.0,90.6,72.7,57.0,76.5,4.2,5.3,11.9,3.7
+EMP1242,ISTP,Introvert,Sensing,Thinking,Perceiving,Sales,AE,Junior,2.0,2.0,LLM Chatbot,59.3,14.0,16.2,64.7,4.7,44.3,54.1,39.1,49.7,2.0,0.1,7.9,8.1
+EMP1243,ENTP,Extravert,Intuitive,Thinking,Perceiving,R&D,Data,Senior,7.0,5.1,Code Assistant,71.6,10.9,11.7,66.2,6.5,77.9,25.8,91.4,61.2,0.5,4.6,12.5,7.0
+EMP1244,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,L&D,Mid,4.0,2.3,LLM Chatbot,49.2,15.3,18.6,81.3,4.9,64.4,74.5,49.5,73.6,-2.3,1.5,6.8,11.6
+EMP1245,ESFP,Extravert,Sensing,Feeling,Perceiving,Product,PM,Senior,6.3,3.6,Search/Research,88.8,9.3,16.6,83.6,5.1,64.5,58.9,60.0,69.0,1.0,1.6,12.2,8.4
+EMP1246,INTJ,Introvert,Intuitive,Thinking,Judging,Sales,SDR,Junior,1.2,3.4,Automation Script,54.8,15.4,20.8,65.5,1.5,66.9,68.2,54.9,67.2,7.4,0.2,6.5,8.8
+EMP1247,INFJ,Introvert,Intuitive,Feeling,Judging,Sales,AE,Junior,0.4,2.1,Search/Research,73.9,14.6,19.5,68.2,2.8,97.8,67.2,45.8,82.7,3.6,5.7,11.1,9.6
+EMP1248,ENTJ,Extravert,Intuitive,Thinking,Judging,Product,UX Research,Mid,3.5,3.0,Search/Research,87.5,6.5,21.6,59.6,5.1,77.8,56.2,70.3,57.2,3.3,0.5,7.2,4.6
+EMP1249,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,PM,Mid,3.4,4.5,LLM Chatbot,36.7,10.4,15.1,44.3,5.4,83.1,63.1,59.8,63.0,-0.8,6.6,7.3,5.6
+EMP1250,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Content,Senior,6.9,3.1,Code Assistant,74.5,9.9,22.9,75.1,4.4,95.5,70.6,69.1,74.9,6.2,1.7,4.5,3.5
+EMP1251,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,AE,Mid,4.4,1.9,Search/Research,53.0,16.7,17.2,62.4,7.0,51.9,71.4,25.1,72.5,4.6,3.0,2.0,6.5
+EMP1252,ESFP,Extravert,Sensing,Feeling,Perceiving,R&D,Data,Mid,2.8,4.0,Code Assistant,74.5,12.3,16.9,65.3,6.7,51.4,44.9,52.7,69.2,-3.8,6.1,6.5,6.4
+EMP1253,INTP,Introvert,Intuitive,Thinking,Perceiving,R&D,Frontend,Mid,4.4,3.9,Automation Script,60.8,10.7,21.7,46.8,4.0,73.6,41.3,80.1,60.0,-0.1,10.1,11.6,14.1
+EMP1254,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,QA,Junior,1.3,2.9,Visualization,55.3,6.9,27.8,54.1,1.8,95.8,91.2,47.9,70.8,5.0,5.4,13.5,3.0
+EMP1255,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Brand,Mid,2.2,3.4,Visualization,63.8,17.1,20.0,89.5,5.9,86.5,77.3,64.0,82.2,3.6,1.0,4.7,3.6
+EMP1256,ESFJ,Extravert,Sensing,Feeling,Judging,Marketing,Content,Mid,3.9,2.6,LLM Chatbot,39.0,14.8,13.1,91.8,9.0,99.0,73.6,51.0,88.3,5.6,2.4,5.4,5.9
+EMP1257,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,HRBP,Senior,5.9,1.3,Automation Script,45.8,16.9,18.3,64.1,6.0,39.8,63.0,45.2,57.7,-1.5,4.7,6.9,13.2
+EMP1258,ISFP,Introvert,Sensing,Feeling,Perceiving,Sales,SDR,Mid,2.9,2.3,Code Assistant,47.2,14.8,11.9,60.6,6.0,61.1,59.6,32.5,62.7,-4.1,2.5,5.0,16.0
+EMP1259,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Brand,Mid,2.1,3.3,LLM Chatbot,42.1,8.3,18.8,68.6,2.4,56.3,86.0,45.5,62.5,7.4,5.3,2.9,3.7
+EMP1260,ISFJ,Introvert,Sensing,Feeling,Judging,HR,HRBP,Mid,2.4,1.4,Search/Research,56.4,19.8,11.5,64.6,1.7,88.2,93.7,38.1,80.3,0.9,4.4,6.3,10.3
+EMP1261,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Finance Ops,Mid,2.9,3.1,LLM Chatbot,56.1,13.3,16.7,60.9,6.6,90.5,66.0,70.3,76.0,1.2,0.2,9.9,7.6
+EMP1262,INFJ,Introvert,Intuitive,Feeling,Judging,Sales,Account Manager,Senior,7.8,2.9,Search/Research,66.8,16.4,22.7,71.3,3.3,92.5,70.9,45.1,85.2,4.4,0.3,7.8,9.3
+EMP1263,INTP,Introvert,Intuitive,Thinking,Perceiving,Sales,Account Manager,Mid,2.1,2.2,LLM Chatbot,72.8,7.6,18.9,61.6,7.6,51.8,31.4,71.2,54.5,3.3,0.5,6.3,5.8
+EMP1264,ESFP,Extravert,Sensing,Feeling,Perceiving,Operations,Ops,Mid,2.1,2.3,Visualization,60.8,9.7,9.1,77.2,6.8,54.7,61.3,41.8,73.1,-1.7,1.5,5.5,11.4
+EMP1265,INTP,Introvert,Intuitive,Thinking,Perceiving,Marketing,Brand,Lead,8.8,2.3,Visualization,69.4,15.5,15.0,58.8,4.7,69.7,33.1,70.6,57.8,1.1,3.9,7.8,5.6
+EMP1266,ISTP,Introvert,Sensing,Thinking,Perceiving,Sales,Account Manager,Mid,3.6,2.1,Search/Research,34.8,15.8,13.5,51.5,5.1,66.7,57.0,46.3,69.6,-3.2,0.0,8.5,7.6
+EMP1267,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Supply Ops,Senior,6.9,1.9,LLM Chatbot,50.1,9.5,14.9,62.2,9.5,83.3,67.3,47.2,54.1,-0.9,3.0,6.7,8.4
+EMP1268,ENFP,Extravert,Intuitive,Feeling,Perceiving,HR,HRBP,Lead,10.2,2.7,Automation Script,41.3,24.3,8.1,82.6,3.8,80.2,61.3,73.2,70.2,3.3,2.2,6.5,9.9
+EMP1269,ISFP,Introvert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Mid,3.2,2.1,Automation Script,58.9,6.8,22.3,55.1,6.1,67.9,65.0,41.2,66.5,1.8,0.8,4.8,8.4
+EMP1270,ENTP,Extravert,Intuitive,Thinking,Perceiving,Operations,Ops,Senior,5.0,2.5,LLM Chatbot,71.4,18.1,10.9,66.3,5.9,64.5,46.9,86.8,65.6,1.1,1.4,5.3,8.5
+EMP1271,ISFJ,Introvert,Sensing,Feeling,Judging,Operations,Ops,Mid,3.1,2.9,Visualization,46.5,8.2,26.2,69.2,2.1,94.7,93.7,30.2,82.7,4.1,0.0,6.8,3.0
+EMP1272,INTJ,Introvert,Intuitive,Thinking,Judging,Product,Design,Mid,4.6,4.0,Code Assistant,76.7,5.1,26.5,41.7,1.9,64.8,74.0,77.8,60.7,7.0,1.5,7.3,8.9
+EMP1273,ENFP,Extravert,Intuitive,Feeling,Perceiving,HR,Recruiter,Mid,3.6,2.7,Search/Research,59.8,17.2,9.0,95.0,7.7,64.0,46.6,79.0,79.4,0.7,0.3,12.2,12.5
+EMP1274,ISTJ,Introvert,Sensing,Thinking,Judging,Operations,Finance Ops,Junior,1.9,1.1,Code Assistant,46.8,13.4,20.3,50.5,0.0,94.3,83.2,46.6,71.7,1.1,1.0,3.6,6.7
+EMP1275,ENTJ,Extravert,Intuitive,Thinking,Judging,Product,PM,Lead,9.1,4.2,Visualization,86.3,17.8,17.6,67.0,4.9,76.9,66.0,62.6,62.9,5.7,1.9,8.7,6.5
+EMP1276,ISFP,Introvert,Sensing,Feeling,Perceiving,Product,UX Research,Mid,3.8,3.4,Automation Script,45.7,11.7,14.7,57.5,7.3,43.5,42.5,61.7,57.6,-2.7,1.5,8.2,9.4
+EMP1277,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,Recruiter,Mid,4.6,1.1,Search/Research,63.5,15.4,14.1,45.8,3.9,87.0,69.1,26.7,68.0,3.4,1.8,3.6,10.2
+EMP1278,INFP,Introvert,Intuitive,Feeling,Perceiving,Sales,Account Manager,Mid,3.2,2.3,LLM Chatbot,74.2,19.1,12.8,84.2,7.8,65.3,34.5,73.1,80.8,-2.5,0.2,7.2,8.8
+EMP1279,ESTJ,Extravert,Sensing,Thinking,Judging,Marketing,Growth,Senior,7.6,2.5,LLM Chatbot,38.1,16.1,18.6,70.5,6.9,94.5,68.1,40.1,76.9,1.1,0.2,6.4,1.0
+EMP1280,INTP,Introvert,Intuitive,Thinking,Perceiving,HR,Recruiter,Senior,7.4,3.4,Code Assistant,55.5,16.3,19.8,45.8,2.7,65.2,43.6,66.5,53.1,1.1,1.7,11.7,13.3
+EMP1281,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,Account Manager,Junior,1.6,1.8,LLM Chatbot,42.8,17.0,13.7,66.2,5.9,66.0,80.9,33.5,70.9,9.1,0.8,7.8,3.1
+EMP1282,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Content,Senior,7.3,2.3,LLM Chatbot,48.1,15.9,19.2,54.8,4.6,66.8,78.2,35.0,65.4,6.2,0.8,1.1,1.3
+EMP1283,ESFP,Extravert,Sensing,Feeling,Perceiving,Sales,SDR,Mid,4.0,1.9,LLM Chatbot,54.5,16.1,10.6,80.8,8.9,65.0,62.4,40.9,67.7,1.2,2.4,7.8,9.6
+EMP1284,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,Frontend,Mid,4.1,3.0,Code Assistant,64.3,6.1,20.8,67.8,5.6,91.2,67.3,66.5,93.5,6.9,3.5,11.1,9.1
+EMP1285,ESTJ,Extravert,Sensing,Thinking,Judging,R&D,Backend,Junior,1.0,3.6,Automation Script,53.4,16.9,20.2,75.3,1.1,71.7,77.2,43.0,57.3,4.8,4.4,7.2,7.0
+EMP1286,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,Recruiter,Junior,1.9,2.9,Visualization,48.3,15.2,15.9,48.7,5.7,59.7,64.8,31.0,62.2,-2.4,0.8,7.5,11.3
+EMP1287,ISFP,Introvert,Sensing,Feeling,Perceiving,Marketing,Brand,Mid,3.0,2.5,Visualization,37.5,7.9,18.3,80.0,6.4,69.1,45.2,62.6,81.0,1.0,4.1,6.2,8.6
+EMP1288,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Ops,Mid,4.0,2.4,Code Assistant,62.5,13.9,27.6,68.2,2.3,69.0,81.9,48.8,79.5,6.8,2.8,7.4,7.8
+EMP1289,INFP,Introvert,Intuitive,Feeling,Perceiving,Operations,Supply Ops,Mid,3.8,2.1,LLM Chatbot,55.2,9.3,19.3,60.3,5.3,73.4,50.9,64.0,78.2,1.9,0.6,8.6,8.8
+EMP1290,ISTP,Introvert,Sensing,Thinking,Perceiving,Operations,Ops,Mid,2.6,1.6,LLM Chatbot,57.1,13.4,12.4,58.5,8.8,44.9,70.5,42.9,57.9,0.4,2.6,4.4,6.4
+EMP1291,INTP,Introvert,Intuitive,Thinking,Perceiving,HR,L&D,Junior,1.4,1.9,LLM Chatbot,41.2,15.6,21.7,48.9,6.6,79.1,41.4,64.9,71.8,4.1,2.6,10.8,13.1
+EMP1292,ISTP,Introvert,Sensing,Thinking,Perceiving,Marketing,Growth,Lead,9.6,1.6,Visualization,41.9,16.5,9.3,70.7,8.4,82.7,66.6,60.1,78.9,-1.2,6.6,2.7,10.6
+EMP1293,ENTP,Extravert,Intuitive,Thinking,Perceiving,Product,UX Research,Junior,1.3,3.7,Code Assistant,78.2,11.0,16.3,67.6,8.2,66.3,39.3,89.0,51.7,-5.4,0.5,10.6,9.3
+EMP1294,ESFP,Extravert,Sensing,Feeling,Perceiving,Sales,Account Manager,Mid,4.1,2.4,Visualization,65.3,12.2,6.0,84.5,9.6,74.1,49.9,59.3,71.5,-1.2,2.4,4.9,9.8
+EMP1295,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Content,Senior,5.3,2.4,Search/Research,37.0,8.6,26.0,53.0,4.1,88.8,82.3,41.4,79.5,8.0,0.4,7.5,2.9
+EMP1296,ENTJ,Extravert,Intuitive,Thinking,Judging,HR,L&D,Senior,5.7,2.7,Automation Script,73.3,23.9,17.2,77.9,4.6,61.8,82.6,62.9,56.4,4.0,1.8,6.8,2.6
+EMP1297,INTJ,Introvert,Intuitive,Thinking,Judging,Operations,Supply Ops,Mid,4.0,2.1,Automation Script,65.4,9.0,15.6,55.7,1.2,79.9,69.3,73.2,72.6,4.7,4.4,7.0,3.4
+EMP1298,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,UX Research,Junior,1.4,3.5,Automation Script,58.4,6.7,25.4,55.7,4.7,66.7,42.2,63.6,56.4,2.1,0.4,10.4,9.8
+EMP1299,INTJ,Introvert,Intuitive,Thinking,Judging,Operations,Ops,Mid,4.1,2.5,Automation Script,62.4,7.7,28.5,43.3,2.6,70.4,73.5,63.7,66.2,6.3,0.4,6.5,8.8
+EMP1300,ISTJ,Introvert,Sensing,Thinking,Judging,Operations,Ops,Senior,7.2,1.1,Automation Script,54.7,13.9,20.9,47.0,0.9,94.6,92.2,48.6,81.8,5.9,0.8,4.6,2.5
+EMP1301,INFJ,Introvert,Intuitive,Feeling,Judging,Product,PM,Mid,3.4,4.9,Automation Script,72.1,14.3,22.0,49.8,1.5,86.6,69.8,68.8,75.2,1.1,1.1,10.7,7.9
+EMP1302,ENTP,Extravert,Intuitive,Thinking,Perceiving,R&D,Data,Mid,4.8,3.8,Automation Script,68.1,9.1,19.0,71.1,6.3,71.6,51.3,81.6,59.6,-0.9,3.5,8.9,11.3
+EMP1303,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Supply Ops,Mid,2.1,2.5,Automation Script,50.4,12.3,23.5,56.1,3.2,36.4,78.0,58.8,66.3,1.9,2.7,9.8,5.0
+EMP1304,ENTJ,Extravert,Intuitive,Thinking,Judging,R&D,Backend,Junior,1.4,4.4,Search/Research,80.8,15.3,19.4,66.7,2.5,92.3,73.1,74.3,77.9,7.3,6.1,11.1,10.1
+EMP1305,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,Recruiter,Senior,7.8,1.9,LLM Chatbot,46.3,24.7,10.1,79.6,8.4,84.5,62.3,63.6,67.4,-1.5,0.1,6.3,7.9
+EMP1306,ESFP,Extravert,Sensing,Feeling,Perceiving,R&D,Frontend,Lead,8.9,3.2,Automation Script,44.3,15.7,16.9,79.7,5.3,79.9,53.0,66.0,77.1,2.8,5.4,4.4,8.7
+EMP1307,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,HRBP,Junior,0.8,1.5,LLM Chatbot,75.6,14.2,22.0,71.5,5.6,45.9,78.4,43.1,79.6,6.0,1.0,6.1,9.5
+EMP1308,INTJ,Introvert,Intuitive,Thinking,Judging,R&D,Data,Junior,0.9,5.2,Automation Script,78.0,6.8,23.8,53.0,2.4,83.0,74.9,72.7,75.9,0.5,3.5,10.3,8.2
+EMP1309,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,AE,Mid,4.8,1.6,LLM Chatbot,39.8,18.5,21.5,78.9,9.2,68.9,47.0,62.3,73.4,-0.4,1.3,6.4,5.9
+EMP1310,ENTJ,Extravert,Intuitive,Thinking,Judging,Operations,Ops,Mid,2.7,2.7,LLM Chatbot,48.3,11.0,16.3,65.0,0.9,66.6,87.7,72.0,75.2,5.9,2.0,9.6,6.4
+EMP1311,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Growth,Senior,5.8,2.4,Search/Research,48.4,20.1,11.0,77.5,8.6,56.0,51.0,90.9,76.7,-1.9,0.3,6.7,6.3
+EMP1312,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,Backend,Mid,2.7,4.7,Automation Script,83.8,9.6,28.1,54.9,2.8,60.0,87.4,52.6,66.3,4.4,3.8,5.8,4.2
+EMP1313,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,QA,Lead,9.5,4.4,Automation Script,56.5,10.9,16.7,78.3,6.0,96.0,67.9,70.2,74.6,4.5,5.8,11.2,3.8
+EMP1314,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Supply Ops,Senior,7.5,2.0,Visualization,48.7,6.7,28.9,62.1,1.1,92.9,84.1,63.8,72.2,6.1,5.5,7.2,9.0
+EMP1315,ISFP,Introvert,Sensing,Feeling,Perceiving,Sales,AE,Junior,1.6,1.3,Automation Script,48.0,16.9,13.7,64.5,7.0,81.9,51.4,60.5,85.4,-1.0,0.2,6.8,16.5
+EMP1316,ISTP,Introvert,Sensing,Thinking,Perceiving,Operations,Supply Ops,Lead,8.7,1.3,Automation Script,38.8,19.3,18.6,47.9,7.3,37.3,65.4,45.9,51.9,6.5,2.1,5.4,8.1
+EMP1317,ENFP,Extravert,Intuitive,Feeling,Perceiving,Sales,Account Manager,Junior,1.7,2.4,Automation Script,55.0,17.8,10.1,95.0,10.0,55.7,49.1,73.6,82.1,3.7,2.9,9.7,11.0
+EMP1318,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Growth,Mid,4.5,3.8,Search/Research,54.4,13.0,25.1,84.3,7.2,84.7,62.6,81.5,83.8,0.6,5.4,8.5,3.8
+EMP1319,INTJ,Introvert,Intuitive,Thinking,Judging,Marketing,Brand,Junior,2.0,2.7,Code Assistant,75.0,13.7,20.6,57.2,3.4,87.0,52.8,87.5,68.8,4.8,1.9,13.4,5.1
+EMP1320,ESTP,Extravert,Sensing,Thinking,Perceiving,Marketing,Growth,Lead,12.3,2.8,Search/Research,40.1,17.5,8.2,63.5,5.6,54.1,56.2,56.8,58.8,2.7,9.7,4.7,10.5
+EMP1321,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,QA,Junior,1.9,3.5,Code Assistant,70.9,13.9,18.9,77.4,3.2,70.8,69.3,75.0,76.3,4.8,3.3,10.3,3.4
+EMP1322,INTP,Introvert,Intuitive,Thinking,Perceiving,Product,PM,Senior,6.5,3.7,Search/Research,71.8,10.3,12.9,47.6,2.6,51.5,52.0,78.6,52.7,1.0,0.7,8.9,13.1
+EMP1323,ENFP,Extravert,Intuitive,Feeling,Perceiving,R&D,Backend,Senior,7.7,4.3,Automation Script,58.8,17.5,8.2,73.9,7.9,37.8,39.5,70.0,65.6,4.3,9.3,11.3,8.6
+EMP1324,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Brand,Senior,5.2,2.6,Search/Research,34.9,9.9,16.5,55.5,3.1,100.0,95.0,62.6,68.3,3.6,2.1,7.2,5.4
+EMP1325,ISFJ,Introvert,Sensing,Feeling,Judging,Operations,Finance Ops,Mid,3.9,2.3,Automation Script,40.2,9.4,23.2,65.7,1.5,97.5,95.0,37.9,75.4,7.8,1.4,6.6,1.0
+EMP1326,INFP,Introvert,Intuitive,Feeling,Perceiving,Product,Design,Mid,3.6,4.8,Automation Script,77.1,7.0,16.1,57.2,6.7,50.3,44.2,79.4,54.1,-1.4,0.7,10.4,10.0
+EMP1327,ENFJ,Extravert,Intuitive,Feeling,Judging,R&D,Data,Mid,3.8,4.6,Automation Script,68.8,11.2,17.2,68.9,6.4,91.1,62.6,61.8,73.1,4.3,3.1,9.5,10.9
+EMP1328,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,HRBP,Mid,3.0,2.6,LLM Chatbot,48.2,15.3,13.1,76.1,6.8,47.4,75.6,42.1,59.3,-2.8,0.9,8.0,10.5
+EMP1329,ENFJ,Extravert,Intuitive,Feeling,Judging,Operations,Ops,Mid,3.8,3.1,Code Assistant,60.4,15.3,15.7,73.4,4.5,58.6,76.2,58.8,78.6,8.4,1.1,12.6,2.8
+EMP1330,ENFP,Extravert,Intuitive,Feeling,Perceiving,R&D,Frontend,Lead,8.9,3.7,Search/Research,49.7,12.6,14.3,81.7,8.2,54.8,50.2,81.1,54.7,-3.1,5.6,8.9,9.5
+EMP1331,ISTJ,Introvert,Sensing,Thinking,Judging,Operations,Finance Ops,Lead,8.6,1.9,Code Assistant,52.3,17.9,16.7,48.2,2.4,89.4,95.0,35.6,61.5,8.1,3.1,4.1,1.0
+EMP1332,ESTP,Extravert,Sensing,Thinking,Perceiving,R&D,QA,Mid,2.5,3.3,Automation Script,61.7,13.3,18.6,68.9,9.6,78.1,48.5,65.7,66.0,-1.9,5.3,9.3,11.0
+EMP1333,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Growth,Junior,1.5,1.5,Visualization,52.0,13.5,25.3,70.0,3.5,73.1,68.1,50.0,62.3,7.0,0.5,4.5,3.8
+EMP1334,INTJ,Introvert,Intuitive,Thinking,Judging,Product,Design,Mid,2.6,3.0,Code Assistant,76.9,9.0,19.0,36.1,0.0,91.3,64.4,67.5,79.4,4.2,5.3,9.9,4.4
+EMP1335,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,UX Research,Lead,11.5,2.5,Visualization,57.8,9.3,20.1,69.8,4.6,93.9,53.4,47.5,60.7,2.5,7.2,3.8,8.1
+EMP1336,INFP,Introvert,Intuitive,Feeling,Perceiving,R&D,Data,Mid,3.8,3.7,Visualization,75.0,8.7,20.5,59.1,4.5,88.1,29.2,77.6,68.9,-1.3,3.8,10.5,10.7
+EMP1337,ENTJ,Extravert,Intuitive,Thinking,Judging,Operations,Ops,Mid,2.5,2.3,Code Assistant,64.9,12.8,20.8,65.0,2.6,89.4,66.6,62.7,76.7,5.1,1.8,8.4,8.6
+EMP1338,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Growth,Mid,3.2,3.4,Automation Script,77.5,13.0,21.0,64.7,6.0,60.8,57.7,61.0,66.0,6.9,4.1,4.3,11.0
+EMP1339,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Brand,Senior,7.8,4.0,Automation Script,57.0,14.1,24.3,63.8,2.9,75.5,67.8,58.5,77.4,3.9,3.2,10.0,5.8
+EMP1340,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,AE,Senior,7.6,1.8,Search/Research,44.6,23.2,6.0,59.3,9.2,61.5,61.5,43.8,60.6,-1.5,0.4,4.7,7.7
+EMP1341,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Brand,Senior,7.1,3.1,Visualization,54.1,18.5,13.3,84.1,9.6,44.5,44.4,66.3,63.2,-1.5,0.4,7.5,16.2
+EMP1342,ESFJ,Extravert,Sensing,Feeling,Judging,R&D,Backend,Junior,1.1,4.1,Visualization,65.5,8.0,18.1,69.3,6.9,73.2,79.3,56.8,68.3,2.6,4.7,10.4,3.3
+EMP1343,ISFP,Introvert,Sensing,Feeling,Perceiving,Marketing,Brand,Junior,0.9,1.9,Visualization,52.9,12.1,26.7,67.3,5.7,72.3,55.4,50.6,74.2,4.4,1.4,6.3,6.1
+EMP1344,ISTP,Introvert,Sensing,Thinking,Perceiving,Sales,SDR,Mid,3.6,1.7,Visualization,45.1,14.7,18.3,60.3,7.4,51.8,57.7,42.8,74.2,4.3,1.2,8.1,1.0
+EMP1345,ESFP,Extravert,Sensing,Feeling,Perceiving,Marketing,Growth,Senior,6.7,2.3,LLM Chatbot,20.0,14.0,9.4,84.5,8.9,64.0,31.5,51.9,56.2,-1.8,4.1,4.4,9.3
+EMP1346,ENTP,Extravert,Intuitive,Thinking,Perceiving,HR,HRBP,Mid,3.1,3.3,Search/Research,67.5,19.9,10.4,67.9,8.0,47.7,49.1,63.6,65.7,-3.7,0.5,5.3,9.4
+EMP1347,ISTP,Introvert,Sensing,Thinking,Perceiving,Sales,SDR,Mid,3.3,2.5,LLM Chatbot,39.9,18.4,25.5,70.7,6.4,75.3,64.3,26.3,64.9,3.3,0.7,6.8,6.2
+EMP1348,ISFP,Introvert,Sensing,Feeling,Perceiving,Marketing,Growth,Mid,2.3,2.8,Automation Script,50.5,6.6,27.8,68.1,3.2,48.9,50.0,64.5,62.2,7.5,1.2,6.9,6.2
+EMP1349,ESTJ,Extravert,Sensing,Thinking,Judging,R&D,Data,Mid,2.1,4.6,Automation Script,62.8,7.7,26.2,72.0,4.1,87.9,71.3,58.1,65.7,8.3,3.2,5.0,1.0
+EMP1350,ENTJ,Extravert,Intuitive,Thinking,Judging,R&D,QA,Lead,11.1,3.1,Automation Script,74.9,12.8,23.4,55.1,2.5,77.8,68.8,58.5,68.3,5.9,7.3,13.1,2.3
+EMP1351,INTP,Introvert,Intuitive,Thinking,Perceiving,Operations,Ops,Lead,8.5,2.1,Visualization,49.1,10.3,25.5,40.5,4.9,49.2,45.7,70.5,54.0,-1.3,3.6,7.8,12.1
+EMP1352,INFJ,Introvert,Intuitive,Feeling,Judging,HR,HRBP,Mid,2.9,3.0,LLM Chatbot,65.0,11.4,21.6,68.5,3.0,51.9,78.0,59.9,78.4,6.9,2.1,9.0,7.0
+EMP1353,ISTP,Introvert,Sensing,Thinking,Perceiving,R&D,Backend,Lead,13.2,5.1,LLM Chatbot,44.5,7.4,26.5,48.5,5.5,97.8,51.1,48.0,72.8,6.5,13.3,8.1,12.0
+EMP1354,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,L&D,Senior,6.9,1.9,Search/Research,48.4,12.5,15.8,76.7,3.3,82.2,72.4,40.2,80.2,-3.6,2.5,6.0,8.8
+EMP1355,ESTP,Extravert,Sensing,Thinking,Perceiving,Product,Design,Lead,13.6,3.5,LLM Chatbot,44.5,21.4,7.3,56.6,7.8,33.6,48.8,62.4,53.7,9.8,2.0,6.2,9.9
+EMP1356,ISFJ,Introvert,Sensing,Feeling,Judging,Product,UX Research,Junior,1.1,4.1,LLM Chatbot,41.6,8.5,33.2,53.7,1.6,98.2,85.8,43.2,98.0,5.5,1.9,10.5,4.1
+EMP1357,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,HRBP,Mid,2.1,3.0,Automation Script,53.7,15.8,16.1,64.6,6.5,63.1,68.0,38.0,77.5,-4.6,1.2,10.0,9.9
+EMP1358,ENTJ,Extravert,Intuitive,Thinking,Judging,R&D,Data,Mid,4.2,4.1,Visualization,74.3,9.8,24.2,65.5,3.5,63.5,64.5,68.5,62.4,-0.2,3.1,12.0,9.2
+EMP1359,ESTJ,Extravert,Sensing,Thinking,Judging,Marketing,Content,Mid,2.8,3.2,Code Assistant,53.1,12.8,18.3,70.9,4.3,74.8,70.2,45.0,63.4,7.7,0.4,7.5,5.9
+EMP1360,INTP,Introvert,Intuitive,Thinking,Perceiving,Marketing,Content,Mid,3.4,3.2,Automation Script,75.5,13.6,12.4,56.2,4.3,83.1,37.4,88.5,66.7,-2.6,2.6,7.6,12.2
+EMP1361,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,Design,Junior,1.5,3.5,Visualization,72.0,13.2,19.7,44.9,3.8,92.9,49.6,58.8,63.2,-1.8,5.4,9.8,10.0
+EMP1362,ISFJ,Introvert,Sensing,Feeling,Judging,Marketing,Brand,Senior,7.0,2.9,Search/Research,33.0,8.0,28.0,73.6,3.2,76.1,86.9,37.7,63.1,5.6,0.5,5.2,3.6
+EMP1363,ESFP,Extravert,Sensing,Feeling,Perceiving,Sales,AE,Mid,2.6,2.1,Search/Research,56.0,19.0,10.2,83.6,8.0,73.4,61.8,53.6,67.4,1.0,4.6,6.3,11.3
+EMP1364,ENTP,Extravert,Intuitive,Thinking,Perceiving,Marketing,Content,Junior,1.8,3.1,Search/Research,76.1,18.7,9.3,79.9,7.6,72.8,51.0,95.0,59.7,-5.2,1.4,9.3,9.6
+EMP1365,ENFP,Extravert,Intuitive,Feeling,Perceiving,Sales,Account Manager,Mid,4.1,2.0,LLM Chatbot,71.0,16.2,11.3,92.2,9.3,25.7,25.7,63.3,59.7,4.7,0.5,7.7,12.1
+EMP1366,ENTP,Extravert,Intuitive,Thinking,Perceiving,R&D,Frontend,Mid,3.0,4.1,Automation Script,66.9,10.3,16.2,60.6,8.7,57.2,50.3,86.7,53.5,4.6,4.8,11.3,7.1
+EMP1367,ESTJ,Extravert,Sensing,Thinking,Judging,Product,PM,Mid,4.5,3.0,Visualization,65.0,19.3,12.9,52.0,3.3,88.5,56.1,54.7,63.9,5.0,1.3,7.5,2.5
+EMP1368,INTJ,Introvert,Intuitive,Thinking,Judging,HR,Recruiter,Mid,2.7,2.2,LLM Chatbot,55.6,14.7,22.3,51.0,1.9,81.0,79.7,40.3,64.4,8.7,4.5,5.8,6.2
+EMP1369,ENTJ,Extravert,Intuitive,Thinking,Judging,Product,Design,Mid,2.3,4.1,Search/Research,66.0,12.7,21.1,64.6,1.0,99.3,67.6,74.5,72.4,7.5,2.8,11.4,8.5
+EMP1370,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Content,Mid,4.9,3.1,LLM Chatbot,73.7,18.7,10.0,89.9,7.2,65.2,67.8,74.9,89.8,6.8,3.1,7.4,8.9
+EMP1371,ESFP,Extravert,Sensing,Feeling,Perceiving,Sales,SDR,Lead,10.5,2.4,Visualization,35.3,23.5,6.0,72.1,6.9,57.8,50.8,60.8,74.6,0.2,1.6,4.8,10.7
+EMP1372,ENTP,Extravert,Intuitive,Thinking,Perceiving,Marketing,Brand,Lead,8.5,2.9,Automation Script,46.1,17.9,6.0,72.8,10.0,46.7,36.5,83.1,60.5,3.5,2.7,10.3,13.0
+EMP1373,ISFP,Introvert,Sensing,Feeling,Perceiving,Product,UX Research,Senior,6.6,4.0,Visualization,69.4,10.4,23.7,78.6,6.1,52.1,43.0,46.9,72.1,0.8,1.9,7.9,8.3
+EMP1374,ESTJ,Extravert,Sensing,Thinking,Judging,HR,HRBP,Mid,4.6,2.6,Visualization,51.1,16.5,11.9,84.5,4.5,82.9,95.0,29.7,76.3,6.3,0.7,6.6,3.0
+EMP1375,ISTP,Introvert,Sensing,Thinking,Perceiving,Marketing,Brand,Lead,11.1,2.5,LLM Chatbot,53.8,13.9,13.6,48.1,7.2,22.2,48.3,67.3,55.4,5.9,2.5,6.0,8.5
+EMP1376,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,Recruiter,Mid,2.7,2.7,Search/Research,57.8,16.7,14.0,53.1,4.5,90.3,72.6,51.1,67.4,-2.6,5.9,0.7,9.2
+EMP1377,ESFJ,Extravert,Sensing,Feeling,Judging,Operations,Supply Ops,Mid,3.7,1.7,LLM Chatbot,56.8,16.0,13.2,83.1,2.6,76.8,95.0,43.6,86.5,2.1,3.2,7.3,5.9
+EMP1378,ENFJ,Extravert,Intuitive,Feeling,Judging,Sales,AE,Mid,3.1,2.4,LLM Chatbot,85.8,19.4,8.3,95.0,6.4,91.5,69.6,80.2,86.4,7.7,0.9,8.1,9.9
+EMP1379,INFP,Introvert,Intuitive,Feeling,Perceiving,Operations,Ops,Senior,5.4,2.2,Visualization,69.2,12.7,20.2,58.9,4.4,58.7,53.8,75.2,70.0,-6.5,7.1,8.4,13.2
+EMP1380,ESTJ,Extravert,Sensing,Thinking,Judging,Product,UX Research,Mid,4.0,3.5,Search/Research,61.9,18.4,17.9,68.8,4.3,80.7,77.9,60.9,61.1,0.6,0.6,5.2,8.2
+EMP1381,ENFP,Extravert,Intuitive,Feeling,Perceiving,Operations,Ops,Mid,4.0,2.4,LLM Chatbot,67.9,8.0,11.7,74.5,8.3,18.8,57.5,70.8,47.3,-1.2,3.1,7.6,12.7
+EMP1382,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,Data,Mid,3.4,4.1,Visualization,66.0,6.6,22.2,68.5,0.9,79.0,63.9,43.0,63.5,5.5,6.3,9.4,6.6
+EMP1383,ISTJ,Introvert,Sensing,Thinking,Judging,HR,HRBP,Mid,3.3,2.7,Search/Research,51.5,17.7,15.2,53.2,0.0,74.9,81.7,32.1,67.4,4.7,0.4,7.1,7.9
+EMP1384,INFP,Introvert,Intuitive,Feeling,Perceiving,Product,Design,Lead,13.8,2.8,LLM Chatbot,56.8,15.6,21.6,55.0,2.9,84.3,28.0,76.4,78.2,2.3,4.4,5.5,4.0
+EMP1385,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,UX Research,Junior,0.6,4.0,Automation Script,65.9,13.7,22.3,65.4,8.0,66.4,56.5,54.4,63.8,5.4,3.9,10.5,14.6
+EMP1386,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,SDR,Lead,8.5,1.2,Search/Research,51.2,21.3,14.0,64.5,10.0,70.1,50.4,52.0,69.1,0.9,1.5,4.9,7.6
+EMP1387,ENTP,Extravert,Intuitive,Thinking,Perceiving,HR,HRBP,Mid,4.0,2.1,LLM Chatbot,74.5,21.3,8.6,81.0,6.0,53.6,49.8,66.7,61.1,-1.0,1.2,6.5,6.6
+EMP1388,ENTJ,Extravert,Intuitive,Thinking,Judging,Sales,AE,Mid,2.2,2.5,Visualization,66.4,17.3,9.5,78.7,6.0,61.7,50.1,66.0,73.7,2.1,5.4,10.7,8.9
+EMP1389,ENFP,Extravert,Intuitive,Feeling,Perceiving,Operations,Ops,Mid,2.5,1.7,Search/Research,58.9,11.8,14.6,85.3,9.6,65.4,55.9,70.5,63.9,-3.1,1.2,7.5,11.9
+EMP1390,ENTP,Extravert,Intuitive,Thinking,Perceiving,Sales,Account Manager,Senior,7.1,1.5,LLM Chatbot,62.1,12.8,16.0,87.8,7.6,80.2,46.8,67.1,76.4,-1.4,3.3,8.3,14.3
+EMP1391,ESFJ,Extravert,Sensing,Feeling,Judging,R&D,Backend,Lead,15.0,4.5,Code Assistant,39.1,13.0,12.8,76.0,3.4,79.7,74.7,47.8,86.0,4.1,7.9,8.4,4.5
+EMP1392,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,Design,Lead,8.6,3.2,LLM Chatbot,61.5,12.7,15.2,51.7,5.1,55.1,58.4,50.6,50.2,0.9,2.8,11.1,9.6
+EMP1393,ENTP,Extravert,Intuitive,Thinking,Perceiving,Marketing,Growth,Mid,3.8,3.3,Automation Script,58.7,13.8,18.0,70.8,9.0,57.4,54.1,63.8,56.3,0.2,1.4,7.9,12.3
+EMP1394,ENTJ,Extravert,Intuitive,Thinking,Judging,Marketing,Growth,Senior,5.0,2.5,LLM Chatbot,79.0,16.4,13.7,75.4,3.9,77.4,56.8,58.6,65.8,7.4,0.2,7.9,8.2
+EMP1395,ENFP,Extravert,Intuitive,Feeling,Perceiving,R&D,QA,Mid,4.1,3.6,Code Assistant,77.6,11.6,9.6,71.2,7.2,51.6,32.7,84.4,61.3,4.0,5.8,11.0,5.4
+EMP1396,ENTJ,Extravert,Intuitive,Thinking,Judging,Operations,Supply Ops,Senior,7.3,2.6,Code Assistant,75.0,13.3,14.9,56.9,3.9,99.1,74.3,67.2,72.1,2.5,2.0,6.6,5.1
+EMP1397,ENTJ,Extravert,Intuitive,Thinking,Judging,R&D,QA,Mid,2.7,3.9,Code Assistant,67.2,9.8,12.2,56.4,4.2,93.9,57.9,56.5,76.1,3.5,4.3,13.2,5.4
+EMP1398,ENTP,Extravert,Intuitive,Thinking,Perceiving,R&D,QA,Lead,8.1,4.8,Search/Research,65.3,15.8,6.0,60.0,6.8,79.5,24.1,88.3,60.7,3.1,4.7,9.8,10.4
+EMP1399,ISFP,Introvert,Sensing,Feeling,Perceiving,Product,Design,Lead,12.5,3.2,Visualization,40.7,12.8,22.8,62.3,4.8,75.1,37.4,43.6,76.4,2.2,2.4,8.6,9.0
+EMP1400,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,UX Research,Mid,3.3,3.2,Automation Script,67.4,14.0,12.3,45.5,2.4,66.5,45.4,43.8,48.2,-0.8,1.0,9.5,7.7
+EMP1401,ESFJ,Extravert,Sensing,Feeling,Judging,Marketing,Growth,Mid,4.5,2.1,LLM Chatbot,55.7,15.8,9.8,82.4,4.6,92.9,75.4,34.5,78.6,3.4,2.4,3.3,7.1
+EMP1402,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,L&D,Senior,6.9,1.4,Visualization,46.5,13.9,17.3,61.2,3.3,94.9,68.5,38.0,72.0,1.6,9.7,9.3,7.6
+EMP1403,INTJ,Introvert,Intuitive,Thinking,Judging,R&D,QA,Senior,5.3,3.6,Visualization,60.9,8.6,24.6,45.9,2.6,93.6,54.1,58.5,63.2,8.3,5.1,9.4,4.8
+EMP1404,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,AE,Senior,5.8,1.3,Visualization,49.8,15.3,12.7,81.7,6.9,100.0,80.0,47.5,64.5,3.3,0.7,6.8,10.6
+EMP1405,ISFP,Introvert,Sensing,Feeling,Perceiving,Product,PM,Junior,1.9,3.2,Automation Script,58.6,12.3,19.2,69.6,7.1,70.8,57.3,59.1,66.3,0.3,7.0,10.0,4.9
+EMP1406,ISTP,Introvert,Sensing,Thinking,Perceiving,R&D,QA,Mid,2.6,3.3,Visualization,58.1,6.0,19.5,58.5,4.3,85.5,63.3,52.7,55.1,-1.6,4.5,10.7,9.9
+EMP1407,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Finance Ops,Mid,2.9,3.0,Automation Script,22.1,12.4,16.5,68.3,7.8,61.4,67.5,48.8,55.6,1.6,1.3,8.5,6.3
+EMP1408,ENTP,Extravert,Intuitive,Thinking,Perceiving,Sales,Account Manager,Mid,3.0,3.2,Automation Script,64.5,19.3,10.0,80.0,10.0,52.0,39.5,75.6,68.0,3.5,4.5,10.5,8.9
+EMP1409,ENFP,Extravert,Intuitive,Feeling,Perceiving,HR,HRBP,Senior,6.5,3.1,Search/Research,65.1,15.3,7.2,88.3,9.7,58.8,55.3,73.6,83.6,0.2,1.4,9.6,8.9
+EMP1410,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,AE,Lead,8.4,0.8,Search/Research,45.2,21.1,11.0,61.6,8.7,51.7,51.4,45.3,67.4,-0.7,3.1,9.8,5.2
+EMP1411,ESFJ,Extravert,Sensing,Feeling,Judging,Operations,Ops,Senior,6.3,3.0,Automation Script,23.3,6.0,15.8,55.3,3.2,65.6,86.1,43.5,68.3,3.3,0.6,5.3,4.4
+EMP1412,ISTJ,Introvert,Sensing,Thinking,Judging,Operations,Finance Ops,Mid,2.8,1.3,LLM Chatbot,50.7,6.1,28.3,50.2,5.5,95.2,95.0,34.2,83.9,5.0,2.3,0.9,6.0
+EMP1413,ESFJ,Extravert,Sensing,Feeling,Judging,Operations,Ops,Senior,6.2,2.0,Visualization,40.7,12.4,22.4,65.3,1.0,72.6,78.4,35.1,82.4,4.0,0.1,4.0,3.8
+EMP1414,INTJ,Introvert,Intuitive,Thinking,Judging,HR,Recruiter,Senior,7.0,3.0,Search/Research,70.9,15.8,16.6,55.1,1.3,93.5,74.6,56.1,51.3,8.8,5.4,8.9,5.8
+EMP1415,ESFJ,Extravert,Sensing,Feeling,Judging,R&D,QA,Lead,8.6,3.2,LLM Chatbot,74.7,12.4,14.7,74.5,1.8,85.1,79.8,48.5,69.4,3.7,5.2,6.2,2.5
+EMP1416,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Ops,Senior,6.0,2.0,Visualization,49.7,13.3,9.7,71.8,8.0,84.0,70.4,49.7,57.3,2.4,1.6,8.0,12.4
+EMP1417,ESFP,Extravert,Sensing,Feeling,Perceiving,Sales,Account Manager,Junior,1.2,2.5,Search/Research,44.2,14.6,11.0,69.6,10.0,71.4,60.8,47.4,72.8,1.6,1.4,9.0,5.7
+EMP1418,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Content,Junior,1.7,2.8,Search/Research,79.6,12.3,12.0,74.0,8.1,63.2,37.4,75.4,65.9,1.1,2.2,8.6,12.0
+EMP1419,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,Recruiter,Senior,6.5,3.6,Automation Script,65.4,19.3,7.9,85.4,0.6,89.2,70.4,47.8,81.0,8.3,3.6,11.5,2.1
+EMP1420,ENFP,Extravert,Intuitive,Feeling,Perceiving,Operations,Supply Ops,Senior,7.7,3.1,Search/Research,70.7,9.3,11.8,63.6,8.7,63.9,52.0,77.5,73.1,2.7,0.7,9.0,12.9
+EMP1421,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,L&D,Mid,2.9,2.8,Search/Research,53.1,14.8,10.9,79.4,9.3,71.9,57.4,42.5,53.0,-4.4,1.4,4.0,11.3
+EMP1422,ESTJ,Extravert,Sensing,Thinking,Judging,R&D,QA,Senior,6.8,3.5,Code Assistant,47.5,10.8,12.5,62.6,2.6,100.0,78.2,32.2,72.4,2.5,3.1,8.1,1.7
+EMP1423,INTJ,Introvert,Intuitive,Thinking,Judging,Operations,Ops,Mid,4.4,1.3,Code Assistant,59.8,10.1,19.6,39.9,1.6,95.0,78.9,63.7,75.7,5.0,1.5,9.8,3.2
+EMP1424,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Finance Ops,Senior,5.8,2.5,Visualization,61.0,8.4,25.2,67.5,1.9,93.1,80.3,79.4,70.7,2.3,0.2,8.5,7.0
+EMP1425,INFJ,Introvert,Intuitive,Feeling,Judging,Product,Design,Junior,1.5,4.2,Automation Script,76.9,10.2,23.8,61.4,1.2,73.1,57.0,70.3,71.0,3.8,0.2,10.0,1.9
+EMP1426,ENFP,Extravert,Intuitive,Feeling,Perceiving,Product,UX Research,Mid,2.0,3.6,Search/Research,77.7,13.5,15.5,75.4,10.0,77.7,54.6,71.9,68.9,-1.9,1.2,8.1,10.2
+EMP1427,ESFJ,Extravert,Sensing,Feeling,Judging,Marketing,Content,Senior,7.9,2.1,Search/Research,41.4,15.0,15.5,85.3,7.8,94.5,69.1,59.1,92.8,5.8,0.4,2.9,13.1
+EMP1428,ENTJ,Extravert,Intuitive,Thinking,Judging,HR,L&D,Mid,3.6,2.8,Code Assistant,55.6,14.5,16.0,55.8,1.9,88.2,76.3,68.3,79.5,7.4,4.0,8.2,11.0
+EMP1429,ESFP,Extravert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Mid,3.2,2.6,Automation Script,43.4,8.4,15.7,71.0,7.4,45.9,61.7,40.0,66.3,-0.7,1.1,5.2,1.2
+EMP1430,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Growth,Junior,1.2,2.2,LLM Chatbot,75.2,5.1,28.3,58.7,5.2,78.9,66.4,45.1,66.6,2.8,1.9,5.6,1.4
+EMP1431,ISTJ,Introvert,Sensing,Thinking,Judging,HR,L&D,Junior,1.3,1.5,Automation Script,59.6,16.1,20.8,46.8,1.2,68.7,95.0,30.3,78.5,1.2,1.3,7.3,2.7
+EMP1432,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Growth,Senior,5.9,3.1,Search/Research,60.5,14.4,9.2,75.1,7.6,93.5,69.6,69.9,65.9,6.3,0.1,7.3,5.7
+EMP1433,ESTJ,Extravert,Sensing,Thinking,Judging,Product,Design,Senior,5.5,3.4,Visualization,60.3,15.2,14.0,76.3,4.9,77.1,86.2,46.9,76.0,3.6,0.2,7.5,4.7
+EMP1434,ENTP,Extravert,Intuitive,Thinking,Perceiving,Sales,Account Manager,Mid,2.1,2.8,LLM Chatbot,45.0,16.9,12.8,74.6,8.4,93.1,44.0,49.0,79.4,-2.9,5.9,9.6,6.3
+EMP1435,ISFP,Introvert,Sensing,Feeling,Perceiving,Product,UX Research,Senior,7.0,3.9,Visualization,64.8,9.8,18.1,57.6,3.7,68.0,48.2,54.2,61.3,0.1,1.0,9.9,11.0
+EMP1436,ESFP,Extravert,Sensing,Feeling,Perceiving,Marketing,Content,Senior,5.4,3.0,LLM Chatbot,53.5,17.6,7.0,77.4,8.2,50.2,59.8,39.7,74.8,2.5,2.4,6.2,9.6
+EMP1437,INTJ,Introvert,Intuitive,Thinking,Judging,Operations,Ops,Lead,8.5,2.0,Search/Research,53.6,11.3,20.9,46.7,3.1,71.0,95.0,65.0,73.7,2.9,3.8,8.4,4.2
+EMP1438,INTJ,Introvert,Intuitive,Thinking,Judging,HR,HRBP,Senior,5.3,3.0,Visualization,39.1,16.5,20.5,49.9,2.8,80.7,58.4,62.9,72.4,5.8,0.8,9.9,7.0
+EMP1439,ENTP,Extravert,Intuitive,Thinking,Perceiving,R&D,Backend,Senior,6.8,4.6,LLM Chatbot,64.4,11.6,11.6,75.0,6.5,71.5,29.1,72.2,57.5,1.8,3.3,10.0,2.4
+EMP1440,ESTJ,Extravert,Sensing,Thinking,Judging,Operations,Ops,Mid,3.2,2.2,Search/Research,46.4,12.2,15.1,65.0,7.1,84.9,95.0,27.9,58.5,6.4,0.7,6.5,5.5
+EMP1441,ESTP,Extravert,Sensing,Thinking,Perceiving,R&D,QA,Junior,1.9,4.1,Search/Research,62.3,13.6,11.5,50.0,7.9,51.8,50.1,66.2,52.0,-2.0,8.2,9.1,13.8
+EMP1442,ISFJ,Introvert,Sensing,Feeling,Judging,Marketing,Content,Lead,9.9,2.4,Search/Research,45.8,17.4,13.5,59.2,0.0,90.5,91.7,46.3,82.7,6.2,2.7,1.7,1.0
+EMP1443,ESTP,Extravert,Sensing,Thinking,Perceiving,R&D,Data,Mid,3.0,3.9,Search/Research,57.7,13.5,10.6,61.1,10.0,66.9,50.9,51.4,51.7,0.6,3.6,9.1,4.0
+EMP1444,INFJ,Introvert,Intuitive,Feeling,Judging,Sales,SDR,Senior,5.5,3.2,LLM Chatbot,60.3,10.8,19.3,69.2,3.9,67.4,74.7,46.7,78.9,6.0,1.0,6.9,5.0
+EMP1445,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Brand,Senior,5.3,2.1,Search/Research,45.9,10.8,24.4,63.8,4.3,96.3,80.4,43.1,67.0,3.4,1.6,5.8,6.1
+EMP1446,ENTJ,Extravert,Intuitive,Thinking,Judging,Operations,Ops,Mid,2.4,2.7,LLM Chatbot,57.2,7.8,17.2,69.2,5.0,82.8,67.8,60.9,53.6,4.8,6.9,10.1,5.8
+EMP1447,ISFP,Introvert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Mid,2.5,2.1,LLM Chatbot,53.9,6.7,23.1,42.3,5.6,75.0,56.3,53.7,60.7,4.7,0.9,4.1,3.3
+EMP1448,ENTJ,Extravert,Intuitive,Thinking,Judging,Sales,SDR,Lead,8.7,2.3,Search/Research,70.4,21.2,11.6,69.9,5.5,83.8,59.2,65.8,78.7,5.2,6.0,3.7,6.2
+EMP1449,INTP,Introvert,Intuitive,Thinking,Perceiving,Operations,Finance Ops,Mid,4.6,2.7,Visualization,55.4,13.4,24.1,49.3,5.2,76.2,47.2,54.2,41.6,1.7,2.8,7.9,4.8
+EMP1450,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,SDR,Lead,15.0,1.3,LLM Chatbot,20.0,20.2,13.0,93.7,7.9,66.4,60.9,40.6,60.5,3.5,4.1,4.1,13.9
+EMP1451,ESFJ,Extravert,Sensing,Feeling,Judging,Product,PM,Mid,4.7,4.4,Automation Script,58.6,18.1,21.3,64.0,5.7,88.3,78.1,46.4,71.9,6.3,0.2,6.2,9.1
+EMP1452,ENTP,Extravert,Intuitive,Thinking,Perceiving,R&D,Backend,Senior,5.3,4.4,Code Assistant,74.7,9.0,18.2,57.6,4.9,54.1,46.5,87.4,59.9,1.2,5.9,10.5,11.3
+EMP1453,INFJ,Introvert,Intuitive,Feeling,Judging,Product,PM,Lead,10.2,3.4,Search/Research,72.1,11.1,17.0,60.7,0.2,98.2,67.3,56.4,82.3,6.5,1.7,10.5,6.2
+EMP1454,ENFP,Extravert,Intuitive,Feeling,Perceiving,Operations,Finance Ops,Junior,1.6,2.1,LLM Chatbot,68.9,15.7,8.0,71.0,7.6,64.0,48.4,56.9,78.2,-3.4,0.2,13.6,11.4
+EMP1455,INFJ,Introvert,Intuitive,Feeling,Judging,R&D,Frontend,Junior,1.2,3.9,Search/Research,85.7,8.1,26.0,67.4,0.0,82.9,60.4,59.9,59.0,6.2,3.2,8.5,3.0
+EMP1456,ESFJ,Extravert,Sensing,Feeling,Judging,Sales,SDR,Mid,2.0,1.4,Automation Script,37.2,21.0,15.4,87.7,5.1,73.9,68.0,29.0,83.4,7.6,0.9,7.6,13.2
+EMP1457,ESTJ,Extravert,Sensing,Thinking,Judging,HR,Recruiter,Mid,4.6,1.9,LLM Chatbot,57.0,16.9,12.0,83.5,3.1,60.5,92.9,47.1,72.6,6.9,1.5,7.2,4.5
+EMP1458,ENFJ,Extravert,Intuitive,Feeling,Judging,Sales,AE,Senior,5.4,2.9,Visualization,72.7,17.6,11.5,79.7,4.8,89.3,65.8,68.2,77.9,6.5,6.0,6.7,9.1
+EMP1459,INTJ,Introvert,Intuitive,Thinking,Judging,HR,Recruiter,Mid,3.3,1.9,Search/Research,64.6,15.6,16.2,51.0,2.6,81.1,79.9,65.9,68.4,2.6,0.1,8.9,13.1
+EMP1460,ENTP,Extravert,Intuitive,Thinking,Perceiving,R&D,Data,Senior,5.2,4.1,Search/Research,77.3,14.4,9.9,67.6,9.7,44.6,46.9,95.0,61.9,0.6,3.4,12.4,7.2
+EMP1461,ENFJ,Extravert,Intuitive,Feeling,Judging,Product,UX Research,Lead,9.5,3.9,Code Assistant,64.4,17.8,15.5,72.0,4.1,89.9,66.7,75.8,86.7,8.1,2.2,8.2,8.3
+EMP1462,ENTP,Extravert,Intuitive,Thinking,Perceiving,Operations,Finance Ops,Lead,14.6,3.0,Automation Script,67.3,16.5,9.3,66.6,7.1,88.9,40.6,62.1,64.6,-1.4,2.2,5.2,10.5
+EMP1463,INTJ,Introvert,Intuitive,Thinking,Judging,R&D,Data,Junior,1.1,4.9,Automation Script,64.5,10.9,14.6,68.4,0.4,32.8,55.0,69.5,53.7,8.9,3.2,11.5,4.6
+EMP1464,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,Backend,Mid,3.5,4.7,Automation Script,53.6,12.9,22.3,58.8,2.8,73.4,89.2,45.7,54.3,6.0,5.3,6.0,1.0
+EMP1465,ISFJ,Introvert,Sensing,Feeling,Judging,HR,L&D,Mid,3.5,2.4,Visualization,45.6,15.1,29.7,73.9,1.3,77.3,88.7,39.8,85.2,4.7,0.8,9.0,3.9
+EMP1466,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,Data,Junior,1.9,3.3,Code Assistant,50.4,8.6,17.4,28.2,1.9,97.6,70.5,31.2,50.3,9.9,5.7,7.3,4.5
+EMP1467,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,Recruiter,Junior,1.8,2.0,Visualization,44.5,9.2,18.4,69.9,6.2,72.1,68.1,49.0,58.0,3.0,2.4,7.0,12.0
+EMP1468,ESFP,Extravert,Sensing,Feeling,Perceiving,HR,HRBP,Lead,8.1,2.1,Automation Script,49.4,20.3,8.9,83.3,8.6,92.3,62.6,36.7,72.7,1.5,9.7,2.6,11.5
+EMP1469,ESFJ,Extravert,Sensing,Feeling,Judging,Sales,AE,Junior,0.8,2.5,LLM Chatbot,55.2,17.5,12.3,91.4,8.8,61.3,78.3,27.9,84.9,4.7,1.6,8.3,5.5
+EMP1470,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,UX Research,Mid,4.5,4.2,Visualization,58.3,5.5,24.2,62.9,5.9,52.1,71.3,65.3,58.7,5.6,15.0,9.5,5.6
+EMP1471,INTJ,Introvert,Intuitive,Thinking,Judging,HR,HRBP,Junior,1.5,2.5,Visualization,71.4,16.1,15.8,59.4,0.0,94.0,72.7,39.4,86.0,5.1,10.2,10.0,4.4
+EMP1472,ESFP,Extravert,Sensing,Feeling,Perceiving,Operations,Finance Ops,Junior,0.5,1.8,Automation Script,59.0,16.2,7.2,83.3,9.6,65.7,54.1,41.5,69.7,1.7,5.6,4.4,13.6
+EMP1473,ENTJ,Extravert,Intuitive,Thinking,Judging,Marketing,Content,Mid,2.3,2.8,LLM Chatbot,62.6,15.6,16.7,66.2,4.9,88.7,71.9,81.8,66.5,4.9,0.2,5.0,12.1
+EMP1474,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,L&D,Mid,4.5,1.4,LLM Chatbot,57.7,21.8,11.0,81.9,4.6,95.5,73.5,44.7,84.0,6.2,3.7,8.6,6.7
+EMP1475,ISFP,Introvert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Senior,6.3,2.0,LLM Chatbot,54.5,8.5,20.5,58.8,3.7,77.4,74.3,51.3,73.2,2.4,0.3,7.2,10.7
+EMP1476,ENFJ,Extravert,Intuitive,Feeling,Judging,Sales,Account Manager,Lead,13.8,1.6,Visualization,53.2,20.7,13.1,80.4,3.2,86.5,66.4,55.2,85.2,4.2,4.8,9.4,3.2
+EMP1477,INTJ,Introvert,Intuitive,Thinking,Judging,Product,UX Research,Mid,4.0,4.4,Visualization,70.8,8.4,26.2,55.9,0.0,51.6,60.3,40.1,51.4,5.3,0.8,11.1,7.0
+EMP1478,INTJ,Introvert,Intuitive,Thinking,Judging,HR,L&D,Senior,6.2,2.4,Visualization,61.2,10.6,26.3,54.2,2.6,92.4,74.1,70.0,66.0,5.2,1.5,9.0,3.2
+EMP1479,ENTJ,Extravert,Intuitive,Thinking,Judging,Product,UX Research,Senior,6.3,3.6,Search/Research,69.4,13.3,16.9,46.7,2.3,70.8,69.2,57.0,63.7,3.1,0.4,11.1,6.5
+EMP1480,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Brand,Mid,4.0,2.5,Code Assistant,37.3,16.4,19.6,59.1,2.6,98.1,95.0,31.8,71.0,5.2,0.3,2.7,4.9
+EMP1481,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Content,Mid,3.0,2.5,Visualization,61.3,13.1,10.2,95.0,10.0,39.9,44.6,69.3,66.4,3.1,4.6,4.8,9.9
+EMP1482,ISFJ,Introvert,Sensing,Feeling,Judging,Operations,Ops,Senior,5.5,1.9,Visualization,47.1,7.1,22.9,55.3,4.8,86.6,89.5,34.8,85.3,5.7,0.4,8.2,5.3
+EMP1483,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,Backend,Lead,15.0,3.6,Automation Script,37.9,6.2,26.2,70.6,1.2,83.3,72.9,34.5,60.8,5.1,10.8,9.0,1.7
+EMP1484,ENTP,Extravert,Intuitive,Thinking,Perceiving,Operations,Ops,Lead,10.7,2.7,Automation Script,49.7,15.9,8.0,61.8,10.0,61.0,53.7,69.9,64.1,-0.5,1.7,6.7,13.9
+EMP1485,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,QA,Mid,3.3,2.6,Search/Research,44.1,5.4,25.7,62.4,0.0,77.8,73.3,38.5,56.8,7.1,5.4,11.2,4.9
+EMP1486,ENTJ,Extravert,Intuitive,Thinking,Judging,R&D,Backend,Junior,1.0,4.3,Automation Script,83.1,12.8,19.3,66.3,3.1,84.8,54.7,68.5,69.7,4.8,3.8,9.8,11.8
+EMP1487,INTP,Introvert,Intuitive,Thinking,Perceiving,Sales,AE,Mid,3.9,2.4,Visualization,79.9,16.8,18.3,56.0,5.9,60.7,51.9,66.5,61.5,-2.6,1.7,10.7,7.9
+EMP1488,INTP,Introvert,Intuitive,Thinking,Perceiving,R&D,QA,Mid,4.1,4.0,Code Assistant,62.9,7.3,15.9,54.8,2.5,81.8,40.4,72.8,49.7,-2.9,3.5,11.5,10.0
+EMP1489,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,Backend,Lead,9.1,5.0,Code Assistant,66.7,12.8,16.7,38.1,0.1,49.4,88.4,50.1,71.9,7.4,9.4,8.1,6.4
+EMP1490,ESFJ,Extravert,Sensing,Feeling,Judging,Operations,Supply Ops,Senior,7.4,2.4,LLM Chatbot,44.6,7.1,22.4,72.2,1.6,97.6,74.1,46.5,82.0,5.2,1.0,3.8,5.6
+EMP1491,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,AE,Senior,5.4,1.9,LLM Chatbot,58.8,19.6,11.2,75.1,5.9,55.0,81.3,25.2,67.3,6.6,1.1,3.8,4.9
+EMP1492,ISFJ,Introvert,Sensing,Feeling,Judging,Marketing,Growth,Mid,2.9,3.1,Code Assistant,59.8,14.1,19.7,61.2,2.7,77.2,87.0,61.3,62.1,3.8,0.4,6.0,7.6
+EMP1493,INTJ,Introvert,Intuitive,Thinking,Judging,Operations,Ops,Senior,6.1,3.2,Search/Research,65.8,12.2,25.2,43.6,2.9,77.8,82.8,78.5,74.2,5.9,3.0,12.4,4.1
+EMP1494,ISFJ,Introvert,Sensing,Feeling,Judging,Sales,Account Manager,Senior,7.1,1.6,LLM Chatbot,53.5,13.7,23.7,67.5,4.4,73.4,79.1,43.0,75.6,1.2,3.2,9.4,1.0
+EMP1495,ESFJ,Extravert,Sensing,Feeling,Judging,R&D,Data,Mid,2.3,4.3,Visualization,70.9,9.3,17.8,70.7,4.2,96.2,85.0,49.8,72.2,4.9,6.9,3.0,6.3
+EMP1496,ISFP,Introvert,Sensing,Feeling,Perceiving,Marketing,Content,Senior,8.0,1.9,Automation Script,56.3,14.0,12.5,59.5,7.5,37.4,46.3,47.7,67.0,-7.5,0.4,8.6,11.8
+EMP1497,ENFP,Extravert,Intuitive,Feeling,Perceiving,Operations,Ops,Senior,5.1,2.7,Search/Research,54.0,7.0,13.5,74.6,8.5,90.4,52.1,60.1,72.5,0.9,7.3,6.5,8.8
+EMP1498,ENTP,Extravert,Intuitive,Thinking,Perceiving,HR,HRBP,Mid,4.1,1.2,Search/Research,50.5,18.7,12.8,72.8,6.6,71.4,36.6,65.2,69.4,-4.5,8.6,7.7,6.2
+EMP1499,ESTP,Extravert,Sensing,Thinking,Perceiving,R&D,QA,Senior,5.5,2.8,Code Assistant,43.1,5.1,13.0,68.2,8.8,47.7,40.8,51.6,60.1,4.2,3.4,9.2,8.6
+EMP1500,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,Account Manager,Junior,0.9,2.7,Search/Research,44.8,14.4,12.3,75.8,6.9,65.6,49.7,43.1,78.4,5.5,0.5,7.7,13.3
+EMP1501,ISTP,Introvert,Sensing,Thinking,Perceiving,R&D,Backend,Senior,6.6,4.2,Visualization,64.3,8.9,17.2,51.2,4.8,59.9,45.7,57.0,51.6,2.2,3.2,7.4,9.2
+EMP1502,ISTJ,Introvert,Sensing,Thinking,Judging,Marketing,Content,Mid,2.3,2.6,Automation Script,46.1,7.0,23.9,63.4,5.4,87.6,85.0,38.0,70.9,7.1,1.7,6.7,3.8
+EMP1503,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Brand,Mid,2.1,2.0,Visualization,69.7,14.2,12.3,89.0,7.6,75.5,25.5,76.6,61.7,1.3,0.2,9.9,15.3
+EMP1504,INTP,Introvert,Intuitive,Thinking,Perceiving,R&D,Backend,Mid,4.5,4.4,LLM Chatbot,59.4,4.4,23.6,40.8,7.0,86.0,38.1,68.6,52.9,-2.3,3.8,9.5,9.8
+EMP1505,INTP,Introvert,Intuitive,Thinking,Perceiving,Marketing,Content,Senior,5.2,3.0,LLM Chatbot,82.0,12.4,15.3,64.6,8.1,86.2,39.9,61.2,71.3,-3.1,5.8,10.2,11.8
+EMP1506,ISTJ,Introvert,Sensing,Thinking,Judging,Sales,Account Manager,Senior,5.2,2.3,Search/Research,52.0,18.2,17.3,41.7,3.7,81.3,83.5,41.1,64.6,7.5,0.6,9.0,5.0
+EMP1507,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,HRBP,Mid,4.7,2.5,LLM Chatbot,46.9,17.4,9.1,67.5,4.5,66.7,71.1,42.0,63.3,-2.9,3.9,5.8,13.8
+EMP1508,INTJ,Introvert,Intuitive,Thinking,Judging,HR,Recruiter,Mid,4.3,3.4,Search/Research,61.2,15.3,19.4,56.9,0.0,86.7,62.2,73.2,81.5,1.4,0.8,12.1,4.7
+EMP1509,ENTP,Extravert,Intuitive,Thinking,Perceiving,Sales,Account Manager,Junior,0.3,2.2,Automation Script,62.5,17.5,13.0,70.9,9.9,78.9,35.0,83.4,70.8,-0.6,7.2,6.5,13.3
+EMP1510,INFP,Introvert,Intuitive,Feeling,Perceiving,Sales,Account Manager,Senior,6.6,2.0,Automation Script,39.8,12.1,15.7,60.9,6.1,35.5,44.3,73.6,70.3,2.4,0.1,10.6,11.6
+EMP1511,ENTP,Extravert,Intuitive,Thinking,Perceiving,Product,UX Research,Senior,5.8,2.8,Search/Research,80.9,9.1,20.9,57.7,7.5,38.0,46.5,72.6,54.6,1.1,0.8,9.3,10.9
+EMP1512,ENTJ,Extravert,Intuitive,Thinking,Judging,Sales,Account Manager,Senior,6.3,3.5,LLM Chatbot,51.9,17.8,11.8,86.7,4.7,87.2,58.8,67.7,73.5,3.8,0.2,3.5,6.5
+EMP1513,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,HRBP,Senior,5.1,1.1,Visualization,76.2,18.6,13.8,79.5,3.8,77.6,83.6,53.6,59.5,1.5,1.3,4.3,11.1
+EMP1514,ISFJ,Introvert,Sensing,Feeling,Judging,HR,Recruiter,Mid,4.2,1.5,Automation Script,50.1,14.0,24.1,79.7,3.1,92.8,95.0,34.0,79.9,3.6,0.7,9.3,2.5
+EMP1515,ESTP,Extravert,Sensing,Thinking,Perceiving,R&D,Data,Mid,2.5,4.6,Search/Research,51.8,13.2,9.8,66.8,10.0,68.8,52.3,50.3,66.7,1.1,4.4,11.7,12.1
+EMP1516,ISFJ,Introvert,Sensing,Feeling,Judging,Operations,Ops,Lead,13.8,2.3,Automation Script,38.4,13.2,28.8,61.4,0.0,78.6,78.5,21.6,73.1,3.4,3.4,4.2,5.3
+EMP1517,ENFJ,Extravert,Intuitive,Feeling,Judging,Sales,Account Manager,Junior,1.1,2.3,LLM Chatbot,62.3,19.5,15.0,77.6,4.9,71.1,69.8,47.1,71.5,6.2,0.0,10.1,9.3
+EMP1518,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,HRBP,Mid,3.3,2.6,LLM Chatbot,50.2,17.0,10.6,65.8,6.7,85.2,58.2,33.1,71.9,2.5,2.6,6.5,9.2
+EMP1519,INFP,Introvert,Intuitive,Feeling,Perceiving,Marketing,Content,Mid,4.1,2.6,Code Assistant,83.4,10.3,25.5,70.7,7.8,73.2,31.2,95.0,69.4,2.7,7.0,9.9,9.8
+EMP1520,INFP,Introvert,Intuitive,Feeling,Perceiving,Sales,SDR,Senior,7.2,1.6,LLM Chatbot,54.5,14.7,17.0,47.7,6.0,51.7,44.7,67.8,85.1,2.6,3.0,4.5,6.8
+EMP1521,ISFP,Introvert,Sensing,Feeling,Perceiving,R&D,Data,Mid,4.7,4.4,Code Assistant,64.8,7.5,14.6,45.1,5.3,51.4,59.9,52.3,62.1,-4.5,4.0,10.9,10.2
+EMP1522,ESFP,Extravert,Sensing,Feeling,Perceiving,Sales,Account Manager,Lead,12.6,2.2,Visualization,46.1,23.4,10.1,83.4,8.1,78.7,63.3,53.0,68.6,0.3,2.1,4.9,8.5
+EMP1523,INTP,Introvert,Intuitive,Thinking,Perceiving,Operations,Supply Ops,Lead,10.4,2.6,LLM Chatbot,32.1,13.9,25.5,46.3,5.6,65.2,42.9,84.0,69.8,3.4,2.7,7.7,4.2
+EMP1524,INFJ,Introvert,Intuitive,Feeling,Judging,Marketing,Content,Senior,5.4,3.0,LLM Chatbot,48.5,14.2,27.6,81.7,3.8,92.0,72.2,75.8,90.2,8.6,1.6,9.1,6.1
+EMP1525,ESTP,Extravert,Sensing,Thinking,Perceiving,R&D,Frontend,Lead,9.8,3.8,Code Assistant,49.9,9.6,11.7,63.8,8.7,61.2,53.4,62.2,62.8,-4.4,10.3,7.6,1.9
+EMP1526,ENTJ,Extravert,Intuitive,Thinking,Judging,R&D,Backend,Senior,7.7,5.3,LLM Chatbot,73.5,10.4,18.8,75.1,3.3,97.8,78.7,77.5,83.3,6.2,4.6,10.1,7.5
+EMP1527,ISFJ,Introvert,Sensing,Feeling,Judging,Product,PM,Mid,3.1,4.5,LLM Chatbot,54.8,13.5,23.9,47.9,0.2,85.8,84.6,42.8,78.6,7.1,0.3,7.1,2.9
+EMP1528,ISFP,Introvert,Sensing,Feeling,Perceiving,HR,HRBP,Mid,2.8,1.4,Automation Script,40.4,19.9,13.7,59.7,2.8,89.8,74.2,27.5,60.4,-0.4,1.9,7.2,12.8
+EMP1529,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,Recruiter,Mid,4.1,2.7,LLM Chatbot,69.2,12.1,19.6,77.2,2.5,71.5,73.4,70.9,70.6,5.3,5.3,6.7,5.4
+EMP1530,ESFP,Extravert,Sensing,Feeling,Perceiving,Operations,Supply Ops,Junior,1.4,1.3,Visualization,59.5,11.9,18.5,74.5,6.7,90.4,61.8,48.6,70.2,6.1,5.1,9.1,15.2
+EMP1531,INFJ,Introvert,Intuitive,Feeling,Judging,Product,UX Research,Senior,5.3,3.9,LLM Chatbot,69.7,7.1,24.1,58.4,2.6,97.7,49.1,73.9,69.3,7.2,1.6,8.1,9.3
+EMP1532,INTP,Introvert,Intuitive,Thinking,Perceiving,Sales,Account Manager,Lead,8.2,3.2,Search/Research,64.5,23.8,11.9,51.0,6.9,45.1,28.6,58.2,65.8,-2.7,2.7,10.8,4.7
+EMP1533,ENTJ,Extravert,Intuitive,Thinking,Judging,Product,PM,Lead,10.9,3.6,Search/Research,48.5,14.3,18.6,70.0,3.4,64.1,62.7,63.7,64.0,1.5,4.9,11.2,10.1
+EMP1534,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,Frontend,Senior,6.1,3.0,Automation Script,84.6,6.4,27.6,53.9,3.2,80.9,74.7,45.2,65.5,6.6,7.3,7.3,11.4
+EMP1535,ISTP,Introvert,Sensing,Thinking,Perceiving,Sales,Account Manager,Mid,2.9,2.0,Search/Research,46.9,13.8,14.3,55.1,7.9,75.5,51.2,41.9,70.4,3.7,3.4,9.0,6.6
+EMP1536,INTJ,Introvert,Intuitive,Thinking,Judging,Product,Design,Mid,2.3,4.1,Automation Script,72.0,10.6,21.0,43.3,1.1,86.9,60.4,62.5,64.1,4.3,0.7,10.7,7.4
+EMP1537,INTJ,Introvert,Intuitive,Thinking,Judging,Product,PM,Lead,14.9,4.2,Visualization,70.4,6.4,21.7,50.8,2.1,89.7,69.7,86.4,67.7,7.7,2.6,10.1,4.5
+EMP1538,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,SDR,Senior,7.9,2.4,Automation Script,59.4,21.4,7.7,74.6,7.2,100.0,92.5,22.5,72.0,3.3,3.9,8.4,4.0
+EMP1539,ISTP,Introvert,Sensing,Thinking,Perceiving,Product,PM,Mid,2.4,3.2,Visualization,61.5,8.5,21.8,38.3,7.4,55.6,51.8,70.1,54.2,1.9,0.6,6.0,9.7
+EMP1540,INTP,Introvert,Intuitive,Thinking,Perceiving,HR,HRBP,Lead,12.0,2.2,LLM Chatbot,57.7,15.0,21.5,61.9,5.2,56.0,46.4,72.4,61.1,-4.4,2.1,8.7,1.3
+EMP1541,INFP,Introvert,Intuitive,Feeling,Perceiving,Product,PM,Mid,4.1,3.8,Visualization,73.9,10.3,15.8,65.9,4.9,65.1,48.2,74.3,62.2,4.1,4.6,14.9,7.4
+EMP1542,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,AE,Mid,2.5,1.8,LLM Chatbot,59.0,21.4,19.0,59.7,3.7,81.7,77.8,39.6,78.6,0.7,0.3,4.0,10.3
+EMP1543,ESTP,Extravert,Sensing,Thinking,Perceiving,Product,PM,Mid,3.6,3.4,LLM Chatbot,62.8,13.9,8.8,68.8,4.4,81.0,75.2,50.4,46.9,3.1,2.3,10.4,9.3
+EMP1544,INTJ,Introvert,Intuitive,Thinking,Judging,R&D,Backend,Lead,9.2,4.5,Search/Research,67.6,13.5,16.0,44.2,0.0,88.8,49.1,80.3,79.2,8.5,11.3,7.5,6.6
+EMP1545,ISFJ,Introvert,Sensing,Feeling,Judging,Operations,Ops,Mid,3.2,0.9,Visualization,41.1,5.6,24.3,77.8,1.0,89.1,89.3,25.7,72.6,7.8,2.8,4.8,9.0
+EMP1546,ESFP,Extravert,Sensing,Feeling,Perceiving,Product,Design,Lead,9.6,3.5,LLM Chatbot,61.4,13.2,13.0,72.0,10.0,49.8,51.8,70.6,56.0,-1.9,8.7,7.5,12.8
+EMP1547,INFJ,Introvert,Intuitive,Feeling,Judging,R&D,QA,Mid,2.8,4.0,Code Assistant,77.1,8.2,16.3,54.8,0.3,96.2,65.6,55.3,84.0,4.7,5.4,8.0,6.0
+EMP1548,ISFJ,Introvert,Sensing,Feeling,Judging,Marketing,Brand,Lead,10.1,1.9,Visualization,48.2,10.8,30.3,56.2,2.2,88.3,71.2,34.4,78.9,6.0,2.5,5.9,6.8
+EMP1549,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,Recruiter,Lead,11.1,2.3,Automation Script,29.0,23.7,6.0,60.0,9.0,95.7,57.4,47.5,66.0,0.9,10.2,3.7,6.4
+EMP1550,ESTP,Extravert,Sensing,Thinking,Perceiving,HR,Recruiter,Senior,5.3,1.0,LLM Chatbot,44.0,19.3,8.9,76.0,8.0,33.8,66.3,48.4,64.9,-2.2,0.2,7.4,5.4
+EMP1551,INFJ,Introvert,Intuitive,Feeling,Judging,Operations,Supply Ops,Junior,1.7,1.7,Automation Script,50.4,9.9,21.6,61.8,1.0,71.3,87.6,55.8,83.1,3.2,4.6,10.2,7.3
+EMP1552,ESTP,Extravert,Sensing,Thinking,Perceiving,Product,PM,Mid,3.5,4.6,Code Assistant,61.3,12.0,12.3,39.0,9.1,35.1,63.4,40.7,54.4,-5.8,2.2,10.5,9.7
+EMP1553,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,Frontend,Lead,8.9,3.7,Code Assistant,36.8,7.4,32.9,43.3,0.0,79.3,93.1,50.7,83.5,5.4,5.1,6.6,2.8
+EMP1554,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,QA,Mid,4.8,3.7,LLM Chatbot,73.7,10.6,22.9,63.8,0.0,79.6,86.0,38.5,75.6,7.5,3.4,9.5,10.8
+EMP1555,INTP,Introvert,Intuitive,Thinking,Perceiving,Operations,Supply Ops,Mid,2.6,3.2,Code Assistant,54.1,8.5,14.3,53.7,2.9,82.5,53.8,55.5,70.8,2.8,2.2,8.9,15.6
+EMP1556,ISFJ,Introvert,Sensing,Feeling,Judging,Marketing,Growth,Lead,10.0,2.9,Search/Research,47.7,16.6,18.1,69.3,3.4,98.1,87.6,55.5,83.8,2.3,3.4,0.0,3.3
+EMP1557,ESFP,Extravert,Sensing,Feeling,Perceiving,HR,L&D,Junior,1.7,2.5,LLM Chatbot,52.0,20.7,7.5,87.5,7.0,46.5,64.8,41.2,68.6,0.8,4.2,3.4,11.1
+EMP1558,INTP,Introvert,Intuitive,Thinking,Perceiving,HR,L&D,Lead,12.9,2.8,LLM Chatbot,44.0,16.4,19.0,50.6,7.2,71.0,49.8,61.5,72.7,-2.4,2.0,6.2,9.8
+EMP1559,ISFJ,Introvert,Sensing,Feeling,Judging,HR,Recruiter,Senior,5.0,2.1,Automation Script,55.3,18.4,15.8,75.5,1.4,95.6,87.5,29.9,82.2,6.7,0.2,7.3,8.9
+EMP1560,ESFJ,Extravert,Sensing,Feeling,Judging,Marketing,Content,Lead,9.9,3.6,Visualization,35.3,20.6,6.5,84.4,7.0,97.8,80.0,52.1,85.9,8.3,2.0,4.8,6.9
+EMP1561,ESFJ,Extravert,Sensing,Feeling,Judging,Operations,Supply Ops,Senior,6.8,2.1,Visualization,55.9,12.1,20.9,65.4,6.9,81.2,85.5,51.3,74.4,7.6,1.6,4.1,1.0
+EMP1562,ISFJ,Introvert,Sensing,Feeling,Judging,Sales,Account Manager,Senior,6.0,1.9,Search/Research,49.0,17.8,21.5,68.3,1.2,93.1,88.0,43.8,83.8,5.2,0.9,7.1,1.0
+EMP1563,INFP,Introvert,Intuitive,Feeling,Perceiving,Operations,Finance Ops,Lead,13.3,3.4,Search/Research,61.8,13.4,16.2,71.7,4.1,76.0,41.0,47.9,62.8,1.1,2.7,6.1,3.5
+EMP1564,ENTP,Extravert,Intuitive,Thinking,Perceiving,Sales,SDR,Senior,5.2,2.2,Visualization,75.4,18.5,11.4,92.8,8.9,34.4,46.7,75.4,58.6,0.4,1.9,5.4,5.4
+EMP1565,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,AE,Mid,3.7,2.2,Search/Research,47.7,19.7,16.3,82.8,5.2,86.2,84.5,43.1,66.7,5.4,2.8,8.9,4.9
+EMP1566,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,Account Manager,Senior,8.0,1.4,Code Assistant,59.0,22.2,6.0,76.2,8.4,54.2,49.8,36.9,55.7,-2.5,2.6,7.1,10.7
+EMP1567,ISFP,Introvert,Sensing,Feeling,Perceiving,Operations,Ops,Junior,1.4,1.8,LLM Chatbot,44.8,11.2,15.2,52.1,2.8,42.8,63.7,43.7,69.2,-0.8,0.6,10.8,7.9
+EMP1568,ENFJ,Extravert,Intuitive,Feeling,Judging,HR,Recruiter,Mid,4.4,1.7,Search/Research,55.0,17.6,12.7,84.6,3.8,82.9,72.5,55.6,73.7,2.8,2.3,8.5,9.9
+EMP1569,ESFP,Extravert,Sensing,Feeling,Perceiving,Marketing,Growth,Mid,2.3,1.9,Search/Research,39.7,18.9,10.1,88.9,8.7,26.1,64.8,77.3,61.7,-0.6,1.2,4.1,11.7
+EMP1570,ENFJ,Extravert,Intuitive,Feeling,Judging,Product,Design,Mid,2.4,3.3,LLM Chatbot,61.9,13.9,8.9,77.3,4.0,75.4,47.3,57.3,74.4,5.2,2.1,10.9,1.0
+EMP1571,ENFJ,Extravert,Intuitive,Feeling,Judging,Marketing,Growth,Senior,5.4,2.4,LLM Chatbot,65.5,17.9,13.0,84.2,8.1,96.7,60.8,77.5,78.5,6.4,1.1,8.8,4.9
+EMP1572,INFP,Introvert,Intuitive,Feeling,Perceiving,HR,HRBP,Mid,4.3,2.6,Visualization,68.7,17.3,9.6,63.4,4.9,37.8,65.8,57.6,66.2,-6.2,0.8,5.7,13.3
+EMP1573,ENFJ,Extravert,Intuitive,Feeling,Judging,Sales,AE,Senior,6.2,2.5,Visualization,62.4,15.4,20.9,80.7,4.9,97.0,73.2,78.1,98.0,6.2,1.9,6.8,8.2
+EMP1574,INTP,Introvert,Intuitive,Thinking,Perceiving,Operations,Supply Ops,Lead,12.3,2.2,Search/Research,52.9,10.2,16.4,46.4,6.5,61.5,46.9,66.7,51.9,6.6,2.3,7.0,9.4
+EMP1575,INFP,Introvert,Intuitive,Feeling,Perceiving,Operations,Finance Ops,Senior,5.4,2.3,Search/Research,67.3,14.7,15.9,57.7,5.7,40.6,51.5,71.0,68.1,8.3,0.8,8.3,11.1
+EMP1576,ISFJ,Introvert,Sensing,Feeling,Judging,R&D,QA,Senior,6.4,2.6,Automation Script,39.2,12.6,20.6,45.6,4.7,90.1,86.5,38.6,78.8,3.8,4.0,8.4,5.0
+EMP1577,ENTP,Extravert,Intuitive,Thinking,Perceiving,Marketing,Content,Lead,8.7,2.7,LLM Chatbot,66.7,19.8,17.6,64.9,8.8,68.2,39.4,95.0,62.1,1.3,3.9,9.0,10.0
+EMP1578,ENFJ,Extravert,Intuitive,Feeling,Judging,Sales,Account Manager,Mid,3.3,1.8,Search/Research,70.0,17.4,17.7,87.8,5.6,82.9,63.4,56.4,83.7,2.3,2.1,8.0,2.5
+EMP1579,ESTJ,Extravert,Sensing,Thinking,Judging,Marketing,Content,Mid,2.1,2.9,Visualization,34.2,15.8,11.8,83.5,7.5,38.0,78.4,39.7,58.5,1.4,2.8,3.1,4.8
+EMP1580,ENTJ,Extravert,Intuitive,Thinking,Judging,R&D,QA,Senior,5.2,4.3,Code Assistant,82.1,13.7,14.7,54.1,5.6,89.6,74.7,73.2,71.9,2.0,3.0,13.2,7.4
+EMP1581,ENFP,Extravert,Intuitive,Feeling,Perceiving,Sales,SDR,Mid,4.4,3.3,Code Assistant,51.8,22.8,15.8,84.3,8.0,84.1,44.9,67.3,75.0,0.3,0.7,10.8,8.3
+EMP1582,ENFJ,Extravert,Intuitive,Feeling,Judging,Product,UX Research,Mid,3.2,3.6,Visualization,74.4,12.8,28.1,78.4,3.8,68.3,65.5,95.0,76.2,2.7,8.6,11.1,10.8
+EMP1583,ENTJ,Extravert,Intuitive,Thinking,Judging,Marketing,Content,Mid,3.2,2.5,Visualization,64.0,11.4,16.8,85.1,4.0,69.4,62.9,53.2,66.4,3.9,0.0,9.6,2.5
+EMP1584,ESTJ,Extravert,Sensing,Thinking,Judging,Product,Design,Junior,1.5,2.7,Automation Script,71.3,14.1,13.5,50.1,5.7,93.9,72.4,67.6,70.0,5.8,0.7,10.5,4.4
+EMP1585,ISTP,Introvert,Sensing,Thinking,Perceiving,HR,L&D,Mid,3.1,2.6,Search/Research,47.9,17.8,14.6,57.4,5.3,47.9,68.3,50.6,52.7,5.8,1.6,3.3,12.6
+EMP1586,ESTP,Extravert,Sensing,Thinking,Perceiving,Operations,Ops,Senior,6.4,1.4,Visualization,50.1,17.0,14.3,64.0,9.6,38.3,70.5,48.1,55.4,-1.2,1.7,4.0,11.4
+EMP1587,ENFP,Extravert,Intuitive,Feeling,Perceiving,Marketing,Growth,Junior,1.7,3.2,Search/Research,59.3,16.8,17.7,74.1,10.0,54.3,40.9,69.3,63.2,3.5,13.7,8.4,10.4
+EMP1588,ISTJ,Introvert,Sensing,Thinking,Judging,R&D,Backend,Lead,13.3,3.6,LLM Chatbot,61.5,15.8,15.4,46.6,0.1,94.6,85.9,35.1,70.7,1.0,6.6,9.1,7.1
+EMP1589,ENFP,Extravert,Intuitive,Feeling,Perceiving,HR,Recruiter,Senior,6.8,2.4,Search/Research,62.6,21.1,10.1,80.8,9.9,47.7,45.8,66.0,69.0,3.0,1.8,8.3,16.1
+EMP1590,ESFJ,Extravert,Sensing,Feeling,Judging,Product,PM,Lead,9.6,3.6,Visualization,47.3,16.1,8.2,68.6,5.5,86.4,76.0,58.0,75.4,9.2,1.7,7.4,5.0
+EMP1591,ESFJ,Extravert,Sensing,Feeling,Judging,Product,PM,Mid,2.9,2.8,Automation Script,43.2,13.0,19.5,74.1,4.0,91.7,85.7,56.3,82.8,7.4,0.2,6.9,9.1
+EMP1592,ENTP,Extravert,Intuitive,Thinking,Perceiving,Marketing,Content,Lead,8.9,3.2,LLM Chatbot,83.1,16.0,19.1,85.6,8.0,84.1,37.4,91.5,70.4,-1.1,3.8,7.0,6.9
+EMP1593,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,AE,Mid,2.5,1.5,LLM Chatbot,41.8,16.9,18.5,59.7,8.0,75.6,76.2,47.5,68.5,6.0,0.0,2.9,9.2
+EMP1594,ESTJ,Extravert,Sensing,Thinking,Judging,Sales,Account Manager,Senior,5.8,1.4,Search/Research,51.9,19.3,15.9,65.5,4.4,82.1,73.0,28.9,80.7,6.7,0.2,3.0,1.0
+EMP1595,ISFJ,Introvert,Sensing,Feeling,Judging,Marketing,Brand,Junior,1.6,2.7,LLM Chatbot,45.9,13.2,21.2,69.9,4.2,53.9,82.4,50.3,64.2,4.5,2.1,5.9,3.9
+EMP1596,INTP,Introvert,Intuitive,Thinking,Perceiving,Operations,Ops,Senior,7.4,1.7,Code Assistant,53.1,9.3,19.9,49.6,4.0,56.4,49.3,56.6,52.3,3.1,0.6,11.9,12.0
+EMP1597,ISFP,Introvert,Sensing,Feeling,Perceiving,Marketing,Content,Senior,6.5,2.1,Search/Research,51.4,14.3,19.9,68.6,8.4,84.3,52.5,44.8,78.2,1.0,1.2,8.4,9.3
+EMP1598,ESTP,Extravert,Sensing,Thinking,Perceiving,Sales,SDR,Lead,11.5,1.2,Automation Script,20.0,21.4,6.0,76.3,9.0,62.6,56.9,51.4,70.1,0.9,3.8,5.0,8.7
+EMP1599,ENTP,Extravert,Intuitive,Thinking,Perceiving,R&D,QA,Senior,5.8,4.1,Automation Script,67.3,9.8,13.9,77.0,10.0,54.3,54.8,81.1,49.2,-2.6,6.5,5.5,3.9

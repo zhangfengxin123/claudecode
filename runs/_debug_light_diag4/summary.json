@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-02-23T00:00:14",
+  "source": "Pardus/.codex_session/runs/historical_candidates_light_20260222.json",
+  "target": 1,
+  "source_cases": 86,
+  "filtered_cases": 81,
+  "picked_cases": 1,
+  "actual_strict_count": 0,
+  "actual_strict_case_ids": [],
+  "strict_with_description": 0,
+  "strict_without_description": 0,
+  "failure_reasons": {
+    "uploads_http_0": 1
+  },
+  "rows_all": [
+    {
+      "seq": 1,
+      "case_id": "85dc8695ea24d28befe1602b0343594024a6786ea040d748ca4bc7bb799ca92b",
+      "title": "3",
+      "status": "failed",
+      "strict_pass": false,
+      "input_complete": false,
+      "has_description": null,
+      "plot_assets_in_doc": 0,
+      "plots_renderable": 0,
+      "plot_assets_failed": null,
+      "error": "uploads_http_0",
+      "full_report_html": "",
+      "input_dir": ""
+    }
+  ],
+  "rows_strict": []
+}

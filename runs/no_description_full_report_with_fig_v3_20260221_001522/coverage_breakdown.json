@@ -1,0 +1,175 @@
+{
+  "total": 199,
+  "ok": 186,
+  "fail": 13,
+  "with_plot_assets": 177,
+  "no_plot_assets": 9,
+  "full_match_plot_cases": 139,
+  "partial_plot_cases": 5,
+  "zero_renderable_plot_cases": 3,
+  "fail_buckets": {
+    "document_404": 13
+  },
+  "sample_fail": [
+    {
+      "case_id": "17faad37ce6bf04378012190d8c563e8611827132b0944643f44af1350abb758",
+      "title": "jinteki",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "2aa4a1c17878da16636d057ea682656438ee01e50a9b56fbbee8aac72e5bd2c9",
+      "title": "AB_NO_DESC_f5171f88125c_20260217_074206",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "35fe9f98a5565e83dd97e074beb7fd80d42b3e2467bde1dec7074a9aefe4e7cb",
+      "title": "ISP",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "4732de6cfb3a108a6a95dd93ac81cd2adc5a0d8a93e0c4daa06e6c2e61a3ffa2",
+      "title": "DataFrame_from__data_input_R_0_1_xlsx___sheet___Projects_Record_Table___",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "4bbe48695313e00fe4e324d0d4cb70f0022812020e6f3748c56aef8a8bed49a6",
+      "title": "1",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "4f941f32c468b66391aa9cbc55bf54e8b9b19e6c37e3195bbefebc175b01edb2",
+      "title": "case_059",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "6b4b51bd9afaa5d8f8512d51c00d3f5cde948f551ad09e3829457b2ab7a3e29b",
+      "title": "001",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "d072b670826453e16599800aec6634bc6c5907d76b0202af193e344151d3f459",
+      "title": "random walk",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131",
+      "title": "美国电能分析",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874",
+      "title": "AB_NO_DESC_64914baf5ff5_20260217_070858",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "dcb6a29b31385e093b8dba1b3c7b81b826810b8e42629e319a6f061f63faa06e",
+      "title": "20251206-how AI is wiring childhood",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "e72ce87902fb49a7899df6872f983400ce4ee89bab41330e2fd22ff924eeaea0",
+      "title": "贷后报告-范例",
+      "error": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "ef45d93ed5cbd5546f82e0ce56b5f7dcf6f431d8c605dc393e2da836ef77b2dd",
+      "title": "integrated_final_plan",
+      "error": "document fetch failed: HTTP 404"
+    }
+  ],
+  "sample_no_plot": [
+    {
+      "case_id": "050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa",
+      "title": "case_004"
+    },
+    {
+      "case_id": "1c22b0ecf41c03c4527e3e2a5754753735f05fa732150a653d1e9b48f50b650e",
+      "title": "American power"
+    },
+    {
+      "case_id": "4191f2e665e02f502d6aaf6a73622d61c29c0045621b4facfc4f1821683d7ad9",
+      "title": "airline_route_profitability"
+    },
+    {
+      "case_id": "77c1850288a9d82e3b4b5bd0c866809ffa96f0f8c2f3b579aa70b1759fd9f7c6",
+      "title": "Uber Financial Report"
+    },
+    {
+      "case_id": "7ca323c1a3a0ed5ecbb144832466b3608c361a216988fe575e72d77d0a682628",
+      "title": "Student_Placement_Skills_2025"
+    },
+    {
+      "case_id": "88ccdc326903b3a46c1ee211b798979b557cf120c5f265f26aa0a6535a3017b7",
+      "title": "case_103"
+    },
+    {
+      "case_id": "99345a7cac663ef5435b1f715aa400bdc971d2b0a98826efa5c7f1e6f6ed5f35",
+      "title": "airline_route_profitability"
+    },
+    {
+      "case_id": "ae43400d2a7213709c12b5fd2f90dff7aa14eaeeeb41738b2317837b4eda0012",
+      "title": "格力"
+    },
+    {
+      "case_id": "fb5d40592edc3ad5a4357916256d95ca45e7f4af85dfff05b4c3f18501fd97d2",
+      "title": "airline_route_profitability"
+    }
+  ],
+  "sample_partial": [
+    {
+      "case_id": "2e44cec7bc5ed214761a7a9cd59aed0ed54e9bf39a95dbf58d47fe6cb49e1fee",
+      "title": "mbti_1",
+      "plot_assets_in_doc": 12,
+      "plots_renderable": 11,
+      "plot_assets_failed": 1
+    },
+    {
+      "case_id": "412edcf0e3aedb85c775d41e01d1b236a21a461a885e365f218cfb35fbb5e684",
+      "title": "RAW MARKS SCHEDULE 2026_011022",
+      "plot_assets_in_doc": 9,
+      "plots_renderable": 3,
+      "plot_assets_failed": 6
+    },
+    {
+      "case_id": "558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9",
+      "title": "DepthStats",
+      "plot_assets_in_doc": 12,
+      "plots_renderable": 11,
+      "plot_assets_failed": 1
+    },
+    {
+      "case_id": "8a850cc5b8631d3219cd736c5c62d99607641c49acc0b1839289ad5e6e4b69b9",
+      "title": "2025 Global Robotics Leaders — Technology Roadmap Comparison",
+      "plot_assets_in_doc": 21,
+      "plots_renderable": 1,
+      "plot_assets_failed": 20
+    },
+    {
+      "case_id": "e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743",
+      "title": "AB_NO_DESC_6a109b2edad7_20260217_072320",
+      "plot_assets_in_doc": 8,
+      "plots_renderable": 7,
+      "plot_assets_failed": 1
+    }
+  ],
+  "sample_zero_render": [
+    {
+      "case_id": "4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f",
+      "title": "dataset_fashion_store_customers",
+      "plot_assets_in_doc": 8,
+      "plot_assets_failed": 8
+    },
+    {
+      "case_id": "c2bcdeec152405a6623419d62142e24fb7bd532f7e666e12a2b04701fec62529",
+      "title": "moltbook_top_posts",
+      "plot_assets_in_doc": 22,
+      "plot_assets_failed": 22
+    },
+    {
+      "case_id": "db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360",
+      "title": "瑞银表态中国存款",
+      "plot_assets_in_doc": 5,
+      "plot_assets_failed": 5
+    }
+  ]
+}

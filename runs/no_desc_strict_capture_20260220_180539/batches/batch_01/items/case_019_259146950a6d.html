@@ -1,0 +1,1675 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 259146950a6d</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>Visa Q1 Analysis</h1>
+  <div class='muted'>case_id: <span class='code'>259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_019_259146950a6d</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>14b7c334-2ab7-4d40-8ac4-cfbc6815d4b5.pdf</code></td><td>200</td><td>590928</td><td>application/pdf</td><td><code>input/case_019_259146950a6d/14b7c334-2ab7-4d40-8ac4-cfbc6815d4b5.pdf</code></td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/files/14b7c334-2ab7-4d40-8ac4-cfbc6815d4b5.pdf' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>Q1FY26-Visa-Operational-Performance-Data.pdf</code></td><td>200</td><td>177488</td><td>application/pdf</td><td><code>input/case_019_259146950a6d/Q1FY26-Visa-Operational-Performance-Data.pdf</code></td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/files/Q1FY26-Visa-Operational-Performance-Data.pdf' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>presentation.txt</code></td><td>200</td><td>26468</td><td>text/plain</td><td><code>input/case_019_259146950a6d/presentation.txt</code></td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/files/presentation.txt' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>Q1-2026-Earnings-Release_vF.pdf</code></td><td>200</td><td>259888</td><td>application/pdf</td><td><code>input/case_019_259146950a6d/Q1-2026-Earnings-Release_vF.pdf</code></td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/files/Q1-2026-Earnings-Release_vF.pdf' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>Visa-Inc-First-Quarter-2026-Financial-Results-Presentation.pdf</code></td><td>200</td><td>189109</td><td>application/pdf</td><td><code>input/case_019_259146950a6d/Visa-Inc-First-Quarter-2026-Financial-Results-Presentation.pdf</code></td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/files/Visa-Inc-First-Quarter-2026-Financial-Results-Presentation.pdf' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>operational_data.txt</code></td><td>200</td><td>14214</td><td>text/plain</td><td><code>input/case_019_259146950a6d/operational_data.txt</code></td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/files/operational_data.txt' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>earnings_release.txt</code></td><td>200</td><td>26965</td><td>text/plain</td><td><code>input/case_019_259146950a6d/earnings_release.txt</code></td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/files/earnings_release.txt' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>14b7c334-2ab7-4d40-8ac4-cfbc6815d4b5.pdf</code> · HTTP 200 · binary · head-only preview</summary><em>binary content; preview skipped</em></details><details><summary><code>Q1FY26-Visa-Operational-Performance-Data.pdf</code> · HTTP 200 · binary</summary><em>binary content; preview skipped</em></details><details><summary><code>presentation.txt</code> · HTTP 200 · text</summary><pre>Fiscal First Quarter 2026
+Financial Results
+January 29, 2026
+
+©2026 Visa. All rights reserved.
+
+Fiscal First Quarter 2026 Results
+
+Net
+Revenue
+
+Operating
+Expenses
+
+Effective Income
+Tax Rate
+
+Diluted Class A
+Common Stock
+Earnings Per Share
+
+GAAP Nominal-Dollar Basis
+
+15%
+
+27%
+
+13.0%
+
+17%
+
+Non-GAAP Nominal-Dollar Basis(1)
+
+15%
+
+16%
+
+18.4%
+
+15%
+
+Foreign Currency Impact(2)
+
+(~1.0%)
+
+(~1.5%)
+
+N/A
+
+(~1.0%)
+
+Acquisition Impact(2)
+
+(~0.5%)
+
+(~1.0%)
+
+0.0%
+
+~0%
+
+13%
+
+14%
+
+18.4%
+
+14%
+
+YoY increase / (decrease) except for Effective Income Tax Rate
+
+Non-GAAP Adjusted Constant-Dollar Basis(1)
+
+(1) Refer to Non-GAAP Financial Measures within the appendix for further information on our non-GAAP adjustments. There were no non-GAAP adjustments made to net revenue.
+(2) Foreign currency and acquisition impacts, if applicable, are rounded to the nearest half point, except for effective income tax rate.
+
+Fiscal First Quarter 2026 Financial Results
+
+©2026 Visa. All rights reserved.
+
+1
+
+Fiscal First Quarter 2026 Results and Other Highlights
+•
+
+Growth in payments volume, cross-border volume and processed transactions was strong
+
+•
+
+Share repurchases and dividends of $5.1B
+
+Income Statement Summary
+Q1 2026
+In billions, except percentages and per share data. % change is calculated over the comparable prior-year period.
+
+Net Revenue
+GAAP Net Income
+GAAP Earnings Per Share
+Non-GAAP Net Income(1)
+Non-GAAP Earnings Per Share(1)
+
+USD
+$10.9
+$5.9
+$3.03
+$6.1
+$3.17
+
+% Change
+15%
+14%
+17%
+12%
+15%
+
+(1) Refer to Non-GAAP Financial Measures within the appendix for further information.
+
+Key Business Drivers
+YoY increase / (decrease), volume in constant dollars
+
+Q1 2026
+
+Payments Volume
+Cross-Border Volume Excluding Intra-Europe(2)
+Cross-Border Volume Total
+Processed Transactions
+
+8%
+11%
+12%
+9%
+
+(2) Cross-border volume excluding transactions within Europe.
+
+Fiscal First Quarter 2026 Financial Results
+
+©2026 Visa. All rights reserved.
+
+2
+
+Operational Performance Metrics through January 21, 2026
+2025 - 2026 U.S. Payments Volume Growth
+Total
+
+Credit
+
+2025 - 2026 Processed Transactions Growth
+14%
+
+Debit
+
+12%
+12%
+
+10%
+8%
+
+10%
+
+6%
+8%
+
+4%
+2%
+
+6%
+
+Oct
+
+Nov
+
+Dec
+
+Jan
+1 - 21
+
+Oct
+
+Nov
+
+Dec
+
+Jan
+1 - 21
+
+2025 - 2026 Cross-Border Volume Growth
+Total
+
+Total (ex. Intra-EU)
+
+CP + CNP Travel (ex. Intra-EU)
+
+CNP, Ex. Travel (ex. Intra-EU)
+
+16%
+14%
+12%
+10%
+8%
+6%
+Oct
+
+Nov
+
+Dec
+
+Jan
+1 - 21
+
+Notes:
+1) All figures shown on a constant-dollar basis and growth rates are calculated over the comparable prior-year period. Refer to Operational Performance Data Footnote for further information on these metrics.
+2) CP denotes Card Present and CNP denotes Card Not Present.
+Fiscal First Quarter 2026 Financial Results
+
+©2026 Visa. All rights reserved.
+
+3
+
+Total Payments Volume Growth
+
+9%
+
+9%
+
+Q4 FY2025
+
+11%
+
+10%
+
+Q1 FY2026
+
+10%
+
+9%
+
+Nominal
+Credit
+
+9%
+
+Total
+
+Debit
+
+8%
+
+9%
+
+8%
+
+9%
+
+8%
+
+Constant
+Credit
+
+Debit
+
+Total
+
+Note: The chart results are calculated over the comparable prior-year period. Refer to Operational Performance Data Footnote for further information on these metrics.
+Fiscal First Quarter 2026 Financial Results
+
+©2026 Visa. All rights reserved.
+
+4
+
+Payments Volume Growth: U.S. and International
+
+Q4 FY2025
+
+International
+
+U.S.
+
+Q1 FY2026
+
+Visa
+
+16%
+13%
+10%
+8%
+
+7%
+
+8%
+
+8%
+6%
+
+13%
+11%
+
+10%
+
+9%
+
+9%
+
+10%
+
+11%
+9%
+
+10%
+
+7%
+
+Nominal
+Credit
+
+Debit
+
+Total
+
+Credit
+
+10%
+8%
+
+7%
+
+8%
+
+8%
+6%
+
+7%
+
+Debit
+
+10%
+
+10%
+
+8%
+
+Total
+
+10%
+
+9%
+
+Credit
+
+9%
+
+8%
+
+Total
+
+Debit
+
+9%
+
+8%
+
+9%
+
+8%
+
+Constant
+Credit
+
+Debit
+
+Total
+
+Credit
+
+Debit
+
+Total
+
+Credit
+
+Debit
+
+Total
+
+Note: The chart results are calculated over the comparable prior-year period. Refer to Operational Performance Data Footnote for further information on these metrics.
+Fiscal First Quarter 2026 Financial Results
+
+©2026 Visa. All rights reserved.
+
+5
+
+Transactions and Cross-Border Volume Results
+Q1 FY2026
+
+Transactions
+
+Cross-Border Volume
+9%
+
+8%
+
+18%
+
+8%
+
+12%
+
+Total
+
+Payments
+
+Processed
+
+Transaction Count (in millions)
+Credit
+
+31,084
+
+30,878
+
+Debit
+
+56,889
+
+53,030
+
+Total
+
+87,973
+
+83,908
+
+Total
+Nominal
+
+Total
+Constant
+
+11%
+
+Constant
+(excluding (1)
+Intra-Europe)
+
+(1) Cross-border volume excluding transactions within Europe.
+
+69,400
+
+Note: The chart results are calculated over the comparable prior-year period. Refer to Operational Performance Data Footnote for further information on these metrics.
+Fiscal First Quarter 2026 Financial Results
+
+©2026 Visa. All rights reserved.
+
+6
+
+Total Cards (in billions)
+2024
+
+Q4 FY2025
+Credit
+
+Debit
+
+Total
+
+10%
+
+4%
+
+6%
+
+4.7
+
+3.3
+
+1.4
+
+2025
+
+5.0
+
+3.5
+
+1.5
+
+Note: The chart results are calculated over the comparable prior-year period. Refer to Operational Performance Data Footnote for further information on these metrics.
+Fiscal First Quarter 2026 Financial Results
+
+©2026 Visa. All rights reserved.
+
+7
+
+Operational Performance Data Footnote
+
+Current quarter payments volume and other select metrics are provided in the operational performance data supplement to provide more
+recent operating data. Service revenue continues to be recognized primarily based on payments volume in the prior quarter.
+Total transactions represent payments and cash transactions as reported by Visa clients on their operating certificates. Processed
+transactions include payments and cash transactions, and represent transactions using cards and other form factors carrying the Visa, Visa
+Electron, V PAY, Interlink and PLUS brands processed on Visa’s networks.
+Reported volume, transaction and card information may be updated to reflect revised client submissions or other adjustments. Prior-period
+updates are not material. Figures may not recalculate exactly due to rounding. Percentage changes and totals are calculated based on
+unrounded numbers. Constant-dollar growth rates exclude the impact of foreign currency fluctuations against the U.S. dollar in measuring
+performance.
+
+Fiscal First Quarter 2026 Financial Results
+
+©2026 Visa. All rights reserved.
+
+8
+
+Revenue Results
+Q1 FY2026
+
+33%
+
+17%
+
+15%
+
+13%
+
+12%
+6%
+
+Service
+Re</pre></details><details><summary><code>Q1-2026-Earnings-Release_vF.pdf</code> · HTTP 200 · binary · head-only preview</summary><em>binary content; preview skipped</em></details><details><summary><code>Visa-Inc-First-Quarter-2026-Financial-Results-Presentation.pdf</code> · HTTP 200 · pdf</summary><em>pdf file; inline preview skipped</em></details><details><summary><code>operational_data.txt</code> · HTTP 200 · text</summary><pre>Operational Performance Data
+The tables below provide information regarding the available operational results for the 3 months ended December 31,
+2025, as well as the prior four quarterly reporting periods and the 12 months ended December 31, 2025 and 2024, for cards
+and other form factors carrying the Visa, Visa Electron, V PAY and Interlink brands.
+1. Branded Volume and Transactions
+The tables present regional total volume, payments volume, and cash volume, and the number of payments transactions,
+cash transactions, accounts and cards for cards and other form factors carrying the Visa, Visa Electron, V PAY and Interlink
+brands and excludes Europe co-badged volume and transactions for all periods. Card counts include PLUS proprietary
+cards. Nominal and constant dollar growth rates over prior years are provided for volume-based data.
+
+Total
+Volume
+($ billions)
+
+Growth
+(Nominal
+USD)
+
+Growth
+(Constant
+USD)
+
+Payments
+Volume
+($ billions)
+
+For the 3 Months Ended December 31, 2025
+Growth
+Growth
+Payments
+Cash
+(Nominal (Constant Transactions Volume
+USD)
+USD)
+(millions) ($ billions)
+
+Growth
+(Nominal
+USD)
+
+Growth
+(Constant
+USD)
+
+Cash
+Transactions Accounts Cards
+(millions) (millions) (millions)
+
+All Visa Credit &amp; Debit
+Asia Pacific
+Canada
+CEMEA
+LAC
+US
+Europe
+Visa Inc.
+
+$618
+124
+383
+429
+1,984
+990
+4,527
+
+2.3%
+5.1%
+13.2%
+13.5%
+6.1%
+17.0%
+9.0%
+
+2.7%
+4.3%
+11.9%
+8.6%
+6.1%
+9.7%
+7.0%
+
+$539
+117
+250
+285
+1,834
+844
+3,868
+
+2.9%
+5.5%
+17.0%
+17.7%
+6.6%
+18.2%
+9.8%
+
+3.1%
+4.8%
+16.2%
+13.8%
+6.6%
+10.9%
+8.0%
+
+13,212
+1,841
+8,302
+10,992
+28,595
+20,965
+83,908
+
+$80
+7
+133
+144
+149
+146
+659
+
+(1.4%)
+(2.3%)
+6.7%
+6.0%
+(0.2%)
+10.8%
+4.6%
+
+0.0%
+(3.0%)
+4.7%
+(0.5%)
+(0.2%)
+3.1%
+1.4%
+
+748
+12
+878
+1,111
+687
+629
+4,065
+
+Visa Credit Programs
+US
+International
+Visa Inc.
+
+$918
+1,037
+1,954
+
+7.4%
+9.7%
+8.6%
+
+7.4%
+8.2%
+7.8%
+
+$905
+988
+1,892
+
+7.4%
+9.8%
+8.6%
+
+7.4%
+8.4%
+7.9%
+
+10,114
+20,764
+30,878
+
+$13
+49
+62
+
+6.8%
+8.8%
+8.3%
+
+6.8%
+4.7%
+5.2%
+
+18
+187
+206
+
+Visa Debit Programs
+US
+International
+Visa Inc.
+
+$1,066
+1,507
+2,573
+
+4.9%
+12.5%
+9.3%
+
+4.9%
+7.5%
+6.4%
+
+$930
+1,046
+1,975
+
+5.8%
+15.8%
+10.9%
+
+5.8%
+10.3%
+8.2%
+
+18,481
+34,549
+53,030
+
+$136
+461
+597
+
+(0.8%)
+5.9%
+4.3%
+
+(0.8%)
+1.6%
+1.0%
+
+668
+3,191
+3,859
+
+Growth
+(Constant
+USD)
+
+Payments
+Volume
+($ billions)
+
+For the 3 Months Ended September 30, 2025
+Growth
+Growth
+Payments
+Cash
+(Nominal (Constant Transactions Volume
+USD)
+USD)
+(millions) ($ billions)
+
+Growth
+(Nominal
+USD)
+
+Growth
+(Constant
+USD)
+
+Total
+Volume
+($ billions)
+
+Growth
+(Nominal
+USD)
+
+Cash
+Transactions Accounts Cards
+(millions) (millions) (millions)
+
+All Visa Credit &amp; Debit
+Asia Pacific
+Canada
+CEMEA
+LAC
+US
+Europe
+Visa Inc.
+
+$605
+117
+367
+385
+1,928
+973
+4,376
+
+3.4%
+4.2%
+12.8%
+6.1%
+7.1%
+14.3%
+8.4%
+
+3.7%
+5.3%
+13.1%
+8.4%
+7.1%
+9.6%
+7.7%
+
+$529
+110
+238
+253
+1,775
+826
+3,732
+
+4.3%
+4.5%
+17.4%
+11.1%
+7.6%
+15.4%
+9.5%
+
+4.6%
+5.6%
+18.3%
+14.5%
+7.6%
+10.6%
+8.8%
+
+12,941
+1,791
+7,979
+10,295
+28,214
+20,903
+82,123
+
+$76
+7
+129
+131
+153
+147
+644
+
+(2.3%)
+(0.1%)
+5.1%
+(2.3%)
+1.6%
+8.5%
+2.4%
+
+(2.0%)
+1.0%
+4.7%
+(1.7%)
+1.6%
+4.1%
+1.6%
+
+739
+12
+865
+1,075
+720
+659
+4,071
+
+1,151
+89
+432
+788
+1,295
+646
+4,401
+
+1,235
+96
+459
+956
+1,549
+725
+5,019
+
+Visa Credit Programs
+US
+International
+Visa Inc.
+
+$880
+1,007
+1,887
+
+7.5%
+9.7%
+8.6%
+
+7.5%
+9.7%
+8.7%
+
+$867
+958
+1,825
+
+7.6%
+9.7%
+8.7%
+
+7.6%
+9.8%
+8.7%
+
+9,837
+20,353
+30,189
+
+$13
+49
+63
+
+0.9%
+10.0%
+7.9%
+
+0.9%
+8.1%
+6.5%
+
+17
+189
+206
+
+363
+862
+1,225
+
+532
+1,011
+1,543
+
+Visa Debit Programs
+US
+International
+Visa Inc.
+
+$1,048
+1,440
+2,488
+
+6.8%
+9.2%
+8.2%
+
+6.8%
+7.1%
+7.0%
+
+$908
+999
+1,907
+
+7.7%
+12.7%
+10.3%
+
+7.7%
+10.1%
+8.9%
+
+18,377
+33,557
+51,934
+
+$140
+441
+581
+
+1.6%
+2.0%
+1.9%
+
+1.6%
+0.9%
+1.1%
+
+703
+3,161
+3,864
+
+932
+2,245
+3,177
+
+1,017
+2,459
+3,476
+
+1
+
+Total
+Volume
+($ billions)
+
+Growth
+(Nominal
+USD)
+
+Growth
+(Constant
+USD)
+
+Payments
+Volume
+($ billions)
+
+For the 3 Months Ended June 30, 2025
+Growth
+Growth
+Payments
+Cash
+(Nominal (Constant Transactions Volume
+USD)
+USD)
+(millions) ($ billions)
+
+Growth
+(Nominal
+USD)
+
+Growth
+(Constant
+USD)
+
+Cash
+Transactions Accounts Cards
+(millions) (millions) (millions)
+
+All Visa Credit &amp; Debit
+Asia Pacific
+Canada
+CEMEA
+LAC
+US
+Europe
+Visa Inc.
+
+$584
+117
+344
+371
+1,917
+916
+4,249
+
+3.0%
+3.8%
+10.1%
+3.0%
+6.3%
+14.9%
+7.5%
+
+1.5%
+4.7%
+11.7%
+11.8%
+6.3%
+9.9%
+7.2%
+
+$508
+110
+220
+241
+1,764
+774
+3,617
+
+3.5%
+4.1%
+15.1%
+8.9%
+6.8%
+16.3%
+8.7%
+
+2.0%
+4.9%
+17.1%
+18.7%
+6.8%
+11.2%
+8.2%
+
+12,415
+1,741
+7,405
+9,906
+27,733
+20,104
+79,304
+
+$76
+7
+124
+130
+153
+142
+632
+
+(0.5%)
+(0.1%)
+2.2%
+(6.3%)
+1.0%
+7.7%
+0.8%
+
+(1.8%)
+0.7%
+3.2%
+1.0%
+1.0%
+3.6%
+1.6%
+
+731
+12
+854
+1,115
+719
+674
+4,105
+
+1,134
+88
+417
+773
+1,276
+634
+4,323
+
+1,216
+95
+445
+941
+1,522
+704
+4,923
+
+Visa Credit Programs
+US
+International
+Visa Inc.
+
+$868
+959
+1,828
+
+6.0%
+8.6%
+7.4%
+
+6.0%
+8.5%
+7.3%
+
+$856
+911
+1,767
+
+6.1%
+8.6%
+7.3%
+
+6.1%
+8.6%
+7.3%
+
+9,531
+19,427
+28,958
+
+$13
+48
+61
+
+2.5%
+9.2%
+7.7%
+
+2.5%
+8.1%
+6.9%
+
+17
+188
+205
+
+357
+846
+1,203
+
+521
+990
+1,510
+
+Visa Debit Programs
+US
+International
+Visa Inc.
+
+$1,049
+1,373
+2,421
+
+6.5%
+8.4%
+7.6%
+
+6.5%
+7.5%
+7.1%
+
+$908
+942
+1,850
+
+7.4%
+12.8%
+10.1%
+
+7.4%
+10.7%
+9.1%
+
+18,202
+32,144
+50,346
+
+$140
+431
+571
+
+0.9%
+(0.1%)
+0.1%
+
+0.9%
+1.2%
+1.1%
+
+702
+3,198
+3,901
+
+919
+2,200
+3,119
+
+1,001
+2,411
+3,412
+
+Growth
+(Constant
+USD)
+
+Payments
+Volume
+($ billions)
+
+For the 3 Months Ended March 31, 2025
+Growth
+Growth
+Payments
+Cash
+(Nominal (Constant Transactions Volume
+USD)
+USD)
+(millions) ($ billions)
+
+Growth
+(Nominal
+USD)
+
+Growth
+(Constant
+USD)
+
+Total
+Volume
+($ billions)
+
+Growth
+(Nominal
+USD)
+
+Cash
+Transactions Accounts Cards
+(millions) (millions) (millions)
+
+All Visa Credit &amp; Debit
+Asia Pacific
+Canada
+CEMEA
+LAC
+US
+Europe
+Visa Inc.
+
+$567
+103
+334
+354
+1,799
+785
+3,942
+
+(2.1%)
+1.0%
+10.6%
+2.2%
+5.3%
+5.5%
+4.2%
+
+1.0%
+7.3%
+13.5%
+15.0%
+5.3%
+8.5%
+6.8%
+
+$489
+96
+211
+228
+1,654
+666
+3,344
+
+(2.1%)
+1.0%
+14.9%
+6.8%
+6.0%
+7.3%
+5.4%
+
+1.1%
+7.3%
+17.6%
+20.7%
+6.0%
+10.2%
+7.6%
+
+11,677
+1,571
+6,914
+9,465
+25,870
+18,155
+73,652
+
+$78
+7
+124
+126
+145
+118
+598
+
+(1.7%)
+1.0%
+4.0%
+(5.2%)
+(2.0%)
+(3.3%)
+(1.7%)
+
+0.0%
+7.4%
+7.1%
+6.0%
+(2.0%)
+0.2%
+2.3%
+
+755
+12
+840
+1,132
+676
+612
+4,026
+
+1,128
+87
+400
+761
+1,285
+619
+4,280
+
+1,206
+94
+431
+919
+1,555
+692
+4,898
+
+Visa Credit Programs
+US
+International
+Visa Inc.
+
+$797
+888
+1,</pre></details><details><summary><code>earnings_release.txt</code> · HTTP 200 · text</summary><pre>Visa Reports Fiscal First Quarter 2026 Results
+San Francisco, CA, January 29, 2026 – Visa (NYSE: V)
+•
+
+GAAP net income of $5.9B or $3.03 per share and non-GAAP net income of $6.1B or $3.17 per share
+
+•
+
+Net revenue of $10.9B, an increase of 15%, or 13% on a constant-dollar basis
+
+•
+
+Growth in payments volume, cross-border volume and processed transactions was strong
+
+•
+
+Share repurchases and dividends of $5.1B
+
+Income Statement Summary
+Q1 2026
+In billions, except percentages and per share data.
+% change is calculated over the comparable prior-year period.
+
+USD
+
+% Change
+
+Net Revenue
+
+$10.9
+
+15%
+
+GAAP Net Income
+
+$5.9
+
+14%
+
+GAAP Earnings Per Share
+
+$3.03
+
+17%
+
+Non-GAAP Net Income(1)
+
+$6.1
+
+12%
+
+Non-GAAP Earnings Per Share(1)
+
+$3.17
+
+15%
+
+(1) Refer to Non-GAAP Financial Measures for further details and a reconciliation of
+
+the GAAP to non-GAAP measures presented.
+
+Key Business Drivers
+YoY increase / (decrease), volume in constant dollars
+
+Q1 2026
+
+Payments Volume
+
+8%
+
+Cross-Border Volume Excluding Intra-Europe(2)
+
+11%
+
+Cross-Border Volume Total
+
+12%
+
+Processed Transactions
+
+9%
+
+(2) Cross-border volume excluding transactions within Europe.
+
+Ryan McInerney, Chief Executive
+Officer, Visa, commented on the
+results:
+
+&quot;Visa delivered a very strong fiscal first
+quarter with net revenue up 15% yearover-year, GAAP EPS up 17% and
+non-GAAP EPS up 15%, driven by
+resilient consumer spending and a
+strong holiday season, as well as
+continued strength in value-added
+services and commercial and money
+movement solutions. Our purposeful
+investments in our Visa as a Service
+stack continue to position us as a
+payments hyperscaler to deliver
+technology and infrastructure that
+redefine what&#x27;s possible in payments.&quot;
+
+Fiscal First Quarter 2026 — Financial Highlights
+GAAP net income in the fiscal first quarter was $5.9 billion or $3.03 per share, an increase of 14% and 17%, respectively,
+over prior year’s results. Current year&#x27;s results included special items of $707 million for a litigation provision associated
+with the interchange multidistrict litigation (&quot;MDL&quot;) case and $333 million for a deferred tax benefit recognized due to a
+change in the U.S. taxation of certain foreign earnings. Current year&#x27;s results also included $7 million of net losses from
+equity investments and $66 million from the amortization of acquired intangible assets and acquisition-related costs. Prior
+year&#x27;s results included special items of $213 million for severance costs, $39 million for lease consolidation costs and $27
+million for a litigation provision associated with the MDL case. Prior year’s results also included $75 million of net losses
+from equity investments and $80 million from the amortization of acquired intangible assets and acquisition-related costs.
+Excluding these items and related tax impacts, non-GAAP net income for the quarter was $6.1 billion or $3.17 per share,
+increases of 12% and 15%, respectively, over prior year’s results (refer to Non-GAAP Financial Measures for further
+details). GAAP earnings per share increase was approximately 16% on a constant-dollar basis, which excludes the
+impact of foreign currency fluctuations against the U.S. dollar. Non-GAAP earnings per share growth was approximately
+14% on a constant-dollar basis. All references to earnings per share assume fully diluted class A share count.
+Net revenue in the fiscal first quarter was $10.9 billion, an increase of 15%, driven by the year-over-year growth in
+payments volume, cross-border volume and processed transactions. Net revenue increased 13% on a constant-dollar
+basis.
+Payments volume for the three months ended September 30, 2025, on which fiscal first quarter service revenue is
+recognized, increased 9% over the prior year on a constant-dollar basis.
+Payments volume for the three months ended December 31, 2025 increased 8% over the prior year on a constant-dollar
+basis.
+Cross-border volume excluding transactions within Europe, which drives our international transaction revenue, for the
+three months ended December 31, 2025, increased 11% on a constant-dollar basis over the prior year. Total cross-border
+volume on a constant-dollar basis increased 12% over the prior year.
+Total processed transactions, which represent transactions processed by Visa, for the three months ended December 31,
+2025, were 69.4 billion, a 9% increase over the prior year.
+Fiscal first quarter service revenue was $4.8 billion, an increase of 13% over the prior year, and is recognized based on
+payments volume in the prior quarter. All other revenue categories are recognized based on current quarter activity. Data
+processing revenue rose 17% over the prior year to $5.5 billion. International transaction revenue grew 6% over the prior
+year to $3.7 billion. Other revenue of $1.2 billion rose 33% over the prior year. Client incentives were $4.3 billion, up 12%
+over the prior year.
+GAAP operating expenses were $4.2 billion for the fiscal first quarter, a 27% increase over the prior year&#x27;s results,
+primarily driven by an increase in the litigation provision. GAAP operating expenses included the special items as well as
+the amortization of acquired intangible assets and acquisition-related costs in the current and prior year. Excluding these
+items, non-GAAP operating expenses increased 16% over the prior year, primarily driven by increases in personnel,
+marketing and general and administrative expenses.
+GAAP non-operating expense was $11 million for the fiscal first quarter, including $7 million of net equity investment
+losses. Excluding this item, non-GAAP non-operating expense was $4 million.
+GAAP effective income tax rate was 13.0% for the quarter ended December 31, 2025, including the special item related to
+the deferred tax benefit and the tax impacts from the non-GAAP items. Excluding these items, the non-GAAP effective
+income tax rate was 18.4% for the quarter ended December 31, 2025.
+Cash, cash equivalents and investment securities were $16.9 billion at December 31, 2025</pre></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td><code>chart_financial_waterfall.json</code></td><td>plotly_json</td><td>200</td><td>Q1 2026 Revenue Flow</td><td>1</td><td>waterfall</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_financial_waterfall.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_volume_trend.json</code></td><td>plotly_json</td><td>200</td><td>Visa Quarterly Volume Trend</td><td>2</td><td>scatter</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_volume_trend.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_cross_border.json</code></td><td>plotly_json</td><td>200</td><td>Cross-Border Volume Growth Trend</td><td>2</td><td>scatter</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_cross_border.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_processed_transactions.json</code></td><td>plotly_json</td><td>200</td><td>Processed Transactions Trend</td><td>1</td><td>scatter</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_processed_transactions.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_regional_sunburst.json</code></td><td>plotly_json</td><td>200</td><td>Regional Volume Breakdown</td><td>1</td><td>sunburst</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_regional_sunburst.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_regional_bar.json</code></td><td>plotly_json</td><td>200</td><td>Regional Volume Comparison</td><td>2</td><td>bar</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_regional_bar.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_credit_debit.json</code></td><td>plotly_json</td><td>200</td><td>Credit vs Debit Programs</td><td>2</td><td>bar</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_credit_debit.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_growth_comparison.json</code></td><td>plotly_json</td><td>200</td><td>Quarterly Growth Comparison</td><td>3</td><td>bar</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_growth_comparison.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_payment_flow_sankey.json</code></td><td>plotly_json</td><td>200</td><td>Payment Flow: Card Types to Regions</td><td>1</td><td>sankey</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_payment_flow_sankey.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chart_3d_scatter.json</code></td><td>plotly_json</td><td>200</td><td>3D View: Volume, Transactions, and Growth</td><td>1</td><td>scatter3d</td><td><a href='https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_3d_scatter.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <article class='chart-card'><h4>Q1 2026 Revenue Flow</h4><div class='muted code'>chart_financial_waterfall.json</div><div id='chart-0' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_financial_waterfall.json</p></article><article class='chart-card'><h4>Visa Quarterly Volume Trend</h4><div class='muted code'>chart_volume_trend.json</div><div id='chart-1' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_volume_trend.json</p></article><article class='chart-card'><h4>Cross-Border Volume Growth Trend</h4><div class='muted code'>chart_cross_border.json</div><div id='chart-2' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_cross_border.json</p></article><article class='chart-card'><h4>Processed Transactions Trend</h4><div class='muted code'>chart_processed_transactions.json</div><div id='chart-3' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_processed_transactions.json</p></article><article class='chart-card'><h4>Regional Volume Breakdown</h4><div class='muted code'>chart_regional_sunburst.json</div><div id='chart-4' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_regional_sunburst.json</p></article><article class='chart-card'><h4>Regional Volume Comparison</h4><div class='muted code'>chart_regional_bar.json</div><div id='chart-5' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_regional_bar.json</p></article><article class='chart-card'><h4>Credit vs Debit Programs</h4><div class='muted code'>chart_credit_debit.json</div><div id='chart-6' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_credit_debit.json</p></article><article class='chart-card'><h4>Quarterly Growth Comparison</h4><div class='muted code'>chart_growth_comparison.json</div><div id='chart-7' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_growth_comparison.json</p></article><article class='chart-card'><h4>Payment Flow: Card Types to Regions</h4><div class='muted code'>chart_payment_flow_sankey.json</div><div id='chart-8' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_payment_flow_sankey.json</p></article><article class='chart-card'><h4>3D View: Volume, Transactions, and Growth</h4><div class='muted code'>chart_3d_scatter.json</div><div id='chart-9' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d/assets/chart_3d_scatter.json</p></article>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [{"div": "chart-0", "name": "chart_financial_waterfall.json", "fig": {"data": [{"connector": {"line": {"color": "rgb(63, 63, 63)"}}, "measure": ["relative", "relative", "relative", "relative", "relative", "relative", "relative"], "name": "Q1 2026", "orientation": "v", "text": ["$4.76B", "$5.54B", "$3.65B", "$1.21B", "-$4.27B", "-$4.16B", "$10.90B"], "textposition": "outside", "x": ["Service Rev", "Data Processing", "Intl Transaction", "Other Rev", "Client Incentives", "Op Expenses", "Total"], "y": [4.76, 5.544, 3.652, 1.214, -4.269, -4.164, 10.901], "type": "waterfall"}], "layout": {"template": {"data": {"barpolar": [{"marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scattermap": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermap"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "white", "showlakes": true, "showland": true, "subunitcolor": "#C8D4E3"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "white", "polar": {"angularaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}, "bgcolor": "white", "radialaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "yaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "zaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "baxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "bgcolor": "white", "caxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}}}, "title": {"text": "Q1 2026 Revenue Flow", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "showlegend": true, "height": 600, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}}, {"div": "chart-1", "name": "chart_volume_trend.json", "fig": {"data": [{"line": {"color": "#1A5F7A", "width": 3}, "mode": "lines+markers", "name": "Total Volume", "x": ["Q1 2026", "Q4 2025", "Q3 2025", "Q2 2025", "Q1 2025"], "y": [4527.0, 4376.0, 4249.0, 3942.0, 4154.0], "type": "scatter"}, {"line": {"color": "#159895", "width": 3}, "mode": "lines+markers", "name": "Payments Volume", "x": ["Q1 2026", "Q4 2025", "Q3 2025", "Q2 2025", "Q1 2025"], "y": [3868.0, 3732.0, 3617.0, 3344.0, 3524.0], "type": "scatter"}], "layout": {"template": {"data": {"barpolar": [{"marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scattermap": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermap"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "white", "showlakes": true, "showland": true, "subunitcolor": "#C8D4E3"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "white", "polar": {"angularaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}, "bgcolor": "white", "radialaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "yaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "zaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "baxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "bgcolor": "white", "caxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}}}, "title": {"text": "Visa Quarterly Volume Trend", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "xaxis": {"title": {"text": "Quarter", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"text": "Volume ($ Billions)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "height": 600, "hovermode": "closest", "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white"}}}, {"div": "chart-2", "name": "chart_cross_border.json", "fig": {"data": [{"line": {"color": "#1A5F7A", "width": 3}, "mode": "lines+markers", "name": "Nominal Growth", "x": ["2025-12-31", "2025-09-30", "2025-06-30", "2025-03-31", "2024-12-31"], "y": [18.0, 17.0, 16.0, 10.0, 15.0], "type": "scatter"}, {"line": {"color": "#FFC436", "width": 3}, "mode": "lines+markers", "name": "Constant Dollar Growth", "x": ["2025-12-31", "2025-09-30", "2025-06-30", "2025-03-31", "2024-12-31"], "y": [12.0, 12.0, 12.0, 13.0, 16.0], "type": "scatter"}], "layout": {"template": {"data": {"barpolar": [{"marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scattermap": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermap"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "white", "showlakes": true, "showland": true, "subunitcolor": "#C8D4E3"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "white", "polar": {"angularaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}, "bgcolor": "white", "radialaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "yaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "zaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "baxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "bgcolor": "white", "caxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}}}, "title": {"text": "Cross-Border Volume Growth Trend", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "xaxis": {"title": {"text": "Date", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"text": "Growth (%)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "height": 600, "hovermode": "closest", "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white"}}}, {"div": "chart-3", "name": "chart_processed_transactions.json", "fig": {"data": [{"fill": "tozeroy", "line": {"color": "#1A5F7A", "width": 3}, "mode": "lines+markers", "name": "Processed Transactions", "x": ["2025-12-31", "2025-09-30", "2025-06-30", "2025-03-31", "2024-12-31"], "y": [69.4, 67.654, 65.443, 60.651, 63.797], "type": "scatter"}], "layout": {"template": {"data": {"barpolar": [{"marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scattermap": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermap"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "white", "showlakes": true, "showland": true, "subunitcolor": "#C8D4E3"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "white", "polar": {"angularaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}, "bgcolor": "white", "radialaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "yaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "zaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "baxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "bgcolor": "white", "caxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}}}, "title": {"text": "Processed Transactions Trend", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "xaxis": {"title": {"text": "Date", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"text": "Transactions (Billions)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "height": 600, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}}, {"div": "chart-4", "name": "chart_regional_sunburst.json", "fig": {"data": [{"branchvalues": "total", "hovertemplate": "<b>%{label}</b><br>Volume: $%{value}B<extra></extra>", "labels": ["Visa Inc.", "US", "Europe", "Asia Pacific", "LAC", "CEMEA", "Canada"], "parents": ["", "Visa Inc.", "Visa Inc.", "Visa Inc.", "Visa Inc.", "Visa Inc.", "Visa Inc."], "values": [4528.0, 1984.0, 990.0, 618.0, 429.0, 383.0, 124.0], "type": "sunburst"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "title": {"text": "Regional Volume Breakdown", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "height": 600, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}}, {"div": "chart-5", "name": "chart_regional_bar.json", "fig": {"data": [{"marker": {"color": "#1A5F7A"}, "name": "Total Volume", "x": ["US", "Europe", "Asia Pacific", "LAC", "CEMEA", "Canada"], "y": [1984.0, 990.0, 618.0, 429.0, 383.0, 124.0], "type": "bar"}, {"marker": {"color": "#159895"}, "name": "Payments Volume", "x": ["US", "Europe", "Asia Pacific", "LAC", "CEMEA", "Canada"], "y": [1834.0, 844.0, 539.0, 285.0, 250.0, 117.0], "type": "bar"}], "layout": {"template": {"data": {"barpolar": [{"marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scattermap": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermap"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "white", "showlakes": true, "showland": true, "subunitcolor": "#C8D4E3"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "white", "polar": {"angularaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}, "bgcolor": "white", "radialaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "yaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "zaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "baxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "bgcolor": "white", "caxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}}}, "title": {"text": "Regional Volume Comparison", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "xaxis": {"title": {"text": "Region", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"text": "Volume ($ Billions)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "barmode": "group", "height": 600, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}}, {"div": "chart-6", "name": "chart_credit_debit.json", "fig": {"data": [{"marker": {"color": "#1A5F7A"}, "name": "Credit", "x": ["US", "International", "Visa Inc."], "y": [905.0, 988.0, 1892.0], "type": "bar"}, {"marker": {"color": "#159895"}, "name": "Debit", "x": ["US", "International", "Visa Inc."], "y": [930.0, 1046.0, 1975.0], "type": "bar"}], "layout": {"template": {"data": {"barpolar": [{"marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scattermap": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermap"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "white", "showlakes": true, "showland": true, "subunitcolor": "#C8D4E3"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "white", "polar": {"angularaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}, "bgcolor": "white", "radialaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "yaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "zaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "baxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "bgcolor": "white", "caxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}}}, "title": {"text": "Credit vs Debit Programs", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "xaxis": {"title": {"text": "Segment", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"text": "Payments Volume ($ Billions)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "barmode": "group", "height": 600, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}}, {"div": "chart-7", "name": "chart_growth_comparison.json", "fig": {"data": [{"marker": {"color": "#1A5F7A"}, "name": "Total Volume Growth (Constant $)", "x": ["Q1 2026", "Q4 2025", "Q3 2025", "Q2 2025", "Q1 2025"], "y": [7.0, 7.7, 7.2, 6.8, 7.9], "type": "bar"}, {"marker": {"color": "#159895"}, "name": "Payments Volume Growth (Constant $)", "x": ["Q1 2026", "Q4 2025", "Q3 2025", "Q2 2025", "Q1 2025"], "y": [8.0, 8.8, 8.2, 7.6, 8.9], "type": "bar"}, {"marker": {"color": "#FFC436"}, "name": "Processed Transactions Growth", "x": ["Q1 2026", "Q4 2025", "Q3 2025", "Q2 2025", "Q1 2025"], "y": [9, 10, 10, 9, 11], "type": "bar"}], "layout": {"template": {"data": {"barpolar": [{"marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "white", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "#C8D4E3", "linecolor": "#C8D4E3", "minorgridcolor": "#C8D4E3", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scattermap": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermap"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "autotypenumbers": "strict", "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "white", "showlakes": true, "showland": true, "subunitcolor": "#C8D4E3"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "white", "polar": {"angularaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}, "bgcolor": "white", "radialaxis": {"gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "yaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}, "zaxis": {"backgroundcolor": "white", "gridcolor": "#DFE8F3", "gridwidth": 2, "linecolor": "#EBF0F8", "showbackground": true, "ticks": "", "zerolinecolor": "#EBF0F8"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "baxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}, "bgcolor": "white", "caxis": {"gridcolor": "#DFE8F3", "linecolor": "#A2B1C6", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "#EBF0F8", "linecolor": "#EBF0F8", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "#EBF0F8", "zerolinewidth": 2}}}, "title": {"text": "Quarterly Growth Comparison", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "xaxis": {"title": {"text": "Quarter", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"text": "Growth (%)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "barmode": "group", "height": 600, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}}, {"div": "chart-8", "name": "chart_payment_flow_sankey.json", "fig": {"data": [{"arrangement": "perpendicular", "link": {"color": ["rgba(31, 119, 180, 0.74)", "rgba(23, 190, 207, 0.75)", "rgba(31, 119, 180, 0.56)", "rgba(31, 119, 180, 0.58)", "rgba(23, 190, 207, 0.56)", "rgba(23, 190, 207, 0.59)", "rgba(148, 103, 189, 0.73)", "rgba(140, 86, 75, 0.55)", "rgba(227, 119, 194, 0.50)", "rgba(188, 189, 34, 0.61)"], "customdata": ["1,892 (50.0% conversion)", "1,975 (50.0% conversion)", "905 (23.9% conversion)", "988 (26.1% conversion)", "930 (23.5% conversion)", "1,046 (26.5% conversion)", "1,834 (100.0% conversion)", "844 (100.0% conversion)", "539 (100.0% conversion)", "1,190 (100.0% conversion)"], "hovertemplate": "<b>%{source.label}</b> → <b>%{target.label}</b><br>%{customdata}<extra></extra>", "source": [0, 1, 0, 0, 1, 1, 2, 3, 4, 5], "target": [6, 6, 2, 5, 2, 5, 6, 6, 6, 6], "value": [1892.0, 1975.0, 905.0, 988.0, 930.0, 1046.0, 1834.0, 844.0, 539.0, 1190.0]}, "node": {"color": ["#1f77b4", "#17becf", "#9467bd", "#8c564b", "#e377c2", "#bcbd22", "#ff7f0e"], "customdata": ["0 (0.0%)", "3,951 (32.5%)", "1,834 (15.1%)", "844 (7.0%)", "539 (4.4%)", "1,190 (9.8%)", "0 (0.0%)"], "hovertemplate": "<b>%{label}</b><br>%{customdata}<extra></extra>", "label": ["Credit Cards", "Debit Cards", "US", "Europe", "Asia Pacific", "International Regions", "Total Volume"], "line": {"color": "rgba(255,255,255,0.8)", "width": 1.5}, "pad": 25, "thickness": 30}, "type": "sankey"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "title": {"font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center", "text": "Payment Flow: Card Types to Regions"}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}}, {"div": "chart-9", "name": "chart_3d_scatter.json", "fig": {"data": [{"hovertemplate": "<b>%{text}</b><br>Volume: $%{x}B<br>Transactions: %{y}M<br>Growth: %{z}%<extra></extra>", "marker": {"color": [0, 1, 2, 3, 4], "colorscale": [[0.0, "#440154"], [0.1111111111111111, "#482878"], [0.2222222222222222, "#3e4989"], [0.3333333333333333, "#31688e"], [0.4444444444444444, "#26828e"], [0.5555555555555556, "#1f9e89"], [0.6666666666666666, "#35b779"], [0.7777777777777778, "#6ece58"], [0.8888888888888888, "#b5de2b"], [1.0, "#fde725"]], "showscale": true, "size": 12}, "mode": "markers", "text": ["Q1 2026", "Q4 2025", "Q3 2025", "Q2 2025", "Q1 2025"], "x": [3868.0, 3732.0, 3617.0, 3344.0, 3524.0], "y": [83908.0, 82123.0, 79304.0, 73652.0, 77517.0], "z": [8.0, 8.8, 8.2, 7.6, 8.9], "type": "scatter3d"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "title": {"text": "3D View: Volume, Transactions, and Growth", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "scene": {"xaxis": {"title": {"text": "Payments Volume ($ Billions)"}}, "yaxis": {"title": {"text": "Transactions (Millions)"}}, "zaxis": {"title": {"text": "Growth (%)"}}}, "height": 600, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}}];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

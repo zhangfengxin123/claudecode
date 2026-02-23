@@ -1,0 +1,30 @@
+[
+  {
+    "name": "動量與波動率配置之五大金屬輪動投資策略20260126V1.pdf",
+    "local": "動量與波動率配置之五大金屬輪動投資策略20260126V1.pdf",
+    "ok": true,
+    "error": "",
+    "size": 511679
+  },
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 210
+  },
+  {
+    "name": "Metal_Expert_Analytics.xlsx",
+    "local": "Metal_Expert_Analytics.xlsx",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3483434
+  },
+  {
+    "name": "metal_v7_2_detailed_trades.csv",
+    "local": "metal_v7_2_detailed_trades.csv",
+    "ok": true,
+    "error": "",
+    "size": 8979
+  }
+]

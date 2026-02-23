@@ -1,0 +1,16 @@
+[
+  {
+    "name": "lastfm_asia_target.csv",
+    "local": "lastfm_asia_target.csv",
+    "ok": true,
+    "error": "",
+    "size": 56482
+  },
+  {
+    "name": "lastfm_asia_edges.csv",
+    "local": "lastfm_asia_edges.csv",
+    "ok": true,
+    "error": "",
+    "size": 270447
+  }
+]

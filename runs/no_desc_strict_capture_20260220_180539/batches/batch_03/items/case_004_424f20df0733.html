@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 424f20df0733</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>腾讯2024年报</h1>
+  <div class='muted'>case_id: <span class='code'>424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_004_424f20df0733</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>viz_ebitda_data.csv</code></td><td>200</td><td>76</td><td>text/csv</td><td><code>input/case_004_424f20df0733/viz_ebitda_data.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/viz_ebitda_data.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>tencent_revenue.csv</code></td><td>200</td><td>320</td><td>text/csv</td><td><code>input/case_004_424f20df0733/tencent_revenue.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/tencent_revenue.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>tencent_users.csv</code></td><td>200</td><td>131</td><td>text/csv</td><td><code>input/case_004_424f20df0733/tencent_users.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/tencent_users.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>tencent_quarterly_revenue.csv</code></td><td>200</td><td>108</td><td>text/csv</td><td><code>input/case_004_424f20df0733/tencent_quarterly_revenue.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/tencent_quarterly_revenue.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>tencent_annual_revenue.csv</code></td><td>200</td><td>133</td><td>text/csv</td><td><code>input/case_004_424f20df0733/tencent_annual_revenue.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/tencent_annual_revenue.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>viz_user_data.csv</code></td><td>200</td><td>90</td><td>text/csv</td><td><code>input/case_004_424f20df0733/viz_user_data.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/viz_user_data.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>viz_annual_revenue.csv</code></td><td>200</td><td>133</td><td>text/csv</td><td><code>input/case_004_424f20df0733/viz_annual_revenue.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/viz_annual_revenue.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>structured_data.json</code></td><td>200</td><td>70423</td><td>application/json</td><td><code>input/case_004_424f20df0733/structured_data.json</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/structured_data.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>extracted_text.txt</code></td><td>200</td><td>385125</td><td>text/plain</td><td><code>input/case_004_424f20df0733/extracted_text.txt</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/extracted_text.txt' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>tencent_stocks.csv</code></td><td>200</td><td>262</td><td>text/csv</td><td><code>input/case_004_424f20df0733/tencent_stocks.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/tencent_stocks.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>extracted_numbers.csv</code></td><td>200</td><td>25257</td><td>text/csv</td><td><code>input/case_004_424f20df0733/extracted_numbers.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/extracted_numbers.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>viz_quarterly_comparison.csv</code></td><td>200</td><td>108</td><td>text/csv</td><td><code>input/case_004_424f20df0733/viz_quarterly_comparison.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/viz_quarterly_comparison.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>tencent_ebitda.csv</code></td><td>200</td><td>170</td><td>text/csv</td><td><code>input/case_004_424f20df0733/tencent_ebitda.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/tencent_ebitda.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>1223030008.pdf</code></td><td>200</td><td>5241364</td><td>application/pdf</td><td><code>input/case_004_424f20df0733/1223030008.pdf</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/1223030008.pdf' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>full_extract.txt</code></td><td>200</td><td>415863</td><td>text/plain</td><td><code>input/case_004_424f20df0733/full_extract.txt</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/full_extract.txt' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>viz_revenue_composition.csv</code></td><td>200</td><td>116</td><td>text/csv</td><td><code>input/case_004_424f20df0733/viz_revenue_composition.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/files/viz_revenue_composition.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>viz_ebitda_data.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>Period</th><th>EBITDA</th><th>Adjusted EBITDA</th></tr></thead><tbody><tr><td>2023 YTD</td><td>214381</td><td>235454</td></tr><tr><td>2024 YTD</td><td>256310</td><td>277012</td></tr></tbody></table></details><details><summary><code>tencent_revenue.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>metric</th><th>2021</th><th>2022</th><th>2023</th><th>2024_Q3</th><th>2023_Q3</th><th>unit</th></tr></thead><tbody><tr><td>总收入</td><td>237781</td><td>248936</td><td>261777</td><td>222082</td><td>188279</td><td>百万人民币</td></tr><tr><td>增值服务收入</td><td>177078</td><td>200323</td><td>218779</td><td>182099</td><td>154965</td><td>百万人民币</td></tr><tr><td>网络广告收入</td><td>88670</td><td>100742</td><td>101557</td><td>85579</td><td>71556</td><td>百万人民币</td></tr><tr><td>金融科技及企业服务</td><td>172200</td><td>180435</td><td>203837</td><td>181708</td><td>172267</td><td>百万人民币</td></tr></tbody></table></details><details><summary><code>tencent_users.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>metric</th><th>current</th><th>previous</th><th>yoy_change</th><th>qoq_change</th><th>unit</th></tr></thead><tbody><tr><td>WeChat月活</td><td>1385</td><td>1343</td><td>3</td><td>0.2</td><td>百万用户</td></tr><tr><td>QQ月活</td><td>524</td><td>554</td><td>-5</td><td>-1.0</td><td>百万用户</td></tr></tbody></table></details><details><summary><code>tencent_quarterly_revenue.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>Quarter</th><th>Total Revenue</th><th>VAS</th><th>Ads</th><th>Fintech</th></tr></thead><tbody><tr><td>2023 Q3</td><td>188279</td><td>154965</td><td>71556</td><td>172267</td></tr><tr><td>2024 Q3</td><td>222082</td><td>182099</td><td>85579</td><td>181708</td></tr></tbody></table></details><details><summary><code>tencent_annual_revenue.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>Year</th><th>Total Revenue</th><th>VAS</th><th>Ads</th><th>Fintech</th></tr></thead><tbody><tr><td>2021</td><td>237781</td><td>177078</td><td>88670</td><td>172200</td></tr><tr><td>2022</td><td>248936</td><td>200323</td><td>100742</td><td>180435</td></tr><tr><td>2023</td><td>261777</td><td>218779</td><td>101557</td><td>203837</td></tr></tbody></table></details><details><summary><code>viz_user_data.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>Platform</th><th>Current</th><th>Previous</th><th>YoY Change</th><th>QoQ Change</th></tr></thead><tbody><tr><td>WeChat</td><td>1385</td><td>1343</td><td>3</td><td>0.2</td></tr><tr><td>QQ</td><td>524</td><td>554</td><td>-5</td><td>-1.0</td></tr></tbody></table></details><details><summary><code>viz_annual_revenue.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>Year</th><th>Total Revenue</th><th>VAS</th><th>Ads</th><th>Fintech</th></tr></thead><tbody><tr><td>2021</td><td>237781</td><td>177078</td><td>88670</td><td>172200</td></tr><tr><td>2022</td><td>248936</td><td>200323</td><td>100742</td><td>180435</td></tr><tr><td>2023</td><td>261777</td><td>218779</td><td>101557</td><td>203837</td></tr></tbody></table></details><details><summary><code>structured_data.json</code> · HTTP 200 · text</summary><pre>{
+  &quot;company_name&quot;: &quot;&quot;,
+  &quot;document_type&quot;: &quot;&quot;,
+  &quot;financial_years&quot;: [],
+  &quot;tables&quot;: [
+    {
+      &quot;page&quot;: 3,
+      &quot;lines&quot;: [
+        &quot;Hutchins Drive, P.O. Box 2681&quot;,
+        &quot;P.O. Box 1586&quot;,
+        &quot;Grand Cayman, KY1-1100&quot;,
+        &quot;Υձʕː 17ᅽ1712-1716 ໮⧕&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 4,
+      &quot;lines&quot;: [
+        &quot;ϗɝ 482,064 560,118 554,552 609,015 660,257&quot;,
+        &quot;ˣл 221,532 245,944 238,746 293,109 349,246&quot;,
+        &quot;຾ᐄޮл 126,197 124,656 110,827 160,074 208,099&quot;,
+        &quot;ৰ೼ޮۃл 180,022 248,062 210,225 161,324 241,485&quot;,
+        &quot;ϋޮܓл 160,125 227,810 188,709 118,048 196,467&quot;,
+        &quot;͉ʮ̡ᛆूܵϞɛᏐЦޮл 159,847 224,822 188,243 115,216 194,073&quot;,
+        &quot;ϋܓΌࠦϗूᐼᕘ 281,173 200,390 59,564 107,182 284,342&quot;,
+        &quot;͉ʮ̡ᛆूܵϞɛᏐЦΌࠦϗूᐼᕘ 277,834 200,323 60,699 102,130 279,009&quot;,
+        &quot;ڢ਷ყৌਕజѓ๟ۆ຾ᐄޮл 143,241 152,729 143,203 191,886 237,811&quot;,
+        &quot;ܵϞɛᏐЦޮл 122,742 123,788 115,649 157,688 222,703&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 5,
+      &quot;lines&quot;: [
+        &quot;ฆڦʿ WeChatٙΥԻ˜ݺᚔሪ˒ᅰ 1,385 1,343 3% 1,382 0.2%&quot;,
+        &quot;QQٙ୅ਗ୞၌˜ݺᚔሪ˒ᅰ 524 554 -5% 562 -7%&quot;,
+        &quot;ϗ൬ᄣ؂࠽ਕ˹൬ึࡰᅰ#262 244 7% 265 -1%&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 6,
+      &quot;lines&quot;: [
+        &quot;h ᙜৃൖ᎖ܵڭʕ਷ڗൖ᎖̹ఙٙჯ΋ήЗdൖ᎖˹൬ึࡰᅰ༺Ց 1.13ᄂ1fᙜৃࠪᆀᓒ࢝ίʕ਷ࠪᆀݴద᜗&quot;,
+        &quot;̹ఙٙჯ΋ήЗdࠪᆀ˹൬ึࡰᅰᄣ̋Ї 1.21ᄂ2f&quot;,
+        &quot;h Ңࡁᓒ̂əڡڗ༷Ꮥଡ଼Υ3dՉᅰඎ͟ɚཧɚɧϋٙ 12ಛ༷Ꮥdᄣ̋Їɚཧɚ̬ϋٙ 14ಛdԨ੃ԃՈ௪ڡڗ&quot;,
+        &quot;׵ɚཧɚ̬ϋdҢࡁஷཀݼ೯ତࢹٰږӊٰ 3.40ಥʩ ߒഃ׵ 320ᄂಥʩ dʿΫᒅᐼߒ࠽ 1,120ᄂಥʩٰٙ΅dΣ&quot;,
+        &quot;؇ٰ౤Զə̙ᝈٙ༟͉ΫజfɚཧɚʞϋdҢܔࡁᙄᄣ̋ϋࢹٰܓ 32%Їӊٰ 4.50ಥʩ4ߒഃ׵ 410ᄂಥʩ dԨ&quot;,
+        &quot;3 ڡڗ༷Ꮥଡ଼Υܼ͉̍ɺʿ਷ყ̹ఙ༷ٙᏕfڡڗ༷Ꮥܓܸ̻֙ѩ˚ݺᚔሪ˒ᅰ൴ཀ 500ຬٙ˓༷א൴ཀ 200ຬࡈٙɛཥ໘&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 7,
+      &quot;lines&quot;: [
+        &quot;h ஷཀ߅ኪઞ॰ᆤձอਿͩ޼ӺࡰධͦdҢࡁЇʦʊ̈༟༟пə൴ཀ 360Τ௫̈߅ኪ࢕dٟމึʿ຾᏶೯࢝Ъ̈&quot;,
+        &quot;h Ңࡁ౤ʺəᅰኽʕːٙঐ๕ࣖଟdʿᄣ̋Չમ̙ٙ͜Ύ͛ঐ๕dΣ၁ʕձٙͦᅺᒕආf&quot;,
+        &quot;໨ԫึܔᙄఱ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋݼܓ೯͋ಂࢹٰӊٰ 4.50ಥʩ ɚཧɚɧϋjӊٰ 3.40ಥʩ dઓ&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 9,
+      &quot;lines&quot;: [
+        &quot;ᄣ؂࠽ਕ 319,168 298,375 7% 49% 49%&quot;,
+        &quot;ᐄቖ؂ਕ 121,374 101,482 20% 18% 17%&quot;,
+        &quot;ږፄ߅ҦʿΆุ؂ਕ 211,956 203,763 4% 32% 33%&quot;,
+        &quot;Չ˼ 7,759 5,395 44% 1% 1%&quot;,
+        &quot;͉ණྠ 660,257 609,015 8% 100% 100%&quot;,
+        &quot;੶ڌۊତf͉ɺ̹ఙ༷Ꮥϗɝᄣڗ 10%Їɛ͏࿆ 1,397ᄂʩd੻ू׵ ೌߒ۰ޡ e ˦ᅂҜ٫ e ږᗟᗟʘ&quot;,
+        &quot;Νˢᄣڗ 2%Їɛ͏࿆ 1,215ᄂʩd੻ूࠪ׵ᆀၾڗൖ᎖˹൬ึ؂ࡰਕϗɝᄣڗd˸ʿ˓༷ൈᏝ༸Ոቖਯʿʃ&quot;,
+        &quot;Ñ ږፄ߅ҦʿΆุ؂ਕุਕ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓϗɝΝˢᄣڗ 4%Їɛ͏࿆ 2,120ᄂʩfږ&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 10,
+      &quot;lines&quot;: [
+        &quot;ᄣ؂࠽ਕ 181,657 161,919 12% 57% 54%&quot;,
+        &quot;ᐄቖ؂ਕ 67,232 51,344 31% 55% 51%&quot;,
+        &quot;ږፄ߅ҦʿΆุ؂ਕ 99,701 80,636 24% 47% 40%&quot;,
+        &quot;Չ˼ 656 (790) ʔቇ͜ 8% (15%)&quot;,
+        &quot;͉ණྠ 349,246 293,109 19% 53% 48%&quot;,
+        &quot;Ñ ᄣ؂࠽ਕุਕˣлΝˢᄣڗ 12%Їɛ͏࿆ 1,817ᄂʩdաू׵͉ɺ̹ఙ༷Ꮥʿʃ༷Ꮥ̨̻؂ਕ൬ٙ৷ˣлଟϗ&quot;,
+        &quot;ɝᄣڗd˸ʿڗൖ᎖˹൬ึࡰϗɝᄣ̋ձʫ࢙ϓ͉Ꮄʷfˣлଟ̘͟ϋٙ 54%౤ʺЇ 57%f&quot;,
+        &quot;Ñ ږፄ߅ҦʿΆุ؂ਕุਕˣлΝˢᄣڗ 24%Їɛ͏࿆ 997ᄂʩdաू׵ଣৌ؂ਕၾΆุฆٙڦϗɝᄣڗdਠ&quot;,
+        &quot;࢕Ҧஔ؂ਕ൬ٙᄣڗd˸ʿҢٙࡁථ؂ਕϓ͉ࣖू౤৷fˣлଟ̘͟ϋٙ 40%౤ʺЇ 47%f&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 11,
+      &quot;lines&quot;: [
+        &quot;лࢹϗɝ f࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓлࢹϗɝΝˢᄣڗ 16%Їɛ͏࿆ 160ᄂʩdɗ͟׵ତږᎷ௪ᄣ&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 13,
+      &quot;lines&quot;: [
+        &quot;ᄣ؂࠽ਕ 79,022 69,079 14% 46% 45%&quot;,
+        &quot;ᐄቖ؂ਕ 35,004 29,794 17% 20% 19%&quot;,
+        &quot;ږፄ߅ҦʿΆุ؂ਕ 56,125 54,379 3% 33% 35%&quot;,
+        &quot;Չ˼ 2,295 1,944 18% 1% 1%&quot;,
+        &quot;͉ණྠ 172,446 155,196 11% 100% 100%&quot;,
+        &quot;Ñ ᄣ؂࠽ਕุਕɚཧɚ̬ϋୋ̬ٙ֙ϗɝΝˢᄣڗ 14%Їɛ͏࿆ 790ᄂʩf਷ყ̹ఙ༷Ꮥϗɝމɛ͏࿆ 160ᄂ&quot;,
+        &quot;ɳᚶ༸ 2 ว΋᜗᜕ٙو೯бf͉ɺ̹ఙ༷ᏕϗɝΝˢᄣڗ 23%Їɛ͏࿆ 332ᄂʩd੻ू׵j̘ϋΝಂٙЭਿ&quot;,
+        &quot;ৎ๕ ʿ ɧԉݲБਗ ٙϗɝ্ᘠfٟʹၣഖϗɝΝˢᄣڗ 6%Їɛ͏࿆ 298ᄂʩd˴ࠅ͟׵˓༷ൈᏝ༸Ոቖ&quot;,
+        &quot;Ñ ږፄ߅ҦʿΆุ؂ਕุਕɚཧɚ̬ϋୋ̬ٙ֙ϗɝΝˢᄣڗ 3%Їɛ͏࿆ 561ᄂʩfږፄ߅Ҧ؂ਕϗɝٙᄣڗ&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 14,
+      &quot;lines&quot;: [
+        &quot;৷ˣлଟϗɝԸ๕ٙᄣڗd˸ʿҢٙࡁථ؂ਕϓ͉ࣖू౤ʺfˣлଟ̘͟ϋΝಂٙ 50%౤ʺЇ 53%fɨڌ༱ΐ͉ණ&quot;,
+        &quot;ᄣ؂࠽ਕ 44,157 37,090 19% 56% 54%&quot;,
+        &quot;ᐄቖ؂ਕ 20,197 16,922 19% 58% 57%&quot;,
+        &quot;ږፄ߅ҦʿΆุ؂ਕ 26,460 23,860 11% 47% 44%&quot;,
+        &quot;Չ˼ (161) (308) ʔቇ͜ (7%) (16%)&quot;,
+        &quot;͉ණྠ 90,653 77,564 17% 53% 50%&quot;,
+        &quot;Ñ ږፄ߅ҦʿΆุ؂ਕุਕˣлΝˢᄣڗ 11%Їɛ͏࿆ 265ᄂʩd˴ࠅ͟׵ଣৌ؂ਕeऊ൬൲ಛ؂ਕʿΆุฆ&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 15,
+      &quot;lines&quot;: [
+        &quot;ɓছʿБ݁ක˕ fɚཧɚ̬ϋୋ̬ٙ֙ɓছʿБ݁ක˕Νˢᄣڗ 16%Їɛ͏࿆ 314ᄂʩd˴ࠅ͟޼׵೯ක˕ ܼ̍ၾ&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 17,
+      &quot;lines&quot;: [
+        &quot;Ñ ᄣ؂࠽ਕุਕϗɝᐑˢɨࠥ 4%Їɛ͏࿆ 790ᄂʩf਷ყ̹ఙ༷Ꮥϗɝᐑˢᄣڗ 10%Їɛ͏࿆ 160ᄂʩdɗ͟&quot;,
+        &quot;ϗɝᐑˢɨࠥ 11%Їɛ͏࿆ 332ᄂʩd˴ࠅ͟׵ୋ̬֙ϗɝ֙ٙື׌ɨࠥfٟʹၣഖϗɝᐑˢɨࠥ 3%Їɛ͏&quot;,
+        &quot;Ñ ږፄ߅ҦʿΆุ؂ਕุਕϗɝᐑˢᄣڗ 6%Їɛ͏࿆ 561ᄂʩd੻ू׵˕˹ݺਗeऊ൬൲ಛ؂ਕeථ؂ਕٙϗ&quot;,
+        &quot;ˣлfɚཧɚ̬ϋୋ̬ٙ֙ˣлᐑˢᄣڗ 2%Їɛ͏࿆ 907ᄂʩfˣлଟމ 53%dᐑˢਿ͉ܵڭᖢ֛f&quot;,
+        &quot;Ñ ږፄ߅ҦʿΆุ؂ਕุਕˣлᐑˢᄣڗ 4%Їɛ͏࿆ 265ᄂʩd˴ࠅ͟׵ऊ൬൲ಛ؂ਕϗɝʿਠ࢕Ҧஔ؂ਕ൬&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 18,
+      &quot;lines&quot;: [
+        &quot;EBITDA (a) 63,917 64,397 53,983 256,310 214,381&quot;,
+        &quot;຾ሜ዆ٙ EBITDA (a) 69,579 69,656 59,494 277,012 235,454&quot;,
+        &quot;຾ሜ዆ٙ EBITDAˢଟ(b) 40% 42% 38% 42% 39%&quot;,
+        &quot;лࢹʿ޴ᗫක˕ 3,340 3,145 3,015 12,447 11,885&quot;,
+        &quot;ତږŊ වਕ ଋᕘ (c) 76,798 95,462 54,740 76,798 54,740&quot;,
+        &quot;༟͉ක˕ (d) 36,578 17,094 7,524 76,760 23,893&quot;,
+        &quot;(d) ༟͉ක˕˴ࠅܼ̍࿁ཥ໘ண௪ၾཧৣ΁dʿՉ˼يุeண௪ʿኜҿeίܔʈ೻eҳ༟يุeɺήԴ͜ᛆd˸ʿ߰ʍೌҖ༟&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 19,
+      &quot;lines&quot;: [
+        &quot;຾ᐄޮл 51,478 53,333 41,401 208,099 160,074&quot;,
+        &quot;Չ˼ ϗू Ŋᑦฦଋᕘ (2,513) (2,974) (1,983) (8,002) (4,701)&quot;,
+        &quot;يุeண௪ʿኜҿ˸ʿҳ༟يุٙұᔚ 5,811 5,183 5,117 21,141 19,908&quot;,
+        &quot;Դ͜ᛆ༟ପٙұᔚ 1,595 1,549 1,544 6,191 6,397&quot;,
+        &quot;ೌҖ༟ପʿɺήԴ͜ᛆٙᛅቖ 7,546 7,306 7,904 28,881 32,703&quot;,
+        &quot;EBITDA 63,917 64,397 53,983 256,310 214,381&quot;,
+        &quot;ܲᛆूഐၑٰٙ΅ཇږ 5,662 5,259 5,511 20,702 21,073&quot;,
+        &quot;຾ሜ዆ٙ EBITDA 69,579 69,656 59,494 277,012 235,454&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 20,
+      &quot;lines&quot;: [
+        &quot;຾ᐄޮл 51,478 6,140 – 1,416 – 441 – 59,475&quot;,
+        &quot;ޮлŊ ᑦฦ ଋᕘ 9,253 1,003 (3,799) 1,176 116 – – 7,749&quot;,
+        &quot;ಂʫޮл 51,467 7,143 (6,888) 2,592 1,760 1,109 (706) 56,477&quot;,
+        &quot;͉ʮ̡ᛆूܵϞɛᏐЦޮл 51,324 7,034 (6,931) 2,396 1,037 1,109 (657) 55,312&quot;
+      ]
+    },
+    {
+      &quot;page&quot;: 21,
+      &quot;lines&quot;: [
+        &quot;຾ᐄޮл 53,333 6,377 – 1,324 – 240 – 61,274&quot;,
+        &quot;ޮлŊ ᑦฦ ଋᕘ 6,019 985 60 1,433 12 – – 8,509&quot;,
+        &quot;ಂʫޮл 53,983 7,362 (6,610) 2,757 3,788 304 (653) 60,931&quot;,
+        &quot;͉ʮ̡ᛆूܵϞɛᏐЦޮл 53,230 7,180 (6,664) 2,591 3,766 304 (594) 59,813&quot;,
+        &quot;຾ᐄޮл 41,401 5,732 – 1,564 – 437 1 – 49,135&quot;,
+        &quot;ޮлŊ ᑦฦ ଋᕘ 2,463 914 (416) 1,39</pre></details><details><summary><code>extracted_text.txt</code> · HTTP 200 · text · head-only preview</summary><pre>=== PAGE 2 ===
+ͦ፽
+2 ʮ̡༟ࣘ
+3 ৌਕ฿ࠅ
+4 ˴ࢩజѓ
+7 ၍ଣᄴীሞʿʱؓ
+26 ໨ԫึజѓ
+80 Άุ၍طజѓ
+114 ዹͭࣨᅰࢪజѓ
+123 ၝΥϗूڌ
+124 ၝΥΌࠦϗूڌ
+125 ၝΥৌਕڌرً
+128 ၝΥᛆूᜊਗڌ
+132 ၝΥତݴږඎڌ
+134 ၝΥৌਕజڝڌൗ
+265 ᙑ່
+
+=== PAGE 3 ===
+ᙜৃછٰϞࠢʮ̡2
+ʮ̡༟ࣘ
+໨ԫ
+ੂБ໨ԫ
+৵ʷᙜ˴ࢩ
+ڢੂБ໨ԫ
+Jacobus Petrus (Koos) Bekker 
+Charles St Leger Searle
+ዹͭڢੂБ໨ԫ
+ҽ؇͛
+Ian Charles Stone
+เୗڦ
+ݚเ
+ੵӸᚆ
+ᄲࣨ։ࡰึ
+เୗڦ˴ࢩ
+Ian Charles Stone
+Charles St Leger Searle
+Άุ၍ط։ࡰึ
+Charles St Leger Searle ˴ࢩ
+Ian Charles Stone
+เୗڦ
+ݚเ
+ੵӸᚆ
+ҳ༟։ࡰึ
+ᄎይ̻˴ࢩ
+৵ʷᙜ
+Charles St Leger Searle౤Τ։ࡰึ
+৵ʷᙜ˴ࢩ
+ҽ؇͛
+Ian Charles Stone 
+เୗڦ
+Charles St Leger Searle
+ᑚཇ։ࡰึ
+Ian Charles Stone ˴ࢩ
+ҽ؇͛
+Jacobus Petrus (Koos) Bekker
+ࣨᅰࢪ
+ᖯжە͑༸ึࢪࠇԫਕה
+ ੂุึࢪࠇʿ
+ ൗ̅ʮ଺лूྼ᜗ࣨᅰࢪ
+˴ֻࠅԸვБ
+ʕ਷ვБٰ΅Ϟࠢʮ̡
+࠰ಥɪऎ䁩ᔮვБϞࠢʮ̡
+ൗ̅፬ԫஈ
+Cricket Square
+Hutchins Drive, P.O. Box 2681 
+Grand Cayman KY1-1111 
+Cayman Islands
+ᙜৃණྠᐼ፬ԫஈ
+ʕ਷ଉέ̹
+یʆਜ
+ऎ˂ɚ༩ 33໮
+ᙜৃᏵऎɽข
+ඉᇜ 518054࠰ಥ˴ࠅᐄุήᓃ
+࠰ಥ
+ᝄ˺ެΧɽ༸؇ 1໮
+˄̚ᄿఙɧࢭ
+29ᅽ
+කਟ໊ࢥ˴ٰࠅ΅ཀ˒೮াஈ
+Suntera (Cayman) Limited 
+Suite 3204, Unit 2A 
+Block 3, Building D
+P.O. Box 1586 
+Gardenia Court 
+Camana Bay
+Grand Cayman, KY1-1100 
+Cayman Islands
+࠰ಥٰ΅ཀ˒೮াʱஈ
+࠰ಥʕ̯ᗇՎ೮াϞࠢʮ̡
+࠰ಥᝄ˺
+ެΧɽ༸؇ 183໮
+Υձʕː 17ᅽ1712-1716 ໮⧕
+͉ʮ̡ၣѧ
+www.tencent.com
+ٰ΅˾໮
+ಥ࿆ᓞ̨ 700
+ɛ͏࿆ᓞ̨ 80700
+
+=== PAGE 4 ===
+ɚཧɚ̬ϋϋజ3
+ৌਕ฿ࠅ
+ᔊ׼ၝΥΌࠦϗूڌ
+࿚Їɤɚ˜ɧɤɓ˚˟ϋܓ
+ɚཧɚཧϋ ɚཧɚɓϋ ɚཧɚɚϋ ɚཧɚɧϋ ɚཧɚ̬ϋ
+ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ
+ϗɝ 482,064 560,118 554,552 609,015 660,257
+     
+ˣл 221,532 245,944 238,746 293,109 349,246
+     
+຾ᐄޮл 126,197 124,656 110,827 160,074 208,099
+     
+ৰ೼ޮۃл 180,022 248,062 210,225 161,324 241,485
+     
+ϋޮܓл 160,125 227,810 188,709 118,048 196,467
+     
+͉ʮ̡ᛆूܵϞɛᏐЦޮл 159,847 224,822 188,243 115,216 194,073
+     
+ϋܓΌࠦϗूᐼᕘ 281,173 200,390 59,564 107,182 284,342
+     
+͉ʮ̡ᛆूܵϞɛᏐЦΌࠦϗूᐼᕘ 277,834 200,323 60,699 102,130 279,009
+     
+ڢ਷ყৌਕజѓ๟ۆ຾ᐄޮл 143,241 152,729 143,203 191,886 237,811
+     
+ڢ਷ყৌਕజѓ๟ۆ͉ʮ̡ᛆू
+ ܵϞɛᏐЦޮл 122,742 123,788 115,649 157,688 222,703
+     
+ᔊ׼ၝΥৌਕڌرً
+׵ɤɚ˜ɧɤɓ˚
+ɚཧɚཧϋ ɚཧɚɓϋ ɚཧɚɚϋ ɚཧɚɧϋ ɚཧɚ̬ϋ
+ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ
+༟ପ
+ݴڢਗ༟ପ 1,015,778 1,127,552 1,012,142 1,058,800 1,284,815
+ݴਗ༟ପ 317,647 484,812 565,989 518,446 496,180
+     
+༟ପᐼᕘ 1,333,425 1,612,364 1,578,131 1,577,246 1,780,995
+     
+ᛆूʿࠋව
+͉ʮ̡ᛆूܵϞɛᏐЦᛆू 703,984 806,299 721,391 808,591 973,548
+ڢછՓ׌ᛆू 74,059 70,394 61,469 65,090 80,348
+     
+ᛆूᐼᕘ 778,043 876,693 782,860 873,681 1,053,896
+     
+ݴڢਗࠋව 286,303 332,573 361,067 351,408 330,190
+ݴਗࠋව 269,079 403,098 434,204 352,157 396,909
+     
+ࠋවᐼᕘ 555,382 735,671 795,271 703,565 727,099
+     
+ᛆूʿࠋවᐼᕘ 1,333,425 1,612,364 1,578,131 1,577,246 1,780,995
+     
+
+=== PAGE 5 ===
+ᙜৃછٰϞࠢʮ̡4
+˴ࢩజѓ
+͉ɛ್ؚΣ΢؇ٰ౤яҢࡁ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓϋజf
+ุᐶ
+͉ණྠ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋܓ຾ᄲ͉ٙࣨʮ̡ᛆूܵϞɛᏐЦޮлމɛ͏࿆ 1,940.73 ᄂʩd༰ɪɓ
+ϋٙܓุᐶᄣڗ 68%f࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓਿ͉ʿᛅᑛӊޮٰлʱйމɛ͏࿆ 20.938ʩʿɛ͏
+࿆20.486ʩf
+͉ණྠ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋڢٙܓ਷ყৌਕజѓ๟ۆ͉ʮ̡ᛆूܵϞɛᏐЦޮлމɛ͏࿆  
+2,227.03 ᄂʩd༰ɪɓϋٙܓุᐶᄣڗ 41%f࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋڢٙܓ਷ყৌਕజѓ๟ۆਿ͉ʿ
+ᛅᑛӊޮٰлʱйމɛ͏࿆ 24.027ʩʿɛ͏࿆ 23.505ʩf
+຾ᐄ༟ࣘ
+׵ɚཧɚ̬ϋ
+ɤɚ˜ɧɤɓ˚׵ɚཧɚɧϋ
+ɤɚ˜ɧɤɓ˚ Νˢᜊਗ׵ɚཧɚ̬ϋ
+ɘ˜ɧɤ˚ ᐑˢᜊਗ
+ϵຬࠇd̤Ϟ٫׼ܸৰ̮
+ฆڦʿ WeChatٙΥԻ˜ݺᚔሪ˒ᅰ 1,385 1,343 3% 1,382 0.2%
+QQٙ୅ਗ୞၌˜ݺᚔሪ˒ᅰ 524 554 -5% 562 -7%
+ϗ൬ᄣ؂࠽ਕ˹൬ึࡰᅰ#262 244 7% 265 -1%
+# Іɚཧɚ̬ϋୋɓ֙ৎሜ዆ܓ֙މึࡰᅰٙ˚ѩ࠽
+ุਕΫᚥʿ࢝ૐ
+աू׵ AIረঐٙᄿѓ̨̻ʺॴeൖ᎖໮͜˒ਞၾܓ౤ʺ˸ʿڡڗ༷ᏕٙᄣڗdҢࡁɚཧɚ̬ϋୋ̬֙՟੻ᕐЗᅰٙ
+ϗɝᄣڗdԨܵᚃ౤ʺ༶ᐄࣖଟfᅰ˜ۃdҢࠠࡁଡ଼ə AIྠඟ˸ၳೊ׵Ҟ஺ٙପۜ௴อʿଉٙܓᅼ޼ۨ೯eᄣ̋ə
+AI޴ᗫٙ༟͉ක˕eԨ̋ɽəҢࡁ࿁ࡡ͛ AIପ޼ٙۜ೯ձᐄቖɢܓfҢڦ޴ࡁவԬ̋ɽٙҳ༟dึஷཀ౤ʺᄿѓุ
+ਕࣖٙଟʿ༷Ꮥٙ͛ն඄ಂϾ੭ԸܵᚃٙΫజdԨᎇഹҢࡈࡁɛ AIᏐٙ̋͜஺౷ʿձһεΆุમ͜Ңٙࡁ AI؂ਕd
+௴ிһڗჃٙᄆ࠽f
+
+=== PAGE 6 ===
+ɚཧɚ̬ϋϋజ5
+˴ࢩజѓ
+˸ɨމɚཧɚ̬ϋҢࡁ˴ࠅପۜʿ؂ਕࠠٙᓃڌତj
+h ஷཀપ̈ฆڦʃֳ౤Զ॰ˏʷձᅺ๟ʷٙਠۜʹ׸᜗᜕dฆڦ౤ʺə͜˒ਞၾܓʿʹ׸ঐɢf
+h ൖ᎖໮ᐼ͜˒Դ͜ڗࣛΝˢҞ஺ᄣڗdաू׵પᑥၑج౤ʺʿһε͉ٙήʷʫ࢙f
+h ฆڦฤɓฤᏨ॰ඎҞ஺ᄣڗdաू׵዆Υ AIঐɢܝdฤ॰ഐ޴؈ᗫ׌ձሯඎٙ౤ʺf
+h ᙜৃൖ᎖ܵڭʕ਷ڗൖ᎖̹ఙٙჯ΋ήЗdൖ᎖˹൬ึࡰᅰ༺Ց 1.13ᄂ1fᙜৃࠪᆀᓒ࢝ίʕ਷ࠪᆀݴద᜗
+̹ఙٙჯ΋ήЗdࠪᆀ˹൬ึࡰᅰᄣ̋Ї 1.21ᄂ2f
+h Ңࡁᓒ̂əڡڗ༷Ꮥଡ଼Υ3dՉᅰඎ͟ɚཧɚɧϋٙ 12ಛ༷Ꮥdᄣ̋Їɚཧɚ̬ϋٙ 14ಛdԨ੃ԃՈ௪ڡڗ
+ᆑɢٙอ༷Ꮥf
+h ҢࡁஷཀᎴʷᄿѓરҏӻ୕ԨආɓӉᏐ͜ɽႧԊᅼۨঐɢdʺॴᄿѓҦஔ̨̻d౤ʺəᓃᏘଟʿᄿѓ˴ҳ׳f
+h ږፄ߅Ҧ؂ਕ˙ࠦdҢࡁʺॴəࠬᎈ၍ଣԨᎴʷə˕˹ุਕٙ༟ږϓ͉f
+h ҢࡁҞ஺ࠖ˾૿ʩਿᓾᅼۨdҪ AIᏐ͜Ցʫ௅Դ͜ఙ౻dԨԱϖʩᘒձฆڦᏐ͜dމ AIίऊ൬၌ٙɽ஝ᅼ
+౷ʿਂλ̂ʱ๟௪f
+׵ɚཧɚ̬ϋdҢࡁஷཀݼ೯ତࢹٰږӊٰ 3.40ಥʩ ߒഃ׵ 320ᄂಥʩ dʿΫᒅᐼߒ࠽ 1,120ᄂಥʩٰٙ΅dΣ
+؇ٰ౤Զə̙ᝈٙ༟͉ΫజfɚཧɚʞϋdҢܔࡁᙄᄣ̋ϋࢹٰܓ 32%Їӊٰ 4.50ಥʩ4ߒഃ׵ 410ᄂಥʩ dԨ
+ࠇྌЇˇΫᒅᄆ࠽ 800ᄂಥʩٰٙ΅f
+1 ɚཧɚ̬ϋୋ̬֙˹൬ึࡰᅰٙ˚ѩ࠽
+2 ɚཧɚ̬ϋୋ̬֙ӊ˜௰ܝɓ˚̻ٙѩ˹൬ึࡰᅰ
+3 ڡڗ༷Ꮥଡ଼Υܼ͉̍ɺʿ਷ყ̹ఙ༷ٙᏕfڡڗ༷Ꮥܓܸ̻֙ѩ˚ݺᚔሪ˒ᅰ൴ཀ 500ຬٙ˓༷א൴ཀ 200ຬࡈٙɛཥ໘
+༷Ꮥd˲ϋݴ˥൴ཀɛ͏࿆ 40ᄂʩ
+4 ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚ϋܓi؇ٰܙίɚཧɚʞϋ؇ٰ඄ϋɽึɪҭܝࡘd˙̙Ъྼ
+
+=== PAGE 7 ===
+ᙜৃછٰϞࠢʮ̡6
+˴ࢩజѓ
+˸ɨމҢࡁɚཧɚ̬ϋ̙ܵᚃ೯ࠠٙ࢝ᓃڌତj
+h ஷཀᙜৃʮू̨̻˸ʿʺॴٙɮɮʮूືdҢٙࡁᅰοʮूݺਗஹટə൴ཀ 2.8ᄂ͜˒e൴ཀ 2,200࢕ʮूዚ࿴ձ
+൴ཀՇຬ࢕Άุf
+h ஷཀ߅ኪઞ॰ᆤձอਿͩ޼ӺࡰධͦdҢࡁЇʦʊ̈༟༟пə൴ཀ 360Τ௫̈߅ኪ࢕dٟމึʿ຾᏶೯࢝Ъ̈
+্ᘠf
+h Ңࡁஷཀ AIe༷Ꮥ߅Ҧձʃ೻ҏdމ̏ԯʕൿᇞ௴ிəӐऍόٙᅰο᜗᜕dпɢ༈ዝ̦ήᅺϓ̌஗ᑌΥ਷઺߅
+˖ଡ଼ᔌΐɝ ˰ޢ፲ପΤ፽ f
+h Ңࡁ౤ʺəᅰኽʕːٙঐ๕ࣖଟdʿᄣ̋Չમ̙ٙ͜Ύ͛ঐ๕dΣ၁ʕձٙͦᅺᒕආf
+ࢹٰ
+໨ԫึܔᙄఱ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋݼܓ೯͋ಂࢹٰӊٰ 4.50ಥʩ ɚཧɚɧϋjӊٰ 3.40ಥʩ dઓ
+඲؇ٰܙίɚཧɚʞϋ؇ٰ඄ϋɽึɪҭܝࡘd˙̙Ъྼf༈ഃܔᙄࢹٰཫಂਗ਼׵ɚཧɚʞϋʞ˜ɧɤ˚ݼ೯ʚ׵
+ɚཧɚʞϋʞ˜ɚɤɓ˚Τΐ͉ʮ̡؇ٰΤ̅؇ٰٙf
+ߧᑽ
+͉ɛᔫ˾ڌ໨ԫึdহːชᑽҢٙࡁΌ᜗ࡰʈၾ၍ଣྠඟٙʔ኶рɢձᘒ൮ٙਖ਼ุٝᗆdவ࿁͉ʮ̡ܵٙᚃϓ̌
+ˈࠅࠠމf͉ɛ͵࿁؇ٰʿܵ΅٫࿁͉ʮ̡਺֛ʔ୅ٙ˕ܵձڦːଉڌᑽจf
+Ңߧࡁɢܵ٢׵ ͜˒މ͉d߅ҦΣഛ ࣨٙː֚ϙdԨਗ਼ᘱᚃрɢ؇ٰމձٟึ௴ிՙ൳ᄆ࠽fϤ̮dҢࡁ͵ਗ਼
+။ɢપආ΢ධ௴อeတԑٟึცӋʿމ̙ܵᚃٙ͊ԸЪ্̈ᘠf
+৵ʷᙜ
+˴ࢩ
+࠰ಥdɚཧɚʞϋɧ˜ɤɘ˚
+
+=== PAGE 8 ===
+ɚཧɚ̬ϋϋజ7
+၍ଣᄴীሞʿʱؓ
+࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋܓၾ࿚Їɚཧɚɧϋɤɚ˜ɧɤɓ˚˟ϋٙܓˢ༰
+ɨڌ༱ΐ࿚Їɚཧɚ̬ϋʿɚཧɚɧϋɤɚ˜ɧɤɓ˚˟ϋٙܓˢ༰ᅰοj
+࿚Їɤɚ˜ɧɤɓ˚˟ϋܓ
+ɚཧɚ̬ϋ ɚཧɚɧϋ
+ɛ͏࿆ϵຬʩ
+ϗɝ 660,257 609,015
+ϗɝϓ͉ (311,011) (315,906)
+  
+ˣл 349,246 293,109
+ቖਯʿ̹ఙપᄿක˕ (36,388) (34,211)
+ɓছʿБ݁ක˕ (112,761) (103,525)
+Չ˼ϗूŊ ᑦฦ ଋᕘ 8,002 4,701
+  
+຾ᐄޮл 208,099 160,074
+ҳ༟ϗूŊ ᑦฦ ଋᕘʿՉ˼ 4,187 (6,090)
+лࢹϗɝ 16,004 13,808
+ৌਕϓ͉ (11,981) (12,268)
+ʱЦᑌᐄʮ̡ʿΥᐄʮ̡ޮлŊ ᑦฦ ଋᕘ 25,176 5,800
+  
+ৰ೼ޮۃл 241,485 161,324
+ה੻೼ක˕ (45,018) (43,276)
+  
+ϋޮܓл 196,467 118,048
+  
+ɨΐɛɻᏐЦj
+ ͉ʮ̡ᛆूܵϞɛ 194,073 115,216
+ ڢછՓ׌ᛆू 2,394 2,832
+  
+196,467 118,048
+  
+ڢ਷ყৌਕజѓ๟ۆ຾ᐄޮл 237,811 191,886
+  
+ڢ਷ყৌਕజѓ๟ۆ͉ʮ̡ᛆूܵϞɛᏐЦޮл 222,703 157,688
+  
+
+=== PAGE 9 ===
+ᙜৃછٰϞࠢʮ̡8
+၍ଣᄴীሞʿʱؓ
+ϗɝf࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓϗɝΝˢᄣڗ 8%Їɛ͏࿆ 6,603ᄂʩfɨڌ༱ΐ͉ණྠ࿚Їɚཧ
+ɚ̬ϋʿɚཧɚɧϋɤɚ˜ɧɤɓ˚˟ϋܲܓʱ௅ྌʱٙϗɝj
+࿚Їɤɚ˜ɧɤɓ˚˟ϋܓ
+ɚཧɚ̬ϋ ɚཧɚɧϋ Νˢᜊਗ ɚཧɚ̬ϋ ɚཧɚɧϋ
+ϗɝ Цϗɝᐼᕘϵʱˢ
+ɛ͏࿆ϵຬʩd̤Ϟ٫׼ܸৰ̮
+ᄣ؂࠽ਕ 319,168 298,375 7% 49% 49%
+ᐄቖ؂ਕ 121,374 101,482 20% 18% 17%
+ږፄ߅ҦʿΆุ؂ਕ 211,956 203,763 4% 32% 33%
+Չ˼ 7,759 5,395 44% 1% 1%
+    
+͉ණྠ 660,257 609,015 8% 100% 100%
+    
+Ñ ᄣ؂࠽ਕุਕ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓϗɝΝˢᄣڗ 7%Їɛ͏࿆ 3,192ᄂʩf਷ყ̹ఙ༷Ꮥ
+ϗɝމɛ͏࿆ 580ᄂʩdܲяజʿո֛䁩ଟࠇၑٙᄣషѩމ 9%d੻ू׵ PUBG MOBILE ʿSupercell ༷Ꮥٙ
+੶ڌۊତf͉ɺ̹ఙ༷Ꮥϗɝᄣڗ 10%Їɛ͏࿆ 1,397ᄂʩd੻ू׵ ೌߒ۰ޡ e ˦ᅂҜ٫ e ږᗟᗟʘ
+኷ ʿ ߵඪᑌຑ˓༷ ٙϗɝᄣڗd˸ʿ ήɨ۬ၾۇɻjৎ๕ ၾ ɧԉݲБਗ ٙอϗɝ্ᘠfٟʹၣഖϗɝ
+Νˢᄣڗ 2%Їɛ͏࿆ 1,215ᄂʩd੻ूࠪ׵ᆀၾڗൖ᎖˹൬ึ؂ࡰਕϗɝᄣڗd˸ʿ˓༷ൈᏝ༸Ոቖਯʿʃ
+༷Ꮥ̨̻؂ਕ൬ᄣڗd௅ʱ஗ࠪᆀٜᅧʿ༷Ꮥٜᅧ؂ਕϗɝɨתהࠥቖf
+Ñ ᐄቖ؂ਕุਕ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓϗɝΝˢᄣڗ 20%Їɛ͏࿆ 1,214ᄂʩfϤᄣڗ˴ࠅ੻
+ू׵ᄿѓ˴࿁ൖ᎖໮eʃ೻ҏʿฆڦฤɓฤᄿѓࢫπٙ੶ۊცӋd˸ʿҢܵࡁ</pre></details><details><summary><code>tencent_stocks.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>category</th><th>shares</th><th>price_low</th><th>price_high</th><th>market_cap</th></tr></thead><tbody><tr><td>A类普通股</td><td>34110000</td><td>304.4</td><td>271.2</td><td>9824604509</td></tr><tr><td>B类普通股</td><td>16930000</td><td>308.6</td><td>282.8</td><td>5010078160</td></tr><tr><td>其他1</td><td>25860000</td><td>317.4</td><td>303.0</td><td>8010247840</td></tr><tr><td>其他2</td><td>27550000</td><td>399.8</td><td>359.8</td><td>10445334088</td></tr><tr><td>其他3</td><td>50280000</td><td>392.0</td><td>367.4</td><td>19059646307</td></tr></tbody></table></details><details><summary><code>extracted_numbers.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>page</th><th>context</th><th>data</th></tr></thead><tbody><tr><td>4</td><td>ϗɝ 482,064 560,118 554,552 609,015 660,257</td><td>[482064, 560118, 554552, 609015, 660257]</td></tr><tr><td>4</td><td>ˣл 221,532 245,944 238,746 293,109 349,246</td><td>[221532, 245944, 238746, 293109, 349246]</td></tr><tr><td>4</td><td>຾ᐄޮл 126,197 124,656 110,827 160,074 208,099</td><td>[126197, 124656, 110827, 160074, 208099]</td></tr><tr><td>4</td><td>ৰ೼ޮۃл 180,022 248,062 210,225 161,324 241,485</td><td>[180022, 248062, 210225, 161324, 241485]</td></tr><tr><td>4</td><td>ϋޮܓл 160,125 227,810 188,709 118,048 196,467</td><td>[160125, 227810, 188709, 118048, 196467]</td></tr><tr><td>4</td><td>͉ʮ̡ᛆूܵϞɛᏐЦޮл 159,847 224,822 188,243 115,216 194,073</td><td>[159847, 224822, 188243, 115216, 194073]</td></tr><tr><td>4</td><td>ϋܓΌࠦϗूᐼᕘ 281,173 200,390 59,564 107,182 284,342</td><td>[281173, 200390, 59564, 107182, 284342]</td></tr><tr><td>4</td><td>͉ʮ̡ᛆूܵϞɛᏐЦΌࠦϗूᐼᕘ 277,834 200,323 60,699 102,130 279,009</td><td>[277834, 200323, 60699, 102130, 279009]</td></tr></tbody></table></details><details><summary><code>viz_quarterly_comparison.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>Quarter</th><th>Total Revenue</th><th>VAS</th><th>Ads</th><th>Fintech</th></tr></thead><tbody><tr><td>2023 Q3</td><td>188279</td><td>154965</td><td>71556</td><td>172267</td></tr><tr><td>2024 Q3</td><td>222082</td><td>182099</td><td>85579</td><td>181708</td></tr></tbody></table></details><details><summary><code>tencent_ebitda.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>metric</th><th>2024_Q3</th><th>2023_Q3</th><th>2024_YTD</th><th>2023_YTD</th><th>unit</th><th>2026_YTD</th></tr></thead><tbody><tr><td>集团EBITDA</td><td>63917</td><td>64397</td><td>256310</td><td>214381</td><td>百万人民币</td><td></td></tr><tr><td>经调整EBITDA</td><td>69579</td><td></td><td>277012</td><td>235454</td><td>百万人民币</td><td>69656</td></tr></tbody></table></details><details><summary><code>1223030008.pdf</code> · HTTP 200 · binary · head-only preview</summary><em>binary content; preview skipped</em></details><details><summary><code>full_extract.txt</code> · HTTP 200 · text · head-only preview</summary><pre>
+============================================================
+PAGE 2
+============================================================
+ͦ፽
+2 ʮ̡༟ࣘ
+3 ৌਕ฿ࠅ
+4 ˴ࢩజѓ
+7 ၍ଣᄴীሞʿʱؓ
+26 ໨ԫึజѓ
+80 Άุ၍طజѓ
+114 ዹͭࣨᅰࢪజѓ
+123 ၝΥϗूڌ
+124 ၝΥΌࠦϗूڌ
+125 ၝΥৌਕڌرً
+128 ၝΥᛆूᜊਗڌ
+132 ၝΥତݴږඎڌ
+134 ၝΥৌਕజڝڌൗ
+265 ᙑ່
+============================================================
+PAGE 3
+============================================================
+ᙜৃછٰϞࠢʮ̡2
+ʮ̡༟ࣘ
+໨ԫ
+ੂБ໨ԫ
+৵ʷᙜ˴ࢩ
+ڢੂБ໨ԫ
+Jacobus Petrus (Koos) Bekker 
+Charles St Leger Searle
+ዹͭڢੂБ໨ԫ
+ҽ؇͛
+Ian Charles Stone
+เୗڦ
+ݚเ
+ੵӸᚆ
+ᄲࣨ։ࡰึ
+เୗڦ˴ࢩ
+Ian Charles Stone
+Charles St Leger Searle
+Άุ၍ط։ࡰึ
+Charles St Leger Searle ˴ࢩ
+Ian Charles Stone
+เୗڦ
+ݚเ
+ੵӸᚆ
+ҳ༟։ࡰึ
+ᄎይ̻˴ࢩ
+৵ʷᙜ
+Charles St Leger Searle౤Τ։ࡰึ
+৵ʷᙜ˴ࢩ
+ҽ؇͛
+Ian Charles Stone 
+เୗڦ
+Charles St Leger Searle
+ᑚཇ։ࡰึ
+Ian Charles Stone ˴ࢩ
+ҽ؇͛
+Jacobus Petrus (Koos) Bekker
+ࣨᅰࢪ
+ᖯжە͑༸ึࢪࠇԫਕה
+ ੂุึࢪࠇʿ
+ ൗ̅ʮ଺лूྼ᜗ࣨᅰࢪ
+˴ֻࠅԸვБ
+ʕ਷ვБٰ΅Ϟࠢʮ̡
+࠰ಥɪऎ䁩ᔮვБϞࠢʮ̡
+ൗ̅፬ԫஈ
+Cricket Square
+Hutchins Drive, P.O. Box 2681 
+Grand Cayman KY1-1111 
+Cayman Islands
+ᙜৃණྠᐼ፬ԫஈ
+ʕ਷ଉέ̹
+یʆਜ
+ऎ˂ɚ༩ 33໮
+ᙜৃᏵऎɽข
+ඉᇜ 518054࠰ಥ˴ࠅᐄุήᓃ
+࠰ಥ
+ᝄ˺ެΧɽ༸؇ 1໮
+˄̚ᄿఙɧࢭ
+29ᅽ
+කਟ໊ࢥ˴ٰࠅ΅ཀ˒೮াஈ
+Suntera (Cayman) Limited 
+Suite 3204, Unit 2A 
+Block 3, Building D
+P.O. Box 1586 
+Gardenia Court 
+Camana Bay
+Grand Cayman, KY1-1100 
+Cayman Islands
+࠰ಥٰ΅ཀ˒೮াʱஈ
+࠰ಥʕ̯ᗇՎ೮াϞࠢʮ̡
+࠰ಥᝄ˺
+ެΧɽ༸؇ 183໮
+Υձʕː 17ᅽ1712-1716 ໮⧕
+͉ʮ̡ၣѧ
+www.tencent.com
+ٰ΅˾໮
+ಥ࿆ᓞ̨ 700
+ɛ͏࿆ᓞ̨ 80700
+============================================================
+PAGE 4
+============================================================
+ɚཧɚ̬ϋϋజ3
+ৌਕ฿ࠅ
+ᔊ׼ၝΥΌࠦϗूڌ
+࿚Їɤɚ˜ɧɤɓ˚˟ϋܓ
+ɚཧɚཧϋ ɚཧɚɓϋ ɚཧɚɚϋ ɚཧɚɧϋ ɚཧɚ̬ϋ
+ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ
+ϗɝ 482,064 560,118 554,552 609,015 660,257
+     
+ˣл 221,532 245,944 238,746 293,109 349,246
+     
+຾ᐄޮл 126,197 124,656 110,827 160,074 208,099
+     
+ৰ೼ޮۃл 180,022 248,062 210,225 161,324 241,485
+     
+ϋޮܓл 160,125 227,810 188,709 118,048 196,467
+     
+͉ʮ̡ᛆूܵϞɛᏐЦޮл 159,847 224,822 188,243 115,216 194,073
+     
+ϋܓΌࠦϗूᐼᕘ 281,173 200,390 59,564 107,182 284,342
+     
+͉ʮ̡ᛆूܵϞɛᏐЦΌࠦϗूᐼᕘ 277,834 200,323 60,699 102,130 279,009
+     
+ڢ਷ყৌਕజѓ๟ۆ຾ᐄޮл 143,241 152,729 143,203 191,886 237,811
+     
+ڢ਷ყৌਕజѓ๟ۆ͉ʮ̡ᛆू
+ ܵϞɛᏐЦޮл 122,742 123,788 115,649 157,688 222,703
+     
+ᔊ׼ၝΥৌਕڌرً
+׵ɤɚ˜ɧɤɓ˚
+ɚཧɚཧϋ ɚཧɚɓϋ ɚཧɚɚϋ ɚཧɚɧϋ ɚཧɚ̬ϋ
+ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ ɛ͏࿆ϵຬʩ
+༟ପ
+ݴڢਗ༟ପ 1,015,778 1,127,552 1,012,142 1,058,800 1,284,815
+ݴਗ༟ପ 317,647 484,812 565,989 518,446 496,180
+     
+༟ପᐼᕘ 1,333,425 1,612,364 1,578,131 1,577,246 1,780,995
+     
+ᛆूʿࠋව
+͉ʮ̡ᛆूܵϞɛᏐЦᛆू 703,984 806,299 721,391 808,591 973,548
+ڢછՓ׌ᛆू 74,059 70,394 61,469 65,090 80,348
+     
+ᛆूᐼᕘ 778,043 876,693 782,860 873,681 1,053,896
+     
+ݴڢਗࠋව 286,303 332,573 361,067 351,408 330,190
+ݴਗࠋව 269,079 403,098 434,204 352,157 396,909
+     
+ࠋවᐼᕘ 555,382 735,671 795,271 703,565 727,099
+     
+ᛆूʿࠋවᐼᕘ 1,333,425 1,612,364 1,578,131 1,577,246 1,780,995
+     
+============================================================
+PAGE 5
+============================================================
+ᙜৃછٰϞࠢʮ̡4
+˴ࢩజѓ
+͉ɛ್ؚΣ΢؇ٰ౤яҢࡁ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓϋజf
+ุᐶ
+͉ණྠ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋܓ຾ᄲ͉ٙࣨʮ̡ᛆूܵϞɛᏐЦޮлމɛ͏࿆ 1,940.73 ᄂʩd༰ɪɓ
+ϋٙܓุᐶᄣڗ 68%f࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋٙܓਿ͉ʿᛅᑛӊޮٰлʱйމɛ͏࿆ 20.938ʩʿɛ͏
+࿆20.486ʩf
+͉ණྠ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋڢٙܓ਷ყৌਕజѓ๟ۆ͉ʮ̡ᛆूܵϞɛᏐЦޮлމɛ͏࿆  
+2,227.03 ᄂʩd༰ɪɓϋٙܓุᐶᄣڗ 41%f࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋڢٙܓ਷ყৌਕజѓ๟ۆਿ͉ʿ
+ᛅᑛӊޮٰлʱйމɛ͏࿆ 24.027ʩʿɛ͏࿆ 23.505ʩf
+຾ᐄ༟ࣘ
+׵ɚཧɚ̬ϋ
+ɤɚ˜ɧɤɓ˚׵ɚཧɚɧϋ
+ɤɚ˜ɧɤɓ˚ Νˢᜊਗ׵ɚཧɚ̬ϋ
+ɘ˜ɧɤ˚ ᐑˢᜊਗ
+ϵຬࠇd̤Ϟ٫׼ܸৰ̮
+ฆڦʿ WeChatٙΥԻ˜ݺᚔሪ˒ᅰ 1,385 1,343 3% 1,382 0.2%
+QQٙ୅ਗ୞၌˜ݺᚔሪ˒ᅰ 524 554 -5% 562 -7%
+ϗ൬ᄣ؂࠽ਕ˹൬ึࡰᅰ#262 244 7% 265 -1%
+# Іɚཧɚ̬ϋୋɓ֙ৎሜ዆ܓ֙މึࡰᅰٙ˚ѩ࠽
+ุਕΫᚥʿ࢝ૐ
+աू׵ AIረঐٙᄿѓ̨̻ʺॴeൖ᎖໮͜˒ਞၾܓ౤ʺ˸ʿڡڗ༷ᏕٙᄣڗdҢࡁɚཧɚ̬ϋୋ̬֙՟੻ᕐЗᅰٙ
+ϗɝᄣڗdԨܵᚃ౤ʺ༶ᐄࣖଟfᅰ˜ۃdҢࠠࡁଡ଼ə AIྠඟ˸ၳೊ׵Ҟ஺ٙପۜ௴อʿଉٙܓᅼ޼ۨ೯eᄣ̋ə
+AI޴ᗫٙ༟͉ක˕eԨ̋ɽəҢࡁ࿁ࡡ͛ AIପ޼ٙۜ೯ձᐄቖɢܓfҢڦ޴ࡁவԬ̋ɽٙҳ༟dึஷཀ౤ʺᄿѓุ
+ਕࣖٙଟʿ༷Ꮥٙ͛ն඄ಂϾ੭ԸܵᚃٙΫజdԨᎇഹҢࡈࡁɛ AIᏐٙ̋͜஺౷ʿձһεΆุમ͜Ңٙࡁ AI؂ਕd
+௴ிһڗჃٙᄆ࠽f
+============================================================
+PAGE 6
+============================================================
+ɚཧɚ̬ϋϋజ5
+˴ࢩజѓ
+˸ɨމɚཧɚ̬ϋҢࡁ˴ࠅପۜʿ؂ਕࠠٙᓃڌତj
+h ஷཀપ̈ฆڦʃֳ౤Զ॰ˏʷձᅺ๟ʷٙਠۜʹ׸᜗᜕dฆڦ౤ʺə͜˒ਞၾܓʿʹ׸ঐɢf
+h ൖ᎖໮ᐼ͜˒Դ͜ڗࣛΝˢҞ஺ᄣڗdաू׵પᑥၑج౤ʺʿһε͉ٙήʷʫ࢙f
+h ฆڦฤɓฤᏨ॰ඎҞ஺ᄣڗdաू׵዆Υ AIঐɢܝdฤ॰ഐ޴؈ᗫ׌ձሯඎٙ౤ʺf
+h ᙜৃൖ᎖ܵڭʕ਷ڗൖ᎖̹ఙٙჯ΋ήЗdൖ᎖˹൬ึࡰᅰ༺Ց 1.13ᄂ1fᙜৃࠪᆀᓒ࢝ίʕ਷ࠪᆀݴద᜗
+̹ఙٙჯ΋ήЗdࠪᆀ˹൬ึࡰᅰᄣ̋Ї 1.21ᄂ2f
+h Ңࡁᓒ̂əڡڗ༷Ꮥଡ଼Υ3dՉᅰඎ͟ɚཧɚɧϋٙ 12ಛ༷Ꮥdᄣ̋Їɚཧɚ̬ϋٙ 14ಛdԨ੃ԃՈ௪ڡڗ
+ᆑɢٙอ༷Ꮥf
+h ҢࡁஷཀᎴʷᄿѓરҏӻ୕ԨආɓӉᏐ͜ɽႧԊᅼۨঐɢdʺॴᄿѓҦஔ̨̻d౤ʺəᓃᏘଟʿᄿѓ˴ҳ׳f
+h ږፄ߅Ҧ؂ਕ˙ࠦdҢࡁʺॴəࠬᎈ၍ଣԨᎴʷə˕˹ุਕٙ༟ږϓ͉f
+h ҢࡁҞ஺ࠖ˾૿ʩਿᓾᅼۨdҪ AIᏐ͜Ցʫ௅Դ͜ఙ౻dԨԱϖʩᘒձฆڦᏐ͜dމ AIίऊ൬၌ٙɽ஝ᅼ
+౷ʿਂλ̂ʱ๟௪f
+׵ɚཧɚ̬ϋdҢࡁஷཀݼ೯ତࢹٰږӊٰ 3.40ಥʩ ߒഃ׵ 320ᄂಥʩ dʿΫᒅᐼߒ࠽ 1,120ᄂಥʩٰٙ΅dΣ
+؇ٰ౤Զə̙ᝈٙ༟͉ΫజfɚཧɚʞϋdҢܔࡁᙄᄣ̋ϋࢹٰܓ 32%Їӊٰ 4.50ಥʩ4ߒഃ׵ 410ᄂಥʩ dԨ
+ࠇྌЇˇΫᒅᄆ࠽ 800ᄂಥʩٰٙ΅f
+1 ɚཧɚ̬ϋୋ̬֙˹൬ึࡰᅰٙ˚ѩ࠽
+2 ɚཧɚ̬ϋୋ̬֙ӊ˜௰ܝɓ˚̻ٙѩ˹൬ึࡰᅰ
+3 ڡڗ༷Ꮥଡ଼Υܼ͉̍ɺʿ਷ყ̹ఙ༷ٙᏕfڡڗ༷Ꮥܓܸ̻֙ѩ˚ݺᚔሪ˒ᅰ൴ཀ 500ຬٙ˓༷א൴ཀ 200ຬࡈٙɛཥ໘
+༷Ꮥd˲ϋݴ˥൴ཀɛ͏࿆ 40ᄂʩ
+4 ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚ϋܓi؇ٰܙίɚཧɚʞϋ؇ٰ඄ϋɽึɪҭܝࡘd˙̙Ъྼ
+============================================================
+PAGE 7
+============================================================
+ᙜৃછٰϞࠢʮ̡6
+˴ࢩజѓ
+˸ɨމҢࡁɚཧɚ̬ϋ̙ܵᚃ೯ࠠٙ࢝ᓃڌତj
+h ஷཀᙜৃʮू̨̻˸ʿʺॴٙɮɮʮूືdҢٙࡁᅰοʮूݺਗஹટə൴ཀ 2.8ᄂ͜˒e൴ཀ 2,200࢕ʮूዚ࿴ձ
+൴ཀՇຬ࢕Άุf
+h ஷཀ߅ኪઞ॰ᆤձอਿͩ޼ӺࡰධͦdҢࡁЇʦʊ̈༟༟пə൴ཀ 360Τ௫̈߅ኪ࢕dٟމึʿ຾᏶೯࢝Ъ̈
+্ᘠf
+h Ңࡁஷཀ AIe༷Ꮥ߅Ҧձʃ೻ҏdމ̏ԯʕൿᇞ௴ிəӐऍόٙᅰο᜗᜕dпɢ༈ዝ̦ήᅺϓ̌஗ᑌΥ਷઺߅
+˖ଡ଼ᔌΐɝ ˰ޢ፲ପΤ፽ f
+h Ңࡁ౤ʺəᅰኽʕːٙঐ๕ࣖଟdʿᄣ̋Չમ̙ٙ͜Ύ͛ঐ๕dΣ၁ʕձٙͦᅺᒕආf
+ࢹٰ
+໨ԫึܔᙄఱ࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋݼܓ೯͋ಂࢹٰӊٰ 4.50ಥʩ ɚཧɚɧϋjӊٰ 3.40ಥʩ dઓ
+඲؇ٰܙίɚཧɚʞϋ؇ٰ඄ϋɽึɪҭܝࡘd˙̙Ъྼf༈ഃܔᙄࢹٰཫಂਗ਼׵ɚཧɚʞϋʞ˜ɧɤ˚ݼ೯ʚ׵
+ɚཧɚʞϋʞ˜ɚɤɓ˚Τΐ͉ʮ̡؇ٰΤ̅؇ٰٙf
+ߧᑽ
+͉ɛᔫ˾ڌ໨ԫึdহːชᑽҢٙࡁΌ᜗ࡰʈၾ၍ଣྠඟٙʔ኶рɢձᘒ൮ٙਖ਼ุٝᗆdவ࿁͉ʮ̡ܵٙᚃϓ̌
+ˈࠅࠠމf͉ɛ͵࿁؇ٰʿܵ΅٫࿁͉ʮ̡਺֛ʔ୅ٙ˕ܵձڦːଉڌᑽจf
+Ңߧࡁɢܵ٢׵ ͜˒މ͉d߅ҦΣഛ ࣨٙː֚ϙdԨਗ਼ᘱᚃрɢ؇ٰމձٟึ௴ிՙ൳ᄆ࠽fϤ̮dҢࡁ͵ਗ਼
+။ɢપආ΢ධ௴อeတԑٟึცӋʿމ̙ܵᚃٙ͊ԸЪ্̈ᘠf
+৵ʷᙜ
+˴ࢩ
+࠰ಥdɚཧɚʞϋɧ˜ɤɘ˚
+============================================================
+PAGE 8
+============================================================
+ɚཧɚ̬ϋϋజ7
+၍ଣᄴীሞʿʱؓ
+࿚Їɚཧɚ̬ϋɤɚ˜ɧɤɓ˚˟ϋܓၾ࿚Їɚཧɚɧϋɤɚ˜ɧɤɓ˚˟ϋٙܓˢ༰
+ɨڌ༱ΐ࿚Їɚཧɚ̬ϋʿɚཧɚɧϋɤɚ˜ɧɤɓ˚˟ϋٙܓˢ༰ᅰοj
+࿚Їɤɚ˜ɧɤɓ˚˟ϋܓ
+ɚཧɚ̬ϋ ɚཧɚɧϋ
+ɛ͏࿆ϵຬʩ
+ϗɝ 660,257 609,015
+ϗɝϓ͉ (311,011) (315,906)
+  
+ˣл 349,246 293,109
+ቖਯʿ̹ఙપᄿක˕ (36,388) (34,211)
+ɓছʿБ݁ක˕ (112,761) (103,525)
+Չ˼ϗूŊ ᑦฦ ଋᕘ 8,002 4,701
+  
+຾ᐄޮл 208,099 160,074
+ҳ༟ϗूŊ ᑦฦ ଋᕘʿՉ˼ 4,187 (6,090)
+лࢹϗɝ 16,004 13,808
+ৌਕϓ͉ (11,981) (12,268)
+ʱЦᑌᐄʮ̡ʿΥᐄʮ̡ޮлŊ ᑦฦ ଋᕘ 25,176 5,800
+  
+ৰ೼ޮۃл 241,485 161,324
+ה੻೼ක˕ (45,018) (43,276)
+  
+ϋޮܓл 196,467 118,048
+  
+ɨΐɛɻᏐЦj
+ ͉ʮ̡ᛆूܵϞɛ 194,073 115,216
+ ڢછՓ׌ᛆू 2,394 2,832
+  
+196,467 118,048
+  
+ڢ਷ყৌਕజѓ๟ۆ຾ᐄޮл 237,811 191,886
+  
+ڢ਷ყৌਕజѓ๟ۆ͉ʮ̡ᛆूܵϞɛᏐЦޮл 2</pre></details><details><summary><code>viz_revenue_composition.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>Segment</th><th>Revenue</th><th>Percentage</th></tr></thead><tbody><tr><td>增值服务</td><td>154965</td><td>35.4</td></tr><tr><td>网络广告</td><td>71556</td><td>16.5</td></tr><tr><td>金融科技及企业服务</td><td>172267</td><td>48.1</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td><code>annual_revenue_trend.json</code></td><td>plotly_json</td><td>200</td><td>年度收入趋势 (2021-2023)</td><td>3</td><td>scatter</td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/assets/annual_revenue_trend.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>quarterly_comparison.json</code></td><td>plotly_json</td><td>200</td><td>季度收入对比</td><td>3</td><td>bar</td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/assets/quarterly_comparison.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>revenue_composition.json</code></td><td>plotly_json</td><td>200</td><td>收入构成 (2024 Q3)</td><td>1</td><td>pie</td><td><a href='https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/assets/revenue_composition.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <article class='chart-card'><h4>年度收入趋势 (2021-2023)</h4><div class='muted code'>annual_revenue_trend.json</div><div id='chart-0' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/assets/annual_revenue_trend.json</p></article><article class='chart-card'><h4>季度收入对比</h4><div class='muted code'>quarterly_comparison.json</div><div id='chart-1' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/assets/quarterly_comparison.json</p></article><article class='chart-card'><h4>收入构成 (2024 Q3)</h4><div class='muted code'>revenue_composition.json</div><div id='chart-2' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be/assets/revenue_composition.json</p></article>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [{"div": "chart-0", "name": "annual_revenue_trend.json", "fig": {"data": [{"fillpattern": {"shape": ""}, "hovertemplate": "业务板块=VAS<br>年份=%{x}<br>收入 (百万人民币)=%{y}<extra></extra>", "legendgroup": "VAS", "line": {"color": "#00CECB"}, "marker": {"symbol": "circle"}, "mode": "lines", "name": "VAS", "orientation": "v", "showlegend": true, "stackgroup": "1", "x": [2021, 2022, 2023], "xaxis": "x", "y": [177078, 200323, 218779], "yaxis": "y", "type": "scatter"}, {"fillpattern": {"shape": ""}, "hovertemplate": "业务板块=Ads<br>年份=%{x}<br>收入 (百万人民币)=%{y}<extra></extra>", "legendgroup": "Ads", "line": {"color": "#765898"}, "marker": {"symbol": "circle"}, "mode": "lines", "name": "Ads", "orientation": "v", "showlegend": true, "stackgroup": "1", "x": [2021, 2022, 2023], "xaxis": "x", "y": [88670, 100742, 101557], "yaxis": "y", "type": "scatter"}, {"fillpattern": {"shape": ""}, "hovertemplate": "业务板块=Fintech<br>年份=%{x}<br>收入 (百万人民币)=%{y}<extra></extra>", "legendgroup": "Fintech", "line": {"color": "#E04F5F"}, "marker": {"symbol": "circle"}, "mode": "lines", "name": "Fintech", "orientation": "v", "showlegend": true, "stackgroup": "1", "x": [2021, 2022, 2023], "xaxis": "x", "y": [172200, 180435, 203837], "yaxis": "y", "type": "scatter"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "年份", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "收入 (百万人民币)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"title": {"text": "业务板块"}, "tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "年度收入趋势 (2021-2023)", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "hovermode": "closest", "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white"}}}, {"div": "chart-1", "name": "quarterly_comparison.json", "fig": {"data": [{"marker": {"color": "#00CECB"}, "name": "VAS", "x": ["2023 Q3", "2024 Q3"], "y": [154965, 182099], "type": "bar"}, {"marker": {"color": "#765898"}, "name": "Ads", "x": ["2023 Q3", "2024 Q3"], "y": [71556, 85579], "type": "bar"}, {"marker": {"color": "#E04F5F"}, "name": "Fintech", "x": ["2023 Q3", "2024 Q3"], "y": [172267, 181708], "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "季度收入对比", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "xaxis": {"title": {"text": "季度", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"text": "收入 (百万人民币)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "barmode": "group", "hovermode": "closest", "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white"}}}, {"div": "chart-2", "name": "revenue_composition.json", "fig": {"data": [{"hole": 0.4, "labels": ["增值服务", "网络广告", "金融科技及企业服务"], "marker": {"colors": ["#00CECB", "#765898", "#E04F5F"]}, "textinfo": "label+percent", "textposition": "inside", "values": [154965, 71556, 172267], "type": "pie"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "收入构成 (2024 Q3)", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "showlegend": true, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}}];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：prices_monthly</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：prices_monthly</h1>
+    <p class='sub'>来源: /view/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13 ｜ strict no-description capture</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Comprehensive Asset Performance Analysis 2005-2025: Chinese vs Global Markets&quot;
+description: &quot;In-depth analysis of 20 years of monthly price data for Chinese stocks (CSI800, HS300), US markets (S&amp;P 500), and commodities (Gold, Oil, Copper) with performance metrics, risk analysis, and investment insights.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Comprehensive Asset Performance Analysis 2005-2025</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of monthly price data spanning January 2005 to December 2025, covering eight major asset classes: Chinese equity indices CSI800, HS300, US equity index S&amp;P 500, precious metals Gold, industrial metals Copper, energy commodities Oil, and bonds STBOND, BOND10Y.</p>
+<p><strong>Key Findings:</strong></p>
+<ul><li>Gold delivered the best risk-adjusted returnswith a Sharpe ratio of 0.660, balancing strong 12.12% annualized returns with moderate 15.33% volatility</li><li>Chinese equities showed highest raw returnsbut with extreme volatility: CSI800 achieved 12.47% annualized return with 27.27% volatility, while HS300 returned 11.86% with 27.22% volatility</li><li>S&amp;P 500 provided excellent stabilitywith 9.97% annualized returns and lower 14.84% volatility, achieving the second-best Sharpe ratio of 0.537</li><li>Commodities exhibited high volatility: Oil showed extreme swings with 38.22% annualized volatility and -86.26% maximum drawdown during market stress</li><li>Correlation analysis revealed distinct asset classes, with Chinese stocks showing moderate correlation 0.30-0.40 with US markets, providing some diversification benefits</li></ul>
+<h2>Analysis Workflow</h2>
+<p>The following diagram illustrates our comprehensive analytical approach, from raw data processing to actionable insights:</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/analysis_workflow.svg' alt='analysis_workflow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/analysis_workflow.svg' target='_blank' rel='noopener noreferrer'>analysis_workflow.svg</a></figcaption></figure>
+<h2>Data Overview and Methodology</h2>
+<h3>Dataset Characteristics</h3>
+<p>The analysis utilizes monthly price data covering 20 years 252 data points from January 2005 to December 2025. The dataset includes:</p>
+<div class='table-wrap'><table><thead><tr><th>Asset Class</th><th>Description</th><th>Starting Price</th><th>Ending Price</th></tr></thead><tbody><tr><td>CSI800</td><td>China Small-Mid Cap Index</td><td>945.24</td><td>5,109.17</td></tr><tr><td>HS300</td><td>China Large Cap Index</td><td>954.88</td><td>4,629.94</td></tr><tr><td>SP500</td><td>US S&amp;P 500 Index</td><td>1,181.27</td><td>6,845.50</td></tr><tr><td>GOLD</td><td>Gold Price USD/oz</td><td>113.32</td><td>974.90</td></tr><tr><td>OIL</td><td>Crude Oil USD/barrel</td><td>48.25</td><td>57.26</td></tr><tr><td>COPPER</td><td>Copper Price USD/ton</td><td>3,168.10</td><td>11,790.96</td></tr><tr><td>STBOND</td><td>Short-term Bond</td><td>2.48</td><td>3.57</td></tr><tr><td>BOND10Y</td><td>10-Year Treasury Yield</td><td>4.14%</td><td>4.18%</td></tr></tbody></table></div>
+<p>Note: STBOND data exhibits extreme values inconsistent with typical bond behavior and has been excluded from comparative analyses.</p>
+<h3>Analytical Approach</h3>
+<p>The analysis employed the following methodology:</p>
+<p>1. Data Cleaning: Removed null values, parsed dates, standardized column names</p>
+<p>2. Return Calculation: Computed monthly returns using the formula: Rt = Pt / P{t-1} - 1</p>
+<p>3. Risk Metrics: Calculated annualized volatility using monthly standard deviation × sqrt12</p>
+<p>4. Performance Metrics: Computed Sharpe ratios assuming 2% risk-free rate, maximum drawdowns, and total returns</p>
+<p>5. Visualization: Created multiple interactive charts to illustrate patterns and insights</p>
+<h2>Performance Analysis</h2>
+<h3>Normalized Price Performance</h3>
+<p>When we normalize all assets to a starting value of 100, we can compare their performance trajectories on a common scale:</p>
+<div class='plot-card'><div class='plot-meta'><code>normalized_prices.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/normalized_prices.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Observations:</strong></p>
+<ul><li>Gold maintained the most consistent upward trajectorywith fewer severe drawdowns compared to equities</li><li>Chinese equities CSI800, HS300 showed extreme volatilitywith massive rallies during 2006-2007 and 2014-2015, followed by severe crashes</li><li>S&amp;P 500 demonstrated steady, compounding growthwith smaller drawdowns during market stress periods</li><li>Copper showed strong growth but with pronounced volatility, reflecting its role as an industrial metal tied to economic cycles</li><li>Oil exhibited the most dramatic price swings, including periods of extreme volatility during financial crises and oil price wars</li></ul>
+<h3>Cumulative Returns Analysis</h3>
+<p>The cumulative returns chart reveals the total wealth creation over the 20-year period:</p>
+<div class='plot-card'><div class='plot-meta'><code>cumulative_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/cumulative_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Key Insights:</strong></p>
+<ul><li>CSI800 led in total returns with 1,068% cumulative growth, making an initial 100 investment worth approximately 1,168</li><li>Gold achieved 995% cumulative returnswith much lower volatility, providing superior risk-adjusted performance</li><li>HS300 delivered 943% cumulative returns, slightly below CSI800 but still impressive</li><li>S&amp;P 500 generated 630% returnswith superior consistency and lower drawdowns</li><li>Copper provided 524% returns, benefiting from global economic expansion and infrastructure development</li><li>Oil returned 432%but with the most extreme volatility and drawdowns</li></ul>
+<h2>Risk-Return Analysis</h2>
+<h3>Risk-Return Profile</h3>
+<p>The risk-return scatter plot positions each asset according to its annualized return and volatility, with bubble size representing Sharpe ratio:</p>
+<div class='plot-card'><div class='plot-meta'><code>risk_return_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/risk_return_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Interpretation:</strong></p>
+<ul><li>Upper-right quadrant High Return, High Risk: CSI800, HS300, Gold - high returns but also high volatility</li><li>Upper-left quadrant High Return, Low Risk: No assets in this ideal quadrant, though Gold is closest</li><li>Lower-right quadrant Low Return, High Risk: Oil - high volatility without commensurate returns</li><li>Lower-left quadrant Low Return, Low Risk: Not represented in this dataset</li></ul>
+<p><strong>Key Findings:</strong></p>
+<p>1. Gold achieved the optimal risk-return tradeoffwith high returns and relatively moderate volatility</p>
+<p>2. S&amp;P 500 provided excellent risk-adjusted returns- moderate returns with lowest volatility among equities</p>
+<p>3. Chinese equities offered high returns but with extreme risk- suitable only for investors with high risk tolerance</p>
+<p>4. Oil represents a poor risk-return profile- high volatility with modest returns</p>
+<h3>Performance Comparison Dashboard</h3>
+<p>The four-panel dashboard summarizes key performance metrics:</p>
+<div class='plot-card'><div class='plot-meta'><code>performance_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/performance_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Detailed Performance Metrics:</strong></p>
+<div class='table-wrap'><table><thead><tr><th>Asset</th><th>Annualized Return</th><th>Volatility</th><th>Sharpe Ratio</th><th>Max Drawdown</th><th>Total Return</th></tr></thead><tbody><tr><td>CSI800</td><td>12.47%</td><td>27.27%</td><td>0.384</td><td>-70.05%</td><td>1,068%</td></tr><tr><td>HS300</td><td>11.86%</td><td>27.22%</td><td>0.362</td><td>-70.75%</td><td>943%</td></tr><tr><td>Gold</td><td>12.12%</td><td>15.33%</td><td>0.660</td><td>-42.58%</td><td>995%</td></tr><tr><td>S&amp;P 500</td><td>9.97%</td><td>14.84%</td><td>0.537</td><td>-52.56%</td><td>630%</td></tr><tr><td>Copper</td><td>9.15%</td><td>22.18%</td><td>0.322</td><td>-64.37%</td><td>524%</td></tr><tr><td>Oil</td><td>8.32%</td><td>38.22%</td><td>0.165</td><td>-86.26%</td><td>432%</td></tr></tbody></table></div>
+<p>Risk-Adjusted Rankings:</p>
+<p>1. Gold- Highest Sharpe ratio 0.660 despite strong absolute returns</p>
+<p>2. S&amp;P 500- Second-best Sharpe ratio 0.537 with excellent consistency</p>
+<p>3. CSI800- Third-best Sharpe ratio 0.384 with highest absolute returns</p>
+<p>4. HS300- Fourth-best Sharpe ratio 0.362 with strong returns</p>
+<p>5. Copper- Moderate Sharpe ratio 0.322 with industrial exposure</p>
+<p>6. Oil- Lowest Sharpe ratio 0.165 with extreme volatility</p>
+<h3>Overall Performance Ranking</h3>
+<p>Based on a composite score considering returns, Sharpe ratio, and drawdown protection:</p>
+<div class='plot-card'><div class='plot-meta'><code>performance_ranking.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/performance_ranking.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Interpretation:</strong></p>
+<ul><li>Gold ranks 1- Best overall balance of returns, risk-adjusted performance, and drawdown protection</li><li>S&amp;P 500 ranks 2- Excellent stability with good returns</li><li>CSI800 ranks 3- Highest absolute returns offset by higher volatility</li><li>HS300 ranks 4- Similar to CSI800 but slightly lower returns</li><li>Copper ranks 5- Moderate returns with industrial exposure</li><li>Oil ranks 6- Poor risk-return profile with extreme volatility</li></ul>
+<h2>Volatility Analysis</h2>
+<h3>Rolling Volatility</h3>
+<p>The 12-month rolling volatility chart reveals how risk levels changed over time:</p>
+<div class='plot-card'><div class='plot-meta'><code>rolling_volatility.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/rolling_volatility.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Key Observations:</strong></p>
+<ul><li>2008 Financial Crisis: All assets showed dramatic volatility spikes, with Oil and equities experiencing the most extreme swings</li><li>2015 Chinese Market Crash: CSI800 and HS300 showed massive volatility increases, exceeding 80% annualized volatility</li><li>2020 COVID-19 Pandemic: Sharp volatility spike across all assets, particularly Oil and equities</li><li>Recent Period 2022-2025: Volatility gradually normalized across most assets, though Oil remained elevated</li><li>Gold consistently maintained lower volatilitycompared to equities and commodities</li><li>S&amp;P 500 showed remarkable stabilityrelative to other risk assets, even during crisis periods</li></ul>
+<h3>Drawdown Analysis</h3>
+<p>The drawdown chart shows the percentage decline from peak to trough for each asset:</p>
+<div class='plot-card'><div class='plot-meta'><code>drawdown_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/drawdown_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Maximum Drawdown Periods:</strong></p>
+<p>1. 2008 Global Financial Crisis: All assets experienced severe drawdowns</p>
+<p>    S&amp;P 500: -52.56%</p>
+<p>    Gold: -29.67% relatively mild</p>
+<p>    CSI800: -70.05%</p>
+<p>    Oil: -75.47%</p>
+<p>2. 2015 Chinese Market Crash: Extreme Chinese equity drawdowns</p>
+<p>    CSI800: -70.05% second occurrence</p>
+<p>    HS300: -70.75%</p>
+<p>3. 2020 COVID-19 Crash: Rapid but largely recovered</p>
+<p>    S&amp;P 500: -33.9%</p>
+<p>    Oil: -70.4% combined with oil price war</p>
+<p>    Gold: -10.7% mild decline</p>
+<p>4. 2022 Market Stress: Moderate drawdowns</p>
+<p>    S&amp;P 500: -25.4%</p>
+<p>    CSI800: -22.8%</p>
+<p>    Gold: -13.9%</p>
+<p><strong>Recovery Analysis:</strong></p>
+<ul><li>Gold recovered fastestfrom most drawdowns, typically within 12-18 months</li><li>S&amp;P 500 showed resiliencewith consistent recovery patterns</li><li>Chinese equities showed prolonged recovery periods, often taking 3-5 years to recover from major drawdowns</li><li>Oil demonstrated the most erratic recovery patterns, with some drawdowns taking years to recover</li></ul>
+<h2>Correlation Analysis</h2>
+<h3>Asset Correlation Matrix</h3>
+<p>The correlation heatmap reveals relationships between asset returns:</p>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Key Correlation Insights:</strong></p>
+<div class='table-wrap'><table><thead><tr><th>Asset Pair</th><th>Correlation</th><th>Interpretation</th></tr></thead><tbody><tr><td>CSI800 - HS300</td><td>0.98</td><td>Highly correlated expected - same market</td></tr><tr><td>CSI800 - SP500</td><td>0.34</td><td>Moderate correlation some global linkage</td></tr><tr><td>CSI800 - Gold</td><td>0.18</td><td>Low positive correlation weak hedge</td></tr><tr><td>CSI800 - Oil</td><td>0.28</td><td>Low to moderate correlation</td></tr><tr><td>SP500 - Gold</td><td>0.12</td><td>Very low correlation effective hedge</td></tr><tr><td>SP500 - Copper</td><td>0.32</td><td>Moderate correlation economic sensitivity</td></tr><tr><td>Gold - Oil</td><td>0.23</td><td>Low positive correlation commodity linkage</td></tr></tbody></table></div>
+<p>Diversification Implications:</p>
+<p>1. Gold provides excellent diversificationto both US and Chinese equities with correlations below 0.20</p>
+<p>2. Chinese and US equities show moderate correlation 0.34, suggesting geographic diversification benefits</p>
+<p>3. Commodities Oil, Copper show variable correlations, providing diversification during certain market regimes</p>
+<p>4. Copper has higher correlation with equitiesdue to its sensitivity to economic growth</p>
+<p>5. Gold&#x27;s low correlation with all major asset classesmakes it an effective portfolio stabilizer</p>
+<h2>Annual Performance Analysis</h2>
+<h3>Year-by-Year Returns</h3>
+<p>The annual returns bar chart shows performance variations by year:</p>
+<div class='plot-card'><div class='plot-meta'><code>annual_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/annual_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Best Performing Years:</strong></p>
+<ul><li>2006: CSI800 +144%, HS300 +124%, Gold +23%</li><li>2007: CSI800 +133%, HS300 +131%, SP500 +5%</li><li>2009: All assets rebounded strongly from 2008 lows</li><li>2020: Gold +25%, S&amp;P 500 +18%, CSI800 +25%</li></ul>
+<p><strong>Worst Performing Years:</strong></p>
+<ul><li>2008: Global financial crisis - all assets declined</li><li>2011: European debt crisis - significant declines</li><li>2015: Chinese market crash - CSI800 -28%, HS300 -34%</li><li>2018: Trade war concerns - broad declines</li><li>2022: Inflation and rate hikes - widespread losses</li></ul>
+<p><strong>Performance Patterns:</strong></p>
+<p>1. Chinese equities showed boom-bust cycleswith extreme positive and negative years</p>
+<p>2. S&amp;P 500 had more consistent performancewith fewer extreme years</p>
+<p>3. Gold provided consistent positive returnswith fewer down years</p>
+<p>4. Oil and Copper showed high variabilitywith large positive and negative swings</p>
+<p>5. Recent years 2023-2025show moderating volatility and more synchronized performance</p>
+<h2>Strategic Insights and Recommendations</h2>
+<h3>Portfolio Construction Implications</h3>
+<p>Based on this 20-year analysis, several portfolio construction principles emerge:</p>
+<p>1. Gold as Core Stabilizer</p>
+<p>    Highest risk-adjusted returns Sharpe ratio: 0.660</p>
+<p>    Low correlation with equities</p>
+<p>    Strong drawdown protection</p>
+<p>    Recommended allocation: 10-20% for balanced portfolios</p>
+<p>2. S&amp;P 500 for Steady Growth</p>
+<p>    Excellent risk-adjusted performance Sharpe ratio: 0.537</p>
+<p>    Lower volatility than emerging markets</p>
+<p>    Strong long-term compounding</p>
+<p>    Recommended allocation: 30-50% for growth-oriented portfolios</p>
+<p>3. Chinese Equities for High Returns</p>
+<p>    Highest absolute returns CSI800: 12.47% annualized</p>
+<p>    Significant diversification benefits 0.34 correlation with US</p>
+<p>    Extreme volatility requires careful position sizing</p>
+<p>    Recommended allocation: 10-20% with active rebalancing</p>
+<p>4. Commodities for Tactical Exposure</p>
+<p>    Copper: Industrial exposure, moderate risk-adjusted returns</p>
+<p>    Oil: Extreme volatility, tactical allocation only</p>
+<p>    Recommended allocation: 0-10% based on market cycle</p>
+<h3>Risk Management Considerations</h3>
+<p><strong>For Conservative Investors:</strong></p>
+<ul><li>Emphasize Gold and S&amp;P 500 60-70% combined</li><li>Minimize direct Chinese equity exposure</li><li>Consider broad international diversification</li><li>Maintain 6-12 month cash buffer</li></ul>
+<p><strong>For Moderate Investors:</strong></p>
+<ul><li>Balanced allocation across Gold, S&amp;P 500, and CSI800 each 25-30%</li><li>Tactical commodity exposure 5-10%</li><li>Regular rebalancing quarterly or semi-annually</li><li>Strategic dollar-cost averaging</li></ul>
+<p><strong>For Aggressive Investors:</strong></p>
+<ul><li>Higher Chinese equity allocation 30-40%</li><li>Significant commodity exposure 10-20%</li><li>Active management and timing strategies</li><li>Strong risk tolerance and longer time horizon</li></ul>
+<h3>Market Cycle Considerations</h3>
+<p><strong>Accumulation Phase Market Declines:</strong></p>
+<ul><li>Increase equity allocations gradually</li><li>Emphasize Gold as safe haven</li><li>Dollar-cost average into risk assets</li></ul>
+<p><strong>Expansion Phase Rising Markets:</strong></p>
+<ul><li>Maintain balanced allocations</li><li>Profit-taking opportunities in overperforming assets</li><li>Monitor valuations and momentum indicators</li></ul>
+<p><strong>Peak Phase Market Exuberance:</strong></p>
+<ul><li>Reduce equity exposure</li><li>Increase Gold allocation</li><li>Take profits from overvalued assets</li></ul>
+<p><strong>Contraction Phase Market Declines:</strong></p>
+<ul><li>Maintain Gold allocation</li><li>Defensive positioning</li><li>Prepare for accumulation opportunities</li></ul>
+<h3>Future Outlook </h3>
+<p>2025-2030</p>
+<p>Based on historical patterns and current market conditions:</p>
+<p>1. Chinese Markets: Potential for growth but likely with continued volatility</p>
+<p>2. Gold: Continued safe-haven demand, potential for further appreciation</p>
+<p>3. S&amp;P 500: Steady growth expected, though valuations elevated</p>
+<p>4. Commodities: Cyclical performance tied to global growth and supply dynamics</p>
+<h2>Conclusion</h2>
+<p>This 20-year analysis of Chinese and global markets reveals several critical insights for investors:</p>
+<p><strong>Key Takeaways:</strong></p>
+<p>1. Risk-adjusted returns matter more than absolute returns- Gold&#x27;s superior Sharpe ratio demonstrates this principle</p>
+<p>2. Geographic diversification provides benefits- Chinese and US markets show only moderate correlation</p>
+<p>3. Asset class selection is crucial- Different assets perform in different market environments</p>
+<p>4. Volatility varies dramatically across assets- Understanding and managing volatility is essential</p>
+<p>5. Time horizon determines appropriate allocation- Longer horizons justify higher equity exposure</p>
+<p><strong>Final Recommendations:</strong></p>
+<ul><li>Build a diversified portfoliocombining Gold, S&amp;P 500, and selectively Chinese equities</li><li>Focus on risk-adjusted returnsrather than chasing the highest absolute returns</li><li>Implement regular rebalancingto maintain target allocations and manage risk</li><li>Consider market cycleswhen making allocation decisions</li><li>Maintain adequate liquidityfor opportunities and emergencies</li></ul>
+<p>The data clearly shows that no single asset class outperforms across all market conditions. A well-diversified portfolio that balances return objectives with risk tolerance, informed by historical patterns and correlation analysis, provides the best path to long-term investment success.</p>
+<hr/>
+<p><em>Analysis completed using Polars for high-performance data processing and Plotly for interactive visualizations. All calculations based on monthly price data from January 2005 to December 2025.</em></p><hr/><p class='muted'>说明：严格抓取报告（无 description + 输入完整 + 图资产完整）。plot assets: 9; renderable: 0; asset_fail: 9.</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

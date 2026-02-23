@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：case_137</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：case_137</h1>
+    <p class='sub'>来源: /view/b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;UK Energy Demand Forecast: tRESP Pathways Analysis 2025-2050&quot;
+description: &quot;Comprehensive analysis of UK electricity demand across tRESP pathways including High Temperature, Energy Efficiency, and Heat Electrification scenarios through DNO licence areas&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-11&quot;
+</pre></details>
+<h1>UK Energy Demand Forecast: tRESP Pathways Analysis 2025-2050</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of UK electricity demand forecasts through the tRESP transient Response pathways from 2025 to 2050. The analysis covers three major decarbonization pathways: High Temperature HT, Energy Efficiency EE, and Heat Electrification HE, examining demand patterns across 14 Distribution Network Operator DNO licence areas and 231 Grid Supply Point GSP areas.</p>
+<p>Key Findings:</p>
+<ul><li>Total projected demand across all pathways: 46.17 TWh2025-2050</li><li>tRESP - HTpathway dominates with 34% of total demand 18.33 TWh</li><li>NGED East Midlandsleads regional demand at 6.97 TWh 15% of total</li><li>Building block LctBB0152is the largest demand contributor at 24.58 TWh</li><li>Demand growth accelerates in the 2036-2050 period compared to 2025-2035</li></ul>
+<h2>Data Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the three tRESP pathways and what do they represent?</li><li>How many DNO licence areas and GSP areas are covered in this dataset?</li><li>What is the time period covered by the demand forecasts?</li></ul></details>
+<p>The dataset contains 160,776 recordscovering demand forecasts from 2025 to 2050 26 years. After data cleaning removing negative values and filtering for GWh units, 26,796 valid recordsremain for analysis.</p>
+<p>Dataset Structure:</p>
+<ul><li>Time Period: 2025-2050 26 years</li><li>Building Blocks: 12 distinct identifiers</li><li>Pathways: 3 HT, EE, HE</li><li>DNO Licence Areas: 14 regional operators</li><li>GSP Areas: 231 grid supply points</li></ul>
+<p>Data Quality:</p>
+<ul><li>Original records: 160,776</li><li>Cleaned records: 26,796</li><li>Records removed negative values/non-GWh units: 133,980</li><li>Missing values: 0% complete dataset</li></ul>
+<h2>Pathway Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which pathway shows the highest demand growth over the forecast period?</li><li>How do the three pathways compare in terms of total demand contribution?</li><li>What are the characteristics of each pathway in terms of demand patterns?</li></ul></details>
+<p>The three tRESP pathways represent different decarbonization scenarios:</p>
+<h3>Pathway Definitions</h3>
+<ul><li>tRESP - HT High Temperature: Demand from high-temperature industrial processes requiring electricity at elevated temperatures</li><li>tRESP - EE Energy Efficiency: Demand reductions through efficiency improvements and demand-side measures</li><li>tRESP - HE Heat Electrification: Demand from electrifying heating systems and heat pump deployment</li></ul>
+<h3>Pathway Performance</h3>
+<div class='table-wrap'><table><thead><tr><th>Pathway</th><th>Total Demand TWh</th><th>Average Demand GWh</th><th>Percentage of Total</th><th>Records</th></tr></thead><tbody><tr><td>tRESP - HT</td><td>18.33</td><td>254,254</td><td>34.0%</td><td>24,024</td></tr><tr><td>tRESP - EE</td><td>14.38</td><td>324,194</td><td>26.6%</td><td>44,352</td></tr><tr><td>tRESP - HE</td><td>13.47</td><td>303,730</td><td>25.0%</td><td>44,352</td></tr></tbody></table></div>
+<p>Key Insights:</p>
+<p>1. tRESP - HThas the highest total demand despite having the lowest average demand per record</p>
+<p>2. tRESP - EEshows the highest average demand per record 324,194 GWh</p>
+<p>3. All three pathways contribute significantly to the overall demand profile</p>
+<p>4. Demand distribution varies across pathways, reflecting different implementation scenarios</p>
+<div class='plot-card'><div class='plot-meta'><code>demand_trends_pathway.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9/assets/demand_trends_pathway.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The demand trends chart shows how each pathway evolves over the 26-year forecast period, with all three pathways demonstrating growth but at different rates and patterns.</p>
+<h2>Temporal Demand Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the overall demand growth trend from 2025 to 2050?</li><li>Which years show the most significant demand changes?</li><li>How does demand growth compare between the early 2025-2035and late 2036-2050periods?</li></ul></details>
+<h3>Demand Growth Patterns</h3>
+<div class='plot-card'><div class='plot-meta'><code>demand_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9/assets/demand_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The heatmap visualization reveals several important temporal patterns:</p>
+<p>1. 2025-2030 Period: Steady initial growth across all pathways</p>
+<p>2. 2030-2040 Period: Accelerated growth as decarbonization measures scale up</p>
+<p>3. 2040-2050 Period: Continued growth with varying rates across pathways</p>
+<h3>Period Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>demand_comparison_periods.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9/assets/demand_comparison_periods.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Comparing the two main periods reveals:</p>
+<div class='table-wrap'><table><thead><tr><th>Pathway</th><th>2025-2035 TWh</th><th>2036-2050 TWh</th><th>Growth Rate</th></tr></thead><tbody><tr><td>tRESP - HT</td><td>5.43</td><td>12.90</td><td>+137.6%</td></tr><tr><td>tRESP - EE</td><td>5.78</td><td>8.59</td><td>+48.6%</td></tr><tr><td>tRESP - HE</td><td>5.31</td><td>8.16</td><td>+53.7%</td></tr></tbody></table></div>
+<p>Key Observation: The 2036-2050 period shows significantly higher demand than 2025-2035, particularly for the HT pathway which more than doubles.</p>
+<h2>Regional Analysis: DNO Licence Areas</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which DNO licence areas have the highest projected demand?</li><li>How is demand distributed across the 14 DNO regions?</li><li>What regional factors might explain the demand variations?</li></ul></details>
+<h3>Top DNO Areas by Total Demand</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_dno_areas.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9/assets/top_dno_areas.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The top 10 DNO licence areas account for the majority of demand:</p>
+<p>1. NGED East Midlands: 6.97 TWh 15.1% of total</p>
+<p>2. NGED West Midlands: 5.76 TWh 12.5% of total</p>
+<p>3. SSEN South: 5.38 TWh 11.6% of total</p>
+<p>4. UKPN London: 4.88 TWh 10.6% of total</p>
+<p>5. UKPN Eastern: 3.94 TWh 8.5% of total</p>
+<p>Regional Insights:</p>
+<ul><li>Midlands regionsEast and West combine for 27.6% of total demand</li><li>London and Eastern areasrepresent 19.1% of demand</li><li>Southern EnglandSSEN South, UKPN South East contribute 15.9%</li><li>Northern regionsshow lower but still significant demand</li></ul>
+<h3>DNO Demand Trends Over Time</h3>
+<div class='plot-card'><div class='plot-meta'><code>dno_demand_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9/assets/dno_demand_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The demand trends for the top 8 DNO areas show:</p>
+<ul><li>Consistent upward trajectories across all regions</li><li>Regional variations in growth rates</li><li>Some convergence in later years as infrastructure develops</li></ul>
+<h2>Building Block Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the largest building blocks by demand contribution?</li><li>How does demand vary across the 12 building block categories?</li><li>What do the building block identifiers represent in the energy system?</li></ul></details>
+<h3>Top Building Blocks</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_building_blocks.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9/assets/top_building_blocks.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The building block analysis reveals extreme concentration:</p>
+<div class='table-wrap'><table><thead><tr><th>Building Block</th><th>Total Demand TWh</th><th>Percentage</th></tr></thead><tbody><tr><td>LctBB0152</td><td>24.58</td><td>53.2%</td></tr><tr><td>DemBB0052</td><td>18.68</td><td>40.5%</td></tr><tr><td>LctBB001</td><td>1.82</td><td>3.9%</td></tr><tr><td>LctBB005</td><td>0.67</td><td>1.5%</td></tr><tr><td>LctBB009</td><td>0.16</td><td>0.4%</td></tr></tbody></table></div>
+<p>Critical Finding: Just two building blocks LctBB0152 and DemBB0052 account for 93.7% of total demand, indicating extreme concentration in specific energy system components.</p>
+<p>Building Block Categories:</p>
+<ul><li>LctBBseries: Likely related to location-based demand clusters</li><li>DemBBseries: Likely demographic-based demand projections</li></ul>
+<h2>Demand Hierarchy Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does demand flow from pathways down to DNO areas?</li><li>Which DNO areas are most significant within each pathway?</li><li>What insights does the hierarchical view provide for planning?</li></ul></details>
+<h3>Pathway to DNO Hierarchy</h3>
+<div class='plot-card'><div class='plot-meta'><code>demand_hierarchy_sunburst.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b687e7946057f1be46294146dab059cd5e4449a3df2724352524db5f4291cbb9/assets/demand_hierarchy_sunburst.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The sunburst diagram illustrates the hierarchical relationship:</p>
+<p>tRESP - HT Pathway:</p>
+<ul><li>Dominated by NGED East Midlands and West Midlands</li><li>Strong presence in SSEN South region</li></ul>
+<p>tRESP - EE Pathway:</p>
+<ul><li>More evenly distributed across DNO areas</li><li>Significant contributions from UKPN London</li></ul>
+<p>tRESP - HE Pathway:</p>
+<ul><li>Concentrated in Midlands and London areas</li><li>Reflects heat electrification deployment patterns</li></ul>
+<h2>Statistical Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key statistical properties of the demand data?</li><li>How is demand distributed across the dataset?</li><li>What outliers or unusual patterns exist in the data?</li></ul></details>
+<h3>Descriptive Statistics</h3>
+<p>Overall Demand Statistics:</p>
+<ul><li>Mean: 287,197 GWh per record</li><li>Median: 3,591 GWh per record</li><li>Standard Deviation: 1,001,300 GWh</li><li>Minimum: 0 GWh after cleaning</li><li>Maximum: 20,663,000 GWh</li></ul>
+<p>Distribution Characteristics:</p>
+<ul><li>Highly right-skewed distribution</li><li>Significant variance between small and large demand points</li><li>Median much lower than mean, indicating few very large values</li></ul>
+<h3>Growth Analysis</h3>
+<p>Compound Annual Growth Rate CAGR by Pathway:</p>
+<div class='table-wrap'><table><thead><tr><th>Pathway</th><th>2025 Demand GWh</th><th>2050 Demand GWh</th><th>CAGR</th></tr></thead><tbody><tr><td>tRESP - HT</td><td>378,430</td><td>1,272,000</td><td>4.9%</td></tr><tr><td>tRESP - EE</td><td>327,560</td><td>987,000</td><td>4.5%</td></tr><tr><td>tRESP - HE</td><td>301,260</td><td>925,000</td><td>4.6%</td></tr></tbody></table></div>
+<p>Overall Market Growth: 4.7% CAGR across all pathways</p>
+<h2>Strategic Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key planning implications for network operators?</li><li>How should infrastructure investment be prioritized?</li><li>What risks and opportunities does the analysis reveal?</li></ul></details>
+<h3>Network Planning Considerations</h3>
+<p>1. Infrastructure Capacity: The 137.6% growth in HT demand 2036-2050 will require significant network reinforcement</p>
+<p>2. Regional Prioritization:</p>
+<p>    Midlands regions require immediate attention 27.6% of demand</p>
+<p>    London needs capacity for heat electrification</p>
+<p>    Cross-regional interconnections needed for balancing</p>
+<p>3. Time-Critical Investments:</p>
+<p>    2025-2030: Foundation infrastructure build-out</p>
+<p>    2030-2040: Acceleration phase for large-scale deployment</p>
+<p>    2040-2050: Optimization and integration</p>
+<p>4. Building Block Concentration: 93.7% of demand from two blocks suggests focused investment opportunities</p>
+<h3>Risk Factors</h3>
+<p>1. Demand Uncertainty: Forecasts span 26 years with significant policy and technology uncertainty</p>
+<p>2. Peak Demand Management: High-temperature processes may create extreme peak loads</p>
+<p>3. Grid Stability: Rapid electrification requires ancillary services investment</p>
+<h3>Opportunities</h3>
+<p>1. Energy Efficiency: EE pathway offers demand reduction potential</p>
+<p>2. Storage Integration: High demand variability creates storage opportunities</p>
+<p>3. Demand Response: Concentrated demand enables effective demand response programs</p>
+<h2>Conclusions and Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the three most critical insights from this analysis?</li><li>What immediate actions should stakeholders take?</li><li>How should monitoring and forecasting be improved?</li></ul></details>
+<h3>Key Findings Summary</h3>
+<p>1. Demand Growth: 4.7% annual growth with HT pathway showing highest growth rate 4.9%</p>
+<p>2. Regional Concentration: Midlands regions account for 27.6% of total demand</p>
+<p>3. Building Block Focus: 93.7% of demand concentrated in two building blocks</p>
+<h3>Recommendations</h3>
+<p>Immediate Actions 2025-2027:</p>
+<p>1. Priority Infrastructure: Accelerate network reinforcement in NGED East and West Midlands</p>
+<p>2. Building Block Analysis: Conduct detailed studies on LctBB0152 and DemBB0052 characteristics</p>
+<p>3. Monitoring Framework: Establish demand tracking system with quarterly reviews</p>
+<p>Medium-Term Actions 2028-2035:</p>
+<p>1. Regional Planning: Develop region-specific strategies for each DNO area</p>
+<p>2. Technology Integration: Plan for storage and demand response integration</p>
+<p>3. Forecast Refinement: Update forecasts annually based on actual deployments</p>
+<p>Long-Term Actions 2036-2050:</p>
+<p>1. Optimization: Focus on network optimization and flexibility services</p>
+<p>2. Cross-Border Integration: Develop inter-regional balancing mechanisms</p>
+<p>3. Technology Evolution: Incorporate emerging technologies into planning</p>
+<h2>Data Methodology</h2>
+<h3>Data Sources</h3>
+<ul><li>Dataset: tRESP Pathways Demand Published Data</li><li>Period: 2025-2050 forecasts</li><li>Coverage: 14 DNO licence areas, 231 GSP areas</li></ul>
+<h3>Data Processing</h3>
+<p>1. Data Cleaning: Removed negative values curtailments/adjustments</p>
+<p>2. Unit Standardization: Filtered to GWh units only</p>
+<p>3. Validation: Checked for completeness and consistency</p>
+<p>4. Aggregation: Multiple aggregation levels for comprehensive analysis</p>
+<h3>Limitations</h3>
+<p>1. Forecast uncertainty over 26-year period</p>
+<p>2. Policy changes may impact pathway trajectories</p>
+<p>3. Technology breakthroughs could alter demand patterns</p>
+<p>4. Regional variations in data quality and granularity</p>
+<h2>Appendix</h2>
+<h3>Data Dictionary</h3>
+<div class='table-wrap'><table><thead><tr><th>Column</th><th>Description</th><th>Type</th></tr></thead><tbody><tr><td>Buildingblockid</td><td>Building block identifier</td><td>String</td></tr><tr><td>tRESPGSParea</td><td>Grid Supply Point area code</td><td>String</td></tr><tr><td>Pathway</td><td>tRESP pathway HT, EE, HE</td><td>String</td></tr><tr><td>Year</td><td>Forecast year</td><td>Integer</td></tr><tr><td>Value</td><td>Demand value</td><td>Float</td></tr><tr><td>Unit</td><td>Measurement unit GWh</td><td>String</td></tr><tr><td>DNOlicencearea</td><td>Distribution Network Operator area</td><td>String</td></tr></tbody></table></div>
+<h3>DNO Licence Areas</h3>
+<ul><li>NGED East Midlands</li><li>NGED South Wales</li><li>NGED South West</li><li>NGED West Midlands</li><li>NPg Northeast</li><li>NPg Yorkshire</li><li>SSEN SHEPD</li><li>SSEN South</li><li>SPEN Manweb</li><li>SPEN SPD</li><li>UKPN Eastern</li><li>UKPN London</li><li>UKPN South East</li><li>UKPN South Wales</li></ul>
+<h3>Related Files</h3>
+<ul><li>Cleaned Data: </li><li>Summary Statistics: </li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "sql585.csv",
+    "local": "sql585.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 933525
+  }
+]

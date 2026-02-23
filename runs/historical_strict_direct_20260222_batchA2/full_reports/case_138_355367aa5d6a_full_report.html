@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：生成一个逻辑清晰框架</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：生成一个逻辑清晰框架</h1>
+    <p class='sub'>来源: /view/355367aa5d6ad21ee68cf8d261eee69835b42e9755344040bfd1dcf0fd3fffc4 ｜ mixed strict direct capture</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;尽职调查工作表框架全面分析&quot;
+description: &quot;深入解析尽职调查十大核心维度、调查要点分布及实施流程&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h2>执行摘要</h2>
+<p>本报告对《尽职调查工作表》进行了全面分析。该工作表是一套系统化的投资尽调框架，涵盖10大核心维度、约102个具体调查要点，为投资决策提供了结构化的评估体系。报告通过可视化分析揭示了尽职调查的工作重点、流程架构及各维度的相对重要性。</p>
+<h3>核心发现</h3>
+<ul><li>调查体系规模：共10大类，约102个调查要点</li><li>重点关注领域：公司竞争优势和劣势（25个要点）、公司持续发展能力（20个要点）、上市可行性（15个要点）</li><li>三大风险维度：财务情况（10个要点）、上市可行性（15个要点）、风险评估（7个要点）</li><li>流程完整性：从行业分析到风险评估的闭环体系</li></ul>
+<hr/>
+<h2>1. 尽职调查框架概述</h2>
+<p>尽职调查（Due Diligence）是投资过程中不可或缺的环节，其目的是全面了解目标公司的经营状况、财务健康状况、法律合规性及潜在风险。本工作表提供了一个基于五力模型和价值链理论的系统性调查框架。</p>
+<p>该框架包含以下十大核心维度：</p>
+<p>1. 行业需求与供给- 分析市场环境</p>
+<p>2. 行业结构- 评估竞争格局</p>
+<p>3. 公司在行业中的地位- 定位市场位置</p>
+<p>4. 公司的竞争优势和劣势- 识别核心竞争力</p>
+<p>5. 公司发展规划- 评估未来潜力</p>
+<p>6. 公司持续发展能力- 审查可持续性</p>
+<p>7. 上市可行性- 判断IPO准备度</p>
+<p>8. 财务情况- 深入财务分析</p>
+<p>9. 私募及上市安排- 评估融资策略</p>
+<p>10. 风险提示- 识别潜在风险</p>
+<hr/>
+<h2>2. 调查要点分布分析</h2>
+<h3>2.1 各大类调查要点数量</h3>
+<div class='plot-card'><div class='plot-meta'><code>dd_categories.json</code></div><div id='plot-fig_1_dd_categories_json' class='plot' data-fig-key='fig_1_dd_categories_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/355367aa5d6ad21ee68cf8d261eee69835b42e9755344040bfd1dcf0fd3fffc4/assets/dd_categories.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键洞察：</strong></p>
+<ul><li>公司竞争优势和劣势占比最高（25个要点，约24.5%），反映了核心竞争力评估在尽调中的核心地位</li><li>公司持续发展能力次之（20个要点，约19.6%），强调对企业管理质量、团队素质和内部控制的高度关注</li><li>上市可行性和行业结构并列第三（各15个要点，各约14.7%），体现对合规性要求和市场环境分析的重视</li></ul>
+<h3>2.2 各类别占比分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>dd_pie.json</code></div><div id='plot-fig_2_dd_pie_json' class='plot' data-fig-key='fig_2_dd_pie_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/355367aa5d6ad21ee68cf8d261eee69835b42e9755344040bfd1dcf0fd3fffc4/assets/dd_pie.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>数据解读：</strong></p>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>类别</th><th>要点数</th><th>占比</th><th>核心焦点</th></tr></thead><tbody><tr><td>1</td><td>公司竞争优势和劣势</td><td>25</td><td>24.5%</td><td>差异化、成本优势</td></tr><tr><td>2</td><td>公司持续发展能力</td><td>20</td><td>19.6%</td><td>治理、激励、团队</td></tr><tr><td>3</td><td>上市可行性</td><td>15</td><td>14.7%</td><td>合规、财务指标</td></tr><tr><td>4</td><td>行业结构</td><td>15</td><td>14.7%</td><td>竞争、壁垒、议价力</td></tr><tr><td>5</td><td>行业需求与供给</td><td>3</td><td>2.9%</td><td>市场基本面</td></tr><tr><td>6</td><td>公司在行业中的地位</td><td>3</td><td>2.9%</td><td>市场份额</td></tr><tr><td>7</td><td>公司发展规划</td><td>2</td><td>2.0%</td><td>战略规划</td></tr><tr><td>8</td><td>财务情况</td><td>10</td><td>9.8%</td><td>审计、数据真实</td></tr><tr><td>9</td><td>私募及上市安排</td><td>2</td><td>2.0%</td><td>融资安排</td></tr><tr><td>10</td><td>风险提示</td><td>7</td><td>6.9%</td><td>多维风险</td></tr></tbody></table></div>
+<h2>3. 七大维度关键指标对比</h2>
+<div class='plot-card'><div class='plot-meta'><code>dd_radar_comparison.json.json</code></div><div id='plot-fig_3_dd_radar_comparison_json_json' class='plot' data-fig-key='fig_3_dd_radar_comparison_json_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/355367aa5d6ad21ee68cf8d261eee69835b42e9755344040bfd1dcf0fd3fffc4/assets/dd_radar_comparison.json.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>指标说明：</strong></p>
+<ul><li>重要性（蓝色）：该维度对投资决策的权重</li><li>复杂度（紫色）：执行该维度调查的技术难度</li><li>时间投入（绿色）：完成该维度调查所需的工作时间</li></ul>
+<p><strong>分析结论：</strong></p>
+<p>1. 财务情况和风险评估的重要性评分最高（10分），是尽调中不可逾越的红线</p>
+<p>2. 上市可行性的复杂度评分最高（9分），涉及法律、税务、环保等多维度合规性检查</p>
+<p>3. 公司竞争优势和劣势的综合评分最为均衡，需要平衡深入分析的时间成本与信息获取价值</p>
+<hr/>
+<h2>4. 尽职调查工作流程</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/355367aa5d6ad21ee68cf8d261eee69835b42e9755344040bfd1dcf0fd3fffc4/assets/dd_simple.svg' alt='dd_simple.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/355367aa5d6ad21ee68cf8d261eee69835b42e9755344040bfd1dcf0fd3fffc4/assets/dd_simple.svg' target='_blank' rel='noopener noreferrer'>dd_simple.svg</a></figcaption></figure>
+<p><strong>流程说明：</strong></p>
+<p>尽职调查采用并行工作的方式，七大核心领域同步推进：</p>
+<p>1. 行业与市场分析- 外部环境扫描</p>
+<p>2. 竞争力分析- 内部能力评估</p>
+<p>3. 发展能力审查- 可持续性验证</p>
+<p>4. 上市可行性评估- 合规性检查</p>
+<p>5. 财务深度分析- 数据真实性验证</p>
+<p>6. 私募上市安排- 融资策略制定</p>
+<p>7. 全面风险评估- 风险识别与量化</p>
+<p>所有领域的调查结果最终汇总至综合评估阶段，形成最终的尽职调查报告。</p>
+<hr/>
+<h2>5. 深度分析</h2>
+<h3>5.1 行业结构分析的五力模型应用</h3>
+<p>该工作表在&quot;行业结构&quot;维度中系统应用了迈克尔·波特的五力模型：</p>
+<h4>5.1.1 行业进入壁垒和威胁</h4>
+<ul><li>规模经济效应：评估是否存在明显的规模经济</li><li>产品差异化程度：判断产品的差异化空间</li><li>资本需求门槛：分析初始投资规模</li><li>客户转换成本：评估客户更换供应商的成本</li><li>政府政策控制：审查政策严格程度</li><li>专利和技术保护：核查专有技术和知识产权</li></ul>
+<h4>5.1.2 买方议价能力</h4>
+<ul><li>购买品占客户成本的比重</li><li>买方的集中程度和购买批量</li><li>产品差异化程度</li><li>买方后向整合威胁</li><li>买方掌握信息的充分程度</li></ul>
+<h4>5.1.3 供方议价能力</h4>
+<ul><li>供方集中程度</li><li>供方产品差异化程度</li><li>目标产业是否是供方主要客户</li><li>供方前向整合威胁</li><li>转换成本高低</li></ul>
+<h4>5.1.4 替代品威胁</h4>
+<ul><li>现实替代产品识别</li><li>潜在替代产品功能分析</li><li>替代品价格上限评估</li><li>性价比比较</li></ul>
+<h3>5.2 公司竞争优势和劣势的全面评估</h3>
+<p>该维度包含25个要点，细分为以下几个子维度：</p>
+<h4>5.2.1 差异化优势</h4>
+<p><strong>买方看重的价值信号（12个维度）：</strong></p>
+<ul><li>信誉或形象</li><li>累积的广告</li><li>产品重量和外观</li><li>包装和标签</li><li>外观和设备尺寸</li><li>从业时间</li><li>安装基础</li><li>顾客清单</li><li>价格（质量信号）</li><li>母企业状态（规模、财务稳定性）</li><li>市场份额</li><li>对买方企业高层的可见性</li></ul>
+<p><strong>降低买方成本的途径（6个维度）：</strong></p>
+<ul><li>要求的产品使用率</li><li>直接使用成本</li><li>间接使用成本</li><li>其他实际效用</li><li>在其他价值活动中的成本</li><li>产品失败的风险</li></ul>
+<h4>5.2.2 成本优势</h4>
+<p><strong>成本构成分析（17个维度）：</strong></p>
+<ul><li>原材料及动力价格</li><li>固定资产取得价格</li><li>生产原材料及动力耗用</li><li>原材料及动力运费</li><li>产品库存成本</li><li>环保成本</li><li>生产人员耗费</li><li>固定资产耗损</li><li>售后服务</li><li>货款收回时间</li><li>产品运费</li><li>广告费用</li><li>税收</li><li>借款</li><li>行政管理</li><li>研究开发</li><li>政府补贴</li></ul>
+<h3>5.3 公司持续发展能力评估</h3>
+<p>该维度涉及20个要点，重点关注：</p>
+<h4>5.3.1 公司治理</h4>
+<ul><li>大股东持股比例</li><li>小股东约束机制</li><li>董事会监督职能</li><li>高管层约束机制</li></ul>
+<h4>5.3.2 内部控制</h4>
+<ul><li>主要内控制度完备性</li><li>细小事项内控覆盖</li><li>制度执行情况</li><li>文件轨迹抽查</li></ul>
+<h4>5.3.3 激励机制</h4>
+<ul><li>报酬规定</li><li>绩效挂钩机制</li><li>各级员工激励覆盖</li></ul>
+<h4>5.3.4 高管团队</h4>
+<ul><li>核心高管能力</li><li>高管团队齐备性</li><li>核心高管诚信</li><li>高管持股比例</li></ul>
+<h4>5.3.5 员工情况</h4>
+<ul><li>员工构成及变化</li><li>员工报酬水平</li><li>员工精神面貌</li><li>员工流动性</li></ul>
+<h3>5.4 上市可行性综合评估</h3>
+<p>该维度包含15个要点，涵盖：</p>
+<h4>5.4.1 财务指标达标性</h4>
+<ul><li>收入指标</li><li>利润指标</li><li>增长率指标</li></ul>
+<h4>5.4.2 股权及规范</h4>
+<ul><li>历次股权变动</li><li>股东身份合规</li><li>股权变动程序</li></ul>
+<h4>5.4.3 重大资产变动规范</h4>
+<ul><li>资产收购程序</li><li>资产变卖程序</li><li>法律文件完备性</li></ul>
+<h4>5.4.4 高管稳定性</h4>
+<ul><li>董事监事变化</li><li>管理层变动</li><li>变动原因合理性</li></ul>
+<h4>5.4.5 关联交易</h4>
+<ul><li>关联方识别</li><li>关联交易定价公允性</li><li>信息披露完整性</li></ul>
+<h4>5.4.6 税务合规</h4>
+<ul><li>各税种申报</li><li>缴税记录</li><li>税收优惠批文</li></ul>
+<h4>5.4.7 环保合规</h4>
+<ul><li>环保批文</li><li>现场环保情况</li><li>环保处罚记录</li></ul>
+<h4>5.4.8 资质证书</h4>
+<ul><li>土地证</li><li>房产证</li><li>经营许可证书</li></ul>
+<h4>5.4.9 社保缴纳</h4>
+<ul><li>各项社保足额缴纳</li><li>缴纳证明完备</li></ul>
+<h4>5.4.10 无重大处罚</h4>
+<ul><li>行政处罚记录</li><li>诉讼仲裁情况</li><li>对外担保情况</li></ul>
+<hr/>
+<h2>6. 风险评估体系</h2>
+<p>工作表系统识别了七大风险类型：</p>
+<h3>6.1 行业风险</h3>
+<ul><li>市场前景变化</li><li>行业经营环境变化</li><li>商业周期或产品生命周期</li><li>市场饱和或市场分割</li><li>产业链上下游情况</li><li>替代品发展</li></ul>
+<h3>6.2 经营风险</h3>
+<ul><li>经营模式风险</li><li>经营业绩稳定性</li><li>主要产品或原材料价格波动</li><li>供应商集中度</li><li>客户集中度</li><li>潜在竞争对手加入</li></ul>
+<h3>6.3 财务风险</h3>
+<ul><li>内部控制有效性</li><li>资产周转能力</li><li>现金流状况</li><li>债务结构</li><li>主要资产减值准备</li><li>非经常性损益</li><li>重大担保或诉讼</li></ul>
+<h3>6.4 技术风险</h3>
+<ul><li>技术成熟性</li><li>技术产业化状况</li><li>技术保护有效性</li><li>核心技术依赖性</li><li>产品或技术被淘汰风险</li></ul>
+<h3>6.5 管理风险</h3>
+<ul><li>管理团队能力</li><li>团队配置合理性</li><li>内部和谐性</li><li>专注主业程度</li><li>投资项目风险</li><li>适应规模扩张能力</li></ul>
+<h3>6.6 法规政策风险</h3>
+<ul><li>财政金融政策变化</li><li>税收政策变化</li><li>土地使用政策变化</li><li>产业政策变化</li><li>环境保护法规变化</li></ul>
+<h3>6.7 其他风险</h3>
+<ul><li>交易结构风险</li><li>自然灾害风险</li><li>安全生产风险</li><li>汇率变化风险</li><li>外贸环境风险</li></ul>
+<hr/>
+<h2>7. 尽职调查框架的应用价值</h2>
+<h3>7.1 系统性</h3>
+<ul><li>覆盖全面：从外部市场环境到内部管理能力，从财务数据到法律合规</li><li>层次清晰：从大类到子类再到具体调查点，层层深入</li><li>逻辑严密：基于五力模型和价值链理论，有坚实的理论基础</li></ul>
+<h3>7.2 实用性</h3>
+<ul><li>操作性强：每个调查点都明确了调查程序和访谈对象</li><li>结果导向：设置&quot;是否调查&quot;和&quot;调查结论说明&quot;栏目，便于执行和记录</li><li>灵活适配：可根据具体项目情况调整调查深度和广度</li></ul>
+<h3>7.3 风险管控</h3>
+<ul><li>识别全面：系统识别各类潜在风险</li><li>评估量化：要求对风险进行可控性和可测性分析</li><li>应对措施：要求制定风险控制措施</li></ul>
+<h3>7.4 决策支持</h3>
+<ul><li>数据支撑：要求收集一手数据和二手数据</li><li>多维验证：通过访谈、查阅、核查等多种方式交叉验证</li><li>结论导向：最终形成明确的调查结论，为投资决策提供依据</li></ul>
+<hr/>
+<h2>8. 实施建议</h2>
+<h3>8.1 尽调前准备</h3>
+<ul><li>组建专业团队：配置行业、财务、法律、管理等领域的专业人员</li><li>制定详细计划：根据调查要点制定时间表和责任人</li><li>准备调查清单：提前准备需要索取的文件和资料清单</li></ul>
+<h3>8.2 尽调过程管理</h3>
+<ul><li>分阶段推进：建议按照工作表的逻辑顺序分阶段推进</li><li>并行工作：不同维度可以并行开展以提高效率</li><li>动态调整：根据初步发现调整后续调查重点</li></ul>
+<h3>8.3 质量控制</h3>
+<ul><li>交叉验证：重要信息需要通过多种渠道验证</li><li>文档留痕：所有调查过程和结论需要详细记录</li><li>专业审阅：重要发现需要专业团队讨论确认</li></ul>
+<h3>8.4 风险预警</h3>
+<ul><li>红线标准：明确哪些情况构成投资红线</li><li>风险分级：将识别的风险按严重程度分级</li><li>应对预案：对重大风险制定应对预案</li></ul>
+<hr/>
+<h2>9. 结论</h2>
+<p>本尽职调查工作表是一套系统化、专业化、可操作的尽调框架。其核心特点包括：</p>
+<p><strong>优势：</strong></p>
+<p>1. 涵盖全面，覆盖尽调的各个重要维度</p>
+<p>2. 理论基础扎实，基于成熟的战略分析模型</p>
+<p>3. 操作性强，每个调查点都有明确的调查程序</p>
+<p>4. 风险导向，系统识别和评估各类风险</p>
+<p>5. 结果导向，要求形成明确的调查结论</p>
+<p><strong>适用场景：</strong></p>
+<ul><li>私募股权投资尽调</li><li>IPO前尽调</li><li>并购交易尽调</li><li>战略投资尽调</li></ul>
+<p><strong>关键成功因素：</strong></p>
+<p>1. 专业团队执行</p>
+<p>2. 充足的时间和资源投入</p>
+<p>3. 与目标公司的良好配合</p>
+<p>4. 严格的内控和质量管理</p>
+<p>5. 客观公正的调查态度</p>
+<p>该工作表为投资机构提供了一个标准化的尽调框架，但实际应用中仍需根据具体情况灵活调整，并结合专业判断做出最终决策。</p>
+<hr/>
+<h2>附录</h2>
+<h3>数据来源</h3>
+<ul><li>尽职调查工作表（附件1）</li><li>波特五力模型理论</li><li>价值链分析理论</li></ul>
+<h3>调查要点统计</h3>
+<ul><li>总调查要点：约102个</li><li>主要访谈对象：公司高管、各部门负责人、客户、供应商、竞争对手、行业专家、政府部门等</li><li>主要收集文件：财务报表、审计报告、法律文件、合同协议、资质证书等</li></ul>
+<hr/>
+<p><em>报告生成日期：2025-01-13</em></p>
+<p><em>报告版本：v1.0</em></p><hr/><p class='muted'>直抓严格报告：uploads=1 · assets=3 · renderable=3 · asset_fail=0</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {"fig_1_dd_categories_json": {"data": [{"hovertemplate": "checkpoints=%{x}<br>category=%{y}<extra></extra>", "legendgroup": "", "marker": {"color": "#636efa", "pattern": {"shape": ""}, "line": {"color": "black", "width": 2}}, "name": "", "orientation": "h", "showlegend": false, "textposition": "auto", "x": [25, 20, 15, 15, 10, 7, 3, 3, 2, 2], "xaxis": "x", "y": ["公司的竞争优势和劣势", "公司持续发展能力", "行业结构", "上市可行性", "财务情况", "风险提示", "行业需求与供给", "公司在行业中的地位", "公司发展规划", "私募及上市安排"], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "checkpoints", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "category", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "margin": {"t": 80, "l": 60, "r": 40, "b": 60}, "barmode": "relative", "title": {"font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center", "text": "尽职调查各大类调查要点数量分布"}, "font": {"size": 12, "family": "Arial"}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}, "fig_2_dd_pie_json": {"data": [{"domain": {"x": [0.0, 1.0], "y": [0.0, 1.0]}, "hovertemplate": "category=%{label}<br>checkpoints=%{value}<extra></extra>", "labels": ["公司的竞争优势和劣势", "公司持续发展能力", "行业结构", "上市可行性", "财务情况", "风险提示", "行业需求与供给", "公司在行业中的地位", "公司发展规划", "私募及上市安排"], "legendgroup": "", "name": "", "showlegend": true, "values": [25, 20, 15, 15, 10, 7, 3, 3, 2, 2], "type": "pie"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "margin": {"t": 80, "l": 60, "r": 40, "b": 60}, "title": {"font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center", "text": "尽职调查各类别占比"}, "font": {"size": 12, "family": "Arial"}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}, "fig_3_dd_radar_comparison_json_json": {"data": [{"alignmentgroup": "True", "hovertemplate": "指标类型=重要性<br>评分(1-10)=%{x}<br>调查维度=%{y}<extra></extra>", "legendgroup": "重要性", "marker": {"color": "#1976d2", "pattern": {"shape": ""}}, "name": "重要性", "offsetgroup": "重要性", "orientation": "h", "showlegend": true, "textposition": "auto", "x": [9, 9, 8, 9, 10, 7, 10], "xaxis": "x", "y": ["行业与市场分析", "公司竞争力分析", "持续发展能力", "上市可行性", "财务情况", "私募上市安排", "风险评估"], "yaxis": "y", "type": "bar"}, {"alignmentgroup": "True", "hovertemplate": "指标类型=复杂度<br>评分(1-10)=%{x}<br>调查维度=%{y}<extra></extra>", "legendgroup": "复杂度", "marker": {"color": "#7b1fa2", "pattern": {"shape": ""}}, "name": "复杂度", "offsetgroup": "复杂度", "orientation": "h", "showlegend": true, "textposition": "auto", "x": [7, 8, 8, 9, 9, 6, 8], "xaxis": "x", "y": ["行业与市场分析", "公司竞争力分析", "持续发展能力", "上市可行性", "财务情况", "私募上市安排", "风险评估"], "yaxis": "y", "type": "bar"}, {"alignmentgroup": "True", "hovertemplate": "指标类型=时间投入<br>评分(1-10)=%{x}<br>调查维度=%{y}<extra></extra>", "legendgroup": "时间投入", "marker": {"color": "#388e3c", "pattern": {"shape": ""}}, "name": "时间投入", "offsetgroup": "时间投入", "orientation": "h", "showlegend": true, "textposition": "auto", "x": [6, 7, 8, 8, 9, 5, 7], "xaxis": "x", "y": ["行业与市场分析", "公司竞争力分析", "持续发展能力", "上市可行性", "财务情况", "私募上市安排", "风险评估"], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "评分(1-10)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "调查维度", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"title": {"text": "指标类型"}, "tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "尽职调查七大维度关键指标对比", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "group", "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "font": {"size": 12, "family": "Arial"}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

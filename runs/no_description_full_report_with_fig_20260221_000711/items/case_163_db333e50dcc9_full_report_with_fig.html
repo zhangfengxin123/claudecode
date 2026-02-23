@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：瑞银表态中国存款</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：瑞银表态中国存款</h1>
+    <p class='sub'>来源: /view/db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;中国银行业存款流出深度分析：规模、流向及影响评估&quot;
+description: &quot;基于UBS研究报告，分析2026年中国银行业存款到期高峰、资金流向预测及对银行业和金融市场的影响&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>中国银行业存款流出深度分析</h1>
+<h2>执行摘要</h2>
+<p>中国银行业在2026年将面临前所未有的存款到期高峰。UBS研究报告显示，约55-60万亿人民币的存款将在2026年到期，占银行系统总存款的18%。这一现象源于2020-25年疫情期间家庭积累的超额储蓄（约8万亿人民币），以及房地产市场的持续低迷导致资金向存款转移。尽管市场担忧存款大规模流出，但分析显示超过90%的到期存款预计将继续留在银行系统内，仅有2-4万亿可能流向其他金融投资产品。总体而言，这对银行业而言是净正面影响，融资成本预计下降约14个基点。</p>
+<h2>一、背景：超额储蓄的积累</h2>
+<h3>1.1 疫情期间储蓄率上升</h3>
+<p>新冠疫情（2020-22年）对中国家庭部门造成重大冲击，消费受到的影响远超收入。尽管2023-25年家庭消费情绪保持谨慎，导致过去6年的家庭储蓄率高于疫情前正常水平。</p>
+<div class='plot-card'><div class='plot-meta'><code>chart1_savings_rate.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360/assets/chart1_savings_rate.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>数据显示：</p>
+<ul><li>2020-22年：家庭储蓄率平均为33%</li><li>2023-25年：家庭储蓄率平均为32%</li><li>疫情前：约30%</li></ul>
+<p>这导致2020-25年累计形成约8万亿人民币的超额储蓄。</p>
+<h3>1.2 存款大幅增长</h3>
+<p>与此同时，中国家庭存款在过去几年出现显著&quot;额外增长&quot;：</p>
+<ul><li>2022-23年：每年超过17万亿（显著高于2019-21年的10万亿/年）</li><li>2024-25年：约14.5万亿/年（仍处于历史高位）</li></ul>
+<p>这一现象与超额储蓄规模相关，但并非完全等同。其他促成因素包括：</p>
+<p>1. 监管收紧：2022-23年理财产品、公募基金和股票市场投资回报大幅下降</p>
+<p>2. 房地产市场低迷：住宅销售额从2021年16万亿峰值降至2025年7.3万亿</p>
+<p>3. 抵押贷款收缩：2023-25年抵押贷款持续收缩</p>
+<p>4. 相对高利率：2022-23年银行提供相对较高且稳定的定期存款利率（如3-5年期2.5-2.75%）</p>
+<div class='plot-card'><div class='plot-meta'><code>chart2_deposit_vs_property.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360/assets/chart2_deposit_vs_property.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从图表可以清晰看出，存款增长与房地产销售额呈现明显的负相关关系。随着房地产市场持续低迷，家庭资金明显向银行存款转移。</p>
+<h2>二、2026年：存款到期高峰</h2>
+<h3>2.1 到期规模</h3>
+<p>基于7家主要银行（6大国企银行+招商银行）的到期披露信息（持有约160万亿存款，占系统约50%），通过将1-5年期存款按年度细分分析，我们估计：</p>
+<ul><li>2026年到期存款：约55-60万亿人民币</li><li>占总存款比例：约18%</li><li>主要结构：1-3年期定期存款（2022-23年最受欢迎产品）</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>chart3_maturity_pressure.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360/assets/chart3_maturity_pressure.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>2026年标志着到期周期的峰值，从2027年开始，随着历史高利率存款重定价完成，到期压力将逐步缓解。</p>
+<h3>2.2 利率变化与流出压力</h3>
+<p>自2022年4月以来，经历了7轮降息，存款吸引力显著下降：</p>
+<div class='plot-card'><div class='plot-meta'><code>chart6_interest_rates.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360/assets/chart6_interest_rates.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>具体利率变化：</p>
+<ul><li>活期存款：降至0.05%</li><li>1年期定期：降至0.95%（累计降80基点）</li><li>2年期定期：降至1.05%（累计降120基点）</li><li>3年期定期：降至1.25%（累计降150基点）</li><li>5年期定期：降至1.30%（累计降195基点）</li></ul>
+<p>利率大幅下降导致2026年面临最大的存款流出压力，因为大部分高利率存款需要重定价为当前水平。</p>
+<h2>三、资金流向预测</h2>
+<h3>3.1 总体流向</h3>
+<p>与主要银行的讨论显示，超过90%的到期存款将继续存入新的定期存款。其余部分（约2-4万亿）可能配置到其他金融投资产品。</p>
+<div class='plot-card'><div class='plot-meta'><code>chart4_fund_flow.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360/assets/chart4_fund_flow.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>关键数据：</p>
+<ul><li>57万亿到期存款中，约54万亿留在银行系统（94.7%）</li><li>约3万亿流向投资产品（5.3%）</li><li>这与银行业90%以上的留存预期一致</li></ul>
+<h3>3.2 具体投资产品配置</h3>
+<p>基于UBS Evidence Lab 2025年10月财富调查，预计2-4万亿资金将按以下配置：</p>
+<div class='table-wrap'><table><thead><tr><th>产品类型</th><th>预期流入</th><th>现有AUM规模</th></tr></thead><tbody><tr><td>理财产品 WMPs</td><td>6000-13000亿</td><td>33万亿</td></tr><tr><td>共同基金</td><td>3000-6000亿</td><td>37万亿</td></tr><tr><td>股票投资</td><td>4000-8000亿</td><td>37万亿</td></tr><tr><td>保险产品</td><td>2000-5000亿</td><td>37万亿</td></tr><tr><td>信托产品</td><td>2000-5000亿</td><td>30万亿</td></tr></tbody></table></div>
+<p>plot</p>
+<p>./data/chart5aumcomparison.json</p>
+<p>/plot</p>
+<p>分析：相对于中国资产管理行业庞大的现有规模，这些流入量仍然相对较小，对市场的整体影响有限。</p>
+<h2>四、对银行业的影响</h2>
+<h3>4.1 正面影响</h3>
+<p>存款到期波浪将对银行产生净正面影响：</p>
+<p>1. 融资成本下降：高利率存款重定价将降低整体融资成本约14个基点</p>
+<p>    长期定期存款平均利率下降90基点</p>
+<p>    存款成本下降20基点</p>
+<p>    整体融资成本降低14基点</p>
+<p>2. 手续费收入增加：向投资产品迁移将支持手续费收入增长</p>
+<p>    部分流出零售存款的资金最终以非银行金融机构存款或其他形式返回银行系统</p>
+<p>    代销理财产品、基金等将带来中间业务收入</p>
+<p>3. 净息差改善：存款重定价应能支撑净息差</p>
+<h3>4.2 风险与挑战</h3>
+<p>尽管基本面支持存款重定价，但仍需关注以下风险：</p>
+<p>1. 流动性风险：特别是存贷比较高或流动性较紧张的银行</p>
+<p>2. 资产质量恶化：受宏观经济环境和国内房地产市场活动疲软影响</p>
+<p>3. 资本充足性风险：与再融资相关的稀释风险</p>
+<p>4. 利率下行风险：对银行盈利能力的压力</p>
+<h2>五、关键指标总结</h2>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>总存款规模 H125</td><td>约320万亿</td></tr><tr><td>2026年到期存款</td><td>55-60万亿</td></tr><tr><td>占总存款比例</td><td>18%</td></tr><tr><td>预计流出资金</td><td>2-4万亿</td></tr><tr><td>留在银行系统</td><td>90%以上</td></tr><tr><td>融资成本下降</td><td>14bps</td></tr></tbody></table></div>
+<p>六、资金流向可视化</p>
+<p>下图展示了从超额储蓄积累到最终资金流向的完整路径：</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360/assets/deposit_flow.svg' alt='deposit_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360/assets/deposit_flow.svg' target='_blank' rel='noopener noreferrer'>deposit_flow.svg</a></figcaption></figure>
+<p>流程说明：</p>
+<p>1. 2020-2025年：疫情期间积累超额储蓄8万亿，带动存款大幅增长</p>
+<p>2. 利率变化：降息前较高利率吸引存款，降息后推动资金寻求更高收益</p>
+<p>3. 2026年到期：55-60万亿存款到期，占总存款18%</p>
+<p>4. 资金配置：90%以上留在银行系统，2-4万亿流向投资产品</p>
+<p>5. 投资分布：理财产品、基金、股票、保险、信托等多元配置</p>
+<p>6. 银行业影响：成本下降14bps，手续费收入增加，净息差改善</p>
+<h2>七、结论与展望</h2>
+<h3>7.1 核心发现</h3>
+<p>1. 2026年是到期高峰：55-60万亿存款到期，占总存款18%</p>
+<p>2. 大规模流出风险有限：超过90%预计继续留在银行系统</p>
+<p>3. 资金再配置有序：仅2-4万亿流向其他金融产品</p>
+<p>4. 银行业整体受益：融资成本下降14bps，手续费收入增加</p>
+<h3>7.2 市场影响</h3>
+<p>尽管存款到期应该对银行业是净正面，支持净息差和手续费收入，但我们预计这不会转化为净利润增长的显著升级。因此，在牛市中，中国银行股可能仍会落后，因为该行业的利润前景仍然温和。</p>
+<p>中国银行股年初至今已经跑输大盘。这种表现落后主要由以下因素造成：</p>
+<ul><li>板块轮换</li><li>与国家队指数ETF减持相关的抛售压力</li><li>万科债券重组后对不良贷款风险的担忧重新升温</li></ul>
+<p>即使存款重定价提供支撑性基本面，如果整体资本市场保持强劲，银行股可能仍然表现滞后。</p>
+<h3>7.3 投资建议</h3>
+<p>从中期来看，UBS仍看好以下银行：</p>
+<ul><li>高股息率银行：中信银行H股、建设银行H股、工商银行H股</li><li>快速增长高ROE银行：宁波银行、北京银行</li></ul>
+<h3>7.4 后续关注重点</h3>
+<p>1. 2026年实际流出数据：监测实际流出规模是否符合2-4万亿预期</p>
+<p>2. 利率走势：未来是否进一步降息影响存款吸引力</p>
+<p>3. 宏观经济环境：经济复苏和房地产市场对居民风险偏好的影响</p>
+<p>4. 资本市场表现：股票市场表现对资金流向投资产品的吸引力</p>
+<hr/>
+<p>数据来源：UBS研究报告《China Banks Deposit outflow: how much? to where? will it continue?》</p>
+<p>数据说明：所有金额单位均为万亿人民币，除非另有说明。数据基于7家主要银行（6大国企银行+招商银行）披露信息估算。</p>
+<p>免责声明：本分析仅供研究参考，不构成投资建议。</p><hr/><p class='muted'>说明：完整报告结构 + 原位图表渲染。plot assets: 5，成功缓存: 0（含路径键与文件名键），失败: 5。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

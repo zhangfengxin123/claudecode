@@ -1,0 +1,16 @@
+[
+  {
+    "name": "stat_density.csv",
+    "local": "stat_density.csv",
+    "ok": true,
+    "error": "",
+    "size": 36984
+  },
+  {
+    "name": "stat_rtb.csv",
+    "local": "stat_rtb.csv",
+    "ok": true,
+    "error": "",
+    "size": 30754
+  }
+]

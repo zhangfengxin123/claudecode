@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-02-21T02:35:30",
+  "sample_size": 3,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "2e3dca41e6c3c2addd4dc5fa61747a1d463b6545a9e9c4b3947d92efae5284f7",
+      "title": "hxc",
+      "chart_count": 13,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_2e3dca41e6c3.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "ade2768cea18abbd305543f0b629c7a096bb680ad280df685e254eb559d99252",
+      "title": "Shopping",
+      "chart_count": 17,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_ade2768cea18.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "7dbcd5ca648b7773876d259a5e744a8d0fc8505c0582204a182b79aa4710be42",
+      "title": "delhi_ncr_aqi_dataset",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_7dbcd5ca648b.html",
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "extracted_image_1.png",
+    "local": "extracted_image_1.png",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 2080394
+  },
+  {
+    "name": "Longbridge Stock Investment Record.pdf",
+    "local": "Longbridge Stock Investment Record.pdf",
+    "ok": true,
+    "error": "",
+    "size": 252181
+  }
+]

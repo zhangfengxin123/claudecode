@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：DepthStats</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：DepthStats</h1>
+    <p class='sub'>来源: /view/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Android API Depth Search Analysis Report&quot;
+description: &quot;Comprehensive analysis of Android API depth search performance, success rates, and compliance labeling&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-16&quot;
+</pre></details>
+<h1>Android API Depth Search Analysis Report</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of Android API depth search performance, examining 441 search records across 20 unique APIs. The analysis reveals critical insights about search efficiency, depth limits, and API compliance patterns. Key findings include a low overall success rate of 2.49%, with optimal discovery occurring between depths 1-6, and a balanced distribution of compliant vs. non-compliant APIs in the labeled dataset.</p>
+<h2>Dataset Overview</h2>
+<p>The analysis encompasses two complementary datasets:</p>
+<p>1. DepthStats: 441 records tracking systematic depth-first search across 20 unique Android APIs, exploring depths from 0 to 20</p>
+<p>2. checkwithlabel: 21 labeled API records with compliance assessments, VOI indices, and security requirements</p>
+<p>The datasets share 19 overlapping APIs, enabling correlation analysis between search performance and compliance characteristics.</p>
+<div class='plot-card'><div class='plot-meta'><code>status_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/status_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the three main search outcomes and their proportions?</li><li>Why is the low success rate 2.49%significant for API discovery?</li></ul></details>
+<p>The status distribution reveals a challenging search landscape:</p>
+<ul><li>NOTFOUND 53.97%: APIs that could not be located within the depth limit</li><li>TERMINATED 43.54%: Searches that terminated prematurely, likely due to complexity or resource constraints</li><li>FOUND 2.49%: Successfully discovered APIs</li></ul>
+<p>Critical Insight: Only 11 out of 441 searches successfully found their target APIs, indicating that Android API discovery through depth-first search faces significant challenges. The high termination rate 43.54% suggests many searches encounter graph complexity or performance limitations before exhausting the depth limit.</p>
+<h2>Depth Analysis and Success Patterns</h2>
+<div class='plot-card'><div class='plot-meta'><code>success_rate_by_depth.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/success_rate_by_depth.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>At which depth is the search success rate highest?</li><li>What does the declining success rate after depth 2 indicate?</li></ul></details>
+<p>The success rate analysis across depth limits reveals important patterns:</p>
+<ul><li>Peak Performance: Depth 1-2 shows the highest success rates, with depth 2 achieving 19.05% 4 found APIs</li><li>Rapid Decline: Success rate drops sharply after depth 2</li><li>No Success Beyond Depth 6: Despite searches up to depth 20, no APIs were found beyond depth 6</li></ul>
+<p>Implications:</p>
+<p>1. Optimal Search Depth: Setting depth limits between 1-2 provides the best balance between discovery and efficiency</p>
+<p>2. Diminishing Returns: Increasing depth beyond 6 provides no benefit but consumes significant resources</p>
+<p>3. Search Strategy Adjustment: Consider breadth-first or hybrid approaches for better coverage</p>
+<div class='plot-card'><div class='plot-meta'><code>found_by_depth.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/found_by_depth.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the distribution of found APIs across different depths?</li><li>Why were no APIs found beyond depth 6?</li></ul></details>
+<p>The actual depths at which APIs were discovered show a clear pattern:</p>
+<ul><li>Depth 1: 3 APIs found 27.27% of all found</li><li>Depth 2: 4 APIs found 36.36% of all found</li><li>Depth 3: 1 API found 9.09%</li><li>Depth 4: 2 APIs found 18.18%</li><li>Depth 5-6: 1 API found 9.09%</li><li>Depth 7+: 0 APIs found</li></ul>
+<p>Key Observations:</p>
+<ul><li>Concentration: 63.63% of all discoveries occur within depths 1-2</li><li>Rapid Drop-off: Discovery becomes increasingly rare beyond depth 4</li><li>Hard Limit: The complete absence of discoveries beyond depth 6 suggests either:</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>cumulative_found.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/cumulative_found.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What depth limit is required to find 90% of discoverable APIs?</li><li>How does the cumulative discovery curve inform optimal search depth selection?</li></ul></details>
+<p>Cumulative discovery analysis provides actionable insights for search optimization:</p>
+<ul><li>Depth 2: 63.64% 7 out of 11 of all discoverable APIs</li><li>Depth 4: 90.91% 10 out of 11 of all discoverable APIs</li><li>Depth 6: 100% 11 out of 11 of all discoverable APIs</li></ul>
+<p>Optimization Recommendation: Setting depth limit to 4 captures 90.91% of discoverable APIs while avoiding the computational expense of deeper searches 6-20 that yield minimal returns.</p>
+<h2>Search Complexity and Resource Usage</h2>
+<div class='plot-card'><div class='plot-meta'><code>steps_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/steps_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the typical number of steps required per search?</li><li>How does the steps distribution correlate with search outcomes?</li></ul></details>
+<p>The steps distribution reveals the computational complexity of API searches:</p>
+<ul><li>Average: 4.49 steps per search</li><li>Range: 0 to 20 steps</li><li>Distribution Pattern: Skewed right, with most searches completing in fewer than 5 steps</li></ul>
+<p>Complexity Analysis:</p>
+<ul><li>Low Complexity 0-2 steps: Likely represent immediate API matches or trivial graph traversals</li><li>Moderate Complexity 3-5 steps: Typical for most API searches requiring some graph navigation</li><li>High Complexity 10+ steps: Represents complex call graphs, possibly with cycles or extensive branching</li></ul>
+<p>Strategic Implication: The step count distribution correlates with search outcomes—successful discoveries typically occur within 3-5 steps, suggesting that excessive search complexity beyond this threshold rarely yields positive results.</p>
+<div class='plot-card'><div class='plot-meta'><code>methods_vs_steps.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/methods_vs_steps.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the relationship between steps taken and methods added?</li><li>How do different status outcomes vary in their step/method patterns?</li></ul></details>
+<p>The scatter plot of methods added vs. steps reveals significant insights about search behavior:</p>
+<p>Key Patterns:</p>
+<p>1. FOUND APIs Green: Cluster in lower-left quadrant fewer steps, fewer methods added</p>
+<p>    Suggests successful discoveries are typically efficient</p>
+<p>    Average: 2-4 steps, 0-500 methods</p>
+<p>2. TERMINATED Orange: Spread across middle ranges</p>
+<p>    Variable step counts 3-10 steps</p>
+<p>    Moderate method additions 100-2000 methods</p>
+<p>    Indicates searches that encountered complexity limits before finding targets</p>
+<p>3. NOTFOUND Red: Wide distribution with notable outliers</p>
+<p>    Some searches added 10,000+ methods</p>
+<p>    Indicates exhaustive searches that explored large portions of the call graph without success</p>
+<p>Outlier Analysis: Several searches added 5,000-10,000+ methods, representing:</p>
+<ul><li>Comprehensive graph traversals</li><li>Potential cycles or redundant exploration</li><li>Inefficient search paths that could be optimized</li></ul>
+<h2>API Compliance Labeling Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>label_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/label_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the balance between compliant and non-compliant APIs?</li><li>Why is the mixed label Y/Nsignificant for security analysis?</li></ul></details>
+<p>The labeled dataset reveals important compliance patterns:</p>
+<ul><li>Compliant Y: 9 APIs 42.86%</li><li>Non-compliant N: 10 APIs 47.62%</li><li>Mixed Y/N: 1 API 4.76%</li><li>Unlabeled: 1 API 4.76%</li></ul>
+<p>Key Insights:</p>
+<p>1. Near-Balance: The nearly equal distribution between compliant and non-compliant APIs suggests:</p>
+<p>    Comprehensive coverage of both categories for training/analysis</p>
+<p>    No systematic bias in the labeling process</p>
+<p>    Representative sampling of the Android API landscape</p>
+<p>2. Mixed Label Category: The single Y/N label represents APIs with context-dependent compliance, highlighting the complexity of real-world security analysis where API compliance may depend on:</p>
+<p>    Usage context</p>
+<p>    Permission states</p>
+<p>    Android version</p>
+<p>    Runtime conditions</p>
+<div class='plot-card'><div class='plot-meta'><code>avg_voi_by_label.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/avg_voi_by_label.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does the VOI index vary between compliance labels?</li><li>What does the higher VOI index for Y/N label indicate?</li></ul></details>
+<p>The VOI Vulnerability/Importance Index analysis by label reveals critical security insights:</p>
+<ul><li>Y/N Mixed: 2.00 highest</li><li>null: 1.00</li><li>Y Compliant: 0.78</li><li>N Non-compliant: 0.50</li></ul>
+<p>Interpretation:</p>
+<p>1. Higher VOI for Mixed Compliance: The Y/N category shows the highest average VOI 2.0, suggesting:</p>
+<p>    APIs with conditional compliance are often more security-critical</p>
+<p>    Complex APIs with multiple usage scenarios are more vulnerable</p>
+<p>    Security-critical APIs often have nuanced compliance requirements</p>
+<p>2. Compliance-VOI Relationship: Contrary to expectations, non-compliant APIs have lower average VOI 0.50 compared to compliant APIs 0.78. This could indicate:</p>
+<p>    Non-compliant APIs may be less critical or less frequently used</p>
+<p>    Higher-profile APIs with higher VOI receive more security scrutiny and are more likely to be compliant</p>
+<p>    The dataset may contain different types of non-compliant issues e.g., privacy vs. security</p>
+<p>3. Security Prioritization: The VOI index helps prioritize:</p>
+<p>    APIs with higher VOI for security reviews</p>
+<p>    Mixed-compliance APIs Y/N for detailed contextual analysis</p>
+<p>    Non-compliant APIs with high VOI for urgent remediation</p>
+<div class='plot-card'><div class='plot-meta'><code>voi_by_label_violin.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/voi_by_label_violin.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the distribution spread of VOI indices within each label?</li><li>How does the violin plot reveal differences in VOI variability?</li></ul></details>
+<p>The violin plot provides detailed distribution insights:</p>
+<ul><li>Y Compliant: Wide spread 0-3, with concentration around 0-1</li></ul>
+<ul><li>N Non-compliant: Concentrated at lower VOI 0-1</li></ul>
+<ul><li>Y/N Mixed: Single point at VOI=2</li></ul>
+<p>Strategic Recommendation: Focus security efforts on:</p>
+<p>1. Non-compliant APIs with VOI ≥ 2 if any exist beyond this dataset</p>
+<p>2. Mixed-compliance APIs Y/N regardless of VOI</p>
+<p>3. All APIs with VOI = 3 most critical regardless of compliance status</p>
+<h2>API Package Distribution Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>api_package_sunburst.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/api_package_sunburst.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which Android packages contain the most APIs in the dataset?</li><li>How does compliance vary across different package categories?</li></ul></details>
+<p>The sunburst visualization reveals hierarchical package structure and compliance patterns:</p>
+<p>Major Package Categories:</p>
+<p>1. Application Frameworkandroid.app.</p>
+<p>    Multiple APIs with varying compliance</p>
+<p>    Represents core Android application functionality</p>
+<p>2. Content Managementandroid.content.</p>
+<p>    APIs for data storage and content access</p>
+<p>    Security-critical due to data handling</p>
+<p>3. System Servicesandroid.os., android.telephony.</p>
+<p>    Low-level system APIs</p>
+<p>    Often have higher security requirements</p>
+<p>Compliance by Package:</p>
+<ul><li>The visualization shows mixed compliance within packages</li><li>No clear pattern of packages being uniformly compliant or non-compliant</li><li>Suggests security assessment must be done at the API level, not package level</li></ul>
+<p>Security Implications:</p>
+<ul><li>Content and telephony packages may warrant closer scrutiny due to sensitive data access</li><li>Application framework APIs, while numerous, include both secure and vulnerable implementations</li><li>Package-level security policies should complement individual API assessments</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>top_packages.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/top_packages.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which packages have the highest frequency of APIs in the labeled dataset?</li><li>How should security resources be allocated based on package frequency?</li></ul></details>
+<p>The top 10 packages by API frequency inform security prioritization:</p>
+<p>Top Packages Include:</p>
+<ul><li>android.app. Application management</li><li>android.content. Content providers</li><li>android.os. OS-level utilities</li><li>android.telephony. Telephony services</li><li>android.location. Location services</li><li>android.security. Security APIs</li></ul>
+<p>Resource Allocation Strategy:</p>
+<p>1. High-Frequency Packages: Prioritize comprehensive security audits</p>
+<p>2. Sensitive Data Handlers: Content, location, telephony packages need enhanced scrutiny</p>
+<p>3. Core Framework: Application framework APIs require thorough testing</p>
+<p>Balanced Approach: While frequency matters, combine with:</p>
+<ul><li>VOI index criticality</li><li>Compliance status current security posture</li><li>Package sensitivity data exposure risk</li></ul>
+<h2>Depth Search Flow Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>depth_sankey.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9/assets/depth_sankey.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do APIs flow through different depth ranges to their outcomes?</li><li>Which depth ranges show the highest conversion to successful discovery?</li></ul></details>
+<p>The Sankey diagram provides a complete flow visualization from all APIs through depth ranges to final outcomes:</p>
+<p>Flow Analysis:</p>
+<p>1. Depth 0-2 63 APIs:</p>
+<p>    FOUND: 6 APIs 9.52% success rate</p>
+<p>    NOTFOUND: 32 APIs 50.79%</p>
+<p>    TERMINATED: 25 APIs 39.68%</p>
+<p>    Insight: Best success rate among all depth ranges</p>
+<p>2. Depth 3-5 63 APIs:</p>
+<p>    FOUND: 3 APIs 4.76% success rate</p>
+<p>    NOTFOUND: 32 APIs 50.79%</p>
+<p>    TERMINATED: 28 APIs 44.44%</p>
+<p>    Insight: Moderate success, higher termination rate</p>
+<p>3. Depth 6-10 126 APIs:</p>
+<p>    FOUND: 2 APIs 1.59% success rate</p>
+<p>    NOTFOUND: 86 APIs 68.25%</p>
+<p>    TERMINATED: 38 APIs 30.16%</p>
+<p>    Insight: Low success rate, high not-found rate</p>
+<p>4. Depth 11+ 189 APIs:</p>
+<p>    FOUND: 0 APIs 0% success rate</p>
+<p>    NOTFOUND: 88 APIs 46.56%</p>
+<p>    TERMINATED: 101 APIs 53.44%</p>
+<p>    Insight: No discoveries, very high termination rate</p>
+<p>Key Observations:</p>
+<ul><li>Diminishing Returns: Success rate drops dramatically with increasing depth</li><li>Termination Pattern: Termination rate increases with depth 39.68% → 44.44% → 30.16% → 53.44%</li><li>Resource Waste: 53.44% of searches at depth 11+ terminate without finding APIs</li></ul>
+<p>Optimization Recommendations:</p>
+<p>1. Limit Depth: Restrict searches to depth ≤ 4 for optimal resource usage</p>
+<p>2. Early Termination: Implement smarter termination criteria to avoid wasted computation</p>
+<p>3. Hybrid Approach: Combine depth-limited search with breadth-first exploration for better coverage</p>
+<h2>Key Findings and Recommendations</h2>
+<h3>1. Search Performance Optimization</h3>
+<p>Finding: Only 2.49% of searches successfully discover target APIs, with optimal performance at depths 1-2.</p>
+<p>Recommendations:</p>
+<ul><li>Set default depth limit to 4 captures 90.91% of discoverable APIs</li><li>Implement adaptive depth limits based on API complexity</li><li>Consider hybrid search strategies depth-first with breadth-first fallback</li><li>Cache successful search paths for repeated queries</li></ul>
+<h3>2. Resource Efficiency</h3>
+<p>Finding: Significant computational waste occurs at depths  6, with 53.44% of searches terminating without discovery.</p>
+<p>Recommendations:</p>
+<ul><li>Implement early termination heuristics based on:</li><li>Prioritize search of high-value APIs based on VOI index</li><li>Use machine learning to predict likely success before full search</li></ul>
+<h3>3. Security Prioritization</h3>
+<p>Finding: Mixed-compliance APIs have highest VOI 2.0, while non-compliant APIs have lower average VOI 0.50.</p>
+<p>Recommendations:</p>
+<ul><li>Prioritize review of Y/N mixed compliance APIs regardless of VOI</li><li>Focus on non-compliant APIs with VOI ≥ 2 for remediation</li><li>Conduct comprehensive audits of packages with frequent compliance issues</li><li>Implement automated compliance checking for all APIs before integration</li></ul>
+<h3>4. API Compliance Assessment</h3>
+<p>Finding: 47.62% of labeled APIs are non-compliant, with complex APIs mixed compliance being most critical.</p>
+<p>Recommendations:</p>
+<ul><li>Develop context-aware compliance assessment for APIs with Y/N labels</li><li>Create compliance profiles by API category location, telephony, etc.</li><li>Establish tiered security requirements based on VOI index</li><li>Implement continuous monitoring for compliance changes across Android versions</li></ul>
+<h3>5. Future Research Directions</h3>
+<p>Findings: Several patterns suggest opportunities for deeper analysis:</p>
+<ul><li>Correlation between API category and compliance status</li><li>Relationship between search complexity steps/methods and security criticality</li><li>Impact of Android version on API compliance</li></ul>
+<p>Recommendations:</p>
+<ul><li>Expand labeled dataset to include more APIs across all categories</li><li>Incorporate temporal analysis API changes across Android versions</li><li>Develop predictive models for API compliance based on code features</li><li>Create automated tools for dynamic API discovery and compliance checking</li></ul>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of Android API depth search performance reveals significant challenges in API discovery through depth-first search. With only a 2.49% success rate and optimal discovery occurring at shallow depths 1-2, current search strategies require optimization. The balanced compliance labeling and VOI index analysis provide actionable insights for security prioritization, particularly highlighting the criticality of mixed-compliance APIs.</p>
+<p>The recommendations in this report focus on optimizing search depth limits, improving resource efficiency through smarter termination, and prioritizing security reviews based on compliance patterns and API criticality. Implementing these optimizations can significantly improve API discovery efficiency and security assessment workflows.</p>
+<h2>Data Files</h2>
+<p>All cleaned data and summaries are available in the folder:</p>
+<ul><li>: Complete depth search dataset 441 records</li><li>: Labeled API dataset 21 records</li><li>: Detailed data summary and statistics</li></ul>
+<p>All interactive charts are available as JSON files in the root directory for visualization and further analysis.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

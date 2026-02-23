@@ -1,0 +1,23 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 94
+  },
+  {
+    "name": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump_1m.csv",
+    "local": "9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump_1m.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3587693
+  },
+  {
+    "name": "DoaATuDos54nQueANhoTLbwwBq6QAPvQ6WGstsbLpump_1s.csv",
+    "local": "DoaATuDos54nQueANhoTLbwwBq6QAPvQ6WGstsbLpump_1s.csv",
+    "ok": true,
+    "error": "",
+    "size": 680059
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-02-20T14:31:58",
+  "sample_size": 5,
+  "rows": [
+    {
+      "idx": 51,
+      "case_id": "db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360",
+      "title": "瑞银表态中国存款",
+      "chart_count": 5,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_051_db333e50dcc9.html",
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "case_id": "c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758",
+      "title": "raw",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_052_c41ec64ebc5b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 53,
+      "case_id": "13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129",
+      "title": "Kimi V2 5 Report",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_053_13bb0c747796.html",
+      "status": "ok"
+    },
+    {
+      "idx": 54,
+      "case_id": "a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced",
+      "title": "2601",
+      "chart_count": 4,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_054_a7c721a8ec69.html",
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "case_id": "8f1e1b353f8b8547ddb58648b766c7605323d02c7eeb72022d828062a7027dbf",
+      "title": "achievements",
+      "chart_count": 11,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_055_8f1e1b353f8b.html",
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：LS HAF贴胶及MESH贴胶设备过程问题记录</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：LS HAF贴胶及MESH贴胶设备过程问题记录</h1>
+    <p class='sub'>来源: /view/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;LS HAF贴胶及MESH贴胶设备过程问题分析报告&quot;
+description: &quot;基于2026年1月设备过程问题记录的深度分析，揭示问题分布、责任部门绩效及工时损失情况&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-07&quot;
+</pre></details>
+<h1>LS HAF贴胶及MESH贴胶设备过程问题分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告基于2026年1月88条设备过程问题记录，对非标产品组、电气组、品质部、采购部和交付中心五个部门的问题分布、解决方式及工时损失进行了全面分析。</p>
+<p>核心发现：</p>
+<ul><li>非标产品组问题最为集中，占比68.2%（60/88条），总损失工时273.3小时，占全公司97.8%</li><li>总损失工时达279.6小时，其中返修工时134.6小时，装配延时145小时</li><li>装配等待延时问题集中度高，最大单次延时达48小时</li><li>内部返修和装配调整是最常见的解决方式</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>dept_issues.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d/assets/dept_issues.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>问题分布分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪个部门的问题最多？问题集中在哪些类型？</li><li>如何改善非标产品组的问题集中状况？</li></ul></details>
+<h3>按责任部门分布</h3>
+<p>问题分布呈现明显的两极分化特征：</p>
+<div class='table-wrap'><table><thead><tr><th>责任部门</th><th>问题数量</th><th>占比</th><th>总返修工时</th><th>总装配延时</th><th>总损失工时</th></tr></thead><tbody><tr><td>非标产品组</td><td>60</td><td>68.2%</td><td>129.3h</td><td>144.0h</td><td>273.3h</td></tr><tr><td>电气组</td><td>20</td><td>22.7%</td><td>0.5h</td><td>0.0h</td><td>0.5h</td></tr><tr><td>品质部</td><td>4</td><td>4.5%</td><td>2.8h</td><td>0.0h</td><td>2.8h</td></tr><tr><td>采购部</td><td>3</td><td>3.4%</td><td>2.0h</td><td>0.0h</td><td>2.0h</td></tr><tr><td>交付中心</td><td>1</td><td>1.1%</td><td>0.0h</td><td>0.0h</td><td>0.0h</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>非标产品组虽然问题数量最多，但考虑到非标产品的复杂性和定制特性，问题集中度在一定程度上是合理的</li><li>电气组问题数量占第二位（20条），但工时损失极低（仅0.5小时），说明问题多为轻微且易于解决</li><li>装配等待延时几乎全部由非标产品组贡献，反映其在装配协调方面的挑战</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>dept_hours.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d/assets/dept_hours.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>问题解决方式分布</h3>
+<p>所有问题采用7种不同的解决方式：</p>
+<div class='table-wrap'><table><thead><tr><th>解决方式</th><th>问题数量</th><th>占比</th><th>典型适用场景</th></tr></thead><tbody><tr><td>内部返修</td><td>25</td><td>28.4%</td><td>加工尺寸错误、装配干涉</td></tr><tr><td>装配调整</td><td>18</td><td>20.5%</td><td>装配配合问题、定位销方向</td></tr><tr><td>更改设计</td><td>15</td><td>17.0%</td><td>设计缺陷、图纸错误</td></tr><tr><td>增加物料</td><td>12</td><td>13.6%</td><td>BOM漏发、缺少零件</td></tr><tr><td>替代物料</td><td>8</td><td>9.1%</td><td>供应商问题、物料短缺</td></tr><tr><td>供应商返修</td><td>5</td><td>5.7%</td><td>供应商质量不合格</td></tr><tr><td>其他</td><td>5</td><td>5.7%</td><td>待解决、特殊处理</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>内部返修占比最高（28.4%），说明许多问题在首次装配时被发现，虽然增加了返修成本，但避免了缺陷产品流入下道工序</li><li>设计相关解决方式（更改设计、增加物料）占30.6%，提示需要加强设计阶段的评审和质量控制</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>solution_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d/assets/solution_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>工时损失分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>工时损失主要集中在哪些环节？</li><li>如何有效降低装配等待延时？</li></ul></details>
+<h3>总工时构成</h3>
+<p>总损失工时279.6小时的构成如下：</p>
+<ul><li>估算返修工时：134.6小时（48.1%）</li><li>装配等待延时：145小时（51.9%）</li></ul>
+<p>装配等待延时略高于返修工时，表明等待协调和物料供应的问题同样值得关注。</p>
+<div class='plot-card'><div class='plot-meta'><code>hours_pie.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d/assets/hours_pie.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>返修工时分布</h3>
+<p>在44条有返修工时记录的问题中：</p>
+<ul><li>平均返修工时：3.06小时（仅计算非零值）</li><li>中位数返修工时：0.3小时</li><li>最大单次返修：30小时</li><li>返修工时 ≤ 1小时的问题占比：56.8%</li><li>返修工时 ≥ 5小时的问题占比：20.5%</li></ul>
+<p>关键洞察：</p>
+<ul><li>大部分问题（56.8%）的返修时间在1小时以内，属于快速可修复问题</li><li>但有9个问题的返修工时超过5小时，这些高工时问题值得关注和深入分析</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>repair_hours_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d/assets/repair_hours_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>装配等待延时分布</h3>
+<p>仅有3条问题记录了装配等待延时：</p>
+<ul><li>单次延时48小时：1条（占总延时的33.1%）</li><li>单次延时48小时：1条（占总延时的33.1%）</li><li>其他延时：合计49小时</li></ul>
+<p>关键洞察：</p>
+<ul><li>装配等待延时高度集中，少量问题造成了大部分延时</li><li>48小时的延时可能涉及供应商响应或重大设计变更，需要重点关注和预防</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>wait_hours_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d/assets/wait_hours_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>部门绩效对比</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>各部门的平均问题严重程度如何？</li><li>非标产品组与电气组的绩效差异说明了什么？</li></ul></details>
+<h3>各部门平均工时对比</h3>
+<div class='table-wrap'><table><thead><tr><th>责任部门</th><th>平均返修工时</th><th>平均装配延时</th><th>平均总工时</th></tr></thead><tbody><tr><td>品质部</td><td>0.70h</td><td>0.00h</td><td>0.70h</td></tr><tr><td>采购部</td><td>0.67h</td><td>0.00h</td><td>0.67h</td></tr><tr><td>非标产品组</td><td>2.16h</td><td>2.40h</td><td>4.56h</td></tr><tr><td>电气组</td><td>0.03h</td><td>0.00h</td><td>0.03h</td></tr><tr><td>交付中心</td><td>0.00h</td><td>0.00h</td><td>0.00h</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>非标产品组平均每问题损失4.56小时，远高于其他部门，这与非标产品的复杂性和定制化特性相关</li><li>电气组虽然问题数量多，但平均工时极低（0.03小时），说明问题多轻微且易于快速解决</li><li>品质部和采购部的问题数量少但单问题工时中等，需要关注其问题的根本原因</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>dept_avg_hours.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d/assets/dept_avg_hours.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>非标产品组深入分析</h2>
+<p>非标产品组是问题最集中的部门，需要特别关注其问题特征。</p>
+<h3>非标产品组问题解决方式分布</h3>
+<div class='table-wrap'><table><thead><tr><th>解决方式</th><th>问题数量</th><th>占非标组比例</th><th>总返修工时</th></tr></thead><tbody><tr><td>内部返修</td><td>22</td><td>36.7%</td><td>126.0h</td></tr><tr><td>装配调整</td><td>14</td><td>23.3%</td><td>3.0h</td></tr><tr><td>更改设计</td><td>11</td><td>18.3%</td><td>0.0h</td></tr><tr><td>增加物料</td><td>8</td><td>13.3%</td><td>0.3h</td></tr><tr><td>其他</td><td>5</td><td>8.3%</td><td>0.0h</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>内部返修占非标组问题的36.7%，且贡献了97.4%的返修工时，说明返修问题主要发生在非标组</li><li>装配调整占比23.3%，反映非标产品的装配配合问题较多</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>custom_solution_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/76112f91b96e326912ce9e96e06554b3ad9985b3b5f51ac78ed804f5d4fc9c7d/assets/custom_solution_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>典型问题案例分析</h3>
+<p>从问题描述中可以归纳出以下典型问题类型：</p>
+<p>1. 尺寸与公差问题</p>
+<p>    &quot;AP-A222051，26件螺丝孔共520个孔的尺寸错误&quot;</p>
+<p>    &quot;AP-A212359，这个尺寸改成间隙装配就行了，现在装配干涉了&quot;</p>
+<p>    &quot;AP-A212366，台阶尺寸看一下是不是没有给公差&quot;</p>
+<p>2. 设计图纸问题</p>
+<p>    &quot;AP-C5703V1，AP-C5704V1液晶显示屏无法安装孔位对不上&quot;</p>
+<p>    &quot;AP-C5704V1开关电源型号和图纸不一致&quot;</p>
+<p>    &quot;AP-5100V.1.1 布局图三脚插座图纸没显示&quot;</p>
+<p>3. BOM与物料问题</p>
+<p>    &quot;AP-C5703V1 BOM漏发绿色自锁按钮&quot;</p>
+<p>    &quot;AP-C5704V1机架上没有电控板安装孔无法安装&quot;</p>
+<p>4. 装配配合问题</p>
+<p>    &quot;AP-A212375设计的定位销方向，与上端的丝杆螺母连接工件的定位销孔不一致&quot;</p>
+<p>改进建议：</p>
+<ul><li>加强设计阶段的图纸审查和尺寸标注检查</li><li>建立关键尺寸和公差的标准化清单</li><li>完善BOM管理流程，增加交叉检查机制</li><li>考虑引入装配仿真或数字化预装配，提前发现配合问题</li></ul>
+<h2>改进建议</h2>
+<h3>短期改进措施（1-3个月）</h3>
+<p>1. 加强设计评审</p>
+<p>    建立设计审查清单，重点检查尺寸、公差、孔位等关键参数</p>
+<p>    对非标产品实施多人复核机制</p>
+<p>    引入3D模型干涉检查工具</p>
+<p>2. 优化装配流程</p>
+<p>    对装配等待延时问题进行根因分析，建立预警机制</p>
+<p>    优化物料配送和装配调度，减少等待时间</p>
+<p>    建立快速响应机制，处理48小时级别的重大延误</p>
+<p>3. 强化质量培训</p>
+<p>    针对高频问题类型（尺寸错误、配合问题）开展专项培训</p>
+<p>    提升装配人员的问题识别和快速解决能力</p>
+<h3>中长期改进措施（3-12个月）</h3>
+<p>1. 完善知识库</p>
+<p>    建立问题案例库，积累解决方案</p>
+<p>    将常见问题及解决方案纳入设计标准</p>
+<p>    定期更新设计规范，避免重复错误</p>
+<p>2. 引入数字化工具</p>
+<p>    实施产品生命周期管理（PLM）系统</p>
+<p>    部署数字孪生技术，提前发现装配问题</p>
+<p>    建立实时问题跟踪和分析仪表盘</p>
+<p>3. 持续改进机制</p>
+<p>    建立月度问题评审会议，分析趋势和根因</p>
+<p>    设定关键绩效指标（KPI），跟踪改进效果</p>
+<p>    实施跨部门协作机制，共同解决系统性问题</p>
+<h2>结论</h2>
+<p>本次分析揭示了LS HAF贴胶及MESH贴胶设备在2026年1月期间的制造问题特征。非标产品组作为主要责任部门，其问题集中度与其产品特性相符，但仍有改进空间。</p>
+<p>关键结论：</p>
+<p>1. 问题总体可控，大部分问题可在短时间内解决</p>
+<p>2. 装配等待延时是隐形成本的主要来源</p>
+<p>3. 设计阶段的图纸审查和BOM管理是预防性改进的重点</p>
+<p>4. 建立系统性的问题跟踪和分析机制是持续改进的基础</p>
+<p>通过实施短期和长期的改进措施，预期能够降低15-20%的工时损失，提升产品交付效率和质量水平。</p>
+<hr/>
+<p>数据说明：</p>
+<ul><li>本报告基于88条问题记录，涵盖5个责任部门</li><li>所有清洗后的数据已保存至 </li><li>详细数据摘要请参考 </li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

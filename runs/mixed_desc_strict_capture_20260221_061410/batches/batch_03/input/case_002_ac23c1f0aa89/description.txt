@@ -1,0 +1,21 @@
+Background: DWTS pairs celebrities with pro dancers. Each week, judges score dances (1-10 scale), fans vote to keep favorites, and the lowest combined score gets eliminated. Two methods have been used to combine scores:
+
+Rank method (Seasons 1-2, 28-34): Sum of judge rank + fan rank
+Percentage method (Seasons 3-27): Sum of judge % + fan % of totals
+
+Season 28+ also added judges choosing between bottom two couples.
+My progress: I've completed Task 1 - developed a model to estimate fan votes and have the data with estimates ready.
+Please help with:
+Task 2: Compare rank vs percentage methods:
+
+Apply both methods to all seasons using my fan vote estimates
+Analyze if one method favors fan votes more
+Examine controversial cases (Jerry Rice S2, Billy Ray Cyrus S4, Bristol Palin S11, Bobby Bones S27)
+Recommend which method to use and whether judges' bottom-two tiebreaker helps
+
+Task 3: Analyze impact factors:
+
+How do pro dancer partners affect outcomes?
+How do celebrity characteristics (age, industry, home state/country) impact performance?
+Do these factors affect judge scores and fan votes differently?
+I'll upload my data with fan vote estimates.

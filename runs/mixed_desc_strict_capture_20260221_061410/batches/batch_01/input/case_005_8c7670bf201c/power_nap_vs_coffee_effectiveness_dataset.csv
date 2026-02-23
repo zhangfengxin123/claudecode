@@ -1,0 +1,501 @@
+participant_id,age,occupation,sleep_hours_previous_night,intervention_type,intervention_duration_minutes,alertness_score_before,alertness_score_after,productivity_rating,mood_rating,side_effects
+1,24,Working Professional,5.4,Power Nap,15,62,77,5,10,Grogginess
+2,37,Student,5.6,Power Nap,30,67,83,6,5,None
+3,32,Working Professional,4.4,Coffee,30,44,52,2,5,Anxiety
+4,28,Student,6.9,Coffee,30,59,70,4,6,Crash
+5,25,Working Professional,4.7,Power Nap,30,40,58,3,6,Grogginess
+6,38,Freelancer,6.3,Coffee,15,69,84,7,6,None
+7,24,Freelancer,7.4,Coffee,25,60,66,9,2,None
+8,43,Student,4.4,Power Nap,25,59,79,5,10,Grogginess
+9,36,Student,6.1,Power Nap,25,45,57,6,3,Grogginess
+10,40,Student,4.9,Coffee,25,61,70,10,6,Crash
+11,28,Working Professional,5.4,Power Nap,20,57,69,2,8,None
+12,28,Working Professional,5.9,Coffee,25,47,62,3,1,Crash
+13,41,Student,5.4,Coffee,20,71,83,3,1,Anxiety
+14,38,Freelancer,6.6,Coffee,20,72,88,9,2,Crash
+15,21,Working Professional,5.9,Coffee,30,55,69,7,6,None
+16,25,Working Professional,6.3,Power Nap,20,51,68,8,9,None
+17,41,Working Professional,6.9,Power Nap,15,73,90,10,4,None
+18,20,Student,6.2,Power Nap,20,53,74,9,3,Grogginess
+19,39,Student,6.3,Power Nap,30,72,93,6,8,Grogginess
+20,38,Student,6.3,Coffee,20,62,75,4,10,Anxiety
+21,19,Student,5.5,Coffee,15,41,49,1,9,None
+22,41,Student,5.3,Power Nap,15,60,74,8,5,None
+23,29,Freelancer,7.6,Coffee,15,41,50,7,9,Anxiety
+24,23,Freelancer,6.4,Coffee,30,66,78,2,2,Anxiety
+25,19,Student,5.0,Coffee,30,48,59,8,3,None
+26,38,Working Professional,6.0,Power Nap,25,40,58,5,7,Grogginess
+27,18,Student,5.3,Power Nap,30,50,74,7,7,None
+28,29,Freelancer,7.7,Power Nap,15,42,66,4,6,None
+29,43,Freelancer,4.0,Coffee,15,62,74,5,6,None
+30,39,Working Professional,4.9,Power Nap,30,65,76,8,2,Grogginess
+31,29,Freelancer,5.5,Power Nap,20,43,62,1,10,Grogginess
+32,42,Student,6.0,Power Nap,30,57,78,1,6,None
+33,34,Working Professional,7.4,Power Nap,30,45,58,4,4,Grogginess
+34,44,Student,4.4,Power Nap,15,74,89,3,3,None
+35,44,Student,7.2,Power Nap,25,61,82,10,2,None
+36,27,Working Professional,4.2,Coffee,15,54,60,2,1,None
+37,33,Student,7.4,Coffee,25,61,72,3,5,Crash
+38,32,Freelancer,4.2,Power Nap,15,51,63,1,2,Grogginess
+39,32,Student,4.1,Power Nap,30,57,79,1,2,None
+40,36,Working Professional,6.8,Coffee,15,74,81,6,7,Crash
+41,29,Working Professional,8.0,Coffee,15,69,84,5,8,None
+42,40,Working Professional,7.6,Power Nap,15,63,74,8,10,None
+43,37,Student,6.3,Power Nap,30,69,89,2,8,Grogginess
+44,42,Working Professional,7.7,Power Nap,30,53,70,4,4,Grogginess
+45,20,Working Professional,4.0,Power Nap,30,45,60,8,1,Grogginess
+46,22,Student,7.9,Coffee,30,42,47,6,7,Crash
+47,36,Freelancer,6.0,Power Nap,25,55,76,1,1,Grogginess
+48,24,Student,6.9,Power Nap,25,46,56,4,4,Grogginess
+49,38,Working Professional,7.3,Power Nap,20,53,69,1,8,None
+50,26,Working Professional,6.9,Power Nap,30,48,65,2,2,None
+51,24,Student,6.1,Coffee,25,54,63,5,6,None
+52,35,Freelancer,5.9,Coffee,15,60,76,8,6,None
+53,21,Working Professional,7.4,Coffee,30,74,89,8,9,Crash
+54,42,Working Professional,4.8,Power Nap,20,41,55,3,5,Grogginess
+55,31,Working Professional,7.9,Power Nap,20,66,79,4,10,Grogginess
+56,35,Student,6.8,Coffee,20,41,51,10,4,None
+57,43,Working Professional,4.8,Power Nap,15,74,97,6,5,None
+58,26,Freelancer,6.9,Power Nap,25,57,72,10,10,None
+59,43,Working Professional,6.1,Coffee,15,53,60,3,5,Anxiety
+60,38,Working Professional,6.8,Coffee,30,59,72,2,8,Crash
+61,19,Freelancer,7.1,Coffee,20,57,73,6,10,None
+62,37,Working Professional,4.3,Coffee,15,49,64,5,8,Anxiety
+63,32,Student,6.0,Power Nap,15,64,87,10,2,Grogginess
+64,24,Student,7.7,Power Nap,25,41,57,5,7,None
+65,29,Student,5.3,Coffee,25,64,69,10,8,Anxiety
+66,25,Freelancer,6.4,Power Nap,20,72,96,5,6,Grogginess
+67,32,Working Professional,5.5,Coffee,15,70,87,10,5,Crash
+68,20,Student,5.8,Coffee,15,53,64,5,9,None
+69,31,Freelancer,6.2,Power Nap,25,40,54,3,3,None
+70,34,Working Professional,6.2,Coffee,15,55,64,7,10,None
+71,21,Freelancer,4.8,Power Nap,15,42,65,6,4,None
+72,35,Student,6.7,Power Nap,15,74,96,4,9,None
+73,25,Student,4.4,Power Nap,25,45,56,2,6,Grogginess
+74,21,Student,4.6,Power Nap,20,64,77,9,8,None
+75,19,Freelancer,4.0,Coffee,30,52,68,1,7,None
+76,23,Freelancer,4.5,Power Nap,20,73,88,4,2,None
+77,39,Student,5.9,Coffee,30,47,61,1,3,Crash
+78,27,Freelancer,6.4,Coffee,15,60,75,6,1,Anxiety
+79,21,Student,7.2,Coffee,20,73,84,4,9,None
+80,39,Student,4.4,Coffee,30,43,58,5,7,Anxiety
+81,35,Working Professional,7.4,Power Nap,25,64,78,5,1,None
+82,43,Freelancer,7.0,Power Nap,25,54,72,9,3,Grogginess
+83,29,Student,5.6,Coffee,20,43,50,1,4,Crash
+84,19,Student,7.7,Coffee,20,51,56,2,4,None
+85,27,Freelancer,8.0,Power Nap,15,71,84,6,5,Grogginess
+86,21,Working Professional,4.8,Coffee,20,71,84,5,3,Crash
+87,31,Working Professional,5.5,Power Nap,15,67,80,7,3,Grogginess
+88,33,Student,7.7,Coffee,15,52,58,3,1,Crash
+89,32,Freelancer,6.9,Power Nap,25,70,89,3,7,Grogginess
+90,25,Working Professional,4.2,Coffee,25,53,62,10,10,None
+91,31,Freelancer,7.1,Coffee,30,59,66,2,1,Crash
+92,40,Freelancer,7.3,Power Nap,25,57,79,3,2,Grogginess
+93,42,Student,7.0,Coffee,25,68,84,10,4,None
+94,25,Working Professional,7.2,Coffee,20,45,62,1,4,None
+95,38,Student,7.3,Power Nap,25,71,89,5,5,None
+96,33,Working Professional,4.7,Coffee,30,68,76,5,2,None
+97,30,Working Professional,4.9,Power Nap,20,41,56,7,4,None
+98,35,Working Professional,6.5,Power Nap,30,62,73,4,1,None
+99,32,Working Professional,7.6,Coffee,25,58,68,3,2,Anxiety
+100,38,Working Professional,5.3,Coffee,30,70,77,1,1,Crash
+101,41,Freelancer,6.4,Coffee,20,44,60,8,10,Crash
+102,43,Student,6.7,Coffee,15,58,74,3,10,None
+103,42,Freelancer,5.8,Coffee,30,73,86,2,4,None
+104,30,Working Professional,6.9,Coffee,30,49,64,4,4,Crash
+105,26,Student,7.6,Coffee,20,64,70,3,7,None
+106,32,Working Professional,6.5,Power Nap,20,41,65,1,10,Grogginess
+107,30,Student,6.2,Coffee,30,50,66,3,9,None
+108,18,Freelancer,5.8,Power Nap,25,70,91,2,9,Grogginess
+109,42,Student,6.3,Coffee,30,54,67,8,5,Anxiety
+110,24,Student,5.4,Coffee,20,48,57,6,10,Anxiety
+111,26,Student,5.6,Power Nap,15,62,79,9,1,Grogginess
+112,41,Student,6.1,Coffee,15,58,64,8,1,Anxiety
+113,18,Student,4.3,Coffee,25,48,58,10,6,None
+114,29,Working Professional,4.9,Power Nap,30,74,86,3,2,Grogginess
+115,25,Student,6.2,Coffee,15,60,76,5,8,None
+116,41,Student,5.7,Coffee,30,48,64,7,9,Anxiety
+117,28,Freelancer,5.3,Coffee,20,67,81,5,4,Crash
+118,36,Student,6.9,Power Nap,15,46,60,8,5,Grogginess
+119,34,Freelancer,6.8,Coffee,25,55,71,5,8,Anxiety
+120,25,Working Professional,4.7,Coffee,20,55,67,1,3,Crash
+121,20,Student,7.5,Coffee,25,72,86,5,5,Anxiety
+122,20,Freelancer,6.0,Coffee,20,43,48,4,3,Anxiety
+123,18,Freelancer,7.0,Power Nap,15,43,57,6,10,Grogginess
+124,44,Working Professional,6.3,Power Nap,25,56,68,3,3,None
+125,22,Student,8.0,Coffee,25,68,76,5,3,Crash
+126,27,Student,7.0,Coffee,20,74,80,2,7,Anxiety
+127,24,Freelancer,6.8,Power Nap,25,46,64,6,7,None
+128,43,Student,7.1,Power Nap,20,66,78,6,7,Grogginess
+129,26,Freelancer,4.6,Coffee,20,67,73,5,10,Crash
+130,24,Student,4.8,Power Nap,20,61,80,6,8,Grogginess
+131,26,Freelancer,6.9,Coffee,20,53,68,7,5,Crash
+132,25,Student,6.0,Power Nap,15,46,64,5,5,None
+133,29,Working Professional,7.0,Power Nap,20,61,77,1,4,None
+134,19,Student,4.4,Power Nap,30,44,59,8,7,Grogginess
+135,18,Student,6.1,Power Nap,25,41,51,4,10,None
+136,33,Working Professional,5.5,Coffee,30,66,75,9,4,Crash
+137,40,Student,5.8,Power Nap,15,60,81,10,2,Grogginess
+138,40,Working Professional,6.4,Power Nap,30,54,74,6,4,None
+139,41,Student,6.0,Coffee,25,60,75,1,8,Anxiety
+140,22,Freelancer,6.2,Power Nap,30,49,61,3,9,Grogginess
+141,20,Freelancer,5.9,Power Nap,15,62,72,3,3,Grogginess
+142,29,Student,5.6,Coffee,20,44,52,10,7,Crash
+143,25,Student,7.1,Power Nap,30,40,62,4,9,None
+144,39,Student,4.0,Coffee,15,52,58,6,4,None
+145,44,Freelancer,6.4,Coffee,15,60,66,7,10,Crash
+146,20,Student,6.3,Coffee,25,65,72,10,3,None
+147,18,Freelancer,6.9,Coffee,25,60,72,4,5,Anxiety
+148,20,Working Professional,6.4,Power Nap,30,57,74,6,1,None
+149,22,Freelancer,7.3,Coffee,20,71,87,1,3,Crash
+150,32,Freelancer,7.8,Power Nap,15,56,80,8,8,None
+151,31,Working Professional,5.4,Power Nap,30,74,90,7,8,Grogginess
+152,20,Freelancer,4.9,Power Nap,15,50,65,9,4,Grogginess
+153,18,Student,5.7,Power Nap,15,60,78,3,2,None
+154,22,Student,5.2,Power Nap,20,65,78,2,8,Grogginess
+155,43,Freelancer,6.5,Power Nap,20,43,64,1,8,None
+156,40,Student,7.6,Power Nap,30,73,83,3,10,None
+157,31,Freelancer,4.6,Power Nap,20,57,74,5,4,Grogginess
+158,24,Student,4.4,Power Nap,20,74,90,2,3,Grogginess
+159,44,Student,5.0,Power Nap,30,68,84,3,2,None
+160,26,Freelancer,6.9,Coffee,20,68,75,4,9,None
+161,32,Student,6.4,Coffee,25,60,68,7,1,Anxiety
+162,32,Freelancer,4.4,Coffee,15,52,66,3,7,None
+163,43,Student,7.7,Power Nap,15,56,74,9,5,Grogginess
+164,27,Student,7.2,Coffee,15,48,58,8,8,None
+165,30,Working Professional,4.1,Coffee,15,40,49,4,4,Crash
+166,36,Working Professional,6.6,Coffee,30,41,48,1,7,None
+167,24,Freelancer,7.1,Power Nap,15,68,86,1,5,Grogginess
+168,34,Working Professional,5.5,Power Nap,15,72,86,1,5,None
+169,37,Freelancer,4.3,Power Nap,15,49,63,1,9,None
+170,21,Working Professional,4.3,Power Nap,15,60,83,8,9,Grogginess
+171,22,Student,4.4,Coffee,25,67,75,3,9,None
+172,40,Freelancer,7.4,Coffee,15,50,58,6,6,None
+173,24,Freelancer,7.6,Coffee,25,73,89,3,6,Crash
+174,30,Student,4.5,Coffee,30,47,52,5,5,Anxiety
+175,32,Freelancer,4.9,Power Nap,20,61,77,7,9,None
+176,28,Freelancer,4.7,Power Nap,15,47,65,2,10,None
+177,21,Working Professional,4.7,Power Nap,20,54,66,6,8,None
+178,30,Freelancer,7.3,Coffee,20,56,72,6,7,None
+179,24,Student,5.3,Power Nap,30,62,84,3,7,Grogginess
+180,44,Working Professional,5.2,Power Nap,20,63,87,6,6,None
+181,36,Working Professional,4.9,Coffee,25,58,64,10,5,Crash
+182,39,Student,6.4,Coffee,20,44,51,10,4,Crash
+183,19,Student,5.5,Power Nap,20,71,81,5,3,Grogginess
+184,27,Working Professional,7.0,Power Nap,20,40,55,2,3,None
+185,30,Freelancer,4.8,Power Nap,15,62,82,9,6,None
+186,42,Working Professional,7.2,Power Nap,15,47,67,8,4,None
+187,38,Student,6.4,Power Nap,25,52,68,3,6,None
+188,23,Working Professional,4.5,Power Nap,25,47,67,8,3,None
+189,29,Student,5.7,Coffee,15,62,77,9,4,Anxiety
+190,29,Working Professional,7.5,Coffee,25,40,46,3,9,None
+191,37,Freelancer,7.7,Coffee,15,63,75,3,5,Crash
+192,28,Working Professional,5.9,Power Nap,30,74,97,2,7,None
+193,43,Working Professional,5.9,Coffee,20,63,73,8,10,Crash
+194,40,Student,7.7,Power Nap,20,56,79,10,2,None
+195,42,Student,6.3,Power Nap,25,44,57,1,5,None
+196,24,Student,4.1,Coffee,15,59,68,8,9,Crash
+197,18,Working Professional,7.7,Power Nap,15,60,77,7,3,None
+198,18,Freelancer,5.0,Power Nap,25,70,93,7,9,None
+199,42,Student,6.3,Coffee,15,50,57,3,6,Crash
+200,44,Student,4.7,Coffee,30,54,61,1,4,Anxiety
+201,42,Working Professional,4.1,Coffee,20,58,73,4,7,None
+202,37,Student,5.2,Power Nap,25,46,59,9,8,Grogginess
+203,30,Freelancer,7.1,Coffee,25,67,72,5,6,None
+204,26,Freelancer,5.1,Coffee,15,44,57,1,5,None
+205,20,Student,4.9,Power Nap,25,44,61,5,6,None
+206,24,Student,4.9,Coffee,30,69,81,8,5,None
+207,23,Working Professional,6.1,Coffee,15,71,85,8,8,Anxiety
+208,25,Freelancer,7.9,Coffee,15,47,57,5,1,None
+209,44,Freelancer,5.8,Power Nap,15,49,65,9,7,None
+210,26,Student,6.2,Power Nap,15,71,86,1,10,Grogginess
+211,22,Working Professional,7.4,Power Nap,30,67,85,4,10,None
+212,18,Freelancer,6.1,Power Nap,15,56,68,3,2,Grogginess
+213,36,Freelancer,4.7,Coffee,25,70,77,2,9,None
+214,27,Working Professional,5.2,Power Nap,30,47,59,8,1,None
+215,29,Working Professional,5.2,Power Nap,20,64,83,7,10,Grogginess
+216,41,Freelancer,5.6,Coffee,20,48,55,9,6,None
+217,32,Freelancer,5.7,Coffee,25,41,54,2,9,Crash
+218,44,Working Professional,7.2,Coffee,25,54,70,4,1,Crash
+219,39,Freelancer,5.4,Power Nap,30,42,55,6,4,Grogginess
+220,41,Student,5.9,Power Nap,20,43,65,3,4,None
+221,26,Student,6.5,Power Nap,20,53,69,8,9,None
+222,37,Working Professional,5.5,Coffee,20,64,77,3,5,Crash
+223,34,Working Professional,7.3,Coffee,20,49,64,2,5,Crash
+224,34,Working Professional,6.3,Power Nap,20,60,81,3,6,None
+225,43,Student,5.2,Coffee,15,51,62,6,1,None
+226,37,Freelancer,6.9,Coffee,25,66,79,2,1,Anxiety
+227,29,Student,6.1,Coffee,15,41,57,8,9,Anxiety
+228,24,Freelancer,6.1,Power Nap,20,52,64,1,3,None
+229,19,Student,5.9,Coffee,30,71,79,7,4,Anxiety
+230,20,Freelancer,6.0,Coffee,30,70,82,2,1,Crash
+231,34,Student,7.1,Power Nap,20,55,70,10,9,Grogginess
+232,22,Working Professional,4.4,Power Nap,20,71,85,6,8,Grogginess
+233,34,Student,5.3,Coffee,30,71,88,2,2,Anxiety
+234,41,Freelancer,4.3,Coffee,15,73,81,2,8,Anxiety
+235,34,Student,7.0,Power Nap,15,50,67,10,7,Grogginess
+236,44,Student,5.1,Power Nap,20,49,59,8,6,Grogginess
+237,34,Student,7.6,Coffee,15,54,67,2,1,Crash
+238,19,Working Professional,6.1,Coffee,30,56,61,7,7,None
+239,19,Student,7.2,Coffee,15,57,69,3,10,Crash
+240,39,Working Professional,7.9,Coffee,20,48,56,8,7,None
+241,40,Working Professional,7.4,Power Nap,30,64,82,7,9,None
+242,22,Student,7.5,Coffee,15,53,68,8,1,None
+243,18,Student,5.6,Coffee,25,64,73,7,2,Anxiety
+244,18,Student,6.2,Power Nap,30,61,73,6,9,Grogginess
+245,36,Freelancer,5.0,Coffee,30,69,82,7,9,None
+246,19,Student,4.8,Power Nap,25,59,79,5,6,None
+247,38,Working Professional,6.0,Coffee,25,60,73,7,6,Anxiety
+248,29,Student,6.4,Coffee,30,71,79,1,4,Crash
+249,43,Freelancer,5.4,Power Nap,25,60,80,1,4,Grogginess
+250,23,Student,6.3,Power Nap,20,74,87,9,5,Grogginess
+251,40,Freelancer,7.5,Coffee,20,71,87,5,3,None
+252,21,Freelancer,6.2,Coffee,20,69,81,5,1,Crash
+253,40,Student,6.9,Coffee,30,51,57,3,1,Anxiety
+254,28,Working Professional,7.2,Power Nap,25,57,75,5,7,None
+255,41,Freelancer,8.0,Coffee,25,60,77,3,1,Crash
+256,44,Student,6.4,Power Nap,15,52,75,9,1,None
+257,34,Student,7.2,Power Nap,15,60,75,9,3,None
+258,23,Working Professional,7.9,Coffee,25,47,60,6,10,Anxiety
+259,41,Freelancer,7.8,Power Nap,25,46,63,1,4,Grogginess
+260,22,Freelancer,4.6,Coffee,25,62,73,7,4,Crash
+261,37,Student,5.6,Coffee,30,71,88,7,2,Crash
+262,19,Student,5.3,Coffee,25,50,55,10,1,Anxiety
+263,23,Working Professional,4.3,Coffee,15,61,77,10,3,Crash
+264,39,Working Professional,6.5,Coffee,30,61,68,4,4,Crash
+265,28,Freelancer,6.9,Power Nap,25,64,84,8,3,Grogginess
+266,33,Freelancer,7.4,Power Nap,15,61,84,6,8,None
+267,33,Student,4.5,Coffee,30,67,73,4,10,Crash
+268,18,Freelancer,7.5,Coffee,25,68,77,4,1,Crash
+269,26,Working Professional,6.6,Power Nap,25,52,76,2,2,Grogginess
+270,44,Working Professional,6.8,Power Nap,25,57,71,2,7,None
+271,23,Student,7.6,Power Nap,30,41,55,4,4,Grogginess
+272,33,Working Professional,6.5,Power Nap,15,68,81,5,8,Grogginess
+273,20,Working Professional,5.3,Coffee,15,60,69,8,3,None
+274,37,Working Professional,7.3,Coffee,20,54,61,6,6,None
+275,44,Working Professional,5.5,Power Nap,25,66,87,4,9,Grogginess
+276,21,Student,4.1,Coffee,20,70,75,7,1,Crash
+277,36,Student,7.3,Power Nap,20,54,68,8,1,Grogginess
+278,43,Freelancer,5.4,Coffee,15,62,79,2,8,Anxiety
+279,20,Working Professional,7.1,Power Nap,30,63,81,7,3,None
+280,36,Freelancer,5.5,Coffee,30,52,69,2,5,Crash
+281,37,Student,7.4,Power Nap,15,61,79,2,1,Grogginess
+282,24,Student,4.9,Power Nap,30,72,85,8,5,None
+283,37,Student,7.9,Coffee,20,42,49,2,6,None
+284,26,Student,7.1,Power Nap,25,58,68,9,8,Grogginess
+285,18,Student,4.5,Coffee,15,62,68,1,3,Anxiety
+286,25,Student,6.3,Coffee,25,68,80,9,3,None
+287,24,Student,7.9,Power Nap,30,69,79,1,10,Grogginess
+288,35,Working Professional,5.9,Coffee,25,64,76,10,9,None
+289,25,Freelancer,4.7,Coffee,30,47,64,10,4,Anxiety
+290,18,Student,5.9,Coffee,30,55,66,2,4,Crash
+291,28,Working Professional,6.0,Coffee,20,47,59,6,7,Anxiety
+292,42,Working Professional,7.0,Coffee,30,40,56,6,2,None
+293,42,Freelancer,6.8,Power Nap,20,44,59,1,8,None
+294,35,Student,5.6,Coffee,20,42,58,7,6,None
+295,40,Freelancer,4.9,Coffee,20,40,53,8,3,Crash
+296,27,Student,6.6,Coffee,15,43,50,2,9,None
+297,20,Working Professional,5.7,Coffee,15,74,88,8,5,Crash
+298,24,Working Professional,4.5,Coffee,30,71,79,9,8,Crash
+299,33,Working Professional,7.6,Power Nap,20,73,95,6,7,Grogginess
+300,43,Working Professional,6.8,Coffee,15,64,74,5,8,None
+301,33,Freelancer,6.7,Power Nap,20,49,66,9,7,None
+302,42,Student,7.3,Power Nap,25,60,74,9,3,Grogginess
+303,37,Student,6.1,Power Nap,25,66,78,1,2,Grogginess
+304,34,Freelancer,7.3,Power Nap,25,66,81,3,7,None
+305,19,Student,6.0,Coffee,30,41,49,9,3,Anxiety
+306,18,Working Professional,4.3,Power Nap,20,52,70,2,3,None
+307,33,Student,5.6,Power Nap,25,48,70,4,2,Grogginess
+308,29,Working Professional,6.0,Coffee,15,61,68,4,4,Crash
+309,22,Freelancer,6.9,Coffee,25,65,73,2,8,Crash
+310,22,Student,4.4,Coffee,25,51,62,3,1,Crash
+311,44,Freelancer,4.6,Power Nap,25,56,72,3,1,None
+312,40,Student,5.1,Coffee,30,53,69,1,5,Anxiety
+313,26,Working Professional,5.1,Coffee,15,53,69,6,5,Anxiety
+314,26,Freelancer,6.9,Power Nap,20,73,86,8,1,None
+315,20,Student,5.0,Coffee,15,59,69,3,6,None
+316,36,Working Professional,6.5,Coffee,20,50,66,5,1,Anxiety
+317,33,Freelancer,6.0,Coffee,30,55,72,1,5,Anxiety
+318,33,Freelancer,6.3,Coffee,30,70,77,10,9,Anxiety
+319,20,Student,7.4,Power Nap,30,45,60,7,5,Grogginess
+320,37,Student,5.6,Coffee,30,58,74,10,6,Anxiety
+321,41,Student,7.1,Coffee,20,43,49,1,8,None
+322,39,Working Professional,5.7,Power Nap,25,43,60,9,1,None
+323,41,Student,5.4,Coffee,20,59,65,8,2,Crash
+324,18,Freelancer,7.8,Power Nap,15,49,69,7,9,Grogginess
+325,41,Freelancer,4.7,Coffee,30,63,74,10,3,Crash
+326,37,Student,4.4,Power Nap,30,74,92,7,6,None
+327,28,Student,7.1,Power Nap,15,65,75,5,5,Grogginess
+328,34,Freelancer,4.3,Power Nap,20,60,77,5,2,None
+329,25,Working Professional,7.3,Power Nap,25,60,76,5,7,None
+330,21,Student,5.7,Coffee,25,49,59,1,4,Anxiety
+331,23,Student,7.7,Power Nap,15,43,58,8,1,Grogginess
+332,25,Freelancer,6.9,Coffee,25,59,69,1,4,Anxiety
+333,37,Student,6.4,Power Nap,20,56,74,4,6,Grogginess
+334,20,Working Professional,7.8,Power Nap,20,46,57,9,7,Grogginess
+335,33,Freelancer,5.6,Power Nap,15,43,53,9,7,Grogginess
+336,42,Student,7.8,Coffee,20,68,85,5,7,Crash
+337,20,Freelancer,4.5,Power Nap,30,53,74,4,3,None
+338,42,Student,5.9,Coffee,15,42,52,3,6,None
+339,35,Student,5.1,Coffee,20,63,77,3,8,Anxiety
+340,31,Student,6.2,Coffee,15,55,70,5,4,Anxiety
+341,35,Working Professional,4.6,Coffee,25,43,55,10,8,Anxiety
+342,19,Working Professional,7.4,Coffee,20,63,70,1,2,Crash
+343,39,Freelancer,7.4,Coffee,30,73,89,5,10,Anxiety
+344,20,Student,7.8,Coffee,20,69,83,6,9,Crash
+345,33,Student,4.6,Coffee,15,57,62,7,9,Anxiety
+346,26,Working Professional,6.5,Coffee,15,58,71,9,8,Anxiety
+347,21,Student,5.9,Power Nap,20,70,92,3,10,Grogginess
+348,18,Working Professional,5.4,Power Nap,30,58,80,2,10,None
+349,21,Student,5.4,Power Nap,30,58,68,3,1,Grogginess
+350,18,Freelancer,5.7,Power Nap,30,61,73,9,2,Grogginess
+351,31,Student,6.8,Power Nap,15,63,80,7,6,Grogginess
+352,38,Student,6.4,Coffee,20,51,58,9,10,None
+353,33,Working Professional,5.8,Coffee,25,69,86,2,5,Crash
+354,37,Student,4.3,Coffee,15,70,78,5,9,Crash
+355,41,Student,4.3,Coffee,30,58,70,4,5,Anxiety
+356,25,Working Professional,4.0,Coffee,20,69,74,2,2,Crash
+357,24,Freelancer,7.9,Coffee,30,72,89,9,10,Anxiety
+358,20,Freelancer,4.0,Coffee,25,57,74,9,4,None
+359,34,Working Professional,4.4,Power Nap,30,67,82,6,9,None
+360,18,Working Professional,5.3,Power Nap,30,50,60,6,1,Grogginess
+361,33,Working Professional,7.2,Power Nap,25,72,95,8,1,None
+362,29,Working Professional,7.8,Power Nap,20,56,66,6,7,Grogginess
+363,44,Working Professional,7.2,Coffee,15,45,57,1,3,None
+364,36,Freelancer,6.8,Coffee,20,43,58,4,10,Anxiety
+365,39,Freelancer,6.1,Coffee,25,59,67,7,2,Anxiety
+366,40,Working Professional,4.3,Power Nap,30,66,87,2,9,None
+367,39,Student,7.8,Coffee,20,54,59,9,3,Crash
+368,31,Working Professional,7.0,Coffee,15,45,59,8,2,Crash
+369,23,Student,6.6,Coffee,25,53,64,8,8,Anxiety
+370,23,Working Professional,7.0,Power Nap,20,50,64,7,10,Grogginess
+371,30,Working Professional,6.9,Coffee,15,48,57,4,6,Crash
+372,36,Freelancer,6.5,Power Nap,25,65,75,2,6,None
+373,39,Student,7.9,Power Nap,15,55,78,3,10,None
+374,25,Student,7.6,Power Nap,25,44,63,6,7,None
+375,44,Freelancer,6.6,Power Nap,30,49,69,5,7,Grogginess
+376,44,Freelancer,6.8,Coffee,20,42,52,8,6,Crash
+377,19,Freelancer,4.2,Power Nap,15,52,75,6,4,None
+378,38,Freelancer,6.7,Power Nap,25,69,87,6,9,Grogginess
+379,18,Student,4.2,Coffee,15,45,58,1,6,Anxiety
+380,32,Student,6.4,Coffee,15,56,68,4,4,None
+381,18,Working Professional,8.0,Power Nap,20,58,72,5,3,Grogginess
+382,22,Working Professional,6.2,Coffee,30,74,79,3,4,None
+383,33,Freelancer,5.9,Power Nap,15,65,83,9,3,Grogginess
+384,36,Freelancer,5.3,Power Nap,25,44,54,1,2,Grogginess
+385,21,Freelancer,4.5,Power Nap,25,68,85,6,5,None
+386,20,Working Professional,6.9,Power Nap,30,59,73,6,2,None
+387,34,Working Professional,4.8,Coffee,25,60,67,10,6,Crash
+388,34,Working Professional,4.5,Power Nap,30,49,69,5,3,Grogginess
+389,29,Working Professional,5.7,Coffee,25,44,55,5,6,Anxiety
+390,31,Working Professional,7.2,Coffee,20,45,56,10,10,None
+391,38,Working Professional,7.0,Coffee,15,65,78,5,9,None
+392,23,Working Professional,4.2,Coffee,20,43,54,6,1,Crash
+393,20,Freelancer,5.8,Power Nap,15,74,96,8,6,None
+394,26,Freelancer,6.1,Coffee,15,40,55,2,9,None
+395,22,Freelancer,6.6,Power Nap,15,63,86,6,4,Grogginess
+396,41,Freelancer,6.6,Coffee,20,45,52,1,2,Anxiety
+397,34,Working Professional,5.5,Coffee,15,70,85,4,4,Anxiety
+398,31,Student,6.2,Power Nap,20,59,81,10,1,Grogginess
+399,38,Working Professional,5.9,Power Nap,30,63,87,3,3,Grogginess
+400,20,Student,7.5,Power Nap,25,64,87,9,10,None
+401,18,Freelancer,6.1,Coffee,25,60,77,3,9,Anxiety
+402,37,Working Professional,5.8,Coffee,15,69,74,6,10,Crash
+403,38,Freelancer,5.6,Power Nap,20,63,80,1,5,Grogginess
+404,40,Working Professional,6.3,Power Nap,25,69,90,6,6,Grogginess
+405,18,Freelancer,7.2,Power Nap,20,61,73,4,3,None
+406,20,Student,6.2,Power Nap,20,67,88,8,5,None
+407,35,Student,6.6,Coffee,15,46,58,9,8,Crash
+408,42,Student,7.0,Power Nap,25,74,91,4,6,Grogginess
+409,27,Working Professional,6.1,Power Nap,15,67,89,10,4,None
+410,39,Student,5.7,Power Nap,15,53,67,10,2,Grogginess
+411,43,Working Professional,7.5,Power Nap,25,49,71,6,9,Grogginess
+412,20,Student,5.7,Coffee,25,55,71,1,1,Anxiety
+413,25,Student,5.8,Power Nap,30,55,77,4,1,Grogginess
+414,31,Working Professional,8.0,Coffee,30,70,75,7,4,Crash
+415,41,Working Professional,4.0,Power Nap,20,64,86,1,7,None
+416,35,Student,4.7,Power Nap,25,52,71,8,1,Grogginess
+417,32,Working Professional,5.5,Coffee,30,45,56,10,9,None
+418,39,Student,7.7,Power Nap,20,48,69,6,4,Grogginess
+419,40,Working Professional,4.3,Coffee,20,59,73,5,3,Anxiety
+420,19,Freelancer,4.0,Coffee,20,57,66,10,1,Crash
+421,44,Freelancer,4.2,Power Nap,30,60,77,9,10,Grogginess
+422,27,Freelancer,4.4,Coffee,25,43,56,2,4,Crash
+423,19,Freelancer,4.2,Coffee,15,72,87,5,9,None
+424,43,Freelancer,5.9,Coffee,20,66,77,6,10,Crash
+425,34,Student,6.3,Coffee,30,46,63,7,6,Crash
+426,25,Freelancer,5.1,Coffee,30,45,56,5,6,None
+427,18,Freelancer,5.6,Coffee,15,54,59,9,1,Anxiety
+428,26,Freelancer,4.4,Coffee,15,57,65,1,10,Crash
+429,28,Freelancer,5.3,Coffee,30,71,77,7,2,None
+430,39,Working Professional,6.1,Power Nap,25,50,61,10,6,None
+431,33,Student,6.9,Power Nap,15,59,70,7,2,None
+432,24,Freelancer,4.0,Coffee,30,63,71,4,3,Crash
+433,27,Freelancer,5.9,Power Nap,15,54,77,9,4,None
+434,40,Freelancer,5.2,Coffee,25,46,51,5,5,None
+435,43,Student,7.4,Coffee,20,60,68,4,9,None
+436,20,Working Professional,6.9,Power Nap,15,65,76,7,4,None
+437,35,Student,6.4,Coffee,25,53,62,4,9,Crash
+438,42,Working Professional,5.1,Coffee,30,60,67,3,10,Crash
+439,41,Freelancer,7.6,Coffee,15,57,73,9,3,Crash
+440,30,Freelancer,4.2,Coffee,15,44,56,8,8,None
+441,43,Student,4.4,Power Nap,30,42,55,1,1,None
+442,24,Student,5.6,Coffee,20,62,67,7,9,Anxiety
+443,42,Working Professional,4.5,Coffee,30,65,70,9,9,Crash
+444,21,Working Professional,7.8,Coffee,15,63,79,8,10,Anxiety
+445,30,Student,7.2,Power Nap,30,58,77,8,2,None
+446,37,Working Professional,5.0,Coffee,25,64,71,6,4,None
+447,18,Student,6.4,Power Nap,30,60,84,4,8,None
+448,25,Working Professional,7.9,Power Nap,15,51,69,8,7,Grogginess
+449,31,Student,7.5,Coffee,30,72,83,3,1,Anxiety
+450,33,Student,6.4,Coffee,20,43,49,9,5,Crash
+451,31,Student,7.6,Power Nap,30,46,70,2,7,Grogginess
+452,29,Working Professional,8.0,Coffee,20,61,78,2,4,Anxiety
+453,36,Working Professional,7.0,Power Nap,25,72,90,7,1,None
+454,40,Working Professional,4.3,Power Nap,20,56,75,10,9,Grogginess
+455,32,Student,5.6,Coffee,30,63,69,4,5,Crash
+456,19,Working Professional,7.4,Coffee,15,73,80,10,2,Crash
+457,19,Working Professional,4.9,Power Nap,20,67,87,8,8,Grogginess
+458,40,Student,7.3,Power Nap,25,61,83,9,2,None
+459,39,Freelancer,4.5,Power Nap,20,56,75,7,3,Grogginess
+460,36,Student,4.2,Power Nap,20,73,96,5,10,None
+461,42,Working Professional,5.5,Coffee,20,45,51,8,1,Crash
+462,43,Student,4.1,Coffee,25,45,52,4,2,None
+463,39,Freelancer,7.8,Coffee,30,73,83,2,7,None
+464,43,Student,7.3,Coffee,20,40,53,6,10,None
+465,43,Working Professional,7.2,Coffee,20,49,62,9,2,Anxiety
+466,39,Freelancer,6.5,Power Nap,15,60,76,1,6,None
+467,34,Working Professional,4.9,Coffee,25,44,60,10,3,None
+468,37,Freelancer,6.1,Coffee,20,41,48,7,4,None
+469,27,Freelancer,6.4,Coffee,25,61,69,10,8,None
+470,23,Student,6.1,Coffee,20,41,51,9,3,Crash
+471,32,Student,5.0,Coffee,30,49,64,10,10,Crash
+472,39,Working Professional,6.1,Power Nap,30,73,87,9,6,None
+473,28,Student,6.0,Power Nap,20,55,66,10,1,Grogginess
+474,22,Student,8.0,Power Nap,30,61,83,3,7,Grogginess
+475,18,Freelancer,7.6,Coffee,20,51,61,5,8,None
+476,25,Student,5.9,Power Nap,30,63,75,8,8,None
+477,38,Freelancer,6.5,Power Nap,15,49,72,8,3,None
+478,29,Freelancer,7.0,Coffee,15,74,86,4,10,Crash
+479,29,Freelancer,4.1,Coffee,15,71,77,1,1,Crash
+480,22,Working Professional,7.6,Coffee,25,46,51,1,9,Crash
+481,24,Working Professional,7.4,Power Nap,25,60,78,4,6,Grogginess
+482,21,Working Professional,5.8,Power Nap,15,59,82,6,9,Grogginess
+483,23,Freelancer,5.6,Coffee,25,65,81,8,7,Crash
+484,30,Working Professional,5.1,Coffee,30,43,50,6,1,None
+485,37,Working Professional,5.9,Power Nap,20,61,81,9,1,None
+486,32,Student,4.2,Power Nap,20,54,64,9,6,None
+487,20,Working Professional,7.4,Coffee,20,60,71,2,5,None
+488,40,Working Professional,4.1,Coffee,15,54,71,10,9,Crash
+489,25,Freelancer,5.3,Power Nap,25,61,85,1,2,None
+490,37,Freelancer,7.7,Coffee,30,67,81,2,8,Anxiety
+491,33,Freelancer,6.9,Power Nap,30,53,67,5,5,Grogginess
+492,30,Freelancer,5.1,Power Nap,15,66,80,4,2,Grogginess
+493,35,Freelancer,5.0,Power Nap,30,67,90,4,10,None
+494,27,Freelancer,4.0,Power Nap,30,65,75,9,6,Grogginess
+495,36,Working Professional,6.8,Coffee,30,41,54,8,10,Anxiety
+496,34,Freelancer,4.2,Coffee,30,64,75,6,8,None
+497,41,Freelancer,6.1,Power Nap,25,42,59,1,4,Grogginess
+498,36,Student,7.8,Power Nap,30,47,65,2,2,None
+499,43,Working Professional,4.4,Power Nap,20,72,87,6,5,Grogginess
+500,40,Working Professional,7.6,Power Nap,15,74,95,2,2,None

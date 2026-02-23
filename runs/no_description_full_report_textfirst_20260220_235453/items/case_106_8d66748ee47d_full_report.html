@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：AB_NO_DESC_1b89e7d1ffb4_20260217_073140</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：AB_NO_DESC_1b89e7d1ffb4_20260217_073140</h1>
+    <p class='sub'>来源: /view/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;反向调价实验结果分析报告 - A/B测试对比&quot;
+description: &quot;2026年1月反向调价策略A/B测试实验结果深度分析，包含收入、转化率、用户行为等多维度对比&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-17&quot;
+</pre></details>
+<h1>反向调价实验结果分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告对2026年1月进行的反向调价策略A/B测试实验进行了全面分析。实验分为A组（对照组）和B组（实验组），通过对比两组在规模、转化、收入、付费行为等关键指标上的表现，评估反向调价策略的效果。</p>
+<p>核心发现：</p>
+<ul><li>A组在用户规模上显著领先，账号数和活跃设备数均比B组高出约50%</li><li>B组虽然规模较小，但在单体价值指标上表现更优，ARPPU达到27.09元</li><li>两组付费率差异微小（0.86% vs 0.79%），说明调价策略对转化率影响有限</li><li>连续包月仍是主流付费方式，占比超过95%</li></ul>
+<h2>实验概况</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>实验的基本设计是什么？</li><li>A组和B组的主要区别是什么？</li></ul></details>
+<h3>实验设计</h3>
+<ul><li>实验类型: A/B测试对比实验</li><li>实验期间: 2026年1月</li><li>分组策略: A组（对照组）vs B组（实验组）</li><li>测试目标: 评估反向调价策略对用户行为和收入的影响</li></ul>
+<h3>分组概况</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>A组（对照组）</th><th>B组（实验组）</th><th>差异</th></tr></thead><tbody><tr><td>账号数量</td><td>239,349</td><td>160,051</td><td>-33.1%</td></tr><tr><td>设备数量</td><td>292,212</td><td>193,792</td><td>-33.7%</td></tr><tr><td>活跃设备数</td><td>196,665</td><td>130,972</td><td>-33.4%</td></tr><tr><td>付费设备数</td><td>1,702</td><td>1,036</td><td>-39.1%</td></tr></tbody></table></div>
+<p>A组在各项规模指标上均显著领先于B组，这可能是实验分组策略的结果，也可能是反向调价策略影响用户获取的表现。</p>
+<h2>规模指标分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>A组和B组的用户规模差异有多大？</li><li>规模差异是否会影响实验结果的可靠性？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>metrics_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/metrics_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>用户规模对比</h3>
+<p>从规模指标来看，A组在各项指标上均领先B组约33-39%：</p>
+<ul><li>账号数量: A组比B组多79,298个账号（+33.1%）</li><li>设备数量: A组比B组多98,420台设备（+33.7%）</li><li>活跃设备数: A组比B组多65,693台活跃设备（+33.4%）</li></ul>
+<p>这种规模的差异可能源于：</p>
+<p>1. 实验分组策略（如按用户属性分层）</p>
+<p>2. 反向调价策略对新用户获取的影响</p>
+<p>3. 时间窗口内用户自然增长的差异</p>
+<h3>用户旅程流向</h3>
+<div class='plot-card'><div class='plot-meta'><code>user_journey_sankey.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/user_journey_sankey.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从用户旅程流向图可以看出：</p>
+<ul><li>两组的转化路径相似：账号 → 设备 → 活跃 → 付费</li><li>A组在各阶段的用户绝对数量均高于B组</li><li>需要进一步分析转化率以评估效率差异</li></ul>
+<h2>收入指标分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>两组的收入表现如何？</li><li>ARPU和ARPPU的差异说明了什么？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>revenue_arpu_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/revenue_arpu_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>总收入对比</h3>
+<ul><li>A组总收入: ¥45,929.49</li><li>B组总收入: ¥28,503.48</li><li>收入差异: B组比A组少¥17,426.01（-37.9%）</li></ul>
+<p>A组的总收入显著高于B组，但这主要源于A组的用户规模优势。</p>
+<h3>单体价值指标</h3>
+<p>ARPU（Average Revenue Per User）：</p>
+<ul><li>A组: ¥0.23</li><li>B组: ¥0.21</li><li>差异: B组比A组低8.7%</li></ul>
+<p>ARPPU（Average Revenue Per Paying User）：</p>
+<ul><li>A组: ¥26.97</li><li>B组: ¥27.09</li><li>差异: B组比A组高0.4%</li></ul>
+<p>关键洞察：</p>
+<ul><li>B组虽然用户规模较小，但ARPPU略高于A组，说明B组的付费用户平均支付金额更高</li><li>这可能表明反向调价策略提高了付费用户的支付意愿或提升了客单价</li><li>ARPU的差异主要由付费率差异驱动</li></ul>
+<h2>转化率分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>两组的活跃率和付费率对比如何？</li><li>哪个转化环节的差异最大？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>rate_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/rate_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>活跃率对比</h3>
+<ul><li>A组活跃率: 67.30%（196,665/292,212）</li><li>B组活跃率: 67.58%（130,972/193,792）</li><li>差异: B组比A组高0.28个百分点</li></ul>
+<p>两组的活跃率非常接近，说明反向调价策略对用户活跃度的影响有限。</p>
+<h3>付费率对比</h3>
+<ul><li>A组付费率: 0.87%（1,702/196,665）</li><li>B组付费率: 0.79%（1,036/130,972）</li><li>差异: B组比A组低0.08个百分点</li></ul>
+<p>关键洞察：</p>
+<ul><li>A组的付费率略高于B组，但差异仅为0.08个百分点，在统计学上可能不显著</li><li>这表明反向调价策略对付费转化率的影响有限</li><li>B组虽然ARPPU略高，但付费率略低，两者相互抵消</li></ul>
+<h2>付费类型分布</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>两组用户的付费偏好有何不同？</li><li>连续包月是否仍是主流付费方式？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>payment_type_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/payment_type_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>订单类型分布</h3>
+<div class='table-wrap'><table><thead><tr><th>付费类型</th><th>A组</th><th>B组</th></tr></thead><tbody><tr><td>连续包月</td><td>1,622 95.30%</td><td>992 95.75%</td></tr><tr><td>一年卡</td><td>63 3.70%</td><td>39 3.76%</td></tr><tr><td>两年卡</td><td>17 1.00%</td><td>5 0.48%</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>连续包月占据绝对主导地位：两组中连续包月订单占比均超过95%</li><li>付费类型结构相似：两组的付费类型分布非常接近，说明反向调价策略未改变用户的付费偏好</li><li>长期订阅占比较低：一年卡和两年卡的合计占比不足5%，用户更倾向于短期灵活的订阅方式</li></ul>
+<h3>ARPPU与付费率关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>arppu_payment_rate.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/arppu_payment_rate.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从ARPPU与付费率的对比可以看出：</p>
+<ul><li>B组的ARPPU略高于A组（27.09 vs 26.97）</li><li>但B组的付费率略低于A组（0.79% vs 0.87%）</li><li>这形成了一个权衡：B组的付费用户价值更高，但付费用户比例略低</li></ul>
+<h2>预测分析：规模效应评估</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如果B组达到A组的规模，收入会如何变化？</li><li>反向调价策略在大规模用户下是否更有优势？</li></ul></details>
+<p>本节通过预测模型，分析如果B组达到A组的用户规模，其理论收入表现，从而评估反向调价策略的规模效应。</p>
+<h3>规模缩放预测</h3>
+<div class='plot-card'><div class='plot-meta'><code>scale_effect_prediction.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/scale_effect_prediction.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>基于A组的规模，我们构建了线性回归预测模型。关键发现：</p>
+<p>缩放因子：A组设备数是B组的1.51倍，即B组需要增长51%才能达到A组的规模。</p>
+<div class='plot-card'><div class='plot-meta'><code>revenue_prediction_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/revenue_prediction_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>收入预测对比：</p>
+<div class='table-wrap'><table><thead><tr><th>类别</th><th>收入（元）</th><th>相对A组</th></tr></thead><tbody><tr><td>A组实际收入</td><td>¥45,929</td><td>-</td></tr><tr><td>B组实际收入</td><td>¥28,069</td><td>-38.9%</td></tr><tr><td>B组预测收入（A组规模）</td><td>¥42,324</td><td>-7.8%</td></tr></tbody></table></div>
+<p>核心发现：</p>
+<ul><li>如果B组达到A组的规模，其理论收入将达到¥42,324</li><li>这比A组实际收入低7.8%，但差距从38.9%缩小到7.8%</li><li>规模效应显著：当用户规模对齐后，收入差距大幅缩小</li></ul>
+<h3>转化漏斗预测</h3>
+<div class='plot-card'><div class='plot-meta'><code>funnel_prediction.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/8d66748ee47da8966be9b4feec22162ff1654600a3d39f88f8435505f7ceb6d9/assets/funnel_prediction.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>B组在A组规模下的转化漏斗预测：</p>
+<div class='table-wrap'><table><thead><tr><th>阶段</th><th>A组实际值</th><th>B组实际值</th><th>B组预测值（A组规模）</th></tr></thead><tbody><tr><td>设备数</td><td>292,212</td><td>193,792</td><td>292,212</td></tr><tr><td>活跃设备数</td><td>196,665</td><td>130,972</td><td>197,488</td></tr><tr><td>付费设备数</td><td>1,702</td><td>1,036</td><td>1,562</td></tr><tr><td>总收入（元）</td><td>45,929</td><td>28,069</td><td>42,324</td></tr></tbody></table></div>
+<p>转化率分析：</p>
+<ul><li>A组转化率：</li></ul>
+<ul><li>B组转化率：</li></ul>
+<p>关键洞察：</p>
+<p>1. 活跃转化率B组略优：B组的设备→活跃转化率（67.58%）略高于A组（67.30%），说明反向调价策略可能有助于用户激活</p>
+<p>2. 付费转化率A组略优：A组的活跃→付费转化率（0.87%）略高于B组（0.79%），说明原定价策略对付费转化更有利</p>
+<p>3. ARPPU优势：B组的ARPPU（¥27.09）略高于A组（¥26.97），表明B组的付费用户价值更高</p>
+<p>4. 规模效应：当B组达到A组规模时，虽然付费设备数较少（1,562 vs 1,702），但由于ARPPU更高，总收入差距缩小到7.8%</p>
+<h3>预测结论</h3>
+<p>基于回归预测模型，我们得出以下结论：</p>
+<p>1. 规模是关键差异：当前B组收入低于A组的主要原因是用户规模差异，而非定价策略本身</p>
+<p>2. 反向调价的规模效应：当用户规模对齐后，反向调价策略的收入仅比对照组低7.8%，远低于当前的38.9%差距</p>
+<p>3. ARPPU优势明显：B组的ARPPU优势在规模化后能够有效弥补付费转化率的劣势</p>
+<p>4. 长期潜力：如果B组能够达到A组的规模，且保持当前的ARPPU优势，其收入表现将与A组相当</p>
+<h2>综合评估与建议</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>反向调价策略是否成功？</li><li>后续应该如何优化定价策略？</li></ul></details>
+<h3>实验效果总结</h3>
+<div class='table-wrap'><table><thead><tr><th>维度</th><th>A组（对照组）</th><th>B组（实验组）</th><th>评估</th></tr></thead><tbody><tr><td>用户规模</td><td>292,212</td><td>193,792</td><td>A组领先51%</td></tr><tr><td>活跃率</td><td>67.30%</td><td>67.58%</td><td>基本持平</td></tr><tr><td>付费率</td><td>0.87%</td><td>0.79%</td><td>A组略优</td></tr><tr><td>ARPU</td><td>¥0.23</td><td>¥0.21</td><td>A组略优</td></tr><tr><td>ARPPU</td><td>¥26.97</td><td>¥27.09</td><td>B组略优</td></tr><tr><td>总收入</td><td>¥45,929</td><td>¥28,069</td><td>A组领先38.9%</td></tr><tr><td>预测收入（A组规模）</td><td>¥45,929</td><td>¥42,324</td><td>差距缩小至7.8%</td></tr></tbody></table></div>
+<h3>关键发现</h3>
+<p>1. 规模效应显著: A组在各项规模指标上均领先B组约33%，这是收入差异的主要驱动因素</p>
+<p>2. 转化效率相似: 两组的活跃率和付费率非常接近，说明反向调价策略对用户行为的影响有限</p>
+<p>3. ARPPU微升: B组的ARPPU略高于A组（+0.4%），可能表明反向调价策略提升了付费用户的支付意愿</p>
+<p>4. 付费偏好稳定: 连续包月仍是主流付费方式（占比95%），反向调价策略未改变用户的付费偏好</p>
+<p>5. 综合效果平衡: B组虽然ARPPU略高，但付费率和用户规模均低于A组，整体收入表现不如A组</p>
+<h3>建议</h3>
+<h4>短期建议</h4>
+<p>1. 维持当前定价: 反向调价策略（B组）未展现出显著优势，建议维持当前定价策略（A组）</p>
+<p>2. 加强付费转化: 考虑优化付费引导流程，提升付费率。即使提升0.1%的付费率，也能带来显著收入增长</p>
+<p>3. 推广长期订阅: 一年卡和两年卡的占比较低（5%），可以考虑通过优惠活动推广长期订阅，提升用户生命周期价值</p>
+<h4>中期建议</h4>
+<p>1. 分层定价策略: 考虑针对不同用户群体实施差异化定价，平衡用户规模和ARPPU</p>
+<p>2. 付费转化优化: 分析付费转化漏斗的各个环节，识别并优化转化率低的环节</p>
+<p>3. 用户价值提升: 通过个性化推荐、内容运营等方式提升用户活跃度和付费意愿</p>
+<h4>长期建议</h4>
+<p>1. 持续A/B测试: 定期进行定价策略测试，根据市场变化和用户反馈调整策略</p>
+<p>2. 用户生命周期管理: 建立用户生命周期管理体系，针对不同阶段用户实施差异化策略</p>
+<p>3. 数据驱动决策: 建立完善的数据监测和分析体系，基于数据驱动产品决策</p>
+<h3>风险提示</h3>
+<p>1. 样本偏差: 本实验的分组规模差异较大（A组比B组多33%），可能存在样本偏差影响结果可靠性</p>
+<p>2. 短期数据: 本数据仅覆盖一个月，长期效果需要更长时间的观察</p>
+<p>3. 外部因素: 实验期间可能存在季节性因素、市场变化等外部干扰因素</p>
+<h2>结论</h2>
+<p>本次反向调价实验结果显示，B组（实验组）在ARPPU上略有提升（+0.4%），但在用户规模、付费率和总收入等核心指标上均低于A组（对照组）。</p>
+<h3>核心发现</h3>
+<p>通过回归预测模型分析，我们发现了规模效应的关键作用：</p>
+<p>1. 当前表现差距主要源于规模差异：B组收入比A组低38.9%，但这是由于B组用户规模比A组小51%造成的</p>
+<p>2. 规模对齐后差距大幅缩小：如果B组达到A组的用户规模，预测收入差距将从38.9%缩小到7.8%</p>
+<p>3. 反向调价策略在大规模下更有潜力：ARPPU优势在规模化后能够有效弥补付费转化率的劣势，说明反向调价策略在规模化用户群中可能更有优势</p>
+<h3>实验结论</h3>
+<p>综合当前数据和预测分析，我们可以得出：</p>
+<p>短期来看：反向调价策略未展现出显著优势，建议维持当前定价策略（A组）</p>
+<p>长期来看：如果反向调价策略能够扩大用户规模，其ARPPU优势将更加凸显，可能与原定价策略相当甚至更优</p>
+<h3>建议</h3>
+<p>1. 维持当前定价策略：基于当前实验结果，建议暂时维持A组的定价策略</p>
+<p>2. 关注用户规模增长：如果未来用户规模增长，可以考虑再次测试反向调价策略</p>
+<p>3. 优化付费转化：重点提升付费转化率，即使提升0.1%的付费率，也能带来显著收入增长</p>
+<p>4. 推广长期订阅：一年卡和两年卡的占比较低（5%），可以考虑通过优惠活动推广长期订阅，提升用户生命周期价值</p>
+<p>连续包月仍是最主流的付费方式（占比95%），用户对短期灵活订阅的偏好明显。未来可以考虑通过优惠活动推广长期订阅，同时优化付费转化流程，提升整体变现效率。</p>
+<hr/>
+<p>数据来源: ./files/反向调价实验结果-202601.xlsx</p>
+<p>分析日期: 2025-01-17</p>
+<p>数据清洗: ./data/cleanedexperimentdata.csv</p>
+<p>详细摘要: ./data/summary.md</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

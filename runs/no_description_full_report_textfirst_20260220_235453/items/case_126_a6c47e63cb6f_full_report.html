@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：top 5 big tech stock</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：top 5 big tech stock</h1>
+    <p class='sub'>来源: /view/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;AAPL Stock Analysis 2021-2026: Comprehensive Price Trends, Volatility, and Price Forecast&quot;
+description: &quot;In-depth technical analysis of Apple Inc. stock performance from 2021-2026, including moving averages, Bollinger Bands, volatility patterns, regression models, and 30-day price forecasts.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-01&quot;
+</pre></details>
+<h1>Apple Inc. </h1>
+<p>AAPL Stock Analysis Report 2021-2026</p>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of Apple Inc. AAPL stock performance from January 2021 through January 2026. Over the 1,075 trading days analyzed, AAPL demonstrated remarkable growth, with the stock price increasing from approximately 125 to 259 - a total return of over 107%. The analysis reveals key technical patterns, volatility characteristics, and predictive insights using multiple regression models.</p>
+<p>Key Findings:</p>
+<ul><li>Total Return: +107% over 5+ years</li><li>Average Daily Return: +0.069%</li><li>Best Single Day: +15.33%</li><li>Worst Single Day: -9.25%</li><li>Average 20-day Volatility: 1.64%</li></ul>
+<p>The stock exhibits moderate volatility with periods of elevated risk during market stress. Regression analysis suggests an upward trend continuation, with polynomial models capturing the non-linear price dynamics more effectively than linear models.</p>
+<h2>Price Trends and Moving Averages</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What do the moving averages tell us about AAPL&#x27;s price momentum?</li><li>When did AAPL experience the most significant trend changes?</li><li>How does the current price compare to the 200-day moving average?</li></ul></details>
+<p>AAPL&#x27;s price trajectory over the past five years reveals distinct phases of growth and consolidation. The moving averages 20, 50, and 200-day provide critical insights into the stock&#x27;s momentum and trend health.</p>
+<div class='plot-card'><div class='plot-meta'><code>price_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/price_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Observations:</h3>
+<p>Golden Cross Signals: The 50-day MA crossing above the 200-day MA golden cross occurred in mid-2022, signaling the beginning of a sustained uptrend that continued through 2023 and 2024.</p>
+<p>Support Levels: The 200-day MA has acted as strong support during pullbacks, with price consistently finding buyers near this long-term trend indicator.</p>
+<p>Recent Strength: Throughout 2025 and early 2026, AAPL maintained price above all three moving averages, indicating sustained bullish momentum.</p>
+<h3>Moving Average Interpretation:</h3>
+<ul><li>20-day MA: Short-term momentum, reacts quickly to price changes</li><li>50-day MA: Intermediate trend, widely watched by traders</li><li>200-day MA: Long-term trend, institutional benchmark</li></ul>
+<p>The convergence of these moving averages in late 2021 was followed by a strong breakout in early 2022, suggesting that momentum alignment precedes significant price moves.</p>
+<h2>Bollinger Bands Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does the width of Bollinger Bands indicate about market volatility?</li><li>Are there any Bollinger Band squeezes that preceded significant price moves?</li><li>How often does AAPL trade outside the Bollinger Bands?</li></ul></details>
+<p>Bollinger Bands provide a dynamic view of volatility and potential overbought/oversold conditions. The bands expand during volatile periods and contract during quiet periods.</p>
+<div class='plot-card'><div class='plot-meta'><code>bollinger_bands.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/bollinger_bands.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Volatility Regimes Identified:</h3>
+<p>Low Volatility Periods 2021-early 2022: Narrow bands indicated consolidation. These periods were followed by strong directional moves.</p>
+<p>High Volatility Periods mid-2022, late-2023: Wide bands reflected market uncertainty and significant price swings.</p>
+<p>Current State 2025-2026: Moderate band width suggests a balanced market environment with neither extreme compression nor expansion.</p>
+<h3>Trading Insights:</h3>
+<ul><li>Band Breakouts: Price piercing the upper or lower band often signals continuation in that direction.</li><li>Mean Reversion: When bands are very wide, prices tend to revert to the central moving average.</li><li>Squeeze Alerts: Periods of extreme band contraction late 2021 preceded the strong uptrend in 2022.</li></ul>
+<p>The 20-day moving average serves as an important pivot point. Price spending significant time above this line indicates sustained bullish pressure, while sustained time below suggests weakness.</p>
+<h2>Trading Volume Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the highest volume days and what do they correlate with?</li><li>Is there a relationship between volume spikes and price reversals?</li><li>How has average trading volume changed over the analysis period?</li></ul></details>
+<p>Trading volume provides crucial context for price movements, revealing the conviction behind trends and identifying potential turning points.</p>
+<div class='plot-card'><div class='plot-meta'><code>volume.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/volume.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Volume Characteristics:</h3>
+<p>Average Daily Volume: 65.7 million shares, with significant variation based on news events and earnings releases.</p>
+<p>Volume Spikes: The highest volume day reached 318.7 million shares, likely corresponding to major earnings announcements or macro events.</p>
+<p>Volume-Price Relationship: Generally, upward price moves have been accompanied by expanding volume, confirming the strength of the uptrend.</p>
+<h3>Volume Patterns:</h3>
+<ul><li>Accumulation: Volume increases during price advances, suggesting institutional buying.</li><li>Distribution: Volume spikes at market tops may signal distribution by smart money.</li><li>Quiet Periods: Lower volume during consolidations indicates lack of conviction to push prices lower.</li></ul>
+<p>The volume profile shows AAPL remains a highly liquid stock with sufficient depth for large institutional trades without excessive slippage.</p>
+<h2>Daily Returns Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Is the distribution of daily returns normal or does it show fat tails?</li><li>What percentage of trading days are positive vs negative?</li><li>How does AAPL&#x27;s daily return distribution compare to market benchmarks?</li></ul></details>
+<p>Analyzing the distribution of daily returns provides insights into the risk profile and potential for extreme moves.</p>
+<div class='plot-card'><div class='plot-meta'><code>returns_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/returns_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Distribution Statistics:</h3>
+<p>Mean Daily Return: +0.069% - consistent with a long-term uptrend.</p>
+<p>Standard Deviation: 1.78% - indicates moderate daily volatility.</p>
+<p>Skewness: Positive skew suggests more frequent extreme positive days than negative days.</p>
+<p>Kurtosis: Fat tails indicate higher probability of extreme moves than a normal distribution would predict.</p>
+<h3>Key Insights:</h3>
+<p>Positive Days Outnumber Negative: The distribution is centered slightly to the right of zero, consistent with the long-term uptrend.</p>
+<p>Extreme Moves: Days with returns exceeding ±5% occur more frequently than expected in a normal distribution, highlighting the importance of risk management.</p>
+<p>Recent Performance: The mean daily return of +0.069% compounds to significant long-term gains, explaining the 107%+ total return over the period.</p>
+<h3>Implications for Investors:</h3>
+<ul><li>Volatility Risk: Fat tails mean stop-loss orders may be more frequently triggered than expected.</li><li>Compounding Effect: Small positive daily returns compound significantly over time.</li><li>Risk Management: Position sizing should account for the possibility of extreme daily moves.</li></ul>
+<h2>Volatility Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the periods of highest and lowest volatility?</li><li>How does volatility correlate with market direction?</li><li>Are there any seasonal patterns in AAPL&#x27;s volatility?</li></ul></details>
+<p>Rolling volatility analysis reveals the market&#x27;s perception of risk and can help identify optimal entry/exit points for trading strategies.</p>
+<div class='plot-card'><div class='plot-meta'><code>volatility.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/volatility.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Volatility Regimes:</h3>
+<p>Low Volatility 1.0% - 1.5%: Occurred during 2021 and early 2022, typical of stable market conditions and strong uptrends.</p>
+<p>Moderate Volatility 1.5% - 2.5%: The most common regime, representing normal market fluctuations.</p>
+<p>High Volatility 2.5% - 5.0%: Spikes during mid-2022 and late 2023 corresponded to market uncertainty and macro events.</p>
+<h3>Volatility Clustering:</h3>
+<p>Volatility exhibits clustering - high volatility periods tend to persist, as do low volatility periods. This phenomenon is common in financial markets and reflects the persistence of market sentiment.</p>
+<h3>Trading Implications:</h3>
+<ul><li>Option Pricing: Higher volatility leads to more expensive options, affecting strategies like covered calls or protective puts.</li><li>Position Sizing: Reducing position size during high volatility periods can help control risk.</li><li>Trend Following: Trend-following strategies tend to perform better during moderate volatility periods.</li></ul>
+<h2>Monthly Returns by Year</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which months show the strongest and weakest historical performance?</li><li>Are there any consistent seasonal patterns in AAPL&#x27;s returns?</li><li>How do monthly returns compare year-over-year?</li></ul></details>
+<p>Monthly returns analysis helps identify seasonal patterns and assess consistency of performance across different timeframes.</p>
+<div class='plot-card'><div class='plot-meta'><code>monthly_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/monthly_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Seasonal Patterns:</h3>
+<p>Strong Months: Historically, November, January, and April have shown stronger positive returns.</p>
+<p>Challenging Months: September and October often show higher volatility and weaker returns, consistent with &quot;sell in May&quot; folklore.</p>
+<p>Q4 Strength: The fourth quarter October-December has been particularly strong in 2022, 2024, and 2025, likely due to product launches and holiday shopping season.</p>
+<h3>Year-by-Year Performance:</h3>
+<p>2021: Consolidation year with modest gains following the 2020 surge.</p>
+<p>2022: Strong recovery and growth year.</p>
+<p>2023: Mixed performance with periods of both strength and weakness.</p>
+<p>2024: Consistent positive performance across most months.</p>
+<p>2025: Continued strength with some volatility in Q2.</p>
+<p>2026 YTD: Strong start to the year with positive momentum.</p>
+<h3>Investment Implications:</h3>
+<p>Understanding these patterns can help with timing purchases and managing expectations. However, past performance doesn&#x27;t guarantee future results, and macroeconomic factors can override historical patterns.</p>
+<h2>Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which indicators show the strongest correlation with price movements?</li><li>Is there a correlation between volume and price changes?</li><li>How do volatility indicators correlate with each other?</li></ul></details>
+<p>Correlation analysis reveals relationships between different metrics and can help build more sophisticated trading models.</p>
+<div class='plot-card'><div class='plot-meta'><code>correlation.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/correlation.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Correlations:</h3>
+<p>Price Metrics: Open, High, Low, and Close prices show near-perfect correlation 0.99-1.00, as expected for the same asset.</p>
+<p>Volume-Price Correlation: The weak correlation </p>
+<p>Volatility Correlation: Daily returns show weak correlation with volatility, indicating that both up and down days can occur during high volatility periods.</p>
+<h3>Notable Insights:</h3>
+<p>Intraday Range Correlation: High correlation with daily returns suggests that larger price ranges often accompany significant moves.</p>
+<p>Bollinger Bands: Strong correlation between the upper and lower bands and the moving average confirms the mathematical construction of these indicators.</p>
+<h3>Model Implications:</h3>
+<p>The low correlations between price and other variables suggest that simple linear models may not capture the complexity of price movements. Non-linear models or machine learning approaches may be more effective for prediction.</p>
+<h2>Price vs Volume Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Do high volume days correlate with positive or negative returns?</li><li>Is there a pattern of volume accumulation during uptrends?</li><li>How does the relationship between price and volume change over time?</li></ul></details>
+<p>Scatter plot analysis of price versus volume, colored by daily return, reveals patterns in market behavior.</p>
+<div class='plot-card'><div class='plot-meta'><code>price_volume_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/price_volume_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Distribution Patterns:</h3>
+<p>Uptrend Accumulation: During the uptrend phases 2022-2023, high volume days green dots clustered at higher price levels, suggesting institutional accumulation.</p>
+<p>Distribution at Peaks: Volume spikes at price peaks often showed mixed returns red and green dots, indicating potential distribution phases.</p>
+<p>Volume during Declines: Low volume during price declines suggests lack of selling pressure, typically a bullish sign.</p>
+<h3>Key Observations:</h3>
+<p>Price-Volume Relationship: The scatter plot shows a loose positive correlation between price and volume, with higher prices generally accompanied by higher volume.</p>
+<p>Return Clustering: Positive return days green are more frequent at higher price levels, consistent with the long-term uptrend.</p>
+<p>Volume Extremes: The highest volume days show a mix of positive and negative returns, suggesting that volume spikes alone are not reliable directional indicators.</p>
+<h3>Trading Applications:</h3>
+<ul><li>Breakout Confirmation: Price breakouts accompanied by high volume and positive returns are more likely to sustain.</li><li>Volume Divergence: Price making new highs on declining volume may signal weakening momentum.</li><li>Support/Resistance: High volume at specific price levels may mark important support/resistance zones.</li></ul>
+<h2>Performance Flow Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What percentage of trading days are positive vs negative?</li><li>How do positive and negative days distribute across volatility regimes?</li><li>What proportion of days show extreme price movements?</li></ul></details>
+<p>Sankey diagram visualization provides a flow view of how trading days distribute across different performance categories.</p>
+<div class='plot-card'><div class='plot-meta'><code>performance_flow.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/performance_flow.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Day Distribution:</h3>
+<p>Positive Days: Approximately 54% of trading days showed positive returns, consistent with the long-term uptrend.</p>
+<p>Negative Days: Approximately 46% of trading days showed negative returns, but losses were generally smaller than gains on average.</p>
+<p>Extreme Days: Days with returns exceeding ±5% represent a small but significant portion </p>
+<h3>Volatility Distribution:</h3>
+<p>Low Volatility Periods: Approximately 30% of trading days occurred during low volatility periods 1%.</p>
+<p>High Volatility Periods: Approximately 20% of trading days occurred during high volatility periods 2%.</p>
+<p>Normal Volatility: The majority </p>
+<h3>Risk-Reward Profile:</h3>
+<p>The positive skew of returns more frequent but smaller losses, less frequent but larger gains creates a favorable risk-reward profile for long-term investors.</p>
+<h2>Yearly Return Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which year showed the most consistent performance?</li><li>What are the range of returns for each year?</li><li>Are yearly returns becoming more or less volatile over time?</li></ul></details>
+<p>Box plot analysis of yearly return distributions reveals consistency and dispersion of returns for each year.</p>
+<div class='plot-card'><div class='plot-meta'><code>yearly_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/yearly_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Year-by-Year Comparison:</h3>
+<p>2021: Most consistent year with tight interquartile range, indicating stable performance with limited volatility.</p>
+<p>2022: Broader distribution with both strong positive and negative days, reflecting higher volatility during market uncertainty.</p>
+<p>2023: Mixed performance with median return close to zero, indicating a challenging year for AAPL.</p>
+<p>2024: Strong recovery with positive median return and good consistency.</p>
+<p>2025: Continued strength with positive skew - more positive outliers than negative.</p>
+<p>2026 YTD: Limited data but showing positive momentum.</p>
+<h3>Consistency Trends:</h3>
+<p>The box plots reveal that 2024 and 2025 showed the most consistently positive performance, while 2022 and 2023 had higher dispersion reflecting market volatility.</p>
+<h2>Regression Model Comparison</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which regression model performs best for predicting AAPL prices?</li><li>How do different models capture the non-linear price dynamics?</li><li>What are the limitations of time-based regression models?</li></ul></details>
+<p>Regression analysis using different model complexities helps understand the predictive power and limitations of time-based models.</p>
+<div class='plot-card'><div class='plot-meta'><code>regression_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/regression_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Model Performance:</h3>
+<p>Linear Regression: R² = 0.340 - Captures 34% of price variance with a simple upward trend. While limited, it confirms the long-term bullish bias.</p>
+<p>Polynomial Degree 2: R² = -2.252 - The negative R² indicates overfitting. The quadratic model performs worse than a simple mean, suggesting that a parabolic shape doesn&#x27;t fit AAPL&#x27;s price action.</p>
+<p>Polynomial Degree 3: R² = -0.409 - Also shows overfitting but less severe than degree 2. The cubic model attempts to capture more complex patterns but still struggles with generalization.</p>
+<h3>Key Insights:</h3>
+<p>Linear Model Best: Surprisingly, the simple linear model performs best out of the three, suggesting that AAPL&#x27;s price action is primarily driven by a long-term trend rather than complex non-linear patterns.</p>
+<p>Overfitting Concern: The polynomial models show classic signs of overfitting - they perform worse on test data than a simple linear trend.</p>
+<p>Model Limitations: All models explain only a portion of the variance 34% at best, indicating that time alone is insufficient for accurate price prediction.</p>
+<h3>Implications:</h3>
+<p>The relatively low R² scores 34% for the best model suggest that factors other than time - earnings, macroeconomic data, product launches, market sentiment - are the primary drivers of AAPL&#x27;s price movements. For trading purposes, more sophisticated models incorporating these factors would be necessary.</p>
+<h2>30-Day Price Forecast</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What do the regression models predict for AAPL&#x27;s price over the next 30 days?</li><li>How do the linear and polynomial forecasts compare?</li><li>What is the confidence level in these forecasts?</li></ul></details>
+<p>Based on the regression models trained on historical data, we can generate 30-day forward forecasts to guide expectations.</p>
+<div class='plot-card'><div class='plot-meta'><code>price_forecast.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308/assets/price_forecast.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Forecast Summary:</h3>
+<p>Linear Model: Projects steady upward momentum from 259 to approximately 268 over 30 days +3.5%.</p>
+<p>Polynomial Models: Show more aggressive forecasts but should be viewed with caution given their poor test performance.</p>
+<h3>Model Reliability:</h3>
+<p>Given the R² scores from the regression comparison, these forecasts have low predictive power and should be used for trend analysis only, not for trading decisions. The models explain only 34% of price variance at best.</p>
+<h3>Important Caveats:</h3>
+<p>1. No Fundamentals: These models only use time as a predictor and ignore earnings, product launches, and market conditions.</p>
+<p>2. Black Swan Events: Unforeseen events regulatory changes, macro shocks, product failures are not captured.</p>
+<p>3. Market Regime Changes: The models assume historical patterns continue, which may not hold.</p>
+<p>4. Limited Accuracy: With R² = 0.34, the forecast has significant uncertainty.</p>
+<h3>Practical Use:</h3>
+<p>While these forecasts shouldn&#x27;t be used for trading decisions, they provide a useful baseline for trend analysis. The upward bias across all models suggests continuation of the long-term bullish trend, assuming no major disruptions to the business or market.</p>
+<h2>Investment Recommendations</h2>
+<p>Based on the comprehensive analysis conducted, here are key considerations for investors:</p>
+<h3>Long-Term Investors </h3>
+<p>1+ years:</p>
+<p>Positive Indicators:</p>
+<ul><li>Strong total return of 107% over 5+ years</li><li>Price above all major moving averages</li><li>Positive skew in daily returns more large gains than losses</li><li>Consistent performance in 2024-2025</li></ul>
+<p>Risk Factors:</p>
+<ul><li>Volatility spikes can exceed 5% in a single day</li><li>Fat-tailed distribution means extreme moves are more common than expected</li><li>Current price near all-time highs</li></ul>
+<p>Recommendation: Maintain or accumulate positions on pullbacks to the 200-day moving average. The long-term trend remains bullish, but consider position sizing given current elevated levels.</p>
+<h3>Short-Term Traders:</h3>
+<p>Technical Levels:</p>
+<ul><li>Support: 200-day MA  Resistance: All-time highs  Volatility Band: 1.5% - 2.5% is the normal range</li></ul>
+<p>Strategy Considerations:</p>
+<ul><li>Use options strategies that account for fat-tailed risk</li><li>Consider reducing position size during high volatility 3% periods</li><li>Bollinger Bands can help identify overbought/oversold conditions</li></ul>
+<h3>Risk Management:</h3>
+<p>Position Sizing: Given the potential for 5%+ daily moves, conservative position sizing is recommended.</p>
+<p>Stop Losses: Wider stops 5-8% may be necessary to avoid being shaken out by normal volatility.</p>
+<p>Diversification: AAPL&#x27;s strong performance should not lead to over-concentration in a single stock, regardless of quality.</p>
+<h2>Conclusion</h2>
+<p>AAPL has demonstrated strong performance over the 2021-2026 period, with a 107% total return driven by consistent execution and favorable market conditions. The technical analysis reveals a stock in a sustained uptrend with moderate volatility.</p>
+<p>Key Takeaways:</p>
+<p>1. Trend Remains Bullish: Price above all moving averages confirms long-term strength</p>
+<p>2. Moderate Volatility: 20-day volatility averaging 1.64% is manageable for most investors</p>
+<p>3. Positive Skew: Distribution of returns favors long-term holders</p>
+<p>4. Limited Predictability: Time-based regression models explain only 34% of price variance, highlighting the complexity of market dynamics</p>
+<p>Forward Outlook:</p>
+<p>The regression models suggest continuation of the uptrend, but investors should monitor fundamental factors including earnings growth, product innovation, and market conditions. The strong performance in 2024-2025 sets a high bar for 2026, and maintaining this momentum will require continued execution on strategic priorities.</p>
+<hr/>
+<p>Data Sources:</p>
+<ul><li>Historical price data from Yahoo Finance 2021-2026</li><li>All calculations performed using Polars for data processing</li><li>Charts generated using Plotly with professional styling</li></ul>
+<p>Disclaimer: This analysis is for informational purposes only and does not constitute investment advice. Past performance does not guarantee future results. Investors should conduct their own research and consider their risk tolerance before making investment decisions.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

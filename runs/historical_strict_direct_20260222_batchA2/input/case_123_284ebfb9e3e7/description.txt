@@ -1,0 +1,10 @@
+Units:  Number of Units, Not Seasonally Adjusted
+
+Frequency:  Monthly
+
+Notes:
+The National Association of Realtors monthly housing indicators are based on a representative sample of local boards and multiple listing services. Sales volume, inventory, and price levels for existing homes are measured for the US in aggregate and by census region. Existing homes, unlike new homes, are homes that are owned and occupied before coming onto the market.
+
+Inventory indicates the number of properties marked as "active" on the market or those pending sales. When a seller lists a property, it becomes counted as inventory.
+
+For more information, see Methodology: Existing-Home Sales.

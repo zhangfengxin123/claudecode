@@ -1,0 +1,23 @@
+[
+  {
+    "name": "monthly_sales.csv",
+    "local": "monthly_sales.csv",
+    "ok": true,
+    "error": "",
+    "size": 815
+  },
+  {
+    "name": "online_retail_II.xlsx",
+    "local": "online_retail_II.xlsx",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 2784867
+  },
+  {
+    "name": "retail_clean.parquet",
+    "local": "retail_clean.parquet",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 2615149
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "summerOly_athletes.csv",
+    "local": "summerOly_athletes.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 4898441
+  },
+  {
+    "name": "summerOly_medal_counts.csv",
+    "local": "summerOly_medal_counts.csv",
+    "ok": true,
+    "error": "",
+    "size": 38303
+  },
+  {
+    "name": "summerOly_programs.csv",
+    "local": "summerOly_programs.csv",
+    "ok": true,
+    "error": "",
+    "size": 7539
+  },
+  {
+    "name": "data_dictionary.csv",
+    "local": "data_dictionary.csv",
+    "ok": true,
+    "error": "",
+    "size": 3736
+  },
+  {
+    "name": "summerOly_hosts.csv",
+    "local": "summerOly_hosts.csv",
+    "ok": true,
+    "error": "",
+    "size": 1187
+  }
+]

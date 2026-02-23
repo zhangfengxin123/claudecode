@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：AB_NO_DESC_a77d543b4e14_20260217_074255</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：AB_NO_DESC_a77d543b4e14_20260217_074255</h1>
+    <p class='sub'>来源: /view/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;年卡改价实验效果分析报告&quot;
+description: &quot;深度解析年卡定价策略A/B测试实验结果，比较不同定价方案对收入、用户行为和付费转化率的影响&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-17&quot;
+</pre></details>
+<h1>年卡改价实验效果分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告对年卡改价实验的A/B测试结果进行了全面分析。实验包含对照组（A组）和三个实验组（B1、B2、B3），总计85,322个账号。分析显示，B1组表现最佳，在ARPU、ARPPU和总收入等关键指标上均领先其他组别，ARPU较对照组提升10.9%，ARPPU提升8.6%，总收入增长10.7%。实验结果表明，合理的定价调整能够显著提升单位用户价值和整体收入。</p>
+<h2>实验设计概览</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>实验的样本量和分组设计是否具有统计学意义？</li><li>对照组和实验组在用户基数上是否存在差异？</li></ul></details>
+<h3>实验分组结构</h3>
+<p>本次实验采用经典的A/B测试设计，将用户随机分配到四个组别：</p>
+<ul><li>A组（对照组）: 27,529个账号，维持原有定价策略</li><li>B1组（实验组1）: 27,460个账号，采用定价策略1</li><li>B2组（实验组2）: 18,217个账号，采用定价策略2</li><li>B3组（实验组3）: 18,116个账号，采用定价策略3</li></ul>
+<p>各组在账号数量、设备数量和活跃用户数等基础指标上保持相对平衡，确保实验结果的可比性。B1组与A组样本量相当，B2组和B3组样本量略小但仍然具有统计学意义。</p>
+<div class='plot-card'><div class='plot-meta'><code>total_revenue_by_group.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/total_revenue_by_group.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>收入表现分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>B1组的收入优势是否具有统计显著性？</li><li>收入增长主要来自用户数量增加还是ARPU提升？</li></ul></details>
+<h3>总收入对比</h3>
+<p>从总收入维度来看，各实验组的表现呈现明显差异：</p>
+<div class='table-wrap'><table><thead><tr><th>实验组</th><th>总收入 元</th><th>相对A组变化</th></tr></thead><tbody><tr><td>A组</td><td>69,417</td><td>基准</td></tr><tr><td>B1组</td><td>76,870</td><td>+10.7%</td></tr><tr><td>B2组</td><td>48,564</td><td>-30.0%</td></tr><tr><td>B3组</td><td>47,142</td><td>-32.1%</td></tr></tbody></table></div>
+<p>核心发现：</p>
+<ul><li>B1组表现突出：收入达到76,870元，较A组增长7,453元（+10.7%）</li><li>B2组和B3组收入下降：主要受样本量影响，其账号数较A组减少约33%</li><li>考虑样本量因素，需要进一步分析单位用户收入指标</li></ul>
+<h3>ARPU与ARPPU对比</h3>
+<p>为了排除样本量影响，我们对比单位用户收入指标：</p>
+<div class='plot-card'><div class='plot-meta'><code>arpu_arppu_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/arpu_arppu_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>ARPU（平均每活跃用户收入）：</p>
+<ul><li>B1组：5.61元（最高）</li><li>B2组：5.35元</li><li>B3组：5.22元</li><li>A组：5.06元（基准）</li></ul>
+<p>ARPPU（平均每付费用户收入）：</p>
+<ul><li>B1组：64.11元（最高）</li><li>B2组：61.55元</li><li>A组：59.03元</li><li>B3组：59.00元</li></ul>
+<p>关键洞察：</p>
+<ul><li>B1组的ARPU较A组提升10.9%（0.55元），表明定价策略1有效提升了单位活跃用户价值</li><li>B1组的ARPPU较A组提升8.6%（5.08元），说明付费用户的平均消费金额显著增加</li><li>B2组ARPU提升5.7%，但ARPPU提升4.2%，表现次之</li><li>B3组在两项指标上均略高于A组，但提升幅度较小</li></ul>
+<h2>付费转化分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪个定价策略最能促进付费转化？</li><li>不同订阅类型的付费率变化趋势如何？</li></ul></details>
+<h3>总体付费率</h3>
+<p>各实验组的总体付费率（付费设备数/活跃设备数）：</p>
+<div class='table-wrap'><table><thead><tr><th>实验组</th><th>付费率</th><th>相对A组变化</th></tr></thead><tbody><tr><td>A组</td><td>8.58%</td><td>基准</td></tr><tr><td>B1组</td><td>8.75%</td><td>+0.17pp</td></tr><tr><td>B3组</td><td>8.85%</td><td>+0.27pp</td></tr><tr><td>B2组</td><td>8.70%</td><td>+0.12pp</td></tr></tbody></table></div>
+<p>值得注意的是，虽然B1组在收入指标上表现最佳，但B3组的付费率最高（8.85%），较A组提升0.27个百分点。这表明不同定价策略可能影响了用户的付费意愿，但付费率与收入的提升并非完全正相关。</p>
+<h3>订阅类型付费率对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>payment_rate_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/payment_rate_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>深入分析不同订阅类型的付费率：</p>
+<p>连续包月付费率：</p>
+<ul><li>A组：7.52%</li><li>B1组：7.37%（-0.15pp）</li><li>B2组：7.38%（-0.14pp）</li><li>B3组：7.84%（+0.32pp）</li></ul>
+<p>一年卡付费率：</p>
+<ul><li>B1组：1.00%（最高）</li><li>B2组：0.91%</li><li>A组：0.63%</li><li>B3组：0.42%</li></ul>
+<p>两年卡付费率：</p>
+<ul><li>B3组：0.133%（最高）</li><li>A组：0.044%</li><li>B2组：0.022%</li><li>B1组：0.015%</li></ul>
+<p>关键发现：</p>
+<ul><li>B1组在一年卡付费率上表现突出，达到1.00%，较A组提升58%</li><li>B3组在连续包月和两年卡付费率上均领先，尤其是两年卡付费率是A组的3倍</li><li>B1组的连续包月付费率略有下降，可能是因为部分用户转向了一年卡</li><li>两年卡虽然单价高，但付费率普遍较低，属于高价值低频产品</li></ul>
+<h2>订阅类型分布分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>不同定价策略对用户订阅类型选择有何影响？</li><li>连续包月与长期卡的替代关系如何？</li></ul></details>
+<h3>订阅订单数量分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>subscription_type_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/subscription_type_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从订单数量来看，连续包月仍是主要的订阅方式：</p>
+<div class='table-wrap'><table><thead><tr><th>订阅类型</th><th>A组</th><th>B1组</th><th>B2组</th><th>B3组</th></tr></thead><tbody><tr><td>连续包月</td><td>863</td><td>872</td><td>580</td><td>629</td></tr><tr><td>一年卡</td><td>73</td><td>115</td><td>68</td><td>34</td></tr><tr><td>两年卡</td><td>5</td><td>2</td><td>2</td><td>11</td></tr></tbody></table></div>
+<p>洞察：</p>
+<ul><li>连续包月订单数在各组中占主导地位（约86-88%）</li><li>B1组的一年卡订单数达到115个，较A组增长57.5%，说明定价策略1有效促进了一年卡转化</li><li>B3组的两年卡订单数最多（11个），是A组的2.2倍，表明定价策略3可能更适合长期卡推广</li><li>B1组的连续包月订单数略高于A组，但一年卡的大幅增长才是其收入增长的主要驱动力</li></ul>
+<h2>用户活跃与付费行为</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>活跃用户与付费用户的转化漏斗是否健康？</li><li>各组的用户活跃度是否存在显著差异？</li></ul></details>
+<h3>活跃用户与付费用户对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>active_vs_paying_users.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/active_vs_paying_users.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>实验组</th><th>活跃设备数</th><th>付费设备数</th><th>付费转化率</th></tr></thead><tbody><tr><td>A组</td><td>13,709</td><td>1,176</td><td>8.58%</td></tr><tr><td>B1组</td><td>13,697</td><td>1,199</td><td>8.75%</td></tr><tr><td>B2组</td><td>9,074</td><td>789</td><td>8.70%</td></tr><tr><td>B3组</td><td>9,032</td><td>799</td><td>8.85%</td></tr></tbody></table></div>
+<p>观察：</p>
+<ul><li>各组的活跃用户数与账号数量成正比，说明用户活跃度基本一致</li><li>付费转化率在各组间差异较小（8.58%-8.85%），表明定价调整对付费转化率影响有限</li><li>B3组的付费转化率最高，但ARPU和ARPPU相对较低，可能是因为该组吸引了更多低价值付费用户</li></ul>
+<h2>综合性能评估</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如何平衡ARPU、ARPPU和付费率之间的关系？</li><li>哪个定价策略综合表现最优？</li></ul></details>
+<h3>ARPU与付费率关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>arpu_vs_payment_rate.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0e441b689a78e63f74a89baadb3411d738bcbb2f1f19e40c095ff9019e26d702/assets/arpu_vs_payment_rate.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>通过散点图分析ARPU与付费率的关系，可以得出以下结论：</p>
+<ul><li>B1组：高ARPU（5.61）+ 中等付费率（8.75%）= 高收入表现</li><li>B3组：中等ARPU（5.22）+ 高付费率（8.85%）= 收入表现中等</li><li>A组：低ARPU（5.06）+ 低付费率（8.58%）= 收入表现基准</li><li>B2组：中等ARPU（5.35）+ 中等付费率（8.70%）= 收入表现中等偏上</li></ul>
+<p>权衡分析：</p>
+<ul><li>提高ARPU比提高付费率对总收入的影响更大</li><li>B1组成功实现了ARPU的显著提升，同时保持付费率不降，是最佳策略</li><li>B3组通过提高付费率来弥补ARPU的不足，但效果不如B1组</li></ul>
+<h2>实验结论与建议</h2>
+<h3>核心发现</h3>
+<p>1. B1组定价策略最优</p>
+<p>    总收入增长10.7%（+7,453元）</p>
+<p>    ARPU提升10.9%（+0.55元）</p>
+<p>    ARPPU提升8.6%（+5.08元）</p>
+<p>    一年卡付费率提升58%</p>
+<p>2. 收入增长驱动因素</p>
+<p>    主要驱动力：一年卡订单数增长57.5%</p>
+<p>    次要驱动力：付费用户平均消费金额提升</p>
+<p>    付费转化率提升相对较小（+0.17pp）</p>
+<p>3. 不同定价策略的影响</p>
+<p>    B1组：促进一年卡转化，适合追求短期收入增长</p>
+<p>    B2组：均衡策略，各项指标均有小幅提升</p>
+<p>    B3组：促进长期卡转化，适合追求用户生命周期价值</p>
+<h3>业务建议</h3>
+<p>短期策略（3-6个月）：</p>
+<ul><li>全面推广B1组定价策略，预计可提升总收入10%以上</li><li>加强一年卡的营销推广，引导用户从连续包月转向一年卡</li><li>监控付费率变化，确保ARPU提升不会导致用户流失</li></ul>
+<p>中长期策略（6-12个月）：</p>
+<ul><li>对不同用户画像实施差异化定价策略</li><li>对高价值用户推广B3组策略，提升两年卡渗透率</li><li>对中等价值用户推广B1组策略，提升一年卡转化率</li></ul>
+<p>风险控制：</p>
+<ul><li>持续监控用户流失率和续费率</li><li>定期评估ARPU提升对用户满意度的长期影响</li><li>预留20%用户继续使用原定价，作为持续对照组</li></ul>
+<h3>后续实验方向</h3>
+<p>1. 细分人群测试：按用户活跃度、历史付费金额进行分层测试</p>
+<p>2. 定价区间优化：在B1组基础上微调价格，寻找最优定价点</p>
+<p>3. 组合策略测试：尝试连续包月+长期卡的组合定价</p>
+<p>4. 动态定价探索：基于用户行为数据的个性化定价</p>
+<hr/>
+<p>数据说明：</p>
+<ul><li>本分析基于实验期间的实际数据，样本量充足（n=85,322账号）</li><li>所有数据已清洗并保存在 </li><li>详细数据字典和统计信息请参考 </li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

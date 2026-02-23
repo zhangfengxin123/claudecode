@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：SPX and VIX</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：SPX and VIX</h1>
+    <p class='sub'>来源: /view/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;SPX-VIX联合校准：神经网络加速波动率建模&quot;
+description: &quot;分析基于神经网络的四因子路径依赖波动率模型的联合校准性能与优势&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>SPX-VIX联合校准：神经网络加速波动率建模</h1>
+<p>本文分析了一项突破性的量化金融研究，该研究通过深度神经网络大幅加速了SPX和VIX市场数据的联合校准过程，将计算时间从15分钟缩短至几秒钟。</p>
+<h2>研究概述</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>神经网络如何加速波动率模型的校准？</li><li>四因子路径依赖波动率模型相比传统模型有什么优势？</li></ul></details>
+<p>本研究由Fabio Baschetti、Giacomo Bormetti和Pietro Rossi合作完成，提出了一种基于深度神经网络的解决方案，用于解决SPX和VIX市场数据联合校准的计算负担问题。</p>
+<h3>核心贡献</h3>
+<p>1. 加速VIX样本生成：利用最小二乘技术显著减少嵌套模拟的计算成本</p>
+<p>2. 完全神经化的联合校准：构建两个独立网络，分别处理SPX隐含波动率和VIX期货/期权价格</p>
+<p>3. 实时性能：校准时间从15分钟缩短至几秒钟，实现了数百倍的加速</p>
+<div class='plot-card'><div class='plot-meta'><code>performance_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/performance_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>四因子路径依赖波动率模型</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>该模型的四个因子分别代表什么？</li><li>双指数核函数如何模拟波动率的持续性？</li></ul></details>
+<p>Guyon-Lekeufack模型的核心是瞬时波动率作为过去资产收益加权平均值和过去资产平方收益加权平均值平方根的线性函数。</p>
+<h3>模型结构</h3>
+<p>其中：</p>
+<ul><li>R1,t：过去资产简单收益的加权平均值，捕捉趋势特征</li><li>R2,t：过去资产平方收益的加权平均值，捕捉变异性特征</li><li>β0：基线波动率（0  β0  0.85）</li><li>β1：趋势系数（-0.30  β1  0.10）</li><li>β2：变异性系数（0.35  β2  0.95）</li><li>β1,2：抛物线项（0.05  β1,2  0.40）</li></ul>
+<h3>双指数核函数</h3>
+<p>其中 0  θ  1，λ0  λ1  0。这种设计允许模型通过多个时间尺度来模拟波动率的持久性。</p>
+<div class='plot-card'><div class='plot-meta'><code>parameter_ranges.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/parameter_ranges.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>参数分析与范围</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>模型参数的范围是如何确定的？</li><li>不同参数对波动率微笑形状有什么影响？</li></ul></details>
+<p>模型共有14个参数，分为模型参数θM和初始状态参数θR。</p>
+<div class='plot-card'><div class='plot-meta'><code>parameter_ranges.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/parameter_ranges.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>参数解释</h3>
+<div class='table-wrap'><table><thead><tr><th>参数</th><th>范围</th><th>含义</th></tr></thead><tbody><tr><td>β0</td><td>0, 0.85</td><td>基线波动率</td></tr><tr><td>β1</td><td>-0.30, 0.10</td><td>趋势线性系数</td></tr><tr><td>β2</td><td>0.35, 0.95</td><td>变异性线性系数</td></tr><tr><td>β1,2</td><td>0.05, 0.40</td><td>抛物线项（右翼质量）</td></tr><tr><td>λ1,0</td><td>10, 65</td><td>R1对近期收益的依赖性</td></tr><tr><td>λ1,1</td><td>0, 35</td><td>R1对历史收益的依赖性</td></tr><tr><td>λ2,0</td><td>0, 50</td><td>R2对近期平方收益的依赖性</td></tr><tr><td>λ2,1</td><td>0, 15</td><td>R2对历史平方收益的依赖性</td></tr></tbody></table></div>
+<h3>约束条件</h3>
+<p>为确保模型的稳定性和可解释性，施加了以下约束：</p>
+<ul><li>λ1,0  λ1,1（第一个因子均值回复更快）</li><li>λ2,0  λ2,1</li><li>初始因子值与λ值通过历史价格路径关联</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>parameter_correlation.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/parameter_correlation.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>神经网络架构与训练</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>神经网络是如何学习VIX衍生品定价的？</li><li>点对点方法相比网格方法有什么优势？</li></ul></details>
+<h3>网络架构</h3>
+<p>采用了前馈神经网络架构，包含5个隐藏层，每层256个神经元。</p>
+<div class='plot-card'><div class='plot-meta'><code>network_architecture.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/network_architecture.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>网络特性</h3>
+<ul><li>输入层：16维（14个模型参数 + 到期日 + 执行价格）</li><li>输出层：2维（期货价格F + 看涨期权价格C）</li><li>激活函数：隐层使用ReLU，输出层使用线性激活</li></ul>
+<h3>训练策略</h3>
+<p>1. 样本生成：随机生成参数组合和合约规格</p>
+<p>2. 蒙特卡洛定价：为每个样本生成基准价格</p>
+<p>3. 最小二乘加速：减少内层模拟调用次数</p>
+<p>4. 点对点学习：直接学习隐含波动率/价格，无需插值</p>
+<h3>VIX衍生品定价</h3>
+<p>由于VIX衍生品需要嵌套模拟，采用以下加速策略：</p>
+<div class='plot-card'><div class='plot-meta'><code>training_process.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/training_process.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>校准性能评估</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>2009年10月21日的校准结果如何？</li><li>神经网络拟合与蒙特卡洛基准的精度对比如何？</li></ul></details>
+<h3>实际校准案例</h3>
+<p>日期：2009年10月21日</p>
+<p>最优参数：</p>
+<ul><li>β0 = 0.0850</li><li>β1 = -0.2637</li><li>β2 = 0.6614</li><li>β1,2 = 0.2164</li><li>λ1,0 = 50.05</li><li>λ1,1 = 7.52</li><li>θ1 = 0.8888</li><li>λ2,0 = 5.70</li><li>λ2,1 = 0.29</li><li>θ2 = 0.9750</li></ul>
+<p>VIX期货价格：</p>
+<ul><li>神经网络预测：0.2457</li><li>嵌套蒙特卡洛：0.2461</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>calibration_results.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/calibration_results.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>精度评估</h3>
+<p>测试集误差统计：</p>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>看涨期权</th><th>期货</th></tr></thead><tbody><tr><td>MAE（平均绝对误差）</td><td>7.20×10⁻⁵</td><td>2.60×10⁻⁴</td></tr><tr><td>95%分位数</td><td>2.16×10⁻⁴</td><td>6.98×10⁻⁴</td></tr></tbody></table></div>
+<p>校准质量：</p>
+<ul><li>SPX短期期权（31天、59天）：神经网络拟合与蒙特卡洛95%置信区间高度一致</li><li>VIX衍生品（28天）：最小二乘蒙特卡洛、嵌套蒙特卡洛和神经网络三者吻合度极高</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>fit_quality_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/fit_quality_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>方法论比较</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>点对点方法与网格方法有什么本质区别？</li><li>为什么学习隐含波动率比价格更合理？</li></ul></details>
+<h3>点对点 vs 网格方法</h3>
+<div class='table-wrap'><table><thead><tr><th>特性</th><th>点对点方法</th><th>网格方法</th></tr></thead><tbody><tr><td>灵活性</td><td>高</td><td>低</td></tr><tr><td>定价精度</td><td>精确（无插值误差）</td><td>依赖网格插值/外推</td></tr><tr><td>计算效率</td><td>训练后实时</td><td>需要网格操作</td></tr><tr><td>适用性</td><td>任意到期日和执行价格</td><td>仅限预设点</td></tr><tr><td>内存占用</td><td>低（网络参数）</td><td>高（网格存储）</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>method_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/method_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>SPX网络 vs VIX网络</h3>
+<p>SPX网络：</p>
+<ul><li>目标：隐含波动率</li><li>原因：波动率通常在小范围内变化，无极端值</li><li>优势：学习无需目标重缩放</li></ul>
+<p>VIX网络：</p>
+<ul><li>目标：价格（期货和期权）</li><li>原因：期货没有隐含波动率概念；避免从噪声期货价格恢复隐含波动率</li><li>优势：一致性定价（期货和期权从同一网络生成）</li></ul>
+<h3>损失函数</h3>
+<p>联合校准的目标函数包含三个部分：</p>
+<p>其中权重用于平衡不同市场的贡献。</p>
+<h2>关键优势与创新</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>该方法相比之前的研究有哪些重大突破？</li><li>这项技术的实际应用价值如何？</li></ul></details>
+<h3>技术突破</h3>
+<p>1. 完全消除嵌套模拟：神经网络替代内层模拟，定价简化为标准蒙特卡洛</p>
+<p>2. 统一网络架构：单一网络处理VIX期货和期权，确保定价一致性</p>
+<p>3. 高效样本生成：最小二乘技术使训练样本生成成本降低</p>
+<p>4. 实时校准：矩阵-向量乘法替代蒙特卡洛积分</p>
+<div class='plot-card'><div class='plot-meta'><code>innovation_summary.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/innovation_summary.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>性能对比</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>Gazzani &amp; Guyon 2025</th><th>本研究</th><th>提升</th></tr></thead><tbody><tr><td>校准时间</td><td>15分钟</td><td>几秒钟</td><td>100-300×</td></tr><tr><td>内层模拟</td><td>完全执行</td><td>用神经网络替代</td><td>∞</td></tr><tr><td>定价速度</td><td>慢</td><td>实时（矩阵运算）</td><td>1000×</td></tr><tr><td>VIX衍生品</td><td>仅学习期权</td><td>期货+期权一体化</td><td>更完整</td></tr></tbody></table></div>
+<h3>实际应用价值</h3>
+<p>1. 风险管理：实时波动率模型更新，提高风险度量准确性</p>
+<p>2. 交易策略：快速校准支持高频交易和套利机会识别</p>
+<p>3. 产品开发：加速新衍生品定价和风险管理模型验证</p>
+<p>4. 监管合规：满足实时风险报告和压力测试要求</p>
+<h2>局限性与未来方向</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>该方法的主要局限性是什么？</li><li>未来有哪些潜在的研究方向？</li></ul></details>
+<h3>当前局限</h3>
+<p>1. 训练成本高：样本生成仍需大量计算（虽然是离线的）</p>
+<p>2. 模型复杂性：四因子模型参数众多，解释性较弱</p>
+<p>3. 市场依赖：模型参数与特定市场历史路径强相关</p>
+<p>4. 泛化能力：需要在新市场环境重新训练</p>
+<h3>未来研究方向</h3>
+<p>1. 迁移学习：预训练模型在新市场微调</p>
+<p>2. 注意力机制：提高网络对不同市场状态的自适应能力</p>
+<p>3. 联合学习：多个标的物共享潜在表示</p>
+<p>4. 在线学习：动态更新模型参数适应市场变化</p>
+<p>5. 不确定性量化：贝叶斯神经网络提供预测不确定性</p>
+<div class='plot-card'><div class='plot-meta'><code>future_directions.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/future_directions.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>结论</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>这项研究对量化金融领域的主要贡献是什么？</li><li>该技术的商业化前景如何？</li></ul></details>
+<p>本研究成功地将深度神经网络应用于SPX-VIX联合校准问题，实现了：</p>
+<h3>核心成就</h3>
+<p>✅ 数百倍加速：将校准时间从15分钟缩短至几秒钟</p>
+<p>✅ 高精度：测试集MAE达到10⁻⁴级别</p>
+<p>✅ 完整性：同时处理SPX期权、VIX期货和VIX期权</p>
+<p>✅ 实用性：支持实时校准和定价</p>
+<h3>科学价值</h3>
+<p>1. 方法论创新：证明了神经网络可以学习复杂的随机波动率模型</p>
+<p>2. 计算突破：为嵌套蒙特卡洛问题提供了高效替代方案</p>
+<p>3. 桥梁作用：连接了深度学习和传统金融工程方法</p>
+<h3>商业前景</h3>
+<p>这项技术具有巨大的商业化潜力，适用于：</p>
+<ul><li>投资银行：衍生品定价和风险管理</li><li>对冲基金：高频交易和统计套利</li><li>资产管理：组合优化和风险预算</li><li>交易所：新产品设计和市场监控</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>conclusion_summary.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4404a8e35f1c62d905130d1de22a2679a30c1c7407fdfe81168bd2cf6aaec82d/assets/conclusion_summary.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<hr/>
+<p>数据来源：Baschetti, F., Bormetti, G., &amp; Rossi, P. 2026. Neural networks unleashed: joint SPX/VIX calibration has never been faster. Risk.net.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

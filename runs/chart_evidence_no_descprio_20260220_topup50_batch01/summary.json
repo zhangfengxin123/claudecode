@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-02-20T14:19:57",
+  "sample_size": 25,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "f9bc8f2ae5938e4838780b239f29dd649d5c565a9bf7729fd13bcd50f2319526",
+      "title": "2026-02-03",
+      "chart_count": 14,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_f9bc8f2ae593.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2",
+      "title": "genre_mapping",
+      "chart_count": 16,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_c635ad8e8cdd.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "7d44e51254facd240c2889c1abdd1207a70f531dafe8d80917e56dc50d72da73",
+      "title": "YC Test",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_7d44e51254fa.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3",
+      "title": "BMW_Data",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_b733b0d98681.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "75b56ffe89c9d1d3706d55847e722d1690e1afb352edd2902a64258323f2b573",
+      "title": "netflix_titles",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_75b56ffe89c9.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34",
+      "title": "anime",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_1aa38d48eff3.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "e13cd668cb257bab72be00d8fed7a8e0ac4401eca28c4bda2c63a6f6bad331e5",
+      "title": "anime",
+      "chart_count": 15,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_e13cd668cb25.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "f34e0437d3853f431b981e52294e6482343227d7ced441eb60afa80841b31d02",
+      "title": "netflix_titles",
+      "chart_count": 15,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_f34e0437d385.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "370d57547c281f69e13248817dadd07df50e09f2cf4942e6aa116986a74c8d4f",
+      "title": "YC Companies",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_370d57547c28.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3",
+      "title": "moltbook_top_posts",
+      "chart_count": 9,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_fdd76ac16891.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "e6945f31ddf9f01128aac4579387c0c582077b9e12a856e91681898a2e08b950",
+      "title": "lamborghini_sales_2020_2025 2",
+      "chart_count": 12,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_e6945f31ddf9.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a",
+      "title": "Diabetes_Mexico",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_aed7b572d8e4.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "ce61adffe0355772acde99b5f5f08c99f826fa26ee70191c52098243340ed7d7",
+      "title": "NVIDIA STOCK DAILY TEST 2",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_ce61adffe035.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be",
+      "title": "Bank_Churn_Classification_Dataset",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_82f77ce7126c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "89081bfde87937c6a102c2d0fb24a3e3b7f132f56a60e6e180488ede087c07a1",
+      "title": "lamborghini_sales_2020_2025",
+      "chart_count": 15,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_89081bfde879.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "26177fb2c9407047ac8851c830e8cf44f786fbefcede7392e1b80ef5e3ffeffd",
+      "title": "moltbook_top_posts",
+      "chart_count": 10,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_26177fb2c940.html",
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "case_id": "c2bcdeec152405a6623419d62142e24fb7bd532f7e666e12a2b04701fec62529",
+      "title": "moltbook_top_posts",
+      "chart_count": 23,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_c2bcdeec1524.html",
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "case_id": "3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd",
+      "title": "raw",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_3ef61fb3354b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 19,
+      "case_id": "79a148d97dc00ce36fe5cbd8649fcb3ab6bbba0435bb5920741ba2fc6ba99ed2",
+      "title": "muyuan",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_79a148d97dc0.html",
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "case_id": "027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1",
+      "title": "top 5 tech stock analysis",
+      "chart_count": 21,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_027164fcbdf7.html",
+      "status": "ok"
+    },
+    {
+      "idx": 21,
+      "case_id": "128c623201ff1881602dc7aaa5754f2a7b57fab006757c7e33b5a92f4b7e85ea",
+      "title": "业绩预告",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_021_128c623201ff.html",
+      "status": "ok"
+    },
+    {
+      "idx": 22,
+      "case_id": "eff57f7b8bf57c13263316caa44066b1f63084ebbdc92d5924582b0b2a0991a0",
+      "title": "USUAL MONEY",
+      "chart_count": 4,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_022_eff57f7b8bf5.html",
+      "status": "ok"
+    },
+    {
+      "idx": 23,
+      "case_id": "ebf6a1825a14e913e7b2201316c86789af23609b8e5c679057b0420408a6f490",
+      "title": "浙综长数据集",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_023_ebf6a1825a14.html",
+      "status": "ok"
+    },
+    {
+      "idx": 24,
+      "case_id": "4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860",
+      "title": "moltbook_top_5000_posts",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_024_4dd06b826ae0.html",
+      "status": "ok"
+    },
+    {
+      "idx": 25,
+      "case_id": "7ac205b8023d75351529b98dcec97976cd5b7dcec6b033aae20bb8f02db96561",
+      "title": "中国房地产2",
+      "chart_count": 5,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_025_7ac205b8023d.html",
+      "status": "ok"
+    }
+  ]
+}

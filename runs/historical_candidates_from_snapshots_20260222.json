@@ -1,0 +1,1045 @@
+{
+  "generated_at": "now",
+  "source_files": [
+    "recent_projects_20260208.json",
+    "recent_projects_20260217.json",
+    "recent_projects_20260217_after_backfill.json",
+    "recent_projects_20260217_dedup_candidates.json",
+    "recent_projects_20260217_dedup_pick40.json",
+    "recent_projects_20260217_new_pick40_after_backfill.json",
+    "recent_projects_20260217_new_pick40_after_backfill_resume.json",
+    "recent_projects_20260217_topup20_candidates.json",
+    "recent_projects_20260219.json",
+    "recent_projects_20260219_new_candidates_no_desc_priority.json",
+    "recent_projects_20260219_new_candidates_no_desc_priority_meta.json",
+    "recent_projects_20260220_topup_chartful_pick25.json",
+    "recent_projects_20260220_topup_chartful_pick25_meta.json",
+    "recent_projects_20260220_topup_chartful_pick50.json",
+    "recent_projects_20260220_topup_chartful_pick50_meta.json"
+  ],
+  "total_candidates": 619,
+  "existing_ids": 415,
+  "new_candidates": 204,
+  "results": [
+    {
+      "case_id": "f067062d1d6f99056d43747bc0945f0618e50d9636d1627a1512230ed1de76db",
+      "title": "1",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b0962d2ac8b358fe4e61ab8263a77a0703400feca2340c09f7b2195cc32cd77a",
+      "title": "FANNG SWE Interview Questions",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "187544eb311b83a2f86ef0f147b19d2c6b7c963a449b1ce58e298375a88851de",
+      "title": "测试",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ed5083e337ecbe859b3f0b034376594bf5b6947ac04aa0f19bf7fa03483a1939",
+      "title": "Data Scientist Email list",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b68ed4cf67ba226cf8cad722cf6dd0b9401b01fa000322fac71212b1baf73c5b",
+      "title": "US strikes Iran by...?",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "a0388589b543f862eee2edfc538ccce13c12c8ce883231c243127956eb4ac747",
+      "title": "Google SWE Summer Internship Questions",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "e44bc25700e0bcf9c369f82a3dc349084261cc48bf1f68f33767d86a49678c43",
+      "title": "大乐透透",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "7156d5dd07b3690c1dc1adc38f85a01cd45dd8bbb8ef15528dedd08444997494",
+      "title": "aowei",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "c659dc3ff912e7572386204791a41ce1093bc8c90545993512656f753b9f162c",
+      "title": "Semi-Autonomous Mathematics Discovery",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6d9246c6ba87a9754ce2c0a4679ab7a193950318eb4e522187d7a0dc289c9072",
+      "title": "Toni Kroos",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "17a3f5147e9a11f22fae5c3329f8967a93258617732ddd7f29118360921673c3",
+      "title": "People who appear in the Epstein FIles",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f54512c9349152fc2bf87c3dba966ca6a469cbd832d8469d7262190917b4f419",
+      "title": "Modric Data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9fb31ab12ad36963710563d1a0eaea516e4e8e45d5227d1c9fd0adabcb457f0b",
+      "title": "JP Morgan China Housing market",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "875ecc99290afa1f3555571054a34bb28e58ca59a96c18dc6fc85bb02e5c6c26",
+      "title": "LLM quantization",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6efa134ba9c3b3dd798edb106ecb752e3fc6e94197983dd52b0fa8fb160b5ad7",
+      "title": "publication",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f598a693dadcad711a536b804e826cf815763528e7f576fd6c900acb02531823",
+      "title": "publication",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "136c72dbf0a3182a32d164520d7707407976c8af7d40c37d959db2db1eceab1a",
+      "title": "A16Z",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "35116e74202a925e4b6e916af33b37232bc10ed456d5831d1f55dc45ecca13cf",
+      "title": "Ronaldo Goal",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "abc39c271d8fc9838a4cf63532a2d6f9c2b9f9b3b95bb398e15b57147e6ce164",
+      "title": "Hacker News Jan 2026",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "a2ec4e98a423c0950e3236b23377e39ae177f57d32a31c24c1f53a605744261b",
+      "title": "Hacker News trends Jan. 2026",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "cb3d6299eb6eb43dfd1d0eea4ba23f64c6cabd6d23433494b35d306ddcb2db4e",
+      "title": "data sets of ct pet scan of brain tumors",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b6482450f26d33f12b5eedb96cbc6a2392e25223651f1641fc3349d80dd572ad",
+      "title": "Moltbook Top Posts and Platform Analysis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "26168bc6628f39a61bf7483602876d10866f35f170fe4d2f83f9bce0e37b4e6e",
+      "title": "MoltBook Top post",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "e5b6d183996831530affe4f20b0b34ea917a026f72060885034267e7e91df878",
+      "title": "香港賽馬資料",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "fa609d009e05732ee17f935bc4e899e2828b1e13f86088ef9e895eebaa563153",
+      "title": "YC start up",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5d735893c5a87c345b79598d24b553f69a10a3a7bd772c8ba55a2e0d16bf7e59",
+      "title": "香港銀行",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ad435068a0ae66caf23f86e1b4a8f37a13054a76c228464fc38382aced2663af",
+      "title": "香港銀行",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f3c5566446e89672d5330cbd18bce77c96093d07918f4e89c09c124819d7074d",
+      "title": "用户反馈话题文章分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "40dd9b1e3692eea9040a26b4a6a9ffbf36eefb9ee335187e2a3e0ffa36cf4b52",
+      "title": "AMINO四期基金分析报告",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "521e826c0141f1117a8a08104cc37c2e93a1f9ffd762e55d8756418532a01d3c",
+      "title": "Moltbook话题及互动机制深挖",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ba9bd4d9afe8d4240858888f6710eff68be6f0420285ca0d00a0166135c73e96",
+      "title": "Moltbook话题及互动机制深挖",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "686bd117d2db6e99ad0e011631061dac672fdedd9144076bbfb612a56867f41c",
+      "title": "moltbook话题及互动机制深挖",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "831a72591a60afae75ed5d83733d1ddef6aec637c6e13ecf31ff4945b0e0e46c",
+      "title": "lkdin-project",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f5688107313bfd1d51cb4859c33efd089c204cb49cd1d5fd733948cf9b566225",
+      "title": "moltbook_top_5000_posts",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "959d9168fb2ec81a03ca01fa8a505c072298f4e21d806dc61f68d0e48735afce",
+      "title": "正餐",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "df629f96bdf46110718c0b74ab7f2782a226be34a3c78d20fe21802a5c6e5029",
+      "title": "water_area_and_human",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6868eb661d102f21405412b2c7f435d814c96ae313f9458e146db2118e88c160",
+      "title": "nigerian_retail_and_ecommerce_refund_and_return_logs",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "cac12ba26a3c48749c560eb3d2366ef54fe896bbcb187cbab32b5fd11269d2be",
+      "title": "600269_20251128_RBEY",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "2e78e3d8c46f196d44821a9643fb0f09aacbc83bda501b8a5ca4f5d796ad8653",
+      "title": "aemo",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "eb38c2e4147ae3f33ff5ef8fc8cf16d20ace60bb722ec4bc594e8e855eb81448",
+      "title": "China Population And Education",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "251f8c9b9e0b7545cce77ce41089ad3b97267711f30cfdcc98d3d5585b88912b",
+      "title": "Recursive_Language_Models_2512",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d2e66871ec2bf607588224d61bfa0398d1009f167e275027dc930b9095783aff",
+      "title": "中国银行理财",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "0df40d6d2dda31e842ed06e4df4937250b1d942db395f3db3fe84c691ce6b44a",
+      "title": "中国银行理财",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6381fb987ba0cc96bba9c075de5234a7cee1279ed8b05854de8dbe3f5bdcc5d6",
+      "title": "中国银行理财",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "e0927eef40104fb96348f2b1c6b5435aa66784c534b90c63c3d56b8d62b43f28",
+      "title": "中国银行理财",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "09644c46439932adc15a298431f939441f0f3bb413f5a9321707760a806057d6",
+      "title": "中国银行理财",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "915b324d5042b7caf48f95ed9e301cd74c421afe84432a5edd0389682644756b",
+      "title": "流量数据1",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d59067715dbfc08570886c03518dd6476cf9fe8f1648836b8268c0423c5f787a",
+      "title": "2026_MCM_Problem_C_Data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d784307ca42fca93fee79bf11fb03c682bfd963d9ab969694836b20d2cafba0d",
+      "title": "2026_MCM_Problem_C_Data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "09d56fa75e81dc55900396fff8b58a05b58563ef7d46195e0ad5ff9163461f0f",
+      "title": "历史人气指数",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b11d694dda12b40e6e2a09a779f06ecb46e330fca6446bf0b56fa5eea3f596d6",
+      "title": "polymarket all markets",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "1997f8373ed536e9b568eb87ee2e84073c49528127137bf228ba79900cced468",
+      "title": "数学建模",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "428fe320347354c13dfbd472e77ebf0251470fef070ce4d45fadccb9db0186f6",
+      "title": "事业编",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ca2311ccca9238c53dccb87f2827f878d518c365db6cfd8bf1b8312c418cbe58",
+      "title": "prices_monthly",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9ba746a70255b52161e0f3f15cb43a8d88785e1ced796aa82fc22c7c681b8309",
+      "title": "谷歌季度财报分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "29dce45317e3ef99d275569b74b6d794082c5f58f0dfd5a08dc0e1ea4bae7ca2",
+      "title": "data with the stars",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "7b95e2a89ab2e0b909ea42cb76b965356e44e802454691362ade1f0b8ef17ec9",
+      "title": "2026_MCM_Problem_C_Data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b45fa0d251a05f3482a904c482776b14df2a3533765f6d5289bf16d73175c550",
+      "title": "HelloWorld",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "4fcde8129ef39489ac0eba15eeeabc996e1c3b2395077bab280858c4eb6e9712",
+      "title": "economic-research-chatgpt-usage-paper",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "8cc3f0ffc3109ec476107701ae0aef16f50fa5bd90dfef367658aa8d81472721",
+      "title": "economic-research-chatgpt-usage-paper",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d797ffeb1904a38f6f68a13ae5333633433546b90a42a7c2f53eb3a2a27b753f",
+      "title": "LastFM Contextual Network Analysis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "a5ee9a46bee8a738e57fd1cbebcd1b3593930d2e3920e8c9be95451a2bc7540c",
+      "title": "qog data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "36826a0c507cf11c05aca26f415f2cb053753677770d8c8978369f44776627a3",
+      "title": "qog data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "48af59cf4368bd9135fbb51bc0eccc1dd90742073a29bd63a72d7255519dbd59",
+      "title": "销售",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "772d307de40758878698c39686250d781992db4cfbaac47dbc52342df27c1b47",
+      "title": "BRK",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "0f33ecc44f580f696eeb93b252f8f44125a6adf4ae0dc367e27c3b7ad749a687",
+      "title": "陕西能源职业技术学院招生就业专业排序",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9a2d8537f62a67565c927a5655db2df0f1fe4ba4bc723e8e3e53e8b40f4563a5",
+      "title": "european_housing_prices_clean",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "c079780d0c20c6264100abf620bb0a66f26c9bbbcf427f80244f61e3e8d0f2d7",
+      "title": "test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "587d8ed333870a48a0c8321058ca6b6f7c4b1b6174f3cc3d992433466be4868e",
+      "title": "竞品分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "736a11d3a636894fa285e3205f6721e2c4700765466609e6386fd63f8c4c4c86",
+      "title": "df_matrix",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "515adb99e9dd7758669ef0549a6bb1a2131e6ab3f6a34d4887abdc9fa37a07e3",
+      "title": "df_matrix",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d82f048274983138777be6798b72a096903e133a0535cc91b83b999b39073850",
+      "title": "纳米塑料在血细胞之间的转移",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6914f9510c0299bfd2ed71a35aa3458c3990c1880b078cfcb697774571c1de6c",
+      "title": "test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "73636c251caca1d30de83126f3ff67c2010f9fc3ea0eaa33aa16884120a9718c",
+      "title": "Test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "3cc47d6f5fee40893c0a76e0098e0786ccf3b4b6d43ca7d15fc323bc8313db39",
+      "title": "China economy",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d8215e6a4e6a731806798107a2ce5c0e8a736fc750352b29115320900fe0d122",
+      "title": "China economy",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "eade7c440d6c3281d40b35b8c74438f1279302bb21269a3ec5cce5348b8c7936",
+      "title": "FRED data analysis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "c0f7dc00281153a089261919291b5b3eebce6f5362596b51e046b720b9504f13",
+      "title": "Customer Demographics and Shopping Preferences Data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ff6577189f576e5f3bead6ba7164811583a75b518224d00b79eaaf525bcae38a",
+      "title": "Statistical-Review-of-World-Energy",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "2acb2f0f867f2a9fac531b196d1d3821c48ee0e2f46ecdb2e4edaaafeda08d8e",
+      "title": "fancl2015_2019",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "0918159066170da7c3f909be7913365dc2cda238a6f05dbd850575e7b6a646b8",
+      "title": "fancl2020_2024",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "fbeb0e1caea19a2f8f45d377cfb7f47ee7c4cc1be5c37eccc330dbf74bd36e6d",
+      "title": "fancl annualreports2020-2024",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "1d454da427dd56477d7b2b4e1ee1b9daef8e138549963fd53785d76853f81da8",
+      "title": "fancl",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "aefd171359e3ff2d058e8496f757146741bffd1d5c261931c1f5250ec92b09cc",
+      "title": "Excel-VOC2",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ec2353a50269e887bfbb298a14fa918dad3ae0ad6665a6c1496ba4e7de51b2e8",
+      "title": "Excel-VOC分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "2e6498fd3a828fe802b68a87eb05a1c7a4b0b7112fbc4548ff2c1215683f0fb6",
+      "title": "Longbridge Stock Investment Record",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "c68cb754217150ca34959bfad67fd5c40348adc42ee42d40bbf12f1c5098776b",
+      "title": "Stock Investment Analysis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "c5fa9463a49441277e4caafa00c7c4c66149dbd6b8d451c973f10d6f3381da51",
+      "title": "vt",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "2e13829147e941936d032031202d73ab13ef2f415517da4f3ddf5bf59f16bf56",
+      "title": "uber_financial_highlights",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "444ca154f19387158667c6cb8b51ba98e555d12be2335f1c9aacb83016679a38",
+      "title": "nu anaylis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "e11a20f6219202d57163be378d41789a6e30233150ea51adf0eaa79e5f117393",
+      "title": "VehicelWeightPrediction",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5add21dc09d9f0898206809a7a834be0a066185d54f44767c31ec9d1d18cf133",
+      "title": "长江电力2025半年报",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "fef6de685bf5398bb94c31a2b75f490dcad7789b9a0eada142fb82d9314c7774",
+      "title": "企业基本信息",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f4b41835862dc6903fa63659868c3d9911571442d93109fca7010d928ac920c9",
+      "title": "employee_data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "06ad291f8ddeedccd26d02571af57f1d4c168c6d06617dd568e8ac7d33d68e8f",
+      "title": "sql585",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6bb746985f1419911f1f99237c91e596e13e03001d37a2e2ad55a08436e0d219",
+      "title": "rtb_distribution",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5a2ddb95702349a4bf9b587e15eacf08d8d969d0dbb30b2dcd2131b0140a9ce0",
+      "title": "Interest Rate GDP and SOFR",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "09d283492f9c778f60139a3b7c13a4aba79837548310e77fe02057fca123d022",
+      "title": "coca cola analysis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5a9cf9b48a34ac70265efa20eacf35253360f75d880bac8a939c5b10d9d67e24",
+      "title": "Data hard drive failure data",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "99a4b940330aeeb6f7c2dca61993301c9aa8b7a8be58df65c260b5e7e5e5ffe9",
+      "title": "WHO",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "8997d559e7354967573a7898b2215ae406335270b4a58eb12e0bdc87825508e1",
+      "title": "WHOeyes",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d50f2fdfb1a6e09f3f478d03d240ccef431a4f964f13879a66e59ba0c733203f",
+      "title": "data_dictionary",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "662e9acbe7b72453605259aa36fee343d17374a5c1f3cd2f1f6581da7607f8d7",
+      "title": "Ölver brauch 2025",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9f7ee574277922d64f0076f4967e385dabd90101897ae4a31ba1f626be100792",
+      "title": "Interest rate and gold",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "0a11256530371165bed13fb7d9c53ec7605e9556a83d688016f9dac1864cd401",
+      "title": "OCLF",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "1d20f2db2ee4c7e5c11c422e5f2adc0af86b77b06828bb7e345ac347bb8058e5",
+      "title": "qiyou",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "02a34b45f4d4c802adf348bb57f006ee7087857a53c65db22b7702101c646bab",
+      "title": "1106-AlZnCaMn_副本",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9d20a95700a6b012c49ef79806354f7ecc330132366050189601c71d95438a44",
+      "title": "MBTI",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "de3a8fe1024ff8419e7d72acaef6d9178d90d5b90872f01486d7d0aace5dbcda",
+      "title": "1104-Only-GWZ",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "52ad9a2022517c260392c07d2c73f280af60820806ed0032e96e0bbeef55a52d",
+      "title": "入围复试",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "a583f7ee10e9c923ce4cdee53749ff2c4a91f752c12ec74a5a5f2a7c7b7690e3",
+      "title": "Metal_Expert_Analytics",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "625e1d15f49538e3f9dc3b889622c2670e69a76886cea335532ad55c9bfb7866",
+      "title": "gwz",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ace0bea3aedb4d4ada846810e7ddc429d17394f9aa90eab8fde55b4260421063",
+      "title": "Test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9107461935a75d8ffbf5b6e9f35ddd9baefe143ecd3f3853974c738c47a089ed",
+      "title": "house china",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5901d164d1693e7ab1303da74f9f27b130c59d99abb0b4ddd0c30d4098d21115",
+      "title": "物流订单",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "443c8a59aea7f52a9adf53d531a4a5f0acc6ddbf730a289c28e6b5e447c84aec",
+      "title": "weatherAUS",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "45e12eaff237a8e2a676a9e0d62e094f487c79dc60085ed628ac4431b2c2e0f7",
+      "title": "Phone fraud detection",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b7e7670d7cf153a9e2259e046a3de8e823d9da50698c903136b7cec4f24e3d35",
+      "title": "Turf Dollar Spot",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "23e9e3d824ac38213150dcfdca18df38aea89e7eb40ef38412d1855a39fae0ea",
+      "title": "test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9068649c7c96a5857d4c89341e74aa1b0a61bb4b9af62dae3579c607f06d1b70",
+      "title": "固态电池2025",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "143bcfe934ffb25a7d159fdc9329212956deb819edc928c0918f2bb98adbae79",
+      "title": "2026东方证券化工策略",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "17168e9c9901c66281032a50500d50fdd8937052d1c9ade09802eaaae9915a59",
+      "title": "M13A低风险制剂药品中国销售数据",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "284ebfb9e3e797ad2f1ed685dc556a67229ee1951d2fba5ab397e9191025a8ea",
+      "title": "Federal Housing Inventory and Interest rate",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d34bccde25db3f489fdfcea72ce9965b1e49c5d83a2bb21cd1072221be6757d1",
+      "title": "ondo美股数据分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "fc9a90319c604b28d7ff4f59fb4c426ec66c992d4ece9624460a7776ef03df28",
+      "title": "tiktok",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "3d6443d88a3d4f5518df87e5aef5fa68dd233145e77782421afead9a3dcbc97f",
+      "title": "福利对消费影响",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5ea10bcf9ba2fdc506084a15e6428871ea630494fbf96fc51908d3a698dc94e7",
+      "title": "瑞银",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "85dc8695ea24d28befe1602b0343594024a6786ea040d748ca4bc7bb799ca92b",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d7b07d8ae66d401404bd9a0962af51a3bc9b24d1b9d9cd060f55979654cf17ab",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "41b94534150baee9425dd44714bc597aa1702bc8127aa0446b53d10146120e6c",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "fc10522af84b4049667e6ee4cc8ea705746f990cbee68a0f9c88db720b05e20b",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "fc6449124a195909278ab73963cfcffb77ab3f7cb708f8c5e72f7b4ea72983a7",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "c6b422b2174d69333ac060d8f1a561757003de3cf5b33387625180c227d1a336",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f27ee25b99fd6dbdb1e3e8f2b35f4cc409675463930cd6aca1a19490b9159e4f",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5cee693ca1de19483c55a013ac6022f748f180d6cbd193003f3e77ba19c75383",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "33c81b7d2a65105b373e383a2c49afe074ca90581919abc5712b3615bfb117b2",
+      "title": "3",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9589234d282cb098be6977f734d7235db0dbba40a8b67b75d259a05c0143499e",
+      "title": "online_retail_II",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "355367aa5d6ad21ee68cf8d261eee69835b42e9755344040bfd1dcf0fd3fffc4",
+      "title": "生成一个逻辑清晰框架",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "fdb648c7987b769031d89bce07e1cd4e944dd5615c9b29b255422826d7084550",
+      "title": "2024-university-of-nottingham-report-accounts-signed-v2-2",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "8c4c48d2c5413fbb69dfe03697d71ae031dd0599559fab4571bf27c486438dea",
+      "title": "辽宁高考分数分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "60961e0abbf94cf8e8789419ca4cd0fe1469692b61eb6d658e60223e5ba929cd",
+      "title": "古茗",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d5a18e451537aa6190d369395e65274ff5f265c4dfc434e222a475e7352acb00",
+      "title": "Test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "97f450e02efd0627c2eaa52c5d5373f340d71f12edd979e9c373bd19e935abdc",
+      "title": "API Test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "08cbb6ec8739f8a9594e857d48b76de60e2ef175e920e0a16fdc74e05151342a",
+      "title": "API Test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "7aaa4fec633bfb89dab3796f17dd0826223bbb90c04bf1edcc606cc2ebea4ec8",
+      "title": "Fecom Inc Order Payments",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ef11e6859c9fb7e904926d8d13d6b525c124b39141de20fbf657aa676a7d8c85",
+      "title": "enzo1",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "fa3f49ff6a8bc41a5ef129aa82e04b0d5661ddca67995c88ce66aff69b0a1a70",
+      "title": "WEF Job Report 2025 Data Insight",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "3805a59da1d599e7889cd85f6c3d12811a6bc2a829f9917497b54f8e936a8ab6",
+      "title": "糕点",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "31000aeb54db6dab5e660f4d6264de124ad3f90c293789fa618fdbf774acf41d",
+      "title": "stock",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "cab22f29340fa25fdc1eed34b23a579082588ac980777a0c39bae4bcd08ef28b",
+      "title": "Portable Solar",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d45a62fb3039443d80a984b84f1c1a39be50113f1cd67206218cf6aa3b8ddc4d",
+      "title": "地方财政",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "4612aef67259f1b4b3162e9b648983e46abf60dd4ad51085047d552d1b416852",
+      "title": "测试数据",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "363b8ad28edefc1fc3a1d48d656897c3de3724a2f01321cfd5852d5d552777fd",
+      "title": "UBS-China Banks and Property 2026 GCC takeaways report",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6e99f6f134b335da0d67afb37c52a7dd3ab2f742c4e57cb16be09c7ee1fb925b",
+      "title": "calm",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b8aa82d0631f005972eaab830600fed381637dd0dea2fc3b584aa8371a5c5740",
+      "title": "Copy of Project",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5062408f3d9a49eb5e304aaa9e995c42d62011ff2a760b69545c1dc9996d898c",
+      "title": "Aoto Sales",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "eb0e8e041e78a97a7e7ab210a6df8c52312da1eaa86112f830c2c8727dafad8b",
+      "title": "20250924大中矿业股票质押项目尽职调查报告-林来嵘",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "4952e1fe8ac630c2ab484229a1e0d8c1e41835660fc6c863a74485010ea41877",
+      "title": "sinopec anniversary report 2024",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "a265fc9b843516c7b0169e073d1e2c1d44ea8c5da7a0b10b429fb3ab55d599cd",
+      "title": "crypto_market_daily_snapshot",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f4c3bf7a0e20ee0bbd62b7bead5d24cbca79263eebb21fec715f78644f30afcd",
+      "title": "Crypto",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "0243a45ae9f61048c3cd689b2dc597027871351eccc841532ab6e08b7920d8a8",
+      "title": "荷兰花卉2024",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "96e6c9e7184037048ca3cfda6c35fa370fe289610e644983e32fcc8f4cd9abe3",
+      "title": "flat-ui__data-Sun Jan 25 2026",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "448e0e94b6fc08532e60394e6f899ac4a1a2716d5d04fb9120437e72a60cf773",
+      "title": "收货分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "8a165236ea5f688fe3b9c32c0469026f98d8b9800afca52b44ce66801a98ae4b",
+      "title": "时研",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "623c92ac4a0a8f56ba48635cc7c7fdbc4629721756f776c5970f640f3a838eba",
+      "title": "中国经济2026",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "76b8cf9eaec81622f459132f3b011897cf51b09cb44c8909668edc2c31e839cb",
+      "title": "epx1",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "17f3a7f8a47547093ea9a5631be32c47822ea1d00e1cea79c84088d4823c0d10",
+      "title": "stock_analysis_result",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f6304d25b4e9efc420cd39f18cc463cb87dbf264d7305533642e5e3d86b2ee19",
+      "title": "recipe",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "307e79a1cfe6336588d550b5bf07fec93ba2ce54befb53dcb815909d5dc3d88f",
+      "title": "GCC",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "3e9665878efb7f529848ddccf47611b97968840ef938ddece74ca01b4b2e1580",
+      "title": "商业航天分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "2e923821f46c17286c0ad7261b305306d2abe5599eb064e45d1d46c1b803bfa2",
+      "title": "越南革新开放",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f544e6a1b0ffe82beb9c14ccbc0b206c52b8366619c52732f8089d0c8402f36e",
+      "title": "Brain Report Generation Performance Analysis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "745afe2614d859218aab2b33c98f9544690cbcbebd2de3f659c3f67cd6f07c13",
+      "title": "测试1",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6eee4f94abe002f443616f718b84b154018b74689e9797d37f7612e3aba0c33b",
+      "title": "sleep",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b57bf10f32b8632e0ac77e880706e23389c8bb84ee06528a01a7018960776c81",
+      "title": "Copy of Project",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "a22127cee5248c8e504bd179417e4a99072967d41197c193d446d271201a0486",
+      "title": "个人信息",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "4b15970d8d176aaa6cd730f2b265cdfb1f0c3f72c52b24e9e071bd429e3be58b",
+      "title": "万兴saas内部收入12月分析",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "286cbe2d4e92042e9dff93800c61a7e4ffa880c83c3f41d783a8d70815952fa5",
+      "title": "playapps_2025",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "461c82a2e47b685459bc2b47b184af64e53bdad1903dba1d804c247ac2c2b8c0",
+      "title": "China Banks and Property",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "e045f3d75942ee2a51ab3e10984a6065beee295f3950c6be5343e03e804fcffe",
+      "title": "EG",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "ba5fe296997be6b81e429bd37721ebc0fa66e104afd158cb3afffd1b8be96273",
+      "title": "test",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "82c1a841f1c5ef379391ba956b37b70099cacf77d9de9e5f4d95ed2913c493b6",
+      "title": "Ecommerce Analysis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "5130f264ec13172c7aca856cb496693bf2b05452287000c29787c34479214023",
+      "title": "SuperMarket Analysis",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "61c107393cd55d462e2bc69b7bb6cbfbb60c467ad56f209f8e2283b5af4ca4ac",
+      "title": "Transgender Research",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "d3de41b2ce61ef04fb1a4b34fd7b80d37eb56c8b7cddb3f0de2cc1db4303b7b8",
+      "title": "TikTok Dataset",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "921b4a4a2e8748a25ced00f3858f44511421f50b129b604a2175489b1dd3cf42",
+      "title": "Football",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "b12c8cb9b90d52c9cf04a0a72c467567d8bb35c194b0fb161d8be73ce2bce76b",
+      "title": "AI_Economy_Complete_Index",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "e0c02846232580031119672f004b97219364dd642204cd9eb81bcde766435890",
+      "title": "Daily_Global_Stock_Market_Indicators",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "c8554dc4df400246172d42369902664563c3735685e4bf4ea46c97301bd8af68",
+      "title": "Churn_Modelling",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "f2b6d61903e9590a76fcdd070ac73488cfb8eae10e6eb6c86613dc7716a67565",
+      "title": "master_tweets",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "7f7c4670b0f57aa714841252e899845d102456cc9b05ccae06a9004a80f51e8f",
+      "title": "vitamin_deficiency_disease_dataset_20260123",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6bfb40067e1d3e563f90a5aec1e7f6a195cc3ecaa1f33dfc8f06ec82183b5bf5",
+      "title": "train",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "9d17bd25b70e554c436398eb7362bf236889cd1c0825e5442a8abf691d1b4496",
+      "title": "qs_world_university_rankings_2025_top_1500_synthetic",
+      "source": "recent_projects_20260208.json"
+    },
+    {
+      "case_id": "6059a46e6558851c3b874505336eaa1b545ffd38313f6aa729a95f57718d3fa8",
+      "title": "CPIAUCSL",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "1d0473723abd604f54e6c07bfe48da8b01d64e817c75eddcd25e9bfa984673f7",
+      "title": "Fred Analysis",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "42a8d7a65b922176fdf369ddf2e5fe990970301ae617d0e98a9e4ab38963fdb8",
+      "title": "Fred data Analysis",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "7d3e64045132e2be47f631d1f34228b251c3d7ba9b7c6227a3ef95049f599b50",
+      "title": "纽约马拉松前200名选手成绩及数据分析报告",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "25c51794803d705c17d4e5c83caf02a823cb2797406beac8c7e577813fee32a6",
+      "title": "10970794",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "ea6c6d648fc830949c23dd0ba826e94b4c62d69b430ae792919152246a3678d7",
+      "title": "Newyork Marathon Player Data Analysis Report From 2000 to 2025",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "102699da486d6213ddae0f02a0e5df31d97f33148e94629dc1212f8e67d0e954",
+      "title": "Newyork Marathon Data Analysis From 2000-2025",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "c65e1761d736a3c232fc3519eb11c8a360fc92897dd4788e383cfb6751891ad8",
+      "title": "world_cup_last_50_years",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "e90e49395c9ee39973972226949e0d69cf3c7170e3dd77ce519b920b322ec79d",
+      "title": "COPD1",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "a24ec8e46d0de087eb4455eb07fa1ec946b31799f26380e84ca23ca3457d8bec",
+      "title": "test1",
+      "source": "recent_projects_20260217.json"
+    },
+    {
+      "case_id": "507fad55efded9983b2171e4d5c7b40b10f69228609c460dc0680248a6cfdb95",
+      "title": "Airline",
+      "source": "recent_projects_20260219.json"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Google Stock Analysis</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Google Stock Analysis</h1>
+    <p class='sub'>来源: /view/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Alphabet Q4 2025 Earnings Analysis - Record $400B Revenue and AI Momentum&quot;
+description: &quot;Comprehensive analysis of Alphabet&#x27;s Q4 2025 financial results, highlighting unprecedented $400B+ annual revenue, Google Cloud&#x27;s exceptional 48% growth, and AI-driven momentum across all segments&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-05&quot;
+</pre></details>
+<h1>Alphabet Q4 2025 Earnings Analysis: Record Revenue and AI-Powered Growth</h1>
+<h2>Executive Summary</h2>
+<p>Alphabet delivered a stellar Q4 2025, achieving a historic milestone with annual revenues exceeding 400 billion for the first time. The company demonstrated robust growth across all core segments, with particular strength in Google Cloud 48% YoY and sustained momentum in Search 17% YoY. AI investments are beginning to yield tangible results, evidenced by Gemini App reaching 750 million monthly active users and processing 10+ billion tokens per minute.</p>
+<p>Key Highlights:</p>
+<ul><li>Q4 Revenue: 113.8B +18% YoY</li><li>FY 2025 Revenue: 402.8B +15% YoY - First time exceeding $400B</li><li>Net Income: 34.5B +30% YoY</li><li>Google Cloud Revenue: 17.7B +48% YoY with expanding margins 30.1%</li><li>Paid Subscriptions: 325M+ across consumer services</li><li>2026 CapEx Guidance: 175-185B reflecting massive AI infrastructure investments</li></ul>
+<p>The quarter showcases Alphabet&#x27;s successful dual strategy: maintaining core business strength while aggressively investing in AI infrastructure that drives new growth vectors.</p>
+<h2>Revenue Performance</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What drove the 18% revenue growth in Q4 2025?</li><li>How does Alphabet&#x27;s revenue growth compare to historical trends?</li><li>Which segment contributed most to the overall revenue growth?</li></ul></details>
+<h3>Quarterly and Full-Year Overview</h3>
+<p>Alphabet&#x27;s Q4 2025 revenue of 113.8B represents an 18% year-over-year increase, accelerating from 12% growth in Q4 2024. Full-year 2025 revenue reached 402.8B, marking the first time Alphabet has surpassed the 400B threshold. This achievement underscores the company&#x27;s scale and continued ability to grow at a healthy double-digit rate despite massive base effects.</p>
+<div class='plot-card'><div class='plot-meta'><code>revenue_growth.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078/assets/revenue_growth.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The growth acceleration from 12% in Q4 2024 to 18% in Q4 2025 demonstrates sustained momentum across all business segments. Notably, this growth was achieved despite a challenging prior-year comparison and macroeconomic headwinds affecting advertising markets globally.</p>
+<h3>Segment Revenue Breakdown</h3>
+<p>The revenue composition reveals a balanced but evolving business model. Google Services remains the dominant revenue contributor at 95.9B 84% of total, while Google Cloud has grown to represent 15% of total revenues at 17.7B.</p>
+<div class='plot-card'><div class='plot-meta'><code>segment_revenue_breakdown.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078/assets/segment_revenue_breakdown.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key observations from segment performance:</p>
+<p>1. Google Cloud 17.7B, +48%: The standout performer with the highest growth rate across all segments. This acceleration from prior quarters indicates increasing enterprise adoption of Google&#x27;s AI infrastructure and solutions. The 70B+ annual run rate positions Google Cloud as a formidable competitor in the cloud infrastructure market.</p>
+<p>2. Google Search &amp; Other 63.1B, +17%: Core search business demonstrated robust growth, exceeding analyst expectations. The 17% growth represents acceleration from recent quarters, suggesting AI-enhanced search features are driving improved monetization and user engagement.</p>
+<p>3. YouTube Ads 11.4B, +9%: Solid but moderated growth reflects maturation of the platform and competitive dynamics. YouTube&#x27;s 60B+ annual revenue across ads and subscriptions demonstrates the platform&#x27;s massive scale and multiple monetization vectors.</p>
+<p>4. Subscriptions, Platforms &amp; Devices 13.6B, +17%: Strong growth reflects success of Google One, YouTube Premium, and other subscription offerings. With 325M+ paid subscriptions, this segment represents a growing and more predictable revenue stream.</p>
+<p>5. Google Network 7.8B, -2%: Slight decline reflects ongoing optimization of lower-margin ad network business and strategic shift toward higher-value direct sales.</p>
+<div class='plot-card'><div class='plot-meta'><code>segment_growth_rates.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078/assets/segment_growth_rates.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Geographic Revenue Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which geographic region showed the strongest growth?</li><li>How did foreign exchange impacts affect revenue growth?</li><li>What does the geographic distribution reveal about Alphabet&#x27;s global presence?</li></ul></details>
+<p>Alphabet&#x27;s revenue remains globally distributed with strength across all major regions:</p>
+<div class='plot-card'><div class='plot-meta'><code>geographic_revenue.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078/assets/geographic_revenue.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Regional Highlights:</p>
+<ul><li>United States 55.4B, +17%: Largest market representing 49% of total revenue. The 17% growth demonstrates continued strength in domestic market despite large base.</li></ul>
+<ul><li>EMEA 33.1B, +17% reported, +12% constant currency: Second-largest market at 29% of revenue. Foreign exchange headwinds impacted reported growth, with 5pp difference between reported 17% and constant currency 12% growth.</li></ul>
+<ul><li>APAC 18.5B, +22% reported, +23% constant currency: Strongest growth region, benefiting from favorable FX and accelerating digital adoption. The region represents 16% of revenue but shows outsized growth potential.</li></ul>
+<ul><li>Other Americas 6.9B, +20%: Smallest but fastest-growing region at 6% of revenue. Emerging markets in Latin America continue to show strong digital advertising adoption.</li></ul>
+<p>The constant currency growth rates 17% US, 12% EMEA, 23% APAC, 19% Other Americas reveal true underlying business momentum, with APAC showing the strongest organic growth.</p>
+<h2>Profitability Analysis</h2>
+<h3>Operating Income and Margins</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>How did operating income performance differ across segments?</li><li>What drove the margin expansion in Google Cloud?</li><li>Why did R&amp;D expenses increase by 42%?</li></ul></details>
+<p>Alphabet delivered 35.9B in operating income for Q4 2025, representing a 16% year-over-year increase. The operating margin of 31.6% remained essentially stable down 0.5pp from 32.1%, demonstrating excellent cost control despite significant AI investments.</p>
+<p>Segment Operating Income Breakdown:</p>
+<p>1. Google Services 40.1B, +22% YoY: Operating margin expanded from 39.0% to 41.9%, demonstrating the segment&#x27;s exceptional profitability and operating leverage. This margin improvement reflects revenue growth outpacing expense growth and mix shift toward higher-margin search and subscription revenue.</p>
+<p>2. Google Cloud 5.3B, +154% YoY: The most dramatic margin expansion, with operating margin improving from 17.5% to 30.1%. This margin expansion signals that Google Cloud has achieved critical scale and operating leverage, with enterprise AI solutions contributing to improved unit economics.</p>
+<div class='plot-card'><div class='plot-meta'><code>operating_margins.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078/assets/operating_margins.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>3. Other Bets 3.6B loss: Operating loss expanded significantly from 1.2B to 3.6B, primarily driven by a 2.1B employee compensation charge at Waymo. This reflects continued investment in moonshot projects, particularly autonomous driving, which remains strategically important despite losses.</p>
+<h3>Expense Structure and Investment</h3>
+<p>Total costs and expenses increased 19% to 77.9B, in line with revenue growth, demonstrating disciplined cost management even as investments accelerate.</p>
+<div class='plot-card'><div class='plot-meta'><code>expense_breakdown.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078/assets/expense_breakdown.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Expense Category Analysis:</p>
+<p>1. Research &amp; Development 18.6B, +42% YoY: The largest percentage increase across all expense categories, reflecting massive AI infrastructure and talent investments. This increase is strategic and necessary to maintain leadership in AI, with the launch of Gemini 3 as a major milestone.</p>
+<p>2. Cost of Revenues 45.8B, +13% YoY: Grew slower than revenue 18%, indicating improved operational efficiencies. The increase reflects TAC growth traffic acquisition costs and infrastructure costs to support AI workloads.</p>
+<p>3. Sales &amp; Marketing 8.2B, +12% YoY: Modest increase relative to revenue growth, suggesting leverage in customer acquisition and brand marketing efficiency.</p>
+<p>4. General &amp; Administrative 5.3B, +21% YoY: Increase reflects growth in headcount 183K to 191K employees and associated administrative overhead to support larger operations.</p>
+<p>The 42% increase in R&amp;D spending is particularly noteworthy and demonstrates Alphabet&#x27;s commitment to AI leadership. While this pressured margins in the near term, the investment appears to be driving tangible results across the product portfolio.</p>
+<h2>Capital Allocation and Cash Flow</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why did CapEx increase by 95% year-over-year?</li><li>How sustainable is the current free cash flow given rising investments?</li><li>What does the 175-185B CapEx guidance for 2026 signal about AI infrastructure needs?</li></ul></details>
+<h3>Capital Expenditures</h3>
+<p>Alphabet&#x27;s capital expenditures surged to 27.9B in Q4 2025, representing a 95% year-over-year increase. Full-year 2025 CapEx reached 91.4B, up 74% from 2024. This dramatic increase reflects massive AI infrastructure investments, including data centers, chips, and networking equipment.</p>
+<div class='plot-card'><div class='plot-meta'><code>capex_fcf_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078/assets/capex_fcf_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Quarterly CapEx Progression:</p>
+<ul><li>Q4 2024: 14.3B</li><li>Q1 2025: 17.2B +43% YoY</li><li>Q2 2025: 22.4B +70% YoY</li><li>Q3 2025: 24.0B +83% YoY</li><li>Q4 2025: 27.9B +95% YoY</li></ul>
+<p>The accelerating quarterly CapEx trajectory underscores the urgency and scale of AI infrastructure needs. Management&#x27;s 2026 guidance of 175-185B represents another </p>
+<h3>Free Cash Flow Generation</h3>
+<p>Despite surging CapEx, Alphabet generated 24.6B in free cash flow for Q4 2025, essentially flat year-over-year -1%. This resilience is notable given the 95% increase in CapEx, reflecting strong operating cash flow generation.</p>
+<p>Operating Cash Flow Drivers:</p>
+<ul><li>Q4 2025: 52.4B +34% YoY</li><li>Net income growth 30% translated into even stronger operating cash flow growth 34%, demonstrating working capital efficiency and quality of earnings.</li></ul>
+<p>Trailing Twelve Month TTM Free Cash Flow:</p>
+<ul><li>Q4 2025: 73.3B +0.7% YoY</li></ul>
+<p>The TTM free cash flow remained essentially flat despite full-year CapEx increasing 74%, demonstrating the strength of Alphabet&#x27;s underlying cash generation capabilities. This positions Alphabet to sustain massive AI investments while maintaining financial flexibility.</p>
+<h3>Balance Sheet Strength</h3>
+<ul><li>Cash &amp; Cash Equivalents: 30.7B up from 23.5B</li><li>Senior Unsecured Notes: 24.8B issued in November 2025 for general corporate purposes</li><li>Dividend: 0.21 per share quarterly consistent with prior quarters</li><li>Waymo Investment: 16.0B funding round announced February 2026, majority funded by Alphabet</li></ul>
+<p>The balance sheet remains strong with substantial liquidity to fund ongoing AI investments and strategic initiatives. The debt issuance and Waymo investment reflect a balanced approach to capital allocation, using debt to fund general corporate purposes while maintaining flexibility for strategic equity investments.</p>
+<h2>AI Momentum Indicators</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What evidence shows AI investments are driving business results?</li><li>How does Gemini&#x27;s 750M MAU compare to other AI products?</li><li>What is the significance of 10B+ tokens per minute processing capacity?</li></ul></details>
+<h3>Product Metrics</h3>
+<p>Alphabet&#x27;s AI investments are beginning to manifest in tangible product metrics:</p>
+<p>1. Gemini App: 750+ million monthly active users</p>
+<p>    This represents massive user adoption for Google&#x27;s flagship AI product</p>
+<p>    Positions Gemini as one of the most widely used AI applications globally</p>
+<p>    Provides significant competitive advantage through user data flywheel</p>
+<p>2. Tokens Processed: 10+ billion tokens per minute via direct API</p>
+<p>    Demonstrates massive infrastructure scale and capacity</p>
+<p>    Indicates substantial enterprise adoption of Google&#x27;s AI infrastructure</p>
+<p>    Highlights the technical achievement of processing at this scale</p>
+<p>3. Paid Subscriptions: 325+ million across consumer services</p>
+<p>    Strong adoption of Google One, YouTube Premium, and other subscription offerings</p>
+<p>    Reflects growing monetization of AI-enhanced services</p>
+<p>    Provides more predictable recurring revenue streams</p>
+<p>4. YouTube Revenue: 60+ billion annually across ads and subscriptions</p>
+<p>    Massive scale with multiple monetization vectors</p>
+<p>    AI-enhanced recommendation engines driving engagement and monetization</p>
+<p>    Strong position in both advertising and subscription markets</p>
+<h3>Strategic AI Milestones</h3>
+<p>The launch of Gemini 3 represents a major milestone in Google&#x27;s AI development. Combined with first-party models processing 10B+ tokens per minute, Alphabet is demonstrating both technical leadership and commercial scale in AI.</p>
+<p>Management commentary highlights that AI is driving an &quot;expansionary moment&quot; for Search, with more usage than ever before. This suggests AI features are not just additive but fundamentally changing user behavior and engagement patterns in core products.</p>
+<h2>Key Performance Metrics Summary</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which metric showed the strongest growth?</li><li>How do the growth rates across different KPIs reflect business priorities?</li><li>What risks or challenges do these metrics reveal?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>key_metrics.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078/assets/key_metrics.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Performance Across Key Dimensions:</p>
+<p>1. Revenue Growth:</p>
+<p>    Total: +18% Q4, +15% FY</p>
+<p>    Google Cloud: +48% exceptional</p>
+<p>    Google Services: +14% solid</p>
+<p>    Google Search: +17% accelerating</p>
+<p>2. Profitability:</p>
+<p>    Operating Income: +16%</p>
+<p>    Net Income: +30% better than operating due to non-operating income</p>
+<p>    Diluted EPS: +31% share buybacks amplifying per-share growth</p>
+<p>    Operating Margin: -0.5pp stable despite R&amp;D surge</p>
+<p>3. Growth Drivers:</p>
+<p>    Google Cloud Revenue: +48%</p>
+<p>    Google Search Revenue: +17%</p>
+<p>    R&amp;D Investment: +42%</p>
+<p>    CapEx: +95%</p>
+<p>4. Efficiency Metrics:</p>
+<p>    Free Cash Flow: -1% resilient despite CapEx surge</p>
+<p>    TTM Free Cash Flow: +0.7%</p>
+<p>    Operating Margin Google Services: +2.9pp expansion</p>
+<p>    Operating Margin Google Cloud: +12.6pp expansion</p>
+<p>The KPIs reveal a company successfully balancing growth investment with profitability. While R&amp;D and CapEx are increasing dramatically, core business profitability is stable or improving, particularly in high-growth segments like Google Cloud.</p>
+<h2>Strategic Analysis and Outlook</h2>
+<h3>Strengths</h3>
+<p>1. Scale and Growth Synergy: Achieving 400B+ revenue while maintaining 15% annual growth demonstrates rare ability to grow at scale</p>
+<p>2. AI Infrastructure Leadership: Massive investments positioning Alphabet as infrastructure provider for AI revolution</p>
+<p>3. Cloud Momentum: Google Cloud accelerating with expanding margins, achieving competitive scale</p>
+<p>4. Product Ecosystem Strength: 325M+ paid subscriptions and 750M+ Gemini users demonstrate cross-product leverage</p>
+<p>5. Financial Flexibility: Strong balance sheet and cash generation supporting massive investments</p>
+<h3>Risks and Challenges</h3>
+<p>1. Investment Magnitude: 175-185B CapEx for 2026 represents massive capital commitment with uncertain ROI timeline</p>
+<p>2. Other Bets Profitability: Continued losses and Waymo compensation charges require sustained investment</p>
+<p>3. Competitive Dynamics: Intensifying AI competition from Microsoft, OpenAI, Amazon, and emerging players</p>
+<p>4. Regulatory Environment: Antitrust scrutiny and potential regulatory headwinds across multiple jurisdictions</p>
+<p>5. Execution Risk: Scaling AI infrastructure while maintaining service quality and cost discipline</p>
+<h3>Investment Thesis</h3>
+<p>Alphabet appears well-positioned for the AI era through several key advantages:</p>
+<p>1. Infrastructure Scale: Massive CapEx investments creating moat around AI compute infrastructure</p>
+<p>2. Data Advantage: 10B+ tokens per minute processing and 750M+ Gemini users providing unique data feedback loops</p>
+<p>3. Product Integration: AI embedded across core products Search, Workspace, YouTube creating distribution advantage</p>
+<p>4. Financial Resources: Ability to sustain multi-billion dollar AI investments while maintaining profitability</p>
+<p>5. Cloud Platform: Google Cloud providing enterprise channel for AI infrastructure and solutions</p>
+<p>The critical question for investors is whether the massive AI investments will translate into sustainable competitive advantage and revenue growth. Early indicators are positive with Google Cloud acceleration and AI-driven search improvements, but full ROI will take several years to materialize.</p>
+<h2>Comparative Analysis</h2>
+<h3>Historical Context</h3>
+<p>Comparing Q4 2025 to prior periods reveals important trends:</p>
+<ul><li>Revenue Growth Acceleration: Q4 2025 growth 18% exceeded Q4 2024 growth 12%, showing momentum is accelerating</li><li>R&amp;D Intensity: R&amp;D as % of revenue increased from </li><li>Cloud Acceleration: Google Cloud growth accelerated from  CapEx Normalization: After years of moderate CapEx, 2024-2025 represents structural increase in investment intensity</li></ul>
+<h3>Peer Comparison Context</h3>
+<p>While detailed peer comparison would require competitor data, several observations stand out:</p>
+<ul><li>Cloud Growth: 48% Google Cloud growth is exceptional compared to industry averages of  AI Infrastructure Investment: 175-185B 2026 CapEx guidance likely exceeds major peers in absolute dollar terms</li><li>Search Resilience: 17% search growth demonstrates category strength despite AI disruption concerns</li></ul>
+<h2>Conclusion</h2>
+<p>Alphabet&#x27;s Q4 2025 results represent a watershed quarter, marking the company&#x27;s entry into the 400B+ revenue club while demonstrating accelerating growth in strategic areas. The quarter validates the company&#x27;s dual strategy of maintaining core business strength while aggressively investing in AI infrastructure that drives future growth.</p>
+<p>Key Takeaways:</p>
+<p>1. Scale Achievement: 402.8B full-year revenue demonstrates massive scale with continued growth</p>
+<p>2. AI Momentum: Tangible evidence AI investments are driving business results across products</p>
+<p>3. Cloud Inflection: Google Cloud acceleration with margin expansion signals competitive positioning</p>
+<p>4. Investment Discipline: Maintaining profitability despite massive R&amp;D and CapEx increases</p>
+<p>5. Future Outlook: 2026 CapEx guidance of 175-185B signals continued aggressive AI investment</p>
+<p>Strategic Position:Alphabet is uniquely positioned as both infrastructure provider and consumer AI application developer, creating potential for competitive advantage across the AI value chain.</p>
+<p>Investment Implications:The massive investments in AI infrastructure represent a bet that AI will be the defining technology of the next decade. Early results are encouraging with Google Cloud acceleration and AI-driven search improvements, but full realization of this vision will require continued execution over multiple years.</p>
+<p>The Q4 2025 earnings demonstrate that Alphabet is successfully navigating the AI transition while maintaining financial discipline. The company appears well-positioned to compete aggressively in the AI era, though the magnitude of investments creates near-term headwinds to profitability that must be monitored.</p>
+<h2>Data Files</h2>
+<p>All cleaned data and supporting analysis files are available in the folder:</p>
+<ul><li>- Complete income statement data</li><li>- Detailed segment revenue breakdown</li><li>- Segment profitability metrics</li><li>- Regional revenue distribution</li><li>- Cash flow and capital expenditure trends</li><li>- Comprehensive data dictionary and key findings</li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

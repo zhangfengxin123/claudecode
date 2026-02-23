@@ -1,0 +1,364 @@
+{
+  "generated_at": "2026-02-22T23:13:34",
+  "meta": {
+    "target": 200,
+    "reserve": 220,
+    "recent_limit": 500,
+    "source": "Pardus/.codex_session/runs/historical_candidates_from_snapshots_20260222.json",
+    "existing_unique_case_ids": 425,
+    "recent_new_pool": 194,
+    "probe_ok": 87,
+    "probe_fail": 107,
+    "picked": 87
+  },
+  "results": [
+    {
+      "case_id": "2e6498fd3a828fe802b68a87eb05a1c7a4b0b7112fbc4548ff2c1215683f0fb6",
+      "title": "Longbridge Stock Investment Record"
+    },
+    {
+      "case_id": "c68cb754217150ca34959bfad67fd5c40348adc42ee42d40bbf12f1c5098776b",
+      "title": "Stock Investment Analysis"
+    },
+    {
+      "case_id": "c5fa9463a49441277e4caafa00c7c4c66149dbd6b8d451c973f10d6f3381da51",
+      "title": "vt"
+    },
+    {
+      "case_id": "5add21dc09d9f0898206809a7a834be0a066185d54f44767c31ec9d1d18cf133",
+      "title": "长江电力2025半年报"
+    },
+    {
+      "case_id": "fef6de685bf5398bb94c31a2b75f490dcad7789b9a0eada142fb82d9314c7774",
+      "title": "企业基本信息"
+    },
+    {
+      "case_id": "f4b41835862dc6903fa63659868c3d9911571442d93109fca7010d928ac920c9",
+      "title": "employee_data"
+    },
+    {
+      "case_id": "06ad291f8ddeedccd26d02571af57f1d4c168c6d06617dd568e8ac7d33d68e8f",
+      "title": "sql585"
+    },
+    {
+      "case_id": "6bb746985f1419911f1f99237c91e596e13e03001d37a2e2ad55a08436e0d219",
+      "title": "rtb_distribution"
+    },
+    {
+      "case_id": "5a2ddb95702349a4bf9b587e15eacf08d8d969d0dbb30b2dcd2131b0140a9ce0",
+      "title": "Interest Rate GDP and SOFR"
+    },
+    {
+      "case_id": "09d283492f9c778f60139a3b7c13a4aba79837548310e77fe02057fca123d022",
+      "title": "coca cola analysis"
+    },
+    {
+      "case_id": "5a9cf9b48a34ac70265efa20eacf35253360f75d880bac8a939c5b10d9d67e24",
+      "title": "Data hard drive failure data"
+    },
+    {
+      "case_id": "99a4b940330aeeb6f7c2dca61993301c9aa8b7a8be58df65c260b5e7e5e5ffe9",
+      "title": "WHO"
+    },
+    {
+      "case_id": "8997d559e7354967573a7898b2215ae406335270b4a58eb12e0bdc87825508e1",
+      "title": "WHOeyes"
+    },
+    {
+      "case_id": "d50f2fdfb1a6e09f3f478d03d240ccef431a4f964f13879a66e59ba0c733203f",
+      "title": "data_dictionary"
+    },
+    {
+      "case_id": "662e9acbe7b72453605259aa36fee343d17374a5c1f3cd2f1f6581da7607f8d7",
+      "title": "Ölver brauch 2025"
+    },
+    {
+      "case_id": "9f7ee574277922d64f0076f4967e385dabd90101897ae4a31ba1f626be100792",
+      "title": "Interest rate and gold"
+    },
+    {
+      "case_id": "625e1d15f49538e3f9dc3b889622c2670e69a76886cea335532ad55c9bfb7866",
+      "title": "gwz"
+    },
+    {
+      "case_id": "ace0bea3aedb4d4ada846810e7ddc429d17394f9aa90eab8fde55b4260421063",
+      "title": "Test"
+    },
+    {
+      "case_id": "9107461935a75d8ffbf5b6e9f35ddd9baefe143ecd3f3853974c738c47a089ed",
+      "title": "house china"
+    },
+    {
+      "case_id": "5901d164d1693e7ab1303da74f9f27b130c59d99abb0b4ddd0c30d4098d21115",
+      "title": "物流订单"
+    },
+    {
+      "case_id": "443c8a59aea7f52a9adf53d531a4a5f0acc6ddbf730a289c28e6b5e447c84aec",
+      "title": "weatherAUS"
+    },
+    {
+      "case_id": "45e12eaff237a8e2a676a9e0d62e094f487c79dc60085ed628ac4431b2c2e0f7",
+      "title": "Phone fraud detection"
+    },
+    {
+      "case_id": "b7e7670d7cf153a9e2259e046a3de8e823d9da50698c903136b7cec4f24e3d35",
+      "title": "Turf Dollar Spot"
+    },
+    {
+      "case_id": "23e9e3d824ac38213150dcfdca18df38aea89e7eb40ef38412d1855a39fae0ea",
+      "title": "test"
+    },
+    {
+      "case_id": "9068649c7c96a5857d4c89341e74aa1b0a61bb4b9af62dae3579c607f06d1b70",
+      "title": "固态电池2025"
+    },
+    {
+      "case_id": "143bcfe934ffb25a7d159fdc9329212956deb819edc928c0918f2bb98adbae79",
+      "title": "2026东方证券化工策略"
+    },
+    {
+      "case_id": "17168e9c9901c66281032a50500d50fdd8937052d1c9ade09802eaaae9915a59",
+      "title": "M13A低风险制剂药品中国销售数据"
+    },
+    {
+      "case_id": "284ebfb9e3e797ad2f1ed685dc556a67229ee1951d2fba5ab397e9191025a8ea",
+      "title": "Federal Housing Inventory and Interest rate"
+    },
+    {
+      "case_id": "d34bccde25db3f489fdfcea72ce9965b1e49c5d83a2bb21cd1072221be6757d1",
+      "title": "ondo美股数据分析"
+    },
+    {
+      "case_id": "fc9a90319c604b28d7ff4f59fb4c426ec66c992d4ece9624460a7776ef03df28",
+      "title": "tiktok"
+    },
+    {
+      "case_id": "3d6443d88a3d4f5518df87e5aef5fa68dd233145e77782421afead9a3dcbc97f",
+      "title": "福利对消费影响"
+    },
+    {
+      "case_id": "5ea10bcf9ba2fdc506084a15e6428871ea630494fbf96fc51908d3a698dc94e7",
+      "title": "瑞银"
+    },
+    {
+      "case_id": "85dc8695ea24d28befe1602b0343594024a6786ea040d748ca4bc7bb799ca92b",
+      "title": "3"
+    },
+    {
+      "case_id": "fc10522af84b4049667e6ee4cc8ea705746f990cbee68a0f9c88db720b05e20b",
+      "title": "3"
+    },
+    {
+      "case_id": "fc6449124a195909278ab73963cfcffb77ab3f7cb708f8c5e72f7b4ea72983a7",
+      "title": "3"
+    },
+    {
+      "case_id": "9589234d282cb098be6977f734d7235db0dbba40a8b67b75d259a05c0143499e",
+      "title": "online_retail_II"
+    },
+    {
+      "case_id": "355367aa5d6ad21ee68cf8d261eee69835b42e9755344040bfd1dcf0fd3fffc4",
+      "title": "生成一个逻辑清晰框架"
+    },
+    {
+      "case_id": "fdb648c7987b769031d89bce07e1cd4e944dd5615c9b29b255422826d7084550",
+      "title": "2024-university-of-nottingham-report-accounts-signed-v2-2"
+    },
+    {
+      "case_id": "8c4c48d2c5413fbb69dfe03697d71ae031dd0599559fab4571bf27c486438dea",
+      "title": "辽宁高考分数分析"
+    },
+    {
+      "case_id": "60961e0abbf94cf8e8789419ca4cd0fe1469692b61eb6d658e60223e5ba929cd",
+      "title": "古茗"
+    },
+    {
+      "case_id": "d5a18e451537aa6190d369395e65274ff5f265c4dfc434e222a475e7352acb00",
+      "title": "Test"
+    },
+    {
+      "case_id": "ef11e6859c9fb7e904926d8d13d6b525c124b39141de20fbf657aa676a7d8c85",
+      "title": "enzo1"
+    },
+    {
+      "case_id": "fa3f49ff6a8bc41a5ef129aa82e04b0d5661ddca67995c88ce66aff69b0a1a70",
+      "title": "WEF Job Report 2025 Data Insight"
+    },
+    {
+      "case_id": "3805a59da1d599e7889cd85f6c3d12811a6bc2a829f9917497b54f8e936a8ab6",
+      "title": "糕点"
+    },
+    {
+      "case_id": "31000aeb54db6dab5e660f4d6264de124ad3f90c293789fa618fdbf774acf41d",
+      "title": "stock"
+    },
+    {
+      "case_id": "cab22f29340fa25fdc1eed34b23a579082588ac980777a0c39bae4bcd08ef28b",
+      "title": "Portable Solar"
+    },
+    {
+      "case_id": "d45a62fb3039443d80a984b84f1c1a39be50113f1cd67206218cf6aa3b8ddc4d",
+      "title": "地方财政"
+    },
+    {
+      "case_id": "4612aef67259f1b4b3162e9b648983e46abf60dd4ad51085047d552d1b416852",
+      "title": "测试数据"
+    },
+    {
+      "case_id": "363b8ad28edefc1fc3a1d48d656897c3de3724a2f01321cfd5852d5d552777fd",
+      "title": "UBS-China Banks and Property 2026 GCC takeaways report"
+    },
+    {
+      "case_id": "6e99f6f134b335da0d67afb37c52a7dd3ab2f742c4e57cb16be09c7ee1fb925b",
+      "title": "calm"
+    },
+    {
+      "case_id": "b8aa82d0631f005972eaab830600fed381637dd0dea2fc3b584aa8371a5c5740",
+      "title": "Copy of Project"
+    },
+    {
+      "case_id": "5062408f3d9a49eb5e304aaa9e995c42d62011ff2a760b69545c1dc9996d898c",
+      "title": "Aoto Sales"
+    },
+    {
+      "case_id": "eb0e8e041e78a97a7e7ab210a6df8c52312da1eaa86112f830c2c8727dafad8b",
+      "title": "20250924大中矿业股票质押项目尽职调查报告-林来嵘"
+    },
+    {
+      "case_id": "4952e1fe8ac630c2ab484229a1e0d8c1e41835660fc6c863a74485010ea41877",
+      "title": "sinopec anniversary report 2024"
+    },
+    {
+      "case_id": "a265fc9b843516c7b0169e073d1e2c1d44ea8c5da7a0b10b429fb3ab55d599cd",
+      "title": "crypto_market_daily_snapshot"
+    },
+    {
+      "case_id": "f4c3bf7a0e20ee0bbd62b7bead5d24cbca79263eebb21fec715f78644f30afcd",
+      "title": "Crypto"
+    },
+    {
+      "case_id": "0243a45ae9f61048c3cd689b2dc597027871351eccc841532ab6e08b7920d8a8",
+      "title": "荷兰花卉2024"
+    },
+    {
+      "case_id": "96e6c9e7184037048ca3cfda6c35fa370fe289610e644983e32fcc8f4cd9abe3",
+      "title": "flat-ui__data-Sun Jan 25 2026"
+    },
+    {
+      "case_id": "448e0e94b6fc08532e60394e6f899ac4a1a2716d5d04fb9120437e72a60cf773",
+      "title": "收货分析"
+    },
+    {
+      "case_id": "8a165236ea5f688fe3b9c32c0469026f98d8b9800afca52b44ce66801a98ae4b",
+      "title": "时研"
+    },
+    {
+      "case_id": "623c92ac4a0a8f56ba48635cc7c7fdbc4629721756f776c5970f640f3a838eba",
+      "title": "中国经济2026"
+    },
+    {
+      "case_id": "76b8cf9eaec81622f459132f3b011897cf51b09cb44c8909668edc2c31e839cb",
+      "title": "epx1"
+    },
+    {
+      "case_id": "17f3a7f8a47547093ea9a5631be32c47822ea1d00e1cea79c84088d4823c0d10",
+      "title": "stock_analysis_result"
+    },
+    {
+      "case_id": "f6304d25b4e9efc420cd39f18cc463cb87dbf264d7305533642e5e3d86b2ee19",
+      "title": "recipe"
+    },
+    {
+      "case_id": "307e79a1cfe6336588d550b5bf07fec93ba2ce54befb53dcb815909d5dc3d88f",
+      "title": "GCC"
+    },
+    {
+      "case_id": "3e9665878efb7f529848ddccf47611b97968840ef938ddece74ca01b4b2e1580",
+      "title": "商业航天分析"
+    },
+    {
+      "case_id": "2e923821f46c17286c0ad7261b305306d2abe5599eb064e45d1d46c1b803bfa2",
+      "title": "越南革新开放"
+    },
+    {
+      "case_id": "f544e6a1b0ffe82beb9c14ccbc0b206c52b8366619c52732f8089d0c8402f36e",
+      "title": "Brain Report Generation Performance Analysis"
+    },
+    {
+      "case_id": "6eee4f94abe002f443616f718b84b154018b74689e9797d37f7612e3aba0c33b",
+      "title": "sleep"
+    },
+    {
+      "case_id": "b57bf10f32b8632e0ac77e880706e23389c8bb84ee06528a01a7018960776c81",
+      "title": "Copy of Project"
+    },
+    {
+      "case_id": "a22127cee5248c8e504bd179417e4a99072967d41197c193d446d271201a0486",
+      "title": "个人信息"
+    },
+    {
+      "case_id": "4b15970d8d176aaa6cd730f2b265cdfb1f0c3f72c52b24e9e071bd429e3be58b",
+      "title": "万兴saas内部收入12月分析"
+    },
+    {
+      "case_id": "286cbe2d4e92042e9dff93800c61a7e4ffa880c83c3f41d783a8d70815952fa5",
+      "title": "playapps_2025"
+    },
+    {
+      "case_id": "461c82a2e47b685459bc2b47b184af64e53bdad1903dba1d804c247ac2c2b8c0",
+      "title": "China Banks and Property"
+    },
+    {
+      "case_id": "e045f3d75942ee2a51ab3e10984a6065beee295f3950c6be5343e03e804fcffe",
+      "title": "EG"
+    },
+    {
+      "case_id": "ba5fe296997be6b81e429bd37721ebc0fa66e104afd158cb3afffd1b8be96273",
+      "title": "test"
+    },
+    {
+      "case_id": "82c1a841f1c5ef379391ba956b37b70099cacf77d9de9e5f4d95ed2913c493b6",
+      "title": "Ecommerce Analysis"
+    },
+    {
+      "case_id": "5130f264ec13172c7aca856cb496693bf2b05452287000c29787c34479214023",
+      "title": "SuperMarket Analysis"
+    },
+    {
+      "case_id": "61c107393cd55d462e2bc69b7bb6cbfbb60c467ad56f209f8e2283b5af4ca4ac",
+      "title": "Transgender Research"
+    },
+    {
+      "case_id": "d3de41b2ce61ef04fb1a4b34fd7b80d37eb56c8b7cddb3f0de2cc1db4303b7b8",
+      "title": "TikTok Dataset"
+    },
+    {
+      "case_id": "921b4a4a2e8748a25ced00f3858f44511421f50b129b604a2175489b1dd3cf42",
+      "title": "Football"
+    },
+    {
+      "case_id": "b12c8cb9b90d52c9cf04a0a72c467567d8bb35c194b0fb161d8be73ce2bce76b",
+      "title": "AI_Economy_Complete_Index"
+    },
+    {
+      "case_id": "e0c02846232580031119672f004b97219364dd642204cd9eb81bcde766435890",
+      "title": "Daily_Global_Stock_Market_Indicators"
+    },
+    {
+      "case_id": "c8554dc4df400246172d42369902664563c3735685e4bf4ea46c97301bd8af68",
+      "title": "Churn_Modelling"
+    },
+    {
+      "case_id": "7f7c4670b0f57aa714841252e899845d102456cc9b05ccae06a9004a80f51e8f",
+      "title": "vitamin_deficiency_disease_dataset_20260123"
+    },
+    {
+      "case_id": "6bfb40067e1d3e563f90a5aec1e7f6a195cc3ecaa1f33dfc8f06ec82183b5bf5",
+      "title": "train"
+    },
+    {
+      "case_id": "9d17bd25b70e554c436398eb7362bf236889cd1c0825e5442a8abf691d1b4496",
+      "title": "qs_world_university_rankings_2025_top_1500_synthetic"
+    }
+  ]
+}

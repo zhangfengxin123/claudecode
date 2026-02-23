@@ -1,0 +1,3 @@
+average data，这个csv文件是我们搜集的已发表出来的团簇数据（多次计算取平均值的），元字典有这些Sample Sample Type Carbonate Type Location Latitude Longitude Altitude Age Age1 Period Stage Soil depth Burial depth N δ13C δ18O mineral Δ47 Ghosh Δ47 ARF Temperature δ18O water Δ47Diagenetic alteration,大体意思是样本，样本类型，样品采样地点，现代经纬度，Age是原作者原文的年龄值，Age1是我们在此数据库进行的赋值。N是样品进行团簇实验的个数。soil depth和burial depth分别指土壤深度和埋藏深度针对土壤碳酸盐进行统计，土壤深度指碳酸盐结核
+在当前土壤剖面中的垂直位置范围，即从地表到结核所在层的顶部和底
+部的距离（例如“0.5~1.2 米”），埋藏深度指古土壤层顶部到现今地表的垂直距离，即古土壤被后期沉积物覆盖的总厚度。这两个元字典是专针对土壤碳酸盐设计的。

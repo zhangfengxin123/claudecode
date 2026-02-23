@@ -1,0 +1,140 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Coverage Breakdown</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;margin:22px;color:#111827}table{border-collapse:collapse;width:100%;font-size:13px}th,td{border:1px solid #e5e7eb;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f4f6}code{background:#f3f4f6;padding:2px 6px;border-radius:6px}pre{background:#f8fafc;border:1px solid #e5e7eb;padding:8px;white-space:pre-wrap}</style></head><body>
+<h1>无 description 覆盖率拆分</h1>
+<p>total=<code>199</code>, ok=<code>186</code>, fail=<code>13</code></p>
+<table><tbody>
+<tr><th>含图资产 case</th><td>177</td></tr>
+<tr><th>报告无图资产 case</th><td>9</td></tr>
+<tr><th>图表全匹配 case</th><td>139</td></tr>
+<tr><th>图表部分缺失 case</th><td>5</td></tr>
+<tr><th>图表全缺失 case</th><td>3</td></tr>
+<tr><th>失败桶</th><td><pre>{
+  &quot;document_404&quot;: 13
+}</pre></td></tr>
+</tbody></table>
+<h2>示例：失败（document 404）</h2><pre>[
+  {
+    &quot;case_id&quot;: &quot;17faad37ce6bf04378012190d8c563e8611827132b0944643f44af1350abb758&quot;,
+    &quot;title&quot;: &quot;jinteki&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;2aa4a1c17878da16636d057ea682656438ee01e50a9b56fbbee8aac72e5bd2c9&quot;,
+    &quot;title&quot;: &quot;AB_NO_DESC_f5171f88125c_20260217_074206&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;35fe9f98a5565e83dd97e074beb7fd80d42b3e2467bde1dec7074a9aefe4e7cb&quot;,
+    &quot;title&quot;: &quot;ISP&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;4732de6cfb3a108a6a95dd93ac81cd2adc5a0d8a93e0c4daa06e6c2e61a3ffa2&quot;,
+    &quot;title&quot;: &quot;DataFrame_from__data_input_R_0_1_xlsx___sheet___Projects_Record_Table___&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;4bbe48695313e00fe4e324d0d4cb70f0022812020e6f3748c56aef8a8bed49a6&quot;,
+    &quot;title&quot;: &quot;1&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;4f941f32c468b66391aa9cbc55bf54e8b9b19e6c37e3195bbefebc175b01edb2&quot;,
+    &quot;title&quot;: &quot;case_059&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;6b4b51bd9afaa5d8f8512d51c00d3f5cde948f551ad09e3829457b2ab7a3e29b&quot;,
+    &quot;title&quot;: &quot;001&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;d072b670826453e16599800aec6634bc6c5907d76b0202af193e344151d3f459&quot;,
+    &quot;title&quot;: &quot;random walk&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131&quot;,
+    &quot;title&quot;: &quot;美国电能分析&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874&quot;,
+    &quot;title&quot;: &quot;AB_NO_DESC_64914baf5ff5_20260217_070858&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;dcb6a29b31385e093b8dba1b3c7b81b826810b8e42629e319a6f061f63faa06e&quot;,
+    &quot;title&quot;: &quot;20251206-how AI is wiring childhood&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;e72ce87902fb49a7899df6872f983400ce4ee89bab41330e2fd22ff924eeaea0&quot;,
+    &quot;title&quot;: &quot;贷后报告-范例&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  },
+  {
+    &quot;case_id&quot;: &quot;ef45d93ed5cbd5546f82e0ce56b5f7dcf6f431d8c605dc393e2da836ef77b2dd&quot;,
+    &quot;title&quot;: &quot;integrated_final_plan&quot;,
+    &quot;error&quot;: &quot;document fetch failed: HTTP 404&quot;
+  }
+]</pre>
+<h2>示例：部分缺图</h2><pre>[
+  {
+    &quot;case_id&quot;: &quot;2e44cec7bc5ed214761a7a9cd59aed0ed54e9bf39a95dbf58d47fe6cb49e1fee&quot;,
+    &quot;title&quot;: &quot;mbti_1&quot;,
+    &quot;plot_assets_in_doc&quot;: 12,
+    &quot;plots_renderable&quot;: 11,
+    &quot;plot_assets_failed&quot;: 1
+  },
+  {
+    &quot;case_id&quot;: &quot;412edcf0e3aedb85c775d41e01d1b236a21a461a885e365f218cfb35fbb5e684&quot;,
+    &quot;title&quot;: &quot;RAW MARKS SCHEDULE 2026_011022&quot;,
+    &quot;plot_assets_in_doc&quot;: 9,
+    &quot;plots_renderable&quot;: 3,
+    &quot;plot_assets_failed&quot;: 6
+  },
+  {
+    &quot;case_id&quot;: &quot;558df7b186797714237acc11d7c122cb2fb41d19eb9c26717278df8a8036a0b9&quot;,
+    &quot;title&quot;: &quot;DepthStats&quot;,
+    &quot;plot_assets_in_doc&quot;: 12,
+    &quot;plots_renderable&quot;: 11,
+    &quot;plot_assets_failed&quot;: 1
+  },
+  {
+    &quot;case_id&quot;: &quot;8a850cc5b8631d3219cd736c5c62d99607641c49acc0b1839289ad5e6e4b69b9&quot;,
+    &quot;title&quot;: &quot;2025 Global Robotics Leaders — Technology Roadmap Comparison&quot;,
+    &quot;plot_assets_in_doc&quot;: 21,
+    &quot;plots_renderable&quot;: 1,
+    &quot;plot_assets_failed&quot;: 20
+  },
+  {
+    &quot;case_id&quot;: &quot;e49f52c3c5b2216778414fb62c2d879e0b80dacf4c34d385ef8dc1316b339743&quot;,
+    &quot;title&quot;: &quot;AB_NO_DESC_6a109b2edad7_20260217_072320&quot;,
+    &quot;plot_assets_in_doc&quot;: 8,
+    &quot;plots_renderable&quot;: 7,
+    &quot;plot_assets_failed&quot;: 1
+  }
+]</pre>
+<h2>示例：全缺图</h2><pre>[
+  {
+    &quot;case_id&quot;: &quot;4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f&quot;,
+    &quot;title&quot;: &quot;dataset_fashion_store_customers&quot;,
+    &quot;plot_assets_in_doc&quot;: 8,
+    &quot;plot_assets_failed&quot;: 8
+  },
+  {
+    &quot;case_id&quot;: &quot;c2bcdeec152405a6623419d62142e24fb7bd532f7e666e12a2b04701fec62529&quot;,
+    &quot;title&quot;: &quot;moltbook_top_posts&quot;,
+    &quot;plot_assets_in_doc&quot;: 22,
+    &quot;plot_assets_failed&quot;: 22
+  },
+  {
+    &quot;case_id&quot;: &quot;db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360&quot;,
+    &quot;title&quot;: &quot;瑞银表态中国存款&quot;,
+    &quot;plot_assets_in_doc&quot;: 5,
+    &quot;plot_assets_failed&quot;: 5
+  }
+]</pre>
+</body></html>

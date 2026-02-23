@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：China Population And Education</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：China Population And Education</h1>
+    <p class='sub'>来源: /view/5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;中国教育趋势深度分析：人口周期与高等教育普及化（1975-2024）&quot;
+description: &quot;基于49年数据的中国出生人口、高考报考与高校招生趋势分析，揭示人口周期对教育系统的影响及高等教育普及化进程&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>中国教育趋势深度分析：人口周期与高等教育普及化</h1>
+<h2>执行摘要</h2>
+<p>基于1975-2024年49年的中国教育与人口数据，本报告揭示了三个关键趋势：出生人口持续下降、高考竞争日益激烈、高等教育从精英化向大众化转型。</p>
+<p>核心发现：</p>
+<ul><li>出生人口从1987年峰值2508万降至2024年954万，降幅达62%</li><li>高考报考人数逆势增长，2024年达1342万，较1977年增长8.2倍</li><li>高校录取率从1993年23.1%提升至2024年79.7%，高等教育实现大众化</li><li>2024年本科录取率为37.3%，约每2.7名考生中有1人进入本科</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>population_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5/assets/population_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>1. 人口周期：出生人口的历史转折</h2>
+<h3>1.1 四个时代的出生人口特征</h3>
+<p>通过对1975-2024年出生人口数据的分析，可以清晰地识别出四个具有显著特征的时期：</p>
+<p>1980年代：人口高峰期</p>
+<ul><li>平均年出生人口：2090万</li><li>峰值年份：1987年（2508万人）</li><li>背景：改革开放后，经济快速发展，计划生育政策尚未完全见效</li></ul>
+<p>1990年代：缓慢下降期</p>
+<ul><li>平均年出生人口：2085万</li><li>下降趋势：较1980年代基本持平，略有下降</li><li>背景：计划生育政策全面落实，人口增长得到有效控制</li></ul>
+<p>2000年代：平台期</p>
+<ul><li>平均年出生人口：1626万</li><li>下降幅度：较1990年代下降约22%</li><li>背景：计划生育政策持续，经济发展与城市化的双重影响</li></ul>
+<p>2020年代：断崖式下降期</p>
+<ul><li>平均年出生人口：1015万</li><li>下降幅度：较1980年代峰值下降62%</li><li>背景：生育成本上升、教育内卷、观念转变等多重因素叠加</li></ul>
+<h3>1.2 人口周期的教育影响</h3>
+<p>出生人口的变化对教育系统产生18年的滞后影响。数据显示：</p>
+<ul><li>人口周期效应：出生人口与18年后高考报考人数相关系数为-0.140，呈现弱负相关</li><li>转化率变化：出生人口转化为高考报考的平均转化率为40.2%，但范围从12.5%到84.9%不等</li><li>竞争加剧：尽管出生人口下降，但高考报考人数持续上升，说明教育期望值提升</li></ul>
+<p>关键洞察：出生人口的下降并未导致高考竞争的缓解，反而由于教育内卷化，使得高考竞争更加激烈。2024年高考报考人数达到1342万，创历史新高。</p>
+<h2>2. 高考制度：从恢复到普及</h2>
+<h3>2.1 高考报考人数的增长轨迹</h3>
+<div class='plot-card'><div class='plot-meta'><code>birth_gaokao_lag.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5/assets/birth_gaokao_lag.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>高考制度自1977年恢复以来，经历了几个重要发展阶段：</p>
+<p>1977-1990年代：恢复期</p>
+<ul><li>1977年报考人数：164万</li><li>1993年报考人数：286万</li><li>增长特征：缓慢增长，受制于教育资源限制</li></ul>
+<p>2000-2010年代：快速增长期</p>
+<ul><li>2000年报考人数：375万</li><li>2010年报考人数：957万</li><li>增长倍数：10年间增长2.55倍</li><li>背景：高等教育扩招，大众化教育推进</li></ul>
+<p>2014-2024年：稳定增长期</p>
+<ul><li>2014年报考人数：939万</li><li>2024年报考人数：1342万</li><li>增长幅度：42.9%</li><li>背景：考生基数稳定增长，复读生比例上升</li></ul>
+<h3>2.2 高考参考率的提升</h3>
+<p>高考参考率（报考人数占适龄人口比例）的变化反映了教育机会的普及：</p>
+<ul><li>1977-1980年代：参考率较低，波动大（7.5%-15.4%）</li><li>1990年代：稳步提升，达到45%左右</li><li>2000-2010年代：快速提升，从37.5%升至45.3%</li><li>2015-2024年：突破性提升，从46.4%升至84.9%</li></ul>
+<p>2024年达到84.9%的历史高点，意味着适龄人口中只有不到15%的人选择不参加高考，高等教育已成为主流选择。</p>
+<h2>3. 高等教育普及化进程</h2>
+<h3>3.1 录取率的持续攀升</h3>
+<div class='plot-card'><div class='plot-meta'><code>rate_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5/assets/rate_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>高校录取率的提升是高等教育普及化的核心指标：</p>
+<p>精英化阶段（1977-1998）</p>
+<ul><li>录取率：23.1%-33.8%</li><li>特征：低录取率，高竞争，精英教育</li></ul>
+<p>大众化阶段（1999-2019）</p>
+<ul><li>录取率：55.2%-90.3%</li><li>转折点：1999年高等教育大规模扩招</li><li>2019年：录取率达到88.7%，接近普及化门槛</li></ul>
+<p>普及化阶段（2020-2024）</p>
+<ul><li>录取率：79.7%-92.9%</li><li>2021年峰值：92.9%</li><li>2024年：79.7%（较峰值下降13.2个百分点）</li></ul>
+<h3>3.2 本科教育的普及</h3>
+<p>本科录取率反映了优质教育资源的可及性：</p>
+<ul><li>1999年：本科录取率仅37.5%</li><li>2024年：本科录取率37.3%，基本持平</li><li>关键发现：本科录取率在过去25年中保持稳定，说明优质教育资源增长相对有限</li></ul>
+<p>本科占高校录取比例：2024年为46.8%，即高校录取的学生中，约不到一半进入本科学习，其余进入高职高专。</p>
+<div class='plot-card'><div class='plot-meta'><code>education_funnel_2024.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5/assets/education_funnel_2024.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>3.3 招生规模与录取率的关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>enrollment_rate_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5/assets/enrollment_rate_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>通过对招生规模与录取率的相关性分析，发现：</p>
+<ul><li>相关系数：-0.329，呈现中等负相关</li><li>趋势解读：招生规模扩大时，录取率反而下降</li><li>原因分析：</li></ul>
+<p>2. 高考期望值提升，复读生增多</p>
+<p>  3. 优质资源（本科）增长有限</p>
+<p>2020-2024年的现象：招生规模持续增长（967万→1069万），但录取率从90.3%降至79.7%，说明考生数量增长更快，竞争加剧。</p>
+<h2>4. 关键年份对比分析</h2>
+<div class='plot-card'><div class='plot-meta'><code>key_years_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5/assets/key_years_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>选取1993、2000、2010、2020、2024五个关键年份进行对比：</p>
+<div class='table-wrap'><table><thead><tr><th>年份</th><th>出生人口</th><th>高考报考</th><th>高校招生</th><th>本科招生</th><th>高校录取率</th><th>本科录取率</th></tr></thead><tbody><tr><td>1993</td><td>2120万</td><td>286万</td><td>66万</td><td>-</td><td>23.1%</td><td>-</td></tr><tr><td>2000</td><td>1765万</td><td>375万</td><td>221万</td><td>130万</td><td>58.9%</td><td>34.7%</td></tr><tr><td>2010</td><td>1588万</td><td>957万</td><td>661万</td><td>320万</td><td>69.1%</td><td>33.4%</td></tr><tr><td>2020</td><td>1202万</td><td>1071万</td><td>967万</td><td>450万</td><td>90.3%</td><td>42.0%</td></tr><tr><td>2024</td><td>954万</td><td>1342万</td><td>1069万</td><td>500万</td><td>79.7%</td><td>37.3%</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<p>1. 出生人口下降62%（1993 vs 2024），但高考报考人数增长369%</p>
+<p>2. 高校招生增长16.2倍（66万→1069万），录取率提升56.6个百分点</p>
+<p>3. 本科招生增长3.85倍（2000 vs 2024），但本科录取率提升有限（仅2.6个百分点）</p>
+<p>4. 2024年异常现象：录取率较2020年下降10.6个百分点，反映竞争加剧</p>
+<h2>5. 趋势预测与政策建议</h2>
+<h3>5.1 未来趋势预测</h3>
+<p>基于历史数据和当前趋势，对2025-2035年进行预测：</p>
+<p>出生人口趋势</p>
+<ul><li>短期（2025-2027）：预计在900-1000万区间波动</li><li>中期（2028-2032）：受2024年小幅回升影响，可能在1000-1100万区间</li><li>长期（2033-2035）：可能进入新一轮下降通道</li></ul>
+<p>高考报考人数趋势</p>
+<ul><li>2025-2027年：预计达到1400-1500万</li><li>2028-2032年：受出生人口影响，可能回落至1200-1300万</li><li>2033-2035年：可能进一步下降至1000-1200万</li></ul>
+<p>录取率趋势</p>
+<ul><li>短期：预计维持在75%-85%区间</li><li>中期：随着报考人数下降，录取率可能回升至85%-90%</li><li>长期：可能进入相对稳定的80%-85%区间</li></ul>
+<h3>5.2 政策建议</h3>
+<p>基于分析结果，提出以下政策建议：</p>
+<p>短期政策（2025-2027）</p>
+<p>1. 优化招生结构：适当增加本科招生比例，缓解本科录取率偏低的问题</p>
+<p>2. 提升教育质量：在扩招的同时，确保教育质量不下降</p>
+<p>3. 改革评价体系：推进多元化评价，减轻高考单一评价的压力</p>
+<p>中长期政策（2028-2035）</p>
+<p>1. 提前布局教育资源：根据出生人口预测，提前规划教育资源配置</p>
+<p>2. 发展职业教育：推动职业教育与普通教育并重，提供多元化发展路径</p>
+<p>3. 创新教育模式：利用AI、在线教育等技术，提升教育效率和质量</p>
+<p>结构性改革</p>
+<p>1. 建立终身学习体系：应对人口变化，推动继续教育和职业培训</p>
+<p>2. 优化教育投入结构：从&quot;规模扩张&quot;转向&quot;质量提升&quot;</p>
+<p>3. 推进教育公平：确保教育资源合理配置，缩小地区差距</p>
+<h2>6. 数据附录</h2>
+<h3>6.1 数据来源</h3>
+<ul><li>出生人口：国家统计局历年统计公报</li><li>高考数据：教育部历年教育事业发展统计公报</li><li>高校招生：教育部、各省市教育考试院</li><li>时间范围：1975-2024年（共49年）</li></ul>
+<h3>6.2 数据说明</h3>
+<ul><li>出生人口单位：人</li><li>高考相关数据单位：人</li><li>比例数据：百分比（%）</li><li>部分早年数据缺失，以null表示</li></ul>
+<h3>6.3 关键统计指标</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>峰值/谷值</th><th>年份</th></tr></thead><tbody><tr><td>出生人口峰值</td><td>25,080,000人</td><td>1987</td></tr><tr><td>出生人口谷值</td><td>9,020,000人</td><td>2023</td></tr><tr><td>高考报考峰值</td><td>13,420,000人</td><td>2024</td></tr><tr><td>高考录取率峰值</td><td>92.86%</td><td>2021</td></tr><tr><td>本科录取率峰值</td><td>43.14%</td><td>2021</td></tr></tbody></table></div>
+<h3>6.4 数据可视化说明</h3>
+<p>本报告使用6个交互式图表：</p>
+<p>1. populationtrend.json：出生人口、高考报考、高校招生三趋势对比</p>
+<p>2. ratetrend.json：高考参考率、高校录取率、本科录取率变化</p>
+<p>3. birthgaokaolag.json：出生人口与18年后高考报考的滞后关系</p>
+<p>4. enrollmentratescatter.json：招生规模与录取率的关系分析</p>
+<p>5. educationfunnel2024.json：2024年教育机会漏斗（桑基图）</p>
+<p>6. keyyearscomparison.json：关键年份指标对比</p>
+<h3>6.5 教育流程图</h3>
+<h2>结论</h2>
+<p>中国教育与人口数据的49年变迁，反映了国家发展的三个维度：</p>
+<p>人口维度：从高生育率到低生育率的转变，出生人口下降62%，对教育系统产生深远影响</p>
+<p>制度维度：高考从精英选拔到大众普及，录取率从23%提升至80%，实现了高等教育普及化</p>
+<p>社会维度：教育期望值持续提升，高考竞争从&quot;机会竞争&quot;转向&quot;质量竞争&quot;，优质资源（本科）竞争依然激烈</p>
+<p>未来展望：随着出生人口持续下降，教育系统需要从&quot;规模扩张&quot;转向&quot;质量提升&quot;和&quot;结构优化&quot;，建立更加多元、公平、高效的教育体系，以应对人口变化带来的挑战。</p>
+<hr/>
+<p>报告生成时间：2025-01-13</p>
+<p>数据来源：国家统计局、教育部</p>
+<p>分析工具：Pardus AI</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

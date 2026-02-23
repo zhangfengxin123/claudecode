@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：amazon</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：amazon</h1>
+    <p class='sub'>来源: /view/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Amazon Products Comprehensive Analysis - Pricing, Ratings and Category Insights&quot;
+description: &quot;In-depth analysis of 1,465 Amazon products covering pricing strategies, customer ratings, category performance, and discount patterns&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Amazon Products Comprehensive Analysis</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of 1,465 Amazon products across nine major categories. The analysis reveals significant insights about pricing strategies, customer satisfaction levels, and category performance patterns. Key findings include an aggressive discount strategy with average discounts of 47.7%, consistently high customer satisfaction with an average rating of 4.1/5.0, and clear category segmentation with Electronics leading both in product count and average pricing.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most significant pricing strategies observed across Amazon products?</li><li>How do customer ratings correlate with pricing across different product categories?</li><li>Which product categories offer the best value proposition for consumers?</li></ul></details>
+<hr/>
+<h2>Data Overview</h2>
+<p>The dataset comprises 1,465 Amazon products spanning multiple categories, with comprehensive pricing, rating, and product information. After data cleaning and preprocessing, we achieved complete data integrity with only minimal missing values 1 missing rating, 2 missing rating counts.</p>
+<h3>Data Quality Metrics</h3>
+<ul><li>Total Products: 1,465</li><li>Products with Missing Ratings: 1 0.07%</li><li>Products with Missing Rating Counts: 2 0.14%</li><li>Products with Zero Discount: 49 3.34%</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>price_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/price_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The price distribution reveals a right-skewed distribution, with most products priced below ₹5,000, while a small number of premium products extend up to ₹77,990. This pattern suggests a mass-market focus with premium offerings in select categories.</p>
+<hr/>
+<h2>Pricing Strategy Analysis</h2>
+<h3>Discount Patterns</h3>
+<p>Amazon employs an aggressive discounting strategy across most product categories:</p>
+<div class='plot-card'><div class='plot-meta'><code>discount_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/discount_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Pricing Metrics:</p>
+<ul><li>Average Discounted Price: ₹3,125</li><li>Average Actual Price: ₹5,445</li><li>Average Discount Percentage: 47.7%</li><li>Average Savings: ₹2,320</li></ul>
+<p>The discount distribution shows a concentration around 40-60% discounts, indicating a strategic approach to price optimization. Some products have zero discounts, likely representing new arrivals or consistently-priced items.</p>
+<h3>Price vs. Discount Correlation</h3>
+<div class='plot-card'><div class='plot-meta'><code>discount_vs_actual.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/discount_vs_actual.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot comparing actual vs. discounted prices reveals a strong linear relationship across all price ranges. The dashed diagonal line represents perfect proportional discounting. Deviations from this line indicate:</p>
+<ul><li>Above the line: Products with deeper discounts than average for their price point</li><li>Below the line: Products with shallower discounts</li></ul>
+<p>Electronics products blue show the widest price range, from affordable accessories to premium TVs and appliances.</p>
+<hr/>
+<h2>Customer Satisfaction Analysis</h2>
+<h3>Rating Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>rating_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/rating_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Customer Satisfaction Metrics:</p>
+<ul><li>Average Rating: 4.10 / 5.0</li><li>Average Rating Count: 18,296 per product</li><li>Rating Range: 2.0 - 5.0</li><li>Most Common Rating: 4.1</li></ul>
+<p>The rating distribution shows a clear concentration in the 3.9-4.3 range, indicating consistent product quality across the platform. Very few products have ratings below 3.5, suggesting effective quality control or listing curation.</p>
+<h3>Price vs. Rating Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>price_vs_rating.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/price_vs_rating.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot of price vs. rating reveals several important patterns:</p>
+<p>1. No Strong Price-Rating Correlation: Higher prices don&#x27;t necessarily correlate with higher ratings</p>
+<p>2. Category Clustering: Different categories show distinct price-rating clusters</p>
+<p>    Electronics: Wide price range, consistent 3.8-4.3 ratings</p>
+<p>    Computers&amp;Accessories: Lower prices, generally higher ratings 4.0-4.5</p>
+<p>    Home&amp;Kitchen: Mid-range prices, ratings around 4.0</p>
+<p>3. Popular Products: Products with high rating counts not shown in this view tend to cluster around the 4.0-4.2 rating range, suggesting this is the &quot;sweet spot&quot; for mass-market products.</p>
+<h3>Correlation Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The correlation matrix reveals the relationships between key metrics:</p>
+<p>Key Correlations:</p>
+<p>1. Discounted Price ↔ Actual Price+0.98: Nearly perfect positive correlation - discounts are applied proportionally across price ranges</p>
+<p>2. Discount Percentage ↔ Rating-0.11: Slight negative correlation - deeper discounts don&#x27;t strongly correlate with lower ratings</p>
+<p>3. Rating Count ↔ Price+0.17: Weak positive correlation - higher-priced products tend to have more ratings</p>
+<p>4. Discounted Price ↔ Rating-0.09: No meaningful correlation - price doesn&#x27;t predict customer satisfaction</p>
+<p>The weak correlations suggest that pricing strategy and customer satisfaction are largely independent factors, with quality and value being the primary drivers of customer ratings.</p>
+<hr/>
+<h2>Category Analysis</h2>
+<h3>Category Breakdown</h3>
+<div class='plot-card'><div class='plot-meta'><code>category_breakdown.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/category_breakdown.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top Categories by Product Count:</p>
+<p>1. Electronics: 526 products 35.9%</p>
+<p>2. Computers&amp;Accessories: 453 products 30.9%</p>
+<p>3. Home&amp;Kitchen: 448 products 30.6%</p>
+<p>4. OfficeProducts: 31 products 2.1%</p>
+<p>5. Other Categories: 7 products 0.5%</p>
+<p>The clear dominance of three major categories Electronics, Computers&amp;Accessories, Home&amp;Kitchen representing 97.4% of all products suggests Amazon&#x27;s strategic focus on these high-demand segments.</p>
+<h3>Average Price by Category</h3>
+<div class='plot-card'><div class='plot-meta'><code>avg_price_by_category.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/avg_price_by_category.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Category Pricing Insights:</p>
+<div class='table-wrap'><table><thead><tr><th>Category</th><th>Count</th><th>Avg Price ₹</th><th>Avg Rating</th></tr></thead><tbody><tr><td>Electronics</td><td>526</td><td>₹5,966</td><td>4.08</td></tr><tr><td>Computers&amp;Accessories</td><td>453</td><td>₹843</td><td>4.15</td></tr><tr><td>Home&amp;Kitchen</td><td>448</td><td>₹2,331</td><td>4.04</td></tr><tr><td>OfficeProducts</td><td>31</td><td>₹302</td><td>4.31</td></tr><tr><td>MusicalInstruments</td><td>2</td><td>₹638</td><td>3.90</td></tr></tbody></table></div>
+<p>Key Observations:</p>
+<p>1. Electronics: Highest average price with solid ratings - premium positioning</p>
+<p>2. Computers&amp;Accessories: Lowest average price with highest ratings - value-focused strategy</p>
+<p>3. Home&amp;Kitchen: Mid-range pricing with consistent ratings</p>
+<p>4. OfficeProducts: Budget pricing with excellent ratings 4.31 - exceptional value</p>
+<p>The Computers&amp;Accessories category stands out with the lowest average price ₹843 and highest ratings 4.15, suggesting exceptional value proposition for consumers.</p>
+<h3>Category Hierarchy</h3>
+<div class='plot-card'><div class='plot-meta'><code>category_sunburst.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/category_sunburst.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The sunburst diagram reveals the hierarchical structure of product categories:</p>
+<p>Level 1 Main Categories:</p>
+<ul><li>Electronics, Computers&amp;Accessories, Home&amp;Kitchen, OfficeProducts</li></ul>
+<p>Level 2 Sub-Categories:</p>
+<ul><li>Electronics: Accessories&amp;Peripherals, Cameras, SmartDevices, TVs</li><li>Computers&amp;Accessories: Cables, MemoryCards, PowerBanks, Mice</li><li>Home&amp;Kitchen: Appliances, Cookware, HomeDecor</li></ul>
+<p>This hierarchical organization shows Amazon&#x27;s granular categorization strategy, enabling targeted marketing and search optimization.</p>
+<hr/>
+<h2>Top Products Analysis</h2>
+<h3>Most Reviewed Products</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_products.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/db42ed7fbcda8a8bcc3844a65b1e5791273957416c0407487539dda97e1180fe/assets/top_products.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot of the top 20 products by rating count reveals:</p>
+<p>1. High Rating Concentration: All top products have ratings between 4.0-4.4</p>
+<p>2. Rating Count Range: From </p>
+<p>3. Consistency: Products with the most review counts maintain high ratings</p>
+<p>Implications:</p>
+<ul><li>Popularity high review count correlates with consistent quality</li><li>Products with 100,000+ ratings maintain ratings above 4.0</li><li>Review count serves as a trust indicator for consumers</li></ul>
+<hr/>
+<h2>Key Insights and Recommendations</h2>
+<h3>1. Pricing Strategy Insights</h3>
+<p>Finding: Amazon uses an aggressive 47.7% average discount strategy across most categories.</p>
+<p>Implication: This creates a psychological pricing effect where consumers feel they&#x27;re getting significant value, potentially driving higher conversion rates despite the actual profit margins.</p>
+<p>Recommendation: Continue monitoring discount effectiveness, especially in the 40-60% range where most products cluster.</p>
+<h3>2. Category Performance Analysis</h3>
+<p>Finding: Computers&amp;Accessories offers the best value proposition lowest price, highest rating, while Electronics commands premium pricing.</p>
+<p>Implication: Different categories serve different market segments:</p>
+<ul><li>Computers&amp;Accessories: Value-conscious consumers</li><li>Electronics: Premium segment willing to pay for higher-end products</li><li>Home&amp;Kitchen: Mass-market mid-range segment</li></ul>
+<p>Recommendation: Tailor marketing strategies by segment - emphasize value for Computers&amp;Accessories, premium features for Electronics, and lifestyle benefits for Home&amp;Kitchen.</p>
+<h3>3. Customer Satisfaction Patterns</h3>
+<p>Finding: Ratings are consistently high 4.1 average across all price points and categories, with weak correlation to price or discount percentage.</p>
+<p>Implication: Product quality, not price, is the primary driver of customer satisfaction. Amazon&#x27;s quality control and review curation systems appear effective.</p>
+<p>Recommendation: Focus on quality assurance and customer experience as key differentiators, rather than competing primarily on price.</p>
+<h3>4. Price-Value Sweet Spot</h3>
+<p>Finding: The highest-rated products 4.0-4.3 span all price ranges, but Computers&amp;Accessories dominates with low prices and high ratings.</p>
+<p>Implication: There&#x27;s no single &quot;optimal&quot; price point for high ratings, but value-oriented categories Computers&amp;Accessories have a natural advantage.</p>
+<p>Recommendation: For new products, consider the Computers&amp;Accessories pricing model - competitive pricing with high quality to achieve optimal ratings and market penetration.</p>
+<h3>5. Strategic Opportunities</h3>
+<p>Finding: OfficeProducts has the highest ratings 4.31 and lowest prices ₹302 but represents only 2.1% of products.</p>
+<p>Implication: Underserved market segment with high customer satisfaction potential.</p>
+<p>Recommendation: Consider expanding OfficeProducts offerings to capture this high-satisfaction segment, as customers in this category are exceptionally satisfied with the value proposition.</p>
+<hr/>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of 1,465 Amazon products reveals a sophisticated marketplace with:</p>
+<p>1. Aggressive Discount Strategy: 47.7% average discount drives perceived value</p>
+<p>2. High Customer Satisfaction: 4.1/5.0 average rating across all categories</p>
+<p>3. Category Specialization: Clear segmentation between Electronics premium, Computers&amp;Accessories value, and Home&amp;Kitchen mid-range</p>
+<p>4. Quality-First Approach: Price and discount levels have minimal impact on customer ratings</p>
+<p>5. Expansion Opportunities: High-satisfaction categories like OfficeProducts present growth opportunities</p>
+<p>The data suggests Amazon has successfully created a marketplace where product quality and customer satisfaction are paramount, with pricing serving as a tool for market positioning rather than a primary driver of customer loyalty.</p>
+<hr/>
+<h2>Methodology</h2>
+<h3>Data Processing</h3>
+<p>1. Data Loading: 1,465 products loaded from CSV with 16 original columns</p>
+<p>2. Data Cleaning:</p>
+<p>    Removed currency symbols and commas from price fields</p>
+<p>    Converted price fields to numeric format</p>
+<p>    Handled missing values removed 1 product with missing rating</p>
+<p>    Extracted maincategory from hierarchical category field</p>
+<p>3. Feature Engineering:</p>
+<p>    Created field actualprice - discountedprice</p>
+<p>    Converted rating counts to numeric format</p>
+<h3>Analysis Techniques</h3>
+<ul><li>Descriptive Statistics: Mean, median, standard deviation for all numeric fields</li><li>Correlation Analysis: Pearson correlation matrix for key metrics</li><li>Distribution Analysis: Histograms for price, discount, and rating distributions</li><li>Category Analysis: Group-by aggregations for category-level insights</li><li>Scatter Analysis: Price vs. rating, actual vs. discounted price relationships</li></ul>
+<h3>Limitations</h3>
+<ul><li>Dataset represents a snapshot in time; temporal trends not analyzed</li><li>No sales volume data; rating count used as proxy for popularity</li><li>Limited geographic information India-based pricing</li><li>No competitor pricing for comparison</li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

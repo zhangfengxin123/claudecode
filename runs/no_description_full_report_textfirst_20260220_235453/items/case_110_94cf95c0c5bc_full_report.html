@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：case_110</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：case_110</h1>
+    <p class='sub'>来源: /view/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;浙江电网负荷与光伏发电数据分析报告&quot;
+description: &quot;基于30,624条记录的浙江电网负荷与光伏发电数据深度分析，揭示时间模式、季节变化与相关性洞察&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-02&quot;
+</pre></details>
+<h1>浙江电网负荷与光伏发电数据分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告对浙江省电网负荷（OT）与光伏发电数据进行了全面分析，涵盖了2023年11月至2025年7月期间共30,624条30分钟间隔的记录数据。分析揭示了电网负荷与光伏发电的显著时间模式、季节性变化特征以及两者的相关性关系。</p>
+<p>核心发现：</p>
+<ul><li>电网负荷平均值为2,915 MW，峰值为4,041 MW</li><li>光伏发电平均值为624 MW，峰值达5,145 MW</li><li>负荷在下午14:00-18:00时段达到峰值</li><li>光伏发电在中午12:00-14:00时段达到峰值</li><li>夏季负荷最高，光伏发电能力最强</li><li>负荷与光伏发电呈现中等正相关（相关系数约0.38）</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>timeseries_overview.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/timeseries_overview.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>数据概览与处理流程</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/pipeline_diagram.svg' alt='pipeline_diagram.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/pipeline_diagram.svg' target='_blank' rel='noopener noreferrer'>pipeline_diagram.svg</a></figcaption></figure>
+<h3>数据集基本信息</h3>
+<p>数据集包含了浙江省电网约20个月的连续监测数据，主要变量包括：</p>
+<div class='table-wrap'><table><thead><tr><th>变量</th><th>说明</th><th>数据范围</th></tr></thead><tbody><tr><td>load OT</td><td>电网负荷</td><td>822 - 4,041 MW</td></tr><tr><td>pvpower</td><td>光伏发电功率</td><td>-15 - 5,145 MW</td></tr><tr><td>season</td><td>季节标签</td><td>1-4 春夏秋冬</td></tr><tr><td>weatherspecial</td><td>特殊气象标签</td><td>0-1 正常/特殊</td></tr><tr><td>holiday</td><td>节假日标签</td><td>0-7 不同类型</td></tr></tbody></table></div>
+<h3>数据质量控制</h3>
+<p>在分析前，我们对原始数据进行了严格的清洗处理：</p>
+<p>1. 时间格式转换：将日期字符串解析为标准datetime格式</p>
+<p>2. 数据类型转换：将字符串类型的数值列转换为浮点数</p>
+<p>3. 特征提取：提取小时、月份、日期、星期等时间特征</p>
+<p>4. 缺失值检查：确认数据完整，无缺失值</p>
+<p>5. 异常值处理：保留光伏负值（可能是电网反向馈电的情况）</p>
+<p>清洗后的数据已保存至 ，确保了分析的准确性和可重复性。</p>
+<h2>时间序列分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>电网负荷和光伏发电的主要时间模式是什么？</li><li>负荷峰值和光伏峰值在时间上有什么差异？</li></ul></details>
+<h3>整体趋势</h3>
+<p>时间序列图展示了电网负荷与光伏发电的动态变化。从样本数据可以看出：</p>
+<ul><li>电网负荷呈现明显的日周期性波动，工作日负荷普遍高于周末</li><li>光伏发电具有强烈的昼间特征，夜间几乎为零，白天呈现典型的钟形曲线</li><li>两者都存在季节性波动，夏季数值普遍较高</li></ul>
+<h3>每小时模式分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>hourly_patterns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/hourly_patterns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>每小时平均模式图清晰地展示了电网负荷与光伏发电的日内变化规律：</p>
+<p>电网负荷模式：</p>
+<ul><li>凌晨0:00-6:00：低谷期，平均负荷约2,500-2,700 MW</li><li>早晨7:00-9:00：快速上升期，人们开始活动</li><li>上午10:00-12:00：持续上升，达到约3,000 MW</li><li>下午14:00-18:00：高峰期，平均负荷达3,200-3,300 MW</li><li>晚上19:00-21:00：晚高峰，约3,100 MW</li><li>夜间22:00-24:00：逐步下降</li></ul>
+<p>光伏发电模式：</p>
+<ul><li>夜间0:00-5:00：完全无发电（0 MW）</li><li>早晨6:00-8:00：开始有微弱发电</li><li>上午9:00-11:00：快速上升</li><li>中午12:00-14:00：发电高峰期，平均约1,200-1,300 MW</li><li>下午15:00-17:00：逐渐下降</li><li>傍晚18:00-19:00：发电迅速减少至接近零</li></ul>
+<p>关键洞察：</p>
+<p>光伏发电的峰值时段（12:00-14:00）恰好出现在电网负荷上升阶段，光伏对削峰有一定帮助，但与真正的负荷高峰（14:00-18:00）有2-4小时的时间错位。</p>
+<h2>季节性分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>不同季节的电网负荷和光伏发电有何差异？</li><li>为什么夏季的负荷和光伏发电都最高？</li></ul></details>
+<h3>季节对比分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>seasonal_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/seasonal_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>季节性对比揭示了显著的季节差异：</p>
+<div class='table-wrap'><table><thead><tr><th>季节</th><th>平均负荷 MW</th><th>平均光伏 MW</th><th>特征</th></tr></thead><tbody><tr><td>春季1</td><td>2,850</td><td>550</td><td>温和气候，供需平衡</td></tr><tr><td>夏季2</td><td>3,150</td><td>900</td><td>负荷最高，制冷需求大，光伏最强</td></tr><tr><td>秋季3</td><td>2,800</td><td>600</td><td>负荷回落，光伏减弱</td></tr><tr><td>冬季4</td><td>2,700</td><td>450</td><td>供暖需求不同，光伏最弱</td></tr></tbody></table></div>
+<p>夏季特征解析：</p>
+<p>1. 高负荷原因：空调制冷需求激增，是夏季负荷显著高于其他季节的主要原因</p>
+<p>2. 高光伏原因：夏季日照时间长、太阳辐射强，光伏发电效率最高</p>
+<p>3. 供需匹配度：夏季光伏发电高峰与负荷上升期时间重叠度较好，有利于缓解电网压力</p>
+<p>电网运营启示：</p>
+<ul><li>夏季需要额外的调峰能力，因为光伏高峰与负荷峰值存在时间错位</li><li>冬季虽然光伏输出最小，但负荷也相对较低</li><li>春秋季是电网运行的&quot;舒适期&quot;，负荷和光伏都处于中等水平</li></ul>
+<h2>分布特征分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>电网负荷和光伏发电的分布形态有何不同？</li><li>为什么光伏发电有一半的记录为零？</li></ul></details>
+<h3>数值分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>distribution_histogram.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/distribution_histogram.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>分布直方图揭示了两个变量的不同特征：</p>
+<p>电网负荷分布：</p>
+<ul><li>近似正态分布，略向左偏</li><li>大部分值集中在2,500-3,500 MW区间</li><li>分布相对集中，标准差约530 MW</li><li>说明电网负荷运行相对稳定</li></ul>
+<p>光伏发电分布：</p>
+<ul><li>极度双峰分布</li><li>约50%的记录值为0（夜间时段）</li><li>正值部分呈现右偏分布</li><li>非零值主要集中在100-1,500 MW范围</li></ul>
+<p>光伏零值分析：</p>
+<ul><li>数据集包含50.1%的零值记录（15,334条）</li><li>这是正常现象，因为光伏在夜间完全无法发电</li><li>30分钟间隔的采样意味着每天约有12小时为0（19:00至次日7:00）</li><li>这个比例与夏季日照时间长、冬季日照时间短的特征相吻合</li></ul>
+<p>运营建议：</p>
+<ul><li>电网必须具备足够的非光伏发电能力来覆盖夜间时段</li><li>需要大规模储能系统来平衡昼夜差异</li><li>负荷管理应重点考虑光伏发电的间歇性特征</li></ul>
+<h2>月度趋势分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>过去20个月电网负荷和光伏发电的长期趋势如何？</li><li>是否存在明显的增长或下降趋势？</li></ul></details>
+<h3>长期变化</h3>
+<div class='plot-card'><div class='plot-meta'><code>monthly_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/monthly_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>月度趋势图展示了20个月的演变过程：</p>
+<p>观察到的模式：</p>
+<p>1. 年度周期性：明显呈现夏季峰值、冬春谷底的年度循环</p>
+<p>2. 季节间波动：相邻季节间的过渡相对平滑</p>
+<p>3. 光伏增长趋势：在相同季节比较下，光伏发电能力可能略有提升</p>
+<p>4. 负荷稳定性：电网负荷整体稳定，未出现异常波动</p>
+<p>时间范围分析：</p>
+<ul><li>2023年11月-2024年2月（第一个冬季）：负荷较低，光伏最弱</li><li>2024年3-5月（春季）：负荷和光伏开始回升</li><li>2024年6-8月（夏季）：年度高峰，负荷和光伏都达到峰值</li><li>2024年9-11月（秋季）：逐步回落</li><li>2024年12月-2025年2月（第二个冬季）：再次进入低谷</li><li>2025年3-7月（春夏）：再次上升</li></ul>
+<p>增长趋势推断：</p>
+<p>通过对比相同季节的数据（如2024年夏季与2025年夏季），可以观察到：</p>
+<ul><li>光伏发电能力可能有轻微增长，反映了新能源装机容量的增加</li><li>电网负荷保持相对稳定，说明经济发展与能效提升达到平衡</li></ul>
+<h2>相关性分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>电网负荷与光伏发电之间是否存在显著的相关性？</li><li>哪些因素对电网负荷的影响最大？</li></ul></details>
+<h3>特征相关性矩阵</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>相关性分析揭示了变量间的关联程度：</p>
+<p>主要相关关系：</p>
+<div class='table-wrap'><table><thead><tr><th>变量对</th><th>相关系数</th><th>解释</th></tr></thead><tbody><tr><td>load - pvpower</td><td>0.38</td><td>中等正相关- 光伏发电时负荷也较高（白天）</td></tr><tr><td>load - season</td><td>0.28</td><td>弱正相关 - 夏季负荷较高</td></tr><tr><td>pvpower - season</td><td>0.45</td><td>中等正相关- 夏季光伏最强</td></tr><tr><td>load - holiday</td><td>-0.15</td><td>弱负相关 - 节假日负荷略低</td></tr><tr><td>pvpower - holiday</td><td>-0.05</td><td>几乎无相关 - 光伏主要受日照影响</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<p>1. 负荷-光伏相关性（0.38）的解读：</p>
+<p>    正相关是因为两者都遵循日周期（白天值高）</p>
+<p>    但相关性不是特别强，说明还有其他主导因素</p>
+<p>    并不意味着光伏直接&quot;驱动&quot;负荷，而是两者都受时间周期影响</p>
+<p>2. 季节影响显著：</p>
+<p>    光伏发电与季节的相关性最强（0.45）</p>
+<p>    说明日照时长和强度是光伏输出的决定性因素</p>
+<p>    电网负荷也受季节影响，但程度较弱</p>
+<p>3. 节假日效应有限：</p>
+<p>    节假日对负荷的影响较小（-0.15）</p>
+<p>    说明工业负荷在电网中占主导地位</p>
+<p>    光伏几乎不受节假日影响</p>
+<p>预测模型建议：</p>
+<p>基于相关性分析，构建负荷预测模型时应优先考虑：</p>
+<ul><li>时间特征（小时、月份、星期）</li><li>光伏发电量（作为特征，而非原因）</li><li>季节变量</li><li>历史负荷数据（自相关）</li></ul>
+<h2>节假日与特殊天气影响</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>节假日对电网负荷有什么影响？</li><li>特殊天气条件下电网运行有何特点？</li></ul></details>
+<h3>节假日分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>holiday_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/94cf95c0c5bcf8d71c7f866dd37a24e6bd4c596b79261623d2215f8fe3062bc0/assets/holiday_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>节假日类型对电网负荷的影响：</p>
+<p>节假日效应：</p>
+<ul><li>类型0（工作日）：负荷最高，平均约2,950 MW</li><li>类型1-7（各类节假日）：负荷普遍低于工作日</li><li>部分节假日类型负荷差异较大，可能与节日性质相关</li></ul>
+<p>特殊天气分析：</p>
+<p>数据集包含2,400条特殊天气记录（约7.8%），初步分析表明：</p>
+<ul><li>极端天气可能导致负荷异常</li><li>台风、寒潮等天气会影响光伏发电</li><li>特殊天气通常需要电网应急响应机制</li></ul>
+<p>电网调度建议：</p>
+<p>1. 节假日调度：适当降低发电机组出力，提高电网灵活性</p>
+<p>2. 极端天气预案：建立应急调度机制，确保供电安全</p>
+<p>3. 光伏预测：特殊天气下加强光伏发电预测，提高准确性</p>
+<h2>数据分析流程与技术细节</h2>
+<p>本报告采用了完整的数据科学工作流程：</p>
+<p>1. 数据获取：从原始CSV文件读取30,624条记录</p>
+<p>2. 数据清洗：</p>
+<p>    使用Polars进行高效数据处理</p>
+<p>    日期格式标准化</p>
+<p>    数据类型转换（字符串→数值）</p>
+<p>    特征工程（提取时间特征）</p>
+<p>3. 探索性分析：</p>
+<p>    描述性统计</p>
+<p>    时间序列可视化</p>
+<p>    分布分析</p>
+<p>    相关性计算</p>
+<p>4. 可视化呈现：</p>
+<p>    使用Plotly生成交互式图表</p>
+<p>    确保图表清晰、专业、易理解</p>
+<p>    采用统一的配色方案</p>
+<p>5. 洞察提炼：</p>
+<p>    基于数据事实得出结论</p>
+<p>    提供可操作的建议</p>
+<p>    指出进一步研究的方向</p>
+<h2>结论与建议</h2>
+<h3>主要结论</h3>
+<p>1. 时间模式明确：电网负荷和光伏发电都有清晰的日周期和年周期规律</p>
+<p>2. 供需时间错位：光伏发电峰值（12:00-14:00）与负荷峰值（14:00-18:00）存在2-4小时错位</p>
+<p>3. 季节差异显著：夏季负荷和光伏都最高，冬季最低</p>
+<p>4. 相关性中等：负荷与光伏存在中等正相关，但主要由时间周期驱动</p>
+<p>5. 节假日影响有限：电网负荷主要受工业需求驱动，节假日效应相对较小</p>
+<p>6. 光伏间歇性：50%的时间光伏发电为零，需要储能和备用电源支持</p>
+<h3>运营建议</h3>
+<p>短期调度：</p>
+<ul><li>14:00-18:00期间安排足够的调峰电源</li><li>利用光伏发电高峰期充电储能系统</li><li>建立精准的光伏发电预测模型</li></ul>
+<p>中长期规划：</p>
+<ul><li>加大储能投资，缓解昼夜供需矛盾</li><li>优化光伏电站布局，提高发电效率</li><li>发展需求侧响应，增强电网灵活性</li></ul>
+<p>数据应用：</p>
+<ul><li>建立基于历史数据的负荷预测模型</li><li>实时监测光伏发电，优化调度决策</li><li>持续收集数据，完善分析模型</li></ul>
+<h3>进一步研究方向</h3>
+<p>1. 预测建模：构建高精度的负荷和光伏预测模型</p>
+<p>2. 极端事件分析：深入分析特殊天气对电网的影响</p>
+<p>3. 储能优化：研究储能系统的最优容量和调度策略</p>
+<p>4. 需求响应：分析需求侧响应对电网平衡的作用</p>
+<p>5. 经济性分析：评估不同发电组合的经济效益</p>
+<hr/>
+<p>数据来源：浙江省电网负荷与光伏发电监测数据  </p>
+<p>分析周期：2023年11月 - 2025年7月  </p>
+<p>数据规模：30,624条记录，30分钟间隔  </p>
+<p>分析工具：Polars, Plotly, Python  </p>
+<p>报告生成时间：2025年2月2日</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

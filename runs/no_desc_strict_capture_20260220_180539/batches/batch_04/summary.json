@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-02-21T02:28:57",
+  "sample_size": 20,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "38d9a79aa1efee4afa1685c3920f0d6dcea636a291847c467c5254619f9725d4",
+      "title": "测试测试",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_38d9a79aa1ef.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "5ab6e34b8d7c7ed924f228b6e9f9dec520ac03ec477ca22179b080a7d607c5f2",
+      "title": "Copy of Project",
+      "chart_count": 4,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_5ab6e34b8d7c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "1c7c9204a51c0512e3882df293859759173b0a5ee388762fd17a0713b3af69f3",
+      "title": "2025 CAP review",
+      "chart_count": 1,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_1c7c9204a51c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "0f3878793501e60159219a5dbbc3c051d610f1f8fec7f0c13cfec280f5e4c112",
+      "title": "TEST3",
+      "chart_count": 12,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_0f3878793501.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "db87a39abaa93767a62e729302e2a39c5f2daa9d9a4c58d0ade8f46bb2beabb1",
+      "title": "mgs gold",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_db87a39abaa9.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "be1f880727139a6a85b680e06253e3c347e70f2bbdd71f7fe478014a5979e41a",
+      "title": "test2",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_be1f88072713.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "2fa97e37da4b0db824ff6806698b2d056cbcf0dd4c15093f6cf1f5c1b254bb4e",
+      "title": "test",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_2fa97e37da4b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "e5626d7e342849e89d2ab60846712443814aa3c86235c9af352f6bf9503a6884",
+      "title": "汾酒",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_e5626d7e3428.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "ab2ee0df32e9dde305e613185d92886b7d3c4f35fad7050436bc0fd6d4810535",
+      "title": "Triton Benchmark",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_ab2ee0df32e9.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "3bf4294e2dbd12bc7157f23960e7502f61019a813ed0ea3faaf748c035001fdc",
+      "title": "zhgc",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_3bf4294e2dbd.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "ec112465834df1dbfda2955cab461b2a0aab1d6137f9ad29e4fc2dc4486faa1b",
+      "title": "茅台q3",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_ec112465834d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "5f6cb94e8ae0bc2f81237c3330bfc2459d7fd6b5c544b44bafd61966374ddcf0",
+      "title": "tesla q4",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_5f6cb94e8ae0.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "159794e47b12d8acc9be5edbabf305b3a60fb5826dbfb9155f55a40acd5b3586",
+      "title": "te",
+      "chart_count": 13,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_159794e47b12.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "3250ebe5f778da40493b3476c710be7d558dcaf5b824bc6cc857e6e0cc63c738",
+      "title": "Copy of Project",
+      "chart_count": 4,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_3250ebe5f778.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "74a087560ba03ad19ce0a060878bf69ed602fcf4581c2d59942dd4fdd8c09f49",
+      "title": "PG Analysis",
+      "chart_count": 9,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_74a087560ba0.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "16bfcbc52c9614139bbeff5aa3bfbdfc7ccb0f1ccd908dcdd2bd247dd1ba757e",
+      "title": "new",
+      "chart_count": 12,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_16bfcbc52c96.html",
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "case_id": "cb56a06b4417fe8d97439f3c07b5028fed0eb7b46b7ab7c67238fa7b21453b2d",
+      "title": "Intel 2025 Final Year Analysis",
+      "chart_count": 3,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_cb56a06b4417.html",
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "case_id": "78a2cf12f4b237f34098b81687301b65c446f8dd904f0d5129618540b62857fa",
+      "title": "Boeing Company Analysis",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_78a2cf12f4b2.html",
+      "status": "ok"
+    },
+    {
+      "idx": 19,
+      "case_id": "8d60963a01ab677aa2c76e8196abb28e8afc7e630ac4ccceaf54f25f38b4e512",
+      "title": "UnitedHealth Group 2025",
+      "chart_count": 6,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_8d60963a01ab.html",
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "case_id": "424a95ddd3e00a47218d864eb46c7d1f8f100ba076124e4191689b777e42343b",
+      "title": "RTA Financial Report Analysis",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_424a95ddd3e0.html",
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+本报告针对小鼠行为识别任务，对6种不同模型在26维（26D）和8维（8D）两种特征维度下的性能进行全面对比分析。评估指标包括准确率（Accuracy）、F1分数及其标准差，覆盖Aggression（攻击）、Non-social（非社交）和Social（社交）三个行为类别。
+
+执行摘要
+
+通过对6种模型（CNN、GMM、LSTM、LightGBM、RandomForest、XGBoost）### S2: Aggression 实验 (7分类)
+从S2标注中提取，排除base类别：
+- **lateralthreat** (0): 侧向威胁
+- **keepdown** (1): 压制
+- **clinch** (2): 缠斗
+- **uprightposture** (3): 直立姿态
+- **freezing** (4): 僵住
+- **bite** (5): 撕咬
+- **chase** (6): 追逐
+## 特征说明
+
+从DLC多动物追踪结果中提取34个特征：
+
+| 类别 | 数量 | 特征名 |
+|------|------|--------|
+| 速度特征 | 4 | top1_speed, top2_speed, body1_speed, body2_speed |
+| 距离特征 | 4 | top_distance, body_distance, top1_tail2_distance, top2_tail1_distance |
+| 角度特征 | 2 | angle_top1_tail1, angle_top2_tail2 |
+| 坐标特征 | 20 | 两只小鼠各5个身体部位(top, body, tail, tail-m, tail-e)的x,y坐标 |
+| 交互特征 | 4 | relative_angle, speed_ratio, approach_speed, body_speed_diff |

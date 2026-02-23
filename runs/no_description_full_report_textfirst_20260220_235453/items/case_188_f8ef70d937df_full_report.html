@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：NVDA_yfinance_clean</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：NVDA_yfinance_clean</h1>
+    <p class='sub'>来源: /view/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;NVIDIA vs Precious Metals: Correlation Analysis and Performance Comparison&quot;
+description: &quot;Comprehensive analysis of NVIDIA stock price correlation with precious metals (Gold, Silver, Platinum) from 2016-2025, including performance metrics, volatility analysis, and forecasting insights.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>NVIDIA vs Precious Metals: Correlation Analysis and Performance Comparison</h1>
+<p>This comprehensive analysis examines the relationship between NVIDIA Corporation NVDA stock and precious metals prices from February 2016 through December 2025. We explore correlation patterns, performance metrics, volatility characteristics, and provide insights for portfolio diversification and risk management strategies.</p>
+<h2>Executive Summary</h2>
+<p>The analysis reveals surprising strong long-term correlationsbetween NVIDIA stock and precious metals prices, particularly with Gold 0.934 and Silver 0.861. While NVIDIA dramatically outperformed precious metals with a 27,013% total returnversus 263-362% for metals, the strong correlation suggests shared exposure to macroeconomic factors. However, short-term return correlations are weak0.02-0.16, indicating significant diversification benefits in day-to-day trading.</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/data_flow.svg' alt='data_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/data_flow.svg' target='_blank' rel='noopener noreferrer'>data_flow.svg</a></figcaption></figure>
+<p>Data Flow Diagram: This analysis processes raw data through cleaning, merging, and statistical analysis to generate actionable insights and visualizations.</p>
+<h2>Data Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What time period does this analysis cover?</li><li>How many data points were analyzed for each asset?</li><li>What are the key metrics calculated for each dataset?</li></ul></details>
+<h3>Dataset Characteristics</h3>
+<p>The analysis integrates three primary datasets:</p>
+<ul><li>NVIDIA Stock Price: 2,514 daily observations from 2016-01-04 to 2025-12-31</li><li>Precious Metals Historical: 2,513 daily observations from 2016-02-03 to 2026-01-30</li><li>Precious Metals Forecast: 9 forecast points extending to April 2026</li></ul>
+<h3>Calculated Metrics</h3>
+<p>For comprehensive analysis, we computed:</p>
+<ul><li>Daily Returns: Percentage changes for all assets</li><li>Moving Averages: 30-day and 200-day for NVIDIA; 50-day and 200-day for metals</li><li>Volatility: 30-day rolling standard deviation of returns</li><li>Correlations: Overall, annual, and 180-day rolling correlations</li><li>Gold-Silver Ratio: Economic indicator for relative valuation</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>price_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/price_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 1: Normalized price performance showing NVIDIA&#x27;s dramatic outperformance compared to precious metals. All prices normalized to 100 at the starting period for comparison.</p>
+<h3>NVIDIA Stock Performance</h3>
+<p>NVIDIA exhibited exceptional growth, driven by:</p>
+<ul><li>AI and machine learning boom 2020-2024</li><li>GPU demand for data centers</li><li>Gaming market expansion</li><li>Professional visualization and automotive applications</li></ul>
+<p>Key statistics:</p>
+<ul><li>Starting Price: 0.79 split-adjusted, 2016-01-05</li><li>Ending Price: 186.50 2025-12-31</li><li>Total Return: 27,013%</li><li>Annualized Return: 76.02%</li><li>Risk-Adjusted Return Sharpe: 1.383</li></ul>
+<h3>Precious Metals Performance</h3>
+<p>Traditional safe-haven assets showed moderate growth:</p>
+<div class='table-wrap'><table><thead><tr><th>Asset</th><th>Total Return</th><th>Annualized Return</th><th>Sharpe Ratio</th></tr></thead><tbody><tr><td>Silver</td><td>361.79%</td><td>16.70%</td><td>0.698</td></tr><tr><td>Gold</td><td>262.76%</td><td>13.89%</td><td>0.954</td></tr><tr><td>Platinum</td><td>119.48%</td><td>8.26%</td><td>0.431</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>performance_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/performance_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 2: Total return comparison highlighting NVIDIA&#x27;s exceptional performance versus precious metals.</p>
+<h2>Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does NVIDIA&#x27;s correlation with precious metals vary over time?</li><li>What explains the strong long-term but weak short-term correlations?</li><li>Which precious metal shows the strongest correlation with NVIDIA?</li></ul></details>
+<h3>Overall Correlations</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 3: Correlation matrix showing relationships between all assets. NVIDIA shows strong positive correlation with Gold 0.934 and Silver 0.861, moderate correlation with Platinum 0.522, and weak correlation with Gold-Silver Ratio 0.255.</p>
+<p>Key Findings:</p>
+<p>1. NVIDIA-Gold: 0.934- Exceptionally strong positive correlation</p>
+<p>2. NVIDIA-Silver: 0.861- Very strong positive correlation</p>
+<p>3. NVIDIA-Platinum: 0.522- Moderate positive correlation</p>
+<p>4. NVIDIA-Gold/Silver Ratio: 0.255- Weak positive correlation</p>
+<h3>Interpreting the Correlations</h3>
+<p>The strong correlations 0.86-0.93 between NVIDIA and precious metals indicate:</p>
+<ul><li>Macroeconomic Sensitivity: Both asset classes respond to similar macroeconomic factors</li><li>Inflation Expectations: Real assets tend to move together during inflationary periods</li><li>Monetary Policy Impact: Interest rate changes affect growth stocks and commodities similarly</li><li>Global Economic Health: Economic growth drives both tech demand and industrial metal usage</li></ul>
+<p>However, the weak short-term return correlations0.02-0.16 suggest:</p>
+<ul><li>Different Short-Term Drivers: Daily price movements driven by different factors</li><li>Asset Class Specifics: Company-specific news vs commodity market dynamics</li><li>Liquidity Differences: Stock vs commodity market trading patterns</li></ul>
+<h3>Annual Correlation Patterns</h3>
+<div class='plot-card'><div class='plot-meta'><code>annual_correlations.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/annual_correlations.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 4: Annual correlations reveal significant variability over time, with some years showing strong positive correlations and others showing negative correlations.</p>
+<p>Annual Breakdown:</p>
+<div class='table-wrap'><table><thead><tr><th>Year</th><th>NVIDIA-Silver</th><th>NVIDIA-Gold</th><th>NVIDIA-Platinum</th></tr></thead><tbody><tr><td>2016</td><td>0.222</td><td>-0.281</td><td>-0.221</td></tr><tr><td>2017</td><td>-0.468</td><td>0.576</td><td>-0.517</td></tr><tr><td>2018</td><td>0.201</td><td>-0.049</td><td>0.129</td></tr><tr><td>2019</td><td>0.499</td><td>0.500</td><td>0.777</td></tr><tr><td>2020</td><td>0.885</td><td>0.894</td><td>0.385</td></tr><tr><td>2021</td><td>-0.683</td><td>-0.016</td><td>-0.753</td></tr><tr><td>2022</td><td>0.740</td><td>0.737</td><td>0.588</td></tr><tr><td>2023</td><td>0.081</td><td>0.274</td><td>-0.653</td></tr><tr><td>2024</td><td>0.872</td><td>0.878</td><td>0.429</td></tr><tr><td>2025</td><td>0.724</td><td>0.746</td><td>0.854</td></tr></tbody></table></div>
+<p>Notable Periods:</p>
+<ul><li>2020-2022: Strong positive correlations during pandemic recovery and inflation surge</li><li>2021: Negative correlations as NVIDIA surged while precious metals consolidated</li><li>2024-2025: Renewed strong correlations during AI boom and economic uncertainty</li></ul>
+<h3>Rolling Correlations </h3>
+<p>180-Day</p>
+<div class='plot-card'><div class='plot-meta'><code>rolling_correlations.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/rolling_correlations.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 5: 180-day rolling correlations show the dynamic nature of relationships, with correlations fluctuating widely over time.</p>
+<p>Insights from Rolling Correlations:</p>
+<p>1. Dynamic Relationships: Correlations are not stable; they range from -0.86 to +0.94</p>
+<p>2. Regime Changes: Clear shifts in correlation regimes during different market conditions</p>
+<p>3. Convergence Trend: Recent years show stronger and more stable positive correlations</p>
+<p>4. Gold Consistency: Gold correlation generally more stable than Silver or Platinum</p>
+<h2>Returns Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do daily returns compare between NVIDIA and precious metals?</li><li>What does the scatter plot reveal about risk-return relationships?</li><li>Are there any visible patterns or outliers in the returns distribution?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>returns_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/returns_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 6: Daily returns scatter plots showing weak linear relationships between NVIDIA and precious metals returns, confirming the low short-term correlation.</p>
+<p>Key Observations:</p>
+<p>1. Scatter Distribution: Returns are widely dispersed with no clear linear pattern</p>
+<p>2. Outlier Events: NVIDIA shows more extreme return outliers than metals</p>
+<p>3. Independence: Day-to-day movements largely independent across asset classes</p>
+<p>4. Risk Profile: NVIDIA exhibits higher return volatility than precious metals</p>
+<h3>Statistical Summary of Returns</h3>
+<div class='table-wrap'><table><thead><tr><th>Asset</th><th>Mean Daily Return %</th><th>Std Dev %</th><th>Skewness</th><th>Kurtosis</th></tr></thead><tbody><tr><td>NVIDIA</td><td>0.33</td><td>2.94</td><td>-0.15</td><td>6.23</td></tr><tr><td>Silver</td><td>0.08</td><td>25.37</td><td>-0.42</td><td>4.87</td></tr><tr><td>Gold</td><td>0.06</td><td>13.89</td><td>-0.28</td><td>3.92</td></tr><tr><td>Platinum</td><td>0.04</td><td>24.75</td><td>-0.51</td><td>5.14</td></tr></tbody></table></div>
+<p>Interpretation:</p>
+<ul><li>NVIDIA: Higher average returns with moderate volatility</li><li>Precious Metals: Lower returns with higher volatility especially Silver and Platinum</li><li>Fat Tails: All assets exhibit kurtosis  3, indicating fat-tailed distributions</li><li>Negative Skewness: More frequent large negative returns than positive ones</li></ul>
+<h2>Volatility Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does volatility compare across different assets?</li><li>What periods showed the highest volatility for each asset?</li><li>Is there any relationship between NVIDIA and precious metals volatility?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>volatility_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/volatility_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 7: 30-day rolling volatility comparison shows NVIDIA&#x27;s volatility generally lower than Silver and Platinum but higher than Gold, with all assets experiencing volatility spikes during market stress periods.</p>
+<h3>Volatility Patterns</h3>
+<p>1. NVIDIA Volatility:</p>
+<p>    Mean: 0.0294 2.94%</p>
+<p>    Range: 0.0111 to 0.0766</p>
+<p>    Peak volatility during 2018 crypto crash and 2020 pandemic</p>
+<p>2. Precious Metals Volatility:</p>
+<p>    Silver: 0.2537 25.37% - Most volatile</p>
+<p>    Gold: 0.1389 13.89% - Most stable</p>
+<p>    Platinum: 0.2475 24.75% - Highly volatile</p>
+<p>3. Volatility Correlation:</p>
+<p>    NVDA-Silver Vol: 0.275</p>
+<p>    NVDA-Gold Vol: 0.302</p>
+<p>    NVDA-Platinum Vol: 0.285</p>
+<p>Key Insights:</p>
+<ul><li>Moderate Volatility Correlation: Volatility moves together but less than prices</li><li>Different Stress Periods: Assets show peak volatility at different times</li><li>Gold Stability: Gold consistently shows lowest volatility among all assets</li><li>Tech Volatility: NVIDIA&#x27;s volatility concentrated around earnings and product launches</li></ul>
+<h2>Technical Analysis: NVIDIA Moving Averages</h2>
+<div class='plot-card'><div class='plot-meta'><code>nvda_moving_averages.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/nvda_moving_averages.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 8: NVIDIA stock price with 30-day and 200-day moving averages highlighting trend changes and potential support/resistance levels.</p>
+<p>Technical Observations:</p>
+<p>1. Golden Crosses: Multiple instances where 30-day MA crosses above 200-day MA bullish signals</p>
+<p>2. Death Crosses: Periods where 30-day MA crosses below 200-day MA bearish signals</p>
+<p>3. Support Levels: 200-day MA acts as long-term support during uptrends</p>
+<p>4. Trend Identification: Moving averages effectively identify long-term trend direction</p>
+<p>Notable Technical Events:</p>
+<ul><li>2018 Death Cross: Preceded significant correction</li><li>2020 Golden Cross: Marked beginning of major uptrend</li><li>2022 Dip: Brief period below 200-day MA during market uncertainty</li><li>2023-2025 Sustained Uptrend: Strong golden cross sustained above 200-day MA</li></ul>
+<h2>Investment Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the diversification benefits of combining NVIDIA with precious metals?</li><li>What portfolio allocation strategies are supported by this analysis?</li><li>How should investors interpret the correlation patterns for risk management?</li></ul></details>
+<h3>Diversification Benefits</h3>
+<p>Strong Case for Diversification:</p>
+<p>1. Long-Term vs Short-Term:</p>
+<p>    Strong long-term correlation shared macro exposure</p>
+<p>    Weak short-term correlation different immediate drivers</p>
+<p>    This combination provides both growth and stability</p>
+<p>2. Sector Diversification:</p>
+<p>    Technology growth exposure NVIDIA</p>
+<p>    Inflation hedge exposure Precious metals</p>
+<p>    Industrial exposure Silver and Platinum</p>
+<p>    Safe-haven exposure Gold</p>
+<p>3. Volatility Management:</p>
+<p>    Mixing high-growth NVDA with lower-volatility assets Gold</p>
+<p>    Reducing overall portfolio risk through uncorrelated short-term movements</p>
+<h3>Portfolio Allocation Considerations</h3>
+<p>Based on Risk-Adjusted Returns:</p>
+<div class='table-wrap'><table><thead><tr><th>Risk Profile</th><th>NVIDIA Allocation</th><th>Gold Allocation</th><th>Silver/Platinum</th></tr></thead><tbody><tr><td>Aggressive</td><td>40-50%</td><td>20-30%</td><td>10-20%</td></tr><tr><td>Moderate</td><td>25-35%</td><td>30-40%</td><td>15-25%</td></tr><tr><td>Conservative</td><td>10-20%</td><td>40-50%</td><td>20-30%</td></tr></tbody></table></div>
+<p>Strategic Allocation Factors:</p>
+<p>1. Growth vs. Stability: Balance NVIDIA&#x27;s high returns with Gold&#x27;s stability</p>
+<p>2. Economic Cycle: Increase precious metals during economic uncertainty</p>
+<p>3. Inflation Expectations: Favor precious metals during inflationary periods</p>
+<p>4. Tech Cycle: Adjust NVIDIA allocation based on technology adoption cycle</p>
+<h3>Risk Management Insights</h3>
+<p>Key Risk Management Principles:</p>
+<p>1. Correlation Awareness:</p>
+<p>    Monitor rolling correlations for regime changes</p>
+<p>    Reduce allocation when correlations become very high</p>
+<p>    Increase diversification when correlations are low</p>
+<p>2. Volatility Clustering:</p>
+<p>    All assets show volatility clustering</p>
+<p>    Position sizing should account for potential volatility spikes</p>
+<p>    Use stop-loss levels based on volatility measures</p>
+<p>3. Macroeconomic Sensitivity:</p>
+<p>    Both NVIDIA and precious metals sensitive to interest rates</p>
+<p>    Inflation expectations drive both asset classes</p>
+<p>    Global economic health affects all analyzed assets</p>
+<h3>Forecast Implications</h3>
+<p>Based on the precious metals forecast data February-April 2026:</p>
+<ul><li>Silver: Expected to rise from 99.87 +9.9%</li><li>Gold: Expected to rise from 499.51 +6.5%</li><li>Platinum: Expected to rise from 226.08 +8.3%</li></ul>
+<p>Interpretation:</p>
+<p>If historical correlations hold, the forecast suggests:</p>
+<ul><li>Continued positive macroeconomic environment</li><li>Inflation expectations remain elevated</li><li>Potential for NVIDIA to maintain upward momentum</li><li>Diversification benefits may be reduced during this period</li></ul>
+<h2>Limitations and Future Research</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the limitations of this analysis?</li><li>What additional data would enhance the analysis?</li><li>What further research questions could be explored?</li></ul></details>
+<h3>Analysis Limitations</h3>
+<p>1. Data Period: 2016-2025 may not capture full market cycles</p>
+<p>2. Single Stock: NVIDIA analysis may not apply to other tech stocks</p>
+<p>3. No Risk-Free Rate: Sharpe ratios calculated without risk-free rate adjustment</p>
+<p>4. Forecast Uncertainty: Precious metals forecast has limited historical validation</p>
+<h3>Future Research Directions</h3>
+<p>1. Expanded Universe:</p>
+<p>    Include other semiconductor stocks AMD, Intel, TSMC</p>
+<p>    Add other commodities oil, copper, agricultural</p>
+<p>    Incorporate bonds and real assets REITs</p>
+<p>2. Advanced Analysis:</p>
+<p>    Cointegration testing for long-term relationships</p>
+<p>    Granger causality analysis</p>
+<p>    Regime-switching models</p>
+<p>    Factor decomposition analysis</p>
+<p>3. Alternative Metrics:</p>
+<p>    Drawdown analysis and maximum drawdown comparison</p>
+<p>    Value at Risk VaR and Conditional VaR</p>
+<p>    Beta calculation against market indices</p>
+<p>    Correlation during specific market regimes</p>
+<h2>Conclusion</h2>
+<div class='plot-card'><div class='plot-meta'><code>annualized_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9/assets/annualized_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 9: Annualized return comparison showing NVIDIA&#x27;s exceptional risk-adjusted performance compared to precious metals.</p>
+<h3>Key Takeaways</h3>
+<p>1. Exceptional Performance: NVIDIA delivered 27,013% total return 76% annualized versus 120-362% for precious metals</p>
+<p>2. Complex Correlation Structure:</p>
+<p>    Strong long-term price correlations 0.86-0.93</p>
+<p>    Weak short-term return correlations 0.02-0.16</p>
+<p>    Dynamic rolling correlations with regime changes</p>
+<p>3. Risk-Adjusted Superiority: NVIDIA&#x27;s Sharpe ratio 1.38 significantly outperforms precious metals 0.43-0.95</p>
+<p>4. Diversification Benefits: Short-term return independence provides meaningful diversification despite long-term correlation</p>
+<p>5. Macroeconomic Sensitivity: All assets respond to similar macroeconomic factors, particularly inflation expectations and monetary policy</p>
+<h3>Investment Recommendations</h3>
+<p>For Growth-Oriented Investors:</p>
+<ul><li>Maintain significant NVIDIA allocation 40-50%</li><li>Use Gold as stabilizer 20-30%</li><li>Add Silver/Platinum for industrial and inflation exposure 10-20%</li></ul>
+<p>For Conservative Investors:</p>
+<ul><li>Limit NVIDIA to 10-20%</li><li>Emphasize Gold 40-50%</li><li>Use Silver/Platinum for diversification 20-30%</li></ul>
+<p>For Tactical Allocation:</p>
+<ul><li>Monitor rolling correlations for regime changes</li><li>Adjust allocations based on economic cycle position</li><li>Use volatility measures for position sizing</li></ul>
+<h3>Final Thoughts</h3>
+<p>This analysis reveals a fascinating interplay between a high-growth technology stock and traditional safe-haven assets. While NVIDIA dramatically outperformed precious metals in terms of absolute returns, the strong long-term correlations suggest shared exposure to macroeconomic forces. The weak short-term return correlations provide diversification benefits, making a portfolio combining both NVIDIA and precious metals potentially optimal for investors seeking growth with risk management.</p>
+<p>The analysis demonstrates the importance of looking beyond simple correlation numbers and examining the temporal dynamics of asset relationships. As markets evolve and NVIDIA continues to lead in AI and GPU technologies, ongoing monitoring of these relationships will be crucial for optimal portfolio construction.</p>
+<hr/>
+<p>Data Files: All cleaned data, summaries, and analysis results are available in the folder for further exploration and validation.</p>
+<p>Note: This analysis is for educational purposes only and should not be considered as investment advice. Past performance does not guarantee future results. Always conduct thorough due diligence and consult with qualified financial advisors before making investment decisions.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

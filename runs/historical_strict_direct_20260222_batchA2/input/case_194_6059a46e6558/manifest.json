@@ -1,0 +1,30 @@
+[
+  {
+    "name": "APU0000708111.csv",
+    "local": "APU0000708111.csv",
+    "ok": true,
+    "error": "",
+    "size": 9427
+  },
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 9
+  },
+  {
+    "name": "CPIAUCSL.csv",
+    "local": "CPIAUCSL.csv",
+    "ok": true,
+    "error": "",
+    "size": 17611
+  },
+  {
+    "name": "USEPUINDXD.csv",
+    "local": "USEPUINDXD.csv",
+    "ok": true,
+    "error": "",
+    "size": 32366
+  }
+]

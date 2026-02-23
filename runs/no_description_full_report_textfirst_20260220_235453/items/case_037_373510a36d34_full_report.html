@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Fred</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Fred</h1>
+    <p class='sub'>来源: /view/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Global Economic Analysis: Inflation and GDP Trends (1950-2025)&quot;
+description: &quot;Comprehensive analysis of US inflation trends and GDP comparison across United States, China, and Germany spanning over seven decades of economic data&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-17&quot;
+</pre></details>
+<h1>Global Economic Analysis: Inflation and GDP Trends</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of economic indicators spanning from 1950 to 2025, covering US inflation data and GDP trends across three major economies: United States, China, and Germany. The analysis reveals significant insights into inflationary patterns, economic growth trajectories, and comparative economic performance across different periods of global economic history.</p>
+<p>Key Findings:</p>
+<ul><li>US inflation peaked at 1.81% in April 1973 during the oil crisis era</li><li>2024 shows renewed inflationary pressure at 0.60%, the highest among recent years</li><li>United States maintains the largest economy at 7.77 trillion</li><li>China exhibits the highest GDP growth volatility ±11% quarterly swings</li><li>Recent inflation trends show post-pandemic recovery patterns with cooling in 2023</li></ul>
+<h2>Data Overview</h2>
+<p>The analysis encompasses four comprehensive datasets:</p>
+<div class='plot-card'><div class='plot-meta'><code>inflation_timeline.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/inflation_timeline.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>US Inflation Data:830 monthly records from February 1955 to March 2024, with 726 valid readings after filtering. This dataset captures major economic events including multiple recessions, oil crises, and the 2008 financial crisis.</p>
+<p>GDP Data:</p>
+<ul><li>United States:303 quarterly records Q1 1950 - Q3 2025</li><li>China:260 quarterly records Q1 1961 - Q4 2025</li><li>Germany:140 quarterly records Q1 1991 - Q4 2025</li></ul>
+<p>All data represents current prices without inflation adjustment, providing a nominal perspective on economic performance.</p>
+<h2>US Inflation Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>yearly_inflation.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/yearly_inflation.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Historical Trends</h3>
+<p>US inflation has averaged 0.34% over the entire observation period, with significant variations across different decades. The most volatile periods occurred during the 1970s and early 1980s, characterized by:</p>
+<ul><li>1979-1981:Peak inflation averaging 1.08% annually</li><li>1974:Oil crisis impact with 0.97% average inflation</li><li>1973:Highest recorded monthly inflation of 1.81%</li></ul>
+<p>These periods correspond to major geopolitical events including the 1973 oil embargo, stagflation of the late 1970s, and Federal Reserve&#x27;s aggressive monetary policy under Paul Volcker.</p>
+<h3>Recent Inflation Patterns</h3>
+<div class='plot-card'><div class='plot-meta'><code>recent_inflation.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/recent_inflation.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The last five years have exhibited distinct inflationary phases:</p>
+<p>1. 2019 0.19%:Moderate, pre-pandemic stability</p>
+<p>2. 2020 0.11%:Pandemic-induced deflationary pressures</p>
+<p>3. 2021 0.57%:Post-pandemic supply chain recovery</p>
+<p>4. 2022 0.52%:Continued inflationary pressures</p>
+<p>5. 2023 0.28%:Cooling inflation</p>
+<p>6. 2024 0.60%:Renewed inflationary surge</p>
+<p>Key Insight:2024&#x27;s inflation rate of 0.60% represents the highest among recent years, suggesting renewed inflationary pressures potentially related to persistent supply chain constraints, monetary policy shifts, or demand-side factors.</p>
+<h3>Inflation Distribution Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>inflation_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/inflation_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Analyzing inflation rates since 2000 reveals a relatively stable distribution with a mean of approximately 0.34%. The histogram shows:</p>
+<ul><li>Concentration:Most readings cluster between -0.5% and +1.0%</li><li>Outliers:Rare instances above 1.5% primarily during 2021-2022 period</li><li>Deflationary episodes:Periods of negative inflation during economic downturns</li></ul>
+<p>The distribution indicates that extreme inflationary events are historically rare, with the majority of months experiencing mild inflation within the 0-0.5% range.</p>
+<h3>Peak Inflation Years</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_inflation_years.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/top_inflation_years.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The top 10 years with highest average inflation are dominated by the 1970s and early 1980s:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Year</th><th>Avg Inflation</th><th>Key Events</th></tr></thead><tbody><tr><td>1</td><td>1980</td><td>1.08%</td><td>Second oil shock, Volcker monetary policy</td></tr><tr><td>2</td><td>1979</td><td>1.05%</td><td>Iranian Revolution, oil price spike</td></tr><tr><td>3</td><td>1974</td><td>0.97%</td><td>First oil crisis, OPEC embargo</td></tr><tr><td>4</td><td>1978</td><td>0.72%</td><td>Pre-revolution Iran, oil price pressures</td></tr><tr><td>5</td><td>1981</td><td>0.72%</td><td>Peak of Volcker&#x27;s disinflation policy</td></tr><tr><td>6</td><td>1973</td><td>0.70%</td><td>Yom Kippur War, oil embargo begins</td></tr><tr><td>7</td><td>2024</td><td>0.60%</td><td>Post-pandemic recovery, supply chain issues</td></tr><tr><td>8</td><td>2021</td><td>0.57%</td><td>Pandemic recovery, demand surge</td></tr><tr><td>9</td><td>1975</td><td>0.56%</td><td>Economic recession, unemployment peak</td></tr><tr><td>10</td><td>1977</td><td>0.54%</td><td>Moderate inflation, economic expansion</td></tr></tbody></table></div>
+<p>Notable Insight:2024 ranks 7th highest in 70 years of data, indicating significant inflationary pressure not seen since the 1970s.</p>
+<h2>GDP Comparative Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>gdp_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/gdp_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Economic Scale Comparison</h3>
+<p>The three economies exhibit vastly different scales and growth trajectories:</p>
+<p>United States:</p>
+<ul><li>Current GDP:7.77 trillion</li><li>Growth Rate:1.58% quarterly average</li><li>Stability:Most consistent growth pattern</li><li>History:75 years of continuous data</li></ul>
+<p>Germany:</p>
+<ul><li>Current GDP:774 billion</li><li>Growth Rate:0.29% quarterly average</li><li>Stability:Moderate volatility</li><li>History:34 years of data post-reunification</li></ul>
+<p>China:</p>
+<ul><li>Current GDP:625 billion</li><li>Growth Rate:0.75% quarterly average</li><li>Stability:Highest volatility -11% to +9% quarterly</li><li>History:64 years of data includes early industrialization</li></ul>
+<h3>Growth Rate Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>growth_timeline.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/growth_timeline.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Quarterly Growth Rate Patterns 2000-2025:</p>
+<p>1. United States:</p>
+<p>    Average: 1.58%</p>
+<p>    Range: -8.24% to +8.75%</p>
+<p>    Pattern: Consistent, moderate growth with occasional recessions 2001, 2008</p>
+<p>2. China:</p>
+<p>    Average: 0.75%</p>
+<p>    Range: -11.00% to +9.08%</p>
+<p>    Pattern: High volatility, rapid growth phases with sharp corrections</p>
+<p>    2008-2009: Significant growth slowdown during global financial crisis</p>
+<p>3. Germany:</p>
+<p>    Average: 0.29%</p>
+<p>    Range: -8.87% to +8.68%</p>
+<p>    Pattern: Steady growth, sensitive to European economic cycles</p>
+<p>    2009-2010: Sharp contraction during Eurozone debt crisis</p>
+<p>Key Insight:While China shows higher volatility, its average growth rate 0.75% is higher than Germany&#x27;s 0.29% but lower than the US 1.58%. This suggests that the US maintains more robust and sustainable growth despite China&#x27;s rapid but volatile expansion.</p>
+<h3>Growth Rate Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>growth_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/growth_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot reveals important distributional characteristics:</p>
+<ul><li>United States:Most concentrated around 1-2% growth, indicating stable economic performance</li><li>Germany:Tighter cluster around 0-1%, reflecting mature economy characteristics</li><li>China:Widest spread with frequent swings from -5% to +5%, demonstrating emerging market volatility</li></ul>
+<p>This distribution pattern suggests that China&#x27;s economy experiences more pronounced business cycles, while the US and Germany show more moderate economic fluctuations.</p>
+<h3>Current Economic Standing</h3>
+<div class='plot-card'><div class='plot-meta'><code>current_gdp.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/current_gdp.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>As of the latest quarter:</p>
+<div class='table-wrap'><table><thead><tr><th>Country</th><th>GDP Millions USD</th><th>Relative Size</th><th>Growth Trend</th></tr></thead><tbody><tr><td>United States</td><td>7,774,507</td><td>10x China, 10x Germany</td><td>Stable</td></tr><tr><td>Germany</td><td>774,367</td><td>1.24x China</td><td>Moderate</td></tr><tr><td>China</td><td>625,518</td><td>Baseline</td><td>Rapid but volatile</td></tr></tbody></table></div>
+<p>Note:The nominal GDP differences reflect currency valuations, population sizes, and economic structures. China&#x27;s lower nominal GDP despite its large population is partly due to currency conversion factors and the dataset&#x27;s current price measurement.</p>
+<h2>Volatility and Risk Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>volatility_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779/assets/volatility_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>GDP Growth Volatility</h3>
+<p>The volatility analysis measured by standard deviation of quarterly growth rates reveals critical risk characteristics:</p>
+<p>1. China Highest Volatility:</p>
+<p>    Std Dev: Highest among three economies</p>
+<p>    Risk-Reward Profile: High growth potential but significant downside risk</p>
+<p>    Implications: Suitable for growth-focused investors with high risk tolerance</p>
+<p>2. United States Moderate Volatility:</p>
+<p>    Std Dev: Intermediate level</p>
+<p>    Risk-Reward Profile: Balanced growth with moderate risk</p>
+<p>    Implications: Preferred for stable, long-term investment strategies</p>
+<p>3. Germany Lowest Volatility:</p>
+<p>    Std Dev: Most stable growth pattern</p>
+<p>    Risk-Reward Profile: Lower growth with minimal volatility</p>
+<p>    Implications: Ideal for risk-averse investors seeking capital preservation</p>
+<h3>Risk-Return Trade-off</h3>
+<p>The scatter plot position shows:</p>
+<ul><li>X-axis Mean Growth:US  China  Germany</li><li>Y-axis Volatility:China  US  Germany</li></ul>
+<p>Strategic Implications:</p>
+<ul><li>US Economy:Offers the optimal balance of growth and stability</li><li>China Economy:High-growth opportunity but requires active risk management</li><li>Germany Economy:Safe haven with predictable but modest returns</li></ul>
+<h2>Historical Context and Major Events</h2>
+<h3>1970s: The Great Inflation</h3>
+<p>The 1970s represent the most inflationary period in modern US history:</p>
+<p>Causes:</p>
+<ul><li>Two oil price shocks 1973, 1979</li><li>Breakdown of Bretton Woods system</li><li>Expansionary monetary and fiscal policies</li><li>Wage-price spiral dynamics</li></ul>
+<p>Policy Response:</p>
+<ul><li>Federal Reserve Chairman Paul Volcker raised federal funds rate to 20%</li><li>Recession induced to break inflationary expectations</li><li>Fundamental shift in monetary policy to inflation targeting</li></ul>
+<h3>2008 Financial Crisis Impact</h3>
+<p>Inflation Response:</p>
+<ul><li>Sharp decline to 0.11% in 2020 pandemic impact</li><li>Deflationary pressures due to demand collapse</li><li>Aggressive monetary stimulus prevented deep deflation</li></ul>
+<p>GDP Impact:</p>
+<ul><li>United States: Contraction of 8.24% in worst quarter</li><li>Germany: -8.87% due to export dependence</li><li>China: -11.00% sharpest decline among three economies</li></ul>
+<h3>Post-Pandemic Recovery </h3>
+<p>2020-2024</p>
+<p>Inflation Dynamics:</p>
+<ul><li>2021: 0.57% - Initial supply-demand imbalance</li><li>2022: 0.52% - Persistent supply chain constraints</li><li>2023: 0.28% - Cooling as supply chains normalize</li><li>2024: 0.60% - Renewed pressures</li></ul>
+<p>GDP Recovery:</p>
+<ul><li>United States: Strong recovery with 1.58% average growth</li><li>China: Moderate rebound but below historical averages</li><li>Germany: Slower recovery due to European structural issues</li></ul>
+<h2>Predictive Insights and Future Outlook</h2>
+<h3>Inflation Forecasting</h3>
+<p>Based on historical patterns and recent trends:</p>
+<p>Short-term 2024-2025:</p>
+<ul><li>Expect elevated inflation around 0.5-0.7%</li><li>Monetary policy may remain restrictive</li><li>Gradual normalization expected</li></ul>
+<p>Medium-term 2025-2027:</p>
+<ul><li>Potential return to 0.2-0.4% range</li><li>Fed rate cuts may stimulate moderate inflation</li><li>Structural factors may keep inflation above pre-pandemic levels</li></ul>
+<h3>GDP Growth Projections</h3>
+<p>United States:</p>
+<ul><li>Maintain 1.5-2.0% quarterly growth</li><li>Stable economic environment</li><li>Technological innovation driving productivity</li></ul>
+<p>China:</p>
+<ul><li>Transition to 0.5-1.0% growth range</li><li>Structural reforms to reduce volatility</li><li>Focus on domestic consumption</li></ul>
+<p>Germany:</p>
+<ul><li>Stable 0.3-0.5% growth</li><li>European integration benefits</li><li>Energy transition challenges</li></ul>
+<h2>Methodology and Data Quality</h2>
+<h3>Data Processing</h3>
+<p>Inflation Data:</p>
+<ul><li>Original: 830 monthly records 1955-2024</li><li>Valid readings: 726 after filtering zero values</li><li>Zero values treated as missing data for analysis</li></ul>
+<p>GDP Data:</p>
+<ul><li>All datasets: Quarterly frequency</li><li>Current prices not inflation-adjusted</li><li>Growth rates calculated using percentage change</li></ul>
+<h3>Limitations</h3>
+<p>1. Currency Effects:Nominal GDP comparisons affected by exchange rates</p>
+<p>2. Purchasing Power:Not adjusted for PPP Purchasing Power Parity</p>
+<p>3. Time Coverage:Different start dates across countries</p>
+<p>4. Measurement Periods:Monthly inflation vs. quarterly GDP</p>
+<h3>Statistical Approach</h3>
+<ul><li>Growth Rates:Period-over-period percentage changes</li><li>Volatility:Standard deviation of growth rates</li><li>Averages:Arithmetic mean of valid observations</li><li>Outliers:Included in analysis to reflect true economic extremes</li></ul>
+<h2>Conclusion and Strategic Recommendations</h2>
+<h3>Key Takeaways</h3>
+<p>1. Inflation Environment:2024&#x27;s elevated inflation 0.60% warrants attention but remains below historical peaks of the 1970s-1980s</p>
+<p>2. Economic Leadership:United States maintains dominant economic position with superior growth-stability balance</p>
+<p>3. China&#x27;s Challenge:High volatility presents both opportunity and risk; requires active management for investors and policymakers</p>
+<p>4. Germany&#x27;s Stability:Predictable growth pattern offers safe harbor but limited upside potential</p>
+<h3>Investment Implications</h3>
+<p>For Conservative Investors:</p>
+<ul><li>US assets offer optimal risk-adjusted returns</li><li>German bonds provide stability with moderate yields</li><li>Inflation-protected securities prudent given 2024 trends</li></ul>
+<p>For Growth-Oriented Investors:</p>
+<ul><li>China exposure provides high-growth potential</li><li>Requires active risk management and diversification</li><li>Consider dollar-cost averaging to mitigate volatility</li></ul>
+<h3>Policy Recommendations</h3>
+<p>Monetary Policy:</p>
+<ul><li>Maintain vigilant inflation monitoring</li><li>Gradual policy normalization as inflation stabilizes</li><li>Balance growth support against inflation risks</li></ul>
+<p>Trade Policy:</p>
+<ul><li>Leverage US economic strength in negotiations</li><li>Diversify supply chains to reduce vulnerability</li><li>Engage with China while managing economic risks</li></ul>
+<h2>Appendix: Data Dictionary</h2>
+<div class='table-wrap'><table><thead><tr><th>File</th><th>Description</th><th>Period</th><th>Frequency</th><th>Records</th></tr></thead><tbody><tr><td>CPALTT01USM657N.csv</td><td>US Inflation Rate</td><td>1955-2024</td><td>Monthly</td><td>830</td></tr><tr><td>NGDPRSAXDCCAQ.csv</td><td>China GDP</td><td>1961-2025</td><td>Quarterly</td><td>260</td></tr><tr><td>NGDPRSAXDCDEQ.csv</td><td>Germany GDP</td><td>1991-2025</td><td>Quarterly</td><td>140</td></tr><tr><td>NGDPSAXDCUSQ.csv</td><td>US GDP</td><td>1950-2025</td><td>Quarterly</td><td>303</td></tr></tbody></table></div>
+<h3>Column Definitions</h3>
+<ul><li>observationdate:Date of measurement YYYY-MM-DD format</li><li>inflationrate:Monthly percentage change in CPI</li><li>gdp:Gross Domestic Product in millions USD current prices</li><li>country:Country identifier for aggregated datasets</li><li>year:Calendar year derived from date</li><li>quarter:Fiscal quarter 1-4 derived from month</li></ul>
+<hr/>
+<p>Report Generation Date:February 17, 2025</p>
+<p>Data Last Updated:January 2025</p>
+<p>Analysis Period:1950-2025</p>
+<p>Total Dataset Size:1,533 records across four time series</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

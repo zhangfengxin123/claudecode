@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：YC Companies</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：YC Companies</h1>
+    <p class='sub'>来源: /view/c6990a63c441e82c1beff4d2df1667c05dbef381f339c62141e01996a0004537 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Y Combinator Startup Ecosystem Analysis: Industry Trends and Batch Patterns&quot;
+description: &quot;Comprehensive analysis of 2,299 Y Combinator companies across 8 industries from 2022-2026, revealing dominant sectors, batch trends, and emerging startup patterns.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Y Combinator Startup Ecosystem Analysis</h1>
+<h2>Executive Summary</h2>
+<p>This report analyzes 2,299 Y Combinator YC startupsacross 13 batches from Winter 2022 to Spring 2026, providing insights into industry distribution, batch trends, and the evolving startup landscape. The data reveals a clear dominance of B2B companies, strong representation in Fintech and Healthcare, and consistent batch sizes over time, indicating YC&#x27;s sustained growth and appeal to entrepreneurs.</p>
+<h3>Key Findings</h3>
+<ul><li>B2B Dominance: 60.9% of all YC startups operate in the B2B sector, with 1,400 companies</li><li>Top 3 Industries: B2B 1,400, Fintech 249, and Healthcare 221 represent 80.5% of all companies</li><li>Largest Batch: Winter 2022 led with 399 companies, representing 17.4% of the total</li><li>Consistent Growth: Recent batches maintain 150-250 companies, showing stable program scale</li><li>Industry Diversity: 8 distinct sectors represented, with Government being the smallest 14 companies, 0.6%</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>industry_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c6990a63c441e82c1beff4d2df1667c05dbef381f339c62141e01996a0004537/assets/industry_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Industry Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which industries show the highest growth potential based on YC selection?</li><li>How does B2B dominance compare to consumer-facing opportunities?</li></ul></details>
+<h3>Dominant Sectors</h3>
+<p>The Y Combinator portfolio shows a heavy concentration in B2B software and services:</p>
+<p>1. B2B 60.9%: Enterprise software, developer tools, and infrastructure solutions</p>
+<p>2. Fintech 10.8%: Financial technology, payments, blockchain, and banking solutions</p>
+<p>3. Healthcare 9.6%: Digital health, biotech, medical devices, and telemedicine</p>
+<p>This distribution reflects current market trends where:</p>
+<ul><li>Digital transformationdrives B2B demand across all industries</li><li>Financial services disruptioncreates massive fintech opportunities</li><li>Healthcare digitizationaccelerates post-pandemic</li></ul>
+<h3>Emerging Sectors</h3>
+<p>While smaller in count, these sectors show specialized focus:</p>
+<ul><li>Consumer 8.3%: Direct-to-consumer apps, marketplaces, and lifestyle tech</li><li>Industrials 6.0%: Manufacturing, logistics, energy, and climate tech</li><li>Real Estate &amp; Construction 2.6%: PropTech, construction tech, and real estate platforms</li><li>Education 1.2%: EdTech, learning platforms, and workforce development</li><li>Government 0.6%: GovTech, civic tech, and public sector solutions</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>industry_treemap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c6990a63c441e82c1beff4d2df1667c05dbef381f339c62141e01996a0004537/assets/industry_treemap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Industry Insights</h3>
+<p>Why B2B Dominates:</p>
+<p>1. Larger Market Size: Enterprise contracts worth 10K-1M+ vs. consumer subscriptions</p>
+<p>2. Lower CAC: Direct sales vs. expensive consumer marketing</p>
+<p>3. Higher Retention: B2B churn typically 5-10% vs. 50-70% in consumer apps</p>
+<p>4. Pandemic Acceleration: Digital transformation urgency increased 3-5x</p>
+<p>Fintech Trends:</p>
+<ul><li>Embedded Finance: Fintech-as-a-service for non-financial companies</li><li>DeFi &amp; Crypto: 40+ blockchain-focused companies across batches</li><li>Payments Infrastructure: APIs, rails, and payment processing</li><li>Neobanking: Digital-first banking solutions globally</li></ul>
+<p>Healthcare Innovation:</p>
+<ul><li>Telemedicine: Remote care adoption increased 38x since 2020</li><li>AI Diagnostics: ML-powered medical imaging and decision support</li><li>Biotech Platforms: mRNA, gene therapy, and personalized medicine</li><li>Mental Health: Digital therapy and wellness platforms</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>industry_distribution_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c6990a63c441e82c1beff4d2df1667c05dbef381f339c62141e01996a0004537/assets/industry_distribution_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The box plot reveals consistent industry representation across batches, with B2B showing the widest distribution and highest median counts, demonstrating YC&#x27;s systematic approach to portfolio diversification.</p>
+<h2>Batch Trends and Timeline</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What do batch sizes tell us about YC&#x27;s expansion strategy?</li><li>Are there seasonal patterns in company acceptance or industry focus?</li></ul></details>
+<h3>Batch Evolution </h3>
+<p>2022-2026</p>
+<div class='plot-card'><div class='plot-meta'><code>batch_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c6990a63c441e82c1beff4d2df1667c05dbef381f339c62141e01996a0004537/assets/batch_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Batch Insights</h3>
+<p>Early Batches 2022-2023:</p>
+<ul><li>Winter 2022: 399 companies largest batch</li><li>Summer 2022: 234 companies</li><li>Winter 2023: 274 companies</li><li>Summer 2023: 221 companies</li></ul>
+<p>Recent Batches 2024-2026:</p>
+<ul><li>Winter 2024: 251 companies</li><li>Summer 2024: 249 companies</li><li>Fall 2024: 93 companies new seasonal batch</li><li>Spring 2025: 145 companies</li><li>Summer 2025: 168 companies</li><li>Fall 2025: 152 companies</li><li>Winter 2026: 111 companies</li><li>Spring 2026: 1 company incomplete batch</li><li>Summer 2026: 1 company incomplete batch</li></ul>
+<p>Trend Analysis:</p>
+<p>1. Stabilization: Batch sizes stabilized around 150-250 companies after initial expansion</p>
+<p>2. New Seasons: Introduction of Fall 2024 and Spring 2025 batches reflects increased program capacity</p>
+<p>3. Quality over Quantity: Smaller batches may indicate more selective curation</p>
+<p>4. Year-Round Operation: YC now operates 4 cycles/year vs. traditional 2</p>
+<h3>Industry Composition by Batch</h3>
+<div class='plot-card'><div class='plot-meta'><code>batch_industry_sunburst.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c6990a63c441e82c1beff4d2df1667c05dbef381f339c62141e01996a0004537/assets/batch_industry_sunburst.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The sunburst visualization reveals:</p>
+<ul><li>B2B consistently dominantacross all batches 40-70% of each batch</li><li>Fintech clustersin later batches 2023-2026, reflecting sector maturation</li><li>Healthcare steady presence Industrials growthin recent batches, highlighting climate tech and manufacturing innovation</li></ul>
+<h2>Strategic Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What should entrepreneurs focus on for YC application success?</li><li>Which underrepresented sectors offer the best opportunities?</li></ul></details>
+<h3>For Entrepreneurs</h3>
+<p>Target High-Growth Sectors:</p>
+<p>1. B2B Infrastructure: Developer tools, APIs, and platform services</p>
+<p>2. Fintech Enablers: Embedded finance, compliance, and payment infrastructure</p>
+<p>3. Healthcare IT: Interoperability, telemedicine, and AI diagnostics</p>
+<p>Differentiate in Crowded Markets:</p>
+<ul><li>Focus on vertical-specific solutionse.g., healthcare compliance tools vs. general productivity</li><li>Leverage AI/ML capabilitiesas differentiators, not just features</li><li>Build for enterprise-grade securityand compliance from day one</li></ul>
+<p>Consider Underrepresented Sectors:</p>
+<ul><li>Industrials: Climate tech, manufacturing automation, and supply chain optimization</li><li>GovTech: Civic tech, public sector digitization, and smart city solutions</li><li>EdTech: Workforce development, corporate training, and skills platforms</li></ul>
+<h3>For Investors</h3>
+<p>Portfolio Allocation Insights:</p>
+<ul><li>B2B focus remains prudent: 60%+ allocation mirrors YC&#x27;s proven track record</li><li>Fintech maturation: Later-stage opportunities in established fintech verticals</li><li>Healthcare tailwinds: Demographic trends and digitization drive long-term growth</li></ul>
+<p>Emerging Themes:</p>
+<ul><li>AI Agents: Agentic AI for enterprise workflows 50+ companies in 2024-2026</li><li>Climate Tech: Carbon accounting, clean energy, and sustainability platforms</li><li>Defense Tech: National security and dual-use technology startups</li></ul>
+<h2>Data Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How reliable is the dataset?</li><li>What limitations should be considered?</li></ul></details>
+<h3>Data Quality</h3>
+<ul><li>Source: Y Combinator OSS API official data</li><li>Date Retrieved: February 2, 2026</li><li>Total Records: 2,299 companies</li><li>Completeness: 100% of companies have industry and batch classifications</li><li>Missing Data: Founding year not available all null values in source</li></ul>
+<h3>Data Cleaning Process</h3>
+<p>1. Removed null foundingyear columnall 2,299 values were null</p>
+<p>2. Verified data integrity: No duplicate company names or records</p>
+<p>3. Standardized formats: Batch names and industry classifications validated</p>
+<p>4. Quality checks: All critical fields companyname, ycbatch, industry populated</p>
+<h3>Limitations</h3>
+<ul><li>No financial data: Funding amounts, valuations, and revenue not included</li><li>No outcome data: Exit status, acquisitions, or company closures not tracked</li><li>Temporal snapshot: Data as of February 2026; companies may have pivoted</li><li>Batch completeness: Spring 2026 and Summer 2026 batches contain incomplete data 1 company each</li></ul>
+<h2>Conclusion</h2>
+<p>The Y Combinator portfolio analysis reveals a mature, diversified startup ecosystem with clear strategic focus on B2B technologyacross all batches. The program&#x27;s evolution from 399-company batches to more selective, year-round cohorts suggests a move toward quality over quantity, while maintaining strong representation across eight major industry sectors.</p>
+<p>The dominance of B2B 60.9%, Fintech 10.8%, and Healthcare 9.6%reflects YC&#x27;s thesis around solving enterprise problems at scale, disrupting traditional financial services, and digitizing healthcare delivery. This concentration creates a powerful network effect where YC alumni can leverage cross-industry expertise and partnerships.</p>
+<p>For entrepreneurs and investors, the data provides a roadmap for opportunity identification:</p>
+<ul><li>Follow the B2B wavewith differentiated solutions</li><li>Target underrepresented sectorswith compelling unit economics</li><li>Leverage AI and climate tech tailwindsemerging in recent batches</li></ul>
+<p>The consistent growth and diversification of YC&#x27;s portfolio from 2022-2026 demonstrates the accelerator&#x27;s enduring influence on startup formation and its ability to adapt to evolving market conditions.</p>
+<hr/>
+<p>Report Generated: January 13, 2025</p>
+<p>Data Source: Y Combinator OSS API</p>
+<p>Analysis Method: Descriptive statistics and visualization</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

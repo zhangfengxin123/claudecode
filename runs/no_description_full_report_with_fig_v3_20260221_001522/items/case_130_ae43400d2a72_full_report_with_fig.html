@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：格力</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：格力</h1>
+    <p class='sub'>来源: /view/ae43400d2a7213709c12b5fd2f90dff7aa14eaeeeb41738b2317837b4eda0012 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;格力电器2025年三季度量化分析报告&quot;
+description: &quot;基于严谨统计方法的格力电器财务分析&quot;
+author: &quot;Pardus AI 量化分析师&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>执行摘要</h1>
+<p>本报告对格力电器2025年三季度财务数据进行了深入的量化分析，并与美的集团、海尔智家进行了行业对比。分析基于严谨的统计学方法，包括描述性统计、正态性检验、相关性分析、回归分析和假设检验。</p>
+<h2>关键发现</h2>
+<ul><li>盈利能力强：格力净利率达到15.64%，显著高于美的（10.39%）和海尔（7.42%）</li><li>增长乏力：格力营收同比下降6.62%，在三巨头中唯一出现负增长</li><li>：格力ROE仅为5.06%，远低于美的（16.5%）和海尔（13.0%）</li><li>海外布局不足：格力海外收入占比仅20%，远低于海尔的51.9%和美的的42.4%</li><li>现金流优异：经营现金流/净利润比率高达2.13，盈利质量极佳</li></ul>
+<h1>行业背景</h1>
+<h2>家电行业整体表现</h2>
+<p>根据国家统计局数据，2024年中国家电行业累计主营业务收入达1.95万亿元，接近2万亿元大关，保持稳定增长态势。家电行业ROA在7%-8%之间，在申万行业中排名靠前，表现出较强的抗周期特征。</p>
+<h2>三巨头对比</h2>
+<p>家电行业呈现寡头垄断格局，美的、格力、海尔三大龙头企业占据市场主导地位。根据2025年前三季度数据：</p>
+<ul><li>美的集团：营收3647亿元，净利润378.83亿元，综合实力最强</li><li>格力电器：营收1276亿元，净利润214.61亿元，盈利效率最高但规模最小</li><li>海尔智家：营收2341亿元，净利润173.73亿元，全球化程度最高</li></ul>
+<h1>特征工程</h1>
+<h2>特征设计原则</h2>
+<p>特征工程遵循量化投资的核心原则，每个特征都对应具体的业务洞察。以下是构建的关键特征：</p>
+<p>1. 净利润质量（扣非净利/净利润）：衡量利润的可持续性和核心业务盈利能力，格力该指标为95.92%，表明盈利结构健康</p>
+<p>2. 经营现金流/净利润比率：评估盈利质量和现金转化能力，格力该比率高达213.07%，远超100%的健康水平</p>
+<p>3. 资产负债率（总资产 - 所有者权益 / 总资产）：衡量财务杠杆和偿债能力，格力资产负债率为63.82%，处于合理区间</p>
+<p>4. 净利率（净利润 / 营业收入）：衡量每元收入的盈利能力，格力净利率15.64%位居三巨头首位</p>
+<p>5. 海外收入占比（海外收入 / 总收入）：衡量全球化程度和市场多元化能力，格力仅20%，严重依赖国内市场</p>
+<p>6. 总资产回报率ROA：格力ROA高达21.50%，远超行业7%-8%的基准水平，资产使用效率极高</p>
+<h2>特征解读</h2>
+<ul><li>经营现金流/净利润比率达到213.07%：远超100%的健康水平，表明格力盈利质量极高，净利润充分转化为现金流入，这在家电行业中极为罕见</li></ul>
+<ul><li>海外收入占比仅20%：远低于海尔的51.9%和美的的42.4%，全球化程度严重不足，抗周期能力相对较弱</li></ul>
+<ul><li>ROA高达21.50%：资产使用效率极高，显著高于行业7%-8%的基准水平</li></ul>
+<h1>描述性统计</h1>
+<h2>家电三巨头关键指标对比</h2>
+<div class='table-wrap'><table><thead><tr><th>公司</th><th>营收亿元</th><th>营收增长%</th><th>净利润亿元</th><th>净利率%</th><th>ROE%</th><th>PE</th><th>海外收入占比%</th></tr></thead><tbody><tr><td>格力电器</td><td>1276</td><td>-6.62</td><td>214.61</td><td>15.64</td><td>5.06</td><td>7.07</td><td>20.0</td></tr><tr><td>美的集团</td><td>3647</td><td>13.85</td><td>378.83</td><td>10.39</td><td>16.5</td><td>13.09</td><td>42.4</td></tr><tr><td>海尔智家</td><td>2341</td><td>9.98</td><td>173.73</td><td>7.42</td><td>13.0</td><td>11.09</td><td>51.9</td></tr></tbody></table></div>
+<h2>行业描述性统计</h2>
+<ul><li>营收：均值2421.33亿元，标准差1187.54亿元，变异系数0.49</li><li>净利润：均值255.72亿元，标准差108.56亿元，变异系数0.42</li><li>营收增长率：均值5.74%，标准差10.87%，变异系数1.90</li><li>ROE：均值11.52%，标准差5.86%，变异系数0.51</li></ul>
+<p>统计解读：</p>
+<ul><li>变异系数分析：ROE的变异系数（0.51）最低，表明三巨头在股东回报率方面相对接近；营收增长率的变异系数（1.90）最高，表明增长策略存在显著差异</li></ul>
+<ul><li>偏度：营收和净利润呈正偏态，表明美的在规模上存在明显优势；ROE呈负偏态，表明格力在股东回报率上显著落后</li></ul>
+<h1>分布分析</h1>
+<h2>正态性检验</h2>
+<p>对家电三巨头关键指标进行Shapiro-Wilk正态性检验：</p>
+<ul><li>营收：Shapiro-Wilk W=0.9966, p=0.8880，符合正态分布</li><li>净利润：Shapiro-Wilk W=0.8924, p=0.3618，符合正态分布</li><li>营收增长率：Shapiro-Wilk W=0.8858, p=0.3417，符合正态分布</li><li>ROE：Shapiro-Wilk W=0.9522, p=0.5790，符合正态分布</li></ul>
+<p>由于所有指标均符合正态分布（p  0.05），可以放心使用参数统计方法（如t检验、线性回归）进行后续分析。</p>
+<p>分布特征分析：</p>
+<ul><li>营收：均值2421.33亿元，标准差1187.54亿元，偏度0.12，分布接近对称</li><li>净利润：均值255.72亿元，标准差108.56亿元，偏度0.60，呈轻微软右偏</li><li>营收增长率：均值5.74%，标准差10.87%，偏度-0.61，呈轻微左偏</li><li>ROE：均值11.52%，标准差5.86%，偏度-0.43，呈轻微左偏</li></ul>
+<h1>相关性分析</h1>
+<h2>Pearson相关系数矩阵</h2>
+<div class='table-wrap'><table><thead><tr><th>变量</th><th>Revenue</th><th>Profit</th><th>Growth</th><th>ROE</th><th>Net Margin</th><th>Overseas Pct</th></tr></thead><tbody><tr><td>Revenue</td><td>1.00</td><td>0.79</td><td>0.92</td><td>0.96</td><td>-0.58</td><td>0.64</td></tr><tr><td>Profit</td><td>0.79</td><td>1.00</td><td>0.49</td><td>0.60</td><td>0.03</td><td>0.04</td></tr><tr><td>Growth</td><td>0.92</td><td>0.49</td><td>1.00</td><td>0.99</td><td>-0.86</td><td>0.89</td></tr><tr><td>ROE</td><td>0.96</td><td>0.60</td><td>0.99</td><td>1.00</td><td>-0.79</td><td>0.83</td></tr><tr><td>Net Margin</td><td>-0.58</td><td>0.03</td><td>-0.86</td><td>-0.79</td><td>1.00</td><td>-1.00</td></tr><tr><td>Overseas Pct</td><td>0.64</td><td>0.04</td><td>0.89</td><td>0.83</td><td>-1.00</td><td>1.00</td></tr></tbody></table></div>
+<h2>Spearman秩相关矩阵</h2>
+<div class='table-wrap'><table><thead><tr><th>变量</th><th>Revenue</th><th>Profit</th><th>Growth</th><th>ROE</th><th>Net Margin</th><th>Overseas Pct</th></tr></thead><tbody><tr><td>Revenue</td><td>1.00</td><td>0.50</td><td>1.00</td><td>1.00</td><td>-0.50</td><td>0.50</td></tr><tr><td>Profit</td><td>0.50</td><td>1.00</td><td>0.50</td><td>0.50</td><td>0.50</td><td>-0.50</td></tr><tr><td>Growth</td><td>1.00</td><td>0.50</td><td>1.00</td><td>1.00</td><td>-0.50</td><td>0.50</td></tr><tr><td>ROE</td><td>1.00</td><td>0.50</td><td>1.00</td><td>1.00</td><td>-0.50</td><td>0.50</td></tr><tr><td>Net Margin</td><td>-0.50</td><td>0.50</td><td>-0.50</td><td>-0.50</td><td>1.00</td><td>-1.00</td></tr><tr><td>Overseas Pct</td><td>0.50</td><td>-0.50</td><td>0.50</td><td>0.50</td><td>-1.00</td><td>1.00</td></tr></tbody></table></div>
+<h2>相关性显著性检验</h2>
+<p>Pearson相关性检验（带p值）：</p>
+<ul><li>Revenue vs Growth: r = 0.9198, p = 0.2568</li><li>Revenue vs ROE: r = 0.9613, p = 0.1777</li><li>Growth vs ROE: r = 0.9923, p = 0.0791 </li><li>Net Margin vs Overseas Pct: r = -0.9975, p = 0.0449 </li></ul>
+<p>Spearman相关性检验（带p值）：</p>
+<ul><li>Revenue vs Growth: ρ = 1.0000, p  0.001 </li><li>Revenue vs ROE: ρ = 1.0000, p  0.001 </li><li>Growth vs ROE: ρ = 1.0000, p  0.001 </li><li>Net Margin vs Overseas Pct: ρ = -1.0000, p  0.001 </li></ul>
+<h2>相关性解读</h2>
+<p>1. 规模与增长强相关：营收与增长率呈现近乎完美的正相关（Spearman ρ = 1.00, p  0.001），表明规模大的企业增长动力更强，这与行业&quot;强者恒强&quot;的马太效应一致</p>
+<p>2. ROE与增长强相关：ROE与增长率呈现近乎完美的正相关（Spearman ρ = 1.00, p  0.001），表明增长动能直接转化为股东回报，符合价值投资逻辑</p>
+<p>3. 净利率与海外占比完全负相关：净利率与海外收入占比呈现完全负相关（Pearson r = -0.9975, p = 0.045），表明海外扩张会显著稀释净利率。格力净利率最高（15.64%）但海外占比最低（20%），印证了这一规律</p>
+<p>4. 营收与ROE高度相关：营收与ROE呈现高度正相关（Pearson r = 0.9613），表明规模优势能有效转化为股东回报效率</p>
+<h1>回归分析</h1>
+<h2>回归模型1：净利润 </h2>
+<p>模型公式：Profiti = β0 + β1 × Revenuei + εi</p>
+<p>回归结果：</p>
+<ul><li>R² = 0.6295：营收可以解释净利润63%的变异</li><li>截距β0 = 80.1108：t统计量 = 0.5520, p值 = 0.6789</li><li>营收系数β1 = 0.0725：t统计量 = 1.3035, p值 = 0.4166</li></ul>
+<p>回归解读：</p>
+<ul><li>营收每增加1亿元，净利润增加约0.0725亿元（725万元）</li><li>家电行业的平均利润转化率约为7.25%，格力净利率15.64%远高于此水平，表明格力具备极强的成本控制和定价能力</li></ul>
+<h2>回归模型2：ROE </h2>
+<p>模型公式：ROEi = β0 + β1 × OverseasPcti + β2 × NetMargini + εi</p>
+<p>回归结果：</p>
+<ul><li>R² = 1.0000：完美拟合（样本量太小导致）</li><li>截距β0 = -233.5137：t统计量 = -0.0000, p值 = NaN</li><li>海外收入占比β1 = 314.3686：t统计量 = 0.0000, p值 = NaN</li><li>净利率β2 = 11.2340：t统计量 = 0.0000, p值 = NaN</li></ul>
+<p>回归解读：</p>
+<ul><li>海外收入占比每增加1个百分点，ROE增加314.37个百分点（模型过拟合，仅供参考）</li><li>净利率每增加1个百分点，ROE增加11.23个百分点</li><li>海外扩张和净利率提升均能显著提高ROE，但样本量限制导致模型不可靠</li></ul>
+<h1>假设检验</h1>
+<h2>检验1：格力营收增长率 vs 同行平均水平</h2>
+<p>假设设定：</p>
+<ul><li>H0: μ格力 = μ同行</li><li>H1: μ格力  μ同行 单侧检验</li></ul>
+<p>检验结果：</p>
+<ul><li>格力增长率：-6.62%</li><li>同行平均水平（美的+海尔）：11.91%</li><li>t统计量：9.5788</li><li>p值（单侧）：0.0331</li><li>结论：拒绝H0，格力增长率显著低于同行（p  0.05）</li></ul>
+<h2>检验2：格力净利率 vs 同行平均水平</h2>
+<p>假设设定：</p>
+<ul><li>H0: μ格力 = μ同行</li><li>H1: μ格力  μ同行 单侧检验</li></ul>
+<p>检验结果：</p>
+<ul><li>格力净利率：15.64%</li><li>同行平均水平（美的+海尔）：8.91%</li><li>t统计量：-4.5354</li><li>p值（单侧）：0.0691</li><li>结论：无法拒绝H0，差异不显著（p ≥ 0.05）</li></ul>
+<p>虽然格力净利率数值上高于同行近一倍，但由于样本量过小（n=3），统计检验未能达到95%置信水平。然而，从商业角度看，格力净利率领先仍是显著的业务优势。</p>
+<h2>检验3：格力ROE vs 同行平均水平</h2>
+<p>假设设定：</p>
+<ul><li>H0: μ格力 = μ同行</li><li>H1: μ格力  μ同行 单侧检验</li></ul>
+<p>检验结果：</p>
+<ul><li>格力ROE：5.06%</li><li>同行平均水平（美的+海尔）：14.75%</li><li>t统计量：5.5371</li><li>p值（单侧）：0.0569</li><li>结论：无法拒绝H0，差异不显著（p ≥ 0.05）</li></ul>
+<p>格力ROE（5.06%）约为同行平均水平的1/3，虽然统计学上未达95%置信水平（p = 0.0569，接近边缘），但商业差距十分明显。这反映了格力资产周转率或财务杠杆效率的不足。</p>
+<h1>风险因素与投资建议</h1>
+<h2>风险因素识别</h2>
+<p>1. 增长停滞风险：格力营收同比下降6.62%，是三巨头中唯一负增长的企业，表明增长动能严重不足</p>
+<p>2. 集中度风险：格力海外收入占比仅20%，远低于行业领先水平，过度依赖单一市场导致抗周期能力弱</p>
+<p>3. ROE偏低风险：格力ROE仅5.06%，约为同行的1/3，股东回报效率偏低</p>
+<p>4. 行业竞争加剧：美的和海尔加速全球化布局，格力在海外市场面临日益激烈的竞争</p>
+<p>5. 原材料价格波动：家电行业铜、钢、铝等原材料成本占比较高，价格波动可能挤压利润空间</p>
+<h2>投资建议</h2>
+<h3>短期（6-12个月）</h3>
+<p>中性偏谨慎</p>
+<ul><li>积极因素：净利率15.64%行业领先，现金流优异，财务健康</li><li>消极因素：营收负增长，ROE偏低，海外布局不足</li><li>建议：维持谨慎持有，等待增长拐点确认</li></ul>
+<h3>中期（1-3年）</h3>
+<p>有条件推荐</p>
+<ul><li>关键假设：</li></ul>
+<p>2. 海外收入占比提升至30%以上</p>
+<p>  3. ROE恢复至10%以上</p>
+<ul><li>触发条件：</li></ul>
+<p>2. 新产品线（如智能家居）贡献显著营收</p>
+<p>  3. 行业景气度回升，空调需求回暖</p>
+<h3>长期（3年以上）</h3>
+<p>价值投资视角</p>
+<ul><li>核心优势：品牌壁垒深厚，渠道掌控力强，现金流优异</li><li>转型方向：加速全球化布局，拓展智能家居新赛道，提升海外收入占比</li><li>估值考量：当前PE=7.07倍，低于行业平均，若能恢复增长，存在估值修复空间</li></ul>
+<h1>结论</h1>
+<p>本报告通过对格力电器2025年三季度财务数据的深入量化分析，得出以下核心结论：</p>
+<h2>优势</h2>
+<p>1. 盈利质量卓越：净利率15.64%位居三巨头首位，经营现金流/净利润比率高达213%，盈利转化为现金的能力极强</p>
+<p>2. 财务结构健康：资产负债率63.8%处于合理区间，无重大偿债风险</p>
+<p>3. 资产效率优异：ROA高达21.5%，远超行业7%-8%的基准水平</p>
+<p>4. 品牌价值显著：毛利率28.44%位居行业前列，体现品牌溢价能力</p>
+<h2>劣势</h2>
+<p>1. 增长动能不足：营收同比下降6.62%，是三巨头中唯一负增长的企业，与行业趋势严重背离</p>
+<p>2. ROE偏低：5.06%的ROE约为同行的1/3，股东回报效率亟待提升</p>
+<p>3. 全球化程度低：海外收入占比仅20%，远低于海尔（51.9%）和美的（42.4%），抗周期能力弱</p>
+<p>4. 规模劣势：营收1276亿元仅为美的的35%，规模效应不足</p>
+<h2>综合评级</h2>
+<p>中性偏谨慎（★★★☆☆）</p>
+<p>格力电器在盈利效率和财务健康度方面表现优异，但在增长动能和全球化布局方面存在明显短板。短期内，建议维持谨慎态度，关注营收增速拐点和海外市场进展。中长期看，若公司能成功转型并恢复增长，存在估值修复机会。</p>
+<h1>参考文献</h1>
+<p>1. 国家统计局. 2025. 2024年家电行业统计数据.</p>
+<p>2. 新浪财经. 2025. 家电行业财务分析深度报告：从PB-ROE视角看家电各子行业及公司性价比.</p>
+<p>3. 东方财富. 2025. 美的、格力、海尔智家盈利质量全解析（ROE、毛利率、净利率、净现比）.</p>
+<p>4. 36氪. 2025. &quot;三巨头&quot;业绩大分化，格力究竟怎么了？</p>
+<p>5. 格力电器. 2025. 2025年三季度财务报告.</p>
+<p>6. 美的集团. 2025. 2025年三季度财务报告.</p>
+<p>7. 海尔智家. 2025. 2025年三季度财务报告.</p><hr/><p class='muted'>说明：完整报告结构 + 原位图表渲染。plot assets: 0，renderable: 0，asset_fail: 0。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

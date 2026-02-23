@@ -1,0 +1,143 @@
+{
+  "generated_at": "now",
+  "summary": {
+    "input_ok": 302,
+    "output_ok": 289,
+    "io_ok": 289,
+    "strict": 151,
+    "output_missing": 16,
+    "io_incomplete": 16,
+    "input_missing": 3
+  },
+  "total": 305,
+  "missing": [
+    {
+      "case_id": "17faad37ce6bf04378012190d8c563e8611827132b0944643f44af1350abb758",
+      "title": "jinteki",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "2aa4a1c17878da16636d057ea682656438ee01e50a9b56fbbee8aac72e5bd2c9",
+      "title": "AB_NO_DESC_f5171f88125c_20260217_074206",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "35fe9f98a5565e83dd97e074beb7fd80d42b3e2467bde1dec7074a9aefe4e7cb",
+      "title": "ISP",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "4732de6cfb3a108a6a95dd93ac81cd2adc5a0d8a93e0c4daa06e6c2e61a3ffa2",
+      "title": "DataFrame_from__data_input_R_0_1_xlsx___sheet___Projects_Record_Table___",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "4bbe48695313e00fe4e324d0d4cb70f0022812020e6f3748c56aef8a8bed49a6",
+      "title": "1",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "4f941f32c468b66391aa9cbc55bf54e8b9b19e6c37e3195bbefebc175b01edb2",
+      "title": "case_059",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "6b4b51bd9afaa5d8f8512d51c00d3f5cde948f551ad09e3829457b2ab7a3e29b",
+      "title": "001",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "d072b670826453e16599800aec6634bc6c5907d76b0202af193e344151d3f459",
+      "title": "random walk",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "d0ad2eb4cf41a0963260cbfd6d6160de3959cbe30879487aae61ea17ed377131",
+      "title": "美国电能分析",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "d4e6949ea9faa608ddce7472d646baac3ba141c3ffbc3f401d015ec778513874",
+      "title": "AB_NO_DESC_64914baf5ff5_20260217_070858",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "dcb6a29b31385e093b8dba1b3c7b81b826810b8e42629e319a6f061f63faa06e",
+      "title": "20251206-how AI is wiring childhood",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "e72ce87902fb49a7899df6872f983400ce4ee89bab41330e2fd22ff924eeaea0",
+      "title": "贷后报告-范例",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "ef45d93ed5cbd5546f82e0ce56b5f7dcf6f431d8c605dc393e2da836ef77b2dd",
+      "title": "integrated_final_plan",
+      "input_ok": true,
+      "output_ok": false,
+      "strict": false,
+      "reason": "document fetch failed: HTTP 404"
+    },
+    {
+      "case_id": "92d6fdc0519978fbb0c3e8c7cc61aa6d57d4a77b7cef32cd7d1d391cb106b0de",
+      "title": "成绩",
+      "input_ok": false,
+      "output_ok": false,
+      "strict": false,
+      "reason": "required input file download failed: case=92d6fdc0519978fbb0c3e8c7cc61aa6d57d4a77b7cef32cd7d1d391cb106b0de file=第二部分：成绩考核表（数据已随机化）计算公式： 总评 = 笔记(40%) + 作业(40%) +....xlsx http=400"
+    },
+    {
+      "case_id": "6ba640522b28d0fb35686c42add411a89cc9fcaa29a1b90f317ec61b83b4ad07",
+      "title": "test",
+      "input_ok": false,
+      "output_ok": false,
+      "strict": false,
+      "reason": "uploads endpoint unavailable: case=6ba640522b28d0fb35686c42add411a89cc9fcaa29a1b90f317ec61b83b4ad07 status=404"
+    },
+    {
+      "case_id": "48ac71f1f6b30f40390ff783568b713be6bbc0589589bdfbcc20d467bdc89366",
+      "title": "Ten",
+      "input_ok": false,
+      "output_ok": false,
+      "strict": false,
+      "reason": "required input file download failed: case=48ac71f1f6b30f40390ff783568b713be6bbc0589589bdfbcc20d467bdc89366 file=The Valuation of Financial Companies Tools and Techniques to Measure the Value of Banks, Insurance Companies and Other... (Mario Massari, Gianfranco Gianfrate etc.) (Z-Library).pdf http=400"
+    }
+  ]
+}

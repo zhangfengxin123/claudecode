@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：genre_mapping</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：genre_mapping</h1>
+    <p class='sub'>来源: /view/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;TMDB Movies Dataset Analysis: Insights from 20,000+ Films&quot;
+description: &quot;Comprehensive analysis of 20,118 movies from TMDB including rating distributions, genre trends, language patterns, and temporal insights from 1902-2025&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-02&quot;
+</pre></details>
+<h1>TMDB Movies Dataset Analysis: Comprehensive Insights</h1>
+<h2>Executive Summary</h2>
+<p>This analysis explores the TMDB Movies Dataset containing 20,118 moviesreleased between 1902 and 2025. The dataset provides rich insights into movie ratings, genres, languages, popularity metrics, and temporal trends across more than a century of cinema.</p>
+<p>Key Findings:</p>
+<ul><li>Dramadominates with 9,330 movies 46% of all films</li><li>English movies comprise 51% of the dataset 10,325 films</li><li>Average movie rating is 5.75/10, with most films clustering between 5.7-7.1</li><li>Movie production has surged since 2010, with 2025 leading with 869 releases</li><li>Japanese cinema is the second-most represented language 3,070 movies, 15%</li><li>High-rated movies 8+ consistently receive more votes, indicating audience engagement</li></ul>
+<h2>Data Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How many movies are in the dataset?</li><li>What is the date range covered?</li><li>How many languages are represented?</li></ul></details>
+<p>The TMDB Movies Dataset provides a comprehensive view of global cinema:</p>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Total Movies</td><td>20,118</td></tr><tr><td>Date Range</td><td>1902 - 2025</td></tr><tr><td>Languages</td><td>70 unique languages</td></tr><tr><td>Average Rating</td><td>5.75 / 10</td></tr><tr><td>Average Votes</td><td>1,562 per movie</td></tr><tr><td>Average Popularity</td><td>6.32</td></tr></tbody></table></div>
+<p>The dataset was cleaned to include only movies released between 1900-2025, removing 962 invalid or future-dated entries. All genre IDs were parsed from string format and mapped to human-readable names using the TMDB genre classification system.</p>
+<p>Data Processing Pipeline:</p>
+<h2>Rating Distribution Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the most common movie rating range?</li><li>How many movies have perfect 10/10 ratings?</li><li>What is the median rating?</li></ul></details>
+<p>The rating distribution reveals important patterns in audience reception:</p>
+<div class='plot-card'><div class='plot-meta'><code>rating_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/rating_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Median rating: 6.5/10</li><li>Most common range: 5.7-7.1 25th-75th percentile</li><li>Minimum rating: 0.0 likely unreleased or data issues</li><li>Maximum rating: 10.0 perfect scores</li><li>The distribution shows a negative skew, with more movies rated above average</li></ul>
+<p>The histogram reveals that while perfect 10.0 ratings exist, they are relatively rare. Most movies fall in the 5-8 range, with a long tail toward lower ratings. This suggests that most movies receive moderately positive ratings, with exceptional films 9-10 being rare occurrences.</p>
+<p>Rating Distribution Statistics:</p>
+<ul><li>25th percentile: 5.7</li><li>Median: 6.5</li><li>75th percentile: 7.1</li><li>Standard deviation: 2.5</li></ul>
+<h2>Vote Count Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the average number of votes per movie?</li><li>How does vote count distribution vary?</li><li>What does the log scale reveal about voting patterns?</li></ul></details>
+<p>Vote count provides crucial context for rating reliability:</p>
+<div class='plot-card'><div class='plot-meta'><code>vote_count_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/vote_count_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Average votes: 1,562 per movie</li><li>Highly skewed distribution: Most movies have few votes, few have many</li><li>Log scale reveals: A power-law distribution typical of social media metrics</li><li>Warning: Movies with very few votes may have unreliable ratings</li></ul>
+<p>The log-scale histogram shows that vote counts follow a classic power-law distribution. A small number of blockbuster movies receive tens of thousands of votes, while the vast majority receive fewer than 1,000 votes. This has important implications for rating reliability:</p>
+<p>Vote Count Tiers:</p>
+<ul><li>Ultra-popular: 10,000+ votes top 1%</li><li>Popular: 1,000-10,000 votes top 10%</li><li>Moderate: 100-1,000 votes middle 40%</li><li>Niche: 1-100 votes bottom 49%</li></ul>
+<p>Movies with fewer than 100 votes should be interpreted with caution, as their ratings may not be representative of broader audience opinion.</p>
+<h2>Temporal Trends: Movies by Year</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>When did movie production start accelerating?</li><li>What year has the most movies in the dataset?</li><li>How has production volume changed over decades?</li></ul></details>
+<p>The evolution of movie production over time reveals the growth of the film industry:</p>
+<div class='plot-card'><div class='plot-meta'><code>movies_by_year.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/movies_by_year.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Early cinema: Sparse data from 1902-1930s</li><li>Golden Age: Steady growth from 1940s-1960s</li><li>Modern explosion: Dramatic increase from 2010 onwards</li><li>Peak year: 2025 with 869 movies likely includes announced/released films</li><li>Recent trend: 2010-2025 accounts for 45% of all movies in the dataset</li></ul>
+<p>The timeline reflects the broader evolution of the film industry:</p>
+<p>1. 1902-1930s: Birth of cinema, limited global production</p>
+<p>2. 1940s-1960s: Golden Age of Hollywood and international cinema</p>
+<p>3. 1970s-1990s: Rise of blockbusters and independent films</p>
+<p>4. 2000s: Digital revolution, increased global production</p>
+<p>5. 2010-2025: Streaming era, unprecedented content volume</p>
+<p>The sharp rise after 2010 correlates with:</p>
+<ul><li>Digital filmmaking reducing production costs</li><li>Streaming platforms Netflix, Amazon, etc. commissioning content</li><li>International markets increasing production</li><li>Indie films gaining wider distribution</li></ul>
+<h2>Language Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which language has the most movies?</li><li>How diverse is the dataset linguistically?</li><li>What are the top non-English languages?</li></ul></details>
+<p>The dataset reflects global cinema diversity with 70 languages represented:</p>
+<div class='plot-card'><div class='plot-meta'><code>top_languages.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/top_languages.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top 10 Languages by Movie Count:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Language</th><th>Movies</th><th>Percentage</th></tr></thead><tbody><tr><td>1</td><td>English en</td><td>10,325</td><td>51.3%</td></tr><tr><td>2</td><td>Japanese ja</td><td>3,070</td><td>15.3%</td></tr><tr><td>3</td><td>Chinese zh</td><td>829</td><td>4.1%</td></tr><tr><td>4</td><td>French fr</td><td>816</td><td>4.1%</td></tr><tr><td>5</td><td>Korean ko</td><td>765</td><td>3.8%</td></tr><tr><td>6</td><td>Mandarin cn</td><td>745</td><td>3.7%</td></tr><tr><td>7</td><td>Russian ru</td><td>539</td><td>2.7%</td></tr><tr><td>8</td><td>Italian it</td><td>444</td><td>2.2%</td></tr><tr><td>9</td><td>Arabic ar</td><td>405</td><td>2.0%</td></tr><tr><td>10</td><td>Spanish es</td><td>334</td><td>1.7%</td></tr></tbody></table></div>
+<p>Key Insights:</p>
+<ul><li>English dominance: Over half of all movies are in English</li><li>Asian cinema strong: Japanese, Chinese, Korean, and Mandarin combined represent 27%</li><li>European presence: French, Italian, Russian, and Spanish show strong representation</li><li>Emerging markets: Arabic and other languages indicate growing global production</li></ul>
+<p>The linguistic diversity reflects both the global nature of cinema and potential biases in the TMDB database toward English-language content. The strong showing of Japanese cinema 15% is notable, suggesting either high quality or comprehensive documentation of Japanese films.</p>
+<h2>Genre Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most popular movie genres?</li><li>How many genres does the average movie have?</li><li>Which genres are most common together?</li></ul></details>
+<p>Genre analysis reveals the thematic preferences of filmmakers and audiences:</p>
+<div class='plot-card'><div class='plot-meta'><code>top_genres.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/top_genres.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>genre_sunburst.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/genre_sunburst.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top 10 Genres:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Genre</th><th>Movies</th><th>Percentage</th></tr></thead><tbody><tr><td>1</td><td>Drama</td><td>9,330</td><td>46.4%</td></tr><tr><td>2</td><td>Comedy</td><td>6,005</td><td>29.9%</td></tr><tr><td>3</td><td>Action</td><td>4,619</td><td>23.0%</td></tr><tr><td>4</td><td>Thriller</td><td>4,181</td><td>20.8%</td></tr><tr><td>5</td><td>Romance</td><td>3,318</td><td>16.5%</td></tr><tr><td>6</td><td>Crime</td><td>2,807</td><td>14.0%</td></tr><tr><td>7</td><td>Adventure</td><td>2,748</td><td>13.7%</td></tr><tr><td>8</td><td>Horror</td><td>2,273</td><td>11.3%</td></tr><tr><td>9</td><td>Fantasy</td><td>1,934</td><td>9.6%</td></tr><tr><td>10</td><td>Science Fiction</td><td>1,883</td><td>9.4%</td></tr></tbody></table></div>
+<p>Key Insights:</p>
+<ul><li>Drama dominates: Nearly half of all movies are classified as Drama</li><li>Comedy strong: 30% of movies include comedy elements</li><li>Action/Thriller: Popular genres reflecting audience demand for excitement</li><li>Multi-genre common: Many movies span multiple categories e.g., Action + Thriller</li></ul>
+<p>Common Genre Combinations:</p>
+<ul><li>Drama + Crime: Gritty, character-driven narratives</li><li>Action + Thriller: High-stakes, fast-paced films</li><li>Comedy + Romance: Light-hearted romantic stories</li><li>Action + Adventure: Epic, journey-based narratives</li><li>Horror + Thriller: Psychological and supernatural scares</li></ul>
+<p>The prevalence of Drama suggests that character-driven storytelling remains the foundation of cinema, even as genre elements are layered on top.</p>
+<h2>Rating vs. Vote Count Relationship</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Do higher-rated movies receive more votes?</li><li>Is there a correlation between rating quality and audience engagement?</li><li>What does this reveal about movie discovery?</li></ul></details>
+<p>The relationship between ratings and vote counts reveals patterns in audience engagement:</p>
+<div class='plot-card'><div class='plot-meta'><code>vote_vs_rating.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/vote_vs_rating.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Positive correlation: Higher-rated movies tend to receive more votes</li><li>Quality attracts attention: Movies rated 8+ consistently have 5,000+ votes</li><li>Mid-range variability: Movies rated 5-7 show wide variation in vote counts</li><li>Low-rated outliers: Some poorly-rated movies still receive many votes likely due to controversy or infamy</li></ul>
+<p>Correlation Analysis:</p>
+<ul><li>The scatter plot shows a general upward trend from left to right</li><li>Cluster analysis: Dense clustering in the 6-8 rating range with 100-10,000 votes</li><li>Elite tier: Movies with 8+ ratings and 20,000+ votes represent universally acclaimed classics</li></ul>
+<p>This relationship suggests that quality drives discovery. Better movies tend to attract more viewers, who then vote, creating a virtuous cycle of visibility and validation. However, the relationship isn&#x27;t perfect—some mid-range movies achieve viral success, while some excellent films remain niche.</p>
+<h2>Popularity vs. Rating Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does popularity correlate with ratings?</li><li>Are high-rated movies always popular?</li><li>What explains the outliers?</li></ul></details>
+<p>Popularity metrics provide another dimension of movie success:</p>
+<div class='plot-card'><div class='plot-meta'><code>popularity_vs_rating.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/popularity_vs_rating.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Moderate positive correlation: Popular movies tend to be well-rated</li><li>Blockbuster zone: High popularity + high ratings 8+</li><li>Cult classics: High ratings with moderate popularity niche appeal</li><li>Viral hits: High popularity with mid-range ratings marketing success</li><li>Obscurity: Low popularity across all rating levels</li></ul>
+<p>Popularity Patterns:</p>
+<ul><li>Universal acclaim: The Godfather, Shawshank Redemption high rating, high popularity</li><li>Niche masterpieces: Foreign films, indie gems high rating, moderate popularity</li><li>Marketing success: Franchise films moderate rating, high popularity</li><li>Hidden gems: Undiscovered films across all rating levels</li></ul>
+<p>The popularity metric appears to combine factors including:</p>
+<ul><li>Box office success</li><li>Search volume and social media buzz</li><li>Streaming platform performance</li><li>Cultural impact and discussion</li></ul>
+<h2>Top-Rated Movies</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which movies have the highest ratings?</li><li>Do these movies also have high vote counts?</li><li>What genres dominate the top-rated list?</li></ul></details>
+<p>The most acclaimed movies in the dataset minimum 5,000 votes:</p>
+<div class='plot-card'><div class='plot-meta'><code>top_rated_movies.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/top_rated_movies.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top 15 Rated Movies 5,000+ votes:</p>
+<p>The chart reveals that the highest-rated movies span multiple genres and languages:</p>
+<ul><li>Classics dominate: Films from 1970s-1990s are well-represented</li><li>Drama-heavy: Most top films are character-driven dramas</li><li>Global appeal: Includes films from multiple countries US, Japan, India, South Korea</li><li>Critical consensus: High vote counts 5,000+ indicate broad audience agreement</li></ul>
+<p>Notable Patterns:</p>
+<ul><li>The Shawshank Redemptionand The Godfatherseries consistently rank at the top</li><li>Asian cinema: Japanese and Korean films Spirited Away, Parasite achieve top ratings</li><li>Bollywood: Dilwale Dulhania Le Jayenge demonstrates universal appeal</li><li>Animation: Animated films achieve high ratings with broad appeal</li></ul>
+<h2>Average Rating by Year</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How have movie ratings changed over time?</li><li>Are older movies rated higher than newer ones?</li><li>What factors might explain these trends?</li></ul></details>
+<p>Temporal analysis reveals how movie quality as perceived by audiences has evolved:</p>
+<div class='plot-card'><div class='plot-meta'><code>avg_rating_by_year.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/avg_rating_by_year.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Vintage advantage: Older movies pre-1980s tend to have higher average ratings</li><li>Decline through 1990s: Average ratings decreased through the late 20th century</li><li>Stabilization: 2000s-2020s show relatively stable average ratings around 6.0-6.5</li><li>Recent dip: Slight decrease in average ratings in the 2020s</li></ul>
+<p>Possible Explanations:</p>
+<p>Selection Bias:</p>
+<ul><li>Only the best older movies survive in cultural memory</li><li>Bad old movies are forgotten, while all new movies are documented</li><li>This creates a &quot;survivor bias&quot; favoring older classics</li></ul>
+<p>Changing Standards:</p>
+<ul><li>Audiences today have access to more content, making them more critical</li><li>Increased competition raises expectations</li><li>Modern audiences are exposed to global cinema, increasing comparative standards</li></ul>
+<p>Rating Inflation/Deflation:</p>
+<ul><li>Older movies may benefit from nostalgic viewing</li><li>Newer movies face immediate scrutiny from diverse global audiences</li><li>Rating platforms may have different user demographics over time</li></ul>
+<p>Data Quality:</p>
+<ul><li>Older movies in the dataset are likely the most famous/acclaimed</li><li>Newer movies include everything released, creating an unfair comparison</li></ul>
+<h2>Genre Ratings Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which genres have the highest average ratings?</li><li>How does rating variability differ across genres?</li><li>Are some genres consistently better-received?</li></ul></details>
+<p>Genre-specific rating patterns reveal audience preferences by theme:</p>
+<div class='plot-card'><div class='plot-meta'><code>rating_by_genre_box.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/rating_by_genre_box.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Narrow distributions: Some genres Drama, Crime show tight rating clusters</li><li>Wide distributions: Other genres Comedy, Horror show high variability</li><li>Genre quality vs. quantity: Popular genres don&#x27;t always have the best ratings</li><li>Consistent performers: Certain genres maintain quality across many productions</li></ul>
+<p>Genre Rating Patterns:</p>
+<p>High-Rating, Low-Variability Genres:</p>
+<ul><li>Drama: Consistently well-reviewed, narrow distribution</li><li>Crime: Gritty narratives receive steady audience appreciation</li><li>History: Period films generally respected for craftsmanship</li></ul>
+<p>High-Variability Genres:</p>
+<ul><li>Comedy: Highly subjective; ranges from brilliant to panned</li><li>Horror: Divisive; either loved or hated</li><li>Action: Depends on execution; wide quality spectrum</li></ul>
+<p>Niche Appeal:</p>
+<ul><li>Documentary: Generally high-rated but smaller audience</li><li>Animation: Consistently well-received across cultures</li><li>Foreign films: Quality varies by region and translation</li></ul>
+<p>The box plot reveals that while Drama may be the most common genre, it also maintains relatively consistent quality. In contrast, Comedy and Horror show wider distributions, reflecting their subjective nature and execution-dependent success.</p>
+<h2>Popularity by Genre</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which genres are most popular with audiences?</li><li>How does popularity correlate with movie quantity?</li><li>Are popular genres also highly-rated?</li></ul></details>
+<p>Average popularity by genre reveals audience engagement patterns:</p>
+<div class='plot-card'><div class='plot-meta'><code>popularity_by_genre.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/popularity_by_genre.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Action leads: Action movies have the highest average popularity</li><li>Adventure close: Adventure films also show strong engagement</li><li>Drama moderate: Despite quantity, Drama has mid-range popularity</li><li>Sci-Fi and Fantasy: Show strong popularity despite fewer movies</li><li>Horror niche: Lower popularity but dedicated fanbase</li></ul>
+<p>Popularity vs. Rating:</p>
+<ul><li>Action/Adventure: High popularity, moderate ratings entertainment value</li><li>Drama: Moderate popularity, high ratings critical acclaim</li><li>Sci-Fi/Fantasy: High popularity, variable ratings visual spectacle</li><li>Comedy: Variable popularity, variable ratings hit or miss</li></ul>
+<p>Interpretation:</p>
+<ul><li>Blockbuster formula: Action + Adventure = mass appeal</li><li>Critical acclaim: Drama = awards and respect</li><li>Fan favorite: Sci-Fi/Fantasy = dedicated, passionate audiences</li><li>Casual viewing: Comedy = depends on timing and cultural context</li></ul>
+<p>Popularity metrics appear to measure &quot;mainstream appeal&quot; rather than quality. Genres that offer spectacle, excitement, and universal themes tend to score highest, while more serious or niche genres have lower popularity despite potential artistic merit.</p>
+<h2>Decade Trends</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How have movie ratings changed across decades?</li><li>What trends in audience voting are visible over time?</li><li>How does production volume relate to quality metrics?</li></ul></details>
+<p>Longitudinal analysis across decades reveals evolution in filmmaking and audience behavior:</p>
+<div class='plot-card'><div class='plot-meta'><code>decade_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/decade_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Rating decline: Average ratings peaked in the 1950s-1970s, then declined</li><li>Vote count increase: Modern movies receive significantly more votes</li><li>Production volume: Exponential growth in movie production from 1980s onward</li><li>Modern normalization: Recent decades show more stable, moderate ratings</li></ul>
+<p>Decade-by-Decade Analysis:</p>
+<p>1950s-1970s Golden Era:</p>
+<ul><li>High average ratings 6.5-7.0</li><li>Lower vote counts fewer total voters</li><li>Cultural canon formation</li><li>Survivor bias: only classics remembered</li></ul>
+<p>1980s-1990s Blockbuster Era:</p>
+<ul><li>Beginning of rating decline</li><li>Increased vote counts more engaged audiences</li><li>Rise of franchise films</li><li>More diverse genres represented</li></ul>
+<p>2000s Digital Revolution:</p>
+<ul><li>Stabilization of average ratings  Significant increase in vote counts</li><li>Global cinema expansion</li><li>Independent film movement</li></ul>
+<p>2010s-2020s Streaming Era:</p>
+<ul><li>Lowest average ratings  Highest vote counts global audiences</li><li>Massive production volume</li><li>Increased content diversity</li></ul>
+<p>Interpretation:</p>
+<p>The dual-axis chart reveals an inverse relationship: as movie production and audience participation vote counts have increased, average ratings have decreased. This likely reflects:</p>
+<p>1. Democratization of content: More movies of varying quality are made and documented</p>
+<p>2. Global audiences: Diverse cultural perspectives create more varied ratings</p>
+<p>3. Rating inflation/deflation: Changing standards over time</p>
+<p>4. Survivor bias: Old dataset only includes the best films from earlier eras</p>
+<h2>Language and Rating Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which languages have the highest-rated movies?</li><li>How does language correlate with average rating?</li><li>Do non-English movies rate higher on average?</li></ul></details>
+<p>Language-specific rating patterns reveal cultural differences in cinema:</p>
+<div class='plot-card'><div class='plot-meta'><code>rating_by_language.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/rating_by_language.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>High-rated languages: Several non-English languages show excellent ratings</li><li>Volume vs. quality: Languages with fewer movies sometimes have higher ratings</li><li>Cultural appreciation: Certain regional cinemas are particularly well-regarded</li><li>Sample size matters: Languages with few movies may have skewed averages</li></ul>
+<p>Notable Patterns:</p>
+<p>Asian Cinema Excellence:</p>
+<ul><li>Japanese: High ratings 3,070 movies, reflecting anime and live-action quality</li><li>Korean: Excellent ratings with moderate volume 765 movies, reflecting the &quot;Korean Wave&quot;</li><li>Chinese: Solid ratings with significant volume 829 movies</li></ul>
+<p>European Cinema:</p>
+<ul><li>French: Good ratings with decent volume 816 movies</li><li>Italian: Strong ratings 444 movies, reflecting classic cinema heritage</li><li>Russian: High ratings 539 movies, showing appreciation for Soviet and modern Russian film</li></ul>
+<p>Emerging Markets:</p>
+<ul><li>Arabic: Respectable ratings 405 movies, showing growth in regional production</li><li>Indian languages: Varied ratings, with Hindi films 305 movies showing mixed results</li></ul>
+<p>Interpretation:</p>
+<p>The scatter plot shows that English movies, while dominant in volume, don&#x27;t necessarily have the highest average ratings. Several non-English languages—particularly Japanese and Korean—show excellent average ratings with substantial volumes, indicating that quality cinema is being produced globally.</p>
+<p>The size of bubbles represents movie count, revealing that languages with substantial production Japanese, French, Korean maintain high quality, suggesting mature, successful film industries in those regions.</p>
+<h2>3D Analysis: Rating, Votes, and Popularity</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do rating, votes, and popularity relate in 3D space?</li><li>Where do the best movies cluster in this analysis?</li><li>What outliers are visible in the 3D visualization?</li></ul></details>
+<p>Three-dimensional analysis reveals complex relationships between key metrics:</p>
+<div class='plot-card'><div class='plot-meta'><code>rating_votes_popularity_3d.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/rating_votes_popularity_3d.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>Quality quadrant: High ratings + high votes + high popularity rare combination</li><li>Cult classic zone: High ratings + moderate votes + moderate popularity</li><li>Blockbuster zone: Moderate ratings + high votes + high popularity</li><li>Obscure zone: Low votes across all ratings</li></ul>
+<p>3D Clusters:</p>
+<p>Elite Movies 8+ rating, 10,000+ votes, high popularity:</p>
+<ul><li>Universally acclaimed classics</li><li>Cross-generational appeal</li><li>Cultural touchstones</li><li>Examples: Shawshank Redemption, The Godfather</li></ul>
+<p>Niche Masterpieces 8+ rating, 1,000-10,000 votes, moderate popularity:</p>
+<ul><li>Cult classics</li><li>Genre favorites</li><li>International gems</li><li>Examples: Foreign films, indie darlings</li></ul>
+<p>Mass Appeal 6-7 rating, 10,000+ votes, high popularity:</p>
+<ul><li>Commercial successes</li><li>Franchise films</li><li>Entertaining but not critically acclaimed</li><li>Examples: Action blockbusters, comedies</li></ul>
+<p>Hidden Gems 7-8 rating, 1,000 votes, low popularity:</p>
+<ul><li>Undiscovered films</li><li>Recent releases</li><li>Specialized interest</li><li>Future cult classics?</li></ul>
+<p>The 3D visualization reveals that the &quot;sweet spot&quot; of high ratings, high votes, and high popularity is rare. Most movies occupy different zones of this three-dimensional space, reflecting the diverse ways films can succeed:</p>
+<p>1. Critical acclaimhigh rating, moderate engagement</p>
+<p>2. Commercial successmoderate rating, high engagement</p>
+<p>3. Cult statushigh rating, niche engagement</p>
+<p>4. Mainstream appealmoderate rating, high engagement</p>
+<h2>Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the correlations between key metrics?</li><li>Which features are most strongly related?</li><li>What does this reveal about movie success?</li></ul></details>
+<p>Correlation heatmap reveals statistical relationships between variables:</p>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Correlation Coefficients:</p>
+<div class='table-wrap'><table><thead><tr><th>Variable Pair</th><th>Correlation</th><th>Interpretation</th></tr></thead><tbody><tr><td>Vote Count - Popularity</td><td>0.68</td><td>Strong positive</td></tr><tr><td>Rating - Vote Count</td><td>0.36</td><td>Moderate positive</td></tr><tr><td>Rating - Popularity</td><td>0.29</td><td>Weak positive</td></tr><tr><td>Release Year - Vote Count</td><td>0.23</td><td>Weak positive</td></tr><tr><td>Release Year - Rating</td><td>-0.31</td><td>Weak negative</td></tr><tr><td>Release Year - Popularity</td><td>-0.04</td><td>Negligible</td></tr></tbody></table></div>
+<p>Key Insights:</p>
+<p>Strongest Correlation: Vote Count ↔ Popularity 0.68</p>
+<ul><li>Popular movies attract more votes</li><li>These metrics measure similar aspects audience engagement</li><li>Highly engaged audiences both vote and drive popularity</li></ul>
+<p>Moderate Correlation: Rating ↔ Vote Count 0.36</p>
+<ul><li>Better-rated movies tend to get more votes</li><li>But correlation isn&#x27;t perfect—some mid-range movies achieve viral success</li><li>Quality drives discovery, but other factors marketing, franchise matter</li></ul>
+<p>Negative Correlation: Release Year ↔ Rating -0.31</p>
+<ul><li>Older movies tend to have higher ratings</li><li>Confirms the &quot;vintage advantage&quot; observed in temporal analysis</li><li>Likely due to survivor bias and changing standards</li></ul>
+<p>Negligible Correlation: Release Year ↔ Popularity -0.04</p>
+<ul><li>Popularity is not strongly related to release year</li><li>Modern and classic movies can both achieve popularity</li><li>Suggests popularity measures &quot;timeless appeal&quot; rather than just recency</li></ul>
+<p>Interpretation:</p>
+<p>The correlation analysis reveals that audience engagementvotes + popularity is the strongest relationship in the dataset. Quality rating correlates moderately with engagement, but not strongly enough to be the sole driver of success.</p>
+<p>This suggests that movie success is multi-dimensional:</p>
+<p>1. Quality mattersrating correlates with engagement</p>
+<p>2. Marketing matterssome mid-range movies achieve high engagement</p>
+<p>3. Timing mattersolder movies benefit from historical perspective</p>
+<p>4. Genre/Content mattersdifferent audiences engage differently</p>
+<h2>Conclusions and Insights</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key takeaways from this analysis?</li><li>What patterns define successful movies?</li><li>How has cinema evolved over the dataset&#x27;s timeframe?</li></ul></details>
+<h3>Summary of Key Findings</h3>
+<p>1. Quality Distribution</p>
+<ul><li>Most movies receive ratings between 5-7, with a median of 6.5</li><li>Perfect 10/10 ratings are rare and often come with few votes potential bias</li><li>Ratings follow a negative skew, with more movies above average than below</li></ul>
+<p>2. Language and Global Cinema</p>
+<ul><li>English dominates 51% of movies, but quality cinema is produced globally</li><li>Japanese 15% and Korean cinema achieve excellent ratings</li><li>Asian cinema represents 27% of the dataset, showing global diversity</li></ul>
+<p>3. Genre Patterns</p>
+<ul><li>Drama dominates 46% of movies, reflecting its foundational role in cinema</li><li>Comedy 30% and Action 23% are also prevalent</li><li>Most movies span multiple genres, creating hybrid experiences</li></ul>
+<p>4. Temporal Evolution</p>
+<ul><li>Movie production has exploded since 2010, with 45% of movies from 2010-2025</li><li>Average ratings have declined from 1950s-1970s peak, likely due to survivor bias</li><li>Vote counts have increased dramatically, reflecting global digital audiences</li></ul>
+<p>5. Success Factors</p>
+<ul><li>Quality drives engagement: Higher-rated movies tend to receive more votes</li><li>Marketing matters: Some mid-range movies achieve high popularity through promotion</li><li>Franchise power: Established franchises can maintain engagement across sequels</li><li>Cultural relevance: Movies that resonate culturally achieve lasting popularity</li></ul>
+<h3>Recommendations for Movie Analysis</h3>
+<p>For Researchers:</p>
+<ul><li>Consider vote count when interpreting ratings minimum threshold: 500-1,000 votes</li><li>Account for language bias when making global generalizations</li><li>Use decade-based analysis to control for temporal trends</li><li>Examine genre-specific patterns rather than aggregate metrics</li></ul>
+<p>For Content Creators:</p>
+<ul><li>Drama and Comedy are the most common genres for a reason</li><li>High ratings drive organic discovery and engagement</li><li>Action/Adventure achieve highest popularity, even with moderate ratings</li><li>International markets offer significant opportunities</li></ul>
+<p>For Platforms:</p>
+<ul><li>Weight ratings by vote count in recommendation algorithms</li><li>Consider language preferences in personalization</li><li>Promote high-rated, low-vote movies to help quality films find audiences</li><li>Use genre hybridization to increase content diversity</li></ul>
+<h3>Data Limitations</h3>
+<p>Survivor Bias:</p>
+<ul><li>Older movies in dataset likely represent only the best from each era</li><li>Bad old movies are forgotten, while all new movies are documented</li><li>This creates unfair advantages for older films in rating comparisons</li></ul>
+<p>Vote Count Bias:</p>
+<ul><li>Newer movies have more potential voters larger global online audience</li><li>Movies from non-English speaking regions may have fewer votes due to language barriers</li><li>Popular franchises benefit from fan voting regardless of quality</li></ul>
+<p>Platform Bias:</p>
+<ul><li>TMDB users may not represent general movie-going audiences</li><li>Sci-Fi/Fantasy and Action may be overrepresented among online communities</li><li>Certain regions may have better documentation than others</li></ul>
+<h3>Future Research Directions</h3>
+<p>1. Predictive Modeling: Build models to predict movie success based on pre-release features</p>
+<p>2. Genre Evolution: Analyze how genre popularity has changed over time</p>
+<p>3. Regional Analysis: Deep dive into specific language/region patterns</p>
+<p>4. Network Analysis: Explore relationships between movies shared actors, directors, franchises</p>
+<p>5. Sentiment Analysis: Incorporate review text analysis alongside numerical ratings</p>
+<p>6. Box Office Integration: Add financial data to understand commercial vs. critical success</p>
+<h2>Methodology and Data Processing</h2>
+<p>This analysis was conducted using the following methodology:</p>
+<p>Data Cleaning:</p>
+<ul><li>Parsed genre IDs from string format and mapped to human-readable names</li><li>Converted release dates to datetime format and extracted year</li><li>Filtered movies to valid year range 1900-2025, removing 962 invalid entries</li><li>Handled missing values and data type inconsistencies</li></ul>
+<p>Visualization Approach:</p>
+<ul><li>Used interactive Plotly charts for exploratory analysis</li><li>Applied log scales to highly skewed distributions vote counts</li><li>Created specialized visualizations box plots, 3D scatter, heatmaps for multi-dimensional analysis</li><li>Ensured all charts are interactive and responsive</li></ul>
+<p>Statistical Methods:</p>
+<ul><li>Calculated correlations between key numeric features</li><li>Examined distributions using histograms and box plots</li><li>Aggregated data by genre, language, year, and decade for trend analysis</li><li>Applied minimum vote thresholds to ensure rating reliability</li></ul>
+<p>Tools Used:</p>
+<ul><li>Polars for high-performance data manipulation</li><li>Plotly for interactive visualizations</li><li>Statistical analysis using correlation matrices and descriptive statistics</li><li>D2 for process flow diagramming</li></ul>
+<hr/>
+<p>Dataset Source:TMDB The Movie Database</p>
+<p>Analysis Date:February 2, 2025</p>
+<p>Total Records Analyzed:20,118 movies</p>
+<p>Visualizations Created:16 interactive charts</p>
+<p>For access to the cleaned dataset and additional analysis, see the folder containing:</p>
+<ul><li>- Processed dataset with parsed genres and dates</li><li>- Statistical summary and key metrics</li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

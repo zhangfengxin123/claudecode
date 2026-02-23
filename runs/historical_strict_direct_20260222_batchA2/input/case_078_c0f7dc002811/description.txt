@@ -1,0 +1,5 @@
+This dataset contains records of customer shopping behavior and purchase transactions from a retail store. It includes details about customers, products, payments, and purchase amounts.
+
+The purpose of this dataset is to help analyze buying patterns and customer preferences. It can be used to study popular product categories and spending trends.
+
+This dataset is useful for exploratory data analysis and data visualization. It can also support basic machine learning tasks such as customer segmentation and purchase prediction.

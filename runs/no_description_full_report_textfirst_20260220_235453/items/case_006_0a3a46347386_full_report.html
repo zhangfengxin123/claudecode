@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：债券借贷</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：债券借贷</h1>
+    <p class='sub'>来源: /view/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;债券借贷市场分析报告&quot;
+description: &quot;基于2024年9月至2026年1月债券借贷数据的深度市场分析&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>债券借贷市场分析报告</h1>
+<h2>分析流程概述</h2>
+<p>本报告基于华西固收提供的债券借贷更新数据（2024年9月18日至2026年1月23日），对债券借贷市场进行全面分析。分析流程如下：</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/analysis_workflow.svg' alt='analysis_workflow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/analysis_workflow.svg' target='_blank' rel='noopener noreferrer'>analysis_workflow.svg</a></figcaption></figure>
+<h2>执行摘要</h2>
+<p>通过对38,779条债券借贷交易记录和1181只独特债券的深度分析，我们识别出以下关键发现：</p>
+<ul><li>市场高度集中：前10只债券占据了51.38%的市场份额，集中度风险显著</li><li>国债占主导地位：国债占总余额的72.43%，是市场绝对主力</li><li>量价相关性极强：成交量与余额相关系数高达0.957，表明市场活跃度与规模高度同步</li><li>国开债费率最低：平均费率0.156%，显著低于国债的0.341%</li><li>近期市场稳定：2026年1月日均成交额2352.3亿元，日均余额10128.32亿元</li></ul>
+<hr/>
+<h2>1. 数据概况</h2>
+<h3>1.1 数据范围</h3>
+<ul><li>时间跨度：2024年9月18日至2026年1月23日</li><li>总记录数：38,779条</li><li>独特债券数：1,181只</li><li>最新交易日：2026年1月23日（167只债券活跃）</li></ul>
+<h3>1.2 最新日市场表现（2026-01-23）</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>总成交量</td><td>2,352.30亿元</td></tr><tr><td>总余额</td><td>10,128.32亿元</td></tr><tr><td>平均费率</td><td>0.29%</td></tr><tr><td>平均集中度</td><td>2.51%</td></tr></tbody></table></div>
+<h2>2. 市场趋势分析</h2>
+<h3>2.1 每日交易趋势</h3>
+<p>下图展示了债券借贷市场的每日成交量和余额变化趋势：</p>
+<div class='plot-card'><div class='plot-meta'><code>daily_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/daily_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>市场呈现周期性波动，成交量在2500-3000亿元区间震荡</li><li>余额相对稳定，维持在10000-11000亿元水平</li><li>2026年1月中旬后成交量有所回落，但余额保持稳定</li></ul>
+<h3>2.2 费率走势</h3>
+<p>加权平均费率走势反映了市场资金成本的变化：</p>
+<div class='plot-card'><div class='plot-meta'><code>rate_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/rate_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>费率在0.25%-0.30%区间波动</li><li>近期费率略有上升，可能反映资金面趋紧</li><li>费率波动相对温和，市场情绪稳定</li></ul>
+<hr/>
+<h2>3. 债券结构分析</h2>
+<h3>3.1 债券类型分布</h3>
+<p>按债券类型分类，市场呈现明显分化：</p>
+<p><strong>成交量分布</strong></p>
+<div class='plot-card'><div class='plot-meta'><code>volume_by_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/volume_by_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>余额分布</strong></p>
+<div class='plot-card'><div class='plot-meta'><code>balance_by_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/balance_by_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>国债：成交量和余额均占主导地位，分别占66.2%和72.4%</li><li>国开债：占比次之，成交量24.0%，余额21.4%</li><li>其他债券：主要为农发债、进出口行债等，占比相对较小</li></ul>
+<h3>3.2 各类型债券费率对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>rate_by_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/rate_by_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>国开债费率最低（0.156%），反映其高信用等级</li><li>国债费率最高（0.341%），可能与其流动性需求旺盛有关</li><li>其他债券费率居中（0.281%）</li></ul>
+<hr/>
+<h2>4. 市场集中度分析</h2>
+<h3>4.1 余额排名前15债券</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_balance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/top_balance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>&quot;25国开15&quot;以971.8亿元余额位居榜首，集中度24.54%</li><li>&quot;25附息国债16&quot;和&quot;25超长特别国债06&quot;紧随其后</li><li>前5只债券合计占市场份额37.15%</li></ul>
+<h3>4.2 成交量排名前15债券</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_volume.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/top_volume.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>余额与成交量排名高度一致，验证了量价强相关性</li><li>&quot;25国开15&quot;当日成交量257.3亿元，占市场总量的10.9%</li><li>超长特别国债交易活跃，反映市场对长期债券的需求</li></ul>
+<h3>4.3 集中度分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>concentration_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/concentration_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>大部分债券集中度低于5%</li><li>约6%的债券集中度超过10%，属于高集中度债券</li><li>高集中度债券对市场流动性和价格形成有重要影响</li></ul>
+<h3>4.4 高集中度债券分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>high_concentration.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/high_concentration.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>10只高集中度债券（集中度10%）合计占市场份额46.00%</li><li>&quot;25超长特别国债06&quot;集中度最高，达29.60%</li><li>高集中度债券主要以国债为主，反映机构投资者对国债的偏好</li></ul>
+<hr/>
+<h2>5. 相关性分析</h2>
+<h3>5.1 指标相关性热力图</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>相关性矩阵</strong></p>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>成交量</th><th>余额</th><th>费率</th><th>集中度</th></tr></thead><tbody><tr><td>成交量</td><td>1.000</td><td>0.957</td><td>0.199</td><td>0.844</td></tr><tr><td>余额</td><td>0.957</td><td>1.000</td><td>0.184</td><td>0.860</td></tr><tr><td>费率</td><td>0.199</td><td>0.184</td><td>1.000</td><td>0.310</td></tr><tr><td>集中度</td><td>0.844</td><td>0.860</td><td>0.310</td><td>1.000</td></tr></tbody></table></div>
+<p>统计检验：</p>
+<ul><li>成交量与余额相关系数：0.957 p &lt; 0.001，高度正相关</li><li>费率与成交量相关系数：0.199 p = 0.010，弱正相关</li><li>集中度与余额相关系数：0.860 p &lt; 0.001，高度正相关</li></ul>
+<p><strong>关键洞察</strong></p>
+<p>1. 量价高度同步：成交量与余额相关系数达0.957，表明市场活跃度与规模高度一致</p>
+<p>2. 集中度影响显著：集中度与余额和成交量均呈高度正相关，高集中度债券通常是市场主力</p>
+<p>3. 费率影响有限：费率与其他指标相关性较弱，可能受其他因素（如流动性、信用风险）影响更大</p>
+<h3>5.2 成交量与余额关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>volume_balance_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/volume_balance_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>成交量与余额呈现明显的线性关系</li><li>国债（红色）主要集中在高成交量、高余额区域</li><li>国开债（蓝色）和其它债券（灰色）分布较为分散</li><li>集中度越高的债券，规模（成交量和余额）通常越大</li></ul>
+<h3>5.3 费率与成交量关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>rate_volume_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/rate_volume_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键发现</strong></p>
+<ul><li>费率与成交量关系不明显，无显著趋势</li><li>国债费率分布范围较广（0.1%-1.4%），反映其流动性分化</li><li>国开债费率集中在低区间，体现其低风险特性</li><li>高成交量债券的费率并不一定高，说明交易活跃度与借贷成本无直接关联</li></ul>
+<hr/>
+<h2>6. 市场份额分析</h2>
+<h3>6.1 余额分布（Top 20债券）</h3>
+<div class='plot-card'><div class='plot-meta'><code>market_share_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0a3a463473864ada43c4416c604d0e67fe52a91c13f6e5121622a8478c772be3/assets/market_share_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>市场份额统计</strong></p>
+<div class='table-wrap'><table><thead><tr><th>分类</th><th>余额占比</th></tr></thead><tbody><tr><td>Top 5债券</td><td>37.15%</td></tr><tr><td>Top 10债券</td><td>51.38%</td></tr><tr><td>Top 20债券</td><td>64.20%</td></tr><tr><td>其他债券</td><td>35.80%</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>市场高度集中，前20只债券占据64.2%的份额</li><li>&quot;25国开15&quot;、&quot;25附息国债16&quot;、&quot;25超长特别国债06&quot;三只债券合计占27.5%</li><li>其他147只债券仅占35.8%，呈现明显的&quot;二八定律&quot;</li></ul>
+<hr/>
+<h2>7. 深度洞察与建议</h2>
+<h3>7.1 市场结构特征</h3>
+<p>1. 高度集中化：</p>
+<p>    前10只债券占据超过50%的市场份额</p>
+<p>    集中度风险显著，需关注主力债券的流动性变化</p>
+<p>    建议监控高集中度债券的异常交易行为</p>
+<p>2. 国债主导地位：</p>
+<p>    国债是市场绝对主力，占余额的72.43%</p>
+<p>    超长特别国债交易活跃，反映机构对长期债券的配置需求</p>
+<p>    建议重点关注国债发行计划对市场流动性的影响</p>
+<p>3. 国开债低费率优势：</p>
+<p>    国开债平均费率仅0.156%，低于国债0.341%</p>
+<p>    体现其高信用等级和低风险特性</p>
+<p>    建议机构投资者关注国开债的套利机会</p>
+<h3>7.2 风险提示</h3>
+<p>1. 集中度风险：</p>
+<p>    10只高集中度债券占市场份额46.00%</p>
+<p>    一旦这些债券出现流动性问题，可能引发连锁反应</p>
+<p>    建议分散投资，避免过度集中于少数债券</p>
+<p>2. 费率波动风险：</p>
+<p>    近期费率呈上升趋势，资金面可能趋紧</p>
+<p>    建议关注货币政策变化对费率的影响</p>
+<p>    可考虑在费率低位时锁定长期借贷成本</p>
+<p>3. 流动性风险：</p>
+<p>    小规模债券成交量低，流动性不足</p>
+<p>    建议优先选择高流动性债券进行借贷交易</p>
+<h3>7.3 交易策略建议</h3>
+<p>1. 优选高流动性债券：</p>
+<p>    优先选择成交量前20的债券进行交易</p>
+<p>    关注&quot;25国开15&quot;、&quot;25附息国债16&quot;等市场主力债券</p>
+<p>    避免成交量低于10亿元的债券</p>
+<p>2. 利用费率差异：</p>
+<p>    国开债费率较低，适合作为借贷资金来源</p>
+<p>    国债费率较高，适合作为借出债券获得收益</p>
+<p>    关注费率波动，择机进行跨品种套利</p>
+<p>3. 监控集中度变化：</p>
+<p>    定期跟踪高集中度债券的交易情况</p>
+<p>    当集中度异常升高时，谨慎参与交易</p>
+<p>    建立集中度预警机制，及时调整持仓</p>
+<hr/>
+<h2>8. 结论</h2>
+<p>通过对债券借贷市场的全面分析，我们得出以下结论：</p>
+<p>1. 市场规模庞大：日均成交量超过2300亿元，余额超过10000亿元，市场深度和流动性良好</p>
+<p>2. 结构高度集中：前10只债券占51.38%市场份额，前20只占64.20%，呈现明显的&quot;二八定律&quot;</p>
+<p>3. 国债主导市场：国债占余额的72.43%，是市场绝对主力，超长特别国债交易活跃</p>
+<p>4. 量价高度相关：成交量与余额相关系数0.957，市场活跃度与规模高度同步</p>
+<p>5. 费率分化明显：国开债费率最低（0.156%），国债费率最高（0.341%），反映信用等级和流动性差异</p>
+<p>6. 集中度风险显著：10只高集中度债券占46%市场份额，需重点关注其流动性变化</p>
+<p><strong>总体判断</strong></p>
+<hr/>
+<h2>附录</h2>
+<h3>数据来源</h3>
+<p>华西固收 | 债券借贷跟踪-20260123</p>
+<h3>分析方法</h3>
+<ul><li>描述性统计分析</li><li>相关性分析（Pearson相关系数）</li><li>时间序列分析</li><li>分组统计分析</li></ul>
+<h3>技术工具</h3>
+<ul><li>Python pandas, numpy, scipy</li><li>Plotly 数据可视化</li><li>D2 流程图绘制</li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：case_021</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：case_021</h1>
+    <p class='sub'>来源: /view/17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;HBL PSL 2026 Player Auction Analysis&quot;
+description: &quot;Comprehensive analysis of player prices and market distribution in the HBL Pakistan Super League 2026 auction&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-13&quot;
+</pre></details>
+<h1>HBL PSL 2026 Player Auction Analysis</h1>
+<h2>Executive Summary</h2>
+<p>The HBL PSL 2026 auction featured 27 playerswith a total spend of PKR 1.119 billionapproximately 4.02 million USD. The auction demonstrated a balanced distribution across price tiers, with the top 10 players commanding nearly 60% of the total auction value. Naseem Shah emerged as the most expensive player at PKR 86.5 million, followed closely by Faheem Ashraf at PKR 85 million.</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf/assets/auction_structure.svg' alt='auction_structure.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf/assets/auction_structure.svg' target='_blank' rel='noopener noreferrer'>auction_structure.svg</a></figcaption></figure>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the total auction value and how is it distributed?</li><li>Who are the most expensive players in the auction?</li></ul></details>
+<h2>Key Findings</h2>
+<ul><li>Total Auction Value: PKR 1,119,000,000  Average Player Price: PKR 41.44 million</li><li>Median Player Price: PKR 31 million indicating right-skewed distribution</li><li>Price Range: PKR 6 million to 86.5 million</li><li>Top 4 Players: Account for 22.5% of total spend</li><li>Top 10 Players: Account for 59.4% of total spend</li></ul>
+<h2>Market Overview</h2>
+<p>The HBL PSL 2026 auction represents a significant investment in cricket talent, with teams focusing on acquiring high-impact players across various price tiers. The market shows healthy competition, with a clear stratification between elite premium players and valuable budget options.</p>
+<div class='plot-card'><div class='plot-meta'><code>tier_breakdown.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf/assets/tier_breakdown.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Tier Distribution:</p>
+<ul><li>Tier 1 Elite 80M+: 3 players - 22.5% of total spend</li><li>Tier 2 Premium 50-79M: 8 players - 46.9% of total spend</li><li>Tier 3 Mid 20-49M: 9 players - 22.4% of total spend</li><li>Tier 4 Budget 20M: 7 players - 8.2% of total spend</li></ul>
+<p>The auction heavily weighted toward premium talent, with Tiers 1 and 2 comprising nearly 70% of total expenditure.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>How much did the top-tier players cost relative to the total auction?</li><li>What is the distribution of players across price tiers?</li></ul></details>
+<h2>Top 10 Most Valuable Players</h2>
+<div class='plot-card'><div class='plot-meta'><code>top_10_players.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf/assets/top_10_players.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The top 10 players list showcases the premium talent acquired:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Player</th><th>Price PKR</th><th>Tier</th></tr></thead><tbody><tr><td>1</td><td>Naseem Shah</td><td>86.5M</td><td>Elite</td></tr><tr><td>2</td><td>Faheem Ashraf</td><td>85.0M</td><td>Elite</td></tr><tr><td>3</td><td>Daryl Mitchell</td><td>80.5M</td><td>Elite</td></tr><tr><td>4</td><td>Fakhar Zaman</td><td>79.5M</td><td>Premium</td></tr><tr><td>5</td><td>David Warner</td><td>79.0M</td><td>Premium</td></tr><tr><td>6</td><td>Haris Rauf</td><td>76.0M</td><td>Premium</td></tr><tr><td>7</td><td>Khawaja Nafay</td><td>65.0M</td><td>Premium</td></tr><tr><td>8</td><td>Salman Ali Agha</td><td>58.5M</td><td>Premium</td></tr><tr><td>9</td><td>Sahibzada Farhan</td><td>57.0M</td><td>Premium</td></tr><tr><td>10</td><td>Rilee Rossouw</td><td>55.5M</td><td>Premium</td></tr></tbody></table></div>
+<p>Key Observations:</p>
+<ul><li>Pakistani pacers dominate the top spots Naseem Shah, Faheem Ashraf, Haris Rauf</li><li>International stars feature prominently Daryl Mitchell, David Warner, Rilee Rossouw</li><li>Price gap between 1 and 10 is 31M PKR  All top 10 players command 55M+ PKR, showing strong premium tier concentration</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which player types bowlers vs batsmencommand higher prices?</li><li>How does the price gap between rank 1 and rank 10 compare to previous auctions?</li></ul></details>
+<h2>Price Distribution Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>price_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf/assets/price_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The price distribution reveals important market dynamics:</p>
+<p>Statistical Insights:</p>
+<ul><li>Mean: 41.44M PKR</li><li>Median: 31.00M PKR</li><li>Mode: 27.00M PKR 3 players at this price point</li><li>Standard Deviation: 22.69M PKR high volatility</li></ul>
+<p>Distribution Characteristics:</p>
+<ul><li>Right-skewed distribution: Mean  Median indicates few very expensive players</li><li>Bimodal tendency: Clusters around 27M and 55-65M price points</li><li>Long tail: Budget players from 6-22M provide depth</li><li>Gap analysis: Clear separation between Elite 80M+ and Premium 50-79M tiers</li></ul>
+<p>Implications:</p>
+<ul><li>Teams willing to pay premium for elite talent</li><li>Strong mid-tier market with 9 players in 20-49M range</li><li>Budget tier offers value acquisition opportunities</li><li>Market shows rational pricing with minimal outliers</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does the skewness of the distribution tell us about market strategy?</li><li>How many players are available in each price range?</li></ul></details>
+<h2>Price Concentration Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>price_concentration.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf/assets/price_concentration.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The concentration curve demonstrates market valuation efficiency:</p>
+<p>Pareto Principle Analysis:</p>
+<ul><li>Top 4 players15% of players = 22.5% of total spend</li><li>Top 10 players37% of players = 59.4% of total spend</li><li>Top 15 players56% of players = 80.5% of total spend</li><li>Top 18 players67% of players = 90.2% of total spend</li></ul>
+<p>Concentration Insights:</p>
+<p>1. High Concentration: Nearly 60% of value concentrated in top 37% of players</p>
+<p>2. Steeper than 80/20 Rule: More concentration than typical Pareto distribution</p>
+<p>3. Elite Premium: Top 4 players disproportionately valuable</p>
+<p>4. Long Tail Value: Bottom 9 players contribute less than 10% of total</p>
+<p>Strategic Implications:</p>
+<ul><li>Auction dominated by premium talent acquisition</li><li>Teams focused on star players over balanced rosters</li><li>Budget tier players provide depth but minimal impact on total spend</li><li>Market efficiency with clear value hierarchy</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What percentage of the total auction value is concentrated in the top players?</li><li>How does this concentration compare to typical sports auction distributions?</li></ul></details>
+<h2>Complete Player Price Comparison</h2>
+<div class='plot-card'><div class='plot-meta'><code>all_players_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/17235fe14346271f4c67c473c03d469f01ccba93d5a34bd36870b48629ae62bf/assets/all_players_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>This comprehensive view reveals the full market landscape:</p>
+<p>Price Tier Segmentation:</p>
+<p>Elite Tier 80M+ - 3 Players:</p>
+<ul><li>Naseem Shah 86.5M, Faheem Ashraf 85M, Daryl Mitchell 80.5M</li><li>Average: 84M PKR per player</li><li>Represents elite international and premium domestic talent</li></ul>
+<p>Premium Tier 50-79M - 8 Players:</p>
+<ul><li>Price range: 55.5M to 79M PKR</li><li>Includes international stars David Warner, Rilee Rossouw and top domestic players</li><li>Average: 65.6M PKR per player</li></ul>
+<p>Mid Tier 20-49M - 9 Players:</p>
+<ul><li>Price range: 22M to 49.5M PKR</li><li>Largest tier by player count</li><li>Average: 27.9M PKR per player</li><li>Key for squad depth and utility players</li></ul>
+<p>Budget Tier 20M - 7 Players:</p>
+<ul><li>Price range: 6M to 19.5M PKR</li><li>Average: 13.1M PKR per player</li><li>Emerging talent and specialist roles</li></ul>
+<p>Market Efficiency:</p>
+<ul><li>Clear price progression with logical gaps between tiers</li><li>Minimal overlap suggests well-defined market segments</li><li>Pricing reflects perceived value and role importance</li><li>Opportunities exist across all tiers for strategic acquisitions</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>How are players distributed across the four price tiers?</li><li>What strategies might teams use to build competitive rosters within these constraints?</li></ul></details>
+<h2>Investment Analysis</h2>
+<h3>ROI Considerations</h3>
+<p>High-Value Investments Tier 1 &amp; 2:</p>
+<ul><li>Naseem Shah 86.5M: Premium fast bowler, match-winner potential</li><li>Faheem Ashraf 85M: All-rounder versatility, leadership value</li><li>Daryl Mitchell 80.5M: International experience, multi-format ability</li></ul>
+<p>Value Plays Tier 3:</p>
+<ul><li>Mohammad Amir 54M: Experience and proven track record</li><li>Usama Mir 35M: Spin specialist, T20 format expert</li><li>Azam Khan 32.5M: Power hitter, finisher role</li></ul>
+<p>Budget Gems Tier 4:</p>
+<ul><li>Jahanzeb Sultan 6M: Lowest price, high upside potential</li><li>Haseebullah Khan &amp; Arafat Minhas 11M each: Emerging talent</li><li>Mehran Mumtaz &amp; Faisal Akram 12.5M each: Specialist bowlers</li></ul>
+<h3>Market Efficiency Indicators</h3>
+<p>Price-to-Value Ratio Analysis:</p>
+<ul><li>Elite tier:  Premium tier:  Mid tier:  Budget tier: </li></ul>
+<p>Strategic Implications:</p>
+<p>1. Star Power Strategy: Elite players command premium for match-winning ability</p>
+<p>2. Balanced Approach: Mid-tier offers best value for consistent performance</p>
+<p>3. Depth Building: Budget tier essential for squad completion</p>
+<p>4. Risk Management: Diversification across tiers reduces single-point failure</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which players represent the best value for money?</li><li>How should teams balance star players with squad depth?</li></ul></details>
+<h2>Comparative Market Position</h2>
+<h3>Historical Context</h3>
+<p>While we don&#x27;t have direct historical comparison data, the auction structure suggests:</p>
+<p>Trends Indicated:</p>
+<p>1. Price Inflation: Elite prices 80M+ indicate premium talent inflation</p>
+<p>2. International Premium: Overseas players command significant premiums</p>
+<p>3. Pacemaker Value: Fast bowlers Naseem, Faheem, Haris highly valued</p>
+<p>4. All-Rounder Premium: Players with multiple skills attract higher bids</p>
+<h3>League Positioning</h3>
+<p>PSL Market Characteristics:</p>
+<ul><li>Total Spend: 1.119B PKR for 27 players  Price Cap: No explicit cap evident from data</li><li>Market Depth: 7 budget players ensure accessibility</li><li>Star Power: 3 elite players drive premium market</li></ul>
+<p>Competitive Advantage:</p>
+<ul><li>Strong international player participation</li><li>Balanced domestic talent development</li><li>Clear value hierarchy enabling strategic planning</li><li>Multiple acquisition pathways for different team strategies</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does the PSL auction structure compare to other T20 leagues?</li><li>What factors drive player valuation in the PSL market?</li></ul></details>
+<h2>Recommendations</h2>
+<h3>For Team Management</h3>
+<p>1. Elite Tier Strategy:</p>
+<ul><li>Target 1-2 elite players for franchise cornerstone</li><li>Prioritize players with multiple-format value</li><li>Consider leadership and marketing value beyond on-field performance</li></ul>
+<p>2. Squad Balance:</p>
+<ul><li>Allocate 40-50% of budget to top 5 players</li><li>Invest 30-40% in mid-tier for squad depth</li><li>Reserve 10-20% for budget talent and emerging players</li></ul>
+<p>3. Position-Specific Valuation:</p>
+<ul><li>Fast bowlers: Premium pricing justified by scarcity</li><li>All-rounders: High value for flexibility and balance</li><li>Specialist batsmen: Value varies based on role opener vs finisher</li><li>Spinners: Niche value, format-dependent pricing</li></ul>
+<h3>For Future Auctions</h3>
+<p>1. Market Monitoring:</p>
+<ul><li>Track price inflation trends across tiers</li><li>Identify undervalued player segments</li><li>Monitor emerging talent price trajectories</li></ul>
+<p>2. Strategic Bidding:</p>
+<ul><li>Establish tier-based budget allocation</li><li>Prioritize core positions before filling squad</li><li>Maintain flexibility for in-auction adjustments</li></ul>
+<p>3. Long-Term Planning:</p>
+<ul><li>Consider multi-year player retention</li><li>Balance experience with youth development</li><li>Build sustainable squad composition</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the optimal budget allocation strategy across price tiers?</li><li>How can teams identify undervalued players in the auction?</li></ul></details>
+<h2>Data Summary</h2>
+<h3>Dataset Overview</h3>
+<p>Source: HBL PSL 2026 Player Auction Data</p>
+<p>Records: 27 players</p>
+<p>Fields: Player names Urdu/English, prices Urdu text/numeric, price tiers</p>
+<h3>Files Generated</h3>
+<p>Data Files:</p>
+<ul><li>- Cleaned dataset with price tiers</li><li>- Statistical summary and key findings</li></ul>
+<p>Charts Generated:</p>
+<ul><li>- Top 10 most expensive players visualization</li><li>- Price distribution histogram with mean/median markers</li><li>- Total spend by price tier</li><li>- Cumulative share of total spend</li><li>- Complete player price comparison scatter plot</li></ul>
+<h3>Key Statistics</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Total Players</td><td>27</td></tr><tr><td>Total Spend</td><td>PKR 1,119,000,000</td></tr><tr><td>Average Price</td><td>PKR 41,444,444</td></tr><tr><td>Median Price</td><td>PKR 31,000,000</td></tr><tr><td>Price Range</td><td>PKR 6,000,000 - 86,500,000</td></tr><tr><td>Standard Deviation</td><td>PKR 22,690,000</td></tr><tr><td>Top 10 Share</td><td>59.4% of total spend</td></tr><tr><td>Elite Tier 80M+</td><td>3 players</td></tr><tr><td>Premium Tier 50-79M</td><td>8 players</td></tr><tr><td>Mid Tier 20-49M</td><td>9 players</td></tr><tr><td>Budget Tier 20M</td><td>7 players</td></tr></tbody></table></div>
+<h2>Conclusion</h2>
+<p>The HBL PSL 2026 player auction demonstrates a well-structured market with clear stratification across four price tiers. The total investment of PKR 1.119 billion reflects the league&#x27;s growth and competitive positioning in global T20 cricket.</p>
+<p>Key Takeaways:</p>
+<p>1. Market Efficiency: Clear price hierarchy enables strategic team building</p>
+<p>2. Talent Distribution: Balanced mix of elite stars and emerging talent</p>
+<p>3. Value Opportunities: Mid-tier and budget tiers offer strategic acquisition options</p>
+<p>4. Concentration Effect: Top 10 players dominate 60% of auction value</p>
+<p>5. International Premium: Overseas players command significant price premiums</p>
+<p>The auction results suggest teams are prioritizing star power while maintaining budget flexibility for squad depth. The presence of 7 budget-tier players ensures accessibility for teams with varying financial capabilities, contributing to competitive league balance.</p>
+<p>This analysis provides a foundation for understanding market dynamics, strategic bidding decisions, and squad composition optimization for future PSL auctions.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most important factors to consider for future auction strategy?</li><li>How can teams optimize their budget allocation across player tiers?</li></ul></details><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

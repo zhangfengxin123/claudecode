@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：2022-2026 Case Data</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：2022-2026 Case Data</h1>
+    <p class='sub'>来源: /view/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Portland CDBG Funding Analysis 2016-2024&quot;
+description: &quot;Comprehensive analysis of Community Development Block Grant allocations in Portland, Maine over 8 fiscal years&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-03&quot;
+</pre></details>
+<h1>Portland CDBG Funding Analysis 2016-2024</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of Community Development Block Grant CDBG allocations in Portland, Maine from fiscal year 2016/17 through 2023/24. The analysis covers 253 funding applications across 114 organizations, totaling 21.6 million in requested funding with 4.7 million actually awarded.</p>
+<p>Key Findings:</p>
+<ul><li>Total Funding Awarded: 4,705,753 across 8 fiscal years</li><li>Overall Award Rate: 21.8% of requested funds</li><li>Peak Funding Period: 2018/19 with 64.7% award rate 1.6M awarded</li><li>Funding Gap: 2019/20 to 2023/24 - 12.9M requested but 0 awarded</li><li>Top Recipient: COP Public Works 804,367 over 8 projects</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>yearly_funding_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/yearly_funding_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Data Overview</h2>
+<p>This analysis combines data from multiple Excel files containing CDBG scorecards and case data spanning eight fiscal years. The dataset includes:</p>
+<ul><li>Total Records: 253 applications</li><li>Organizations: 114 unique entities</li><li>Projects: 191 distinct initiatives</li><li>Time Period: 2016/17 to 2023/24</li><li>Funding Requested: 21,604,944</li><li>Funding Awarded: 4,705,753</li></ul>
+<h2>Application Types</h2>
+<p>The CDBG program classifies applications into several types, each representing different community development needs:</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which application types receive the highest funding priority?</li><li>How has the distribution of application types changed over the years?</li><li>What factors contribute to the varying award rates across application types?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>funding_by_app_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/funding_by_app_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Insights by Application Type</h3>
+<p>SET Special Economic Target- Highest Award Rate 56.3%</p>
+<ul><li>12 applications totaling 3.0M requested</li><li>1.7M awarded</li><li>This category appears to have the highest success rate, suggesting strong alignment with CDBG objectives</li></ul>
+<p>SS Social Services- Most Frequent Category 139 applications</p>
+<ul><li>9.1M requested across 139 applications</li><li>1.6M awarded 17.3% award rate</li><li>Represents the largest volume but lowest award rate among funded categories</li></ul>
+<p>CON Construction- Major Infrastructure Funding</p>
+<ul><li>60 applications requesting 6.2M</li><li>918K awarded 14.9% award rate</li><li>Despite lower award rate, represents significant infrastructure investment</li></ul>
+<p>ED Economic Development- Moderate Success</p>
+<ul><li>14 applications requesting 1.5M</li><li>523K awarded 35.5% award rate</li><li>Strong second-highest award rate among major categories</li></ul>
+<h2>Funding Priorities</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which funding priorities receive the most support?</li><li>How do priority levels correlate with award rates?</li><li>What are the strategic implications of these priority patterns?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>funding_by_priority.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/funding_by_priority.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Priority Analysis</h3>
+<p>NI National Objective- Highest Overall Funding</p>
+<ul><li>73 applications requesting 9.1M</li><li>2.5M awarded 27.6% award rate</li><li>This priority category receives the most funding, indicating its central importance</li></ul>
+<p>ANGHP Aid to Nearest Greater Housing Priority- Significant Investment</p>
+<ul><li>80 applications requesting 4.8M</li><li>1.1M awarded 22.6% award rate</li><li>Housing-related initiatives receive substantial support</li></ul>
+<p>EO Emergency One-Year- Moderate Funding</p>
+<ul><li>61 applications requesting 5.2M</li><li>1.0M awarded 20.0% award rate</li><li>Emergency programs receive consistent though limited funding</li></ul>
+<h2>Yearly Funding Trends</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What caused the dramatic shift in funding after 2018/19?</li><li>How did the COVID-19 pandemic impact CDBG allocations?</li><li>What policy changes might explain the funding gap from 2019-2024?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>applications_by_year.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/applications_by_year.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Timeline Analysis</h3>
+<p>Active Funding Period 2016/17 - 2018/19</p>
+<p>The first three years show robust funding activity:</p>
+<ul><li>2016/17: 3.1M requested, 1.5M awarded 48.9% award rate</li><li>2017/18: 4.1M requested, 1.6M awarded 38.4% award rate</li><li>2018/19: 2.5M requested, 1.6M awarded 64.7% award rate</li></ul>
+<p>This period represents 100% of all awarded funding 4.7M total, with a cumulative award rate of 47.3%.</p>
+<p>Funding Gap Period 2019/20 - 2023/24</p>
+<p>Starting in 2019/20, a complete halt in funding allocations occurred despite continued application submissions:</p>
+<ul><li>2019/20: 2.1M requested, 0 awarded 0.0% award rate</li><li>2020/21: 3.4M requested, 0 awarded 0.0% award rate</li><li>2021/22: 2.0M requested, 0 awarded 0.0% award rate</li><li>2022/23: 2.2M requested, 0 awarded 0.0% award rate</li><li>2023/24: 2.2M requested, 0 awarded 0.0% award rate</li></ul>
+<p>During this five-year period, organizations submitted 151 applications requesting 12.9M, but received no funding. This represents 60% of all applications in the dataset.</p>
+<div class='plot-card'><div class='plot-meta'><code>award_rate_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/award_rate_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Implications of the Funding Gap</h3>
+<p>The 2019-2024 funding gap has significant implications:</p>
+<p>1. Unmet Community Needs: 12.9M in requested projects remain unfunded</p>
+<p>2. Organizational Impact: 114 organizations prepared applications without receiving support</p>
+<p>3. Program Continuity: Existing programs may have been disrupted or discontinued</p>
+<p>4. Strategic Planning: Uncertainty about future funding affects long-term planning</p>
+<h2>Top Funding Recipients</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What characteristics distinguish the top-funded organizations?</li><li>How does the funding distribution affect organizational sustainability?</li><li>What are the commonalities among successful applicants?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>top_organizations.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/top_organizations.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Leading Organizations</h3>
+<p>COP Public Works- $804,367 8 projects</p>
+<ul><li>Largest single recipient with 17% of total awarded funds</li><li>Focuses on infrastructure improvements</li><li>Consistent multi-project funding</li></ul>
+<p>Police Department- $450,000 7 projects</p>
+<ul><li>Community policing initiatives</li><li>Public safety focus</li><li>Steady funding across three years</li></ul>
+<p>Catherine Morrill Day Nursery- $391,333 11 projects</p>
+<ul><li>Early childhood education</li><li>Social services</li><li>Multiple small to medium-sized grants</li></ul>
+<p>Preble Street- $377,934 31 projects</p>
+<ul><li>Homeless services and support</li><li>Social services category</li><li>Largest number of funded projects</li></ul>
+<p>Milestone- $281,359 6 projects</p>
+<ul><li>Housing and support services</li><li>Consistent funding track record</li></ul>
+<h3>Funding Concentration</h3>
+<p>The top 15 organizations received approximately 80% of all awarded funds, indicating a concentration of resources among established partners with strong track records.</p>
+<h2>Award Rate Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors contribute to the variation in award rates?</li><li>How do application types correlate with success rates?</li><li>What can organizations learn from high-award-rate categories?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>award_rate_by_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/award_rate_by_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>award_rate_by_priority.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/award_rate_by_priority.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Success Rate Patterns</h3>
+<p>High Success Categories</p>
+<ul><li>DA Drug Activity: 100% award rate 1 application, 15K</li><li>SET: 56.3% award rate 12 applications, 1.7M</li><li>ED: 35.5% award rate 14 applications, 523K</li></ul>
+<p>Moderate Success Categories</p>
+<ul><li>SS: 17.3% award rate 139 applications, 1.6M</li><li>CON: 14.9% award rate 60 applications, 918K</li></ul>
+<p>Unfunded Categories</p>
+<ul><li>EO, NaN, SS-M, Con, DEV: 0% award rate</li><li>These categories represent 27 applications requesting 1.9M</li></ul>
+<h2>Funding Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the typical size of CDBG awards?</li><li>How does award size vary by project type?</li><li>What are the implications of funding distribution patterns?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>funding_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0c7131d0cbdc03ca2a1520bffdf871349f71fb8b1c39abc647f71a0a7ac7f695/assets/funding_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Award Size Statistics</h3>
+<ul><li>Minimum Award: 12,504</li><li>Maximum Award: 408,861</li><li>Mean Award: 79,759</li><li>Median Award: 46,102</li></ul>
+<h3>Distribution Insights</h3>
+<p>The funding distribution shows a right-skewed pattern:</p>
+<p>1. Small Awards 50K: Most common, typical for social services and pilot programs</p>
+<p>2. Medium Awards 50K-150K: Common for construction and economic development</p>
+<p>3. Large Awards 150K: Rare, typically for major infrastructure projects</p>
+<p>The median award of 46,102 suggests that most funded projects receive modest funding, while a few large infrastructure projects receive substantially more.</p>
+<h2>Key Insights and Recommendations</h2>
+<h3>1. Funding Gap Analysis</h3>
+<p>The complete cessation of funding from 2019/20 through 2023/24 represents a critical issue requiring investigation. Potential causes may include:</p>
+<ul><li>Federal funding reductions or reallocation</li><li>Changes in program administration or priorities</li><li>COVID-19 pandemic impacts on federal budgets</li><li>Local policy changes or budget constraints</li><li>Data collection or reporting issues</li></ul>
+<p>Recommendation: Conduct a thorough review of CDBG program administration during this period to understand the root cause and develop strategies to restore funding.</p>
+<h3>2. Application Success Patterns</h3>
+<p>The varying award rates across application types and priorities reveal important patterns:</p>
+<ul><li>SET applicationshave the highest success rate 56.3%, suggesting strong alignment with program objectives</li><li>Social Services SShas the highest volume but lowest award rate 17.3%, indicating either high demand or lower priority</li><li>Priority NIreceives the most funding, reflecting its status as a core objective</li></ul>
+<p>Recommendation: Provide clearer guidance to applicants about funding priorities and success factors to improve application quality and alignment.</p>
+<h3>3. Organizational Capacity Building</h3>
+<p>The concentration of funding among top recipients suggests:</p>
+<ul><li>Established partners have stronger application capabilities</li><li>Capacity building could help new organizations compete more effectively</li><li>Technical assistance programs may improve success rates</li></ul>
+<p>Recommendation: Develop capacity-building programs for organizations, particularly those serving high-need populations, to improve application quality and program implementation.</p>
+<h3>4. Infrastructure vs. Services Balance</h3>
+<p>The funding split between infrastructure SET, CON and services SS, ED shows:</p>
+<ul><li>Infrastructure projects: 60.7% of awarded funds 2.9M</li><li>Service projects: 39.3% of awarded funds 1.8M</li></ul>
+<p>Recommendation: Evaluate the community needs balance between physical infrastructure and social services to ensure optimal allocation of limited resources.</p>
+<h3>5. Future Planning Considerations</h3>
+<p>Given the five-year funding gap:</p>
+<ul><li>Organizations should diversify funding sources</li><li>Long-term planning should account for funding uncertainty</li><li>Program sustainability strategies are essential</li></ul>
+<p>Recommendation: Develop comprehensive sustainability plans for CDBG-funded programs that include diverse funding sources and contingency planning.</p>
+<h2>Conclusion</h2>
+<p>The Portland CDBG program has provided substantial funding to community development initiatives over the eight-year period analyzed. However, the significant funding gap from 2019-2024 represents a critical challenge that requires immediate attention.</p>
+<p>Key takeaways:</p>
+<p>1. 4.7M awardedto 253 applications from 2016-2019</p>
+<p>2. 12.9M in unmet needsfrom 2019-2024 applications</p>
+<p>3. 21.8% overall award ratewith significant variation by category</p>
+<p>4. Top 15 organizationsreceived 80% of funding</p>
+<p>5. Infrastructure projectsreceived 60.7% of awarded funds</p>
+<p>The program demonstrates success in supporting community development when funding is available, but recent years show a concerning trend of unmet community needs. Addressing the funding gap and improving program sustainability should be top priorities for program administrators and community stakeholders.</p>
+<hr/>
+<p>Data Sources: CDBG Case Data 2016-2022, 2022-2026, CDBG Trend Data 2021</p>
+<p>Analysis Date: February 3, 2025</p>
+<p>Data Period: Fiscal Years 2016/17 through 2023/24</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

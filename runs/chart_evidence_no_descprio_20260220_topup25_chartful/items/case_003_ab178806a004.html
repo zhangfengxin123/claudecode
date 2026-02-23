@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence ab178806a004</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>비행운</h1>
+  <div class='muted'>case_id: <span class='code'>ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_003_ab178806a004</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>ud_e387b18767ef_NLP_Page2.json</code></td><td>200</td><td>1357240</td><td>application/json</td><td><code>input/case_003_ab178806a004/ud_e387b18767ef_NLP_Page2.json</code></td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/files/ud_e387b18767ef_NLP_Page2.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>ud_e387b18767ef_NLP_Page0.json</code></td><td>200</td><td>1329895</td><td>application/json</td><td><code>input/case_003_ab178806a004/ud_e387b18767ef_NLP_Page0.json</code></td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/files/ud_e387b18767ef_NLP_Page0.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>ud_e387b18767ef_NLP_Page3.json</code></td><td>200</td><td>889400</td><td>application/json</td><td><code>input/case_003_ab178806a004/ud_e387b18767ef_NLP_Page3.json</code></td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/files/ud_e387b18767ef_NLP_Page3.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>ud_e387b18767ef_NLP_Page1.json</code></td><td>200</td><td>1433669</td><td>application/json</td><td><code>input/case_003_ab178806a004/ud_e387b18767ef_NLP_Page1.json</code></td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/files/ud_e387b18767ef_NLP_Page1.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>ud_e387b18767ef_NLP_Page2.json</code> · HTTP 200 · text · head-only preview</summary><pre>{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;nlpDataBlob&quot;: {
+      &quot;subsType&quot;: &quot;WITHOUT_TIMING&quot;,
+      &quot;subs&quot;: [
+        {
+          &quot;text&quot;: &quot;그녀가 떠나고 나는 불편한 의자에 홀로 오도카니 앉아 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;케이블 방송을 비롯해 티브이 자체를 잘 안 보는 나로서는 그게 무슨 프로그램인지 알 수 없었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;작가 말로는 시작한 지 얼마 안 되는 코너라 했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배는 한참 동안 오지 않았다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;대기실 앞 복도는 서늘하고 적막했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;의자에 기댄 채 고개를 숙이고 있는 내 앞으로 조선시대 무관 복장을 한 사내가 뒤뚱뒤뚱 지나갔다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;스튜디오 안은 생각보다 어수선했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;「한국의 달인」 무대를 제외한 주변 공간은 온갖 잡동사니들로 채워져 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;주위에서 퀴퀴한 지하실 냄새가 났다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;하루에도 몇 번씩 세트를 세웠다 부순다 하니 그럴 만했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;발소리를 죽여 녹화장 안으로 들어갔다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;입구 한쪽에 뜬금없이 방치된 그리스 신전 기둥이 보였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그리스 철학을 배우며 겸사겸사 공부한 바로는 끄트머리가 구부러진 게 이오니아 양식이 틀림없었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;기둥은 조악한 스티로폼으로 만들어져, 얕게 파인 홈마다 때가 끼어 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;배경화면을 크게 인쇄해 붙인 판자와 비닐에 싸인 이불 보따리도 눈에 띄었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;벽면에는 ‘금연/사장 백’ ‘불조심’ 등의 표어가 붙어 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그래도 가장 압도적인 건 천장 위에 달린 수백 개의 조명이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그것은 내가 뭔가 전문적인 공간에 와 있다는 느낌을 주었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;‘아, 선배는 이런 데서 일하는구나, 이런 곳이었구나.’ &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;멀리, 청바지 뒷주머니에 대본을 구겨 넣은 선배의 모습이 근사했다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;무대에선 대충 동선과 조명, 음향 등의 큐를 맞춘 ‘드라이 리허설’이란 게 막 끝난 참이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;내가 있을 자리에는 보조작가가 서 있었다 한다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;낯은 익지만 이름이 잘 생각나지 않는 개그맨도 보였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배 말로는 그가 진행을 볼 거라 했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;나는 그를 힐끔거리며 의식하지 않으려 했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;개그맨 역시 나를 신경 쓰지 않았다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;하지만 내가 자길 의식하지 않으려 애쓴다는 사실을 의식하고 있는 듯했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;피디라는 사람은 &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;의자에 앉아 대본을 확인하고 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;사이코라기엔 허우대가 멀쩡했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;입이 걸어 툭하면 아무에게나 욕을 한다던데. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;아니나 다를까 나와 눈이 마주치자 대뜸 소리부터 질렀다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“야! &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;쟤 뭐야?”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;나는 움찔 놀라 그 자리에 얼어붙었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배가 급히 변명을 했다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“그 장염 걸린 출연자 대타인데요, 바로 준비시키겠습니다.”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;선배는 잠시 나를 외진 곳으로 데려갔다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;조금 전 세트장보다 훨씬 산만하고 을씨년스러운 장소였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;우리는 조그마한 인공 연못이 그려진 가짜 배경 앞에 섰다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그래서 우리가 대화하는 모습은 마치 연극의 한 장면처럼 보일 것 같았다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;나는 말똥말똥 선배를 쳐다봤다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;질문과 불안이 섞인 얼굴로. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그러나 예쁘게 비칠 만한 표정을 꾸며내는 일도 잊지 않았다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;분장도 하고 마이크도 달고, 대충 준비가 끝났는데 뭐가 문제인지 알 수 없었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배는 진지하게 나를 바라봤다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;뭔가 중요한 말을 하려는 얼굴이었다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“미영아, 너한테 얘기하지 못한 게 있어.”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;온몸이 딱딱하게 굳었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;당장 자리를 박차고 나갈까 싶었지만 발</pre></details><details><summary><code>ud_e387b18767ef_NLP_Page0.json</code> · HTTP 200 · text · head-only preview</summary><pre>{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;nlpDataBlob&quot;: {
+      &quot;subsType&quot;: &quot;WITHOUT_TIMING&quot;,
+      &quot;subs&quot;: [
+        {
+          &quot;text&quot;: &quot;선배로부터 만나자는 연락이 왔다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;2년 만이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;오늘은 일이 있다고 했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배는 선배답지 않게 물었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;몇 시에? &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;저녁때 고향에 가봐야 해요. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;뭉그적 휴대전화를 만지작거리다 덧붙였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;친구 장례식이 있어서요. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배는 “아……” 하고 대꾸한 뒤 꾸물대다 물었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그럼 오후는 어떠니?&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;서랍장을 뒤지다 내친김에 옷 정리를 했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;6월인데도 밖은 몹시 무더웠다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;책장 위 수납 상자를 내려 방바닥에 쏟았다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;집 안 가득 지난해 먼지가 풀썩였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;서랍 안의 것도 전부 꺼냈다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;겨울옷을 상자로 옮기고 여름옷을 채울 생각이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;옷의 크기는 제각각이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;체중이 자주 왔다 갔다 해서였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;가장 말랐을 때와 지금의 차이는 20킬로그램. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;반년 전, 두번째 직장을 관두고 몸이 급속도로 불었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;한동안 방바닥에 엎드려 노트북만 들여다봤다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;군것질거리를 쌓아두고 인터넷을 하거나 미국 드라마를 보는 식이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배 역시 누군가에게 내 소식을 전해 듣고 연락한 듯했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그렇지 않고서야 평일 대낮에 그렇게 갑작스러운 부탁을 하진 않았을 거다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;무거운 옷에 싫증이 나 있던 터라 설레는 맘으로 여름옷을 솎았다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;작년에는 정말 많은 옷을 샀다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;계절별로, 유행 따라, 기분대로. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그만한 경제력이 있었고 새삼 예쁘게 입는 즐거움을 발견해서였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;옷 사면 사람 만나야 하고, 사람 만나면 술 마셔야 되고, 술 마시면 실수하고, &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;실수하면 후회하게 되리란 걸 알았지만. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그런 패턴조차 내가 사회적인 문법에서 크게 벗어나지 않은 삶을 살고 있다는 안도감을 주었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그리고 그땐 내 몸이 마음에 들었다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;지금보다 몸무게가 더 나간 건 고3 때밖에 없었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;어느 날, 썰지 않은 식빵을 껴안고 통째로 뜯어 먹고 있던 내게, &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;티브이를 보던 아버지가 갑자기 소리친 적이 있다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“그만 좀 처먹어라!”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;평소 대화가 드문 집안이라 모두 어리둥절한 표정으로 아버지를 쳐다봤다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;아버지는 점잖고 순하기로 소문난 사람이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그 전에도 또 그 뒤에도 아버지와 대화를 해본 적은 거의 없다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그러니까 살면서 아버지가 내게 거의 유일하게 그리고 진지하게 건넨 말은 ‘그만 좀 &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;처먹어라’가 된 셈이다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;반면 엄마는 내가 무얼 먹든 격려하는 사람이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;지금도 명절 때면 친척들 앞에서 “쟤는 아침에 일어나자마자 물도 안 마시고 떡부터 먹어요”라고 자랑하는 여자. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;내가 48킬로그램이든 70킬로그램이든 지금이 딱 좋다고 얘기하는 ‘엄마’ 말이다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;나는 부모님의 반응에 덤덤한 태도를 보여왔다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그때까진 나도 내 살이 젖살인 줄 알았다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;여름옷은 기대만큼 예쁘지 않았다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;보자마자 모두 흥분해서 산 것인데 이상했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;유행은 왜 금방 낡아버리는지. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;약간의 시간이 지났을 뿐인데, &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;쭈글쭈글 함부로 쌓인 옷더미가 내 남루한 취향과 구매의 이력처럼 느껴져 울적했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;지난해 내가 우쭐한 기분으로 걸치고 다닌 것은 무엇이었을까 하고. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;어쨌든 장례식에 입고 갈 옷을 골라야 했다. &quot;,
+          &quot;lastInPara</pre></details><details><summary><code>ud_e387b18767ef_NLP_Page3.json</code> · HTTP 200 · text · head-only preview</summary><pre>{
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;data&quot;: {
+        &quot;nlpDataBlob&quot;: {
+            &quot;subsType&quot;: &quot;WITHOUT_TIMING&quot;,
+            &quot;subs&quot;: [
+                {
+                    &quot;text&quot;: &quot;얕은 데서 놀고 있다 &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;방심했는데 어느 순간 땅이 푹 꺼지더니 몸이 쑥 빨려 들어갔다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;곧이어 입과 콧구멍 안으로 비린 물이 울컥울컥 들어왔다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;손발이 따로 놀고 숨이 찼다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;하지만 내가 물에 빠진 사실을 알아채는 친구는 없는 거 같았다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;몇몇은 나무 그늘에 누워 잤고, 또 몇몇은 물고기에 관심이 쏠려 있었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;도움을 청하고 싶었지만 간신히 수면 위로 올라와도 숨을 쉬느라 소리칠 수 없었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;깊은 물에서 둔하게 찰방이는 걸로는 주의를 끌기도 어려웠다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;내가 할 수 있는 일이란 그저 조용히 떠올랐다 가라앉기를 반복하는 것뿐이었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;지금도 나는 그때 물속에서 느낀 아주 기이한 고요를 기억하고 있다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;가까스로 물 밖에 머리를 디밀었을 때 매미 소리가 무척 시끄럽게 들려왔던 것도. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;어려서 그랬는지 몰라도 그 순간 누가 보고 싶다거나 지난 일이 주마등처럼 스쳐 지나간다거나 하지는 않았다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;다만 나는 그 상황에서 빨리 벗어나고 싶었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;그리고 좀 외로웠다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;아무도 내가 죽어가고 있다는 걸 모른다는 고립감. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;그리고 그걸 누구에게도 전하지 못한다는 갑갑함이 밀려왔다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;수면 위로 아른아른 조용하게 빛나는 여름 햇빛이 보였다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;손 내밀면 닿을 것 같은 거리에서 유혹하듯 화사하게 출렁이던 차안(此岸)의 얇고 환한 막. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;나는 그 빛을 잡고 싶었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;하지만 손에 걸리는 거라곤 쥐자마자 이내 부서지는 몇 움큼의 강물이 전부였다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;생전 처음 겪는 공포가 밀려왔다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;아득하고 설명이 안 되는 두려움이었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;나는 점점 가라앉고 있었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;더 이상 버티기가 힘들었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;그런데 그때 누가 내 손을 잡는 게 느껴졌다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;순간 있는 힘을 다해 그 팔을 잡았다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;어디서 그런 힘이 나오는지 알 수 없었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;나는 내 손을 잡을 이가 아플 거란 걸 알았지만 손에서 힘을 뺄 수 없었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;아니, 그럴수록 그 팔을 더욱 세게 잡게 되었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;내 완력에 놀란 누군가가 나를 아주 놔버리면 어쩌나 싶어서였다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;그리고 가까스로 뭍으로 나왔을 때 물에 흠뻑 젖은 채 창백해진 병만의 얼굴을 보고 말았다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;누군가의 손톱자국을 따라 깊게 홈이 파인, 살짝 핏물이 맺힌 채 시퍼렇게 멍이 든 그 애 팔뚝도……&quot;,
+                    &quot;lastInParagraph&quot;: true,
+                    &quot;special&quot;: {
+                        &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+                    }
+                },
+                {
+                    &quot;text&quot;: &quot;집으로 돌아가는 길, 병만은 퍽 들떠 있었다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;나를 구한 사실에 으쓱해서였는지 바람에 몸이 마르는 느낌이 좋아서였는지 모르겠다. &quot;,
+                    &quot;lastInParagraph&quot;: false
+                },
+                {
+                    &quot;text&quot;: &quot;젖은 신을 끌고 산길을 내려오며 병만은 민수와의 일은 까맣게 잊은 듯 씩씩하게 말했다.&quot;,
+                    &quot;lastInParagraph&quot;: true,
+                    &quot;special&quot;: {
+                        &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+                    }
+                },
+                {
+                    &quot;text&quot;: &quot;“느이들 사람들이 사막에서 뭐로 제일 많이 죽어나가는 줄 아냐?”&quot;,
+                    &quot;lastInParagraph&quot;: true,
+                    &quot;special&quot;: {
+                        &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+                    }
+                },
+                {
+                    &quot;text&quot;: &quot;민수가 한 손으로 안경을 치켜 올리며 자신 있게 답했다.&quot;,
+      </pre></details><details><summary><code>ud_e387b18767ef_NLP_Page1.json</code> · HTTP 200 · text · head-only preview</summary><pre>{
+  &quot;status&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;nlpDataBlob&quot;: {
+      &quot;subsType&quot;: &quot;WITHOUT_TIMING&quot;,
+      &quot;subs&quot;: [
+        {
+          &quot;text&quot;: &quot;나는 ‘아!’ 하고 감탄했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그건 한 사람이 다른 한 사람에게 반하는 순간 심장에서 울리는 효과음이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그렇게 몇 번 쓸데없는 문자를 주고받다, 우리는 야구장에 가자는 약속까지 해버렸다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;나는 엄마에게 또 책값을 속여, 발목까지 오는 하얀 원피스를 샀다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;지금 생각하면 촌스럽고 우스꽝스러운 치마지만. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그걸 자취방 벽에 걸어놓고 일주일 내내 쳐다봤던 기억이 난다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배가 혹 고백이라도 하면 어쩌나 걱정하며. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;내가 가진 가장 예쁜 &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;‘빤스’는 뭔가 헤아리기도 하면서. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;첫 관계에 보여주기엔 너무 큰 빤스가 아닌가 긁적이며 말이다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그리고 토요일, &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;두근거리는 걸음으로 마침내 잠실에 도착했을 때─ 매표소 앞에는 우리 과 시 모임 여자애들이 왁자지껄 떠들며 개떼같이 모여 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;홍대에서도 대학로에서도 마찬가지였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배는 나를 보고 환하게 웃었지만 나는 그 상냥함이 때로 야속했다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;하지만 선배가 진심으로 좋아진 계기는 따로 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배가 나를 알아봤듯 나도 선배를 알아본 순간이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배가 4학년, 내가 2학년이던 여름밤. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;전국적으로 유례없는 열대야가 지속되던 때. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;나는 메리야스 차림으로 밤새 헐떡이고 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;내 방 창문은 건넛집 벽면과 바싹 붙어 있어 환기가 잘 되지 않았다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선풍기를 틀어놨지만 눅눅하고 미지근한 바람이 불어와 도리어 숨이 막혔다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;몇 번씩 욕실로 뛰어가 샤워를 해도 마찬가지였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;나중에는 너무 더워서 울고 싶은 심정이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;새벽에 결국 방에서 뛰쳐나왔다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;피시방이나 찜질방에서 열을 식힐 요량이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그러다 문득 학교 생각이 났다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;우리 과방엔 국내 굴지의 대기업에 입사한 선배가 기증한 소형 에어컨이 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;과실에 에어컨이 놓인 건 역사상 처음 있는 일이라 한동안 모두 입을 모아 선배를 칭찬했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;과방에 쉬러 오는 사람도 부쩍 늘고, 어수선히 놓여 있던 물건들도 정리되는 분위기였다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;집에서 학교까지는 걸어서 10분이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;지금은 아무도 없을 테고, 에어컨을 틀고 소파에 누우면 쾌적한 숙면을 이룰 수 있을 듯했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;온몸의 땀이 순식간에 휘발되는 상상을 하자 설레기까지 했다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;차고 보송한 바람을 기대하며 과실 문을 열었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그런데 거기 누가 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;기다랗고 흐린 윤곽. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;내가 아는 실루엣이었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;그는 신문지를 뒤집어쓴 채 소파에서 새우잠을 자고 있었다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;이윽고 그가 인기척을 느끼고 부스스 일어났다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“어?”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“선배 웬일이에요?”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“너는?”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;나는 망설이다 솔직하게 답했다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“방이 너무 더워서요. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;선배는요?”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;선배가 목덜미를 만지며 쑥스러운 듯 말했다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“차를 놓쳤어.”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;선배에게 살짝 술 냄새가 났다.&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRAPH&quot;
+          }
+        },
+        {
+          &quot;text&quot;: &quot;“근데 여기 모기 있다. &quot;,
+          &quot;lastInParagraph&quot;: false
+        },
+        {
+          &quot;text&quot;: &quot;게다가 추워.”&quot;,
+          &quot;lastInParagraph&quot;: true,
+          &quot;special&quot;: {
+            &quot;type&quot;: &quot;LAST_IN_PARAGRA</pre></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td><code>segments_by_file.json</code></td><td>plotly_json</td><td>200</td><td>Text Segments by File</td><td>1</td><td>bar</td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segments_by_file.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>chars_by_file.json</code></td><td>plotly_json</td><td>200</td><td>Total Characters by File</td><td>1</td><td>bar</td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/chars_by_file.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>segment_length_dist.json</code></td><td>plotly_json</td><td>200</td><td>Segment Length Distribution</td><td>1</td><td>histogram</td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segment_length_dist.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>avg_length_by_file.json</code></td><td>plotly_json</td><td>200</td><td>Average Segment Length by File</td><td>1</td><td>bar</td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/avg_length_by_file.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>paragraph_length_dist.json</code></td><td>plotly_json</td><td>200</td><td>Paragraph Length Distribution</td><td>1</td><td>histogram</td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/paragraph_length_dist.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>sentences_per_para.json</code></td><td>plotly_json</td><td>200</td><td>Sentences per Paragraph</td><td>1</td><td>histogram</td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/sentences_per_para.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>segments_vs_paragraphs.json</code></td><td>plotly_json</td><td>200</td><td>Segments vs Paragraphs by File</td><td>2</td><td>bar</td><td><a href='https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segments_vs_paragraphs.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <article class='chart-card'><h4>Text Segments by File</h4><div class='muted code'>segments_by_file.json</div><div id='chart-0' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segments_by_file.json</p></article><article class='chart-card'><h4>Total Characters by File</h4><div class='muted code'>chars_by_file.json</div><div id='chart-1' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/chars_by_file.json</p></article><article class='chart-card'><h4>Segment Length Distribution</h4><div class='muted code'>segment_length_dist.json</div><div id='chart-2' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segment_length_dist.json</p></article><article class='chart-card'><h4>Average Segment Length by File</h4><div class='muted code'>avg_length_by_file.json</div><div id='chart-3' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/avg_length_by_file.json</p></article><article class='chart-card'><h4>Paragraph Length Distribution</h4><div class='muted code'>paragraph_length_dist.json</div><div id='chart-4' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/paragraph_length_dist.json</p></article><article class='chart-card'><h4>Sentences per Paragraph</h4><div class='muted code'>sentences_per_para.json</div><div id='chart-5' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/sentences_per_para.json</p></article><article class='chart-card'><h4>Segments vs Paragraphs by File</h4><div class='muted code'>segments_vs_paragraphs.json</div><div id='chart-6' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/ab178806a00490ab82199bf4a2eaa7a7543522a9a342b8721fc2db36bf918e70/assets/segments_vs_paragraphs.json</p></article>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [{"div": "chart-0", "name": "segments_by_file.json", "fig": {"data": [{"hovertemplate": "File=%{x}<br>Number of Segments=%{marker.color}<extra></extra>", "legendgroup": "", "marker": {"color": [87, 213, 244, 271], "coloraxis": "coloraxis", "pattern": {"shape": ""}}, "name": "", "orientation": "v", "showlegend": false, "textposition": "auto", "x": ["Page0", "Page1", "Page2", "Page3"], "xaxis": "x", "y": [87, 213, 244, 271], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "File", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Number of Segments", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "coloraxis": {"colorbar": {"title": {"text": "Number of Segments"}}, "colorscale": [[0.0, "#440154"], [0.1111111111111111, "#482878"], [0.2222222222222222, "#3e4989"], [0.3333333333333333, "#31688e"], [0.4444444444444444, "#26828e"], [0.5555555555555556, "#1f9e89"], [0.6666666666666666, "#35b779"], [0.7777777777777778, "#6ece58"], [0.8888888888888888, "#b5de2b"], [1.0, "#fde725"]]}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "Text Segments by File", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "plot_bgcolor": "white", "paper_bgcolor": "white", "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "hovermode": "closest"}}}, {"div": "chart-1", "name": "chars_by_file.json", "fig": {"data": [{"hovertemplate": "File=%{x}<br>Total Characters=%{marker.color}<extra></extra>", "legendgroup": "", "marker": {"color": [2544, 5987, 6047, 6252], "coloraxis": "coloraxis", "pattern": {"shape": ""}}, "name": "", "orientation": "v", "showlegend": false, "textposition": "auto", "x": ["Page0", "Page1", "Page2", "Page3"], "xaxis": "x", "y": [2544, 5987, 6047, 6252], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "File", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Total Characters", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "coloraxis": {"colorbar": {"title": {"text": "Total Characters"}}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "Total Characters by File", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "plot_bgcolor": "white", "paper_bgcolor": "white", "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "hovermode": "closest"}}}, {"div": "chart-2", "name": "segment_length_dist.json", "fig": {"data": [{"bingroup": "x", "hovertemplate": "Character Count=%{x}<br>count=%{y}<extra></extra>", "legendgroup": "", "marker": {"color": "#636EFA", "pattern": {"shape": ""}}, "name": "", "nbinsx": 30, "orientation": "v", "showlegend": false, "x": [18, 8, 14, 16, 5, 15, 22, 13, 28, 11, 23, 17, 24, 20, 16, 27, 14, 18, 25, 30, 24, 37, 32, 40, 36, 17, 18, 35, 44, 21, 51, 20, 28, 36, 27, 12, 39, 24, 35, 45, 13, 27, 61, 45, 25, 23, 18, 24, 16, 16, 45, 36, 24, 43, 42, 20, 26, 48, 29, 29, 36, 80, 31, 55, 35, 79, 36, 38, 28, 21, 52, 39, 58, 51, 42, 27, 30, 56, 23, 39, 39, 48, 32, 52, 29, 24, 35, 22, 9, 5, 3, 3, 25, 20, 18, 43, 10, 22, 7, 10, 24, 47, 9, 7, 30, 27, 35, 21, 13, 52, 33, 24, 55, 31, 21, 17, 1, 51, 1, 24, 36, 33, 42, 21, 14, 45, 21, 58, 4, 15, 24, 38, 23, 13, 27, 37, 23, 8, 28, 16, 37, 11, 17, 21, 29, 18, 48, 30, 44, 29, 38, 39, 22, 40, 30, 34, 31, 15, 50, 7, 27, 8, 14, 12, 8, 30, 41, 9, 18, 16, 18, 13, 21, 28, 42, 23, 30, 16, 32, 34, 3, 57, 47, 47, 18, 38, 33, 34, 16, 37, 52, 37, 48, 49, 34, 29, 43, 34, 27, 38, 26, 30, 29, 23, 27, 3, 29, 28, 25, 25, 8, 16, 11, 16, 42, 46, 37, 25, 34, 24, 11, 19, 34, 8, 72, 20, 37, 28, 29, 22, 23, 25, 38, 40, 27, 24, 17, 24, 17, 43, 50, 48, 21, 51, 33, 26, 14, 11, 13, 32, 25, 4, 11, 5, 17, 12, 6, 24, 9, 17, 13, 8, 17, 25, 32, 30, 19, 35, 31, 29, 11, 58, 31, 14, 38, 14, 6, 36, 9, 25, 28, 26, 27, 27, 11, 19, 32, 15, 14, 25, 42, 13, 11, 26, 8, 14, 8, 21, 8, 3, 44, 12, 42, 9, 12, 34, 36, 26, 21, 36, 36, 25, 34, 14, 27, 33, 36, 21, 10, 52, 7, 1, 4, 11, 16, 12, 26, 41, 23, 18, 3, 4, 16, 18, 4, 30, 34, 50, 18, 20, 12, 32, 24, 14, 12, 22, 44, 41, 16, 28, 52, 43, 33, 31, 32, 45, 7, 10, 14, 40, 32, 57, 14, 39, 21, 10, 10, 19, 26, 59, 24, 26, 47, 29, 52, 51, 36, 27, 59, 36, 31, 36, 38, 52, 59, 18, 27, 21, 13, 17, 47, 16, 13, 11, 10, 22, 25, 23, 20, 21, 16, 30, 34, 43, 41, 23, 27, 19, 36, 33, 52, 10, 3, 10, 9, 18, 13, 6, 16, 15, 13, 53, 23, 16, 9, 16, 2, 11, 14, 4, 7, 7, 4, 15, 20, 19, 18, 3, 3, 7, 13, 7, 25, 20, 10, 17, 3, 5, 8, 38, 38, 21, 21, 16, 22, 31, 21, 24, 21, 9, 21, 37, 17, 6, 24, 43, 8, 5, 12, 24, 31, 7, 13, 16, 30, 14, 21, 9, 8, 20, 9, 17, 29, 11, 34, 53, 28, 17, 20, 54, 19, 42, 20, 32, 21, 31, 53, 41, 42, 35, 35, 33, 31, 37, 52, 26, 30, 22, 24, 20, 40, 8, 20, 17, 24, 31, 3, 6, 21, 14, 33, 22, 31, 32, 40, 17, 15, 33, 44, 17, 20, 24, 13, 32, 11, 6, 10, 19, 19, 6, 18, 21, 19, 20, 17, 20, 24, 16, 18, 19, 13, 21, 13, 28, 16, 13, 6, 4, 20, 17, 25, 27, 17, 16, 14, 45, 49, 38, 42, 34, 30, 48, 24, 26, 38, 22, 34, 30, 25, 19, 23, 8, 5, 30, 9, 13, 42, 32, 14, 32, 49, 22, 46, 30, 36, 28, 23, 26, 33, 18, 35, 18, 33, 38, 34, 24, 40, 31, 15, 46, 9, 31, 24, 24, 15, 35, 20, 21, 18, 19, 37, 30, 28, 23, 31, 26, 17, 13, 23, 29, 26, 25, 25, 39, 17, 54, 16, 4, 12, 23, 34, 14, 51, 41, 14, 12, 22, 19, 25, 19, 37, 20, 32, 17, 21, 48, 6, 12, 6, 12, 14, 6, 15, 22, 8, 25, 26, 23, 19, 9, 15, 13, 15, 15, 18, 19, 17, 8, 20, 18, 39, 21, 24, 30, 24, 22, 51, 42, 42, 35, 7, 50, 32, 43, 18, 34, 56, 18, 21, 26, 40, 27, 23, 54, 38, 28, 13, 21, 3, 6, 36, 15, 9, 10, 17, 4, 4, 30, 28, 19, 23, 25, 34, 28, 19, 28, 24, 46, 11, 35, 31, 16, 35, 40, 45, 33, 43, 37, 44, 59, 25, 11, 27, 32, 31, 50, 15, 43, 18, 21, 15, 15, 25, 21, 23, 42, 27, 35, 50, 55, 25, 45, 48, 36, 31, 11, 24, 5, 9, 14, 11, 31, 22, 54, 67, 12, 12, 22, 9, 23, 19, 20, 3, 2, 8, 25, 4, 13, 31, 17, 52, 57, 14, 32, 42, 41, 23, 23, 27, 29, 68, 20, 50, 24, 48, 52, 38, 23, 19, 24, 34, 41, 33, 24, 43], "xaxis": "x", "yaxis": "y", "type": "histogram"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Character Count", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "count", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "Segment Length Distribution", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "plot_bgcolor": "white", "paper_bgcolor": "white", "bargap": 0.1, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "hovermode": "closest"}}}, {"div": "chart-3", "name": "avg_length_by_file.json", "fig": {"data": [{"hovertemplate": "File=%{x}<br>Average Length (chars)=%{marker.color}<extra></extra>", "legendgroup": "", "marker": {"color": [23.070110701107012, 24.7827868852459, 28.107981220657276, 29.24137931034483], "coloraxis": "coloraxis", "pattern": {"shape": ""}}, "name": "", "orientation": "v", "showlegend": false, "textposition": "auto", "x": ["Page0", "Page1", "Page2", "Page3"], "xaxis": "x", "y": [23.070110701107012, 24.7827868852459, 28.107981220657276, 29.24137931034483], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "File", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Average Length (chars)", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "coloraxis": {"colorbar": {"title": {"text": "Average Length (chars)"}}, "colorscale": [[0.0, "rgb(247,251,255)"], [0.125, "rgb(222,235,247)"], [0.25, "rgb(198,219,239)"], [0.375, "rgb(158,202,225)"], [0.5, "rgb(107,174,214)"], [0.625, "rgb(66,146,198)"], [0.75, "rgb(33,113,181)"], [0.875, "rgb(8,81,156)"], [1.0, "rgb(8,48,107)"]]}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "Average Segment Length by File", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "plot_bgcolor": "white", "paper_bgcolor": "white", "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "hovermode": "closest"}}}, {"div": "chart-4", "name": "paragraph_length_dist.json", "fig": {"data": [{"bingroup": "x", "hovertemplate": "Character Count=%{x}<br>count=%{y}<extra></extra>", "legendgroup": "", "marker": {"color": "#00CC96", "pattern": {"shape": ""}}, "name": "", "nbinsx": 40, "orientation": "v", "showlegend": false, "x": [159, 610, 93, 12, 346, 293, 562, 737, 15, 7, 109, 33, 7, 10, 24, 47, 17, 94, 21, 448, 21, 250, 196, 29, 119, 413, 7, 27, 23, 21, 72, 1141, 23, 27, 3, 29, 28, 25, 25, 8, 16, 11, 438, 704, 4, 11, 5, 17, 19, 24, 9, 17, 22, 225, 11, 159, 163, 59, 32, 56, 68, 50, 39, 3, 100, 9, 404, 10, 52, 9, 4, 41, 68, 23, 18, 8, 16, 18, 4, 116, 39, 70, 27, 618, 21, 128, 396, 220, 18, 27, 118, 13, 22, 48, 23, 20, 38, 203, 19, 123, 10, 14, 28, 53, 91, 16, 9, 16, 14, 14, 4, 15, 4, 36, 19, 18, 37, 25, 49, 140, 140, 9, 59, 24, 68, 8, 18, 56, 84, 21, 18, 20, 27, 29, 11, 211, 485, 325, 10, 36, 33, 280, 24, 46, 11, 6, 10, 39, 6, 40, 58, 45, 16, 18, 136, 4, 92, 17, 550, 38, 130, 14, 677, 684, 16, 4, 180, 27, 269, 6, 12, 6, 27, 6, 38, 8, 52, 23, 19, 71, 38, 26, 515, 394, 13, 21, 10, 36, 15, 9, 10, 17, 9, 30, 28, 254, 1041, 120, 36, 31, 11, 24, 15, 217, 12, 22, 9, 23, 19, 20, 46, 969], "xaxis": "x", "yaxis": "y", "type": "histogram"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Character Count", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "count", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "Paragraph Length Distribution", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "plot_bgcolor": "white", "paper_bgcolor": "white", "bargap": 0.1, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "hovermode": "closest"}}}, {"div": "chart-5", "name": "sentences_per_para.json", "fig": {"data": [{"bingroup": "x", "hovertemplate": "Number of Sentences=%{x}<br>count=%{y}<extra></extra>", "legendgroup": "", "marker": {"color": "#EF553B", "pattern": {"shape": ""}}, "name": "", "nbinsx": 30, "orientation": "v", "showlegend": false, "x": [10, 22, 3, 1, 10, 10, 13, 19, 2, 2, 4, 2, 1, 1, 1, 1, 2, 3, 1, 15, 1, 9, 8, 2, 4, 12, 1, 1, 2, 2, 2, 36, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 14, 24, 1, 1, 1, 1, 2, 1, 1, 1, 2, 8, 1, 5, 7, 3, 1, 3, 3, 3, 3, 1, 3, 1, 14, 1, 1, 2, 1, 3, 2, 1, 1, 2, 1, 1, 1, 3, 2, 3, 2, 19, 1, 5, 10, 5, 1, 1, 5, 1, 2, 2, 1, 1, 2, 6, 1, 3, 1, 2, 2, 4, 3, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 5, 1, 3, 7, 6, 1, 2, 2, 2, 1, 2, 2, 5, 1, 2, 1, 2, 1, 1, 6, 14, 12, 2, 2, 1, 10, 1, 2, 1, 1, 1, 2, 1, 2, 3, 2, 1, 1, 8, 1, 4, 1, 17, 3, 5, 1, 21, 26, 1, 1, 6, 2, 10, 1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 5, 2, 2, 16, 12, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 9, 32, 3, 1, 1, 1, 1, 2, 7, 1, 1, 1, 1, 1, 1, 5, 28], "xaxis": "x", "yaxis": "y", "type": "histogram"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Number of Sentences", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "count", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "Sentences per Paragraph", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "plot_bgcolor": "white", "paper_bgcolor": "white", "bargap": 0.1, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "hovermode": "closest"}}}, {"div": "chart-6", "name": "segments_vs_paragraphs.json", "fig": {"data": [{"alignmentgroup": "True", "hovertemplate": "Type=segments<br>File=%{x}<br>Count=%{y}<extra></extra>", "legendgroup": "segments", "marker": {"color": "#636EFA", "pattern": {"shape": ""}}, "name": "segments", "offsetgroup": "segments", "orientation": "v", "showlegend": true, "textposition": "auto", "x": ["Page0", "Page1", "Page2", "Page3"], "xaxis": "x", "y": [213, 271, 244, 87], "yaxis": "y", "type": "bar"}, {"alignmentgroup": "True", "hovertemplate": "Type=paragraphs<br>File=%{x}<br>Count=%{y}<extra></extra>", "legendgroup": "paragraphs", "marker": {"color": "#00CC96", "pattern": {"shape": ""}}, "name": "paragraphs", "offsetgroup": "paragraphs", "orientation": "v", "showlegend": true, "textposition": "auto", "x": ["Page0", "Page1", "Page2", "Page3"], "xaxis": "x", "y": [42, 93, 61, 16], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "File", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Count", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"title": {"text": "Type"}, "tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "Segments vs Paragraphs by File", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "group", "plot_bgcolor": "white", "paper_bgcolor": "white", "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "hovermode": "closest"}}}];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

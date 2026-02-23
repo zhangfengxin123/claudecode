@@ -1,0 +1,1 @@
+这个表格中description没有必要，把n对应的数据直接画成饼图，你需要画得更加学术标准。把每个category画成一个subplot，拼接成一个figure。

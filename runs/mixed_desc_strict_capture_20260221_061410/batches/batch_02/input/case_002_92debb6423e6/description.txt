@@ -1,0 +1,31 @@
+Compare the performance between the different models，26D：速度特征 (4): top1_speed, top2_speed, body1_speed, body2_speed
+距离特征 (4): top_distance, body_distance, top1_tail2_distance, top2_tail1_distance
+角度特征 (2): angle_top1_tail1, angle_top2_tail2
+坐标特征 (12): 两只小鼠各3个身体部位的x,y坐标
+交互特征 (4): relative_angle, speed_ratio, approach_speed, body_speed_diff，8D：速度特征 (4): top1_speed, top2_speed, body1_speed, body2_speed
+距离特征 (4): top_distance, body_distance, top1_tail2_distance, top2_tail1_distance，数据中有每个run的：准确率、加权F1、宏平均F1 每个类别的：Precision、Recall、F1-Score（均值±标准差）aggression_map = {
+        'freezing': 2,
+        'lateral threat': 3,
+        'keep down': 4,
+        'chase': 5,
+        'upright posture': 6,
+        'bite': 8,
+        'clinch': 10
+    }
+    
+    # Label proportions (label: proportion)
+    proportions_data = {
+        0: 765887, # non-aggression
+        2: 1173, 
+        3: 21885,
+        4: 21832,
+        5: 508,
+        6: 3307,
+        8: 594,
+        10: 17740,
+    } behavior_labels = ["Aggression", "Social", "Non-social"],proportions_data = {
+        2: 323466,  # social
+        3: 306494,  # nonsocial
+        1: 67043   # aggression
+    }
+生成详细报告和可视化热力图

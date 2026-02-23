@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：loanapproval</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：loanapproval</h1>
+    <p class='sub'>来源: /view/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Comprehensive Loan Approval Analysis: Factors Influencing Credit Decisions&quot;
+description: &quot;An in-depth analysis of 1,000 loan applications revealing key predictors of loan approval, including credit score, employment status, and financial metrics with predictive modeling insights&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-03&quot;
+</pre></details>
+<h1>Comprehensive Loan Approval Analysis</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of 1,000 loan applications, examining the key factors that influence loan approval decisions. The overall approval rate stands at 72.9%, with significant variations across applicant profiles. Our analysis reveals that credit scoreis the single most important predictor, followed by employment statusand financial responsibility indicatorsnumber of dependents and existing loans.</p>
+<p>A logistic regression model developed as part of this analysis achieved 88.3% accuracywith an ROC AUC score of 0.941, demonstrating strong predictive capability for loan approval decisions. The model identifies unemployed applicants as facing significantly higher rejection risk, while self-employed applicants enjoy the highest approval rates at 85.4%.</p>
+<h2>Overview of Loan Approval Data</h2>
+<div class='plot-card'><div class='plot-meta'><code>loan_approval_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/loan_approval_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Dataset Summary</h3>
+<p>The dataset contains 1,000 loan applications with complete information across 11 variables:</p>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Total Applications</td><td>1,000</td></tr><tr><td>Loan Approved</td><td>729 72.9%</td></tr><tr><td>Loan Rejected</td><td>271 27.1%</td></tr><tr><td>Credit Score Range</td><td>300 - 849</td></tr><tr><td>Annual Income Range</td><td>20,155 - 149,951</td></tr><tr><td>Loan Amount Range</td><td>5,082 - 49,864</td></tr><tr><td>Age Range</td><td>21 - 64 years</td></tr></tbody></table></div>
+<p>Key Finding: The data shows a healthy approval rate with no missing values or duplicates, enabling robust statistical analysis.</p>
+<h2>Financial Metrics and Approval Rates</h2>
+<h3>Credit Score Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>credit_score_by_approval.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/credit_score_by_approval.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the minimum credit score needed for reliable loan approval?</li><li>How does credit score impact approval probability at different score levels?</li></ul></details>
+<p>Credit score emerges as the strongest predictorof loan approval:</p>
+<p>Approved Applicants:</p>
+<ul><li>Mean: 609.5</li><li>Median: 635.0</li><li>Range: 358 - 849</li></ul>
+<p>Rejected Applicants:</p>
+<ul><li>Mean: 486.4</li><li>Median: 477.0</li><li>Range: 300 - 716</li></ul>
+<p>Critical Insight: Approved applicants have an average credit score 123 points higherthan rejected applicants. The median difference of 158 points indicates that credit score is a decisive factor in loan approval decisions.</p>
+<p>Approval Probability by Credit Scorebased on predictive model:</p>
+<ul><li>Credit Score 400: 66.8% approval probability</li><li>Credit Score 500: 86.8% approval probability</li><li>Credit Score 550: 92.2% approval probability</li><li>Credit Score 600: 95.5% approval probability</li><li>Credit Score 650+: 97%+ approval probability</li></ul>
+<h3>Annual Income Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>income_by_approval.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/income_by_approval.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the income threshold that significantly impacts loan approval chances?</li><li>How does income compare as a predictor versus credit score?</li></ul></details>
+<p>Annual income shows a moderate relationshipwith loan approval:</p>
+<p>Approved Applicants:</p>
+<ul><li>Mean: 86,010</li><li>Median: 86,314</li><li>Range: 20,155 - 149,951</li></ul>
+<p>Rejected Applicants:</p>
+<ul><li>Mean: 71,112</li><li>Median: 67,299</li><li>Range: 20,762 - 149,080</li></ul>
+<p>Key Finding: Approved applicants earn approximately 21% moreon average than rejected applicants. However, the substantial overlap in income distributions suggests that while income matters, it&#x27;s not as decisive as credit score.</p>
+<h3>Age and Loan Amount Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_by_approval.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/age_by_approval.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>loan_amount_by_approval.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/loan_amount_by_approval.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Age Distribution:</p>
+<ul><li>Approved: Mean 42.7 years, Median 43.0 years</li><li>Rejected: Mean 42.1 years, Median 43.0 years</li></ul>
+<p>Finding: Age shows minimal differencebetween approved and rejected applications, indicating it&#x27;s not a significant factor in approval decisions.</p>
+<p>Loan Amount Distribution:</p>
+<ul><li>Approved: Mean 27,365, Median 27,056</li><li>Rejected: Mean 26,922, Median 26,642</li></ul>
+<p>Finding: Loan amounts are remarkably similar between approved and rejected applications, suggesting that loan size is not a primary rejection criterion.</p>
+<h2>Demographic and Employment Factors</h2>
+<h3>Employment Status Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>approval_by_employment.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/approval_by_employment.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do unemployed applicants face significantly lower approval rates?</li><li>How can unemployed applicants improve their chances of approval?</li></ul></details>
+<p>Employment status is a critical factorin loan approval:</p>
+<div class='table-wrap'><table><thead><tr><th>Employment Status</th><th>Total</th><th>Approved</th><th>Approval Rate</th></tr></thead><tbody><tr><td>Self-employed</td><td>350</td><td>299</td><td>85.4%</td></tr><tr><td>Employed</td><td>320</td><td>261</td><td>81.6%</td></tr><tr><td>Unemployed</td><td>330</td><td>169</td><td>51.2%</td></tr></tbody></table></div>
+<p>Critical Insight: Unemployed applicants face a 34.2% lower approval ratecompared to employed applicants. Self-employed applicants actually have the highest approval rate, likely due to their ability to demonstrate stable income through business records.</p>
+<h3>Marital Status Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>approval_by_marital.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/approval_by_marital.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Marital status shows slight variationsin approval rates:</p>
+<div class='table-wrap'><table><thead><tr><th>Marital Status</th><th>Total</th><th>Approved</th><th>Approval Rate</th></tr></thead><tbody><tr><td>Married</td><td>355</td><td>272</td><td>76.6%</td></tr><tr><td>Divorced</td><td>303</td><td>217</td><td>71.6%</td></tr><tr><td>Single</td><td>342</td><td>240</td><td>70.2%</td></tr></tbody></table></div>
+<p>Finding: Married applicants have a 6.4% higher approval ratethan single applicants, suggesting perceived financial stability may play a minor role.</p>
+<h3>Gender Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>approval_by_gender.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/approval_by_gender.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Gender analysis shows minimal biasin approval decisions:</p>
+<div class='table-wrap'><table><thead><tr><th>Gender</th><th>Total</th><th>Approved</th><th>Approval Rate</th></tr></thead><tbody><tr><td>Male</td><td>524</td><td>386</td><td>73.7%</td></tr><tr><td>Female</td><td>476</td><td>343</td><td>72.1%</td></tr></tbody></table></div>
+<p>Finding: The 1.6% difference in approval rates is statistically insignificant, indicating no gender biasin loan approval decisions.</p>
+<h2>Correlation Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which variables have the strongest correlation with loan approval?</li><li>Are there any surprising negative correlations in the data?</li></ul></details>
+<h3>Key Correlations with Loan Approval:</h3>
+<p>Strong Positive Correlations:</p>
+<p>1. Credit Score: +0.351 strongest positive predictor</p>
+<p>2. Annual Income: +0.176 moderate positive correlation</p>
+<p>Strong Negative Correlations:</p>
+<p>1. Number of Dependents: -0.365 financial burden</p>
+<p>2. Existing Loans Count: -0.324 debt burden</p>
+<p>Weak/No Correlation:</p>
+<ul><li>Age: +0.021 negligible</li><li>Loan Amount: +0.015 negligible</li><li>Gender: +0.020 negligible</li></ul>
+<p>Insight: The negative correlation with dependents -0.365 is actually stronger than the positive correlation with income 0.176, suggesting that financial obligationsweigh heavily on approval decisions.</p>
+<h2>Predictive Model Analysis</h2>
+<h3>Model Performance</h3>
+<div class='plot-card'><div class='plot-meta'><code>roc_curve.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/roc_curve.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>A logistic regression model was developed to predict loan approval:</p>
+<p>Model Metrics:</p>
+<ul><li>Accuracy: 88.3%</li><li>ROC AUC Score: 0.941</li><li>Precision Approved: 91%</li><li>Recall Approved: 93%</li><li>Precision Rejected: 79%</li><li>Recall Rejected: 77%</li></ul>
+<p>Classification Report:</p>
+<p>Finding: The model performs better at identifying approved applicants 93% recall than rejected applicants 77% recall, which is desirable for minimizing false rejections.</p>
+<h3>Feature Importance</h3>
+<div class='plot-card'><div class='plot-meta'><code>feature_importance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/feature_importance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why is unemployment status the strongest negative predictor?</li><li>How can applicants leverage these insights to improve approval chances?</li></ul></details>
+<p>Top 5 Most Influential Features:</p>
+<p>1. Unemployed Status: -2.51 strongest negative predictor</p>
+<p>2. Number of Dependents: -1.48 financial burden</p>
+<p>3. Existing Loans Count: -1.36 debt burden</p>
+<p>4. Employed Status: +1.14 positive indicator</p>
+<p>5. Self-employed Status: +1.12 positive indicator</p>
+<p>Key Insights:</p>
+<p>1. Employment is Paramount: Being unemployed reduces approval odds by a factor of e^2.51 ≈ 12.3 times compared to the baseline, making it the most critical factor.</p>
+<p>2. Financial Burden Matters: Each dependent reduces approval odds by e^1.48 ≈ 4.4 times, and each existing loan reduces odds by e^1.36 ≈ 3.9 times.</p>
+<p>3. Employment Type Benefits: Self-employed and employed statuses provide similar positive boosts +1.12 and +1.14 respectively, indicating both are viewed favorably.</p>
+<p>4. Credit Score&#x27;s Role: Despite having the strongest correlation +0.351, credit score&#x27;s coefficient is only +0.012 because it&#x27;s measured on a 300-849 scale. A 100-point increase in credit score multiplies approval odds by e^0.012×100 = e^1.2 ≈ 3.3 times.</p>
+<h3>Confusion Matrix</h3>
+<div class='plot-card'><div class='plot-meta'><code>confusion_matrix.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a3552e7ca3019a59af4f6be2d58d536701eba006b9f10d3ad5485536ecc13ee3/assets/confusion_matrix.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Model Predictions vs Actual Results:</p>
+<div class='table-wrap'><table><thead><tr><th>Predicted Rejected</th><th>Predicted Approved</th></tr></thead><tbody><tr><td>Actual Rejected</td><td>62</td><td>19</td></tr><tr><td>Actual Approved</td><td>16</td><td>203</td></tr></tbody></table></div>
+<p>Error Analysis:</p>
+<ul><li>False Negatives 19: Approved loans incorrectly predicted as rejected 6.3% of total</li><li>False Positives 16: Rejected loans incorrectly predicted as approved 5.3% of total</li></ul>
+<p>Finding: The model is slightly conservative, erring on the side of approving slightly more loans than rejected, which is generally desirable from a business perspective.</p>
+<h2>Key Findings and Recommendations</h2>
+<h3>Critical Success Factors for Loan Approval</h3>
+<p>Based on comprehensive analysis, the following factors most strongly influence loan approval decisions:</p>
+<p>1. Maintain a High Credit ScoreAbove 600 recommended</p>
+<p>    Every 100-point increase triples approval probability</p>
+<p>    Score of 600+ yields 95%+ approval rate</p>
+<p>2. Stable Employmentis Essential</p>
+<p>    Unemployed applicants face 12x lower approval odds</p>
+<p>    Both employed and self-employed statuses are viewed favorably</p>
+<p>3. Minimize Financial Obligations</p>
+<p>    Each dependent reduces approval odds by 4.4x</p>
+<p>    Each existing loan reduces approval odds by 3.9x</p>
+<p>4. Income Matters, But Less Than Credit Score</p>
+<p>    21% income difference between approved/rejected</p>
+<p>    Credit score is 2x more important than income</p>
+<h3>Recommendations for Applicants</h3>
+<p>1. Focus on Credit Score Improvement</p>
+<p>    Pay bills on time</p>
+<p>    Reduce credit utilization ratio</p>
+<p>    Maintain long credit history</p>
+<p>2. Demonstrate Stable Income</p>
+<p>    Employment is crucial 81-85% approval rate</p>
+<p>    For unemployed: show alternative income sources</p>
+<p>3. Reduce Existing Debt Before Applying</p>
+<p>    Each existing loan significantly reduces approval chances</p>
+<p>    Consider consolidating or paying off existing loans</p>
+<p>4. Consider Loan Amount Carefully</p>
+<p>    Loan amount has minimal impact on approval</p>
+<p>    Focus on financial capacity rather than loan size</p>
+<h3>Recommendations for Lenders</h3>
+<p>1. Prioritize Credit Score in Risk Assessment</p>
+<p>    Strongest single predictor r = 0.351</p>
+<p>    More reliable than income or employment status</p>
+<p>2. Consider Unemployed Applicants Carefully</p>
+<p>    51.2% approval rate suggests some unemployed are creditworthy</p>
+<p>    Consider alternative income verification methods</p>
+<p>3. Develop Targeted Products</p>
+<p>    Higher approval rates for married applicants 76.6%</p>
+<p>    Consider products tailored for different demographic segments</p>
+<p>4. Use Predictive Models for Decision Support</p>
+<p>    88.3% accuracy achieved with basic features</p>
+<p>    Can reduce manual review time and improve consistency</p>
+<h2>Conclusion</h2>
+<p>This analysis of 1,000 loan applications reveals that credit scoreis the paramount factor in loan approval decisions, followed closely by employment statusand financial responsibility indicators. The overall 72.9% approval rate reflects a balanced lending approach, with the predictive model achieving 88.3% accuracy in classifying loan outcomes.</p>
+<p>The strongest negative predictors—unemployment, number of dependents, and existing loans—highlight the importance of financial capacity and stabilityin lending decisions. Surprisingly, demographic factors like age and gender have negligible impact, suggesting decisions are primarily based on objective financial metrics.</p>
+<p>For applicants, the path to approval is clear: maintain excellent credit, demonstrate stable income, and minimize existing financial obligations. For lenders, the analysis supports using data-driven decision models while maintaining human oversight for edge cases.</p>
+<p>The high-performance predictive model AUC = 0.941 demonstrates the value of machine learning in lending decisions, potentially enabling faster approvals while maintaining risk management standards.</p>
+<hr/>
+<p>Data Sources:</p>
+<ul><li>Cleaned dataset: 1,000 records</li><li>Analysis summary: </li><li>Methodology: Logistic Regression, Correlation Analysis, Statistical Visualization</li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

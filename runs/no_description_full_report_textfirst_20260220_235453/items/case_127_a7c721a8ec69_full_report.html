@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：2601</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：2601</h1>
+    <p class='sub'>来源: /view/a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Rewarding the Rare: Analysis of Uniqueness-Aware RL for Creative Problem Solving in LLMs&quot;
+description: &quot;Comprehensive analysis of Uniqueness-Aware Reinforcement Learning method for enhancing creative problem-solving capabilities in Large Language Models&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-31&quot;
+</pre></details>
+<h1>Executive Summary</h1>
+<p>This report provides a comprehensive analysis of the research paper &quot;Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs&quot; arXiv:2601.08763v2. The study proposes a novel Reinforcement Learning method that addresses exploration collapse in LLM training by explicitly rewarding rare, correct solution strategies.</p>
+<p>Key Findings:</p>
+<ul><li>Uniqueness-Aware RL improves Pass@256 by 19.6% over standard GRPO on the AIME 2024 benchmark</li><li>Token-level entropy remains stable during training, maintaining solution diversity</li><li>The method generalizes across multiple LLM architectures Qwen, OLMo and domains math, physics, medicine</li><li>LLM-as-Judge clustering successfully identifies and rewards diverse problem-solving approaches</li></ul>
+<h2>Methodology Overview</h2>
+<h3>Problem Statement</h3>
+<p>Standard Group Relative Policy Optimization GRPO suffers from exploration collapse- the model progressively abandons diverse problem-solving strategies in favor of a single dominant approach. This limits the model&#x27;s ability to discover novel solutions, particularly in complex reasoning tasks.</p>
+<h3>Proposed Solution</h3>
+<p>The authors introduce Uniqueness-Aware RL, which employs an LLM-based judge system to:</p>
+<p>1. Cluster similar solution strategiesgenerated during training</p>
+<p>2. Calculate strategy uniquenessbased on cluster distributions</p>
+<p>3. Reweight policy advantagesto favor rare, correct strategies</p>
+<p>This maintains entropy in the policy distribution while preserving high performance on verification-based rewards.</p>
+<h3>Training Pipeline</h3>
+<p>The following diagram illustrates the complete training process:</p>
+<p>Key Components:</p>
+<p>1. Policy Model: Base LLM e.g., Qwen2.5-7B generates multiple solution samples</p>
+<p>2. Sample Generation: Model produces 512 samples per query during training</p>
+<p>3. LLM-as-Judge Evaluation: Uses Qwen2.5-14B to assess solution correctness and similarity</p>
+<p>4. Strategy Clustering: Groups similar solution approaches based on judge analysis</p>
+<p>5. Advantage Reweighting: Adjusts policy gradients using uniqueness-aware weighting</p>
+<p>6. Policy Update: Model parameters are updated with balanced rewards</p>
+<h2>Comparative Analysis</h2>
+<h3>Standard RL vs. Uniqueness-Aware RL</h3>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced/assets/rl_comparison.svg' alt='rl_comparison.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced/assets/rl_comparison.svg' target='_blank' rel='noopener noreferrer'>rl_comparison.svg</a></figcaption></figure>
+<p>Critical Differences:</p>
+<div class='table-wrap'><table><thead><tr><th>Aspect</th><th>Standard RL GRPO</th><th>Uniqueness-Aware RL</th></tr></thead><tbody><tr><td>Reward Signal</td><td>Binary correctness</td><td>Correctness + Uniqueness</td></tr><tr><td>Strategy Preservation</td><td>Single dominant strategy</td><td>Multiple strategies maintained</td></tr><tr><td>Entropy Dynamics</td><td>Rapid decay</td><td>Stable maintenance</td></tr><tr><td>Solution Diversity</td><td>Collapses over time</td><td>Actively preserved</td></tr></tbody></table></div>
+<p>Performance Results</p>
+<h3>Pass@k Performance on AIME 2024</h3>
+<div class='plot-card'><div class='plot-meta'><code>pass_at_k_aime_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced/assets/pass_at_k_aime_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Analysis:</p>
+<ul><li>The Instruction Backbonebaseline achieves 18.7% at k=256</li><li>SimpleRL GRPOimproves to 23.3% but shows diminishing returns beyond k=64</li><li>Uniqueness-Aware RLachieves the highest performance at 27.9% - a 19.6% improvementover standard GRPO</li><li>The gap between methods widens as k increases, demonstrating superior scaling properties</li></ul>
+<h3>Cross-Benchmark Performance </h3>
+<p>Pass@256</p>
+<div class='plot-card'><div class='plot-meta'><code>pass_at_256_benchmarks.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced/assets/pass_at_256_benchmarks.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Benchmark Breakdown:</p>
+<p>1. AIME 2024Mathematics:</p>
+<p>    Instruction Backbone: 18.7%</p>
+<p>    SimpleRL GRPO: 23.3%</p>
+<p>    Uniqueness-Aware RL: 27.9%</p>
+<p>2. HLE Hard LeetCode Easy:</p>
+<p>    Instruction Backbone: 59.9%</p>
+<p>    SimpleRL GRPO: 63.8%</p>
+<p>    Uniqueness-Aware RL: 65.8%</p>
+<p>3. OlympiadBenchPhysics:</p>
+<p>    Instruction Backbone: 27.5%</p>
+<p>    SimpleRL GRPO: 35.5%</p>
+<p>    Uniqueness-Aware RL: 39.7%</p>
+<p>4. MedCaseReasoningMedical:</p>
+<p>    Instruction Backbone: 52.4%</p>
+<p>    SimpleRL GRPO: 57.4%</p>
+<p>    Uniqueness-Aware RL: 59.2%</p>
+<p>Key Insight:Uniqueness-Aware RL consistently outperforms baseline methods across all domains, with the most significant gains on mathematical reasoning tasks.</p>
+<h3>Method vs. Benchmark Heatmap</h3>
+<div class='plot-card'><div class='plot-meta'><code>method_benchmark_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced/assets/method_benchmark_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Performance Matrix:</p>
+<div class='table-wrap'><table><thead><tr><th>Method</th><th>AIME 2024</th><th>HLE</th><th>OlympiadBench</th><th>MedCaseReasoning</th></tr></thead><tbody><tr><td>Instruction Backbone</td><td>18.7%</td><td>59.9%</td><td>27.5%</td><td>52.4%</td></tr><tr><td>SimpleRL GRPO</td><td>23.3%</td><td>63.8%</td><td>35.5%</td><td>57.4%</td></tr><tr><td>Uniqueness-Aware RL</td><td>27.9%</td><td>65.8%</td><td>39.7%</td><td>59.2%</td></tr></tbody></table></div>
+<p>Relative Improvement:</p>
+<ul><li>AIME 2024: +19.6% over GRPO</li><li>HLE: +3.1% over GRPO</li><li>OlympiadBench: +11.8% over GRPO</li><li>MedCaseReasoning: +3.1% over GRPO</li></ul>
+<h2>Entropy Dynamics Analysis</h2>
+<h3>Token-Level Entropy During Training</h3>
+<div class='plot-card'><div class='plot-meta'><code>entropy_dynamics_qwen.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced/assets/entropy_dynamics_qwen.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Critical Observations:</p>
+<p>1. Instruction Backbone: Entropy remains stable but high </p>
+<p>2. SimpleRL GRPO: Entropy rapidly decays from 1.2 to 0.6, demonstrating exploration collapse</p>
+<p>3. Uniqueness-Aware RL: Entropy is maintainedat approximately 0.9 throughout training, preserving solution diversity</p>
+<p>Interpretation:</p>
+<ul><li>The entropy metric measures the diversity of token choices in the model&#x27;s output</li><li>Standard RL methods sacrifice diversity for correctness, leading to suboptimal strategies</li><li>Uniqueness-Aware RL balances correctness and diversity, enabling discovery of novel solution paths</li><li>The stable entropy at </li></ul>
+<p>Model Architecture Generalization</p>
+<h3>Experimental Setup</h3>
+<p>The authors evaluated the method across three different LLM architectures:</p>
+<div class='table-wrap'><table><thead><tr><th>Model</th><th>Parameters</th><th>Training Samples</th></tr></thead><tbody><tr><td>Qwen2.5-7B</td><td>7 billion</td><td>60,000</td></tr><tr><td>Qwen3-8B</td><td>8 billion</td><td>60,000</td></tr><tr><td>OLMo-3-7B</td><td>7 billion</td><td>40,000</td></tr></tbody></table></div>
+<p>Dataset Distribution</p>
+<p>Training Data Composition:</p>
+<ul><li>Mathematics: 37,727 samples 62.9%</li><li>Physics: 12,990 samples 21.7%</li><li>Medicine: 9,283 samples 15.5%</li></ul>
+<p>Evaluation Benchmarks:</p>
+<ul><li>AIME 2024: 30 problems</li><li>Hard LeetCode Easy: 500 problems</li><li>OlympiadBench Physics: 200 problems</li><li>MedCaseReasoning: 2,000 problems</li></ul>
+<h2>Technical Implementation</h2>
+<h3>Uniqueness-Aware Advantage Calculation</h3>
+<p>The core innovation involves modifying the policy gradient equation:</p>
+<p>Where:</p>
+<ul><li>: Standard advantage from GRPO</li><li>: Uniqueness score for action strategy a</li><li>: Average uniqueness across all actions</li></ul>
+<h3>Strategy Clustering Algorithm</h3>
+<p>The LLM-judge performs the following steps:</p>
+<p>1. Solution Analysis: Evaluates correctness and extracts solution methodology</p>
+<p>2. Feature Extraction: Identifies key solution characteristics e.g., approach, tools, reasoning patterns</p>
+<p>3. Clustering: Groups similar solutions into strategy clusters</p>
+<p>4. Uniqueness Calculation: Computes rarity score: </p>
+<h3>Training Configuration</h3>
+<p>Hyperparameters:</p>
+<ul><li>Batch size: 512 samples</li><li>Learning rate: 5e-6</li><li>Training steps: 3,000</li><li>Gradient clipping: 1.0</li><li>GRPO beta: 0.01</li><li>Uniqueness weight: Adaptive learned</li></ul>
+<h2>Implications and Applications</h2>
+<h3>Scientific Discovery</h3>
+<p>The method is particularly valuable for domains requiring novel solution approaches:</p>
+<ul><li>Mathematical Research: Discovering new proof techniques</li><li>Physics Problem Solving: Alternative theoretical frameworks</li><li>Drug Discovery: Novel molecular synthesis pathways</li><li>Algorithm Design: Innovative optimization approaches</li></ul>
+<h3>Industrial Applications</h3>
+<p>1. Code Generation: Multiple algorithm implementations for the same problem</p>
+<p>2. Creative Writing: Diverse narrative approaches</p>
+<p>3. Strategic Planning: Alternative business strategies</p>
+<p>4. Research Assistance: Exploring multiple hypotheses</p>
+<h2>Limitations and Future Work</h2>
+<h3>Current Limitations</h3>
+<p>1. Computational Cost: LLM-judge evaluation adds significant overhead</p>
+<p>2. Judge Quality: Dependent on the capability of the evaluation LLM</p>
+<p>3. Cluster Resolution: Defining appropriate similarity thresholds remains challenging</p>
+<p>4. Domain Transfer: Performance varies across different problem domains</p>
+<h3>Future Research Directions</h3>
+<p>1. Efficient Uniqueness Estimation: Developing faster alternatives to LLM-based clustering</p>
+<p>2. Adaptive Uniqueness Weighting: Dynamically adjusting uniqueness importance during training</p>
+<p>3. Multi-Judge Systems: Using specialized judges for different domains</p>
+<p>4. Strategy Evolution: Explicitly tracking strategy development across training</p>
+<h2>Conclusion</h2>
+<p>The Uniqueness-Aware RL method represents a significant advancement in training LLMs for creative problem solving. By explicitly rewarding rare, correct strategies, the method addresses the fundamental limitation of exploration collapse in standard RL approaches.</p>
+<p>Key Achievements:</p>
+<ul><li>19.6% improvement over standard GRPO on AIME 2024</li><li>Consistent performance gains across multiple benchmarks</li><li>Effective preservation of solution diversity</li><li>Successful generalization across different model architectures</li></ul>
+<p>The method demonstrates that maintaining diversity in solution strategies is not only compatible with high performance but actually enables superior outcomes in complex reasoning tasks. This insight has important implications for training AI systems that must explore novel approaches in scientific research, creative work, and strategic planning.</p>
+<h2>Data Files</h2>
+<p>The following data files are available for further exploration:</p>
+<ul><li>Performance Metrics: - Detailed Pass@k results for all methods and benchmarks</li><li>Entropy Dynamics: - Token-level entropy measurements during training</li><li>Model Configuration: - Model architectures and training parameters</li><li>Training Datasets: - Training data composition and statistics</li><li>Evaluation Benchmarks: - Benchmark specifications and problem counts</li><li>Summary: - Additional analysis details and technical notes</li></ul>
+<h2>References</h2>
+<p>1. Research Paper: &quot;Rewarding the Rare: Uniqueness-Aware RL for Creative Problem Solving in LLMs&quot; arXiv:2601.08763v2</p>
+<p>2. Training Models: Qwen2.5-7B, Qwen3-8B, OLMo-3-7B</p>
+<p>3. Evaluation LLM: Qwen2.5-14B judge</p>
+<p>4. Base Code: GRPO implementation adapted from existing frameworks</p>
+<hr/>
+<p>Analysis prepared by Pardus Agent based on research paper 2601.08763v2</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

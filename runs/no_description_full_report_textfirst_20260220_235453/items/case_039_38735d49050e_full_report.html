@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：healthcare_patient_journey</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：healthcare_patient_journey</h1>
+    <p class='sub'>来源: /view/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Healthcare Patient Journey Analysis&quot;
+description: &quot;Comprehensive analysis of 3,000 patient journeys across 5 hospital departments examining operational efficiency, clinical outcomes, and cost drivers&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Healthcare Patient Journey Analysis</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of 3,000 patient journeys across five hospital departments Polyclinic, ER, Neurology, Oncology, Cardiology. The analysis reveals critical insights into patient demographics, operational efficiency, clinical outcomes, and cost drivers.</p>
+<p>Key Findings:</p>
+<ul><li>Overall Recovery Rate: 84% 2,519 patients recovered, 481 referred</li><li>Readmission Rate: 23.5% within 30 days 704 patients</li><li>Average Cost per Visit: €2,772 Total: €8.3M</li><li>Chronic Condition Impact: 53% higher costs and 2.9x higher readmission rates</li><li>Satisfaction Correlation: Low satisfaction patients score 1-2 have 2x higher readmission rates</li></ul>
+<hr/>
+<h2>Patient Demographics and Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which departments have the highest patient volumes and why?</li><li>How does age distribution impact clinical outcomes?</li><li>What are the gender-based differences in healthcare utilization?</li></ul></details>
+<p>The patient population is evenly distributed across all five departments, with Polyclinic leading slightly at 20.4% 613 patients followed by ER 20.1%, 602 patients. The demographic profile shows a balanced gender distribution 51.1% male, 48.9% female and an average age of 53.1 years.</p>
+<div class='plot-card'><div class='plot-meta'><code>department_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/department_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Age Distribution Analysis</h3>
+<p>The patient age distribution shows a relatively uniform spread across age groups, with peaks in the 50-69 year range. This suggests the hospital serves a predominantly middle-aged to elderly population, which aligns with the higher prevalence of chronic conditions in this demographic.</p>
+<div class='plot-card'><div class='plot-meta'><code>age_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/age_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Demographic Insights</h3>
+<ul><li>Age Range: 18-89 years Mean: 53.1 years</li><li>Chronic Conditions: 40.6% of patients 1,217 patients</li><li>Gender Balance: Nearly equal male/female distribution</li><li>Patient Distribution: Uniform across departments 19.6% - 20.4% each</li></ul>
+<hr/>
+<h2>Cost Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which department generates the highest costs and why?</li><li>How do chronic conditions impact overall healthcare costs?</li><li>What are the primary cost drivers across patient journeys?</li></ul></details>
+<h3>Average Cost by Department</h3>
+<p>Cardiology leads with the highest average cost per visit at €2,806, followed closely by Polyclinic €2,799 and Oncology €2,772. ER shows the lowest average cost at €2,725 despite handling emergency cases, likely due to shorter average stays.</p>
+<div class='plot-card'><div class='plot-meta'><code>cost_by_department.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/cost_by_department.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Total Cost Breakdown</h3>
+<p>The total cost across all departments reaches €8.3M, with Polyclinic and ER having the highest total expenditures due to higher patient volumes despite their moderate average costs.</p>
+<div class='plot-card'><div class='plot-meta'><code>total_cost_by_department.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/total_cost_by_department.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Cost Drivers Analysis</h3>
+<p>Procedures and medications are significant cost drivers. Analysis shows strong positive correlations:</p>
+<ul><li>Procedures vs Cost: Each additional procedure increases costs by approximately €400-500</li><li>Medications vs Cost: Each additional medication increases costs by approximately €250-350</li><li>Length of Stay: Each additional day adds €600-800 to total costs</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>procedures_vs_cost.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/procedures_vs_cost.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>medications_vs_cost.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/medications_vs_cost.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Cost Impact by Age Group</h3>
+<p>Cost analysis by age group reveals that patients aged 70+ have the highest average costs €2,900+, while younger patients 18-29 have lower average costs €2,500-€2,700. This trend reflects increased complexity of care and longer stays for elderly patients.</p>
+<div class='plot-card'><div class='plot-meta'><code>age_group_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/age_group_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<hr/>
+<h2>Clinical Outcomes and Quality Metrics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which department has the highest readmission rate?</li><li>How do chronic conditions affect recovery rates and readmissions?</li><li>What is the relationship between patient satisfaction and clinical outcomes?</li></ul></details>
+<h3>Readmission Rate by Department</h3>
+<p>Neurology and Cardiology show the highest 30-day readmission rates at 24.9% and 24.8% respectively, while Polyclinic demonstrates the lowest at 22.0%. These variations likely reflect the complexity and chronic nature of conditions treated in each department.</p>
+<div class='plot-card'><div class='plot-meta'><code>readmission_by_department.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/readmission_by_department.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Patient Satisfaction Distribution</h3>
+<p>Patient satisfaction scores show concerning trends: 34.9% of patients report low satisfaction scores 1-2, while only 19.3% report high satisfaction scores 4-5. The majority 45.7% report neutral satisfaction score 3.</p>
+<div class='plot-card'><div class='plot-meta'><code>satisfaction_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/satisfaction_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Satisfaction vs Clinical Outcomes</h3>
+<p>A critical finding is the strong correlation between satisfaction scores and readmission rates:</p>
+<ul><li>Score 1: 42.2% readmission rate</li><li>Score 2: 27.1% readmission rate</li><li>Score 3: 21.2% readmission rate</li><li>Score 4: 19.0% readmission rate</li><li>Score 5: 5.3% readmission rate</li></ul>
+<p>This inverse relationship suggests that patient experience is not merely a service metric but a clinical indicator. Patients with lower satisfaction are 8x more likely to be readmitted compared to highly satisfied patients.</p>
+<div class='plot-card'><div class='plot-meta'><code>cost_vs_satisfaction.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/cost_vs_satisfaction.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<hr/>
+<h2>Chronic Conditions Impact</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do chronic conditions affect healthcare costs?</li><li>What is the readmission risk for patients with chronic conditions?</li><li>Are complications more common in patients with chronic conditions?</li></ul></details>
+<p>Patients with chronic conditions represent 40.6% of the population but account for disproportionate healthcare utilization and costs. These patients face significantly worse outcomes across all measured metrics.</p>
+<div class='plot-card'><div class='plot-meta'><code>chronic_impact.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/chronic_impact.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Chronic Condition Findings</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>No Chronic Condition</th><th>With Chronic Condition</th><th>% Difference</th></tr></thead><tbody><tr><td>Average Cost</td><td>€2,280</td><td>€3,493</td><td>+53%</td></tr><tr><td>Readmission Rate</td><td>13.3%</td><td>38.4%</td><td>+189%</td></tr><tr><td>Complications Rate</td><td>8.9%</td><td>25.6%</td><td>+188%</td></tr></tbody></table></div>
+<p>This data highlights chronic conditions as a primary driver of poor outcomes and high costs. Patients with chronic conditions are nearly 3x more likely to be readmitted and face double the complication rates.</p>
+<hr/>
+<h2>Operational Efficiency Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which department has the most efficient operations?</li><li>How does wait time correlate with length of stay?</li><li>What are the operational best practices across departments?</li></ul></details>
+<h3>Wait Time vs Length of Stay</h3>
+<p>Analysis of wait times time to admission and length of stay reveals interesting patterns across departments. All departments maintain similar average wait times 32-34 minutes, suggesting standardized intake processes. However, there&#x27;s no strong correlation between wait time and length of stay, indicating that wait times don&#x27;t predict hospital stay duration.</p>
+<div class='plot-card'><div class='plot-meta'><code>wait_vs_los.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/wait_vs_los.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Department Operational Metrics</h3>
+<div class='table-wrap'><table><thead><tr><th>Department</th><th>Avg Wait Time</th><th>Avg LOS</th><th>Procedures/Patient</th><th>Meds/Patient</th></tr></thead><tbody><tr><td>Polyclinic</td><td>33.8 min</td><td>3.7 days</td><td>2.3</td><td>3.4</td></tr><tr><td>ER</td><td>33.7 min</td><td>3.4 days</td><td>2.3</td><td>3.4</td></tr><tr><td>Neurology</td><td>33.0 min</td><td>3.5 days</td><td>2.3</td><td>3.4</td></tr><tr><td>Oncology</td><td>33.4 min</td><td>3.5 days</td><td>2.3</td><td>3.3</td></tr><tr><td>Cardiology</td><td>32.8 min</td><td>3.6 days</td><td>2.3</td><td>3.4</td></tr></tbody></table></div>
+<p>Operational Efficiency Winner: Cardiology demonstrates the best wait time performance 32.8 min while maintaining standard procedures and medication counts.</p>
+<hr/>
+<h2>Patient Journey Flow Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most common patient pathways through the hospital?</li><li>How do admission types affect discharge outcomes?</li><li>Which departments have the highest recovery rates?</li></ul></details>
+<p>The patient journey flow diagram reveals the movement of patients from admission through departments to discharge. Emergency admissions account for 58.4% of all visits 1,752 patients compared to scheduled admissions at 41.6% 1,248 patients.</p>
+<div class='plot-card'><div class='plot-meta'><code>patient_flow_sankey.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/patient_flow_sankey.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Flow Insights</h3>
+<ul><li>Emergency Pathways: Predominantly route through ER 37.2% of emergency cases</li><li>Scheduled Pathways: More evenly distributed across all departments</li><li>Recovery Rates: All departments maintain recovery rates between 80-86%</li><li>Referral Patterns: Oncology has the highest referral rate at 17.2%, likely due to complex treatment needs</li></ul>
+<hr/>
+<h2>Feature Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the strongest predictors of readmission?</li><li>How do patient age and satisfaction correlate?</li><li>Which factors most strongly influence total costs?</li></ul></details>
+<p>The correlation heatmap reveals important relationships between clinical and operational variables:</p>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/38735d49050e89207a9dcabd237531be3860448a17f9dcb319cb1be5614de107/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Correlations</h3>
+<p>Strong Positive Correlations:</p>
+<ul><li>Total Cost ↔ Procedures 0.72: Number of procedures is the strongest cost driver</li><li>Total Cost ↔ Length of Stay 0.67: Longer stays significantly increase costs</li><li>Total Cost ↔ Medications 0.65: More medications lead to higher costs</li><li>Complications ↔ Readmission 0.58: Patients with complications are much more likely to be readmitted</li><li>Chronic Condition ↔ Age 0.41: Older patients are more likely to have chronic conditions</li></ul>
+<p>Strong Negative Correlations:</p>
+<ul><li>Satisfaction ↔ Readmission -0.23: Higher satisfaction correlates with lower readmissions</li><li>Satisfaction ↔ Complications -0.18: Satisfied patients have fewer complications</li></ul>
+<hr/>
+<h2>Strategic Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the top priority areas for improving patient outcomes?</li><li>How can the hospital reduce readmission rates?</li><li>What cost optimization strategies should be implemented?</li></ul></details>
+<p>Based on the comprehensive analysis, we recommend the following strategic initiatives:</p>
+<h3>1. Targeted Chronic Condition Management </h3>
+<p>HIGH PRIORITY</p>
+<p>Rationale: Patients with chronic conditions have 53% higher costs and 2.9x higher readmission rates.</p>
+<p>Actions:</p>
+<ul><li>Implement chronic disease management programs for the 40.6% of patients with chronic conditions</li><li>Develop specialized care pathways for high-risk chronic patients</li><li>Enhance post-discharge support and monitoring</li><li>Create interdisciplinary chronic care teams</li></ul>
+<p>Expected Impact: 15-20% reduction in readmission rates for chronic patients, €500K-€800K annual cost savings</p>
+<h3>2. Patient Experience Enhancement </h3>
+<p>HIGH PRIORITY</p>
+<p>Rationale: Low satisfaction patients scores 1-2 have 8x higher readmission rates than highly satisfied patients.</p>
+<p>Actions:</p>
+<ul><li>Implement real-time patient feedback collection during visits</li><li>Root cause analysis of low-satisfaction cases</li><li>Staff training focused on patient communication and empathy</li><li>Improve discharge education and follow-up protocols</li></ul>
+<p>Expected Impact: 10-15% reduction in readmission rates, improved patient satisfaction scores</p>
+<h3>3. Department-Specific Interventions</h3>
+<p>Neurology &amp; Cardiology Highest Readmission Rates at 24.9% and 24.8%:</p>
+<ul><li>Implement structured post-discharge follow-up programs</li><li>Enhance patient education on condition management</li><li>Create transitional care protocols for these departments</li></ul>
+<p>Oncology Highest Referral Rate at 17.2%:</p>
+<ul><li>Optimize treatment protocols to reduce need for referrals</li><li>Improve coordination with specialty care providers</li><li>Enhance multidisciplinary team approaches</li></ul>
+<h3>4. Cost Optimization Strategies</h3>
+<p>Procedure Standardization:</p>
+<ul><li>Review protocols across departments to reduce procedure variation</li><li>Implement evidence-based procedure guidelines</li><li>Audit high-cost cases for optimization opportunities</li></ul>
+<p>Length of Stay Management:</p>
+<ul><li>Implement clinical pathways for common conditions</li><li>Enhance discharge planning processes</li><li>Optimize weekend discharge processes</li></ul>
+<h3>5. Predictive Analytics Implementation</h3>
+<p>Readmission Risk Model:</p>
+<ul><li>Develop predictive model using key risk factors:</li></ul>
+<p>Usage:</p>
+<ul><li>Identify high-risk patients at admission</li><li>Allocate additional resources to high-risk cases</li><li>Customize discharge planning based on risk profile</li></ul>
+<p>Expected Impact: 20-25% reduction in preventable readmissions</p>
+<hr/>
+<h2>Conclusion</h2>
+<p>This analysis of 3,000 patient journeys reveals significant opportunities for improvement in clinical outcomes, operational efficiency, and cost management. The data strongly indicates that:</p>
+<p>1. Chronic conditions are the primary driverof poor outcomes and high costs</p>
+<p>2. Patient satisfaction is a clinical indicator, not just a service metric</p>
+<p>3. Targeted interventionscan reduce readmissions by 20-30%</p>
+<p>4. Department-specific optimizationstrategies are needed for maximum impact</p>
+<p>5. Predictive analyticscan identify at-risk patients before discharge</p>
+<p>Implementing the recommended interventions has the potential to:</p>
+<ul><li>Reduce readmission rates from 23.5% to below 18%</li><li>Generate annual cost savings of €1.5M - €2M</li><li>Improve patient satisfaction scores by 25-30%</li><li>Enhance overall quality of care metrics</li></ul>
+<p>The hospital should prioritize chronic condition management and patient experience enhancement as immediate action items, while developing predictive analytics capabilities for longer-term sustainable improvement.</p>
+<hr/>
+<h2>Data Dictionary</h2>
+<div class='table-wrap'><table><thead><tr><th>Column</th><th>Description</th><th>Data Type</th></tr></thead><tbody><tr><td>patientid</td><td>Unique patient identifier</td><td>Integer</td></tr><tr><td>age</td><td>Patient age in years</td><td>Integer</td></tr><tr><td>gender</td><td>Patient gender male/female</td><td>String</td></tr><tr><td>chroniccondition</td><td>Presence of chronic condition 0=No, 1=Yes</td><td>Integer</td></tr><tr><td>admissiontype</td><td>Type of admission emergency/scheduled</td><td>String</td></tr><tr><td>department</td><td>Hospital department</td><td>String</td></tr><tr><td>waittimemin</td><td>Wait time before admission in minutes</td><td>Integer</td></tr><tr><td>lengthofstaydays</td><td>Length of hospital stay in days</td><td>Integer</td></tr><tr><td>procedurescount</td><td>Number of procedures performed</td><td>Integer</td></tr><tr><td>medicationcount</td><td>Number of medications prescribed</td><td>Integer</td></tr><tr><td>complications</td><td>Presence of complications 0=No, 1=Yes</td><td>Integer</td></tr><tr><td>dischargestatus</td><td>Discharge outcome recovered/referred</td><td>String</td></tr><tr><td>readmitted30d</td><td>Readmission within 30 days 0=No, 1=Yes</td><td>Integer</td></tr><tr><td>totalcost€</td><td>Total cost of visit in Euros</td><td>Integer</td></tr><tr><td>satisfactionscore</td><td>Patient satisfaction score 1-5 scale</td><td>Integer</td></tr></tbody></table></div>
+<hr/>
+<h2>Appendix: Statistical Summary</h2>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Total Patients</td><td>3,000</td></tr><tr><td>Total Cost</td><td>€8,316,120</td></tr><tr><td>Average Cost per Visit</td><td>€2,772</td></tr><tr><td>Recovery Rate</td><td>84.0%</td></tr><tr><td>Readmission Rate</td><td>23.5%</td></tr><tr><td>Complication Rate</td><td>16.0%</td></tr><tr><td>Average Satisfaction Score</td><td>2.8/5</td></tr><tr><td>Average Age</td><td>53.1 years</td></tr><tr><td>Average Length of Stay</td><td>3.5 days</td></tr><tr><td>Average Wait Time</td><td>33.3 minutes</td></tr></tbody></table></div>
+<p>Analysis based on 3,000 patient records from a single time period. All data has been cleaned and validated for accuracy.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

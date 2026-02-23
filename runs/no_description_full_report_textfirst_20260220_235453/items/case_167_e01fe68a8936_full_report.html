@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：11</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：11</h1>
+    <p class='sub'>来源: /view/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Banking Performance Analysis Report&quot;
+description: &quot;Comprehensive analysis of banking institution performance including sales trends, employee productivity, and customer growth metrics&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-04&quot;
+</pre></details>
+<h1>Banking Performance Analysis Report</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of banking performance data spanning 14 months from December 2024 to January 2026. The dataset includes 4,676 performance records across 83 institutions and 334 employees, tracking key metrics such as deposit sales, insurance sales, and customer growth.</p>
+<p>Key Findings:</p>
+<ul><li>Total combined sales volume: ¥38.4 billion Deposit: ¥34.9B, Insurance: ¥3.6B</li><li>Average monthly sales: ¥2.7 billion with relative stability across the period</li><li>Top 5 employees contributed ¥971.5 million in total sales 2.5% of total</li><li>L1 employees outperform L2 employees across both deposit and insurance sales</li><li>Customer growth shows a slight declining trend over the period</li></ul>
+<h2>Monthly Performance Trends</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the seasonal patterns in sales performance?</li><li>Which months show the strongest performance and why?</li><li>How has customer growth trended over time?</li></ul></details>
+<h3>Total Sales Trend</h3>
+<div class='plot-card'><div class='plot-meta'><code>monthly_total_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/monthly_total_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The monthly total sales show remarkable stability throughout the 14-month period, ranging from ¥2.61 billion to ¥2.91 billion. The peak occurred in February 2025 ¥2.91B, while the lowest month was May 2025 ¥2.61B. This consistency suggests strong business operations with minimal volatility.</p>
+<h3>Deposit Sales Performance</h3>
+<div class='plot-card'><div class='plot-meta'><code>monthly_deposit_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/monthly_deposit_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Deposit sales represent approximately 90.7% of total sales volume, averaging ¥2.49 billion per month. The deposit sales trend closely mirrors the overall sales pattern, with February 2025 showing the highest performance at ¥2.66 billion.</p>
+<h3>Insurance Sales Performance</h3>
+<div class='plot-card'><div class='plot-meta'><code>monthly_insurance_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/monthly_insurance_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Insurance sales, while smaller in scale 9.3% of total, show greater variability relative to their base. Monthly insurance sales average ¥253.8 million, with notable peaks in February 2025 ¥326.1M and August 2025 ¥312.4M.</p>
+<h3>Customer Growth Trend</h3>
+<div class='plot-card'><div class='plot-meta'><code>monthly_customer_growth.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/monthly_customer_growth.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Customer net growth shows a concerning declining trend, starting at 2,508 customers in December 2024 and declining to 2,328 by January 2026. This represents a 7.2% decline in customer acquisition over the 14-month period.</p>
+<h2>Top Performers</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Who are the top-performing employees and what drives their success?</li><li>Which institutions are leading in performance and what strategies might they be using?</li><li>How significant is the concentration of sales among top performers?</li></ul></details>
+<h3>Top 10 Employees by Total Sales</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_employees.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/top_employees.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The top 10 employees have demonstrated exceptional performance:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Employee</th><th>Total Sales</th></tr></thead><tbody><tr><td>1</td><td>胡斌</td><td>¥215,109,537</td></tr><tr><td>2</td><td>董超</td><td>¥195,793,511</td></tr><tr><td>3</td><td>蒋阳</td><td>¥184,014,849</td></tr><tr><td>4</td><td>郭鑫</td><td>¥183,621,646</td></tr><tr><td>5</td><td>许凯</td><td>¥180,948,071</td></tr><tr><td>6</td><td>徐静</td><td>¥180,191,989</td></tr><tr><td>7</td><td>胡敏</td><td>¥179,844,040</td></tr><tr><td>8</td><td>吴静</td><td>¥178,569,047</td></tr><tr><td>9</td><td>王磊</td><td>¥177,346,466</td></tr><tr><td>10</td><td>王萍</td><td>¥175,826,876</td></tr></tbody></table></div>
+<p>These top performers account for ¥1.84 billion in sales, representing 4.8% of the total sales volume. The gap between the top performer 胡斌 and the 10th ranked 王萍 is 22.3%, indicating relatively tight competition at the top.</p>
+<h3>Top 10 Institutions by Total Sales</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_institutions.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/top_institutions.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Leading institutions by total sales:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Institution</th><th>Total Sales</th><th>Market Share</th></tr></thead><tbody><tr><td>1</td><td>机构020号</td><td>¥726,334,287</td><td>1.89%</td></tr><tr><td>2</td><td>机构083号</td><td>¥722,974,005</td><td>1.88%</td></tr><tr><td>3</td><td>机构018号</td><td>¥671,020,613</td><td>1.75%</td></tr><tr><td>4</td><td>机构004号</td><td>¥662,171,499</td><td>1.72%</td></tr><tr><td>5</td><td>机构047号</td><td>¥638,106,718</td><td>1.66%</td></tr><tr><td>6</td><td>机构025号</td><td>¥623,073,037</td><td>1.62%</td></tr><tr><td>7</td><td>机构058号</td><td>¥614,647,378</td><td>1.60%</td></tr><tr><td>8</td><td>机构067号</td><td>¥608,629,876</td><td>1.58%</td></tr><tr><td>9</td><td>机构039号</td><td>¥604,629,521</td><td>1.57%</td></tr><tr><td>10</td><td>机构016号</td><td>¥603,555,317</td><td>1.57%</td></tr></tbody></table></div>
+<p>The top 10 institutions collectively represent 16.84% of total sales, indicating a relatively even distribution of performance across the 83 institutions.</p>
+<h2>Employee Performance Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do L1 and L2 employees differ in their performance metrics?</li><li>What is the distribution of sales performance among employees?</li><li>Which employee type shows better customer acquisition capabilities?</li></ul></details>
+<h3>Employee Type Comparison </h3>
+<p>L1 vs L2</p>
+<div class='plot-card'><div class='plot-meta'><code>employee_type_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/employee_type_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>L1 employees significantly outperform L2 employees in total sales:</p>
+<ul><li>L1 Total Sales: ¥25.5 billion 66.3% of total</li><li>L2 Total Sales: ¥12.9 billion 33.7% of total</li><li>L1 Average per Employee: ¥76.4 million</li><li>L2 Average per Employee: ¥38.6 million</li></ul>
+<p>This 98% performance advantage per employee suggests L1 employees may have more experience, larger client portfolios, or access to higher-value accounts.</p>
+<h3>Deposit vs Insurance Sales by Employee Type</h3>
+<div class='plot-card'><div class='plot-meta'><code>employee_type_grouped.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/employee_type_grouped.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Breakdown by product type:</p>
+<div class='table-wrap'><table><thead><tr><th>Employee Type</th><th>Deposit Sales</th><th>Insurance Sales</th><th>Deposit %</th><th>Insurance %</th></tr></thead><tbody><tr><td>L1</td><td>¥23.2 billion</td><td>¥2.3 billion</td><td>91.0%</td><td>9.0%</td></tr><tr><td>L2</td><td>¥11.7 billion</td><td>¥1.2 billion</td><td>91.0%</td><td>9.0%</td></tr></tbody></table></div>
+<p>Interestingly, both employee types maintain identical product mix ratios 91% deposits, 9% insurance, suggesting consistent training or product focus across levels.</p>
+<h3>Sales Distribution by Employee Type</h3>
+<div class='plot-card'><div class='plot-meta'><code>sales_by_employee_type_box.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/sales_by_employee_type_box.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The box plot reveals significant performance distribution insights:</p>
+<ul><li>L1 Median: ¥8.3 million per month</li><li>L2 Median: ¥4.1 million per month</li><li>L1 IQRInterquartile Range: ¥5.2M - ¥11.8M</li><li>L2 IQR: ¥2.6M - ¥5.8M</li></ul>
+<p>The median difference of 102% reinforces that L1 employees consistently outperform L2 employees, with less overlap in performance ranges than the averages suggest.</p>
+<h2>Sales Distribution Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the distribution of sales performance across all employee-month records?</li><li>How much variation exists in individual employee performance?</li><li>Are there performance outliers worth investigating?</li></ul></details>
+<h3>Deposit Sales Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>deposit_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/deposit_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Deposit sales per employee-month show:</p>
+<ul><li>Mean: ¥7.46 million</li><li>Median: ¥6.7 million</li><li>Standard Deviation: ¥7.18 million</li><li>Range: -¥5.0M to ¥19.99M</li></ul>
+<p>The distribution is slightly right-skewed, with the mean exceeding the median, indicating a tail of high performers. Approximately 20.4% of records show negative values, likely representing refunds or cancellations.</p>
+<h3>Insurance Sales Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>insurance_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/insurance_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Insurance sales per employee-month show:</p>
+<ul><li>Mean: ¥759,774</li><li>Median: ¥681,164</li><li>Standard Deviation: ¥715,108</li><li>Range: -¥499,383 to ¥1.99M</li></ul>
+<p>Similar to deposits, insurance sales show a right-skewed distribution with 19.4% of records showing negative values.</p>
+<h2>Performance Correlations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How are different performance metrics correlated with each other?</li><li>Does customer growth correlate with sales performance?</li><li>What insights can we derive from the correlation matrix?</li></ul></details>
+<h3>Correlation Heatmap</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Correlation Insights:</p>
+<div class='table-wrap'><table><thead><tr><th>Metric Pair</th><th>Correlation</th><th>Interpretation</th></tr></thead><tbody><tr><td>Total Sales ↔ Deposit Sales</td><td>0.96</td><td>Very strong positive relationship</td></tr><tr><td>Total Sales ↔ Insurance Sales</td><td>0.90</td><td>Very strong positive relationship</td></tr><tr><td>Deposit Sales ↔ Insurance Sales</td><td>0.71</td><td>Strong positive relationship</td></tr><tr><td>Customer Growth ↔ Deposit Sales</td><td>0.38</td><td>Moderate positive relationship</td></tr><tr><td>Customer Growth ↔ Insurance Sales</td><td>0.42</td><td>Moderate positive relationship</td></tr></tbody></table></div>
+<p>The high correlation between deposit and insurance sales 0.71 suggests that strong performers excel across product categories, indicating general sales effectiveness rather than product specialization.</p>
+<h3>Customer Growth vs Total Sales</h3>
+<div class='plot-card'><div class='plot-meta'><code>customer_growth_vs_sales.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e01fe68a8936201b91e3afdbfd01aa768e06a2f68161e429d8d5a81a8da03272/assets/customer_growth_vs_sales.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot reveals:</p>
+<ul><li>Positive correlation: Higher sales generally accompany higher customer growth</li><li>L1 employeesblue tend to cluster in higher sales, higher growth quadrant</li><li>L2 employeesorange cluster in lower sales, lower growth quadrant</li><li>Outliers exist: Some employees show high sales with low customer growth, suggesting cross-selling to existing clients</li></ul>
+<h2>Strategic Recommendations</h2>
+<h3>1. Customer Acquisition Focus</h3>
+<p>The declining customer growth trend 7.2% decline over 14 months is concerning. Immediate action required:</p>
+<ul><li>Implement targeted customer acquisition campaigns</li><li>Investigate top-performing institutions&#x27; customer acquisition strategies</li><li>Consider incentive programs for customer acquisition</li></ul>
+<h3>2. L2 Employee Development</h3>
+<p>L2 employees show 98% lower average performance than L1:</p>
+<ul><li>Implement mentorship programs pairing L2 with top L1 performers</li><li>Provide additional training on high-value client management</li><li>Review L2 promotion criteria to ensure effective performance progression</li></ul>
+<h3>3. Product Mix Optimization</h3>
+<p>Insurance represents only 9.3% of sales despite higher variability:</p>
+<ul><li>Cross-selling opportunities exist to increase insurance penetration</li><li>Consider training programs to boost insurance sales competency</li><li>Analyze customer segments with low insurance adoption</li></ul>
+<h3>4. Performance Consistency</h3>
+<p>Top 10 institutions represent only 16.84% of total sales, suggesting opportunities:</p>
+<ul><li>Share best practices from top-performing institutions</li><li>Implement performance benchmarking across all 83 institutions</li><li>Create peer learning networks</li></ul>
+<h3>5. Negative Value Investigation</h3>
+<p>20% of records show negative sales values:</p>
+<ul><li>Analyze patterns in refunds/cancellations</li><li>Identify root causes product quality, service issues, customer fit</li><li>Implement preventive measures to reduce negative transactions</li></ul>
+<h2>Data Quality Notes</h2>
+<p>The dataset contains approximately 19-20% negative values across sales metrics and customer growth. While these likely represent valid business events refunds, cancellations, customer churn, further investigation is recommended to understand:</p>
+<ul><li>The root causes of negative transactions</li><li>Geographic or institutional patterns</li><li>Seasonal trends in negative values</li></ul>
+<h2>Conclusion</h2>
+<p>The banking performance analysis reveals a stable core business with strong total sales volume ¥38.4B over 14 months but concerning trends in customer acquisition. Performance is highly concentrated among top employees and institutions, with L1 employees significantly outperforming L2 counterparts.</p>
+<p>Key priorities for management:</p>
+<p>1. Reverse the declining customer growth trend</p>
+<p>2. Develop L2 employees to close the performance gap with L1</p>
+<p>3. Share best practices from top-performing institutions</p>
+<p>4. Investigate and reduce negative transaction patterns</p>
+<p>5. Leverage the strong correlation between deposit and insurance sales for cross-selling opportunities</p>
+<p>With targeted interventions in these areas, the banking network can build on its stable foundation to achieve sustainable growth.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

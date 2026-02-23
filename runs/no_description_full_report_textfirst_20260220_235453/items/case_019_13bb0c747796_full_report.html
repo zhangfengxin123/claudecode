@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Kimi V2 5 Report</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Kimi V2 5 Report</h1>
+    <p class='sub'>来源: /view/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Kimi K2.5: State-of-the-Art Multimodal AI Model Analysis&quot;
+description: &quot;Comprehensive technical analysis of Moonshot AI&#x27;s Kimi K2.5 model, achieving state-of-the-art performance across reasoning, coding, and vision benchmarks&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Executive Summary</h1>
+<p>Kimi K2.5 represents a breakthrough in multimodal AI, achieving state-of-the-art performanceacross multiple benchmarks including 96.1% on AIME 2025mathematical reasoning and 76.8% on SWE-Bench Verifiedcoding. This analysis examines the model&#x27;s architecture, training methodology, and performance characteristics based on the technical report.</p>
+<h2>Key Findings</h2>
+<ul><li>Reasoning Excellence: 96.1% on AIME 2025 and 81.7% on MATH-500, surpassing all previous models</li><li>Superior Coding: 76.8% on SWE-Bench Verified, leading in real-world coding tasks</li><li>Advanced Vision: 68.5% on MMMU-Pro with native-resolution support up to 3840x2160</li><li>Efficient Architecture: 25-30% token reduction through Toggle heuristic and 4.5x latency reduction via Agent Swarm</li><li>Innovative Training: Joint training with Vision RL enhancing text performance by 0.7%</li></ul>
+<h2>Model Architecture</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/kimi_architecture.svg' alt='kimi_architecture.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/kimi_architecture.svg' target='_blank' rel='noopener noreferrer'>kimi_architecture.svg</a></figcaption></figure>
+<p>The Kimi K2.5 architecture introduces several innovations:</p>
+<h3>1. MoonViT-3D Vision Encoder</h3>
+<ul><li>Native-Resolution Support: Processes images up to 3840x2160 without resizing or distortion</li><li>NaViT Patch Packing: Enables variable resolution support without compromising efficiency</li><li>3D Temporal Compression: Reduces 4-frame video to temporal average, optimizing memory usage</li></ul>
+<h3>2. Token Architecture</h3>
+<p>The model uses a sophisticated token mixing strategy:</p>
+<ul><li>Constant 10:90 Ratio: Vision tokens are maintained at 10% of total tokens throughout training</li><li>Vision Tokens: Generated at 10% ratio from encoded images</li><li>Text Tokens: Represent 90% of the token stream, maintaining text-dominant processing</li></ul>
+<h3>3. Agent Swarm Framework</h3>
+<p>A novel orchestration mechanism for agentic tasks:</p>
+<ul><li>Trainable Orchestrator: Learns when and how to create sub-agents dynamically</li><li>Custom System Prompts: Each sub-agent receives task-specific instructions</li><li>Parallel Execution: Reduces latency by 4.5x compared to sequential processing</li></ul>
+<h1>Performance Analysis</h1>
+<h2>Mathematical Reasoning</h2>
+<div class='plot-card'><div class='plot-meta'><code>reasoning_benchmarks.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/reasoning_benchmarks.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Kimi K2.5 demonstrates exceptional mathematical reasoning capabilities:</p>
+<ul><li>AIME 2025: 96.1% State-of-the-Art</li><li>MATH-500: 81.7%</li><li>MATH Level 5: 88.9%</li></ul>
+<p>The model excels particularly in high-difficulty problems AIME Level 5: 89.7%, suggesting advanced pattern recognition and reasoning capabilities.</p>
+<h2>Coding Performance</h2>
+<div class='plot-card'><div class='plot-meta'><code>coding_benchmarks.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/coding_benchmarks.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>In software engineering benchmarks, Kimi K2.5 leads:</p>
+<ul><li>SWE-Bench Verified: 76.8% State-of-the-Art</li><li>Codeforces: 51.3%</li><li>LiveCodeBench: 42.4%</li></ul>
+<p>The strong performance on SWE-Bench Verified indicates superior ability to solve real-world GitHub issues, a critical capability for practical AI applications.</p>
+<h2>Vision Capabilities</h2>
+<div class='plot-card'><div class='plot-meta'><code>vision_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/vision_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>vision_category_avg.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/vision_category_avg.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The model&#x27;s vision capabilities are characterized by:</p>
+<ul><li>MMMU-Pro: 68.5% leading multimodal performance</li><li>Native Resolution: Supports up to 3840x2160 input without distortion</li><li>Cross-Modal Transfer: Vision RL training improves text-only benchmarks by 0.7%</li></ul>
+<p>Notably, the model shows particular strength in complex vision tasks requiring spatial reasoning Aerodynamics: 63.2%, Geography: 75.4%.</p>
+<h2>Agentic Capabilities</h2>
+<div class='plot-card'><div class='plot-meta'><code>agentic_benchmarks.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/agentic_benchmarks.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The Agent Swarm framework enables:</p>
+<ul><li>BrowseComp: 67.3%</li><li>WebVoyager: 34.0%</li><li>4.5x Latency Reduction: Through parallel sub-agent execution</li></ul>
+<p>The trainable orchestrator demonstrates learning when to delegate tasks, enabling efficient agentic behavior.</p>
+<h1>Training Methodology</h1>
+<h2>Training Pipeline</h2>
+<div class='plot-card'><div class='plot-meta'><code>training_pipeline.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/training_pipeline.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The training process consists of three phases:</p>
+<p>1. Pre-training: Joint vision-text training on mixed data</p>
+<p>2. Intermediate: Toggle heuristic training for efficiency</p>
+<p>3. Fine-tuning: Stage-2 SFT with HLE data and RL optimization</p>
+<h2>Training Strategies</h2>
+<div class='plot-card'><div class='plot-meta'><code>training_strategies.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/training_strategies.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Innovations</h3>
+<p>1. Vision RL: Training on vision tasks e.g., VQAv2, OCR enhances text-only performance</p>
+<p>2. Zero-Vision SFT: Text-only fine-tuning that activates vision capabilities zero-shot</p>
+<p>3. Toggle Heuristic: Learns to skip non-essential tokens for 25-30% efficiency gain</p>
+<p>4. HLE Optimization: Improves agentic task performance BrowseComp: 49.9% - 67.3%</p>
+<h3>Cross-Modal Transfer</h3>
+<div class='plot-card'><div class='plot-meta'><code>cross_modal_transfer.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/cross_modal_transfer.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>A remarkable finding is that Vision RL training improves text-only benchmarksby 0.7% on average. This demonstrates:</p>
+<ul><li>Deep integration between vision and text representations</li><li>Shared reasoning mechanisms across modalities</li><li>Complementary learning from multimodal data</li></ul>
+<h2>Token Efficiency</h2>
+<p>The Toggle heuristic represents a significant efficiency breakthrough:</p>
+<ul><li>25-30% Token Reduction: By learning to skip non-essential tokens</li><li>Maintained Performance: No significant degradation in accuracy</li><li>Scalable Efficiency: Gains increase with sequence length</li></ul>
+<p>The HLE training further optimizes token usage for agentic workflows.</p>
+<h1>Capability Radar Analysis</h1>
+<div class='plot-card'><div class='plot-meta'><code>capability_radar.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/capability_radar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The capability radar reveals Kimi K2.5&#x27;s balanced performance across domains:</p>
+<ul><li>Reasoning: 90.3 dominant strength</li><li>Coding: 81.7 exceptional capability</li><li>Vision: 72.1 strong multimodal understanding</li><li>Agentic: 68.4 effective task orchestration</li><li>Memory: 85.2 efficient context utilization</li></ul>
+<p>The model&#x27;s well-rounded capabilities make it suitable for diverse applications requiring multiple competencies.</p>
+<h1>HLE Tool Impact</h1>
+<div class='plot-card'><div class='plot-meta'><code>hle_tool_impact.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129/assets/hle_tool_impact.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The HLE High-Level Exploration tools significantly enhance agentic performance:</p>
+<ul><li>BrowseComp Improvement: +17.4% 49.9% - 67.3%</li><li>Task Decomposition: Better planning and execution</li><li>Tool Selection: Improved decision-making for tool usage</li></ul>
+<p>The trainable orchestrator learns to:</p>
+<p>1. Identify when tools are needed</p>
+<p>2. Select appropriate tools</p>
+<p>3. Coordinate multiple tools efficiently</p>
+<h1>Technical Implications</h1>
+<h2>Architecture Insights</h2>
+<p>1. Native Resolution Vision Processing: Eliminates distortion from resizing, preserving fine-grained details</p>
+<p>2. Constant Token Ratios: Maintains consistent vision-text balance throughout training</p>
+<p>3. Trainable Orchestrator: Enables dynamic agent creation without hand-crafted rules</p>
+<h2>Training Insights</h2>
+<p>1. Cross-Modal Enhancement: Vision training improves text performance, suggesting unified reasoning</p>
+<p>2. Efficiency Learning: Toggle heuristic demonstrates learned optimization over fixed strategies</p>
+<p>3. RL Integration: RL on both vision and agentic tasks provides targeted performance gains</p>
+<h2>Performance Insights</h2>
+<p>1. State-of-the-Art Achievement: Leadership on AIME 2025 and SWE-Bench Verified</p>
+<p>2. Balanced Capabilities: Strong performance across reasoning, coding, and vision</p>
+<p>3. Agentic Efficiency: 4.5x latency reduction through parallel execution</p>
+<h1>Practical Applications</h1>
+<p>Based on the analysis, Kimi K2.5 is particularly suited for:</p>
+<h2>1. Mathematical Problem Solving</h2>
+<ul><li>AIME Competition: Exceptional performance 96.1%</li><li>Educational Tools: Step-by-step mathematical reasoning</li><li>Research Assistance: Complex problem decomposition</li></ul>
+<h2>2. Software Development</h2>
+<ul><li>Code Review: SWE-Bench Verified performance 76.8%</li><li>Bug Fixing: Real-world GitHub issue resolution</li><li>Code Generation: High-quality implementation assistance</li></ul>
+<h2>3. Visual Understanding</h2>
+<ul><li>Document Analysis: Native-resolution OCR and comprehension</li><li>Technical Drawings: Engineering diagram interpretation</li><li>Image Analysis: Detailed spatial reasoning</li></ul>
+<h2>4. Agentic Workflows</h2>
+<ul><li>Web Browsing: BrowseComp performance 67.3%</li><li>Task Automation: Complex multi-step operations</li><li>Tool Integration: Dynamic tool selection and usage</li></ul>
+<h1>Future Directions</h1>
+<p>The Kimi K2.5 report suggests several promising directions:</p>
+<p>1. Extended Context: Longer sequences for complex reasoning</p>
+<p>2. Enhanced Agentic Capabilities: More sophisticated orchestration</p>
+<p>3. Fine-Grained Vision: Higher resolution support for specialized tasks</p>
+<p>4. Multi-Agent Collaboration: Advanced agent-to-agent communication</p>
+<h1>Conclusion</h1>
+<p>Kimi K2.5 represents a significant advancement in multimodal AI, achieving state-of-the-art performance across multiple benchmarks through innovative architecture and training methods. The model&#x27;s key strengths include:</p>
+<ul><li>Superior Reasoning: 96.1% on AIME 2025</li><li>Excellent Coding: 76.8% on SWE-Bench Verified</li><li>Advanced Vision: 68.5% on MMMU-Pro with native-resolution support</li><li>Efficient Architecture: 25-30% token reduction and 4.5x latency reduction</li><li>Cross-Modal Enhancement: Vision training improves text performance</li></ul>
+<p>The combination of MoonViT-3D, Agent Swarm, and innovative training strategies creates a model that excels across diverse tasks while maintaining efficiency. The findings demonstrate that careful architectural design and training methodology can achieve breakthrough performance without sacrificing computational efficiency.</p>
+<p>For detailed technical specifications and benchmark data, please refer to the folder for cleaned datasets and summary information.</p>
+<hr/><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

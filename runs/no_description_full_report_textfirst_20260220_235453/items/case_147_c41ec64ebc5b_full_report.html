@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：raw</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：raw</h1>
+    <p class='sub'>来源: /view/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Clumped Isotope Paleotemperature Dataset Analysis&quot;
+description: &quot;Comprehensive analysis of global clumped isotope samples spanning 447 million years across 6 regions&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Clumped Isotope Paleotemperature Dataset Analysis</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of clumped isotope paleotemperature data from 59 globally distributed geological samples. The dataset spans an impressive temporal range from the Ordovician 447 Ma to the Quaternary present day, covering six continents and multiple geological epochs. The analysis reveals significant patterns in sample distribution, dating methodologies, and temperature evidence categories that inform our understanding of Earth&#x27;s paleoclimatic history.</p>
+<p>Key Findings:</p>
+<ul><li>Temporal Concentration: 69% of samples originate from the Neogene 21 samples and Paleogene 20 samples periods</li><li>Geographic Focus: Asia leads with 23 samples 39%, followed by North America with 18 samples 31%</li><li>Sample Dominance: Paleosol/Pedogenic samples comprise the majority 28 samples, indicating strong terrestrial paleoclimate research focus</li><li>Dating Methods: Radiometric techniques dominate, reflecting their precision for absolute age determination</li><li>Temperature Evidence: Nearly equal distribution between Mean Annual Temperature MAT and Summer/Warm Season interpretations</li></ul>
+<h2>Data Processing Workflow</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/clumped_isotope_workflow.svg' alt='clumped_isotope_workflow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/clumped_isotope_workflow.svg' target='_blank' rel='noopener noreferrer'>clumped_isotope_workflow.svg</a></figcaption></figure>
+<h2>Dataset Overview</h2>
+<p>The analysis began with raw clumped isotope data containing 115 records across 18 columns. After rigorous cleaning and standardization processes, 59 high-quality records were retained with 14 structured columns.</p>
+<p>Data Transformation Highlights:</p>
+<ul><li>Age Extraction: Parsed complex age entries including ranges e.g., &quot;35 Coordinate Standardization: Extracted numeric latitudes and longitudes from directional formats e.g., &quot;48.58N&quot; → 48.58</li><li>Sample Categorization: Grouped 73 unique sample types into meaningful categories</li><li>Temperature Evidence Classification: Standardized diverse temperature interpretations into 5 major categories</li></ul>
+<p>Temporal Span:</p>
+<ul><li>Oldest Sample: 447 Ma Ordovician period from Cincinnati Arch, USA</li><li>Youngest Sample: 0 Ma Modern from Florida, USA and Colombia, USA</li><li>Median Age: 40 Ma Eocene period</li></ul>
+<h2>Temporal Distribution Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>chart1_age_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/chart1_age_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The dataset shows a pronounced concentration in Cenozoic samples, reflecting both the preservation potential of younger sediments and contemporary research priorities in paleoclimatic studies.</p>
+<p>Epoch Breakdown:</p>
+<p>1. Neogene 2.3-23 Ma: 21 samples 36% - Dominated by Asian and North American terrestrial records</p>
+<p>2. Paleogene 23-66 Ma: 20 samples 34% - Key period for understanding early Cenozoic climates</p>
+<p>3. Cretaceous 66-145 Ma: 13 samples 22% - &quot;Hothouse&quot; climate period samples</p>
+<p>4. Quaternary 0-2.6 Ma: 2 samples 3% - Recent climate variability records</p>
+<p>5. Pre-Cretaceous: 3 samples 5% - Ordovician, Jurassic, and Carboniferous deep-time samples</p>
+<p>The concentration in Neogene and Paleogene samples aligns with research priorities on understanding the transition from early Cenozoic warmth to modern climate conditions.</p>
+<h2>Geographic Distribution</h2>
+<div class='plot-card'><div class='plot-meta'><code>chart2_regional_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/chart2_regional_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The global distribution of clumped isotope samples reveals significant regional research focus and geological accessibility patterns.</p>
+<p>Regional Highlights:</p>
+<ul><li>Asia 39%: Concentrated in China Tibetan Plateau, Ordos Basin, Hefei Basin, reflecting strong Chinese paleoclimatic research programs</li><li>North America 31%: Samples from USA and Canada, including Western Interior Seaway, Rocky Mountains, and various basins</li><li>Europe 14%: Samples from Switzerland, Germany, and other European locations, including Alpine region studies</li><li>South America 12%: Samples from Colombia and other South American locations</li></ul>
+<p>Geographic Insights:</p>
+<p>1. Asian samplesprimarily originate from Tibetan Plateau and surrounding regions, critical for understanding uplift history and its climate impacts</p>
+<p>2. North American samplesrepresent both marine Western Interior Seaway and terrestrial Rocky Mountains records</p>
+<p>3. European samplesfocus on Alpine uplift and Miocene climate studies</p>
+<p>4. The distribution suggests strong correlation with major active research institutions and geologically favorable regions</p>
+<h2>Geographic Spatial Distribution</h2>
+<div class='plot-card'><div class='plot-meta'><code>chart5_geographic_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/chart5_geographic_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>This spatial visualization reveals the global spread of sampling locations, with notable clustering in:</p>
+<ul><li>East Asia: Dense cluster around China, especially the Tibetan Plateau region</li><li>Western North America: Samples distributed across USA western states</li><li>Central Europe: Samples across Alpine and peri-Alpine regions</li><li>Central-South America: Samples from Colombian study sites</li></ul>
+<p>The scatter plot uses point size to indicate sample age, allowing visualization of temporal patterns across geographic space.</p>
+<h2>Sample Type Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>chart3_sample_types.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/chart3_sample_types.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The distribution of sample categories reveals research priorities and methodological preferences in paleoclimatic reconstructions.</p>
+<p>Sample Type Insights:</p>
+<p>1. Paleosol/Pedogenic Carbonates 28 samples:</p>
+<p>    Dominant sample type 47% of total</p>
+<p>    Reflects focus on terrestrial paleoclimates</p>
+<p>    Primarily used for reconstructing continental temperatures and precipitation patterns</p>
+<p>    Key for understanding paleoelevation and regional climate evolution</p>
+<p>2. Other Paleosol Variants 9 samples:</p>
+<p>    Various classifications of soil carbonates</p>
+<p>    Includes nodules, caliche, and soil carbonate cements</p>
+<p>    Indicates diversity in pedogenic carbonate formation environments</p>
+<p>3. Lacustrine Samples 3 samples:</p>
+<p>    Lake carbonates providing continental water temperature records</p>
+<p>    Important for understanding continental aquatic systems</p>
+<p>4. Marine/Shell Samples 3 samples:</p>
+<p>    Oyster shells, bivalves, and other marine carbonates</p>
+<p>    Provide oceanic paleotemperature reconstructions</p>
+<p>    Critical for marine-continental climate correlations</p>
+<p>5. Other Types:</p>
+<p>    Speleothems, gastropods, travertines, and diverse carbonate formations</p>
+<p>    Represent specialized paleoclimate archives</p>
+<h2>Temperature Evidence Categories</h2>
+<div class='plot-card'><div class='plot-meta'><code>chart4_temp_evidence.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/chart4_temp_evidence.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The classification of temperature evidence reveals important methodological considerations in paleotemperature reconstruction.</p>
+<p>Temperature Evidence Breakdown:</p>
+<p>1. Mean Annual Temperature MAT - 25 samples 42%:</p>
+<p>    Indicates samples recording annual mean conditions</p>
+<p>    Critical for understanding long-term climate means</p>
+<p>    Often derived from well-mixed paleosol or marine records</p>
+<p>2. Summer/Warm Season - 24 samples 41%:</p>
+<p>    Reflects warm-season bias in carbonate formation</p>
+<p>    Common in paleosol and lacustrine carbonates due to seasonal precipitation patterns</p>
+<p>    Particularly relevant for monsoonal climates</p>
+<p>3. Other Evidence Categories - 10 samples 17%:</p>
+<p>    Includes winter/cool season biases, water temperatures, and mixed signals</p>
+<p>    Reflects diversity in seasonal carbonate formation environments</p>
+<p>    Important for understanding climate seasonality</p>
+<p>Interpretational Considerations:</p>
+<ul><li>The near-equal split between MAT and warm-season interpretations highlights the importance of understanding seasonal biases in carbonate formation</li><li>Paleosol carbonates often show warm-season bias due to summer precipitation in many continental settings</li><li>Marine samples more commonly represent annual mean conditions due to oceanic mixing</li></ul>
+<h2>Age Distribution by Region</h2>
+<div class='plot-card'><div class='plot-meta'><code>chart6_age_by_region.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/chart6_age_by_region.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>This box plot reveals the temporal characteristics of sampling across different regions, highlighting both research priorities and geological accessibility.</p>
+<p>Regional Temporal Patterns:</p>
+<p>1. Asia:</p>
+<p>    Wide age range from early Cenozoic to modern</p>
+<p>    Strong focus on Neogene and Paleogene periods</p>
+<p>    Samples include key Tibetan Plateau uplift records</p>
+<p>    Median age approximately 40 Ma</p>
+<p>2. North America:</p>
+<p>    Broad temporal span from Ordovician to modern</p>
+<p>    Includes both marine Cretaceous and terrestrial various ages records</p>
+<p>    Samples range from deep-time to Quaternary</p>
+<p>    Reflects diverse geological environments studied</p>
+<p>3. Europe:</p>
+<p>    Concentrated in Cenozoic period</p>
+<p>    Focus on Miocene climate and Alpine uplift</p>
+<p>    Samples primarily from 0-25 Ma range</p>
+<p>    Reflects research on European Neogene climates</p>
+<p>4. South America:</p>
+<p>    Samples primarily from Paleogene and Neogene</p>
+<p>    Focus on early Cenozoic South American climates</p>
+<p>    Limited temporal range compared to other regions</p>
+<p>Interpretation:</p>
+<ul><li>The diverse temporal sampling across regions enables cross-continental paleoclimatic comparisons</li><li>Asian and North American samples provide opportunities for studying large-scale climate patterns</li><li>European concentration on Neogene reflects specific research interests in Alpine and European climate history</li></ul>
+<h2>Sample Type vs Temperature Evidence Heatmap</h2>
+<div class='plot-card'><div class='plot-meta'><code>chart7_sample_temp_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/chart7_sample_temp_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>This heatmap reveals important relationships between sample types and the temperature evidence they provide, offering insights into methodological practices and interpretation frameworks.</p>
+<p>Key Observations:</p>
+<p>1. Paleosol/Pedogenic Samples:</p>
+<p>    Strong association with both MAT and warm-season interpretations</p>
+<p>    Reflects the dual nature of paleosol carbonate formation</p>
+<p>    Climate and precipitation seasonality strongly influence interpretation</p>
+<p>    Widely used across different temperature evidence categories</p>
+<p>2. Sample-Category Associations:</p>
+<p>    Different sample types show preferences for specific temperature evidence categories</p>
+<p>    Marine samples more consistently associated with MAT</p>
+<p>    Paleosol samples show greater diversity in temperature evidence</p>
+<p>    Reflects fundamental differences in formation environments</p>
+<p>3. Methodological Patterns:</p>
+<p>    The distribution reveals how researchers interpret different sample types</p>
+<p>    Shows consistency or lack thereof in temperature evidence assignment</p>
+<p>    Important for understanding potential biases in paleoclimatic reconstructions</p>
+<p>Implications:</p>
+<ul><li>Understanding these associations helps in cross-comparing paleotemperature studies</li><li>Highlights the importance of considering sample type when interpreting paleotemperatures</li><li>Reveals potential systematic biases in different archives</li></ul>
+<h2>Age Dating Methods</h2>
+<div class='plot-card'><div class='plot-meta'><code>chart8_age_methods.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758/assets/chart8_age_methods.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The analysis of age dating methods reveals the methodological foundations of this dataset.</p>
+<p>Dating Method Distribution:</p>
+<p>1. Radiometric Dating:</p>
+<p>    Dominant method for precise age determination</p>
+<p>    Includes U-Pb, U-Th, K-Ar, 40Ar/39Ar techniques</p>
+<p>    Provides absolute age control essential for paleoclimatic studies</p>
+<p>    Particularly important for volcanic and ash-rich sequences</p>
+<p>2. Biostratigraphy:</p>
+<p>    Uses fossil assemblages for relative age determination</p>
+<p>    Important for marine sequences and fossiliferous terrestrial deposits</p>
+<p>    Often combined with other methods for improved precision</p>
+<p>3. Magnetostratigraphy:</p>
+<p>    Uses magnetic reversals for correlation</p>
+<p>    Essential for high-resolution age models in continuous sequences</p>
+<p>    Often integrated with radiometric and biostratigraphic data</p>
+<p>4. Mixed/Other Methods:</p>
+<p>    Combines multiple dating approaches</p>
+<p>    Represents comprehensive age model development</p>
+<p>    Includes astronomical tuning and other specialized methods</p>
+<p>Methodological Insights:</p>
+<ul><li>The diversity of dating methods reflects the complexity of geological age determination</li><li>Most studies use multiple methods for robust age control</li><li>Radiometric dating provides the foundation for absolute age calibration</li></ul>
+<h2>Scientific Implications</h2>
+<h3>Research Priorities</h3>
+<p>The dataset reveals several key research priorities in paleoclimatic science:</p>
+<p>1. Cenozoic Climate Evolution: Strong focus on understanding the transition from early Cenozoic warmth to Neogene cooling</p>
+<p>2. Tibetan Plateau Uplift: Significant sampling in Asian regions addressing the climatic impacts of topographic uplift</p>
+<p>3. Seasonality Reconstructions: The distinction between MAT and warm-season interpretations highlights interest in paleoseasonality</p>
+<p>4. Terrestrial Paleoclimates: Dominance of paleosol and pedogenic samples reflects emphasis on continental climate reconstruction</p>
+<h3>Methodological Insights</h3>
+<p>1. Carbonate Formation Biases: The prevalence of warm-season interpretations in paleosol carbonates underscores the importance of understanding seasonal formation processes</p>
+<p>2. Dating Precision: Heavy reliance on radiometric methods indicates emphasis on precise age control</p>
+<p>3. Multi-Proxy Approaches: Diversity in sample types and interpretation methods reflects sophisticated multi-proxy paleoclimatic approaches</p>
+<h3>Geographic Patterns</h3>
+<p>1. Asian Focus: Strong concentration in Asia reflects both geological richness and active research programs</p>
+<p>2. North American Coverage: Broad geographic and temporal coverage in North America provides important comparative datasets</p>
+<p>3. European Specialization: Focus on Alpine and Neogene climates reveals regional research priorities</p>
+<h2>Data Quality and Limitations</h2>
+<h3>Data Quality Strengths</h3>
+<p>1. Comprehensive Metadata: Detailed information on sample types, dating methods, and interpretation frameworks</p>
+<p>2. Geographic Coverage: Global distribution across six continents</p>
+<p>3. Temporal Span: Nearly 450 million years of Earth history represented</p>
+<p>4. Methodological Documentation: Clear documentation of temperature evidence and diagenesis screening</p>
+<h3>Data Limitations</h3>
+<p>1. Geographic Bias: Concentration in Asia and North America limits global representativeness</p>
+<p>2. Temporal Bias: Underrepresentation of pre-Cretaceous periods</p>
+<p>3. Sample Type Bias: Dominance of paleosol carbonates limits diversity of climate archives</p>
+<p>4. Interpretational Complexity: Diversity in temperature evidence categories complicates direct comparisons</p>
+<h2>Recommendations</h2>
+<h3>For Future Research</h3>
+<p>1. Expand Geographic Coverage: Increase sampling in underrepresented regions Africa, Australia, Antarctica</p>
+<p>2. Deepen Temporal Coverage: Add more pre-Cretaceous samples to improve understanding of deep-time climates</p>
+<p>3. Diversify Sample Types: Increase proportion of marine, lacustrine, and other sample types</p>
+<p>4. Standardize Interpretations: Develop consistent frameworks for temperature evidence categorization</p>
+<h3>For Data Analysis</h3>
+<p>1. Seasonality Studies: Leverage MAT vs. warm-season comparisons to study paleoseasonality</p>
+<p>2. Cross-Regional Comparisons: Utilize geographic and temporal overlap for paleoclimatic correlations</p>
+<p>3. Methodological Assessments: Compare results from different sample types and dating methods</p>
+<p>4. Integrated Reconstructions: Combine multiple proxies for comprehensive paleoclimatic syntheses</p>
+<h2>Conclusion</h2>
+<p>This analysis of 59 clumped isotope paleotemperature samples reveals a comprehensive global dataset spanning 447 million years of Earth history. The dataset shows strong research focus on Cenozoic climate evolution, particularly in Asian and North American regions. The prevalence of paleosol samples reflects emphasis on terrestrial paleoclimates, while the distinction between MAT and warm-season interpretations highlights the importance of understanding carbonate formation seasonality.</p>
+<p>The dataset provides a valuable foundation for understanding Earth&#x27;s paleoclimatic history, particularly the transition from early Cenozoic warmth to modern climate conditions. The strong geographic and temporal coverage, combined with detailed methodological documentation, makes this dataset an important resource for paleoclimatic research.</p>
+<p>Future research should focus on expanding geographic and temporal coverage, diversifying sample types, and developing standardized interpretation frameworks to maximize the scientific value of clumped isotope paleotemperature reconstructions.</p>
+<hr/>
+<h2>Appendix: Data Dictionary</h2>
+<div class='table-wrap'><table><thead><tr><th>Column</th><th>Description</th></tr></thead><tbody><tr><td>Location</td><td>Geographic location of sample</td></tr><tr><td>Region</td><td>Broad geographic region Asia, North America, Europe, etc.</td></tr><tr><td>Latitudenumeric</td><td>Numeric latitude value</td></tr><tr><td>Longitudenumeric</td><td>Numeric longitude value</td></tr><tr><td>AgeManumeric</td><td>Age in millions of years ago</td></tr><tr><td>AgeEpoch</td><td>Geological epoch classification</td></tr><tr><td>AgeMethodCategory</td><td>Dating method category</td></tr><tr><td>SampleCategory</td><td>Sample type classification</td></tr><tr><td>CarbonateType</td><td>Type of carbonate calcite, aragonite, dolomite</td></tr><tr><td>CarbonateCategory</td><td>Simplified carbonate category</td></tr><tr><td>Lab</td><td>Laboratory conducting analysis</td></tr><tr><td>ReactionTnumeric</td><td>Reaction temperature °C</td></tr><tr><td>TempEvidenceCategory</td><td>Temperature evidence classification</td></tr><tr><td>Diagenesis</td><td>Diagenesis screening notes</td></tr><tr><td>Reference</td><td>Scientific reference</td></tr></tbody></table></div>
+<p>Full cleaned dataset available at: ./data/clumpedisotopecleaned.csv</p>
+<p>Detailed summary statistics available at:</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：卫生统计年鉴</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：卫生统计年鉴</h1>
+    <p class='sub'>来源: /view/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;中国人口统计趋势分析 (1955-2023)&quot;
+description: &quot;基于中国统计年鉴的68年人口出生率、死亡率和自然增长率深度分析&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>中国人口统计趋势分析报告 </h1>
+<p>1955-2023</p>
+<h2>分析概述</h2>
+<p>本报告基于中国统计年鉴数据，对中国68年来的人口统计数据进行全面分析，涵盖出生率、死亡率和自然增长率三个核心指标。通过时间序列分析、相关性分析和可视化呈现，揭示中国人口结构变化的历史脉络、关键转折点以及未来趋势。</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/assets/demographic_analysis_flow.svg' alt='demographic_analysis_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/assets/demographic_analysis_flow.svg' target='_blank' rel='noopener noreferrer'>demographic_analysis_flow.svg</a></figcaption></figure>
+<p>数据来源: 中国统计年鉴 1955-2023</p>
+<p>数据样本: 51个年份的人口统计数据</p>
+<p>分析维度: 出生率、死亡率、自然增长率</p>
+<h2>数据概览</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据的时间跨度是多久？涵盖了哪些关键历史时期？</li><li>数据的整体趋势显示了什么特征？</li></ul></details>
+<p>本次分析涵盖了中国从1955年至2023年共68年的发展历程，但实际数据记录为51年。数据反映了从计划经济、改革开放到现代化建设各个历史阶段的人口变迁。</p>
+<h3>核心数据摘要</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数值范围</th><th>平均值</th><th>最新值 2023</th><th>峰值年份</th></tr></thead><tbody><tr><td>出生率</td><td>6.39‰ - 37.88‰</td><td>16.72‰</td><td>6.39‰</td><td>1965年 37.88‰</td></tr><tr><td>死亡率</td><td>6.21‰ - 25.43‰</td><td>7.33‰</td><td>7.87‰</td><td>1960年 25.43‰</td></tr><tr><td>自然增长率</td><td>-4.57‰ - 28.38‰</td><td>9.39‰</td><td>-1.48‰</td><td>1965年 28.38‰</td></tr></tbody></table></div>
+<p>关键发现:</p>
+<ul><li>出生率从1965年的峰值37.88‰持续下降至2023年的6.39‰，降幅达83.1%</li><li>死亡率相对稳定，长期维持在6-8‰的水平</li><li>自然增长率于2023年再次转负，标志着人口进入负增长时代</li></ul>
+<h2>历史趋势分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>中国人口出生率经历了哪几个主要变化阶段？</li><li>1960年代的特殊情况是什么原因造成的？</li><li>2020年代出生率持续下降意味着什么？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>trend_chart.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/assets/trend_chart.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>第一阶段：高生育期 </h3>
+<p>1955-1975</p>
+<p>这一时期中国经历了从传统农业社会向工业化转型的过程，出生率维持在较高水平（25-37‰区间）。但1960年是一个特殊年份，由于大跃进后的自然灾害，死亡率飙升至25.43‰的历史峰值，导致自然增长率首次出现-4.57‰的负值。</p>
+<p>关键数据:</p>
+<ul><li>平均出生率: 32.43‰</li><li>平均死亡率: 8.54‰</li><li>平均自然增长率: 23.89‰</li></ul>
+<h3>第二阶段：生育控制期 </h3>
+<p>1976-2000</p>
+<p>改革开放后，计划生育政策全面实施，出生率开始显著下降。从1975年的23.01‰下降至2000年的14.03‰，降幅达39.0%。</p>
+<p>政策影响:</p>
+<ul><li>1978年: 计划生育政策全面推行</li><li>1980年代: 独生子女政策严格执行</li><li>出生率从30+‰降至15‰左右</li></ul>
+<h3>第三阶段：低生育期 </h3>
+<p>2001-2015</p>
+<p>进入21世纪，出生率持续走低，稳定在12-13‰区间。随着经济发展和城市化进程加速，生育观念发生根本性变化。</p>
+<p>社会变迁:</p>
+<ul><li>城市化率提升</li><li>教育水平提高</li><li>生活成本增加</li><li>生育观念转变</li></ul>
+<h3>第四阶段：政策调整期 </h3>
+<p>2016-2023</p>
+<p>2016年全面放开二孩政策，出生率在2016年短暂回升至12.95‰，但未能改变长期下降趋势。2020年降至8.52‰，2023年进一步降至6.39‰，创历史新低。</p>
+<p>政策效果:</p>
+<ul><li>2016年: 出生率短暂回升至12.95‰</li><li>2017年后: 持续回落</li><li>2021年: 三孩政策出台，但效果有限</li></ul>
+<h2>分年代对比分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪个年代的出生率最高？哪个年代的死亡率最低？</li><li>60年代的数据异常现象说明了什么？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>decade_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/assets/decade_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>年代平均值对比</h3>
+<div class='table-wrap'><table><thead><tr><th>年代</th><th>平均出生率</th><th>平均死亡率</th><th>平均自然增长率</th></tr></thead><tbody><tr><td>1950年代</td><td>26.73‰</td><td>14.21‰</td><td>12.52‰</td></tr><tr><td>1960年代</td><td>34.55‰</td><td>10.32‰</td><td>24.23‰</td></tr><tr><td>1970年代</td><td>25.63‰</td><td>7.08‰</td><td>18.55‰</td></tr><tr><td>1980年代</td><td>20.73‰</td><td>6.62‰</td><td>14.11‰</td></tr><tr><td>1990年代</td><td>17.43‰</td><td>6.63‰</td><td>10.80‰</td></tr><tr><td>2000年代</td><td>12.62‰</td><td>6.78‰</td><td>5.84‰</td></tr><tr><td>2010年代</td><td>12.04‰</td><td>7.12‰</td><td>4.92‰</td></tr><tr><td>2020年代</td><td>7.73‰</td><td>7.62‰</td><td>0.11‰</td></tr></tbody></table></div>
+<p>时代特征:</p>
+<ul><li>1960年代: 出生率最高时期，人口快速增长</li><li>2010-2020年代: 出生率快速下降，老龄化趋势显现</li><li>死亡率: 从1960年代的异常高值降至稳定水平，反映医疗进步</li></ul>
+<h2>出生率与死亡率差距分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>出生率和死亡率之间的差距反映了什么？</li><li>什么时候差距最小？什么时候差距最大？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>birth_death_gap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/assets/birth_death_gap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>差距变化的三个阶段</h3>
+<p>扩大期 1955-1965: 出生率与死亡率差距扩大，自然增长率攀升至28.38‰的峰值，反映了人口红利期的开始。</p>
+<p>收缩期 1966-2000: 受计划生育政策影响，出生率快速下降，与死亡率的差距持续缩小。</p>
+<p>临界期 2001-2023: 出生率进一步下降，死亡率缓慢上升（老龄化导致），差距逐渐消失，2023年自然增长率首次转为-1.48‰。</p>
+<h3>零增长线的意义</h3>
+<p>当自然增长率降至零以下，意味着人口开始进入负增长阶段。这是人口发展的历史性转折点，将对经济增长、社会保障、医疗体系产生深远影响。</p>
+<h2>相关性分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>出生率和自然增长率之间的相关性为什么这么强？</li><li>死亡率和自然增长率之间呈现负相关说明了什么？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>相关系数解读</h3>
+<p>相关系数矩阵:</p>
+<ul><li>出生率 vs 自然增长率: 0.906高度正相关</li><li>死亡率 vs 自然增长率: -0.203负相关</li><li>出生率 vs 死亡率: 0.230弱正相关</li></ul>
+<h3>关键洞察</h3>
+<p>1. 出生率主导自然增长率: 相关系数高达0.906，说明自然增长率的变化主要受出生率影响，这符合人口统计学的基本规律。</p>
+<p>2. 死亡率的独立影响: 死亡率与自然增长率呈负相关，系数为-0.203，表明死亡率上升会抑制自然增长，但影响相对较小。</p>
+<p>3. 出生率与死亡率关系: 两者呈现弱正相关（0.230），这可能反映了老龄化社会中的共同趋势——生育率下降的同时，由于人口结构老化，死亡率缓慢上升。</p>
+<h2>关键年份对比</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>1960年和2023年都是人口负增长，但原因有什么不同？</li><li>2016年的出生率回升是否是昙花一现？</li><li>对比1990年和2020年，中国人口发生了什么变化？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>key_years_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/assets/key_years_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>历史性对比</h3>
+<div class='table-wrap'><table><thead><tr><th>年份</th><th>出生率</th><th>死亡率</th><th>自然增长率</th><th>历史背景</th></tr></thead><tbody><tr><td>1955</td><td>32.60‰</td><td>12.28‰</td><td>20.32‰</td><td>建国初期，人口恢复增长</td></tr><tr><td>1960</td><td>20.86‰</td><td>25.43‰</td><td>-4.57‰</td><td>大跃进后自然灾害，人口首次负增长</td></tr><tr><td>1965</td><td>37.88‰</td><td>9.50‰</td><td>28.38‰</td><td>婴儿潮高峰，人口红利期</td></tr><tr><td>1980</td><td>18.21‰</td><td>6.34‰</td><td>11.87‰</td><td>改革开放初期</td></tr><tr><td>2000</td><td>14.03‰</td><td>6.45‰</td><td>7.58‰</td><td>进入21世纪</td></tr><tr><td>2016</td><td>12.95‰</td><td>7.09‰</td><td>5.86‰</td><td>二孩政策出台，短暂回升</td></tr><tr><td>2020</td><td>8.52‰</td><td>7.07‰</td><td>1.45‰</td><td>新冠疫情爆发</td></tr><tr><td>2023</td><td>6.39‰</td><td>7.87‰</td><td>-1.48‰</td><td>人口正式进入负增长时代</td></tr></tbody></table></div>
+<h3>两次负增长的对比</h3>
+<p>1960年的负增长:</p>
+<ul><li>原因: 特殊历史时期的自然灾害</li><li>特征: 死亡率飙升（25.43‰），出生率相对正常</li><li>性质: 短期异常，随后快速恢复</li></ul>
+<p>2023年的负增长:</p>
+<ul><li>原因: 长期低生育率和人口结构老化</li><li>特征: 出生率极低（6.39‰），死亡率缓慢上升</li><li>性质: 结构性、长期性趋势</li></ul>
+<h2>近20年散点趋势分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>近20年的散点图显示了什么变化轨迹？</li><li>散点图中的颜色深浅代表什么含义？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>birth_death_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/56892163418739b26321b0bffbb8d6e4dbe477522bae78c3efabb4d861ae2df6/assets/birth_death_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>趋势解读</h3>
+<p>从散点图中可以清晰地看到近20年（2004-2023）中国人口发展的轨迹：</p>
+<p>左下移动: 散点整体向左下方移动，意味着：</p>
+<ul><li>出生率持续下降（横轴向左）</li><li>死亡率缓慢上升（纵轴向上）</li><li>两者差距不断缩小</li></ul>
+<p>颜色变化: 随着年份增加（颜色加深），散点逐渐接近零增长线，直观展示了向负增长的逼近过程。</p>
+<p>临界点: 2023年首次突破零增长线，标志着历史性转折。</p>
+<h2>人口结构转型的影响</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>人口负增长对中国经济发展有什么影响？</li><li>老龄化社会将面临哪些挑战？</li></ul></details>
+<h3>经济影响</h3>
+<p>1. 劳动力供给: 劳动年龄人口减少，工资成本上升，传统制造业优势削弱</p>
+<p>2. 消费结构: 老年消费需求增加，年轻人消费需求相对减少</p>
+<p>3. 社会保障: 养老金、医疗保险压力增大，财政负担加重</p>
+<p>4. 经济增长: 潜在增长率下降，需要依赖技术进步和效率提升</p>
+<h3>社会影响</h3>
+<p>1. 家庭结构: 空巢老人、独居老人增多，传统家庭养老功能弱化</p>
+<p>2. 医疗需求: 老年病、慢性病医疗需求大幅增加</p>
+<p>3. 城市化: 城市人口老龄化程度高于农村，城市治理面临新挑战</p>
+<p>4. 人口流动: 劳动力流动模式发生变化，可能出现&quot;逆向流动&quot;</p>
+<h3>政策建议</h3>
+<p>1. 生育支持: 完善托育服务、延长产假、提供生育补贴</p>
+<p>2. 延迟退休: 逐步延迟退休年龄，增加劳动力供给</p>
+<p>3. 技术创新: 推动人工智能、自动化技术，提高生产效率</p>
+<p>4. 社会保障: 改革养老金制度，建立可持续的社会保障体系</p>
+<h2>预测与展望</h2>
+<p>基于68年历史数据的趋势分析，对未来10-20年中国人口发展做出以下预测：</p>
+<h3>出生率预测</h3>
+<p>预计出生率将在低位徘徊，可能进一步下降至4-6‰区间：</p>
+<ul><li>生育观念已发生根本性转变</li><li>城市化率已超过65%，城市生育率普遍较低</li><li>生活成本、教育成本持续上升</li></ul>
+<h3>死亡率预测</h3>
+<p>预计死亡率将缓慢上升至8-9‰：</p>
+<ul><li>人口老龄化程度加深</li><li>高龄人口比例增加</li><li>医疗进步部分抵消死亡率上升</li></ul>
+<h3>自然增长率预测</h3>
+<p>预计自然增长率将维持在负值区间（-1‰至-3‰）：</p>
+<ul><li>人口负增长成为新常态</li><li>总人口开始缓慢下降</li><li>人口结构持续老化</li></ul>
+<h3>关键时间节点</h3>
+<ul><li>2025年: 总人口可能达到峰值</li><li>2030年: 60岁以上人口占比超过30%</li><li>2035年: 进入深度老龄化社会</li><li>2050年: 总人口可能降至13亿以下</li></ul>
+<h2>结论与建议</h2>
+<h3>核心结论</h3>
+<p>1. 历史性转折: 2023年中国人口正式进入负增长时代，这是继1960年首次负增长后的第二次，但性质完全不同——从短期异常变为长期趋势。</p>
+<p>2. 生育率持续下降: 出生率从1965年峰值37.88‰降至2023年6.39‰，降幅达83.1%，且下降趋势尚未企稳。</p>
+<p>3. 老龄化加速: 死亡率从历史最低的6.21‰（1979年）缓慢上升至7.87‰（2023年），反映人口结构老化。</p>
+<p>4. 政策效果有限: 二孩、三孩政策未能扭转生育率下降趋势，需要更综合的应对措施。</p>
+<h3>战略建议</h3>
+<p>1. 短期措施 1-3年:</p>
+<p>    加强生育政策宣传，营造支持生育的社会氛围</p>
+<p>    完善托育服务体系，减轻家庭育儿负担</p>
+<p>    建立生育补贴制度，提高生育意愿</p>
+<p>2. 中期措施 3-10年:</p>
+<p>    改革教育制度，降低教育成本</p>
+<p>    调整住房政策，提供年轻家庭住房支持</p>
+<p>    推动灵活就业，平衡工作与家庭</p>
+<p>3. 长期措施 10年以上:</p>
+<p>    投资技术创新，提高生产效率</p>
+<p>    改革养老金制度，确保可持续发展</p>
+<p>    优化人口结构，应对老龄化挑战</p>
+<p>4. 国际经验借鉴:</p>
+<p>    学习日本、韩国应对低生育率的经验教训</p>
+<p>    参考欧洲国家的社会保障制度</p>
+<p>    吸引高素质移民，补充劳动力供给</p>
+<hr/>
+<p>数据文件: 查看清洗后的数据</p>
+<p>分析摘要: 查看详细摘要</p>
+<p>分析师: Pardus AI - 定量分析智能体</p>
+<p>生成时间: 2025-01-13</p>
+<p>数据来源: 中国统计年鉴 1955-2023</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+1. PKU 2352 Stars (CSDN Blog)
+ 
+Content: This article introduces a method using a Fenwick Tree (Binary Indexed Tree) to solve the star map analysis problem in astronomy, which maintains the positions of stars to calculate the number distribution of stars at different levels.
+ 
+Stars
+ 
+Time Limit: 1000MS  Memory Limit: 65536K 
+Total Submissions: 18171  Accepted: 7918 
+ 
+Description
+ 
+Astronomers often examine star maps where stars are represented by points on a plane and each star has Cartesian coordinates. Let the level of a star be the number of stars that are not higher and not to the right of the given star. Astronomers want to know the distribution of the levels of the stars.
+ 
+For example, look at the map shown in the figure above. The level of star number 5 is 3 (formed by three stars numbered 1, 2, and 4). The levels of stars numbered 2 and 4 are 1. In this map, there is 1 star of level 0, 2 stars of level 1, 1 star of level 2, and 1 star of level 3. You are to write a program that counts the number of stars at each level on a given map.
+ 
+Input
+ 
+The first line of the input file contains the number of stars N (1 ≤ N ≤ 15000). The following N lines describe the coordinates of the stars (two integers X and Y per line, separated by a space, 0 ≤ X, Y ≤ 32000). There is exactly one star at each point on the plane. Stars are listed in ascending order of the Y coordinate. For stars with the same Y coordinate, they are listed in ascending order of the X coordinate.
+ 
+Output
+ 
+The output should contain N lines, one number per line. The first line contains the number of stars of level 0, the second line the number of stars of level 1, and so on. The last line contains the number of stars of level N-1.
+ 
+Hint
+ 
+This problem has a large amount of input data. Use scanf() instead of cin to read data to avoid exceeding the time limit.
+ 
+The main idea of this problem is to use a Fenwick Tree as a hash table to map and record the array that stores the height (level) information.
+ 
+Link: https://blog.csdn.net/dwylkz/article/details/6649062
+Publication Time: 21:18, January 28, 2026
+ 
+2. Star Way to Heaven (CSDN Blog)
+ 
+Content: This article introduces a problem that requires finding the maximum value of the minimum distance for Xiao W to stay away from stars and boundaries. The author initially tried using a Union-Find Set (Disjoint Set Union) and binary search but realized there were special cases, so switched to using Prim's algorithm. By adding the boundaries to the set and running Prim's algorithm to find the point with the minimum distance, the distance of connected points is updated until the second boundary is added. The maximum value at this point is the answer. The code is accompanied by comments.
+ 
+Problem Description
+ 
+plaintext  
+Xiao W walks down the "Star Way to Heaven" with a heavy heart.
+The path to heaven is a rectangular passage in a Cartesian coordinate system with vertices at (0,0) and (n,m).
+Xiao W enters from any point on the leftmost side and walks to heaven from any point on the rightmost side. The distance between the leftmost and rightmost sides is n, and the distance between the upper and lower boundaries is m.
+There are k stars in the rectangle, each with integer coordinates. The size of the stars can be ignored.
+Each star and the upper and lower edges (boundaries) of the rectangle have gravitational pull. Therefore, to successfully reach heaven, Xiao W wants to stay as far away from them as possible.
+Please find the maximum value of the minimum distance from Xiao W to all stars and boundaries along his path to the destination.
+ 
+ 
+Well, the meaning of the problem is quite clear: Xiao W really wants to go to heaven, but there are annoying stars on the way. He wants to stay as far away from these stars as possible, and we need to find the maximum value of the minimum distance to all stars and boundaries.
+ 
+Idea Analysis
+ 
+At first, I thought of putting the stars whose ranges overlap into a Union-Find Set and then using binary search to find the answer.
+ 
+However, halfway through, I suddenly realized that if several stars are in the same Union-Find Set and their total radius is exactly equal to m/2, it means they directly "block" the path. Using binary search for this problem will definitely fail 😱.
+ 
+Later, since this problem is included in the "Minimum Spanning Tree" category, I then thought of using Prim's algorithm. Forgive me for being a novice (runs away).
+ 
+Add the boundaries to the set, then use Prim's algorithm to find the shortest path: find the point with the minimum distance and add it to the set, then update the distance of the connected points.
+ 
+We stop and output the result when we finally add the second boundary to the set. In fact, the maximum value at this time is the minimum d_i when it is just impossible to pass through.
+ 
+P.S.: Be sure to pay attention to the double data type.
+ 
+(If you really don't understand, you can look at the code.)

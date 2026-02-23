@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Bitcoin and interest rate</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Bitcoin and interest rate</h1>
+    <p class='sub'>来源: /view/68b573a79555ba1f58ac68649b4d7dcb195f2aac7144f6b3f7f40f5f4c558c71 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Bitcoin Price Analysis vs Federal Funds Rate (2021-2026)&quot;
+description: &quot;Comprehensive analysis of Bitcoin price movements and their relationship with US Federal Funds interest rates over 5 years&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-01&quot;
+</pre></details>
+<h1>Bitcoin Price Analysis vs Federal Funds Rate </h1>
+<p>2021-2026</p>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of Bitcoin price movements and their relationship with US Federal Funds interest rates from January 2021 to January 2026. The analysis examines 1,827 trading days of data, revealing key insights about Bitcoin&#x27;s price dynamics, volatility patterns, and correlation with monetary policy.</p>
+<h3>Key Highlights</h3>
+<ul><li>Bitcoin Price Trajectory: Bitcoin experienced remarkable growth from 29,789 in early 2021 to an all-time high of 124,720 in October 2025, representing a total return of 138%over the period</li><li>Volatility Characteristics: Daily returns averaged 0.092% with a standard deviation of 2.99%, highlighting Bitcoin&#x27;s high volatility nature</li><li>Federal Funds Rate Impact: The Federal Funds Rate rose from 0% to 5.25% during the analysis period, coinciding with significant Bitcoin price movements</li><li>Correlation Analysis: A moderate positive correlation 0.213 exists between Bitcoin price and Fed Funds Rate, suggesting Bitcoin may act as an inflation hedge during rate-hike cycles</li><li>Year-by-Year Performance: Best performing years were 2023 +104% and 2024 +94%, while 2022 saw significant decline -82%</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>btc_fed_rates.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/68b573a79555ba1f58ac68649b4d7dcb195f2aac7144f6b3f7f40f5f4c558c71/assets/btc_fed_rates.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Data Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What was the maximum Bitcoin price and when was it reached?</li><li>How did the Federal Funds Rate change during the analysis period?</li></ul></details>
+<p>The analysis combines two comprehensive datasets:</p>
+<h3>Bitcoin Price Data </h3>
+<p>CBBTCUSD</p>
+<ul><li>Date Range: January 31, 2021 to January 31, 2026</li><li>Total Records: 1,827 trading days</li><li>Price Range: 15,755.75 to 124,720.09</li><li>Average Price: 55,381.80</li><li>Price Volatility Std Dev: 29,728.98</li></ul>
+<h3>Federal Funds Rate Data </h3>
+<p>DFEDTARL</p>
+<ul><li>Date Range: January 31, 2021 to January 31, 2026</li><li>Rate Range: 0.00% to 5.25%</li><li>Average Rate: 3.21%</li><li>Rate Volatility Std Dev: 2.08%</li></ul>
+<p>The Federal Funds Rate remained at 0% throughout 2021, began rising in early 2022 to combat inflation, peaked at 5.25% in mid-2023, and remained elevated through 2024 before beginning to decline in late 2025.</p>
+<h2>Bitcoin Price Performance Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What were the best and worst performing years for Bitcoin?</li><li>How does Bitcoin&#x27;s volatility compare across different years?</li></ul></details>
+<h3>Overall Performance Metrics</h3>
+<ul><li>Maximum Price: 124,720.09 reached on October 5, 2025</li><li>Minimum Price: 15,755.75 reached on November 21, 2022</li><li>Total Return: 138.02% over the 5-year period</li><li>Average Daily Return: 0.092%</li><li>Daily Return Standard Deviation: 2.994%</li><li>Highest Daily Gain: 20.02%</li><li>Highest Daily Loss: -16.15%</li></ul>
+<h3>Year-by-Year Breakdown</h3>
+<div class='plot-card'><div class='plot-meta'><code>yearly_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/68b573a79555ba1f58ac68649b4d7dcb195f2aac7144f6b3f7f40f5f4c558c71/assets/yearly_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>Year</th><th>Avg Price</th><th>Price Range</th><th>Avg Fed Rate</th><th>Total Return</th><th>Avg Volatility</th></tr></thead><tbody><tr><td>2021</td><td>48,571</td><td>29,789 - 67,510</td><td>0.00%</td><td>+61.10%</td><td>3,925</td></tr><tr><td>2022</td><td>28,184</td><td>15,756 - 47,749</td><td>1.61%</td><td>-82.20%</td><td>2,013</td></tr><tr><td>2023</td><td>28,858</td><td>16,615 - 44,224</td><td>4.95%</td><td>+103.72%</td><td>1,392</td></tr><tr><td>2024</td><td>66,075</td><td>39,548 - 106,137</td><td>5.06%</td><td>+94.44%</td><td>3,667</td></tr><tr><td>2025</td><td>101,649</td><td>76,252 - 124,720</td><td>4.12%</td><td>+1.41%</td><td>4,024</td></tr><tr><td>2026 YTD</td><td>90,512</td><td>78,727 - 96,853</td><td>3.50%</td><td>-10.06%</td><td>2,561</td></tr></tbody></table></div>
+<p>Partial year data 31 days</p>
+<h3>Key Insights</h3>
+<p>1. 2021 Bull Market: Bitcoin gained 61% with zero interest rates, consistent with low-rate environment driving risk asset appreciation</p>
+<p>2. 2022 Bear Market: Worst year with 82% loss as Fed began aggressive rate hikes to combat inflation</p>
+<p>3. 2023 Recovery: Strong 104% rebound despite high interest rates 4.95% average, suggesting Bitcoin&#x27;s resilience</p>
+<p>4. 2024 Strong Growth: Continued growth of 94% with rates at peak 5.06%, challenging traditional monetary policy assumptions</p>
+<p>5. 2025 Peak: Reached all-time high of 124,720 with moderate decline as rates began to ease</p>
+<h2>Federal Funds Rate Impact Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How correlated is Bitcoin price with Federal Funds Rate changes?</li><li>What does the correlation analysis reveal about Bitcoin&#x27;s relationship with monetary policy?</li></ul></details>
+<h3>Correlation Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_bar.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/68b573a79555ba1f58ac68649b4d7dcb195f2aac7144f6b3f7f40f5f4c558c71/assets/correlation_bar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The correlation analysis reveals important insights about Bitcoin&#x27;s relationship with monetary policy:</p>
+<ul><li>Bitcoin Price vs Fed Funds Rate: +0.213 moderate positive correlation</li><li>Bitcoin Returns vs Fed Rate Changes: -0.026 negligible negative correlation</li></ul>
+<h3>Interpretation</h3>
+<p>The moderate positive correlation 0.213 between Bitcoin price and Federal Funds Rate is counterintuitive but significant:</p>
+<p>1. Inflation Hedge Narrative: The positive correlation suggests Bitcoin may have acted as an inflation hedge during the rate-hike cycle. As the Fed raised rates to combat inflation, Bitcoin prices also rose, consistent with its perceived store-of-value properties.</p>
+<p>2. Risk-On Asset: Despite the correlation, Bitcoin remains a risk-on asset with high volatility, as evidenced by its performance during 2022 when rising rates coincided with significant price decline.</p>
+<p>3. Market Sentiment Dominance: The negligible correlation -0.026 between Bitcoin returns and Fed rate changes indicates that daily price movements are more influenced by market sentiment, regulatory news, and crypto-specific factors rather than immediate Fed policy changes.</p>
+<h3>Rate Change Impact Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>returns_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/68b573a79555ba1f58ac68649b4d7dcb195f2aac7144f6b3f7f40f5f4c558c71/assets/returns_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot of Bitcoin daily returns vs Federal Funds Rate changes shows:</p>
+<ul><li>No Clear Linear Relationship: Daily Bitcoin returns show no significant linear relationship with daily Fed rate changes</li><li>High Variance: Extreme daily returns both positive and negative occur across all Fed rate change environments</li><li>Independent Drivers: Bitcoin&#x27;s daily price movements appear largely independent of short-term Fed policy changes</li></ul>
+<h2>Volatility Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does Bitcoin volatility vary across different Federal Funds Rate environments?</li><li>Which period experienced the highest Bitcoin price volatility?</li></ul></details>
+<h3>Price Volatility Patterns</h3>
+<div class='plot-card'><div class='plot-meta'><code>volatility_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/68b573a79555ba1f58ac68649b4d7dcb195f2aac7144f6b3f7f40f5f4c558c71/assets/volatility_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The 30-day rolling price volatility reveals distinct patterns:</p>
+<ul><li>2021: High volatility 3,925 avg during initial price discovery phase</li><li>2022: Moderate volatility 2,013 avg despite significant price decline</li><li>2023: Lowest volatility 1,392 avg during recovery phase</li><li>2024: Elevated volatility 3,667 avg as prices approached new highs</li><li>2025: Highest volatility 4,024 avg during all-time high period</li></ul>
+<h3>Volatility vs Interest Rate Environment</h3>
+<div class='table-wrap'><table><thead><tr><th>Fed Rate Environment</th><th>Avg Price</th><th>Avg Volatility</th><th>Key Characteristics</th></tr></thead><tbody><tr><td>Zero Rate 2021</td><td>48,571</td><td>3,925</td><td>High volatility during bull run</td></tr><tr><td>Rising Rates 2022</td><td>28,184</td><td>2,013</td><td>Moderate volatility during bear market</td></tr><tr><td>High Rates 2023-2024</td><td>47,467</td><td>2,530</td><td>Mixed volatility during recovery</td></tr><tr><td>Declining Rates 2025-2026</td><td>98,000</td><td>3,300</td><td>High volatility during peak and correction</td></tr></tbody></table></div>
+<p>Key Insight: Bitcoin volatility doesn&#x27;t consistently correlate with interest rate levels. The highest volatility occurred during price discovery 2021 and all-time high periods 2025, regardless of the rate environment.</p>
+<h2>Methodology and Data Quality</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What data cleaning techniques were applied to ensure analysis quality?</li><li>How was the correlation analysis performed?</li></ul></details>
+<h3>Data Processing Pipeline</h3>
+<p>1. Data Cleaning:</p>
+<p>    Removed null values from both datasets</p>
+<p>    Converted date strings to proper Date objects</p>
+<p>    Ensured numeric data types for all price and rate fields</p>
+<p>    Sorted data chronologically</p>
+<p>2. Data Merging:</p>
+<p>    Performed inner join on date field</p>
+<p>    Ensured matching dates for accurate correlation analysis</p>
+<p>    Resulted in 1,827 complete records</p>
+<p>3. Metric Calculations:</p>
+<p>    Daily Returns: Percentage change from previous day price</p>
+<p>    Price Volatility: 30-day rolling standard deviation</p>
+<p>    Year-over-Year Changes: 365-day lagged percentage changes</p>
+<p>    Correlation Coefficients: Pearson correlation using NumPy</p>
+<p>4. Analysis Period:</p>
+<p>    Start: January 31, 2021</p>
+<p>    End: January 31, 2026</p>
+<p>    Duration: 1,827 trading days 5 years</p>
+<h3>Statistical Validity</h3>
+<ul><li>All correlation calculations use Pearson correlation coefficient</li><li>Volatility calculations use standard deviation with appropriate window sizes</li><li>Yearly statistics only include complete years with 365+ days except 2026 partial data</li><li>Data sources: Federal Reserve Economic Data FRED for both Bitcoin price and Federal Funds Rate</li></ul>
+<h2>Conclusions and Investment Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key takeaways from this analysis for Bitcoin investors?</li><li>How might future Fed policy affect Bitcoin prices based on historical patterns?</li></ul></details>
+<h3>Key Findings</h3>
+<p>1. Bitcoin Resilience: Bitcoin demonstrated remarkable resilience, delivering positive returns despite aggressive Federal Reserve rate hikes from 0% to 5.25%</p>
+<p>2. Inflation Hedge Potential: The moderate positive correlation 0.213 with interest rates suggests Bitcoin may serve as an inflation hedge, though this relationship is complex and influenced by multiple factors</p>
+<p>3. High Volatility Persists: Bitcoin&#x27;s daily return volatility 2.99% standard deviation remains high across all market environments, requiring strong risk management</p>
+<p>4. Independent Price Drivers: Daily Bitcoin movements show negligible correlation with daily Fed rate changes -0.026, indicating crypto-specific factors dominate short-term price action</p>
+<p>5. Cyclical Patterns: Bitcoin follows distinct market cycles bull, bear, recovery, peak that don&#x27;t perfectly align with traditional monetary policy cycles</p>
+<h3>Investment Implications</h3>
+<p>For Long-Term Investors:</p>
+<ul><li>Bitcoin&#x27;s multi-year performance 138% total return supports its potential as a long-term store of value</li><li>The asset showed ability to appreciate despite rising interest rates, challenging traditional risk-off assumptions</li><li>Volatility requires long time horizons 5+ years to realize potential gains</li></ul>
+<p>For Active Traders:</p>
+<ul><li>Daily Fed policy announcements have limited impact on short-term Bitcoin price movements</li><li>Focus should remain on crypto-specific developments, market sentiment, and technical indicators</li><li>Volatility levels vary significantly across market phases, affecting optimal trading strategies</li></ul>
+<p>For Portfolio Allocation:</p>
+<ul><li>Bitcoin&#x27;s low correlation with daily Fed rate changes supports potential diversification benefits</li><li>However, high overall volatility suggests appropriate position sizing and risk management</li><li>Consider Bitcoin as a potential inflation hedge component in diversified portfolios</li></ul>
+<h3>Limitations and Future Considerations</h3>
+<p>1. Historical Context: This analysis captures a unique period post-COVID monetary policy, high inflation, institutional crypto adoption, which may not repeat</p>
+<p>2. Regulatory Environment: Future regulatory developments could significantly alter Bitcoin&#x27;s relationship with traditional financial markets</p>
+<p>3. Institutional Adoption: Increased institutional participation may reduce volatility and alter correlation patterns</p>
+<p>4. Macroeconomic Factors: Other factors inflation data, employment reports, geopolitical events likely influence the Bitcoin-Fed relationship beyond simple correlation analysis</p>
+<h3>Future Research Directions</h3>
+<ul><li>Analyze Bitcoin&#x27;s correlation with other macroeconomic indicators CPI, unemployment, GDP</li><li>Examine Bitcoin performance during different Fed rate cycles cutting, holding, rising</li><li>Compare Bitcoin&#x27;s behavior with other risk assets stocks, gold, commodities during monetary policy changes</li><li>Investigate the impact of Bitcoin ETF approvals and institutional flows on price-rate relationships</li></ul>
+<h2>Data Files and Resources</h2>
+<p>All cleaned data and summary statistics are available in the folder:</p>
+<ul><li>btcfedmerged.csv: Complete merged dataset with Bitcoin prices, Federal Funds rates, and calculated metrics</li><li>yearlystatistics.csv: Aggregated statistics by year for comprehensive year-by-year analysis</li><li>summary.md: Detailed summary with all key statistics and findings</li></ul>
+<p>Chart Filesin project root:</p>
+<ul><li>: Time series visualization of Bitcoin price and Federal Funds Rate</li><li>: Key correlation coefficients</li><li>: Scatter plot of Bitcoin returns vs Fed rate changes</li><li>: Year-by-year performance comparison</li><li>: Price volatility colored by Fed Funds Rate</li></ul>
+<hr/>
+<p>Analysis Period: January 31, 2021 - January 31, 2026</p>
+<p>Data Sources: Federal Reserve Economic Data FRED - CBBTCUSD Bitcoin Price and DFEDTARL Federal Funds Target Range - Lower Bound</p>
+<p>Analysis Tools: Python, Polars, Plotly Express, NumPy</p>
+<p>Generated by: Pardus AI - Quantitative Analysis Agent</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

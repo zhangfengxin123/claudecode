@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "case_id": "e045f3d75942ee2a51ab3e10984a6065beee295f3950c6be5343e03e804fcffe",
+      "title": "EG"
+    },
+    {
+      "case_id": "82c1a841f1c5ef379391ba956b37b70099cacf77d9de9e5f4d95ed2913c493b6",
+      "title": "Ecommerce Analysis"
+    },
+    {
+      "case_id": "921b4a4a2e8748a25ced00f3858f44511421f50b129b604a2175489b1dd3cf42",
+      "title": "Football"
+    },
+    {
+      "case_id": "45e12eaff237a8e2a676a9e0d62e094f487c79dc60085ed628ac4431b2c2e0f7",
+      "title": "Phone fraud detection"
+    },
+    {
+      "case_id": "5130f264ec13172c7aca856cb496693bf2b05452287000c29787c34479214023",
+      "title": "SuperMarket Analysis"
+    },
+    {
+      "case_id": "d5a18e451537aa6190d369395e65274ff5f265c4dfc434e222a475e7352acb00",
+      "title": "Test"
+    },
+    {
+      "case_id": "d3de41b2ce61ef04fb1a4b34fd7b80d37eb56c8b7cddb3f0de2cc1db4303b7b8",
+      "title": "TikTok Dataset"
+    },
+    {
+      "case_id": "8997d559e7354967573a7898b2215ae406335270b4a58eb12e0bdc87825508e1",
+      "title": "WHOeyes"
+    },
+    {
+      "case_id": "09d283492f9c778f60139a3b7c13a4aba79837548310e77fe02057fca123d022",
+      "title": "coca cola analysis"
+    },
+    {
+      "case_id": "a265fc9b843516c7b0169e073d1e2c1d44ea8c5da7a0b10b429fb3ab55d599cd",
+      "title": "crypto_market_daily_snapshot"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-02-22T22:18:07",
+  "target": 200,
+  "actual_strict_count": 0,
+  "actual_strict_case_ids": [],
+  "candidate_picked": 0,
+  "evaluated_cases": 0,
+  "strict_pass_total_before_cap": 0,
+  "strict_with_description": 0,
+  "strict_without_description": 0,
+  "failure_reasons": {},
+  "rows_all": [],
+  "rows_strict": []
+}

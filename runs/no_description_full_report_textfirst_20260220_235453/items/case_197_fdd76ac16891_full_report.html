@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：moltbook_top_posts</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：moltbook_top_posts</h1>
+    <p class='sub'>来源: /view/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Moltbook Platform Analysis: AI Agent Social Network Insights&quot;
+description: &quot;Comprehensive analysis of Moltbook, a social platform for AI agents, revealing engagement patterns, top contributors, and community dynamics from 5,000 posts across 3,411 unique agents.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Moltbook Platform Analysis: AI Agent Social Network Insights</h1>
+<h2>Executive Summary</h2>
+<p>Moltbook represents an innovative social platform where AI agents called &quot;moltys&quot; interact, share content, and engage in community discussions. This comprehensive analysis examines 5,000 posts from 3,411 unique AI agents over a 6-day period January 28 - February 2, 2026, revealing fascinating patterns in agent behavior, content engagement, and community dynamics.</p>
+<p>Key Findings:</p>
+<ul><li>Explosive Growth: Platform activity surged from 4 posts on Jan 28 to 2,864 posts on Feb 2, representing a 716x increase</li><li>Dominant Leader: MoltReg leads with 821,554 total points across just 4 posts, demonstrating outsized influence</li><li>Perfect Correlation: Score and upvotes show 1.0 correlation, indicating consistent community voting behavior</li><li>Power Users Rare: Only 2 agents 0.06% have posted 10+ times, highlighting the diverse creator base</li><li>Peak Activity: Most active hour is 7 AM UTC with 1,168 posts 23.4% of total volume</li><li>Content Quality: Average post length is 872 characters, suggesting thoughtful engagement rather than brief posts</li></ul>
+<h2>Platform Overview</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/platform_structure.svg' alt='platform_structure.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/platform_structure.svg' target='_blank' rel='noopener noreferrer'>platform_structure.svg</a></figcaption></figure>
+<p>Moltbook operates as a Reddit-like social platform specifically designed for AI agents. The platform features:</p>
+<ul><li>Posts: Content sharing with titles and body text</li><li>Submolts: Thematic communities similar to subreddits</li><li>Engagement: Upvotes, downvotes, comments, and composite scores</li><li>Author System: Unique identities for each AI agent molty</li></ul>
+<p>The data represents a snapshot of a rapidly growing ecosystem, with activity accelerating dramatically over the 6-day period.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What drove the explosive growth in platform activity?</li><li>How does Moltbook compare to traditional social media platforms?</li><li>What makes AI agent social interactions unique?</li></ul></details>
+<h2>Data Methodology</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/data_flow.svg' alt='data_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/data_flow.svg' target='_blank' rel='noopener noreferrer'>data_flow.svg</a></figcaption></figure>
+<p>Data Sources:</p>
+<ul><li>Author Leaderboard: 3,411 unique agents</li><li>Moltbook Top Posts: 5,000 highest-scoring posts</li><li>Posts Chronological: 5,000 posts with full metadata</li><li>Top 100 by Score: Top-performing content</li></ul>
+<p>Processing Pipeline:</p>
+<p>1. Data cleaning and validation</p>
+<p>2. DateTime parsing and normalization</p>
+<p>3. Null value removal from critical fields</p>
+<p>4. Descriptive statistical analysis</p>
+<p>5. Correlation and pattern detection</p>
+<p>6. Visualization generation</p>
+<p>All cleaned datasets are available in the folder for reproducibility and further analysis.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What data quality issues were encountered and resolved?</li><li>How representative is this sample of the broader Moltbook ecosystem?</li><li>What additional data would enhance future analyses?</li></ul></details>
+<h2>Author Analysis: Who Are the Top Contributors?</h2>
+<h3>Top 10 Authors by Total Score</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_authors_score.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/top_authors_score.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The author landscape reveals extreme concentration of influence among a small elite group:</p>
+<p>Top 3 Influencers:</p>
+<p>1. MoltReg: 821,554 points from 4 posts 205,388 avg per post</p>
+<p>2. osmarks: 517,817 points from 1 post highest single post score</p>
+<p>3. Shellraiser: 427,075 points from 7 posts 61,011 avg per post</p>
+<p>Key Insights:</p>
+<ul><li>Quality over Quantity: Top authors achieve high scores with minimal posts, suggesting viral content creation</li><li>Viral Mechanics: osmarks&#x27;s single post achieved 517,817 points, demonstrating the platform&#x27;s viral potential</li><li>Elite Club: Top 10 authors control 2.9 million points 28% of platform total with just 52 posts 1% of volume</li></ul>
+<h3>Top 10 Authors by Post Volume</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_authors_posts.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/top_authors_posts.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Prolific Creators:</p>
+<p>1. SenatorTommy: 44 posts, 2,335 total points 53 avg</p>
+<p>2. eudaemon0: 17 posts, 24,577 total points 1,446 avg</p>
+<p>3. Multiple Tied: 6 agents with 8 posts each</p>
+<p>Critical Observation:</p>
+<p>High-volume posters don&#x27;t necessarily achieve high scores. SenatorTommy&#x27;s 44 posts generated only 2,335 points average 53, while eudaemon0&#x27;s 17 posts generated 24,577 points average 1,446, 27x higher engagement per post.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What strategies distinguish high-scoring authors from high-volume posters?</li><li>How can new agents replicate the success of top performers?</li><li>What role does timing play in achieving viral success?</li></ul></details>
+<h2>Engagement Patterns: How and When Agents Interact</h2>
+<h3>Daily Activity Trends</h3>
+<div class='plot-card'><div class='plot-meta'><code>daily_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/daily_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Growth Trajectory:</p>
+<ul><li>Jan 28: 4 posts inception</li><li>Jan 29: 26 posts 6.5x growth</li><li>Jan 30: 252 posts 9.7x growth</li><li>Jan 31: 1,852 posts 7.3x growth</li><li>Feb 1: 2 posts anomaly - likely data issue or platform event</li><li>Feb 2: 2,864 posts peak day</li></ul>
+<p>Growth Analysis:</p>
+<p>The platform demonstrates textbook viral growth patterns, with each day showing 6-10x increases until reaching critical mass. The Feb 1 anomaly with only 2 posts suggests either a data collection gap or a significant platform event.</p>
+<h3>Hourly Activity Patterns</h3>
+<div class='plot-card'><div class='plot-meta'><code>hourly_activity.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/hourly_activity.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Peak Hours:</p>
+<p>1. 7 AM UTC: 1,168 posts 23.4% of total - Average score: 36.1</p>
+<p>2. 6 AM UTC: 970 posts 19.4% of total - Average score: 526.7</p>
+<p>3. 5 AM UTC: 466 posts 9.3% of total - Average score: 325.8</p>
+<p>4. 1 PM UTC: 329 posts 6.6% of total - Average score: 62.4</p>
+<p>5. 8 AM UTC: 290 posts 5.8% of total - Average score: 40.9</p>
+<p>Insights:</p>
+<ul><li>Early Morning Surge: 5-8 AM UTC accounts for 51.9% of all posts</li><li>Quality vs Volume: While 7 AM has the highest volume, 6 AM posts achieve 14.6x higher average scores 526.7 vs 36.1</li><li>Strategic Timing: Early morning hours correlate with both high volume and high engagement</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do agents prefer posting during early morning UTC hours?</li><li>How does timezone distribution affect engagement patterns?</li><li>What is the optimal posting time for maximizing reach vs score?</li></ul></details>
+<h2>Community Structure: Submolt Dynamics</h2>
+<h3>Top 10 Submolts by Activity</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_submolts.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/top_submolts.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Community Hierarchy:</p>
+<div class='table-wrap'><table><thead><tr><th>Submolt</th><th>Posts</th><th>% of Total</th><th>Total Score</th><th>Avg Score</th><th>Unique Authors</th></tr></thead><tbody><tr><td>General</td><td>4,127</td><td>82.5%</td><td>2,007,438</td><td>486.4</td><td>2,832</td></tr><tr><td>Introductions</td><td>262</td><td>5.2%</td><td>5,360</td><td>20.5</td><td>256</td></tr><tr><td>🦞 Crab Rave 🦞</td><td>115</td><td>2.3%</td><td>26,517</td><td>230.6</td><td>115</td></tr><tr><td>Security Research</td><td>33</td><td>0.7%</td><td>851</td><td>25.8</td><td>20</td></tr><tr><td>Crypto</td><td>31</td><td>0.6%</td><td>606</td><td>19.5</td><td>24</td></tr></tbody></table></div>
+<p>Key Observations:</p>
+<p>1. General Dominance: The General submolt captures 82.5% of all posts, making it the de facto main community hub</p>
+<p>2. Specialized Communities: Niche submolts Security Research, Crypto, Trading maintain smaller but highly focused audiences</p>
+<p>3. Viral Potential: &quot;Crab Rave&quot; submolt achieves the second-highest average score 230.6 despite only 2.3% of posts, indicating strong community cohesion</p>
+<p>4. Introduction Culture: 5.2% of posts in Introductions suggest active onboarding of new agents</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors contribute to General submolt&#x27;s dominance?</li><li>How can niche submolts attract more engagement?</li><li>What role do introductions play in community growth?</li></ul></details>
+<h2>Content Analysis: What Are Agents Discussing?</h2>
+<h3>Score Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>score_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/score_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Distribution Characteristics:</p>
+<ul><li>Range: 1 to 517,817 points</li><li>Mean: 578.7 points</li><li>Median: 17 points</li><li>Standard Deviation: 11,656.9 points</li></ul>
+<p>Extreme Skew:</p>
+<p>The massive standard deviation 11,657 relative to the mean 579 indicates a highly skewed distribution with a few viral posts dominating the score landscape. This is characteristic of social platforms where content virality follows power law distributions.</p>
+<p>Viral Content Threshold:</p>
+<p>Top 1% of posts 51 posts score above 479 points, with:</p>
+<ul><li>Average upvotes: 54,032</li><li>Average comments: 1,119</li></ul>
+<h3>Content Length Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>content_length_dist.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/content_length_dist.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Content Quality Metrics:</p>
+<ul><li>Minimum: 4 characters</li><li>Maximum: 33,137 characters</li><li>Mean: 872 characters</li><li>Median: 595 characters</li></ul>
+<p>Insights:</p>
+<ul><li>Substantial Content: 595-character median suggests agents share thoughtful, well-developed content rather than brief updates</li><li>Long-form Engagement: Maximum 33k-character posts indicate some agents create extensive, detailed content</li><li>Balanced Distribution: The distribution shows healthy engagement across content lengths</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What content characteristics drive viral success?</li><li>How does post length correlate with engagement metrics?</li><li>What topics generate the highest engagement scores?</li></ul></details>
+<h2>Engagement Mechanics: How Content Performs</h2>
+<h3>Score vs Upvotes Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>upvotes_vs_score.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/upvotes_vs_score.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Perfect Correlation:</p>
+<p>The correlation between score and upvotes is exactly 1.0, indicating that score = upvotes - downvotesor a similar linear relationship. This reveals:</p>
+<p>1. Transparent Scoring: The platform likely uses a straightforward scoring mechanism</p>
+<p>2. Predictable Engagement: Users can accurately predict score changes based on voting patterns</p>
+<p>3. Community Consistency: High correlation suggests consistent community voting behavior</p>
+<h3>Engagement Correlations</h3>
+<p>Key Correlation Matrix:</p>
+<div class='table-wrap'><table><thead><tr><th>Metric 1</th><th>Metric 2</th><th>Correlation</th><th>Interpretation</th></tr></thead><tbody><tr><td>Score</td><td>Upvotes</td><td>1.000</td><td>Perfect linear relationship</td></tr><tr><td>Score</td><td>Comments</td><td>0.200</td><td>Weak positive correlation</td></tr><tr><td>Upvotes</td><td>Comments</td><td>0.200</td><td>Weak positive correlation</td></tr></tbody></table></div>
+<p>Interpretation:</p>
+<ul><li>Voting Comments: The 0.20 correlation between votes and comments indicates that highly upvoted content doesn&#x27;t necessarily generate more discussion</li><li>Discussion Independence: Comment generation appears relatively independent of voting behavior</li><li>Engagement Diversity: Users engage through two distinct channels voting and commenting with different motivations</li></ul>
+<h3>Comments vs Upvotes Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>comments_vs_upvotes.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/comments_vs_upvotes.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Engagement Patterns:</p>
+<ul><li>Most posts cluster in the lower-left quadrant low votes, low comments</li><li>Viral posts extend along the upvotes axis with moderate comment increases</li><li>Some posts achieve high comment counts with moderate upvotes, indicating discussion-driven content</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do upvotes and comments show weak correlation?</li><li>What distinguishes voting behavior from commenting behavior?</li><li>How can content creators optimize for both voting and commenting engagement?</li></ul></details>
+<h2>Power User Analysis: Elite Contributors</h2>
+<h3>Power User Definition</h3>
+<p>Agents with 10+ posts classified as &quot;Power Users&quot;</p>
+<p>Power User Statistics:</p>
+<ul><li>Count: 2 agents 0.06% of user base</li><li>Total Posts: 61 posts 1.22% of total</li><li>Average Score: 13,456 points</li><li>Dominance: Despite low volume, power users achieve 16x the average user score</li></ul>
+<p>Regular User Statistics:</p>
+<ul><li>Count: 3,409 agents 99.94% of user base</li><li>Average Score: 841 points</li></ul>
+<p>Key Insight:</p>
+<p>The platform lacks a traditional &quot;power user&quot; middle tier. The extreme scarcity of 10+ post contributors only 2 suggests either:</p>
+<p>1. New Platform: Most users joined recently and haven&#x27;t established consistent posting habits</p>
+<p>2. Casual Participation: The platform encourages sporadic rather than sustained engagement</p>
+<p>3. Quality Focus: Agents prefer fewer, higher-quality posts over frequent posting</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors explain the lack of middle-tier contributors?</li><li>How can the platform encourage sustained participation?</li><li>What benefits would a larger power user base provide?</li></ul></details>
+<h2>Key Insights and Recommendations</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/insights.svg' alt='insights.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3/assets/insights.svg' target='_blank' rel='noopener noreferrer'>insights.svg</a></figcaption></figure>
+<h3>Strategic Insights</h3>
+<p>1. Explosive Growth Trajectory</p>
+<ul><li>716x growth in 6 days indicates viral market fit</li><li>Recommendation: Scale infrastructure to maintain performance during growth spurts</li><li>Monitor Feb 1 anomaly patterns to identify potential platform issues</li></ul>
+<p>2. Quality Over Quantity</p>
+<ul><li>Top authors achieve exceptional scores with minimal posts</li><li>Recommendation: Develop &quot;viral content creation&quot; guidelines for new agents</li><li>Feature high-scoring posts prominently to incentivize quality</li></ul>
+<p>3. Early Morning Advantage</p>
+<ul><li>5-8 AM UTC captures 52% of posts with high engagement</li><li>Recommendation: Schedule algorithmic boosts during peak hours</li><li>Consider timezone-aware recommendations for global participation</li></ul>
+<p>4. General Submolt Dominance</p>
+<ul><li>82.5% of activity in General suggests discovery challenges</li><li>Recommendation: Improve submolt discovery and recommendation system</li><li>Implement submolt-specific onboarding for new users</li></ul>
+<p>5. Engagement Duality</p>
+<ul><li>Voting and commenting serve different user needs</li><li>Recommendation: Develop separate optimization strategies for each engagement type</li><li>Track &quot;discussion value&quot; separately from &quot;viral potential&quot;</li></ul>
+<h3>Growth Opportunities</h3>
+<p>1. Power User Development</p>
+<ul><li>Only 0.06% of users post regularly</li><li>Opportunity: Implement streaks, achievements, and creator incentives</li><li>Goal: Increase 10+ post users to 5% within 3 months</li></ul>
+<p>2. Community Diversification</p>
+<ul><li>General submolt overwhelming dominance</li><li>Opportunity: Promote niche communities to reduce content homogenization</li><li>Goal: Increase non-General posts to 20% of total</li></ul>
+<p>3. Content Quality Standards</p>
+<ul><li>Wide variance in post length and quality</li><li>Opportunity: Develop AI-assisted content optimization tools</li><li>Goal: Establish content quality guidelines while preserving creativity</li></ul>
+<p>4. Global Expansion</p>
+<ul><li>Concentrated activity in specific UTC hours</li><li>Opportunity: Target campaigns for underrepresented time zones</li><li>Goal: Achieve 24/7 activity with no single hour 15% of daily volume</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most critical growth levers for Moltbook?</li><li>How should the platform prioritize short-term vs long-term improvements?</li><li>What metrics should track platform health beyond user and post counts?</li></ul></details>
+<h2>Conclusion</h2>
+<p>Moltbook represents a fascinating experiment in AI agent social interaction, demonstrating explosive growth with a clear product-market fit. The platform&#x27;s rapid expansion from 4 to 2,864 daily posts within a week reveals strong engagement, while the perfect score-upvote correlation and consistent engagement patterns indicate a well-designed community system.</p>
+<p>Critical Success Factors:</p>
+<p>1. Viral Mechanics: Platform enables rapid content distribution and scoring</p>
+<p>2. Creator Incentives: High-scoring posts achieve exceptional visibility</p>
+<p>3. Community Structure: Submolts provide thematic organization though General dominates</p>
+<p>4. Quality Focus: Agents prefer substantial, thoughtful content over brief updates</p>
+<p>Strategic Priorities:</p>
+<p>1. Infrastructure Scaling: Prepare for continued viral growth</p>
+<p>2. Community Development: Encourage sustained participation through power user programs</p>
+<p>3. Content Diversity: Reduce General submolt dominance through better discovery</p>
+<p>4. Global Expansion: Balance timezone participation for 24/7 engagement</p>
+<p>The platform&#x27;s success hinges on maintaining quality while scaling quantity, a challenge faced by all social platforms. The current data suggests Moltbook is well-positioned to become a leading AI agent social network, provided it can sustain its explosive growth trajectory while preserving community quality and engagement diversity.</p>
+<hr/>
+<p>Analysis Date:January 13, 2025</p>
+<p>Data Period:January 28 - February 2, 2026</p>
+<p>Total Dataset:5,000 posts, 3,411 authors</p>
+<p>Analysis Files:Available in folder</p>
+<p>Visualizations:10 interactive charts and 3 SVG diagrams</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

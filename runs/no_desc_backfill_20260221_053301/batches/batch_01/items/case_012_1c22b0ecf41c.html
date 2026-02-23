@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 1c22b0ecf41c</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>(untitled)</h1>
+  <div class='muted'>case_id: <span class='code'>1c22b0ecf41c03c4527e3e2a5754753735f05fa732150a653d1e9b48f50b650e</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/1c22b0ecf41c03c4527e3e2a5754753735f05fa732150a653d1e9b48f50b650e' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/1c22b0ecf41c03c4527e3e2a5754753735f05fa732150a653d1e9b48f50b650e</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_012_1c22b0ecf41c</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>table.csv</code></td><td>200</td><td>3226</td><td>text/csv</td><td><code>input/case_012_1c22b0ecf41c/table.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/1c22b0ecf41c03c4527e3e2a5754753735f05fa732150a653d1e9b48f50b650e/files/table.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>table.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>机构</th><th>报告/文章标题</th><th>发布日期</th><th>URL</th><th>关键数据摘要</th></tr></thead><tbody><tr><td>U.S. Energy Information Administration (EIA)</td><td>EIA forecasts strongest four-year growth in U.S. electricity demand since 2000, fueled by data centers</td><td>2026-01-13</td><td>https://www.eia.gov/pressroom/releases/press582.php</td><td>2025发电量：4,260 TWh；数据中心驱动需求增长（2026年1%、2027年3%）；数据中心占增长40%</td></tr><tr><td>EIA</td><td>Short-Term Energy Outlook (February 2026)</td><td>2026-02-02</td><td>https://www.eia.gov/outlooks/steo/pdf/steo_full.pdf</td><td>2025发电量：~4,260 TWh；2026年~4,300 TWh；太阳能新增70 GW（2026-2027）</td></tr><tr><td>Lawrence Berkeley National Laboratory (LBNL)</td><td>2024 United States Data Center Energy Usage Report</td><td>2024-12</td><td>https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf</td><td>2023：176 TWh (4.4%)；2028：325-580 TWh (6.7-12%)；AI占一半以上</td></tr><tr><td>International Energy Agency (IEA)</td><td>Energy and AI</td><td>2025-04</td><td>https://www.iea.org/reports/energy-and-ai</td><td>2024美国数据中心：183 TWh (4%)；2030：426 TWh (+133%)；AI是主要驱动</td></tr><tr><td>Goldman Sachs</td><td>AI to drive 165% increase in data center power demand by 2030 (及更新)</td><td>2025-02 (更新至2026)</td><td>https://www.goldmansachs.com/insights/articles/ai-to-drive-165-increase-in-data-center-power-demand-by-2030</td><td>数据中心占需求增长40%；2025电价上涨6.9%；全球数据中心需求+165%至2030</td></tr><tr><td>S&amp;P Global / 451 Research</td><td>Data center grid-power demand to rise 22% in 2025, nearly triple by 2030</td><td>2025-10-14</td><td>https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/101425-data-center-grid-power-demand-to-rise-22-in-2025-nearly-triple-by-2030</td><td>2025：61.8 GW；2026：75.8 GW；2030：134.4 GW（不含企业自有）</td></tr><tr><td>Deloitte</td><td>Can US infrastructure keep up with the AI economy?</td><td>2025-06-24</td><td>https://www.deloitte.com/us/en/insights/industry/power-and-utilities/data-center-infrastructure-artificial-intelligence.html</td><td>AI数据中心：2024年4 GW → 2035年123 GW（增长30倍）</td></tr><tr><td>Pew Research Center</td><td>What we know about energy use at U.S. data centers amid the AI boom</td><td>2025-10-24</td><td>https://www.pewresearch.org/short-reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/</td><td>2024：183 TWh (4%)；2030：426 TWh；AI hyperscaler相当于10万户家庭用电</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td colspan="7">no assets</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <p class="muted">no renderable charts</p>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

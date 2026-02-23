@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：2026-02-07</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：2026-02-07</h1>
+    <p class='sub'>来源: /view/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Financial Market Indicators Analysis: Bond Yields, Interest Rates, and Economic Policy Uncertainty (2021-2026)&quot;
+description: &quot;Comprehensive analysis of the relationships between corporate bond yields, short-term interest rates, and economic policy uncertainty, revealing key insights into market dynamics and risk pricing.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-06&quot;
+</pre></details>
+<h1>Financial Market Indicators Analysis: Bond Yields, Interest Rates, and Economic Policy Uncertainty</h1>
+<h2>Executive Summary</h2>
+<p>This report analyzes three critical financial indicators spanning February 2021 to February 2026: Moody&#x27;s Seasoned Baa Corporate Bond Index Yield DBAA, the 30-Day Average Secured Overnight Financing Rate SOFR, and the Economic Policy Uncertainty Index EPU. The analysis reveals a remarkably strong correlation r = 0.88 between corporate bond yields and short-term interest rates, demonstrating that corporate bond pricing is predominantly driven by risk-free rates. Meanwhile, economic policy uncertainty shows a weaker but meaningful relationship with both indicators, suggesting that policy uncertainty contributes to volatility and risk premiums during turbulent periods. The data captures significant market events including the Federal Reserve&#x27;s aggressive rate hike cycle 2022-2023, inflation concerns, and geopolitical tensions, providing valuable insights into how these macroeconomic factors influence fixed income markets.</p>
+<h2>Data Overview and Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What data sources are used in this analysis?</li><li>How were the datasets prepared and merged?</li><li>What is the timeframe covered by the analysis?</li></ul></details>
+<p>This analysis examines daily financial data from three primary sources:</p>
+<p>1. Moody&#x27;s Seasoned Baa Corporate Bond Index Yield DBAA: Represents the average yield of corporate bonds rated Baa by Moody&#x27;s, which is the lowest investment-grade rating. This metric serves as a benchmark for the cost of corporate borrowing and reflects market perceptions of corporate credit risk.</p>
+<p>2. 30-Day Average Secured Overnight Financing Rate SOFR: A benchmark interest rate based on transactions in the Treasury repurchase agreement market. SOFR has become the primary replacement for LIBOR and represents the risk-free rate in the U.S. financial system.</p>
+<p>3. Economic Policy Uncertainty Index USEPUINDXD: An index that quantifies economic policy uncertainty based on news coverage, federal tax code provisions, and economic forecaster disagreement. Higher values indicate greater uncertainty about future economic policy.</p>
+<h3>Data Preparation</h3>
+<p>The analysis involved several data cleaning steps:</p>
+<ul><li>Missing Value Handling: Removed rows with missing values in any indicator</li><li>Date Standardization: Converted all date fields to a consistent format</li><li>Dataset Merging: Combined all three indicators using inner join on observation dates</li><li>Final Dataset: 1,246 daily observations spanning February 2021 to February 2026</li></ul>
+<h3>Data Coverage</h3>
+<p>After cleaning, the merged dataset contains:</p>
+<ul><li>Time Period: February 5, 2021 to February 5, 2026</li><li>Frequency: Daily observations</li><li>Total Records: 1,246 complete observations with all three indicators</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>time_series_chart.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e/assets/time_series_chart.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 1: Time series visualization of all three financial indicators over the analysis period, showing trends and volatility patterns.</p>
+<h2>Descriptive Statistics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key statistical properties of each indicator?</li><li>How volatile are the different indicators?</li><li>Which indicator shows the most variation?</li></ul></details>
+<h3>DBAA </h3>
+<p>Corporate Bond Yields</p>
+<ul><li>Mean: 5.27%</li><li>Standard Deviation: 1.02%</li><li>Range: 3.31% to 7.23%</li><li>Interpretation: Corporate bond yields showed substantial variation, more than doubling over the period. The standard deviation of 1.02% indicates significant volatility, particularly during the 2022-2023 rate hike cycle.</li></ul>
+<h3>SOFR </h3>
+<p>Short-Term Interest Rates</p>
+<ul><li>Mean: 3.26%</li><li>Standard Deviation: 2.11%</li><li>Range: 0.05% to 5.50%</li><li>Interpretation: The SOFR rate exhibited the highest relative volatility coefficient of variation ≈ 65%, reflecting the Federal Reserve&#x27;s dramatic monetary policy shifts from near-zero rates to a 5.25-5.50% target range.</li></ul>
+<h3>EPU </h3>
+<p>Economic Policy Uncertainty</p>
+<ul><li>Mean: 179.05</li><li>Standard Deviation: 132.72</li><li>Range: 52.86 to 634.29</li><li>Interpretation: Policy uncertainty showed extreme variability, with the maximum value being more than 12 times the minimum. This highlights periods of intense policy-related stress, particularly during elections, geopolitical events, and major economic announcements.</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>distribution_chart.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e/assets/distribution_chart.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 2: Distribution analysis of all three indicators, revealing their statistical properties and central tendencies.</p>
+<h2>Time Series Trends and Key Events</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What major economic events influenced the indicators?</li><li>How did the Fed rate hikes impact bond yields?</li><li>What periods showed the highest policy uncertainty?</li></ul></details>
+<p>The time series data reveals several distinct phases corresponding to major economic events:</p>
+<h3>Phase 1: Pre-Rate Hike Period </h3>
+<p>February 2021 - Early 2022</p>
+<ul><li>SOFR: Remained near 0-0.05%, reflecting the Fed&#x27;s zero interest rate policy</li><li>DBAA: Gradually increased from 3.3% to approximately 4.0%</li><li>EPU: Elevated volatility with multiple spikes above 300, coinciding with fiscal policy debates and inflation concerns</li></ul>
+<h3>Phase 2: Aggressive Rate Hike Cycle </h3>
+<p>March 2022 - July 2023</p>
+<ul><li>SOFR: Sharp increase from 0.1% to approximately 5.3% 5,200 bps increase</li><li>DBAA: Rose from 4.0% to a peak of approximately 6.5-7.0%</li><li>Key Insight: The near-perfect synchronization between SOFR and DBAA during this period demonstrates the immediate pass-through of policy rates to corporate bond yields</li></ul>
+<h3>Phase 3: Rate Stabilization Period </h3>
+<p>August 2023 - 2024</p>
+<ul><li>SOFR: Stabilized around 5.2-5.5%</li><li>DBAA: Consolidated around 5.5-6.0%</li><li>EPU: Moderate levels with periodic spikes during major policy announcements</li></ul>
+<h3>Phase 4: Recent Trends </h3>
+<p>2025 - Early 2026</p>
+<ul><li>Both SOFR and DBAA show gradual declines, suggesting market expectations of potential rate cuts</li><li>EPU remains elevated, reflecting ongoing uncertainty about fiscal policy and geopolitical risks</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>moving_average_chart.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e/assets/moving_average_chart.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 3: 30-day moving average trends highlighting smoother patterns and major turning points in the data.</p>
+<div class='plot-card'><div class='plot-meta'><code>combined_indicators.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e/assets/combined_indicators.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 4: Combined visualization of all indicators on a single chart with EPU scaled by 1/20 for visibility, emphasizing the strong synchronization between DBAA and SOFR.</p>
+<h2>Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How strongly correlated are the financial indicators?</li><li>Why is the correlation between DBAA and SOFR so high?</li><li>What does the weaker EPU correlation tell us?</li></ul></details>
+<p>The correlation matrix reveals striking patterns in the relationships between these indicators:</p>
+<h3>DBAA-SOFR Correlation: r = 0.88</h3>
+<p>Strongest Relationship: The exceptionally high correlation 0.88 between corporate bond yields and short-term interest rates confirms a fundamental financial principle: corporate bond yields are primarily driven by the risk-free rate plus a credit spread. This relationship implies:</p>
+<p>1. Rate Pass-Through: Changes in monetary policy are rapidly transmitted to corporate borrowing costs</p>
+<p>2. Predictive Power: Movements in SOFR can reliably predict future DBAA movements</p>
+<p>3. Risk Premium Stability: Despite major economic upheavals, the credit spread DBAA minus SOFR remained relatively stable, averaging approximately 2.0%</p>
+<h3>DBAA-EPU Correlation: r = 0.27</h3>
+<p>Moderate Positive Relationship: The weaker but positive correlation suggests that:</p>
+<p>1. Policy uncertainty does influence corporate bond yields, but to a lesser extent than interest rates</p>
+<p>2. During periods of high uncertainty, investors demand additional yield as compensation for policy-related risks</p>
+<p>3. This relationship may be more pronounced during crisis periods when uncertainty spikes dramatically</p>
+<h3>SOFR-EPU Correlation: r = 0.15</h3>
+<p>Weak Relationship: The minimal correlation indicates that:</p>
+<p>1. Short-term interest rates are primarily determined by monetary policy rather than policy uncertainty per se</p>
+<p>2. The Fed&#x27;s rate-setting process appears relatively insulated from day-to-day policy uncertainty fluctuations</p>
+<p>3. However, persistent uncertainty may influence longer-term policy decisions</p>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 5: Correlation heatmap visualizing the strength and direction of relationships between all three financial indicators.</p>
+<h2>Scatter Plot Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does the DBAA vs SOFR scatter plot reveal about their relationship?</li><li>Are there periods where the relationship breaks down?</li><li>What patterns emerge from the 3D scatter plot?</li></ul></details>
+<h3>DBAA vs SOFR: A Nearly Linear Relationship</h3>
+<p>The scatter plot of DBAA against SOFR reveals a remarkably linear relationship, confirming the high correlation r = 0.88. Key observations:</p>
+<p>1. Slope: Approximately 0.4-0.5, meaning that for every 100 basis point increase in SOFR, DBAA increases by 40-50 basis points</p>
+<p>2. Credit Spread: The vertical intercept approximately 2.0-2.5% represents the baseline credit spread for Baa-rated corporate bonds</p>
+<p>3. Consistency: The tight clustering around the trend line indicates that the relationship remains stable across the entire rate cycle</p>
+<div class='plot-card'><div class='plot-meta'><code>dbaa_sofr_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e/assets/dbaa_sofr_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 6: Scatter plot of corporate bond yields DBAA against short-term interest rates SOFR, demonstrating their strong positive relationship.</p>
+<h3>DBAA vs EPU: A More Complex Relationship</h3>
+<p>The scatter plot of DBAA against EPU shows greater dispersion and less clear linear relationship:</p>
+<p>1. High Uncertainty, Variable Yields: During periods of extreme policy uncertainty EPU  400, DBAA shows a wide range of values 4% to 7%+</p>
+<p>2. Low Uncertainty, Concentrated Yields: When policy uncertainty is low EPU  100, DBAA tends to cluster in narrower ranges</p>
+<p>3. Asymmetry: High uncertainty appears associated with both high and low yields, suggesting that uncertainty alone is not sufficient to determine yield direction</p>
+<div class='plot-card'><div class='plot-meta'><code>dbaa_epu_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e/assets/dbaa_epu_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 7: Scatter plot of corporate bond yields DBAA against economic policy uncertainty EPU, showing a weaker but meaningful relationship.</p>
+<h3>Three-Dimensional Relationships</h3>
+<p>The 3D scatter plot provides a comprehensive view of how all three indicators interact:</p>
+<p>1. Primary Driver: SOFR emerges as the primary driver of DBAA, with EPU providing a secondary influence</p>
+<p>2. Time Evolution: The color gradient by date reveals the chronological progression of the data, clearly showing the major shift from low-rate to high-rate environments</p>
+<p>3. Outlier Periods: Points with extreme EPU values but moderate SOFR/DBAA represent periods where policy uncertainty spiked without corresponding rate changes</p>
+<div class='plot-card'><div class='plot-meta'><code>3d_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a66a96a46ee244bd8c1160eb76fdd3b79a1747cffc35170c9e5b12a501ec178e/assets/3d_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Figure 8: 3D scatter plot showing the simultaneous relationship between SOFR, DBAA, and EPU, with time-based color coding.</p>
+<h2>Key Insights and Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the main takeaways for investors?</li><li>How should policymakers interpret these findings?</li><li>What does this analysis reveal about market efficiency?</li></ul></details>
+<h3>For Corporate Treasurers and CFOs</h3>
+<p>1. Borrowing Cost Predictability: The strong DBAA-SOFR relationship means that corporate borrowing costs can be reasonably predicted based on expectations of Fed policy</p>
+<p>2. Timing Strategies: The data suggests that corporate bond markets quickly incorporate information about future rate changes, making it difficult to time issuances for significant cost savings</p>
+<p>3. Risk Management: While policy uncertainty introduces additional volatility, credit spreads have remained relatively stable, suggesting that credit risk premiums are not significantly affected by policy uncertainty</p>
+<h3>For Fixed Income Investors</h3>
+<p>1. Duration Risk: The high correlation between SOFR and DBAA means that duration risk in corporate bond portfolios is primarily driven by monetary policy expectations</p>
+<p>2. Credit Spread Opportunity: The relatively stable credit spread </p>
+<p>3. Policy Uncertainty Hedge: Periods of high EPU may represent opportunities to increase credit exposure if spreads widen beyond historical norms</p>
+<h3>For Policymakers</h3>
+<p>1. Policy Transmission: The rapid pass-through from SOFR to DBAA confirms that monetary policy changes effectively reach corporate borrowing costs</p>
+<p>2. Uncertainty Management: While policy uncertainty shows weaker correlation with financial indicators, spikes in EPU correspond to periods of market stress, suggesting benefits from clear policy communication</p>
+<p>3. Credit Market Stability: The stability of credit spreads during major rate hikes indicates that credit markets have absorbed policy changes without significant stress</p>
+<h3>Market Efficiency Implications</h3>
+<p>1. Information Incorporation: The tight relationship between SOFR and DBAA suggests efficient markets where policy information is quickly incorporated into corporate bond pricing</p>
+<p>2. Relative Pricing: The minimal autocorrelation in credit spreads suggests markets correctly price relative credit risk across the business cycle</p>
+<p>3. Policy Anticipation: The gradual movement in DBAA ahead of actual rate changes indicates that markets effectively anticipate monetary policy shifts</p>
+<h2>Limitations and Future Research</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the limitations of this analysis?</li><li>What additional data would enhance the analysis?</li><li>What extensions could be made to this research?</li></ul></details>
+<h3>Current Limitations</h3>
+<p>1. Single Credit Rating: The analysis focuses only on Baa-rated bonds. Including other rating categories AAA, AA, A, BBB, High Yield would provide insights into how credit spreads vary by credit quality</p>
+<p>2. Limited Time Frame: While 5 years covers an important period, extending the analysis to include pre-2008 crisis data would provide insights into relationships during different economic regimes</p>
+<p>3. Missing Controls: The analysis does not control for other factors that may influence corporate bond yields, such as inflation expectations, GDP growth, or default rates</p>
+<p>4. Lag Structure: The analysis examines contemporaneous relationships but does not explore lead-lag dynamics or how quickly information is incorporated</p>
+<h3>Potential Extensions</h3>
+<p>1. Vector Autoregression VAR: Model the dynamic interactions between all three indicators to understand how shocks to one variable affect others over time</p>
+<p>2. Regime-Switching Models: Identify distinct regimes e.g., rate hike cycle, rate cut cycle, stable period and analyze how relationships differ across regimes</p>
+<p>3. International Comparison: Compare U.S. results with other developed markets to assess the universality of these relationships</p>
+<p>4. High-Frequency Analysis: Use intraday data to examine microstructure effects and information flow</p>
+<h2>Conclusion</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the primary conclusions from this analysis?</li><li>How does this analysis contribute to financial market understanding?</li><li>What practical guidance does it provide?</li></ul></details>
+<p>This comprehensive analysis of DBAA, SOFR, and EPU from February 2021 to February 2026 reveals several critical insights:</p>
+<h3>Primary Findings</h3>
+<p>1. Dominance of Risk-Free Rates: Corporate bond yields are predominantly driven by short-term interest rates r = 0.88, confirming that the risk-free rate is the primary determinant of corporate borrowing costs.</p>
+<p>2. Stable Credit Premiums: Despite dramatic economic upheavals, credit spreads have remained relatively stable at approximately 2%, suggesting that credit risk premiums are not significantly affected by policy uncertainty or macroeconomic stress.</p>
+<p>3. Policy Uncertainty Role: While economic policy uncertainty shows weaker correlations r = 0.27 with DBAA, it contributes to market volatility and may influence risk premiums during extreme uncertainty events.</p>
+<p>4. Market Efficiency: The tight relationships and rapid information incorporation suggest efficient fixed income markets that quickly incorporate monetary policy expectations.</p>
+<h3>Practical Implications</h3>
+<p>For market participants, these findings suggest that:</p>
+<ul><li>Corporate bond returns are primarily a duration bet, with credit spread opportunities limited</li><li>Predicting SOFR movements is the key to forecasting corporate bond yields</li><li>Policy uncertainty provides secondary signals but should not be the primary input for investment decisions</li></ul>
+<p>For policymakers, the analysis demonstrates:</p>
+<ul><li>Effective transmission of monetary policy to corporate borrowing costs</li><li>Benefits of clear policy communication to reduce unnecessary market volatility</li><li>Resilience of credit markets during significant policy changes</li></ul>
+<p>This analysis provides a solid foundation for understanding the interplay between monetary policy, credit markets, and economic uncertainty, offering valuable insights for both academic research and practical decision-making.</p>
+<hr/>
+<p>Data Availability: All cleaned data and analysis scripts are available in the folder, including the merged dataset and summary statistics .</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

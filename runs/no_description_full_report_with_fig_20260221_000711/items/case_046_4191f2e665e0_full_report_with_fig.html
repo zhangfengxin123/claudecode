@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：airline_route_profitability</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：airline_route_profitability</h1>
+    <p class='sub'>来源: /view/4191f2e665e02f502d6aaf6a73622d61c29c0045621b4facfc4f1821683d7ad9 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Airline Route Profitability Dashboard&quot;
+description: &quot;Comprehensive analysis of airline route profitability, revenue, costs, and operational performance metrics&quot;
+author: &quot;Pardus Presentation Agent&quot;
+date: &quot;2025-02-18&quot;
+mode: &quot;presentation&quot;
+</pre></details>
+<h1>Airline Route Profitability Dashboard</h1>
+<p>This dashboard provides a comprehensive analysis of 7,974 flights, examining profitability patterns, revenue streams, cost structures, and operational performance across different routes, aircraft types, seasons, and demand levels.</p>
+<h2>Executive Summary</h2>
+<p>Key Performance Indicators:</p>
+<ul><li>Total Revenue:2.37 billion across all flights</li><li>Total Cost:1.80 billion</li><li>Net Profit:575.48 million 24.3% margin</li><li>Average Profit Margin:6.19% - above the global industry average of 3.1% IATA 2024</li><li>Average Load Factor:80.16% - slightly below the global average of 82.6% IATA 2024</li></ul>
+<p>The airline demonstrates strong financial performance with profit margins nearly double the industry average, though there&#x27;s room for improvement in load factor optimization.</p>
+<h2>Financial Performance Overview</h2>
+<h2>Route Performance Analysis</h2>
+<h2>Revenue Structure &amp; Composition</h2>
+<h2>Cost Analysis</h2>
+<h2>Aircraft Performance Analysis</h2>
+<h2>Market &amp; Seasonal Analysis</h2>
+<h2>Airport Performance Analysis</h2>
+<h2>Strategic Insights &amp; Recommendations</h2>
+<h3>Key Findings:</h3>
+<p>1. Above-Average Profitability:The airline achieves 6.19% average profit margins, nearly double the global industry average of 3.1% IATA 2024, demonstrating strong operational efficiency and pricing power.</p>
+<p>2. Route Portfolio Optimization:Long Haul routes drive absolute profits but Medium Haul routes offer superior margins. Consider rebalancing the network to increase Medium Haul frequency.</p>
+<p>3. Loss-Making Routes:Identify and address the 10 most loss-making routes through capacity adjustments, pricing strategy revisions, or route discontinuation to improve overall profitability.</p>
+<p>4. Load Factor Potential:The 80.16% average load factor is below the global average of 82.6%. Implementing targeted load factor improvement initiatives could significantly enhance profitability.</p>
+<p>5. Ancillary Revenue Opportunity:Ancillary revenue represents a substantial income stream with growth potential. Analyze high-performing routes for best practices and apply across the network.</p>
+<p>6. Seasonal Variability:Profit fluctuates significantly by season. Implement dynamic pricing and capacity management to smooth seasonal variations and maintain consistent profitability year-round.</p>
+<h3>Performance Benchmarks:</h3>
+<ul><li>Profit Margin:6.19% vs. Industry Average 3.1% IATA 2024 - ✅ Excellent</li><li>Load Factor:80.16% vs. Global Average 82.6% - ⚠️ Room for Improvement</li><li>Positive Margin Flights:68% - ✅ Good</li></ul>
+<p>This comprehensive analysis provides the foundation for data-driven decision-making to optimize route profitability, enhance operational efficiency, and strengthen the airline&#x27;s competitive position in the global aviation market.</p><hr/><p class='muted'>说明：完整报告结构 + 原位图表渲染。plot assets: 0，成功缓存: 0（含路径键与文件名键），失败: 0。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

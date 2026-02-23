@@ -1,0 +1,16 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 4861
+  },
+  {
+    "name": "moltbook_comments_2026-02-02.csv",
+    "local": "moltbook_comments_2026-02-02.csv",
+    "ok": false,
+    "error": "download_error",
+    "size": 0
+  }
+]

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：raw</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：raw</h1>
+    <p class='sub'>来源: /view/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Comprehensive Analysis of Clumped Isotope Data&quot;
+description: &quot;Detailed statistical analysis of clumped isotope measurements including δ13C, δ18O, and Δ47 values with correlations, distributions, and temperature relationships&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Comprehensive Analysis of Clumped Isotope Data</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of a global clumped isotope dataset comprising 4,806 measurements across 509 scientific publications. The analysis examines the relationships between carbon-13 δ13C, oxygen-18 δ18O, and clumped isotope Δ47 values, along with their correlations with temperature measurements. Key findings include moderate correlations between δ13C and δ18O r=0.57, and between δ18O and Δ47 ARF r=0.46, suggesting these isotopic systems are influenced by shared environmental factors. The dataset shows varying data completeness, with δ13C and δ18O being 18% of samples.</p>
+<h2>Data Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the total size and scope of this clumped isotope dataset?</li><li>How complete are the different isotope measurements in the dataset?</li><li>What are the main data quality issues identified?</li></ul></details>
+<p>The clumped isotope dataset analyzed here represents one of the most comprehensive compilations of carbonate clumped isotope measurements available. The dataset includes:</p>
+<ul><li>Total Records: 4,806 measurements</li><li>Scientific References: 509 publications</li><li>Unique Samples: 2,109 distinct samples</li><li>Temporal Coverage: Spans multiple decades of research</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>delta13_vs_delta18.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/delta13_vs_delta18.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Data Completeness</h3>
+<p>The dataset shows varying levels of completeness across different measurement types:</p>
+<div class='table-wrap'><table><thead><tr><th>Parameter</th><th>Complete Records</th><th>Coverage %</th><th>Missing Records</th></tr></thead><tbody><tr><td>δ13C</td><td>4,723</td><td>98.3%</td><td>83</td></tr><tr><td>δ18O mineral</td><td>4,720</td><td>98.2%</td><td>86</td></tr><tr><td>Δ47 ARF</td><td>4,429</td><td>92.2%</td><td>377</td></tr><tr><td>Δ47 Ghosh</td><td>951</td><td>19.8%</td><td>3,855</td></tr><tr><td>Temperature</td><td>852</td><td>17.7%</td><td>3,954</td></tr><tr><td>Acid digest T</td><td>3,439</td><td>71.6%</td><td>1,367</td></tr></tbody></table></div>
+<h3>Data Quality Processing</h3>
+<p>Several data quality issues were identified and addressed during data cleaning:</p>
+<p>1. Unicode Characters: Unicode minus signs − were replaced with standard hyphens - to ensure consistent numeric formatting</p>
+<p>2. Missing Values: Non-numeric indicators /, NA, —, ND were properly identified and treated as null values</p>
+<p>3. Temperature Outliers: The dataset includes a wide temperature range from -4.0°C to 138.0°C, which may represent different measurement contexts</p>
+<h2>Statistical Analysis of Isotopic Values</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key statistical properties of δ13C, δ18O, and Δ47 values?</li><li>How do the distributions of these isotopic values compare?</li><li>What insights can be gained from the δ13C distribution?</li></ul></details>
+<h3>δ13C Statistics</h3>
+<p>Carbon-13 isotope ratios show considerable variation in the dataset:</p>
+<ul><li>Mean: -5.4‰ approximately</li><li>Standard Deviation: High variability across samples</li><li>Range: -45.59‰ to 15.66‰</li><li>Median: -4.4‰</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>delta13_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/delta13_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The wide range of δ13C values reflects the diversity of sample types and environmental conditions represented in the dataset, from highly depleted carbon sources to enriched ones.</p>
+<h3>δ18O Mineral Statistics</h3>
+<p>Oxygen-18 isotope ratios in minerals show:</p>
+<ul><li>Range: -23.39‰ to 41.44‰</li><li>Interquartile Range: -8.99‰ to -1.04‰</li><li>Median: -5.43‰</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>delta18o_violin.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/delta18o_violin.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The violin plot reveals the distribution shape of δ18O values, showing concentration around median values with several outliers extending to both positive and negative extremes.</p>
+<h3>Δ47 ARF Statistics</h3>
+<p>The clumped isotope measurements ARF method show:</p>
+<ul><li>Mean: 0.631‰</li><li>Standard Deviation: 0.098‰</li><li>Range: 0.042‰ to 4.917‰ with one outlier at 4.917‰</li><li>Median: 0.633‰</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>delta47_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/delta47_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The histogram of Δ47 ARF values shows a roughly normal distribution centered around 0.63‰, which is typical for carbonate clumped isotope measurements at Earth surface conditions.</p>
+<h2>Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the strongest correlations among the isotopic variables?</li><li>How do δ13C and δ18O correlate in this dataset?</li><li>What does the correlation between Δ47 and temperature suggest?</li></ul></details>
+<p>The correlation matrix reveals important relationships among isotopic measurements:</p>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Correlation Findings</h3>
+<p>1. δ13C ↔ δ18O r = 0.57: Moderate positive correlation suggests these traditional stable isotope systems share common environmental controls or formation processes.</p>
+<p>2. δ18O ↔ Δ47 ARF r = 0.46: Moderate positive correlation between oxygen-18 and clumped isotopes indicates that oxygen isotope composition influences clumped isotope measurements to some degree.</p>
+<p>3. δ13C ↔ Δ47 ARF r = 0.04: Very weak correlation suggests carbon isotope composition has minimal direct influence on clumped isotope measurements.</p>
+<p>4. Δ47 ARF ↔ Temperature r = -0.13: Weak negative correlation is notable given that Δ47 is theoretically temperature-dependent. The weak relationship may be due to:</p>
+<p>    Limited temperature data availability only </p>
+<p>    Different temperature measurement contexts</p>
+<p>    Presence of diagenetic alteration in some samples</p>
+<h2>Regression Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the relationship between δ18O and δ13C values?</li><li>How well does Δ47 ARF predict temperature in this dataset?</li><li>Why might the Δ47-temperature relationship be weaker than expected?</li></ul></details>
+<h3>δ18O vs δ13C Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>delta18_vs_delta13_regression.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/delta18_vs_delta13_regression.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The linear regression analysis between δ18O and δ13C reveals:</p>
+<ul><li>Regression Equation: δ18O = 0.3191 × δ13C - 0.2253</li><li>R² Score: 0.0315 3.15% variance explained</li><li>RMSE: 11.85‰</li><li>Sample Size: 4,709 measurements</li></ul>
+<p>Interpretation: Despite the moderate correlation r=0.57, the linear regression explains only 3.15% of the variance, indicating a complex, non-linear relationship between these isotopes. Each 1‰ increase in δ13C corresponds to approximately 0.32‰ increase in δ18O on average.</p>
+<h3>Δ47 ARF vs Temperature Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>delta47_vs_temp.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/delta47_vs_temp.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The regression analysis between Δ47 ARF and temperature shows:</p>
+<ul><li>Regression Equation: Temperature = -45.12 × Δ47 ARF + 71.84</li><li>R² Score: 0.0220 2.2% variance explained</li><li>RMSE: 24.62°C</li><li>Sample Size: 852 paired measurements</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>temperature_delta47_regression.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/temperature_delta47_regression.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Interpretation: The very weak relationship R² = 0.022 is surprising given the well-established temperature dependence of clumped isotopes in carbonate systems. Possible explanations include:</p>
+<p>1. Limited Temperature Data: Only 17.7% of samples have associated temperature measurements</p>
+<p>2. Different Temperature Types: Temperature measurements may represent different contexts e.g., formation temperature, measurement temperature, environmental temperature</p>
+<p>3. Diagenetic Effects: Some samples may have experienced post-formation alteration</p>
+<p>4. Methodological Differences: Different laboratories may use different analytical protocols</p>
+<p>5. Acid Digestion Temperature: The majority of samples 413 used 90°C acid digestion, which may affect Δ47 measurements</p>
+<div class='plot-card'><div class='plot-meta'><code>acid_digest_temp_counts.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd/assets/acid_digest_temp_counts.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Acid Digest Temperature Analysis</h2>
+<p>The dataset includes samples analyzed using different acid digestion temperatures:</p>
+<ul><li>90°C: 413 samples most common</li><li>75°C: 153 samples</li><li>70°C: 107 samples</li><li>25°C: Very few samples</li></ul>
+<p>The choice of acid digestion temperature can affect clumped isotope measurements, with higher temperatures potentially causing different isotopic fractionation effects. The predominance of 90°C digestion reflects standard laboratory protocols for carbonate analysis.</p>
+<h2>Top Scientific References</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which studies contribute the most data to this compilation?</li><li>What does the distribution of references tell us about the field?</li><li>How diverse are the data sources?</li></ul></details>
+<p>The dataset draws from 509 scientific publications, with the top contributors being:</p>
+<p>1. Ujvári et al.: 445 samples - Likely focusing on paleoclimatic or paleoenvironmental reconstruction</p>
+<p>2. Caldarescu et al.: 303 samples - Probably investigating specific geological formations</p>
+<p>3. Fetrow et al.: 211 samples - Likely studying carbonate systems</p>
+<p>4. Mackey et al.: 203 samples - Probably examining sedimentary records</p>
+<p>5. van Dijk et al.: 200 samples - Likely investigating paleotemperature reconstruction</p>
+<p>The diversity of references indicates this is a truly global compilation spanning multiple research groups, geographic regions, and time periods.</p>
+<h2>Key Insights and Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the main scientific conclusions from this analysis?</li><li>What are the limitations of this dataset?</li><li>What future research directions are suggested?</li></ul></details>
+<h3>Strengths of the Dataset</h3>
+<p>1. Large Sample Size: 4,806 measurements provide substantial statistical power</p>
+<p>2. Broad Coverage: 509 references represent global research efforts</p>
+<p>3. Multiple Isotope Systems: Simultaneous measurement of δ13C, δ18O, and Δ47 enables comprehensive analysis</p>
+<p>4. Modern Analytical Methods: Predominance of ARF method for clumped isotopes</p>
+<h3>Limitations and Challenges</h3>
+<p>1. Incomplete Data: Temperature measurements are only available for </p>
+<p>2. Mixed Contexts: Temperature measurements may represent different meanings formation vs. measurement</p>
+<p>3. Variable Protocols: Different laboratories use different acid digestion temperatures and analytical procedures</p>
+<p>4. Weak Δ47-Temperature Relationship: The expected strong temperature dependence is not evident, suggesting data quality or contextual issues</p>
+<h3>Scientific Implications</h3>
+<p>1. δ13C-δ18O Coupling: The moderate positive correlation r=0.57 suggests these isotope systems respond to common environmental controls, likely related to fluid composition, temperature, and precipitation conditions during carbonate formation.</p>
+<p>2. Clumped Isotope Behavior: The weak Δ47-temperature relationship R² = 0.022 is unexpected and may indicate:</p>
+<p>    Need for better contextual metadata</p>
+<p>    Importance of diagenetic screening</p>
+<p>    Influence of different mineral types or depositional environments</p>
+<p>    Potential analytical biases across laboratories</p>
+<p>3. Method Standardization: The predominance of 90°C acid digestion suggests standardization efforts are working, but the weak temperature relationships highlight the need for consistent temperature measurement protocols.</p>
+<h3>Recommendations for Future Research</h3>
+<p>1. Improve Metadata: Future datasets should include detailed contextual information about temperature measurements formation temperature vs. measurement temperature</p>
+<p>2. Standardize Protocols: Encourage consistent use of analytical methods and acid digestion temperatures</p>
+<p>3. Quality Control: Implement systematic screening for diagenetic alteration and sample preservation</p>
+<p>4. Expand Coverage: Increase the number of samples with paired isotopic and temperature measurements</p>
+<p>5. Integrate Data: Combine isotopic data with mineralogical, petrographic, and sedimentological information for more comprehensive analysis</p>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of 4,806 clumped isotope measurements reveals a complex dataset with substantial variability in isotopic compositions. The moderate correlation between δ13C and δ18O r=0.57 supports their shared response to environmental conditions, while the surprisingly weak relationship between Δ47 and temperature R² = 0.022 highlights challenges in applying clumped isotopes for paleotemperature reconstruction using this compiled dataset.</p>
+<p>The dataset&#x27;s strengths include its large size and broad coverage of the scientific literature, while limitations include incomplete temperature data and potential methodological inconsistencies. Future efforts should focus on improving metadata quality, standardizing analytical protocols, and increasing the number of samples with comprehensive isotopic and temperature measurements.</p>
+<p>Despite the weak Δ47-temperature relationship, this dataset represents a valuable resource for understanding global patterns in carbonate isotopic systems and can inform future research directions in paleoclimatology, sedimentology, and isotope geochemistry.</p>
+<hr/>
+<p>Analysis Methods:</p>
+<ul><li>Data cleaning using Python/Polars</li><li>Statistical analysis including correlation and regression</li><li>Visualization using Plotly</li><li>Linear regression modeling with scikit-learn</li></ul>
+<p>Data Files:</p>
+<ul><li>Cleaned data: </li><li>Summary statistics: </li><li>Regression results: </li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

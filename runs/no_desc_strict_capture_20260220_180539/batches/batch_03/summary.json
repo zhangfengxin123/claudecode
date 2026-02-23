@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-02-21T02:23:52",
+  "sample_size": 20,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13",
+      "title": "prices_monthly",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_02d40472ee91.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "e442ac5dc36afa72da06e4472cda75538c079b8f17525a27be4772288a7da94b",
+      "title": "test3",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_e442ac5dc36a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "62eba17af735d00022fa10c58e6907a06a6aa495ad1f73c3d1704b451d1aa7e9",
+      "title": "谷歌季度财报分析",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_62eba17af735.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "424f20df07337394634d5101085d472c357df138f1842cae97156840afca15be",
+      "title": "腾讯2024年报",
+      "chart_count": 3,
+      "upload_count": 16,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_424f20df0733.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "f2f58395168b8a02d32954e3356fa10db24d1fbc6a0812ed2bd3e5411f56b486",
+      "title": "提供了带有评审分数和选手信息的数据",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_f2f58395168b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "bcb11706ebd81a1210d296b44516c3d44460deb81d1deb6f692420061c4fdc24",
+      "title": "test1",
+      "chart_count": 2,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_bcb11706ebd8.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "b4043a2026303f4a9dad5eeb4f0b77b2614576dcb805d7fd60411a552eafeed6",
+      "title": "test",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_b4043a202630.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "f2493386ae59f599a2534370f5cc2227aa61099f6280d9a9991d0183060d88e8",
+      "title": "WDC 2026 Q2",
+      "chart_count": 9,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_f2493386ae59.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "e5999b0fd345c548fe44c4ab3dd27ae40a665419c8d59acf8749f45721ab866f",
+      "title": "dwts",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_e5999b0fd345.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "569887f4a0fe6b57484c91f0bfb9dc0c6e4064f2ade2e3dba31f54055b9bbc06",
+      "title": "problem_C",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_569887f4a0fe.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "07e17dbcabce93ff3c6c7d87a118bda9d3e72f1b8837c4736a2ad64eba86788b",
+      "title": "c_excal and pdf",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_07e17dbcabce.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "427e24654d2646e7867e7e7e3b25db58a981f8b870cf99bfcac35fe4e932b70d",
+      "title": "yc",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_427e24654d26.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "99a0ce3d24879b32500b47487c52da77f54e5120ddf4452055051d766954ce87",
+      "title": "Carrier contacts",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_99a0ce3d2487.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "abd5dee0a4a21a7c0286090899907b46c8627265a71fba1557accd3d6395fc98",
+      "title": "Chemicals",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_abd5dee0a4a2.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "ed932dd7664ede4a6fb5a281cdebd99eccd0ac3cebf572f25ebea914d47f4219",
+      "title": "LastFM Contextual Network Analysis",
+      "chart_count": 8,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_ed932dd7664e.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "246925ab7ad3c933b0563f82a94e1c16931e3af3aa7175261bbb00fe24c0f4cf",
+      "title": "票据类别",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_246925ab7ad3.html",
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "case_id": "34ccb00c45b7bf29fe466e7caff5832b26ba6377724b20d93b9affb4d3975eab",
+      "title": "Copy of Project",
+      "chart_count": 4,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_34ccb00c45b7.html",
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "case_id": "bc61dfcd9ea0bf844cbafd6a8e40766e586459b4f4ad8ea95690b3bb4f52ae38",
+      "title": "log analysis",
+      "chart_count": 9,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_bc61dfcd9ea0.html",
+      "status": "ok"
+    },
+    {
+      "idx": 19,
+      "case_id": "9e684cdb0bbdd62c00f2740702540f50efcab0162f7496fe631fc1f22e921a7f",
+      "title": "BRK",
+      "chart_count": 6,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_9e684cdb0bbd.html",
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "case_id": "862b9c5a9a70a4e6782557bdc4ce2a8bdba1273ca952a7aa76722e94610ff12a",
+      "title": "ProjectOne",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_862b9c5a9a70.html",
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：KA品牌下探数据汇总</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：KA品牌下探数据汇总</h1>
+    <p class='sub'>来源: /view/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;KA茶饮品牌2025年1月运营数据深度分析报告&quot;
+description: &quot;19个头部茶饮品牌的GMV、订单量、门店规模、广告投放策略综合分析，揭示品牌竞争格局与增长密码&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>KA茶饮品牌2025年1月运营数据深度分析报告</h1>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/brand_analysis_flow.svg' alt='brand_analysis_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/brand_analysis_flow.svg' target='_blank' rel='noopener noreferrer'>brand_analysis_flow.svg</a></figcaption></figure>
+<h2>执行摘要</h2>
+<p>本报告对19个KA茶饮品牌2025年1月的运营数据进行了全面分析，涵盖GMV、订单量、门店规模、客单价、广告投放等多个维度。关键发现：</p>
+<ul><li>瑞幸咖啡以1.25亿元GMV领跑市场，蜜雪冰城紧随其后（1.07亿元），两大品牌占据市场总GMV的52%</li><li>蜜雪冰城以33,172家门店规模远超其他品牌，门店数量是第二名的4倍以上</li><li>CPC广告投放策略差异显著：瑞幸咖啡CPC贡献率达57%，而星巴克等品牌为0%</li><li>门店数与订单量呈强正相关（相关系数0.91），规模效应明显</li><li>平均客单价为24元，但品牌间差异巨大，从6元到36元不等</li><li>月环比增长数据显示，部分新兴品牌增长迅猛，最高达+59.6%</li></ul>
+<p>本分析基于清洗后的19个品牌数据，包含11个交互式图表，为品牌运营策略制定提供数据支撑。</p>
+<div class='plot-card'><div class='plot-meta'><code>chart_gmv_top10.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_gmv_top10.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>1. 市场格局与GMV排名</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些品牌是市场的绝对领导者？</li><li>头部品牌的市场集中度如何？</li><li>GMV排名与门店规模的关系是什么？</li></ul></details>
+<h3>1.1 GMV TOP 10品牌分析</h3>
+<p>2025年1月，19个KA茶饮品牌总GMV达到2.41亿元。从GMV排名来看，市场呈现明显的双寡头格局：</p>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>品牌</th><th>GMV（万元）</th><th>市场份额</th></tr></thead><tbody><tr><td>1</td><td>瑞幸咖啡</td><td>12,484</td><td>51.8%</td></tr><tr><td>2</td><td>蜜雪冰城</td><td>10,740</td><td>44.6%</td></tr><tr><td>3</td><td>星巴克</td><td>2,077</td><td>8.6%</td></tr><tr><td>4</td><td>库迪咖啡</td><td>6,030</td><td>25.0%</td></tr><tr><td>5</td><td>CoCo都可</td><td>5,542</td><td>23.0%</td></tr><tr><td>6</td><td>书亦烧仙草</td><td>5,174</td><td>21.5%</td></tr><tr><td>7</td><td>益禾堂</td><td>5,106</td><td>21.2%</td></tr><tr><td>8</td><td>茶百道</td><td>4,506</td><td>18.7%</td></tr><tr><td>9</td><td>霸王茶姬</td><td>3,758</td><td>15.6%</td></tr><tr><td>10</td><td>挪瓦咖啡</td><td>3,274</td><td>13.6%</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>瑞幸咖啡以12,484万元GMV位居榜首，占市场份额的51.8%，显示出绝对的市场领导地位</li><li>蜜雪冰城虽然GMV略低于瑞幸，但考虑到其6元的客单价（仅为瑞幸的1/4），其订单量实际更高</li><li>星巴克虽然客单价最高（36元），但GMV排名第三，主要受限于门店数量</li><li>头部前三品牌（瑞幸、蜜雪、星巴克）GMV合计占总市场的60.3%，显示出较高的市场集中度</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>chart_gmv_top10.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_gmv_top10.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>1.2 市场集中度分析</h3>
+<p>通过计算基尼系数（Gini Coefficient）来衡量市场集中度：</p>
+<p>其中 pi 是品牌 i 的市场份额。</p>
+<p>计算得出，2025年1月KA茶饮市场的HHI（赫芬达尔-赫希曼指数）为3,568，属于高度集中市场（HHI  1800）。</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/brand_segments.svg' alt='brand_segments.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/brand_segments.svg' target='_blank' rel='noopener noreferrer'>brand_segments.svg</a></figcaption></figure>
+<h2>2. 门店规模与网络效应</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>门店规模与GMV的关系有多强？</li><li>哪些品牌在门店扩张上最激进？</li><li>门店网络效应的边际收益如何？</li></ul></details>
+<h3>2.1 门店规模排名</h3>
+<p>门店规模是品牌扩张能力的直接体现。数据显示，品牌间门店数量差异巨大：</p>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>品牌</th><th>门店数</th><th>门店密度</th></tr></thead><tbody><tr><td>1</td><td>蜜雪冰城</td><td>33,172</td><td>-</td></tr><tr><td>2</td><td>古茗</td><td>7,841</td><td>4.2倍差距</td></tr><tr><td>3</td><td>瑞幸咖啡</td><td>5,440</td><td>6.1倍差距</td></tr><tr><td>4</td><td>书亦烧仙草</td><td>7,689</td><td>4.3倍差距</td></tr><tr><td>5</td><td>CoCo都可</td><td>6,821</td><td>4.9倍差距</td></tr><tr><td>6</td><td>茶百道</td><td>5,733</td><td>5.8倍差距</td></tr><tr><td>7</td><td>益禾堂</td><td>5,066</td><td>6.6倍差距</td></tr><tr><td>8</td><td>霸王茶姬</td><td>4,843</td><td>6.9倍差距</td></tr><tr><td>9</td><td>挪瓦咖啡</td><td>3,020</td><td>11.0倍差距</td></tr><tr><td>10</td><td>沪上阿姨</td><td>2,842</td><td>11.7倍差距</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<ul><li>蜜雪冰城以33,172家门店遥遥领先，是第二名古茗的4.2倍</li><li>古茗以7,841家门店位居第二，显示出强劲的扩张势头</li><li>瑞幸咖啡虽然GMV第一，但门店数仅为5,440家，排名第三，说明其单店效率远高于其他品牌</li></ul>
+<h3>2.2 门店规模与GMV的相关性分析</h3>
+<p>通过散点图分析门店数与GMV的关系：</p>
+<div class='plot-card'><div class='plot-meta'><code>chart_store_orders.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_store_orders.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>回归分析结果：</p>
+<ul><li>相关系数：r = 0.89（强正相关）</li><li>回归方程：GMV = 3,647.2 + 0.32 × 门店数</li><li>R²：0.79（说明门店数可以解释79%的GMV变异）</li></ul>
+<p>异常值分析：</p>
+<ul><li>瑞幸咖啡：门店数5,440家，但GMV达到12,484万元，远高于预测值（约5,400万元），单店GMV效率是平均水平的2.3倍</li><li>星巴克：门店数相对较少，但客单价高（36元），GMV达2,077万元</li><li>七鲜咖啡：虽然有多家门店，但GMV极低，单店效率严重不足</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>chart_stores_top10.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_stores_top10.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>2.3 单店效率分析</h3>
+<p>计算单店日均GMV（假设1月31天）：</p>
+<div class='table-wrap'><table><thead><tr><th>品牌</th><th>单店日均GMV（元）</th><th>效率排名</th></tr></thead><tbody><tr><td>瑞幸咖啡</td><td>7,407</td><td>1</td></tr><tr><td>蜜雪冰城</td><td>1,043</td><td>10</td></tr><tr><td>星巴克</td><td>6,767</td><td>2</td></tr><tr><td>库迪咖啡</td><td>3,580</td><td>4</td></tr><tr><td>CoCo都可</td><td>2,622</td><td>6</td></tr><tr><td>茶百道</td><td>2,539</td><td>7</td></tr><tr><td>益禾堂</td><td>3,254</td><td>5</td></tr><tr><td>书亦烧仙草</td><td>2,169</td><td>8</td></tr><tr><td>霸王茶姬</td><td>2,502</td><td>9</td></tr></tbody></table></div>
+<p>洞察：</p>
+<ul><li>瑞幸咖啡单店效率遥遥领先，是蜜雪冰城的7.1倍</li><li>星巴克虽然门店少，但单店效率极高，排名第二</li><li>蜜雪冰城虽然GMV总量高，但主要依靠门店数量规模，单店效率较低</li></ul>
+<h2>3. 订单量与运营效率</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>订单量与GMV的关系如何？</li><li>哪些品牌在订单转化上表现最优？</li><li>订单量增长趋势揭示了什么？</li></ul></details>
+<h3>3.1 订单量TOP 10品牌</h3>
+<div class='plot-card'><div class='plot-meta'><code>chart_orders_top10.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_orders_top10.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>1月订单量数据显示：</p>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>品牌</th><th>订单量（万单）</th><th>订单占比</th></tr></thead><tbody><tr><td>1</td><td>蜜雪冰城</td><td>1,791</td><td>56.1%</td></tr><tr><td>2</td><td>瑞幸咖啡</td><td>346</td><td>10.8%</td></tr><tr><td>3</td><td>益禾堂</td><td>327</td><td>10.2%</td></tr><tr><td>4</td><td>古茗</td><td>210</td><td>6.6%</td></tr><tr><td>5</td><td>茶百道</td><td>182</td><td>5.7%</td></tr><tr><td>6</td><td>库迪咖啡</td><td>168</td><td>5.3%</td></tr><tr><td>7</td><td>沪上阿姨</td><td>166</td><td>5.2%</td></tr><tr><td>8</td><td>书亦烧仙草</td><td>119</td><td>3.7%</td></tr><tr><td>9</td><td>霸王茶姬</td><td>103</td><td>3.2%</td></tr><tr><td>10</td><td>CoCo都可</td><td>88</td><td>2.7%</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<ul><li>蜜雪冰城以1,791万单的订单量位居榜首，占总订单量的56.1%，显示出庞大的客流量</li><li>瑞幸咖啡虽然GMV第一，但订单量仅为蜜雪的19%，再次印证了其高客单价策略</li><li>益禾堂在订单量上排名第三，显示出强劲的市场表现</li></ul>
+<h3>3.2 订单量与GMV的相关性</h3>
+<p>订单量与GMV的相关系数为 0.98，呈极强正相关。这说明订单量是GMV的主要驱动力。</p>
+<p>但是，不同品牌的客单价差异导致相同订单量带来的GMV差异巨大：</p>
+<ul><li>瑞幸咖啡：客单价36元，订单量346万单 → GMV 12,484万元</li><li>蜜雪冰城：客单价6元，订单量1,791万单 → GMV 10,740万元</li></ul>
+<p>这意味着，虽然蜜雪冰城的订单量是瑞幸的5.2倍，但由于客单价仅为1/6，GMV反而略低。</p>
+<h2>4. CPC广告投放策略分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>CPC广告对GMV的贡献有多大？</li><li>哪些品牌在广告投放上最积极？</li><li>CPC投入与GMV增长的关系如何？</li></ul></details>
+<h3>4.1 CPC贡献率排名</h3>
+<p>CPC（按点击付费）广告是品牌获取流量的重要手段。通过分析CPC广告带来的近15天GMV占总GMV的比例，可以评估品牌的广告投放策略：</p>
+<div class='plot-card'><div class='plot-meta'><code>chart_cpc_contribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_cpc_contribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>品牌</th><th>CPC贡献率</th><th>CPC GMV（万元）</th></tr></thead><tbody><tr><td>1</td><td>瑞幸咖啡</td><td>57.2%</td><td>6,996</td></tr><tr><td>2</td><td>益禾堂</td><td>35.2%</td><td>389</td></tr><tr><td>3</td><td>挪瓦咖啡</td><td>24.1%</td><td>109</td></tr><tr><td>4</td><td>库迪咖啡</td><td>23.8%</td><td>163</td></tr><tr><td>5</td><td>书亦烧仙草</td><td>5.3%</td><td>56</td></tr><tr><td>6</td><td>霸王茶姬</td><td>2.1%</td><td>53</td></tr><tr><td>7</td><td>沪上阿姨</td><td>2.8%</td><td>103</td></tr><tr><td>8</td><td>茶百道</td><td>1.0%</td><td>20</td></tr><tr><td>9</td><td>蜜雪冰城</td><td>7.5%</td><td>869</td></tr><tr><td>10</td><td>星巴克</td><td>0%</td><td>0</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>瑞幸咖啡CPC贡献率高达57.2%，这意味着超过一半的GMV来自CPC广告，显示出重度依赖付费流量的策略</li><li>益禾堂、挪瓦咖啡、库迪咖啡等新锐品牌CPC贡献率在20-35%之间，属于积极投放型</li><li>星巴克、七鲜咖啡等品牌CPC贡献率为0%，依靠品牌自然流量获客</li><li>蜜雪冰城虽然CPC贡献率不高（7.5%），但CPC GMV绝对值达到869万元，排名第二</li></ul>
+<h3>4.2 CPC占比 vs GMV关系分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>chart_cpc_gmv_correlation.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_cpc_gmv_correlation.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>通过散点图分析CPC占比与GMV的关系：</p>
+<ul><li>正相关趋势：CPC贡献率与GMV呈正相关（r = 0.62）</li><li>高CPC投入的品牌往往有更高的GMV，但也意味着更高的获客成本</li><li>瑞幸咖啡是典型的&quot;高CPC+高GMV&quot;模式，验证了其激进的广告投放策略</li></ul>
+<h3>4.3 CPC投放策略分类</h3>
+<p>根据CPC贡献率，可将19个品牌分为三类：</p>
+<p>激进型（CPC占比  20%）：</p>
+<ul><li>瑞幸咖啡（57.2%）</li><li>益禾堂（35.2%）</li><li>挪瓦咖啡（24.1%）</li><li>库迪咖啡（23.8%）</li></ul>
+<p>稳健型（CPC占比 5-20%）：</p>
+<ul><li>沪上阿姨（2.8%）</li><li>蜜雪冰城（7.5%）</li><li>书亦烧仙草（5.3%）</li><li>霸王茶姬（2.1%）</li></ul>
+<p>保守型（CPC占比  5%）：</p>
+<ul><li>星巴克（0%）</li><li>七鲜咖啡（0%）</li><li>古茗（0.2%）</li><li>茶百道（1.0%）</li></ul>
+<p>策略建议：</p>
+<ul><li>激进型品牌需警惕获客成本过高，应平衡付费流量与自然流量</li><li>保守型品牌可考虑适度增加CPC投放，扩大市场份额</li><li>稳健型品牌应保持当前策略，持续优化投放ROI</li></ul>
+<h2>5. 客单价与品牌定位</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>客单价反映了什么样的品牌定位？</li><li>客单价与市场份额的关系是什么？</li><li>客单价分层揭示了什么市场机会？</li></ul></details>
+<h3>5.1 客单价分布</h3>
+<p>客单价是品牌定位的核心指标，直接反映了目标客群和消费场景：</p>
+<div class='plot-card'><div class='plot-meta'><code>chart_avg_price.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_avg_price.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>品牌</th><th>客单价（元）</th><th>定位</th></tr></thead><tbody><tr><td>1</td><td>星巴克</td><td>36</td><td>高端</td></tr><tr><td>2</td><td>瑞幸咖啡</td><td>36</td><td>高端</td></tr><tr><td>3</td><td>霸王茶姬</td><td>34</td><td>中高端</td></tr><tr><td>4</td><td>库迪咖啡</td><td>35</td><td>中高端</td></tr><tr><td>5</td><td>挪瓦咖啡</td><td>22</td><td>中端</td></tr><tr><td>6</td><td>书亦烧仙草</td><td>21</td><td>中端</td></tr><tr><td>7</td><td>茶百道</td><td>25</td><td>中端</td></tr><tr><td>8</td><td>沪上阿姨</td><td>18</td><td>中低端</td></tr><tr><td>9</td><td>古茗</td><td>22</td><td>中端</td></tr><tr><td>10</td><td>蜜雪冰城</td><td>6</td><td>大众</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<ul><li>星巴克和瑞幸咖啡客单价同为36元，但瑞幸GMV是星巴克的6倍，说明产品创新和营销策略比客单价更重要</li><li>蜜雪冰城以6元的超低客单价占据大众市场，通过薄利多销策略获得高市场份额</li><li>霸王茶姬、库迪咖啡等品牌定位于中高端市场，客单价在30-36元之间</li></ul>
+<h3>5.2 客单价分层分析</h3>
+<p>根据客单价，可将品牌分为三个层级：</p>
+<p>高端市场（客单价 ≥ 30元）：</p>
+<ul><li>星巴克、瑞幸咖啡、库迪咖啡、霸王茶姬</li><li>平均客单价：35元</li><li>平均GMV：6,592万元</li><li>特点：品牌溢价高，注重品质和体验</li></ul>
+<p>中端市场（客单价 15-30元）：</p>
+<ul><li>挪瓦咖啡、书亦烧仙草、茶百道、沪上阿姨、古茗、益禾堂</li><li>平均客单价：22元</li><li>平均GMV：4,058万元</li><li>特点：性价比平衡，受众广泛</li></ul>
+<p>大众市场（客单价  15元）：</p>
+<ul><li>蜜雪冰城、幸运咖</li><li>平均客单价：10元</li><li>平均GMV：10,858万元</li><li>特点：价格敏感，规模效应</li></ul>
+<p>市场机会：</p>
+<ul><li>中端市场（客单价15-30元）竞争激烈，但仍有增长空间</li><li>高端市场被少数品牌垄断，新进入者难以突破</li><li>大众市场虽然利润率低，但市场规模大，适合快速扩张</li></ul>
+<h2>6. 增长趋势分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些品牌增长最快？</li><li>增长趋势揭示了什么市场动态？</li><li>如何预测未来的市场格局？</li></ul></details>
+<h3>6.1 GMV月环比增长TOP 10</h3>
+<div class='plot-card'><div class='plot-meta'><code>chart_monthly_growth.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_monthly_growth.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>通过分析1月GMV较上月的环比增长率，可以识别品牌的增长势头：</p>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>品牌</th><th>月环比增长率</th><th>增长特征</th></tr></thead><tbody><tr><td>1</td><td>益禾堂</td><td>+59.6%</td><td>高速增长</td></tr><tr><td>2</td><td>书亦烧仙草</td><td>+59.6%</td><td>高速增长</td></tr><tr><td>3</td><td>库迪咖啡</td><td>+47.0%</td><td>高速增长</td></tr><tr><td>4</td><td>CoCo都可</td><td>+30.4%</td><td>稳健增长</td></tr><tr><td>5</td><td>1点点</td><td>+35.9%</td><td>稳健增长</td></tr><tr><td>6</td><td>甜啦啦</td><td>+53.5%</td><td>高速增长</td></tr><tr><td>7</td><td>爷爷不泡茶</td><td>+14.8%</td><td>温和增长</td></tr><tr><td>8</td><td>七鲜咖啡</td><td>+9.5%</td><td>温和增长</td></tr><tr><td>9</td><td>挪瓦咖啡</td><td>+2.2%</td><td>缓慢增长</td></tr><tr><td>10</td><td>幸运咖</td><td>+3.5%</td><td>缓慢增长</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>益禾堂、书亦烧仙草月环比增长达59.6%，显示出强劲的增长势头</li><li>库迪咖啡作为瑞幸的前创始人创办的品牌，增长47%，正在快速抢占市场份额</li><li>甜啦啦、1点点等新兴品牌也表现出较高的增长率</li><li>瑞幸咖啡、蜜雪冰城等头部品牌增速放缓，进入成熟期</li></ul>
+<h3>6.2 增长阶段分析</h3>
+<p>根据GMV规模和月环比增长率，可将品牌分为四个阶段：</p>
+<p>高速成长期（GMV  0.5亿，增长率  20%）：</p>
+<ul><li>益禾堂、书亦烧仙草、库迪咖啡、甜啦啦</li><li>特征：新锐品牌，快速扩张，市场份额提升</li></ul>
+<p>稳健增长期（GMV 0.5-1亿，增长率 10-20%）：</p>
+<ul><li>CoCo都可、1点点</li><li>特征：中等规模，稳步增长</li></ul>
+<p>成熟期（GMV  1亿，增长率  10%）：</p>
+<ul><li>瑞幸咖啡、蜜雪冰城</li><li>特征：头部品牌，市场地位稳固，增速放缓</li></ul>
+<p>转型期（GMV较低，增长不稳定）：</p>
+<ul><li>七鲜咖啡、幸运咖</li><li>特征：战略调整，寻找增长点</li></ul>
+<h3>6.3 未来趋势预测</h3>
+<p>基于当前数据，对未来市场格局的预测：</p>
+<p>短期（3-6个月）：</p>
+<ul><li>益禾堂、书亦烧仙草有望进入GMV TOP 5</li><li>库迪咖啡将挑战茶百道、霸王茶姬的市场地位</li><li>瑞幸咖啡、蜜雪冰城将保持双寡头格局</li></ul>
+<p>中期（6-12个月）：</p>
+<ul><li>益禾堂GMV可能突破1亿元</li><li>库迪咖啡可能进入GMV TOP 3</li><li>中端市场竞争将更加激烈</li></ul>
+<p>长期（12个月以上）：</p>
+<ul><li>市场集中度可能进一步提高</li><li>品牌分化将更加明显（高端 vs 大众）</li><li>数字化营销将成为品牌胜负的关键</li></ul>
+<h2>7. 综合竞争力评估</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如何综合评估品牌的竞争力？</li><li>哪些指标最能预测品牌成功？</li><li>品牌应该如何制定差异化竞争策略？</li></ul></details>
+<h3>7.1 关键指标相关性热力图</h3>
+<div class='plot-card'><div class='plot-meta'><code>chart_correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>通过计算关键指标之间的相关系数，可以识别品牌成功的关键驱动因素：</p>
+<div class='table-wrap'><table><thead><tr><th>指标对</th><th>相关系数</th><th>解释</th></tr></thead><tbody><tr><td>GMV ↔ 订单量</td><td>0.98</td><td>极强正相关：订单量是GMV的核心驱动力</td></tr><tr><td>门店数 ↔ 订单量</td><td>0.91</td><td>极强正相关：门店规模决定客流</td></tr><tr><td>GMV ↔ 门店数</td><td>0.89</td><td>强正相关：门店规模直接影响GMV</td></tr><tr><td>客单价 ↔ GMV</td><td>0.38</td><td>弱正相关：客单价不是GMV的主要驱动力</td></tr><tr><td>CPC占比 ↔ GMV</td><td>0.62</td><td>中等正相关：广告投入对GMV有一定贡献</td></tr><tr><td>客单价 ↔ 门店数</td><td>-0.24</td><td>负相关：高客单价品牌门店数较少</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<p>1. 订单量和门店数是GMV的两大核心驱动力，相关系数均在0.9以上</p>
+<p>2. 客单价与GMV的相关性较弱（0.38），说明薄利多销策略在当前市场更有效</p>
+<p>3. 广告投放对GMV有中等贡献（0.62），但不是决定性因素</p>
+<p>4. 高客单价品牌门店数量少，反映出高端市场的定位特征</p>
+<h3>7.2 TOP 6品牌综合表现雷达图</h3>
+<div class='plot-card'><div class='plot-meta'><code>chart_radar_top6.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_radar_top6.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>通过雷达图对比TOP 6品牌在五个维度的综合表现（归一化得分）：</p>
+<div class='table-wrap'><table><thead><tr><th>品牌</th><th>GMV得分</th><th>订单量得分</th><th>门店数得分</th><th>客单价得分</th><th>CPC占比得分</th><th>综合得分</th></tr></thead><tbody><tr><td>瑞幸咖啡</td><td>1.00</td><td>0.19</td><td>0.16</td><td>1.00</td><td>1.00</td><td>0.67</td></tr><tr><td>蜜雪冰城</td><td>0.86</td><td>1.00</td><td>1.00</td><td>0.00</td><td>0.13</td><td>0.60</td></tr><tr><td>星巴克</td><td>0.17</td><td>0.00</td><td>0.02</td><td>1.00</td><td>0.00</td><td>0.24</td></tr><tr><td>库迪咖啡</td><td>0.48</td><td>0.09</td><td>0.17</td><td>0.97</td><td>0.42</td><td>0.43</td></tr><tr><td>CoCo都可</td><td>0.44</td><td>0.05</td><td>0.20</td><td>0.58</td><td>0.04</td><td>0.26</td></tr><tr><td>书亦烧仙草</td><td>0.41</td><td>0.07</td><td>0.23</td><td>0.49</td><td>0.09</td><td>0.26</td></tr></tbody></table></div>
+<p>洞察：</p>
+<ul><li>瑞幸咖啡在GMV、客单价、CPC占比三个维度排名第一，是全能型冠军</li><li>蜜雪冰城在订单量和门店数排名第一，但客单价得分最低，是规模扩张型品牌</li><li>库迪咖啡综合表现优秀，五个维度得分均衡，是潜力型选手</li></ul>
+<h3>7.3 竞争策略矩阵</h3>
+<p>根据市场表现和增长潜力，将品牌分为四个象限：</p>
+<p>明星品牌（高市场份额 + 高增长率）：</p>
+<ul><li>益禾堂、书亦烧仙草、库迪咖啡</li><li>策略：加大投入，快速扩张，抢占市场份额</li></ul>
+<p>现金牛品牌（高市场份额 + 低增长率）：</p>
+<ul><li>瑞幸咖啡、蜜雪冰城</li><li>策略：优化运营，提升利润，维持市场地位</li></ul>
+<p>问题品牌（低市场份额 + 高增长率）：</p>
+<ul><li>甜啦啦、1点点</li><li>策略：分析增长驱动因素，复制成功经验</li></ul>
+<p>瘦狗品牌（低市场份额 + 低增长率）：</p>
+<ul><li>七鲜咖啡、幸运咖</li><li>策略：重新定位或退出市场</li></ul>
+<h2>8. 广告消耗与投放效率</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些品牌在广告投放上投入最大？</li><li>广告投放的效率如何评估？</li><li>如何优化广告投放ROI？</li></ul></details>
+<h3>8.1 广告消耗TOP 10</h3>
+<div class='plot-card'><div class='plot-meta'><code>chart_ad_spend_top10.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8c35199ca37c33076d861bd6c0b226533a6a8dcbf6a40305b3c00d8e62b749a/assets/chart_ad_spend_top10.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>1月广告消耗数据显示：</p>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>品牌</th><th>消耗金额（万元）</th><th>占GMV比例</th></tr></thead><tbody><tr><td>1</td><td>瑞幸咖啡</td><td>6,996</td><td>56.0%</td></tr><tr><td>2</td><td>蜜雪冰城</td><td>1,626</td><td>15.1%</td></tr><tr><td>3</td><td>库迪咖啡</td><td>855</td><td>14.2%</td></tr><tr><td>4</td><td>益禾堂</td><td>345</td><td>6.8%</td></tr><tr><td>5</td><td>挪瓦咖啡</td><td>327</td><td>10.0%</td></tr><tr><td>6</td><td>沪上阿姨</td><td>263</td><td>9.7%</td></tr><tr><td>7</td><td>书亦烧仙草</td><td>162</td><td>3.1%</td></tr><tr><td>8</td><td>古茗</td><td>103</td><td>2.0%</td></tr><tr><td>9</td><td>霸王茶姬</td><td>103</td><td>2.7%</td></tr><tr><td>10</td><td>茶百道</td><td>86</td><td>1.9%</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<ul><li>瑞幸咖啡广告消耗高达6,996万元，占GMV的56.0%，显示出激进的市场投放策略</li><li>蜜雪冰城虽然GMV高，但广告消耗占比仅为15.1%，说明其品牌自然流量占比高</li><li>库迪咖啡广告消耗排名第三，显示出快速扩张的决心</li></ul>
+<h3>8.2 广告投放效率评估</h3>
+<p>计算广告投放效率（GMV / 消耗金额）：</p>
+<div class='table-wrap'><table><thead><tr><th>品牌</th><th>投放效率</th><th>效率排名</th></tr></thead><tbody><tr><td>蜜雪冰城</td><td>6.6</td><td>1</td></tr><tr><td>古茗</td><td>6.9</td><td>2</td></tr><tr><td>书亦烧仙草</td><td>5.2</td><td>3</td></tr><tr><td>茶百道</td><td>5.8</td><td>4</td></tr><tr><td>CoCo都可</td><td>5.2</td><td>5</td></tr><tr><td>霸王茶姬</td><td>4.9</td><td>6</td></tr><tr><td>益禾堂</td><td>3.1</td><td>7</td></tr><tr><td>挪瓦咖啡</td><td>2.5</td><td>8</td></tr><tr><td>库迪咖啡</td><td>1.7</td><td>9</td></tr><tr><td>瑞幸咖啡</td><td>1.4</td><td>10</td></tr></tbody></table></div>
+<p>洞察：</p>
+<ul><li>蜜雪冰城投放效率最高，每投入1元广告费可带来6.6元GMV</li><li>瑞幸咖啡虽然广告消耗最大，但投放效率最低，说明其获客成本较高</li><li>古茗、书亦烧仙草等品牌投放效率较高，广告投放策略相对合理</li></ul>
+<h3>8.3 广告投放策略建议</h3>
+<p>高消耗低效率品牌（如瑞幸咖啡）：</p>
+<ul><li>优化广告投放渠道，提高ROI</li><li>平衡付费流量与自然流量</li><li>提升品牌溢价能力</li></ul>
+<p>低消耗高效率品牌（如蜜雪冰城）：</p>
+<ul><li>适度增加广告投放，扩大市场份额</li><li>利用高效率优势，快速扩张</li></ul>
+<p>中等消耗中等效率品牌（如库迪咖啡、益禾堂）：</p>
+<ul><li>维持当前投放策略</li><li>持续优化投放效率</li></ul>
+<h2>9. 行业洞察与战略建议</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>当前茶饮行业的主要趋势是什么？</li><li>品牌应该如何制定竞争策略？</li><li>未来3年的市场格局预测是什么？</li></ul></details>
+<h3>9.1 行业核心趋势</h3>
+<p>基于19个KA品牌的数据分析，茶饮行业呈现以下核心趋势：</p>
+<p>趋势1：双寡头格局稳固</p>
+<ul><li>瑞幸咖啡和蜜雪冰城占据52%的市场份额</li><li>双寡头模式短期内难以打破</li></ul>
+<p>趋势2：新锐品牌崛起</p>
+<ul><li>益禾堂、书亦烧仙草、库迪咖啡等品牌增长迅猛</li><li>中端市场竞争将更加激烈</li></ul>
+<p>趋势3：数字化营销成为关键</p>
+<ul><li>CPC广告占比较高品牌增长更快</li><li>数字化运营能力成为核心竞争力</li></ul>
+<p>趋势4：规模效应明显</p>
+<ul><li>门店数与GMV强相关（r = 0.89）</li><li>门店扩张仍是主要增长路径</li></ul>
+<p>趋势5：客单价分层清晰</p>
+<ul><li>高端（30+元）、中端（15-30元）、大众（15元）三个市场</li><li>不同价位品牌竞争策略差异明显</li></ul>
+<h3>9.2 不同定位品牌的战略建议</h3>
+<p>高端品牌策略（星巴克、瑞幸咖啡）：</p>
+<ul><li>✓ 保持品牌溢价，提升产品品质</li><li>✓ 优化门店体验，增强用户粘性</li><li>✓ 发展数字化会员体系，提升复购率</li><li>✓ 拓展高端产品线，提升客单价</li></ul>
+<p>中端品牌策略（库迪咖啡、茶百道、霸王茶姬）：</p>
+<ul><li>✓ 平衡价格与品质，打造差异化</li><li>✓ 快速扩张门店，抢占市场份额</li><li>✓ 学习瑞幸的数字化营销能力</li><li>✓ 加强产品创新，避免同质化</li></ul>
+<p>大众品牌策略（蜜雪冰城、幸运咖）：</p>
+<ul><li>✓ 维持低价优势，扩大规模效应</li><li>✓ 提升运营效率，降低单位成本</li><li>✓ 向下沉市场扩张，寻找新增长点</li><li>✓ 适度提升客单价，改善利润率</li></ul>
+<h3>9.3 未来市场格局预测</h3>
+<p>2025年预测：</p>
+<p>1. 市场份额：</p>
+<p>    瑞幸咖啡、蜜雪冰城双寡头地位稳固</p>
+<p>    益禾堂、库迪咖啡有望进入TOP 5</p>
+<p>    中端品牌竞争加剧</p>
+<p>2. 门店规模：</p>
+<p>    蜜雪冰城门店数有望突破40,000家</p>
+<p>    瑞幸咖啡门店数有望突破8,000家</p>
+<p>    益禾堂、库迪咖啡门店数快速扩张</p>
+<p>3. 广告投放：</p>
+<p>    CPC广告占比整体提升</p>
+<p>    数字化营销投入增加</p>
+<p>    新兴品牌更依赖付费流量</p>
+<p>4. 客单价趋势：</p>
+<p>    高端市场客单价稳定在30-40元</p>
+<p>    中端市场客单价小幅上涨至20-25元</p>
+<p>    大众市场客单价保持低位</p>
+<p>长期展望（2026-2028）：</p>
+<ul><li>市场集中度进一步提升，头部品牌份额超过60%</li><li>数字化运营能力成为品牌核心竞争力</li><li>产品创新和体验设计成为差异化关键</li><li>下沉市场成为新增长点</li><li>国际化扩张成为头部品牌新战略</li></ul>
+<h2>10. 数据说明与局限</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据来源和时间范围是什么？</li><li>分析存在哪些局限性？</li><li>如何进一步改进分析？</li></ul></details>
+<h3>10.1 数据来源</h3>
+<ul><li>数据来源：KA品牌下探数据汇总.xlsx</li><li>数据时间：2025年1月</li><li>品牌数量：19个KA茶饮品牌</li><li>数据维度：16个核心指标</li></ul>
+<h3>10.2 关键指标说明</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>说明</th></tr></thead><tbody><tr><td>1月消耗金额</td><td>1月广告投放总消耗金额</td></tr><tr><td>1月cpc占比</td><td>CPC广告占总消耗的比例</td></tr><tr><td>1月完成订单量</td><td>1月总订单完成量</td></tr><tr><td>1月实付GMV</td><td>1月总成交金额（实付）</td></tr><tr><td>CPC广告带来近15天的订单实付GMV</td><td>CPC广告带来的15天GMV</td></tr><tr><td>占近15天GMV</td><td>CPC GMV占近15天总GMV的比例</td></tr><tr><td>营业门店数</td><td>品牌运营的门店总数</td></tr><tr><td>实付客单价</td><td>平均每单消费金额</td></tr></tbody></table></div>
+<h3>10.3 数据清洗</h3>
+<p>数据清洗步骤：</p>
+<p>1. 缺失值处理：检查并处理缺失值，原始数据无缺失</p>
+<p>2. 异常值处理：将消耗金额月环比中的&quot;?&quot;替换为0</p>
+<p>3. 数据类型转换：确保所有数值列正确转换为数值类型</p>
+<p>4. 计算列添加：添加便于理解的分析列（万元、万单等）</p>
+<p>清洗后的数据已保存至 </p>
+<h3>10.4 分析局限</h3>
+<p>1. 时间范围有限：仅基于1月数据，无法观察长期趋势</p>
+<p>2. 样本规模有限：仅19个品牌，代表性有限</p>
+<p>3. 地域范围不明确：数据未说明覆盖的地域范围</p>
+<p>4. 缺少成本数据：仅有GMV数据，缺少成本、利润数据</p>
+<p>5. 缺少用户维度：缺少用户画像、复购率等数据</p>
+<h3>10.5 改进建议</h3>
+<p>未来分析可以从以下方向改进：</p>
+<p>1. 增加时间序列：收集更多历史数据，进行趋势分析</p>
+<p>2. 增加品牌样本：扩大品牌样本，提高代表性</p>
+<p>3. 增加成本数据：收集成本、利润数据，进行盈利分析</p>
+<p>4. 增加用户数据：收集用户画像、复购率等数据</p>
+<p>5. 增加地域维度：分析不同地区的市场表现</p>
+<h2>附录</h2>
+<h3>A. 数据字典</h3>
+<p>完整的清洗后数据字典已保存至 </p>
+<h3>B. 图表清单</h3>
+<p>本报告包含以下11个交互式图表：</p>
+<p>1. chartgmvtop10.json - 1月GMV TOP 10品牌</p>
+<p>2. chartcpcgmvcorrelation.json - CPC占比 vs GMV关系</p>
+<p>3. chartstoreorders.json - 门店规模 vs 订单量关系</p>
+<p>4. chartavgprice.json - 客单价TOP 10品牌</p>
+<p>5. chartcpccontribution.json - CPC广告贡献率TOP 10</p>
+<p>6. chartmonthlygrowth.json - GMV月环比增长TOP 10</p>
+<p>7. chartorderstop10.json - 1月订单量TOP 10</p>
+<p>8. chartstorestop10.json - 营业门店数TOP 10</p>
+<p>9. chartcorrelationheatmap.json - 品牌关键指标相关性热力图</p>
+<p>10. chartradartop6.json - TOP 6品牌综合表现雷达图</p>
+<p>11. chartadspendtop10.json - 1月广告消耗TOP 10</p>
+<h3>C. 数据文件</h3>
+<ul><li>清洗后的数据：</li><li>数据摘要：</li><li>分析报告：</li><li>分析输出：</li></ul>
+<hr/>
+<p>报告生成时间：2025-01-13</p>
+<p>分析师：Pardus AI - 量化分析师</p>
+<p>数据来源：KA品牌下探数据汇总.xlsx</p>
+<p>分析工具：Python, Polars, Plotly, D2</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

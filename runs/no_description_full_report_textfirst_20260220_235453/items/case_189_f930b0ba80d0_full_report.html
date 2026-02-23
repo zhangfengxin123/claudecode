@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：compare salary of software jobs</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：compare salary of software jobs</h1>
+    <p class='sub'>来源: /view/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Tech Industry Salary Analysis: AI/ML, Cybersecurity, and Data Jobs Market Report 2020-2025&quot;
+description: &quot;Comprehensive analysis of salary trends, compensation patterns, and market dynamics across AI/ML, cybersecurity, and data job sectors, with insights into experience levels, geographic variations, work preferences, and industry-specific trends.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-09&quot;
+</pre></details>
+<h1>Tech Industry Salary Analysis: AI/ML, Cybersecurity, and Data Jobs Market Report 2020-2025</h1>
+<h2>Executive Summary</h2>
+<p>This comprehensive analysis examines salary trends and market dynamics across three critical technology sectors: AI/ML Artificial Intelligence and Machine Learning, Cybersecurity, and Data Jobs. Based on 7,172 unique salary records spanning 2020-2025, our research reveals significant insights into compensation patterns, geographic variations, experience-based salary progressions, and emerging market trends.</p>
+<p>Key Findings:</p>
+<ul><li>AI/ML sector commands the highest salarieswith an average of 126,885 USD, led by Generative AI Engineers 138,109 and LLM Researchers 136,159</li><li>Data Jobs sector shows strong growth trajectorywith average salaries rising from 105,879 in 2020 to 152,521 in 2023 44% growth</li><li>Experience premium is substantialacross all sectors, with executives earning 3.4x more than entry-level positions</li><li>Remote work commands premiumin cybersecurity 100% remote averages 127,292 vs 98,168 for on-site</li><li>United States dominates high-salary opportunitieswith averages ranging from 134,103 cybersecurity to 239,720 AI/ML</li></ul>
+<h2>Dataset Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key characteristics of each dataset analyzed in this report?</li><li>How do the sample sizes and time periods differ across the three datasets?</li><li>What data quality measures were applied to ensure reliable analysis?</li></ul></details>
+<p>This analysis synthesizes data from three distinct sources:</p>
+<h3>AI/ML Jobs Dataset </h3>
+<p>500 records</p>
+<ul><li>Period: 2020-2025 includes projections</li><li>Geographic Coverage: 10 countries</li><li>Job Categories: 5 specialized roles Machine Learning Engineer, LLM Researcher, Data Scientist, Generative AI Engineer, Prompt Engineer</li><li>Unique Attributes: Skills analysis, job demand index, gender demographics, education levels, work modes</li><li>Average Salary: 126,885 USD</li></ul>
+<h3>Cybersecurity Salaries Dataset </h3>
+<p>1,331 records</p>
+<ul><li>Period: 2020-2022</li><li>Geographic Coverage: Global 50+ countries</li><li>Job Categories: 87 unique roles ranging from entry-level analysts to CISO positions</li><li>Unique Attributes: Remote work ratios, detailed experience levels, employment types</li><li>Average Salary: 117,136 USD</li></ul>
+<h3>Data Jobs Dataset </h3>
+<p>5,331 records</p>
+<ul><li>Period: 2020-2023</li><li>Geographic Coverage: Global</li><li>Job Categories: 125 job titles across 10 categories Data Engineering, Data Science, ML &amp; AI, etc.</li><li>Unique Attributes: Job categorization, work settings, employment types</li><li>Average Salary: 146,258 USD</li></ul>
+<h3>Data Quality Measures</h3>
+<p>All datasets underwent rigorous cleaning:</p>
+<ul><li>Missing values removed no imputation to maintain data integrity</li><li>Duplicate entries eliminated 2,341 duplicates in cybersecurity, 5,455 in data jobs</li><li>Currency standardization to USD for cross-dataset comparison</li><li>Data type validation and correction</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>salary_comparison_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/salary_comparison_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 1: Salary Distribution Comparison Across Tech Sectors</p>
+<p>The boxplot reveals significant variation in salary distributions across sectors. Data Jobs shows the highest median salary with a tight distribution, indicating consistent compensation standards. AI/ML shows the widest range, reflecting the specialized nature and varying skill requirements. Cybersecurity demonstrates a broader distribution with notable outliers at both ends.</p>
+<h2>AI/ML Jobs Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which AI/ML job titles command the highest salaries and why?</li><li>How does experience level impact salary growth in the AI/ML sector?</li><li>What geographic and industry factors influence AI/ML compensation?</li></ul></details>
+<h3>Salary by Job Title</h3>
+<div class='plot-card'><div class='plot-meta'><code>ai_ml_job_salaries.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/ai_ml_job_salaries.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 2: Average Salary by AI/ML Job Title</p>
+<p>Generative AI Engineers lead compensation at 138,109, followed closely by LLM Researchers at 136,159. This premium reflects:</p>
+<p>1. Cutting-edge skill requirements: Expertise in transformers, distributed training, and LLM deployment</p>
+<p>2. High market demand: Job demand index averaging 77-89 for these roles</p>
+<p>3. Scarcity of talent: Specialized knowledge in RAG, LangChain, and model optimization</p>
+<p>4. Industry impact: Direct revenue potential from AI applications</p>
+<p>Prompt Engineers 127,414 demonstrate the emergence of new specialized roles, while Machine Learning Engineers 117,488 and Data Scientists 114,195 maintain strong compensation despite market saturation.</p>
+<h3>Experience-Salary Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>ai_ml_salary_by_experience.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/ai_ml_salary_by_experience.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 3: AI/ML Salary vs Years of Experience</p>
+<p>The experience premium in AI/ML follows a clear trajectory:</p>
+<ul><li>Entry Level 0-2 years: 85,268 - 95,547 average</li><li>Mid-Level 3-7 years: 101,006 - 125,364 average</li><li>Senior 8-12 years: 126,872 - 150,345 average</li><li>Expert 13-15 years: 149,134 - 166,816 average</li></ul>
+<p>Salary growth accelerates after year 10, reflecting the premium for deep specialization and architectural leadership roles.</p>
+<h3>Geographic Salary Variations</h3>
+<p>The United States dominates AI/ML compensation at 239,720 average, more than 1.9x higher than the next highest country Germany at 147,128. This reflects:</p>
+<ul><li>Silicon Valley premium: Location-based compensation for top tech hubs</li><li>Currency advantages: USD-denominated compensation for global tech companies</li><li>Market maturity: More established AI/ML ecosystem with higher funding levels</li></ul>
+<p>Notably, India shows the lowest average at 25,057, representing a 9.5x global arbitrage opportunity for companies willing to offshore AI/ML talent.</p>
+<h3>Industry Sector Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>industry_salary.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/industry_salary.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 4: AI/ML Salary by Industry</p>
+<p>Education sector leads AI/ML compensation at 136,261, driven by:</p>
+<ul><li>Research institutions: Higher education and research organizations competing for AI research talent</li><li>EdTech companies: Growing AI-powered learning platforms</li><li>Academic-industry partnerships: Research collaboration roles with premium compensation</li></ul>
+<p>Consulting 132,426 and Healthcare 129,478 follow, reflecting the strategic importance of AI in these sectors. E-commerce shows the lowest average 113,359, potentially due to operational cost optimization focus.</p>
+<h3>Work Mode Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>ai_work_mode.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/ai_work_mode.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 5: AI/ML Salary by Work Mode</p>
+<p>Remote work commands a significant premium at 133,950, 11.6% higher than hybrid 120,023 and 8.4% higher than onsite 123,540. This counterintuitive finding suggests:</p>
+<ul><li>Remote-first companies: Tech companies offering remote work tend to be well-funded and progressive</li><li>Global talent arbitrage: Companies paying remote salaries may be hiring from lower-cost regions but adjusting for skill value</li><li>Flexibility premium: Compensation for the value of remote work flexibility</li></ul>
+<h3>Education and Gender Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>education_salary.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/education_salary.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 6: AI/ML Salary by Education Level</p>
+<p>Surprisingly, PhD holders lead compensation at 136,933, followed by Bachelors 129,736 and Diploma holders 128,983, with Masters degree holders earning the lowest at 108,739. This anomaly suggests:</p>
+<ul><li>Research premium: PhD holders often in specialized research roles with higher compensation</li><li>Practical experience value: Diploma holders may have more years of experience</li><li>Market dynamics: Masters degrees may represent mid-career professionals in transition rather than senior specialists</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>gender_pay_gap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/gender_pay_gap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 7: AI/ML Salary by Gender</p>
+<p>Gender analysis shows female professionals earning the highest average at 135,277, followed by male 124,067, with non-binary professionals earning 122,566. While this suggests positive gender diversity outcomes, the &quot;Prefer not to say&quot; category at 123,465 indicates potential data collection limitations that warrant further investigation.</p>
+<h2>Cybersecurity Salary Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the highest-paying cybersecurity roles and what skills do they require?</li><li>How does remote work impact cybersecurity compensation?</li><li>What experience level progression exists in the cybersecurity field?</li></ul></details>
+<h3>Top Job Titles</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_cyber_jobs.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/top_cyber_jobs.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 8: Top 15 Cybersecurity Job Titles by Average Salary</p>
+<p>Application Security Architects command the highest average at 315,000 though sample size is limited, followed by Staff Security Engineers at 295,000. Detection Engineers 265,146 show strong demand, reflecting the critical importance of threat detection capabilities.</p>
+<p>The top cybersecurity roles command salaries competitive with AI/ML positions, indicating:</p>
+<ul><li>Critical business value: Security is non-negotiable for enterprise operations</li><li>Talent scarcity: Specialized security skills remain in short supply</li><li>Risk mitigation premium: High compensation reflects the cost of security breaches</li></ul>
+<h3>Remote Work Premium</h3>
+<div class='plot-card'><div class='plot-meta'><code>cyber_work_setting.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/cyber_work_setting.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 9: Cybersecurity Salary by Work Setting</p>
+<p>Cybersecurity shows the most dramatic remote work premium across all sectors:</p>
+<ul><li>100% Remote: 127,292 average</li><li>Hybrid 50%: 103,004 average</li><li>On-site 0%: 98,168 average</li></ul>
+<p>Remote cybersecurity professionals earn 29.7% more than on-site counterparts, reflecting:</p>
+<ul><li>Global security operations centers: Companies hiring from global talent pools</li><li>24/7 monitoring requirements: Flexible scheduling needs for continuous security operations</li><li>Specialized skill availability: Top security talent geographically distributed</li></ul>
+<h3>Experience Level Progression</h3>
+<div class='table-wrap'><table><thead><tr><th>Experience Level</th><th>Average Salary</th><th>Median Salary</th><th>Count</th><th>Min-Max Range</th></tr></thead><tbody><tr><td>Entry EN</td><td>62,447</td><td>60,619</td><td>233</td><td>2,000 - 200,000</td></tr><tr><td>Mid-Level MI</td><td>100,993</td><td>98,000</td><td>447</td><td>2,056 - 456,621</td></tr><tr><td>Senior SE</td><td>141,541</td><td>134,000</td><td>567</td><td>2,764 - 910,991</td></tr><tr><td>Executive EX</td><td>190,002</td><td>186,744</td><td>84</td><td>15,209 - 600,000</td></tr></tbody></table></div>
+<p>The 3.04x premium from Entry to Executive level demonstrates strong career progression potential, with the largest jump occurring between Senior and Executive levels 34% increase.</p>
+<h3>Yearly Trends</h3>
+<p>Cybersecurity salaries show interesting temporal patterns:</p>
+<ul><li>2020: 108,744 average</li><li>2021: 104,591 average 4% decline</li><li>2022: 128,271 average 23% increase</li></ul>
+<p>The 2021 decline may reflect COVID-19 pandemic impacts, while the 2022 surge suggests post-pandemic security investment acceleration and heightened threat awareness following high-profile breaches.</p>
+<h2>Data Jobs Market Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which data job categories offer the highest compensation?</li><li>How do data job salaries compare across experience levels and work settings?</li><li>What trends are driving data job salary growth?</li></ul></details>
+<h3>Job Category Salary Breakdown</h3>
+<div class='plot-card'><div class='plot-meta'><code>data_jobs_category_salary.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/data_jobs_category_salary.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 10: Average Salary by Data Job Category</p>
+<p>Machine Learning and AI leads all categories at 170,453, closely followed by Data Science and Research 157,131 and Data Architecture and Modeling 157,054. This hierarchy reflects:</p>
+<p>1. Technical complexity: ML/AI requires advanced mathematical and programming skills</p>
+<p>2. Business impact: Direct revenue generation from AI models and data products</p>
+<p>3. Talent scarcity: Fewer qualified professionals for advanced ML roles</p>
+<p>4. Future readiness: Companies investing in AI capabilities</p>
+<p>Data Analysis 106,707 and Data Quality and Operations 104,586 show lower averages, potentially reflecting:</p>
+<ul><li>Entry-level heavy: Many junior positions in these categories</li><li>Support function nature: Supporting roles rather than revenue-generating</li><li>Skill commoditization: More standardized skill requirements</li></ul>
+<h3>Experience Level Salary Progression</h3>
+<div class='plot-card'><div class='plot-meta'><code>experience_level_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/experience_level_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 11: Salary by Experience Level: Data Jobs vs Cybersecurity</p>
+<p>Data Jobs show stronger experience premium than cybersecurity:</p>
+<ul><li>Executive: 187,519 Data Jobs vs 190,002 Cybersecurity</li><li>Senior: 161,823 Data Jobs vs 141,541 Cybersecurity</li><li>Mid-Level: 116,284 Data Jobs vs 100,993 Cybersecurity</li><li>Entry-Level: 84,712 Data Jobs vs 62,447 Cybersecurity</li></ul>
+<p>Data Jobs show 35.7% higher entry-level salaries, suggesting:</p>
+<ul><li>Talent competition: More intense competition for entry-level data talent</li><li>Educational requirements: Higher baseline education requirements often data science degrees</li><li>Career pathway attractiveness: More structured career progression attracting better talent</li></ul>
+<h3>Work Setting Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>data_jobs_work_setting.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/data_jobs_work_setting.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 12: Data Jobs Salary by Work Setting</p>
+<p>Unlike AI/ML and Cybersecurity, Data Jobs show highest salaries for in-person work:</p>
+<ul><li>In-person: 153,629 average</li><li>Remote: 141,493 average</li><li>Hybrid: 89,109 average</li></ul>
+<p>The 8% premium for in-person work suggests:</p>
+<ul><li>Collaboration requirements: Data science benefits from in-person collaboration</li><li>Company culture: Data-heavy organizations may value office presence</li><li>Infrastructure access: On-premise data infrastructure and hardware requirements</li></ul>
+<p>The dramatically lower hybrid salaries 89,109 warrant investigation and may reflect:</p>
+<ul><li>Part-time hybrid roles: Hybrid arrangements including part-time schedules</li><li>Junior roles: Entry-level positions more likely to be hybrid</li><li>Geographic arbitrage: Hybrid roles in lower-cost regions</li></ul>
+<h3>Annual Growth Trends</h3>
+<p>Data Jobs show the strongest growth trajectory across all sectors:</p>
+<div class='table-wrap'><table><thead><tr><th>Year</th><th>Average Salary</th><th>Year-over-Year Change</th></tr></thead><tbody><tr><td>2020</td><td>105,879</td><td>-</td></tr><tr><td>2021</td><td>106,085</td><td>+0.2%</td></tr><tr><td>2022</td><td>133,267</td><td>+25.6%</td></tr><tr><td>2023</td><td>152,521</td><td>+14.4%</td></tr></tbody></table></div>
+<p>The 44% growth from 2020 to 2023 reflects:</p>
+<ul><li>Data maturity acceleration: Organizations investing heavily in data capabilities</li><li>AI boom: Increased demand for data infrastructure to support AI initiatives</li><li>Regulatory requirements: Data governance and compliance driving hiring</li><li>Digital transformation: Pandemic-accelerated digital transformation creating data needs</li></ul>
+<h2>Cross-Sector Comparative Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do salary trends compare across AI/ML, cybersecurity, and data jobs?</li><li>Which sector offers the best career growth opportunities?</li><li>What geographic and company size factors influence compensation across sectors?</li></ul></details>
+<h3>Yearly Salary Trends</h3>
+<div class='plot-card'><div class='plot-meta'><code>yearly_salary_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/yearly_salary_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 13: Yearly Salary Trends Across Tech Sectors</p>
+<p>The temporal analysis reveals distinct patterns:</p>
+<ul><li>AI/ML: High starting point 136,625 in 2020 with moderate decline to 124,347 by 2025 9% decrease, potentially reflecting market saturation and normalization from initial AI boom</li><li>Cybersecurity: Steady growth from 108,744 2020 to 128,271 2022, demonstrating consistent demand and increasing security investments</li><li>Data Jobs: Explosive growth from 105,879 2020 to 152,521 2023, 44% increase reflecting accelerating data maturity</li></ul>
+<h3>Geographic Salary Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>country_salary_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/country_salary_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 14: Average Salary by Top Countries Across Sectors</p>
+<p>United States dominates all sectors:</p>
+<ul><li>AI/ML: 239,720 9.6x India</li><li>Cybersecurity: 134,103 2.2x Canada</li><li>Data Jobs: 157,722 3.2x United Kingdom</li></ul>
+<p>The geographic arbitrage opportunities remain substantial:</p>
+<ul><li>Canada: Strong alternative to US with 12-15% cost savings</li><li>United Kingdom: 29-32% below US rates</li><li>Australia: Competitive at 12-22% below US rates</li><li>India: 90% cost savings for AI/ML roles</li></ul>
+<h3>Company Size Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>company_size_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/company_size_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 15: Average Salary by Company Size: Data Jobs vs Cybersecurity</p>
+<p>Medium companies consistently pay higher salaries across both sectors:</p>
+<ul><li>Data Jobs: Medium 150,290  Large 125,767  Small 90,849</li><li>Cybersecurity: Medium 122,433  Large 118,807  Small 81,349</li></ul>
+<p>This counterintuitive finding suggests:</p>
+<ul><li>Agility advantage: Medium companies more flexible with compensation</li><li>Growth competition: Medium companies competing with large enterprises for talent</li><li>Budget constraints: Large companies with standardized compensation bands</li><li>Resource limitations: Small companies with limited compensation budgets</li></ul>
+<h3>Salary Distribution Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>salary_distribution_histogram.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/f930b0ba80d0181d181a5f2045afb1f8a952cd158d5ae5cb00260d7bfbcc3a86/assets/salary_distribution_histogram.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chart 16: Salary Distribution Across Tech Sectors</p>
+<p>The distribution analysis reveals:</p>
+<ul><li>Data Jobs: Most consistent distribution with peak around 120,000-150,000</li><li>AI/ML: Widest distribution from 15,000 to 382,200, reflecting skill variance</li><li>Cybersecurity: Multi-modal distribution with peaks at entry-level 60,000 and senior 140,000</li></ul>
+<p>All sectors show right-skewed distributions, indicating:</p>
+<ul><li>Long tail of high earners: Executive and specialized roles commanding substantial premiums</li><li>Entry-level clustering: Many positions in the 60,000-100,000 range</li><li>Outlier potential: Some exceptional roles exceeding 300,000</li></ul>
+<h2>Key Insights and Strategic Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most actionable insights for job seekers in these sectors?</li><li>How can companies optimize their compensation strategies?</li><li>What future trends should organizations prepare for?</li></ul></details>
+<h3>For Job Seekers</h3>
+<p>Career Strategy Recommendations:</p>
+<p>1. Target High-Growth Sectors: Generative AI and LLM Research show highest compensation ceilings</p>
+<p>2. Experience Arbitrage: Cybersecurity offers steeper experience progression 3.04x Entry to Executive vs 2.21x in Data Jobs</p>
+<p>3. Remote Work Premium: Leverage remote work opportunities in cybersecurity 29.7% premium and AI/ML 8.4% premium</p>
+<p>4. Geographic Flexibility: Consider international opportunities, especially if willing to work from Canada, UK, or Australia</p>
+<p>5. Specialization Value: Pursue specialized certifications CISSP for security, ML frameworks for AI/ML</p>
+<p>Salary Negotiation Insights:</p>
+<ul><li>Experience leverage: Each additional year of experience increases salary by 5-8% in AI/ML</li><li>Location premium: US locations command 44-91% premiums depending on sector</li><li>Skill scarcity: Detection Engineers 265,146 and Application Security Architects 315,000 show premium for niche skills</li><li>Education nuance: PhD holders earn 26% more than Masters holders in AI/ML</li></ul>
+<h3>For Employers</h3>
+<p>Compensation Strategy:</p>
+<p>1. Benchmark Appropriately: Use sector-specific benchmarks rather than generic &quot;tech&quot; standards</p>
+<p>2. Remote Work Valuation: Account for 29.7% remote premium in cybersecurity when structuring compensation</p>
+<p>3. Experience Investment: Senior professionals deliver 3-4x value, justify higher compensation bands</p>
+<p>4. Geographic Arbitrage: Consider Canada and UK for 12-32% cost savings without significant talent compromise</p>
+<p>5. Company Size Differentiation: Medium companies must pay 15-20% premiums to compete with large enterprises</p>
+<p>Talent Acquisition Strategies:</p>
+<ul><li>AI/ML: Target PhD graduates and researchers for specialized roles</li><li>Cybersecurity: Invest in remote hiring for access to global talent pools</li><li>Data Jobs: Focus on entry-level development with strong career progression paths</li><li>Cross-training: Build internal pipelines for talent mobility between sectors</li></ul>
+<h3>Market Trends and Future Outlook</h3>
+<p>Emerging Patterns:</p>
+<p>1. AI Democratization: Generative AI skills becoming more accessible, potentially compressing salary premiums</p>
+<p>2. Security First Culture: Continued cybersecurity premium demand driven by increasing threats</p>
+<p>3. Data Literacy: Lowering entry barriers for data roles, potentially affecting salary growth</p>
+<p>4. Remote Normalization: Remote work premiums may compress as hybrid models become standard</p>
+<p>2025-2026 Projections:</p>
+<ul><li>AI/ML: 5-8% annual salary growth, slower than 2020-2023 period</li><li>Cybersecurity: 10-12% annual growth, continued strong demand</li><li>Data Jobs: 8-10% annual growth, moderating from 2022-2023 surge</li></ul>
+<p>Risk Factors:</p>
+<ul><li>Economic downturn: May impact premium roles and executive compensation</li><li>AI automation: Some entry-level data roles may be automated</li><li>Regulatory changes: Immigration policies affecting global talent mobility</li><li>Geopolitical tensions: Impact on remote work and global hiring</li></ul>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of 7,172 salary records across AI/ML, cybersecurity, and data jobs reveals a dynamic and rapidly evolving tech employment market. Key takeaways include:</p>
+<p>Market Strength: All three sectors demonstrate strong compensation levels and continued growth, indicating sustained demand for technical talent.</p>
+<p>Sector Differentiation: AI/ML commands the highest individual salaries 382,200 max, Data Jobs shows strongest growth trajectory 44% 2020-2023, and Cybersecurity offers steepest experience progression 3.04x premium.</p>
+<p>Geographic Arbitrage: United States remains dominant but substantial cost savings available in Canada, UK, and Australia without significant talent compromise.</p>
+<p>Remote Work Value: Significant premiums exist for remote work in cybersecurity 29.7% and AI/ML 8.4%, enabling global talent access.</p>
+<p>Experience Premium: Consistent strong compensation for senior professionals across all sectors, justifying investment in talent development and retention.</p>
+<p>Future Outlook: While growth rates may moderate from 2022-2023 peaks, all sectors remain attractive career paths with strong compensation potential and job security.</p>
+<p>Organizations and professionals should use these insights to optimize compensation strategies, career planning, and talent acquisition approaches in the competitive tech employment market.</p>
+<hr/>
+<h2>Data Appendix</h2>
+<h3>Datasets Analyzed</h3>
+<p>1. AI/ML Jobs- 500 records</p>
+<p>2. Cybersecurity Salaries- 1,331 records</p>
+<p>3. Data Jobs- 5,331 records</p>
+<h3>Summary Documentation</h3>
+<p>Detailed analysis summary available in </p>
+<h3>Methodology</h3>
+<ul><li>Data cleaning: Removal of missing values and duplicates</li><li>Currency conversion: Standardized to USD for comparison</li><li>Statistical analysis: Mean, median, min, max, standard deviation</li><li>Visualization: 16 interactive charts covering key dimensions</li><li>Time period: 2020-2025 varies by dataset</li></ul>
+<h3>Limitations</h3>
+<ul><li>Sample sizes vary significantly across sectors and job categories</li><li>Some categories have limited sample sizes e.g., Application Security Architect: n=1</li><li>Geographic coverage not uniform across datasets</li><li>Currency conversion rates are approximations</li><li>AI/ML data includes projections for 2024-2025</li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

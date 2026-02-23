@@ -1,0 +1,9 @@
+[
+  {
+    "name": "weatherAUS.csv",
+    "local": "weatherAUS.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 4095651
+  }
+]

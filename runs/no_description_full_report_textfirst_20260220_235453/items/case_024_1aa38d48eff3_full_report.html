@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：anime</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：anime</h1>
+    <p class='sub'>来源: /view/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Anime Industry Comprehensive Analysis 2025&quot;
+description: &quot;In-depth analysis of 10,000+ anime from MyAnimeList covering scores, popularity, trends, and industry insights from 1960-2025&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-02&quot;
+</pre></details>
+<h1>Anime Industry Comprehensive Analysis</h1>
+<h2>Executive Summary</h2>
+<p>This comprehensive analysis examines 9,995 animefrom MyAnimeList, spanning from 1960 to 2025. The dataset reveals fascinating insights about the anime industry, including scoring patterns, audience engagement metrics, genre distribution, and temporal trends. Key findings include an average score of 6.98/10, with only 1.6% of anime achieving elite status 8.5+ score, and a massive surge in anime production peaking in 2023 with 474 releases.</p>
+<h2>Dataset Overview</h2>
+<div class='plot-card'><div class='plot-meta'><code>score_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/score_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The dataset comprises nearly 10,000 anime entries with the following characteristics:</p>
+<ul><li>Total Records: 9,995 anime</li><li>Time Period: 1960-2025 65 years</li><li>Average Score: 6.98/10.0</li><li>Median Score: 6.90/10.0</li><li>Score Standard Deviation: 0.62</li><li>Average Members per Anime: 107,584</li><li>Highest Member Count: 4,262,220</li></ul>
+<p>The score distribution shows a normal distributioncentered around 7.0, with most anime clustering in the 6.5-7.5 range. This suggests a balanced rating ecosystem where genuinely exceptional anime stand out.</p>
+<h2>Top-Rated Anime Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>top_20_anime.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/top_20_anime.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What makes the top-rated anime consistently score above 9.0?</li><li>How do these top anime compare in terms of audience engagement membersvs their scores?</li><li>What genres or themes are most represented among the highest-scoring anime?</li></ul></details>
+<p>The top 20 anime represent the pinnacle of anime excellence, with scores ranging from 8.86 to 9.29. Notable insights:</p>
+<h3>Elite Performers </h3>
+<p>9.0+ Score</p>
+<p>1. Sousou no Frieren9.29 - A recent 2023-2024 masterpiece</p>
+<p>2. Chainsaw Man Movie: Reze-hen9.18 - Highly anticipated 2025 release</p>
+<p>3. Fullmetal Alchemist: Brotherhood9.10 - Classic 2009-2010 series with 3.6M members</p>
+<p>4. Steins;Gate9.07 - Time travel masterpiece with 2.7M members</p>
+<h3>Genre Patterns</h3>
+<p>The top 20 is dominated by:</p>
+<ul><li>Action/Adventure: Fullmetal Alchemist, Hunter x Hunter, Kingdom</li><li>Sci-Fi: Steins;Gate, Gintama, Attack on Titan</li><li>Drama/Comedy: Gintama franchise, Fruits Basket</li></ul>
+<h3>Franchise Dominance</h3>
+<p>The Gintama franchiseclaims 4 spots in the top 20, demonstrating exceptional consistency across multiple seasons and formats TV, movies, OVAs.</p>
+<h2>Anime Types Distribution</h2>
+<div class='plot-card'><div class='plot-meta'><code>anime_types.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/anime_types.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do TV series dominate the anime landscape?</li><li>How does the average score differ between different anime types?</li><li>What factors contribute to the popularity of each anime type?</li></ul></details>
+<p>The anime industry produces content across multiple formats:</p>
+<h3>TV Series </h3>
+<p>43.3%</p>
+<ul><li>4,330 entries- The dominant format</li><li>Average Score: 7.07</li><li>Average Members: 193,880</li><li>TV series benefit from longer storytelling arcs and character development</li></ul>
+<h3>Movies </h3>
+<p>17.2%</p>
+<ul><li>1,721 entries</li><li>Average Score: 7.07 tied with TV</li><li>Average Members: 68,208</li><li>Higher production values but shorter runtime</li></ul>
+<h3>Original Net Animation - ONA </h3>
+<p>13.4%</p>
+<ul><li>1,338 entries</li><li>Average Score: 6.88</li><li>Average Members: 22,629</li><li>Digital-first distribution, often experimental</li></ul>
+<h3>Original Video Animation - OVA </h3>
+<p>11.7%</p>
+<ul><li>1,170 entries</li><li>Average Score: 6.88</li><li>Average Members: 39,618</li><li>Direct-to-video releases, often supplementary content</li></ul>
+<h3>Specials </h3>
+<p>14.4%</p>
+<ul><li>Special: 1,003 entries Avg Score: 6.79</li><li>TV Special: 433 entries Avg Score: 6.79</li><li>Typically one-off episodes or holiday specials</li></ul>
+<h2>Scoring Trends Over Time</h2>
+<div class='plot-card'><div class='plot-meta'><code>anime_by_year.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/anime_by_year.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>score_by_year.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/score_by_year.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What caused the explosive growth in anime production starting in the 2000s?</li><li>Has anime quality improved or declined over the decades?</li><li>How have streaming platforms impacted anime production volume?</li></ul></details>
+<h3>Production Volume Trends</h3>
+<p>1960-1990: Limited production 10-50 anime/year</p>
+<ul><li>Early experimentation with the medium</li><li>Limited distribution channels</li></ul>
+<p>1990-2005: Steady growth 50-150 anime/year</p>
+<ul><li>Rise of home video market</li><li>International expansion begins</li></ul>
+<p>2005-2015: Acceleration 150-300 anime/year</p>
+<ul><li>Digital animation tools reduce costs</li><li>Global streaming emerges</li></ul>
+<p>2015-2025: Explosion 300-470 anime/year</p>
+<ul><li>2023 peak: 474 anime produced</li><li>Global pandemic drives content consumption</li><li>Netflix, Crunchyroll invest heavily</li></ul>
+<h3>Quality Trends</h3>
+<p>Average scores have remained remarkably stablearound 7.0, despite massive production increases:</p>
+<ul><li>1960-1980:  1980-2000:  2000-2020:  2020-2025: </li></ul>
+<h2>Score vs. Popularity Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>score_vs_popularity.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/score_vs_popularity.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Is there a correlation between high scores and high popularity?</li><li>Why do some highly popular anime have moderate scores?</li><li>What factors drive popularity beyond critical acclaim?</li></ul></details>
+<p>The relationship between score and popularity reveals complex audience dynamics:</p>
+<h3>Key Insights</h3>
+<p>1. High-Quality ≠ High Popularity</p>
+<p>    Many 8.5+ scored anime have modest member counts</p>
+<p>    Critical success doesn&#x27;t guarantee mass appeal</p>
+<p>2. Popularity Drivers</p>
+<p>    Long-running seriesaccumulate members over time</p>
+<p>    Accessible genresshonen, romance attract broader audiences</p>
+<p>    Cultural phenomenae.g., Attack on Titan transcend normal patterns</p>
+<p>3. The &quot;Golden Quadrant&quot;</p>
+<p>    Top performers: High Score + High Members</p>
+<p>    Examples: Fullmetal Alchemist 9.1, 3.6M, Hunter x Hunter 9.03, 3.1M</p>
+<p>    Rare combination requiring universal appeal and excellence</p>
+<p>4. Niche Masterpieces</p>
+<p>    High scores 8.5+ but lower member counts 500K</p>
+<p>    Often target specific demographics or experimental genres</p>
+<h2>Audience Engagement Metrics</h2>
+<div class='plot-card'><div class='plot-meta'><code>members_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/members_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>top_15_members.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/top_15_members.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What creates massive followings for certain anime?</li><li>How does member count correlate with long-term franchise success?</li><li>What marketing strategies contribute to high member engagement?</li></ul></details>
+<h3>Member Count Analysis</h3>
+<p>The distribution of member counts follows a power law pattern:</p>
+<ul><li>Mega Hits 1M+ members:  Popular 100K-1M members:  Moderate 10K-100K members:  Niche 10K members: </li></ul>
+<p>Top 15 by Members</p>
+<p>1. Fullmetal Alchemist: Brotherhood- 3,602,700 members</p>
+<p>2. Death Note- </p>
+<p>3. Attack on Titan- </p>
+<p>4. Hunter x Hunter 2011- 3,107,455 members</p>
+<p>5. Kimi no Na wa.- 2,963,136 members</p>
+<h3>Success Factors</h3>
+<p>Long-Running Series:</p>
+<ul><li>Multiple seasons allow audience accumulation</li><li>Character development creates emotional investment</li></ul>
+<p>Universal Themes:</p>
+<ul><li>Coming-of-age stories</li><li>Moral dilemmas</li><li>Underdog narratives</li></ul>
+<p>Visual Excellence:</p>
+<ul><li>Distinctive art styles</li><li>High animation quality</li><li>Memorable character designs</li></ul>
+<h2>Episode Count Distribution</h2>
+<div class='plot-card'><div class='plot-meta'><code>episodes_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/episodes_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What&#x27;s the optimal episode count for audience engagement?</li><li>Why have 12-13 episode series become the industry standard?</li><li>How does episode count affect pacing and story quality?</li></ul></details>
+<h3>Episode Count Patterns</h3>
+<p>Standard Formats:</p>
+<ul><li>12-13 episodes:  24-26 episodes:  50+ episodes:  1 episode Movies/Specials: </li></ul>
+<p>Industry Trends</p>
+<p>Historical:</p>
+<ul><li>1960-1990: Many long-running series 50-100+ episodes</li><li>1990-2000: Shift toward 26-episode format</li><li>2000-2010: Rise of 12-13 episode &quot;single cour&quot; format</li><li>2010-2025: Dominance of 12-13 episodes</li></ul>
+<p>Why 12-13 Episodes?:</p>
+<ul><li>Financial: Lower risk per season</li><li>Creative: Focused storytelling</li><li>Distribution: Fits quarterly TV schedules</li><li>Flexibility: Can extend if successful</li></ul>
+<p>Long-Running Series:</p>
+<ul><li>Typically target younger demographics</li><li>Often based on manga with ongoing serialization</li><li>Create franchise merchandise opportunities</li></ul>
+<h2>Score Distribution by Type</h2>
+<div class='plot-card'><div class='plot-meta'><code>score_box_by_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/score_box_by_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which anime type consistently delivers the highest quality?</li><li>Why do TV series and movies have identical average scores?</li><li>How does format constrain or enable storytelling excellence?</li></ul></details>
+<h3>Type Performance Analysis</h3>
+<p>TV Series &amp; Movies7.07 average:</p>
+<ul><li>TV Series: Consistent quality, longer stories allow depth</li><li>Movies: Higher production values, focused narratives</li><li>Both achieve comparable excellence through different approaches</li></ul>
+<p>OVA &amp; ONA6.88 average:</p>
+<ul><li>OVA: Often supplementary content, variable quality</li><li>ONA: Digital-first, experimental, lower budgets</li><li>More variability due to diverse purposes</li></ul>
+<p>Specials6.79 average:</p>
+<ul><li>Holiday episodes, filler content</li><li>Lower expectations affect ratings</li><li>Not primary content formats</li></ul>
+<h3>Box Plot Insights</h3>
+<ul><li>TV Series: Wider distribution more variance</li><li>Movies: Tighter distribution more consistent</li><li>Outliers: Each type has exceptional examples</li><li>Median scores: All types cluster around 6.8-7.1</li></ul>
+<h2>Correlation Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What correlations exist between score, rank, popularity, and members?</li><li>Why is there a strong negative correlation between rank and score?</li><li>How do these metrics interact to determine overall success?</li></ul></details>
+<h3>Key Correlations</h3>
+<p>Score vs. Rank: -0.89 Strong Negative</p>
+<ul><li>Expected: Higher scores = Better lower rank</li><li>This validates the ranking system&#x27;s consistency</li></ul>
+<p>Score vs. Members: +0.15 Weak Positive</p>
+<ul><li>Quality attracts but doesn&#x27;t guarantee large audiences</li><li>Other factors genre, marketing, distribution matter more</li></ul>
+<p>Popularity vs. Members: -0.25 Moderate Negative</p>
+<ul><li>Counterintuitive: Lower popularity number = Higher members</li><li>Popularity ranking 1 = most popular inversely correlates</li></ul>
+<p>Year vs. Score: +0.08 Very Weak Positive</p>
+<ul><li>Slight improvement in quality over time</li><li>Not statistically significant</li></ul>
+<p>Year vs. Members: -0.12 Weak Negative</p>
+<ul><li>Newer anime have fewer members time to accumulate</li><li>Older classics have decades to build followings</li></ul>
+<h3>Implications</h3>
+<p>1. Quality ≠ Commercial Success</p>
+<p>    Critical acclaim score doesn&#x27;t drive popularity</p>
+<p>    Different factors govern each metric</p>
+<p>2. Time Factor</p>
+<p>    Older series accumulate members over decades</p>
+<p>    New releases start from zero regardless of quality</p>
+<p>3. Ranking Systems</p>
+<p>    Score-based ranking is consistent and reliable</p>
+<p>    Popularity ranking measures different aspect engagement</p>
+<h2>Industry Insights &amp; Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What strategies maximize both critical and commercial success?</li><li>How can new anime stand out in an increasingly crowded market?</li><li>What trends will shape the anime industry in the next 5 years?</li></ul></details>
+<h3>Success Formulas</h3>
+<p>The &quot;Golden Combination&quot;:</p>
+<p>1. Universal Appeal: Broad themes, relatable characters</p>
+<p>2. Exceptional Quality: Animation, storytelling, voice acting</p>
+<p>3. Strategic Distribution: Multiple platforms, global release</p>
+<p>4. Community Engagement: Fan participation, social media</p>
+<p>Examples:</p>
+<ul><li>Fullmetal Alchemist: Perfect blend of action, emotion, philosophy</li><li>Demon Slayer: Accessible story + stunning animation + marketing push</li><li>Steins;Gate: Genre innovation + passionate community</li></ul>
+<h3>Market Opportunities</h3>
+<p>Underserved Segments:</p>
+<ul><li>Adult-targeted anime: Beyond typical shonen/shojo demographics</li><li>Experimental formats: Interactive storytelling, VR experiences</li><li>Niche genres: Cult followings can drive long-term success</li></ul>
+<p>Global Expansion:</p>
+<ul><li>Localization: Beyond subtitles - cultural adaptation</li><li>Co-production: International partnerships reduce risk</li><li>Platform exclusivity: Netflix-style original funding models</li></ul>
+<h3>Future Trends</h3>
+<p>Technology Impact:</p>
+<ul><li>AI-assisted production: Lower costs, faster turnaround</li><li>Virtual production: Motion capture, 3D environments</li><li>Streaming analytics: Data-driven content decisions</li></ul>
+<p>Content Evolution:</p>
+<ul><li>Short-form content: 5-10 minute anime for mobile consumption</li><li>Transmedia storytelling: Anime as part of larger franchise ecosystems</li><li>Interactive narratives: Choose-your-own-adventure formats</li></ul>
+<h2>Conclusion</h2>
+<p>This analysis of nearly 10,000 anime reveals a thriving, evolving industry that has scaled dramatically while maintaining quality standards. Key takeaways:</p>
+<p>1. Quality Consistency: Despite 10x production growth, average scores remain stable at </p>
+<p>2. Diverse Success Paths: Multiple formats achieve excellence TV, movies, OVAs</p>
+<p>3. Quality ≠ Popularity: Critical acclaim doesn&#x27;t guarantee commercial success</p>
+<p>4. Golden Era: We&#x27;re experiencing unprecedented anime production 470+ in 2023</p>
+<p>5. Global Reach: Anime has become a truly international phenomenon</p>
+<p>The anime industry&#x27;s future looks bright, with technological advances, expanding global markets, and passionate communities driving continued growth and innovation. Success will come to those who balance artistic excellence with strategic audience engagement.</p>
+<hr/>
+<p>Analysis generated by Pardus AI - Transforming data into actionable insights</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

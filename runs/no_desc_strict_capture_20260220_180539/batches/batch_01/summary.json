@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-02-21T02:12:24",
+  "sample_size": 20,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "44ce5e42f9dbe80e94bb1145745ac91ed424d1b41cfa0ef6e40c05e29d6184de",
+      "title": "新注册:首次交易:日活用户三者留存对比",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_44ce5e42f9db.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "7a00de4c7f6a02c774805007dfb044724493500b14e9dd7a04e16c9a342ec90b",
+      "title": "2512",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_7a00de4c7f6a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "661c66d944300268ec276f0d02e1a4e16985191546fabca8526987e9a0458975",
+      "title": "2601",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_661c66d94430.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "0766d3501bc0af0bd378714446827ad824c8238e4a1c346f4f3add79a7dadf3b",
+      "title": "faang_stock_prices",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_0766d3501bc0.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "337781a75bbcdb2b1b01108f3bac1739278f94b038a14b01bcc40589b5143988",
+      "title": "daily_gym_attendance_workout_data",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_337781a75bbc.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "918fb97954af073baf4ebc8c803eae2c2b085c452d617f4028578871f0cbc4d2",
+      "title": "goalscorers",
+      "chart_count": 8,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_918fb97954af.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "cf35921743b2665b5433d99f0b1ae55ce94fa0b88accb428be86bc6d6aba75f3",
+      "title": "Proxy_Statement_2026",
+      "chart_count": 8,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_cf35921743b2.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "4074c8503e18096b8bd8b76d70c4379b8085ad0c651640e75143e5667e384f23",
+      "title": "阿里巴巴2025财报",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_4074c8503e18.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "ed816373eec8589e6f39f1c3dec5db2e8d6ad9bffa7932a9b86113532c05136f",
+      "title": "Apple 2026 Analysis",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_ed816373eec8.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "7f581ea1da6b03942099ac8656ea4d8aac8f37412909115e7c21cd55e3c2e80f",
+      "title": "财报测试",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_7f581ea1da6b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "f59dbd1ad7f401c8a145ca8aa26195555541bc4c9394b85b23cdce2392635843",
+      "title": "Interest Rate Uncertainty and Unemployment",
+      "chart_count": 8,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_f59dbd1ad7f4.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "88275b0dd7669501cefd0689dc0553daf876d2fdabf0f2ea53299db84acb3a4e",
+      "title": "event-notification-rpt-lastmonth",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_88275b0dd766.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "2f16fbfd48c6980241aa13b754863b498799a4dbeb4d2ae9b9d9368e110b6560",
+      "title": "1_调和分析及相关领域中的公开问题",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_2f16fbfd48c6.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b",
+      "title": "流量数据1",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_43028511a471.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "aaaefe6f4297e3532a8566e69a92d566109fdab872654ea8db68a9f9a59214b2",
+      "title": "流量数据1",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_aaaefe6f4297.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "353771d011bebc12667802c7b2d9a625728b88a5080821bde492bdba14b4c6cc",
+      "title": "Visa Financial Statement",
+      "chart_count": 7,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_353771d011be.html",
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "case_id": "1c5a1c3a794d75c88c76140da044dee4394f9c7967174623bd8617196581a592",
+      "title": "MAXS Meta-Adaptive Exploration with LLM Agents",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_1c5a1c3a794d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "case_id": "84628b6f991db56f5c008aea9b57cc5fe9e88b84511d855484fb7f2ef10e8d79",
+      "title": "multipleChoiceResponses",
+      "chart_count": 12,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_84628b6f991d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 19,
+      "case_id": "259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d",
+      "title": "Visa Q1 Analysis",
+      "chart_count": 10,
+      "upload_count": 7,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_259146950a6d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "case_id": "08a672c08f41d0b1c103871f475a90c1f746355640abbcb340dc2e70fe1fb0fa",
+      "title": "Visa Financial Analysis Q1",
+      "chart_count": 13,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_08a672c08f41.html",
+      "status": "ok"
+    }
+  ]
+}

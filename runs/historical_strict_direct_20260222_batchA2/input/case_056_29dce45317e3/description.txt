@@ -1,0 +1,26 @@
+The objective is to utilize the provided historical dataset to uncover hidden voting patterns, evaluate systemic biases in competition rules, and quantify the influence of contestant demographics on show outcomes.
+Data Integration and Preprocessing Standards
+
+The analysis must begin with a rigorous cleaning of the 34 seasons of data. The system should identify and handle N/A values appropriately, recognizing that they typically represent absent fourth judges or non-operational weeks. Furthermore, judge scores must be normalized to account for variations in scoring density and the occasional inclusion of bonus points or averaged scores. A critical component of this stage is the identification of the results and placement variables, which serve as the definitive constraints for the subsequent inverse modeling phases.
+Modeling the Latent Fan Vote (The Inverse Problem)
+
+Since fan votes are not explicitly recorded, you must develop a mathematical model to estimate these latent variables. This requires treating each week's elimination as a optimization constraint. For seasons using the Rank-based method, the model must find fan rankings that, when summed with judge rankings, result in the observed elimination. For Percentage-based seasons, the model must estimate fan vote distributions that satisfy the combined percentage totals. The system is required to provide a certainty metric for these estimates, reflecting the mathematical "tightness" of the constraints for each specific contestant and week.
+Comparative Systemic Evaluation
+
+The core of the analysis involves a counterfactual simulation across all 34 seasons. The AI must apply both the Rank and Percentage methods to every week of data, regardless of which method was actually in use at the time. This comparative study should aim to answer the following questions:
+
+Analytical Focus
+Objective
+Methodological Bias
+Does one method systematically favor fan popularity over technical merit?
+Controversy Analysis
+In historical "controversies" (e.g., Bobby Bones, Jerry Rice), would the alternative method have yielded a different winner?
+Judges' Choice Impact
+How would the "Judges' Save" mechanism (introduced in Season 28) have altered the trajectory of low-scoring fan favorites in earlier seasons?
+Influence of Contestant and Partner Characteristics
+
+Beyond the scores themselves, the system must model the impact of external variables such as celebrity_industry, celebrity_age, and the reputation of the ballroom_partner. The AI should perform a multi-variable regression or similar statistical analysis to determine if these characteristics impact judge scores and fan votes symmetrically. For instance, the analysis should quantify whether professional dancers with high historical win rates provide a statistically significant "fan vote lift" to their celebrity partners, independent of the technical quality of the dance.
+
+Required Deliverables and Reporting
+
+The final output should include a transformed dataset containing the estimated fan votes and normalized judge metrics. This must be accompanied by a series of visualizations that illustrate the "Technical-Popularity Gap" across the show's history. Finally, the system must produce a data-driven recommendation for a "fairer" voting system, supported by a summary of how the proposed system would have handled the show's most controversial eliminations.

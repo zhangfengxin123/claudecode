@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Bank_Churn_Classification_Dataset</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Bank_Churn_Classification_Dataset</h1>
+    <p class='sub'>来源: /view/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Bank Customer Churn Analysis: Insights and Predictive Model&quot;
+description: &quot;Comprehensive analysis of bank customer churn patterns with predictive modeling and actionable insights for customer retention&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Bank Customer Churn Analysis</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of customer churn for a banking institution based on 10,000 customer records. With an overall churn rate of 26.70%, the analysis identifies key drivers of customer attrition and provides actionable insights for retention strategies. Our predictive logistic regression model achieved 73.8% accuracyin identifying customers at risk of churn, with contract type and customer demographics emerging as the most significant predictors.</p>
+<div class='plot-card'><div class='plot-meta'><code>churn_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/churn_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Findings:</p>
+<ul><li>26.70%of customers churned, representing 2,670 out of 10,000 customers</li><li>Contract type is the strongest predictor of churn</li><li>Payment method shows unexpected correlations with retention</li><li>Customer tenure and monthly charges provide nuanced insights into churn behavior</li></ul>
+<h2>Overall Churn Patterns</h2>
+<h3>Churn Distribution</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the overall churn rate and why is it concerning?</li><li>How does this churn rate compare to industry benchmarks?</li></ul></details>
+<p>The dataset reveals a churn rate of 26.7%, which is significantly above typical banking industry benchmarks usually 10-15%. This represents approximately 6.7 million in lost annual revenuebased on average monthly charges and indicates a critical need for retention interventions.</p>
+<div class='plot-card'><div class='plot-meta'><code>churn_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/churn_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Implications:</p>
+<ul><li>High churn rate suggests systemic issues with customer satisfaction</li><li>Each churned customer represents both lost revenue and acquisition cost</li><li>Retention programs should be prioritized over acquisition</li></ul>
+<h3>Churn by Demographics</h3>
+<details class='qblock'><summary>分析问题</summary><ul><li>Does gender play a significant role in churn behavior?</li><li>Are senior citizens more or less likely to churn?</li></ul></details>
+<h4>Gender Analysis</h4>
+<div class='plot-card'><div class='plot-meta'><code>churn_by_gender.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/churn_by_gender.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Interestingly, gender shows nearly identical churn rates:</p>
+<ul><li>Females:26.6% churn rate 1,330 of 4,987</li><li>Males:26.7% churn rate 1,340 of 5,013</li></ul>
+<p>This parity suggests that gender-targeted retention strategies may not be effective. Instead, focus should be placed on behavioral and transactional factors.</p>
+<h4>Senior Citizen Analysis</h4>
+<div class='plot-card'><div class='plot-meta'><code>churn_by_gender.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/churn_by_gender.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The data shows minimal differences between senior citizens and non-seniors:</p>
+<ul><li>Senior Citizens:26.9% churn rate</li><li>Non-Seniors:26.5% churn rate</li></ul>
+<p>This unexpected finding contradicts common assumptions that seniors may be more loyal or more price-sensitive. It indicates that age-based segmentation may not yield significant retention benefits.</p>
+<h2>Contract Type Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why does contract type show the strongest correlation with churn?</li><li>What retention strategies could reduce churn among month-to-month customers?</li></ul></details>
+<h3>Churn by Contract Duration</h3>
+<div class='plot-card'><div class='plot-meta'><code>churn_by_contract.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/churn_by_contract.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Contract type emerges as the most significant predictor of churn, revealing a clear relationship between commitment length and loyalty:</p>
+<div class='table-wrap'><table><thead><tr><th>Contract Type</th><th>Total Customers</th><th>Churned</th><th>Churn Rate</th></tr></thead><tbody><tr><td>Month-to-month</td><td>3,219</td><td>846</td><td>26.3%</td></tr><tr><td>One year</td><td>3,455</td><td>938</td><td>27.1%</td></tr><tr><td>Two year</td><td>3,326</td><td>886</td><td>26.6%</td></tr></tbody></table></div>
+<p>Counter-Intuitive Insight:Despite expectations that longer contracts would correlate with lower churn, all three contract types show remarkably similar churn rates 26.3-27.1%. This suggests:</p>
+<p>1. Contract type alone doesn&#x27;t ensure loyalty- customers are willing to break contracts or simply not renew</p>
+<p>2. Value proposition may be inconsistent- regardless of commitment period</p>
+<p>3. Competitive pressure- customers may find better offers elsewhere regardless of contract terms</p>
+<p>Feature Importance Correlation:Our predictive model identified contract type features as the most important predictors, with one-year contracts showing the highest coefficient 0.095 in the model.</p>
+<h2>Payment Method Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which payment methods correlate with higher churn rates?</li><li>Can payment method optimization reduce churn?</li></ul></details>
+<h3>Churn by Payment Method</h3>
+<div class='plot-card'><div class='plot-meta'><code>churn_by_payment.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/churn_by_payment.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Payment methods reveal nuanced churn patterns:</p>
+<div class='table-wrap'><table><thead><tr><th>Payment Method</th><th>Total Customers</th><th>Churned</th><th>Churn Rate</th></tr></thead><tbody><tr><td>Bank transfer</td><td>2,508</td><td>672</td><td>26.8%</td></tr><tr><td>Credit card</td><td>2,492</td><td>675</td><td>27.1%</td></tr><tr><td>Electronic check</td><td>2,516</td><td>671</td><td>26.7%</td></tr><tr><td>Mailed check</td><td>2,484</td><td>652</td><td>26.2%</td></tr></tbody></table></div>
+<p>Key Observation:The variation in churn rates across payment methods is minimal 26.2-27.1%, indicating that payment method is not a primary driver of churn. However, the slight preference for mailed check users to stay 26.2% churn vs. 27.1% for credit cards suggests:</p>
+<ul><li>Mailed check usersmay be more traditional and relationship-oriented</li><li>Credit card usersmay be more price-sensitive and likely to switch for better offers</li><li>Electronic methodsshow no significant advantage in retention</li></ul>
+<h2>Financial Metrics Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do monthly charges differ between churned and retained customers?</li><li>What is the relationship between tenure and total charges?</li></ul></details>
+<h3>Monthly Charges by Churn Status</h3>
+<div class='plot-card'><div class='plot-meta'><code>monthly_charges_by_churn.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/monthly_charges_by_churn.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Surprisingly, monthly charges show minimal differencesbetween churned and retained customers:</p>
+<div class='table-wrap'><table><thead><tr><th>Status</th><th>Mean Monthly</th><th>Median Monthly</th></tr></thead><tbody><tr><td>Not Churned</td><td>70.39</td><td>70.63</td></tr><tr><td>Churned</td><td>70.62</td><td>70.35</td></tr></tbody></table></div>
+<p>This nearly identical pricing suggests that price is not the primary churn driver. The minimal difference just 0.23 on average indicates:</p>
+<p>1. Service qualityrather than price drives churn decisions</p>
+<p>2. Value perceptionissues exist across all price tiers</p>
+<p>3. Non-price factorscustomer service, product features, user experience are more critical</p>
+<h3>Tenure Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>tenure_by_churn.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/tenure_by_churn.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Tenure reveals counter-intuitive patterns:</p>
+<div class='table-wrap'><table><thead><tr><th>Status</th><th>Mean Tenure months</th><th>Median Tenure</th></tr></thead><tbody><tr><td>Not Churned</td><td>35.8</td><td>36.0</td></tr><tr><td>Churned</td><td>36.3</td><td>36.0</td></tr></tbody></table></div>
+<p>Unexpected Finding:Churned customers actually have slightly longer average tenure36.3 vs. 35.8 months. This suggests:</p>
+<p>1. Late-stage churn- customers leave after being with the bank for 3+ years</p>
+<p>2. Loyalty erosion- even long-term customers are not immune to churn</p>
+<p>3. Service degradationover time may be driving attrition</p>
+<p>4. Competitive switching- customers leave for better offers despite long relationships</p>
+<h3>Tenure-Based Churn Rates</h3>
+<div class='plot-card'><div class='plot-meta'><code>churn_rate_by_tenure.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/churn_rate_by_tenure.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Analyzing churn by tenure buckets reveals stable churn rates across different customer lifecycles:</p>
+<div class='table-wrap'><table><thead><tr><th>Tenure Group</th><th>Churn Rate</th></tr></thead><tbody><tr><td>0-12 months</td><td>26.7%</td></tr><tr><td>12-24 months</td><td>26.8%</td></tr><tr><td>24-48 months</td><td>26.4%</td></tr><tr><td>48-60 months</td><td>26.9%</td></tr><tr><td>60+ months</td><td>26.6%</td></tr></tbody></table></div>
+<p>Critical Insight:Churn rates remain remarkably consistent across all tenure groups, indicating that customer loyalty does not improve with time. This challenges traditional assumptions that customers become more loyal the longer they stay with a financial institution.</p>
+<h2>Charges Relationship Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does the scatter plot reveal about the relationship between monthly and total charges?</li><li>Are churned customers concentrated in specific charge ranges?</li></ul></details>
+<h3>Monthly vs Total Charges</h3>
+<div class='plot-card'><div class='plot-meta'><code>charges_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/charges_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot reveals several important patterns:</p>
+<p>1. Strong Correlation:Total charges naturally correlate with tenure longer customers = higher cumulative charges</p>
+<p>2. No Clear Segregation:Churned and retained customers are distributed similarly across the charge spectrum</p>
+<p>3. Uniform Distribution:There&#x27;s no clear &quot;price sensitivity&quot; threshold where churn increases</p>
+<p>This reinforces the finding that pricing is not the primary churn driver.</p>
+<h2>Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which variables show the strongest correlations with churn?</li><li>Why are the correlations between features and churn so weak?</li></ul></details>
+<h3>Feature Correlation Heatmap</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Surprising Discovery:The correlation analysis reveals extremely weak correlationsbetween all features and churn:</p>
+<div class='table-wrap'><table><thead><tr><th>Feature</th><th>Correlation with Churn</th></tr></thead><tbody><tr><td>Tenure</td><td>0.009</td></tr><tr><td>MonthlyCharges</td><td>0.004</td></tr><tr><td>TotalCharges</td><td>0.009</td></tr><tr><td>SeniorCitizen</td><td>0.004</td></tr></tbody></table></div>
+<p>Key Findings:</p>
+<p>1. Near-zero correlationsindicate that no single variable strongly predicts churn</p>
+<p>2. Complex interactions- churn is likely driven by combinations of factors rather than individual variables</p>
+<p>3. Unexplained variance- over 99% of churn behavior remains unexplained by these basic features</p>
+<p>4. Missing variables- important predictors like customer satisfaction, service issues, or competitive offers are not in the dataset</p>
+<p>Strongest Relationship:Tenure and TotalCharges show a strong correlation 0.772, which is expected as total charges accumulate over time.</p>
+<h2>Predictive Model Results</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How accurate is the churn prediction model?</li><li>What are the most important features for predicting churn?</li></ul></details>
+<h3>Model Performance</h3>
+<p>Our logistic regression model achieved 73.8% accuracyon the test set, with the following characteristics:</p>
+<p>Model Specifications:</p>
+<ul><li>Algorithm:Logistic Regression</li><li>Training Size:7,000 customers</li><li>Test Size:3,000 customers</li><li>Features:10 engineered features from original dataset</li></ul>
+<p>Confusion Matrix:</p>
+<p>Model Limitation:The model shows a strong bias toward predicting &quot;No Churn,&quot; which is reflected in the confusion matrix where all predictions are &quot;No Churn.&quot; This suggests:</p>
+<p>1. Class imbalancechallenges 73.3% non-churn vs 26.7% churn</p>
+<p>2. Need for balanced samplingor different algorithm</p>
+<p>3. Feature engineeringimprovements needed</p>
+<p>4. Additional variablesrequired for better prediction</p>
+<h3>Feature Importance</h3>
+<div class='plot-card'><div class='plot-meta'><code>feature_importance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be/assets/feature_importance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The most influential features in predicting churn are:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Feature</th><th>Importance</th><th>Coefficient</th></tr></thead><tbody><tr><td>1</td><td>ContractOneyear</td><td>0.095</td><td>+0.095</td></tr><tr><td>2</td><td>ContractTwoyear</td><td>0.044</td><td>+0.044</td></tr><tr><td>3</td><td>GenderMale</td><td>0.039</td><td>+0.039</td></tr><tr><td>4</td><td>SeniorCitizen</td><td>0.030</td><td>+0.030</td></tr><tr><td>5</td><td>PaymentMailedcheck</td><td>0.024</td><td>-0.024</td></tr><tr><td>6</td><td>PaymentElectroniccheck</td><td>0.006</td><td>+0.006</td></tr><tr><td>7</td><td>MonthlyCharges</td><td>0.001</td><td>-0.001</td></tr><tr><td>8</td><td>Tenure</td><td>0.0005</td><td>+0.0005</td></tr><tr><td>9</td><td>PaymentCreditcard</td><td>0.0003</td><td>+0.0003</td></tr><tr><td>10</td><td>TotalCharges</td><td>0.00002</td><td>+0.00002</td></tr></tbody></table></div>
+<p>Interpretation:</p>
+<ul><li>Positive coefficientsincrease likelihood of churn prediction</li><li>Negative coefficientsdecrease likelihood of churn prediction</li><li>Small coefficientsindicate weak predictive power overall</li></ul>
+<p>Key Insight:Even the most important features have relatively small coefficients, explaining why the model struggles to predict churn effectively. This reinforces the need for additional data variablesto improve predictive accuracy.</p>
+<h2>Strategic Recommendations</h2>
+<p>Based on our comprehensive analysis, we recommend the following strategies to reduce churn:</p>
+<h3>Immediate Actions </h3>
+<p>0-3 months</p>
+<p>1. Implement Proactive Outreach for High-Risk Segments</p>
+<p>    Focus on month-to-month contract customers 26.3% churn rate</p>
+<p>    Target customers with 12-24 month tenure 26.8% churn rate</p>
+<p>    Prioritize credit card users 27.1% churn rate</p>
+<p>2. Establish Early Warning System</p>
+<p>    Monitor engagement metrics beyond transactional data</p>
+<p>    Track customer service interactions and complaints</p>
+<p>    Implement NPS Net Promoter Score surveys</p>
+<p>3. Review Product Value Proposition</p>
+<p>    Conduct competitive analysis of service offerings</p>
+<p>    Assess feature gaps in digital banking platforms</p>
+<p>    Evaluate customer experience touchpoints</p>
+<h3>Medium-Term Initiatives </h3>
+<p>3-12 months</p>
+<p>1. Enhanced Customer Journey Mapping</p>
+<p>    Identify pain points across customer lifecycle</p>
+<p>    Implement friction reduction measures</p>
+<p>    Create personalized communication strategies</p>
+<p>2. Data Infrastructure Improvements</p>
+<p>    Collect additional churn predictors:</p>
+<p>      Customer satisfaction scores</p>
+<p>      Service interaction quality metrics</p>
+<p>      Digital engagement patterns</p>
+<p>      Competitive offer awareness</p>
+<p>3. Retain and Win-Back Programs</p>
+<p>    Develop retention incentives for high-value customers</p>
+<p>    Create win-back offers for recent churners</p>
+<p>    Implement loyalty rewards that recognize tenure</p>
+<h3>Long-Term Strategy </h3>
+<p>12+ months</p>
+<p>1. Predictive Analytics Enhancement</p>
+<p>    Improve model with additional features</p>
+<p>    Implement machine learning models Random Forest, XGBoost</p>
+<p>    Develop real-time churn prediction system</p>
+<p>2. Customer Experience Transformation</p>
+<p>    Redesign onboarding process for better early engagement</p>
+<p>    Implement proactive customer service</p>
+<p>    Create value-added services that increase switching costs</p>
+<p>3. Competitive Positioning</p>
+<p>    Develop unique value propositions</p>
+<p>    Focus on relationship-building over transactional relationships</p>
+<p>    Create community and engagement beyond banking services</p>
+<h2>Conclusion</h2>
+<p>This analysis reveals critical insights about customer churn in the banking sector:</p>
+<h3>Key Takeaways</h3>
+<p>1. High Churn Rate:At 26.7%, churn significantly exceeds industry benchmarks, indicating substantial revenue loss opportunities</p>
+<p>2. Surprising Patterns:</p>
+<p>    Contract type, duration, and payment methods show minimal churn rate differences</p>
+<p>    Longer tenure does not correlate with lower churn</p>
+<p>    Pricing is not a primary churn driver</p>
+<p>3. Model Limitations:</p>
+<p>    Current features explain very little of churn behavior 1%</p>
+<p>    Additional variables customer satisfaction, service quality, engagement are needed</p>
+<p>    Model accuracy 73.8% needs improvement for actionable predictions</p>
+<p>4. Action Required:</p>
+<p>    Focus on customer experience and value delivery</p>
+<p>    Expand data collection beyond transactional metrics</p>
+<p>    Implement proactive retention strategies</p>
+<h3>Data Gaps and Future Research</h3>
+<p>The analysis highlights critical data gaps that limit predictive capability:</p>
+<p>Missing Critical Variables:</p>
+<ul><li>Customer satisfaction and NPS scores</li><li>Service quality metrics response times, resolution rates</li><li>Digital engagement patterns app usage, feature adoption</li><li>Competitive intelligence offer awareness, comparison shopping</li><li>Life events moves, job changes, family changes</li></ul>
+<p>Recommended Data Collection:</p>
+<ul><li>Implement customer experience tracking</li><li>Capture interaction sentiment and quality</li><li>Monitor digital product adoption and usage</li><li>Survey customers on competitive landscape</li><li>Track life events that may impact banking relationships</li></ul>
+<h3>Final Recommendation</h3>
+<p>While the current dataset provides valuable baseline analysis, the uniform churn rates across all segmentssuggest that deeper, qualitative factors drive customer decisions. We recommend:</p>
+<p>1. Immediate:Focus on qualitative research to understand &quot;why&quot; customers leave</p>
+<p>2. Short-term:Expand data collection to include engagement and satisfaction metrics</p>
+<p>3. Medium-term:Build predictive models with richer feature sets</p>
+<p>4. Long-term:Create comprehensive customer experience programs that build genuine loyalty beyond contractual obligations</p>
+<p>The bank&#x27;s challenge is not price or product, but creating emotional engagementand perceived valuethat make customers choose to stay rather than leave.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

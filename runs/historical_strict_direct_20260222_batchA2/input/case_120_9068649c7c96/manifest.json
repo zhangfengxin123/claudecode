@@ -1,0 +1,37 @@
+[
+  {
+    "name": "20251014-中国汽车工程学会-中国研发团队领衔，全固态电池研发到产业化进程加速！.pdf",
+    "local": "20251014-中国汽车工程学会-中国研发团队领衔，全固态电池研发到产业化进程加速！.pdf",
+    "ok": true,
+    "error": "",
+    "size": 7080466
+  },
+  {
+    "name": "20260109-光大证券-锂电新技术展望：固态电池产业化进入新阶段.pdf",
+    "local": "20260109-光大证券-锂电新技术展望：固态电池产业化进入新阶段.pdf",
+    "ok": true,
+    "error": "",
+    "size": 2731804
+  },
+  {
+    "name": "20250724-野村东方国际证券-固态电池：产业新周期的起点.pdf",
+    "local": "20250724-野村东方国际证券-固态电池：产业新周期的起点.pdf",
+    "ok": true,
+    "error": "",
+    "size": 1503645
+  },
+  {
+    "name": "20260106-华福证券-电力设备与新能源行业固态电池深度研究报告：电池变革重要赛点，材料设备全新颠覆.pdf",
+    "local": "20260106-华福证券-电力设备与新能源行业固态电池深度研究报告：电池变革重要赛点，材料设备全新颠覆.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 4826860
+  },
+  {
+    "name": "20251206-J.P. Morgan-Solid State Battery：Pilot line sample testing in progress； Expert call takeaways-251206.pdf",
+    "local": "20251206-J.P. Morgan-Solid State Battery：Pilot line sample testing in progress； Expert call takeaways-251206.pdf",
+    "ok": true,
+    "error": "",
+    "size": 687906
+  }
+]

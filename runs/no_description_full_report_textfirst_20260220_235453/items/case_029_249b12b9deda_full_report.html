@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：国际贸易</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：国际贸易</h1>
+    <p class='sub'>来源: /view/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Global Trade Balance Analysis 2024&quot;
+description: &quot;Comprehensive analysis of international trade surpluses and deficits across 205 countries, revealing global economic imbalances and key trading relationships.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Global Trade Balance Analysis 2024</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of bilateral trade balances between 205 exporting countries and 243 importing partners worldwide. The data reveals significant global trade imbalances, with China maintaining the largest trade surplus at 38 billion, while the United States faces the largest deficit at 48.8 billion. The analysis highlights the polarization of global trade, where 157 countries 76.6% operate with trade deficits compared to only 48 countries 23.4% with surpluses.</p>
+<div class='plot-card'><div class='plot-meta'><code>top20_countries.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/top20_countries.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The global trade system shows marked asymmetry, with China&#x27;s surplus nearly 4.8 times larger than Germany&#x27;s, the second-largest surplus country. Emerging economies, particularly in Asia and the Middle East, dominate the surplus rankings, while advanced economies, including the US, UK, France, and Japan, account for the largest deficits.</p>
+<h2>Data Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How many countries are included in this trade balance dataset?</li><li>What is the total value of global trade imbalances?</li><li>What percentage of countries have trade surpluses versus deficits?</li></ul></details>
+<p>The dataset contains comprehensive bilateral trade balance information covering 205 exporting countries and 243 importing countries/regions. Key statistics include:</p>
+<ul><li>Total exporting countries: 205</li><li>Total importing partners: 243</li><li>Countries with trade surplus: 48 23.4%</li><li>Countries with trade deficit: 157 76.6%</li><li>Maximum surplus: 37,961M China</li><li>Maximum deficit: -48,789M United States</li><li>Mean balance: -328M</li><li>Median balance: -89M</li></ul>
+<p>The data represents net trade balances calculated as exports minus imports, where positive values indicate trade surpluses exporting more than importing and negative values indicate trade deficits importing more than exporting.</p>
+<h2>Top Trade Surplus Countries</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which countries have the largest trade surpluses and what are their key exports?</li><li>How does China&#x27;s surplus compare to other top surplus countries?</li><li>What factors contribute to these countries&#x27; trade surpluses?</li></ul></details>
+<p>The top 10 countries by trade surplus demonstrate a clear pattern of manufacturing and energy-exporting economies dominating global trade:</p>
+<div class='plot-card'><div class='plot-meta'><code>top20_countries.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/top20_countries.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>1. China: 37,961M - The world&#x27;s largest surplus, driven by manufacturing exports across electronics, machinery, and consumer goods</p>
+<p>2. Germany: 7,898M - Strong in automotive manufacturing, machinery, and chemical exports</p>
+<p>3. Saudi Arabia: 5,068M - Oil and petrochemical exports to global markets</p>
+<p>4. Netherlands: 4,515M - Strategic European trade hub and logistics gateway</p>
+<p>5. Brazil: 4,214M - Agricultural commodities and natural resource exports</p>
+<p>6. Italy: 2,713M - Luxury goods, machinery, and automotive exports</p>
+<p>7. Vietnam: 2,468M - Emerging manufacturing hub in Southeast Asia</p>
+<p>8. Mexico: -5,600M - Despite NAFTA/USMCA integration, maintains deficit with US</p>
+<p>9. Japan: -5,597M - Advanced technology exports but significant energy imports</p>
+<p>10. Canada: -3,735M - Resource exports but significant consumer imports</p>
+<h3>Key Insights:</h3>
+<ul><li>China&#x27;s dominance: China&#x27;s surplus is nearly 5x larger than Germany&#x27;s, representing 47% of the total surplus among top 20 countries</li><li>Energy exporters: Saudi Arabia, Russia, and Norway benefit from global energy demand</li><li>Manufacturing hubs: Vietnam, Ireland, and Czechia show growing manufacturing capabilities</li><li>Regional patterns: Asian economies China, Vietnam, Thailand dominate surplus rankings</li></ul>
+<h2>Major Trade Deficit Countries</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do advanced economies like the US and UK have such large trade deficits?</li><li>What are the implications of persistent trade deficits for these economies?</li><li>How do deficits correlate with domestic consumption patterns?</li></ul></details>
+<p>The largest trade deficits are concentrated in advanced economies with high domestic consumption and service-oriented economies:</p>
+<div class='plot-card'><div class='plot-meta'><code>bottom20_countries.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/bottom20_countries.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>1. United States: -48,789M - The largest global deficit, reflecting high consumer demand and manufacturing outsourcing</p>
+<p>2. India: -12,278M - Energy imports and consumer goods demand</p>
+<p>3. United Kingdom: -11,660M - Service economy with significant goods imports</p>
+<p>4. France: -8,029M - Similar pattern to UK, with trade deficit in goods</p>
+<p>5. Mexico: -5,600M - Despite maquiladora exports, imports from US create deficit</p>
+<p>6. Japan: -5,597M - Energy-dependent economy with technology exports</p>
+<p>7. United Arab Emirates: -4,953M - Diversification efforts requiring imports</p>
+<p>8. Turkiye: -4,121M - Energy imports and manufacturing inputs</p>
+<p>9. Canada: -3,735M - Consumer imports despite resource exports</p>
+<p>10. Australia: -3,046M - Mining exports but manufactured goods imports</p>
+<h3>Deficit Analysis:</h3>
+<ul><li>US dominance: The US accounts for 50.3% of the total deficit among bottom 20 countries</li><li>Advanced economies: 9 of top 10 deficit countries are advanced or emerging economies</li><li>Energy dependence: Japan, Turkiye, and UAE deficits reflect energy import needs</li><li>Structural factors: Deficits correlate with service-based economies and high consumption</li></ul>
+<h2>Distribution of Trade Balances</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does the distribution pattern tell us about global trade inequality?</li><li>How many countries have balanced trade near zero?</li><li>What is the concentration of trade surpluses among a few countries?</li></ul></details>
+<p>The distribution of global trade balances reveals significant concentration and asymmetry:</p>
+<div class='plot-card'><div class='plot-meta'><code>distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Distribution Characteristics:</p>
+<ul><li>Highly skewed: The distribution shows extreme values with China&#x27;s surplus and US deficit as outliers</li><li>Negative skew: More countries operate with deficits 157 than surpluses 48</li><li>Concentration: The top 5 surplus countries China, Germany, Saudi Arabia, Netherlands, Brazil account for significant proportion of total surplus</li><li>No balanced trade: Zero countries have truly balanced trade near-zero balances</li></ul>
+<p>Interpretation:</p>
+<p>1. Polarization: Clear divide between surplus exporters and deficit importers</p>
+<p>2. China&#x27;s unique position: Extreme surplus represents manufacturing dominance</p>
+<p>3. US consumption pattern: Large deficit reflects domestic demand and global supply chain integration</p>
+<p>4. Systemic imbalance: The negative mean -$328M indicates global trade system favors deficit positions</p>
+<h2>Top Import Destinations by Trade Balance Impact</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which countries receive the most exports from surplus countries?</li><li>How does trade flow from surplus to deficit countries?</li><li>What are the key trade corridors in global commerce?</li></ul></details>
+<p>Analyzing import destinations reveals the flows from surplus-producing countries to deficit-consuming markets:</p>
+<div class='plot-card'><div class='plot-meta'><code>import_destinations.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/import_destinations.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Import Destinations:</p>
+<p>1. United States: +11,105M - Net importer receiving exports from China, Germany, Mexico, and others</p>
+<p>2. China, P.R.: Hong Kong: +4,828M - Regional trade hub processing exports</p>
+<p>3. United Kingdom: +2,841M - Service economy with significant goods imports</p>
+<p>4. European Union members: Multiple EU countries appear as major import destinations</p>
+<p>5. Emerging markets: India, Brazil, and other emerging economies as consumers</p>
+<p>Trade Flow Patterns:</p>
+<ul><li>Surplus to deficit flow: Clear pattern of exports from China/Vietnam/Brazil to US/UK/EU</li><li>Hub economies: Hong Kong and Netherlands act as redistribution points</li><li>Regional integration: EU countries show significant intra-regional trade flows</li><li>Development aid: Emerging markets receive exports from advanced economies</li></ul>
+<h2>Trade Balance Heatmap</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which country pairs show the strongest bilateral trade relationships?</li><li>How does China trade with its top partners compared to Germany?</li><li>What patterns emerge in the trade relationships between major economies?</li></ul></details>
+<p>The heatmap visualization reveals the intensity and direction of bilateral trade relationships between top exporters and importers:</p>
+<div class='plot-card'><div class='plot-meta'><code>trade_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/trade_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Heatmap Insights:</p>
+<ul><li>China-US relationship: The most significant bilateral trade imbalance, with China maintaining large surplus</li><li>Europe-China trade: Germany, Netherlands, and other EU countries show varying balances with China</li><li>Intra-regional flows: European countries show balanced trade among themselves</li><li>Complementary economies: Trade flows align with comparative advantages manufacturing vs. services, energy vs. technology</li></ul>
+<p>Key Trade Corridors:</p>
+<p>1. China → US: Largest bilateral flow, representing manufacturing hub to consumption market</p>
+<p>2. Germany → EU partners: Balanced trade with European neighbors</p>
+<p>3. Energy exporters → Consumers: Saudi Arabia/Russia to energy-importing economies</p>
+<p>4. Emerging Asia → Global markets: Vietnam, Thailand exports to developed economies</p>
+<h2>Global Trade Flow Visualization</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do trade flows structure the global economy?</li><li>Which regions are net exporters versus net importers?</li><li>What are the major trade arteries in the global system?</li></ul></details>
+<p>The Sankey diagram provides a visual representation of how trade flows through the global economy:</p>
+<div class='plot-card'><div class='plot-meta'><code>trade_flow_sankey.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/trade_flow_sankey.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Flow Structure:</p>
+<ul><li>Exporters&#x27; hub: China accounts for 48% of total surplus among top 10 exporters</li><li>Importers&#x27; hub: United States receives 51% of total import value among top 10 destinations</li><li>Concentration effect: Trade flows are highly concentrated among top economies</li><li>Directionality: Clear pattern from East/South exporters to West/North importers</li></ul>
+<p>Interpretation:</p>
+<p>The Sankey reveals the hierarchical nature of global trade, with China as the central exporting node and the US as the primary consuming destination. The visualization demonstrates the asymmetric nature of global trade relationships.</p>
+<h2>Global Trade Balance Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How many countries have positive versus negative trade balances?</li><li>What is the range of trade balances across all countries?</li><li>Which countries are outliers in terms of trade balance?</li></ul></details>
+<p>The scatter plot provides a comprehensive overview of all countries&#x27; trade balances:</p>
+<div class='plot-card'><div class='plot-meta'><code>trade_balance_overview.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/trade_balance_overview.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Overview Statistics:</p>
+<ul><li>Surplus countries: 48 23.4% - Concentrated in Asia, Middle East, select European countries</li><li>Deficit countries: 157 76.6% - Majority of global economies</li><li>Zero-balance countries: 0 - No countries achieve balanced trade</li><li>Outliers: China +38B and US -$49B as extreme values</li></ul>
+<p>Key Observations:</p>
+<p>1. Deficit majority: Most countries operate with trade deficits</p>
+<p>2. Concentrated surpluses: Trade surpluses are highly concentrated among few countries</p>
+<p>3. China&#x27;s unique position: Extreme surplus dwarfs all other surplus countries</p>
+<p>4. US consumption: Largest deficit reflects domestic consumption patterns</p>
+<h2>China&#x27;s Trade Relationships</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Who are China&#x27;s largest trade partners?</li><li>Which countries have deficits with China?</li><li>How does China&#x27;s trade balance vary across regions?</li></ul></details>
+<p>Detailed analysis of China&#x27;s bilateral trade relationships reveals the extent of its global trade dominance:</p>
+<div class='plot-card'><div class='plot-meta'><code>china_trade_relationships.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/china_trade_relationships.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>China&#x27;s Top Trade Partners:</p>
+<p>1. Advanced Economies: +6,214M - Largest surplus market</p>
+<p>2. Africa: +666M - Trade surplus across African continent</p>
+<p>3. Europe: Positive balances with most European countries</p>
+<p>4. Latin America: Surplus through commodity exports</p>
+<p>5. Asia: Mixed balances with regional partners</p>
+<p>China&#x27;s Trade Strategy:</p>
+<ul><li>Export diversity: Exports to all major regions and economic blocs</li><li>Manufacturing dominance: Consumer goods, electronics, machinery exports</li><li>Commodity imports: Energy and raw materials from commodity exporters</li><li>Regional integration: ASEAN, RCEP, BRI initiatives</li></ul>
+<p>Deficits with China:</p>
+<p>Several countries show deficits in their trade with China, including:</p>
+<ul><li>Angola: -145M oil exports to China</li><li>Australia, Russia, Middle Eastern countries: Resource exporters</li></ul>
+<h2>United States&#x27; Trade Relationships</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Who are the US&#x27;s largest trade partners?</li><li>Why does the US have such large trade deficits?</li><li>How does US trade balance vary across regions?</li></ul></details>
+<p>The US bilateral trade pattern reveals the sources of its massive global trade deficit:</p>
+<div class='plot-card'><div class='plot-meta'><code>us_trade_relationships.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/us_trade_relationships.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>US Trade Deficit Sources:</p>
+<p>1. China: Primary source of US trade deficit manufacturing exports to US</p>
+<p>2. Mexico: Significant deficit despite NAFTA/USMCA integration</p>
+<p>3. European Union: Deficits with Germany, Italy, and other manufacturing economies</p>
+<p>4. Japan: Long-standing trade deficit with Asian manufacturing hub</p>
+<p>5. Southeast Asia: Deficits with Vietnam, Malaysia, Thailand</p>
+<p>US Trade Pattern:</p>
+<ul><li>Consumer demand: High domestic consumption drives imports</li><li>Manufacturing offshore: US companies outsource manufacturing to lower-cost countries</li><li>Service exports: US maintains surplus in services trade, offsetting goods deficit</li><li>Energy independence: Recent reduction in energy imports</li></ul>
+<p>US Surplus Countries:</p>
+<p>The US maintains surpluses with:</p>
+<ul><li>Commodity exporters: Australia, Canada energy exports to US</li><li>Smaller markets: Select developing economies</li><li>Agriculture importers: Food importing countries</li></ul>
+<h2>Regional Trade Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How are trade balances distributed across world regions?</li><li>Which regions have the largest surpluses or deficits?</li><li>How does regional integration affect trade balances?</li></ul></details>
+<p>The sunburst diagram reveals the regional structure of global trade imbalances:</p>
+<div class='plot-card'><div class='plot-meta'><code>regional_trade.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/249b12b9dedab4edd273f998507bc7bb93dea414217e5cde284671013c6cf01e/assets/regional_trade.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Regional Trade Patterns:</p>
+<p>1. Emerging Asia: Dominant surplus region led by China, Vietnam, Thailand</p>
+<p>2. Advanced Economies: Deficit region led by US, Japan, UK, France</p>
+<p>3. Latin America: Mixed pattern with Brazil surplus and Mexico deficit</p>
+<p>4. Middle East: Energy exporters Saudi Arabia with large surpluses</p>
+<p>5. Africa: Generally deficit region except South Africa</p>
+<p>Regional Insights:</p>
+<ul><li>East-West divide: Clear pattern of East/South surpluses vs. West/North deficits</li><li>Manufacturing vs. Consumption: Manufacturing regions Asia have surpluses; consumption regions West have deficits</li><li>Resource exporters: Energy and commodity exporters show surpluses</li><li>Service economies: Advanced service economies US, UK have goods deficits</li></ul>
+<p>Regional Integration Effects:</p>
+<ul><li>European Union: Balanced intra-regional trade reduces net deficits</li><li>NAFTA/USMCA: Mexico&#x27;s deficit reflects US consumption hub role</li><li>ASEAN: Emerging integration creating regional trade surpluses</li><li>Belt and Road: China&#x27;s regional infrastructure investment creating trade linkages</li></ul>
+<h2>Key Findings and Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the main drivers of global trade imbalances?</li><li>How do these imbalances affect global economic stability?</li><li>What policy considerations emerge from this analysis?</li></ul></details>
+<h3>Structural Drivers</h3>
+<p>1. Comparative Advantage: Trade imbalances reflect natural comparative advantages</p>
+<p>    Manufacturing hubs China, Vietnam, Germany</p>
+<p>    Energy exporters Saudi Arabia, Russia, Norway</p>
+<p>    Service economies US, UK, France</p>
+<p>2. Global Supply Chains: Offshoring and specialization create structural deficits</p>
+<p>    Manufacturing relocation to lower-cost countries</p>
+<p>    Just-in-time production and logistics hubs</p>
+<p>    Regional specialization and clustering</p>
+<p>3. Demographic Factors: Aging populations in advanced economies drive consumption</p>
+<p>    Higher consumption-to-savings ratios in developed countries</p>
+<p>    Investment needs in emerging economies</p>
+<p>    Domestic demand patterns</p>
+<h3>Implications</h3>
+<p>1. Economic Vulnerability:</p>
+<p>    Deficit countries vulnerable to external shocks</p>
+<p>    Currency pressure on deficit economies</p>
+<p>    Political tensions from persistent imbalances</p>
+<p>2. Policy Challenges:</p>
+<p>    Trade war tensions between major economies</p>
+<p>    Currency manipulation concerns</p>
+<p>    Industrial policy and manufacturing reshoring</p>
+<p>3. Systemic Risks:</p>
+<p>    Concentration risk in key exporters China</p>
+<p>    Supply chain vulnerability</p>
+<p>    Geopolitical tensions affecting trade flows</p>
+<h3>Recommendations</h3>
+<p>1. For Deficit Countries:</p>
+<p>    Enhance export competitiveness through innovation</p>
+<p>    Develop high-value manufacturing capabilities</p>
+<p>    Focus on service exports to offset goods deficits</p>
+<p>    Address domestic consumption/savings imbalances</p>
+<p>2. For Surplus Countries:</p>
+<p>    Increase domestic consumption</p>
+<p>    Diversify export markets</p>
+<p>    Develop service sector capabilities</p>
+<p>    Address currency appreciation pressures</p>
+<p>3. Global Cooperation:</p>
+<p>    Strengthen multilateral trade mechanisms</p>
+<p>    Address structural imbalances through dialogue</p>
+<p>    Promote balanced and sustainable trade relationships</p>
+<p>    Enhance supply chain resilience</p>
+<h2>Data Sources and Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What time period does this data cover?</li><li>How are trade balances calculated?</li><li>What data quality issues should be considered?</li></ul></details>
+<p>Data Coverage:</p>
+<ul><li>205 exporting countries and 243 importing partners/regions</li><li>Bilateral trade balance data exports minus imports</li><li>Values in millions of currency units likely USD</li></ul>
+<p>Calculation Method:</p>
+<ul><li>Trade Balance = Total Exports - Total Imports</li><li>Positive values = Trade Surplus net exporter</li><li>Negative values = Trade Deficit net importer</li><li>Bilateral balances aggregated to calculate country totals</li></ul>
+<p>Data Quality Considerations:</p>
+<ul><li>Zero values indicate no trade relationship between countries</li><li>Aggregated categories World, regions for comparative analysis</li><li>Excludes services trade goods only</li><li>Time period not specified in source data</li></ul>
+<p>Limitations:</p>
+<ul><li>Does not capture services trade balance</li><li>No temporal trends single time period</li><li>Currency fluctuations may affect comparability</li><li>Regional aggregations may mask country-level variations</li></ul>
+<h2>Conclusion</h2>
+<p>This analysis reveals a highly polarized global trade system characterized by:</p>
+<p>1. Concentration: Trade surpluses concentrated among few countries China, Germany, Saudi Arabia</p>
+<p>2. Asymmetry: Majority of countries 76.6% operate with trade deficits</p>
+<p>3. Regional patterns: East/South exporters vs. West/North importers</p>
+<p>4. Structural imbalances: Reflecting comparative advantages and global supply chain integration</p>
+<p>The data suggests that trade imbalances are largely structural, reflecting natural economic patterns rather than temporary distortions. However, the extreme concentration of surpluses particularly China&#x27;s dominance and deficits particularly the US&#x27;s consumption pattern creates vulnerabilities and tensions in the global economic system.</p>
+<p>Future analysis should examine:</p>
+<ul><li>Temporal trends and evolution of these patterns</li><li>Services trade balance not captured in goods data</li><li>Impact of trade policies and tariffs</li><li>Geopolitical factors affecting trade flows</li><li>Environmental and sustainability considerations</li></ul>
+<p>Understanding these trade dynamics is crucial for policymakers, businesses, and investors navigating the global economy.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

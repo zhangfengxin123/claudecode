@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：startup_company_one_line_pitches</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：startup_company_one_line_pitches</h1>
+    <p class='sub'>来源: /view/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Startup Ecosystem Analysis: Industry Trends, Funding Patterns and Technology Landscape&quot;
+description: &quot;Comprehensive analysis of 3,069 startups across 15 industries, examining funding patterns, technology trends, and market opportunities&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Startup Ecosystem Analysis: Industry Trends, Funding Patterns and Technology Landscape</h1>
+<h2>Executive Summary</h2>
+<p>This comprehensive analysis examines 3,069 startupsacross 15 industries, revealing key insights into the current startup ecosystem. The dataset represents over 309 billionin total funding, with companies spanning from pre-stage to IPO, covering technologies from Machine Learning to Quantum Computing.</p>
+<p>Key Findings:</p>
+<ul><li>Gaming and Social Medialead industry representation with 223 and 222 startups respectively</li><li>Deep Learningcommands the highest average funding at 125 millionper startup</li><li>IPO companiesdominate with 148.6 billionin total funding</li><li>The ecosystem spans a massive 177 trillion total addressable market</li><li>Average company age is 8.4 years, indicating a mature ecosystem</li></ul>
+<h2>Data Overview and Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the total dataset size and what time period does it cover?</li><li>What data cleaning procedures were applied?</li></ul></details>
+<p>This analysis examines startup company data including funding stages, technology focus, industry sectors, employee counts, and market sizes. The data was cleaned to handle missing values in funding amounts filled with 0, employee counts filled with median, and funding stages filled with &#x27;Unknown&#x27;.</p>
+<p>Dataset Characteristics:</p>
+<ul><li>Total Startups: 3,069</li><li>Total Funding: 309.3 billion USD</li><li>Average Funding per Startup: 100.8 million</li><li>Median Funding: 7.96 million</li><li>Total Addressable Market: 177.1 trillion</li></ul>
+<p>The disparity between average 100.8M and median 7.96M funding highlights the presence of highly-funded outliers, particularly at later stages Series C+, Private Equity, and IPO.</p>
+<h2>Industry Distribution Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which industries have the highest number of startups?</li><li>Which industries attract the most funding on average?</li></ul></details>
+<p>The startup landscape is relatively balanced across industries, with Gaming leading at 223 startups 7.3% of total and IoT at 189 6.2% of total, showing a spread of only 34 companies between the most and least represented sectors.</p>
+<div class='plot-card'><div class='plot-meta'><code>industry_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/industry_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Industry Funding Analysis</h3>
+<p>While Gaming has the most startups, Social Mediaattracts the highest average funding at 112.34 millionper startup, followed by CleanTech111.92M and EdTech111.60M.</p>
+<div class='plot-card'><div class='plot-meta'><code>funding_by_industry.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/funding_by_industry.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Industry Insights:</p>
+<p>1. Social Mediacommands the highest average funding 112.34M, indicating investor preference for scalable consumer platforms</p>
+<p>2. CleanTechshows strong investor interest 111.92M average, reflecting the growing focus on sustainability</p>
+<p>3. EdTechremains attractive 111.60M average, driven by pandemic-accelerated digital transformation</p>
+<p>4. IoThas the lowest average funding 91.57M, suggesting higher perceived execution risks</p>
+<p>5. Gamingleads in volume but not per-company funding, indicating a volume-over-value strategy</p>
+<h3>Industry Funding Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>funding_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/funding_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The box plot reveals significant variance in funding within industries, particularly in Social Mediaand Gaming, where outliers skew averages upward. This suggests these industries have higher risk-reward profiles with potential for unicorn exits.</p>
+<h2>Funding Stage Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the distribution of startups across funding stages?</li><li>How does funding vary across different stages?</li></ul></details>
+<p>The funding stage distribution shows remarkable balance across early and late stages, with each major stage Pre-Seed through IPO containing 333-355 companies, suggesting a healthy pipeline of startups at all maturity levels.</p>
+<div class='plot-card'><div class='plot-meta'><code>funding_stage_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/funding_stage_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Funding Funnel Visualization</h3>
+<div class='plot-card'><div class='plot-meta'><code>funding_funnel.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/funding_funnel.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Stage-by-Stage Funding Breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th>Stage</th><th>Companies</th><th>Total Funding M</th><th>Avg Funding M</th></tr></thead><tbody><tr><td>Pre-Seed</td><td>345</td><td>198.38</td><td>0.58</td></tr><tr><td>Seed</td><td>355</td><td>791.95</td><td>2.23</td></tr><tr><td>Series A</td><td>336</td><td>2,897.12</td><td>8.62</td></tr><tr><td>Series B</td><td>333</td><td>9,189.64</td><td>27.59</td></tr><tr><td>Series C</td><td>340</td><td>23,587.16</td><td>69.37</td></tr><tr><td>Series D</td><td>335</td><td>49,169.18</td><td>146.77</td></tr><tr><td>Private Equity</td><td>353</td><td>74,884.84</td><td>212.14</td></tr><tr><td>IPO</td><td>336</td><td>148,568.31</td><td>442.17</td></tr></tbody></table></div>
+<p>Key Funding Insights:</p>
+<p>1. Exponential Growth: Average funding grows exponentially across stages, from 0.58M at Pre-Seed to 442.17M at IPO</p>
+<p>2. Dip at Series C: Series C 69.37M shows slightly lower average than expected, potentially representing companies at scaling inflection points</p>
+<p>3. IPO Dominance: IPO companies account for 48% of total fundingdespite being only 11% of companies</p>
+<p>4. Healthy Pipeline: Balanced distribution across stages indicates strong ecosystem sustainability</p>
+<h3>Funding Distribution Patterns</h3>
+<div class='plot-card'><div class='plot-meta'><code>funding_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/funding_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The histogram reveals a highly skewed distribution, with the vast majority of companies clustered in the lower funding ranges 0-50M, while a long tail extends to 900M+. This confirms the &quot;winner-takes-all&quot; dynamics of startup investing.</p>
+<h2>Technology Landscape</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most popular technologies among startups?</li><li>Which technologies command the highest funding?</li></ul></details>
+<p>The technology stack shows strong preference for emerging technologies, with Augmented Realityleading at 225 startups 7.3% of total, followed closely by Machine Learning224 startups and Edge Computing219 startups.</p>
+<div class='plot-card'><div class='plot-meta'><code>technology_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/technology_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Technology Funding Analysis</h3>
+<p>While Augmented Realityhas the most startups, Deep Learningcommands the highest average funding at 125 millionper startup, suggesting investors see higher potential in advanced AI capabilities.</p>
+<div class='plot-card'><div class='plot-meta'><code>avg_funding_by_tech.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/avg_funding_by_tech.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top Technologies by Average Funding:</p>
+<p>1. Deep Learning: 125.0M 206 startups</p>
+<p>2. Artificial Intelligence: 113.9M 208 startups</p>
+<p>3. Edge Computing: 107.5M 219 startups</p>
+<p>4. 5G: 109.2M 206 startups</p>
+<p>5. Augmented Reality: 103.8M 225 startups</p>
+<p>Technology Trends:</p>
+<ul><li>AI Technologies Dominate: Machine Learning, Deep Learning, and AI together account for 638 startups 21%</li><li>Connectivity Focus: 5G and Edge Computing show strong investor interest in infrastructure plays</li><li>Immersive Tech: AR and VR represent 434 startups 14%, highlighting the metaverse trend</li><li>Traditional Tech: Cybersecurity and IoT show steady but lower funding, indicating mature markets</li></ul>
+<h2>Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What relationships exist between different startup metrics?</li><li>How does company age correlate with funding?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Correlation Findings:</p>
+<p>1. Funding vs Employees: Moderate positive correlation 0.52 - larger funding rounds enable hiring</p>
+<p>2. Company Age vs Funding: Moderate positive correlation 0.47 - older companies have raised more funding</p>
+<p>3. Market Size vs Funding: Weak correlation 0.32 - surprising lack of alignment with market opportunity</p>
+<p>4. Founding Year vs Employees: Weak positive correlation 0.35 - older companies tend to have more employees</p>
+<p>The weak correlation between market size and funding suggests investors prioritize team, technology, and traction over TAM alone.</p>
+<h2>Market Size and Funding Relationship</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does market size relate to funding amounts?</li><li>Which industries have the largest addressable markets?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>market_vs_funding.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/market_vs_funding.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot shows low correlation0.32 between market size and funding, with several notable outliers:</p>
+<ul><li>Companies with smaller markets20-40B securing massive funding500-900M</li><li>Companies in massive markets100-150B with modest funding50-200M</li></ul>
+<p>This suggests investors evaluate execution capabilityand market capture strategymore heavily than TAM alone.</p>
+<h3>Total Addressable Market by Industry</h3>
+<div class='plot-card'><div class='plot-meta'><code>market_size_treemap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/market_size_treemap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The treemap visualization reveals that while industries have similar startup counts, their market opportunities vary dramatically:</p>
+<ul><li>AI &amp; Machine Learning: Largest combined market opportunity</li><li>HealthTech: Massive market driven by aging populations</li><li>FinTech: High value due to transaction volumes</li></ul>
+<h2>Employee Growth and Scaling Patterns</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does employee count relate to funding stage?</li><li>What are typical team sizes at different stages?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>funding_vs_employees.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/funding_vs_employees.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot reveals several scaling patterns:</p>
+<p>1. Pre-Seed to Seed: 2-20 employees, 0.25-5M funding</p>
+<p>2. Series A-B: 20-100 employees, 5-50M funding</p>
+<p>3. Series C-D: 100-500 employees, 50-300M funding</p>
+<p>4. PE/IPO: 500-4,286 employees, 300-900M funding</p>
+<p>Scaling Rule of Thumb: Each funding round typically supports a 3-5x employee growth, with Series C being the critical scaling inflection point.</p>
+<h2>Company Age and Funding Dynamics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does company age affect funding ability?</li><li>What is the typical age distribution across funding stages?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>age_vs_funding.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/age_vs_funding.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The relationship shows older companies tend to raise more, with several notable patterns:</p>
+<p>1. Young Companies 0-3 years: Typically Pre-Seed to Seed, 10M funding</p>
+<p>2. Mid-Stage 3-7 years: Series A-C, 10-200M funding</p>
+<p>3. Mature 7-15 years: Series D to IPO, 200-900M funding</p>
+<p>However, outliers exist where younger companies2-4 years have raised significant funding100-300M, indicating breakthrough technologiesor exceptional execution.</p>
+<h3>Company Age Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/age_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The histogram shows a relatively even distribution of company ages, with peaks at:</p>
+<ul><li>2-3 years: Early-stage companies exiting incubation</li><li>6-8 years: Companies reaching Series C/D inflection points</li><li>12-14 years: Mature companies approaching IPO</li></ul>
+<h2>Industry Ecosystem Overview</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/startup_ecosystem.svg' alt='startup_ecosystem.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6/assets/startup_ecosystem.svg' target='_blank' rel='noopener noreferrer'>startup_ecosystem.svg</a></figcaption></figure>
+<p>The ecosystem diagram illustrates the flow from funding stages through technologies to industries and outcomes, highlighting how different technologies map to specific industry verticals.</p>
+<p>Technology-Industry Mappings:</p>
+<ul><li>Machine Learning→ EdTech, HealthTech, AI &amp; ML</li><li>NLP→ Social Media, SaaS</li><li>Blockchain→ FinTech</li><li>IoT→ IoT Industry</li><li>AR/VR→ Gaming, Social Media</li></ul>
+<h2>Strategic Recommendations</h2>
+<h3>For Investors</h3>
+<p>1. Focus on Deep Learning: Highest average funding 125M suggests premium returns for AI specialization</p>
+<p>2. Late-Stage Opportunities: Series D and Private Equity offer access to proven businesses with 2-4 year IPO windows</p>
+<p>3. CleanTech Potential: High average funding 111.92M with fewer competitors in sustainable technologies</p>
+<h3>For Entrepreneurs</h3>
+<p>1. Target Social Media or EdTech: Higher average funding per startup compared to Gaming</p>
+<p>2. Consider Deep Learning: Technology with highest funding multiples</p>
+<p>3. Time Your Raises: Companies aged 6-8 years have optimal positioning for Series C/D raises</p>
+<p>4. Build to IPO: Average IPO company is 12 years old with 1,500+ employees</p>
+<h3>For Corporate Innovation</h3>
+<p>1. Monitor AI &amp; Machine Learning: Largest market opportunity with 201 startups</p>
+<p>2. Partner with AR/VR Companies: 434 startups in immersive technologies</p>
+<p>3. Invest in Edge Computing: Infrastructure play with strong funding 107.5M average</p>
+<h2>Limitations and Future Research</h2>
+<h3>Data Limitations</h3>
+<p>1. Funding Gaps: 29.2% of funding amounts were missing filled with 0</p>
+<p>2. Stage Ambiguity: 10.9% of funding stages were unknown</p>
+<p>3. Geographic Bias: Headquarters locations may not reflect actual operations</p>
+<p>4. Static Snapshot: Represents single point in time, not longitudinal data</p>
+<h3>Future Analysis Opportunities</h3>
+<p>1. Geographic Clustering: Analyze startup ecosystems by location</p>
+<p>2. Pitch Analysis: NLP analysis of one-line pitches for success patterns</p>
+<p>3. CEO Background: Correlation between founder experience and outcomes</p>
+<p>4. Time-Series Tracking: Monitor startup progression through stages</p>
+<h2>Conclusion</h2>
+<p>The startup ecosystem analyzed represents a healthy, balanced landscapeacross industries, technologies, and funding stages. Key takeaways:</p>
+<p>1. AI Technologies Dominance: Deep Learning and AI command premium valuations</p>
+<p>2. Balanced Pipeline: Even distribution across funding stages suggests ecosystem sustainability</p>
+<p>3. Execution Over TAM: Market size shows weak correlation with funding - team and execution matter more</p>
+<p>4. Late-Stage Opportunity: Series D, PE, and IPO represent 70% of total funding but only 34% of companies</p>
+<p>5. Mature Ecosystem: 8.4 year average company age indicates a developed startup landscape</p>
+<p>The 177 trillion total addressable marketacross all industries represents enormous opportunity, with immersive technologies AR/VR, AI/ML, and connectivity 5G, Edgeemerging as the dominant themes driving investor interest and startup formation.</p>
+<hr/>
+<h2>Appendix: Data Files</h2>
+<p>All cleaned data and analysis results are available in the folder:</p>
+<ul><li>: Cleaned dataset 3,069 records</li><li>: Statistical summary and data dictionary</li></ul>
+<h2>Interactive Charts</h2>
+<p>All charts in this report are interactive - hover over data points for detailed information, click legends to filter, and zoom into areas of interest.</p>
+<hr/>
+<p>Analysis Generated: 2025-01-13</p>
+<p>Data Points: 3,069 companies</p>
+<p>Total Funding Analyzed: 309.3 billion USD</p>
+<p>Markets Covered: 177.1 trillion TAM</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

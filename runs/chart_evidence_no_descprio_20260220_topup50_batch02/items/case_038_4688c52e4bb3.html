@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 4688c52e4bb3</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>dataset_fashion_store_customers</h1>
+  <div class='muted'>case_id: <span class='code'>4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_038_4688c52e4bb3</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>dataset_fashion_store_salesitems.csv</code></td><td>200</td><td>178794</td><td>text/csv</td><td><code>input/case_038_4688c52e4bb3/dataset_fashion_store_salesitems.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/files/dataset_fashion_store_salesitems.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>dataset_fashion_store_sales.csv</code></td><td>200</td><td>43275</td><td>text/csv</td><td><code>input/case_038_4688c52e4bb3/dataset_fashion_store_sales.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/files/dataset_fashion_store_sales.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>dataset_fashion_store_stock.csv</code></td><td>200</td><td>14767</td><td>text/csv</td><td><code>input/case_038_4688c52e4bb3/dataset_fashion_store_stock.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/files/dataset_fashion_store_stock.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>dataset_fashion_store_products.csv</code></td><td>200</td><td>32250</td><td>text/csv</td><td><code>input/case_038_4688c52e4bb3/dataset_fashion_store_products.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/files/dataset_fashion_store_products.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>dataset_fashion_store_customers.csv</code></td><td>200</td><td>29761</td><td>text/csv</td><td><code>input/case_038_4688c52e4bb3/dataset_fashion_store_customers.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/files/dataset_fashion_store_customers.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>dataset_fashion_store_salesitems.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>item_id</th><th>sale_id</th><th>product_id</th><th>quantity</th><th>original_price</th><th>unit_price</th><th>discount_applied</th><th>discount_percent</th><th>discounted</th><th>item_total</th><th>sale_date</th><th>channel</th><th>channel_campaigns</th></tr></thead><tbody><tr><td>2270</td><td>658</td><td>403</td><td>1</td><td>81.8</td><td>81.8</td><td>0</td><td>0.00%</td><td>0</td><td>81.8</td><td>2025-06-16</td><td>App Mobile</td><td>App Mobile</td></tr><tr><td>1170</td><td>336</td><td>284</td><td>1</td><td>81.79</td><td>81.79</td><td>0</td><td>0.00%</td><td>0</td><td>81.79</td><td>2025-06-17</td><td>E-commerce</td><td>Website Banner</td></tr><tr><td>2496</td><td>1255</td><td>71</td><td>1</td><td>80.76</td><td>80.76</td><td>0</td><td>0.00%</td><td>0</td><td>80.76</td><td>2025-04-16</td><td>App Mobile</td><td>App Mobile</td></tr><tr><td>1273</td><td>331</td><td>98</td><td>1</td><td>78.52</td><td>78.52</td><td>0</td><td>0.00%</td><td>0</td><td>78.52</td><td>2025-05-06</td><td>App Mobile</td><td>App Mobile</td></tr><tr><td>1829</td><td>1079</td><td>98</td><td>1</td><td>78.52</td><td>78.52</td><td>0</td><td>0.00%</td><td>0</td><td>78.52</td><td>2025-06-15</td><td>App Mobile</td><td>App Mobile</td></tr><tr><td>3221</td><td>478</td><td>98</td><td>1</td><td>78.52</td><td>78.52</td><td>0</td><td>0.00%</td><td>0</td><td>78.52</td><td>2025-04-14</td><td>App Mobile</td><td>App Mobile</td></tr><tr><td>2442</td><td>1082</td><td>257</td><td>1</td><td>77.9</td><td>77.9</td><td>0</td><td>0.00%</td><td>0</td><td>77.9</td><td>2025-04-06</td><td>App Mobile</td><td>App Mobile</td></tr><tr><td>730</td><td>747</td><td>413</td><td>1</td><td>76.15</td><td>76.15</td><td>0</td><td>0.00%</td><td>0</td><td>76.15</td><td>2025-04-21</td><td>App Mobile</td><td>App Mobile</td></tr></tbody></table></details><details><summary><code>dataset_fashion_store_sales.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>sale_id</th><th>channel</th><th>discounted</th><th>total_amount</th><th>sale_date</th><th>customer_id</th><th>country</th></tr></thead><tbody><tr><td>10</td><td>E-commerce</td><td>0</td><td>299.7</td><td>2025-05-21</td><td>195</td><td>France</td></tr><tr><td>100</td><td>App Mobile</td><td>0</td><td>681.05</td><td>2025-04-21</td><td>518</td><td>Germany</td></tr><tr><td>1000</td><td>E-commerce</td><td>0</td><td>324.5</td><td>2025-05-20</td><td>439</td><td>Germany</td></tr><tr><td>1001</td><td>E-commerce</td><td>0</td><td>287.85</td><td>2025-04-05</td><td>349</td><td>Germany</td></tr><tr><td>1003</td><td>App Mobile</td><td>0</td><td>430.64</td><td>2025-06-06</td><td>727</td><td>Portugal</td></tr><tr><td>1004</td><td>App Mobile</td><td>0</td><td>104.73</td><td>2025-04-27</td><td>983</td><td>Germany</td></tr><tr><td>1006</td><td>E-commerce</td><td>0</td><td>249.21</td><td>2025-05-05</td><td>309</td><td>Spain</td></tr><tr><td>1007</td><td>App Mobile</td><td>0</td><td>437.52</td><td>2025-04-16</td><td>53</td><td>Italy</td></tr></tbody></table></details><details><summary><code>dataset_fashion_store_stock.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>country</th><th>product_id</th><th>stock_quantity</th></tr></thead><tbody><tr><td>France</td><td>1</td><td>61</td></tr><tr><td>France</td><td>2</td><td>24</td></tr><tr><td>France</td><td>3</td><td>81</td></tr><tr><td>France</td><td>4</td><td>70</td></tr><tr><td>France</td><td>5</td><td>30</td></tr><tr><td>France</td><td>6</td><td>92</td></tr><tr><td>France</td><td>7</td><td>96</td></tr><tr><td>France</td><td>8</td><td>84</td></tr></tbody></table></details><details><summary><code>dataset_fashion_store_products.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>product_id</th><th>product_name</th><th>category</th><th>brand</th><th>color</th><th>size</th><th>catalog_price</th><th>cost_price</th><th>gender</th></tr></thead><tbody><tr><td>1</td><td>Soft Wrap Dress</td><td>Dresses</td><td>Tiva</td><td>Green</td><td>S</td><td>40.41</td><td>20.7</td><td>Female</td></tr><tr><td>2</td><td>Soft Wrap Tee</td><td>T-Shirts</td><td>Tiva</td><td>White</td><td>S</td><td>78.45</td><td>53.76</td><td>Female</td></tr><tr><td>3</td><td>Soft Linen Tee</td><td>T-Shirts</td><td>Tiva</td><td>Green</td><td>XL</td><td>23.9</td><td>14.81</td><td>Female</td></tr><tr><td>4</td><td>Soft Ribbed Tee</td><td>T-Shirts</td><td>Tiva</td><td>White</td><td>S</td><td>60</td><td>34.78</td><td>Female</td></tr><tr><td>5</td><td>Soft Wrap Trousers</td><td>Pants</td><td>Tiva</td><td>Blue</td><td>M</td><td>36.84</td><td>16.46</td><td>Female</td></tr><tr><td>6</td><td>Soft Wrap Shoes</td><td>Shoes</td><td>Tiva</td><td>Green</td><td>36</td><td>70.86</td><td>31.66</td><td>Female</td></tr><tr><td>7</td><td>Soft Linen Dress</td><td>Dresses</td><td>Tiva</td><td>White</td><td>M</td><td>57.66</td><td>24.07</td><td>Female</td></tr><tr><td>8</td><td>Soft Linen Trousers</td><td>Pants</td><td>Tiva</td><td>Green</td><td>M</td><td>50.91</td><td>33.59</td><td>Female</td></tr></tbody></table></details><details><summary><code>dataset_fashion_store_customers.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>customer_id</th><th>country</th><th>age_range</th><th>signup_date</th></tr></thead><tbody><tr><td>1</td><td>France</td><td>56-65</td><td>2025-04-24</td></tr><tr><td>2</td><td>France</td><td>36-45</td><td>2025-02-24</td></tr><tr><td>3</td><td>Netherlands</td><td>46-55</td><td>2024-04-12</td></tr><tr><td>4</td><td>Italy</td><td>36-45</td><td>2025-03-11</td></tr><tr><td>5</td><td>Spain</td><td>26-35</td><td>2025-04-26</td></tr><tr><td>6</td><td>Spain</td><td>46-55</td><td>2024-12-14</td></tr><tr><td>7</td><td>France</td><td>46-55</td><td>2024-09-27</td></tr><tr><td>8</td><td>Netherlands</td><td>46-55</td><td>2024-04-16</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td><code>sales_trend_by_date.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_trend_by_date.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>sales_by_country.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_by_country.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>sales_by_channel.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_by_channel.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>top_products.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/top_products.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>top_brands.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/top_brands.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>category_performance.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/category_performance.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>customer_age_distribution.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/customer_age_distribution.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>sales_discount_comparison.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_discount_comparison.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <article class='chart-card'><h4>sales_trend_by_date.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>sales_by_country.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>sales_by_channel.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>top_products.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>top_brands.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>category_performance.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>customer_age_distribution.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>sales_discount_comparison.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

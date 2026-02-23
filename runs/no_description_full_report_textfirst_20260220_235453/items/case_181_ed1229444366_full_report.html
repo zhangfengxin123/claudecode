@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：deepseek</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：deepseek</h1>
+    <p class='sub'>来源: /view/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Engram: 通过条件记忆实现的下一代稀疏模型架构深度分析&quot;
+description: &quot;深入分析 DeepSeek-AI 和北京大学提出的条件记忆架构 Engram，探索其在知识检索、推理能力和长上下文处理方面的突破性表现&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-18&quot;
+</pre></details>
+<h1>Engram: 条件记忆架构的性能优势与机制洞察</h1>
+<h2>执行摘要</h2>
+<p>本报告对 DeepSeek-AI 和北京大学联合发表的 Engram 论文进行了全面分析。Engram 引入了条件记忆（Conditional Memory）作为稀疏性的新维度，通过现代化的 N-gram 嵌入实现 O1 查找。在严格的等参数、等 FLOPs 对比下，Engram-27B 在多个关键基准测试中显著优于 MoE-27B 基线：</p>
+<ul><li>知识检索: MMLU +3.4, CMMLU +4.0</li><li>推理能力: BBH +5.0, ARC-Challenge +3.7</li><li>代码与数学: HumanEval +3.0, MATH +2.4</li><li>长上下文: Multi-Query NIAH 从 84.2% 提升至 97.0%</li></ul>
+<p>最令人惊讶的是，尽管设计初衷是辅助知识检索，Engram 在推理和代码/数学任务上取得了更大的收益。机制分析揭示：Engram 释放了主干网络的早期层，使网络对复杂推理&quot;有效加深&quot;，并将注意力容量从局部依赖解放到全局上下文中，从而显著提升长上下文检索能力。</p>
+<div class='plot-card'><div class='plot-meta'><code>benchmark_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/benchmark_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>1. 研究背景与核心创新</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>为什么现有的 MoE 架构需要新的稀疏性维度？</li><li>Engram 的核心设计原理是什么？</li></ul></details>
+<h3>1.1 稀疏性的双重维度</h3>
+<p>现代大型语言模型（LLMs）主要通过 混合专家（Mixture-of-Experts, MoE）实现稀疏性，通过条件计算扩展容量。然而，语言建模本质上包含两个定性不同的子任务：</p>
+<p>1. 组合推理（Compositional Reasoning）: 需要深层、动态的计算</p>
+<p>2. 知识检索（Knowledge Retrieval）: 大部分文本（如命名实体、公式化模式）是局部、静态、高度刻板的</p>
+<h3>1.2 核心洞察：计算 vs 检索</h3>
+<p>标准 Transformer 缺乏原生的知识查找原语，迫使当前 LLMs 通过计算模拟检索。例如，解决一个常见的多 token 实体需要消耗多个早期层的注意力和前馈网络。这个过程本质上是对静态查找表的昂贵运行时重建，浪费了宝贵的序列深度，而这些深度本可以分配给更高级的推理。</p>
+<h3>1.3 Engram 的解决方案</h3>
+<p>Engram 通过引入条件记忆作为 MoE 条件计算的补充稀疏性维度来解决这一问题：</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/engram_architecture.svg' alt='engram_architecture.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/engram_architecture.svg' target='_blank' rel='noopener noreferrer'>engram_architecture.svg</a></figcaption></figure>
+<p>关键特性：</p>
+<ul><li>O1 查找: 通过现代化的 N-gram 嵌入实现</li><li>分层哈希: 利用 N-gram 的 Zipf 分布特性</li><li>上下文感知门控: 动态调节检索的静态记忆与主干的集成</li><li>确定性寻址: 支持运行时预取，可扩展到大规模参数</li></ul>
+<h2>2. 性能提升分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Engram 在哪些任务上表现最佳？</li><li>为什么推理任务的提升超过了知识检索任务？</li></ul></details>
+<h3>2.1 关键基准测试对比</h3>
+<p>Engram-27B 在严格的等参数、等 FLOPs 条件下，在多个基准测试中显著优于 MoE-27B：</p>
+<div class='plot-card'><div class='plot-meta'><code>performance_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/performance_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>知识检索任务（设计预期收益）：</p>
+<ul><li>MMLU: 57.4% → 60.4% +3.0</li><li>CMMLU: 57.9% → 61.9% +4.0</li><li>MMLU-Redux: 60.6% → 64.0% +3.4</li></ul>
+<p>推理任务（意外收益）：</p>
+<ul><li>BBH: 50.9% → 55.9% +5.0</li><li>ARC-Challenge: 70.1% → 73.8% +3.7</li><li>AGIEval: 38.6% → 41.8% +3.2</li></ul>
+<p>代码与数学（显著收益）：</p>
+<ul><li>HumanEval: 37.8% → 40.8% +3.0</li><li>MATH: 28.3% → 30.7% +2.4</li><li>GSM8K: 58.4% → 60.6% +2.2</li><li>MGSM: 46.8% → 49.4% +2.6</li></ul>
+<h3>2.2 性能提升幅度对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>improvement_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/improvement_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>上图清晰地展示了从 Dense → MoE → Engram 的性能提升路径。值得注意的是：</p>
+<p>1. MoE vs Dense: 平均提升 8-12 个百分点，证明了稀疏架构的价值</p>
+<p>2. Engram vs MoE: 额外提升 2-5 个百分点，在推理任务上尤为显著</p>
+<p>3. Engram vs Dense: 累计提升 13-18 个百分点，展示了条件记忆的巨大潜力</p>
+<h3>2.3 按任务类别的分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>category_improvements.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/category_improvements.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从任务类别来看：</p>
+<ul><li>代码与数学: 平均提升最大（MoE vs Dense: +12.36，Engram vs MoE: +2.03）</li><li>知识与推理: 稳定提升（MoE vs Dense: +8.98，Engram vs MoE: +2.82）</li><li>阅读理解: 持续改善（MoE vs Dense: +8.60，Engram vs MoE: +2.88）</li></ul>
+<p>关键洞察：代码与数学任务的提升最大，这可能是因为这些任务既需要大量知识（API、公式）又需要深度推理，而 Engram 恰好在这两方面都提供了支持。</p>
+<h2>3. 长上下文性能突破</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Engram 如何改善长上下文检索能力？</li><li>Multi-Query NIAH 的提升意味着什么？</li></ul></details>
+<h3>3.1 显著的长上下文改善</h3>
+<p>Engram 在长上下文任务上展现了卓越的性能，特别是在 RULER 基准测试的 NIAH（Needle In A Haystack）任务中：</p>
+<div class='plot-card'><div class='plot-meta'><code>long_context_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/long_context_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Multi-Query NIAH 准确率（32k 上下文）：</p>
+<ul><li>MoE-27B: 84.2%</li><li>Engram-27B 41k: 89.5% +5.3</li><li>Engram-27B 46k: 97.0% +12.8</li><li>Engram-27B 50k: 97.0% +12.8</li></ul>
+<p>困惑度改善（Pile 验证集，越低越好）：</p>
+<ul><li>Book: 4.38 → 4.14 -5.5%</li><li>Paper: 2.91 → 2.82 -3.1%</li><li>Code: 2.49 → 2.44 -2.0%</li><li>L-CoT: 14.16 → 13.41 -5.3%</li></ul>
+<h3>3.2 机制解释：注意力容量的解放</h3>
+<p>Engram 通过将局部依赖委托给查找操作，释放注意力容量用于全局上下文。这解释了为什么 Multi-Query NIAH 的准确率从 84.2% 提升到 97.0%——注意力机制不再被消耗在局部模式匹配上，而是能够专注于全局上下文中的关键信息检索。</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/engram_dataflow.svg' alt='engram_dataflow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/engram_dataflow.svg' target='_blank' rel='noopener noreferrer'>engram_dataflow.svg</a></figcaption></figure>
+<h2>4. 系统效率与可扩展性</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Engram 的推理开销有多大？</li><li>100B 参数的 Engram 模块如何实现近乎零开销？</li></ul></details>
+<h3>4.1 推理吞吐量测试</h3>
+<p>Engram 相比基于路由的 MoE 架构具有关键的系统优势：其稀疏激活通过显式、静态的哈希 ID 寻址。这产生了严格确定性的内存访问模式：一旦 token 序列已知，下一个 Engram 查找的索引就固定了，可以在相应层执行之前计算。</p>
+<div class='plot-card'><div class='plot-meta'><code>inference_throughput.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/inference_throughput.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>测试设置：</p>
+<ul><li>硬件: NVIDIA H800</li><li>工作负载: 512 序列</li><li>序列长度: Uniform100, 1024</li><li>配置: 将 100B 参数的 Engram 层完全卸载到主机 DRAM</li></ul>
+<p>结果：</p>
+<ul><li>4B Dense 基线: 9,031.62 tok/s</li><li>4B Dense + 100B Engram CPU offload: 8,858.28 tok/s 仅 -1.9%</li><li>8B Dense 基线: 6,315.52 tok/s</li><li>8B Dense + 100B Engram CPU offload: 6,140.02 tok/s 仅 -2.8%</li></ul>
+<h3>4.2 关键机制：通信-计算重叠</h3>
+<p>早期密集块的计算强度提供了充足的时间窗口来掩盖检索延迟。至关重要的是，每步的有效通信量与激活的插槽数量而非总嵌入表大小成比例。</p>
+<p>这个实验是一个保守的基线。虽然分层设计利用 Zipf 局部性将频繁项目缓存在 HBM 中，但实验设置强制所有检索都从主机内存通过 PCIe 总线传输。即使在这种最坏情况下，吞吐量损失仍然不到 3%，这表明完全优化的、感知局部性的实现会产生可忽略的吞吐量损失。</p>
+<h3>4.3 可扩展性优势</h3>
+<p>Engram 的确定性寻址带来了额外的系统优势：</p>
+<p>1. 运行时预取: 索引可以在计算开始前计算</p>
+<p>2. 内存层次利用: 高频 N-gram 可以缓存在 HBM</p>
+<p>3. 通信优化: 有效通信量与激活量成正比，而非总表大小</p>
+<p>4. 负载均衡: 哈希分布天然均衡，无需复杂调度</p>
+<h2>5. 机制分析与洞察</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Engram 如何改变模型的表示学习？</li><li>为什么移除 Engram 后知识检索任务会崩溃？</li></ul></details>
+<h3>5.1 有效的网络深度</h3>
+<p>核心发现：Engram 功能上等同于增加模型的深度。</p>
+<p>通过 LogitLens 和 CKA（中心核对齐）分析，研究者发现 Engram 加速了预测收敛并提高了表示对齐。机制分析揭示，Engram 释放了主干网络的早期层，使网络对复杂推理&quot;有效加深&quot;。</p>
+<p>实体解析示例：</p>
+<ul><li>层 1-2: &quot;United Kingdom 中的国家&quot; → &quot;Wales&quot;</li><li>层 3: &quot;欧洲的国家&quot; → &quot;Wales&quot;</li><li>层 4: &quot;女王在位期间持有的头衔&quot; → &quot;威尔士王妃（未指定）&quot;</li><li>层 5: &quot;威尔士亲王妻子获得的头衔&quot; → &quot;威尔士王妃（未指定）&quot;</li><li>层 6: &quot;戴安娜，威尔士王妃（1961-1997）&quot; → &quot;戴安娜，威尔士王妃&quot;</li></ul>
+<p>在没有 Engram 的情况下，这些早期层需要消耗大量计算来静态重建实体，而在有 Engram 的情况下，这些知识可以直接检索，释放的容量用于更深层的推理。</p>
+<h3>5.2 组件消融分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>params_vs_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a/assets/params_vs_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>架构消融结果：</p>
+<ul><li>事实知识任务（TriviaQA, MMLU, CCPM）: 在移除 Engram 后性能灾难性崩溃，仅保留 29-44% 的原始性能</li></ul>
+<ul><li>阅读理解任务（C3, RACE）: 相对稳定，保留 81-93%</li></ul>
+<p>关键洞察：Engram 模块充当参数化知识的主要存储库，而阅读理解任务主要依赖于主干的注意力机制而非 Engram。这验证了 Engram 作为知识检索模块的设计目标。</p>
+<h3>5.3 门控机制可视化</h3>
+<p>研究者可视化了 Engram-27B 在各种样本中的门控标量 αt。结果显示了选择性激活的明显模式：</p>
+<ul><li>静态模式激活（红色高亮）：</li></ul>
+<p>这种跨语言的有效泛化确认了 Engram 成功识别和处理刻板的语言依赖，有效缓解了 Transformer 主干记住这些静态关联的负担。</p>
+<h2>6. 稀疏分配问题与 U 型缩放定律</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>什么是稀疏分配问题？</li><li>U 型缩放定律如何指导模型设计？</li></ul></details>
+<h3>6.1 稀疏分配问题</h3>
+<p>研究者形式化了稀疏分配问题：在神经网络计算（MoE）和静态记忆（Engram）之间找到最优权衡。这个问题涉及在以下维度上分配稀缺的计算和内存资源：</p>
+<p>1. 专家数量（MoE 容量）</p>
+<p>2. Engram 参数量（记忆容量）</p>
+<p>3. 激活策略（每层激活多少）</p>
+<p>4. 插入位置（在哪层注入记忆）</p>
+<h3>6.2 U 型缩放定律</h3>
+<p>通过系统实验，研究者发现了U 型缩放定律：</p>
+<ul><li>过多神经计算：模型浪费在重新发现已知模式上</li><li>过多静态记忆：模型缺乏灵活性，泛化能力下降</li><li>最优平衡点：在特定比例下达到峰值性能</li></ul>
+<p>这个定律指导了 Engram 的缩放策略：</p>
+<ul><li>Engram-27B: 5.7B Engram 参数（21% 总参数）</li><li>Engram-40B: 18.5B Engram 参数（47% 总参数）</li></ul>
+<p>实验表明，Engram 参数占总参数的 20-50% 是一个合理的范围，具体取决于任务需求。</p>
+<h2>7. 与现有方法的对比</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Engram 与其他 N-gram 嵌入方法有何不同？</li><li>为什么 Engram 能在严格的等参数对比中胜出？</li></ul></details>
+<h3>7.1 相关工作对比</h3>
+<p>N-gram 建模与嵌入缩放：</p>
+<ul><li>经典方法: FastText、平滑技术（Katz, 1987; Kneser and Ney, 1995）</li><li>现代嵌入缩放: Per-Layer Embeddings、DeepEmbed（扩展通过大规模表）</li></ul>
+<p>组合 N-gram 结构（最相关）：</p>
+<ul><li>SuperBPE: 通过将多词表达式合并为&quot;超级词&quot;token 来针对高频模式</li><li>SCONE: 通过辅助编码模型针对高频模式</li><li>OverEncoding: 在 token 级别捕获局部依赖的哈希 N-gram 嵌入</li><li>Byte Latent Transformer BLT: 在字节级别捕获局部依赖的哈希 N-gram 嵌入</li></ul>
+<h3>7.2 Engram 的独特优势</h3>
+<p>Engram 与现有方法的关键区别：</p>
+<p>1. 建模和评估协议：</p>
+<p>    现有方法通常将 N-gram 嵌入视为外部增强，未在严格公平的比较协议下验证效率</p>
+<p>    Engram 将条件记忆作为第一类建模原语，在稀疏分配框架内严格评估</p>
+<p>2. 系统视角：</p>
+<p>    现有方法将嵌入严格放在输入层（Layer 0），序列化内存访问和计算</p>
+<p>    Engram 战略性地将内存注入更深层，以启用通信-计算重叠</p>
+<p>    利用 N-gram 的固有的 Zipf 分布，最大化硬件内存层次的效用</p>
+<p>3. 架构集成：</p>
+<p>    现有方法通常是&quot;附加&quot;模块，需要额外的训练 FLOPs</p>
+<p>    Engram 与主干深度集成，门控机制实现动态控制</p>
+<h2>8. 局限性与未来方向</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Engram 的主要局限性是什么？</li><li>未来研究可以如何改进条件记忆架构？</li></ul></details>
+<h3>8.1 当前局限性</h3>
+<p>1. 静态记忆的固化: Engram 存储的是静态 N-gram 模式，难以快速更新知识</p>
+<p>2. 哈希冲突: 分层哈希可能引入噪声，需要精心设计</p>
+<p>3. 门控学习: 上下文感知门控需要大量训练数据才能学到有效策略</p>
+<p>4. 内存占用: 大型 Engram 表需要显著的内存存储</p>
+<h3>8.2 未来研究方向</h3>
+<p>1. 动态记忆更新: 设计机制允许在训练后更新 Engram 表而不重新训练整个模型</p>
+<p>2. 自适应哈希: 学习式哈希函数减少冲突并提高查询质量</p>
+<p>3. 分层记忆设计: 多级记忆层次，结合快速静态查找和慢速动态检索</p>
+<p>4. 跨模态扩展: 将条件记忆扩展到视觉、音频等多模态场景</p>
+<p>5. 硬件协同设计: 与硬件厂商合作优化 Engram 的硬件加速</p>
+<h3>8.3 应用前景</h3>
+<p>Engram 的条件记忆架构有广泛的应用前景：</p>
+<p>1. 边缘设备: 确定性寻址和预取适合边缘部署</p>
+<p>2. 实时系统: O1 查找支持低延迟应用</p>
+<p>3. 知识密集型任务: 专门优化的知识检索能力</p>
+<p>4. 长上下文应用: 注意力容量解放支持长文档、长对话</p>
+<h2>9. 结论</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Engram 对未来 LLM 架构设计意味着什么？</li><li>条件记忆是否会成为下一代模型的标配？</li></ul></details>
+<h3>9.1 关键贡献</h3>
+<p>Engram 论文的核心贡献可以总结为：</p>
+<p>1. 新稀疏性维度: 引入条件记忆作为 MoE 条件计算的补充</p>
+<p>2. O1 查找: 通过现代化 N-gram 嵌入实现高效知识检索</p>
+<p>3. 性能提升: 在严格的等参数、等 FLOPs 条件下显著优于 MoE 基线</p>
+<p>4. 机制洞察: 揭示 Engram 如何有效加深网络、解放注意力容量</p>
+<p>5. 系统效率: 100B 参数模块实现 3% 的吞吐量损失</p>
+<h3>9.2 设计启示</h3>
+<p>Engram 为未来的 LLM 架构设计提供了重要启示：</p>
+<p>1. 双重稀疏性: 神经计算和静态记忆的协同设计</p>
+<p>2. 原语优先: 将条件记忆作为第一类建模原语</p>
+<p>3. 算法-系统协同: 利用硬件特性的算法设计</p>
+<p>4. 任务感知: 根据任务性质分配计算资源</p>
+<h3>9.3 未来展望</h3>
+<p>研究者展望条件记忆将成为下一代稀疏模型不可或缺的建模原语。随着模型规模的持续增长和任务复杂度的提升，条件记忆的潜力将进一步显现：</p>
+<ul><li>可扩展性: 可扩展到更大规模的模型和更长上下文</li><li>泛化能力: 跨语言、跨任务的泛化表现优异</li><li>实用性: 严格的系统效率分析支持实际部署</li></ul>
+<p>正如论文标题所述，Engram 实现了&quot;通过可扩展查找的条件记忆&quot;，为大语言模型的稀疏性探索开辟了新的道路。</p>
+<hr/>
+<h2>附录：数据摘要</h2>
+<h3>A. 模型配置</h3>
+<div class='table-wrap'><table><thead><tr><th>模型</th><th>总参数</th><th>激活参数</th><th>专家数</th><th>Engram 参数</th><th>训练 tokens</th></tr></thead><tbody><tr><td>Dense-4B</td><td>4.1B</td><td>3.8B</td><td>-</td><td>-</td><td>262B</td></tr><tr><td>MoE-27B</td><td>26.7B</td><td>3.8B</td><td>2 + 72</td><td>-</td><td>262B</td></tr><tr><td>Engram-27B</td><td>26.7B</td><td>3.8B</td><td>2 + 55</td><td>5.7B</td><td>262B</td></tr><tr><td>Engram-40B</td><td>39.5B</td><td>3.8B</td><td>2 + 55</td><td>18.5B</td><td>262B</td></tr></tbody></table></div>
+<h3>B. 最佳性能提升（Engram vs MoE）</h3>
+<div class='table-wrap'><table><thead><tr><th>任务类别</th><th>基准测试</th><th>MoE-27B</th><th>Engram-27B</th><th>提升</th></tr></thead><tbody><tr><td>知识检索</td><td>CMMLU</td><td>57.9%</td><td>61.9%</td><td>+4.0</td></tr><tr><td>推理能力</td><td>BBH</td><td>50.9%</td><td>55.9%</td><td>+5.0</td></tr><tr><td>推理能力</td><td>ARC-Challenge</td><td>70.1%</td><td>73.8%</td><td>+3.7</td></tr><tr><td>代码能力</td><td>HumanEval</td><td>37.8%</td><td>40.8%</td><td>+3.0</td></tr><tr><td>数学能力</td><td>MATH</td><td>28.3%</td><td>30.7%</td><td>+2.4</td></tr><tr><td>长上下文</td><td>NIAH-MQ 46k</td><td>84.2%</td><td>97.0%</td><td>+12.8</td></tr></tbody></table></div>
+<h3>C. 系统效率</h3>
+<div class='table-wrap'><table><thead><tr><th>配置</th><th>吞吐量 tok/s</th><th>损失</th></tr></thead><tbody><tr><td>4B Dense 基线</td><td>9,031.62</td><td>-</td></tr><tr><td>4B Dense + 100B Engram</td><td>8,858.28</td><td>-1.9%</td></tr><tr><td>8B Dense 基线</td><td>6,315.52</td><td>-</td></tr><tr><td>8B Dense + 100B Engram</td><td>6,140.02</td><td>-2.8%</td></tr></tbody></table></div>
+<hr/>
+<p>数据来源: DeepSeek-AI &amp; 北京大学, &quot;Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models&quot; 2025</p>
+<p>代码: https://github.com/deepseek-ai/Engram</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

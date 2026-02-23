@@ -1,0 +1,295 @@
+{
+  "generated_at": "2026-02-21T14:14:27",
+  "meta": {
+    "target": 200,
+    "reserve": 400,
+    "recent_limit": 500,
+    "existing_unique_case_ids": 355,
+    "recent_new_pool": 149,
+    "probe_ok": 70,
+    "probe_fail": 79,
+    "picked": 70
+  },
+  "results": [
+    {
+      "case_id": "6b39f079362fd7e01f98ae1b755e320a4a66c93f65d855ce1931b6a9d3c4434a",
+      "title": "Copy of Project"
+    },
+    {
+      "case_id": "7e9fd0a9de4963a0b5c037f997bb5a035648dfe34f9c51b3bbc2e213fc20c7f3",
+      "title": "sp500_top10_stocks_clean"
+    },
+    {
+      "case_id": "2cacae2b4f4072f8c15e82d9c9b03116b050030028fd200bf789d7e011eeaf7a",
+      "title": "sp500_top10_stocks_clean"
+    },
+    {
+      "case_id": "8daf3093c3daaca832a4ad8bb074814a5755f24b37e7a9629c63d4b036ffb276",
+      "title": "BC"
+    },
+    {
+      "case_id": "8c7670bf201ce709445fa3dec9ba9da3dc33b078ee249aaaf4f5688ac1f612ec",
+      "title": "power_nap_vs_coffee_effectiveness_dataset"
+    },
+    {
+      "case_id": "7c91bed170512c68ee806f71316c5dcaf6e9e1d22a32033e628afd7527c6be36",
+      "title": "账单分析"
+    },
+    {
+      "case_id": "bc441a2fb52579fe7ba9e4b2454e0ad1f035dd415b2bf5b7e722dbab9c6b32d5",
+      "title": "SpaceX IPO closing market cap above"
+    },
+    {
+      "case_id": "70c3e091d9dd76cb40a9f5542e2d6ba320562820b0578c00c611dd3be5b0a379",
+      "title": "US strikes Iran by"
+    },
+    {
+      "case_id": "0b681f88c507a8b737586372cb0b366bd9c23c709be620fa777fdd8ae633e01e",
+      "title": "Mamdani opens city owned grocery store by June 30"
+    },
+    {
+      "case_id": "e74bfd4ba86a1fb66a5e7c6a07aa2d64d7a8f22361ae9ab49e4b696cae1cb6fa",
+      "title": "SpaceX IPO closing market cap above ___ ?"
+    },
+    {
+      "case_id": "99c8c77bd8643412a79c0ada3d1dd9fd6b77f9527894a3139425205c83142933",
+      "title": "BankNoteAuthentication"
+    },
+    {
+      "case_id": "570119f256813b5f6e0d4b4803843692205a233449ad8c9c60d38365ccdd5431",
+      "title": "perishable_goods_management"
+    },
+    {
+      "case_id": "c163c234c3b1dc53cb15dd0edbe8102a059130b4db7a75ae06e1436c2688bb8f",
+      "title": "大乐透透"
+    },
+    {
+      "case_id": "8366894bb640d685205591fe70c93bb6960360b5adb445a6bb03cec4fad8ceb4",
+      "title": "22"
+    },
+    {
+      "case_id": "381f2542ba1bb6c3926aacd2d01f3def7fd922e8803bbba202fd66f52c7a8009",
+      "title": "img taggibg"
+    },
+    {
+      "case_id": "40d9bf0ce2c9dd36ebd43034404de7af29b897e8c0cd29eb93703f786712a040",
+      "title": "Trust game part trust and ultilitarian"
+    },
+    {
+      "case_id": "918dce3b9c3395b9afe67ad40e28f8fa95e9a931266f86c1a79a3aaa50749991",
+      "title": "Trust Project part tax and revelation"
+    },
+    {
+      "case_id": "fb9bd5e5d0d6bac36620bf46b8252ad7213ae531e1ca283e22c87e060f37e55b",
+      "title": "us adult"
+    },
+    {
+      "case_id": "388ea24cb0effbf4ea01356bcc80d52250c6554a86e375ef3765c732e907109e",
+      "title": "bug_dataset_50k"
+    },
+    {
+      "case_id": "f11f98e28a55b37dd2555b56dfaa4d69f8ea17839f725396a4ee4dd5e8302351",
+      "title": "Heart Attack Data Set"
+    },
+    {
+      "case_id": "f7956206deb7ff93300203f5f1052c718cc58353b8841ea632816d974bf044a3",
+      "title": "Aggression Compare"
+    },
+    {
+      "case_id": "92debb6423e6f8ff84c158ce4193fdad917a06f70de984bc2ef5db1bc817f0eb",
+      "title": "Model Performance"
+    },
+    {
+      "case_id": "f56c8ef7a7872e7cf2bbdb1e9cba5880a83875455eca8793da4243b9e2627df9",
+      "title": "moltbook_top_5000_posts"
+    },
+    {
+      "case_id": "7fee45e23f8440e0e07fe6c65c235bb9a2c17c4f3528e9025d01f616e1a6aefe",
+      "title": "China Housing Analysis"
+    },
+    {
+      "case_id": "3e3d77be800e9c6b69e64c44de41456c744d876a55d6c98730c3e5d9f10683d6",
+      "title": "EFTA01088956"
+    },
+    {
+      "case_id": "0fdfdab21c535129f1120fea50b00892d9233b38936a6805a297716fd1a53e2a",
+      "title": "屏幕截图 2026-02-03 162842"
+    },
+    {
+      "case_id": "b02883211bbc2f04c8f5912347a57bd7d9efd549859907771fb5325bda4a40ea",
+      "title": "BMW_Data 2"
+    },
+    {
+      "case_id": "9b0c1e82afb7a64372882b5602c82a1cae492390fa7d6eb79a3abd39098366ad",
+      "title": "CAP 2023-2025"
+    },
+    {
+      "case_id": "5dfb01538d9150fd8625a2a13326f4dfbc2119a71eee0fc488bcc7c59866ab47",
+      "title": "正餐"
+    },
+    {
+      "case_id": "974fa1d15e57d554ddf65227af50843598c6e768548199d74d826c9b73a3f8bd",
+      "title": "快餐"
+    },
+    {
+      "case_id": "d614d85096df583956a9689180c81536ec90133f311ffe97c328e1ba5c28510d",
+      "title": "NIPS-2009-reading-tea-leaves-how-humans-interpret-topic-models-Paper"
+    },
+    {
+      "case_id": "78a70c1e30eb90775fcdcb46b7c3f9ddba16272bddbe1d09d081755593281f27",
+      "title": "global_ads_performance_dataset"
+    },
+    {
+      "case_id": "2a01cc0e774fec37300f5a30e6a08308ee1fea38d9308c1a20e9568ac6057f92",
+      "title": "大乐透"
+    },
+    {
+      "case_id": "9195ba3cd870a7daaa82804e31ef26a2f0f1f53bb7f17f4aa7867f27f939c73d",
+      "title": "用户反馈话题文章分析"
+    },
+    {
+      "case_id": "9fcc2eb01f9fead1686f149baabfa2151113b20df19c41ae92818fed9d5e936a",
+      "title": "AMINO四期基金分析报告"
+    },
+    {
+      "case_id": "548dda6882ea65cddf49e06a9852e5b11f7c4401d9f6f4c00e29c0b060808c11",
+      "title": "2026年1月验收及出库情况"
+    },
+    {
+      "case_id": "a2de522d62c9fc70cd7dedab69e6cdf4f578b036213895bb040cd612a92a4fcc",
+      "title": "快餐"
+    },
+    {
+      "case_id": "0ea088b63aea0b396871de0c8d5daa050e66cff9411eca652291e50b37ca38fe",
+      "title": "gold_factors"
+    },
+    {
+      "case_id": "b2a440a67114de3060aa8599b00a654e455047ba2fab4df0caa985e1cd490c78",
+      "title": "111"
+    },
+    {
+      "case_id": "bf6bb7d5a0f4eec953ecd27b9fc5573565a6eaf74d2f8aa1b581ed72222e5e10",
+      "title": "投资经理持仓变化分析"
+    },
+    {
+      "case_id": "4c88200a82d145df4603c669b38b5d6283e7da8aa1d7c2332849b3f3c4cae328",
+      "title": "META 26 Q1"
+    },
+    {
+      "case_id": "ac23c1f0aa895cb776c6be57d2b1b0f6dad7fc692c1ed757b33254192e54c0f3",
+      "title": "Pardus_analysis_on_Task_2_3"
+    },
+    {
+      "case_id": "87ea83e53d83dbcf7629b2d21b9eefe00bede87a6bfaeecc78ca1a5e5688733f",
+      "title": "average"
+    },
+    {
+      "case_id": "e4288db23c53768bf843eee9878d54437335a7a963eb876898192147e9aa9f59",
+      "title": "Copy of Project"
+    },
+    {
+      "case_id": "196f667c53cf5f282563d41578ea2cad180e8acd0ac5f161f8503a8136d24bcf",
+      "title": "财务报告分析"
+    },
+    {
+      "case_id": "cade08dbd4ab3732a23c795945dc1e77e204fe06252572cb8f700497767eeea2",
+      "title": "数学建模"
+    },
+    {
+      "case_id": "2640511b92fc18cec142a39ad6611358341cfefbb9a0280b932627aa8480f4e1",
+      "title": "事业编"
+    },
+    {
+      "case_id": "ba049b36e59691557abf30d264a1429d07ef44e2649ef9a485f8d90992597e87",
+      "title": "test2"
+    },
+    {
+      "case_id": "2ee1420a99da4e86ccbad12b8ffe38c616335415405b61767e5f3c30fa973eba",
+      "title": "data with the stars"
+    },
+    {
+      "case_id": "316c0617b406d208d81f59517821ebc2a95a23d6b7bb3c55482b71cc958dbc60",
+      "title": "Problem C"
+    },
+    {
+      "case_id": "21e92df7605ea3a9d980484a8086bf5b5ebedce6bd24fda8bcbba0a2a0d6475d",
+      "title": "c_en"
+    },
+    {
+      "case_id": "84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a",
+      "title": "c"
+    },
+    {
+      "case_id": "161d0a0cd0fca31af57e78c8c52531ffa0c383e0087256a1882bc7b4e7b75eb3",
+      "title": "shipment and carrier contacts"
+    },
+    {
+      "case_id": "48d28dfcccb85c50e3d13f9233a835771582bc71b12d6bc06a569be016b58510",
+      "title": "消化类药品近10年销售数据分析"
+    },
+    {
+      "case_id": "7e56c40535d6c323a40c966df5b141f855f4e18340e173d5c869fe41aee59591",
+      "title": "学习数据分析"
+    },
+    {
+      "case_id": "7879a12304429045f523d4295e29ae065bd8da68be3133eaf86da9c7f57e6b78",
+      "title": "df_matrix"
+    },
+    {
+      "case_id": "5ee62e8a88d7751537e541832b28bb1720fc3fc0a0e60649b9a97faf81aaed0a",
+      "title": "学生成绩"
+    },
+    {
+      "case_id": "5fb0aefc28947c0120be863ad6f640bf9050f02a05a7c236cf25a4b757fcc095",
+      "title": "2023c"
+    },
+    {
+      "case_id": "65a8d168ca9e5f457c890dfa75c9fb27a31055ea90ff2e2d9caeff91bdaabf72",
+      "title": "test pardusai"
+    },
+    {
+      "case_id": "3c6bcc4c91ce09bc601ed4bdd763ce0a384a2811e7b4712e8f9ef5b5fe01d9f5",
+      "title": "test 1"
+    },
+    {
+      "case_id": "4f02ae1997ebe189e314b03624174c80fe45614821a5f2221dce59922caa195c",
+      "title": "FINAL_USO"
+    },
+    {
+      "case_id": "e08ed750244408d1c8a39d83863fbb06f5355ce16f80edd51caedf041f654a9f",
+      "title": "socialbondingXtask"
+    },
+    {
+      "case_id": "49439af6421f8b8e64fb7b41c28047970f14988d9bbb052dad396d5c46c55183",
+      "title": "n"
+    },
+    {
+      "case_id": "3f2ffdb1d3098f331b5d997bfc60fff1d88bb591149e19958fbef24cdfc9a246",
+      "title": "第一轮汇总分析报告"
+    },
+    {
+      "case_id": "cc4739764b6e2ac63593ea3336bddbcb9e2dff1200240e993e042797dd762e79",
+      "title": "Test"
+    },
+    {
+      "case_id": "b0739171219cf32113ca23398332711668aca33e0c2e4c9c1a5d7bdfe11eb916",
+      "title": "Olympic Country Efficiency Dataset"
+    },
+    {
+      "case_id": "9616a9e3a214297e1a17eb38fe5026984c0e22a74402651dcaa8fa5f81ac8ec5",
+      "title": "House Price Index Analysis"
+    },
+    {
+      "case_id": "ca7b6617565009cbaf359d136c8986a9d4228516a2423559a61124f3e10e884d",
+      "title": "Final Bias Hiring"
+    },
+    {
+      "case_id": "104b0654b2024f4344b5de20460dbe9ffc79ad9244ba1224ed466dfb5826e2fa",
+      "title": "估值报告-华为"
+    },
+    {
+      "case_id": "ed13f1587e8f5a449b4ed65908293b2ed65c6341e314c47ab2642e84605ec0ea",
+      "title": "Logistic"
+    }
+  ]
+}

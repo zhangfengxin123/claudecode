@@ -1,0 +1,30 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 184
+  },
+  {
+    "name": "bitget_ondo_tokenized_stocks_batch1 (1).csv",
+    "local": "bitget_ondo_tokenized_stocks_batch1 (1).csv",
+    "ok": true,
+    "error": "",
+    "size": 3749
+  },
+  {
+    "name": "bitget_ondo_aggregate.csv",
+    "local": "bitget_ondo_aggregate.csv",
+    "ok": true,
+    "error": "",
+    "size": 8059
+  },
+  {
+    "name": "bitget_ondo_tokenized_stocks_batch2.csv",
+    "local": "bitget_ondo_tokenized_stocks_batch2.csv",
+    "ok": true,
+    "error": "",
+    "size": 6303
+  }
+]

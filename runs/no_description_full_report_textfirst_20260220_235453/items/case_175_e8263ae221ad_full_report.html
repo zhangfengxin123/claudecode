@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：竞品分析</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：竞品分析</h1>
+    <p class='sub'>来源: /view/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Off-site Creator Data Analysis Report&quot;
+description: &quot;Comprehensive analysis of creator metrics, follower distribution, and content categories from 站外汇总 dataset&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-29&quot;
+</pre></details>
+<h1>Off-site Creator Data Analysis Report</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of the off-site creator dataset 站外汇总.xlsx, containing 57 creators across multiple platforms. The analysis reveals a diverse creator ecosystem with follower counts ranging from 71 to 1,000,000, with the majority concentrated in the mid-tier segment 50,000-200,000 followers. The dataset shows strong engagement potential with all creators qualified for 600+ reach campaigns, and approximately 22% of creators providing detailed collaboration notes focused on tutorials and AI tools.</p>
+<h2>Data Overview</h2>
+<h3>Key Statistics</h3>
+<div class='plot-card'><div class='plot-meta'><code>summary_stats.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746/assets/summary_stats.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The dataset contains:</p>
+<ul><li>57 total creatorswith complete metadata</li><li>42 creatorswith quantifiable follower counts</li><li>9.79 milliontotal followers across all creators</li><li>233,083average followers per creator</li><li>100%of creators qualified for 600+ reach campaigns</li></ul>
+<h3>Data Processing Pipeline</h3>
+<p>The following diagram illustrates the data analysis workflow:</p>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746/assets/data_flow.svg' alt='data_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746/assets/data_flow.svg' target='_blank' rel='noopener noreferrer'>data_flow.svg</a></figcaption></figure>
+<h2>Follower Count Distribution</h2>
+<h3>Distribution Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>follower_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746/assets/follower_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The follower count distribution shows a right-skewed patterntypical of social media platforms:</p>
+<ul><li>Median:150,500 followers</li><li>25th percentile:43,725 followers</li><li>75th percentile:269,500 followers</li><li>Standard deviation:268,173 indicating high variability</li></ul>
+<p>This distribution suggests a healthy creator ecosystem with both emerging creators micro-influencers and established macro-influencers.</p>
+<h2>Creator Tier Analysis</h2>
+<h3>Tier Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>tier_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746/assets/tier_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The creator ecosystem is structured into five tiers based on follower counts:</p>
+<div class='table-wrap'><table><thead><tr><th>Tier</th><th>Follower Range</th><th>Count</th><th>Percentage</th></tr></thead><tbody><tr><td>Tier 0 Top</td><td>1 million</td><td>2</td><td>3.5%</td></tr><tr><td>Tier 1 Head</td><td>200,000-800,000</td><td>14</td><td>24.6%</td></tr><tr><td>Tier 2 Mid</td><td>50,000-200,000</td><td>28</td><td>49.1%</td></tr><tr><td>Tier 3 Tail</td><td>8,000-50,000</td><td>11</td><td>19.3%</td></tr><tr><td>Tier 4 KOC</td><td>&lt;8,000</td><td>2</td><td>3.5%</td></tr></tbody></table></div>
+<p>Key Insights:</p>
+<ul><li>49.1%of creators fall into the mid-tier segment, representing the bulk of the ecosystem</li><li>Mid-tier dominancesuggests a balanced approach to influencer strategy</li><li>Macro-influencersTier 0 &amp; 1 represent 28.1% of creators, accounting for a disproportionate share of total followers</li></ul>
+<h3>Follower Distribution by Tier</h3>
+<div class='plot-card'><div class='plot-meta'><code>tier_vs_followers.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746/assets/tier_vs_followers.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The box plot visualization reveals:</p>
+<ul><li>Wide variancein Tier 1 Head, with creators ranging from 200K to 1M followers</li><li>Consistent rangein Tier 2 Mid, the most stable segment</li><li>Outliers presentacross all tiers, indicating creator quality varies independently of follower count</li></ul>
+<h2>Top Creators Analysis</h2>
+<h3>Top 15 Creators by Follower Count</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_creators.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746/assets/top_creators.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The top 15 creators represent the upper echelonof the ecosystem:</p>
+<ul><li>SonduckFilmleads with 1,000,000 followers</li><li>Howfinityfollows closely with 979,000 followers</li><li>Smart Graphicsand Polyfjordround out the top 4 with 650,000-766,000 followers</li></ul>
+<p><strong>Strategic Considerations:</strong></p>
+<ul><li>Top creators have high reachbut may command premium pricing</li><li>Mid-tier creators offer better engagement-to-cost ratiosfor many campaigns</li><li>KOC Key Opinion Consumer tier provides niche audienceswith high conversion potential</li></ul>
+<h2>Content &amp; Collaboration Analysis</h2>
+<h3>Content Category Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>content_categories.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e8263ae221ad74ce1e0d0d0bfdb23a1bc8bfa0520ae13e157965711dd1fdc746/assets/content_categories.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Analysis of creator collaboration notes reveals content themes:</p>
+<div class='table-wrap'><table><thead><tr><th>Category</th><th>Count</th><th>Percentage</th><th>Description</th></tr></thead><tbody><tr><td>Tutorials</td><td>9</td><td>22.0%</td><td>Educational content, how-to guides</td></tr><tr><td>AI Tools/LLMs</td><td>1</td><td>2.4%</td><td>AI software reviews, tutorials</td></tr><tr><td>AI Art/Video</td><td>2</td><td>4.9%</td><td>Creative AI content generation</td></tr><tr><td>Productivity Tools</td><td>2</td><td>4.9%</td><td>Canva, PPT, workflow tools</td></tr><tr><td>Other</td><td>27</td><td>65.9%</td><td>Various specialized content</td></tr></tbody></table></div>
+<p>Key Themes Identified:</p>
+<ul><li>AI/LLM contentappears frequently Claude, ChatGPT, OpenAI, Gemini mentions</li><li>Tutorial-based contentis the most common type</li><li>Video &amp; AI artrepresents a growing content category</li><li>Productivity toolsCanva, PPT integration show practical application focus</li></ul>
+<h3>Platform &amp; Contact Data</h3>
+<ul><li>100%of creators have platform links</li><li>91.2%52/57 have contact information available</li><li>72%41/57 provide collaboration notes or case studies</li></ul>
+<p>This indicates a highly accessible creator poolfor potential partnerships.</p>
+<h2>Strategic Recommendations</h2>
+<h3>1. Tier-Based Collaboration Strategy</h3>
+<p><strong>Recommended Mix:</strong></p>
+<ul><li>30% Tier 1 Head: High-reach awareness campaigns</li><li>50% Tier 2 Mid: Balanced engagement and reach</li><li>20% Tier 3 Tail + KOC: Niche targeting and conversion optimization</li></ul>
+<p><strong>Rationale:</strong></p>
+<h3>2. Content Partnership Focus</h3>
+<p><strong>High-Value Content Categories:</strong></p>
+<p>1. Tutorial Content: 22% of creators specialize in educational content</p>
+<p>2. AI Tools Integration: Rising trend with strong audience interest</p>
+<p>3. Productivity Solutions: Practical, shareable content</p>
+<p><strong>Action Items:</strong></p>
+<ul><li>Prioritize creators with tutorial expertise for product launches</li><li>Leverage AI-focused creators for technology campaigns</li><li>Collaborate with productivity tool creators for B2B offerings</li></ul>
+<h3>3. Engagement Optimization</h3>
+<p><strong>Data-Driven Approach:</strong></p>
+<ul><li>Use tier distribution to forecast campaign reach</li><li>Leverage 600+ qualification for targeted campaigns</li><li>Analyze collaboration notes to match content expertise with campaign goals</li></ul>
+<h3>4. Creator Quality Assessment</h3>
+<p><strong>Beyond Follower Count:</strong></p>
+<ul><li>Evaluate collaboration notes for content quality</li><li>Assess engagement rates additional data needed</li><li>Review audience demographics additional data needed</li></ul>
+<h2>Limitations &amp; Future Analysis</h2>
+<h3>Current Limitations</h3>
+<p>1. Engagement Metrics Missing: No data on likes, comments, shares</p>
+<p>2. Audience Demographics: Age, location, interests not available</p>
+<p>3. Historical Performance: No data on past campaign performance</p>
+<p>4. Pricing Information: Creator rates not included</p>
+<h3>Recommended Next Steps</h3>
+<p>1. Expand Data Collection: Add engagement rate metrics</p>
+<p>2. Audience Analysis: Gather demographic and interest data</p>
+<p>3. Performance Tracking: Implement campaign attribution</p>
+<p>4. A/B Testing: Test different tier combinations for optimal ROI</p>
+<h2>Conclusion</h2>
+<p>The off-site creator ecosystem presents a balanced distributionof creators across all tiers, with strong representation in the mid-tier segment. The dataset indicates high partnership potentialwith excellent contact availability and diverse content expertise.</p>
+<p>The dominance of tutorial and AI-related contentsuggests creator audiences are interested in educational technology content, providing opportunities for brands in these sectors. The 100% 600+ reach qualificationacross all creators indicates a vetted, high-quality pool suitable for targeted campaigns.</p>
+<p>A tier-balanced partnership strategy 30% Head, 50% Mid, 20% Tail/KOC is recommended to optimize reach, engagement, and cost-effectiveness.</p>
+<hr/>
+<p><em>Report generated on 2025-01-29 by Pardus Agent</em></p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

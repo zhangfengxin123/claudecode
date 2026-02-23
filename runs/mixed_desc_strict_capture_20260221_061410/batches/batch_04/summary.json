@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-02-21T14:46:39",
+  "sample_size": 10,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "4f02ae1997ebe189e314b03624174c80fe45614821a5f2221dce59922caa195c",
+      "title": "FINAL_USO",
+      "chart_count": 14,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_4f02ae1997eb.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "e08ed750244408d1c8a39d83863fbb06f5355ce16f80edd51caedf041f654a9f",
+      "title": "socialbondingXtask",
+      "chart_count": 11,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_e08ed7502444.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "49439af6421f8b8e64fb7b41c28047970f14988d9bbb052dad396d5c46c55183",
+      "title": "n",
+      "chart_count": 2,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_49439af6421f.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "3f2ffdb1d3098f331b5d997bfc60fff1d88bb591149e19958fbef24cdfc9a246",
+      "title": "第一轮汇总分析报告",
+      "chart_count": 1,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_3f2ffdb1d309.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "cc4739764b6e2ac63593ea3336bddbcb9e2dff1200240e993e042797dd762e79",
+      "title": "Test",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_cc4739764b6e.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "b0739171219cf32113ca23398332711668aca33e0c2e4c9c1a5d7bdfe11eb916",
+      "title": "Olympic Country Efficiency Dataset",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_b0739171219c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "9616a9e3a214297e1a17eb38fe5026984c0e22a74402651dcaa8fa5f81ac8ec5",
+      "title": "House Price Index Analysis",
+      "chart_count": 5,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_9616a9e3a214.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "ca7b6617565009cbaf359d136c8986a9d4228516a2423559a61124f3e10e884d",
+      "title": "Final Bias Hiring",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_ca7b66175650.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "104b0654b2024f4344b5de20460dbe9ffc79ad9244ba1224ed466dfb5826e2fa",
+      "title": "估值报告-华为",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_104b0654b202.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "ed13f1587e8f5a449b4ed65908293b2ed65c6341e314c47ab2642e84605ec0ea",
+      "title": "Logistic",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_ed13f1587e8f.html",
+      "status": "ok"
+    }
+  ]
+}

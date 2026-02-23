@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-02-21T02:34:14",
+  "sample_size": 20,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "3ad7b479bebd9d03f8b5cb194c0544e93a0ad4609cc77c74cd9b09f4302bc2dd",
+      "title": "Wine Data Set",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_3ad7b479bebd.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "79106e044a65400e616761c5808d688374f0369f4ce2d008f64c7e05ca3c18a8",
+      "title": "Gold and Silver Price analysis",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_79106e044a65.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "eed503501f34b4d7b2544ba07cb6ea268d324896d7b242f19d3677060897d723",
+      "title": "Apple stock price analysis",
+      "chart_count": 9,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_eed503501f34.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "4bc86743fa91ff2b649da112d271f5c5e624c456aa820f9828bebaeb7c4a52b8",
+      "title": "analytics",
+      "chart_count": 16,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_4bc86743fa91.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "700c68186f352faf6013d91b35cf570df44631714ccd19da85e5211d89d7d741",
+      "title": "analytics",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_700c68186f35.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "a2069f9aa36290c69ad8a88f53cae6199f4090e987d25cefeac8a38d69d6dbf1",
+      "title": "registerInBeiJingTransportUniversity",
+      "chart_count": 5,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_a2069f9aa362.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "588f9b5616c57c2fdbde853cd8fb8b3beeeda81259a09ab2834ffce48018398f",
+      "title": "Interest rate and Nasdaq",
+      "chart_count": 10,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_588f9b5616c5.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "e8e186ceece682b9307ff1c9b1c0bcfcc94595fa29b14ae02a35a68a64fe7775",
+      "title": "Morgan Stanley Gold Price",
+      "chart_count": 4,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_e8e186ceece6.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "6838c51a1be3ea104838e1254fee897b302aff7d496df70d0dbb38f3b6f8ade7",
+      "title": "city",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_6838c51a1be3.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "85be59ddb326bc1af543f94c35a9b87b04c663aab24e707019c30f27624e6a4e",
+      "title": "Test",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_85be59ddb326.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "6ee2bfcd88b93fb255abc922fa1c4f6038e5ffe982316f31e3441e7370f39a9e",
+      "title": "olympic test",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_6ee2bfcd88b9.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "b79ad83fb57cfb034cb62608034793af260bb61c1c8e8d11c628c24592b5bcb9",
+      "title": "test",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_b79ad83fb57c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "f7e5608f205173b9e19937000e344e7fbdc438a47ad5c9e86661c95925e4c273",
+      "title": "exportData",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_f7e5608f2051.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "02bdbe02173aa5a4b87ea531f586f6afe63e899db14bd40cdd564637e9512479",
+      "title": "跨境json",
+      "chart_count": 11,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_02bdbe02173a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "825432ae77bbd1e879ac8e954f6c1d59ebcde63ddf6bdce192e87fbfe18e2e89",
+      "title": "跨境电商测试",
+      "chart_count": 7,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_825432ae77bb.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "a833bbfa2423b447dfacc7c7963e661e15a83504afb4e94ce93a08325b1438c9",
+      "title": "AML",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_a833bbfa2423.html",
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "case_id": "f4fec70c04afa64b3bcf41a2026e1f55fc7e6d937f1bd92accdc1615e23ba54b",
+      "title": "test",
+      "chart_count": 5,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_f4fec70c04af.html",
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "case_id": "5bda5f47fcd7fdc68bb2b81fb74a7bf3b5fec212052fe046b51b2fb340bef831",
+      "title": "House Price Index Analysis",
+      "chart_count": 5,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_5bda5f47fcd7.html",
+      "status": "ok"
+    },
+    {
+      "idx": 19,
+      "case_id": "d92da4da145a57ced46b36cf490555d6fa723e5b5ccb7ba6b2934af5faf4c4d9",
+      "title": "ondo xstocks币种信息分析",
+      "chart_count": 11,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_d92da4da145a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "case_id": "97fd8de9880ee09fa7fd50a2c0b24bca6f05f4a9f77ab42d64f4af419dbcccfd",
+      "title": "hk imo prelim",
+      "chart_count": 8,
+      "upload_count": 4,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_97fd8de9880e.html",
+      "status": "ok"
+    }
+  ]
+}

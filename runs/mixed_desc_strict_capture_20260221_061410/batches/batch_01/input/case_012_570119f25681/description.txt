@@ -1,0 +1,5 @@
+Spoilage Prediction — Predict which products will spoil based on storage/handling conditions
+Waste Reduction — Forecast waste rates to optimize inventory ordering
+Demand Forecasting — Predict daily demand using temporal and categorical features
+Markdown Optimization — Learn optimal discount strategies to maximize profit while minimizing waste
+Iventory Management — Identify stockout risk and overstock patterns

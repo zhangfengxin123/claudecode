@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 0f3878793501</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>TEST3</h1>
+  <div class='muted'>case_id: <span class='code'>0f3878793501e60159219a5dbbc3c051d610f1f8fec7f0c13cfec280f5e4c112</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/0f3878793501e60159219a5dbbc3c051d610f1f8fec7f0c13cfec280f5e4c112' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/0f3878793501e60159219a5dbbc3c051d610f1f8fec7f0c13cfec280f5e4c112</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_004_0f3878793501</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>StudentPerformanceFactors.csv</code></td><td>200</td><td>641949</td><td>text/csv</td><td><code>input/case_004_0f3878793501/StudentPerformanceFactors.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/0f3878793501e60159219a5dbbc3c051d610f1f8fec7f0c13cfec280f5e4c112/files/StudentPerformanceFactors.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>StudentPerformanceFactors.csv</code> · HTTP 200 · csv · head-only preview</summary><table><thead><tr><th>Hours_Studied</th><th>Attendance</th><th>Parental_Involvement</th><th>Access_to_Resources</th><th>Extracurricular_Activities</th><th>Sleep_Hours</th><th>Previous_Scores</th><th>Motivation_Level</th><th>Internet_Access</th><th>Tutoring_Sessions</th><th>Family_Income</th><th>Teacher_Quality</th><th>School_Type</th><th>Peer_Influence</th><th>Physical_Activity</th><th>Learning_Disabilities</th><th>Parental_Education_Level</th><th>Distance_from_Home</th><th>Gender</th><th>Exam_Score</th></tr></thead><tbody><tr><td>23</td><td>84</td><td>Low</td><td>High</td><td>No</td><td>7</td><td>73</td><td>Low</td><td>Yes</td><td>0</td><td>Low</td><td>Medium</td><td>Public</td><td>Positive</td><td>3</td><td>No</td><td>High School</td><td>Near</td><td>Male</td><td>67</td></tr><tr><td>19</td><td>64</td><td>Low</td><td>Medium</td><td>No</td><td>8</td><td>59</td><td>Low</td><td>Yes</td><td>2</td><td>Medium</td><td>Medium</td><td>Public</td><td>Negative</td><td>4</td><td>No</td><td>College</td><td>Moderate</td><td>Female</td><td>61</td></tr><tr><td>24</td><td>98</td><td>Medium</td><td>Medium</td><td>Yes</td><td>7</td><td>91</td><td>Medium</td><td>Yes</td><td>2</td><td>Medium</td><td>Medium</td><td>Public</td><td>Neutral</td><td>4</td><td>No</td><td>Postgraduate</td><td>Near</td><td>Male</td><td>74</td></tr><tr><td>29</td><td>89</td><td>Low</td><td>Medium</td><td>Yes</td><td>8</td><td>98</td><td>Medium</td><td>Yes</td><td>1</td><td>Medium</td><td>Medium</td><td>Public</td><td>Negative</td><td>4</td><td>No</td><td>High School</td><td>Moderate</td><td>Male</td><td>71</td></tr><tr><td>19</td><td>92</td><td>Medium</td><td>Medium</td><td>Yes</td><td>6</td><td>65</td><td>Medium</td><td>Yes</td><td>3</td><td>Medium</td><td>High</td><td>Public</td><td>Neutral</td><td>4</td><td>No</td><td>College</td><td>Near</td><td>Female</td><td>70</td></tr><tr><td>19</td><td>88</td><td>Medium</td><td>Medium</td><td>Yes</td><td>8</td><td>89</td><td>Medium</td><td>Yes</td><td>3</td><td>Medium</td><td>Medium</td><td>Public</td><td>Positive</td><td>3</td><td>No</td><td>Postgraduate</td><td>Near</td><td>Male</td><td>71</td></tr><tr><td>29</td><td>84</td><td>Medium</td><td>Low</td><td>Yes</td><td>7</td><td>68</td><td>Low</td><td>Yes</td><td>1</td><td>Low</td><td>Medium</td><td>Private</td><td>Neutral</td><td>2</td><td>No</td><td>High School</td><td>Moderate</td><td>Male</td><td>67</td></tr><tr><td>25</td><td>78</td><td>Low</td><td>High</td><td>Yes</td><td>6</td><td>50</td><td>Medium</td><td>Yes</td><td>1</td><td>High</td><td>High</td><td>Public</td><td>Negative</td><td>2</td><td>No</td><td>High School</td><td>Far</td><td>Male</td><td>66</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td colspan="7">no assets</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <p class="muted">no renderable charts</p>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

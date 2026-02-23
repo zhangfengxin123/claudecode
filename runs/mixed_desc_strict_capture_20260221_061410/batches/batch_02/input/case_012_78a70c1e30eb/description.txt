@@ -1,0 +1,10 @@
+This dataset contains campaign-level advertising performance data across three major digital advertising platforms: Google Ads, Meta Ads (Facebook/Instagram), and TikTok Ads.
+
+It is designed specifically for:
+
+Marketing analytics
+ROAS & CPA optimization
+Budget allocation modeling
+Platform performance comparison
+Time-series analysis
+The dataset simulates real-world advertising behavior by maintaining realistic relationships between impressions, clicks, spend, conversions, and revenue.

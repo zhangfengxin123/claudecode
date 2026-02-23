@@ -1,0 +1,4 @@
+Size: (1298, 1224)
+Mode: RGB
+Format: JPEG
+Array shape: (1224, 1298, 3)

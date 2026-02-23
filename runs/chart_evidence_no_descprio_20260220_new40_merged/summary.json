@@ -1,0 +1,678 @@
+{
+  "generated_at": "2026-02-20T13:04:36",
+  "source_batches": [
+    "chart_evidence_no_descprio_20260219_batch01",
+    "chart_evidence_no_descprio_20260219_batch02"
+  ],
+  "case_count": 40,
+  "new_vs_existing_before_count": 40,
+  "input_complete_count": 40,
+  "no_description_count": 40,
+  "with_description_count": 0,
+  "unknown_description_count": 0,
+  "entries": [
+    {
+      "case_id": "7ca323c1a3a0ed5ecbb144832466b3608c361a216988fe575e72d77d0a682628",
+      "title": "Student_Placement_Skills_2025",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 1,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_001_7ca323c1a3a0",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_001_7ca323c1a3a0.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Student_Placement_Skills_2025.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "4191f2e665e02f502d6aaf6a73622d61c29c0045621b4facfc4f1821683d7ad9",
+      "title": "airline_route_profitability",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 2,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_002_4191f2e665e0",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_002_4191f2e665e0.html",
+      "has_description_txt": false,
+      "uploads": [
+        "airline_route_profitability.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "fb5d40592edc3ad5a4357916256d95ca45e7f4af85dfff05b4c3f18501fd97d2",
+      "title": "airline_route_profitability",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 3,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_003_fb5d40592edc",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_003_fb5d40592edc.html",
+      "has_description_txt": false,
+      "uploads": [
+        "airline_route_profitability.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "99345a7cac663ef5435b1f715aa400bdc971d2b0a98826efa5c7f1e6f6ed5f35",
+      "title": "airline_route_profitability",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 4,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_004_99345a7cac66",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_004_99345a7cac66.html",
+      "has_description_txt": false,
+      "uploads": [
+        "airline_route_profitability.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a",
+      "title": "deepseek",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 5,
+      "charts": 7,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_005_ed1229444366",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_005_ed1229444366.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Engram_paper.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "2dbf3de647e9b9adb184cdaa23e725b719d9eec1d6824cf60377476bf115722b",
+      "title": "Copy of Project",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 6,
+      "charts": 5,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_006_2dbf3de647e9",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_006_2dbf3de647e9.html",
+      "has_description_txt": false,
+      "uploads": [
+        "UBS-China Property：Our thoughts on recent rally-260129 (1).pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "1115a86c6af4ca467e4dfbf218b9b9c6ec1db93297847ffcf4ffe2cba741600b",
+      "title": "Earnings-Presentation-Q4-2025-FINAL",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 7,
+      "charts": 12,
+      "upload_count_api": 2,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_007_1115a86c6af4",
+      "input_files_local": 2,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_007_1115a86c6af4.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+        "Earnings-Presentation-Q4-2025-FINAL.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "566796988dbf45581ccc04f98597ece55cb9537621a78c2f205cbd353ff504fb",
+      "title": "CPALTT01USM657N",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 8,
+      "charts": 8,
+      "upload_count_api": 5,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_008_566796988dbf",
+      "input_files_local": 5,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_008_566796988dbf.html",
+      "has_description_txt": false,
+      "uploads": [
+        "CPALTT01USM657N.csv",
+        "NGDPRSAXDCDEQ.csv",
+        "NGDPRSAXDCCAQ.csv",
+        "NGDPSAXDCUSQ.csv",
+        "NGDPRXDCJPA.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "e60fb4bec64ea77e3c358021c186cef82767dbc777cbfbeb2d1e2af652ff7d3f",
+      "title": "global_layoffs_2020_2026",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 9,
+      "charts": 18,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_009_e60fb4bec64e",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_009_e60fb4bec64e.html",
+      "has_description_txt": false,
+      "uploads": [
+        "global_layoffs_2020_2026.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d",
+      "title": "SNP500 analysis",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 10,
+      "charts": 10,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_010_530e1ed08e28",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_010_530e1ed08e28.html",
+      "has_description_txt": false,
+      "uploads": [
+        "sp500_top10_stocks_clean.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "018e9d97ed373d4e787fa6331487168e8d6864ed7ad77436da77b67a5e818555",
+      "title": "2505",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 11,
+      "charts": 6,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_011_018e9d97ed37",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_011_018e9d97ed37.html",
+      "has_description_txt": false,
+      "uploads": [
+        "2505.17612v2.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "ae43400d2a7213709c12b5fd2f90dff7aa14eaeeeb41738b2317837b4eda0012",
+      "title": "格力",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 12,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_012_ae43400d2a72",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_012_ae43400d2a72.html",
+      "has_description_txt": false,
+      "uploads": [
+        "格力电器：2025年三季度报告.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "6ba640522b28d0fb35686c42add411a89cc9fcaa29a1b90f317ec61b83b4ad07",
+      "title": "test",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 13,
+      "charts": 10,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_013_6ba640522b28",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_013_6ba640522b28.html",
+      "has_description_txt": false,
+      "uploads": [
+        "battery_data.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68",
+      "title": "Global Layoff",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 14,
+      "charts": 7,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_014_9fd2d314ea38",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_014_9fd2d314ea38.html",
+      "has_description_txt": false,
+      "uploads": [
+        "global_layoffs_2020_2026.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "b3eca635d3fc8593d7481a8e2a16574f6e0be63e391a2014f9b9b4bd27c35658",
+      "title": "EV Data set",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 15,
+      "charts": 28,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_015_b3eca635d3fc",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_015_b3eca635d3fc.html",
+      "has_description_txt": false,
+      "uploads": [
+        "ev_vs_petrol_dataset_v3.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779",
+      "title": "Fred",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 16,
+      "charts": 10,
+      "upload_count_api": 4,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_016_373510a36d34",
+      "input_files_local": 4,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_016_373510a36d34.html",
+      "has_description_txt": false,
+      "uploads": [
+        "CPALTT01USM657N.csv",
+        "NGDPRSAXDCDEQ.csv",
+        "NGDPRSAXDCCAQ.csv",
+        "NGDPSAXDCUSQ.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "4bbe48695313e00fe4e324d0d4cb70f0022812020e6f3748c56aef8a8bed49a6",
+      "title": "1",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 17,
+      "charts": 0,
+      "upload_count_api": 5,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_017_4bbe48695313",
+      "input_files_local": 5,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_017_4bbe48695313.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Sample scanning energy spectrum standard value.csv",
+        "Coal Quality Rapid Testing Indicators and Requirements.md",
+        "spectroscopic data.csv",
+        "spectroscopic dataSample standard value.csv",
+        "Sample scanning energy spectrum.xlsx"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "55edcca7720e5b98b588d05129bdeab6fd7fb68bf14bcafdfcfe30c1e0535de7",
+      "title": "1",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 18,
+      "charts": 2,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_018_55edcca7720e",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_018_55edcca7720e.html",
+      "has_description_txt": false,
+      "uploads": [
+        "1.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "5cffa2e058a5f54c7b60643fce6b113e0dbf9e626f5369de08fe42b045b4f73a",
+      "title": "QCOM-Q1FY26-10-Q_Final",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 19,
+      "charts": 12,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_019_5cffa2e058a5",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_019_5cffa2e058a5.html",
+      "has_description_txt": false,
+      "uploads": [
+        "QCOM-Q1FY26-10-Q_Final.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "e72ce87902fb49a7899df6872f983400ce4ee89bab41330e2fd22ff924eeaea0",
+      "title": "贷后报告-范例",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch01",
+      "idx": 20,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch01/input/case_020_e72ce87902fb",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch01/items/case_020_e72ce87902fb.html",
+      "has_description_txt": false,
+      "uploads": [
+        "贷后报告-范例.xlsx"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "f65c122a6af466504b90676e0a41a66c7188cff6dc5db3dd6bc678f3cf4f4123",
+      "title": "中原农险投资分析2025",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 21,
+      "charts": 10,
+      "upload_count_api": 2,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_021_f65c122a6af4",
+      "input_files_local": 2,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_021_f65c122a6af4.html",
+      "has_description_txt": false,
+      "uploads": [
+        "证券投资基金估值表_资本金.xlsx",
+        "余额表_20250101-20251231_8001_资本金.xlsx"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "bdba6d468b80187c385f22ec0b6528729782d76891b1a4e21011a5bf8d98cebb",
+      "title": "Q4 2025 GAAP and Non-GAAP Earnings Tables",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 22,
+      "charts": 12,
+      "upload_count_api": 2,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_022_bdba6d468b80",
+      "input_files_local": 2,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_022_bdba6d468b80.html",
+      "has_description_txt": false,
+      "uploads": [
+        "AMD Q4'25 Earnings Slides FINAL.pdf",
+        "Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "ce9b7681a372dcc55417377f806025106c53162249d5f6c5f455b1cdea5c7c68",
+      "title": "account",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 23,
+      "charts": 6,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_023_ce9b7681a372",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_023_ce9b7681a372.html",
+      "has_description_txt": false,
+      "uploads": [
+        "工商银行历史明细（申请单号：26020416044749262653）.xlsx"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "d072b670826453e16599800aec6634bc6c5907d76b0202af193e344151d3f459",
+      "title": "random walk",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 24,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_024_d072b6708264",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_024_d072b6708264.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Analysis of Financial Time Series Third Edition  By Ruey S.Tsay.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "ef45d93ed5cbd5546f82e0ce56b5f7dcf6f431d8c605dc393e2da836ef77b2dd",
+      "title": "integrated_final_plan",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 25,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_025_ef45d93ed5cb",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_025_ef45d93ed5cb.html",
+      "has_description_txt": false,
+      "uploads": [
+        "integrated_final_plan.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "4732de6cfb3a108a6a95dd93ac81cd2adc5a0d8a93e0c4daa06e6c2e61a3ffa2",
+      "title": "DataFrame_from__data_input_R_0_1_xlsx___sheet___Projects_Record_Table___",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 26,
+      "charts": 0,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_026_4732de6cfb3a",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_026_4732de6cfb3a.html",
+      "has_description_txt": false,
+      "uploads": [
+        "DataFrame_from__data_input_R_0_1_xlsx___sheet___Projects_Record_Table___.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "fc5bd6982b4c9b4205282ac9d945bf03f8135427c3cc5fa9b63ec0f33c1e0016",
+      "title": "再保数据2025",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 27,
+      "charts": 10,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_027_fc5bd6982b4c",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_027_fc5bd6982b4c.html",
+      "has_description_txt": false,
+      "uploads": [
+        "再保应收应付数据.xlsx"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "f019626d8112a52569fc57a2961d8048ca936249a15a98bc512ac7b2502cb6f9",
+      "title": "UBS-China Banks and Property 2026 GCC takeaways",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 28,
+      "charts": 12,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_028_f019626d8112",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_028_f019626d8112.html",
+      "has_description_txt": false,
+      "uploads": [
+        "UBS-China Banks and Property 2026 GCC takeaways： Is the worst behind？-260122 (1).pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "586dc399915391fb7b56d856fc9de006cb9159bf09f8496c089d29ba8ff90cd5",
+      "title": "bitcoin_alltime2",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 29,
+      "charts": 10,
+      "upload_count_api": 2,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_029_586dc3999153",
+      "input_files_local": 2,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_029_586dc3999153.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Individual_4672_Account_Activity_02_04_21_40.csv",
+        "kraken_spot_trades_2025-08-08-2026-02-05.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078",
+      "title": "Google Stock Analysis",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 30,
+      "charts": 8,
+      "upload_count_api": 2,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_030_54c6646b9e27",
+      "input_files_local": 2,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_030_54c6646b9e27.html",
+      "has_description_txt": false,
+      "uploads": [
+        "2025q4-alphabet-earnings-release.pdf",
+        "2025q4-alphabet-earnings-slides.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "4d86d8de6dc86744bb88d854650348f733c3b36928c4508f5d3f4d25cfc329e1",
+      "title": "bitcoin",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 31,
+      "charts": 7,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_031_4d86d8de6dc8",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_031_4d86d8de6dc8.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Individual_4672_Account_Activity_02_04_21_36.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "7362a937d750977f6355c9e980c4ca1897e6206c1d7e2088efd58fdf2dfa4818",
+      "title": "2026-02-05",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 32,
+      "charts": 7,
+      "upload_count_api": 3,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_032_7362a937d750",
+      "input_files_local": 3,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_032_7362a937d750.html",
+      "has_description_txt": false,
+      "uploads": [
+        "DBAA.csv",
+        "ADPWNUSNERSA.csv",
+        "USEPUINDXD.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "967c94e24f0b1bf28a9b8c374df04e0a5980dd46178976ca7435b7c4a4203bae",
+      "title": "Uber",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 33,
+      "charts": 7,
+      "upload_count_api": 3,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_033_967c94e24f0b",
+      "input_files_local": 3,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_033_967c94e24f0b.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Uber-Q4-25-Earnings-Press-Release.pdf",
+        "Uber-Q4-25-Earnings-Supplemental-Data.pdf",
+        "Uber-Q4-25-Prepared-Remarks.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "a16a6fd625c62226a212e5416de52a484e88d4f479fb754d729524f985181ce5",
+      "title": "global_ads_performance_dataset",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 34,
+      "charts": 12,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_034_a16a6fd625c6",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_034_a16a6fd625c6.html",
+      "has_description_txt": false,
+      "uploads": [
+        "global_ads_performance_dataset.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea",
+      "title": "bnpl_dataset",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 35,
+      "charts": 16,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_035_a04751b41f4c",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_035_a04751b41f4c.html",
+      "has_description_txt": false,
+      "uploads": [
+        "bnpl_dataset.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "d75a80753e2f5c1cbaac3feb319d699ad7b725901490bc295a972fac38c2194c",
+      "title": "bnpl_dataset",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 36,
+      "charts": 17,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_036_d75a80753e2f",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_036_d75a80753e2f.html",
+      "has_description_txt": false,
+      "uploads": [
+        "bnpl_dataset.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a",
+      "title": "WinterSD",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 37,
+      "charts": 15,
+      "upload_count_api": 3,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_037_18e0c06995d6",
+      "input_files_local": 3,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_037_18e0c06995d6.html",
+      "has_description_txt": false,
+      "uploads": [
+        "WinterSD.csv",
+        "SummerSD.csv",
+        "CountriesSD.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "ffc9ef59a23023fdfb2c0b720a63cac57f2603c10ff3743e051e042f9a2939b9",
+      "title": "Fred Interest Rate and Software Job Market Analysis",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 38,
+      "charts": 6,
+      "upload_count_api": 2,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_038_ffc9ef59a230",
+      "input_files_local": 2,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_038_ffc9ef59a230.html",
+      "has_description_txt": false,
+      "uploads": [
+        "IHLIDXUSTPSOFTDEVE.csv",
+        "FEDFUNDS.csv"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "38299b5402ab8c8271c057611c9c1f033ebd2ad5036a00c65f7d2042e41793db",
+      "title": "公司价值评估中财务模型的构建-中信证券培训",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 39,
+      "charts": 4,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_039_38299b5402ab",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_039_38299b5402ab.html",
+      "has_description_txt": false,
+      "uploads": [
+        "公司价值评估中财务模型的构建-中信证券培训.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    },
+    {
+      "case_id": "88410fa7d3b6aff9d9b51dfd98ebf3713c332295c2ec0de9d1953d28b5b8910a",
+      "title": "Statistical-Review-of-World-Energy",
+      "batch_run": "chart_evidence_no_descprio_20260219_batch02",
+      "idx": 40,
+      "charts": 6,
+      "upload_count_api": 1,
+      "input_dir": "chart_evidence_no_descprio_20260219_batch02/input/case_040_88410fa7d3b6",
+      "input_files_local": 1,
+      "html_path": "chart_evidence_no_descprio_20260219_batch02/items/case_040_88410fa7d3b6.html",
+      "has_description_txt": false,
+      "uploads": [
+        "Statistical-Review-of-World-Energy.pdf"
+      ],
+      "is_new_vs_existing_before": true
+    }
+  ]
+}

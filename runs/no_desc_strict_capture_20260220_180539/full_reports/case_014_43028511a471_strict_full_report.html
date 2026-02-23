@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：流量数据1</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：流量数据1</h1>
+    <p class='sub'>来源: /view/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b ｜ strict no-description capture</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;流量数据分析报告 - 20天周期综合洞察&quot;
+description: &quot;基于20天流量监测数据的深度分析，揭示流量趋势、异常事件和信号质量模式&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>流量数据分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告基于2026年1月9日至1月30日期间的流量监测数据，共分析了1,791条记录。在20天的监测期内，系统累计净增流量653.67 m³，平均流量为0.38 m³/h。分析揭示了显著的流量方向变化模式，识别出154次极端流量事件，并发现了信号质量与流量异常之间的相关性。</p>
+<h3>关键发现</h3>
+<ul><li>总体趋势：20天内净增流量653.67 m³，总体呈现正向增长</li><li>异常事件：检测到119次极端负向流量（&lt;-50 m³/h）和35次高正向流量（100 m³/h）</li><li>信号质量：平均信号质量75.7%，低质量时段与负向流量显著相关</li><li>关键日期：1月12日、13日、17日和23-25日出现主要异常事件</li></ul>
+<h2>数据概览</h2>
+<h3>基本信息</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>监测周期</td><td>2026-01-09 至 2026-01-30</td></tr><tr><td>记录数量</td><td>1,791条</td></tr><tr><td>初始流量</td><td>15,772.17 m³</td></tr><tr><td>最终流量</td><td>16,425.84 m³</td></tr><tr><td>净增量</td><td>+653.67 m³</td></tr><tr><td>平均流量</td><td>0.38 m³/h</td></tr><tr><td>平均流速</td><td>0.01 m/s</td></tr></tbody></table></div>
+<p>流量统计</p>
+<ul><li>最大正向流量：4,629.45 m³/h</li><li>最大负向流量：-4,628.38 m³/h</li><li>流量标准差：138.86 m³/h</li><li>中位数流量：0.04 m³/h</li></ul>
+<h2>趋势分析</h2>
+<h3>流量时间序列分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>flow_rate_timeseries.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/flow_rate_timeseries.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>上图展示了20天期间流量变化的完整时间序列。蓝色线表示瞬时流量，绿色三角形表示高正向流量事件（100 m³/h），红色倒三角形表示极端负向流量事件（&lt;-50 m³/h）。</p>
+<p>主要观察：</p>
+<ul><li>流量在监测期内呈现波动状态</li><li>极端正负流量事件交替出现</li><li>大部分时间流量接近零，表明系统处于稳定运行状态</li></ul>
+<h3>累积流量趋势</h3>
+<div class='plot-card'><div class='plot-meta'><code>cumulative_volume.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/cumulative_volume.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>累积流量曲线显示了总体向上的趋势，确认了净流量增长。曲线的斜率变化反映了不同时段的流量强度。</p>
+<h2>日度分析</h2>
+<h3>每日净流量变化</h3>
+<div class='plot-card'><div class='plot-meta'><code>daily_volume_change.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/daily_volume_change.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>该图表展示每天的净流量变化：</p>
+<ul><li>绿色柱：表示正向净流量（流量增加）</li><li>红色柱：表示负向净流量（流量减少）</li></ul>
+<p>关键日度发现：</p>
+<ul><li>1月12日：显著负向流量变化</li><li>1月13日：继续负向趋势</li><li>1月17日：再次出现负向波动</li><li>1月23-25日：连续负向流量事件</li><li>其他大部分日期呈现小幅正向变化</li></ul>
+<h3>每日流量统计</h3>
+<div class='plot-card'><div class='plot-meta'><code>daily_statistics.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/daily_statistics.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>综合每日流量统计图表显示：</p>
+<ul><li>蓝色柱：平均流量</li><li>红色线：最大流量</li><li>绿色线：最小流量</li></ul>
+<p>这揭示了每日流量的波动范围和极端值出现的时间点。</p>
+<h2>流量分布分析</h2>
+<h3>流量率分布直方图</h3>
+<div class='plot-card'><div class='plot-meta'><code>flow_rate_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/flow_rate_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>该直方图展示了流量在-50到50 m³/h范围内的分布：</p>
+<ul><li>大部分读数集中在0附近</li><li>呈现轻微的正向偏态</li><li>存在少量极端值被排除在此视图之外</li></ul>
+<h3>流量方向分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>flow_direction_pie.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/flow_direction_pie.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>流量方向分布：</p>
+<ul><li>正向流量：占主要比例</li><li>负向流量：显著比例，表明存在逆流现象</li><li>近零流量：系统在大部分时间处于低流量状态</li></ul>
+<h2>小时模式分析</h2>
+<h3>每小时流量变化模式</h3>
+<div class='plot-card'><div class='plot-meta'><code>hourly_flow_pattern.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/hourly_flow_pattern.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>按一天中的小时统计流量变化：</p>
+<ul><li>蓝色柱：正向流量时段</li><li>红色柱：负向流量时段</li></ul>
+<p>这揭示了可能的系统操作模式或外部影响的时间规律。</p>
+<h2>异常事件分析</h2>
+<h3>极端流量事件时间线</h3>
+<div class='plot-card'><div class='plot-meta'><code>extreme_events_timeline.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/extreme_events_timeline.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>该图表标记了所有154次极端流量事件：</p>
+<ul><li>绿色标记：极端正向流量（100 m³/h）</li><li>红色标记：极端负向流量（&lt;-50 m³/h）</li></ul>
+<p>关键异常日期：</p>
+<p>1. 1月12日：出现多次极端负向流量事件</p>
+<p>2. 1月13日：持续异常模式</p>
+<p>3. 1月17日：另一次异常集中</p>
+<p>4. 1月23-25日：连续多日的极端事件</p>
+<p>这些日期可能对应特定的系统事件、维护活动或外部干扰。</p>
+<h2>信号质量分析</h2>
+<h3>信号质量与流量关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>quality_vs_flow.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/quality_vs_flow.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>散点图展示了信号质量与流量率的关系：</p>
+<ul><li>X轴：信号质量百分比</li><li>Y轴：流量率</li><li>颜色：流量率值（绿色=正，红色=负）</li></ul>
+<p>关键洞察：</p>
+<ul><li>低信号质量（&lt;60%）往往与极端负向流量相关</li><li>高信号质量（80%）通常对应正常流量范围</li><li>可能存在传感器故障或干扰导致信号质量下降</li></ul>
+<h2>流速与流量关系</h2>
+<h3>速度-流量相关性</h3>
+<div class='plot-card'><div class='plot-meta'><code>velocity_vs_flow.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/velocity_vs_flow.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>该散点图展示了流速（m/s）与流量率（m³/h）的关系：</p>
+<ul><li>红色虚线：趋势线</li><li>颜色梯度：表示信号质量</li></ul>
+<p>发现：</p>
+<ul><li>流速与流量率呈现正相关关系</li><li>大部分数据点集中在低值区域</li><li>存在异常偏离趋势线的点，可能对应异常事件</li></ul>
+<h2>深度洞察</h2>
+<h3>1. 流量反转现象</h3>
+<p>数据中存在显著的流量反转现象，即流量在短时间内从正值变为负值，或反之。这种模式可能表明：</p>
+<ul><li>系统配置变化：阀门或泵的状态切换</li><li>测量误差：传感器校准问题</li><li>物理现象：管道系统中的回流或压力波动</li></ul>
+<h3>2. 极端事件聚集模式</h3>
+<p>极端流量事件并非随机分布，而是集中在特定日期。这种聚集性提示：</p>
+<ul><li>计划性维护：可能在这些日期进行了系统维护或测试</li><li>外部因素：可能与操作人员班次或环境条件相关</li><li>系统故障：可能是设备在这些时期出现故障</li></ul>
+<h3>3. 信号质量与异常关联</h3>
+<p>信号质量下降往往与异常流量事件同时发生，这表明：</p>
+<ul><li>传感器问题：极端流量可能超出传感器最佳工作范围</li><li>测量干扰：异常工况可能干扰信号采集</li><li>数据可靠性：异常事件期间的数据质量需要谨慎评估</li></ul>
+<h2>建议</h2>
+<h3>短期行动</h3>
+<p>1. 检查传感器校准：特别是在极端流量事件期间的读数</p>
+<p>2. 审查系统日志：调查1月12-13日、17日、23-25日的操作记录</p>
+<p>3. 信号质量监控：建立实时信号质量报警机制</p>
+<h3>中期改进</h3>
+<p>1. 数据分析框架：建立自动化异常检测系统</p>
+<p>2. 预测性维护：基于历史模式预测可能的异常时段</p>
+<p>3. 传感器优化：考虑在极端流量条件下优化传感器性能</p>
+<h3>长期策略</h3>
+<p>1. 系统集成：将流量监测数据与其他系统数据集成</p>
+<p>2. 根因分析：深入研究流量反转的根本原因</p>
+<p>3. 容量规划：基于流量趋势进行系统容量规划</p>
+<h2>结论</h2>
+<p>本次分析提供了20天流量监测周期的全面视图。虽然总体呈现正向增长趋势，但频繁的极端流量事件和信号质量问题值得进一步关注。建议重点关注异常集中的日期，并通过系统日志和操作记录进行根因分析。</p>
+<p>总体而言，数据质量良好，能够支持深入分析和决策制定。持续的监测和分析将有助于优化系统性能和预测潜在问题。</p>
+<hr/>
+<p>分析完成日期：2025-01-13</p>
+<p>数据来源：./data/cleanedflowdata.csv</p>
+<p>清洗后数据：./data/cleanedflowdata.csv, ./data/hourlyflowdata.csv, ./data/dailyflowdata.csv</p><hr/><p class='muted'>说明：严格抓取报告（无 description + 输入完整 + 图资产完整）。plot assets: 10; renderable: 0; asset_fail: 10.</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

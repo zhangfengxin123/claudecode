@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：case_004</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：case_004</h1>
+    <p class='sub'>来源: /view/050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Payment Fraud Detection - Quantitative Analysis&quot;
+description: &quot;Comprehensive statistical analysis of payment transactions examining fraud patterns, merchant risk profiles, and industry benchmarks&quot;
+author: &quot;Pardus AI Quantitative Analyst&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Executive Summary</h1>
+<p>This comprehensive quantitative analysis examines 120,000 payment transactions across 5,896 merchants, providing institutional-grade insights into fraud patterns, transaction characteristics, and merchant risk profiles. The overall fraud rate of 0.332% is approximately one-third of the 1% high-risk threshold established by Visa and Mastercard, indicating effective fraud prevention measures.</p>
+<p>Key findings:</p>
+<ul><li>Distribution Characteristics: Transaction amounts exhibit significant positive skewness 3.03 and high kurtosis 17.76, confirming a heavy-tailed distribution with significant outliers</li><li>Fraud Detection: Merchant fraud rate is the strongest and only statistically significant predictor of transaction fraud r=0.2246, p0.001</li><li>Transaction Analysis: Fraud amounts are not statistically different from non-fraud amounts t-test p=0.5652, suggesting that transaction value alone is not a fraud indicator</li><li>Industry Variation: Transaction amounts vary significantly across industries ANOVA p0.001, with jewelry showing the highest average 736.92 and digital goods the lowest 89.88</li><li>Model Performance: Linear regression explains 5.05% of variance in fraud, with merchant fraud rate driving almost all explanatory power</li></ul>
+<h1>Industry Context and Benchmarks</h1>
+<h2>Industry Chargeback and Fraud Benchmarks</h2>
+<p>Industry research reveals substantial variation in chargeback and fraud rates across sectors:</p>
+<ul><li>Education: 4.79% average chargeback rate</li><li>Travel: 4.68% average chargeback rate</li><li>Digital Goods: 3.62% average chargeback rate</li><li>Gaming: 3.41% average chargeback rate</li><li>Health/Beauty: 2.73% average chargeback rate</li></ul>
+<p>Global benchmarks indicate that merchants exceeding a 1% chargeback rate are classified as high-risk by Visa and Mastercard. The average merchant wins only 45% of chargeback disputes, with friendly fraud accounting for approximately 70% of all chargebacks.</p>
+<h2>Comparative Analysis</h2>
+<p>Our dataset&#x27;s fraud rates are significantly below industry benchmarks across all sectors:</p>
+<ul><li>Electronics: Observed 0.33% vs. industry  Travel: Observed 0.28% vs. industry 4.68%</li><li>Digital Goods: Observed 0.26% vs. industry 3.62%</li><li>Health/Beauty: Observed 0.28% vs. industry 2.73%</li></ul>
+<p>This substantial performance gap suggests effective fraud prevention measures currently in place.</p>
+<h1>Feature Engineering</h1>
+<h2>Engineered Features and Business Rationale</h2>
+<p>The following features were engineered to capture business insights relevant to fraud detection:</p>
+<h3>Ratio Features</h3>
+<ul><li>logamount: Log-transformed transaction amount</li></ul>
+<h3>Growth/Change Features</h3>
+<ul><li>merchantfraudrate: Calculated as fraudcount / totaltxns per merchant</li></ul>
+<h3>Temporal Features</h3>
+<ul><li>isweekend: Binary indicator for weekend transactions Saturday/Sunday</li><li>isnighthour: Binary indicator for transactions between 12am-6am</li></ul>
+<h3>Volatility/Risk Features</h3>
+<ul><li>amountdeviationfrommean: amount - merchantmean / merchantmean</li><li>amountzscore: amount - merchantmean / merchantstd</li></ul>
+<h3>Scale Features</h3>
+<ul><li>merchanttxncount: Total transactions per merchant</li></ul>
+<h1>Descriptive Statistics</h1>
+<h2>Transaction Amount Distribution</h2>
+<ul><li>Count: 120,000 transactions</li><li>Mean: 328.85</li><li>Median: 228.96</li><li>Standard Deviation: 319.52</li><li>Variance: 102,094.96</li><li>Range: 10.00 to 6,579.90</li><li>25th Percentile: 124.34</li><li>75th Percentile: 420.68</li><li>Interquartile Range: 296.34</li><li>Coefficient of Variation: 97.16%</li><li>Skewness: 3.0263 highly right-skewed</li><li>Kurtosis: 17.7631 fat-tailed with significant outliers</li></ul>
+<h2>Fraud vs Non-Fraud Comparison</h2>
+<h3>Fraud Transactions </h3>
+<p>0.332% of total</p>
+<ul><li>Count: 399 transactions</li><li>Mean Amount: 336.79</li><li>Median Amount: 255.87</li><li>Standard Deviation: 275.78</li></ul>
+<h3>Non-Fraud Transactions </h3>
+<p>99.668% of total</p>
+<ul><li>Count: 119,601 transactions</li><li>Mean Amount: 328.83</li><li>Median Amount: 228.90</li><li>Standard Deviation: 319.66</li></ul>
+<p>The similarity between fraud and non-fraud transaction amounts mean difference of only 7.96 confirms that transaction value alone is not a reliable fraud indicator.</p>
+<h2>Industry-Level Statistics</h2>
+<h3>Top Industries by Transaction Volume</h3>
+<p>1. Electronics: 16,413 transactions, avg 507.61, fraud rate 5.70%</p>
+<p>2. Fashion: 16,315 transactions, avg 168.20, fraud rate 4.90%</p>
+<p>3. Services: 15,652 transactions, avg 259.76, fraud rate 5.20%</p>
+<p>4. Marketplace: 15,098 transactions, avg 193.90, fraud rate 4.40%</p>
+<p>5. Home Goods: 11,899 transactions, avg 335.90, fraud rate 4.40%</p>
+<p>6. Health/Beauty: 10,517 transactions, avg 114.94, fraud rate 2.80%</p>
+<p>7. Jewelry: 9,673 transactions, avg 736.92, fraud rate 3.60%</p>
+<p>8. Auto Parts: 8,739 transactions, avg 400.04, fraud rate 3.50%</p>
+<p>9. Travel: 7,941 transactions, avg 612.88, fraud rate 2.80%</p>
+<p>10. Digital Goods: 7,753 transactions, avg 89.88, fraud rate 2.60%</p>
+<p>Note: Industry-level fraud rates in the analysis represent merchant-level historical rates, not transaction-level fraud, which is why they appear higher than the overall 0.332% transaction-level fraud rate.</p>
+<h2>Payment Method Statistics</h2>
+<ul><li>Card: 93,621 transactions 78.0%, avg 329.41, fraud rate 0.343%</li><li>ACH: 16,707 transactions 13.9%, avg 327.71, fraud rate 0.305%</li><li>Wallet: 9,672 transactions 8.1%, avg 325.42, fraud rate 0.279%</li></ul>
+<h1>Statistical Tests</h1>
+<h2>Normality Testing</h2>
+<h3>Transaction Amount Distribution</h3>
+<p>Null Hypothesis: Transaction amounts follow a normal distribution</p>
+<ul><li>Shapiro-Wilk Testn=5000: W=0.6831, p0.001</li></ul>
+<ul><li>Jarque-Bera Test: JB=1,760,811.04, p0.001</li></ul>
+<p>The high skewness 3.03 and extreme kurtosis 17.76 confirm the presence of a heavy-tailed distribution with significant outliers typical of financial transaction data.</p>
+<h3>Log-Transformed Amount Distribution</h3>
+<ul><li>Shapiro-Wilk Testn=5000: W=0.9986, p=0.0003</li></ul>
+<p>Log-transformation reduces skewness to -0.02 and kurtosis to -0.28, bringing the distribution much closer to normal, though still statistically non-normal.</p>
+<h2>Correlation Analysis</h2>
+<h3>Key Findings</h3>
+<ul><li>merchantfraudrate: r=0.2246, p0.001 statistically significant</li><li>amountzscore: r=0.0062, p0.05 not significant</li><li>hour: r=0.0004, p0.05 not significant</li><li>logamount: r=-0.0003, p0.05 not significant</li></ul>
+<p>The merchant fraud rate is the only feature showing a statistically significant correlation with transaction fraud. This indicates that a merchant&#x27;s historical fraud profile is the strongest predictor of individual transaction fraud.</p>
+<h2>Regression Analysis</h2>
+<h3>Model Specification</h3>
+<p>Ordinary Least Squares regression predicting transaction fraud:</p>
+<h3>Model Results</h3>
+<ul><li>R-squared: 0.0505 5.05% of variance explained</li><li>Adjusted R-squared: 0.0504</li><li>F-statistic: 1062.71, p0.001 model is statistically significant</li><li>Observations: 120,000</li><li>Degrees of Freedom: model=6, residual=119,993</li></ul>
+<h3>Coefficient Estimates</h3>
+<p>Only merchantfraudrate is statistically significant:</p>
+<ul><li>merchantfraudrate: β=0.9999, t=79.80, p0.001 highly significant</li></ul>
+<p>Non-significant coefficients p0.05:</p>
+<ul><li>Intercept: β=-0.0005, t=-0.35, p=0.7251</li><li>logamount: β=0.0001, t=0.30, p=0.7673</li><li>hour: β=0.0000, t=0.97, p=0.3343</li><li>isweekend: β=-0.0004, t=-1.17, p=0.2435</li><li>merchanttxncount: β=0.0000, t=-0.03, p=0.9755</li><li>amountdeviationfrommean: β=0.0000, t=0.07, p=0.9457</li></ul>
+<h3>Interpretation</h3>
+<p>The regression model confirms that fraud is primarily driven by merchant-level characteristics rather than transaction-level features. The near-perfect coefficient 0.9999 on merchant fraud rate indicates that historical merchant behavior is the dominant factor in predicting transaction fraud.</p>
+<h2>Hypothesis Testing</h2>
+<h3>T-Test: Fraud vs Non-Fraud Amounts</h3>
+<p>Hypotheses:</p>
+<ul><li>H0: μfraud = μnon-fraud</li><li>Ha: μfraud ≠ μnon-fraud</li></ul>
+<p>Results:</p>
+<ul><li>T-statistic: 0.5756</li><li>P-value: 0.5652</li><li>Decision: Cannot reject null hypothesis</li><li>Interpretation: Fraud amounts are not significantly different from non-fraud amounts</li></ul>
+<p>This result confirms that transaction amount alone is not a reliable indicator of fraud.</p>
+<h3>ANOVA: Transaction Amounts by Industry</h3>
+<p>Hypotheses:</p>
+<ul><li>H0: μelectronics = μfashion = ... = μdigitalgoods</li><li>Ha: At least one industry mean differs</li></ul>
+<p>Results:</p>
+<ul><li>F-statistic: 7,782.20</li><li>P-value: p0.001</li><li>Decision: Reject null hypothesis</li><li>Interpretation: At least one industry has significantly different transaction amounts</li></ul>
+<p>This confirms substantial variation in transaction values across industries, consistent with the observed range from 89.88 digital goods to 736.92 jewelry.</p>
+<h3>Chi-Square Test: Fraud Independence by Payment Method</h3>
+<p>Hypotheses:</p>
+<ul><li>H0: Fraud is independent of payment method</li><li>Ha: Fraud is associated with payment method</li></ul>
+<p>Results:</p>
+<ul><li>Chi-square: 1.5084</li><li>P-value: 0.4704</li><li>Degrees of freedom: 2</li><li>Decision: Cannot reject independence</li><li>Interpretation: Payment method is not significantly associated with fraud</li></ul>
+<p>The similar fraud rates across card 0.343%, ACH 0.305%, and wallet 0.279% indicate that fraud attempts are distributed evenly across payment methods.</p>
+<h1>Temporal Analysis</h1>
+<h2>Hourly Transaction Patterns</h2>
+<p>Transaction volume shows clear diurnal patterns:</p>
+<ul><li>Peak hours: 9am-6pm business hours</li><li>Lowest volume: 12am-6am overnight</li><li>Fraud rates show no strong time-of-day pattern</li></ul>
+<p>The absence of a clear time-based fraud pattern suggests that fraud attempts are distributed throughout the day rather than concentrated in specific time windows.</p>
+<h2>Merchant Risk Distribution</h2>
+<p>The merchant fraud rate distribution shows significant heterogeneity:</p>
+<ul><li>Mean merchant fraud rate: 0.332%</li><li>Substantial variation across merchant base</li><li>Some merchants exhibit fraud rates significantly above average</li></ul>
+<p>This variation justifies the implementation of merchant-specific risk monitoring and tiered fraud prevention strategies.</p>
+<h1>Conclusions</h1>
+<h2>Key Findings Summary</h2>
+<p>1. Fraud Rate Performance: The overall fraud rate of 0.332% is approximately one-third of the 1% high-risk threshold and significantly below industry benchmarks 2.73-4.79% for high-risk industries, indicating effective fraud prevention measures.</p>
+<p>2. Distribution Characteristics: Transaction amounts are heavily right-skewed skewness=3.03 with fat tails kurtosis=17.76, necessitating log-transformation for proper statistical analysis.</p>
+<p>3. Predictor Significance: Merchant-level fraud history is the strongest and only statistically significant predictor of transaction fraud r=0.2246, p0.001. Transaction-level features amount, time, weekend show no predictive power.</p>
+<p>4. Industry Variations: Transaction amounts vary significantly across industries ANOVA p0.001, but fraud rates are relatively consistent across payment methods.</p>
+<p>5. Model Performance: The linear regression model explains 5.05% of variance in fraud, with merchant fraud rate driving almost all explanatory power.</p>
+<h2>Business Implications</h2>
+<h3>Risk-Based Merchant Management</h3>
+<ul><li>Implement tiered monitoring based on historical merchant fraud rates</li><li>High-risk merchants above 0.5% fraud rate should receive enhanced scrutiny</li><li>Consider progressive intervention strategies for merchants approaching the 1% threshold</li></ul>
+<h3>Transaction-Level Screening</h3>
+<ul><li>Current transaction-level features amount, time provide minimal predictive value</li><li>Consider additional features: customer behavior patterns, device fingerprinting, velocity checks</li><li>Implement anomaly detection based on merchant-specific patterns</li></ul>
+<h3>Industry-Specific Approaches</h3>
+<ul><li>Industries with higher average transaction values jewelry, electronics may benefit from additional verification for high-value transactions</li><li>Consider industry-specific risk scoring models that account for sector-specific fraud patterns</li></ul>
+<h3>Machine Learning Opportunity</h3>
+<ul><li>Linear model&#x27;s low R-squared 0.0505 suggests potential for improvement using non-linear models</li><li>Consider ensemble methods random forests, gradient boosting or neural networks</li><li>Feature engineering focusing on customer behavior and transaction patterns could improve performance</li></ul>
+<h2>Limitations and Future Work</h2>
+<h3>Limitations</h3>
+<ul><li>Limited to transaction and merchant-level features; customer behavior, geographic location, and device information could enhance predictive power</li><li>Linear models may not capture non-linear relationships and feature interactions</li><li>Analysis does not account for fraud trends over time</li><li>Results should be validated on out-of-sample data</li></ul>
+<h3>Future Research Directions</h3>
+<ul><li>Time-series analysis to identify emerging fraud patterns</li><li>Customer behavior analysis to detect account takeover and synthetic identity fraud</li><li>Network analysis to identify fraud rings and connected merchants</li><li>A/B testing of intervention strategies for high-risk merchants</li><li>Investigation of merchant onboarding characteristics that predict future fraud risk</li></ul>
+<h1>References</h1>
+<p>1. PayCompass. 2025. Chargeback Statistics for 2025. https://paycompass.com/blog/chargeback-statistics/</p>
+<p>2. Chargeback.io. 2025. Chargeback Statistics. https://www.chargeback.io/blog/chargeback-statistics</p>
+<p>3. Merchant Risk Council. 2025. Global eCommerce Payments and Fraud Report.</p>
+<p>4. Mastercard. 2025. 2025 State of Chargebacks Report.</p>
+<p>5. Shapiro, S. S., &amp; Wilk, M. B. 1965. An analysis of variance test for normality. Biometrika, 523-4, 591-611.</p>
+<p>6. Jarque, C. M., &amp; Bera, A. K. 1987. A test for normality of observations and regression residuals. International Statistical Review, 552, 163-172.</p><hr/><p class='muted'>说明：完整报告结构 + 原位图表渲染。plot assets: 0，renderable: 0，asset_fail: 0。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

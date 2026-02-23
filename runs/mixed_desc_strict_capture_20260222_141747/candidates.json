@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-02-22T22:18:07",
+  "meta": {
+    "target": 200,
+    "reserve": 400,
+    "recent_limit": 500,
+    "existing_unique_case_ids": 425,
+    "recent_new_pool": 79,
+    "probe_ok": 0,
+    "probe_fail": 79,
+    "picked": 0
+  },
+  "results": []
+}

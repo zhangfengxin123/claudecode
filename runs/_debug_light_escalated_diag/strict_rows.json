@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-02-23T00:38:15",
+  "rows": [
+    {
+      "seq": 1,
+      "case_id": "85dc8695ea24d28befe1602b0343594024a6786ea040d748ca4bc7bb799ca92b",
+      "title": "3",
+      "status": "ok",
+      "strict_pass": true,
+      "input_complete": true,
+      "has_description": false,
+      "plot_assets_in_doc": 7,
+      "plots_renderable": 7,
+      "plot_assets_failed": 0,
+      "error": "",
+      "full_report_html": "full_reports/case_001_85dc8695ea24_full_report.html",
+      "input_dir": "_debug_light_escalated_diag/input/case_001_85dc8695ea24",
+      "fig_from_remote": 7
+    }
+  ]
+}

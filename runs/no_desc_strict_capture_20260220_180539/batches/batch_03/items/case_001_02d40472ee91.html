@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 02d40472ee91</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>prices_monthly</h1>
+  <div class='muted'>case_id: <span class='code'>02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_001_02d40472ee91</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>prices_monthly.csv</code></td><td>200</td><td>19101</td><td>text/csv</td><td><code>input/case_001_02d40472ee91/prices_monthly.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/files/prices_monthly.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>prices_monthly.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th></th><th>CSI800</th><th>HS300</th><th>SP500</th><th>GOLD</th><th>STBOND</th><th>OIL</th><th>COPPER</th><th>BOND10Y</th></tr></thead><tbody><tr><td>2005/1/31</td><td>945.237</td><td>954.879</td><td>1181.27</td><td>113.32</td><td>2.48</td><td>48.25</td><td>3168.1</td><td>4.14</td></tr><tr><td>2005/2/28</td><td>1034.234</td><td>1039.989</td><td>1203.6</td><td>116.45</td><td>2.72</td><td>51.75</td><td>3247.1</td><td>4.36</td></tr><tr><td>2005/3/31</td><td>928.649</td><td>942.203</td><td>1180.59</td><td>114.08</td><td>2.73</td><td>55.31</td><td>3378.904761904762</td><td>4.5</td></tr><tr><td>2005/4/30</td><td>906.462</td><td>932.395</td><td>1156.85</td><td>115.2</td><td>2.84</td><td>49.2</td><td>3389.809523809524</td><td>4.21</td></tr><tr><td>2005/5/31</td><td>834.262</td><td>855.946</td><td>1191.5</td><td>111.26</td><td>2.93</td><td>52.08</td><td>3241.9</td><td>4</td></tr><tr><td>2005/6/30</td><td>843.178</td><td>878.686</td><td>1191.33</td><td>115.45</td><td>3.06</td><td>56.63</td><td>3529.727272727273</td><td>3.94</td></tr><tr><td>2005/7/31</td><td>833.868</td><td>888.164</td><td>1234.18</td><td>111.67</td><td>3.34</td><td>60.71</td><td>3608.47619047619</td><td>4.28</td></tr><tr><td>2005/8/31</td><td>897.637</td><td>927.916</td><td>1220.33</td><td>113.4</td><td>3.44</td><td>68.63</td><td>3791.909090909091</td><td>4.02</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td><code>normalized_prices.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/normalized_prices.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>cumulative_returns.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/cumulative_returns.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>risk_return_scatter.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/risk_return_scatter.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>performance_comparison.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/performance_comparison.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>performance_ranking.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/performance_ranking.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>rolling_volatility.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/rolling_volatility.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>drawdown_analysis.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/drawdown_analysis.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>correlation_heatmap.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>annual_returns.json</code></td><td>json</td><td>404</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/02d40472ee919e7b883f6d105b70c6496e0466d5f39df01e3dbb9320fb0d2d13/assets/annual_returns.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <article class='chart-card'><h4>normalized_prices.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>cumulative_returns.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>risk_return_scatter.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>performance_comparison.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>performance_ranking.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>rolling_volatility.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>drawdown_analysis.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>correlation_heatmap.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article><article class='chart-card'><h4>annual_returns.json</h4><p class='err'>asset fetch failed: HTTP 404</p></article>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

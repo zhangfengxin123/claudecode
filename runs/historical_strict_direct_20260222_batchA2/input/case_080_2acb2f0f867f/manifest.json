@@ -1,0 +1,37 @@
+[
+  {
+    "name": "2016ar2016_e.pdf",
+    "local": "2016ar2016_e.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 5039994
+  },
+  {
+    "name": "2018ar2018_e.pdf",
+    "local": "2018ar2018_e.pdf",
+    "ok": true,
+    "error": "",
+    "size": 6242054
+  },
+  {
+    "name": "2017ar2017_e.pdf",
+    "local": "2017ar2017_e.pdf",
+    "ok": true,
+    "error": "",
+    "size": 5058787
+  },
+  {
+    "name": "2019ar2019_e.pdf",
+    "local": "2019ar2019_e.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 4292251
+  },
+  {
+    "name": "2015ar2015_e.pdf",
+    "local": "2015ar2015_e.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3041146
+  }
+]

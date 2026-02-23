@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Henagliflozin post-hoc analysis</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Henagliflozin post-hoc analysis</h1>
+    <p class='sub'>来源: /view/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Henagliflozin Clinical Trials Comprehensive Analysis: Efficacy, Safety, and Therapeutic Positioning&quot;
+description: &quot;A comprehensive analysis of three Phase 3 clinical trials evaluating Henagliflozin (恒格列净), a novel SGLT2 inhibitor, for type 2 diabetes treatment across monotherapy, add-on to metformin, and triple combination therapy.&quot;
+author: &quot;Pardus AI&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Henagliflozin Clinical Trials Comprehensive Analysis</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of three Phase 3 clinical trials evaluating Henagliflozin 恒格列净, a novel Sodium-Glucose Co-Transporter-2 SGLT2 inhibitor, for the treatment of type 2 diabetes mellitus T2DM. The trials cover:</p>
+<p>1. MonotherapyNCT03159052: 468 patients, 24-week double-blind + 28-week extension</p>
+<p>2. Add-on to MetforminNCT04390295: 483 patients, 24-week double-blind + 28-week extension</p>
+<p>3. Triple Combinationwith Retagliptin and Metformin NCT04667143: 778 patients completed, 24-week treatment</p>
+<p>Key Findings:</p>
+<ul><li>Henagliflozin achieved significant HbA1c reductions 0.76-0.94% placebo-adjusted</li><li>Consistent body weight reductions 1.3-1.9 kg and blood pressure improvements</li><li>Triple combination therapy showed superior efficacy 1.51-1.54% HbA1c reduction</li><li>Excellent safety profile: no diabetic ketoacidosis or severe hypoglycemia across all studies</li><li>Both 5 mg and 10 mg doses demonstrated comparable efficacy and tolerability</li></ul>
+<hr/>
+<h2>1. Clinical Trial Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key differences between the three clinical trial designs?</li><li>How many patients were enrolled across all trials and what was the total study duration?</li></ul></details>
+<p>The three Phase 3 trials evaluated Henagliflozin across different treatment scenarios, providing comprehensive evidence for its efficacy and safety:</p>
+<h3>Trial Structure Visualization</h3>
+<div class='plot-card'><div class='plot-meta'><code>trial_structure.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b/assets/trial_structure.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Trial Characteristics</h3>
+<div class='table-wrap'><table><thead><tr><th>Trial</th><th>NCT Number</th><th>Patients</th><th>Duration</th><th>HbA1c Range</th><th>Design</th></tr></thead><tbody><tr><td>Monotherapy</td><td>NCT03159052</td><td>468</td><td>52 weeks</td><td>7.0-10.5%</td><td>Randomized, double-blind, placebo-controlled</td></tr><tr><td>Add-on to Metformin</td><td>NCT04390295</td><td>483</td><td>52 weeks</td><td>7.0-10.5%</td><td>Randomized, double-blind, placebo-controlled</td></tr><tr><td>Triple Combination</td><td>NCT04667143</td><td>778</td><td>24 weeks</td><td>7.5-10.5%</td><td>Randomized, double-blind, active-controlled</td></tr></tbody></table></div>
+<p>Total Study Population:1,729 patients across all trials</p>
+<p>Combined Study Duration:128 weeks of follow-up data across multiple studies</p>
+<h3>Geographic Distribution</h3>
+<p>All trials were conducted exclusively in China, spanning 36-72 clinical centers, ensuring consistent patient populations and treatment protocols.</p>
+<hr/>
+<h2>2. Efficacy Analysis: HbA1c Reduction</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does HbA1c reduction compare between monotherapy, add-on therapy, and triple combination?</li><li>What is the clinical significance of the observed HbA1c reductions?</li></ul></details>
+<h3>HbA1c Reduction Across Studies</h3>
+<div class='plot-card'><div class='plot-meta'><code>hba1c_reduction_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b/assets/hba1c_reduction_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Detailed Efficacy Results</h3>
+<h4>Monotherapy </h4>
+<p>Week 24</p>
+<div class='table-wrap'><table><thead><tr><th>Treatment</th><th>HbA1c Change</th><th>Placebo-Adjusted</th><th>p-value</th></tr></thead><tbody><tr><td>Placebo</td><td>-0.11%</td><td>—</td><td>—</td></tr><tr><td>Henagliflozin 5 mg</td><td>-1.02%</td><td>-0.91%</td><td>0.0001</td></tr><tr><td>Henagliflozin 10 mg</td><td>-1.05%</td><td>-0.94%</td><td>0.0001</td></tr></tbody></table></div>
+<h4>Add-on to Metformin </h4>
+<p>Week 24</p>
+<div class='table-wrap'><table><thead><tr><th>Treatment</th><th>HbA1c Change</th><th>Placebo-Adjusted</th><th>p-value</th></tr></thead><tbody><tr><td>Placebo + Metformin</td><td>-0.14%</td><td>—</td><td>—</td></tr><tr><td>Henagliflozin 5 mg</td><td>-0.90%</td><td>-0.76%</td><td>0.0001</td></tr><tr><td>Henagliflozin 10 mg</td><td>-0.94%</td><td>-0.80%</td><td>0.0001</td></tr></tbody></table></div>
+<h4>Triple Combination </h4>
+<p>Week 24</p>
+<div class='table-wrap'><table><thead><tr><th>Treatment</th><th>HbA1c Change</th><th>vs R100</th><th>vs H5</th><th>vs H10</th></tr></thead><tbody><tr><td>Retagliptin 100 mg R100</td><td>-0.98%</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Henagliflozin 5 mg H5</td><td>-0.86%</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Henagliflozin 10 mg H10</td><td>-0.95%</td><td>—</td><td>—</td><td>—</td></tr><tr><td>R100 + H5</td><td>-1.51%</td><td>-0.53%</td><td>-0.65%</td><td>-0.56%</td></tr><tr><td>R100 + H10</td><td>-1.54%</td><td>-0.56%</td><td>-0.68%</td><td>-0.59%</td></tr></tbody></table></div>
+<p>All comparisons: p  0.0001</p>
+<h3>Clinical Significance</h3>
+<p>The observed HbA1c reductions of 0.76-0.94%placebo-adjusted are clinically meaningful, as reductions of ≥0.5% are associated with:</p>
+<ul><li>Reduced microvascular complications</li><li>Improved glycemic control sustainability</li><li>Meeting treatment guidelines for most patients</li></ul>
+<p>The triple combination therapy achieved 1.5% HbA1c reduction, making it particularly suitable for patients with higher baseline HbA1c 7.5-10.5%.</p>
+<hr/>
+<h2>3. HbA1c Target Achievement</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What proportion of patients achieved HbA1c</li><li>How does triple combination therapy improve target achievement compared to individual agents?</li></ul></details>
+<h3>Triple Combination: Target Achievement Rates</h3>
+<div class='plot-card'><div class='plot-meta'><code>hba1c_target_achievement.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b/assets/hba1c_target_achievement.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Achievement Analysis</h3>
+<p>In the triple combination trial, the proportion of patients achieving HbA1c 7.0% at week 24 was:</p>
+<div class='table-wrap'><table><thead><tr><th>Treatment Arm</th><th>HbA1c 7.0% Achievement</th><th>Relative Increase</th></tr></thead><tbody><tr><td>Retagliptin 100 mg</td><td>27.1%</td><td>Baseline</td></tr><tr><td>Henagliflozin 5 mg</td><td>21.2%</td><td>-21.8%</td></tr><tr><td>Henagliflozin 10 mg</td><td>24.4%</td><td>-9.9%</td></tr><tr><td>R100 + H5</td><td>57.4%</td><td>+111.8%</td></tr><tr><td>R100 + H10</td><td>56.4%</td><td>+108.1%</td></tr></tbody></table></div>
+<p>Key Insight:Triple combination therapy more than doubledthe rate of patients achieving glycemic targets compared to individual agents alone.</p>
+<hr/>
+<h2>4. Additional Efficacy Metrics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What additional metabolic benefits does Henagliflozin provide beyond HbA1c reduction?</li><li>How do body weight and blood pressure changes compare across treatment arms?</li></ul></details>
+<h3>Efficacy Metrics Heatmap</h3>
+<div class='plot-card'><div class='plot-meta'><code>efficacy_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b/assets/efficacy_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Body Weight Reduction</h3>
+<p>Consistent body weight reductions were observed across all trials:</p>
+<div class='table-wrap'><table><thead><tr><th>Study</th><th>5 mg</th><th>10 mg</th><th>Placebo</th></tr></thead><tbody><tr><td>Monotherapy</td><td>-1.7 kg</td><td>-1.9 kg</td><td>-0.4 kg</td></tr><tr><td>Add-on to Metformin</td><td>-1.4 kg</td><td>-1.5 kg</td><td>-0.20 kg</td></tr></tbody></table></div>
+<h3>Blood Pressure Reduction</h3>
+<p>Systolic blood pressure SBP reductions were consistent:</p>
+<div class='table-wrap'><table><thead><tr><th>Study</th><th>5 mg SBP</th><th>10 mg SBP</th><th>Placebo SBP</th></tr></thead><tbody><tr><td>Monotherapy</td><td>-4.4 mmHg</td><td>-4.6 mmHg</td><td>+0.3 mmHg</td></tr><tr><td>Add-on to Metformin</td><td>-4.4 mmHg</td><td>-5.2 mmHg</td><td>-1.1 mmHg</td></tr></tbody></table></div>
+<p>Diastolic blood pressure DBP also showed reductions:</p>
+<ul><li>5 mg: -1.7 to -1.9 mmHg</li><li>10 mg: -2.3 mmHg</li></ul>
+<h3>Body Weight vs Blood Pressure Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>weight_bp_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b/assets/weight_bp_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Observations:</p>
+<ul><li>Strong correlation between weight reduction and SBP reduction</li><li>Henagliflozin 10 mg consistently showed the greatest effects</li><li>All active treatments showed superior metabolic benefits vs placebo</li><li>Color intensity represents HbA1c reduction magnitude</li></ul>
+<hr/>
+<h2>5. Dose Comparison: 5 mg vs 10 mg</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Is there a clinically significant difference between 5 mg and 10 mg doses?</li><li>What factors should clinicians consider when selecting between doses?</li></ul></details>
+<h3>Dose Comparison </h3>
+<p>Averaged Across Studies</p>
+<div class='plot-card'><div class='plot-meta'><code>dose_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b/assets/dose_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Dose Selection Considerations</h3>
+<div class='table-wrap'><table><thead><tr><th>Parameter</th><th>5 mg</th><th>10 mg</th><th>Clinical Relevance</th></tr></thead><tbody><tr><td>HbA1c Reduction</td><td>0.84%</td><td>0.89%</td><td>Similar efficacy</td></tr><tr><td>Weight Loss</td><td>1.55 kg</td><td>1.70 kg</td><td>Minimal difference</td></tr><tr><td>SBP Reduction</td><td>4.4 mmHg</td><td>4.9 mmHg</td><td>Comparable</td></tr><tr><td>Safety Profile</td><td>Excellent</td><td>Excellent</td><td>No difference</td></tr><tr><td>Cost Consideration</td><td>Lower dose</td><td>Higher dose</td><td>5 mg may be preferred</td></tr></tbody></table></div>
+<p>Recommendation:Both doses are effective and well-tolerated. The 5 mg dose may be preferred for cost-effectiveness, while 10 mg could be considered for patients requiring slightly greater glycemic control.</p>
+<hr/>
+<h2>6. Treatment Flow and Clinical Pathways</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the treatment pathways for type 2 diabetes patients?</li><li>How does Henagliflozin fit into the treatment algorithm?</li></ul></details>
+<h3>Treatment Options Flow Diagram</h3>
+<div class='plot-card'><div class='plot-meta'><code>treatment_flow.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b/assets/treatment_flow.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Clinical Pathway Recommendations</h3>
+<p>Based on the trial data, the following treatment pathways are supported:</p>
+<h4>First-Line: Diet and Exercise Failures</h4>
+<ul><li>Monotherapy:Henagliflozin 5 mg or 10 mg</li><li>Expected HbA1c reduction: </li></ul>
+<p>Second-Line: Metformin Failures</p>
+<ul><li>Add-on to Metformin:Henagliflozin 5 mg or 10 mg</li><li>Expected HbA1c reduction:  Additional benefits: Weight loss 1.4-1.5 kg, BP reduction 4-5 mmHg</li></ul>
+<h4>Advanced Treatment: High HbA1c Patients </h4>
+<p>7.5-10.5%</p>
+<ul><li>Triple Combination:Retagliptin 100 mg + Henagliflozin 5/10 mg + Metformin</li><li>Expected HbA1c reduction:  Target achievement: 56-57% achieving HbA1c 7.0%</li></ul>
+<hr/>
+<h2>7. Safety Profile Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the overall safety profile of Henagliflozin across all trials?</li><li>Are there any specific adverse events that clinicians should monitor?</li></ul></details>
+<h3>Safety Profile Overview</h3>
+<div class='plot-card'><div class='plot-meta'><code>safety_profile.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a8851aeca7d6ba1d1a64e07587663e77d12edca444aed53a7275ba05ec69fe5b/assets/safety_profile.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Safety Findings</h3>
+<h4>Adverse Events Summary</h4>
+<ul><li>Diabetic Ketoacidosis:0 cases across all trials</li><li>Severe Hypoglycemia:0 episodes reported</li><li>Treatment Compliance:97% across all studies</li><li>Discontinuation due to AEs:Low rates 5%</li></ul>
+<h4>Common Adverse Events</h4>
+<div class='table-wrap'><table><thead><tr><th>Event Type</th><th>Monotherapy</th><th>Add-on to Metformin</th><th>Triple Combination</th></tr></thead><tbody><tr><td>Mild Ketosis</td><td>Low incidence</td><td>Slightly higher</td><td>Low incidence</td></tr><tr><td>Urinary Tract Infections</td><td>Low</td><td>Low</td><td>Low</td></tr><tr><td>Treatment-Related AEs</td><td>Minimal</td><td>Minimal</td><td>Minimal</td></tr></tbody></table></div>
+<h4>Safety Advantages</h4>
+<p>1. No Hypoglycemia Risk:Unlike sulfonylureas and insulin, Henagliflozin has minimal hypoglycemia risk when used as monotherapy or with metformin</p>
+<p>2. Weight Loss Benefit:Unlike many oral anti-diabetic agents, Henagliflozin promotes weight reduction</p>
+<p>3. Cardiovascular Benefits:Blood pressure reductions suggest potential cardiovascular benefits</p>
+<p>4. Durable Efficacy:Efficacy sustained over 52-week periods in monotherapy and add-on trials</p>
+<hr/>
+<h2>8. Comparative Analysis: Mechanistic Synergy</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does the combination of Retagliptin and Henagliflozin provide superior efficacy?</li><li>What are the complementary mechanisms of action?</li></ul></details>
+<h3>Mechanism of Action Comparison</h3>
+<div class='table-wrap'><table><thead><tr><th>Drug Class</th><th>Mechanism</th><th>Primary Effect</th><th>Secondary Effects</th></tr></thead><tbody><tr><td>SGLT2i Henagliflozin</td><td>Blocks glucose reabsorption in kidneys</td><td>Urinary glucose excretion</td><td>Weight loss, BP reduction</td></tr><tr><td>DPP-4i Retagliptin</td><td>Inhibits DPP-4 enzyme</td><td>Increases incretin hormones</td><td>Glucose-dependent insulin secretion</td></tr></tbody></table></div>
+<h3>Synergistic Benefits</h3>
+<p>The triple combination Retagliptin + Henagliflozin + Metformin demonstrates mechanistic synergy:</p>
+<p>1. Complementary Pathways:</p>
+<p>    Metformin: Reduces hepatic glucose production</p>
+<p>    Henagliflozin: Increases renal glucose excretion</p>
+<p>    Retagliptin: Enhances glucose-dependent insulin secretion</p>
+<p>2. Additive HbA1c Reduction:</p>
+<p>    Expected additive effect: </p>
+<p>    Observed effect: </p>
+<p>    Slightly less than additive but still clinically superior</p>
+<p>3. Multi-Metabolic Benefits:</p>
+<p>    Glycemic control HbA1c</p>
+<p>    Weight reduction</p>
+<p>    Blood pressure improvement</p>
+<p>    No hypoglycemia risk</p>
+<hr/>
+<h2>9. Clinical Positioning and Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the optimal place in therapy for Henagliflozin?</li><li>Which patient populations would benefit most from Henagliflozin therapy?</li></ul></details>
+<h3>Treatment Algorithm</h3>
+<h3>Patient Selection Criteria</h3>
+<p>Ideal Candidates for Henagliflozin:</p>
+<ul><li>Patients needing weight loss as part of diabetes management</li><li>Patients with hypertension requiring additional BP control</li><li>Patients at risk of hypoglycemia due to glucose-independent mechanism</li><li>Patients with cardiovascular risk factors potential CV benefits</li></ul>
+<p>Cautions and Monitoring:</p>
+<ul><li>Monitor for ketosis especially in high-risk patients</li><li>Assess volume status before initiation</li><li>Monitor eGFR renal function</li><li>Educate patients about genital and urinary tract infections</li></ul>
+<h3>Dose Selection Guidance</h3>
+<div class='table-wrap'><table><thead><tr><th>Patient Profile</th><th>Recommended Dose</th><th>Rationale</th></tr></thead><tbody><tr><td>Standard patient</td><td>5 mg</td><td>Cost-effective, proven efficacy</td></tr><tr><td>Higher HbA1c 8.5%</td><td>10 mg</td><td>Maximize glycemic control</td></tr><tr><td>Elderly patients</td><td>5 mg</td><td>Conservative approach</td></tr><tr><td>Renal impairment</td><td>5 mg</td><td>Lower dose preferred</td></tr></tbody></table></div>
+<hr/>
+<h2>10. Statistical Significance and Power Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What was the statistical power of the trials?</li><li>Are the results statistically robust and clinically meaningful?</li></ul></details>
+<h3>Statistical Power and Sample Size</h3>
+<p>All three trials were adequately powered to detect clinically meaningful differences:</p>
+<h4>Monotherapy Trial</h4>
+<ul><li>Power:97% to detect HbA1c reduction</li><li>Significance Level:p  0.0001 for both doses vs placebo</li><li>Clinical Relevance:0.91-0.94% placebo-adjusted reduction</li></ul>
+<h4>Add-on to Metformin Trial</h4>
+<ul><li>Significance Level:p  0.0001 for both doses vs placebo</li><li>Effect Size:0.76-0.80% placebo-adjusted reduction</li><li>NNT Number Needed to Treat:Approximately 4-5 for additional 0.5% HbA1c reduction</li></ul>
+<h4>Triple Combination Trial</h4>
+<ul><li>Significance Level:p  0.0001 for all pairwise comparisons</li><li>Effect Size:0.53-0.68% additional reduction vs individual agents</li><li>Clinical Relevance:More than doubled target achievement rates</li></ul>
+<hr/>
+<h2>11. Limitations and Future Directions</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the limitations of these clinical trials?</li><li>What additional studies are needed to fully characterize Henagliflozin?</li></ul></details>
+<h3>Study Limitations</h3>
+<p>1. Geographic Scope:All trials conducted in China only; global data needed</p>
+<p>2. Follow-up Duration:24-52 weeks; long-term cardiovascular outcomes data lacking</p>
+<p>3. Patient Population:Primarily Asian population; ethnic diversity limited</p>
+<p>4. Comparator Agents:Limited comparisons to other SGLT2 inhibitors and DPP-4 inhibitors</p>
+<h3>Future Research Needs</h3>
+<p>1. Cardiovascular Outcome Trials CVOT:</p>
+<p>    Major adverse cardiovascular events MACE</p>
+<p>    Heart failure outcomes</p>
+<p>    Renal endpoints</p>
+<p>2. Comparative Effectiveness:</p>
+<p>    Direct comparison with other SGLT2 inhibitors empagliflozin, dapagliflozin</p>
+<p>    Long-term safety comparisons</p>
+<p>    Cost-effectiveness analyses</p>
+<p>3. Special Populations:</p>
+<p>    Elderly patients 75 years</p>
+<p>    Patients with renal impairment</p>
+<p>    Patients with established cardiovascular disease</p>
+<p>4. Real-World Evidence:</p>
+<p>    Post-marketing surveillance</p>
+<p>    Real-world effectiveness studies</p>
+<p>    Adherence and persistence data</p>
+<hr/>
+<h2>12. Conclusions</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key takeaways from this comprehensive analysis?</li><li>How should clinicians incorporate Henagliflozin into their practice?</li></ul></details>
+<h3>Summary of Key Findings</h3>
+<p>Efficacy:</p>
+<ul><li>Henagliflozin consistently achieved significant HbA1c reductions 0.76-0.94%</li><li>Triple combination therapy demonstrated superior efficacy 1.51-1.54%</li><li>Over 56% of patients in triple therapy achieved HbA1c 7.0%</li></ul>
+<p>Safety:</p>
+<ul><li>Excellent safety profile across all trials</li><li>No diabetic ketoacidosis or severe hypoglycemia reported</li><li>High treatment compliance 97%</li></ul>
+<p>Metabolic Benefits:</p>
+<ul><li>Consistent weight reduction 1.3-1.9 kg</li><li>Blood pressure improvements 4-5 mmHg SBP</li><li>No hypoglycemia risk</li></ul>
+<p>Clinical Utility:</p>
+<ul><li>Both 5 mg and 10 mg doses are effective and well-tolerated</li><li>Flexible dosing options for personalized therapy</li><li>Suitable for monotherapy, add-on, and triple combination regimens</li></ul>
+<h3>Clinical Recommendations</h3>
+<p>1. First-line Consideration:Henagliflozin is an effective option for monotherapy in patients failing diet and exercise</p>
+<p>2. Add-on to Metformin:Proven efficacy with additional metabolic benefits</p>
+<p>3. Triple Combination:Superior option for patients with high HbA1c requiring intensive treatment</p>
+<p>4. Dose Selection:5 mg recommended as starting dose; consider 10 mg for patients requiring additional glycemic control</p>
+<p>5. Monitoring:Routine monitoring of ketones, renal function, and volume status recommended</p>
+<h3>Final Assessment</h3>
+<p>Henagliflozin 恒格列净 has demonstrated robust efficacy and an excellent safety profile across three Phase 3 clinical trials. Its unique mechanism of action provides complementary benefits including weight loss and blood pressure reduction without hypoglycemia risk. The drug represents a valuable addition to the type 2 diabetes therapeutic armamentarium, with flexibility for use across multiple treatment pathways.</p>
+<p>Clinical Impact:High</p>
+<p>Evidence Quality:Strong Phase 3 RCTs</p>
+<p>Safety Profile:Excellent</p>
+<p>Overall Recommendation:Approved for clinical use in type 2 diabetes management</p>
+<hr/>
+<h2>Data Sources</h2>
+<p>This analysis is based on three Phase 3 clinical trial publications:</p>
+<p>1. Monotherapy Trial NCT03159052:Lu J, et al. Diabetes Obes Metab. 2021</p>
+<p>2. Add-on to Metformin Trial NCT04390295:Weng J, et al. Diabetes Obes Metab. 2021</p>
+<p>3. Triple Combination Trial NCT04667143:Wang Y, et al. Diabetes Obes Metab. 2024</p>
+<p>All trials were sponsored by Jiangsu Hengrui Pharmaceuticals Co., Ltd.</p>
+<hr/>
+<h2>Appendix: Data Files</h2>
+<p>Cleaned data and additional analyses are available in the folder:</p>
+<ul><li>- Complete trial data</li><li>- Detailed trial summaries</li></ul>
+<p>All chart files are available as JSON files in the project root for interactive visualization.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

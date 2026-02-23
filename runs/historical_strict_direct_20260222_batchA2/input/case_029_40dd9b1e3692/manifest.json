@@ -1,0 +1,16 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 84
+  },
+  {
+    "name": "AMINO四期基金分析报告.pptx",
+    "local": "AMINO四期基金分析报告.pptx",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 2221919
+  }
+]

@@ -1,0 +1,1 @@
+please focus on what would be the impact of calling the same carrier for the same shipment with multiple trucks more than once.

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 43028511a471</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>流量数据1</h1>
+  <div class='muted'>case_id: <span class='code'>43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_014_43028511a471</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>流量数据1.9-1.30.csv</code></td><td>200</td><td>387510</td><td>text/csv</td><td><code>input/case_014_43028511a471/流量数据1.9-1.30.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/files/%E6%B5%81%E9%87%8F%E6%95%B0%E6%8D%AE1.9-1.30.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>流量数据1.9-1.30.csv</code> · HTTP 200 · csv · head-only preview</summary><table><thead><tr><th>﻿26-01-09/22:22:22</th><th>-1</th><th>1:M51             </th><th>2:定时数据输出时间</th><th>3:下次 22:37:19   </th><th>4:剩余次数 9999   </th><th>CH1 U</th><th>0</th><th>D</th><th>0.1</th><th>Q</th><th>0.2</th><th>FLOW:</th><th>0.3</th><th>m3/h</th><th>VEL:</th><th>0.4</th><th>m/s </th><th>Total NET:</th><th>224286.114</th><th> m3</th><th>ESN:</th><th>81002222</th></tr></thead><tbody><tr><td>26-01-09/22:30:19</td><td>----------------</td><td>1:M51             </td><td>2:定时数据输出时间</td><td>3:下次 22:30:00   </td><td>4:剩余次数 9999   </td><td>CH1 U</td><td>84.4</td><td>D</td><td>84.3</td><td>Q</td><td>94</td><td>FLOW:</td><td>1.125</td><td>m3/h</td><td>VEL:</td><td>0.712</td><td>m/s </td><td>Total NET:</td><td>224286.127</td><td> m3</td><td>ESN:</td><td>81002222.0</td></tr><tr><td>26-01-09/22:45:00</td><td>----------------</td><td>1:M90             </td><td>2:信号强度和质量  </td><td>3: S=844,843 Q=95 </td><td>4:                </td><td>CH1 U</td><td>84.4</td><td>D</td><td>84.3</td><td>Q</td><td>95</td><td>FLOW:</td><td>1.116</td><td>m3/h</td><td>VEL:</td><td>0.706</td><td>m/s </td><td>Total NET:</td><td>224286.397</td><td> m3</td><td>ESN:</td><td>81002222.0</td></tr><tr><td>26-01-09/23:00:00</td><td>----------------</td><td>1:M90             </td><td>2:信号强度和质量  </td><td>3: S=843,842 Q=91 </td><td>4:                </td><td>CH1 U</td><td>84.3</td><td>D</td><td>84.2</td><td>Q</td><td>91</td><td>FLOW:</td><td>1.102</td><td>m3/h</td><td>VEL:</td><td>0.697</td><td>m/s </td><td>Total NET:</td><td>224286.673</td><td> m3</td><td>ESN:</td><td>81002222.0</td></tr><tr><td>26-01-09/23:15:00</td><td>----------------</td><td>1:M90             </td><td>2:信号强度和质量  </td><td>3: S=842,841 Q=93 </td><td>4:                </td><td>CH1 U</td><td>84.2</td><td>D</td><td>84.1</td><td>Q</td><td>93</td><td>FLOW:</td><td>1.027</td><td>m3/h</td><td>VEL:</td><td>0.65</td><td>m/s </td><td>Total NET:</td><td>224286.941</td><td> m3</td><td>ESN:</td><td>81002222.0</td></tr><tr><td>26-01-09/23:30:00</td><td>----------------</td><td>1:M90             </td><td>2:信号强度和质量  </td><td>3: S=842,841 Q=99 </td><td>4:                </td><td>CH1 U</td><td>84.2</td><td>D</td><td>84.1</td><td>Q</td><td>99</td><td>FLOW:</td><td>0.855</td><td>m3/h</td><td>VEL:</td><td>0.54</td><td>m/s </td><td>Total NET:</td><td>224287.177</td><td> m3</td><td>ESN:</td><td>81002222.0</td></tr><tr><td>26-01-09/23:45:00</td><td>----------------</td><td>1:M90             </td><td>2:信号强度和质量  </td><td>3: S=842,841 Q=97 </td><td>4:                </td><td>CH1 U</td><td>84.2</td><td>D</td><td>84.1</td><td>Q</td><td>97</td><td>FLOW:</td><td>0.911</td><td>m3/h</td><td>VEL:</td><td>0.576</td><td>m/s </td><td>Total NET:</td><td>224287.402</td><td> m3</td><td>ESN:</td><td>81002222.0</td></tr><tr><td>26-01-10/00:00:00</td><td>----------------</td><td>1:M90             </td><td>2:信号强度和质量  </td><td>3: S=842,841 Q=99 </td><td>4:                </td><td>CH1 U</td><td>84.2</td><td>D</td><td>84.1</td><td>Q</td><td>99</td><td>FLOW:</td><td>0.896</td><td>m3/h</td><td>VEL:</td><td>0.567</td><td>m/s </td><td>Total NET:</td><td>224287.623</td><td> m3</td><td>ESN:</td><td>81002222.0</td></tr><tr><td>26-01-10/00:15:00</td><td>----------------</td><td>1:M90             </td><td>2:信号强度和质量  </td><td>3: S=842,842 Q=94 </td><td>4:                </td><td>CH1 U</td><td>84.2</td><td>D</td><td>84.2</td><td>Q</td><td>94</td><td>FLOW:</td><td>1.126</td><td>m3/h</td><td>VEL:</td><td>0.712</td><td>m/s </td><td>Total NET:</td><td>224287.89</td><td> m3</td><td>ESN:</td><td>81002222.0</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td><code>data/flow_rate_timeseries.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/flow_rate_timeseries.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/cumulative_volume.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/cumulative_volume.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/daily_volume_change.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/daily_volume_change.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/daily_statistics.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/daily_statistics.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/flow_rate_distribution.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/flow_rate_distribution.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/flow_direction_pie.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/flow_direction_pie.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/hourly_flow_pattern.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/hourly_flow_pattern.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/extreme_events_timeline.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/extreme_events_timeline.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/quality_vs_flow.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/quality_vs_flow.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>data/velocity_vs_flow.json</code></td><td>json</td><td>200</td><td>-</td><td>0</td><td>-</td><td><a href='https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/velocity_vs_flow.json' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <article class='chart-card'><h4>data/flow_rate_timeseries.json</h4><div class='muted code'>data/flow_rate_timeseries.json</div><div id='chart-0' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/flow_rate_timeseries.json</p></article><article class='chart-card'><h4>data/cumulative_volume.json</h4><div class='muted code'>data/cumulative_volume.json</div><div id='chart-1' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/cumulative_volume.json</p></article><article class='chart-card'><h4>data/daily_volume_change.json</h4><div class='muted code'>data/daily_volume_change.json</div><div id='chart-2' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/daily_volume_change.json</p></article><article class='chart-card'><h4>data/daily_statistics.json</h4><div class='muted code'>data/daily_statistics.json</div><div id='chart-3' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/daily_statistics.json</p></article><article class='chart-card'><h4>data/flow_rate_distribution.json</h4><div class='muted code'>data/flow_rate_distribution.json</div><div id='chart-4' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/flow_rate_distribution.json</p></article><article class='chart-card'><h4>data/flow_direction_pie.json</h4><div class='muted code'>data/flow_direction_pie.json</div><div id='chart-5' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/flow_direction_pie.json</p></article><article class='chart-card'><h4>data/hourly_flow_pattern.json</h4><div class='muted code'>data/hourly_flow_pattern.json</div><div id='chart-6' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/hourly_flow_pattern.json</p></article><article class='chart-card'><h4>data/extreme_events_timeline.json</h4><div class='muted code'>data/extreme_events_timeline.json</div><div id='chart-7' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/extreme_events_timeline.json</p></article><article class='chart-card'><h4>data/quality_vs_flow.json</h4><div class='muted code'>data/quality_vs_flow.json</div><div id='chart-8' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/quality_vs_flow.json</p></article><article class='chart-card'><h4>data/velocity_vs_flow.json</h4><div class='muted code'>data/velocity_vs_flow.json</div><div id='chart-9' class='plot'></div><p class='muted code'>https://pardusai.org/v1/api/public/project/43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b/assets/data/velocity_vs_flow.json</p></article>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [{"div": "chart-0", "name": "data/flow_rate_timeseries.json", "fig": null}, {"div": "chart-1", "name": "data/cumulative_volume.json", "fig": null}, {"div": "chart-2", "name": "data/daily_volume_change.json", "fig": null}, {"div": "chart-3", "name": "data/daily_statistics.json", "fig": null}, {"div": "chart-4", "name": "data/flow_rate_distribution.json", "fig": null}, {"div": "chart-5", "name": "data/flow_direction_pie.json", "fig": null}, {"div": "chart-6", "name": "data/hourly_flow_pattern.json", "fig": null}, {"div": "chart-7", "name": "data/extreme_events_timeline.json", "fig": null}, {"div": "chart-8", "name": "data/quality_vs_flow.json", "fig": null}, {"div": "chart-9", "name": "data/velocity_vs_flow.json", "fig": null}];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

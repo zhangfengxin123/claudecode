@@ -1,0 +1,23 @@
+[
+  {
+    "name": "3.xlsx",
+    "local": "3.xlsx",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 6465343
+  },
+  {
+    "name": "retail_data.csv",
+    "local": "retail_data.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 6563695
+  },
+  {
+    "name": "retail_data.parquet",
+    "local": "retail_data.parquet",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 7022428
+  }
+]

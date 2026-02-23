@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：1</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：1</h1>
+    <p class='sub'>来源: /view/55edcca7720e5b98b588d05129bdeab6fd7fb68bf14bcafdfcfe30c1e0535de7 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;文件目录数据分析报告&quot;
+description: &quot;对 ./files/ 目录中数据文件的全面分析，包含文件统计、内容提取和数据质量评估&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>文件目录数据分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告对 目录进行了全面的数据分析。经过详细检查，该目录包含 1 个 PDF 文件（，大小 106.8 KB）。该文件是一份关于 OCR（光学字符识别）技术和方法的指导文档，提供了从文档图像中提取文本的详细步骤、工具选择建议以及常见问题的解决方案。</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>这份文档提供了哪些主要的 OCR 工具选择？</li><li>如何提高 OCR 的识别准确率？</li></ul></details>
+<h3>关键发现</h3>
+<ul><li>📁 文件数量: 1 个 PDF 文件</li><li>📊 文件大小: 106.8 KB</li><li>📄 文档类型: 技术教程/指导文档</li><li>🎯 主题: OCR 文本提取技术</li><li>✅ 数据质量: 文档完整，结构清晰</li></ul>
+<h2>数据概览</h2>
+<h3>文件统计</h3>
+<p>目录的结构和内容分析如下：</p>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>文件总数</td><td>1</td></tr><tr><td>总大小</td><td>106.8 KB</td></tr><tr><td>文件类型</td><td>PDF</td></tr><tr><td>上传时间</td><td>今天</td></tr></tbody></table></div>
+<h3>文件类型分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>file_type_distribution.json</code></div><div id='plot-fig_1_file_type_distribution_json' class='plot' data-fig-key='fig_1_file_type_distribution_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/55edcca7720e5b98b588d05129bdeab6fd7fb68bf14bcafdfcfe30c1e0535de7/assets/file_type_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从上图可以看出，目录中只包含 PDF 类型的文件，这表明这是一个文档类型的集合。</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>文件类型分布有什么特点？</li><li>如果我需要处理其他类型的文件，应该如何准备？</li></ul></details>
+<h2>文件大小分析</h2>
+<div class='plot-card'><div class='plot-meta'><code>file_sizes.json</code></div><div id='plot-fig_2_file_sizes_json' class='plot' data-fig-key='fig_2_file_sizes_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/55edcca7720e5b98b588d05129bdeab6fd7fb68bf14bcafdfcfe30c1e0535de7/assets/file_sizes.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>文件大小分析显示：</p>
+<ul><li>文件大小为 106.8 KB</li><li>文件大小适中，适合快速传输和处理</li><li>归类为&quot;文档&quot;类别</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>文件大小对数据传输有什么影响？</li><li>如何优化大文件的处理效率？</li></ul></details>
+<h2>文档内容深度分析</h2>
+<h3>文档概述</h3>
+<p>通过文档读取工具成功提取了 的内容。该文档是一份关于 OCR 技术的综合指南，旨在帮助用户从文档图像中提取文本。</p>
+<h3>主要内容模块</h3>
+<h4>1. OCR 工具选择指南</h4>
+<p>文档提供了详细的工具选择建议，分为两大类：</p>
+<p>免费选项：</p>
+<ul><li>在线 OCR 工具（如 Adobe Acrobat Online、Tesseract Python 版本）</li><li>Google Drive OCR</li></ul>
+<p>离线选项：</p>
+<ul><li>Tesseract OCR- 基于 Python 的开源工具</li><li>Adobe Acrobat Pro- 付费但功能强大</li><li>ABBYY FineReader- 付费工具，具有高识别准确率</li></ul>
+<h4>2. 图像预处理最佳实践</h4>
+<p>文档强调了图像质量对 OCR 成功的重要性，包括：</p>
+<div class='table-wrap'><table><thead><tr><th>预处理步骤</th><th>技术要求</th></tr></thead><tbody><tr><td>分辨率</td><td>300 DPI 或更高</td></tr><tr><td>颜色处理</td><td>转换为灰度图像</td></tr><tr><td>背景处理</td><td>移除背景（使用 Remove.bg 等工具）</td></tr></tbody></table></div>
+<h4>3. OCR 执行流程</h4>
+<p>文档提供了标准化的执行步骤：</p>
+<p>1. 上传阶段：将图像顺序上传到 OCR 工具</p>
+<p>2. 处理阶段：OCR 工具识别文本</p>
+<p>3. 导出阶段：导出为 PDF 或纯文本文件</p>
+<p>4. 标注阶段：分配页码（如&quot;Page 1&quot;、&quot;Page 2&quot;）</p>
+<h4>4. 常见问题及解决方案</h4>
+<p>文档详细列出了 OCR 过程中可能遇到的问题及相应的解决方案：</p>
+<p>问题矩阵表：</p>
+<div class='table-wrap'><table><thead><tr><th>问题类型</th><th>技术解决方案</th></tr></thead><tbody><tr><td>模糊文本</td><td>提高分辨率，使用更高 DPI 设置</td></tr><tr><td>手写文本</td><td>使用专用 OCR（如 ABBYY FineReader）</td></tr><tr><td>混合语言文档</td><td>训练 Tesseract 使用特定语言模型</td></tr><tr><td>背景噪声干扰</td><td>使用 OpenCV 进行预处理（如阈值处理）</td></tr></tbody></table></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪种 OCR 工具最适合手写文本识别？</li><li>如何处理混合语言的文档？</li><li>预处理步骤对识别准确率有多大影响？</li></ul></details>
+<h2>数据质量评估</h2>
+<h3>文档完整性</h3>
+<p>经过多维度评估，该文档的质量指标如下：</p>
+<div class='table-wrap'><table><thead><tr><th>评估维度</th><th>评分</th><th>说明</th></tr></thead><tbody><tr><td>可读性</td><td>⭐⭐⭐⭐⭐</td><td>文本提取完整，无乱码</td></tr><tr><td>结构性</td><td>⭐⭐⭐⭐⭐</td><td>层次分明，逻辑清晰</td></tr><tr><td>完整性</td><td>⭐⭐⭐⭐⭐</td><td>内容完整，无明显缺失</td></tr><tr><td>实用性</td><td>⭐⭐⭐⭐⭐</td><td>提供具体的工具和步骤</td></tr></tbody></table></div>
+<h3>信息提取成果</h3>
+<p>成功提取的关键信息包括：</p>
+<ul><li>文档类型：技术教程/指导文档</li><li>内容领域：OCR 技术和图像处理</li><li>目标受众：需要从图像中提取文本的用户</li><li>语言：英文</li><li>页数：1 页</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据质量评估采用了哪些维度？</li><li>如何进一步提高文档的信息提取效率？</li></ul></details>
+<h2>应用场景与建议</h2>
+<h3>适用场景</h3>
+<p>基于文档内容，该指南适用于以下场景：</p>
+<p>1. 文档数字化项目</p>
+<p>    将纸质档案转换为可搜索的数字文本</p>
+<p>    批量处理历史文档</p>
+<p>2. 自动化数据处理</p>
+<p>    发票、收据自动识别</p>
+<p>    表单数据自动录入</p>
+<p>3. 多语言文档处理</p>
+<p>    外文文档翻译准备</p>
+<p>    国际化内容管理</p>
+<h3>技术实施建议</h3>
+<p>根据文档内容，针对不同需求的技术选择建议：</p>
+<p>对于快速原型开发：</p>
+<p>对于生产环境部署：</p>
+<p>对于高准确率要求：</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>不同场景下应该如何选择 OCR 工具？</li><li>如何在生产环境中部署 OCR 系统？</li><li>批量处理大量文档时需要注意什么？</li></ul></details>
+<h2>数据清洗与存储</h2>
+<h3>处理过程</h3>
+<p>为了便于后续分析和追踪，我们执行了以下数据处理步骤：</p>
+<p>1. 数据提取：使用文档读取工具提取 PDF 内容</p>
+<p>2. 结构化存储：将文件元数据保存为 CSV 格式</p>
+<p>3. 摘要生成：创建 Markdown 格式的摘要文档</p>
+<p>4. 可视化准备：生成交互式图表</p>
+<h3>存储位置</h3>
+<p>所有处理后的数据已保存至 目录：</p>
+<h3>清洗后的数据</h3>
+<p>包含以下字段：</p>
+<div class='table-wrap'><table><thead><tr><th>字段名</th><th>类型</th><th>描述</th></tr></thead><tbody><tr><td>filename</td><td>字符串</td><td>文件名</td></tr><tr><td>sizekb</td><td>数值</td><td>文件大小（KB）</td></tr><tr><td>date</td><td>字符串</td><td>上传日期</td></tr><tr><td>filetype</td><td>字符串</td><td>文件类型</td></tr><tr><td>category</td><td>字符串</td><td>文件类别</td></tr></tbody></table></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>为什么要将清洗后的数据保存到 data/ 文件夹？</li><li>数据清洗有哪些最佳实践？</li></ul></details>
+<h2>结论与建议</h2>
+<h3>主要结论</h3>
+<p>1. 数据可用性：目录包含 1 个高质量的 PDF 文档，内容完整且结构清晰。</p>
+<p>2. 内容价值：该文档提供了全面的 OCR 技术指导，适用于多种文本提取场景。</p>
+<p>3. 数据质量：文档质量优秀，提取过程成功，无明显数据缺失或损坏。</p>
+<p>4. 实践指导：文档提供了具体的工具选择、预处理步骤和问题解决方案，具有很强的实用性。</p>
+<h3>后续建议</h3>
+<h4>如果您需要定量数据分析</h4>
+<p>建议上传包含以下类型的数据文件：</p>
+<ul><li>CSV/Excel 文件：包含数值数据、时间序列、分类数据</li><li>JSON 文件：结构化数据、API 响应数据</li><li>数据库导出文件：SQL 转储、数据表</li></ul>
+<h4>如果您需要 OCR 实施支持</h4>
+<p>基于文档内容，我可以提供：</p>
+<ul><li>Python OCR 代码示例（使用 Tesseract）</li><li>批量处理脚本</li><li>图像预处理算法</li><li>准确率优化方案</li></ul>
+<h4>如果您需要进一步分析</h4>
+<p>建议提供：</p>
+<ul><li>具体的分析目标</li><li>预期的输出格式</li><li>重点关注的数据维度</li><li>任何特殊的处理要求</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>接下来应该上传什么样的数据文件？</li><li>如何使用这份 OCR 指南开始实际项目？</li><li>有没有推荐的 OCR 学习资源？</li></ul></details>
+<h2>附录</h2>
+<h3>A. 技术术语表</h3>
+<div class='table-wrap'><table><thead><tr><th>术语</th><th>全称</th><th>说明</th></tr></thead><tbody><tr><td>OCR</td><td>Optical Character Recognition</td><td>光学字符识别</td></tr><tr><td>DPI</td><td>Dots Per Inch</td><td>每英寸点数（分辨率单位）</td></tr><tr><td>Tesseract</td><td>Google&#x27;s OCR Engine</td><td>谷歌开源 OCR 引擎</td></tr><tr><td>OpenCV</td><td>Open Source Computer Vision</td><td>开源计算机视觉库</td></tr></tbody></table></div>
+<h3>B. 参考资源</h3>
+<p>文档中提到的工具官方网站：</p>
+<ul><li>Adobe Acrobat Online: https://www.adobe.com/acrobat/online/pdf-to-word.html</li><li>Google Drive OCR: Google Drive 支持</li><li>Tesseract OCR: GitHub 项目</li><li>Remove.bg: 在线背景移除</li></ul>
+<h3>C. 分析方法论</h3>
+<p>本次分析采用了以下方法和工具：</p>
+<ul><li>📄 Document Reader：OCR 文本提取技术</li><li>🔍 文件系统扫描：目录结构分析</li><li>📊 数据可视化：Plotly 交互式图表</li><li>💾 数据清洗：Polars 数据处理框架</li><li>📝 报告生成：Markdown 文档格式</li></ul>
+<hr/>
+<p>报告生成时间: 2025-01-13</p>
+<p>分析工具: Pardus AI Analytics Platform</p>
+<p>数据来源: ./files/ 目录</p>
+<p>数据状态: ✅ 已完成分析和清洗</p><hr/><p class='muted'>说明：完整报告结构 + 原位图表渲染。plot assets: 2，成功缓存: 2（含路径键与文件名键），失败: 0。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {"fig_1_file_type_distribution_json": {"data": [{"domain": {"x": [0.0, 1.0], "y": [0.0, 1.0]}, "hovertemplate": "file_type=%{label}<br>size_kb=%{value}<extra></extra>", "labels": ["PDF"], "legendgroup": "", "name": "", "showlegend": true, "values": [106.8], "type": "pie"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 1.02, "bgcolor": "rgba(255,255,255,0.9)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "文件类型分布", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "piecolorway": ["rgb(8,48,107)", "rgb(8,81,156)", "rgb(33,113,181)", "rgb(66,146,198)", "rgb(107,174,214)", "rgb(158,202,225)", "rgb(198,219,239)", "rgb(222,235,247)", "rgb(247,251,255)"], "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 150, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}, "fig_2_file_sizes_json": {"data": [{"hovertemplate": "category=文档<br>filename=%{x}<br>size_kb=%{text}<extra></extra>", "legendgroup": "文档", "marker": {"color": "rgb(209, 238, 234)", "pattern": {"shape": ""}}, "name": "文档", "orientation": "v", "showlegend": true, "text": ["106.8"], "textposition": "outside", "x": ["1.pdf"], "xaxis": "x", "y": [106.8], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "filename", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "size_kb", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"title": {"text": "category"}, "tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 1.02, "bgcolor": "rgba(255,255,255,0.9)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "文件大小分布", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 150, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

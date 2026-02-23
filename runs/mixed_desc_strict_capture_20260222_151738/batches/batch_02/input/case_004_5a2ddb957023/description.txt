@@ -1,0 +1,7 @@
+As an extension of the Secured Overnight Financing Rate (SOFR), the SOFR Averages are compounded averages of the SOFR over rolling 30-, 90-, and 180-calendar day periods.
+
+The SOFR Index measures the cumulative impact of compounding the SOFR on a unit of investment over time, with the initial value set to 1 on April 2, 2018, the first value date of the SOFR. The SOFR Index value reflects the effect of compounding the SOFR each business day and allows the calculation of compounded SOFR averages over custom time periods.
+
+International Monetary Fund, Nominal Gross Domestic Product for United States 
+
+Please also search interest rate to compare these statistics. Don't leave the titile !

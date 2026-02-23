@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：silver_prices_data</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：silver_prices_data</h1>
+    <p class='sub'>来源: /view/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Silver Price Analysis and Forecast 2016-2026&quot;
+description: &quot;Comprehensive analysis of historical silver prices, forecast accuracy, and future price projections through 2026&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Silver Price Analysis and Forecast 2016-2026</h1>
+<h2>Executive Summary</h2>
+<p>This report provides a comprehensive analysis of silver price data from 2016 to 2026, including historical performance, forecast model evaluation, and future price projections. The analysis reveals a remarkable 26.76% annualized return with significant volatility, particularly in 2024-2026 when prices surged to historic highs above 90/oz.</p>
+<p>Key findings include:</p>
+<ul><li>Strong Historical Performance: 26.76% annualized return with a Sharpe ratio of 0.78</li><li>Recent Price Explosion: 159.91% return in 2025 and continued growth in 2026</li><li>High Volatility: 30.28% annualized volatility indicates significant price swings</li><li>Forecast Accuracy: Model achieves 7.51% mean absolute percentage error with 96.5% prediction interval coverage</li><li>Future Outlook: Forecast predicts continued elevated prices averaging 51.77/oz through Q1 2026</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>silver_price_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/silver_price_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Historical Price Performance</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What were the key price movements in silver over the past decade?</li><li>How does the recent price surge compare to historical patterns?</li><li>What factors contributed to the dramatic price increase in 2024-2026?</li></ul></details>
+<h3>Price Trends and Volatility</h3>
+<p>Silver prices have exhibited remarkable growth over the past decade, with particularly dramatic movements in recent years. From a mean close price of 22.83 over the entire period, prices have ranged from a low of 11.73 during the March 2020 COVID crash to a record high of 93.82 in January 2026.</p>
+<p>The data shows three distinct phases:</p>
+<p>1. 2016-2020: Relatively stable period with prices averaging around 17-18/oz, punctuated by the March 2020 crash</p>
+<p>2. 2021-2023: Moderate recovery with prices in the 20-25/oz range</p>
+<p>3. 2024-2026: Explosive growth phase with prices surging above 90/oz</p>
+<div class='plot-card'><div class='plot-meta'><code>yearly_prices.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/yearly_prices.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Daily Price Distribution</h3>
+<p>Silver prices show substantial daily volatility with an average daily range of 0.34, though extreme days saw ranges up to 9.84. The distribution of daily returns reveals:</p>
+<ul><li>Mean daily return: 0.0942%</li><li>Standard deviation: 1.91% indicating high volatility</li><li>Skewness: -0.18 slight negative skew, suggesting more frequent large drops</li><li>Kurtosis: 5.07 fat-tailed distribution with more extreme moves than normal</li></ul>
+<p>The fat-tailed distribution is particularly noteworthy, as it indicates that silver prices experience extreme movements more frequently than would be expected under a normal distribution assumption.</p>
+<div class='plot-card'><div class='plot-meta'><code>price_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/price_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Seasonality Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Does silver exhibit predictable seasonal price patterns?</li><li>Which months historically show the highest and lowest silver prices?</li><li>How can traders leverage seasonal patterns in their strategies?</li></ul></details>
+<p>Silver demonstrates clear seasonal patterns with December showing the highest average prices 25.76 and February showing the lowest 21.08. This seasonal pattern may reflect:</p>
+<ul><li>Year-end demand: Strong industrial and jewelry demand in Q4</li><li>Investment flows: Portfolio rebalancing at year-end</li><li>Supply constraints: Seasonal mining output variations</li></ul>
+<p>The monthly analysis reveals a pattern of generally higher prices in late-year months November, December and lower prices in early-year months February, March, suggesting potential seasonal trading opportunities.</p>
+<div class='plot-card'><div class='plot-meta'><code>monthly_seasonality.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/monthly_seasonality.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Forecast Model Evaluation</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How accurate is the silver price forecasting model?</li><li>How has forecast accuracy changed over time?</li><li>What are the limitations of the current forecasting approach?</li></ul></details>
+<h3>Overall Model Performance</h3>
+<p>The forecasting model demonstrates strong overall accuracy across the historical period:</p>
+<ul><li>Mean Absolute Error MAE: 1.92</li><li>Root Mean Squared Error RMSE: 3.45</li><li>Mean Absolute Percentage Error MAPE: 7.51%</li><li>Prediction Interval Coverage: 96.5% exceeding the 95% confidence level</li></ul>
+<p>The 96.5% coverage rate indicates that the model&#x27;s prediction intervals are appropriately calibrated, with actual prices falling within the predicted bounds more often than the nominal 95% confidence level would suggest.</p>
+<div class='plot-card'><div class='plot-meta'><code>actual_vs_predicted.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/actual_vs_predicted.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Prediction Error Distribution</h3>
+<p>The distribution of prediction errors shows a near-normal distribution centered around zero, indicating minimal systematic bias in the forecasts. The mean prediction error is close to zero, suggesting the model does not consistently over- or under-predict prices.</p>
+<div class='plot-card'><div class='plot-meta'><code>error_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/error_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Temporal Accuracy Trends</h3>
+<p>Rolling window analysis reveals concerning trends in forecast accuracy:</p>
+<ul><li>2016-2018: Excellent accuracy with MAE of 0.87-1.31</li><li>2019-2021: Maintained good accuracy with MAE around 0.81-1.66</li><li>2022-2024: Increasing errors with MAE rising to 2.12</li><li>2025-2026: Significant accuracy deterioration with MAE jumping to 5.63-29.85</li></ul>
+<p>The dramatic increase in prediction errors during 2025-2026 coincides with the unprecedented price surge, suggesting the model struggles to capture extreme market conditions and rapid price movements.</p>
+<div class='plot-card'><div class='plot-meta'><code>accuracy_by_year.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/accuracy_by_year.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Volatility Analysis</h3>
+<p>Silver&#x27;s volatility has increased significantly during the recent price surge period:</p>
+<ul><li>2016-2019: Daily volatility around 1.5-1.9%</li><li>2020: Spiked to 2.9% during COVID crisis</li><li>2021-2023: Returned to 1.6-2.0% range</li><li>2024-2025: Moderate increase to 2.0-2.4%</li><li>2026: Dramatic spike to 4.5% as prices peaked above 90</li></ul>
+<p>The increased volatility during price surges is a classic market phenomenon, where rapid price changes lead to larger daily swings and greater uncertainty.</p>
+<div class='plot-card'><div class='plot-meta'><code>volatility_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/volatility_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Price-Volume Relationship</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Is there a correlation between trading volume and price movements?</li><li>How does volume behave during major price trends?</li><li>Can volume patterns serve as a leading indicator for price changes?</li></ul></details>
+<p>The correlation analysis reveals an interesting anomaly: silver prices show virtually no correlation with trading volume -0.02 correlation coefficient. This weak relationship suggests:</p>
+<ul><li>Silver&#x27;s dual nature: Combines industrial and monetary characteristics</li><li>Diverse demand drivers: Industrial demand, investment demand, and hedging activities often operate independently</li><li>Global 24/7 market: Volume across different trading venues may not perfectly align</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>price_vs_volume.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/price_vs_volume.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot shows a wide dispersion of volume at various price levels, with no clear pattern indicating that higher prices systematically attract higher or lower volumes. This is characteristic of commodities with both consumption and investment demand.</p>
+<h2>Future Forecast </h2>
+<p>2026</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the projected silver prices for Q1 2026?</li><li>How wide are the prediction intervals for future prices?</li><li>What confidence can investors place in these projections given recent model performance?</li></ul></details>
+<h3>Price Projections</h3>
+<p>The forecast model projects continued elevated silver prices through Q1 2026:</p>
+<ul><li>Mean projected price: 51.77/oz</li><li>Price range: 50.33 - 53.22/oz</li><li>Prediction interval width: Average of 13.47/oz</li></ul>
+<p>The projections suggest that silver will maintain its historically high levels, though with significant uncertainty as reflected in the wide prediction intervals.</p>
+<div class='plot-card'><div class='plot-meta'><code>future_forecast.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e30af462ace0379a7799490070947541d51d85ea66a38bacddafa52739f4ca30/assets/future_forecast.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Projection Confidence Assessment</h3>
+<p>Given the recent deterioration in forecast accuracy during 2025-2026, investors should exercise caution when relying on these projections:</p>
+<p>1. Model Limitations: The model showed MAE of 29.85 during 2026, exceeding the current price level itself</p>
+<p>2. Market Regime Change: The unprecedented price surge may represent a new market regime that historical patterns cannot capture</p>
+<p>3. External Factors: Geopolitical events, monetary policy changes, and industrial demand shifts are not fully incorporated</p>
+<p>4. Prediction Interval Reliability: While historically accurate at 96.5% coverage, recent volatility may reduce interval reliability</p>
+<h2>Statistical Insights</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What do the return statistics reveal about silver&#x27;s risk-return profile?</li><li>How does silver&#x27;s Sharpe ratio compare to other assets?</li><li>What investment strategies are most appropriate given silver&#x27;s statistical properties?</li></ul></details>
+<h3>Risk-Return Analysis</h3>
+<p>Silver&#x27;s statistical profile presents an attractive but volatile investment proposition:</p>
+<ul><li>Annualized Return: 26.76% exceptionally strong</li><li>Annualized Volatility: 30.28% very high</li><li>Sharpe Ratio: 0.78 good risk-adjusted performance</li></ul>
+<p>The 0.78 Sharpe ratio is particularly impressive given the high volatility, indicating that the strong returns more than compensate for the risk taken. This exceeds typical Sharpe ratios for many traditional assets.</p>
+<h3>Annual Performance Breakdown</h3>
+<p>Year-by-year analysis reveals dramatic variation in returns:</p>
+<div class='table-wrap'><table><thead><tr><th>Year</th><th>Return</th><th>Volatility</th><th>Notable Events</th></tr></thead><tbody><tr><td>2020</td><td>+64.37%</td><td>2.90%</td><td>COVID crash and recovery</td></tr><tr><td>2021</td><td>-7.06%</td><td>1.94%</td><td>Post-COVID normalization</td></tr><tr><td>2022</td><td>+7.57%</td><td>2.01%</td><td>Inflation-driven gains</td></tr><tr><td>2023</td><td>+3.32%</td><td>1.63%</td><td>Stable year</td></tr><tr><td>2024</td><td>+27.34%</td><td>1.96%</td><td>Beginning of surge</td></tr><tr><td>2025</td><td>+159.91%</td><td>2.36%</td><td>Massive price explosion</td></tr><tr><td>2026</td><td>+35.23%</td><td>4.54%</td><td>Continued volatility</td></tr></tbody></table></div>
+<p>The 2025 return of 159.91% represents one of the strongest years in silver&#x27;s history, driven by a combination of factors including:</p>
+<ul><li>Increased industrial demand for green energy technologies</li><li>Inflation hedging amid monetary uncertainty</li><li>Safe-haven demand during geopolitical tensions</li><li>Supply constraints in mining production</li></ul>
+<h3>Correlation Structure</h3>
+<p>The correlation matrix confirms expected patterns:</p>
+<ul><li>OHLC Correlation: Nearly perfect 0.998-0.999 between Open, High, Low, and Close prices</li><li>Volume Correlation: Virtually zero -0.02 correlation with prices</li><li>Lag Effects: Minimal autocorrelation in daily returns, suggesting efficient markets</li></ul>
+<p>The near-perfect OHLC correlation validates data quality and market structure, while the zero volume correlation highlights silver&#x27;s unique dual-demand characteristics.</p>
+<h2>Investment Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What investment strategies are most suitable given silver&#x27;s characteristics?</li><li>How should investors position themselves given the forecast uncertainty?</li><li>What risk management approaches are essential for silver investments?</li></ul></details>
+<h3>Strategic Considerations</h3>
+<p>Based on the analysis, several strategic considerations emerge:</p>
+<p>1. Position Sizing: Given 30.28% annualized volatility, position sizing should reflect the high-risk nature</p>
+<p>2. Diversification: Silver&#x27;s unique properties make it valuable for portfolio diversification</p>
+<p>3. Hedging: Consider options or futures to manage downside risk given fat-tailed distribution</p>
+<p>4. Timing Awareness: Seasonal patterns suggest potential entry points in February-March</p>
+<p>5. Monitoring: Close attention to forecast accuracy deterioration during extreme market conditions</p>
+<h3>Risk Management Recommendations</h3>
+<p>The statistical characteristics of silver demand robust risk management:</p>
+<p>1. Stop-Loss Levels: Wide stops 10-15% to accommodate normal volatility</p>
+<p>2. Position Limits: Limit exposure to 5-10% of portfolio given volatility</p>
+<p>3. Volatility-Adjusted Sizing: Reduce positions during high-volatility periods</p>
+<p>4. Diversification: Combine with other precious metals and commodities</p>
+<p>5. Regular Rebalancing: Monthly or quarterly to maintain target allocations</p>
+<h3>Future Outlook Considerations</h3>
+<p>Investors should consider several factors when evaluating the 2026 forecast:</p>
+<p>1. Model Limitations: Forecast accuracy deterioration during extreme markets</p>
+<p>2. External Shocks: Geopolitical, economic, and supply disruptions not fully modeled</p>
+<p>3. Market Regimes: Potential structural changes in demand patterns</p>
+<p>4. Technology Shifts: Increasing industrial demand for renewable energy applications</p>
+<p>5. Monetary Environment: Interest rate and currency impacts on precious metals</p>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of silver prices from 2016-2026 reveals a remarkable story of transformation. From relatively stable trading in the 17-18 range during 2016-2020, silver has emerged as a high-performance asset with explosive growth in 2024-2026.</p>
+<p>Key takeaways for investors:</p>
+<ul><li>Strong Historical Performance: 26.76% annualized returns with good risk-adjusted metrics Sharpe 0.78</li><li>High Volatility: 30.28% annualized volatility demands robust risk management</li><li>Recent Breakthrough: 159.91% return in 2025 represents a fundamental shift</li><li>Model Reliability: Good overall forecast accuracy but limitations during extreme markets</li><li>Future Uncertainty: Wide prediction intervals reflect significant uncertainty ahead</li></ul>
+<p>The silver market appears to have entered a new regime driven by structural changes in industrial demand particularly for green energy technologies, inflation hedging needs, and safe-haven demand during global uncertainty. While the forecast suggests continued elevated prices, the high volatility and model limitations during extreme conditions warrant careful position management and robust risk controls.</p>
+<p>Investors should approach silver as a high-return, high-risk component of a diversified portfolio, with position sizes reflecting its volatility characteristics and clear risk management protocols in place to navigate the fat-tailed distribution of returns.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 1808
+  },
+  {
+    "name": "world_cup_last_50_years.csv",
+    "local": "world_cup_last_50_years.csv",
+    "ok": true,
+    "error": "",
+    "size": 50348
+  }
+]

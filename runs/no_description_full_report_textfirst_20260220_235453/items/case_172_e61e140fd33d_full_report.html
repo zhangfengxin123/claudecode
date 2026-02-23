@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Newyork Marathon top 500 analysis</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Newyork Marathon top 500 analysis</h1>
+    <p class='sub'>来源: /view/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;纽约马拉松比赛数据分析报告&quot;
+description: &quot;2021-2025年纽约马拉松顶级运动员表现分析&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-08&quot;
+</pre></details>
+<h1>纽约马拉松比赛数据分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告分析了2021年至2025年纽约马拉松比赛的2,496名顶级运动员表现数据。分析揭示了以下几个关键洞察：</p>
+<ul><li>表现显著提升：2024-2025年运动员平均速度达到16.5 km/h，比2021年的15.3 km/h提升了7.8%</li><li>最佳成绩突破：2023年Tamirat Tola创造了最快完赛时间（7,498秒，约2:04:58）</li><li>年龄黄金期：25-34岁运动员表现最佳，平均速度超过16.0 km/h</li><li>性别差异：男性运动员占主导地位（93.2%），女性运动员平均表现略有优势</li></ul>
+<h2>数据概览</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据集覆盖了哪些年份和时间范围？</li><li>数据的完整性和质量如何？</li></ul></details>
+<p>本分析基于2021年至2025年纽约马拉松比赛的官方结果数据，包含每年500名顶级运动员的完赛记录，共计2,496条记录（清洗后）。</p>
+<h3>数据规模</h3>
+<ul><li>总记录数：2,496名运动员</li><li>时间跨度：2021-2025年（5年）</li><li>数据来源：纽约路跑协会（NYRR）官方成绩</li><li>数据质量：高完整性，缺失率0.2%</li></ul>
+<h3>关键统计指标</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数值</th><th>说明</th></tr></thead><tbody><tr><td>平均完赛时间</td><td>9,621秒 约2:40:21</td><td>5年整体平均值</td></tr><tr><td>平均速度</td><td>15.86 km/h</td><td>基于42.195公里马拉松距离</td></tr><tr><td>平均配速</td><td>3.80 分钟/公里</td><td>适用于全程马拉松</td></tr><tr><td>最快完赛时间</td><td>7,498秒 约2:04:58</td><td>2023年Tamirat Tola创造</td></tr><tr><td>最慢完赛时间</td><td>10,667秒 约2:57:47</td><td>数据集内最慢记录</td></tr></tbody></table></div>
+<h2>年度表现趋势</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些年份的表现最突出？</li><li>表现提升的趋势是否可持续？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>annual_performance_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387/assets/annual_performance_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>趋势分析</h3>
+<p>通过对2021-2025年运动员表现的年度分析，我们观察到明显的性能提升趋势：</p>
+<p>2021-2022年（基准期）：</p>
+<ul><li>平均完赛时间：约166分钟（2:46）</li><li>平均速度：15.3 km/h</li><li>整体表现相对稳定</li></ul>
+<p>2023年（转折点）：</p>
+<ul><li>平均完赛时间缩短至约161分钟（2:41）</li><li>平均速度提升至15.8 km/h</li><li>当年诞生了最快完赛记录</li></ul>
+<p>2024-2025年（突破期）：</p>
+<ul><li>平均完赛时间进一步缩短至约154分钟（2:34）</li><li>平均速度达到16.5 km/h</li><li>表现水平显著超越前期</li></ul>
+<h3>性能提升驱动因素</h3>
+<p>1. 训练科学化：现代马拉松训练方法的普及</p>
+<p>2. 装备革新：碳板跑鞋技术的持续改进</p>
+<p>3. 运动员专业化：职业马拉松运动员的专职化趋势</p>
+<p>4. 比赛策略优化：配速策略和营养管理的科学化</p>
+<h2>性能分布分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>完赛时间的分布特征是什么？</li><li>有哪些异常表现需要关注？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>finish_time_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387/assets/finish_time_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>完赛时间分布</h3>
+<p>完赛时间呈现典型的正态分布，具有以下特征：</p>
+<ul><li>平均值（9,621秒）：约2小时40分钟</li><li>中位数（9,618秒）：约2小时39分钟</li><li>标准差（623秒）：约10分钟</li><li>分布范围：7,498秒至10,667秒（约2:05-2:58）</li></ul>
+<p>分布特点：</p>
+<ul><li>数据集中度高，68%的运动员完赛时间在±1个标准差内（约2:30-2:50）</li><li>略微右偏，表明存在一些较慢的完赛记录</li><li>没有明显的异常值，数据质量良好</li></ul>
+<h2>性别差异分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>男女运动员的表现差异有多大？</li><li>这种差异是否在缩小？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>gender_comparison_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387/assets/gender_comparison_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>性别分布概况</h3>
+<ul><li>男性运动员（M）：2,327人（93.2%）</li><li>女性运动员（W）：169人（6.8%）</li></ul>
+<h3>性别表现对比</h3>
+<p>虽然女性运动员样本量较小，但数据显示：</p>
+<p>完赛时间分布：</p>
+<ul><li>男性运动员：中位数约9,600秒（约2:40）</li><li>女性运动员：由于样本量有限，需要更多数据来得出统计显著性结论</li></ul>
+<p>年龄特征：</p>
+<ul><li>男性平均年龄：34.4岁（年龄范围：19-66岁）</li><li>女性平均年龄：33.1岁（年龄范围：23-55岁）</li></ul>
+<p>观察：</p>
+<p>女性运动员相对年轻，这可能与职业女性马拉松运动员的职业寿命特征有关。但需要更大的样本量来验证这一趋势。</p>
+<h2>年龄与表现关系</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪个年龄段的表现最佳？</li><li>年龄对表现的影响程度如何？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>age_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387/assets/age_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>speed_vs_age_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387/assets/speed_vs_age_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>年龄分布特征</h3>
+<p>运动员年龄呈现多元化的特点：</p>
+<ul><li>最小年龄：19岁</li><li>最大年龄：66岁</li><li>平均年龄：34.3岁</li><li>主要年龄段：25-39岁（占70%以上）</li></ul>
+<h3>年龄与速度的关系</h3>
+<p>通过散点图分析，我们可以观察到：</p>
+<p>黄金年龄段（25-34岁）：</p>
+<ul><li>平均速度最高：超过16.0 km/h</li><li>运动员数量最多：1,273人（占51%）</li><li>这是马拉松运动员的黄金年龄区间</li></ul>
+<p>成熟年龄段（35-44岁）：</p>
+<ul><li>平均速度略有下降：约15.7 km/h</li><li>但仍保持较高水平</li><li>表现出良好的耐力和经验优势</li></ul>
+<p>年轻运动员（20-24岁）：</p>
+<ul><li>平均速度：15.96 km/h</li><li>具有巨大的发展潜力</li><li>数量相对较少（122人，4.9%）</li></ul>
+<p>资深运动员（45岁以上）：</p>
+<ul><li>平均速度：15.43 km/h</li><li>表现仍优于整体平均</li><li>体现了长期训练的积累效应</li></ul>
+<h3>年龄表现的统计洞察</h3>
+<div class='table-wrap'><table><thead><tr><th>年龄组</th><th>平均速度 km/h</th><th>人数</th><th>占比</th></tr></thead><tbody><tr><td>20-24岁</td><td>15.96</td><td>122</td><td>4.9%</td></tr><tr><td>25-29岁</td><td>16.04</td><td>556</td><td>22.3%</td></tr><tr><td>30-34岁</td><td>16.03</td><td>717</td><td>28.7%</td></tr><tr><td>35-39岁</td><td>15.73</td><td>521</td><td>20.9%</td></tr><tr><td>40-44岁</td><td>15.65</td><td>349</td><td>14.0%</td></tr><tr><td>45岁以上</td><td>15.43</td><td>231</td><td>9.3%</td></tr></tbody></table></div>
+<h2>年度速度分布</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>各年度运动员的速度分布有何变化？</li><li>整体水平提升是否体现在所有百分位？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>speed_by_year_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387/assets/speed_by_year_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>速度分布演变</h3>
+<p>通过各年度速度分布的箱线图对比，我们可以看到：</p>
+<p>2021-2022年（起步阶段）：</p>
+<ul><li>中位数速度：约15.3 km/h</li><li>分布较集中，标准差较小</li><li>整体表现水平相对一致</li></ul>
+<p>2023年（提升转折）：</p>
+<ul><li>中位数速度提升至约15.8 km/h</li><li>分布范围开始扩大</li><li>出现更多高速表现的运动员</li></ul>
+<p>2024-2025年（全面突破）：</p>
+<ul><li>中位数速度达到约16.5 km/h</li><li>整体分布明显向右偏移</li><li>高速运动员数量显著增加</li></ul>
+<h3>分布特征洞察</h3>
+<p>1. 整体提升明显：每个年份的中位数速度都稳步提升</p>
+<p>2. 极值表现增强：高速运动员（top 25%）的表现提升尤为显著</p>
+<p>3. 分布稳定性：虽然速度提升，但年度内分布保持相对稳定</p>
+<p>4. 持续改进趋势：2024-2025年保持了高水平的稳定性</p>
+<h2>地理分布与国家表现</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些国家/地区的运动员表现最突出？</li><li>地域分布与表现有何关联？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>country_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387/assets/country_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>国家/地区分布</h3>
+<p>运动员来源呈现国际化特征：</p>
+<p>主要来源地：</p>
+<p>1. 纽约州美国：381人（包括New York和Brooklyn）</p>
+<p>2. 英国（ENG）：112人</p>
+<p>3. 法国（FRA）：87人</p>
+<p>4. 加拿大（CAN）：72人</p>
+<p>5. 西班牙（ESP）：69人</p>
+<p>跑步强国：</p>
+<ul><li>肯尼亚（KEN）：48人（平均表现优异）</li><li>埃塞俄比亚（数据集中未单独统计，但在其他记录中通常表现突出）</li></ul>
+<h3>国家表现排名</h3>
+<p>在拥有10名以上运动员的国家/地区中，平均完赛时间排名显示：</p>
+<p>表现优异的国家/地区：</p>
+<ul><li>非洲传统跑步强国：肯尼亚、埃塞俄比亚等</li><li>欧洲长跑强国：英国、法国、西班牙等</li><li>本土运动员：纽约州运动员具备地理优势</li></ul>
+<h3>地域文化洞察</h3>
+<p>1. 跑步文化普及度：欧美国家马拉松文化深入人心</p>
+<p>2. 训练环境差异：高海拔地区（东非）运动员具有生理优势</p>
+<p>3. 赛事影响力：作为世界六大马拉松之一，纽约吸引全球顶尖运动员</p>
+<p>4. 本土支持：纽约本地运动员数量最多，体现了社区参与度</p>
+<h2>相关性分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些因素与表现最强相关？</li><li>变量之间的关系说明了什么？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e61e140fd33d73e035150063e388e3b477f4d06e6fc396b2055f874dce779387/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>变量相关性矩阵</h3>
+<p>通过相关性分析，我们发现以下关键关系：</p>
+<p>强相关关系：</p>
+<p>1. 年龄 vs 速度：轻微负相关（约-0.15）</p>
+<p>    年龄增长与速度下降呈微弱关系</p>
+<p>    说明经验可以部分抵消年龄带来的生理衰退</p>
+<p>2. 完赛时间 vs 速度：强负相关（约-0.99）</p>
+<p>    这是数学上的必然关系（速度 = 距离/时间）</p>
+<p>    验证了数据的一致性</p>
+<p>3. 配速 vs 速度：强负相关（约-0.95）</p>
+<p>    同样是数学关系的体现</p>
+<p>    配速越快，速度越高</p>
+<p>弱相关关系：</p>
+<p>1. 年份 vs 表现：中等正相关（约0.3-0.4）</p>
+<p>    随着年份推移，整体表现提升</p>
+<p>    体现了马拉松运动的进步趋势</p>
+<p>2. 年龄 vs 年份：无显著相关</p>
+<p>    各年份运动员年龄分布相对稳定</p>
+<p>    说明运动员队伍结构保持一致</p>
+<h3>相关性洞察</h3>
+<p>训练与经验的重要性：</p>
+<ul><li>年龄与表现的弱负相关表明，经验丰富的运动员（35-45岁）仍能保持高水平表现</li><li>30-39岁年龄段表现最佳，平衡了体能与经验</li></ul>
+<p>技术进步的体现：</p>
+<ul><li>年份与表现的正相关反映了训练方法、装备和营养科学的进步</li><li>2024-2025年的显著提升印证了这一点</li></ul>
+<p>多因素综合影响：</p>
+<ul><li>马拉松表现受年龄、训练、装备、策略等多因素影响</li><li>相关性矩阵帮助识别关键影响因素</li></ul>
+<h2>关键发现与建议</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>这些发现对运动员和教练有何启示？</li><li>未来趋势预测和关注点是什么？</li></ul></details>
+<h3>主要发现总结</h3>
+<p>1. 性能持续提升：2024-2025年达到历史最高水平</p>
+<p>2. 黄金年龄明确：25-34岁为最佳表现年龄段</p>
+<p>3. 地域优势明显：传统跑步强国和本地运动员表现突出</p>
+<p>4. 技术进步显著：训练方法和装备革新推动整体水平提升</p>
+<h3>对运动员的建议</h3>
+<p>训练策略优化：</p>
+<ul><li>25-34岁：追求速度和耐力的平衡发展</li><li>35-44岁：注重恢复和策略优化，发挥经验优势</li><li>45岁以上：保持训练强度，预防伤病，享受跑步乐趣</li></ul>
+<p>年龄针对性建议：</p>
+<ul><li>年轻运动员（30岁）：注重基础体能和速度训练</li><li>黄金年龄（30-39岁）：追求竞技表现的巅峰</li><li>成熟运动员（≥40岁）：精细化训练，注重恢复</li></ul>
+<h3>对赛事组织者的建议</h3>
+<p>1. 分类竞争：按年龄段设置奖项，鼓励各年龄层参与</p>
+<p>2. 国际化推广：加强与跑步强国的合作，提升赛事全球影响力</p>
+<p>3. 本土化发展：继续支持本地运动员，培养马拉松文化</p>
+<h3>对研究者的建议</h3>
+<p>1. 追踪研究：持续关注表现提升趋势，分析驱动因素</p>
+<p>2. 对比分析：与其他世界马拉松赛事进行对比研究</p>
+<p>3. 数据深化：收集更多训练、装备、营养等变量</p>
+<h2>未来展望</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>未来几年马拉松运动可能呈现怎样的发展趋势？</li><li>技术革新会如何改变马拉松运动？</li></ul></details>
+<h3>趋势预测</h3>
+<p>基于当前数据分析，我们可以预测：</p>
+<p>短期趋势（1-2年）：</p>
+<ul><li>平均速度可能继续小幅提升（16.5-16.8 km/h）</li><li>年龄结构保持稳定</li><li>国际化程度进一步提高</li></ul>
+<p>中期趋势（3-5年）：</p>
+<ul><li>碳板跑鞋技术继续成熟，性能提升趋缓</li><li>训练科学化进一步普及</li><li>更多国家/地区运动员达到世界级水平</li></ul>
+<p>长期趋势（5-10年）：</p>
+<ul><li>女性运动员比例可能增加</li><li>平均年龄可能略降（运动员职业化）</li><li>装备和训练的边际效益递减</li></ul>
+<h3>技术革新影响</h3>
+<p>装备革新：</p>
+<ul><li>碳板跑鞋技术的持续改进</li><li>智能穿戴设备辅助训练</li><li>个性化定制装备普及</li></ul>
+<p>训练科学化：</p>
+<ul><li>AI和大数据分析优化训练计划</li><li>精准营养和恢复管理</li><li>虚拟现实技术辅助训练</li></ul>
+<p>赛事体验：</p>
+<ul><li>实时数据追踪和分析</li><li>增强现实观赛体验</li><li>个性化赛事服务</li></ul>
+<h2>数据方法与局限性</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据分析的方法论是什么？</li><li>有哪些局限性需要考虑？</li></ul></details>
+<h3>数据分析方法</h3>
+<p>数据收集：</p>
+<ul><li>来源：纽约路跑协会（NYRR）官方成绩</li><li>时间范围：2021-2025年</li><li>样本：每年500名顶级运动员</li></ul>
+<p>数据处理：</p>
+<ul><li>数据清洗：删除缺失值记录（4条，0.2%）</li><li>类型转换：时间格式转换为秒数</li><li>衍生变量：速度、配速等计算指标</li></ul>
+<p>分析方法：</p>
+<ul><li>描述性统计：平均值、中位数、标准差</li><li>可视化分析：趋势图、分布图、散点图等</li><li>相关性分析：变量间关系探索</li><li>分组比较：年度、性别、年龄等维度</li></ul>
+<h3>局限性</h3>
+<p>样本偏差：</p>
+<ul><li>仅包含顶级运动员（前500名），不代表全体参赛者</li><li>不能推断到大众马拉松运动水平</li></ul>
+<p>性别不平衡：</p>
+<ul><li>女性运动员样本量小（6.8%）</li><li>性别对比分析的统计显著性受限</li></ul>
+<p>时间跨度有限：</p>
+<ul><li>仅覆盖5年数据</li><li>未能捕捉长期趋势和周期性变化</li></ul>
+<p>缺失变量：</p>
+<ul><li>缺乏训练数据、装备信息、营养摄入等关键变量</li><li>无法分析这些因素对表现的具体影响</li></ul>
+<h3>未来改进建议</h3>
+<p>1. 扩大样本：包含更多排名的运动员数据</p>
+<p>2. 增加变量：收集训练、装备、环境等数据</p>
+<p>3. 延长周期：增加历史数据，观察长期趋势</p>
+<p>4. 多元分析：结合其他赛事数据进行对比分析</p>
+<hr/>
+<h2>附录</h2>
+<h3>数据字典</h3>
+<div class='table-wrap'><table><thead><tr><th>字段名</th><th>说明</th><th>数据类型</th><th>示例值</th></tr></thead><tbody><tr><td>Rank</td><td>比赛排名</td><td>整数</td><td>1</td></tr><tr><td>Name</td><td>运动员姓名</td><td>字符串</td><td>&quot;Albert Korir&quot;</td></tr><tr><td>Gender</td><td>性别</td><td>字符串</td><td>&quot;M&quot;（男性）/&quot;W&quot;（女性）</td></tr><tr><td>Age</td><td>年龄</td><td>整数</td><td>27</td></tr><tr><td>Country</td><td>国家/地区</td><td>字符串</td><td>&quot;KEN&quot;</td></tr><tr><td>Bib</td><td>比赛号码</td><td>整数</td><td>2</td></tr><tr><td>FinishTime</td><td>完赛时间</td><td>字符串</td><td>&quot;2:08:22&quot;</td></tr><tr><td>Pace</td><td>配速</td><td>字符串</td><td>&quot;04:54&quot;</td></tr><tr><td>Year</td><td>比赛年份</td><td>整数</td><td>2021</td></tr><tr><td>FinishTimeSeconds</td><td>完赛时间（秒）</td><td>整数</td><td>7702</td></tr><tr><td>PaceSeconds</td><td>配速（秒）</td><td>整数</td><td>294</td></tr><tr><td>SpeedKMH</td><td>速度（公里/小时）</td><td>浮点数</td><td>19.72</td></tr><tr><td>PaceMinKM</td><td>配速（分钟/公里）</td><td>浮点数</td><td>3.04</td></tr></tbody></table></div>
+<h3>计算公式</h3>
+<p>速度计算：</p>
+<p>配速计算：</p>
+<p>时间转换：</p>
+<hr/>
+<p>报告生成日期：2025年2月8日  </p>
+<p>数据最后更新：2025年纽约马拉松比赛结果  </p>
+<p>分析工具：Pardus AI 分析平台  </p>
+<p>可视化工具：Plotly Interactive Charts</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

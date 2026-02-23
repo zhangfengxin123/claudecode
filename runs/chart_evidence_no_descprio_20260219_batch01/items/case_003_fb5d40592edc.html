@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence fb5d40592edc</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>airline_route_profitability</h1>
+  <div class='muted'>case_id: <span class='code'>fb5d40592edc3ad5a4357916256d95ca45e7f4af85dfff05b4c3f18501fd97d2</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/fb5d40592edc3ad5a4357916256d95ca45e7f4af85dfff05b4c3f18501fd97d2' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/fb5d40592edc3ad5a4357916256d95ca45e7f4af85dfff05b4c3f18501fd97d2</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_003_fb5d40592edc</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>airline_route_profitability.csv</code></td><td>200</td><td>2029735</td><td>text/csv</td><td><code>input/case_003_fb5d40592edc/airline_route_profitability.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/fb5d40592edc3ad5a4357916256d95ca45e7f4af85dfff05b4c3f18501fd97d2/files/airline_route_profitability.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>airline_route_profitability.csv</code> · HTTP 200 · csv · head-only preview</summary><table><thead><tr><th>Flight_Number</th><th>Flight_Date</th><th>Origin</th><th>Destination</th><th>Route</th><th>Aircraft_Type</th><th>Aircraft_Capacity</th><th>Passengers</th><th>Load_Factor</th><th>Flight_Hours</th><th>Season</th><th>Route_Category</th><th>Demand_Level</th><th>Ticket_Revenue</th><th>Ancillary_Revenue</th><th>Total_Revenue</th><th>Fuel_Cost</th><th>Maintenance_Cost</th><th>Crew_Cost</th><th>Depreciation_Cost</th><th>Insurance_Cost</th><th>Airport_Fees</th><th>Catering_Cost</th><th>Handling_Cost</th><th>Navigation_Fees</th><th>Sales_Distribution_Cost</th><th>Passenger_Service_Cost</th><th>Overhead_Cost</th><th>Marketing_Cost</th><th>IT_Systems_Cost</th><th>Total_Cost</th><th>Profit</th><th>Profit_Margin</th></tr></thead><tbody><tr><td>EK8960</td><td>2024-12-20</td><td>DXB</td><td>ORD</td><td>DXB-ORD</td><td>Boeing 777-300ER</td><td>396</td><td>308</td><td>0.7791</td><td>14.5</td><td>Peak</td><td>Long Haul</td><td>Medium</td><td>410785.49</td><td>53431.94</td><td>464217.43</td><td>131033.88</td><td>50750.0</td><td>21750.0</td><td>65250.0</td><td>11600.0</td><td>4262.3</td><td>5185.86</td><td>4460.11</td><td>10636.9</td><td>78193.6</td><td>5100.09</td><td>88545.73</td><td>25883.92</td><td>3769.37</td><td>506421.77</td><td>-42204.34</td><td>-9.09</td></tr><tr><td>EK3960</td><td>2024-05-13</td><td>DXB</td><td>HYD</td><td>DXB-HYD</td><td>Boeing 787-9</td><td>296</td><td>234</td><td>0.791</td><td>4.2</td><td>Normal</td><td>Medium Haul</td><td>Medium</td><td>145890.17</td><td>17695.27</td><td>163585.44</td><td>21338.76</td><td>9240.0</td><td>5040.0</td><td>13440.0</td><td>2520.0</td><td>2016.63</td><td>5851.01</td><td>5425.84</td><td>3027.25</td><td>21586.21</td><td>6022.2</td><td>17057.61</td><td>8820.56</td><td>1937.81</td><td>123323.88</td><td>40261.57</td><td>24.61</td></tr><tr><td>EK7529</td><td>2024-10-12</td><td>DXB</td><td>CDG</td><td>DXB-CDG</td><td>Boeing 787-9</td><td>296</td><td>251</td><td>0.8502</td><td>7.5</td><td>Shoulder</td><td>Long Haul</td><td>High</td><td>602841.03</td><td>78724.16</td><td>681565.19</td><td>41011.77</td><td>16500.0</td><td>9000.0</td><td>24000.0</td><td>4500.0</td><td>10764.79</td><td>4134.08</td><td>3761.85</td><td>3431.7</td><td>100188.97</td><td>6514.22</td><td>31347.38</td><td>23695.34</td><td>3415.99</td><td>282266.09</td><td>399299.1</td><td>58.59</td></tr><tr><td>EK4543</td><td>2024-06-25</td><td>DXB</td><td>DEL</td><td>DXB-DEL</td><td>Boeing 787-9</td><td>296</td><td>229</td><td>0.7748</td><td>3.5</td><td>Low</td><td>Medium Haul</td><td>High</td><td>126485.16</td><td>17543.26</td><td>144028.42</td><td>17333.86</td><td>7700.0</td><td>4200.0</td><td>11200.0</td><td>2100.0</td><td>6508.04</td><td>6508.73</td><td>4440.93</td><td>2079.79</td><td>22686.82</td><td>4791.21</td><td>15328.62</td><td>6795.49</td><td>2245.61</td><td>113919.11</td><td>30109.31</td><td>20.91</td></tr><tr><td>EK3114</td><td>2024-04-20</td><td>DXB</td><td>RUH</td><td>DXB-RUH</td><td>Airbus A320</td><td>180</td><td>142</td><td>0.7901</td><td>2.2</td><td>Shoulder</td><td>Short Haul</td><td>Medium</td><td>32651.15</td><td>3871.66</td><td>36522.81</td><td>5576.8</td><td>2530.0</td><td>1716.0</td><td>3740.0</td><td>616.0</td><td>4718.58</td><td>3360.52</td><td>3414.18</td><td>1662.49</td><td>5133.62</td><td>3094.65</td><td>8252.23</td><td>1492.53</td><td>1273.27</td><td>46580.86</td><td>-10058.06</td><td>-27.54</td></tr><tr><td>EK1737</td><td>2024-02-06</td><td>DXB</td><td>KWI</td><td>DXB-KWI</td><td>Airbus A320</td><td>180</td><td>171</td><td>0.95</td><td>2.0</td><td>Peak</td><td>Short Haul</td><td>High</td><td>55561.35</td><td>7131.73</td><td>62693.08</td><td>5169.42</td><td>2300.0</td><td>1560.0</td><td>3400.0</td><td>560.0</td><td>2723.68</td><td>3164.3</td><td>5238.84</td><td>1290.88</td><td>10373.46</td><td>4279.57</td><td>7369.82</td><td>3383.54</td><td>2002.31</td><td>52815.81</td><td>9877.27</td><td>15.75</td></tr><tr><td>EK2566</td><td>2024-03-27</td><td>DXB</td><td>IST</td><td>DXB-IST</td><td>Boeing 787-9</td><td>296</td><td>281</td><td>0.95</td><td>5.0</td><td>Shoulder</td><td>Medium Haul</td><td>High</td><td>197209.86</td><td>25550.13</td><td>222759.99</td><td>29311.03</td><td>11000.0</td><td>6000.0</td><td>16000.0</td><td>3000.0</td><td>4846.68</td><td>9290.85</td><td>5971.44</td><td>2336.43</td><td>32220.74</td><td>5359.55</td><td>25593.4</td><td>8024.47</td><td>3211.83</td><td>162166.43</td><td>60593.56</td><td>27.2</td></tr><tr><td>EK3653</td><td>2024-05-15</td><td>DXB</td><td>DOH</td><td>DXB-DOH</td><td>Boeing 737-800</td><td>189</td><td>148</td><td>0.7833</td><td>1.5</td><td>Normal</td><td>Short Haul</td><td>High</td><td>34738.82</td><td>4966.19</td><td>39705.01</td><td>3632.48</td><td>1800.0</td><td>1200.0</td><td>2700.0</td><td>450.0</td><td>3514.8</td><td>4628.11</td><td>2816.06</td><td>993.41</td><td>6653.68</td><td>3184.82</td><td>5579.27</td><td>1500.8</td><td>1325.46</td><td>39978.91</td><td>-273.9</td><td>-0.69</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td colspan="7">no assets</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <p class="muted">no renderable charts</p>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

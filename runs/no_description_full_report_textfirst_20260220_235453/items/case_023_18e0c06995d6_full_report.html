@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：WinterSD</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：WinterSD</h1>
+    <p class='sub'>来源: /view/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Olympic Games Historical Analysis 1896-2014&quot;
+description: &quot;Comprehensive analysis of Summer and Winter Olympic Games performance, trends, and achievements across 120 years&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-04&quot;
+</pre></details>
+<h1>Olympic Games Historical Analysis: 1896-2014</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of Olympic Games historical data spanning over a century from 1896 to 2014. The analysis covers 31,165 Summer Olympic medal records and 5,770 Winter Olympic medal records, providing insights into country performance, temporal trends, sports specialization, gender participation, and athlete excellence.</p>
+<p>Key Findings:</p>
+<ul><li>The United States dominates both Summer 4,585 medals and Winter 653 medals Olympics</li><li>Women&#x27;s participation has grown significantly, now representing 27% of Summer and 32% of Winter medals</li><li>Aquatics and Athletics dominate Summer Games with over 7,800 combined medals</li><li>Skiing and Ice Hockey lead Winter Games with approximately 3,300 combined medals</li><li>Historical trends show growing participation and medal opportunities over time</li></ul>
+<hr/>
+<h2>Dataset Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What data sources were used in this analysis?</li><li>What is the time period covered by the Olympic data?</li></ul></details>
+<p>This analysis utilizes three primary datasets:</p>
+<p>1. CountriesSD.csv- Demographic and economic data for 201 countries including population and GDP per capita</p>
+<p>2. SummerSD.csv- Complete Summer Olympics records from 1896 to 2012 31,165 medal records</p>
+<p>3. WinterSD.csv- Complete Winter Olympics records from 1924 to 2014 5,770 medal records</p>
+<p>Data Quality Notes:</p>
+<ul><li>Summer Olympics dataset contains 5,427 records 17.4% with missing country codes</li><li>Winter Olympics dataset is complete with no missing values</li><li>Country codes follow the standard 3-letter IOC format</li><li>All medal records include athlete name, sport, discipline, event, and medal type</li></ul>
+<hr/>
+<h2>Summer Olympics: Country Performance</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which country has won the most Summer Olympic medals?</li><li>How does the medal distribution compare among top countries?</li></ul></details>
+<p>The Summer Olympics have seen remarkable competition over 120 years, with 130 countries participating across 43 different sports. The United States leads all nations with 4,585 medals, demonstrating sustained athletic excellence across multiple disciplines.</p>
+<div class='plot-card'><div class='plot-meta'><code>summer_top_countries.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/summer_top_countries.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Top 10 Summer Olympic Nations</h3>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Country</th><th>Total Medals</th><th>% of Total</th></tr></thead><tbody><tr><td>1</td><td>United States</td><td>4,585</td><td>14.7%</td></tr><tr><td>2</td><td>United Kingdom</td><td>1,720</td><td>5.5%</td></tr><tr><td>3</td><td>France</td><td>1,396</td><td>4.5%</td></tr><tr><td>4</td><td>Germany</td><td>1,305</td><td>4.2%</td></tr><tr><td>5</td><td>Italy</td><td>1,296</td><td>4.2%</td></tr><tr><td>6</td><td>Australia</td><td>1,189</td><td>3.8%</td></tr><tr><td>7</td><td>Hungary</td><td>1,079</td><td>3.5%</td></tr><tr><td>8</td><td>Sweden</td><td>1,044</td><td>3.3%</td></tr><tr><td>9</td><td>Netherlands</td><td>851</td><td>2.7%</td></tr><tr><td>10</td><td>Japan</td><td>733</td><td>2.4%</td></tr></tbody></table></div>
+<p>Insight:The top 3 countries USA, UK, France account for nearly 25% of all Summer Olympic medals, showing significant concentration of athletic excellence.</p>
+<hr/>
+<h2>Winter Olympics: Country Performance</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which countries excel most in Winter Olympics?</li><li>How does Winter Olympic participation differ from Summer?</li></ul></details>
+<p>Winter Olympics began in 1924 with 45 participating countries, significantly fewer than Summer Games due to geographical and climate constraints. The competition features 7 specialized sports with the United States again leading but with more diverse competition.</p>
+<div class='plot-card'><div class='plot-meta'><code>winter_top_countries.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/winter_top_countries.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Top 10 Winter Olympic Nations</h3>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Country</th><th>Total Medals</th><th>% of Total</th></tr></thead><tbody><tr><td>1</td><td>USA</td><td>653</td><td>11.3%</td></tr><tr><td>2</td><td>Canada</td><td>625</td><td>10.8%</td></tr><tr><td>3</td><td>Norway</td><td>457</td><td>7.9%</td></tr><tr><td>4</td><td>USSR</td><td>440</td><td>7.6%</td></tr><tr><td>5</td><td>Finland</td><td>434</td><td>7.5%</td></tr><tr><td>6</td><td>Sweden</td><td>433</td><td>7.5%</td></tr><tr><td>7</td><td>Germany</td><td>360</td><td>6.2%</td></tr><tr><td>8</td><td>Switzerland</td><td>285</td><td>4.9%</td></tr><tr><td>9</td><td>Austria</td><td>280</td><td>4.9%</td></tr><tr><td>10</td><td>Russia</td><td>263</td><td>4.6%</td></tr></tbody></table></div>
+<p>Insight:Winter Olympics show more balanced medal distribution with the top 3 countries accounting for 30% of medals compared to 25% in Summer Games. Northern European countries excel due to climate advantages.</p>
+<hr/>
+<h2>Summer vs Winter Olympic Comparison</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which countries perform well in both Summer and Winter Olympics?</li><li>How do medal counts compare between the two types of Olympics?</li></ul></details>
+<p>Comparing performance across both Olympic types reveals interesting patterns of national specialization. Some countries excel in both, while others focus on one type based on geography and athletic tradition.</p>
+<div class='plot-card'><div class='plot-meta'><code>summer_vs_winter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/summer_vs_winter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Observations:</h3>
+<ul><li>Dual Excellence: USA, Germany, and Italy perform strongly in both Summer and Winter Olympics</li><li>Summer Specialists: Australia, Hungary, and UK focus on Summer Olympics with minimal Winter participation</li><li>Winter Specialists: Norway, Finland, and Canada derive most Olympic success from Winter Games</li><li>Scale Difference: Summer Olympics award approximately 5.4x more medals than Winter Olympics</li></ul>
+<p>Strategic Insight:Countries with varied climates and athletic programs USA, Germany, Italy maintain year-round Olympic competitiveness, while climate-constrained nations specialize accordingly.</p>
+<hr/>
+<h2>Temporal Trends: Summer Olympics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How has Summer Olympic participation evolved over time?</li><li>What major events influenced medal distribution trends?</li></ul></details>
+<p>Summer Olympics show clear growth patterns with significant increases in medal opportunities and participation over 120 years.</p>
+<div class='plot-card'><div class='plot-meta'><code>summer_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/summer_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Historical Patterns:</h3>
+<ul><li>Early Era 1896-1912: Modest growth with 3-5 Olympic Games</li><li>Interwar Period 1920-1936: Steady expansion in sports and events</li><li>Post-WWII 1948-1960: Accelerated growth and global participation</li><li>Modern Era 1964-2012: Continued expansion with major increases in medal count</li><li>Notable Dips: 1916, 1940, 1944 WWI and WWII cancellations</li></ul>
+<p>Insight:The trend shows exponential growth in Olympic opportunities, reflecting increased global participation, sport inclusion, and event diversity. Recent Olympics award 3-4x more medals than early Games.</p>
+<hr/>
+<h2>Temporal Trends: Winter Olympics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How has Winter Olympic participation changed since 1924?</li><li>What factors explain the growth in Winter medal counts?</li></ul></details>
+<p>Winter Olympics began 28 years after Summer Games and have shown different growth patterns, influenced by climate, technological advances in winter sports, and global interest.</p>
+<div class='plot-card'><div class='plot-meta'><code>winter_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/winter_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Winter Olympic Evolution:</h3>
+<ul><li>Foundational Era 1924-1952: Slow growth with limited sport variety</li><li>Expansion Era 1956-1994: Significant increase in events and participating countries</li><li>Modern Era 1998-2014: Major expansion with extreme sports inclusion</li><li>Consistent Growth: More linear progression compared to Summer&#x27;s exponential growth</li></ul>
+<p>Insight:Winter Olympics show steadier growth, constrained by climate requirements and fewer sports. However, inclusion of newer sports snowboarding, freestyle skiing has accelerated recent growth.</p>
+<hr/>
+<h2>Gender Participation: Summer Olympics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How has women&#x27;s participation evolved in Summer Olympics?</li><li>What is the current gender balance in Olympic competition?</li></ul></details>
+<p>Gender equity has been a major focus of Olympic evolution, with women&#x27;s participation growing dramatically from early exclusion to near parity in some sports.</p>
+<div class='plot-card'><div class='plot-meta'><code>summer_gender_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/summer_gender_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Gender Equality Timeline:</h3>
+<ul><li>1896-1900: No women athletes</li><li>1900-1920: Limited women&#x27;s events 100 medals</li><li>1920-1950: Gradual inclusion in select sports</li><li>1952-1980: Major expansion of women&#x27;s events</li><li>1984-2012: Accelerated growth toward parity</li><li>Current Status: Women represent 27% of Summer Olympic medals</li></ul>
+<p>Key Insight:The gap has been closing rapidly in recent decades. While men still lead historically, women&#x27;s participation growth rate exceeds men&#x27;s, suggesting future parity.</p>
+<hr/>
+<h2>Gender Participation: Winter Olympics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does gender representation differ between Summer and Winter Olympics?</li><li>Which Winter sports have the best gender balance?</li></ul></details>
+<p>Winter Olympics generally show better gender balance than Summer Games, with women representing 32% of medals compared to 27% in Summer.</p>
+<div class='plot-card'><div class='plot-meta'><code>winter_gender_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/winter_gender_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Winter Gender Progress:</h3>
+<ul><li>1924-1952: Minimal women&#x27;s participation</li><li>1956-1980: Significant expansion in figure skating, skiing</li><li>1984-2000: Rapid growth across all winter sports</li><li>2002-2014: Continued progress toward parity</li><li>Current Status: Women represent 32% of Winter Olympic medals</li></ul>
+<p>Insight:Winter Olympics show slightly better gender balance, partly due to more individual sports where gender classification is more straightforward. Recent Olympics show accelerated progress.</p>
+<hr/>
+<h2>Summer Olympic Sports Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which sports award the most Olympic medals?</li><li>How does sport diversity differ between Summer and Winter Olympics?</li></ul></details>
+<p>Summer Olympics feature 43 sports with remarkable diversity, from aquatic competitions to gymnastics, athletics, and team sports.</p>
+<div class='plot-card'><div class='plot-meta'><code>summer_sports.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/summer_sports.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Top Summer Sports by Medal Count:</h3>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Sport</th><th>Medals</th><th>% of Total</th></tr></thead><tbody><tr><td>1</td><td>Aquatics</td><td>4,170</td><td>13.4%</td></tr><tr><td>2</td><td>Athletics</td><td>3,638</td><td>11.7%</td></tr><tr><td>3</td><td>Rowing</td><td>2,667</td><td>8.6%</td></tr><tr><td>4</td><td>Gymnastics</td><td>2,307</td><td>7.4%</td></tr><tr><td>5</td><td>Fencing</td><td>1,613</td><td>5.2%</td></tr><tr><td>6</td><td>Football</td><td>1,497</td><td>4.8%</td></tr><tr><td>7</td><td>Hockey</td><td>1,422</td><td>4.6%</td></tr><tr><td>8</td><td>Wrestling</td><td>1,212</td><td>3.9%</td></tr><tr><td>9</td><td>Shooting</td><td>1,150</td><td>3.7%</td></tr><tr><td>10</td><td>Sailing</td><td>1,109</td><td>3.6%</td></tr></tbody></table></div>
+<p>Insight:Aquatics and Athletics alone account for 25% of all Summer Olympic medals, reflecting their foundational role in Olympic competition and the multitude of events within these disciplines.</p>
+<hr/>
+<h2>Winter Olympic Sports Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the primary Winter Olympic sports?</li><li>How does Winter Olympic sport diversity compare to Summer?</li></ul></details>
+<p>Winter Olympics focus on 7 specialized sports, all requiring cold weather conditions and specialized equipment.</p>
+<div class='plot-card'><div class='plot-meta'><code>winter_sports.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/winter_sports.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Winter Sports Distribution:</h3>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Sport</th><th>Medals</th><th>% of Total</th></tr></thead><tbody><tr><td>1</td><td>Skiing</td><td>1,781</td><td>30.9%</td></tr><tr><td>2</td><td>Ice Hockey</td><td>1,536</td><td>26.6%</td></tr><tr><td>3</td><td>Skating</td><td>1,229</td><td>21.3%</td></tr><tr><td>4</td><td>Bobsleigh</td><td>452</td><td>7.8%</td></tr><tr><td>5</td><td>Biathlon</td><td>420</td><td>7.3%</td></tr><tr><td>6</td><td>Luge</td><td>180</td><td>3.1%</td></tr><tr><td>7</td><td>Curling</td><td>172</td><td>3.0%</td></tr></tbody></table></div>
+<p>Insight:Winter Olympics show higher concentration with top 3 sports Skiing, Ice Hockey, Skating accounting for 79% of all medals. This reflects the specialized nature of winter sports and limited climate-suitable activities.</p>
+<hr/>
+<h2>Summer Olympics: Country x Sport Heatmap</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which countries excel in specific sports?</li><li>How do sporting specializations differ among top Olympic nations?</li></ul></details>
+<p>The heatmap reveals patterns of national specialization, with certain countries dominating specific sports based on tradition, infrastructure, and athletic culture.</p>
+<div class='plot-card'><div class='plot-meta'><code>summer_sport_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/summer_sport_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Notable Specializations:</h3>
+<ul><li>United States: Strength in Aquatics, Athletics, Basketball</li><li>China: Dominance in Diving, Gymnastics, Table Tennis modern era</li><li>Russia/USSR: Excellence in Gymnastics, Wrestling, Weightlifting</li><li>Australia: Powerhouse in Swimming, Aquatics</li><li>Kenya/Ethiopia: Distance running dominance in Athletics</li><li>Germany: Rowing, Canoe/Kayak, Equestrian</li><li>Netherlands: Swimming, Cycling, Speed Skating transition</li></ul>
+<p>Strategic Insight:Successful Olympic programs often focus on sports with high medal opportunities and competitive advantages derived from cultural, geographical, or historical factors.</p>
+<hr/>
+<h2>Winter Olympics: Country x Sport Heatmap</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do Winter Olympic specializations differ among northern nations?</li><li>Which sports show the most international competition?</li></ul></details>
+<p>Winter Olympic specializations reflect climate advantages and national sporting traditions, with notable patterns across Nordic, Alpine, and North American nations.</p>
+<div class='plot-card'><div class='plot-meta'><code>winter_sport_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/winter_sport_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Winter Sport Specializations:</h3>
+<ul><li>Norway: Cross-country and Alpine skiing dominance</li><li>Canada: Ice Hockey excellence + Curling</li><li>USA: Diverse strength across multiple sports</li><li>Germany: Luge, Bobsleigh, Biathlon</li><li>Finland: Skiing and Ice Hockey</li><li>Switzerland: Alpine skiing, Bobsleigh</li><li>Austria: Alpine skiing dominance</li></ul>
+<p>Insight:Nordic countries excel in skiing due to geography and cultural tradition, while Central European nations dominate sliding sports bobsleigh, luge. Ice Hockey shows broad international competition beyond traditional powers.</p>
+<hr/>
+<h2>Medal Type Distribution: Summer Olympics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which countries have the most Gold medals in Summer Olympics?</li><li>How does the Gold-to-Total ratio vary among top nations?</li></ul></details>
+<p>The distribution of Gold, Silver, and Bronze medals reveals differences in competitive excellence and depth of athletic programs.</p>
+<div class='plot-card'><div class='plot-meta'><code>summer_medal_types.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/summer_medal_types.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Gold Medal Leaders </h3>
+<p>Top 10:</p>
+<div class='table-wrap'><table><thead><tr><th>Country</th><th>Gold</th><th>Silver</th><th>Bronze</th><th>Total</th><th>Gold %</th></tr></thead><tbody><tr><td>United States</td><td>1,847</td><td>1,549</td><td>1,189</td><td>4,585</td><td>40.3%</td></tr><tr><td>Germany</td><td>501</td><td>430</td><td>374</td><td>1,305</td><td>38.4%</td></tr><tr><td>United Kingdom</td><td>547</td><td>602</td><td>571</td><td>1,720</td><td>31.8%</td></tr><tr><td>France</td><td>476</td><td>460</td><td>460</td><td>1,396</td><td>34.1%</td></tr><tr><td>Italy</td><td>460</td><td>377</td><td>459</td><td>1,296</td><td>35.5%</td></tr><tr><td>Hungary</td><td>423</td><td>330</td><td>326</td><td>1,079</td><td>39.2%</td></tr><tr><td>Australia</td><td>410</td><td>388</td><td>391</td><td>1,189</td><td>34.5%</td></tr><tr><td>Sweden</td><td>384</td><td>312</td><td>348</td><td>1,044</td><td>36.8%</td></tr><tr><td>China</td><td>368</td><td>302</td><td>290</td><td>960</td><td>38.3%</td></tr><tr><td>Japan</td><td>246</td><td>232</td><td>255</td><td>733</td><td>33.6%</td></tr></tbody></table></div>
+<p>Insight:USA, Germany, and Hungary show exceptional Gold medal rates 38%, indicating deep athletic programs and ability to win top-level competitions consistently.</p>
+<hr/>
+<h2>Medal Type Distribution: Winter Olympics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which Winter Olympic nations excel in winning Gold medals?</li><li>How does Winter Gold medal distribution compare to Summer?</li></ul></details>
+<p>Winter Olympic medal distributions reflect similar patterns of excellence, with some nations showing particular strength in top-level competition.</p>
+<div class='plot-card'><div class='plot-meta'><code>winter_medal_types.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/winter_medal_types.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Winter Gold Medal Leaders:</h3>
+<div class='table-wrap'><table><thead><tr><th>Country</th><th>Gold</th><th>Silver</th><th>Bronze</th><th>Total</th><th>Gold %</th></tr></thead><tbody><tr><td>Norway</td><td>329</td><td>315</td><td>294</td><td>938</td><td>35.1%</td></tr><tr><td>USA</td><td>272</td><td>252</td><td>217</td><td>741</td><td>36.7%</td></tr><tr><td>Germany</td><td>231</td><td>210</td><td>214</td><td>655</td><td>35.3%</td></tr><tr><td>USSR</td><td>195</td><td>165</td><td>144</td><td>504</td><td>38.7%</td></tr><tr><td>Canada</td><td>199</td><td>204</td><td>191</td><td>594</td><td>33.5%</td></tr><tr><td>Finland</td><td>161</td><td>145</td><td>182</td><td>488</td><td>33.0%</td></tr><tr><td>Austria</td><td>159</td><td>142</td><td>157</td><td>458</td><td>34.7%</td></tr><tr><td>Sweden</td><td>148</td><td>148</td><td>172</td><td>468</td><td>31.6%</td></tr><tr><td>Switzerland</td><td>122</td><td>133</td><td>126</td><td>381</td><td>32.0%</td></tr><tr><td>Netherlands</td><td>121</td><td>114</td><td>107</td><td>342</td><td>35.4%</td></tr></tbody></table></div>
+<p>Insight:Norway leads Winter Olympics in both total medals and Gold count, showing remarkable consistency. USSR achieved highest Gold percentage 38.7% before dissolution.</p>
+<hr/>
+<h2>Top Athletes: Summer Olympics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Who are the most decorated Summer Olympic athletes?</li><li>Which athletes have the most Gold medals?</li></ul></details>
+<p>Individual athlete performance provides insight into excellence in specialized disciplines, with swimmers and gymnasts dominating the all-time medal lists.</p>
+<div class='plot-card'><div class='plot-meta'><code>top_athletes_summer.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/top_athletes_summer.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>All-Time Greats </h3>
+<p>Summer Olympics:</p>
+<div class='table-wrap'><table><thead><tr><th>Athlete</th><th>Country</th><th>Total</th><th>Gold</th><th>Silver</th><th>Bronze</th><th>Primary Sport</th></tr></thead><tbody><tr><td>Michael Phelps</td><td>USA</td><td>22</td><td>18</td><td>2</td><td>2</td><td>Swimming</td></tr><tr><td>Larisa Latynina</td><td>USSR</td><td>18</td><td>9</td><td>5</td><td>4</td><td>Gymnastics</td></tr><tr><td>Nikolai Andrianov</td><td>USSR</td><td>15</td><td>7</td><td>5</td><td>3</td><td>Gymnastics</td></tr><tr><td>Takashi Ono</td><td>Japan</td><td>13</td><td>5</td><td>4</td><td>4</td><td>Gymnastics</td></tr><tr><td>Edoardo Mangiarotti</td><td>Italy</td><td>13</td><td>6</td><td>5</td><td>2</td><td>Fencing</td></tr><tr><td>Boris Shakhlin</td><td>USSR</td><td>13</td><td>7</td><td>4</td><td>2</td><td>Gymnastics</td></tr><tr><td>Sawao Kato</td><td>Japan</td><td>12</td><td>8</td><td>3</td><td>1</td><td>Gymnastics</td></tr><tr><td>Jenny Thompson</td><td>USA</td><td>12</td><td>8</td><td>3</td><td>1</td><td>Swimming</td></tr><tr><td>Dara Torres</td><td>USA</td><td>12</td><td>4</td><td>4</td><td>4</td><td>Swimming</td></tr><tr><td>Matt Biondi</td><td>USA</td><td>11</td><td>8</td><td>2</td><td>1</td><td>Swimming</td></tr></tbody></table></div>
+<p>Insight:Swimming and Gymnastics athletes dominate the medal counts due to multiple event opportunities within these disciplines. Michael Phelps&#x27; 22 medals across 3 Olympics represents individual excellence unmatched in Olympic history.</p>
+<hr/>
+<h2>Top Athletes: Winter Olympics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Who are the most successful Winter Olympic athletes?</li><li>Which Winter disciplines produce the most multi-medal athletes?</li></ul></details>
+<p>Winter Olympic athletes show high specialization, with career longevity being key to accumulating multiple medals.</p>
+<div class='plot-card'><div class='plot-meta'><code>top_athletes_winter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a/assets/top_athletes_winter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Winter Olympic Legends:</h3>
+<div class='table-wrap'><table><thead><tr><th>Athlete</th><th>Country</th><th>Total</th><th>Gold</th><th>Silver</th><th>Bronze</th><th>Primary Sport</th></tr></thead><tbody><tr><td>Ole Einar Bjørndalen</td><td>Norway</td><td>13</td><td>8</td><td>4</td><td>1</td><td>Biathlon</td></tr><tr><td>Marit Bjørgen</td><td>Norway</td><td>13</td><td>8</td><td>4</td><td>1</td><td>Cross-Country Skiing</td></tr><tr><td>Ireen Wüst</td><td>Netherlands</td><td>13</td><td>6</td><td>5</td><td>2</td><td>Speed Skating</td></tr><tr><td>Raisa Smetanina</td><td>USSR</td><td>10</td><td>4</td><td>5</td><td>1</td><td>Cross-Country Skiing</td></tr><tr><td>Stefania Belmondo</td><td>Italy</td><td>10</td><td>2</td><td>3</td><td>5</td><td>Cross-Country Skiing</td></tr><tr><td>Claudia Pechstein</td><td>Germany</td><td>9</td><td>5</td><td>2</td><td>2</td><td>Speed Skating</td></tr><tr><td>Sven Fischer</td><td>Germany</td><td>9</td><td>4</td><td>2</td><td>3</td><td>Biathlon</td></tr><tr><td>Sixten Jernberg</td><td>Sweden</td><td>9</td><td>4</td><td>3</td><td>2</td><td>Cross-Country Skiing</td></tr><tr><td>Lydia Skoblikova</td><td>USSR</td><td>9</td><td>6</td><td>0</td><td>3</td><td>Speed Skating</td></tr><tr><td>Bjørn Dæhlie</td><td>Norway</td><td>12</td><td>8</td><td>4</td><td>0</td><td>Cross-Country Skiing</td></tr></tbody></table></div>
+<p>Insight:Cross-country skiing and speed skating produce the most decorated athletes, reflecting numerous event distances and formats. Norwegian athletes dominate the top ranks, showing national excellence in winter sports.</p>
+<hr/>
+<h2>Conclusions and Insights</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key factors driving Olympic success?</li><li>How might future Olympic Games evolve based on historical trends?</li></ul></details>
+<h3>Summary of Key Findings:</h3>
+<p>1. Geographic and Climatic Influence</p>
+<ul><li>Northern European countries excel in Winter Olympics climate advantage</li><li>Large, diverse nations USA, Germany, Italy succeed in both Summer and Winter</li><li>Geographic specialization drives sport excellence e.g., Kenya in distance running</li></ul>
+<p>2. Temporal Evolution</p>
+<ul><li>Exponential growth in medal opportunities over 120 years</li><li>Acceleration in women&#x27;s participation post-1980</li><li>Recent inclusion of extreme sports and new disciplines</li><li>Continued expansion of participating countries</li></ul>
+<p>3. Economic and Demographic Factors</p>
+<ul><li>High-GDP nations dominate medal tables except notable outliers like Kenya, Jamaica</li><li>Population size provides competitive advantage but not guarantee of success</li><li>Specialized sporting traditions outperform pure demographic advantages</li></ul>
+<p>4. Sport Specialization</p>
+<ul><li>Aquatics and Athletics dominate Summer Olympics 25% of medals</li><li>Skiing and Ice Hockey lead Winter Olympics 58% of medals</li><li>Successful nations focus on medal-rich sports where they have competitive advantages</li></ul>
+<p>5. Gender Parity Progress</p>
+<ul><li>Women: 27% Summer and 32% Winter of medals</li><li>Rapid improvement in recent decades</li><li>Winter Olympics showing slightly better gender balance</li><li>Future parity likely within 1-2 decades</li></ul>
+<p>6. Athletic Excellence</p>
+<ul><li>Multi-event sports Swimming, Gymnastics produce most decorated athletes</li><li>Career longevity essential for medal accumulation</li><li>Discipline specialization and technical excellence key to success</li></ul>
+<hr/>
+<h2>Future Outlook</h2>
+<p>Based on historical trends, we can anticipate:</p>
+<p>1. Continued Global Expansion: More countries participating and winning medals</p>
+<p>2. Gender Parity: Women approaching 40-50% of medal opportunities by 2030</p>
+<p>3. Sport Inclusion: Additional extreme sports and emerging disciplines</p>
+<p>4. Competitive Balance: Emerging nations challenging traditional powers</p>
+<p>5. Winter Olympics: Geographic diversification with climate-affected venues</p>
+<p>6. Technology Impact: Equipment advances leveling competition across nations</p>
+<hr/>
+<p>Analysis Methodology: This analysis used Polars for high-performance data processing, generating 15 interactive visualizations covering country performance, temporal trends, sport analysis, gender participation, and athlete excellence. All cleaned data and detailed summaries are available in the folder for further exploration.</p>
+<p>Data Limitations: Historical data reflects geopolitical changes country mergers/splits. Some Summer records lack country codes. GDP and population data are static snapshots and don&#x27;t reflect historical variations.</p>
+<p>Chart Credits: All visualizations created using Plotly Express with carefully selected color schemes for maximum clarity and professional presentation.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "time_and_location_data.csv",
+    "local": "time_and_location_data.csv",
+    "ok": true,
+    "error": "",
+    "size": 5210
+  },
+  {
+    "name": "processed_disease_loci_count_data.csv",
+    "local": "processed_disease_loci_count_data.csv",
+    "ok": true,
+    "error": "",
+    "size": 3268496
+  },
+  {
+    "name": "trial_meta_data.csv",
+    "local": "trial_meta_data.csv",
+    "ok": true,
+    "error": "",
+    "size": 692882
+  },
+  {
+    "name": "Project_Turf_Dollar_Spot_Model.csv",
+    "local": "Project_Turf_Dollar_Spot_Model.csv",
+    "ok": true,
+    "error": "",
+    "size": 5012539
+  },
+  {
+    "name": "weather_data.csv",
+    "local": "weather_data.csv",
+    "ok": true,
+    "error": "",
+    "size": 2295131
+  }
+]

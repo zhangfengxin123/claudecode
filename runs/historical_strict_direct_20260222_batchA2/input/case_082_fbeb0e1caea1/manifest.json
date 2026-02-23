@@ -1,0 +1,37 @@
+[
+  {
+    "name": "2024report_all_e.pdf",
+    "local": "2024report_all_e.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3172213
+  },
+  {
+    "name": "2022report_all_e.pdf",
+    "local": "2022report_all_e.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 2811765
+  },
+  {
+    "name": "2021report_all2_e.pdf",
+    "local": "2021report_all2_e.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3352418
+  },
+  {
+    "name": "2023report_all_e.pdf",
+    "local": "2023report_all_e.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3385188
+  },
+  {
+    "name": "2020ar2020_e.pdf",
+    "local": "2020ar2020_e.pdf",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3860346
+  }
+]

@@ -1,0 +1,111 @@
+About Dataset
+Dataset: Quantifying Bias in Candidate Selection
+1. Dataset Overview
+This dataset contains 2,000 synthetically generated hiring records specifically designed for conducting controlled research into decision-making biases in recruitment systems. It provides a structured and ethical framework for analyzing how institutional affiliations particularly universities influence hiring outcomes, while controlling for other candidate qualifications.
+
+2. Research Purpose & Applications
+The dataset enables methodologically sound investigations into bias mechanisms within hiring systems.
+
+2.1 Primary Research Objectives
+Quantifying Bias Magnitude
+Measure the statistical significance and effect size of university-based preferences in hiring decisions.
+
+Algorithmic Fairness Testing
+Evaluate machine learning models for bias propagation and test fairness-aware interventions.
+
+Debiasing Method Development
+Design and validate preprocessing, in-processing, and post-processing debiasing techniques.
+
+Feature Interaction Analysis
+Examine how university affiliation interacts with experience, skills, and demographics in hiring decisions.
+
+2.2 Methodological Utility
+Controlled Experimentation
+Isolate university-related bias from confounding variables for clearer causal inference.
+
+Reproducible Benchmarking
+Provide standardized data for comparing bias detection and mitigation approaches.
+
+Educational Resource
+Support learning on fairness metrics, bias detection, and ethical AI implementation.
+
+Hypothesis Testing
+Validate theoretical models on the influence of educational prestige in professional opportunities.
+
+3. Dataset Design Principles
+3.1 Generation Framework
+All records are algorithmically generated using controlled randomization with embedded bias structures, ensuring:
+
+Ethical Compliance – No real individuals are represented.
+Controlled Variables – Systematic manipulation of university bias.
+Research Integrity – Transparent and reproducible data generation.
+Realistic Context – Authentic university names, industries, and job roles.
+3.2 Bias Implementation
+The dataset incorporates multiple bias mechanisms:
+
+Systematic Preference – Graduates from specific university tiers receive preferential outcomes.
+Hidden Patterns – Bias manifests subtly, mirroring implicit real-world bias.
+Measurable Effects – Bias magnitude is quantifiable using standard fairness metrics.
+4. Data Structure & Variables
+4.1 Variable Categories
+Educational Background
+University_Name – Real university names categorized by prestige tier
+University_Type – Public / Private / International
+Degree_Level – Bachelor's / Master's / PhD
+GPA – Standardized academic performance
+Graduation_Year – Temporal context for experience
+Professional Qualifications
+Years_Experience – Relevant work experience
+Skill_Set – Encoded technical and soft skills
+Previous_Companies – Employment history indicators
+Certifications – Professional credentials
+Evaluation Metrics
+Resume_Score – Resume quality assessment
+Technical_Test_Score – Objective skills evaluation
+Interview_Score – Structured interview performance
+Cultural_Fit_Score – Subjective alignment measure
+Contextual Factors
+Job_Role – Position applied for
+Industry – Company industry classification
+Company_Size – Organizational scale
+Hiring_Stage – Stage at which decision occurs
+Target Variables
+Hired – Binary hiring outcome
+Decision_Confidence – Simulated confidence in decision
+Time_to_Decision – Hiring process efficiency
+4.2 Data Relationships
+The dataset maintains realistic relational patterns:
+
+Positive Correlations – University prestige with hiring rate; interview score with technical performance.
+Controlled Confounders – Experience and skills balanced across university tiers.
+Interaction Effects – University type moderates the skill–hiring probability relationship.
+5. Analytical Capabilities
+5.1 Statistical Analysis Support
+Logistic regression for hiring probability modeling
+Fairness metrics: demographic parity, equal opportunity, predictive parity
+ANOVA / MANOVA for group difference testing
+Chi-square tests for categorical associations
+5.2 Machine Learning Applications
+Binary and multi-class classification tasks
+Bias detection using SHAP and LIME
+Disparate impact and fairness evaluation
+Predictive modeling across university types
+5.3 Visualization Opportunities
+Bias heatmaps across job roles
+Decision boundary visualizations
+Interactive fairness dashboards
+Temporal trend analysis of bias patterns
+6. Research Methodology Guidelines
+6.1 Recommended Analysis Approaches
+Establish baseline hiring rates by university category
+Control for experience, skills, and evaluation metrics
+Quantify bias using fairness metrics
+Apply and compare debiasing techniques
+Conduct sensitivity and robustness analyses
+6.2 Validation Strategies
+Cross-validation for generalizability
+Benchmarking against bias-free synthetic datasets
+Parameter sensitivity testing
+Methodological triangulation across models
+7. Ethical Research Considerations
+7.1 Re

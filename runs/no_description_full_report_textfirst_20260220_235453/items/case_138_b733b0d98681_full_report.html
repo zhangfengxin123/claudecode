@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：BMW_Data</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：BMW_Data</h1>
+    <p class='sub'>来源: /view/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;BMW Stock Comprehensive Analysis 1997-2024&quot;
+description: &quot;A detailed analysis of BMW stock performance including price trends, returns, volatility, and trading patterns over 28 years&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-02&quot;
+</pre></details>
+<h1>BMW Stock Comprehensive Analysis 1997-2024</h1>
+<h2>Executive Summary</h2>
+<p>BMW stock has demonstrated remarkable long-term growth over the past 28 years, delivering a total return of 733.12%from 1997 to 2024. The stock has weathered multiple market cycles, including significant downturns during the 2008 financial crisis -50.70% and the COVID-19 pandemic period. Despite these challenges, BMW has shown resilience with strong recoveries, particularly notable in 2010 +67.29% and 2009 +50.73% following crisis periods. The stock currently trades at 78.98, representing a significant appreciation from its initial price of 9.48.</p>
+<h2>Data Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the date range and volume of data analyzed?</li><li>What key metrics are included in the BMW stock dataset?</li></ul></details>
+<p>The analysis covers 7,163 trading daysspanning from January 16, 1997, to December 30, 2024. This comprehensive dataset includes:</p>
+<ul><li>Price Data: Open, High, Low, Close, and Adjusted Close prices</li><li>Volume: Daily trading volume</li><li>Derived Metrics: Daily returns, moving averages 20, 50, 200-day, and volatility measures</li></ul>
+<p>The dataset shows BMW&#x27;s journey from a relatively modest stock price in the late 1990s to its peak of 108.06, with an average price of 36.21 over the entire period. The stock has experienced significant price appreciation while maintaining relatively stable average daily returns of 0.0518%.</p>
+<h2>Price Trend Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How has BMW stock performed over different time periods?</li><li>What do the moving averages indicate about BMW&#x27;s long-term trend?</li></ul></details>
+<p>BMW&#x27;s price trajectory reveals a compelling long-term growth story with distinct phases:</p>
+<h3>Historical Price Movements</h3>
+<div class='plot-card'><div class='plot-meta'><code>bmw_price_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3/assets/bmw_price_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The chart above illustrates BMW&#x27;s stock price evolution with key moving averages. Several critical periods emerge:</p>
+<ul><li>Early Growth 1997-2001: Consistent upward trend with the stock gaining approximately 150%</li><li>Tech Bubble Aftermath 2001-2003: Brief correction followed by recovery</li><li>Pre-Crisis Peak 2007: Stock reached significant highs before the financial crisis</li><li>2008 Financial Crisis: Massive 50.70% decline, with the stock hitting one of its lowest points</li><li>Post-Crisis Recovery 2009-2015: Remarkable recovery with returns of 50.73% in 2009 and 67.29% in 2010</li><li>Recent Years 2016-2024: More moderate growth with increased volatility</li></ul>
+<h3>Moving Average Insights</h3>
+<p>The three moving averages reveal important trends:</p>
+<ul><li>20-Day MA: Short-term momentum indicator</li><li>50-Day MA: Medium-term trend confirmation</li><li>200-Day MA: Long-term trend direction and support/resistance levels</li></ul>
+<p>The consistent upward movement of the 200-day moving average, despite short-term fluctuations, confirms BMW&#x27;s strong long-term uptrend throughout most of the analyzed period.</p>
+<h2>Returns Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are BMW&#x27;s best and worst performing years?</li><li>How consistent are BMW&#x27;s annual returns over time?</li></ul></details>
+<p>BMW&#x27;s returns analysis reveals significant variability across different periods:</p>
+<h3>Annual Performance Breakdown</h3>
+<div class='plot-card'><div class='plot-meta'><code>bmw_annual_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3/assets/bmw_annual_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The annual returns chart highlights BMW&#x27;s performance across 28 years:</p>
+<p>Best Performing Years:</p>
+<p>1. 2010: +67.29% Post-crisis recovery</p>
+<p>2. 2012: +42.18% Strong growth period</p>
+<p>3. 2009: +50.73% Financial crisis recovery</p>
+<p>4. 2023: +29.34% Recent strong performance</p>
+<p>Worst Performing Years:</p>
+<p>1. 2008: -50.70% Global Financial Crisis</p>
+<p>2. 2024: -14.77% Recent decline</p>
+<p>3. 2018: -14.22% Trade tensions</p>
+<p>4. 2002: -18.81% Dot-com aftermath</p>
+<h3>Daily Returns Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>bmw_returns_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3/assets/bmw_returns_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The distribution of daily returns shows:</p>
+<ul><li>Mean: 0.0518% slight positive bias</li><li>Standard Deviation: 2.1169% moderate volatility</li><li>Maximum Single-Day Gain: +14.84%</li><li>Maximum Single-Day Loss: -13.19%</li></ul>
+<p>The relatively symmetrical distribution suggests efficient market pricing, though the slight positive mean indicates a long-term upward bias.</p>
+<h3>Recent Daily Returns</h3>
+<div class='plot-card'><div class='plot-meta'><code>bmw_daily_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3/assets/bmw_daily_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The daily returns chart for the last three years shows increased volatility, particularly during 2024 when the stock experienced significant declines. The pattern of gains and losses appears random, consistent with efficient market hypothesis, but with clustering of volatility during stress periods.</p>
+<h2>Volatility Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does BMW&#x27;s volatility vary over time?</li><li>What periods show the highest and lowest volatility?</li></ul></details>
+<p>Volatility analysis provides crucial insights into risk and market sentiment:</p>
+<h3>20-Day Rolling Volatility</h3>
+<div class='plot-card'><div class='plot-meta'><code>bmw_volatility.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3/assets/bmw_volatility.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The volatility chart reveals several key patterns:</p>
+<p>High Volatility Periods:</p>
+<ul><li>2008-2009: Exceptional volatility during the financial crisis peaked above 8%</li><li>2020: COVID-19 pandemic uncertainty</li><li>2022-2024: Market uncertainty and geopolitical tensions</li></ul>
+<p>Low Volatility Periods:</p>
+<ul><li>2013-2017: Relative market stability</li><li>Late 1990s: Pre-tech bubble period</li><li>2019: Calm before the COVID-19 storm</li></ul>
+<p>The average 20-day volatility of approximately 2.12% indicates that BMW is a moderately volatile stock, balancing growth potential with reasonable risk levels. Volatility clustering is evident, suggesting that periods of high volatility tend to persist, consistent with financial market behavior.</p>
+<h2>Volume Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the trading volume patterns for BMW stock?</li><li>How does volume correlate with significant price movements?</li></ul></details>
+<p>Trading volume analysis reveals market participation and liquidity patterns:</p>
+<h3>Volume and Price Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>bmw_volume.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3/assets/bmw_volume.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key volume statistics:</p>
+<ul><li>Average Daily Volume: 2,117,979 shares</li><li>Maximum Volume: 28,719,542 shares peak trading day</li><li>Minimum Volume: 0 shares non-trading days/holidays</li></ul>
+<p>The volume chart shows several important patterns:</p>
+<p>1. Volume Spikes During Volatility: Higher volume typically accompanies significant price movements, especially during market stress or major news events</p>
+<p>2. Correlation with Price: Volume often increases before significant price movements, suggesting informed trading activity</p>
+<p>3. Recent Trends: Volume has remained relatively stable in recent years, indicating consistent market interest</p>
+<h2>Decade-by-Decade Performance</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How has BMW performed across different decades?</li><li>What decade was the best for BMW investors?</li></ul></details>
+<p>Analyzing performance by decade reveals long-term patterns:</p>
+<div class='plot-card'><div class='plot-meta'><code>bmw_decade_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3/assets/bmw_decade_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Decade Performance Summary:</p>
+<ul><li>1990s partial: Strong initial performance as BMW established itself in global markets</li><li>2000s: Mixed performance with significant volatility, driven by the dot-com bubble and 2008 financial crisis</li><li>2010s: Generally positive returns with occasional corrections, demonstrating post-crisis recovery</li><li>2020s partial: Challenging start with COVID-19 pandemic, followed by recovery and recent uncertainty</li></ul>
+<p>The chart shows that while BMW has delivered positive average annual returns across most decades, volatility has been a consistent companion to returns. This pattern is typical for automotive stocks, which are sensitive to economic cycles.</p>
+<h2>Monthly Seasonal Patterns</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Are there seasonal patterns in BMW&#x27;s stock returns?</li><li>Which months tend to perform best for BMW?</li></ul></details>
+<p>Seasonal analysis can reveal recurring patterns based on calendar effects:</p>
+<div class='plot-card'><div class='plot-meta'><code>bmw_monthly_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3/assets/bmw_monthly_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The monthly returns distribution last 10 years shows:</p>
+<p>Positive Bias Months:</p>
+<ul><li>April: Historically strong returns, possibly benefiting from spring automotive sales season</li><li>December: Often shows positive returns, potentially due to year-end rally effects and holiday optimism</li><li>January: Beginning-of-year optimism and portfolio rebalancing effects</li></ul>
+<p>Challenging Months:</p>
+<ul><li>September: Historically weaker returns, consistent with broader market &quot;September Effect&quot;</li><li>October: Higher volatility due to historical market crashes occurring in this month</li></ul>
+<p>Key Insights:</p>
+<p>1. No Strong Seasonal Bias: The box plot shows relatively even distribution across months</p>
+<p>2. Outlier Events: Several extreme positive and negative returns appear across different months, highlighting that significant market events can override seasonal patterns</p>
+<p>3. Consistent Volatility: Most months show similar spread of returns, indicating relatively consistent risk throughout the year</p>
+<h2>Risk-Return Profile</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does BMW&#x27;s risk-return profile compare to market averages?</li><li>Is BMW stock suitable for conservative or aggressive investors?</li></ul></details>
+<p>Based on the comprehensive analysis, BMW&#x27;s risk-return profile can be characterized as:</p>
+<h3>Return Metrics</h3>
+<ul><li>Average Daily Return: 0.0518% positive but modest</li><li>Annualized Return: Approximately 13% calculated from daily returns × 252 trading days</li><li>Total Return 28 years: 733.12%</li><li>Compounded Annual Growth Rate CAGR: Approximately 7.8%</li></ul>
+<h3>Risk Metrics</h3>
+<ul><li>Daily Volatility: 2.12%</li><li>Annualized Volatility: Approximately 33.6% 2.12% × √252</li><li>Maximum Drawdown: -50.70% 2008</li><li>Sharpe Ratio Estimate: </li></ul>
+<p>Risk-Return Conclusion</p>
+<p>BMW offers a moderate risk-moderate returnprofile:</p>
+<ul><li>Growth Potential: Solid long-term appreciation with 733% total return over 28 years</li><li>Volatility: Higher than market average due to automotive industry cyclicality</li><li>Recovery Capability: Strong recovery demonstrated after major drawdowns</li><li>Market Position: Well-established premium brand with competitive advantages</li></ul>
+<h2>Key Insights and Strategic Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most important takeaways from this analysis?</li><li>What factors should investors consider when investing in BMW?</li></ul></details>
+<h3>Critical Findings</h3>
+<p>1. Long-Term Value Creation: BMW has successfully created substantial shareholder value over nearly three decades, demonstrating the strength of its business model and brand equity.</p>
+<p>2. Resilience to Crises: Despite experiencing significant drawdowns during major market crises 2008, 2020, BMW has consistently recovered and continued its growth trajectory.</p>
+<p>3. Cyclical Nature: The stock&#x27;s performance is closely tied to economic cycles, automotive industry trends, and consumer sentiment toward premium vehicles.</p>
+<p>4. Volatility Premium: Investors are compensated with higher returns for accepting the cyclical volatility inherent in the automotive sector.</p>
+<p>5. Recent Challenges: The 2024 decline -14.77% suggests current headwinds, potentially related to electric vehicle transition, supply chain issues, or broader market concerns.</p>
+<h3>Strategic Considerations for Investors</h3>
+<p>For Long-Term Investors:</p>
+<ul><li>BMW&#x27;s 28-year track record demonstrates resilience and value creation</li><li>Current valuation may present opportunity if concerns are overblown</li><li>Focus on long-term transition to electric vehicles and sustainability</li></ul>
+<p>For Short-Term Traders:</p>
+<ul><li>Significant volatility provides trading opportunities</li><li>Moving averages 20, 50, 200-day offer effective support/resistance levels</li><li>Volume analysis can help identify potential trend reversals</li></ul>
+<p>For Risk Management:</p>
+<ul><li>Position sizing is critical given historical 50%+ drawdowns</li><li>Consider diversification within automotive sector</li><li>Monitor economic indicators affecting consumer discretionary spending</li></ul>
+<h2>Conclusion</h2>
+<p>BMW&#x27;s stock analysis from 1997-2024 reveals a compelling investment story characterized by significant long-term growth, resilience through multiple crises, and characteristic cyclicality of the automotive industry. The stock&#x27;s 733% total return demonstrates its ability to create substantial shareholder value over nearly three decades.</p>
+<p>While recent performance in 2024 shows challenges -14.77%, the historical pattern suggests BMW has the capacity to recover and adapt to changing market conditions. The company&#x27;s strong brand, engineering excellence, and ongoing transition to electric vehicles position it for potential future growth.</p>
+<p>Investors should consider BMW&#x27;s risk-return profile carefully, understanding its cyclical nature and volatility while appreciating its long-term value creation track record. The comprehensive analysis provided here serves as a foundation for informed investment decisions, with ongoing monitoring of company fundamentals, industry trends, and macroeconomic factors essential for successful long-term investment outcomes.</p>
+<hr/>
+<p>Data Files Available:</p>
+<ul><li>Cleaned dataset: </li><li>Summary statistics: </li></ul>
+<p>Chart Files Generated:</p>
+<ul><li>Price trend with moving averages: </li><li>Daily returns analysis: </li><li>Annual returns: </li><li>Volatility analysis: </li><li>Returns distribution: </li><li>Trading volume: </li><li>Decade performance: </li><li>Monthly patterns: </li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

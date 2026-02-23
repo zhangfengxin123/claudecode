@@ -1,0 +1,16 @@
+[
+  {
+    "name": "master_tweets.csv",
+    "local": "master_tweets.csv",
+    "ok": true,
+    "error": "",
+    "size": 22573535
+  },
+  {
+    "name": "network_edges.csv",
+    "local": "network_edges.csv",
+    "ok": true,
+    "error": "",
+    "size": 2898204
+  }
+]

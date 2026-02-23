@@ -1,0 +1,44 @@
+[
+  {
+    "name": "JP.csv",
+    "local": "JP.csv",
+    "ok": true,
+    "error": "",
+    "size": 145417
+  },
+  {
+    "name": "FR.csv",
+    "local": "FR.csv",
+    "ok": true,
+    "error": "",
+    "size": 440847
+  },
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 158
+  },
+  {
+    "name": "EN.csv",
+    "local": "EN.csv",
+    "ok": true,
+    "error": "",
+    "size": 1011879
+  },
+  {
+    "name": "DE.csv",
+    "local": "DE.csv",
+    "ok": true,
+    "error": "",
+    "size": 675097
+  },
+  {
+    "name": "KR.csv",
+    "local": "KR.csv",
+    "ok": true,
+    "error": "",
+    "size": 211724
+  }
+]

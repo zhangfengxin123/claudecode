@@ -1,0 +1,16 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 41
+  },
+  {
+    "name": "qog_std_cs_jan25.csv",
+    "local": "qog_std_cs_jan25.csv",
+    "ok": true,
+    "error": "",
+    "size": 1828330
+  }
+]

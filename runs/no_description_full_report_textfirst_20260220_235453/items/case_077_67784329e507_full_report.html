@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：order submitted</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：order submitted</h1>
+    <p class='sub'>来源: /view/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;混淆矩阵深度分析报告：订单标签预测模型性能评估&quot;
+description: &quot;对订单标签预测模型的全面分析，涵盖混淆矩阵、性能指标、错误类型分布及优化建议&quot;
+author: &quot;Pardus AI&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h2>执行摘要</h2>
+<p>本报告基于混淆矩阵完整分析数据，对订单标签预测模型进行了全面的性能评估。模型在总共 32,465条业务数据上展现出优异的性能表现：</p>
+<ul><li>准确率: 98.85%</li><li>召回率: 98.90%</li><li>精确率: 99.36%</li><li>F1 Score: 99.13%</li></ul>
+<p>尽管整体性能优秀，但通过深入分析发现 Type II 错误 FN的绝对数量（236例）是 Type I 错误 FP的1.7倍，需要优先关注和优化。</p>
+<h2>1. 混淆矩阵概览</h2>
+<h3>1.1 数据分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>category_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/category_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>类别</th><th>数量</th><th>占比</th><th>说明</th></tr></thead><tbody><tr><td>TP True Positives</td><td>21,257</td><td>65.48%</td><td>有真正下单且有标签</td></tr><tr><td>TN True Negatives</td><td>10,835</td><td>33.37%</td><td>无真正下单且无标签</td></tr><tr><td>FN False Negatives</td><td>236</td><td>0.73%</td><td>无真正下单但有标签</td></tr><tr><td>FP False Positives</td><td>137</td><td>0.42%</td><td>有真正下单但无标签</td></tr><tr><td>总计</td><td>32,465</td><td>100.00%</td><td>-</td></tr></tbody></table></div>
+<p>1.2 混淆矩阵热力图</p>
+<div class='plot-card'><div class='plot-meta'><code>confusion_matrix_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/confusion_matrix_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键观察</strong></p>
+<ul><li>模型正确分类了 32,092条数据（98.85%），表现卓越</li><li>Type I 错误（FP）仅占 0.42%，表明模型在避免误报方面表现优异</li><li>Type II 错误（FN）占 0.73%，虽然比例不高但绝对数量需要关注</li><li>正样本（有标签）与负样本（无标签）比例为 1.96:1，数据相对平衡</li></ul>
+<h2>2. 性能指标分析</h2>
+<h3>2.1 核心性能指标</h3>
+<div class='plot-card'><div class='plot-meta'><code>performance_metrics.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/performance_metrics.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数值</th><th>计算公式</th><th>业务含义</th></tr></thead><tbody><tr><td>召回率 Recall</td><td>98.90%</td><td>TP/TP+FN</td><td>在所有有标签的业务中，模型能正确识别的比例</td></tr><tr><td>精确率 Precision</td><td>99.36%</td><td>TP/TP+FP</td><td>在模型预测为有标签的业务中，实际上有标签的比例</td></tr><tr><td>F1 Score</td><td>99.13%</td><td>2×P×R/P+R</td><td>召回率和精确率的调和平均数，综合指标</td></tr><tr><td>准确率 Accuracy</td><td>98.85%</td><td>TP+TN/Total</td><td>所有正确分类的比例</td></tr></tbody></table></div>
+<p>2.2 错误率分析</p>
+<ul><li>误报率 FPR: FP/FP+TN = 137/10,972 = 1.25%</li><li>漏报率 FNR: FN/FN+TP = 236/21,493 = 1.10%</li></ul>
+<p><strong>关键发现</strong></p>
+<h2>3. 错误类型深度分析</h2>
+<h3>3.1 两类错误对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>error_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/error_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h4>Type I 错误 </h4>
+<p>FP: 有单无标签 - 137例</p>
+<p><strong>定义</strong></p>
+<h4>Type II 错误 </h4>
+<p>FN: 无单有标签 - 236例</p>
+<p><strong>定义</strong></p>
+<p><strong>业务影响对比</strong></p>
+<ul><li>FP: 客户可能被过度营销，增加运营成本</li><li>FN: 漏失高价值客户，可能造成收入损失</li><li>结论: FN 的业务影响更大，应优先解决</li></ul>
+<h3>3.2 FP 详细分析</h3>
+<h4>FP Call Result Tags 分布</h4>
+<div class='plot-card'><div class='plot-meta'><code>fp_tags_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/fp_tags_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>主要发现</strong></p>
+<p>1. Order Modification91例，占66.4%: 绝大多数FP来自订单修改场景，这表明模型在识别&quot;订单修改&quot;标签时存在明显缺陷</p>
+<p>2. Inquiry14例，占10.2%: 咨询类业务被误判</p>
+<p>3. Follow Up Order6例: 后续订单也被误识别</p>
+<p>4. Test Call4例: 测试调用影响</p>
+<p>5. 15例没有明确的tags信息</p>
+<p><strong>业务洞察</strong></p>
+<h3>3.3 FN 详细分析</h3>
+<h4>FN Call Result Tags 分布</h4>
+<div class='plot-card'><div class='plot-meta'><code>fn_tags_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/fn_tags_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>惊人发现</strong></p>
+<ul><li>233例FN 占98.7% 的标签都是 &quot;Call Result: Order submitted&quot;</li><li>这与TP的标签完全相同（TP中有21,253例也是Order submitted）</li><li>但这些FN的 全部为 </li></ul>
+<h4>FN 真实订单分布</h4>
+<div class='plot-card'><div class='plot-meta'><code>fn_order_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/fn_order_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>核心问题</strong></p>
+<p><strong>0</strong></p>
+<ul><li>系统给这些业务打上了&quot;Order submitted&quot;标签</li><li>但实际上没有任何真实订单产生</li><li>这是标签生成逻辑的根本性错误</li></ul>
+<h4>FN Order Modification 标记分析</h4>
+<div class='plot-card'><div class='plot-meta'><code>fn_modification_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/fn_modification_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>关键对比</strong></p>
+<ul><li>FN中 152例64.4% 的 为 </li><li>这进一步证明了FN的主要来源是&quot;订单修改&quot;场景</li><li>但这些修改最终没有产生真实订单，却被标记为&quot;Order submitted&quot;</li></ul>
+<p><strong>业务洞察</strong></p>
+<h3>3.4 TN 数据分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>tn_tags_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/tn_tags_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>主要类别</strong></p>
+<p>1. Inquiry3,588例: 纯咨询，无订单</p>
+<p>2. Ghost Call1,394例: 空号或无效呼叫</p>
+<p>3. Automated Online Order859例: 自动在线订单</p>
+<p>4. null731例: 无tags信息</p>
+<p>5. Transferred to Restaurant593例: 转接到餐厅</p>
+<p>6. Changed Mind509例: 改变主意</p>
+<p>7. Call got disconnected413例: 通话断开</p>
+<p>8. Online Order395例: 在线订单</p>
+<p><strong>观察</strong></p>
+<h2>4. 模型性能综合评估</h2>
+<div class='plot-card'><div class='plot-meta'><code>model_performance_summary.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/model_performance_summary.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>4.1 ROC 曲线分析视角</h3>
+<p>从混淆矩阵数据可以推断：</p>
+<ul><li>真阳性率 TPR: 98.90%</li><li>假阳性率 FPR: 1.25%</li></ul>
+<p>这两个指标表明模型位于ROC曲线的左上角区域，表现出色。理想情况下，我们希望 TPR 高且 FPR 低，模型很好地实现了这一目标。</p>
+<h3>4.2 精确率-召回率平衡</h3>
+<ul><li>精确率 99.36% 略高于召回率 98.90%</li><li>这表明模型更倾向于保守预测，宁可漏判也不愿误判</li><li>对于订单标签预测这种场景，这种保守策略可能是合理的</li><li>但需要根据业务需求平衡，如果漏掉高价值客户的代价更高，则需要提高召回率</li></ul>
+<h2>5. 业务流程分析</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/analysis_flow.svg' alt='analysis_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/67784329e507742fa7ea5c28e1461df9c11d71d4eab5c9fa1b08587cf6c2cfb3/assets/analysis_flow.svg' target='_blank' rel='noopener noreferrer'>analysis_flow.svg</a></figcaption></figure>
+<p>该流程图展示了从原始数据到优化建议的完整分析路径，包括：</p>
+<p>1. 数据分类为 TP、FP、FN、TN 四个类别</p>
+<p>2. 性能指标计算和评估</p>
+<p>3. 对FP和FN的深入分析</p>
+<p>4. 基于分析结果的优化建议</p>
+<h2>6. 深度洞察与发现</h2>
+<h3>6.1 根本原因分析</h3>
+<h4>FN 问题的根源</h4>
+<p><strong>最关键的发现</strong></p>
+<ul><li>FN中 98.7%的标签都是 &quot;Call Result: Order submitted&quot;</li><li>但这些业务的 全部为 0</li><li>为 的占 64.4%</li></ul>
+<p><strong>结论</strong></p>
+<p>1. 系统将&quot;订单修改&quot;错误地标记为&quot;Order submitted&quot;</p>
+<p>2. 可能的原因包括：</p>
+<p>    订单修改被误认为是新订单提交</p>
+<p>    取消订单的流程没有正确处理标签</p>
+<p>    订单数据同步延迟或错误</p>
+<h4>FP 问题的根源</h4>
+<p><strong>主要问题</strong></p>
+<p>91例，占66.4%</p>
+<p><strong>业务逻辑问题</strong></p>
+<ul><li>客户修改订单后，原有的&quot;订单提交&quot;标签被清除</li><li>但实际上客户仍然完成了下单</li><li>这表明标签更新逻辑与实际业务状态不匹配</li></ul>
+<h3>6.2 业务影响量化</h3>
+<div class='table-wrap'><table><thead><tr><th>错误类型</th><th>数量</th><th>单次预估损失</th><th>总损失</th><th>优先级</th></tr></thead><tbody><tr><td>FN 漏标</td><td>236</td><td>¥100-500</td><td>¥23,600-118,000</td><td>高</td></tr><tr><td>FP 误标</td><td>137</td><td>¥50-100</td><td>¥6,850-13,700</td><td>中</td></tr><tr><td>总计</td><td>373</td><td>-</td><td>¥30,450-131,700</td><td>-</td></tr></tbody></table></div>
+<p>注意: 上述损失估算是基于典型电商业务场景的假设，实际损失需要根据具体业务模型计算。</p>
+<h3>6.3 数据质量评估</h3>
+<h4>正面因素</h4>
+<ul><li>总体数据质量高，98.85%的准确率表明数据标注可靠</li><li>TP和TN的数据一致性良好</li><li>Tags信息完整性较高（FP中仅10.9%为null，TN中6.7%为null）</li></ul>
+<h4>负面因素</h4>
+<ul><li>FN中标签生成逻辑存在系统性错误</li><li>Order Modification 场景下的标签处理不一致</li><li>部分记录缺少tags信息，影响分析深度</li></ul>
+<h2>7. 优化建议</h2>
+<h3>7.1 紧急优化 </h3>
+<p>高优先级</p>
+<h4>1. 修复FN的标签生成逻辑</h4>
+<p><strong>目标</strong></p>
+<p><strong>具体措施</strong></p>
+<ul><li>检查&quot;Order submitted&quot;标签的生成条件</li><li>确保只有真实产生的订单才被打上&quot;Order submitted&quot;标签</li><li>修复订单修改、取消场景下的标签处理逻辑</li><li>添加 的前置验证</li></ul>
+<p><strong>预期效果</strong></p>
+<h4>2. 改进Order Modification场景的标签处理</h4>
+<p><strong>目标</strong></p>
+<p><strong>具体措施</strong></p>
+<ul><li>为订单修改场景设计专门的标签逻辑</li><li>订单修改后不应清除原有的&quot;Order submitted&quot;标签</li><li>区分&quot;新订单&quot;、&quot;订单修改&quot;、&quot;订单取消&quot;三种场景</li><li>建立订单状态与标签的映射表</li></ul>
+<p><strong>预期效果</strong></p>
+<h3>7.2 中期优化 </h3>
+<p>中优先级</p>
+<h4>3. 优化Inquiry等边缘场景的标签识别</h4>
+<ul><li>FP中14例来自Inquiry场景</li><li>需要建立更精确的规则判断</li><li>考虑使用机器学习模型辅助判断</li></ul>
+<h4>4. 提升标签完整性</h4>
+<ul><li>TN中6.7%的记录缺少tags信息</li><li>FP中10.9%的记录缺少tags信息</li><li>完善标签记录机制，确保关键信息不丢失</li></ul>
+<h3>7.3 长期优化 </h3>
+<p>低优先级</p>
+<h4>5. 引入模型训练和持续优化</h4>
+<ul><li>使用当前数据作为训练集</li><li>训练分类模型替代规则引擎</li><li>建立A/B测试机制，验证优化效果</li></ul>
+<h4>6. 监控和预警系统</h4>
+<ul><li>建立实时监控面板</li><li>当FN或FP比例超过阈值时自动报警</li><li>定期分析新的错误案例</li></ul>
+<h2>8. 风险评估</h2>
+<h3>8.1 当前风险</h3>
+<div class='table-wrap'><table><thead><tr><th>风险类型</th><th>风险等级</th><th>影响范围</th><th>缓解措施</th></tr></thead><tbody><tr><td>标签生成逻辑错误</td><td>高</td><td>FN占比0.73%</td><td>立即修复生成逻辑</td></tr><tr><td>Order Modification误判</td><td>中</td><td>FP/FN共涉及373例</td><td>优化标签更新机制</td></tr><tr><td>数据质量下降</td><td>低</td><td>Tags缺失6-10%</td><td>完善记录流程</td></tr></tbody></table></div>
+<p>8.2 优化后风险</p>
+<ul><li>模型召回率提升至 99.70%+</li><li>FP数量减少至 &lt;50例</li><li>整体准确率提升至 99.5%+</li></ul>
+<h2>9. 结论</h2>
+<h3>9.1 总结</h3>
+<p>本分析报告对订单标签预测模型进行了全面评估，得出以下核心结论：</p>
+<p>1. 模型整体性能优异: 98.85%的准确率、98.90%的召回率、99.36%的精确率表明模型在大多数情况下表现卓越</p>
+<p>2. 存在系统性问题: FN中98.7%的案例都存在标签生成逻辑错误，这是模型性能进一步提升的主要瓶颈</p>
+<p>3. 优化潜力巨大: 通过修复标签生成逻辑，预计可以将召回率提升至99.70%以上，整体准确率提升至99.5%以上</p>
+<p>4. 业务影响显著: 当前373例错误案例可能导致¥30,450-131,700的潜在损失</p>
+<h3>9.2 行动建议</h3>
+<p><strong>立即执行</strong></p>
+<p>1. 召开技术评审会议，讨论FN标签生成逻辑的修复方案</p>
+<p>2. 修复&quot;Order submitted&quot;标签的生成条件验证</p>
+<p>3. 优化Order Modification场景的标签处理逻辑</p>
+<p><strong>2周内完成</strong></p>
+<p>4. 部署修复后的标签生成系统</p>
+<p>5. 验证修复效果，监控FN和FP的变化</p>
+<p>6. 建立错误案例回顾机制</p>
+<p><strong>1个月内完成</strong></p>
+<p>7. 完善标签记录流程，提高数据完整性</p>
+<p>8. 建立实时监控和预警系统</p>
+<p>9. 规划模型训练和持续优化方案</p>
+<h3>9.3 展望</h3>
+<p>通过系统性的优化，预期模型性能将达到新的高度：</p>
+<ul><li>召回率: 98.90% → 99.70%+</li><li>精确率: 99.36% → 99.50%+</li><li>准确率: 98.85% → 99.50%+</li><li>FN数量: 236 → &lt;50</li><li>FP数量: 137 → &lt;50</li></ul>
+<p>这将显著提升订单标签预测的可靠性，减少业务损失，提高运营效率。</p>
+<hr/>
+<p><strong>附录</strong></p>
+<ul><li>数据文件: </li><li>分析工具: Pardus AI 量化分析系统</li><li>分析日期: 2025-01-13</li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

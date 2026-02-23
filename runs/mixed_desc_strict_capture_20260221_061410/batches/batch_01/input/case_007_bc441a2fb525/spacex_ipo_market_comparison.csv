@@ -1,0 +1,12 @@
+rank,company,ipo_year,amount_raised_usd_billion,ipo_valuation_usd_billion,stock_exchange,sector,source,url,date_retrieved
+1,Saudi Aramco,2019,25.6,1707,Tadawul,Energy,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+2,Alibaba,2014,21.8,175,NYSE,Technology,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+3,SoftBank Corp,2018,21.3,64,Tokyo Stock Exchange,Communication Services,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+4,NTT Mobile,1998,18.1,76,Tokyo Stock Exchange,Communication Services,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+5,Visa,2008,17.9,34,NYSE,Financials,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+6,AIA (American International Assurance),2010,17.8,31,Hong Kong Exchange,Financials,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+7,ENEL SpA,1999,16.5,55,NYSE,Utilities,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+8,Facebook,2012,16.0,104,Nasdaq,Technology,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+9,General Motors,2010,15.8,62,NYSE,Consumer Discretionary,Renaissance Capital,https://www.renaissancecapital.com/IPO-Center/Stats/Largest-Global-IPOs,2026-02-02
+10,ICBC Bank (Hong Kong),2006,15.77,30,Hong Kong Exchange,Financials,DealRoom,https://dealroom.net/blog/biggest-ipos-of-all-time,2026-02-02
+,SpaceX (predicted),2026,30-50,1500,TBD (likely NYSE/Nasdaq),Aerospace/Technology,Multiple sources,Various,2026-02-02

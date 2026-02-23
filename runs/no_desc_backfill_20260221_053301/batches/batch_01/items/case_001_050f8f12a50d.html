@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 050f8f12a50d</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>(untitled)</h1>
+  <div class='muted'>case_id: <span class='code'>050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_001_050f8f12a50d</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>_labels.csv</code></td><td>200</td><td>156451</td><td>text/csv</td><td><code>input/case_001_050f8f12a50d/_labels.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa/files/_labels.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>refunds.csv</code></td><td>200</td><td>267440</td><td>text/csv</td><td><code>input/case_001_050f8f12a50d/refunds.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa/files/refunds.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>transactions.csv</code></td><td>200</td><td>11230077</td><td>text/csv</td><td><code>input/case_001_050f8f12a50d/transactions.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa/files/transactions.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>disputes.csv</code></td><td>200</td><td>119129</td><td>text/csv</td><td><code>input/case_001_050f8f12a50d/disputes.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa/files/disputes.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr><tr><td><code>merchants.csv</code></td><td>200</td><td>1051390</td><td>text/csv</td><td><code>input/case_001_050f8f12a50d/merchants.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/050f8f12a50d6b82871ad702c5cc3aa0f5e3e355927adf5184e3b1655f8aadfa/files/merchants.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>_labels.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>merchant_id</th><th>label_is_bad</th><th>total_fraud_loss</th><th>label_generated_ts</th><th>label_generated_stage</th></tr></thead><tbody><tr><td>m_00001</td><td>0</td><td>1.08</td><td></td><td></td></tr><tr><td>m_00002</td><td>0</td><td>0.19</td><td></td><td></td></tr><tr><td>m_00003</td><td>0</td><td>2.35</td><td></td><td></td></tr><tr><td>m_00004</td><td>0</td><td>2.05</td><td></td><td></td></tr><tr><td>m_00005</td><td>0</td><td>0.78</td><td></td><td></td></tr><tr><td>m_00006</td><td>0</td><td>0.49</td><td></td><td></td></tr><tr><td>m_00007</td><td>0</td><td>6.18</td><td></td><td></td></tr><tr><td>m_00008</td><td>0</td><td>3.46</td><td></td><td></td></tr></tbody></table></details><details><summary><code>refunds.csv</code> · HTTP 200 · csv · head-only preview</summary><table><thead><tr><th>refund_id</th><th>transaction_id</th><th>merchant_id</th><th>refund_ts</th><th>refund_amount</th><th>refund_reason</th><th>is_partial_refund</th></tr></thead><tbody><tr><td>r_0000001</td><td>t_0000031</td><td>m_00002</td><td>2025-06-24 17:59:00</td><td>43.56</td><td>return</td><td>True</td></tr><tr><td>r_0000002</td><td>t_0000048</td><td>m_00005</td><td>2025-07-18 09:43:00</td><td>141.98</td><td>customer_request</td><td>False</td></tr><tr><td>r_0000003</td><td>t_0000078</td><td>m_00008</td><td>2025-05-23 19:08:00</td><td>47.14</td><td>customer_request</td><td>True</td></tr><tr><td>r_0000004</td><td>t_0000084</td><td>m_00008</td><td>2025-06-28 15:38:00</td><td>260.79</td><td>service_issue</td><td>False</td></tr><tr><td>r_0000005</td><td>t_0000112</td><td>m_00009</td><td>2025-11-04 12:41:00</td><td>138.99</td><td>service_issue</td><td>False</td></tr><tr><td>r_0000006</td><td>t_0000192</td><td>m_00014</td><td>2026-02-08 04:47:00</td><td>284.44</td><td>customer_request</td><td>True</td></tr><tr><td>r_0000007</td><td>t_0000248</td><td>m_00018</td><td>2025-09-21 15:52:00</td><td>205.42</td><td>return</td><td>False</td></tr><tr><td>r_0000008</td><td>t_0000280</td><td>m_00018</td><td>2025-11-11 20:54:00</td><td>138.86</td><td>customer_request</td><td>True</td></tr></tbody></table></details><details><summary><code>transactions.csv</code> · HTTP 200 · csv · head-only preview</summary><table><thead><tr><th>transaction_id</th><th>merchant_id</th><th>user_id</th><th>txn_ts</th><th>amount</th><th>currency</th><th>payment_method</th><th>is_approved</th><th>decision_type</th><th>shipping_country</th><th>billing_country</th><th>device_type</th><th>is_fraud_txn</th></tr></thead><tbody><tr><td>t_0000001</td><td>m_00001</td><td>u_150260</td><td>2025-11-08 23:01:00</td><td>460.15</td><td>USD</td><td>card</td><td>True</td><td>auto</td><td>US</td><td>US</td><td>mobile</td><td>False</td></tr><tr><td>t_0000002</td><td>m_00001</td><td>u_127632</td><td>2025-11-17 21:26:00</td><td>115.26</td><td>USD</td><td>card</td><td>True</td><td>auto</td><td>US</td><td>US</td><td>mobile</td><td>False</td></tr><tr><td>t_0000003</td><td>m_00001</td><td>u_229425</td><td>2025-11-26 04:54:00</td><td>653.97</td><td>USD</td><td>card</td><td>True</td><td>auto</td><td>US</td><td>US</td><td>mobile</td><td>False</td></tr><tr><td>t_0000004</td><td>m_00001</td><td>u_171789</td><td>2025-12-03 19:24:00</td><td>459.11</td><td>USD</td><td>card</td><td>True</td><td>auto</td><td>US</td><td>US</td><td>mobile</td><td>False</td></tr><tr><td>t_0000005</td><td>m_00001</td><td>u_096313</td><td>2025-12-09 23:32:00</td><td>1099.29</td><td>USD</td><td>card</td><td>True</td><td>auto</td><td>US</td><td>US</td><td>mobile</td><td>False</td></tr><tr><td>t_0000006</td><td>m_00001</td><td>u_126453</td><td>2025-12-16 21:00:00</td><td>305.19</td><td>USD</td><td>card</td><td>True</td><td>auto</td><td>US</td><td>US</td><td>desktop</td><td>False</td></tr><tr><td>t_0000007</td><td>m_00001</td><td>u_399804</td><td>2025-12-29 10:25:00</td><td>488.5</td><td>USD</td><td>card</td><td>True</td><td>auto</td><td>US</td><td>US</td><td>tablet</td><td>False</td></tr><tr><td>t_0000008</td><td>m_00001</td><td>u_020740</td><td>2025-12-29 11:56:00</td><td>449.27</td><td>USD</td><td>ach</td><td>True</td><td>auto</td><td>US</td><td>US</td><td>mobile</td><td>False</td></tr></tbody></table></details><details><summary><code>disputes.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>dispute_id</th><th>transaction_id</th><th>merchant_id</th><th>dispute_open_ts</th><th>dispute_amount</th><th>dispute_reason</th><th>dispute_outcome</th><th>dispute_close_ts</th><th>is_fraud_dispute</th></tr></thead><tbody><tr><td>d_0000001</td><td>t_0000008</td><td>m_00001</td><td>2026-03-15 08:56:00</td><td>449.27</td><td>not_received</td><td>pending</td><td></td><td>False</td></tr><tr><td>d_0000002</td><td>t_0000208</td><td>m_00015</td><td>2025-11-06 06:56:00</td><td>153.63</td><td>not_received</td><td>won</td><td>2025-12-03 06:56:00</td><td>False</td></tr><tr><td>d_0000003</td><td>t_0000226</td><td>m_00016</td><td>2025-07-11 02:53:00</td><td>218.42</td><td>not_received</td><td>pending</td><td></td><td>False</td></tr><tr><td>d_0000004</td><td>t_0000407</td><td>m_00022</td><td>2026-05-21 00:22:00</td><td>117.97</td><td>fraud</td><td>lost</td><td>2026-07-02 00:22:00</td><td>True</td></tr><tr><td>d_0000005</td><td>t_0000478</td><td>m_00027</td><td>2025-11-11 23:07:00</td><td>405.9</td><td>other</td><td>won</td><td>2025-12-09 23:07:00</td><td>False</td></tr><tr><td>d_0000006</td><td>t_0000738</td><td>m_00039</td><td>2025-06-02 15:32:00</td><td>297.05</td><td>fraud</td><td>won</td><td>2025-06-28 15:32:00</td><td>True</td></tr><tr><td>d_0000007</td><td>t_0000804</td><td>m_00041</td><td>2026-01-10 01:54:00</td><td>268.34</td><td>fraud</td><td>lost</td><td>2026-02-02 01:54:00</td><td>True</td></tr><tr><td>d_0000008</td><td>t_0000849</td><td>m_00044</td><td>2025-07-05 18:20:00</td><td>85.93</td><td>not_as_described</td><td>lost</td><td>2025-07-19 18:20:00</td><td>False</td></tr></tbody></table></details><details><summary><code>merchants.csv</code> · HTTP 200 · csv · head-only preview</summary><table><thead><tr><th>merchant_id</th><th>merchant_name</th><th>merchant_email</th><th>onboarding_date</th><th>industry</th><th>country</th><th>platform</th><th>acquisition_channel</th><th>requested_limit</th><th>expected_aov</th><th>kyb_tier</th><th>approval_method</th><th>uw_decision</th><th>uw_decision_date</th><th>uw_reason_code</th></tr></thead><tbody><tr><td>m_00001</td><td>Nimbus Goods</td><td>mvgrefyuft@store.com</td><td>2025-11-07</td><td>auto_parts</td><td>US</td><td>shopify</td><td>inbound</td><td>60174</td><td>428.25</td><td>med</td><td>auto</td><td>approved</td><td>2025-11-08</td><td></td></tr><tr><td>m_00002</td><td>Cedar Boutique</td><td>baughufnld@yahoo.com</td><td>2025-03-07</td><td>marketplace</td><td>US</td><td>bigcommerce</td><td>inbound</td><td>86302</td><td>125.54</td><td>low</td><td>auto</td><td>approved</td><td>2025-03-13</td><td></td></tr><tr><td>m_00003</td><td>Orbit Collective</td><td>ojjbby@mailinator.com</td><td>2025-01-10</td><td>digital_goods</td><td>US</td><td>salesforce_cc</td><td>inbound</td><td>32523</td><td>75.13</td><td>med</td><td>manual</td><td>declined</td><td>2025-01-14</td><td>HIGH_RISK</td></tr><tr><td>m_00004</td><td>Nimbus Hub</td><td>orbabduztz@gmail.com</td><td>2025-08-22</td><td>digital_goods</td><td>US</td><td>custom</td><td>outbound</td><td>36074</td><td>68.7</td><td>low</td><td>manual</td><td>approved</td><td>2025-08-27</td><td></td></tr><tr><td>m_00005</td><td>Evergreen Hub</td><td>dqppldkydv@store.com</td><td>2025-05-14</td><td>fashion</td><td>US</td><td>shopify</td><td>partner</td><td>22439</td><td>114.21</td><td>low</td><td>auto</td><td>approved</td><td>2025-05-16</td><td></td></tr><tr><td>m_00006</td><td>Marlin Direct</td><td>prrapnb@sharklasers.com</td><td>2025-06-20</td><td>digital_goods</td><td>US</td><td>custom</td><td>inbound</td><td>53933</td><td>62.93</td><td>low</td><td>auto</td><td>approved</td><td>2025-06-26</td><td></td></tr><tr><td>m_00007</td><td>Cedar Supply</td><td>rzulej@company.com</td><td>2025-01-30</td><td>home_goods</td><td>GB</td><td>shopify</td><td>partner</td><td>71147</td><td>265.04</td><td>low</td><td>auto</td><td>approved</td><td>2025-02-02</td><td></td></tr><tr><td>m_00008</td><td>Lumen Direct</td><td>kyaivhjdlb@merchant.com</td><td>2025-05-16</td><td>home_goods</td><td>US</td><td>custom</td><td>inbound</td><td>89138</td><td>309.3</td><td>med</td><td>auto</td><td>approved</td><td>2025-05-22</td><td></td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td colspan="7">no assets</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <p class="muted">no renderable charts</p>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

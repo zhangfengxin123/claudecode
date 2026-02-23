@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Heart Attack Data Set</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Heart Attack Data Set</h1>
+    <p class='sub'>来源: /view/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Heart Disease Risk Analysis: Comprehensive Clinical Data Study&quot;
+description: &quot;An in-depth analysis of cardiovascular health indicators and their relationship to heart disease using clinical patient data&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Heart Disease Risk Analysis: Comprehensive Clinical Data Study</h1>
+<p>This comprehensive analysis examines cardiovascular health indicators from 303 patients to identify key risk factors and patterns associated with heart disease. The study leverages 14 clinical variables including demographics, vital signs, and diagnostic test results to provide actionable insights for cardiovascular risk assessment.</p>
+<h2>Executive Summary</h2>
+<p>This analysis reveals several critical findings:</p>
+<ul><li>Heart disease prevalence: 54.5% of patients 165 out of 303 show evidence of heart disease</li><li>Age correlation: Risk increases significantly with age, reaching 72.5% in patients 60+ years old</li><li>Asymptomatic presentation: 77% of patients with asymptomatic chest pain have heart disease</li><li>Gender differences: Males show higher disease prevalence 63.2% vs 25.9% for females</li><li>Vessel count: 82.6% of patients with 3+ major vessels colored have heart disease</li><li>ST depression: Elevated ST depression oldpeak is strongly associated with heart disease</li></ul>
+<p>The analysis identifies age, chest pain type, number of major vessels, and ST depression as the strongest predictors of heart disease.</p>
+<h2>Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What statistical methods were used in this analysis?</li><li>How reliable is the dataset for predictive modeling?</li><li>What data preprocessing steps were applied?</li></ul></details>
+<p>The analysis utilized a dataset of 303 patient records with 14 clinical variables. Data cleaning involved:</p>
+<p>1. Data Quality Assessment: Verified complete records with no missing values</p>
+<p>2. Variable Classification: Categorized variables into demographics, clinical measurements, and test results</p>
+<p>3. Statistical Analysis: Applied correlation analysis, distribution analysis, and comparative statistics</p>
+<p>4. Visualization: Created interactive charts to explore relationships between variables</p>
+<h3>Data Integrity</h3>
+<p>The dataset demonstrates high quality with:</p>
+<ul><li>Complete coverage: All 303 records contain valid data for all 14 variables</li><li>Standardized measurements: Consistent units and scales across clinical variables</li><li>Clear variable definitions: Each feature has well-documented clinical meaning</li></ul>
+<h2>Age and Demographics Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the most critical age range for heart disease risk?</li><li>How does the age distribution differ between disease and non-disease groups?</li><li>Are there any age outliers that warrant special attention?</li></ul></details>
+<h3>Age Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/age_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The age distribution reveals a clear pattern: heart disease prevalence increases with age. Key observations:</p>
+<ul><li>Mean age: 54.4 years overall 55.7 for disease, 52.9 for no disease</li><li>Age progression: </li></ul>
+<h3>Prevalence by Age Group</h3>
+<div class='plot-card'><div class='plot-meta'><code>disease_by_age.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/disease_by_age.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The data shows a strong positive correlation between age and heart disease risk:</p>
+<ul><li>Risk multiplier: Patients aged 60+ are 3.7x more likely to have heart disease compared to those under 40</li><li>Acceleration point: Risk increases significantly after age 50</li><li>Clinical implication: Age-based screening protocols should prioritize patients 50+</li></ul>
+<h3>Gender Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>disease_by_gender.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/disease_by_gender.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Gender reveals significant disparities in heart disease prevalence:</p>
+<ul><li>Male patients: 63.2% disease rate 129 out of 204</li><li>Female patients: 25.9% disease rate 25 out of 96</li><li>Risk ratio: Males are 2.4x more likely to have heart disease in this dataset</li><li>Demographic note: The dataset has a male skew 68.3%, which may reflect clinical recruitment patterns</li></ul>
+<h2>Clinical Vital Signs</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which vital signs show the strongest correlation with heart disease?</li><li>What are the optimal ranges for blood pressure and heart rate?</li><li>How do vital signs interact with other risk factors?</li></ul></details>
+<h3>Blood Pressure Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>bp_by_status.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/bp_by_status.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Resting blood pressure trestbps shows moderate association with heart disease:</p>
+<ul><li>Heart disease group: Median 131 mm Hg, IQR: 120-140 mm Hg</li><li>No disease group: Median 130 mm Hg, IQR: 120-140 mm Hg</li><li>Key insight: While there is overlap, higher BP readings 140 mm Hg are more common in the disease group</li><li>Outliers: Disease group shows more extreme values up to 200 mm Hg</li></ul>
+<h3>Cholesterol Levels</h3>
+<div class='plot-card'><div class='plot-meta'><code>chol_by_status.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/chol_by_status.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Cholesterol chol demonstrates a less clear relationship than expected:</p>
+<ul><li>Heart disease group: Median 242 mg/dl, IQR: 211-275 mg/dl</li><li>No disease group: Median 237 mg/dl, IQR: 207-262 mg/dl</li><li>Surprising finding: Both groups have similar median values</li><li>Interpretation: Cholesterol alone may be insufficient as a standalone predictor; other factors HDL/LDL ratios, triglycerides may provide better discrimination</li></ul>
+<h3>Age vs Maximum Heart Rate</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_vs_max_hr.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/age_vs_max_hr.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The relationship between age and maximum heart rate achieved thalach reveals important patterns:</p>
+<ul><li>Inverse correlation: Maximum heart rate decreases with age physiologically expected</li><li>Disease group: Lower maximum heart rates at each age compared to non-disease group</li><li>Key insight: For a given age, patients with heart disease achieve lower peak heart rates during exercise testing</li><li>Clinical value: Reduced exercise capacity correlates with disease presence</li></ul>
+<h2>Diagnostic Test Results</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which diagnostic test is most predictive of heart disease?</li><li>How do different chest pain types correlate with disease status?</li><li>What is the clinical significance of ST depression?</li></ul></details>
+<h3>Chest Pain Type Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>disease_by_cp.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/disease_by_cp.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Chest pain type cp is one of the most powerful predictors in the dataset:</p>
+<ul><li>Asymptomatic type 3: 77% disease rate 105 out of 136 - highest risk</li><li>Atypical angina type 1: 82% disease rate 16 out of 20 - very high risk</li><li>Non-anginal pain type 2: 79% disease rate 35 out of 44 - high risk</li><li>Typical angina type 0: Only 27% disease rate 9 out of 33 - lowest risk</li></ul>
+<p>Counterintuitive finding: Typical angina, which would intuitively suggest heart disease, actually shows the lowest disease rate. This may reflect:</p>
+<p>1. Patient self-selection bias</p>
+<p>2. Atypical presentation being more common in actual disease</p>
+<p>3. Silent ischemia in asymptomatic patients</p>
+<h3>Exercise-Induced Angina</h3>
+<div class='plot-card'><div class='plot-meta'><code>disease_by_exang.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/disease_by_exang.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Exercise-induced angina exang shows strong correlation with heart disease:</p>
+<ul><li>Present exang=1: 76.9% disease rate 74 out of 96</li><li>Absent exang=0: 43.3% disease rate 91 out of 207</li><li>Risk ratio: Patients with exercise-induced angina are 1.8x more likely to have heart disease</li><li>Clinical value: Positive exercise test is a strong indicator of cardiovascular disease</li></ul>
+<h3>Major Vessels Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>disease_by_ca.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/disease_by_ca.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Number of major vessels colored by fluoroscopy ca is highly predictive:</p>
+<ul><li>0 vessels: 42.7% disease rate</li><li>1 vessel: 82.1% disease rate</li><li>2 vessels: 82.9% disease rate</li><li>3 vessels: 100% disease rate 20 out of 20</li><li>4 vessels: 100% disease rate 7 out of 7</li></ul>
+<p>Critical insight: The relationship is nearly monotonic - as the number of affected vessels increases, disease probability approaches 100%. This makes ca one of the strongest single predictors in the dataset.</p>
+<h2>Multivariate Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which variables have the highest correlation with heart disease?</li><li>Are there any surprising correlations in the data?</li><li>What variables are redundant for predictive modeling?</li></ul></details>
+<h3>Feature Correlation Matrix</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_matrix.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/15d733c1177da66817efedbcef543f3deec01746233ce7a84b6ef8f1c2d7f5cf/assets/correlation_matrix.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The correlation matrix reveals the strength and direction of relationships between all variables:</p>
+<p>Strongest positive correlations with target heart disease:</p>
+<ul><li>ca: +0.46 - Number of major vessels</li><li>cp: +0.43 - Chest pain type</li><li>thalach: -0.42 - Maximum heart rate negative correlation</li><li>exang: +0.44 - Exercise-induced angina</li><li>oldpeak: +0.43 - ST depression</li></ul>
+<p>Notable inter-variable correlations:</p>
+<ul><li>Age and maximum heart rate: -0.38 expected physiological relationship</li><li>Age and number of vessels: +0.38 accumulated damage over time</li><li>Chest pain type and exercise-induced angina: +0.40</li></ul>
+<p>Surprising findings:</p>
+<ul><li>Cholesterol shows low correlation+0.08 with disease status</li><li>Fasting blood sugar shows minimal correlation-0.03 with disease</li><li>Sex shows moderate correlation+0.28 with disease</li></ul>
+<h3>Key Predictive Variables Ranked</h3>
+<p>Based on correlation strength and clinical interpretability:</p>
+<p>1. Number of major vessels ca: r=+0.46 - Direct indicator of atherosclerotic burden</p>
+<p>2. Exercise-induced angina exang: r=+0.44 - Functional test of cardiovascular health</p>
+<p>3. Chest pain type cp: r=+0.43 - Patient symptom profile</p>
+<p>4. ST depression oldpeak: r=+0.43 - ECG evidence of ischemia</p>
+<p>5. Maximum heart rate thalach: r=-0.42 - Exercise capacity inverse marker</p>
+<h2>Clinical Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most important risk factors for heart disease?</li><li>How should this data be used in clinical practice?</li><li>What screening protocols are recommended based on these findings?</li></ul></details>
+<h3>Risk Stratification Model</h3>
+<p>Based on the analysis, patients can be stratified into risk tiers:</p>
+<p>High Risk 75% probability:</p>
+<ul><li>Asymptomatic chest pain cp=3</li><li>Exercise-induced angina present</li><li>3+ major vessels colored</li><li>Age 60+ with any additional risk factor</li></ul>
+<p>Moderate Risk 50-75% probability:</p>
+<ul><li>Age 50-59</li><li>Atypical or non-anginal chest pain</li><li>1-2 major vessels colored</li><li>Male gender with other risk factors</li></ul>
+<p>Low Risk 50% probability:</p>
+<ul><li>Age 50</li><li>Typical angina cp=0</li><li>No exercise-induced angina</li><li>0 major vessels colored</li><li>Female gender</li></ul>
+<h3>Clinical Recommendations</h3>
+<p>1. Screening prioritization:</p>
+<p>    Patients 50+ should receive regular cardiovascular screening</p>
+<p>    Asymptomatic patients with risk factors need stress testing</p>
+<p>    Exercise-induced angina warrants immediate evaluation</p>
+<p>2. Diagnostic emphasis:</p>
+<p>    Coronary angiography ca count provides highest diagnostic value</p>
+<p>    Exercise stress tests thalach, exang, oldpeak are highly informative</p>
+<p>    Chest pain characterization remains clinically valuable</p>
+<p>3. Risk factor management:</p>
+<p>    Age-appropriate screening protocols</p>
+<p>    Gender-specific risk counseling</p>
+<p>    Vessel burden tracking for progression monitoring</p>
+<h3>Limitations</h3>
+<p>1. Sample size: 303 patients is moderate but may limit generalizability</p>
+<p>2. Gender imbalance: 68% male patients may skew findings</p>
+<p>3. Single-center data: May not represent broader population diversity</p>
+<p>4. Missing variables: HDL/LDL ratios, family history, and lifestyle factors not included</p>
+<h2>Conclusions</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the primary takeaways from this analysis?</li><li>How can these findings improve patient outcomes?</li><li>What further research is needed?</li></ul></details>
+<p>This comprehensive analysis of heart disease data reveals several critical insights:</p>
+<h3>Key Findings</h3>
+<p>1. Age is the strongest demographic predictor, with 72.5% prevalence in patients 60+</p>
+<p>2. Asymptomatic presentation is surprisingly common77% of asymptomatic patients have disease</p>
+<p>3. Number of major vessels ca provides the strongest single diagnostic indicator- 100% disease rate with 3+ vessels</p>
+<p>4. Functional test results exercise-induced angina, ST depression, maximum heart rate are highly predictive</p>
+<p>5. Cholesterol and fasting blood sugar show surprisingly low correlationin this dataset, challenging conventional assumptions</p>
+<h3>Actionable Insights</h3>
+<ul><li>Screening: Implement age-based screening starting at 50, with priority for patients 60+</li><li>Diagnosis: Prioritize coronary angiography and exercise stress tests in high-risk presentations</li><li>Risk assessment: Combine chest pain characterization with functional test results for optimal accuracy</li><li>Patient education: Asymptomatic patients with risk factors need counseling about silent heart disease</li></ul>
+<h3>Future Directions</h3>
+<p>1. Expand datasetto include diverse populations and larger sample sizes</p>
+<p>2. Longitudinal trackingto assess progression and intervention effectiveness</p>
+<p>3. Integration of additional biomarkersHDL/LDL, CRP, troponin, etc.</p>
+<p>4. Machine learning modelingto develop predictive risk scores</p>
+<p>5. External validationof findings in independent populations</p>
+<p>This analysis provides a foundation for evidence-based cardiovascular risk assessment and highlights the value of combining demographic, symptomatic, and functional data in heart disease diagnosis.</p>
+<hr/>
+<p>Data Sources: Heart Attack Data Set 303 patients, 14 clinical variables</p>
+<p>Analysis Date: 2025-01-13</p>
+<p>Analyst: Pardus AI</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

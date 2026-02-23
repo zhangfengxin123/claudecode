@@ -1,0 +1,16 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 168
+  },
+  {
+    "name": "企业基本信息.xlsx",
+    "local": "企业基本信息.xlsx",
+    "ok": true,
+    "error": "",
+    "size": 710988
+  }
+]

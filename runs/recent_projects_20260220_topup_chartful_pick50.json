@@ -1,0 +1,335 @@
+{
+  "results": [
+    {
+      "case_id": "f9bc8f2ae5938e4838780b239f29dd649d5c565a9bf7729fd13bcd50f2319526",
+      "title": "2026-02-03"
+    },
+    {
+      "case_id": "c635ad8e8cdd21d2fca82e3392673193412180bf86f5a49a6e72cd9684123ea2",
+      "title": "genre_mapping"
+    },
+    {
+      "case_id": "7d44e51254facd240c2889c1abdd1207a70f531dafe8d80917e56dc50d72da73",
+      "title": "YC Test"
+    },
+    {
+      "case_id": "b733b0d9868152cc36bcbca94a734ee6bc5baefdb4f8cb095e6190540defe3d3",
+      "title": "BMW_Data"
+    },
+    {
+      "case_id": "75b56ffe89c9d1d3706d55847e722d1690e1afb352edd2902a64258323f2b573",
+      "title": "netflix_titles"
+    },
+    {
+      "case_id": "1aa38d48eff378585ead82fc5ccfacfa2bbf21d5f67c7b29a866da8eba185d34",
+      "title": "anime"
+    },
+    {
+      "case_id": "e13cd668cb257bab72be00d8fed7a8e0ac4401eca28c4bda2c63a6f6bad331e5",
+      "title": "anime"
+    },
+    {
+      "case_id": "f34e0437d3853f431b981e52294e6482343227d7ced441eb60afa80841b31d02",
+      "title": "netflix_titles"
+    },
+    {
+      "case_id": "370d57547c281f69e13248817dadd07df50e09f2cf4942e6aa116986a74c8d4f",
+      "title": "YC Companies"
+    },
+    {
+      "case_id": "fdd76ac1689100f9a33447734f8d16bfdf4f1195c85a461ad08e02cb405e07c3",
+      "title": "moltbook_top_posts"
+    },
+    {
+      "case_id": "e6945f31ddf9f01128aac4579387c0c582077b9e12a856e91681898a2e08b950",
+      "title": "lamborghini_sales_2020_2025 2"
+    },
+    {
+      "case_id": "aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a",
+      "title": "Diabetes_Mexico"
+    },
+    {
+      "case_id": "ce61adffe0355772acde99b5f5f08c99f826fa26ee70191c52098243340ed7d7",
+      "title": "NVIDIA STOCK DAILY TEST 2"
+    },
+    {
+      "case_id": "82f77ce7126c973383b3ea18e7b1b3816539342db41b09db835e9d3253ee38be",
+      "title": "Bank_Churn_Classification_Dataset"
+    },
+    {
+      "case_id": "89081bfde87937c6a102c2d0fb24a3e3b7f132f56a60e6e180488ede087c07a1",
+      "title": "lamborghini_sales_2020_2025"
+    },
+    {
+      "case_id": "26177fb2c9407047ac8851c830e8cf44f786fbefcede7392e1b80ef5e3ffeffd",
+      "title": "moltbook_top_posts"
+    },
+    {
+      "case_id": "c2bcdeec152405a6623419d62142e24fb7bd532f7e666e12a2b04701fec62529",
+      "title": "moltbook_top_posts"
+    },
+    {
+      "case_id": "3ef61fb3354bcc5b36a1f8182d9244861eee42970f92abab8603b959890bf3fd",
+      "title": "raw"
+    },
+    {
+      "case_id": "79a148d97dc00ce36fe5cbd8649fcb3ab6bbba0435bb5920741ba2fc6ba99ed2",
+      "title": "muyuan"
+    },
+    {
+      "case_id": "027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1",
+      "title": "top 5 tech stock analysis"
+    },
+    {
+      "case_id": "128c623201ff1881602dc7aaa5754f2a7b57fab006757c7e33b5a92f4b7e85ea",
+      "title": "业绩预告"
+    },
+    {
+      "case_id": "eff57f7b8bf57c13263316caa44066b1f63084ebbdc92d5924582b0b2a0991a0",
+      "title": "USUAL MONEY"
+    },
+    {
+      "case_id": "ebf6a1825a14e913e7b2201316c86789af23609b8e5c679057b0420408a6f490",
+      "title": "浙综长数据集"
+    },
+    {
+      "case_id": "4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860",
+      "title": "moltbook_top_5000_posts"
+    },
+    {
+      "case_id": "7ac205b8023d75351529b98dcec97976cd5b7dcec6b033aae20bb8f02db96561",
+      "title": "中国房地产2"
+    },
+    {
+      "case_id": "cb9c2152de12195c8a19d9dc25c589928dce64f7ff0833fc8f4f92e97096b773",
+      "title": "中国房地产"
+    },
+    {
+      "case_id": "38e382f569c32044b05b3279135a33fa011b3f5a65e1a309048fd18e16d03d82",
+      "title": "NVIDIA Daily Stock Prices Dataset analysis"
+    },
+    {
+      "case_id": "910532ced6849590e4d4258527b1c3b389df2886f0210848f0b317b6dcc27af1",
+      "title": "global_ads_performance_dataset"
+    },
+    {
+      "case_id": "3e16fac8e555d1c3c2576f3006b192d5f4f97cae4be545c9c383dbc19cbf9355",
+      "title": "Employee_Attrition_DataSet"
+    },
+    {
+      "case_id": "f8ef70d937df4619a6139e4aed5397c32451bcd5398a87f29e824927230a0af9",
+      "title": "NVDA_yfinance_clean"
+    },
+    {
+      "case_id": "a6c47e63cb6f878c2f12c09d8ddb6981e30d801173f1b012c7b6fa46d23f7308",
+      "title": "top 5 big tech stock"
+    },
+    {
+      "case_id": "69dcf9e9b0d75d8216260c0fb75afdca0be48c5a59cc4d4f0d59b81a6673de98",
+      "title": "apple fiscal report"
+    },
+    {
+      "case_id": "b3de23a1f41f737b94c95496228f9b2221e453700cf8946a818a9eaf5cac9939",
+      "title": "tb"
+    },
+    {
+      "case_id": "6ea93a07643c3978054e4f7ec3305aea2af5d1457d00d0f187e78a2516e565a6",
+      "title": "startup_company_one_line_pitches"
+    },
+    {
+      "case_id": "c2a922dae78822e5cccf29ade8eaa62e4050dc8c80b1dbd9ced8b61446203b67",
+      "title": "Retail Fashion Boutique Data Sales Analytics 2025"
+    },
+    {
+      "case_id": "26031cf7f3c58ffb4d9d99d4d1d79242d3d5b35c9b1d2e0924984ae5f7e1fef2",
+      "title": "meesho_supplier_returns_data"
+    },
+    {
+      "case_id": "0492cdf6ce80253441330f98f7f1b82fb969708e4f91cdac9d8777aca58e6667",
+      "title": "Global AI Job Market Trends Salary Insights 2025"
+    },
+    {
+      "case_id": "4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f",
+      "title": "dataset_fashion_store_customers"
+    },
+    {
+      "case_id": "0a238701da01405a5482a2ab81470dab490cc81fd559ca5311e5d82ff7b3f69c",
+      "title": "黄金分析"
+    },
+    {
+      "case_id": "78fe19583ebcc3c5e0caf680b1ac52793b5520a65ce81aa218d358b2f1caf834",
+      "title": "Womens Clothing E-Commerce Reviews"
+    },
+    {
+      "case_id": "790f2a3d331d14773e4f28ed3fdd17f8f55a364ddc66c351d6d8dccf029a0dd0",
+      "title": "September Quarter 2025 Results"
+    },
+    {
+      "case_id": "3b3e6c09058adadf559d916783c720a95979c22726817153eb9cf7bacdb65208",
+      "title": "aemo"
+    },
+    {
+      "case_id": "0c139f54bc6bf321d10d34f8ec6305c7bc03b55b17be3cdfdc1872d5bc7992ea",
+      "title": "aemo"
+    },
+    {
+      "case_id": "5043a58a725b6d6f0b3b026fa0bb1bf2e898c9011c2c0e14232baf8083ccdaf5",
+      "title": "China Population And Education"
+    },
+    {
+      "case_id": "0adfae3e9a0d57b2ad395bebdd46a6899252fe2f695c561ed39c32531b8a49ee",
+      "title": "Bitcoin and Interest Rate"
+    },
+    {
+      "case_id": "68b573a79555ba1f58ac68649b4d7dcb195f2aac7144f6b3f7f40f5f4c558c71",
+      "title": "Bitcoin and interest rate"
+    },
+    {
+      "case_id": "48ac71f1f6b30f40390ff783568b713be6bbc0589589bdfbcc20d467bdc89366",
+      "title": "Ten"
+    },
+    {
+      "case_id": "4330d552a968b997f93ad0786f2a8beeeedc6e85b2aa3e3cf926ea1d5f898eae",
+      "title": "101 Formulaic Alphas"
+    },
+    {
+      "case_id": "9c4310160dd21b6049ba4ac4797a958e09b4f31e705ed91bb5e5add04e78795f",
+      "title": "ai_skepticism_dataset"
+    },
+    {
+      "case_id": "7a50e4c756ee214b6061a4fcaadea2a73848f07b9d0320c1bdfc25c175b388ea",
+      "title": "Raw国家管网集团工银瑞信组合_20241231-20250331估值"
+    },
+    {
+      "case_id": "db333e50dcc9290157bb8695e303984e4e57e2db6e93d053dbb10767d4a0a360",
+      "title": "瑞银表态中国存款"
+    },
+    {
+      "case_id": "c41ec64ebc5b84497226033092a8faea9548d138763400fbda7f21b1d8a6a758",
+      "title": "raw"
+    },
+    {
+      "case_id": "13bb0c747796b1509cae699d669b81a05aeb0777f007f9dd29216365e47b9129",
+      "title": "Kimi V2 5 Report"
+    },
+    {
+      "case_id": "a7c721a8ec69d8a55ec218357edae56e88546d118a053131ce6fbc65c595eced",
+      "title": "2601"
+    },
+    {
+      "case_id": "8f1e1b353f8b8547ddb58648b766c7605323d02c7eeb72022d828062a7027dbf",
+      "title": "achievements"
+    },
+    {
+      "case_id": "44ce5e42f9dbe80e94bb1145745ac91ed424d1b41cfa0ef6e40c05e29d6184de",
+      "title": "新注册:首次交易:日活用户三者留存对比"
+    },
+    {
+      "case_id": "7a00de4c7f6a02c774805007dfb044724493500b14e9dd7a04e16c9a342ec90b",
+      "title": "2512"
+    },
+    {
+      "case_id": "661c66d944300268ec276f0d02e1a4e16985191546fabca8526987e9a0458975",
+      "title": "2601"
+    },
+    {
+      "case_id": "0766d3501bc0af0bd378714446827ad824c8238e4a1c346f4f3add79a7dadf3b",
+      "title": "faang_stock_prices"
+    },
+    {
+      "case_id": "337781a75bbcdb2b1b01108f3bac1739278f94b038a14b01bcc40589b5143988",
+      "title": "daily_gym_attendance_workout_data"
+    },
+    {
+      "case_id": "918fb97954af073baf4ebc8c803eae2c2b085c452d617f4028578871f0cbc4d2",
+      "title": "goalscorers"
+    },
+    {
+      "case_id": "cf35921743b2665b5433d99f0b1ae55ce94fa0b88accb428be86bc6d6aba75f3",
+      "title": "Proxy_Statement_2026"
+    },
+    {
+      "case_id": "4074c8503e18096b8bd8b76d70c4379b8085ad0c651640e75143e5667e384f23",
+      "title": "阿里巴巴2025财报"
+    },
+    {
+      "case_id": "ed816373eec8589e6f39f1c3dec5db2e8d6ad9bffa7932a9b86113532c05136f",
+      "title": "Apple 2026 Analysis"
+    },
+    {
+      "case_id": "7f581ea1da6b03942099ac8656ea4d8aac8f37412909115e7c21cd55e3c2e80f",
+      "title": "财报测试"
+    },
+    {
+      "case_id": "f59dbd1ad7f401c8a145ca8aa26195555541bc4c9394b85b23cdce2392635843",
+      "title": "Interest Rate Uncertainty and Unemployment"
+    },
+    {
+      "case_id": "88275b0dd7669501cefd0689dc0553daf876d2fdabf0f2ea53299db84acb3a4e",
+      "title": "event-notification-rpt-lastmonth"
+    },
+    {
+      "case_id": "2f16fbfd48c6980241aa13b754863b498799a4dbeb4d2ae9b9d9368e110b6560",
+      "title": "1_调和分析及相关领域中的公开问题"
+    },
+    {
+      "case_id": "43028511a471303b347977463d846c671da0a6df4e506f6097ce667a1b00a35b",
+      "title": "流量数据1"
+    },
+    {
+      "case_id": "aaaefe6f4297e3532a8566e69a92d566109fdab872654ea8db68a9f9a59214b2",
+      "title": "流量数据1"
+    },
+    {
+      "case_id": "353771d011bebc12667802c7b2d9a625728b88a5080821bde492bdba14b4c6cc",
+      "title": "Visa Financial Statement"
+    },
+    {
+      "case_id": "1c5a1c3a794d75c88c76140da044dee4394f9c7967174623bd8617196581a592",
+      "title": "MAXS Meta-Adaptive Exploration with LLM Agents"
+    },
+    {
+      "case_id": "84628b6f991db56f5c008aea9b57cc5fe9e88b84511d855484fb7f2ef10e8d79",
+      "title": "multipleChoiceResponses"
+    },
+    {
+      "case_id": "259146950a6df954a00f122786d34ca72d4a0a5c11dddf7c8cd72af3d09f7d4d",
+      "title": "Visa Q1 Analysis"
+    },
+    {
+      "case_id": "08a672c08f41d0b1c103871f475a90c1f746355640abbcb340dc2e70fe1fb0fa",
+      "title": "Visa Financial Analysis Q1"
+    },
+    {
+      "case_id": "1684558c4d31d027b0cd61d17d5f9367d29890082de2bb004e939e40f2c4ce2f",
+      "title": "PPI Analysis"
+    },
+    {
+      "case_id": "1cdb52aa1f0dd1f33aa743eae7528ffb05a80c341921cc2ac389682a86027d4f",
+      "title": "Apple 2026 Q1 Financial Statement"
+    },
+    {
+      "case_id": "e104b387fd82759d21e6a647361e55cc5231793ca16fb4f4a0f0be2552a02b69",
+      "title": "BITCOIN HISTORICAL DATA"
+    },
+    {
+      "case_id": "06ccf0225754b9ba7105c674e93f8a13831ea446f4e0f7a6907470179606bbc1",
+      "title": "2026 gold price predict"
+    },
+    {
+      "case_id": "3f809c829a959fb1b3fb9e6441d49a7e7a7c7d9c1e1a63b5f6955f02d0d2d966",
+      "title": "123"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-02-20T14:10:45",
+    "source_recent": "recent_projects_20260219.json",
+    "recent_total": 500,
+    "existing_case_ids": 197,
+    "probe_pool_size": 307,
+    "eligible_count": 158,
+    "target_results": 80,
+    "output_results_count": 80,
+    "min_required": 50
+  }
+}

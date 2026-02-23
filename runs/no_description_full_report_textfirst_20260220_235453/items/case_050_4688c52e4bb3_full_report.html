@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：dataset_fashion_store_customers</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：dataset_fashion_store_customers</h1>
+    <p class='sub'>来源: /view/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Fashion Store Performance Analysis 2024-2025&quot;
+description: &quot;Comprehensive analysis of sales performance, customer behavior, and product insights for a European fashion retailer&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-06-18&quot;
+</pre></details>
+<h1>Fashion Store Performance Analysis 2024-2025</h1>
+<h2>Executive Summary</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key revenue insights from this analysis?</li><li>Which sales channel performs best?</li></ul></details>
+<p>This comprehensive analysis of a European fashion retailer&#x27;s data from April 2024 to June 2025 reveals significant growth opportunities and customer behavior patterns:</p>
+<ul><li>Total Revenue: €584,658 from 905 transactions</li><li>Average Transaction Value: €646.06</li><li>Top Markets: Netherlands 30%, Italy 26%, France 22%</li><li>Digital Dominance: E-commerce 63% leads App Mobile 34%</li><li>Customer Base: 1,000 customers across 7 European countries</li><li>Product Portfolio: 500 SKUs across 9 categories</li><li>Growth Trend: Sales peaked in December 2024 and June 2025</li><li>Discount Impact: Only 0.9% of transactions had discounts</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>sales_trend_by_date.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_trend_by_date.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Data Overview &amp; Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What data sources were analyzed?</li><li>How was the data cleaned and processed?</li></ul></details>
+<p>This analysis examines five interconnected datasets from a European fashion retailer:</p>
+<p>1. Customers1,000 records: Demographics and signup dates</p>
+<p>2. Products500 records: Product details, pricing, and inventory</p>
+<p>3. Sales905 records: Transaction-level sales data</p>
+<p>4. Sales Items4,514 records: Individual item transactions</p>
+<p>5. Stock500 records: Current inventory levels</p>
+<p>Data Processing:</p>
+<ul><li>Removed duplicate records and missing values</li><li>Standardized date formats</li><li>Calculated profit margins and performance metrics</li><li>Aggregated transaction data for trend analysis</li><li>Current analysis period: April 2024 - June 2025</li></ul>
+<h2>Sales Performance Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which countries are driving the highest revenue?</li><li>How does sales performance vary by channel?</li></ul></details>
+<h3>Geographic Performance</h3>
+<div class='plot-card'><div class='plot-meta'><code>sales_by_country.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_by_country.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Geographic Insights:</p>
+<ul><li>Netherlands: €174,950 29.9% of total - Highest performing market</li><li>Italy: €151,632 25.9% of total - Strong second position</li><li>France: €128,063 21.9% of total - Consistent performance</li><li>Germany: €86,517 14.8% of total - Growth opportunity</li><li>Spain: €32,090 5.5% of total - Emerging market</li><li>Portugal: €7,690 1.3% of total - Niche market</li><li>Belgium: €3,716 0.6% of total - Early stage</li></ul>
+<h3>Sales Channel Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>sales_by_channel.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_by_channel.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Channel Performance:</p>
+<ul><li>E-commerce: €367,406 62.8% - Primary revenue driver</li><li>App Mobile: €200,843 34.3% - Strong mobile presence</li><li>App Desktop: €16,409 2.8% - Desktop user base</li><li>Other: €0.2 </li></ul>
+<p>Strategic Implications:</p>
+<p>1. Mobile-first strategy recommended</p>
+<p>2. E-commerce optimization critical for growth</p>
+<p>3. Consider phasing out desktop app investment</p>
+<p>4. Focus on Netherlands and Italy market penetration</p>
+<h2>Product Performance Insights</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which product categories are most profitable?</li><li>Which brands perform best in this portfolio?</li></ul></details>
+<h3>Top Selling Products</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_products.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/top_products.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top 5 Products by Revenue:</p>
+<p>1. Soft Wrap DressDresses - €11,934 28 units</p>
+<p>2. Soft Linen ShirtShirts - €10,744 27 units</p>
+<p>3. Soft Wrap ShoesShoes - €9,766 27 units</p>
+<p>4. Soft Linen PantsPants - €8,856 26 units</p>
+<p>5. Soft Wrap TopT-Shirts - €8,447 27 units</p>
+<h3>Brand Performance</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_brands.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/top_brands.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Brand Portfolio:</p>
+<ul><li>Tiva: Leading brand with strongest performance</li><li>Other brands: Varied performance across categories</li><li>Brand concentration: Limited to few premium brands</li></ul>
+<h3>Category Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>category_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/category_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Category Performance:</p>
+<ul><li>Dresses: Highest revenue per unit</li><li>Shoes: Strong margin potential</li><li>Shirts &amp; Tops: Volume-driven categories</li><li>Pants: Consistent performer</li><li>Accessories: Growth category opportunity</li></ul>
+<h2>Customer Behavior Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key customer demographics?</li><li>How does customer age distribution affect purchasing?</li></ul></details>
+<h3>Customer Demographics</h3>
+<div class='plot-card'><div class='plot-meta'><code>customer_age_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/customer_age_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Age Group Distribution:</p>
+<ul><li>46-55: Dominant segment 28% of customers</li><li>36-45: Strong segment 24% of customers</li><li>56-65: Mature segment 22% of customers</li><li>26-35: Growing segment 16% of customers</li><li>16-25: Emerging segment 7% of customers</li></ul>
+<p>Country Distribution:</p>
+<ul><li>Netherlands: Highest customer concentration</li><li>France: Strong customer base</li><li>Italy: Growing market</li><li>Germany, Spain, Portugal, Belgium: Emerging presence</li></ul>
+<h3>Discount Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>sales_discount_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_discount_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Discount Analysis:</p>
+<ul><li>Non-discounted transactions: 99.1% €579,392</li><li>Discounted transactions: 0.9% €5,266</li><li>Average discount rate: Minimal strategic discounting</li><li>Customer acquisition: Premium pricing strategy evident</li></ul>
+<h2>Sales Trend &amp; Seasonality</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the seasonal patterns in sales?</li><li>How has sales trend changed over time?</li></ul></details>
+<h3>Monthly Sales Trend</h3>
+<div class='plot-card'><div class='plot-meta'><code>sales_trend_by_date.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/sales_trend_by_date.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Trends Identified:</p>
+<ul><li>December 2024: Peak sales period €58,658 - Holiday season impact</li><li>June 2025: Second peak €52,516 - Summer collection launch</li><li>April 2024: Strong start €40,740 - Spring season</li><li>Consistent Growth: Increasing average transaction values over time</li><li>Seasonal Patterns: Clear peaks in December and June</li></ul>
+<p>Seasonal Insights:</p>
+<ul><li>Q4 2024: Holiday shopping surge</li><li>Q2 2025: Summer collection success</li><li>Q1 2025: Post-holiday stabilization</li><li>Consistent monthly performance: €18,000-52,000 range</li></ul>
+<h2>Strategic Recommendations</h2>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/strategy_diagram.svg' alt='strategy_diagram.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/4688c52e4bb321994446b9750b1e2d5a8e60279a49092c9d3d06c7e1303b1f5f/assets/strategy_diagram.svg' target='_blank' rel='noopener noreferrer'>strategy_diagram.svg</a></figcaption></figure>
+<h3>Revenue Growth Strategies</h3>
+<p>1. Market Expansion</p>
+<p>    Focus on Germany 4th largest, 14.8% share</p>
+<p>    Develop Spain and Portugal markets</p>
+<p>    Consider Belgium market entry strategy</p>
+<p>2. Channel Optimization</p>
+<p>    Invest in mobile app experience 34% of sales</p>
+<p>    Enhance e-commerce platform 63% of sales</p>
+<p>    Optimize cross-channel customer journey</p>
+<p>3. Product Strategy</p>
+<p>    Expand successful product lines Dresses, Shoes</p>
+<p>    Develop accessories category</p>
+<p>    Introduce premium pricing for top performers</p>
+<p>4. Customer Acquisition</p>
+<p>    Target 36-45 age segment high potential</p>
+<p>    Develop loyalty programs for 46-55 segment</p>
+<p>    Create youth-focused campaigns for 16-25 segment</p>
+<p>5. Seasonal Planning</p>
+<p>    Prepare inventory for December holiday peak</p>
+<p>    Launch summer collections in Q2</p>
+<p>    Develop post-holiday retention strategies</p>
+<h2>Performance Metrics Summary</h2>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th><th>Insight</th></tr></thead><tbody><tr><td>Total Revenue</td><td>€584,658</td><td>Strong performance in analysis period</td></tr><tr><td>Total Transactions</td><td>905</td><td>Consistent transaction volume</td></tr><tr><td>Average Transaction Value</td><td>€646</td><td>High-value customer base</td></tr><tr><td>Products per Transaction</td><td>5.0</td><td>Strong basket size</td></tr><tr><td>Total Customers</td><td>1,000</td><td>Solid customer base</td></tr><tr><td>Countries Served</td><td>7</td><td>European market coverage</td></tr><tr><td>Product SKUs</td><td>500</td><td>Diverse product portfolio</td></tr><tr><td>Inventory Items</td><td>500</td><td>Good stock management</td></tr></tbody></table></div>
+<h2>Conclusion</h2>
+<p>This fashion retailer demonstrates strong performance with a loyal customer base across key European markets. The data-driven insights reveal clear opportunities for:</p>
+<ul><li>Geographic expansionin Germany and Southern Europe</li><li>Mobile-first digital experienceoptimization</li><li>Product line expansionbased on top performers</li><li>Seasonal marketingfocused on peak periods</li></ul>
+<p>The minimal discount strategy suggests a premium positioning that can be leveraged for higher margins while maintaining customer loyalty. Focus on the Netherlands, Italy, and France markets while developing growth strategies for emerging territories.</p>
+<hr/>
+<p>Analysis Period: April 2024 - June 2025</p>
+<p>Data Sources: 5 datasets, 7,420 total records</p>
+<p>Analysis Methodology: Descriptive statistics, trend analysis, and customer segmentation</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

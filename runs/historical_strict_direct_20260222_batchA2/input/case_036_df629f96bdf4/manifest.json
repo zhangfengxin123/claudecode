@@ -1,0 +1,16 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 178
+  },
+  {
+    "name": "water_area_and_human.csv",
+    "local": "water_area_and_human.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 2211464
+  }
+]

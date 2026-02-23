@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-02-22T23:47:21",
+  "source": "Pardus/.codex_session/runs/historical_candidates_from_snapshots_20260222.json",
+  "target": 2,
+  "source_cases": 204,
+  "filtered_cases": 204,
+  "picked_cases": 5,
+  "actual_strict_count": 0,
+  "actual_strict_case_ids": [],
+  "strict_with_description": 0,
+  "strict_without_description": 0,
+  "failure_reasons": {
+    "uploads_http_0": 5
+  },
+  "rows_all": [
+    {
+      "seq": 1,
+      "case_id": "f067062d1d6f99056d43747bc0945f0618e50d9636d1627a1512230ed1de76db",
+      "title": "1",
+      "status": "failed",
+      "strict_pass": false,
+      "input_complete": false,
+      "has_description": null,
+      "plot_assets_in_doc": 0,
+      "plots_renderable": 0,
+      "plot_assets_failed": null,
+      "error": "uploads_http_0",
+      "full_report_html": "",
+      "input_dir": ""
+    },
+    {
+      "seq": 2,
+      "case_id": "b0962d2ac8b358fe4e61ab8263a77a0703400feca2340c09f7b2195cc32cd77a",
+      "title": "FANNG SWE Interview Questions",
+      "status": "failed",
+      "strict_pass": false,
+      "input_complete": false,
+      "has_description": null,
+      "plot_assets_in_doc": 0,
+      "plots_renderable": 0,
+      "plot_assets_failed": null,
+      "error": "uploads_http_0",
+      "full_report_html": "",
+      "input_dir": ""
+    },
+    {
+      "seq": 3,
+      "case_id": "187544eb311b83a2f86ef0f147b19d2c6b7c963a449b1ce58e298375a88851de",
+      "title": "测试",
+      "status": "failed",
+      "strict_pass": false,
+      "input_complete": false,
+      "has_description": null,
+      "plot_assets_in_doc": 0,
+      "plots_renderable": 0,
+      "plot_assets_failed": null,
+      "error": "uploads_http_0",
+      "full_report_html": "",
+      "input_dir": ""
+    },
+    {
+      "seq": 4,
+      "case_id": "ed5083e337ecbe859b3f0b034376594bf5b6947ac04aa0f19bf7fa03483a1939",
+      "title": "Data Scientist Email list",
+      "status": "failed",
+      "strict_pass": false,
+      "input_complete": false,
+      "has_description": null,
+      "plot_assets_in_doc": 0,
+      "plots_renderable": 0,
+      "plot_assets_failed": null,
+      "error": "uploads_http_0",
+      "full_report_html": "",
+      "input_dir": ""
+    },
+    {
+      "seq": 5,
+      "case_id": "b68ed4cf67ba226cf8cad722cf6dd0b9401b01fa000322fac71212b1baf73c5b",
+      "title": "US strikes Iran by...?",
+      "status": "failed",
+      "strict_pass": false,
+      "input_complete": false,
+      "has_description": null,
+      "plot_assets_in_doc": 0,
+      "plots_renderable": 0,
+      "plot_assets_failed": null,
+      "error": "uploads_http_0",
+      "full_report_html": "",
+      "input_dir": ""
+    }
+  ],
+  "rows_strict": []
+}

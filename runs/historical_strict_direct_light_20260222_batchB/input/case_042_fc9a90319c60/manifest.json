@@ -1,0 +1,16 @@
+[
+  {
+    "name": "呆呆直播间.xlsx",
+    "local": "呆呆直播间.xlsx",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3096147
+  },
+  {
+    "name": "抖音用户自我描述.xlsx",
+    "local": "抖音用户自我描述.xlsx",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 3598139
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-02-23T00:03:58",
+  "meta": {
+    "target": 10,
+    "reserve": 40,
+    "recent_limit": 500,
+    "source": "Pardus/.codex_session/runs/historical_candidates_from_snapshots_20260222.json",
+    "existing_unique_case_ids": 619,
+    "recent_new_pool": 0,
+    "probe_ok": 0,
+    "probe_fail": 0,
+    "picked": 0
+  },
+  "results": []
+}

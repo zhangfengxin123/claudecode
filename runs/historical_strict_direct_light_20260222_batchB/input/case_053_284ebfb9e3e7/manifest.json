@@ -1,0 +1,30 @@
+[
+  {
+    "name": "DFEDTARL.csv",
+    "local": "DFEDTARL.csv",
+    "ok": true,
+    "error": "",
+    "size": 29258
+  },
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 677
+  },
+  {
+    "name": "HOSINVUSM495N.csv",
+    "local": "HOSINVUSM495N.csv",
+    "ok": true,
+    "error": "",
+    "size": 278
+  },
+  {
+    "name": "DFEDTARU.csv",
+    "local": "DFEDTARU.csv",
+    "ok": true,
+    "error": "",
+    "size": 29258
+  }
+]

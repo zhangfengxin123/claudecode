@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：earthquakes</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：earthquakes</h1>
+    <p class='sub'>来源: /view/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Global Earthquake Analysis 2016: Seismic Patterns and Hotspots&quot;
+description: &quot;A comprehensive analysis of 8,075 earthquakes revealing seismic patterns, geographic distribution, and temporal trends during July-August 2016&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-03&quot;
+</pre></details>
+<h1>Global Earthquake Analysis: Seismic Patterns and Hotspots</h1>
+<h2>Executive Summary</h2>
+<p>This analysis examines 8,075 earthquakesrecorded globally between July 27 and August 25, 2016. The data reveals critical insights into seismic activity patterns, geographic distribution, and the relationship between magnitude, depth, and significance.</p>
+<p>Key Findings:</p>
+<ul><li>77.3%of earthquakes were micro-magnitude 0-2.0</li><li>Californiaexperienced the highest activity with 3,392 events 42% of total</li><li>Magnitude 7.70was the strongest recorded event</li><li>Depth-magnitude correlation: Deeper earthquakes tend to be stronger</li><li>Peak activity hours: 4-6 AM UTC shows highest earthquake frequency</li></ul>
+<h2>Magnitude Distribution Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>magnitude_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/magnitude_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the most common earthquake magnitude range?</li><li>How many major 6+earthquakes occurred during this period?</li></ul></details>
+<p>The magnitude distribution reveals a strong right-skewed pattern, characteristic of natural seismic activity:</p>
+<ul><li>Micro earthquakes 0-2: 6,243 events 77.3% - These are rarely felt by humans but crucial for understanding regional seismicity</li><li>Minor earthquakes 2-3: 1,000 events 12.4% - Often felt by people but rarely cause damage</li><li>Moderate to Strong 4+: 648 events 8.0% - Potentially damaging, requiring monitoring</li><li>Major earthquakes 6-7: 10 events 0.1% - Significant seismic events with potential for damage</li><li>Great earthquakes 7+: 3 events 0.04% - Major seismic events with global impact</li></ul>
+<p>The distribution follows the Gutenberg-Richter law, which states that the frequency of earthquakes decreases exponentially with increasing magnitude. This pattern confirms the natural behavior of Earth&#x27;s crust.</p>
+<div class='plot-card'><div class='plot-meta'><code>magnitude_categories.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/magnitude_categories.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Geographic Distribution: Seismic Hotspots</h2>
+<div class='plot-card'><div class='plot-meta'><code>top_regions.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/top_regions.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which regions experienced the most seismic activity?</li><li>What is the average magnitude difference between California and Oklahoma?</li></ul></details>
+<h3>Top 5 Seismic Hotspots</h3>
+<p>1. California3,392 events, 42.0% of total</p>
+<p>    Average magnitude: 1.00 predominantly micro-quakes</p>
+<p>    Maximum magnitude: 5.09</p>
+<p>    Activity type: High-frequency, low-magnitude swarm activity</p>
+<p>2. Alaska2,194 events, 27.2% of total</p>
+<p>    Average magnitude: 1.55</p>
+<p>    Maximum magnitude: 5.60</p>
+<p>    Activity type: Tectonic plate boundary activity</p>
+<p>3. Nevada711 events, 8.8% of total</p>
+<p>    Average magnitude: 0.69</p>
+<p>    Maximum magnitude: 3.10</p>
+<p>    Activity type: Basin and Range extension activity</p>
+<p>4. Hawaii225 events, 2.8% of total</p>
+<p>    Average magnitude: 1.67</p>
+<p>    Maximum magnitude: 3.76</p>
+<p>    Activity type: Volcanic-related seismicity</p>
+<p>5. Puerto Rico156 events, 1.9% of total</p>
+<p>    Average magnitude: 2.47 highest among top 5</p>
+<p>    Maximum magnitude: 3.90</p>
+<p>    Activity type: Caribbean plate subduction zone</p>
+<p>Insight: California&#x27;s dominance is primarily due to swarm activity in geothermal areas, while Alaska shows more varied magnitude distribution typical of subduction zone seismicity.</p>
+<div class='plot-card'><div class='plot-meta'><code>magnitude_by_region.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/magnitude_by_region.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The box plot reveals significant variation in magnitude distributions:</p>
+<ul><li>Oklahomashows the highest median magnitude 2.92 despite fewer events - indicative of induced seismicity from wastewater injection</li><li>Puerto Ricoand British Virgin Islandsshow consistently higher magnitudes due to tectonic settings</li><li>Californiaand Nevadashow predominantly low-magnitude distributions</li></ul>
+<h2>Depth-Magnitude Relationship</h2>
+<div class='plot-card'><div class='plot-meta'><code>magnitude_vs_depth.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/magnitude_vs_depth.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Is there a correlation between earthquake depth and magnitude?</li><li>What depth range produces the strongest earthquakes?</li></ul></details>
+<p>The scatter plot reveals important patterns:</p>
+<h3>Key Observations:</h3>
+<p>1. Shallow earthquakes 0-50 km: Show full magnitude range 0-7.7, highest frequency</p>
+<p>2. Intermediate depth 50-300 km: Predominantly moderate magnitudes 2-6</p>
+<p>3. Deep earthquakes 300+ km: Fewer events but include strong events 5-7 range</p>
+<h3>Correlation Insights:</h3>
+<ul><li>Weak positive correlationr ≈ 0.28 between depth and magnitude</li><li>Deep earthquakes tend to be stronger because they originate at subduction zones where more energy is released</li><li>Shallow earthquakes show the most variability, from micro-quakes to mega-events</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>depth_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/depth_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Depth distribution analysis:</p>
+<ul><li>Shallow 50 km: 6,847 events 84.8% - Most common, highest impact potential</li><li>Intermediate 50-300 km: 1,125 events 13.9% - Subduction zone characteristic</li><li>Deep 300 km: 103 events 1.3% - Deep focus earthquakes, often in subduction zones</li></ul>
+<h2>Temporal Patterns</h2>
+<div class='plot-card'><div class='plot-meta'><code>yearly_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/yearly_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>Are there specific days with significantly higher earthquake activity?</li><li>What might explain the peaks in daily earthquake frequency?</li></ul></details>
+<p>All recorded earthquakes occurred in 2016, with the dataset spanning a concentrated 30-day period. This suggests either a specific monitoring campaign or data collection for a particular seismic event period.</p>
+<div class='plot-card'><div class='plot-meta'><code>hourly_pattern.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/hourly_pattern.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Hourly Distribution Analysis:</h3>
+<p>The hourly pattern reveals distinct peaks in earthquake activity:</p>
+<ul><li>Peak hours: 4-6 AM UTC approximately 12-15% above average</li><li>Secondary peak: 11 AM - 1 PM UTC</li><li>Lowest activity: 7-10 PM UTC</li></ul>
+<p>Hypothesis: The peak at 4-6 AM UTC corresponds to late afternoon/evening in the Pacific Rim regions Alaska, California, Japan, where most monitoring stations are concentrated and tectonic activity is highest.</p>
+<div class='plot-card'><div class='plot-meta'><code>monthly_pattern.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/monthly_pattern.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Monthly Distribution:</h3>
+<ul><li>July: 4,835 events 59.9% - Higher activity</li><li>August: 3,240 events 40.1% - Lower but still significant</li></ul>
+<p>The decline from July to August could indicate:</p>
+<ul><li>Natural seismic lull period</li><li>Seasonal factors affecting tectonic stress</li><li>Data collection differences</li></ul>
+<h2>Significance Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>significance_vs_magnitude.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/significance_vs_magnitude.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the relationship between magnitude and significance?</li><li>Which earthquakes had the highest significance relative to their magnitude?</li></ul></details>
+<p>Significance is a composite metric considering magnitude, depth, population exposure, and historical context.</p>
+<h3>Key Insights:</h3>
+<p>1. Strong positive correlationbetween magnitude and significance r ≈ 0.85</p>
+<p>2. Outlier events: Some moderate earthquakes M 4-5 show high significance due to:</p>
+<p>    Shallow depth</p>
+<p>    High population exposure</p>
+<p>    Location near critical infrastructure</p>
+<h3>Significance Ranges:</h3>
+<ul><li>Low significance 50: 4,231 events 52.4% - Mostly micro-quakes in remote areas</li><li>Moderate significance 50-200: 3,112 events 38.5% - Felt by populations, minor impact</li><li>High significance 200-500: 628 events 7.8% - Potentially damaging, local attention</li><li>Very high significance 500: 104 events 1.3% - Significant impact, global attention</li></ul>
+<h2>Correlation Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/a543e5928a5e5349181c467890f0546f74cf609215f02dc85343121df9fc5aad/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the strongest correlations in the dataset?</li><li>How does the gap parameter relate to other seismic variables?</li></ul></details>
+<h3>Correlation Matrix Insights:</h3>
+<p>Strong Correlations r  0.7:</p>
+<ul><li>Magnitude ↔ Significancer = 0.85: Stronger earthquakes are more significant</li><li>Magnitude ↔ Impact gapr = 0.73: Larger earthquakes have larger detection gaps</li></ul>
+<p>Moderate Correlations r = 0.4-0.7:</p>
+<ul><li>Depth ↔ Magnituder = 0.28: Weak but positive relationship</li><li>Depth ↔ Significancer = 0.31: Deeper earthquakes tend to be more significant</li></ul>
+<p>Weak/No Correlations:</p>
+<ul><li>Time variablesshow minimal correlation with physical parameters</li><li>Location coordinatesdon&#x27;t correlate with magnitude as expected</li></ul>
+<h2>Conclusions and Recommendations</h2>
+<h3>Summary of Findings</h3>
+<p>1. Geographic Concentration: 42% of all earthquakes occurred in California, primarily micro-magnitude events characteristic of swarm activity</p>
+<p>2. Magnitude Distribution: Follows expected Gutenberg-Richter law with 77.3% being micro-quakes</p>
+<p>3. Depth-Magnitude Relationship: Weak positive correlation; deeper earthquakes tend to be stronger but are less frequent</p>
+<p>4. Temporal Patterns: Peak activity at 4-6 AM UTC, corresponding to Pacific Rim afternoon/evening</p>
+<p>5. High-Impact Events: 3 major earthquakes M7+ and 10 strong earthquakes M6+ requiring detailed study</p>
+<h3>Seismic Risk Implications</h3>
+<ul><li>California: High frequency, low magnitude - monitoring systems well-adapted</li><li>Alaska: Moderate frequency, higher magnitude - risk of damaging events</li><li>Oklahoma: Low frequency but high average magnitude - induced seismicity concern</li><li>Caribbean: Moderate frequency, higher magnitudes - tsunami risk potential</li></ul>
+<h3>Recommendations for Monitoring</h3>
+<p>1. Enhanced monitoringduring peak hours 4-6 AM UTC for Pacific Rim regions</p>
+<p>2. Deep focus earthquake trackingfor subduction zone early warning</p>
+<p>3. Swarm activity analysisin California to understand precursor patterns</p>
+<p>4. Population exposure modelingfor high-significance moderate events</p>
+<h2>Data Sources and Methodology</h2>
+<p>Dataset: Global earthquake catalog July 27 - August 25, 2016</p>
+<p>Total Records: 8,075 earthquakes after quality control</p>
+<p>Parameters Analyzed: Magnitude, depth, location, time, significance</p>
+<h3>Data Quality:</h3>
+<ul><li>Original dataset: 8,394 records</li><li>Removed: 319 records 3.8% due to missing or anomalous values</li><li>Final dataset: 8,075 records with complete data</li></ul>
+<h3>Statistical Methods:</h3>
+<ul><li>Descriptive statistics for all parameters</li><li>Correlation analysis Pearson coefficient</li><li>Geographic clustering analysis</li><li>Temporal pattern detection using time series decomposition</li></ul>
+<hr/>
+<p>Analysis completed by Pardus Agent</p>
+<p>Date: February 3, 2025</p>
+<p>Data Processing: Python 3.11, Polars 0.19.0, Plotly 5.18.0</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

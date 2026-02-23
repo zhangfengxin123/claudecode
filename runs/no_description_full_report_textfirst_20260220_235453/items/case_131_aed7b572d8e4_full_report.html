@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Diabetes_Mexico</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Diabetes_Mexico</h1>
+    <p class='sub'>来源: /view/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;墨西哥糖尿病数据分析报告&quot;
+description: &quot;基于墨西哥糖尿病调查数据的综合分析，揭示糖尿病风险因素、人口统计学特征和临床指标之间的关系&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-02&quot;
+</pre></details>
+<h1>墨西哥糖尿病数据分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告基于墨西哥糖尿病调查数据，对2,405名参与者的糖尿病风险因素进行了全面分析。分析揭示了墨西哥人群中令人担忧的肥胖和糖尿病流行状况：33.1%的参与者被归类为糖尿病患者，而58.9%的参与者属于肥胖人群。数据显示BMI与血糖水平呈显著正相关，年龄增长也与糖尿病风险呈正相关。本报告为公共卫生政策制定者提供了重要的数据洞察，强调了针对肥胖管理和糖尿病预防的紧迫性。</p>
+<h2>数据概述</h2>
+<div class='plot-card'><div class='plot-meta'><code>risk_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/risk_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>本次分析基于墨西哥糖尿病调查数据，涵盖2,405名参与者。数据清洗过程移除了144条异常记录（主要是极端的年龄和临床指标值），确保了分析结果的可靠性。</p>
+<p>主要发现：</p>
+<ul><li>糖尿病患病率高达33.1%，远高于全球平均水平</li><li>肥胖率达到58.9%，是糖尿病的主要风险因素</li><li>平均年龄48.5岁，中年人群占比较高</li><li>女性参与者占61.5%，略高于男性</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>墨西哥糖尿病患病率与全球平均水平相比如何？</li><li>为什么肥胖率如此之高？</li><li>这个样本是否代表墨西哥全国人口？</li></ul></details>
+<h2>糖尿病风险分布分析</h2>
+<h3>总体风险分布</h3>
+<p>数据集将参与者分为三个风险类别：</p>
+<div class='table-wrap'><table><thead><tr><th>风险类别</th><th>人数</th><th>占比</th></tr></thead><tbody><tr><td>低风险</td><td>1,596</td><td>66.4%</td></tr><tr><td>糖尿病</td><td>797</td><td>33.1%</td></tr><tr><td>糖尿病前期</td><td>12</td><td>0.5%</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>糖尿病前期样本数量极少（仅0.5%），可能表明筛查机制主要识别明确的糖尿病病例</li><li>1/3的参与者已确诊糖尿病，这是一个严峻的公共卫生问题</li><li>低风险人群占66.4%，为预防干预提供了重要目标群体</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>为什么糖尿病前期样本如此少？</li><li>低风险人群应该如何进行预防干预？</li><li>这个比例与国际研究相比如何？</li></ul></details>
+<h3>年龄与风险的关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_by_risk.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/age_by_risk.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>年龄是糖尿病风险的重要因素。分析显示：</p>
+<p>18-29岁年龄段：糖尿病比例最低，但仍然存在早期发病病例</p>
+<p>30-39岁年龄段：糖尿病风险开始上升</p>
+<p>40-59岁年龄段：糖尿病比例显著增加</p>
+<p>60岁以上：糖尿病比例最高，表明年龄是重要风险因素</p>
+<p>关键洞察：</p>
+<ul><li>糖尿病在60岁以上人群中最为普遍</li><li>40-59岁是糖尿病高发的关键时期，应加强筛查</li><li>年轻人群中的糖尿病病例提示需要关注早期预防</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>不同年龄段的糖尿病患病率具体是多少？</li><li>中年人群如何降低糖尿病风险？</li><li>这个趋势与其他国家的研究一致吗？</li></ul></details>
+<h3>性别与风险的关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>gender_by_risk.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/gender_by_risk.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>按性别分层分析显示：</p>
+<p>女性参与者（1,478人）：</p>
+<ul><li>糖尿病比例：约33%</li><li>低风险比例：约67%</li></ul>
+<p>男性参与者（927人）：</p>
+<ul><li>糖尿病比例：约33%</li><li>低风险比例：约67%</li></ul>
+<p>关键洞察：</p>
+<ul><li>男女糖尿病患病率基本持平</li><li>总体样本中女性较多（61.5%），这可能反映了调查设计或人口结构</li><li>性别不是本数据集中的主要风险因素</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>为什么男女糖尿病患病率如此接近？</li><li>不同性别在风险因素上有差异吗？</li><li>这个发现与其他研究一致吗？</li></ul></details>
+<h2>BMI与肥胖分析</h2>
+<h3>BMI分类分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>bmi_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/bmi_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>BMI（体重指数）是评估肥胖的重要指标。数据揭示了令人担忧的肥胖流行：</p>
+<div class='table-wrap'><table><thead><tr><th>BMI类别</th><th>人数</th><th>占比</th><th>健康范围</th></tr></thead><tbody><tr><td>肥胖 BMI≥30</td><td>1,417</td><td>58.9%</td><td>不健康</td></tr><tr><td>超重 25-29.9</td><td>643</td><td>26.7%</td><td>不健康</td></tr><tr><td>正常 18.5-24.9</td><td>318</td><td>13.2%</td><td>健康</td></tr><tr><td>体重过轻 18.5</td><td>27</td><td>1.1%</td><td>不健康</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>85.6%的参与者处于不健康体重范围（超重或肥胖）</li><li>肥胖率高达58.9%，远高于全球平均水平</li><li>仅有13.2%的参与者保持健康体重</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>墨西哥肥胖率为什么如此之高？</li><li>超重和肥胖人群应该如何降低糖尿病风险？</li><li>这个肥胖率与其他拉丁美洲国家相比如何？</li></ul></details>
+<h3>BMI与血糖的关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>bmi_glucose_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/bmi_glucose_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>散点图清晰展示了BMI与血糖水平之间的强正相关关系：</p>
+<p>关键模式：</p>
+<ul><li>随着BMI增加，血糖水平呈现明显上升趋势</li><li>大多数糖尿病患者的BMI高于28</li><li>超过126 mg/dL血糖阈值的人群主要集中在高BMI区间</li><li>部分低BMI人群也有高血糖，提示其他风险因素的作用</li></ul>
+<p>临床意义：</p>
+<ul><li>BMI≥30的人群糖尿病风险显著增加</li><li>体重管理是糖尿病预防的关键措施</li><li>即使在正常BMI范围内，仍需关注其他风险因素</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>BMI每增加1个单位，糖尿病风险增加多少？</li><li>低BMI人群患糖尿病的原因是什么？</li><li>这个关系是因果关系吗？</li></ul></details>
+<h2>临床指标分析</h2>
+<h3>血糖水平对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>glucose_by_risk.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/glucose_by_risk.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>各风险类别的血糖水平呈现出清晰的梯度：</p>
+<div class='table-wrap'><table><thead><tr><th>风险类别</th><th>平均血糖 mg/dL</th><th>标准差</th><th>正常范围</th></tr></thead><tbody><tr><td>低风险</td><td>92.1</td><td>10.5</td><td>100</td></tr><tr><td>糖尿病前期</td><td>114.7</td><td>8.3</td><td>100-125</td></tr><tr><td>糖尿病</td><td>131.2</td><td>69.2</td><td>≥126</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<ul><li>低风险人群平均血糖在正常范围内</li><li>糖尿病前期人群平均血糖处于临界区间</li><li>糖尿病患者平均血糖显著高于糖尿病阈值</li><li>糖尿病组的标准差很大，表明血糖控制水平差异显著</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>为什么糖尿病患者血糖标准差如此大？</li><li>糖尿病前期人群如何预防进展到糖尿病？</li><li>血糖控制对糖尿病并发症有何影响？</li></ul></details>
+<h3>胆固醇水平对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>cholesterol_by_risk.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/cholesterol_by_risk.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>胆固醇指标在不同风险类别中的对比分析：</p>
+<p>总胆固醇：</p>
+<ul><li>低风险：143.2 mg/dL</li><li>糖尿病前期：152.3 mg/dL</li><li>糖尿病：148.8 mg/dL</li></ul>
+<p>HDL胆固醇（&quot;好&quot;胆固醇）：</p>
+<ul><li>低风险：39.5 mg/dL</li><li>糖尿病前期：38.2 mg/dL</li><li>糖尿病：36.4 mg/dL</li></ul>
+<p>LDL胆固醇（&quot;坏&quot;胆固醇）：</p>
+<ul><li>低风险：88.5 mg/dL</li><li>糖尿病前期：92.8 mg/dL</li><li>糖尿病：96.6 mg/dL</li></ul>
+<p>甘油三酯：</p>
+<ul><li>低风险：136.2 mg/dL</li><li>糖尿病前期：145.7 mg/dL</li><li>糖尿病：178.9 mg/dL</li></ul>
+<p>关键洞察：</p>
+<ul><li>糖尿病患者甘油三酯水平显著升高（高出低风险组31%）</li><li>HDL胆固醇随风险增加而降低，这是一个不利的心血管风险标志</li><li>LDL胆固醇随风险增加而上升</li><li>甘油三酯/HDL比值在糖尿病患者中最高，表明脂质代谢异常</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>甘油三酯升高对糖尿病患者有什么风险？</li><li>HDL胆固醇如何影响糖尿病并发症？</li><li>脂质代谢异常是糖尿病的原因还是结果？</li></ul></details>
+<h3>风险因素层次结构</h3>
+<div class='plot-card'><div class='plot-meta'><code>risk_hierarchy.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/risk_hierarchy.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>旭日图展示了糖尿病风险的多层次结构：</p>
+<p>第一层：风险类别</p>
+<ul><li>低风险、糖尿病前期、糖尿病</li></ul>
+<p>第二层：BMI分类</p>
+<p>在每个风险类别内，BMI分布呈现不同模式</p>
+<p>第三层：年龄组</p>
+<p>在BMI分类内，不同年龄组的风险分布</p>
+<p>关键洞察：</p>
+<ul><li>糖尿病人群中肥胖比例最高</li><li>低风险人群中仍有相当比例的肥胖个体（可能是&quot;代谢健康肥胖&quot;）</li><li>年龄与BMI在风险预测中存在交互作用</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>为什么有些肥胖人群仍属于低风险？</li><li>哪个因素对糖尿病风险的影响更大：年龄还是BMI？</li><li>这个层次结构如何指导筛查策略？</li></ul></details>
+<h2>相关性分析</h2>
+<div class='plot-card'><div class='plot-meta'><code>correlation_matrix.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/aed7b572d8e44cadd621607b84a6af6fdccfe616f3d2ca5d8dadbf8899663d9a/assets/correlation_matrix.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>临床指标之间的相关性矩阵揭示了重要的关系模式：</p>
+<p>强相关（r  0.3）：</p>
+<ul><li>血糖与BMI：正相关，表明肥胖是糖尿病的重要风险因素</li><li>总胆固醇与LDL胆固醇：高度正相关（r  0.8），符合预期</li><li>甘油三酯与总胆固醇：正相关</li><li>甘油三酯与血糖：正相关</li></ul>
+<p>中等相关（r = 0.1-0.3）：</p>
+<ul><li>年龄与BMI：弱正相关</li><li>年龄与血糖：正相关</li><li>HDL胆固醇与BMI：负相关（健康的反向关系）</li></ul>
+<p>关键洞察：</p>
+<ul><li>血脂异常与高血糖密切相关，支持代谢综合征的概念</li><li>年龄对代谢指标的影响不如BMI显著</li><li>HDL胆固醇的负相关模式表明其保护作用</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些指标的组合对预测糖尿病最有价值？</li><li>相关性是否意味着因果关系？</li><li>这个相关性模式与其他人群研究一致吗？</li></ul></details>
+<h2>人口统计学特征</h2>
+<h3>年龄分布特征</h3>
+<p>数据集的年龄分布呈现以下特点：</p>
+<ul><li>平均年龄：48.5岁</li><li>年龄范围：18-95岁</li><li>中位数：48岁</li><li>标准差：15.2岁</li></ul>
+<p>年龄段分布：</p>
+<ul><li>18-29岁：15.3%</li><li>30-39岁：19.6%</li><li>40-49岁：18.5%</li><li>50-59岁：17.8%</li><li>60岁以上：28.8%</li></ul>
+<p>关键洞察：</p>
+<ul><li>样本偏向中老年人群（60岁以上占28.8%）</li><li>40-59岁中年群体占36.3%，是糖尿病预防的关键人群</li><li>年轻群体（40岁）占34.9%，为早期干预提供了机会</li></ul>
+<h3>地理分布</h3>
+<p>数据覆盖墨西哥多个城市，包括：</p>
+<ul><li>阿瓜斯卡连特斯 Aguascalientes：81人</li><li>蒙特雷 Monterey：54人</li><li>华雷斯 Juarez：46人</li><li>提华纳 Tijuana：43人</li><li>马塔莫罗斯 Matamoros：36人</li></ul>
+<p>关键洞察：</p>
+<ul><li>样本覆盖了墨西哥的主要城市地区</li><li>城市地区的糖尿病负担可能更为沉重</li><li>不同地区的饮食习惯和生活方式可能影响风险分布</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>城市与农村地区的糖尿病风险有差异吗？</li><li>不同地区的饮食习惯如何影响糖尿病发病率？</li><li>这个样本是否代表墨西哥全国情况？</li></ul></details>
+<h2>公共卫生建议</h2>
+<p>基于本分析的主要发现，提出以下公共卫生建议：</p>
+<h3>1. 优先干预措施</h3>
+<p>肥胖管理：</p>
+<ul><li>85.6%的参与者体重不健康，肥胖管理应成为公共卫生的优先事项</li><li>推广健康饮食和增加体力活动</li><li>在学校和社区开展营养教育</li></ul>
+<p>糖尿病筛查：</p>
+<ul><li>40岁以上人群应定期进行血糖筛查</li><li>BMI≥25的人群应加强监测</li><li>有糖尿病家族史的人群应早期筛查</li></ul>
+<h3>2. 预防策略</h3>
+<p>一级预防（针对低风险人群）：</p>
+<ul><li>维持健康体重（BMI 18.5-24.9）</li><li>健康饮食（减少糖和饱和脂肪摄入）</li><li>规律运动（每周150分钟中等强度运动）</li></ul>
+<p>二级预防（针对糖尿病前期人群）：</p>
+<ul><li>强化生活方式干预</li><li>定期监测血糖水平</li><li>考虑药物干预（如适用）</li></ul>
+<p>三级预防（针对糖尿病患者）：</p>
+<ul><li>严格控制血糖（HbA1c  7%）</li><li>管理血脂异常</li><li>预防并发症（定期眼底、肾功能检查）</li></ul>
+<h3>3. 政策建议</h3>
+<p>营养政策：</p>
+<ul><li>限制含糖饮料和加工食品</li><li>食品标签改进（清晰标注糖和脂肪含量）</li><li>促进健康食品的可及性</li></ul>
+<p>城市规划：</p>
+<ul><li>增加公共绿地和步行道</li><li>改善公共交通，鼓励步行和骑行</li><li>限制高糖高脂食品广告</li></ul>
+<h3>4. 研究建议</h3>
+<p>数据缺口：</p>
+<ul><li>本数据集中HbA1c数据缺失率高（仅9.4%），建议加强长期血糖监测</li><li>需要收集更多生活方式数据（饮食、运动、吸烟等）</li><li>需要纵向数据以评估干预效果</li></ul>
+<p>研究方向：</p>
+<ul><li>代谢健康肥胖机制研究</li><li>不同族群的糖尿病风险差异</li><li>数字健康干预的有效性评估</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>肥胖管理最有效的干预措施是什么？</li><li>如何提高糖尿病筛查的覆盖率？</li><li>数字化工具如何帮助糖尿病预防和管理？</li></ul></details>
+<h2>局限性与未来研究</h2>
+<h3>数据局限性</h3>
+<p>1. 横断面设计：无法确定因果关系</p>
+<p>2. 样本代表性：可能不完全代表墨西哥全国人口</p>
+<p>3. HbA1c数据缺失：影响长期血糖评估</p>
+<p>4. 生活方式数据缺失：缺乏饮食、运动、吸烟等关键信息</p>
+<p>5. 家族史数据缺失：无法评估遗传风险</p>
+<h3>未来研究建议</h3>
+<p>1. 纵向研究：追踪人群的健康变化</p>
+<p>2. 干预试验：评估预防措施的效果</p>
+<p>3. 机制研究：深入理解糖尿病的生物学机制</p>
+<p>4. 队列扩展：增加样本量和多样性</p>
+<p>5. 整合数据：结合基因组、代谢组等多组学数据</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>横断面研究的主要局限是什么？</li><li>如何提高研究的因果推断能力？</li><li>多组学数据如何改善糖尿病预测？</li></ul></details>
+<h2>结论</h2>
+<p>本分析基于墨西哥糖尿病调查数据，揭示了令人担忧的公共卫生现状：</p>
+<p>主要发现：</p>
+<p>1. 糖尿病患病率高达33.1%，远超全球平均水平</p>
+<p>2. 肥胖率达到58.9%，85.6%的参与者体重不健康</p>
+<p>3. BMI与血糖呈强正相关，肥胖是糖尿病的主要风险因素</p>
+<p>4. 血脂异常普遍存在，尤其在高风险人群中</p>
+<p>关键建议：</p>
+<p>1. 将肥胖管理作为公共卫生的优先事项</p>
+<p>2. 加强40岁以上人群的糖尿病筛查</p>
+<p>3. 推广健康生活方式（饮食、运动、体重管理）</p>
+<p>4. 实施基于证据的营养和城市规划政策</p>
+<p>未来展望：</p>
+<p>墨西哥面临着严峻的糖尿病和肥胖流行挑战。本分析强调了预防性干预的紧迫性和重要性。通过综合性的公共卫生策略，包括健康教育、筛查计划、政策干预和研究支持，可以减缓糖尿病的流行趋势，改善人群健康。</p>
+<hr/>
+<p>数据来源：墨西哥糖尿病调查数据 DiabetesMexico.csv</p>
+<p>样本量：2,405名参与者</p>
+<p>分析日期：2025年2月2日</p>
+<p>分析师：Pardus AI - 量化分析师</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

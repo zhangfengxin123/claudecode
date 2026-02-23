@@ -1,0 +1,16 @@
+[
+  {
+    "name": "hacker_news_comments_2026.csv",
+    "local": "hacker_news_comments_2026.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 1877857
+  },
+  {
+    "name": "hacker_news_2026.csv",
+    "local": "hacker_news_2026.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 1517419
+  }
+]

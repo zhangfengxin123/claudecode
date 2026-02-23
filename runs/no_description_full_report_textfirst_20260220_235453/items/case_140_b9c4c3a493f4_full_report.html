@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：arbitrage</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：arbitrage</h1>
+    <p class='sub'>来源: /view/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Synthetic Option Strategy Analysis: 510050 ETF Arbitrage Performance&quot;
+description: &quot;Comprehensive analysis of a synthetic option arbitrage strategy on SSE 50 ETF, examining performance metrics, risk factors, and profitability patterns from December 2025 to January 2026.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-30&quot;
+</pre></details>
+<h1>Synthetic Option Strategy Analysis: 510050 ETF Arbitrage Performance</h1>
+<h2>Executive Summary</h2>
+<p>This analysis examines a synthetic option arbitrage strategy applied to the SSE 50 ETF 510050 over a 44-day period from December 17, 2025 to January 30, 2026. The strategy combines long call and put options to create a synthetic position, then arbitrages against the underlying ETF price. The results demonstrate exceptional performance with a 99.2% win rateand 1.75% mean annualized return. This report provides comprehensive insights into strategy mechanics, performance metrics, and risk characteristics.</p>
+<h3>Key Findings</h3>
+<ul><li>Total Profit: 5.15 CNY from 496 trading periods</li><li>Win Rate: 99.2% 492 profitable vs 4 loss periods</li><li>Average Spread: 0.0104 CNY per period</li><li>Mean Annualized Return: 1.75%</li><li>Volatility: Low spread volatility std: 0.0045</li><li>Price Range: Underlying ETF traded between 3.014 - 3.256 CNY</li></ul>
+<hr/>
+<h2>Strategy Overview</h2>
+<h3>Strategy Architecture</h3>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/synthetic_option_strategy.svg' alt='synthetic_option_strategy.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/synthetic_option_strategy.svg' target='_blank' rel='noopener noreferrer'>synthetic_option_strategy.svg</a></figcaption></figure>
+<p>The synthetic option strategy follows a structured approach:</p>
+<p>1. Underlying Tracking: Monitor 510050 ETF price movements</p>
+<p>2. Options Purchase: Buy both call and put options</p>
+<p>3. Synthetic Position: Combine options to create synthetic exposure</p>
+<p>4. Spread Arbitrage: Exploit mispricing between synthetic and underlying</p>
+<p>5. Return Generation: Capture small but consistent profits</p>
+<h3>Data Processing Pipeline</h3>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/data_flow.svg' alt='data_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/data_flow.svg' target='_blank' rel='noopener noreferrer'>data_flow.svg</a></figcaption></figure>
+<p>The analysis workflow processes market data and option prices through multiple calculation stages:</p>
+<ul><li>Market data ingestion ETF prices</li><li>Option price tracking call &amp; put</li><li>Synthetic position calculation</li><li>Spread computation</li><li>Annualized return derivation</li><li>Performance analysis and visualization</li></ul>
+<hr/>
+<h2>Price Dynamics Analysis</h2>
+<h3>Underlying vs Synthetic Position</h3>
+<div class='plot-card'><div class='plot-meta'><code>price_evolution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/price_evolution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The chart reveals the relationship between the underlying ETF price and the synthetic position:</p>
+<ul><li>Tight Tracking: The synthetic position closely follows the underlying ETF price, confirming strategy effectiveness</li><li>Convergence: Both lines exhibit high correlation, indicating minimal tracking error</li><li>Price Range: ETF prices fluctuated between 3.014 CNY low to 3.256 CNY high</li><li>Average Price: Mean closing price of 3.145 CNY with standard deviation of 0.05 CNY</li></ul>
+<p><strong>Insight</strong></p>
+<h3>Option Price Evolution</h3>
+<div class='plot-card'><div class='plot-meta'><code>option_prices.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/option_prices.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Call and put option prices displayed distinct patterns:</p>
+<ul><li>Call Options: Traded higher mean: 0.126 CNY, max: 0.214 CNY</li><li>Put Options: Traded lower mean: 0.071 CNY, max: 0.146 CNY</li><li>Price Relationship: Call premium reflects bullish market expectations</li><li>Synthetic Mean: 3.155 CNY, close to underlying price</li></ul>
+<p><strong>Insight</strong></p>
+<hr/>
+<h2>Strategy Performance</h2>
+<h3>Cumulative Returns</h3>
+<div class='plot-card'><div class='plot-meta'><code>cumulative_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/cumulative_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The cumulative profit curve demonstrates remarkable consistency:</p>
+<ul><li>Total Profit: 5.15 CNY over 496 periods</li><li>Linear Growth: Nearly linear progression indicates stable performance</li><li>No Major Drawdowns: Minimal volatility in cumulative returns</li><li>Compounding Effect: Steady accumulation over time</li></ul>
+<p><strong>Insight</strong></p>
+<h3>Daily Performance Breakdown</h3>
+<div class='plot-card'><div class='plot-meta'><code>daily_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/daily_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Daily profit distribution shows:</p>
+<ul><li>Consistent Profits: Most days generated positive returns</li><li>Stable Performance: Low variance in daily profits</li><li>No Major Loss Days: Even on underperforming days, losses were minimal</li><li>Scalability Potential: Performance suggests scalability to larger capital</li></ul>
+<p><strong>Insight</strong></p>
+<hr/>
+<h2>Risk and Return Metrics</h2>
+<h3>Spread Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>spread_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/spread_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The spread profit distribution reveals:</p>
+<ul><li>Mean Spread: 0.0104 CNY</li><li>Spread Volatility: 0.0045 CNY low variance</li><li>Profit Concentration: Most spreads clustered around mean</li><li>Limited Tails: Few extreme outliers</li></ul>
+<p><strong>Insight</strong></p>
+<h3>Annualized Return Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>return_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/return_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Annualized returns show:</p>
+<ul><li>Mean Annualized Return: 1.75%</li><li>Range: -0.19% to 3.98%</li><li>Skewness: Positive skew indicates more frequent positive returns</li><li>Concentration: Most returns clustered between 1% - 3%</li></ul>
+<p><strong>Insight</strong></p>
+<hr/>
+<h2>Win Rate Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>win_rate.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/win_rate.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The strategy&#x27;s exceptional win rate:</p>
+<ul><li>Profitable Periods: 492 out of 496 99.2%</li><li>Loss Periods: Only 4 0.8%</li><li>Performance Consistency: Highly reliable across all periods</li></ul>
+<p><strong>Insight</strong></p>
+<hr/>
+<h2>Advanced Analytics</h2>
+<h3>Volatility Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>volatility_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/volatility_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Rolling standard deviation analysis shows:</p>
+<ul><li>20-Day Volatility: Responds quickly to market changes</li><li>50-Day Volatility: Smoother, longer-term trend</li><li>Volatility Spikes: Correspond to significant market movements</li><li>Mean Reversion: Volatility tends to revert to mean levels</li></ul>
+<p><strong>Insight</strong></p>
+<h3>Correlation Matrix</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_matrix.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/correlation_matrix.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key correlation insights:</p>
+<ul><li>Strong Positive: Underlying vs Synthetic 0.98+ confirms tracking accuracy</li><li>Spread Correlation: Spread shows low correlation with price movements diversification</li><li>Option Correlation: Call and put prices moderately correlated with underlying</li><li>DTE Impact: Days to expiry shows minimal correlation with returns</li></ul>
+<p><strong>Insight</strong></p>
+<h3>DTE vs Return Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>dte_vs_return.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/dte_vs_return.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Days to expiry analysis reveals:</p>
+<ul><li>DTE Range: 54 to 98 days</li><li>Return Distribution: Consistent across different DTE values</li><li>No Clear Pattern: Returns don&#x27;t show strong DTE dependency</li><li>Strategy Robustness: Works across varying time horizons</li></ul>
+<p><strong>Insight</strong></p>
+<h3>Price vs Spread Performance</h3>
+<div class='plot-card'><div class='plot-meta'><code>price_vs_spread.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b9c4c3a493f4b5ffe58ca76d5c597d6c048cfa613919accf90407749c422008d/assets/price_vs_spread.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Scatter plot analysis shows:</p>
+<ul><li>No Price Dependency: Spreads distributed across all price levels</li><li>Random Distribution: No clear pattern between price and spread</li><li>Market Neutral: Strategy performance independent of price direction</li><li>Consistent Arbitrage: Opportunities exist across all price levels</li></ul>
+<p><strong>Insight</strong></p>
+<hr/>
+<h2>Statistical Summary Table</h2>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th><th>Interpretation</th></tr></thead><tbody><tr><td>Total Profit</td><td>5.15 CNY</td><td>Cumulative profit from strategy</td></tr><tr><td>Win Rate</td><td>99.2%</td><td>Exceptional consistency</td></tr><tr><td>Average Spread</td><td>0.0104 CNY</td><td>Mean profit per period</td></tr><tr><td>Spread Std Dev</td><td>0.0045 CNY</td><td>Low volatility</td></tr><tr><td>Mean Annualized Return</td><td>1.75%</td><td>Attractive risk-adjusted return</td></tr><tr><td>Max Annualized Return</td><td>3.98%</td><td>Best period performance</td></tr><tr><td>Min Annualized Return</td><td>-0.19%</td><td>Worst period performance</td></tr><tr><td>Underlying Price Range</td><td>3.014 - 3.256 CNY</td><td>Trading range</td></tr><tr><td>Underlying Mean Price</td><td>3.145 CNY</td><td>Average price</td></tr><tr><td>Call Option Mean</td><td>0.126 CNY</td><td>Average call price</td></tr><tr><td>Put Option Mean</td><td>0.071 CNY</td><td>Average put price</td></tr><tr><td>Total Trading Periods</td><td>496</td><td>Sample size</td></tr><tr><td>Trading Days</td><td>44</td><td>Strategy duration</td></tr></tbody></table></div>
+<h2>Conclusion and Recommendations</h2>
+<h3>Strategy Assessment</h3>
+<p>The synthetic option strategy on 510050 ETF demonstrates exceptional performance characteristics:</p>
+<p><strong>Strengths:</strong></p>
+<p>1. High Win Rate: 99.2% indicates consistent profitability</p>
+<p>2. Low Volatility: Spread volatility of 0.0045 CNY shows controlled risk</p>
+<p>3. Market Neutral: Returns independent of price direction</p>
+<p>4. Consistent Performance: Works across different volatility regimes</p>
+<p>5. No Major Drawdowns: Steady cumulative returns</p>
+<p><strong>Risk Considerations:</strong></p>
+<p>1. Transaction Costs: Frequent trading may impact net returns</p>
+<p>2. Execution Risk: Successful arbitrage requires precise timing</p>
+<p>3. Market Efficiency: Strategy may become less effective as market adapts</p>
+<p>4. Capital Requirements: Need adequate margin for options positions</p>
+<h3>Recommendations</h3>
+<p>1. Scale Cautiously: Gradually increase position sizes while monitoring performance</p>
+<p>2. Optimize Execution: Implement automated execution to capture arbitrage opportunities</p>
+<p>3. Monitor Market Efficiency: Track for signs of diminishing returns</p>
+<p>4. Risk Management: Set position limits and stop-loss protocols</p>
+<p>5. Expand to Other ETFs: Test strategy on other liquid ETFs for diversification</p>
+<h3>Future Research</h3>
+<ul><li>Extend analysis to longer time periods</li><li>Compare performance across different market conditions</li><li>Optimize entry/exit timing strategies</li><li>Evaluate impact of transaction costs on profitability</li><li>Test strategy variations with different option maturities</li></ul>
+<hr/>
+<h2>Technical Notes</h2>
+<h3>Data Period</h3>
+<ul><li>Start Date: December 17, 2025 09:45:00</li><li>End Date: January 30, 2026 15:00:00</li><li>Total Records: 496 data points</li><li>Frequency: 15-minute intervals</li></ul>
+<h3>Methodology</h3>
+<ul><li>Synthetic Position: Call Option + Put Option</li><li>Spread: Synthetic Position - Underlying Price</li><li>Annualized Return: Calculated based on spread and time period</li><li>Statistical Analysis: Used Polars for data manipulation and Plotly for visualization</li></ul>
+<h3>Tools Used</h3>
+<ul><li>Data Processing: Polars DataFrame library</li><li>Visualization: Plotly with custom chart builder</li><li>Diagramming: D2 declarative diagramming language</li></ul>
+<hr/>
+<p><em>Analysis generated by Pardus AI - Quantitative Analysis Agent</em></p>
+<p><em>Date: January 30, 2025</em></p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

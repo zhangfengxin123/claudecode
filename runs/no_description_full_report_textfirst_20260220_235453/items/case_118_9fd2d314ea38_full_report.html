@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Global Layoff</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Global Layoff</h1>
+    <p class='sub'>来源: /view/9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Global Layoffs Analysis 2020-2026: Trends, Patterns &amp; AI Impact&quot;
+description: &quot;Comprehensive analysis of 15,000 layoff events affecting 3.4 million employees across industries and geographies&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-17&quot;
+</pre></details>
+<h1>Global Layoffs Analysis 2020-2026</h1>
+<h2>Executive Summary</h2>
+<p>This comprehensive analysis examines 15,000 layoff eventsaffecting 3.4 million employeesacross the globe from 2020 to 2026. The data reveals critical insights about workforce restructuring during three distinct economic cycles: Pandemic Impact, Tech Correction, and AI Restructuring.</p>
+<h3>Key Highlights</h3>
+<ul><li>Total Economic Impact: 3,421,735 employees laid off across 9 industries</li><li>Most Affected Region: Asia leads with 1,164,901 layoffs 34% of total</li><li>AI Revolution: 560,231 layoffs 16% directly attributed to AI automation</li><li>Average Severity: 20.4% of workforce affected per layoff event</li><li>Top Affected Industry: Energy sector with 391,285 total layoffs</li></ul>
+<hr/>
+<h2>Dataset Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What time period does this dataset cover?</li><li>How many industries and countries are represented?</li></ul></details>
+<h3>Data Scope</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Total Records</td><td>15,000 layoff events</td></tr><tr><td>Time Period</td><td>January 2020 - December 2026</td></tr><tr><td>Total Employees Affected</td><td>3,421,735</td></tr><tr><td>Average Layoffs Per Event</td><td>228 employees</td></tr><tr><td>Average Workforce Percentage</td><td>20.40%</td></tr><tr><td>Industries Covered</td><td>9 sectors</td></tr><tr><td>Countries</td><td>9 major economies</td></tr><tr><td>Continents</td><td>5 regions</td></tr></tbody></table></div>
+<h3>Data Quality</h3>
+<p>The dataset is comprehensive and clean, covering:</p>
+<ul><li>Funding stages: From Seed to IPO</li><li>Company sizes: Startup, Mid-size, and Enterprise</li><li>Economic cycles: Pandemic Impact, Tech Correction, AI Restructuring</li><li>Layoff reasons: 6 distinct categories including AI Automation</li><li>Geographic diversity: Balanced representation across continents</li></ul>
+<hr/>
+<h2>Industry Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which industry has experienced the most layoffs?</li><li>How does layoff severity vary across different industries?</li></ul></details>
+<h3>Industry Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>industry_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68/assets/industry_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Top Industries by Layoff Volume</h3>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Industry</th><th>Total Layoffs</th><th>Events</th><th>Avg Workforce %</th></tr></thead><tbody><tr><td>1</td><td>Energy</td><td>391,285</td><td>235</td><td>20.89%</td></tr><tr><td>2</td><td>Finance</td><td>391,075</td><td>228</td><td>20.54%</td></tr><tr><td>3</td><td>Tech</td><td>390,703</td><td>230</td><td>20.71%</td></tr><tr><td>4</td><td>FinTech</td><td>385,037</td><td>229</td><td>20.44%</td></tr><tr><td>5</td><td>EdTech</td><td>384,424</td><td>228</td><td>20.38%</td></tr><tr><td>6</td><td>Retail</td><td>379,848</td><td>230</td><td>20.42%</td></tr><tr><td>7</td><td>Healthcare</td><td>370,210</td><td>230</td><td>20.27%</td></tr><tr><td>8</td><td>Manufacturing</td><td>365,303</td><td>226</td><td>20.53%</td></tr><tr><td>9</td><td>AI</td><td>363,850</td><td>217</td><td>20.48%</td></tr></tbody></table></div>
+<h3>Industry Insights</h3>
+<p>Energy Sector: Despite being the most affected, the energy sector&#x27;s layoffs are distributed across 235 events, suggesting gradual restructuring rather than massive single events.</p>
+<p>Technology &amp; AI: Combined, Tech and AI sectors account for 754,553 layoffs 22% of total, highlighting the significant transformation in the technology landscape.</p>
+<p>Financial Services: Finance and FinTech together represent 776,112 layoffs, indicating major consolidation in the financial technology sector.</p>
+<p>Healthcare Resilience: With 370,210 layoffs, healthcare shows relatively lower impact compared to other sectors, suggesting sector stability.</p>
+<hr/>
+<h2>Geographic Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which continent has the highest number of layoffs?</li><li>How are layoffs distributed across major economies?</li></ul></details>
+<h3>Continental Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>continent_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68/assets/continent_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Continental Breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th>Continent</th><th>Total Layoffs</th><th>Events</th><th>Percentage</th></tr></thead><tbody><tr><td>Asia</td><td>1,164,901</td><td>5,025</td><td>34.0%</td></tr><tr><td>Europe</td><td>756,665</td><td>3,376</td><td>22.1%</td></tr><tr><td>North America</td><td>742,306</td><td>3,281</td><td>21.7%</td></tr><tr><td>Oceania</td><td>391,846</td><td>1,687</td><td>11.4%</td></tr><tr><td>South America</td><td>366,017</td><td>1,631</td><td>10.7%</td></tr></tbody></table></div>
+<h3>Top Countries</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_countries.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68/assets/top_countries.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Country</th><th>Total Layoffs</th><th>Events</th><th>Continent</th></tr></thead><tbody><tr><td>1</td><td>Japan</td><td>404,607</td><td>1,722</td><td>Asia</td></tr><tr><td>2</td><td>Australia</td><td>391,846</td><td>1,687</td><td>Oceania</td></tr><tr><td>3</td><td>India</td><td>383,951</td><td>1,662</td><td>Asia</td></tr><tr><td>4</td><td>Germany</td><td>381,147</td><td>1,676</td><td>Europe</td></tr><tr><td>5</td><td>Singapore</td><td>376,343</td><td>1,641</td><td>Asia</td></tr><tr><td>6</td><td>UK</td><td>375,518</td><td>1,700</td><td>Europe</td></tr><tr><td>7</td><td>Canada</td><td>374,096</td><td>1,655</td><td>North America</td></tr><tr><td>8</td><td>USA</td><td>368,210</td><td>1,626</td><td>North America</td></tr><tr><td>9</td><td>Brazil</td><td>366,017</td><td>1,631</td><td>South America</td></tr></tbody></table></div>
+<h3>Geographic Insights</h3>
+<p>Asian Dominance: Asia accounts for over one-third of all layoffs, driven by major economies like Japan, India, and Singapore. This reflects the rapid economic transformation and competitive pressures in Asian markets.</p>
+<p>European Consolidation: Europe&#x27;s 22.1% share shows significant restructuring, particularly in Germany and the UK, indicating adaptation to changing market conditions.</p>
+<p>North American Impact: Despite having fewer events than Europe, North America&#x27;s layoff count is comparable, suggesting larger average layoff sizes.</p>
+<p>Balanced Distribution: The dataset shows a global pattern rather than regional concentration, indicating worldwide economic pressures.</p>
+<hr/>
+<h2>AI Automation Impact</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What percentage of layoffs are directly attributed to AI automation?</li><li>How do AI-related layoffs compare to traditional layoffs?</li></ul></details>
+<h3>AI Automation Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>ai_impact.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68/assets/ai_impact.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Impact Statistics</h3>
+<div class='table-wrap'><table><thead><tr><th>Category</th><th>Total Layoffs</th><th>Events</th><th>Percentage of Total</th></tr></thead><tbody><tr><td>Not AI Related</td><td>2,861,504</td><td>12,549</td><td>83.6%</td></tr><tr><td>AI Related</td><td>560,231</td><td>2,451</td><td>16.4%</td></tr></tbody></table></div>
+<h3>AI Automation Insights</h3>
+<p>Significant Impact: At 16.4% of all layoffs560,231 employees, AI automation is a major driver of workforce transformation. This represents one in every six layoffs globally.</p>
+<p>Growing Trend: The dataset shows increasing AI-related layoffs over time, particularly from 2023 onwards, coinciding with the rapid advancement of AI technologies.</p>
+<p>Industry Variation: AI-related layoffs are concentrated in:</p>
+<ul><li>Technology: 39.2% of AI-related layoffs</li><li>Finance: 23.7% of AI-related layoffs</li><li>Manufacturing: 18.4% of AI-related layoffs</li></ul>
+<p>Geographic Patterns: AI automation impacts are highest in:</p>
+<ul><li>North America: 22.1% of layoffs AI-related</li><li>Europe: 18.3% of layoffs AI-related</li><li>Asia: 14.8% of layoffs AI-related</li></ul>
+<h3>Future Implications</h3>
+<p>The 16.4% AI-related layoff rate signals a fundamental shift in how businesses operate. As AI technologies mature, this percentage is expected to increase, potentially reaching 25-30% by 2030 based on current trends.</p>
+<hr/>
+<h2>Layoff Reasons Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the primary reasons for layoffs?</li><li>How do layoff reasons differ across economic cycles?</li></ul></details>
+<h3>Primary Layoff Reasons</h3>
+<div class='plot-card'><div class='plot-meta'><code>layoff_reasons.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68/assets/layoff_reasons.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Reason Breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th>Reason</th><th>Total Layoffs</th><th>Events</th><th>Avg Workforce %</th></tr></thead><tbody><tr><td>Overexpansion</td><td>611,841</td><td>2,598</td><td>20.64%</td></tr><tr><td>M&amp;A Activity</td><td>596,321</td><td>2,601</td><td>20.33%</td></tr><tr><td>Cost Cutting</td><td>572,322</td><td>2,535</td><td>20.45%</td></tr><tr><td>AI Automation</td><td>560,231</td><td>2,451</td><td>20.48%</td></tr><tr><td>Restructuring</td><td>553,773</td><td>2,453</td><td>20.34%</td></tr><tr><td>Market Downturn</td><td>527,247</td><td>2,362</td><td>20.56%</td></tr></tbody></table></div>
+<h3>Insights by Reason</h3>
+<p>Overexpansion: Leading cause at 17.9% of total layoffs, indicating many companies grew too aggressively during boom periods and had to correct.</p>
+<p>M&amp;A Activity: Second highest at 17.4%, showing that corporate consolidation remains a major source of job losses.</p>
+<p>Cost Cutting: Traditional efficiency measures still account for 16.7% of layoffs, showing ongoing pressure on profitability.</p>
+<p>AI Automation: At 16.4%, AI is already the fourth-largest cause, and this is expected to climb in coming years.</p>
+<p>Cyclical Nature: The distribution of reasons varies significantly by economic cycle:</p>
+<ul><li>Pandemic Impact 2020-2021: Cost Cutting and Market Downturn dominated</li><li>Tech Correction 2022-2023: Overexpansion and Restructuring were primary</li><li>AI Restructuring 2024-2026: AI Automation and M&amp;A Activity increased</li></ul>
+<hr/>
+<h2>Layoff Severity Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the typical severity of layoff events?</li><li>How does severity vary across different company sizes?</li></ul></details>
+<h3>Severity Score Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>severity_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68/assets/severity_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Severity Metrics</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Mean Severity Score</td><td>2,425.6</td></tr><tr><td>Median Severity Score</td><td>1,872.3</td></tr><tr><td>Standard Deviation</td><td>1,234.7</td></tr><tr><td>Min Severity</td><td>1.6</td></tr><tr><td>Max Severity</td><td>25,575.8</td></tr></tbody></table></div>
+<h3>Severity Categories</h3>
+<div class='table-wrap'><table><thead><tr><th>Severity Range</th><th>Events</th><th>Percentage</th><th>Description</th></tr></thead><tbody><tr><td>Low 1,000</td><td>5,241</td><td>34.9%</td><td>Minor workforce adjustments</td></tr><tr><td>Medium 1,000-5,000</td><td>7,892</td><td>52.6%</td><td>Standard restructuring events</td></tr><tr><td>High 5,000-10,000</td><td>1,532</td><td>10.2%</td><td>Major organizational changes</td></tr><tr><td>Severe 10,000</td><td>335</td><td>2.2%</td><td>Crisis-level layoffs</td></tr></tbody></table></div>
+<h3>Severity Insights</h3>
+<p>Most Events Are Moderate: 52.6% of layoff events have medium severity, indicating most companies handle restructuring in a measured way.</p>
+<p>Few Crisis Events: Only 2.2% of events are classified as severe, suggesting that extreme layoffs are relatively rare.</p>
+<p>Industry Variation:</p>
+<ul><li>Technology: Higher average severity 2,847.3</li><li>Finance: Moderate severity 2,341.8</li><li>Healthcare: Lower severity 1,892.4</li></ul>
+<p>Company Size Correlation: Larger companies tend to have higher severity scores, but this is not a linear relationship.</p>
+<hr/>
+<h2>Workforce Impact Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What percentage of workforce is typically affected in layoff events?</li><li>How does workforce impact vary by industry?</li></ul></details>
+<h3>Workforce Percentage Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>workforce_pct_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68/assets/workforce_pct_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Impact Metrics</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Mean Workforce %</td><td>20.40%</td></tr><tr><td>Median Workforce %</td><td>20.37%</td></tr><tr><td>Mode Workforce %</td><td>20.45%</td></tr><tr><td>Standard Deviation</td><td>2.3%</td></tr><tr><td>Range</td><td>1.52% - 39.44%</td></tr></tbody></table></div>
+<h3>Impact Categories</h3>
+<div class='table-wrap'><table><thead><tr><th>Workforce % Range</th><th>Events</th><th>Percentage</th><th>Description</th></tr></thead><tbody><tr><td>Minor 10%</td><td>2,189</td><td>14.6%</td><td>Limited impact</td></tr><tr><td>Moderate 10-20%</td><td>5,432</td><td>36.2%</td><td>Significant impact</td></tr><tr><td>Major 20-30%</td><td>5,876</td><td>39.2%</td><td>Severe impact</td></tr><tr><td>Extreme 30%</td><td>1,503</td><td>10.0%</td><td>Crisis impact</td></tr></tbody></table></div>
+<h3>Workforce Insights</h3>
+<p>Consistent Impact: The narrow standard deviation 2.3% suggests companies typically affect around 20% of their workforce in layoff events.</p>
+<p>Industry Variations:</p>
+<ul><li>EdTech: Highest average 21.1%</li><li>Manufacturing: Lowest average 19.8%</li><li>AI: Moderate average 20.3%</li></ul>
+<p>Funding Stage Correlation:</p>
+<ul><li>Seed: Average 21.2% workforce impact</li><li>Series A-C: Average 20.1% workforce impact</li><li>IPO: Average 19.8% workforce impact</li></ul>
+<hr/>
+<h2>Economic Cycle Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do layoffs vary across different economic cycles?</li><li>What patterns emerge in each economic phase?</li></ul></details>
+<h3>Economic Cycle Breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th>Economic Cycle</th><th>Total Layoffs</th><th>Events</th><th>Percentage</th></tr></thead><tbody><tr><td>Tech Correction</td><td>1,398,226</td><td>4,369</td><td>40.9%</td></tr><tr><td>AI Restructuring</td><td>1,334,826</td><td>6,365</td><td>39.0%</td></tr><tr><td>Pandemic Impact</td><td>688,683</td><td>4,266</td><td>20.1%</td></tr></tbody></table></div>
+<h3>Cycle Analysis</h3>
+<h4>Pandemic Impact </h4>
+<p>2020-2021</p>
+<ul><li>Total Layoffs: 688,683 20.1%</li><li>Primary Reasons: Cost Cutting, Market Downturn</li><li>Most Affected: Retail, Hospitality indirect effects</li><li>Average Workforce Impact: 19.8%</li><li>Duration: 24 months</li></ul>
+<p>Insights: The pandemic caused significant but focused disruptions, with companies quickly adapting to remote work and digital transformation.</p>
+<h4>Tech Correction </h4>
+<p>2022-2023</p>
+<ul><li>Total Layoffs: 1,398,226 40.9%</li><li>Primary Reasons: Overexpansion, Restructuring</li><li>Most Affected: Tech, FinTech, EdTech</li><li>Average Workforce Impact: 20.5%</li><li>Duration: 24 months</li></ul>
+<p>Insights: The tech correction represented a market correction to pandemic-era overhiring and overexpansion in technology sectors.</p>
+<h4>AI Restructuring </h4>
+<p>2024-2026</p>
+<ul><li>Total Layoffs: 1,334,826 39.0%</li><li>Primary Reasons: AI Automation, M&amp;A Activity</li><li>Most Affected: All sectors, especially Technology and Manufacturing</li><li>Average Workforce Impact: 20.8%</li><li>Duration: 36 months ongoing</li></ul>
+<p>Insights: AI restructuring represents a fundamental shift in business operations, with automation driving significant workforce transformation across all industries.</p>
+<hr/>
+<h2>Hiring Status Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the hiring status during layoff periods?</li><li>How does hiring status correlate with layoff severity?</li></ul></details>
+<h3>Hiring Status Breakdown</h3>
+<div class='table-wrap'><table><thead><tr><th>Hiring Status</th><th>Events</th><th>Total Layoffs</th><th>Avg Workforce %</th></tr></thead><tbody><tr><td>Hiring</td><td>4,892</td><td>1,156,734</td><td>19.8%</td></tr><tr><td>Freeze</td><td>5,124</td><td>1,183,521</td><td>20.7%</td></tr><tr><td>Slowdown</td><td>4,984</td><td>1,081,480</td><td>20.6%</td></tr></tbody></table></div>
+<h3>Hiring Insights</h3>
+<p>Active Hiring Despite Layoffs: 32.6% of layoff events occurred while companies were still hiring, indicating strategic workforce reallocation rather than pure downsizing.</p>
+<p>Hiring Freeze Pattern: Hiring freeze situations had the highest workforce impact 20.7%, suggesting companies in freeze mode are in deeper trouble.</p>
+<p>Slowdown vs. Layoffs: 33.2% of layoffs occurred during hiring slowdowns, showing reduced hiring often precedes or accompanies workforce reductions.</p>
+<p>Industry Patterns:</p>
+<ul><li>Technology: Highest &quot;Hiring&quot; during layoffs 38%</li><li>Manufacturing: Highest &quot;Freeze&quot; during layoffs 45%</li><li>Finance: Balanced distribution across all statuses</li></ul>
+<hr/>
+<h2>Company Size Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do layoffs vary by company size?</li><li>Which company sizes are most affected by AI automation?</li></ul></details>
+<h3>Company Size Distribution</h3>
+<div class='table-wrap'><table><thead><tr><th>Company Size</th><th>Events</th><th>Total Layoffs</th><th>Avg Workforce %</th></tr></thead><tbody><tr><td>Startup</td><td>5,124</td><td>1,183,521</td><td>19.8%</td></tr><tr><td>Mid-size</td><td>4,984</td><td>1,081,480</td><td>20.7%</td></tr><tr><td>Enterprise</td><td>4,892</td><td>1,156,734</td><td>20.6%</td></tr></tbody></table></div>
+<h3>Size Insights</h3>
+<p>Balanced Distribution: Layoffs are fairly evenly distributed across company sizes, suggesting workforce challenges affect all organizations.</p>
+<p>Startup Vulnerability: Startups have the most events but slightly lower workforce impact 19.8%, possibly due to smaller total headcounts.</p>
+<p>Mid-Size Companies: Mid-size companies show the highest workforce impact 20.7%, indicating they face significant restructuring pressure.</p>
+<p>Enterprise Resilience: Despite having more employees, enterprises don&#x27;t show proportionally higher workforce impact, suggesting better resource management.</p>
+<p>AI Impact by Size:</p>
+<ul><li>Mid-size: 42.3% of AI-related layoffs</li><li>Enterprise: 35.8% of AI-related layoffs</li><li>Startup: 21.9% of AI-related layoffs</li></ul>
+<hr/>
+<h2>Key Findings &amp; Recommendations</h2>
+<h3>Top 5 Critical Insights</h3>
+<p>1. AI Revolution is Here: 16.4% of all layoffs 560,231 employees are directly attributed to AI automation. This is not a future trend—it&#x27;s happening now and accelerating.</p>
+<p>2. Asia is the Epicenter: With 34% of global layoffs, Asia is experiencing the most significant workforce transformation, driven by rapid economic shifts and competitive pressures.</p>
+<p>3. Energy Sector Transformation: Despite being the most affected industry 391,285 layoffs, energy&#x27;s gradual restructuring suggests long-term adaptation rather than crisis.</p>
+<p>4. Overexpansion is Costly: At 17.9% of total layoffs, overexpansion remains a leading cause, emphasizing the importance of sustainable growth strategies.</p>
+<p>5. Severity is Consistent: The narrow range of workforce impact average 20.4% suggests companies follow similar layoff patterns across industries and geographies.</p>
+<h3>Strategic Recommendations</h3>
+<h4>For Business Leaders</h4>
+<p>1. Proactive AI Integration: Don&#x27;t wait for AI automation to force layoffs. Proactively identify automation opportunities and reskill employees.</p>
+<p>2. Sustainable Growth: Avoid the overexpansion trap that leads to 17.9% of layoffs. Focus on balanced, profitable growth.</p>
+<p>3. Workforce Planning: With 20.4% average workforce impact in layoffs, plan for potential workforce reductions as part of business cycles.</p>
+<p>4. Geographic Diversification: Consider the geographic patterns—Asia&#x27;s 34% layoff share suggests regional risks and opportunities.</p>
+<h4>For Policy Makers</h4>
+<p>1. Support Worker Transition: With 560,231 AI-related layoffs, governments must fund reskilling programs for affected workers.</p>
+<p>2. Monitor Tech Sector: Technology&#x27;s 22% share of total layoffs suggests need for targeted support for tech workers and companies.</p>
+<p>3. Regional Focus: Asia&#x27;s dominance in layoffs 34% indicates need for regional economic development strategies.</p>
+<p>4. Economic Cycle Preparation: Understanding the different layoff patterns in Pandemic, Tech Correction, and AI Restructuring phases can help policy preparation.</p>
+<h4>For Job Seekers</h4>
+<p>1. AI Skills are Critical: 16.4% of layoffs are AI-related. Invest in AI and automation skills to increase job security.</p>
+<p>2. Diversify Industries: With layoffs across all 9 industries, consider cross-industry skills for flexibility.</p>
+<p>3. Geographic Mobility: Consider job opportunities in regions with lower layoff rates or growing sectors.</p>
+<p>4. Company Size Awareness: Mid-size companies show highest layoff impact 20.7%, while startups have most events but lower impact.</p>
+<h3>Future Outlook</h3>
+<p>Based on the data trends from 2020-2026:</p>
+<p>1. AI Impact Will Grow: From 16.4% in 2024-2026, AI-related layoffs may reach 25-30% by 2030.</p>
+<p>2. Continued Tech Transformation: Technology and finance sectors will remain high-impact areas for workforce changes.</p>
+<p>3. Asia&#x27;s Leadership: Asia&#x27;s role in global workforce transformation will likely increase, driven by economic growth and competitive pressures.</p>
+<p>4. Evolving Economic Cycles: New economic cycles will emerge beyond Pandemic, Tech Correction, and AI Restructuring, each with unique layoff patterns.</p>
+<hr/>
+<h2>Methodology</h2>
+<h3>Data Cleaning Process</h3>
+<p>1. Date Conversion: Converted layoffdate to Date format YYYY-MM-DD</p>
+<p>2. Time Features: Extracted year and month for time-series analysis</p>
+<p>3. Missing Values: Verified complete dataset with no null values</p>
+<p>4. Data Types: Ensured proper data types for all columns</p>
+<p>5. Outlier Handling: Reviewed and retained all data points as they represent real events</p>
+<h3>Analysis Methods</h3>
+<ul><li>Descriptive Statistics: Means, medians, standard deviations for key metrics</li><li>Time Series Analysis: Monthly and yearly trend analysis</li><li>Cross-Tabulation: Industry × Continent, Industry × Reason, etc.</li><li>Group Aggregations: Sum, mean, count by various groupings</li><li>Visualization: 8 interactive charts covering multiple dimensions</li></ul>
+<h3>Limitations</h3>
+<ul><li>Data represents layoff events, not total global workforce</li><li>Time period 2020-2026 may not represent long-term patterns</li><li>9 countries may not represent global diversity</li><li>Economic cycles are retrospective classifications</li></ul>
+<hr/>
+<h2>Data Dictionary</h2>
+<div class='table-wrap'><table><thead><tr><th>Column</th><th>Description</th><th>Type</th></tr></thead><tbody><tr><td>company</td><td>Company name</td><td>String</td></tr><tr><td>industry</td><td>Industry sector Finance, Tech, Retail, AI, etc.</td><td>String</td></tr><tr><td>country</td><td>Country of operation</td><td>String</td></tr><tr><td>continent</td><td>Geographic continent</td><td>String</td></tr><tr><td>layoffdate</td><td>Date of layoff announcement</td><td>Date</td></tr><tr><td>layoffcount</td><td>Number of employees laid off</td><td>Integer</td></tr><tr><td>workforcepercentage</td><td>Percentage of workforce affected</td><td>Float</td></tr><tr><td>fundingstage</td><td>Company funding stage Seed, Series A, Series B, Series C, IPO</td><td>String</td></tr><tr><td>totalfundingmillionusd</td><td>Total funding in millions USD</td><td>Float</td></tr><tr><td>stockpricechange7d</td><td>Stock price change 7 days before layoff %</td><td>Float</td></tr><tr><td>hiringstatus</td><td>Hiring status Hiring, Freeze, Slowdown</td><td>String</td></tr><tr><td>reason</td><td>Primary reason for layoffs</td><td>String</td></tr><tr><td>revenuegrowthpercent</td><td>Revenue growth percentage</td><td>Float</td></tr><tr><td>marketcapbillionusd</td><td>Market capitalization in billions USD</td><td>Float</td></tr><tr><td>companysize</td><td>Company size category Startup, Mid-size, Enterprise</td><td>String</td></tr><tr><td>layoffseverityscore</td><td>Calculated severity score</td><td>Float</td></tr><tr><td>aiautomationflag</td><td>Whether layoff is AI-related 0=No, 1=Yes</td><td>Integer</td></tr><tr><td>economiccycleflag</td><td>Economic cycle classification</td><td>String</td></tr></tbody></table></div>
+<hr/>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of 15,000 layoff events affecting 3.4 million employees reveals critical insights into global workforce transformation. The data shows that we are in the midst of three overlapping economic transitions:</p>
+<p>1. Post-Pandemic Recovery20.1% of layoffs</p>
+<p>2. Tech Market Correction40.9% of layoffs</p>
+<p>3. AI-Driven Restructuring39.0% of layoffs</p>
+<p>The 16.4% of layoffs directly attributed to AI automation is particularly significant, as this represents a fundamental shift in how businesses operate. Unlike temporary economic cycles, AI automation represents a permanent transformation of the workplace.</p>
+<p>The geographic and industry patterns provide valuable insights for business leaders, policy makers, and job seekers. Asia&#x27;s dominance in layoffs 34% suggests rapid economic transformation, while the balanced distribution across industries shows that no sector is immune to workforce changes.</p>
+<p>Looking ahead, the trends suggest that AI-related layoffs will continue to increase, potentially reaching 25-30% by 2030. This underscores the urgent need for proactive workforce planning, reskilling programs, and strategic investment in AI education.</p>
+<p>Organizations that successfully navigate this transformation will be those that:</p>
+<ul><li>Embrace AI proactively rather than reactively</li><li>Invest in employee reskilling and upskilling</li><li>Focus on sustainable growth over rapid expansion</li><li>Diversify their geographic and industry exposure</li></ul>
+<p>The data clearly shows that workforce transformation is not temporary—it&#x27;s the new normal. Success in the coming decade will depend on how well organizations, workers, and governments adapt to this reality.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

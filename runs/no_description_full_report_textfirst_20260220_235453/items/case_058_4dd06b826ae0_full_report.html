@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：moltbook_top_5000_posts</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：moltbook_top_5000_posts</h1>
+    <p class='sub'>来源: /view/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Moltbook Top 5000 帖子数据分析报告&quot;
+description: &quot;深入分析Moltbook平台前5000条热门帖子的参与度、内容分布和时间模式&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Moltbook Top 5000 帖子数据分析报告</h1>
+<div class='plot-card'><div class='plot-meta'><code>daily_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/daily_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>执行摘要</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据集的核心洞察是什么？</li><li>哪个子版块贡献了最多的内容？</li></ul></details>
+<p>本报告分析了Moltbook平台前5000条热门帖子的参与度指标，包括Upvotes、Downvotes、Net Score和评论数。数据显示平台呈现出指数级增长的特征，从1月28日的4条帖子激增到1月31日的4,585条帖子。General子版块主导了平台内容，占总帖子数的91.7%。虽然Net Score和Upvotes高度相关（0.99），但与评论数的相关性极低（0.039），表明高评分不一定伴随高讨论度。</p>
+<p>关键发现：</p>
+<ul><li>总Upvotes：1,645,616 | 总Net Score：1,634,928</li><li>平均Net Score：326.99 | 平均每帖评论数：17.53</li><li>活动高峰集中在1月31日（4,585条帖子）</li><li>KingMolt子版块虽然只有2条帖子，但平均Net Score高达153,688.5</li></ul>
+<h2>数据概览</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>数据集的时间跨度是什么？</li><li>数据质量如何？</li></ul></details>
+<h3>基本统计</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>数值</th></tr></thead><tbody><tr><td>总记录数</td><td>5,000 条帖子</td></tr><tr><td>日期范围</td><td>2026-01-28 至 2026-01-31（4天）</td></tr><tr><td>数据字段</td><td>16 个（含辅助字段）</td></tr><tr><td>总Upvotes</td><td>1,645,616</td></tr><tr><td>总Downvotes</td><td>11,688</td></tr><tr><td>总Net Score</td><td>1,634,928</td></tr><tr><td>总评论数</td><td>87,634</td></tr></tbody></table></div>
+<h3>数据质量</h3>
+<ul><li>✅ 无缺失值</li><li>✅ 数据类型正确</li><li>✅ 已解析时间字段（date, hour, month）</li><li>✅ 已计算Net Score（Upvotes - Downvotes）</li></ul>
+<h2>时间趋势分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>平台增长趋势如何？</li><li>哪一天的活动最活跃？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>daily_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/daily_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>每日活动统计</h3>
+<div class='table-wrap'><table><thead><tr><th>日期</th><th>帖子数</th><th>占比</th><th>总Net Score</th><th>平均Net Score</th><th>总评论数</th></tr></thead><tbody><tr><td>2026-01-28</td><td>4</td><td>0.08%</td><td>1,447</td><td>361.75</td><td>3,764</td></tr><tr><td>2026-01-29</td><td>30</td><td>0.60%</td><td>6,647</td><td>221.57</td><td>34,694</td></tr><tr><td>2026-01-30</td><td>381</td><td>7.62%</td><td>96,870</td><td>254.25</td><td>20,810</td></tr><tr><td>2026-01-31</td><td>4,585</td><td>91.70%</td><td>1,529,964</td><td>333.69</td><td>28,366</td></tr></tbody></table></div>
+<p>关键洞察：</p>
+<p>1. 指数级增长：从1月28日的4条帖子增长到1月31日的4,585条，增长超过1,100倍</p>
+<p>2. 质量稳定：尽管数量激增，平均Net Score保持在326.99左右，显示内容质量并未因数量增长而下降</p>
+<p>3. 参与度波动：1月29日的平均评论数最高（1,156），但Net Score相对较低（221.57）</p>
+<h3>24小时发布分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>hourly_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/hourly_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>发布时间分析显示用户在不同时段的活跃度分布。大部分帖子集中在特定时间段发布，反映了用户的使用习惯和时区分布。</p>
+<h2>子版块分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些子版块最受欢迎？</li><li>不同子版块的参与度有何差异？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>submolt_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/submolt_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>子版块帖子数量（前10）</h3>
+<div class='table-wrap'><table><thead><tr><th>子版块</th><th>帖子数</th><th>占比</th><th>总Net Score</th><th>平均Net Score</th><th>平均评论数</th></tr></thead><tbody><tr><td>General</td><td>3,792</td><td>75.84%</td><td>1,258,517</td><td>331.89</td><td>16.41</td></tr><tr><td>🦞 Crab Rave 🦞</td><td>115</td><td>2.30%</td><td>26,507</td><td>230.50</td><td>18.34</td></tr><tr><td>Introductions</td><td>348</td><td>6.96%</td><td>4,195</td><td>12.05</td><td>14.93</td></tr><tr><td>KingMolt</td><td>2</td><td>0.04%</td><td>307,377</td><td>153,688.50</td><td>0.00</td></tr><tr><td>Shellraiser</td><td>4</td><td>0.08%</td><td>22,085</td><td>5,521.25</td><td>0.00</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>submolt_score.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/submolt_score.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>子版块参与度洞察</h3>
+<p>1. General占主导地位：虽然只占75.84%的帖子，但贡献了76.99%的Net Score</p>
+<p>2. KingMolt异常值：仅2条帖子就贡献了18.8%的Net Score（307,377），平均每条153,688.5分，远超平均水平</p>
+<p>3. Introductory内容：Introductions子版块有348条帖子，但平均Net Score仅12.05，表明新用户介绍性帖子评分较低</p>
+<p>4. 🦞 Crab Rave 🦞：作为社区主题子版块，拥有稳定的参与度和较高的平均评论数（18.34）</p>
+<h3>高质量子版块（平均Net Score）</h3>
+<div class='plot-card'><div class='plot-meta'><code>submolt_avg_score.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/submolt_avg_score.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>对于拥有至少5条帖子的子版块：</p>
+<ul><li>KingMolt：153,688.5（仅2条，但质量极高）</li><li>Shellraiser：5,521.25（4条，技术讨论质量高）</li><li>General：331.89（大量内容，质量稳定）</li><li>🦞 Crab Rave 🦞：230.50（社区讨论活跃）</li></ul>
+<h2>参与度指标分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Upvotes和Net Score之间有什么关系？</li><li>高评分的帖子会有更多评论吗？</li></ul></details>
+<h3>Net Score分布</h3>
+<div class='plot-card'><div class='plot-meta'><code>net_score_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/net_score_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Net Score呈现右偏分布，大部分帖子的Net Score集中在0-500之间，但存在一些极端高分的帖子（最高315,563分）。</p>
+<h3>相关性分析</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>Upvotes</th><th>Downvotes</th><th>Net Score</th><th>Comment Count</th></tr></thead><tbody><tr><td>Upvotes</td><td>1.000</td><td>0.307</td><td>0.999</td><td>0.039</td></tr><tr><td>Downvotes</td><td>0.307</td><td>1.000</td><td>0.296</td><td>0.010</td></tr><tr><td>Net Score</td><td>0.999</td><td>0.296</td><td>1.000</td><td>0.039</td></tr><tr><td>Comment Count</td><td>0.039</td><td>0.010</td><td>0.039</td><td>1.000</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<p>1. Upvotes和Net Score几乎完全相关（0.999）：这是因为Downvotes只占Upvotes的0.71%，Net Score主要由Upvotes决定</p>
+<p>2. 评论数与评分几乎无关（0.039）：高评分不代表高讨论度，反之亦然</p>
+<p>3. Downvotes与评论数相关性极低（0.010）：争议性内容不一定有更多讨论</p>
+<h3>Score vs Comments 散点图</h3>
+<div class='plot-card'><div class='plot-meta'><code>score_vs_comments.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/4dd06b826ae0dd91444047ac04f0fa5f6dcf43781a2d73bd5c6a69ac3c9f5860/assets/score_vs_comments.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>散点图（对数尺度）显示了Net Score和评论数之间的弱正相关关系。值得注意的是：</p>
+<ul><li>大部分帖子集中在低分、低评论区域</li><li>少数帖子同时拥有高分和高评论数</li><li>存在一些高评论但低评分的帖子（可能是争议性内容）</li></ul>
+<h2>关键洞察</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>平台增长的主要驱动因素是什么？</li><li>如何提高内容质量和参与度？</li></ul></details>
+<h3>1. 增长策略洞察</h3>
+<p>指数级增长模式：平台在4天内实现了从4条到4,585条帖子的爆发式增长。这种增长模式可能由以下因素驱动：</p>
+<ul><li>病毒式传播：1月31日的激增可能由某个事件或营销活动触发</li><li>内容质量保持稳定：尽管数量激增，平均Net Score保持在326左右，表明平台有效控制了内容质量</li><li>社区活跃度：总评论数87,634，平均每帖17.53评论，显示用户参与度较高</li></ul>
+<h3>2. 内容生态系统</h3>
+<p>高度集中的内容结构：</p>
+<ul><li>General子版块占主导（75.84%）：可能是平台的主要讨论区域</li><li>专业子版块质量高：KingMolt和Shellraiser虽然帖子少，但平均Net Score极高，可能是技术深度讨论区</li><li>社区文化板块：🦞 Crab Rave 🦞作为社区主题子版块，拥有稳定的参与度</li></ul>
+<h3>3. 参与度模式</h3>
+<p>评分与讨论的分离：</p>
+<ul><li>Net Score主要由Upvotes决定（Downvotes仅占0.71%）</li><li>评论数与Net Score相关性极低（0.039），表明用户投票和讨论行为是相互独立的</li><li>推荐策略优化：可以考虑基于评论数或综合参与度（Upvotes + Comments）进行推荐，而不仅仅是Net Score</li></ul>
+<h3>4. 异常值分析</h3>
+<p>KingMolt现象：</p>
+<ul><li>仅2条帖子贡献了307,377的Net Score（18.8%）</li><li>平均每条帖子153,688.5分，是平均水平的470倍</li><li>0条评论：可能是置顶公告、平台规则或重要通知</li></ul>
+<p>行动建议：</p>
+<p>1. 研究KingMolt子版块的内容特征，复制其高质量模式</p>
+<p>2. 监控General子版块的内容质量，防止稀释</p>
+<p>3. 优化推荐算法，综合考虑Upvotes和评论数</p>
+<h2>建议与展望</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如何在快速增长的同时保持内容质量？</li><li>如何提高用户参与度？</li></ul></details>
+<h3>短期建议（1-2周）</h3>
+<p>1. 优化内容分发策略</p>
+<p>    继续关注General子版块的内容质量（占比75.84%）</p>
+<p>    推广KingMolt和Shellraiser的高质量内容模式</p>
+<p>    加强🦞 Crab Rave 🦞社区文化建设</p>
+<p>2. 改进推荐算法</p>
+<p>    结合Upvotes和评论数进行综合评分</p>
+<p>    对高Net Score但低评论的内容增加曝光</p>
+<p>    对高评论但低评分的内容进行质量审查</p>
+<p>3. 提升参与度</p>
+<p>    鼓励用户对高质量帖子进行评论（目前相关性仅0.039）</p>
+<p>    设计激励机制奖励高质量讨论</p>
+<p>    考虑引入&quot;评论奖励&quot;机制</p>
+<h3>中长期建议（1-3个月）</h3>
+<p>1. 内容多样化</p>
+<p>    减少对General子版块的依赖（目前91.7%帖子）</p>
+<p>    发展更多专业子版块（类似KingMolt、Shellraiser）</p>
+<p>    鼓励垂直领域内容创作</p>
+<p>2. 社区建设</p>
+<p>    强化🦞 Crab Rave 🦞作为社区文化核心</p>
+<p>    建立子版块之间的互动机制</p>
+<p>    定期举办主题活动促进跨版块交流</p>
+<p>3. 数据分析与监控</p>
+<p>    持续跟踪Net Score和评论数的相关性变化</p>
+<p>    监控异常值（如KingMolt类型内容）</p>
+<p>    建立内容质量预警机制</p>
+<h3>数据驱动的KPI建议</h3>
+<div class='table-wrap'><table><thead><tr><th>指标</th><th>当前值</th><th>目标值</th><th>优先级</th></tr></thead><tbody><tr><td>平均Net Score</td><td>326.99</td><td>350+</td><td>高</td></tr><tr><td>平均评论数</td><td>17.53</td><td>25+</td><td>高</td></tr><tr><td>General子版块占比</td><td>75.84%</td><td>60%</td><td>中</td></tr><tr><td>Net Score与评论数相关性</td><td>0.039</td><td>0.20+</td><td>高</td></tr><tr><td>每日帖子增长</td><td>1,100倍</td><td>稳定增长</td><td>中</td></tr></tbody></table></div>
+<h2>结论</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Moltbook平台的当前状态如何？</li><li>未来的主要挑战是什么？</li></ul></details>
+<p>Moltbook平台正处于爆发式增长期，在4天内实现了从4条到4,585条帖子的惊人增长。平台内容质量保持稳定（平均Net Score 326.99），显示出良好的内容控制机制。</p>
+<p>优势：</p>
+<ul><li>✅ 爆发式增长（1,100倍）</li><li>✅ 内容质量稳定</li><li>✅ 高参与度（平均17.53评论/帖）</li><li>✅ 专业的子版块生态</li></ul>
+<p>挑战：</p>
+<ul><li>⚠️ 过度依赖General子版块（75.84%）</li><li>⚠️ Net Score与评论数相关性低（0.039）</li><li>⚠️ Downvotes利用率低（仅0.71%）</li><li>⚠️ 依赖异常值内容（KingMolt）</li></ul>
+<p>未来展望：</p>
+<p>通过优化推荐算法、提高内容多样性和增强社区互动，Moltbook有潜力成为高质量内容社区平台。关键是在保持快速增长的同时，维持内容质量和提升用户参与深度。</p>
+<hr/>
+<p>报告生成时间：2025-01-13</p>
+<p>数据来源：Moltbook Top 5000 Posts Dataset</p>
+<p>分析工具：Pardus AI</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

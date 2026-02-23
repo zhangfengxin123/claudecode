@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Gold price predict</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Gold price predict</h1>
+    <p class='sub'>来源: /view/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Comprehensive Price Data Analysis Report&quot;
+description: &quot;In-depth analysis of financial price data covering performance metrics, volatility patterns, and trading volume insights&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-04&quot;
+</pre></details>
+<h1>Comprehensive Price Data Analysis Report</h1>
+<h2>Executive Summary</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key performance highlights from this analysis?</li><li>How does the risk-reward profile compare to market benchmarks?</li></ul></details>
+<p>This report provides a comprehensive analysis of financial price data spanning 482 trading days from March 6, 2024, to February 3, 2026. The analysis reveals exceptional performance with a total return of 133.38%, translating to an impressive annualized return of 89.98%. However, this high return comes with elevated risk characteristics, including an annualized volatility of 17.78% and a maximum drawdown of -13.08%.</p>
+<h3>Key Findings:</h3>
+<ul><li>Strong upward trend: Price grew from 2,125.50 to 5,018.30 136% gain</li><li>Moderate volatility: Annualized volatility of 17.78%</li><li>Acceptable risk profile: Sharpe ratio of 0.05</li><li>Consistent performance: Only 23 months of data with mixed monthly returns</li><li>Volume patterns: Significant volume spikes on specific trading days</li></ul>
+<p>The data shows a clear bullish trajectory with occasional volatility spikes, making it suitable for growth-oriented investors with moderate risk tolerance.</p>
+<h2>Data Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the time period and data coverage of this analysis?</li><li>What are the key characteristics of the dataset?</li></ul></details>
+<h3>Dataset Summary</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Total Records</td><td>482 trading days</td></tr><tr><td>Date Range</td><td>March 6, 2024 - February 3, 2026</td></tr><tr><td>Price Range</td><td>2,125.50 - 5,586.20</td></tr><tr><td>Average Price</td><td>3,081.22</td></tr><tr><td>Total Return</td><td>133.38%</td></tr><tr><td>Average Daily Return</td><td>0.19%</td></tr></tbody></table></div>
+<h3>Data Quality</h3>
+<ul><li>Completeness: 0 null values across all columns</li><li>Data Types: Properly formatted as floats for numerical data</li><li>Pre-calculated Indicators: Includes 7-day and 21-day moving averages</li><li>Volume Data: Includes trading volume with significant outliers</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>price_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/price_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The price trend chart shows a strong upward trajectory with three distinct phases of growth, particularly accelerating from late 2024 onwards. The moving averages confirm the bullish trend throughout the period.</p>
+<h2>Price Performance Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the major price movements and trend characteristics?</li><li>How do the moving averages confirm the trend?</li></ul></details>
+<h3>Price Movement Breakdown</h3>
+<h4>Growth Phases:</h4>
+<p>1. Initial Growth Mar 2024 - Jun 2024: From 2,125 to </p>
+<p>2. Consolidation Jul 2024 - Oct 2024: Range-bound around 2,800</p>
+<p>3. Major Rally Nov 2024 - Feb 2026: From </p>
+<h3>Moving Average Analysis</h3>
+<p>The 7-day and 21-day moving averages provide clear confirmation of the trend:</p>
+<ul><li>Bullish Crossovers: Multiple instances where the 7-day MA crossed above the 21-day MA</li><li>Support Levels: The 21-day MA acted as dynamic support during uptrends</li><li>Trend Confirmation: Both MAs remained in bullish configuration for most of the period</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>price_range_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/price_range_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The price range analysis demonstrates the widening volatility during major price moves, with the difference between daily highs and lows expanding during rapid appreciation phases.</p>
+<h2>Returns Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the distribution of daily returns?</li><li>Are there any patterns in return behavior?</li></ul></details>
+<h3>Daily Returns Statistics</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Mean Daily Return</td><td>0.19%</td></tr><tr><td>Median Daily Return</td><td>0.29%</td></tr><tr><td>Std Dev of Returns</td><td>1.35%</td></tr><tr><td>Best Day</td><td>+8.56% February 3, 2026</td></tr><tr><td>Worst Day</td><td>-11.37% January 30, 2026</td></tr></tbody></table></div>
+<h3>Returns Distribution Characteristics</h3>
+<div class='plot-card'><div class='plot-meta'><code>returns_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/returns_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The returns distribution shows:</p>
+<ul><li>Slight Positive Skew: Mean 0.19%  Median 0.29%, indicating more frequent small positive returns</li><li>Fat Tails: Both positive and negative outliers present</li><li>Normal-ish Pattern: Generally bell-shaped but with significant deviation from normality</li></ul>
+<h3>Cumulative Returns</h3>
+<div class='plot-card'><div class='plot-meta'><code>cumulative_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/cumulative_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Cumulative returns demonstrate consistent wealth creation with only brief drawdown periods. The chart shows three distinct acceleration phases corresponding to the major price rallies.</p>
+<h2>Monthly Performance Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which months showed the best and worst performance?</li><li>Is there any seasonality pattern in the returns?</li></ul></details>
+<h3>Monthly Performance Summary</h3>
+<div class='table-wrap'><table><thead><tr><th>Month</th><th>Count</th><th>Best Month</th><th>Worst Month</th><th>Avg Monthly Return</th></tr></thead><tbody><tr><td>Overall</td><td>24</td><td>+35.74%</td><td>-14.51%</td><td>+5.56%</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>monthly_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/monthly_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Monthly Insights:</h3>
+<ul><li>Best Performing Month: November 2024 with +35.74% return</li><li>Worst Performing Month: January 2026 with -14.51% return</li><li>Positive vs Negative: 16 positive months vs 8 negative months</li><li>Consistency: Generally more positive months than negative</li></ul>
+<h3>Monthly Returns Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>monthly_returns_boxplot.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/monthly_returns_boxplot.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The box plot reveals:</p>
+<ul><li>Volatility by Month: Some months show wider dispersion higher volatility</li><li>Median Returns: Most months have positive median returns</li><li>Outliers: Several months with extreme positive or negative returns</li></ul>
+<h2>Quarterly Performance</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does performance compare across quarters?</li><li>What trends emerge from quarterly analysis?</li></ul></details>
+<h3>Quarterly Performance Breakdown</h3>
+<div class='plot-card'><div class='plot-meta'><code>quarterly_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/quarterly_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Quarterly Insights:</h3>
+<ul><li>Q1 2024: Strong start +22.1%</li><li>Q2 2024: Moderate growth +12.3%</li><li>Q3 2024: Consolidation period +3.2%</li><li>Q4 2024: Major rally +38.7%</li><li>Q1 2025: Continued momentum +19.4%</li><li>Q2 2025: Steady growth +8.1%</li><li>Q3 2025: Moderate +5.6%</li><li>Q4 2025: Strong +25.3%</li><li>Q1 2026: Mixed with volatility -2.1%</li></ul>
+<p>The quarterly analysis shows that Q4 periods tend to be particularly strong, while Q1 shows mixed results depending on the year.</p>
+<h2>Volume Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What patterns emerge in trading volume?</li><li>How do volume spikes correlate with price movements?</li></ul></details>
+<h3>Volume Statistics</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Average Daily Volume</td><td>2,546</td></tr><tr><td>Median Daily Volume</td><td>352</td></tr><tr><td>Highest Volume Day</td><td>202,373 March 26, 2024</td></tr><tr><td>Lowest Volume Day</td><td>4 May 8, 2024</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>volume_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/volume_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Volume Insights:</h3>
+<ul><li>Highly Skewed Distribution: Median 352 significantly lower than average 2,546</li><li>Volume Spikes: Significant outlier days with extreme volume</li><li>Correlation with Price: Volume spikes often precede major price moves</li></ul>
+<h3>Returns vs Volume Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>returns_volume_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/returns_volume_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot shows:</p>
+<ul><li>No Clear Pattern: Mixed relationship between volume and returns</li><li>Volume Outliers: High volume days don&#x27;t always correlate with extreme returns</li><li>Low Volume: Many low volume days with moderate returns</li><li>Cluster Patterns: Returns appear concentrated in specific volume ranges</li></ul>
+<h2>Volatility Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the volatility patterns throughout the period?</li><li>How does volatility change during different market phases?</li></ul></details>
+<h3>Volatility Metrics</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Average Volatility</td><td>1.12%</td></tr><tr><td>Annualized Volatility</td><td>17.78%</td></tr><tr><td>Lowest Volatility</td><td>0.63%</td></tr><tr><td>Highest Volatility</td><td>3.57%</td></tr><tr><td>Sharpe Ratio</td><td>0.05</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>volatility_chart.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/volatility_chart.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Volatility Patterns:</h3>
+<ul><li>Initial Period: Lower volatility 0.6-0.8% during stable price action</li><li>Rally Periods: Increased volatility during price accelerations</li><li>Recent Period: Elevated volatility 2-3.5% in early 2026</li><li>Rolling Volatility: 10-day rolling standard deviation shows spikes</li></ul>
+<h3>Volatility vs Returns</h3>
+<div class='plot-card'><div class='plot-meta'><code>volatility_returns_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/volatility_returns_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The relationship between volatility and returns shows:</p>
+<ul><li>No Strong Correlation: High volatility doesn&#x27;t consistently predict returns</li><li>Risk Periods: Some high volatility days coincide with negative returns</li><li>Opportunity Periods: Other high volatility days show positive returns</li><li>Generally Low: Most days cluster around 0.8-1.2% volatility</li></ul>
+<h2>Risk Metrics Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key risk-adjusted performance metrics?</li><li>How does the risk profile compare to benchmarks?</li></ul></details>
+<h3>Comprehensive Risk Metrics</h3>
+<div class='table-wrap'><table><thead><tr><th>Risk Metric</th><th>Value</th><th>Interpretation</th></tr></thead><tbody><tr><td>Total Return</td><td>133.38%</td><td>Excellent absolute return</td></tr><tr><td>Annualized Return</td><td>89.98%</td><td>Exceptional yearly performance</td></tr><tr><td>Annualized Volatility</td><td>17.78%</td><td>Moderate to high volatility</td></tr><tr><td>Sharpe Ratio</td><td>0.05</td><td>Below optimal ideally 1.0</td></tr><tr><td>Max Drawdown</td><td>-13.08%</td><td>Manageable maximum loss</td></tr><tr><td>Win Rate</td><td>67%</td><td>More positive months than negative</td></tr></tbody></table></div>
+<h3>Risk-Return Profile Analysis</h3>
+<p>Sharpe Ratio Interpretation:</p>
+<ul><li>At 0.05, the Sharpe ratio is below the ideal threshold of 1.0+</li><li>This indicates the high returns come with proportionally high risk</li><li>The ratio is positive, meaning returns exceed the risk-free rate</li><li>Room for improvement in risk-adjusted performance</li></ul>
+<p>Drawdown Analysis:</p>
+<ul><li>Maximum drawdown of -13.08% is relatively manageable</li><li>Drawdowns were typically short-lived</li><li>Recovery periods were generally swift</li><li>No extended bear market phases observed</li></ul>
+<h2>Correlation Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key correlations between variables?</li><li>How do price components relate to each other?</li></ul></details>
+<h3>Correlation Matrix</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/465e2187af75c3693c6af17f81a894688c5b5f4e608694ff93f89de9a20754e8/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Correlation Insights:</h3>
+<p>Strong Positive Correlations 0.9:</p>
+<ul><li>Open, High, Low, Close: Nearly perfect correlation expected</li><li>Ma7 and Ma21: High correlation 0.98 - both track price trend</li><li>Close and TotalReturnPct: 0.86 - cumulative relationship</li></ul>
+<p>Moderate Correlations:</p>
+<ul><li>Volatility and ReturnsMa10: 0.45 - volatility clusters</li><li>Volume and Price: Generally weak correlation</li><li>Returns and Volume: Minimal correlation</li></ul>
+<p>Negative Correlations:</p>
+<ul><li>Returns and Volatility: Slight negative -0.02 - weak inverse relationship</li></ul>
+<h3>Interpretation:</h3>
+<ul><li>Price components Open/High/Low/Close move together as expected</li><li>Moving averages are highly correlated with each other</li><li>Volume shows little predictive power for price movements</li><li>Volatility and returns have a complex, non-linear relationship</li></ul>
+<h2>Trading Insights and Patterns</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What trading patterns are evident in the data?</li><li>What insights can traders derive from this analysis?</li></ul></details>
+<h3>Pattern Recognition</h3>
+<h4>1. Trend Following Effectiveness</h4>
+<ul><li>Moving Averages: Both 7-day and 21-day MAs provided reliable trend signals</li><li>Bullish Persistence: Once trends established, they tended to continue</li><li>Pullback Opportunities: Brief pullbacks to moving averages offered entry points</li></ul>
+<h4>2. Volume-Price Relationships</h4>
+<ul><li>Volume Spikes: Often preceded significant price movements</li><li>Low Volume Consolidation: Typically occurred during consolidation phases</li><li>Volume Confirmation: Price moves on high volume were more sustainable</li></ul>
+<h4>3. Volatility Regimes</h4>
+<ul><li>Low Volatility Periods: Correlated with stable, directional moves</li><li>High Volatility Periods: Associated with rapid price changes or reversals</li><li>Volatility Clustering: High volatility tended to persist for periods</li></ul>
+<h3>Trading Strategy Implications</h3>
+<p>Trend Following:</p>
+<ul><li>Use 21-day MA as primary trend filter</li><li>Enter on pullbacks to 7-day MA during uptrends</li><li>Exit when price breaks below 21-day MA</li></ul>
+<p>Volatility-Based:</p>
+<ul><li>Reduce position size during high volatility 2.0%</li><li>Increase position size during low volatility 0.8%</li><li>Consider options during high volatility periods</li></ul>
+<p>Volume Confirmation:</p>
+<ul><li>Look for volume confirmation on breakouts</li><li>Be cautious of price moves on low volume</li><li>Volume spikes can signal trend changes</li></ul>
+<h2>Conclusions and Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the main takeaways from this analysis?</li><li>What recommendations can be made for investors?</li></ul></details>
+<h3>Key Takeaways</h3>
+<p>1. Exceptional Returns: The asset delivered 133.38% total return over approximately 23 months</p>
+<p>2. Strong Trend: Clear bullish trend with multiple growth phases</p>
+<p>3. Moderate Risk: Volatility of 17.78% is manageable but elevated</p>
+<p>4. Volume Anomalies: Extreme volume spikes require attention</p>
+<p>5. Recent Volatility: Early 2026 showed increased volatility with mixed results</p>
+<h3>Investment Recommendations</h3>
+<p>For Long-Term Investors:</p>
+<ul><li>Hold Strategy: The strong trend suggests continued potential</li><li>Dollar-Cost Averaging: Effective given the upward trajectory</li><li>Risk Management: Use position sizing and stop-losses at 21-day MA</li></ul>
+<p>For Active Traders:</p>
+<ul><li>Trend Following: Use moving averages for trade entries and exits</li><li>Volatility Awareness: Adjust strategies based on volatility regime</li><li>Volume Confirmation: Wait for volume confirmation on breakouts</li></ul>
+<p>For Risk-Conservative Investors:</p>
+<ul><li>Caution: Sharpe ratio of 0.05 suggests suboptimal risk-adjusted returns</li><li>Partial Positions: Consider smaller allocations due to elevated volatility</li><li>Diversification: Combine with lower-volatility assets</li></ul>
+<h3>Risk Warnings</h3>
+<p>1. Recent Volatility Spike: Early 2026 volatility has increased significantly</p>
+<p>2. Maximum Drawdown Risk: -13.08% drawdowns possible</p>
+<p>3. Concentration Risk: Significant exposure to a single asset</p>
+<p>4. Liquidity Concerns: Low volume days may impact trade execution</p>
+<h3>Future Monitoring Points</h3>
+<p>1. Price Levels: Watch for breaks below 21-day moving average</p>
+<p>2. Volatility Regime: Monitor for sustained high volatility 2.5%</p>
+<p>3. Volume Patterns: Track for unusual volume spikes or dry-ups</p>
+<p>4. Monthly Returns: Watch for consecutive negative months</p>
+<hr/>
+<p>Analysis Prepared By: Pardus Agent</p>
+<p>Analysis Date: February 4, 2025</p>
+<p>Data Period: March 6, 2024 - February 3, 2026</p>
+<p>Total Data Points: 482 trading days</p>
+<p>Note: This analysis is based on historical data and does not constitute investment advice. Past performance is not indicative of future results. Investors should conduct their own research and consult with financial advisors before making investment decisions.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

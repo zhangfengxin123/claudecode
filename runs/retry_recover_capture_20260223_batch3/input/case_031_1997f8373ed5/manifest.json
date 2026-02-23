@@ -1,0 +1,16 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 10673
+  },
+  {
+    "name": "2026_MCM_Problem_C_Data.csv",
+    "local": "2026_MCM_Problem_C_Data.csv",
+    "ok": true,
+    "error": "",
+    "size": 90002
+  }
+]

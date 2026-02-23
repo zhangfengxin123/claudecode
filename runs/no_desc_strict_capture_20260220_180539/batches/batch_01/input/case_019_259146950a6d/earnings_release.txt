@@ -1,0 +1,1352 @@
+Visa Reports Fiscal First Quarter 2026 Results
+San Francisco, CA, January 29, 2026 – Visa (NYSE: V)
+•
+
+GAAP net income of $5.9B or $3.03 per share and non-GAAP net income of $6.1B or $3.17 per share
+
+•
+
+Net revenue of $10.9B, an increase of 15%, or 13% on a constant-dollar basis
+
+•
+
+Growth in payments volume, cross-border volume and processed transactions was strong
+
+•
+
+Share repurchases and dividends of $5.1B
+
+Income Statement Summary
+Q1 2026
+In billions, except percentages and per share data.
+% change is calculated over the comparable prior-year period.
+
+USD
+
+% Change
+
+Net Revenue
+
+$10.9
+
+15%
+
+GAAP Net Income
+
+$5.9
+
+14%
+
+GAAP Earnings Per Share
+
+$3.03
+
+17%
+
+Non-GAAP Net Income(1)
+
+$6.1
+
+12%
+
+Non-GAAP Earnings Per Share(1)
+
+$3.17
+
+15%
+
+(1) Refer to Non-GAAP Financial Measures for further details and a reconciliation of
+
+the GAAP to non-GAAP measures presented.
+
+Key Business Drivers
+YoY increase / (decrease), volume in constant dollars
+
+Q1 2026
+
+Payments Volume
+
+8%
+
+Cross-Border Volume Excluding Intra-Europe(2)
+
+11%
+
+Cross-Border Volume Total
+
+12%
+
+Processed Transactions
+
+9%
+
+(2) Cross-border volume excluding transactions within Europe.
+
+Ryan McInerney, Chief Executive
+Officer, Visa, commented on the
+results:
+
+"Visa delivered a very strong fiscal first
+quarter with net revenue up 15% yearover-year, GAAP EPS up 17% and
+non-GAAP EPS up 15%, driven by
+resilient consumer spending and a
+strong holiday season, as well as
+continued strength in value-added
+services and commercial and money
+movement solutions. Our purposeful
+investments in our Visa as a Service
+stack continue to position us as a
+payments hyperscaler to deliver
+technology and infrastructure that
+redefine what's possible in payments."
+
+Fiscal First Quarter 2026 — Financial Highlights
+GAAP net income in the fiscal first quarter was $5.9 billion or $3.03 per share, an increase of 14% and 17%, respectively,
+over prior year’s results. Current year's results included special items of $707 million for a litigation provision associated
+with the interchange multidistrict litigation ("MDL") case and $333 million for a deferred tax benefit recognized due to a
+change in the U.S. taxation of certain foreign earnings. Current year's results also included $7 million of net losses from
+equity investments and $66 million from the amortization of acquired intangible assets and acquisition-related costs. Prior
+year's results included special items of $213 million for severance costs, $39 million for lease consolidation costs and $27
+million for a litigation provision associated with the MDL case. Prior year’s results also included $75 million of net losses
+from equity investments and $80 million from the amortization of acquired intangible assets and acquisition-related costs.
+Excluding these items and related tax impacts, non-GAAP net income for the quarter was $6.1 billion or $3.17 per share,
+increases of 12% and 15%, respectively, over prior year’s results (refer to Non-GAAP Financial Measures for further
+details). GAAP earnings per share increase was approximately 16% on a constant-dollar basis, which excludes the
+impact of foreign currency fluctuations against the U.S. dollar. Non-GAAP earnings per share growth was approximately
+14% on a constant-dollar basis. All references to earnings per share assume fully diluted class A share count.
+Net revenue in the fiscal first quarter was $10.9 billion, an increase of 15%, driven by the year-over-year growth in
+payments volume, cross-border volume and processed transactions. Net revenue increased 13% on a constant-dollar
+basis.
+Payments volume for the three months ended September 30, 2025, on which fiscal first quarter service revenue is
+recognized, increased 9% over the prior year on a constant-dollar basis.
+Payments volume for the three months ended December 31, 2025 increased 8% over the prior year on a constant-dollar
+basis.
+Cross-border volume excluding transactions within Europe, which drives our international transaction revenue, for the
+three months ended December 31, 2025, increased 11% on a constant-dollar basis over the prior year. Total cross-border
+volume on a constant-dollar basis increased 12% over the prior year.
+Total processed transactions, which represent transactions processed by Visa, for the three months ended December 31,
+2025, were 69.4 billion, a 9% increase over the prior year.
+Fiscal first quarter service revenue was $4.8 billion, an increase of 13% over the prior year, and is recognized based on
+payments volume in the prior quarter. All other revenue categories are recognized based on current quarter activity. Data
+processing revenue rose 17% over the prior year to $5.5 billion. International transaction revenue grew 6% over the prior
+year to $3.7 billion. Other revenue of $1.2 billion rose 33% over the prior year. Client incentives were $4.3 billion, up 12%
+over the prior year.
+GAAP operating expenses were $4.2 billion for the fiscal first quarter, a 27% increase over the prior year's results,
+primarily driven by an increase in the litigation provision. GAAP operating expenses included the special items as well as
+the amortization of acquired intangible assets and acquisition-related costs in the current and prior year. Excluding these
+items, non-GAAP operating expenses increased 16% over the prior year, primarily driven by increases in personnel,
+marketing and general and administrative expenses.
+GAAP non-operating expense was $11 million for the fiscal first quarter, including $7 million of net equity investment
+losses. Excluding this item, non-GAAP non-operating expense was $4 million.
+GAAP effective income tax rate was 13.0% for the quarter ended December 31, 2025, including the special item related to
+the deferred tax benefit and the tax impacts from the non-GAAP items. Excluding these items, the non-GAAP effective
+income tax rate was 18.4% for the quarter ended December 31, 2025.
+Cash, cash equivalents and investment securities were $16.9 billion at December 31, 2025.
+The weighted-average number of diluted shares of class A common stock outstanding was 1.93 billion for the quarter
+ended December 31, 2025.
+
+2
+
+Other Notable Items
+On November 10, 2025, Visa entered into a superseding and amended settlement agreement to resolve the interchange
+multidistrict litigation injunctive relief class claims. The settlement is subject to approval by the court.
+On December 23, 2025, Visa deposited $500 million into its litigation escrow account, which was previously established
+under the Company’s U.S. retrospective responsibility plan to insulate the Company and class A common stockholders
+from financial liability for certain litigation cases. This deposit has the same economic effect on earnings per share as
+repurchasing the Company's class A common stock as it reduced each of the as-converted class B-1 common stock and
+class B-2 common stock share counts at a volume weighted average price of $354.46.
+During the three months ended December 31, 2025, Visa repurchased approximately 11 million shares of class A
+common stock at an average cost of $342.13 per share for $3.8 billion. The Company had $21.1 billion of remaining
+authorized funds for share repurchases as of December 31, 2025.
+On January 27, 2026, the board of directors declared a quarterly cash dividend of $0.670 per share of class A common
+stock (determined in the case of all other outstanding common and preferred stock on an as-converted basis) payable on
+March 2, 2026, to all holders of record as of February 10, 2026.
+
+Fiscal First Quarter 2026 Earnings Results Call Details
+Visa’s executive management team will host a live audio webcast beginning at 5:00 p.m. Eastern Time (2:00 p.m.
+Pacific Time) today to discuss the financial results and business highlights. All interested parties are invited to listen to
+the live webcast at investor.visa.com. A replay of the webcast will be available on the Visa Investor Relations website for
+30 days. Investor information, including supplemental financial information and operational performance data, is available
+on the Visa Investor Relations website at investor.visa.com.
+
+3
+
+Forward-Looking Statements
+This document contains forward-looking statements within the meaning of the U.S. Private Securities Litigation Reform Act of 1995 that
+relate to, among other things, our future operations, prospects, developments, strategies, business growth, anticipated timing and
+benefits of our acquisitions, and financial outlook. Forward-looking statements generally are identified by words such as “anticipates,”
+“believes,” “estimates,” “expects,” “intends,” “may,” “projects,” “outlook,” “could,” “should,” “will,” “continue” and other similar
+expressions. All statements other than statements of historical fact could be forward-looking statements, which speak only as of the
+date they are made, are not guarantees of future performance and are subject to certain risks, uncertainties and other factors, many of
+which are beyond our control and are difficult to predict.
+Actual results or outcomes, or the timing of our results or outcomes, could differ materially from those expressed in, or implied by, our
+forward-looking statements due to a variety of factors, including, but not limited to:
+•
+impact of complex and evolving global regulations;
+•
+increased scrutiny and regulation of the global payments industry;
+•
+impact of government-imposed obligations and/or restrictions on international payments systems;
+•
+impact of laws and regulations regarding the handling of personal data, including laws and regulations related to privacy,
+cybersecurity and AI;
+•
+impact of tax examinations or disputes, or changes in tax laws;
+•
+outcome of litigation or investigations;
+•
+intense competition in our industry;
+•
+dependence on our client and seller base, which may be costly to win, retain and develop;
+•
+continued push to lower acceptance costs and challenge industry practices;
+•
+dependence on relationships with financial institutions, acquirers, processors, sellers, payment facilitators, ecommerce
+platforms, fintechs and other third parties;
+•
+our inability to maintain and enhance our brand;
+•
+impact of global economic, political, market, health and social events or conditions;
+•
+our ability to adjust to evolving corporate responsibility and sustainability matters and related regulations;
+•
+exposure to significant risk of loss or reduction of liquidity due to our indemnification obligation to fund settlement losses of our
+clients;
+•
+failure to anticipate, adapt to, or keep pace with, new technologies in the payments industry;
+•
+a disruption, failure or breach of our networks or systems, including as a result of cyber incidents or attacks;
+•
+our inability to achieve the anticipated benefits of our acquisitions, joint ventures or strategic investments;
+•
+our inability to attract, hire and retain a highly qualified workforce, including key management;
+•
+the conversions of our class B-1, B-2 and class C common stock or series A, B and C preferred stock into shares of class A
+common stock would result in voting dilution to, and could adversely impact the market price of, our existing class A common
+stock;
+•
+differing interests between holders of our class B-1, B-2 and C common stock and series A, B and C preferred stock
+compared to our class A common stock concerning certain significant transactions; and
+•
+other factors described in our filings with the U.S. Securities and Exchange Commission, including our Annual Report on Form
+10-K for the year ended September 30, 2025, and any subsequent reports on Forms 10-Q and 8-K.
+Except as required by law, we do not intend to update or revise any forward-looking statements as a result of new information, future
+events or otherwise.
+
+About Visa
+Visa (NYSE: V) is a world leader in digital payments, facilitating transactions between consumers, sellers, financial
+institutions and government entities across more than 200 countries and territories. Our mission is to connect the world
+through the most innovative, convenient, reliable and secure payments network, enabling individuals, businesses and
+economies to thrive. We believe that economies that include everyone everywhere, uplift everyone everywhere and see
+access as foundational to the future of money movement. Learn more at Visa.com.
+
+Contacts
+
+Investor Relations
+Jennifer Como, 650-432-7644
+InvestorRelations@visa.com
+
+Media Relations
+Fletcher Cook, 650-432-2990
+Press@visa.com
+
+4
+
+Fiscal First Quarter 2026 — Financial Summary
+INCOME STATEMENT SUMMARY
+Three Months Ended
+December 31, 2025
+
+YoY Change
+
+(in millions, except percentages and per share data)
+
+GAAP
+Revenue
+Service revenue
+
+$
+
+4,760
+
+13%
+
+Data processing revenue
+
+5,544
+
+17%
+
+International transaction revenue
+
+3,652
+
+6%
+
+Other revenue
+
+1,214
+
+33%
+
+Client incentives
+
+(4,269)
+
+12%
+
+Net revenue
+
+$
+
+10,901
+
+15%
+
+Total operating expenses
+
+$
+
+4,164
+
+27%
+
+Non-operating income (expense)
+
+(11)
+
+(65%)
+
+Effective income tax rate
+
+13.0%
+
+(4 ppt)
+
+Net income
+
+$
+
+5,853
+
+14%
+
+Earnings per share
+
+$
+
+3.03
+
+17%
+
+$
+
+3,391
+
+16%
+
+(4)
+
+(112%)
+
+18.4%
+
+1 ppt
+
+Non-GAAP(1)
+Total operating expenses
+Non-operating income (expense)
+Effective income tax rate
+Net income
+
+$
+
+6,124
+
+12%
+
+Earnings per share
+
+$
+
+3.17
+
+15%
+
+(1) Refer to Non-GAAP Financial Measures for further details.
+
+NM - Not Meaningful
+
+KEY BUSINESS DRIVERS
+YoY Change
+Constant
+
+Nominal
+
+Payments volume
+
+8%
+
+10%
+
+Cross-border volume excluding intra-Europe(2)
+
+11%
+
+15%
+
+Cross-border volume total
+
+12%
+
+18%
+
+Processed transactions
+
+9%
+
+9%
+
+(2) Cross-border volume excluding transactions within Europe.
+
+5
+
+Visa Consolidated Balance Sheets (unaudited)
+December 31,
+2025
+
+September 30,
+2025
+
+(in millions, except per share data)
+Assets
+Cash and cash equivalents
+Restricted cash equivalents—U.S. litigation escrow
+Investment securities
+Settlement receivable
+Accounts receivable
+Customer collateral
+Current portion of client incentives
+Prepaid expenses and other current assets
+Total current assets
+Investment securities
+Client incentives
+Property, equipment and technology, net
+Goodwill
+Intangible assets, net
+Other assets
+Total assets
+Liabilities
+Accounts payable
+Settlement payable
+Customer collateral
+Accrued compensation and benefits
+Client incentives
+Accrued liabilities
+Current maturities of debt
+Accrued litigation
+Total current liabilities
+Long-term debt
+Deferred tax liabilities
+Other liabilities
+Total liabilities
+Equity
+Preferred stock, $0.0001 par value, 5 shares issued and outstanding as of December 31, 2025 and
+September 30, 2025
+Common stock, $0.0001 par value:
+
+$
+
+$
+$
+
+14,756
+3,300
+1,641
+3,212
+3,231
+3,712
+2,280
+2,865
+34,997
+484
+5,541
+4,276
+19,885
+27,664
+3,967
+96,814
+
+$
+
+433
+4,337
+3,712
+1,158
+11,280
+5,576
+1,589
+3,406
+31,491
+19,588
+5,241
+1,717
+58,037
+
+$
+
+$
+
+17,164
+2,990
+1,833
+4,191
+3,126
+3,625
+2,158
+2,679
+37,766
+999
+5,157
+4,236
+19,879
+27,646
+3,944
+99,627
+555
+4,568
+3,625
+1,863
+10,369
+5,466
+5,569
+3,033
+35,048
+19,602
+5,549
+1,519
+61,718
+
+551
+
+745
+
+Class A common stock, 1,683 and 1,691 shares issued and outstanding as of December 31, 2025
+and September 30, 2025, respectively
+
+—
+
+—
+
+Class B-1 and B-2 total common stock, 125 shares issued and outstanding as of December 31,
+2025 and September 30, 2025
+
+—
+
+—
+
+Class C common stock, 9 shares issued and outstanding as of December 31, 2025 and
+September 30, 2025
+
+—
+
+—
+
+(19)
+21,980
+16,018
+
+(124)
+21,934
+15,106
+
+10
+(30)
+(245)
+512
+247
+
+12
+(32)
+(307)
+575
+248
+
+38,777
+
+37,909
+
+Right to recover for covered losses
+Additional paid-in capital
+Accumulated income
+Accumulated other comprehensive income (loss):
+Investment securities
+Defined benefit pension and other postretirement plans
+Derivative instruments
+Foreign currency translation adjustments
+Total accumulated other comprehensive income (loss)
+Total equity
+Total liabilities and equity
+
+$
+
+6
+
+96,814
+
+$
+
+99,627
+
+Visa Consolidated Statements of Operations (unaudited)
+Three Months Ended
+December 31,
+2025
+Net revenue
+
+$
+
+Operating Expenses
+Personnel
+Marketing
+Network and processing
+Professional fees
+Depreciation and amortization
+General and administrative
+Litigation provision
+
+2024
+
+(in millions, except per share data)
+10,901 $
+9,510
+
+Total operating expenses
+
+1,764
+410
+233
+208
+326
+515
+708
+4,164
+
+1,813
+306
+207
+143
+282
+481
+44
+3,276
+
+Operating income
+
+6,737
+
+6,234
+
+Non-operating Income (Expense)
+Interest expense
+Investment income (expense) and other
+Total non-operating income (expense)
+
+(194)
+183
+(11)
+
+(182)
+148
+(34)
+
+Income before income taxes
+Income tax provision
+Net income
+
+$
+
+6,726
+873
+5,853
+
+$
+
+6,200
+1,081
+5,119
+
+Basic Earnings Per Share
+Class A common stock
+Class B-1 common stock
+Class B-2 common stock
+Class C common stock
+
+$
+$
+$
+$
+
+3.03
+4.71
+4.61
+12.13
+
+$
+$
+$
+$
+
+2.58
+4.04
+3.99
+10.33
+
+Basic Weighted-average Shares Outstanding
+Class A common stock
+
+1,687
+
+1,729
+
+Class B-1 common stock
+Class B-2 common stock
+
+5
+120
+
+5
+120
+
+Class C common stock
+
+9
+
+10
+
+Diluted Earnings Per Share
+Class A common stock
+Class B-1 common stock
+Class B-2 common stock
+Class C common stock
+
+$
+$
+$
+$
+
+Diluted Weighted-average Shares Outstanding
+Class A common stock
+Class B-1 common stock
+Class B-2 common stock
+Class C common stock
+
+3.03
+4.71
+4.61
+12.11
+
+1,933
+5
+120
+9
+
+7
+
+$
+$
+$
+$
+
+2.58
+4.04
+3.98
+10.32
+
+1,985
+5
+120
+10
+
+Visa Consolidated Statements of Cash Flows (unaudited)
+Three Months Ended
+December 31,
+2025
+2024
+(in millions)
+Operating Activities
+Net income
+Adjustments to reconcile net income to net cash provided by (used in) operating activities:
+Client incentives
+Share-based compensation
+Depreciation and amortization
+Deferred income taxes
+VE territory covered losses
+(Gains) losses on equity investments, net
+Other
+Change in operating assets and liabilities:
+Settlement receivable
+Accounts receivable
+Client incentives
+Other assets
+Accounts payable
+Settlement payable
+Accrued and other liabilities
+Accrued litigation
+Net cash provided by (used in) operating activities
+
+$
+
+5,853
+
+$
+
+5,119
+
+4,269
+231
+326
+(435)
+(3)
+7
+18
+
+3,797
+224
+282
+38
+(27)
+75
+56
+
+981
+(109)
+(3,808)
+35
+(114)
+(233)
+(611)
+373
+6,780
+
+657
+(64)
+(3,649)
+(10)
+(54)
+(673)
+(303)
+(72)
+5,396
+
+(378)
+725
+—
+(5)
+19
+361
+
+(345)
+2,042
+(906)
+(6)
+5
+790
+
+Financing Activities
+Repurchases of class A common stock
+Repayments of debt
+
+(3,725)
+(4,000)
+
+(4,011)
+—
+
+Dividends paid
+Proceeds from stock issued under equity plans
+
+(1,293)
+78
+
+(1,170)
+127
+
+Taxes paid related to stock issued under equity plans
+Other financing activities
+Net cash provided by (used in) financing activities
+Effect of exchange rate changes on cash, cash equivalents, restricted cash and restricted cash equivalents
+Increase (decrease) in cash, cash equivalents, restricted cash and restricted cash equivalents
+
+(231)
+185
+(8,986)
+34
+(1,811)
+
+(235)
+(186)
+(5,475)
+(508)
+203
+
+Investing Activities
+Purchases of property, equipment and technology
+Proceeds from maturities and sales of investment securities
+Acquisitions, net of cash and restricted cash acquired
+Purchases of other investments
+Other investing activities
+Net cash provided by (used in) investing activities
+
+Cash, cash equivalents, restricted cash and restricted cash equivalents as of beginning of period
+Cash, cash equivalents, restricted cash and restricted cash equivalents as of end of period
+
+$
+
+24,987
+23,176
+
+$
+
+19,763
+19,966
+
+Supplemental Disclosure
+Cash paid for income taxes, net(1)
+Interest payments on debt
+Accruals related to purchases of property, equipment and technology
+
+$
+$
+$
+
+1,290
+213
+26
+
+$
+$
+$
+
+1,194
+213
+40
+
+(1)
+
+For the three months ended December 31, 2025 and 2024, the amount includes cash paid for federal transferable tax credits of $740 million and
+$1.1 billion, respectively.
+
+8
+
+Visa Quarterly Results of Operations (unaudited)
+Fiscal 2026
+Quarter Ended
+
+Net revenue
+
+Fiscal 2025 Quarter Ended
+
+December 31,
+2025
+
+September 30,
+2025
+
+$
+
+$
+
+10,901
+
+10,724
+
+June 30,
+2025
+$
+
+(in millions)
+10,172
+
+March 31,
+2025
+$
+
+9,594
+
+December 31,
+2024
+$
+
+9,510
+
+Operating Expenses
+Personnel
+Marketing
+Network and processing
+Professional fees
+Depreciation and amortization
+General and administrative
+Litigation provision
+Total operating expenses
+
+1,764
+410
+233
+208
+326
+515
+708
+4,164
+
+1,742
+576
+239
+256
+316
+544
+903
+4,576
+
+1,749
+421
+224
+187
+317
+482
+615
+3,995
+
+1,657
+381
+224
+173
+305
+419
+1,000
+4,159
+
+1,813
+306
+207
+143
+282
+481
+44
+3,276
+
+Operating income
+
+6,737
+
+6,148
+
+6,177
+
+5,435
+
+6,234
+
+Non-operating Income (Expense)
+Interest expense
+Investment income (expense) and other
+Total non-operating income (expense)
+
+(194)
+183
+(11)
+
+(210)
+285
+75
+
+(39)
+195
+156
+
+(158)
+161
+3
+
+(182)
+148
+(34)
+
+Income before income taxes
+Income tax provision
+Net income
+
+6,726
+873
+5,853
+
+6,223
+1,133
+5,090
+
+6,333
+1,061
+5,272
+
+5,438
+861
+4,577
+
+6,200
+1,081
+5,119
+
+$
+
+$
+
+9
+
+$
+
+$
+
+$
+
+Visa Non-GAAP Financial Measures (unaudited)
+We use non-GAAP financial measures of our performance which exclude certain items which we believe are not
+representative of our continuing operations, as they may be non-recurring or have no cash impact, and may distort our
+longer-term operating trends. Constant-dollar financial measures are calculated by using a fixed current year U.S. dollar/
+foreign currency exchange rate for each local currency for the current and prior year periods, which eliminates the impact
+of foreign currency transactions in measuring financial performance. We consider non-GAAP measures useful to
+investors because they provide greater transparency into management’s view and assessment of our ongoing operating
+performance. Non-GAAP financial measures should not be relied upon as substitutes for, or considered in isolation from,
+measures calculated in accordance with GAAP.
+We exclude the following from our GAAP financial results to arrive at our non-GAAP financial results:
+•
+
+Gains and losses on equity investments. Gains and losses on equity investments include periodic non-cash fair
+value adjustments and gains and losses upon sale of an investment. These long-term investments are strategic in
+nature and are primarily private company investments. Gains and losses associated with these investments are
+tied to the performance of the companies that we invest in and therefore do not correlate to the underlying
+performance of our business.
+
+•
+
+Amortization of acquired intangible assets. Amortization of acquired intangible assets consists of amortization of
+intangible assets such as technology and customer relationships acquired in connection with business
+combinations executed beginning in fiscal 2019. Amortization charges for our acquired intangible assets are noncash and are significantly affected by the timing, frequency and size of our acquisitions, rather than our core
+operations. As such, we have excluded this amount to facilitate an evaluation of our current operating
+performance and comparison to our past operating performance.
+
+•
+
+Acquisition-related costs. Acquisition-related costs consist primarily of one-time transaction and integration costs
+associated with our business combinations. These costs include professional fees, technology integration fees,
+restructuring activities and other direct costs related to the purchase and integration of acquired entities. These
+costs also include retention equity and deferred compensation when they are agreed upon as part of the
+purchase price of the transaction but are required to be recognized as expense post-combination. We have
+excluded these amounts as the expenses are recognized for a limited duration and do not reflect the underlying
+performance of our business.
+
+•
+
+Litigation provision. Litigation provision includes significant accruals related to certain legal matters that are not
+covered by the U.S. retrospective responsibility plan or the Europe retrospective responsibility plan (uncovered
+legal matters) and additional accruals associated with the interchange multidistrict litigation which are covered by
+the U.S. retrospective responsibility plan (U.S. covered litigation). Litigation provision associated with these
+matters can vary significantly based on the facts and circumstances related to each matter and do not correlate to
+the underlying performance of our business. For the three months ended December 31, 2025 and 2024, we have
+excluded these amounts to facilitate a comparison to our past operating performance.
+
+•
+
+Deferred tax benefit. For the three months ended December 31, 2025, we recorded a deferred tax benefit within
+income tax provision due to a change in the U.S. taxation of certain foreign earnings. We have excluded this onetime non-cash benefit as it is not representative of our ongoing operations.
+
+•
+
+Severance costs. For the three months ended December 31, 2024, we recorded severance costs within
+personnel expense to realign our organizational structure and focus on areas that will drive higher long-term
+growth. This broad-based optimization effort has been excluded as it is not representative of our ongoing
+operations.
+
+•
+
+Lease consolidation costs. For the three months ended December 31, 2024, we recorded a charge within general
+and administrative expense associated with the consolidation of certain leased office spaces. We have excluded
+this amount as it does not reflect the underlying performance of our business.
+
+10
+
+Visa Non-GAAP Financial Measures (unaudited) - continued
+The following tables reconcile our GAAP to non-GAAP financial measures included in this release:
+Three Months Ended December 31, 2025
+Operating
+Expenses
+GAAP
+(Gains) losses on equity investments, net
+Amortization of acquired intangible assets
+Acquisition-related costs
+Litigation provision
+Deferred tax benefit
+Non-GAAP
+
+$
+
+$
+
+Nonoperating
+Income
+(Expense)
+
+4,164 $
+—
+(54)
+(12)
+(707)
+—
+3,391 $
+
+Income
+Tax
+Provision(1)
+
+Effective
+Income
+Tax Rate(2)
+
+Diluted
+Earnings
+Per
+Share(2)
+
+Net
+Income
+
+(in millions, except percentages and per share data)
+(11) $
+873
+13.0% $
+5,853 $
+7
+2
+5
+—
+14
+40
+—
+1
+11
+—
+159
+548
+—
+333
+(333)
+(4) $
+1,382
+18.4% $
+6,124 $
+
+3.03
+—
+0.02
+0.01
+0.28
+(0.17)
+3.17
+
+Three Months Ended December 31, 2024
+Operating
+Expenses
+GAAP
+(Gains) losses on equity investments, net
+Amortization of acquired intangible assets
+Acquisition-related costs
+Severance costs
+Lease consolidation costs
+Litigation provision
+Non-GAAP
+
+$
+
+$
+
+Nonoperating
+Income
+(Expense)
+
+3,276 $
+—
+(46)
+(34)
+(213)
+(39)
+(27)
+2,917 $
+
+Income
+Tax
+Provision(1)
+
+Effective
+Income
+Tax Rate(2)
+
+Diluted
+Earnings
+Per
+Share(2)
+
+Net
+Income
+
+(in millions, except percentages and per share data)
+(34) $
+1,081
+17.4% $
+5,119
+75
+17
+58
+—
+11
+35
+—
+2
+32
+—
+45
+168
+—
+9
+30
+—
+6
+21
+41 $
+1,171
+17.7% $
+5,463
+
+$
+
+$
+
+2.58
+0.03
+0.02
+0.02
+0.08
+0.02
+0.01
+2.75
+
+(1)
+
+Determined by applying applicable tax rates.
+
+(2)
+
+Figures in the table may not recalculate exactly due to rounding. Effective income tax rate, diluted earnings per share and their respective totals are
+calculated based on unrounded numbers.
+
+11
+
+

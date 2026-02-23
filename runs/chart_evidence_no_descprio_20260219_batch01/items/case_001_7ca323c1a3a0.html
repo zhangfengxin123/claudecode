@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>Pardus Evidence 7ca323c1a3a0</title>
+  <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; margin: 20px; color:#1f2937; background:#f8fafc; }
+    h1,h2,h3 { margin: 10px 0; }
+    .muted { color:#6b7280; }
+    .code { font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:14px; margin:12px 0; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th,td { border:1px solid #e5e7eb; padding:8px; vertical-align: top; text-align:left; }
+    th { background:#f3f4f6; }
+    .charts { display:grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap:12px; }
+    .chart-card { background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:10px; }
+    .plot { min-height: 420px; }
+    details { margin: 8px 0; }
+    pre { white-space: pre-wrap; word-break: break-word; background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; max-height: 420px; overflow:auto; }
+    .err { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>Student_Placement_Skills_2025</h1>
+  <div class='muted'>case_id: <span class='code'>7ca323c1a3a0ed5ecbb144832466b3608c361a216988fe575e72d77d0a682628</span></div>
+  <div class='muted'>view: <a href='https://pardusai.org/view/7ca323c1a3a0ed5ecbb144832466b3608c361a216988fe575e72d77d0a682628' target='_blank' rel='noopener noreferrer'>https://pardusai.org/view/7ca323c1a3a0ed5ecbb144832466b3608c361a216988fe575e72d77d0a682628</a></div>
+
+  <div class='card'>
+    <h2>1) 输入数据源（uploads/files）</h2>
+    <p class='muted'>这部分是 Pardus 接收到的原始输入文件清单。每个文件已完整下载到本地快照目录。</p>
+    <p class='muted code'>snapshot_dir: input/case_001_7ca323c1a3a0</p>
+    <table>
+      <thead><tr><th>file</th><th>http</th><th>bytes</th><th>content-type</th><th>local snapshot</th><th>link</th></tr></thead>
+      <tbody><tr><td><code>Student_Placement_Skills_2025.csv</code></td><td>200</td><td>33801</td><td>text/csv</td><td><code>input/case_001_7ca323c1a3a0/Student_Placement_Skills_2025.csv</code></td><td><a href='https://pardusai.org/v1/api/public/project/7ca323c1a3a0ed5ecbb144832466b3608c361a216988fe575e72d77d0a682628/files/Student_Placement_Skills_2025.csv' target='_blank' rel='noopener noreferrer'>open</a></td></tr></tbody>
+    </table>
+    <h3>文件内容预览</h3>
+    <details><summary><code>Student_Placement_Skills_2025.csv</code> · HTTP 200 · csv</summary><table><thead><tr><th>Student_ID</th><th>Gender</th><th>Age</th><th>Degree</th><th>CGPA</th><th>Internships_Count</th><th>Projects_Count</th><th>Certifications_Count</th><th>Technical_Skills_Score_100</th><th>Communication_Skills_Score_100</th><th>Aptitude_Test_Score_100</th><th>Placement_Offer</th><th>Salary_Offered_USD</th></tr></thead><tbody><tr><td>1</td><td>Male</td><td>19</td><td>Business</td><td>2.56</td><td>3</td><td>8</td><td>0</td><td>64</td><td>42</td><td>57</td><td>Yes</td><td>8047.08</td></tr><tr><td>2</td><td>Female</td><td>27</td><td>Engineering</td><td>3.66</td><td>0</td><td>5</td><td>2</td><td>78</td><td>54</td><td>40</td><td>Yes</td><td>3518.56</td></tr><tr><td>3</td><td>Male</td><td>26</td><td>Data Science</td><td>3.73</td><td>0</td><td>5</td><td>1</td><td>61</td><td>54</td><td>49</td><td>No</td><td>11791.75</td></tr><tr><td>4</td><td>Male</td><td>18</td><td>Computer Science</td><td>2.21</td><td>2</td><td>8</td><td>5</td><td>66</td><td>42</td><td>72</td><td>Yes</td><td>13946.28</td></tr><tr><td>5</td><td>Male</td><td>20</td><td>Business</td><td>2.59</td><td>3</td><td>9</td><td>2</td><td>69</td><td>50</td><td>53</td><td>No</td><td>10951.66</td></tr><tr><td>6</td><td>Male</td><td>21</td><td>Computer Science</td><td>3.04</td><td>2</td><td>4</td><td>0</td><td>64</td><td>74</td><td>91</td><td>No</td><td>19631.72</td></tr><tr><td>7</td><td>Male</td><td>25</td><td>Data Science</td><td>2.42</td><td>4</td><td>8</td><td>4</td><td>50</td><td>61</td><td>65</td><td>Yes</td><td>14820.55</td></tr><tr><td>8</td><td>Female</td><td>28</td><td>Data Science</td><td>2.48</td><td>4</td><td>8</td><td>2</td><td>96</td><td>57</td><td>50</td><td>No</td><td>13036.97</td></tr></tbody></table></details>
+  </div>
+
+  <div class='card'>
+    <h2>2) 图表资产清单（document -> htmlPath）</h2>
+    <p class='muted'>这部分是 Pardus 在报告里引用的全部图表/流程图资产。</p>
+    <table>
+      <thead><tr><th>asset</th><th>kind</th><th>http</th><th>chart title</th><th>traces</th><th>trace types</th><th>url</th></tr></thead>
+      <tbody><tr><td colspan="7">no assets</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='card'>
+    <h2>3) 全部图表渲染（真实资产）</h2>
+    <div class='charts'>
+      <p class="muted">no renderable charts</p>
+    </div>
+  </div>
+
+  <script>
+    const ASSETS = [];
+    for (const item of ASSETS) {
+      const el = document.getElementById(item.div);
+      if (!el) continue;
+      try {
+        const fig = item.fig || {};
+        const data = Array.isArray(fig.data) ? fig.data : [];
+        const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+        const config = {responsive: true, displaylogo: false};
+        Plotly.newPlot(el, data, layout, config);
+      } catch (e) {
+        el.innerHTML = `<pre>render error: ${String(e)}</pre>`;
+      }
+    }
+  </script>
+</body>
+</html>

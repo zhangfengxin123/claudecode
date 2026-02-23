@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：UK Property Price official data</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：UK Property Price official data</h1>
+    <p class='sub'>来源: /view/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;UK Property Market Analysis 1995-2025&quot;
+description: &quot;Comprehensive analysis of UK property transactions covering 30 years of data with insights on price trends, property types, and regional variations&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>UK Property Market Analysis: Three Decades of Property Transactions</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of 94,248 property transactionsacross the United Kingdom spanning from January 1995 to April 2025. The dataset reveals fascinating insights into the UK property market, including regional price disparities, property type preferences, and evolving market dynamics.</p>
+<p>Key Highlights:</p>
+<ul><li>Total Market Value: Over £39 billionin transactions analyzed</li><li>Average Property Price: £414,548 Median: £295,000</li><li>Most Active Year: 2025 with 54,680 transactions</li><li>Most Expensive District: City of London averaging £4.44 million</li><li>London Premium: Properties in Greater London cost 2.7xmore than the national average</li></ul>
+<h2>Market Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors have driven the dramatic increase in transaction volume in 2024-2025?</li><li>How does the price range of £100 to £164.3 million reflect market diversity?</li></ul></details>
+<p>The dataset captures property transactions across a remarkable 30-year period, with transaction counts varying significantly over time. The most recent years 2024-2025 show unprecedented activity, with 87,317 transactions in just 16 months - representing 93% of all transactionsin the entire dataset.</p>
+<p>Market Composition:</p>
+<div class='table-wrap'><table><thead><tr><th>Segment</th><th>Transactions</th><th>Share</th><th>Avg Price</th></tr></thead><tbody><tr><td>Semi-Detached</td><td>24,731</td><td>26.2%</td><td>£323,111</td></tr><tr><td>Terraced</td><td>23,781</td><td>25.2%</td><td>£296,619</td></tr><tr><td>Detached</td><td>22,695</td><td>24.1%</td><td>£489,606</td></tr><tr><td>Flat</td><td>17,986</td><td>19.1%</td><td>£332,612</td></tr><tr><td>Other</td><td>5,055</td><td>5.4%</td><td>£1,371,234</td></tr></tbody></table></div>
+<p>The &quot;Other&quot; category, while representing only 5.4% of transactions, shows the highest average price £1.37 million, suggesting it includes premium properties, mixed-use developments, or unique property types.</p>
+<div class='plot-card'><div class='plot-meta'><code>property_type_counts.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/property_type_counts.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Price Trends Over Time</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What economic events correlate with the price fluctuations between 2015-2025?</li><li>Why did average prices peak in 2018 despite lower transaction volumes?</li></ul></details>
+<p>The long-term price trajectory reveals interesting patterns:</p>
+<ul><li>2015-2018: High average prices £509k-£2.7M with low transaction volumes 73-128, suggesting premium property transactions dominated this period</li><li>2019-2021: Market stabilization with growing volume 153-745 transactions</li><li>2022-2025: Explosion in volume 1,358 to 54,680 with prices moderating to more accessible levels</li></ul>
+<p>Notable Observations:</p>
+<p>1. 2018 Anomaly: Average price reached £2.7M with only 128 transactions - likely dominated by luxury property sales</p>
+<p>2. 2020 Impact: COVID-19 pandemic saw volume increase to 320 transactions with prices moderating to £799k</p>
+<p>3. 2024-2025 Surge: Massive increase in data coverage with average prices stabilizing around £350-470k</p>
+<div class='plot-card'><div class='plot-meta'><code>price_trends_yearly.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/price_trends_yearly.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The recent surge in transaction volume 2024-2025 reflects either:</p>
+<ul><li>Improved data collection and reporting</li><li>Post-pandemic market recovery</li><li>Increased market activity due to economic factors</li></ul>
+<h2>Property Type Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do detached properties command a 51% price premium over semi-detached homes?</li><li>What drives the high transaction volume of terraced properties despite their lower median prices?</li></ul></details>
+<p>Understanding property type preferences reveals important market insights:</p>
+<p>Detached Properties: While representing only 24.1% of transactions, detached homes command the highest prices among standard property types £489,606 average. This reflects their desirability, space, and typically suburban or rural locations.</p>
+<p>Semi-Detached and Terraced: Together representing 51.4% of all transactions, these property types form the backbone of the UK housing market. Their popularity stems from:</p>
+<ul><li>More affordable entry points £296k-323k</li><li>Suitable for families</li><li>Available across most regions</li></ul>
+<p>Flats: Representing 19.1% of transactions with average prices of £332,612, flats are particularly important in urban areas and London, where they often represent the primary housing option.</p>
+<div class='plot-card'><div class='plot-meta'><code>property_type_prices.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/property_type_prices.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>price_distribution_by_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/price_distribution_by_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Regional Variations by Property Type:</p>
+<p>The median prices show clear differentiation:</p>
+<ul><li>Detached: £409,500 - Premium for space and privacy</li><li>Semi-Detached: £275,000 - Balance of space and affordability</li><li>Flats: £250,000 - Urban living solution</li><li>Terraced: £235,000 - Most affordable option</li></ul>
+<h2>Geographic Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors contribute to Greater London&#x27;s 2.7x price premium over the national average?</li><li>Why do northern counties like Lancashire and West Yorkshire show significantly lower prices?</li></ul></details>
+<p>The regional analysis reveals stark geographic disparities in UK property prices:</p>
+<h3>Top 10 Counties by Transaction Volume</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_counties_volume.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/top_counties_volume.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>London Premium: Greater London properties average £789,175- 2.7 times the national average. This premium reflects:</p>
+<ul><li>Economic opportunities and employment concentration</li><li>Limited housing supply in desirable areas</li><li>International investment demand</li><li>Historical and cultural value</li></ul>
+<p>Regional Patterns:</p>
+<div class='table-wrap'><table><thead><tr><th>Region</th><th>Avg Price</th><th>Key Counties</th></tr></thead><tbody><tr><td>South East</td><td>£500-620k</td><td>Surrey, Kent, Essex, Hampshire</td></tr><tr><td>London</td><td>£789k</td><td>Greater London</td></tr><tr><td>Midlands</td><td>£260-320k</td><td>West Midlands, West Yorkshire</td></tr><tr><td>North</td><td>£265-310k</td><td>Lancashire, Merseyside, South Yorkshire</td></tr></tbody></table></div>
+<p>County Market Analysis:</p>
+<div class='plot-card'><div class='plot-meta'><code>county_market_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/county_market_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The scatter plot reveals the relationship between transaction volume and average prices:</p>
+<ul><li>High Volume, High Price: Greater London 11,587 transactions, £789k avg</li><li>High Volume, Low Price: Greater Manchester 4,322 transactions, £306k avg, West Yorkshire 3,560 transactions, £258k avg</li><li>Lower Volume, Premium Price: Surrey 1,998 transactions, £619k avg, Hertfordshire 1,866 transactions, £592k avg</li></ul>
+<h2>Premium District Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What makes the City of London&#x27;s average price of £4.44 million the highest in the dataset?</li><li>How do London boroughs like Kensington and Chelsea maintain such high price levels?</li></ul></details>
+<p>The most expensive districts in the UK are overwhelmingly concentrated in London:</p>
+<p>Top 10 Most Expensive Districts:</p>
+<div class='plot-card'><div class='plot-meta'><code>top_districts_price.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/top_districts_price.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>London Domination:</p>
+<p>1. City of London: £4.44 million - Financial district prestige</p>
+<p>2. City of Westminster: £2.57 million - Political and cultural center</p>
+<p>3. Kensington and Chelsea: £2.28 million - Ultra-premium residential</p>
+<p>4. Islington: £1.38 million - Prime central London</p>
+<p>5. Tower Hamlets: £1.31 million - Canary Wharf influence</p>
+<p>Outer London Premium:</p>
+<ul><li>Hammersmith and Fulham: £1.06 million</li><li>Merton: £1.18 million</li><li>Richmond upon Thames: £870k</li></ul>
+<p>Surprising Entry:</p>
+<p>St Albans, Hertfordshire: At £945k, this non-London district ranks 9th, reflecting:</p>
+<ul><li>Excellent commuter links to London</li><li>High quality of life</li><li>Historic charm and good schools</li><li>Limited housing supply</li></ul>
+<h2>New Build vs Existing Properties</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do new builds £390ktrade at a lower average price than existing properties £418k?</li><li>What factors influence the 14% premium that existing properties command over new builds?</li></ul></details>
+<p>Market Share:</p>
+<ul><li>Existing Properties: 88.3% 83,252 transactions</li><li>New Builds: 11.7% 10,996 transactions</li></ul>
+<p>Price Dynamics:</p>
+<p>The counterintuitive finding that existing properties average 7% higherthan new builds £417,755 vs £390,268 can be explained by:</p>
+<p>1. Location Differences: New builds often in developing areas; existing properties in established, desirable locations</p>
+<p>2. Property Type Mix: New builds include more apartments; existing properties include larger detached homes</p>
+<p>3. Land Value: Existing properties in prime areas have appreciated land value</p>
+<p>4. Market Timing: Recent new builds may be in response to affordable housing initiatives</p>
+<p>Trend Analysis 2024-2025:</p>
+<div class='plot-card'><div class='plot-meta'><code>new_build_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/new_build_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The monthly data shows convergence between new build and existing property prices, suggesting:</p>
+<ul><li>New build quality improvements</li><li>Location premium for existing properties</li><li>Market normalization post-2024</li></ul>
+<h2>Tenure Type Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do freehold properties command a 20% price premium over leasehold properties?</li><li>What risks do leasehold buyers face that justify the price discount?</li></ul></details>
+<p>Tenure Distribution:</p>
+<ul><li>Freehold: 76.1% 71,704 transactions</li><li>Leasehold: 23.9% 22,544 transactions</li></ul>
+<p>Price Premium:</p>
+<div class='table-wrap'><table><thead><tr><th>Tenure</th><th>Count</th><th>Avg Price</th><th>Median</th></tr></thead><tbody><tr><td>Freehold</td><td>71,704</td><td>£431,556</td><td>£313,300</td></tr><tr><td>Leasehold</td><td>22,544</td><td>£360,450</td><td>£240,000</td></tr></tbody></table></div>
+<p>Freehold Premium Analysis:</p>
+<p>The £71,106 price premium20% for freehold properties reflects:</p>
+<p>1. Ownership Security: Complete control over the property</p>
+<p>2. No Ground Rent: Ongoing cost savings</p>
+<p>3. No Lease Expiry: Infinite ownership period</p>
+<p>4. Easier Mortgages: Lenders prefer freehold</p>
+<p>5. Future Flexibility: Easier to extend or modify</p>
+<p>Leasehold Considerations:</p>
+<div class='plot-card'><div class='plot-meta'><code>tenure_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/tenure_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The 2024-2025 trend shows relatively stable price differentials between freehold and leasehold properties, suggesting:</p>
+<ul><li>Market efficiency in pricing tenure differences</li><li>Consistent buyer preferences</li><li>No significant regulatory changes affecting leasehold valuations</li></ul>
+<p>Geographic Distribution:</p>
+<ul><li>Flats in urban areas especially London are typically leasehold</li><li>Houses outside London are typically freehold</li><li>This partially explains the price differential</li></ul>
+<h2>Seasonal Patterns</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do March and January show the highest average prices across all years?</li><li>How can buyers leverage seasonal patterns to get better deals?</li></ul></details>
+<p>Monthly Transaction Patterns:</p>
+<div class='table-wrap'><table><thead><tr><th>Month</th><th>Transactions</th><th>Avg Price</th></tr></thead><tbody><tr><td>March</td><td>46,780</td><td>£381,516</td></tr><tr><td>December</td><td>3,903</td><td>£508,604</td></tr><tr><td>November</td><td>7,016</td><td>£486,798</td></tr><tr><td>January</td><td>2,202</td><td>£535,585</td></tr><tr><td>February</td><td>5,128</td><td>£408,076</td></tr></tbody></table></div>
+<p>Key Observations:</p>
+<p>1. March Dominance: 49.6% of all transactions occurred in March - this reflects the massive 2025 data upload in March</p>
+<p>2. Premium Months: January, November, and December show the highest average prices, suggesting:</p>
+<p>    Year-end premium property sales</p>
+<p>    Tax year considerations January</p>
+<p>    Holiday season activity</p>
+<p>Recent Seasonal Trends 2024-2025:</p>
+<div class='plot-card'><div class='plot-meta'><code>seasonal_patterns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/seasonal_patterns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The monthly breakdown for 2024-2025 shows:</p>
+<ul><li>March 2025: Exceptionally high volume with average prices around £360k</li><li>Seasonal Variation: Prices fluctuate between £340-460k depending on month</li><li>No Clear Seasonality: Unlike historical patterns, recent years show less pronounced seasonal variation</li></ul>
+<h2>Property Type Price Trends </h2>
+<p>2024-2025</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why have detached property prices shown more volatility than other property types?</li><li>What macroeconomic factors affect different property types differently?</li></ul></details>
+<p>Price Trends by Property Type:</p>
+<div class='plot-card'><div class='plot-meta'><code>price_by_property_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/price_by_property_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<p>1. Detached Properties: Highest prices £450-550k range with notable fluctuations</p>
+<p>2. Semi-Detached: Stable pricing around £280-350k</p>
+<p>3. Flats: Most volatile, ranging from £220-350k</p>
+<p>4. Terraced: Most stable, maintaining £220-280k range</p>
+<p>Price Hierarchy Consistent:</p>
+<p>Recent Trends:</p>
+<ul><li>All property types showed price convergence in early 2025</li><li>Detached properties maintain the most significant premium</li><li>Flat prices show the most sensitivity to market conditions</li></ul>
+<h2>Price Distribution Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does the concentration of transactions under £500k tell us about market accessibility?</li><li>How does the £164.3 million maximum price impact the average price calculation?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>price_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/5f6ef32235f3398bde268be787cbdd17dda5d7ba13d1ec60d408df376e0dbf5c/assets/price_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Distribution Insights:</p>
+<p>The histogram showing properties up to £2M reveals:</p>
+<p>1. Concentration Below £500k: Majority of transactions cluster in this range</p>
+<p>2. Long Tail: Properties up to £164.3M create a right-skewed distribution</p>
+<p>3. Multiple Modes: Several peaks suggest different market segments</p>
+<p>Key Statistics:</p>
+<ul><li>Mean: £414,548 pulled up by luxury properties</li><li>Median: £295,000 more representative of typical transactions</li><li>Mean/Median Ratio: 1.4x indicates positive skew</li></ul>
+<p>Market Segments:</p>
+<ul><li>Entry Level: £100-250k likely first-time buyers</li><li>Mainstream: £250-500k typical family homes</li><li>Premium: £500k-2M desirable locations/properties</li><li>Ultra-Luxury: £2M+ prestige properties</li></ul>
+<h2>Market Insights and Implications</h2>
+<h3>Investment Opportunities</h3>
+<p>1. Regional Growth: Northern counties Lancashire, Yorkshire offer lower entry points with potential for growth</p>
+<p>2. Property Type Strategy: Terraced properties offer affordability with stable demand</p>
+<p>3. Tenure Considerations: Freehold premiums may present opportunities for long-term value</p>
+<h3>Market Dynamics</h3>
+<p>1. London Premium Persists: Despite remote work trends, London maintains 2.7x premium</p>
+<p>2. New Build Strategy: Lower average prices suggest opportunities for modern, energy-efficient homes</p>
+<p>3. Seasonal Timing: December-January shows premium pricing; mid-year may offer better value</p>
+<h3>Affordability Crisis</h3>
+<p>1. Median vs Average: The 1.4x ratio indicates significant wealth inequality in property ownership</p>
+<p>2. Regional Disparity: London prices median £500k vs national median £295k</p>
+<p>3. Property Type Gap: Detached homes median £409.5k vs terraced median £235k - 74% premium</p>
+<h2>Conclusions</h2>
+<p>This comprehensive analysis of 30 years of UK property transactions reveals:</p>
+<p>1. Market Maturation: The dramatic increase in transaction volume in 2024-2025 suggests improved data capture and/or increased market activity</p>
+<p>2. Persistent Geographic Disparities: Despite economic changes, the North-South divide and London premium remain strong</p>
+<p>3. Property Type Stability: Clear price hierarchy Detached  Semi-Detached ≈ Flats  Terraced has persisted over decades</p>
+<p>4. Tenure Value: Freehold properties maintain consistent 20% premium over leasehold</p>
+<p>5. Market Complexity: Multiple factors location, property type, tenure, new build status interact to create diverse pricing dynamics</p>
+<p>Data Limitations:</p>
+<ul><li>Recent years 2024-2025 dominate the dataset 93% of transactions</li><li>Potential reporting bias toward certain regions or property types</li><li>Limited demographic information about buyers</li></ul>
+<p>Future Research Opportunities:</p>
+<ul><li>Correlation with economic indicators interest rates, GDP growth</li><li>Impact of policy changes stamp duty, Help to Buy</li><li>Analysis of price appreciation rates over time</li><li>Examination of foreign investment patterns</li></ul>
+<p>The UK property market continues to demonstrate remarkable resilience and complexity, with clear patterns emerging around location, property type, and tenure that inform both policy decisions and investment strategies.</p>
+<hr/>
+<p>Report generated on January 13, 2025 based on 94,248 property transactions from 1995-2025</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

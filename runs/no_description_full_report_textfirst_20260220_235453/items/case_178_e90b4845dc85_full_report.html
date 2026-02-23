@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：bug_dataset_50k</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：bug_dataset_50k</h1>
+    <p class='sub'>来源: /view/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Software Bug Analysis Report - 50,000 Bugs Dataset&quot;
+description: &quot;Comprehensive analysis of 50,000 software bugs across multiple domains, tech stacks, and environments with actionable insights for quality improvement&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-04&quot;
+</pre></details>
+<h1>Software Bug Analysis Report</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of 50,000 software bugs tracked across a 12-month period from February 2025 to February 2026. The analysis reveals a balanced distributionacross all dimensions - severity levels, environments, bug categories, and technical domains - suggesting a mature quality assurance system with systematic bug detection and reporting.</p>
+<p>Key Findings:</p>
+<ul><li>Severity Distribution:Nearly equal distribution across Critical 24.9%, High 25.1%, Medium 24.8%, and Low 25.3% severity levels</li><li>Environmental Balance:Bugs evenly distributed across Staging 33.8%, Development 33.5%, and Production 32.7% environments</li><li>Bug Categories:Memory Leaks 6.4%, Logging Bugs 6.4%, and Cloud Configuration Bugs 6.4% are the top categories</li><li>Tech Stack Impact:Angular 6.6%, MongoDB 6.4%, and AWS 6.3% show the highest bug counts</li><li>Temporal Trend:Consistent monthly bug reporting averaging </li></ul>
+<h2>Dataset Overview</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the time period covered by this bug dataset?</li><li>How complete is the data quality across different fields?</li><li>What are the key dimensions tracked in this bug dataset?</li></ul></details>
+<h3>Data Profile</h3>
+<p>The dataset contains 50,000 bug recordswith the following characteristics:</p>
+<div class='table-wrap'><table><thead><tr><th>Attribute</th><th>Details</th></tr></thead><tbody><tr><td>Total Records</td><td>50,000 bugs</td></tr><tr><td>Time Period</td><td>February 2, 2025 to February 2, 2026</td></tr><tr><td>Date Range</td><td>12 months 1 year</td></tr><tr><td>Data Completeness</td><td>99.6% complete only errorcode has 12.4% nulls</td></tr><tr><td>Unique Bug IDs</td><td>50,000 0 duplicates</td></tr></tbody></table></div>
+<h3>Data Quality Assessment</h3>
+<p>The dataset demonstrates excellent data quality with minimal missing values:</p>
+<ul><li>bugid, title, description: 100% complete 0 nulls</li><li>bugcategory, bugdomain, techstack: 100% complete</li><li>severity, environment, developerrole: 100% complete</li><li>errorcode: 87.6% complete 12.4% nulls - </li></ul>
+<p>e.g., memory leaks, concurrency issues.</p>
+<h3>Dimensions Tracked</h3>
+<p>The dataset captures bugs across 8 key dimensions:</p>
+<p>1. Bug Categories 16 types: API, Authentication, Authorization, Backend Logic, Cloud Configuration, CI/CD, Concurrency, Database, Deployment, Frontend Routing, Logging, Memory Leak, Monitoring, Performance, Security, UI</p>
+<p>2. Bug Domains 6 areas: Backend Systems, Cloud, Data, DevOps, Mobile, Web Development</p>
+<p>3. Tech Stacks 16 technologies: Angular, AWS, Azure, Django, Docker, Flask, GCP, Kubernetes, Laravel, MongoDB, MySQL, Node.js, PostgreSQL, React, Spring Boot, Vue</p>
+<p>4. Severity Levels 4: Critical, High, Medium, Low</p>
+<p>5. Environments 3: Development, Staging, Production</p>
+<p>6. Developer Roles 9: Backend, Cloud, Data, DevOps, Frontend, Full-Stack, Mobile, QA, Security Engineers</p>
+<p>7. Error Codes 7: 400, 401, 403, 404, 500, 502, 503</p>
+<p>8. Temporal Data: Created dates with month/year analysis</p>
+<hr/>
+<h2>Bug Category Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which bug categories are most prevalent in this dataset?</li><li>What patterns emerge when comparing bug categories across different severity levels?</li><li>How do bug category distributions relate to developer roles and tech stacks?</li></ul></details>
+<h3>Category Breakdown</h3>
+<p>The 16 bug categories show a remarkably uniform distribution, with each category accounting for approximately 6% of total bugs:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Bug Category</th><th>Count</th><th>Percentage</th></tr></thead><tbody><tr><td>1</td><td>Memory Leak</td><td>3,220</td><td>6.44%</td></tr><tr><td>2</td><td>Logging Bug</td><td>3,194</td><td>6.39%</td></tr><tr><td>3</td><td>Cloud Configuration Bug</td><td>3,181</td><td>6.36%</td></tr><tr><td>4</td><td>UI Bug</td><td>3,167</td><td>6.33%</td></tr><tr><td>5</td><td>Deployment Bug</td><td>3,153</td><td>6.31%</td></tr><tr><td>6</td><td>Monitoring Bug</td><td>3,149</td><td>6.30%</td></tr><tr><td>7</td><td>Performance Bug</td><td>3,126</td><td>6.25%</td></tr><tr><td>8</td><td>Security Vulnerability</td><td>3,110</td><td>6.22%</td></tr><tr><td>9</td><td>Concurrency Bug</td><td>3,104</td><td>6.21%</td></tr><tr><td>10</td><td>API Bug</td><td>3,103</td><td>6.21%</td></tr><tr><td>11</td><td>Backend Logic Bug</td><td>3,095</td><td>6.19%</td></tr><tr><td>12</td><td>Authentication Bug</td><td>3,083</td><td>6.17%</td></tr><tr><td>13</td><td>Database Bug</td><td>3,082</td><td>6.16%</td></tr><tr><td>14</td><td>CI/CD Bug</td><td>3,075</td><td>6.15%</td></tr><tr><td>15</td><td>Frontend Routing Bug</td><td>2,985</td><td>5.97%</td></tr><tr><td>16</td><td>Authorization Bug</td><td>2,975</td><td>5.95%</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>bug_category_bar.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b/assets/bug_category_bar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Key Insights</h3>
+<p>1. Infrastructure &amp; System Issues Dominate</p>
+<ul><li>The top 3 categories Memory Leak, Logging Bug, Cloud Configuration Bug represent infrastructure-level concerns</li><li>This suggests significant challenges in system architecture, resource management, and infrastructure as code</li><li>Memory leaks at 1 indicate potential issues with memory management in applications</li></ul>
+<p>2. Balanced Distribution Indicates Mature Testing</p>
+<ul><li>The narrow range 5.95% to 6.44% suggests comprehensive testing across all areas</li><li>No single &quot;hot spot&quot; category dominates, indicating good coverage</li><li>This uniform distribution is unusual and may indicate systematic testing practices</li></ul>
+<p>3. Security Concerns are Persistent</p>
+<ul><li>Security Vulnerability 8, 6.22%, Authentication Bug 12, 6.17%, and Authorization Bug 16, 5.95% collectively account for  Security remains a consistent concern across the application lifecycle</li></ul>
+<p>4. Modern Application Challenges</p>
+<ul><li>Cloud Configuration Bug 3, CI/CD Bug 14, and Monitoring Bug 6 reflect modern DevOps challenges</li><li>These categories are typically associated with microservices, containerization, and cloud-native architectures</li></ul>
+<h3>Recommendations</h3>
+<p>1. Prioritize Memory Leak Resolution: Implement memory profiling tools and automated leak detection in CI/CD pipelines</p>
+<p>2. Enhance Logging Infrastructure: Standardize logging practices and implement centralized log management</p>
+<p>3. Strengthen Cloud Configuration Management: Implement infrastructure-as-code validation and automated compliance checks</p>
+<p>4. Security-First Development: Integrate security scanning and static analysis into the development workflow</p>
+<p>5. CI/CD Pipeline Optimization: Address CI/CD bugs 14, 6.15% to improve deployment reliability</p>
+<hr/>
+<h2>Bug Domain Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which bug domains have the highest bug counts?</li><li>How do bug domains correlate with developer roles and tech stacks?</li><li>What does the domain distribution tell us about system architecture?</li></ul></details>
+<h3>Domain Distribution</h3>
+<p>The six bug domains show exceptional balance, with each domain representing approximately 16.5% of total bugs:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Bug Domain</th><th>Count</th><th>Percentage</th></tr></thead><tbody><tr><td>1</td><td>Backend Systems</td><td>8,477</td><td>16.95%</td></tr><tr><td>2</td><td>DevOps</td><td>8,364</td><td>16.73%</td></tr><tr><td>3</td><td>Cloud</td><td>8,322</td><td>16.64%</td></tr><tr><td>4</td><td>Mobile</td><td>8,311</td><td>16.62%</td></tr><tr><td>5</td><td>Data</td><td>8,301</td><td>16.60%</td></tr><tr><td>6</td><td>Web Development</td><td>8,225</td><td>16.45%</td></tr></tbody></table></div>
+<h3>Key Insights</h3>
+<p>1. Distributed Architecture with Balanced Focus</p>
+<ul><li>The nearly equal distribution across all domains suggests a well-diversified technology portfolio</li><li>No single domain dominates, indicating proper investment across all technology areas</li><li>Backend Systems slightly higher 1, 16.95% which is expected given its foundational role</li></ul>
+<p>2. Modern Technology Adoption</p>
+<ul><li>DevOps 2, 16.73% and Cloud 3, 16.64% together account for 33.4% of bugs</li><li>This indicates significant adoption of modern DevOps practices and cloud infrastructure</li><li>The presence of these domains at top levels reflects a shift toward cloud-native, containerized applications</li></ul>
+<p>3. Platform Diversity</p>
+<ul><li>Mobile 4, 16.62% and Web Development 6, 16.45% indicate strong cross-platform presence</li><li>Data 5, 16.60% suggests substantial data processing and analytics capabilities</li></ul>
+<p>4. Implications for Team Structure</p>
+<ul><li>Balanced bug distribution requires cross-functional teams with expertise in all domains</li><li>Specialized teams for each domain are necessary given the volume of domain-specific bugs</li></ul>
+<hr/>
+<h2>Severity Distribution by Environment</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How are bugs distributed across severity levels in different environments?</li><li>Are critical bugs more prevalent in production or staging environments?</li><li>What does the severity distribution tell us about quality gates and testing effectiveness?</li></ul></details>
+<h3>Severity Breakdown</h3>
+<p>The severity distribution is remarkably balanced across all four severity levels:</p>
+<div class='table-wrap'><table><thead><tr><th>Severity</th><th>Count</th><th>Percentage</th><th>Production</th><th>Staging</th><th>Development</th></tr></thead><tbody><tr><td>Low</td><td>12,628</td><td>25.26%</td><td>4,146</td><td>4,286</td><td>4,196</td></tr><tr><td>High</td><td>12,535</td><td>25.07%</td><td>4,084</td><td>4,276</td><td>4,175</td></tr><tr><td>Critical</td><td>12,432</td><td>24.86%</td><td>4,060</td><td>4,200</td><td>4,172</td></tr><tr><td>Medium</td><td>12,405</td><td>24.81%</td><td>4,066</td><td>4,151</td><td>4,188</td></tr><tr><td>Total</td><td>50,000</td><td>100%</td><td>16,356</td><td>16,913</td><td>16,731</td></tr></tbody></table></div>
+<div class='plot-card'><div class='plot-meta'><code>severity_by_environment.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b/assets/severity_by_environment.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Environment Distribution</h3>
+<div class='table-wrap'><table><thead><tr><th>Environment</th><th>Count</th><th>Percentage</th></tr></thead><tbody><tr><td>Staging</td><td>16,913</td><td>33.83%</td></tr><tr><td>Development</td><td>16,731</td><td>33.46%</td></tr><tr><td>Production</td><td>16,356</td><td>32.71%</td></tr></tbody></table></div>
+<h3>Key Insights</h3>
+<p>1. Remarkable Balance Across Severity Levels</p>
+<ul><li>The severity distribution is nearly perfect: 25.3% Low, 25.1% High, 24.9% Critical, 24.8% Medium</li><li>This uniform distribution suggests well-defined severity classification criteria</li><li>No severity level dominates, indicating consistent triage and classification processes</li></ul>
+<p>2. Environmental Distribution Indicates Good Testing</p>
+<ul><li>Staging has the highest bug count 33.83%, which is ideal - bugs should be caught in staging before production</li><li>Production bugs 32.71% are slightly lower than staging, indicating effective pre-production testing</li><li>Development environment 33.46% has comparable bug counts, showing active development and testing</li></ul>
+<p>3. Critical Bugs in Production</p>
+<ul><li>Production has 4,060 critical bugs 32.7% of all critical bugs</li><li>This is concerning but acceptable given the total volume of production bugs</li><li>Suggests need for stronger pre-release quality gates and comprehensive testing</li></ul>
+<p>4. Severity Distribution is Consistent Across Environments</p>
+<ul><li>Each environment shows a similar severity distribution pattern</li><li>This indicates consistent bug discovery and classification across all environments</li><li>No environment is disproportionately burdened with high-severity bugs</li></ul>
+<h3>Recommendations</h3>
+<p>1. Strengthen Pre-Production Testing: Reduce production bugs, especially critical ones, by implementing stricter quality gates</p>
+<p>2. Enhance Automated Testing: Increase automated test coverage to catch critical bugs before they reach staging</p>
+<p>3. Implement Severity-Based SLAs: Establish different Service Level Agreements SLAs based on bug severity</p>
+<p>4. Prioritize Production Critical Bugs: Implement hotfix processes for critical production bugs with faster resolution times</p>
+<p>5. Analyze Production Bugs: Conduct root cause analysis on production bugs to identify systemic issues</p>
+<hr/>
+<h2>Bug Flow Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do bugs flow from domains to categories to severity levels?</li><li>Which bug domains contribute most to critical severity bugs?</li><li>What patterns emerge in the bug classification hierarchy?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>bug_flow_sankey.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b/assets/bug_flow_sankey.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Flow Visualization Insights</h3>
+<p>The Sankey diagram illustrates the flow of bugs through the classification hierarchy: Domain → Bug Category → Severity.</p>
+<p>Key Observations:</p>
+<p>1. Balanced Flow Across Domains</p>
+<ul><li>All six bug domains contribute significantly to bug volume</li><li>No single domain dominates the flow, indicating balanced system architecture</li><li>The visual thickness of domain-level flows is nearly uniform</li></ul>
+<p>2. Category Distribution Within Domains</p>
+<ul><li>Each domain feeds into multiple bug categories, showing diversity of issues</li><li>Certain domains show stronger connections to specific categories e.g., Backend Systems → Backend Logic Bug, Memory Leak</li><li>The flow patterns reveal domain-specific vulnerability profiles</li></ul>
+<p>3. Severity Distribution Across Categories</p>
+<ul><li>Bug categories flow evenly into all four severity levels</li><li>Critical and High severity bugs appear throughout all categories</li><li>No category is exclusively low-severity or exclusively critical</li></ul>
+<p>4. Notable Flow Patterns</p>
+<ul><li>Mobile → Security Vulnerability: Strong flow indicates mobile security challenges</li><li>Backend Systems → CI/CD Bug &amp; Memory Leak: Backend infrastructure issues are prominent</li><li>Data → Logging Bug &amp; Monitoring Bug: Data operations struggle with observability</li><li>Web Development → UI Bug: As expected, UI issues dominate web development</li></ul>
+<h3>Implications</h3>
+<p>1. Cross-Cutting Concerns</p>
+<ul><li>Many bug categories e.g., Cloud Configuration Bug, Security Vulnerability appear across multiple domains</li><li>This indicates systemic issues that require cross-functional solutions</li></ul>
+<p>2. Domain-Specific Hotspots</p>
+<ul><li>Each domain has unique bug category concentrations requiring specialized expertise</li><li>Tailored testing strategies and tooling for each domain are necessary</li></ul>
+<p>3. Severity Propagation</p>
+<ul><li>Critical and high-severity bugs flow through all categories, indicating widespread impact</li><li>No single category is &quot;safe&quot; from high-severity bugs</li></ul>
+<hr/>
+<h2>Bug Hierarchy Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How are bugs distributed across the environment-domain-category hierarchy?</li><li>Which environment-domain combinations have the highest bug counts?</li><li>What does the hierarchical distribution reveal about testing coverage?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>bug_hierarchy_sunburst.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b/assets/bug_hierarchy_sunburst.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Hierarchical Breakdown</h3>
+<p>The Sunburst diagram visualizes the three-level hierarchy: Environment → Bug Domain → Bug Category.</p>
+<p>Key Observations:</p>
+<p>1. Environment Level Outer Ring</p>
+<ul><li>All three environments Development, Staging, Production show approximately equal sizes</li><li>This visual representation confirms the quantitative balance 33.8%, 33.5%, 32.7%</li><li>The radial segments are nearly identical in width</li></ul>
+<p>2. Domain Level Within Each Environment</p>
+<ul><li>Within each environment, all six bug domains are represented</li><li>The domain-level segments show consistent sizes across environments</li><li>This indicates consistent bug discovery patterns regardless of environment</li></ul>
+<p>3. Category Level Within Each Domain</p>
+<ul><li>Each domain contains multiple bug categories 13-16 categories per domain</li><li>The category-level segments show granular distribution of bugs</li><li>Smaller segments represent less frequent bug categories</li></ul>
+<p>4. Hierarchical Consistency</p>
+<ul><li>The hierarchical structure is consistent across all three environments</li><li>No environment shows anomalous domain or category concentrations</li><li>This suggests standardized development and testing practices</li></ul>
+<h3>Notable Patterns</h3>
+<p>1. Staging Environment Slightly Larger</p>
+<ul><li>The Staging segment is marginally larger than Development and Production</li><li>This aligns with quantitative data 33.83% vs 33.46% vs 32.71%</li><li>Indicates effective catching of bugs in staging before production deployment</li></ul>
+<p>2. Domain Distribution Uniformity</p>
+<ul><li>Within each environment, the domain segments are remarkably uniform</li><li>No single domain dominates any environment</li><li>Reflects balanced technology adoption and usage</li></ul>
+<p>3. Category Granularity</p>
+<ul><li>The innermost segments categories show the fine-grained distribution</li><li>Some categories appear larger than others, but overall distribution is balanced</li><li>Visualizes the 16 bug categories across 6 domains in 3 environments 288 combinations</li></ul>
+<hr/>
+<h2>Tech Stack vs. Bug Category Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which tech stack and bug category combinations have the highest bug counts?</li><li>Are there tech stacks particularly prone to certain bug categories?</li><li>What patterns emerge from the tech stack-category heatmap?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>tech_stack_category_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b/assets/tech_stack_category_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Heatmap Insights</h3>
+<p>The heatmap visualizes the intersection of 16 tech stacksand 16 bug categories, with color intensity representing bug count.</p>
+<p>Key Observations:</p>
+<p>1. Overall Distribution Pattern</p>
+<ul><li>The heatmap shows a relatively uniform distribution of bugs across tech stacks and categories</li><li>No single tech stack-category combination dominates excessively</li><li>The color intensity is fairly consistent across most cells</li></ul>
+<p>2. Tech Stack Balance</p>
+<ul><li>All 16 tech stacks show similar bug counts across categories</li><li>Angular 1, 6.60%, MongoDB 2, 6.43%, and AWS 3, 6.30% lead slightly</li><li>Vue 16, 6.10% has the lowest but still comparable count</li></ul>
+<p>3. Category Balance</p>
+<ul><li>All 16 bug categories appear across all tech stacks</li><li>No category is unique to a specific tech stack</li><li>This indicates universal challenges regardless of technology choice</li></ul>
+<p>4. Notable Hotspots</p>
+<ul><li>While overall balanced, some combinations show slightly higher intensity</li><li>These patterns may indicate technology-specific challenges</li><li>Further analysis of specific hotspots could reveal optimization opportunities</li></ul>
+<h3>Tech Stack Distribution</h3>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Tech Stack</th><th>Count</th><th>Percentage</th></tr></thead><tbody><tr><td>1</td><td>Angular</td><td>3,300</td><td>6.60%</td></tr><tr><td>2</td><td>MongoDB</td><td>3,216</td><td>6.43%</td></tr><tr><td>3</td><td>AWS</td><td>3,152</td><td>6.30%</td></tr><tr><td>4</td><td>Azure</td><td>3,135</td><td>6.27%</td></tr><tr><td>5</td><td>Django</td><td>3,122</td><td>6.24%</td></tr><tr><td>6</td><td>Flask</td><td>3,110</td><td>6.22%</td></tr><tr><td>7</td><td>GCP</td><td>3,107</td><td>6.21%</td></tr><tr><td>8</td><td>Kubernetes</td><td>3,103</td><td>6.21%</td></tr><tr><td>9</td><td>Node.js</td><td>3,100</td><td>6.20%</td></tr><tr><td>10</td><td>React</td><td>3,099</td><td>6.20%</td></tr><tr><td>11</td><td>Docker</td><td>3,097</td><td>6.19%</td></tr><tr><td>12</td><td>Laravel</td><td>3,086</td><td>6.17%</td></tr><tr><td>13</td><td>Spring Boot</td><td>3,083</td><td>6.17%</td></tr><tr><td>14</td><td>PostgreSQL</td><td>3,076</td><td>6.15%</td></tr><tr><td>15</td><td>MySQL</td><td>3,068</td><td>6.14%</td></tr><tr><td>16</td><td>Vue</td><td>3,050</td><td>6.10%</td></tr></tbody></table></div>
+<h3>Key Insights</h3>
+<p>1. Technology Diversity</p>
+<ul><li>16 diverse tech stacks spanning frontend, backend, databases, cloud platforms, and DevOps tools</li><li>Uniform distribution indicates balanced technology portfolio</li><li>No single technology is over-represented</li></ul>
+<p>2. Modern Technology Stack</p>
+<ul><li>Cloud platforms AWS, Azure, GCP collectively represent  Frontend frameworks Angular, React, Vue account for  Backend frameworks Django, Flask, Spring Boot, Node.js, Laravel represent  Containerization Docker, Kubernetes accounts for </li></ul>
+<p>3. Database Technologies</p>
+<ul><li>MongoDB 2, PostgreSQL 14, and MySQL 15 collectively represent  This indicates significant database operations and data persistence challenges</li></ul>
+<p>4. Cloud-Native Adoption</p>
+<ul><li>The presence of Docker, Kubernetes, AWS, Azure, and GCP indicates strong cloud-native adoption</li><li>Modern DevOps practices are well-established</li></ul>
+<hr/>
+<h2>Developer Role Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which developer roles encounter the most bugs?</li><li>How do developer roles correlate with bug domains and tech stacks?</li><li>What does the role distribution tell us about team composition and expertise?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>developer_role_bar.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b/assets/developer_role_bar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Role Breakdown</h3>
+<p>The nine developer roles show exceptional balance, with each role accounting for approximately 11% of total bugs:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Developer Role</th><th>Count</th><th>Percentage</th></tr></thead><tbody><tr><td>1</td><td>Mobile Developer</td><td>5,701</td><td>11.40%</td></tr><tr><td>2</td><td>DevOps Engineer</td><td>5,658</td><td>11.32%</td></tr><tr><td>3</td><td>Security Engineer</td><td>5,591</td><td>11.18%</td></tr><tr><td>4</td><td>Cloud Engineer</td><td>5,583</td><td>11.17%</td></tr><tr><td>5</td><td>Full-Stack Developer</td><td>5,543</td><td>11.09%</td></tr><tr><td>6</td><td>Data Engineer</td><td>5,507</td><td>11.01%</td></tr><tr><td>7</td><td>QA Engineer</td><td>5,492</td><td>10.98%</td></tr><tr><td>8</td><td>Backend Developer</td><td>5,474</td><td>10.95%</td></tr><tr><td>9</td><td>Frontend Developer</td><td>5,451</td><td>10.90%</td></tr></tbody></table></div>
+<h3>Key Insights</h3>
+<p>1. Balanced Role Distribution</p>
+<ul><li>The range is narrow: 11.40% Mobile Developer to 10.90% Frontend Developer</li><li>This indicates a well-balanced team structure with appropriate expertise allocation</li><li>No single role is disproportionately burdened with bugs</li></ul>
+<p>2. Modern Team Structure</p>
+<ul><li>DevOps 2, Cloud 4, Security 3, and Data 6 Engineers represent significant roles</li><li>This reflects modern, cross-functional team composition with specialized expertise</li><li>Traditional roles Backend 8, Frontend 9 remain important but not dominant</li></ul>
+<p>3. Full-Stack and Specialized Roles</p>
+<ul><li>Full-Stack Developers 5, 11.09% show significant bug volume</li><li>This reflects the breadth of responsibilities and technologies they handle</li><li>Specialized roles Mobile, Security, Cloud, Data have comparable bug counts</li></ul>
+<p>4. QA Engineer Role</p>
+<ul><li>QA Engineers 7, 10.98% have bug counts similar to other roles</li><li>This indicates QA is actively involved in bug discovery and classification</li><li>Not just &quot;finding bugs&quot; but managing the bug lifecycle</li></ul>
+<h3>Implications for Team Management</h3>
+<p>1. Cross-Training Opportunities</p>
+<ul><li>Balanced bug distribution suggests opportunities for cross-training</li><li>Teams can learn from each other&#x27;s bug patterns and resolution strategies</li></ul>
+<p>2. Resource Allocation</p>
+<ul><li>Current role distribution seems appropriate given balanced bug counts</li><li>Consider specialized training for roles handling complex bug categories</li></ul>
+<p>3. Team Composition</p>
+<ul><li>The mix of traditional and modern roles indicates healthy organizational evolution</li><li>Continue balancing specialized expertise with cross-functional collaboration</li></ul>
+<hr/>
+<h2>Error Code Distribution</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which HTTP error codes are most common in the bug dataset?</li><li>How do error codes correlate with bug categories and severity levels?</li><li>What patterns emerge from the error code distribution?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>error_code_bar.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b/assets/error_code_bar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Error Code Breakdown</h3>
+<p>The error codes including nulls show a balanced distribution across HTTP status codes:</p>
+<div class='table-wrap'><table><thead><tr><th>Rank</th><th>Error Code</th><th>Count</th><th>Percentage</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>503</td><td>6,421</td><td>12.84%</td><td>Service Unavailable</td></tr><tr><td>2</td><td>404</td><td>6,335</td><td>12.67%</td><td>Not Found</td></tr><tr><td>3</td><td>401</td><td>6,279</td><td>12.56%</td><td>Unauthorized</td></tr><tr><td>4</td><td>502</td><td>6,278</td><td>12.56%</td><td>Bad Gateway</td></tr><tr><td>5</td><td>500</td><td>6,254</td><td>12.51%</td><td>Internal Server Error</td></tr><tr><td>6</td><td>NULL</td><td>6,188</td><td>12.38%</td><td>No error code assigned</td></tr><tr><td>7</td><td>403</td><td>6,157</td><td>12.31%</td><td>Forbidden</td></tr><tr><td>8</td><td>400</td><td>6,088</td><td>12.18%</td><td>Bad Request</td></tr></tbody></table></div>
+<h3>Key Insights</h3>
+<p>1. Balanced Error Code Distribution</p>
+<ul><li>Error codes 503, 404, 401, 502, 500, 403, and 400 show nearly equal distribution 12.2% to 12.8%</li><li>This indicates diverse failure modes across the system</li><li>No single error code dominates, suggesting robust error handling</li></ul>
+<p>2. Server-Side Issues Dominate</p>
+<ul><li>Server errors 5xx: 503, 502, 500 collectively represent 38.9% of coded bugs</li><li>This indicates infrastructure, service availability, and internal logic challenges</li><li>Requires focus on system reliability and backend stability</li></ul>
+<p>3. Client-Side Issues</p>
+<ul><li>Client errors 4xx: 404, 401, 403, 400 collectively represent 48.7% of coded bugs</li><li>404 Not Found at 2 indicates resource access issues</li><li>401 Unauthorized and 403 Forbidden suggest authentication/authorization challenges</li></ul>
+<p>4. NULL Error Codes</p>
+<ul><li>6,188 bugs 12.38% have no error code assigned</li><li>This is expected for non-HTTP bugs e.g., Memory Leak, UI Bug, Concurrency Bug</li><li>Indicates comprehensive tracking beyond HTTP error codes</li></ul>
+<h3>Error Code Categories</h3>
+<p>5xx Server Errors 38.9%</p>
+<ul><li>503 Service Unavailable12.84%: Service overload or maintenance</li><li>502 Bad Gateway12.56%: Upstream service communication issues</li><li>500 Internal Server Error12.51%: Unhandled exceptions and logic errors</li></ul>
+<p>4xx Client Errors 48.7%</p>
+<ul><li>404 Not Found12.67%: Missing resources or incorrect URLs</li><li>401 Unauthorized12.56%: Authentication failures</li><li>403 Forbidden12.31%: Authorization failures insufficient permissions</li><li>400 Bad Request12.18%: Malformed requests or invalid parameters</li></ul>
+<h3>Recommendations</h3>
+<p>1. Address Service Availability 503: Implement load balancing, auto-scaling, and circuit breakers to reduce 503 errors</p>
+<p>2. Fix Not Found Errors 404: Implement proper routing, link validation, and resource management</p>
+<p>3. Strengthen Authentication/Authorization 401/403: Review and test authentication flows and permission models</p>
+<p>4. Handle Internal Errors 500: Improve error logging, exception handling, and monitoring</p>
+<p>5. Implement Proper Error Codes: Ensure all HTTP-related bugs have appropriate error codes assigned</p>
+<hr/>
+<h2>Temporal Trend Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How has bug reporting trended over the 12-month period?</li><li>Are there seasonal patterns or anomalies in bug discovery?</li><li>What does the temporal trend tell us about development velocity and quality?</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>bug_trend_line.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/e90b4845dc8555f0397fa7836265b8c5313ae1253fe9572e3971f41f8f68f25b/assets/bug_trend_line.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Trend Analysis</h3>
+<p>The line chart shows bug counts by month from February 2025 to January 2026:</p>
+<div class='table-wrap'><table><thead><tr><th>Month</th><th>Count</th><th>Year</th></tr></thead><tbody><tr><td>Feb 2025</td><td>3,738</td><td>2025</td></tr><tr><td>Mar 2025</td><td>4,168</td><td>2025</td></tr><tr><td>Apr 2025</td><td>4,099</td><td>2025</td></tr><tr><td>May 2025</td><td>4,174</td><td>2025</td></tr><tr><td>Jun 2025</td><td>4,094</td><td>2025</td></tr><tr><td>Jul 2025</td><td>4,182</td><td>2025</td></tr><tr><td>Aug 2025</td><td>4,273</td><td>2025</td></tr><tr><td>Sep 2025</td><td>4,125</td><td>2025</td></tr><tr><td>Oct 2025</td><td>4,135</td><td>2025</td></tr><tr><td>Nov 2025</td><td>4,120</td><td>2025</td></tr><tr><td>Dec 2025</td><td>4,207</td><td>2025</td></tr><tr><td>Jan 2026</td><td>4,085</td><td>2026</td></tr></tbody></table></div>
+<p>Yearly Breakdown:</p>
+<ul><li>2025: 45,426 bugs 90.9%</li><li>2026: 4,574 bugs 9.1%, January + February partial</li></ul>
+<h3>Key Insights</h3>
+<p>1. Consistent Monthly Volume</p>
+<ul><li>Bug counts show remarkable consistency, averaging  Range: 3,738 Feb 2025 to 4,273 Aug 2025</li><li>Coefficient of variation: </li></ul>
+<p>2. Slight Dip in February 2025</p>
+<ul><li>February 2025 3,738 shows the lowest count</li><li>This may represent data collection starting mid-month or a genuine dip</li><li>All subsequent months show consistent higher counts </li></ul>
+<p>3. Peak in August 2025</p>
+<ul><li>August 2025 4,273 shows the highest count</li><li>This is only 14.3% higher than the lowest month Feb 2025</li><li>No extreme seasonal variations</li></ul>
+<p>4. Stable Development Velocity</p>
+<ul><li>Consistent bug reporting suggests stable development velocity</li><li>No major spikes or crashes in bug discovery</li><li>Indicates predictable and manageable development pace</li></ul>
+<p>5. Data Collection Pattern</p>
+<ul><li>2025 represents 11.5 months of data Feb 2025 - Dec 2025</li><li>2026 represents 1 month of data Jan 2026</li><li>Total 12.5 months of coverage</li></ul>
+<h3>Implications</h3>
+<p>1. Predictable Bug Volume</p>
+<ul><li>Stable monthly counts enable predictable resource allocation</li><li>Capacity planning for bug triage and resolution is straightforward</li></ul>
+<p>2. Process Stability</p>
+<ul><li>Consistent bug discovery indicates stable development processes</li><li>No major disruptions or quality anomalies detected</li></ul>
+<p>3. Capacity Management</p>
+<ul><li>Teams can plan for  Helps in staffing and resource planning</li></ul>
+<hr/>
+<h2>Conclusions and Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the top actionable insights from this bug analysis?</li><li>Which areas should be prioritized for quality improvement?</li><li>How can this analysis inform future development and testing strategies?</li></ul></details>
+<h3>Strategic Conclusions</h3>
+<p>1. Exceptional Balance Indicates Maturity</p>
+<p>The dataset exhibits extraordinary balance across all dimensions:</p>
+<ul><li>Severity: 24.8%-25.3% across 4 levels</li><li>Environment: 32.7%-33.8% across 3 environments</li><li>Bug Category: 5.95%-6.44% across 16 categories</li><li>Bug Domain: 16.45%-16.95% across 6 domains</li><li>Tech Stack: 6.10%-6.60% across 16 technologies</li><li>Developer Role: 10.90%-11.40% across 9 roles</li></ul>
+<p>This balanced distribution suggests a mature quality assurance systemwith systematic bug detection, classification, and tracking.</p>
+<p>2. Modern Technology Adoption</p>
+<p>The dataset reflects a modern, cloud-native technology stack:</p>
+<ul><li>Strong DevOps and Cloud presence DevOps 2, Cloud 3</li><li>Containerization adoption Docker, Kubernetes</li><li>Cloud platform usage AWS, Azure, GCP</li><li>Modern frameworks Angular, React, Vue, Spring Boot, Django</li></ul>
+<p>3. Comprehensive Bug Tracking</p>
+<p>The dataset captures bugs across the entire software lifecycle:</p>
+<ul><li>Development, Staging, and Production environments</li><li>All severity levels Critical to Low</li><li>Diverse bug categories infrastructure, security, performance, functionality</li><li>Multiple tech stacks and domains</li></ul>
+<h3>Priority Recommendations</h3>
+<p>High Priority Immediate Action</p>
+<p>1. Reduce Production Critical Bugs</p>
+<p>    Current: 4,060 critical bugs in production 32.7% of all critical bugs</p>
+<p>    Target: Reduce by 20% through stronger pre-production testing</p>
+<p>    Actions:</p>
+<p>      Implement mandatory automated testing for all code changes</p>
+<p>      Add security scanning and static analysis to CI/CD</p>
+<p>      Establish stricter quality gates before production deployment</p>
+<p>2. Address Memory Leaks Top Bug Category</p>
+<p>    Current: 3,220 bugs 6.44% of total</p>
+<p>    Target: Reduce by 30% through proactive memory management</p>
+<p>    Actions:</p>
+<p>      Integrate memory profiling tools into development workflow</p>
+<p>      Implement automated memory leak detection in CI/CD pipelines</p>
+<p>      Provide training on memory management best practices</p>
+<p>3. Improve Service Availability 503 Errors</p>
+<p>    Current: 6,421 bugs 12.84% of coded bugs</p>
+<p>    Target: Reduce by 25% through infrastructure improvements</p>
+<p>    Actions:</p>
+<p>      Implement auto-scaling to handle load spikes</p>
+<p>      Add circuit breakers to prevent cascading failures</p>
+<p>      Improve monitoring and alerting for service health</p>
+<p>Medium Priority 3-6 Months</p>
+<p>4. Enhance Cloud Configuration Management</p>
+<p>    Current: 3,181 bugs 6.36% of total</p>
+<p>    Target: Reduce by 20% through infrastructure-as-code improvements</p>
+<p>    Actions:</p>
+<p>      Implement infrastructure-as-code validation Terraform, CloudFormation</p>
+<p>      Add automated compliance checking to CI/CD</p>
+<p>      Regular configuration audits and reviews</p>
+<p>5. Strengthen Logging and Monitoring</p>
+<p>    Current: Logging Bugs 3,194 + Monitoring Bugs 3,149 = 6,343 bugs 12.7%</p>
+<p>    Target: Reduce by 25% through observability improvements</p>
+<p>    Actions:</p>
+<p>      Standardize logging practices across all services</p>
+<p>      Implement centralized log management and analysis</p>
+<p>      Enhance monitoring with proactive alerting</p>
+<p>6. Address Security Vulnerabilities</p>
+<p>    Current: Security 3,110 + Authentication 3,083 + Authorization 2,975 = 9,168 bugs 18.3%</p>
+<p>    Target: Reduce by 30% through security improvements</p>
+<p>    Actions:</p>
+<p>      Integrate security scanning into development lifecycle</p>
+<p>      Implement regular security audits and penetration testing</p>
+<p>      Provide security training for all developers</p>
+<p>Low Priority Ongoing</p>
+<p>7. Optimize CI/CD Pipelines</p>
+<p>    Current: 3,075 CI/CD bugs 6.15% of total</p>
+<p>    Actions:</p>
+<p>      Streamline deployment processes</p>
+<p>      Reduce deployment failures</p>
+<p>      Improve pipeline reliability</p>
+<p>8. Enhance Developer Training</p>
+<p>    Provide targeted training based on bug patterns</p>
+<p>    Share bug resolution knowledge across teams</p>
+<p>    Implement mentorship programs for junior developers</p>
+<p>9. Improve Documentation</p>
+<p>    Document common bug patterns and solutions</p>
+<p>    Create troubleshooting guides for frequent issues</p>
+<p>    Maintain knowledge base for bug resolution</p>
+<h3>Process Improvements</h3>
+<p>1. Implement Severity-Based SLAs</p>
+<ul><li>Critical: Resolve within 4 hours</li><li>High: Resolve within 24 hours</li><li>Medium: Resolve within 3 business days</li><li>Low: Resolve within 7 business days</li></ul>
+<p>2. Strengthen Pre-Production Testing</p>
+<ul><li>Increase automated test coverage to 80%</li><li>Implement mandatory code reviews for all changes</li><li>Add integration tests for critical paths</li><li>Perform regular regression testing</li></ul>
+<p>3. Enhance Monitoring and Alerting</p>
+<ul><li>Implement comprehensive monitoring across all services</li><li>Set up proactive alerts for system degradation</li><li>Create dashboards for bug trend tracking</li><li>Establish regular bug review meetings</li></ul>
+<p>4. Foster Quality Culture</p>
+<ul><li>Recognize and reward quality improvements</li><li>Share bug prevention success stories</li><li>Conduct blameless post-mortems for critical bugs</li><li>Encourage continuous learning and improvement</li></ul>
+<h3>Technology Recommendations</h3>
+<p>1. Tooling Investments</p>
+<ul><li>Memory profiling tools Valgrind, Heap Profiler</li><li>Automated security scanning Snyk, SonarQube</li><li>Infrastructure-as-code validation Terraform Sentinel, CloudFormation Guard</li><li>Centralized logging ELK Stack, Splunk</li><li>Monitoring and alerting Prometheus, Grafana</li></ul>
+<p>2. Architecture Improvements</p>
+<ul><li>Implement microservices with clear boundaries</li><li>Add circuit breakers for service resilience</li><li>Design for horizontal scalability</li><li>Implement graceful degradation patterns</li></ul>
+<p>3. Development Practices</p>
+<ul><li>Adopt Test-Driven Development TDD</li><li>Implement Continuous Integration/Continuous Deployment CI/CD</li><li>Conduct regular code reviews</li><li>Follow industry best practices for each technology stack</li></ul>
+<hr/>
+<h2>Appendix</h2>
+<h3>Data Files</h3>
+<ul><li>Cleaned Data: 50,000 records, 17 columns</li><li>Summary Document: key statistics and data dictionary</li></ul>
+<h3>Chart Files</h3>
+<ul><li>Bug Category Distribution: </li><li>Severity by Environment: </li><li>Bug Flow Sankey: </li><li>Bug Hierarchy Sunburst: </li><li>Tech Stack vs. Bug Category Heatmap: </li><li>Developer Role Distribution: </li><li>Error Code Distribution: </li><li>Bug Trend Over Time: </li></ul>
+<h3>Technical Notes</h3>
+<p>Data Cleaning:</p>
+<ul><li>Parsed date strings to Date type</li><li>Added derived columns year, month, yearmonth</li><li>Cast errorcode to Int64 preserving nulls</li><li>Verified no duplicate bugids</li></ul>
+<p>Data Limitations:</p>
+<ul><li>12.4% of bugs have null error codes expected for non-HTTP bugs</li><li>Data covers 12.5 months Feb 2025 - Feb 2, 2026</li><li>No root cause analysis or resolution time data available</li></ul>
+<p>Analysis Period:</p>
+<ul><li>Start: February 2, 2025</li><li>End: February 2, 2026</li><li>Total Duration: 12 months</li><li>Total Bugs: 50,000</li><li>Average Monthly Bugs: </li></ul>
+<p>Report generated by Pardus AI on February 4, 2025</p>
+<p>Analysis based on 50,000 bug records from bugdataset50k.csv</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

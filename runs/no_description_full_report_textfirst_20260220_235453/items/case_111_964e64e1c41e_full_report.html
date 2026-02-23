@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：中国癌症患者分析</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：中国癌症患者分析</h1>
+    <p class='sub'>来源: /view/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;China Cancer Patient Comprehensive Analysis: Epidemiology, Treatment Patterns, and Survival Outcomes&quot;
+description: &quot;In-depth analysis of 10,000 cancer patients across China examining demographic patterns, disease characteristics, treatment modalities, and survival factors&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>China Cancer Patient Comprehensive Analysis: Epidemiology, Treatment Patterns, and Survival Outcomes</h1>
+<h2>Executive Summary</h2>
+<p>This comprehensive analysis examines 10,000 cancer patients across China from 2018-2024, providing critical insights into epidemiological patterns, treatment methodologies, and survival outcomes. The data reveals significant correlations between demographic factors, cancer characteristics, and treatment efficacy, offering valuable insights for healthcare policy and clinical practice optimization.</p>
+<p>Key Findings:</p>
+<ul><li>Six major cancer types with varying prevalence patterns across provinces</li><li>Survival rates demonstrate strong correlation with cancer stage at diagnosis</li><li>Age and metastasis status emerge as critical prognostic factors</li><li>Lifestyle factors smoking, alcohol use show measurable impact on survival outcomes</li><li>Treatment approach variations by cancer type and stage highlight the importance of personalized medicine</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>cancer_type_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/cancer_type_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Data Overview and Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What demographic groups are represented in this dataset?</li><li>What geographic regions are covered in the analysis?</li><li>What is the data collection period for this study?</li></ul></details>
+<h3>Dataset Characteristics</h3>
+<p>This analysis draws from a comprehensive dataset of 10,000 cancer patientsacross China, spanning from January 2018 to December 2024. The data encompasses 20 provinces, providing a representative cross-section of China&#x27;s diverse population and healthcare infrastructure.</p>
+<h3>Demographic Composition</h3>
+<div class='plot-card'><div class='plot-meta'><code>gender_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/gender_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The patient population demonstrates relatively balanced gender distribution, with ages ranging from 18 to 85 yearsmean: 51.6 years. This broad age spectrum enables analysis of cancer patterns across different life stages and age-related survival factors.</p>
+<h3>Data Quality and Completeness</h3>
+<p>The dataset exhibits high completeness, with key clinical variables diagnosis date, tumor type, stage, treatment showing 100% coverage. Genetic mutation data shows 8.1% missing values, reflecting varying availability of genetic testing across regions and time periods.</p>
+<h2>Cancer Type Distribution and Prevalence Patterns</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which cancer types are most prevalent in China?</li><li>How does prevalence vary across different provinces?</li><li>What are the implications for resource allocation?</li></ul></details>
+<h3>Overall Distribution</h3>
+<p>The dataset includes six major cancer types, with Lung Cancer representing the largest proportion at 24.5%, followed by Breast Cancer 18.2% and Colorectal Cancer 16.8%. This distribution aligns with both national and global epidemiological patterns, where these three cancers consistently rank among the most common malignancies.</p>
+<div class='plot-card'><div class='plot-meta'><code>cancer_type_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/cancer_type_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Geographic Distribution Patterns</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_provinces.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/top_provinces.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Analysis of provincial distribution reveals significant variations in cancer type prevalence. This geographic heterogeneity suggests environmental, lifestyle, and possibly genetic factors influencing cancer etiology. Understanding these regional patterns is crucial for:</p>
+<p>1. Targeted screening programs- Prioritizing high-prevalence regions for early detection</p>
+<p>2. Resource allocation- Optimizing specialized treatment centers based on local needs</p>
+<p>3. Public health interventions- Designing region-specific prevention campaigns</p>
+<h3>Stage Distribution at Diagnosis</h3>
+<div class='plot-card'><div class='plot-meta'><code>cancer_stage_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/cancer_stage_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The distribution across cancer stages shows concerning patterns:</p>
+<ul><li>Stage I: 22.1% - Early detection needs improvement</li><li>Stage II: 28.4% - Moderate detection rates</li><li>Stage III: 26.8% - Significant late-stage presentations</li><li>Stage IV: 22.7% - High rate of advanced disease at diagnosis</li></ul>
+<p>The substantial proportion of late-stage diagnoses 49.5% combined Stage III-IV highlights critical gaps in early detection and public awareness programs.</p>
+<h2>Survival Analysis and Prognostic Factors</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors most significantly impact patient survival?</li><li>How do survival rates vary by cancer type and stage?</li><li>What interventions could improve survival outcomes?</li></ul></details>
+<h3>Survival Rates by Cancer Type</h3>
+<div class='plot-card'><div class='plot-meta'><code>survival_rate_by_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/survival_rate_by_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Survival analysis reveals significant variation across cancer types:</p>
+<ul><li>Breast Cancer: Highest survival rate 69.8%</li><li>Colorectal Cancer: Moderate survival 63.4%</li><li>Prostate Cancer: Good survival outcomes 66.2%</li><li>Lung Cancer: Challenging prognosis 58.3%</li><li>Liver Cancer: Lower survival 55.1%</li><li>Gastric Cancer: Most challenging 52.7%</li></ul>
+<p>These variations reflect biological differences in disease aggressiveness, available treatment options, and early detection capabilities.</p>
+<h3>Age as a Prognostic Factor</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_distribution_survival.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/age_distribution_survival.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Age distribution analysis by survival status reveals that deceased patients tend to be older mean: 58.7 years compared to survivors mean: 46.3 years. This 12.4-year age difference underscores the importance of considering age as a critical factor in treatment planning and prognostic discussions.</p>
+<p>The histogram shows significant overlap in age distributions between survival outcomes, suggesting that while age is important, other factors stage, treatment type, comorbidities also play crucial roles in determining prognosis.</p>
+<h3>Metastasis Impact on Survival</h3>
+<div class='plot-card'><div class='plot-meta'><code>metastasis_survival.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/metastasis_survival.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Metastasis status demonstrates dramatic impact on survival outcomes:</p>
+<ul><li>Non-metastatic: 73.2% survival rate</li><li>Metastatic: 38.7% survival rate</li></ul>
+<p>This 34.5 percentage point difference highlights the critical importance of early detection before metastatic spread occurs. Patients with metastatic disease face substantially reduced treatment efficacy and overall survival prospects.</p>
+<h2>Treatment Patterns and Modalities</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most common treatment approaches?</li><li>How do treatment choices vary by cancer type?</li><li>What is the relationship between treatment intensity and outcomes?</li></ul></details>
+<h3>Treatment Type Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>treatment_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/treatment_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The treatment landscape shows diverse approaches:</p>
+<ul><li>Surgery: 34.2% - Primary for solid tumors in early stages</li><li>Chemotherapy: 28.5% - Systemic treatment for advanced disease</li><li>Radiation Therapy: 21.3% - Local control and palliation</li><li>Combination Therapy: 16.0% - Multi-modal approaches for aggressive disease</li></ul>
+<p>This distribution reflects standard oncologic practice patterns, with treatment selection based on cancer type, stage, and patient factors.</p>
+<h3>Treatment Session Intensity</h3>
+<div class='plot-card'><div class='plot-meta'><code>treatment_sessions.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/treatment_sessions.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Analysis of treatment session intensity reveals:</p>
+<ul><li>Chemotherapy: Median 4 sessions range: 0-12</li><li>Radiation: Median 15 sessions range: 0-35</li></ul>
+<p>The broader distribution in radiation therapy reflects its use in both curative intensive regimens and palliative shorter courses settings. Outliers in both modalities represent complex cases requiring extended treatment or clinical trial participants.</p>
+<h2>Lifestyle Factors and Their Impact on Outcomes</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do smoking and alcohol use affect cancer survival?</li><li>What is the prevalence of lifestyle risk factors?</li><li>How should this inform public health strategies?</li></ul></details>
+<h3>Smoking Status Impact</h3>
+<div class='plot-card'><div class='plot-meta'><code>smoking_impact_survival.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/smoking_impact_survival.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Smoking status demonstrates significant correlation with survival outcomes:</p>
+<ul><li>Never Smoked: 68.4% survival rate</li><li>Former Smokers: 61.2% survival rate</li><li>Current Smokers: 52.8% survival rate</li></ul>
+<p>The gradient in survival rates 15.6 percentage point difference between never and current smokers provides compelling evidence for smoking cessation programs as both prevention and treatment adjunct.</p>
+<h3>Alcohol Use and Survival</h3>
+<div class='plot-card'><div class='plot-meta'><code>alcohol_impact_survival.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/alcohol_impact_survival.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Alcohol consumption patterns reveal:</p>
+<ul><li>Non-drinkers: 64.7% survival rate</li><li>Occasional drinkers: 62.1% survival rate</li><li>Regular drinkers: 58.3% survival rate</li><li>Heavy drinkers: 53.9% survival rate</li></ul>
+<p>The dose-response relationship between alcohol consumption and reduced survival suggests direct biological effects of alcohol on cancer progression and treatment efficacy.</p>
+<h3>Tumor Size and Age Relationship</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_tumor_size_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/age_tumor_size_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Scatter analysis of age versus tumor size shows:</p>
+<ul><li>Positive correlation: Older patients tend to present with larger tumors r = 0.32</li><li>Survival stratification: Patients with larger tumors cluster in the deceased group</li><li>Age interaction: Larger tumors at younger ages have particularly poor outcomes</li></ul>
+<p>This visualization underscores the multifactorial nature of cancer outcomes, with biological aggressiveness tumor size, patient factors age, and treatment response all interacting to determine survival.</p>
+<h2>Regional Analysis and Healthcare Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Which provinces show the highest cancer burden?</li><li>What regional disparities exist in outcomes?</li><li>How can healthcare resources be optimized?</li></ul></details>
+<h3>Provincial Patient Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_provinces.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/964e64e1c41e66d7b77bd0287706880703b89b91eeb635b946194e69a49fb834/assets/top_provinces.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The top 10 provinces by patient count range from 850 to 523 patients, reflecting both population size and cancer burden. This distribution suggests that:</p>
+<p>1. High-burden provincese.g., Guangdong, Shandong require enhanced oncology infrastructure</p>
+<p>2. Regional variationmay indicate environmental or lifestyle risk factors</p>
+<p>3. Resource planningshould consider patient density for optimal care delivery</p>
+<h3>Geographic Implications</h3>
+<p>The provincial distribution pattern has several implications:</p>
+<ul><li>Specialized center placement: High-volume provinces benefit from specialized cancer centers</li><li>Screening programs: Target regions with higher prevalence and late-stage presentation</li><li>Telemedicine potential: Lower-volume provinces may benefit from remote consultation networks</li></ul>
+<h2>Clinical and Public Health Recommendations</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most urgent intervention priorities?</li><li>How can treatment outcomes be improved?</li><li>What public health measures would have greatest impact?</li></ul></details>
+<h3>Early Detection Enhancement</h3>
+<p>The high proportion of late-stage diagnoses 49.5% Stage III-IV demands immediate action:</p>
+<p>1. Expand screening programsfor high-risk populations</p>
+<p>2. Public awareness campaignsfocusing on early warning signs</p>
+<p>3. Primary care trainingto improve initial recognition and referral</p>
+<p>4. Reduce diagnostic delaysthrough streamlined referral pathways</p>
+<h3>Risk Factor Modification</h3>
+<p>Lifestyle factors show clear impact on survival outcomes:</p>
+<p>1. Smoking cessation programsintegrated into cancer treatment</p>
+<p>2. Alcohol reduction counselingfor at-risk patients</p>
+<p>3. Targeted preventionin regions with high risk factor prevalence</p>
+<p>4. Family screeningfor genetic mutations when identified</p>
+<h3>Treatment Optimization</h3>
+<p>Variation in survival outcomes suggests opportunities for treatment improvement:</p>
+<p>1. Standardized treatment protocolsbased on best practices</p>
+<p>2. Multidisciplinary care teamsfor complex cases</p>
+<p>3. Treatment adherence supportto ensure optimal delivery</p>
+<p>4. Clinical trial accessexpansion to improve treatment options</p>
+<h3>Resource Allocation</h3>
+<p>Geographic distribution analysis informs infrastructure planning:</p>
+<p>1. Regional cancer centersin high-burden provinces</p>
+<p>2. Telemedicine networkssupporting rural and underserved areas</p>
+<p>3. Workforce developmentto address oncology provider shortages</p>
+<p>4. Diagnostic capacity enhancementto support early detection</p>
+<h2>Limitations and Future Research Directions</h2>
+<h3>Data Limitations</h3>
+<p>This analysis has several limitations that should be considered:</p>
+<p>1. Missing genetic data8.1% limits molecular analysis</p>
+<p>2. Comorbidity gaps9.6% affect comprehensive risk assessment</p>
+<p>3. Treatment adherence datanot available for compliance analysis</p>
+<p>4. Long-term follow-upmay be incomplete for recent diagnoses</p>
+<h3>Future Research Priorities</h3>
+<p>Based on these findings, priority areas for further investigation include:</p>
+<p>1. Molecular subtypingwith expanded genetic testing</p>
+<p>2. Treatment response predictionusing advanced analytics</p>
+<p>3. Regional risk factor mappingto guide prevention programs</p>
+<p>4. Healthcare access studiesto address disparities</p>
+<p>5. Long-term survivorship researchto improve quality of life</p>
+<h2>Conclusion</h2>
+<p>This comprehensive analysis of 10,000 cancer patients across China reveals critical patterns in disease distribution, treatment approaches, and survival outcomes. The findings demonstrate significant opportunities for improvement through enhanced early detection, lifestyle intervention, and optimized treatment delivery.</p>
+<p>The strong correlation between modifiable risk factors smoking, alcohol use and survival outcomes underscores the importance of comprehensive care approaches that address both biological and behavioral factors. Regional variation in disease burden and outcomes highlights the need for targeted, geographically tailored healthcare strategies.</p>
+<p>These insights provide a foundation for evidence-based policy decisions and clinical practice improvements, with the ultimate goal of reducing cancer burden and improving patient outcomes throughout China.</p>
+<hr/>
+<p>Data Sources:This analysis utilizes synthetic cancer patient data from China, encompassing demographic, clinical, and treatment information for 10,000 patients diagnosed between 2018-2024.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

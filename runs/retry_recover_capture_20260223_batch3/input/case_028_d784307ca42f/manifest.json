@@ -1,0 +1,37 @@
+[
+  {
+    "name": "weekly_metrics_problem1_seasons1_34.csv",
+    "local": "weekly_metrics_problem1_seasons1_34.csv",
+    "ok": true,
+    "error": "",
+    "size": 32175
+  },
+  {
+    "name": "votes_problem1_seasons1_34.csv",
+    "local": "votes_problem1_seasons1_34.csv",
+    "ok": true,
+    "error": "",
+    "size": 416050
+  },
+  {
+    "name": "contestant_performance.csv",
+    "local": "contestant_performance.csv",
+    "ok": true,
+    "error": "",
+    "size": 66061
+  },
+  {
+    "name": "pro_dancer_stats.csv",
+    "local": "pro_dancer_stats.csv",
+    "ok": true,
+    "error": "",
+    "size": 2616
+  },
+  {
+    "name": "2026_MCM_Problem_C_Data.csv",
+    "local": "2026_MCM_Problem_C_Data.csv",
+    "ok": true,
+    "error": "",
+    "size": 90002
+  }
+]

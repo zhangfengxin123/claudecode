@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：case_160</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：case_160</h1>
+    <p class='sub'>来源: /view/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;GB Electricity Demand &amp; Generation Pathways Analysis 2025-2050&quot;
+description: &quot;Comprehensive analysis of tRESP pathway forecasts for Great Britain&#x27;s electricity demand and generation capacity through 2050&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Great Britain Electricity Demand &amp; Generation Pathways Analysis </h1>
+<p>2025-2050</p>
+<h2>Executive Summary</h2>
+<p>This comprehensive analysis examines electricity demand and generation capacity forecasts for Great Britain from 2025 to 2050, based on the Transmission and Distribution Network Planning tRESP pathways. The data reveals a dramatic transformation of the UK electricity system, with demand projected to grow by 732%from 378 TWh to 3,149 TWh and generation capacity expanding by 867%from 46 GW to 447 GW over the 25-year period.</p>
+<p>Key findings include:</p>
+<ul><li>Massive electrificationdriven by decarbonization efforts</li><li>Rapid annual growthof 8.84% in demand and 9.50% in generation capacity</li><li>Regional variationswith East Midlands and West Midlands showing highest demand</li><li>Three distinct pathwaysHigh Temperature, Electrification, Hybrid Evolution with tRESP - HT showing highest demand</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key drivers behind the 732% increase in electricity demand by 2050?</li><li>How do the three different pathways compare in terms of demand and generation forecasts?</li><li>Which regions are experiencing the highest growth in electricity demand?</li></ul></details>
+<h2>Data Overview &amp; Methodology</h2>
+<h3>Dataset Scope</h3>
+<p>This analysis examines two primary datasets:</p>
+<p>1. Electricity Demand Data: 160,776 records covering demand forecasts at building block and GSP area level</p>
+<p>2. Generation &amp; Storage Data: 308,154 records covering generation capacity forecasts</p>
+<p>Both datasets cover the period 2025-2050across 231 GSP areasand 14 DNO license areasin Great Britain, organized under three scenario pathways:</p>
+<ul><li>tRESP - HT: High Temperature scenario - aggressive heat pump deployment</li><li>tRESP - EE: Electrification scenario - comprehensive sector electrification</li><li>tRESP - HE: Hybrid Evolution scenario - gradual transition approach</li></ul>
+<h3>Data Quality</h3>
+<p>The datasets were cleaned and validated with zero missing values. All data types are properly formatted, and values have been validated for consistency across pathways and years.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What data cleaning procedures were applied to ensure analysis accuracy?</li><li>How do the different GSP and DNO area aggregations impact the analysis?</li><li>What assumptions underpin the three pathway scenarios?</li></ul></details>
+<h2>Electricity Demand Trends</h2>
+<h3>Demand Growth Trajectory</h3>
+<p>Electricity demand shows a remarkable upward trajectory across all three pathways, reflecting the UK&#x27;s ambitious net-zero targets and massive electrification initiatives.</p>
+<div class='plot-card'><div class='plot-meta'><code>demand_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/demand_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Insights:</p>
+<ul><li>2025 baseline: 378 TWh total demand across all pathways</li><li>2050 projection: 3,149 TWh total demand - representing a 7.3x increase</li><li>Compound annual growth rate: 8.84%</li><li>Pathway leadership: tRESP - HT consistently shows highest demand levels</li></ul>
+<p>The demand trajectory indicates a fundamental restructuring of the UK energy system, with electricity replacing fossil fuels in transport, heating, and industrial processes.</p>
+<h3>Year-over-Year Growth Rate</h3>
+<div class='plot-card'><div class='plot-meta'><code>demand_growth_rate.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/demand_growth_rate.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Analysis of Growth Patterns:</p>
+<ul><li>Growth rates fluctuate between 6-12% annually</li><li>Most rapid growth occurs in the 2030s decade</li><li>All three pathways show converging growth patterns by 2050</li><li>tRESP - EE shows the most consistent growth trajectory</li></ul>
+<h3>Demand Distribution Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>demand_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/demand_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Distribution Characteristics:</p>
+<ul><li>tRESP - HT demonstrates the highest variability across the period</li><li>tRESP - EE shows steady, consistent demand growth</li><li>tRESP - HE maintains a middle-ground position</li><li>All pathways show accelerating demand in later years</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors contribute to the variability in demand growth rates across different years?</li><li>How does the demand profile differ across the three pathway scenarios?</li><li>What are the implications of accelerating demand in the 2040s for grid planning?</li></ul></details>
+<h2>Generation Capacity Expansion</h2>
+<h3>Capacity Development Trends</h3>
+<p>Generation capacity must expand dramatically to meet surging electricity demand. The data shows capacity growing at a faster pace than demand, ensuring system adequacy and flexibility.</p>
+<div class='plot-card'><div class='plot-meta'><code>generation_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/generation_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Findings:</p>
+<ul><li>2025 baseline: 46 GW of total capacity</li><li>2050 projection: 447 GW - an 8.7x increase</li><li>CAGR: 9.50% slightly outpacing demand growth</li><li>Capacity margin: Generation capacity grows faster than demand, providing adequate system margin</li></ul>
+<h3>Capacity Accumulation Pattern</h3>
+<div class='plot-card'><div class='plot-meta'><code>generation_capacity_trends.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/generation_capacity_trends.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Capacity Expansion Insights:</p>
+<ul><li>Accelerating additions in the 2030s and 2040s</li><li>tRESP - HT requires the largest capacity build-out</li><li>Consistent capacity growth across all pathways</li><li>Major infrastructure investment required to meet 2050 targets</li></ul>
+<h3>Generation Capacity by Block Type</h3>
+<div class='plot-card'><div class='plot-meta'><code>generation_by_block_type.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/generation_by_block_type.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Capacity Composition:</p>
+<ul><li>Generation blocks GenBB001-GenBB023 dominate capacity additions</li><li>Storage-related blocks SrgBB001-002 represent emerging storage capacity</li><li>Significant expansion across all generation types to support demand growth</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why is generation capacity growing faster than electricity demand?</li><li>What is the role of storage capacity in supporting the grid transformation?</li><li>How do capacity requirements differ across the three pathway scenarios?</li></ul></details>
+<h2>Regional Analysis</h2>
+<h3>Demand by DNO License Area</h3>
+<p>Regional demand distribution reveals significant variations across Great Britain&#x27;s distribution networks.</p>
+<div class='plot-card'><div class='plot-meta'><code>demand_by_dno.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/demand_by_dno.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top 5 Demand Regions:</p>
+<div class='table-wrap'><table><thead><tr><th>Region</th><th>Total Demand GWh</th><th>Share of Total</th></tr></thead><tbody><tr><td>NGED East Midlands</td><td>6,973,635,907.70</td><td>15.1%</td></tr><tr><td>NGED West Midlands</td><td>5,757,591,417.27</td><td>12.5%</td></tr><tr><td>SSEN South</td><td>5,379,031,064.06</td><td>11.6%</td></tr><tr><td>UKPN London</td><td>4,875,475,998.43</td><td>10.6%</td></tr><tr><td>UKPN Eastern</td><td>3,937,322,041.55</td><td>8.5%</td></tr></tbody></table></div>
+<p>Key Observations:</p>
+<ul><li>Midlands regions East &amp; West account for 27.6% of total demand</li><li>London shows high but not highest demand due to population density and efficiency</li><li>SSEN South including southern England demonstrates significant growth</li><li>No single region dominates, indicating distributed electrification</li></ul>
+<h3>Generation Capacity by DNO Area</h3>
+<div class='plot-card'><div class='plot-meta'><code>generation_by_dno.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/generation_by_dno.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Top 5 Generation Regions:</p>
+<div class='table-wrap'><table><thead><tr><th>Region</th><th>Total Capacity MW</th><th>Share of Total</th></tr></thead><tbody><tr><td>UKPN Eastern</td><td>988,093.08</td><td>13.5%</td></tr><tr><td>SSEN SHEPD</td><td>921,152.32</td><td>12.6%</td></tr><tr><td>NGED East Midlands</td><td>680,096.41</td><td>9.3%</td></tr><tr><td>NPg Yorkshire</td><td>614,627.44</td><td>8.4%</td></tr><tr><td>SSEN South</td><td>604,000.15</td><td>8.3%</td></tr></tbody></table></div>
+<p>Capacity Distribution Insights:</p>
+<ul><li>UKPN Eastern hosts the largest generation capacity wind, solar</li><li>Scotland SSEN SHEPD shows high capacity due to renewable resources</li><li>East Midlands balances demand and generation fairly well</li><li>Some regions are net exporters Eastern while others are net importers London</li></ul>
+<h3>Top GSP Areas by Demand</h3>
+<div class='plot-card'><div class='plot-meta'><code>top_10_gsp_areas.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/top_10_gsp_areas.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>GSP-Level Analysis:</p>
+<ul><li>Concentration of demand in specific Grid Supply Points</li><li>Urban areas show higher per-capita demand</li><li>Industrial GSP areas demonstrate significant demand growth</li><li>Rural GSP areas show steady but slower demand growth</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the implications of regional demand-generation imbalances for transmission planning?</li><li>How should transmission network expansion be prioritized across regions?</li><li>What role does regional renewable potential play in capacity distribution?</li></ul></details>
+<h2>Pathway Comparison Analysis</h2>
+<h3>Demand Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>demand_vs_generation_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/d3e387c6140678f5b99480126a6ec2ca0d441e3814f4ec806e382552655a82af/assets/demand_vs_generation_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>2025 vs 2050 Comparison:</p>
+<div class='table-wrap'><table><thead><tr><th>Pathway</th><th>2025 Demand GWh</th><th>2050 Demand GWh</th><th>Growth</th></tr></thead><tbody><tr><td>tRESP - HT</td><td>378,433,615</td><td>1,009,458,757</td><td>167%</td></tr><tr><td>tRESP - EE</td><td>378,433,615</td><td>1,121,658,937</td><td>196%</td></tr><tr><td>tRESP - HE</td><td>378,433,615</td><td>1,017,868,395</td><td>169%</td></tr></tbody></table></div>
+<p>Pathway Characteristics:</p>
+<ul><li>tRESP - HT: Highest demand overall, reflects aggressive heat pump deployment</li><li>tRESP - EE: Shows highest growth rate, comprehensive electrification scenario</li><li>tRESP - HE: Middle pathway with balanced approach</li></ul>
+<h3>Generation Comparison</h3>
+<div class='table-wrap'><table><thead><tr><th>Pathway</th><th>2025 Generation MW</th><th>2050 Generation MW</th><th>Growth</th></tr></thead><tbody><tr><td>tRESP - HT</td><td>46,218</td><td>142,628</td><td>209%</td></tr><tr><td>tRESP - EE</td><td>46,218</td><td>150,761</td><td>226%</td></tr><tr><td>tRESP - HE</td><td>46,218</td><td>153,507</td><td>232%</td></tr></tbody></table></div>
+<p>Generation Pathway Insights:</p>
+<ul><li>All pathways show similar growth patterns</li><li>Capacity requirements exceed demand growth, providing system flexibility</li><li>tRESP - HE shows slightly higher capacity requirements</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key differences between the three pathway scenarios?</li><li>Which pathway scenario appears most realistic given current policy trends?</li><li>How do different pathways affect infrastructure investment requirements?</li></ul></details>
+<h2>Statistical Analysis &amp; Growth Projections</h2>
+<h3>Growth Rate Analysis</h3>
+<p>Demand Growth Metrics:</p>
+<ul><li>Linear Growth: Average increase of  Compound Growth: 8.84% CAGR</li><li>Acceleration: Growth rates increasing over time</li><li>Peak Growth Period: 2035-2045 shows highest annual additions</li></ul>
+<p>Generation Growth Metrics:</p>
+<ul><li>Linear Growth: Average increase of  Compound Growth: 9.50% CAGR</li><li>Capacity Adequacy: Generation outpaces demand by 0.66% CAGR</li><li>Investment Intensity: Peak investment period 2030-2045</li></ul>
+<h3>Statistical Summary</h3>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Demand</th><th>Generation</th></tr></thead><tbody><tr><td>Total Records</td><td>160,776</td><td>308,154</td></tr><tr><td>Unique GSP Areas</td><td>231</td><td>231</td></tr><tr><td>Unique DNO Areas</td><td>14</td><td>14</td></tr><tr><td>Building Blocks</td><td>12</td><td>23</td></tr><tr><td>Period</td><td>2025-2050</td><td>2025-2050</td></tr><tr><td>Total Period</td><td>46,174 TWh</td><td>7,307 GW</td></tr><tr><td>Average Annual</td><td>1,847 TWh</td><td>292 GW</td></tr></tbody></table></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What statistical methods were used to validate the growth projections?</li><li>How confident are the forecasts given the long time horizon?</li><li>What external factors could significantly alter these growth trajectories?</li></ul></details>
+<h2>Implications &amp; Recommendations</h2>
+<h3>Network Planning Implications</h3>
+<p>1. Transmission Reinforcement: Massive investment required in transmission infrastructure to support 7x increase in demand</p>
+<p>2. Distribution Network Upgrades: Local networks must accommodate distributed generation and new demand patterns</p>
+<p>3. Interconnection Expansion: Greater need for inter-regional and international interconnectors</p>
+<p>4. Storage Deployment: Significant storage capacity required to manage variability and ensure reliability</p>
+<h3>Investment Priorities</h3>
+<p>Based on the analysis, key investment priorities include:</p>
+<p>1. UKPN Eastern &amp; SSEN SHEPD: Leverage existing capacity foundations</p>
+<p>2. Midlands Region: Balance demand-generation with targeted capacity additions</p>
+<p>3. SSEN South: Address growing demand with localized generation</p>
+<p>4. Cross-Border Infrastructure: Support regional power flows and flexibility</p>
+<h3>Policy Recommendations</h3>
+<p>1. Scenario Flexibility: Maintain planning flexibility across all three pathway scenarios</p>
+<p>2. Incremental Investment: Phased investment allows adaptation to changing conditions</p>
+<p>3. Technology Neutrality: Avoid technology-specific mandates where possible</p>
+<p>4. Regional Coordination: Ensure coordinated planning across DNO and transmission boundaries</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the most critical infrastructure investments needed by 2030?</li><li>How should regulators adapt to support the necessary network investments?</li><li>What risks need to be managed to ensure successful grid transformation?</li></ul></details>
+<h2>Conclusion</h2>
+<p>This analysis demonstrates the unprecedented transformation required in Great Britain&#x27;s electricity system over the next 25 years. With demand growing more than seven-fold and generation capacity expanding nearly nine-fold, the UK faces one of the most ambitious energy transitions globally.</p>
+<p>Key takeaways:</p>
+<ul><li>Scale of Change: The required capacity expansion is unprecedented in modern energy history</li><li>Pathway Convergence: Despite different starting assumptions, all pathways show similar end-state requirements</li><li>Regional Collaboration: Success requires coordinated action across all 14 DNO areas</li><li>Time Critical: Early and sustained investment is essential to avoid bottlenecks</li></ul>
+<p>The data suggests that while the transformation is ambitious, it is achievable with proper planning, investment, and policy support. The regional variations and pathway differences provide valuable flexibility for adaptation to changing conditions.</p>
+<p>Cleaned data files and detailed summaries are available in the folder for further analysis and reference.</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the biggest risks to successful implementation of these projections?</li><li>How does this analysis compare with other UK electricity system forecasts?</li><li>What follow-up analyses would enhance understanding of the transition?</li></ul></details>
+<h2>Appendix</h2>
+<h3>Data Files</h3>
+<ul><li>Cleaned Data: , </li><li>Summary: </li><li>Data Dictionary: </li></ul>
+<h3>Methodology</h3>
+<p>Data cleaning involved:</p>
+<p>1. Removal of null values none found in original datasets</p>
+<p>2. Validation of data types and ranges</p>
+<p>3. Aggregation at multiple levels GSP area, DNO area, pathway, year</p>
+<p>4. Growth rate calculations and statistical analysis</p>
+<h3>Limitations</h3>
+<ul><li>Projections assume smooth implementation of decarbonization policies</li><li>Technology cost trajectories are uncertain</li><li>Behavioral changes could significantly impact demand patterns</li><li>External factors global events, policy shifts not incorporated</li></ul>
+<hr/>
+<p>Analysis completed by Pardus Agent - Quantitative Data Analysis &amp; Visualization</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

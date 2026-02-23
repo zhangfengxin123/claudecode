@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-02-21T14:27:45",
+  "sample_size": 20,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "6b39f079362fd7e01f98ae1b755e320a4a66c93f65d855ce1931b6a9d3c4434a",
+      "title": "Copy of Project",
+      "chart_count": 8,
+      "upload_count": 6,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_6b39f079362f.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "7e9fd0a9de4963a0b5c037f997bb5a035648dfe34f9c51b3bbc2e213fc20c7f3",
+      "title": "sp500_top10_stocks_clean",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_7e9fd0a9de49.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "2cacae2b4f4072f8c15e82d9c9b03116b050030028fd200bf789d7e011eeaf7a",
+      "title": "sp500_top10_stocks_clean",
+      "chart_count": 5,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_2cacae2b4f40.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "8daf3093c3daaca832a4ad8bb074814a5755f24b37e7a9629c63d4b036ffb276",
+      "title": "BC",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_8daf3093c3da.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "8c7670bf201ce709445fa3dec9ba9da3dc33b078ee249aaaf4f5688ac1f612ec",
+      "title": "power_nap_vs_coffee_effectiveness_dataset",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_8c7670bf201c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "7c91bed170512c68ee806f71316c5dcaf6e9e1d22a32033e628afd7527c6be36",
+      "title": "账单分析",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_7c91bed17051.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "bc441a2fb52579fe7ba9e4b2454e0ad1f035dd415b2bf5b7e722dbab9c6b32d5",
+      "title": "SpaceX IPO closing market cap above",
+      "chart_count": 4,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_bc441a2fb525.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "70c3e091d9dd76cb40a9f5542e2d6ba320562820b0578c00c611dd3be5b0a379",
+      "title": "US strikes Iran by",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_70c3e091d9dd.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "0b681f88c507a8b737586372cb0b366bd9c23c709be620fa777fdd8ae633e01e",
+      "title": "Mamdani opens city owned grocery store by June 30",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_0b681f88c507.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "e74bfd4ba86a1fb66a5e7c6a07aa2d64d7a8f22361ae9ab49e4b696cae1cb6fa",
+      "title": "SpaceX IPO closing market cap above ___ ?",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_e74bfd4ba86a.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "99c8c77bd8643412a79c0ada3d1dd9fd6b77f9527894a3139425205c83142933",
+      "title": "BankNoteAuthentication",
+      "chart_count": 14,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_99c8c77bd864.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "570119f256813b5f6e0d4b4803843692205a233449ad8c9c60d38365ccdd5431",
+      "title": "perishable_goods_management",
+      "chart_count": 15,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_570119f25681.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "c163c234c3b1dc53cb15dd0edbe8102a059130b4db7a75ae06e1436c2688bb8f",
+      "title": "大乐透透",
+      "chart_count": 9,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_c163c234c3b1.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "8366894bb640d685205591fe70c93bb6960360b5adb445a6bb03cec4fad8ceb4",
+      "title": "22",
+      "chart_count": 15,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_8366894bb640.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "381f2542ba1bb6c3926aacd2d01f3def7fd922e8803bbba202fd66f52c7a8009",
+      "title": "img taggibg",
+      "chart_count": 9,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_381f2542ba1b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "40d9bf0ce2c9dd36ebd43034404de7af29b897e8c0cd29eb93703f786712a040",
+      "title": "Trust game part trust and ultilitarian",
+      "chart_count": 16,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_40d9bf0ce2c9.html",
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "case_id": "918dce3b9c3395b9afe67ad40e28f8fa95e9a931266f86c1a79a3aaa50749991",
+      "title": "Trust Project part tax and revelation",
+      "chart_count": 12,
+      "upload_count": 5,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_918dce3b9c33.html",
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "case_id": "fb9bd5e5d0d6bac36620bf46b8252ad7213ae531e1ca283e22c87e060f37e55b",
+      "title": "us adult",
+      "chart_count": 17,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_fb9bd5e5d0d6.html",
+      "status": "ok"
+    },
+    {
+      "idx": 19,
+      "case_id": "388ea24cb0effbf4ea01356bcc80d52250c6554a86e375ef3765c732e907109e",
+      "title": "bug_dataset_50k",
+      "chart_count": 16,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_388ea24cb0ef.html",
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "case_id": "f11f98e28a55b37dd2555b56dfaa4d69f8ea17839f725396a4ee4dd5e8302351",
+      "title": "Heart Attack Data Set",
+      "chart_count": 29,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_f11f98e28a55.html",
+      "status": "ok"
+    }
+  ]
+}

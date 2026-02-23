@@ -1,0 +1,23 @@
+[
+  {
+    "name": "train.csv",
+    "local": "train.csv",
+    "ok": true,
+    "error": "",
+    "size": 460676
+  },
+  {
+    "name": "test.csv",
+    "local": "test.csv",
+    "ok": true,
+    "error": "",
+    "size": 451405
+  },
+  {
+    "name": "submission.csv",
+    "local": "submission.csv",
+    "ok": true,
+    "error": "",
+    "size": 35926
+  }
+]

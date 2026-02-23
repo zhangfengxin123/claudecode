@@ -1,0 +1,153 @@
+Taxation and Redistribution Game
+
+Students choose one of four tax/redistribution regimes (vote is consequential; taxes apply “for real”).
+
+Compare survey preferences (cheap talk) vs game preferences (consequential):
+
+Did preferences shift? In what direction, and why?
+
+Explain how preferences (survey and game) vary with:
+
+Parental household income, gender, party identification.
+
+“Pocketbook vs ideology” analysis:
+
+Pocketbook interest = pre-tax income (low vs high cumulative gaming points).
+
+Ideology = party ID (Democrat, Ind. Leaning Liberal, Ind. Leaning Conservative, Republican).
+
+Decide whether/how to aggregate party categories (e.g., Left = Dem + Ind-Lib; Right = Rep + Ind-Con).
+
+Test “hypocrisy” patterns:
+
+High-income Left: switch from high tax → low tax?
+
+Low-income Right: switch from low tax → high tax?
+
+Pick examples of switchers (“hypocrites”) and non-switchers, and compare their rationales.
+
+Optional but useful: build a table counting stayed vs shifted, broken down by pre-tax income and party ID.
+
+Veil of Ignorance / Rawls / Frohlich & Oppenheimer (1993)
+
+In the survey, everyone is in the same “original position”; in the game, students differ by points/percentile.
+
+Relate shifts to the veil of ignorance argument.
+
+Rawls claims that behind the veil people will agree on:
+
+a redistribution regime, and
+
+the difference principle (raise the poorest before anyone richer gains).
+
+Frohlich & Oppenheimer test this with four regimes:
+
+Floor constraint (floor, no ceiling)
+
+Maximum income (everyone keeps earnings; no floor/ceiling)
+
+Range constraint (inequality allowed but capped gap)
+
+Difference principle
+
+Their subjects: US, Canada, Poland (Poland late-1980s communist; continuum from individualist → collectivist).
+
+Use their regime-choice graphs + your class data to evaluate Rawls’s two claims.
+
+Survey on Income Inequality (Norton & Ariely 2011 link)
+
+Analyze inequality perceptions/preferences using Norton & Ariely as framing:
+
+Norton & Ariely: wealth inequality; countries: fictional equal + Sweden + US.
+
+Your survey: income inequality; countries: fictional equal + fictional unequal + Sweden, US, Colombia.
+
+Connect income-inequality survey results to taxation-game choices.
+
+Use the combined dataset: Taxation & Redistribution + Income Inequality.
+
+Revelation Game (Lohmann & Verweij)
+
+
+Combines Dictator (give) and Taking (you didn’t play taking game separately).
+
+
+Identify:
+
+
+Egoistical choice in Dictator: give 0 / keep all.
+
+
+Determine egoistical choice in Revelation Game and interpret 0 (neither give nor take) using rationales (don’t guess).
+
+
+
+
+Key mechanic: giving is doubled, taking is halved:
+
+
+Giving becomes a socially efficient public good.
+
+
+Taking becomes a socially inefficient public bad.
+
+
+
+
+“Correlate” behavior across games (no need for coefficients):
+
+
+Dictator vs Revelation giving
+
+
+Public Goods vs Revelation giving
+
+
+Does efficiency increase giving vs Dictator?
+
+
+
+
+Players observe both players’ cumulative points at decision time:
+
+
+Do they take from richer / give to poorer?
+
+
+Examine odd cases (give to richer, take from poorer) via rationales.
+
+
+
+
+Classify into 5 types and describe distribution:
+
+
+Give-Alls, 2) Give-Somes, 3) Neither-Nors, 4) Take-Somes, 5) Take-Alls.
+
+
+
+
+Rationale-based deep dive (labor intensive):
+
+
+Sample ~25 students (e.g., 5 per subgroup or proportional), randomly (use Random Row Picker).
+
+
+
+
+Explore predictors: gender, parental income, rich/poor, econ major, law school, religious practice, spirituality/religiosity, volunteer hours/orgs, left-right spectrum, party.
+
+
+Identify normative ethics arguments in rationales: utilitarianism, rights, justice/fairness, virtue ethics.
+
+
+Compare with Taxation Game: both allow “game point theft”
+
+
+Taxation: collective/class-wide
+
+
+Revelation: individual/pairwise
+
+
+Compare types (steal in both vs neither, etc.).

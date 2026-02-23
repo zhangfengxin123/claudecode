@@ -1,0 +1,925 @@
+{
+  "meta": {
+    "generated_at": "2026-02-19T22:41:21",
+    "source_recent": "recent_projects_20260219.json",
+    "recent_total": 500,
+    "recent_unique_case_ids": 500,
+    "existing_case_ids": 132,
+    "new_pool_after_dedup": 372,
+    "probe_success_total": 352,
+    "probe_failed_total": 20,
+    "no_description_count": 267,
+    "with_description_count": 85,
+    "output_results_count": 120
+  },
+  "top_no_description": [
+    {
+      "case_id": "7ca323c1a3a0ed5ecbb144832466b3608c361a216988fe575e72d77d0a682628",
+      "title": "Student_Placement_Skills_2025",
+      "uploads_count": 1,
+      "uploads": [
+        "Student_Placement_Skills_2025.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "4191f2e665e02f502d6aaf6a73622d61c29c0045621b4facfc4f1821683d7ad9",
+      "title": "airline_route_profitability",
+      "uploads_count": 1,
+      "uploads": [
+        "airline_route_profitability.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "fb5d40592edc3ad5a4357916256d95ca45e7f4af85dfff05b4c3f18501fd97d2",
+      "title": "airline_route_profitability",
+      "uploads_count": 1,
+      "uploads": [
+        "airline_route_profitability.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "99345a7cac663ef5435b1f715aa400bdc971d2b0a98826efa5c7f1e6f6ed5f35",
+      "title": "airline_route_profitability",
+      "uploads_count": 1,
+      "uploads": [
+        "airline_route_profitability.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "ed1229444366f2efc660419483f7f0207067aeeae15a7c8c71b00d0b43abb16a",
+      "title": "deepseek",
+      "uploads_count": 1,
+      "uploads": [
+        "Engram_paper.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "2dbf3de647e9b9adb184cdaa23e725b719d9eec1d6824cf60377476bf115722b",
+      "title": "Copy of Project",
+      "uploads_count": 1,
+      "uploads": [
+        "UBS-China Property：Our thoughts on recent rally-260129 (1).pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "1115a86c6af4ca467e4dfbf218b9b9c6ec1db93297847ffcf4ffe2cba741600b",
+      "title": "Earnings-Presentation-Q4-2025-FINAL",
+      "uploads_count": 2,
+      "uploads": [
+        "Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+        "Earnings-Presentation-Q4-2025-FINAL.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "566796988dbf45581ccc04f98597ece55cb9537621a78c2f205cbd353ff504fb",
+      "title": "CPALTT01USM657N",
+      "uploads_count": 5,
+      "uploads": [
+        "CPALTT01USM657N.csv",
+        "NGDPRSAXDCDEQ.csv",
+        "NGDPRSAXDCCAQ.csv",
+        "NGDPSAXDCUSQ.csv",
+        "NGDPRXDCJPA.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "e60fb4bec64ea77e3c358021c186cef82767dbc777cbfbeb2d1e2af652ff7d3f",
+      "title": "global_layoffs_2020_2026",
+      "uploads_count": 1,
+      "uploads": [
+        "global_layoffs_2020_2026.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "530e1ed08e28596a1ccf90477deca134c1fe61a16ba36a2bc42e6b8fa4f4c84d",
+      "title": "SNP500 analysis",
+      "uploads_count": 1,
+      "uploads": [
+        "sp500_top10_stocks_clean.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "018e9d97ed373d4e787fa6331487168e8d6864ed7ad77436da77b67a5e818555",
+      "title": "2505",
+      "uploads_count": 1,
+      "uploads": [
+        "2505.17612v2.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "ae43400d2a7213709c12b5fd2f90dff7aa14eaeeeb41738b2317837b4eda0012",
+      "title": "格力",
+      "uploads_count": 1,
+      "uploads": [
+        "格力电器：2025年三季度报告.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "6ba640522b28d0fb35686c42add411a89cc9fcaa29a1b90f317ec61b83b4ad07",
+      "title": "test",
+      "uploads_count": 1,
+      "uploads": [
+        "battery_data.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "9fd2d314ea38adff042e1e8021aabbc23789674662b02643c21cb10032a15a68",
+      "title": "Global Layoff",
+      "uploads_count": 1,
+      "uploads": [
+        "global_layoffs_2020_2026.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "b3eca635d3fc8593d7481a8e2a16574f6e0be63e391a2014f9b9b4bd27c35658",
+      "title": "EV Data set",
+      "uploads_count": 1,
+      "uploads": [
+        "ev_vs_petrol_dataset_v3.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "373510a36d34a64d10e64179af4957dfaf586dc52e289908ce575138bf9f1779",
+      "title": "Fred",
+      "uploads_count": 4,
+      "uploads": [
+        "CPALTT01USM657N.csv",
+        "NGDPRSAXDCDEQ.csv",
+        "NGDPRSAXDCCAQ.csv",
+        "NGDPSAXDCUSQ.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "4bbe48695313e00fe4e324d0d4cb70f0022812020e6f3748c56aef8a8bed49a6",
+      "title": "1",
+      "uploads_count": 5,
+      "uploads": [
+        "Sample scanning energy spectrum standard value.csv",
+        "Coal Quality Rapid Testing Indicators and Requirements.md",
+        "spectroscopic data.csv",
+        "spectroscopic dataSample standard value.csv",
+        "Sample scanning energy spectrum.xlsx"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "55edcca7720e5b98b588d05129bdeab6fd7fb68bf14bcafdfcfe30c1e0535de7",
+      "title": "1",
+      "uploads_count": 1,
+      "uploads": [
+        "1.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "5cffa2e058a5f54c7b60643fce6b113e0dbf9e626f5369de08fe42b045b4f73a",
+      "title": "QCOM-Q1FY26-10-Q_Final",
+      "uploads_count": 1,
+      "uploads": [
+        "QCOM-Q1FY26-10-Q_Final.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "e72ce87902fb49a7899df6872f983400ce4ee89bab41330e2fd22ff924eeaea0",
+      "title": "贷后报告-范例",
+      "uploads_count": 1,
+      "uploads": [
+        "贷后报告-范例.xlsx"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "f65c122a6af466504b90676e0a41a66c7188cff6dc5db3dd6bc678f3cf4f4123",
+      "title": "中原农险投资分析2025",
+      "uploads_count": 2,
+      "uploads": [
+        "证券投资基金估值表_资本金.xlsx",
+        "余额表_20250101-20251231_8001_资本金.xlsx"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "bdba6d468b80187c385f22ec0b6528729782d76891b1a4e21011a5bf8d98cebb",
+      "title": "Q4 2025 GAAP and Non-GAAP Earnings Tables",
+      "uploads_count": 2,
+      "uploads": [
+        "AMD Q4'25 Earnings Slides FINAL.pdf",
+        "Q4 2025 GAAP and Non-GAAP Earnings Tables.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "ce9b7681a372dcc55417377f806025106c53162249d5f6c5f455b1cdea5c7c68",
+      "title": "account",
+      "uploads_count": 1,
+      "uploads": [
+        "工商银行历史明细（申请单号：26020416044749262653）.xlsx"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "d072b670826453e16599800aec6634bc6c5907d76b0202af193e344151d3f459",
+      "title": "random walk",
+      "uploads_count": 1,
+      "uploads": [
+        "Analysis of Financial Time Series Third Edition  By Ruey S.Tsay.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "ef45d93ed5cbd5546f82e0ce56b5f7dcf6f431d8c605dc393e2da836ef77b2dd",
+      "title": "integrated_final_plan",
+      "uploads_count": 1,
+      "uploads": [
+        "integrated_final_plan.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "4732de6cfb3a108a6a95dd93ac81cd2adc5a0d8a93e0c4daa06e6c2e61a3ffa2",
+      "title": "DataFrame_from__data_input_R_0_1_xlsx___sheet___Projects_Record_Table___",
+      "uploads_count": 1,
+      "uploads": [
+        "DataFrame_from__data_input_R_0_1_xlsx___sheet___Projects_Record_Table___.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "fc5bd6982b4c9b4205282ac9d945bf03f8135427c3cc5fa9b63ec0f33c1e0016",
+      "title": "再保数据2025",
+      "uploads_count": 1,
+      "uploads": [
+        "再保应收应付数据.xlsx"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "f019626d8112a52569fc57a2961d8048ca936249a15a98bc512ac7b2502cb6f9",
+      "title": "UBS-China Banks and Property 2026 GCC takeaways",
+      "uploads_count": 1,
+      "uploads": [
+        "UBS-China Banks and Property 2026 GCC takeaways： Is the worst behind？-260122 (1).pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "586dc399915391fb7b56d856fc9de006cb9159bf09f8496c089d29ba8ff90cd5",
+      "title": "bitcoin_alltime2",
+      "uploads_count": 2,
+      "uploads": [
+        "Individual_4672_Account_Activity_02_04_21_40.csv",
+        "kraken_spot_trades_2025-08-08-2026-02-05.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "54c6646b9e273bbe103b76256a91a7f30da624062a8a6eeb16febfe403efd078",
+      "title": "Google Stock Analysis",
+      "uploads_count": 2,
+      "uploads": [
+        "2025q4-alphabet-earnings-release.pdf",
+        "2025q4-alphabet-earnings-slides.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "4d86d8de6dc86744bb88d854650348f733c3b36928c4508f5d3f4d25cfc329e1",
+      "title": "bitcoin",
+      "uploads_count": 1,
+      "uploads": [
+        "Individual_4672_Account_Activity_02_04_21_36.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "7362a937d750977f6355c9e980c4ca1897e6206c1d7e2088efd58fdf2dfa4818",
+      "title": "2026-02-05",
+      "uploads_count": 3,
+      "uploads": [
+        "DBAA.csv",
+        "ADPWNUSNERSA.csv",
+        "USEPUINDXD.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "967c94e24f0b1bf28a9b8c374df04e0a5980dd46178976ca7435b7c4a4203bae",
+      "title": "Uber",
+      "uploads_count": 3,
+      "uploads": [
+        "Uber-Q4-25-Earnings-Press-Release.pdf",
+        "Uber-Q4-25-Earnings-Supplemental-Data.pdf",
+        "Uber-Q4-25-Prepared-Remarks.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "a16a6fd625c62226a212e5416de52a484e88d4f479fb754d729524f985181ce5",
+      "title": "global_ads_performance_dataset",
+      "uploads_count": 1,
+      "uploads": [
+        "global_ads_performance_dataset.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "a04751b41f4ca29afdbf1f3c0e5cfb72c547251cce0a1ea75edf9b1b5265a0ea",
+      "title": "bnpl_dataset",
+      "uploads_count": 1,
+      "uploads": [
+        "bnpl_dataset.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "d75a80753e2f5c1cbaac3feb319d699ad7b725901490bc295a972fac38c2194c",
+      "title": "bnpl_dataset",
+      "uploads_count": 1,
+      "uploads": [
+        "bnpl_dataset.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "18e0c06995d615ff470fda02f35baf4d404fb2f2fcbd46d55b03d60d9a36c53a",
+      "title": "WinterSD",
+      "uploads_count": 3,
+      "uploads": [
+        "WinterSD.csv",
+        "SummerSD.csv",
+        "CountriesSD.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "ffc9ef59a23023fdfb2c0b720a63cac57f2603c10ff3743e051e042f9a2939b9",
+      "title": "Fred Interest Rate and Software Job Market Analysis",
+      "uploads_count": 2,
+      "uploads": [
+        "IHLIDXUSTPSOFTDEVE.csv",
+        "FEDFUNDS.csv"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "38299b5402ab8c8271c057611c9c1f033ebd2ad5036a00c65f7d2042e41793db",
+      "title": "公司价值评估中财务模型的构建-中信证券培训",
+      "uploads_count": 1,
+      "uploads": [
+        "公司价值评估中财务模型的构建-中信证券培训.pdf"
+      ],
+      "has_description_txt": false
+    },
+    {
+      "case_id": "88410fa7d3b6aff9d9b51dfd98ebf3713c332295c2ec0de9d1953d28b5b8910a",
+      "title": "Statistical-Review-of-World-Energy",
+      "uploads_count": 1,
+      "uploads": [
+        "Statistical-Review-of-World-Energy.pdf"
+      ],
+      "has_description_txt": false
+    }
+  ],
+  "top_with_description": [
+    {
+      "case_id": "507fad55efded9983b2171e4d5c7b40b10f69228609c460dc0680248a6cfdb95",
+      "title": "Airline",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "airline_route_profitability.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "6b39f079362fd7e01f98ae1b755e320a4a66c93f65d855ce1931b6a9d3c4434a",
+      "title": "Copy of Project",
+      "uploads_count": 6,
+      "uploads": [
+        "5_Chronic_IP_ICD10_2012-2016_clean.csv",
+        "description.txt",
+        "4_Chronic_IP_ICD10_2007-2011_clean.csv",
+        "1_Acute_AE_ICD10_2007-2016_clean.csv",
+        "2_Acute_IP_ICD10_2007-2016_clean.csv",
+        "3_Chronic_AE_ICD10_2007-2016_clean.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "7e9fd0a9de4963a0b5c037f997bb5a035648dfe34f9c51b3bbc2e213fc20c7f3",
+      "title": "sp500_top10_stocks_clean",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "sp500_top10_stocks_clean.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "2cacae2b4f4072f8c15e82d9c9b03116b050030028fd200bf789d7e011eeaf7a",
+      "title": "sp500_top10_stocks_clean",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "sp500_top10_stocks_clean.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "8daf3093c3daaca832a4ad8bb074814a5755f24b37e7a9629c63d4b036ffb276",
+      "title": "BC",
+      "uploads_count": 2,
+      "uploads": [
+        "data.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "8c7670bf201ce709445fa3dec9ba9da3dc33b078ee249aaaf4f5688ac1f612ec",
+      "title": "power_nap_vs_coffee_effectiveness_dataset",
+      "uploads_count": 2,
+      "uploads": [
+        "power_nap_vs_coffee_effectiveness_dataset.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "7c91bed170512c68ee806f71316c5dcaf6e9e1d22a32033e628afd7527c6be36",
+      "title": "账单分析",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "工商银行历史明细（申请单号：26020416044749262653）.pdf"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "bc441a2fb52579fe7ba9e4b2454e0ad1f035dd415b2bf5b7e722dbab9c6b32d5",
+      "title": "SpaceX IPO closing market cap above",
+      "uploads_count": 5,
+      "uploads": [
+        "spacex_ipo_predictions.csv",
+        "spacex_ipo_market_comparison.csv",
+        "description.txt",
+        "spacex_valuation_history.csv",
+        "spacex_ipo.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "70c3e091d9dd76cb40a9f5542e2d6ba320562820b0578c00c611dd3be5b0a379",
+      "title": "US strikes Iran by",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "us_iran_strikes.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "0b681f88c507a8b737586372cb0b366bd9c23c709be620fa777fdd8ae633e01e",
+      "title": "Mamdani opens city owned grocery store by June 30",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "mamdani_grocery_store.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "e74bfd4ba86a1fb66a5e7c6a07aa2d64d7a8f22361ae9ab49e4b696cae1cb6fa",
+      "title": "SpaceX IPO closing market cap above ___ ?",
+      "uploads_count": 1,
+      "uploads": [
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "99c8c77bd8643412a79c0ada3d1dd9fd6b77f9527894a3139425205c83142933",
+      "title": "BankNoteAuthentication",
+      "uploads_count": 2,
+      "uploads": [
+        "BankNoteAuthentication.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "570119f256813b5f6e0d4b4803843692205a233449ad8c9c60d38365ccdd5431",
+      "title": "perishable_goods_management",
+      "uploads_count": 2,
+      "uploads": [
+        "perishable_goods_management.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "c163c234c3b1dc53cb15dd0edbe8102a059130b4db7a75ae06e1436c2688bb8f",
+      "title": "大乐透透",
+      "uploads_count": 2,
+      "uploads": [
+        "superlotto_history.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "8366894bb640d685205591fe70c93bb6960360b5adb445a6bb03cec4fad8ceb4",
+      "title": "22",
+      "uploads_count": 3,
+      "uploads": [
+        "【测试】银行业绩表.csv",
+        "description.txt",
+        "[Content_Types].xml"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "381f2542ba1bb6c3926aacd2d01f3def7fd922e8803bbba202fd66f52c7a8009",
+      "title": "img taggibg",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "precision_recall_ram_siglip2_1225_vivo_album_finetune_qwen_retag_threshold0.75_副本.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "40d9bf0ce2c9dd36ebd43034404de7af29b897e8c0cd29eb93703f786712a040",
+      "title": "Trust game part trust and ultilitarian",
+      "uploads_count": 5,
+      "uploads": [
+        "description.txt",
+        "data_from_ultimatum_ult_human_proposer_robot_respondent_robresp_and_robot_proposer_human_respondent_robprop_.csv",
+        "data_from_dictator_dict_and_dictator_with_god_god_.csv",
+        "data_from_trust_game_tr_and_trust_game_with_gender_and_race_or_ethnicity_gre_.csv",
+        "data_from_dictator_dict_and_ultimatum_ult_.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "918dce3b9c3395b9afe67ad40e28f8fa95e9a931266f86c1a79a3aaa50749991",
+      "title": "Trust Project part tax and revelation",
+      "uploads_count": 5,
+      "uploads": [
+        "data_from_revelation_game.csv",
+        "data_from_revelation_rev_dictator_dict_and_public_goods_pg_games.csv",
+        "description.txt",
+        "data_from_survey_on_income_inequality.csv",
+        "data_from_taxation_and_redistribution_game.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "fb9bd5e5d0d6bac36620bf46b8252ad7213ae531e1ca283e22c87e060f37e55b",
+      "title": "us adult",
+      "uploads_count": 2,
+      "uploads": [
+        "data.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "388ea24cb0effbf4ea01356bcc80d52250c6554a86e375ef3765c732e907109e",
+      "title": "bug_dataset_50k",
+      "uploads_count": 2,
+      "uploads": [
+        "bug_dataset_50k.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "f11f98e28a55b37dd2555b56dfaa4d69f8ea17839f725396a4ee4dd5e8302351",
+      "title": "Heart Attack Data Set",
+      "uploads_count": 2,
+      "uploads": [
+        "Heart Attack Data Set.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "f7956206deb7ff93300203f5f1052c718cc58353b8841ea632816d974bf044a3",
+      "title": "Aggression Compare",
+      "uploads_count": 5,
+      "uploads": [
+        "AggressionSub_26D_per_class.csv",
+        "AggressionSub_8D_per_class.csv",
+        "description.txt",
+        "AggressionSub_8D_overall.csv",
+        "AggressionSub_26D_overall.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "92debb6423e6f8ff84c158ce4193fdad917a06f70de984bc2ef5db1bc817f0eb",
+      "title": "Model Performance",
+      "uploads_count": 5,
+      "uploads": [
+        "Behavior_8D_per_class.csv",
+        "Behavior_26D_per_class.csv",
+        "description.txt",
+        "Behavior_26D_overall.csv",
+        "Behavior_8D_overall.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "f56c8ef7a7872e7cf2bbdb1e9cba5880a83875455eca8793da4243b9e2627df9",
+      "title": "moltbook_top_5000_posts",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "moltbook_top_5000_posts.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "7fee45e23f8440e0e07fe6c65c235bb9a2c17c4f3528e9025d01f616e1a6aefe",
+      "title": "China Housing Analysis",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "search_results.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "3e3d77be800e9c6b69e64c44de41456c744d876a55d6c98730c3e5d9f10683d6",
+      "title": "EFTA01088956",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "EFTA01088956.pdf"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "0fdfdab21c535129f1120fea50b00892d9233b38936a6805a297716fd1a53e2a",
+      "title": "屏幕截图 2026-02-03 162842",
+      "uploads_count": 3,
+      "uploads": [
+        "openmaxx竞品研究.pptx",
+        "description.txt",
+        "屏幕截图 2026-02-03 162842.png"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "b02883211bbc2f04c8f5912347a57bd7d9efd549859907771fb5325bda4a40ea",
+      "title": "BMW_Data 2",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "BMW_Data 2.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "9b0c1e82afb7a64372882b5602c82a1cae492390fa7d6eb79a3abd39098366ad",
+      "title": "CAP 2023-2025",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "CAP 2023-2025.xlsx"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "5dfb01538d9150fd8625a2a13326f4dfbc2119a71eee0fc488bcc7c59866ab47",
+      "title": "正餐",
+      "uploads_count": 2,
+      "uploads": [
+        "正餐.xlsx",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "974fa1d15e57d554ddf65227af50843598c6e768548199d74d826c9b73a3f8bd",
+      "title": "快餐",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "快餐.xlsx"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "d614d85096df583956a9689180c81536ec90133f311ffe97c328e1ba5c28510d",
+      "title": "NIPS-2009-reading-tea-leaves-how-humans-interpret-topic-models-Paper",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "NIPS-2009-reading-tea-leaves-how-humans-interpret-topic-models-Paper.pdf"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "78a70c1e30eb90775fcdcb46b7c3f9ddba16272bddbe1d09d081755593281f27",
+      "title": "global_ads_performance_dataset",
+      "uploads_count": 2,
+      "uploads": [
+        "global_ads_performance_dataset.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "2a01cc0e774fec37300f5a30e6a08308ee1fea38d9308c1a20e9568ac6057f92",
+      "title": "大乐透",
+      "uploads_count": 2,
+      "uploads": [
+        "superlotto_history.csv",
+        "description.txt"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "9195ba3cd870a7daaa82804e31ef26a2f0f1f53bb7f17f4aa7867f27f939c73d",
+      "title": "用户反馈话题文章分析",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "产品用户反馈话题文章water.sun@uloog.com_Yn8Uji_watermarked.xlsx"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "f3c5566446e89672d5330cbd18bce77c96093d07918f4e89c09c124819d7074d",
+      "title": "用户反馈话题文章分析",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "产品用户反馈话题文章water.sun@uloog.com_Yn8Uji_watermarked.xlsx"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "9fcc2eb01f9fead1686f149baabfa2151113b20df19c41ae92818fed9d5e936a",
+      "title": "AMINO四期基金分析报告",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "AMINO四期基金分析报告.pptx"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "40dd9b1e3692eea9040a26b4a6a9ffbf36eefb9ee335187e2a3e0ffa36cf4b52",
+      "title": "AMINO四期基金分析报告",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "AMINO四期基金分析报告.pptx"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "686bd117d2db6e99ad0e011631061dac672fdedd9144076bbfb612a56867f41c",
+      "title": "moltbook话题及互动机制深挖",
+      "uploads_count": 2,
+      "uploads": [
+        "description.txt",
+        "moltbook_comments_2026-02-02.csv"
+      ],
+      "has_description_txt": true
+    },
+    {
+      "case_id": "548dda6882ea65cddf49e06a9852e5b11f7c4401d9f6f4c00e29c0b060808c11",
+      "title": "2026年1月验收及出库情况",
+      "uploads_count": 3,
+      "uploads": [
+        "1月份领料出库.xlsx",
+        "description.txt",
+        "1月份到货验收材料.xlsx"
+      ],
+      "has_description_txt": true
+    }
+  ],
+  "probe_failed": [
+    {
+      "case_id": "b0962d2ac8b358fe4e61ab8263a77a0703400feca2340c09f7b2195cc32cd77a",
+      "title": "FANNG SWE Interview Questions",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "ed5083e337ecbe859b3f0b034376594bf5b6947ac04aa0f19bf7fa03483a1939",
+      "title": "Data Scientist Email list",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "b68ed4cf67ba226cf8cad722cf6dd0b9401b01fa000322fac71212b1baf73c5b",
+      "title": "US strikes Iran by...?",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "a0388589b543f862eee2edfc538ccce13c12c8ce883231c243127956eb4ac747",
+      "title": "Google SWE Summer Internship Questions",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "7156d5dd07b3690c1dc1adc38f85a01cd45dd8bbb8ef15528dedd08444997494",
+      "title": "aowei",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "6d9246c6ba87a9754ce2c0a4679ab7a193950318eb4e522187d7a0dc289c9072",
+      "title": "Toni Kroos",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "17a3f5147e9a11f22fae5c3329f8967a93258617732ddd7f29118360921673c3",
+      "title": "People who appear in the Epstein FIles",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "f54512c9349152fc2bf87c3dba966ca6a469cbd832d8469d7262190917b4f419",
+      "title": "Modric Data",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "9fb31ab12ad36963710563d1a0eaea516e4e8e45d5227d1c9fd0adabcb457f0b",
+      "title": "JP Morgan China Housing market",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "875ecc99290afa1f3555571054a34bb28e58ca59a96c18dc6fc85bb02e5c6c26",
+      "title": "LLM quantization",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "136c72dbf0a3182a32d164520d7707407976c8af7d40c37d959db2db1eceab1a",
+      "title": "A16Z",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "35116e74202a925e4b6e916af33b37232bc10ed456d5831d1f55dc45ecca13cf",
+      "title": "Ronaldo Goal",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "a2ec4e98a423c0950e3236b23377e39ae177f57d32a31c24c1f53a605744261b",
+      "title": "Hacker News trends Jan. 2026",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "cb3d6299eb6eb43dfd1d0eea4ba23f64c6cabd6d23433494b35d306ddcb2db4e",
+      "title": "data sets of ct pet scan of brain tumors",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "b6482450f26d33f12b5eedb96cbc6a2392e25223651f1641fc3349d80dd572ad",
+      "title": "Moltbook Top Posts and Platform Analysis",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "26168bc6628f39a61bf7483602876d10866f35f170fe4d2f83f9bce0e37b4e6e",
+      "title": "MoltBook Top post",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "e5b6d183996831530affe4f20b0b34ea917a026f72060885034267e7e91df878",
+      "title": "香港賽馬資料",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "fa609d009e05732ee17f935bc4e899e2828b1e13f86088ef9e895eebaa563153",
+      "title": "YC start up",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "5d735893c5a87c345b79598d24b553f69a10a3a7bd772c8ba55a2e0d16bf7e59",
+      "title": "香港銀行",
+      "uploads_status": 404
+    },
+    {
+      "case_id": "ad435068a0ae66caf23f86e1b4a8f37a13054a76c228464fc38382aced2663af",
+      "title": "香港銀行",
+      "uploads_status": 404
+    }
+  ]
+}

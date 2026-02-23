@@ -1,0 +1,23 @@
+[
+  {
+    "name": "description.txt",
+    "local": "description.txt",
+    "ok": true,
+    "error": "",
+    "size": 692
+  },
+  {
+    "name": "SOFR30DAYAVG.csv",
+    "local": "SOFR30DAYAVG.csv",
+    "ok": true,
+    "error": "",
+    "size": 40650
+  },
+  {
+    "name": "NGDPSAXDCUSQ.csv",
+    "local": "NGDPSAXDCUSQ.csv",
+    "ok": true,
+    "error": "",
+    "size": 6236
+  }
+]

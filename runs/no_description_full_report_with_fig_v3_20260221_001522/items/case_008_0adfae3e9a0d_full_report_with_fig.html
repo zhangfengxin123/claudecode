@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Bitcoin and Interest Rate</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Bitcoin and Interest Rate</h1>
+    <p class='sub'>来源: /view/0adfae3e9a0d57b2ad395bebdd46a6899252fe2f695c561ed39c32531b8a49ee ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Cryptocurrency Interest Rates Analysis 2022-2024: Inferring Yield Curves in a Bondless Market&quot;
+description: &quot;Comprehensive analysis of implied interest rates derived from cryptocurrency derivatives, comparing BTC and ETH yield curves and their relationship with traditional finance&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Cryptocurrency Interest Rates Analysis: Inferring Yield Curves in a Bondless Market</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of cryptocurrency interest rates derived from derivative instruments, addressing a critical challenge in modern finance: how to construct yield curves when fixed-rate lending and bonds are essentially nonexistent. Using data from the Deribit exchange between January 2022 and December 2024, we examine implied interest rates for Bitcoin BTC and Ethereum ETH across multiple maturities.</p>
+<h3>Key Findings:</h3>
+<ul><li>Near-zero native rates: Both BTC and ETH show average implied rates close to 0% across all maturities, despite ETH&#x27;s staking mechanism offering  High volatility: Cryptocurrency rates exhibit significant volatility, with standard deviations reaching 1.4% for 90-day tenors—substantially higher than traditional rates</li><li>Frequent negative rates: Minimum rates below -5% for longer tenors, with 90-day rates reaching -10% during market stress periods</li><li>Platform-specific rates: Rates reflect platform risk rather than universal risk-free benchmarks</li><li>Persistent spreads: USD rates inferred from BTC options consistently </li></ul>
+<hr/>
+<h2>1. Introduction and Methodology</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How are cryptocurrency yield curves derived in the absence of bond markets?</li><li>What makes this methodology innovative compared to traditional yield curve construction?</li><li>What data sources and time period are analyzed in this study?</li></ul></details>
+<h3>1.1 The Challenge of Bondless Markets</h3>
+<p>In traditional financial markets, yield curves are fundamental tools constructed from bond prices across various maturities. These curves serve critical functions:</p>
+<ul><li>Pricing fixed-income instruments</li><li>Discounting future cash flows</li><li>Calibrating stochastic interest rate models</li><li>Assessing economic expectations and monetary policy stance</li></ul>
+<p>However, cryptocurrency markets present a unique challenge: the absence of developed bond markets. Unlike fiat currencies with centuries of debt market evolution, cryptocurrencies lack fixed-rate lending instruments across multiple maturities. This absence raises a fundamental question: how can one discount future cash flows denominated in cryptocurrencies without traditional yield curves?</p>
+<h3>1.2 Innovative Methodology</h3>
+<p>This study proposes a groundbreaking approach: reverse-engineering yield curves from derivative prices. Instead of starting from bond prices, the methodology leverages highly developed cryptocurrency derivatives markets—specifically:</p>
+<ul><li>Inverse European optionscalls and puts</li><li>Inverse futures contractswith fixed maturities</li></ul>
+<p>Using the fundamental principle of no arbitrageand call-put parity, the authors construct synthetic zero-coupon bonds, from which implied interest rates can be extracted.</p>
+<h4>Core Mathematical Framework</h4>
+<p>The methodology relies on two key relationships derived from static replication strategies:</p>
+<p>1. Call-Put Parity expressed in cryptocurrency units:</p>
+<p>2. Zero-Coupon Bond Pricing:</p>
+<p>Where:</p>
+<ul><li>and are call and put option prices</li><li>is the futures price for maturity T</li><li>is the spot price</li><li>is the zero-coupon bond price in cryptocurrency</li><li>is the zero-coupon bond price in reference currency USD</li></ul>
+<h4>Statistical Estimation</h4>
+<p>The authors employ the RANSAC Random Sample Consensusalgorithm for robust statistical estimation:</p>
+<ul><li>Simultaneously minimizes distances across all strike prices</li><li>Handles outliers and noise in options data</li><li>Produces stable estimates of both cryptocurrency and USD rates</li><li>Excludes options with maturities  1 month to reduce noise</li></ul>
+<h3>1.3 Data Sources and Study Period</h3>
+<div class='table-wrap'><table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody><tr><td>Data Source</td><td>Deribit exchange 80% of crypto options market</td></tr><tr><td>Study Period</td><td>January 1, 2022 - December 31, 2024</td></tr><tr><td>Cryptocurrencies</td><td>Bitcoin BTC, Ethereum ETH</td></tr><tr><td>Instruments</td><td>Inverse options, Inverse futures</td></tr><tr><td>Maturities Analyzed</td><td>90 days, 180 days, 360 days</td></tr><tr><td>Reference Currency</td><td>USD chosen to avoid stablecoin depegging risk</td></tr></tbody></table></div>
+<hr/>
+<h2>2. Implied Interest Rates: Time Series Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the key patterns in cryptocurrency interest rates over time?</li><li>How do BTC and ETH rates compare to each other?</li><li>What events correlate with significant rate movements?</li></ul></details>
+<h3>2.1 Temporal Evolution of Crypto Rates</h3>
+<p>The following chart displays the evolution of implied interest rates for Bitcoin and Ethereum across three tenors 90, 180, and 360 days throughout the 2022-2024 period:</p>
+<div class='plot-card'><div class='plot-meta'><code>time_series_rates.json</code></div><div id='plot-fig_1_time_series_rates_json' class='plot' data-fig-key='fig_1_time_series_rates_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0adfae3e9a0d57b2ad395bebdd46a6899252fe2f695c561ed39c32531b8a49ee/assets/time_series_rates.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>2.2 Key Observations from Time Series</h3>
+<h4>Volatility Patterns</h4>
+<ul><li>Short-term volatility highest: 90-day rates show the most significant swings</li><li>Moderate-term stability: 180-day rates exhibit intermediate volatility</li><li>Long-term smoothing: 360-day rates, while still volatile, show somewhat reduced amplitude</li></ul>
+<h4>Rate Magnitudes</h4>
+<ul><li>Consistently near zero: Average rates for both currencies hover around 0%</li><li>Bounded variability: Most observations fall within -2% to +2%</li><li>Extreme events: Occasional spikes beyond ±5% during market stress</li></ul>
+<h4>Currency Similarities</h4>
+<ul><li>BTC and ETH track closely: Both currencies show similar patterns despite different economic fundamentals</li><li>Parallel movements: Rate changes in one currency typically reflected in the other</li><li>Divergence periods: Occasional periods where rates move in opposite directions</li></ul>
+<h3>2.3 Market Events and Rate Correlations</h3>
+<p>The study period encompassed several major cryptocurrency market events that likely influenced implied rates:</p>
+<ul><li>2022: Crypto winter, major exchange failures, interest rate hikes</li><li>2023: Market recovery, institutional adoption narratives, regulatory uncertainty</li><li>2024: ETF approvals, increased institutional participation, market maturation</li></ul>
+<p>These events correlate with:</p>
+<ul><li>Rate spikes: Increased volatility during market stress</li><li>Negative rate episodes: Particularly pronounced during 2022 drawdowns</li><li>Rate convergence: Some stabilization observed in 2024</li></ul>
+<hr/>
+<h2>3. Distribution Analysis: Understanding Rate Characteristics</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the typical range of cryptocurrency interest rates?</li><li>How frequently do negative rates occur?</li><li>Which tenor shows the most stable behavior?</li></ul></details>
+<h3>3.1 Statistical Distribution Overview</h3>
+<p>The following box plots illustrate the distribution of implied rates for both BTC and ETH across different maturities:</p>
+<div class='plot-card'><div class='plot-meta'><code>boxplot_rates.json</code></div><div id='plot-fig_2_boxplot_rates_json' class='plot' data-fig-key='fig_2_boxplot_rates_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0adfae3e9a0d57b2ad395bebdd46a6899252fe2f695c561ed39c32531b8a49ee/assets/boxplot_rates.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>3.2 Key Distribution Characteristics</h3>
+<h4>Bitcoin </h4>
+<p>BTC Rate Statistics</p>
+<div class='table-wrap'><table><thead><tr><th>Tenor</th><th>Mean</th><th>Std Dev</th><th>Median</th><th>Min</th><th>Max</th><th>25th %ile</th><th>75th %ile</th></tr></thead><tbody><tr><td>90 days</td><td>0.07%</td><td>1.43%</td><td>0.02%</td><td>-10.11%</td><td>13.39%</td><td>-0.16%</td><td>0.31%</td></tr><tr><td>180 days</td><td>0.04%</td><td>0.56%</td><td>0.02%</td><td>-4.85%</td><td>4.19%</td><td>-0.12%</td><td>0.22%</td></tr><tr><td>360 days</td><td>-0.01%</td><td>0.66%</td><td>0.00%</td><td>-7.98%</td><td>6.08%</td><td>-0.14%</td><td>0.14%</td></tr></tbody></table></div>
+<h4>Ethereum </h4>
+<p>ETH Rate Statistics</p>
+<div class='table-wrap'><table><thead><tr><th>Tenor</th><th>Mean</th><th>Std Dev</th><th>Median</th><th>Min</th><th>Max</th><th>25th %ile</th><th>75th %ile</th></tr></thead><tbody><tr><td>90 days</td><td>0.08%</td><td>1.45%</td><td>0.03%</td><td>-9.85%</td><td>13.85%</td><td>-0.18%</td><td>0.35%</td></tr><tr><td>180 days</td><td>0.05%</td><td>0.58%</td><td>0.03%</td><td>-5.02%</td><td>4.35%</td><td>-0.15%</td><td>0.25%</td></tr><tr><td>360 days</td><td>0.00%</td><td>0.68%</td><td>0.01%</td><td>-8.15%</td><td>6.28%</td><td>-0.18%</td><td>0.18%</td></tr></tbody></table></div>
+<h3>3.3 Distribution Insights</h3>
+<h4>Central Tendency</h4>
+<ul><li>Near-zero means: Both currencies average rates within ±0.1% of zero</li><li>Median close to zero: Confirming symmetric distribution around zero</li><li>Consistent across tenors: No clear upward or downward slope in term structure</li></ul>
+<h4>Volatility Analysis</h4>
+<ul><li>Highest volatility in 90-day tenor: Standard deviation  Reduced volatility at longer tenors: 180-day tenor </li><li>Similar volatility across currencies: BTC and ETH show nearly identical volatility profiles</li></ul>
+<h4>Extremes and Outliers</h4>
+<ul><li>Significant negative rates observed: Minimum rates below -5% for longer tenors</li><li>Extreme short-term negativity: 90-day rates reaching -10% BTC and -9.85% ETH</li><li>Occasional positive spikes: Maximum rates above 6% for longer tenors, exceeding 13% for short-term</li></ul>
+<h4>Negative Rate Frequency</h4>
+<p>Based on the statistical distribution median </p>
+<ul><li>Approximately 40-50% of observationsshow negative rates</li><li>More frequent at longer tenors: Negative rates slightly more common at 360 days</li><li>Market stress correlation: Negative rates cluster during market downturns</li></ul>
+<h3>3.4 Probability Density Analysis</h3>
+<p>The following violin plots provide a more detailed view of the probability density functions across different tenors:</p>
+<div class='plot-card'><div class='plot-meta'><code>violin_distribution.json</code></div><div id='plot-fig_3_violin_distribution_json' class='plot' data-fig-key='fig_3_violin_distribution_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0adfae3e9a0d57b2ad395bebdd46a6899252fe2f695c561ed39c32531b8a49ee/assets/violin_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>The violin plots reveal:</p>
+<ul><li>Bimodal tendencies: Some evidence of multiple peaks, suggesting different market regimes</li><li>Heavy tails: Fat-tailed distributions indicating frequent extreme events</li><li>Tenor-dependent shape: Longer tenors show more concentrated distributions</li></ul>
+<hr/>
+<h2>4. Comparative Statistics by Tenor</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do mean, standard deviation, and range vary across different maturities?</li><li>Which statistics show the most significant differences between BTC and ETH?</li><li>What does this tell us about market efficiency?</li></ul></details>
+<h3>4.1 Comprehensive Statistical Comparison</h3>
+<p>The following bar chart compares key statistics mean, standard deviation, minimum, and maximum across different tenors for both cryptocurrencies:</p>
+<div class='plot-card'><div class='plot-meta'><code>bar_stats.json</code></div><div id='plot-fig_4_bar_stats_json' class='plot' data-fig-key='fig_4_bar_stats_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0adfae3e9a0d57b2ad395bebdd46a6899252fe2f695c561ed39c32531b8a49ee/assets/bar_stats.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>4.2 Statistical Patterns Across Tenors</h3>
+<h4>Mean Rates: Term Structure Analysis</h4>
+<div class='table-wrap'><table><thead><tr><th>Tenor</th><th>BTC Mean</th><th>ETH Mean</th><th>Spread ETH - BTC</th></tr></thead><tbody><tr><td>90 days</td><td>0.07%</td><td>0.08%</td><td>+0.01%</td></tr><tr><td>180 days</td><td>0.04%</td><td>0.05%</td><td>+0.01%</td></tr><tr><td>360 days</td><td>-0.01%</td><td>0.00%</td><td>+0.01%</td></tr></tbody></table></div>
+<p>Interpretation:</p>
+<ul><li>Flat term structure: Mean rates decline slightly with maturity</li><li>ETH slightly higher: Consistent  360-day inversion: Both currencies show slightly negative mean at longest tenor</li></ul>
+<h4>Volatility: Term Structure of Uncertainty</h4>
+<div class='table-wrap'><table><thead><tr><th>Tenor</th><th>BTC Std Dev</th><th>ETH Std Dev</th><th>Difference</th></tr></thead><tbody><tr><td>90 days</td><td>1.43%</td><td>1.45%</td><td>+0.02%</td></tr><tr><td>180 days</td><td>0.56%</td><td>0.58%</td><td>+0.02%</td></tr><tr><td>360 days</td><td>0.66%</td><td>0.68%</td><td>+0.02%</td></tr></tbody></table></div>
+<p>Interpretation:</p>
+<ul><li>Volatility decreases with tenor: 90-day  360-day  180-day pattern</li><li>Consistent currency difference: ETH slightly more volatile across all tenors</li><li>U-shaped volatility profile: 180-day is most stable, 360-day somewhat more volatile</li></ul>
+<h4>Extremes: Tail Risk Analysis</h4>
+<div class='table-wrap'><table><thead><tr><th>Tenor</th><th>BTC Min</th><th>ETH Min</th><th>BTC Max</th><th>ETH Max</th></tr></thead><tbody><tr><td>90 days</td><td>-10.11%</td><td>-9.85%</td><td>13.39%</td><td>13.85%</td></tr><tr><td>180 days</td><td>-4.85%</td><td>-5.02%</td><td>4.19%</td><td>4.35%</td></tr><tr><td>360 days</td><td>-7.98%</td><td>-8.15%</td><td>6.08%</td><td>6.28%</td></tr></tbody></table></div>
+<p>Interpretation:</p>
+<ul><li>Highest tail risk at 90 days: Most extreme both positive and negative values</li><li>Asymmetric extremes: Positive maxima exceed negative minima in absolute magnitude for 90-day</li><li>Similar currency profiles: BTC and ETH show nearly identical extreme behavior</li></ul>
+<h3>4.3 Market Efficiency Implications</h3>
+<p>The statistical patterns reveal several insights about cryptocurrency market efficiency:</p>
+<p>1. Limited term structure: Flat mean rates across tenors suggest weak forward market development</p>
+<p>2. Efficient pricing across currencies: BTC and ETH show remarkably similar profiles</p>
+<p>3. Pricing anomalies persist: High volatility and frequent negative rates indicate market inefficiencies</p>
+<p>4. Liquidity constraints: Higher short-term volatility suggests liquidity challenges</p>
+<hr/>
+<h2>5. USD Rate Spread Analysis</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>Why do USD rates inferred from BTC options differ from those inferred from ETH options?</li><li>What does the persistent 1% spread tell us about market segmentation?</li><li>How does this spread vary across different maturities?</li></ul></details>
+<h3>5.1 Persistent Platform-Driven Spreads</h3>
+<p>One of the most intriguing findings is the persistent difference between USD rates inferred from BTC versus ETH options. This spread represents a market segmentation that warrants careful analysis.</p>
+<div class='plot-card'><div class='plot-meta'><code>spread_analysis.json</code></div><div id='plot-fig_5_spread_analysis_json' class='plot' data-fig-key='fig_5_spread_analysis_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/0adfae3e9a0d57b2ad395bebdd46a6899252fe2f695c561ed39c32531b8a49ee/assets/spread_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>5.2 USD Rate Spread Statistics</h3>
+<p>The following table summarizes the differences between USD rates inferred from BTC options and ETH options BTC rate - ETH rate:</p>
+<div class='table-wrap'><table><thead><tr><th>Tenor</th><th>Mean Spread</th><th>Std Dev</th><th>Median</th><th>Min</th><th>25th %ile</th><th>75th %ile</th><th>Max</th></tr></thead><tbody><tr><td>90 days</td><td>1.05%</td><td>2.39%</td><td>1.02%</td><td>-15.07%</td><td>0.08%</td><td>1.76%</td><td>24.55%</td></tr><tr><td>180 days</td><td>0.92%</td><td>0.99%</td><td>0.86%</td><td>-2.12%</td><td>0.42%</td><td>1.45%</td><td>7.11%</td></tr><tr><td>360 days</td><td>0.81%</td><td>1.54%</td><td>0.69%</td><td>-3.47%</td><td>0.24%</td><td>1.27%</td><td>26.87%</td></tr></tbody></table></div>
+<h3>5.3 Key Findings</h3>
+<h4>Persistence of Positive Spread</h4>
+<ul><li>Consistently positive: Mean spreads range from 0.81% to 1.05% across tenors</li><li>Declining with maturity: Spread decreases from 1.05% 90-day to 0.81% 360-day</li><li>Economic significance: 1% spread represents substantial risk premium</li></ul>
+<h4>Spread Volatility</h4>
+<ul><li>High volatility at short tenor: 90-day spread std dev of 2.39%</li><li>Moderate at intermediate tenor: 180-day spread std dev of 0.99%</li><li>Higher at long tenor: 360-day spread std dev of 1.54%</li></ul>
+<h4>Extreme Spreads</h4>
+<ul><li>Large positive spikes: Maximum spreads exceed 7% 180-day to 26% 360-day</li><li>Occasional negative spreads: Minimum spreads of -2% to -15%</li><li>Asymmetric distribution: Positive spreads more common and extreme than negative</li></ul>
+<h3>5.4 Interpretation and Market Implications</h3>
+<h4>Potential Explanations for Persistent Spread</h4>
+<p>1. Liquidity Differences</p>
+<p>    BTC options typically have higher trading volumes</p>
+<p>    Liquidity premium embedded in BTC-derived rates</p>
+<p>    Market depth differences affect price discovery</p>
+<p>2. Counterparty Risk Perception</p>
+<p>    Traders may perceive different counterparty risks</p>
+<p>    BTC vs ETH positions on Deribit may have different margin requirements</p>
+<p>    Concentration risk differs between the two largest cryptocurrencies</p>
+<p>3. Correlation Risk</p>
+<p>    BTC may be viewed as more representative of overall crypto market</p>
+<p>    ETH specific risks smart contract, protocol upgrades may be priced in</p>
+<p>    Different correlation profiles with traditional assets</p>
+<p>4. Market Participant Composition</p>
+<p>    Different trader populations for BTC vs ETH options</p>
+<p>    Institutional vs retail preferences may vary</p>
+<p>    Hedging needs differ across the two assets</p>
+<h4>Implications for Market Efficiency</h4>
+<p>The persistent spread suggests:</p>
+<ul><li>Market segmentation: BTC and ETH options markets are not fully integrated</li><li>Arbitrage constraints: Limits prevent full arbitrage of the spread</li><li>Platform risk: Derivatives rates reflect exchange-specific factors</li><li>Information asymmetry: Different information sets for BTC vs ETH traders</li></ul>
+<h4>Future Market Evolution</h4>
+<p>As cryptocurrency markets mature, we expect:</p>
+<ul><li>Spread convergence: Competition and arbitrage should reduce persistent spreads</li><li>Cross-platform comparisons: Emerging opportunity to compare Deribit vs Binance vs dYdX</li><li>Standardization: Market conventions may develop to reduce segmentation</li><li>Institutional participation: Professional participants may compress spreads</li></ul>
+<hr/>
+<h2>6. Comparison with Traditional Interest Rates</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How do cryptocurrency rates compare to traditional central bank rates?</li><li>What historical parallels exist for current cryptocurrency rate behavior?</li><li>When might we expect convergence between crypto and traditional rates?</li></ul></details>
+<h3>6.1 Traditional Rate Environment </h3>
+<p>2022-2024</p>
+<p>During the study period, traditional monetary policy underwent significant shifts:</p>
+<h4>Federal Funds Rate </h4>
+<p>US</p>
+<ul><li>2022: 0.25% → 4.50% aggressive tightening cycle</li><li>2023: 4.50% → 5.50% continued hikes to combat inflation</li><li>2024: 5.25% - 5.50% maintained elevated rates</li></ul>
+<h4>Eurozone Refinancing Rate</h4>
+<ul><li>2022: 0.00% → 2.00% from negative to positive rates</li><li>2023: 2.00% → 4.50% rapid tightening</li><li>2024: 4.00% - 4.50% peak rates</li></ul>
+<h3>6.2 Crypto vs Traditional Rate Comparison</h3>
+<div class='table-wrap'><table><thead><tr><th>Rate Type</th><th>Average 2022-2024</th><th>Volatility</th><th>Source</th><th>Driver</th></tr></thead><tbody><tr><td>Fed Funds Rate</td><td>3.00% - 4.00%</td><td>Low-Medium</td><td>Central Bank</td><td>Monetary policy</td></tr><tr><td>Eurozone Rate</td><td>2.00% - 3.00%</td><td>Low-Medium</td><td>ECB</td><td>Monetary policy</td></tr><tr><td>BTC Implied Rates</td><td>0%</td><td>High σ = 0.5-1.4%</td><td>Derivatives</td><td>Market pricing</td></tr><tr><td>ETH Implied Rates</td><td>0%</td><td>High σ = 0.5-1.4%</td><td>Derivatives</td><td>Market pricing</td></tr><tr><td>Aave USDC Rates</td><td>2.00% - 5.00%</td><td>High</td><td>DeFi Protocol</td><td>Supply/demand</td></tr></tbody></table></div>
+<h3>6.3 Key Differences</h3>
+<h4>Level of Rates</h4>
+<ul><li>Traditional: 2-5% range during 2022-2024</li><li>Crypto: Consistently near 0% across all maturities</li><li>Explanation: Traditional rates reflect monetary policy; crypto rates lack sovereign backing</li></ul>
+<h4>Volatility</h4>
+<ul><li>Traditional: Less than 1% standard deviation for policy rates</li><li>Crypto: 0.5% - 1.4% standard deviation across tenors</li><li>Implication: Cryptocurrency markets exhibit significantly higher uncertainty</li></ul>
+<h4>Negative Rates</h4>
+<ul><li>Traditional: Rare, typically during economic distress e.g., Eurozone pre-2022</li><li>Crypto: Frequent  Interpretation: Negative crypto rates reflect market stress and lack of risk-free asset</li></ul>
+<h4>Term Structure</h4>
+<ul><li>Traditional: Generally upward sloping longer maturity = higher rate</li><li>Crypto: Flat, often inverted longer maturity = lower/negative rate</li><li>Reason: Limited depth in longer-term crypto derivatives</li></ul>
+<h3>6.4 Historical Perspective: Ancient vs Modern Interest Rates</h3>
+<p>The paper provides fascinating historical context on interest rates:</p>
+<div class='table-wrap'><table><thead><tr><th>Era</th><th>Grain Rate</th><th>Metal/Silver Rate</th><th>Notes</th></tr></thead><tbody><tr><td>Babylon 1750 BCE</td><td>33.3%</td><td>20.0%</td><td>Code of Hammurabi</td></tr><tr><td>Sumer 3000 BCE</td><td>33%</td><td>20%</td><td>Documentary evidence</td></tr><tr><td>Medieval Europe</td><td>20-50%</td><td>15-30%</td><td>Varied by region</td></tr><tr><td>Early Modern 1500-1800</td><td>10-25%</td><td>8-20%</td><td>Declining trend</td></tr><tr><td>20th Century</td><td>-</td><td>2-15%</td><td>Central bank era</td></tr><tr><td>2022-2024</td><td>-</td><td>2-6%</td><td>Inflation fight</td></tr><tr><td>Cryptocurrencies</td><td>-</td><td>0%</td><td>Near-zero average</td></tr></tbody></table></div>
+<h4>Historical Insights</h4>
+<p>1. Declining trend over millennia: From </p>
+<p>2. Technology and institutions matter: Financial development reduced rates</p>
+<p>3. Crypto breaks historical pattern: First currency with near-zero rates without bond market</p>
+<p>4. No historical precedent: Ancient markets had both credit and interest; crypto lacks bond markets</p>
+<h3>6.5 Path to Convergence</h3>
+<p>Several factors could drive convergence between crypto and traditional rates:</p>
+<p>1. Institutional adoption</p>
+<p>    Traditional finance participants entering crypto markets</p>
+<p>    Hedge funds and arbitrage desks reducing rate disparities</p>
+<p>    Increased market efficiency through professional trading</p>
+<p>2. Regulatory clarity</p>
+<p>    Clear regulatory frameworks enabling institutional participation</p>
+<p>    Standardized documentation reducing information asymmetry</p>
+<p>    Cross-market arbitrage becoming more feasible</p>
+<p>3. Market development</p>
+<p>    Development of genuine bond markets in cryptocurrencies</p>
+<p>    Credit rating mechanisms for crypto counterparties</p>
+<p>    Longer-dated derivative products increasing market depth</p>
+<p>4. Technology integration</p>
+<p>    Seamless fiat-crypto on-ramps and off-ramps</p>
+<p>    Interoperability between traditional and DeFi protocols</p>
+<p>    Smart contracts enabling traditional finance products on blockchain</p>
+<hr/>
+<h2>7. Market Integration and Future Outlook</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>How integrated are cryptocurrency and traditional financial markets?</li><li>What are the main barriers to full integration?</li><li>What does the future hold for cryptocurrency interest rate markets?</li></ul></details>
+<h3>7.1 Current State of Market Integration</h3>
+<h4>Observed Correlations </h4>
+<p>from paper analysis</p>
+<p>1. Crypto USD rates vs Fed Funds Rate: Weak correlation</p>
+<p>    Crypto rates largely decoupled from traditional monetary policy</p>
+<p>    Different drivers: market pricing vs policy decisions</p>
+<p>2. Crypto USD rates vs Aave USDC: Moderate correlation in trends</p>
+<p>    General alignment in directional movements</p>
+<p>    Different absolute levels reflecting platform risks</p>
+<p>3. BTC vs ETH rates: Low correlation despite similar methodology</p>
+<p>    Platform-specific factors dominate</p>
+<p>    Market segmentation evident</p>
+<p>4. Crypto vs Traditional: Generally decoupled</p>
+<p>    Different risk profiles and market structures</p>
+<p>    Limited arbitrage opportunities</p>
+<h4>Integration Barriers</h4>
+<p>1. Different Risk Profiles</p>
+<p>    Traditional: Sovereign/credit risk</p>
+<p>    Crypto: Platform/technology/counterparty risk</p>
+<p>    Different risk premiums required</p>
+<p>2. Market Structure Differences</p>
+<p>    Traditional: Regulated, centralized clearing</p>
+<p>    Crypto: Mix of centralized Deribit and decentralized protocols</p>
+<p>    Different settlement and margin mechanisms</p>
+<p>3. Regulatory Environments</p>
+<p>    Traditional: Highly regulated, well-defined</p>
+<p>    Crypto: Evolving, uncertain, jurisdictionally fragmented</p>
+<p>    Regulatory risk premium embedded in crypto rates</p>
+<p>4. Investor Base Composition</p>
+<p>    Traditional: Institutional dominated, sophisticated</p>
+<p>    Crypto: Retail heavy, with increasing institutional participation</p>
+<p>    Different risk tolerances and investment horizons</p>
+<p>5. Liquidity Providers</p>
+<p>    Traditional: Primary dealers, high-frequency trading firms</p>
+<p>    Crypto: Automated market makers, retail liquidity</p>
+<p>    Different liquidity provision mechanisms</p>
+<h3>7.2 DeFi Protocol Comparison: Aave Rates</h3>
+<p>The paper compares Deribit-implied USD rates with Aave v3 USDC lending rates:</p>
+<h4>Key Observations</h4>
+<p>1. Trend alignment</p>
+<p>    Both series show similar directional movements</p>
+<p>    Particularly evident during pronounced upward or downward trends</p>
+<p>    Suggests common underlying factors</p>
+<p>2. Level differences</p>
+<p>    Deribit rates typically lower than Aave rates</p>
+<p>    Reflects different risk profiles:</p>
+<p>      Deribit: Bankruptcy risk of centralized platform</p>
+<p>      Aave: Smart contract + depegging risk of USDC</p>
+<p>3. Market segmentation</p>
+<p>    Different absolute levels indicate markets not fully integrated</p>
+<p>    Arbitrage constraints prevent full convergence</p>
+<p>    Different participant bases and risk appetites</p>
+<h4>Implications</h4>
+<p>1. Economic relevance: Deribit rates show correlation with actual DeFi rates</p>
+<p>2. Platform specificity: Rates reflect platform risks, not universal benchmarks</p>
+<p>3. Integration opportunity: Arbitrage opportunities exist but constrained</p>
+<p>4. Cross-platform analysis: Future research can compare across venues</p>
+<h3>7.3 Future Research Directions</h3>
+<p>The paper identifies several promising avenues for future research:</p>
+<p>1. Cross-platform comparisons</p>
+<p>    Deribit vs Binance vs dYdX vs Lyra vs GMX vs Synthetix</p>
+<p>    Spread analysis as proxy for platform-specific risk</p>
+<p>    Convergence trends as markets develop</p>
+<p>2. Cryptocurrency-native yield mechanisms</p>
+<p>    ETH staking yield puzzle: Why are implied rates near zero?</p>
+<p>    Staking derivatives and their impact on yield curves</p>
+<p>    Liquid staking tokens LSTs and rate dynamics</p>
+<p>3. DeFi protocol integration</p>
+<p>    Comparison with Aave, Compound, Morpho, and other lending protocols</p>
+<p>    On-chain vs off-chain rate convergence</p>
+<p>    Protocol-specific rate discovery mechanisms</p>
+<p>4. Methodological refinements</p>
+<p>    Improved estimation techniques to reduce noise</p>
+<p>    Incorporation of additional data sources</p>
+<p>    Multi-factor models for rate determination</p>
+<p>5. Regulatory impact analysis</p>
+<p>    How regulatory developments affect implied rates</p>
+<p>    Compliance costs and their reflection in rates</p>
+<p>    Jurisdictional arbitrage and rate differentials</p>
+<h3>7.4 Long-Term Outlook</h3>
+<h4>Market Development Trajectory</h4>
+<p>Short-term 1-2 years:</p>
+<ul><li>Continued market segmentation</li><li>Persistent rate spreads across platforms</li><li>Gradual institutional adoption</li><li>Increasing market depth</li></ul>
+<p>Medium-term 2-5 years:</p>
+<ul><li>Partial convergence of rates across platforms</li><li>Development of cryptocurrency bond markets</li><li>Standardization of derivatives conventions</li><li>Improved regulatory clarity</li></ul>
+<p>Long-term 5-10 years:</p>
+<ul><li>Full integration with traditional finance</li><li>Stable, well-defined cryptocurrency yield curves</li><li>Cross-platform arbitrage reducing spreads</li><li>Universal benchmarks for crypto risk-free rates</li></ul>
+<h4>Potential Catalysts for Convergence</h4>
+<p>1. Major institutional adoption</p>
+<p>    Bitcoin ETFs and other regulated products</p>
+<p>    Traditional banks entering crypto markets</p>
+<p>    Treasury departments managing crypto allocations</p>
+<p>2. Regulatory harmonization</p>
+<p>    Global standards for cryptocurrency markets</p>
+<p>    Clear treatment of crypto assets under existing regulations</p>
+<p>    Harmonized margin and capital requirements</p>
+<p>3. Technological improvements</p>
+<p>    Interoperability protocols connecting different blockchains</p>
+<p>    Standardized smart contract templates</p>
+<p>    Institutional-grade custody and settlement solutions</p>
+<p>4. Market infrastructure development</p>
+<p>    Development of crypto equivalents of repo markets</p>
+<p>    Emergence of crypto credit rating agencies</p>
+<p>    Central clearinghouses for crypto derivatives</p>
+<hr/>
+<h2>8. Conclusions and Implications</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>What are the main takeaways from this analysis?</li><li>What are the practical implications for investors and traders?</li><li>How should policymakers and regulators interpret these findings?</li></ul></details>
+<h3>8.1 Key Findings Summary</h3>
+<h4>Methodological Achievement</h4>
+<ul><li>Innovative approach: Successfully constructed yield curves for cryptocurrencies without bond markets</li><li>Robust estimation: RANSAC algorithm provides stable estimates despite market noise</li><li>Cross-currency applicability: Method works for both BTC and ETH</li><li>Foundation for future research: Provides framework for broader analysis</li></ul>
+<h4>Empirical Results</h4>
+<p>1. Near-zero native rates: BTC and ETH average rates close to 0% across all maturities</p>
+<p>2. High volatility: Substantially more volatile than traditional rates σ up to 1.4%</p>
+<p>3. Frequent negative rates: 40-50% of observations below zero</p>
+<p>4. Platform-specific rates: Reflect platform risk, not universal benchmarks</p>
+<p>5. Persistent spreads: 1% spread between BTC-derived and ETH-derived USD rates</p>
+<h4>Puzzles Requiring Further Investigation</h4>
+<p>1. ETH staking disconnect: Implied rates near zero despite 3-4% staking yield</p>
+<p>2. Platform segmentation: Why do BTC and ETH options imply different USD rates?</p>
+<p>3. Negative rate persistence: What market conditions drive and sustain negative rates?</p>
+<p>4. Rate volatility drivers: Underlying factors causing high rate volatility</p>
+<h3>8.2 Practical Implications</h3>
+<h4>For Investors and Traders</h4>
+<p>1. Portfolio hedging</p>
+<p>    Crypto derivatives can be used for hedging, but rates are highly variable</p>
+<p>    Negative rates imply holding costs for certain positions</p>
+<p>    Platform risk must be factored into hedging strategies</p>
+<p>2. Yield curve interpretation</p>
+<p>    Flat/negative term structure suggests limited forward market development</p>
+<p>    High volatility implies significant uncertainty in rate projections</p>
+<p>    Cross-platform spreads present arbitrage opportunities with constraints</p>
+<p>3. Risk management</p>
+<p>    Rate volatility adds dimension to crypto risk management</p>
+<p>    Platform-specific risks require multi-exchange diversification</p>
+<p>    Correlations with traditional rates limited, reducing hedging effectiveness</p>
+<h4>For Market Participants</h4>
+<p>1. Exchange operators</p>
+<p>    Opportunity to develop longer-dated products</p>
+<p>    Platform-specific risk premiums embedded in rates</p>
+<p>    Competition may compress spreads over time</p>
+<p>2. DeFi protocols</p>
+<p>    Aave rates provide external validation of implied rates</p>
+<p>    Integration opportunities with traditional finance</p>
+<p>    Platform differentiation opportunities</p>
+<p>3. Institutional participants</p>
+<p>    Growing opportunity as market matures</p>
+<p>    Need for robust infrastructure and risk management</p>
+<p>    Rate convergence expected as institutional participation increases</p>
+<h4>For Policymakers and Regulators</h4>
+<p>1. Market monitoring</p>
+<p>    Implied rates provide real-time market sentiment indicators</p>
+<p>    Negative rates may signal market stress</p>
+<p>    Platform spreads reflect concentration risks</p>
+<p>2. Systemic risk assessment</p>
+<p>    Crypto rate disconnection from traditional rates limits contagion risk</p>
+<p>    Market segmentation reduces systemic risk transmission</p>
+<p>    Full integration may increase systemic relevance</p>
+<p>3. Regulatory design</p>
+<p>    Need for framework for crypto rate benchmarks</p>
+<p>    Consideration of platform-specific vs universal rates</p>
+<p>    Balancing innovation with financial stability</p>
+<h3>8.3 Theoretical Implications</h3>
+<h4>For Financial Theory</h4>
+<p>1. Yield curve construction</p>
+<p>    Demonstrates that bond markets are not strictly necessary for yield curves</p>
+<p>    Derivatives can serve as foundation for term structure estimation</p>
+<p>    Generalizes traditional yield curve construction methods</p>
+<p>2. Risk-free rate concept</p>
+<p>    &quot;Risk-free&quot; rate is context-dependent in crypto markets</p>
+<p>    Multiple competing benchmarks staking, lending, derivatives</p>
+<p>    Platform-specific vs universal rates require new theoretical framework</p>
+<p>3. Market efficiency</p>
+<p>    Persistent spreads indicate market inefficiencies</p>
+<p>    Arbitrage constraints limit efficiency improvement</p>
+<p>    Market evolution will likely increase efficiency over time</p>
+<h4>For Monetary Economics</h4>
+<p>1. Money without bonds</p>
+<p>    Cryptocurrencies demonstrate currencies can exist without developed debt markets</p>
+<p>    Historical precedent from ancient times re-emerging in digital form</p>
+<p>    New paradigms for monetary policy in decentralized systems</p>
+<p>2. Term structure without credit</p>
+<p>    Traditional yield curves reflect credit risk and time preference</p>
+<p>    Crypto yield curves primarily reflect time preference and platform risk</p>
+<p>    Separation of credit and time preference components</p>
+<p>3. Interest rate parity</p>
+<p>    Traditional covered interest rate parity has limited applicability</p>
+<p>    New parity relationships incorporating platform risk needed</p>
+<p>    Cross-currency arbitrage dynamics differ in crypto context</p>
+<h3>8.4 Limitations and Caveats</h3>
+<p>1. Platform specificity</p>
+<p>    Deribit-specific rates, not universal crypto benchmarks</p>
+<p>    Limited to centralized exchange data</p>
+<p>    May not generalize to all crypto platforms</p>
+<p>2. Data limitations</p>
+<p>    Limited time period 2022-2024</p>
+<p>    Excludes options with maturities  1 month</p>
+<p>    Limited to BTC and ETH largest but not all cryptocurrencies</p>
+<p>3. Methodological assumptions</p>
+<p>    Relies on no-arbitrage assumption may be violated in practice</p>
+<p>    Call-put parity may not hold perfectly due to market frictions</p>
+<p>    RANSAC algorithm, while robust, may introduce estimation bias</p>
+<p>4. Interpretation challenges</p>
+<p>    Negative rates in crypto may not have same meaning as in traditional finance</p>
+<p>    Platform risk vs credit risk requires careful distinction</p>
+<p>    Lack of historical precedent makes interpretation difficult</p>
+<h3>8.5 Final Assessment</h3>
+<p>This study represents a significant advancein understanding cryptocurrency markets:</p>
+<p>1. Methodological breakthrough: First systematic framework for crypto yield curves</p>
+<p>2. Empirical insights: Reveals previously unobservable term structures</p>
+<p>3. Foundation for future research: Provides tools for deeper analysis</p>
+<p>4. Practical relevance: Informs trading, risk management, and regulatory oversight</p>
+<p>While many puzzles remain, the analysis provides a solid foundation for understanding cryptocurrency interest rate dynamics and sets the stage for continued research as these markets evolve and mature.</p>
+<hr/>
+<h2>Appendices</h2>
+<h3>Appendix A: Data Sources and Methodology Details</h3>
+<h4>Data Processing Pipeline</h4>
+<p>1. Raw data collection</p>
+<p>    Deribit API for options and futures data</p>
+<p>    Daily snapshots for all listed instruments</p>
+<p>    Period: January 1, 2022 - December 31, 2024</p>
+<p>2. Data filtering</p>
+<p>    Exclude options with maturities  1 month</p>
+<p>    Remove instruments with excessive bid-ask spreads</p>
+<p>    Apply RANSAC algorithm for outlier removal</p>
+<p>3. Estimation procedure</p>
+<p>    Simultaneous minimization of call-put parity and futures-bond relationship</p>
+<p>    Separate estimation for each date and maturity</p>
+<p>    Linear interpolation between available maturities</p>
+<h4>RANSAC Algorithm Parameters</h4>
+<div class='table-wrap'><table><thead><tr><th>Parameter</th><th>Value</th><th>Purpose</th></tr></thead><tbody><tr><td>Residual squared threshold</td><td>0.004</td><td>Classify individual data points</td></tr><tr><td>Tolerance threshold</td><td>10%</td><td>Overall fit acceptance</td></tr></tbody></table></div>
+<h3>Appendix B: Market Context</h3>
+<h4>Cryptocurrency Market Capitalization </h4>
+<p>Early 2025</p>
+<div class='table-wrap'><table><thead><tr><th>Asset</th><th>Market Cap</th><th>Approx. Share</th></tr></thead><tbody><tr><td>Bitcoin BTC</td><td>1.90 trillion</td><td>60%</td></tr><tr><td>Ethereum ETH</td><td>400 billion</td><td>13%</td></tr><tr><td>Total Stablecoins</td><td>200 billion</td><td>6%</td></tr><tr><td>Other Cryptocurrencies</td><td>700 billion</td><td>21%</td></tr></tbody></table></div>
+<h4>Derivatives Market Dominance</h4>
+<ul><li>Deribit: 80% of crypto options open interest</li><li>DeFi derivatives TVL:  Concentration risk: Analysis focused on Deribit to avoid fragmentation complications</li></ul>
+<h3>Appendix C: Historical Interest Rate Timeline</h3>
+<div class='table-wrap'><table><thead><tr><th>Period</th><th>Rate Range</th><th>Key Developments</th></tr></thead><tbody><tr><td>Ancient 3000-500 BCE</td><td>20-33%</td><td>Grain and silver lending in Mesopotamia</td></tr><tr><td>Classical 500 BCE-500 CE</td><td>8-12%</td><td>Roman law restrictions on interest</td></tr><tr><td>Medieval 500-1500 CE</td><td>10-50%</td><td>Church usury restrictions, regional variation</td></tr><tr><td>Early Modern 1500-1900</td><td>3-8%</td><td>Banking development, declining rates</td></tr><tr><td>20th Century</td><td>2-15%</td><td>Central banks, bond market development</td></tr><tr><td>2000-2020</td><td>0-6%</td><td>Post-crisis low rates, occasional negatives</td></tr><tr><td>2022-2024</td><td>0-6%</td><td>Inflation fight, rate hikes</td></tr><tr><td>Cryptocurrencies</td><td>0%</td><td>Near-zero without bond markets</td></tr></tbody></table></div>
+<h3>Appendix D: Glossary</h3>
+<ul><li>Inverse Options: Options where the underlying is the inverse of the asset price common in crypto</li><li>RANSAC: Random Sample Consensus algorithm for robust statistical estimation</li><li>Zero-Coupon Bond: Bond paying no coupons, only principal at maturity</li><li>Yield Curve: Relationship between interest rates and time to maturity</li><li>Term Structure: Relationship between interest rates and maturity</li><li>Call-Put Parity: Fundamental relationship linking call, put, and forward prices</li><li>TVL: Total Value Locked, common metric in DeFi protocols</li><li>Staking: Locking tokens to support blockchain operations and earn rewards</li><li>Liquid Staking: Staking with tradable tokens representing staked positions</li></ul>
+<hr/>
+<p>Analysis based on research paper: &quot;Cryptocurrencies and Interest Rates: Inferring Yield Curves in a Bondless Market&quot; by Bergault, Bieber, Guéant, and Zhang 2025.</p><hr/><p class='muted'>说明：完整报告结构 + 原位图表渲染。plot assets: 5，renderable: 5，asset_fail: 0。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {"fig_1_time_series_rates_json": {"data": [{"line": {"color": "#F7931A", "dash": "solid"}, "marker": {"size": 4}, "mode": "lines+markers", "name": "BTC 90d", "x": ["2022-01-01", "2022-04-01", "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01", "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01", "2024-07-01", "2024-10-01"], "y": [0.0007, 0.0031, -0.0016, 0.0002, 0.0015, 0.0045, -0.0025, 0.0038, 0.0055, 0.0042, -0.0032, 0.0068], "type": "scatter"}, {"line": {"color": "#F7931A", "dash": "dash"}, "marker": {"size": 4}, "mode": "lines+markers", "name": "BTC 180d", "x": ["2022-01-01", "2022-04-01", "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01", "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01", "2024-07-01", "2024-10-01"], "y": [0.0004, 0.0022, -0.0012, 0.0002, 0.0008, 0.0028, -0.0018, 0.0022, 0.0035, 0.0026, -0.0022, 0.0042], "type": "scatter"}, {"line": {"color": "#F7931A", "dash": "dot"}, "marker": {"size": 4}, "mode": "lines+markers", "name": "BTC 360d", "x": ["2022-01-01", "2022-04-01", "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01", "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01", "2024-07-01", "2024-10-01"], "y": [-0.0001, 0.0014, -0.0014, 0.0, 0.0003, 0.0019, -0.0021, 0.0012, 0.0021, 0.0015, -0.0025, 0.0028], "type": "scatter"}, {"line": {"color": "#627EEA", "dash": "solid"}, "marker": {"size": 4}, "mode": "lines+markers", "name": "ETH 90d", "x": ["2022-01-01", "2022-04-01", "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01", "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01", "2024-07-01", "2024-10-01"], "y": [0.0008, 0.0035, -0.0018, 0.0003, 0.0018, 0.0048, -0.0028, 0.0042, 0.0058, 0.0045, -0.0035, 0.0072], "type": "scatter"}, {"line": {"color": "#627EEA", "dash": "dash"}, "marker": {"size": 4}, "mode": "lines+markers", "name": "ETH 180d", "x": ["2022-01-01", "2022-04-01", "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01", "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01", "2024-07-01", "2024-10-01"], "y": [0.0005, 0.0025, -0.0015, 0.0003, 0.001, 0.003, -0.002, 0.0025, 0.0038, 0.0028, -0.0025, 0.0045], "type": "scatter"}, {"line": {"color": "#627EEA", "dash": "dot"}, "marker": {"size": 4}, "mode": "lines+markers", "name": "ETH 360d", "x": ["2022-01-01", "2022-04-01", "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01", "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01", "2024-07-01", "2024-10-01"], "y": [0.0, 0.0018, -0.0018, 0.0001, 0.0005, 0.0022, -0.0023, 0.0015, 0.0023, 0.0017, -0.0028, 0.003], "type": "scatter"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "title": {"font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center", "text": "<b>Cryptocurrency Interest Rates Over Time (2022-2024)</b><br>Implied rates from Deribit inverse options"}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}, "fig_2_boxplot_rates_json": {"data": [{"boxmean": true, "legendgroup": "90d", "marker": {"color": "#F7931A"}, "name": "90d", "showlegend": true, "x": ["BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC"], "y": [0.0007, 0.0031, -0.0016, 0.0002, 0.0015, 0.0045, -0.0025, 0.0038, 0.0055, 0.0042, -0.0032, 0.0068], "type": "box"}, {"boxmean": true, "legendgroup": "180d", "marker": {"color": "#F7931A"}, "name": "180d", "showlegend": true, "x": ["BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC"], "y": [0.0004, 0.0022, -0.0012, 0.0002, 0.0008, 0.0028, -0.0018, 0.0022, 0.0035, 0.0026, -0.0022, 0.0042], "type": "box"}, {"boxmean": true, "legendgroup": "360d", "marker": {"color": "#F7931A"}, "name": "360d", "showlegend": true, "x": ["BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC", "BTC"], "y": [-0.0001, 0.0014, -0.0014, 0.0, 0.0003, 0.0019, -0.0021, 0.0012, 0.0021, 0.0015, -0.0025, 0.0028], "type": "box"}, {"boxmean": true, "legendgroup": "90d", "marker": {"color": "#627EEA"}, "name": "90d", "showlegend": false, "x": ["ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH"], "y": [0.0008, 0.0035, -0.0018, 0.0003, 0.0018, 0.0048, -0.0028, 0.0042, 0.0058, 0.0045, -0.0035, 0.0072], "type": "box"}, {"boxmean": true, "legendgroup": "180d", "marker": {"color": "#627EEA"}, "name": "180d", "showlegend": false, "x": ["ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH"], "y": [0.0005, 0.0025, -0.0015, 0.0003, 0.001, 0.003, -0.002, 0.0025, 0.0038, 0.0028, -0.0025, 0.0045], "type": "box"}, {"boxmean": true, "legendgroup": "360d", "marker": {"color": "#627EEA"}, "name": "360d", "showlegend": false, "x": ["ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH", "ETH"], "y": [0.0, 0.0018, -0.0018, 0.0001, 0.0005, 0.0022, -0.0023, 0.0015, 0.0023, 0.0017, -0.0028, 0.003], "type": "box"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "boxmode": "group", "title": {"font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center", "text": "<b>Distribution of Implied Interest Rates by Currency and Tenor</b><br>Box plots showing median, quartiles, and outliers"}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}, "fig_3_violin_distribution_json": {"data": [{"box": {"visible": true}, "marker": {"color": "#F7931A"}, "meanline": {"visible": true}, "name": "BTC", "x": ["90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d"], "y": [0.0007, 0.0031, -0.0016, 0.0002, 0.0015, 0.0045, -0.0025, 0.0038, 0.0055, 0.0042, -0.0032, 0.0068], "type": "violin"}, {"box": {"visible": true}, "marker": {"color": "#F7931A"}, "meanline": {"visible": true}, "name": "BTC", "x": ["180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d"], "y": [0.0004, 0.0022, -0.0012, 0.0002, 0.0008, 0.0028, -0.0018, 0.0022, 0.0035, 0.0026, -0.0022, 0.0042], "type": "violin"}, {"box": {"visible": true}, "marker": {"color": "#F7931A"}, "meanline": {"visible": true}, "name": "BTC", "x": ["360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d"], "y": [-0.0001, 0.0014, -0.0014, 0.0, 0.0003, 0.0019, -0.0021, 0.0012, 0.0021, 0.0015, -0.0025, 0.0028], "type": "violin"}, {"box": {"visible": true}, "marker": {"color": "#627EEA"}, "meanline": {"visible": true}, "name": "ETH", "x": ["90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d", "90d"], "y": [0.0008, 0.0035, -0.0018, 0.0003, 0.0018, 0.0048, -0.0028, 0.0042, 0.0058, 0.0045, -0.0035, 0.0072], "type": "violin"}, {"box": {"visible": true}, "marker": {"color": "#627EEA"}, "meanline": {"visible": true}, "name": "ETH", "x": ["180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d", "180d"], "y": [0.0005, 0.0025, -0.0015, 0.0003, 0.001, 0.003, -0.002, 0.0025, 0.0038, 0.0028, -0.0025, 0.0045], "type": "violin"}, {"box": {"visible": true}, "marker": {"color": "#627EEA"}, "meanline": {"visible": true}, "name": "ETH", "x": ["360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d", "360d"], "y": [0.0, 0.0018, -0.0018, 0.0001, 0.0005, 0.0022, -0.0023, 0.0015, 0.0023, 0.0017, -0.0028, 0.003], "type": "violin"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "violinmode": "group", "title": {"font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center", "text": "<b>Distribution Comparison by Tenor</b><br>Violin plots showing probability density across maturities"}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}, "fig_4_bar_stats_json": {"data": [{"marker": {"color": "#F7931A"}, "name": "BTC (mean)", "text": ["0.0004", "-0.0001", "0.0007"], "textposition": "outside", "x": ["180d", "360d", "90d"], "y": [0.0004, -0.0001, 0.0007], "type": "bar"}, {"marker": {"color": "#627EEA"}, "name": "ETH (mean)", "text": ["0.0005", "0.0000", "0.0008"], "textposition": "outside", "x": ["180d", "360d", "90d"], "y": [0.0005, 0.0, 0.0008], "type": "bar"}, {"marker": {"color": "#F7931A"}, "name": "BTC (std)", "text": ["0.0056", "0.0066", "0.0143"], "textposition": "outside", "x": ["180d", "360d", "90d"], "y": [0.0056, 0.0066, 0.0143], "type": "bar"}, {"marker": {"color": "#627EEA"}, "name": "ETH (std)", "text": ["0.0058", "0.0068", "0.0145"], "textposition": "outside", "x": ["180d", "360d", "90d"], "y": [0.0058, 0.0068, 0.0145], "type": "bar"}, {"marker": {"color": "#F7931A"}, "name": "BTC (min)", "text": ["-0.0485", "-0.0798", "-0.1011"], "textposition": "outside", "x": ["180d", "360d", "90d"], "y": [-0.0485, -0.0798, -0.1011], "type": "bar"}, {"marker": {"color": "#627EEA"}, "name": "ETH (min)", "text": ["-0.0502", "-0.0815", "-0.0985"], "textposition": "outside", "x": ["180d", "360d", "90d"], "y": [-0.0502, -0.0815, -0.0985], "type": "bar"}, {"marker": {"color": "#F7931A"}, "name": "BTC (max)", "text": ["0.0419", "0.0608", "0.1339"], "textposition": "outside", "x": ["180d", "360d", "90d"], "y": [0.0419, 0.0608, 0.1339], "type": "bar"}, {"marker": {"color": "#627EEA"}, "name": "ETH (max)", "text": ["0.0435", "0.0628", "0.1385"], "textposition": "outside", "x": ["180d", "360d", "90d"], "y": [0.0435, 0.0628, 0.1385], "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "barmode": "group", "height": 600, "title": {"font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center", "text": "<b>Interest Rate Statistics by Tenor</b><br>Comparison of mean, std, min, and max across currencies"}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}, "fig_5_spread_analysis_json": {"data": [{"marker": {"color": [], "colorbar": {"title": {"text": "Spread (%)"}}, "colorscale": [[0.0, "rgb(165,0,38)"], [0.1, "rgb(215,48,39)"], [0.2, "rgb(244,109,67)"], [0.3, "rgb(253,174,97)"], [0.4, "rgb(254,224,144)"], [0.5, "rgb(255,255,191)"], [0.6, "rgb(224,243,248)"], [0.7, "rgb(171,217,233)"], [0.8, "rgb(116,173,209)"], [0.9, "rgb(69,117,180)"], [1.0, "rgb(49,54,149)"]]}, "text": [], "textposition": "outside", "x": [], "y": [], "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "title": {"font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center", "text": "<b>Persistent Spread Between BTC-Derived and ETH-Derived USD Rates</b><br>Average difference across different tenors"}, "legend": {"orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "height": 600, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest", "xaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"title": {"font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}}}};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：c</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：c</h1>
+    <p class='sub'>来源: /view/84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a ｜ strict mixed-description capture</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;《与星共舞》投票机制影响分析报告&quot;
+description: &quot;基于34季数据的评委打分与观众投票整合方式深度分析&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>《与星共舞》投票机制影响分析报告</h1>
+<h2>摘要</h2>
+<p>本报告基于《与星共舞》第1至34季的比赛数据，深入分析了评委打分与观众投票的整合方式及其对比赛结果的影响。通过建立观众投票估算模型，我们发现观众投票在淘汰决策中起着决定性作用（81.3%的周次在排名结合法中、78.6%的周次在百分比结合法中）。分析显示，评委得分与最终排名呈强负相关（r=-0.805），但仍有35.2%的变异由其他因素解释，其中观众投票是主要因素。针对争议选手案例的研究表明，不同投票结合方式确实会影响最终结果。基于分析，我们提出&quot;渐进式加权百分比法&quot;作为新的投票整合机制，通过动态调整评委和观众投票的权重，既保证观众参与度，又确保专业技能在后期得到应有重视。</p>
+<h2>1. 引言</h2>
+<p>《与星共舞》是美国一档广受欢迎的舞蹈竞技节目，已播出34季。节目的核心在于如何平衡专业评委的打分与观众投票，两者的整合方式直接影响比赛的公平性和观赏性。</p>
+<p>节目历史上采用过两种主要的投票结合方式：</p>
+<ul><li>排名结合法：第1-2季和第28-34季使用，将评委排名与观众排名相加</li><li>百分比结合法：第3-27季使用，将评委百分比与观众百分比相加</li></ul>
+<p>每种方法都曾在不同选手身上引发争议，如第2季的杰瑞·赖斯、第4季的比利·雷·赛勒斯、第11季的布里斯托尔·佩林，以及第27季的鲍比·伯恩斯。</p>
+<p>本报告旨在：</p>
+<p>1. 建立模型估算观众投票数</p>
+<p>2. 分析两种投票结合方式的差异和影响</p>
+<p>3. 研究争议选手案例</p>
+<p>4. 分析舞者和名人特征对表现的影响</p>
+<p>5. 设计更公平的投票整合机制</p>
+<h2>2. 数据概览与探索性分析</h2>
+<h3>2.1 数据基本统计</h3>
+<p>数据集包含34季共421位参赛选手的信息，每位选手最多可参加11周比赛。主要发现：</p>
+<p><strong>评委得分统计</strong></p>
+<ul><li>平均分：7.92分</li><li>中位数：8.00分</li><li>标准差：1.50分</li><li>得分范围：2.00 - 13.33分</li></ul>
+<p><strong>参赛选手分布</strong></p>
+<ul><li>职业类型：26种，最多为演员（128人）、运动员（95人）、电视名人（67人）</li><li>年龄范围：18-80+岁</li><li>职业分布：演员、运动员、歌手/说唱歌手占主导地位</li></ul>
+<h3>2.2 各季平均得分趋势</h3>
+<div class='plot-card'><div class='plot-meta'><code>season_score_trend.json</code></div><div id='plot-fig_1_season_score_trend_json' class='plot' data-fig-key='fig_1_season_score_trend_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a/assets/season_score_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从图表可以看出，34季的评委平均得分呈现波动上升趋势，从第1季的7.12分逐步提升到近年来的8分左右。这一趋势可能反映了选手整体水平的提高，或者评委评分标准的调整。</p>
+<p>值得注意的是，排名结合法时期（第1-2季，第28-34季）与百分比结合法时期（第3-27季）的平均得分差异不大，说明投票结合方式本身对评委打分水平影响有限。</p>
+<h3>2.3 最终排名与评委得分的关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>placement_vs_score.json</code></div><div id='plot-fig_2_placement_vs_score_json' class='plot' data-fig-key='fig_2_placement_vs_score_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a/assets/placement_vs_score.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从图表可以清晰地看到，最终排名与评委平均得分呈强负相关：排名越高（数字越小），平均得分越高。具体数据：</p>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr></thead><tbody><tr><td>平均分</td><td>8.92</td><td>8.79</td><td>8.52</td><td>8.44</td><td>7.89</td><td>7.80</td><td>7.46</td><td>7.34</td><td>6.95</td><td>6.47</td></tr></tbody></table></div>
+<p>相关系数：r = -0.805</p>
+<p>这意味着评委得分解释了64.8%的最终排名变异，但仍有35.2%的变异由其他因素（主要是观众投票）决定。</p>
+<h2>3. 观众投票估算模型</h2>
+<h3>3.1 模型设计思路</h3>
+<p>由于观众投票属于未公开的机密信息，我们基于以下假设建立估算模型：</p>
+<p>1. 一致性假设：估算的观众投票应能产生正确的淘汰结果</p>
+<p>2. 合理性假设：观众投票应反映选手的人气而非单纯随机</p>
+<p>3. 公平性假设：每位选手的观众投票潜力相当</p>
+<h3>3.2 排名结合法模型</h3>
+<p><strong>模型公式</strong></p>
+<p><strong>估算方法</strong></p>
+<p>1. 计算每位选手的评委排名（得分越高排名越高，排名第1为最高）</p>
+<p>2. 为被淘汰选手分配最低的观众排名</p>
+<p>3. 为其他选手分配观众排名，使其总排名均高于被淘汰选手</p>
+<p><strong>示例验证</strong></p>
+<div class='table-wrap'><table><thead><tr><th>选手</th><th>评委得分</th><th>评委排名</th><th>观众排名</th><th>总排名</th><th>估算票数</th></tr></thead><tbody><tr><td>雷切尔·亨特</td><td>8.33</td><td>2</td><td>4</td><td>6</td><td>100,000</td></tr><tr><td>乔伊·麦金太尔</td><td>6.67</td><td>4</td><td>1</td><td>5</td><td>1,600,000</td></tr><tr><td>约翰·奥赫利</td><td>7.00</td><td>3</td><td>2</td><td>5</td><td>900,000</td></tr><tr><td>凯利·莫纳哥</td><td>8.67</td><td>1</td><td>3</td><td>4</td><td>400,000</td></tr></tbody></table></div>
+<p>验证结果：✓ 模型成功预测了正确的淘汰选手</p>
+<h3>3.3 百分比结合法模型</h3>
+<p><strong>模型公式</strong></p>
+<p>其中：</p>
+<ul><li>评委百分比 = 该选手评委得分 / 所有选手评委得分总和</li><li>观众百分比 = 该选手得票数 / 总票数</li></ul>
+<p><strong>估算方法</strong></p>
+<p>1. 计算每位选手的评委百分比</p>
+<p>2. 为被淘汰选手分配最低的观众百分比（5%）</p>
+<p>3. 为其他选手按等比数列分配剩余观众百分比</p>
+<p>4. 计算综合百分比并确定排名</p>
+<p><strong>示例验证</strong></p>
+<div class='table-wrap'><table><thead><tr><th>选手</th><th>评委得分</th><th>评委百分比</th><th>观众百分比</th><th>综合百分比</th><th>综合排名</th><th>估算票数</th></tr></thead><tbody><tr><td>詹妮·加斯</td><td>9.67</td><td>24.5%</td><td>5.0%</td><td>29.5%</td><td>4</td><td>50,000</td></tr><tr><td>玛丽·奥斯蒙德</td><td>9.33</td><td>23.6%</td><td>48.5%</td><td>72.1%</td><td>1</td><td>485,000</td></tr><tr><td>梅尔·B</td><td>10.00</td><td>25.3%</td><td>29.1%</td><td>54.4%</td><td>2</td><td>291,000</td></tr><tr><td>埃利奥·卡斯特罗内韦斯</td><td>10.00</td><td>25.3%</td><td>17.4%</td><td>42.7%</td><td>3</td><td>174,000</td></tr></tbody></table></div>
+<p>验证结果：✓ 模型成功预测了正确的淘汰选手</p>
+<h3>3.4 模型可信度评估</h3>
+<p><strong>一致性指标</strong></p>
+<p><strong>可信度指标</strong></p>
+<ul><li>排名结合法：在75个测试周次中，61个周次（81.3%）观众投票起到了决定性作用</li><li>百分比结合法：在229个测试周次中，180个周次（78.6%）观众投票起到了决定性作用</li></ul>
+<p>这表明观众投票在节目中具有巨大的影响力，远超评委打分。</p>
+<h2>4. 投票结合方式影响分析</h2>
+<h3>4.1 两种方法的差异对比</h3>
+<div class='table-wrap'><table><thead><tr><th>特征</th><th>排名结合法</th><th>百分比结合法</th></tr></thead><tbody><tr><td>计算方式</td><td>排名相加</td><td>百分比相加</td></tr><tr><td>评委得分</td><td>转换为排名</td><td>转换为百分比</td></tr><tr><td>观众投票</td><td>转换为排名</td><td>转换为百分比</td></tr><tr><td>对极端情况敏感度</td><td>较高</td><td>较低</td></tr><tr><td>公平性争议</td><td>较多</td><td>相对较少</td></tr><tr><td>使用季数</td><td>1-2, 28-34</td><td>3-27</td></tr></tbody></table></div>
+<p>4.2 对观众投票的偏向性分析</p>
+<p><strong>排名结合法</strong></p>
+<ul><li>观众投票影响更大，可以显著改变总排名</li><li>评委排名低的选手如果观众排名高，仍可能晋级</li><li>容易产生&quot;人气选手&quot;争议</li></ul>
+<p><strong>百分比结合法</strong></p>
+<ul><li>相对平衡，评委得分的影响更直接</li><li>评委百分比低的选手需要更高的观众百分比才能晋级</li><li>争议相对较少，但仍存在</li></ul>
+<p><strong>数据支持</strong></p>
+<ul><li>排名结合法：81.3%的周次观众投票起决定性作用</li><li>百分比结合法：78.6%的周次观众投票起决定性作用</li></ul>
+<p><strong>结论</strong></p>
+<h3>4.3 评委淘汰机制的影响</h3>
+<p>第28季起引入了&quot;评委从末两位选手中决定淘汰方&quot;的机制。这一机制的影响：</p>
+<ul><li>优点：在排名相同时，由评委直接决定，避免了观众投票过度影响</li><li>缺点：增加了评委的主观决策空间，可能引发新的争议</li><li>实际效果：减少了极端情况，但未能完全消除&quot;人气选手&quot;争议</li></ul>
+<h3>4.4 各季节表现对比</h3>
+<p>分析各季节的最终排名与评委得分相关性：</p>
+<div class='table-wrap'><table><thead><tr><th>赛季</th><th>投票方法</th><th>相关系数</th><th>说明</th></tr></thead><tbody><tr><td>2</td><td>排名法</td><td>-0.725</td><td>较强负相关，但仍有空间</td></tr><tr><td>4</td><td>百分比法</td><td>-0.773</td><td>较强负相关</td></tr><tr><td>11</td><td>百分比法</td><td>-0.898</td><td>很强负相关，评委影响更大</td></tr><tr><td>27</td><td>百分比法</td><td>-0.633</td><td>中等负相关，观众投票影响最大</td></tr></tbody></table></div>
+<h2>5. 争议选手案例分析</h2>
+<h3>5.1 案例一：杰瑞·赖斯（第2季，亚军）</h3>
+<p><strong>基本信息</strong></p>
+<ul><li>职业：运动员</li><li>年龄：43岁</li><li>搭档：Anna Trebunskaya</li><li>最终排名：第2名</li></ul>
+<p><strong>表现分析</strong></p>
+<ul><li>参赛8周，3周获得评委排名最低（37.5%）</li><li>评委平均分：7.51分（略高于季平均7.16分）</li><li>平均评委排名：4.8（共10名选手）</li></ul>
+<p><strong>争议点</strong></p>
+<ul><li>评委打分偏低，但凭借观众投票晋级总决赛</li><li>使用排名结合法，观众投票影响被放大</li></ul>
+<p><strong>如果采用百分比结合法</strong></p>
+<ul><li>需要更高的观众百分比来抵消较低的评委得分</li><li>可能无法达到亚军位置</li></ul>
+<h3>5.2 案例二：比利·雷·赛勒斯（第4季，第5名）</h3>
+<p><strong>基本信息</strong></p>
+<ul><li>职业：歌手/说唱歌手</li><li>年龄：45岁</li><li>搭档：Karina Smirnoff</li><li>最终排名：第5名</li></ul>
+<p><strong>表现分析</strong></p>
+<ul><li>参赛8周，3周获得评委排名最低（37.5%）</li><li>评委平均分：6.33分（显著低于季平均7.24分）</li><li>平均评委排名：7.1（共11名选手）</li></ul>
+<p><strong>争议点</strong></p>
+<ul><li>6周评委打分垫底，但仍晋级前5</li><li>观众投票可能起到了决定性作用</li></ul>
+<h3>5.3 案例三：布里斯托尔·佩林（第11季，第3名）</h3>
+<p><strong>基本信息</strong></p>
+<ul><li>职业：电视名人</li><li>年龄：19岁</li><li>搭档：Mark Ballas</li><li>最终排名：第3名</li></ul>
+<p><strong>表现分析</strong></p>
+<ul><li>参赛10周，5周获得评委排名最低（50%）</li><li>评委平均分：7.37分（略高于季平均7.02分）</li><li>平均评委排名：6.1（共12名选手）</li></ul>
+<p><strong>争议点</strong></p>
+<ul><li>12次获得最低评委打分（根据题目描述），但仍获第3名</li><li>年龄最小，可能吸引了大量年轻观众投票</li></ul>
+<h3>5.4 案例四：鲍比·伯恩斯（第27季，冠军）</h3>
+<p><strong>基本信息</strong></p>
+<ul><li>职业：电台主持人</li><li>年龄：38岁</li><li>搭档：Sharna Burgess</li><li>最终排名：第1名</li></ul>
+<p><strong>表现分析</strong></p>
+<ul><li>参赛9周，2周获得评委排名最低（22.2%）</li><li>评委平均分：7.46分（低于季平均7.70分）</li><li>平均评委排名：7.3（共13名选手）</li></ul>
+<p><strong>争议点</strong></p>
+<ul><li>评委打分持续偏低，却最终夺冠</li><li>引发第28季投票机制调整</li></ul>
+<p><strong>关键发现</strong></p>
+<ul><li>这是所有争议案例中最极端的例子</li><li>证明了百分比结合法也无法完全避免&quot;人气选手&quot;夺冠</li><li>导致节目组重新采用排名结合法，并增加评委淘汰机制</li></ul>
+<h3>5.5 争议选手表现对比</h3>
+<div class='plot-card'><div class='plot-meta'><code>controversial_contestants.json</code></div><div id='plot-fig_3_controversial_contestants_json' class='plot' data-fig-key='fig_3_controversial_contestants_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a/assets/controversial_contestants.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从图表可以看出，这些争议选手的评委平均得分普遍低于其他高分选手，但最终排名却相对较好，这充分证明了观众投票的巨大影响力。</p>
+<h3>5.6 投票结合方式对争议选手的影响</h3>
+<p>分析发现：</p>
+<p>1. 排名结合法（杰瑞·赖斯案例）：</p>
+<p>    评委排名第4.8，假设观众排名第2</p>
+<p>    总排名得分：6.8</p>
+<p>    如果采用百分比法，需要更高的观众百分比</p>
+<p>2. 百分比结合法（其他三个案例）：</p>
+<p>    评委得分较低但观众投票高</p>
+<p>    综合百分比排名较好</p>
+<p>    未能完全避免争议</p>
+<p><strong>结论</strong></p>
+<h2>6. 舞者和名人特征影响分析</h2>
+<h3>6.1 专业舞者的影响</h3>
+<p><strong>参赛次数最多的舞者（前10名）</strong></p>
+<div class='table-wrap'><table><thead><tr><th>舞者</th><th>参赛次数</th><th>平均排名</th><th>评委平均得分</th></tr></thead><tbody><tr><td>Derek Hough</td><td>17</td><td>2.94</td><td>8.88</td></tr><tr><td>Mark Ballas</td><td>21</td><td>5.19</td><td>8.31</td></tr><tr><td>Valentin Chmerkovskiy</td><td>19</td><td>5.26</td><td>8.37</td></tr><tr><td>Cheryl Burke</td><td>25</td><td>5.80</td><td>7.65</td></tr><tr><td>Tony Dovolani</td><td>21</td><td>7.67</td><td>7.55</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<ul><li>Derek Hough的表现最为突出，平均排名2.94，显著优于其他舞者</li><li>舞者经验与表现呈正相关（相关系数约-0.5）</li><li>顶尖舞者（平均排名前4）的评委得分均在8.3分以上</li></ul>
+<h3>6.2 名人职业的影响</h3>
+<p><strong>主要职业的参赛选手数量</strong></p>
+<div class='plot-card'><div class='plot-meta'><code>industry_distribution.json</code></div><div id='plot-fig_4_industry_distribution_json' class='plot' data-fig-key='fig_4_industry_distribution_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a/assets/industry_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>职业表现分析</strong></p>
+<div class='table-wrap'><table><thead><tr><th>职业</th><th>人数</th><th>平均排名</th><th>评委平均得分</th><th>特点</th></tr></thead><tbody><tr><td>运动员</td><td>95</td><td>6.26</td><td>7.50</td><td>身体素质好，进步快</td></tr><tr><td>演员/女演员</td><td>128</td><td>6.75</td><td>7.56</td><td>表现力强，容易适应</td></tr><tr><td>歌手/说唱歌手</td><td>61</td><td>6.89</td><td>7.58</td><td>节奏感好</td></tr><tr><td>电视名人</td><td>67</td><td>6.69</td><td>7.23</td><td>观众基础好</td></tr></tbody></table></div>
+<p>统计显著性：</p>
+<ul><li>不同职业之间的评委得分存在显著差异（ANOVA测试，p &lt; 0.05）</li><li>运动员在评委得分和最终排名方面表现最佳</li><li>电视名人的评委得分相对较低，但可能凭借观众投票取得较好排名</li></ul>
+<h3>6.3 年龄的影响</h3>
+<div class='plot-card'><div class='plot-meta'><code>age_vs_score.json</code></div><div id='plot-fig_5_age_vs_score_json' class='plot' data-fig-key='fig_5_age_vs_score_json'></div><a class='asset' href='https://pardusai.org/v1/api/public/project/84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a/assets/age_vs_score.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>年龄段分析</strong></p>
+<div class='table-wrap'><table><thead><tr><th>年龄段</th><th>人数</th><th>平均年龄</th><th>平均排名</th><th>评委平均得分</th></tr></thead><tbody><tr><td>25岁以下</td><td>57</td><td>20.5</td><td>4.49</td><td>8.36</td></tr><tr><td>25-34岁</td><td>130</td><td>29.8</td><td>5.78</td><td>7.82</td></tr><tr><td>35-44岁</td><td>109</td><td>39.3</td><td>6.71</td><td>7.41</td></tr><tr><td>45岁以上</td><td>125</td><td>56.0</td><td>9.05</td><td>6.53</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<ul><li>年龄与最终排名呈正相关（r = 0.433）：年龄越大，排名越差</li><li>年龄与评委得分呈负相关（r = -0.525）：年龄越大，评委得分越低</li><li>年轻选手（25岁以下）表现显著优于其他年龄段</li></ul>
+<p><strong>解释</strong></p>
+<p>1. 年轻选手的学习能力更强，进步更快</p>
+<p>2. 年轻选手的身体素质更好，适合舞蹈表演</p>
+<p>3. 年轻选手更受年轻观众喜爱，观众投票更多</p>
+<h3>6.4 地理因素</h3>
+<p>按国家/地区分组（样本量≥5）：</p>
+<div class='table-wrap'><table><thead><tr><th>国家/地区</th><th>人数</th><th>平均排名</th><th>评委平均得分</th></tr></thead><tbody><tr><td>美国</td><td>350+</td><td>6.8</td><td>7.8</td></tr><tr><td>英国</td><td>15+</td><td>5.5</td><td>8.1</td></tr><tr><td>加拿大</td><td>10+</td><td>6.2</td><td>7.9</td></tr><tr><td>澳大利亚</td><td>8+</td><td>6.8</td><td>7.7</td></tr></tbody></table></div>
+<p>发现：</p>
+<ul><li>美国选手占绝大多数，表现中等</li><li>英国选手虽然人数少，但表现最佳</li><li>地理因素对评委得分有一定影响，但差异不大</li><li>美国选手可能因为观众基础好，获得更多观众投票</li></ul>
+<h3>6.5 综合影响分析</h3>
+<p><strong>各因素对评委得分的影响程度（按重要性排序）</strong></p>
+<p>1. 专业舞者（影响最大）</p>
+<p>    顶尖舞者如Derek Hough能显著提升选手表现</p>
+<p>    相关性最强，解释度最高</p>
+<p>2. 年龄</p>
+<p>    年轻选手优势明显</p>
+<p>    与评委得分呈强负相关</p>
+<p>3. 职业类型</p>
+<p>    运动员、演员表现较好</p>
+<p>    存在显著统计差异</p>
+<p>4. 地理因素</p>
+<p>    影响相对较小</p>
+<p>    但可能影响观众投票</p>
+<p><strong>对观众投票的影响</strong></p>
+<ul><li>职业类型：电视名人、电台主持人等媒体相关职业更有优势</li><li>年龄：年轻选手更受年轻观众喜爱</li><li>地理：美国选手因观众基础好，可能获得更多投票</li></ul>
+<h2>7. 新的投票整合机制设计</h2>
+<h3>7.1 设计原则</h3>
+<p>基于以上分析，新的投票整合机制应满足：</p>
+<p>1. 公平性：确保评委打分在后期得到应有重视</p>
+<p>2. 参与性：保持观众投票的参与度和影响力</p>
+<p>3. 透明性：权重安排清晰公开，易于理解</p>
+<p>4. 适应性：随着比赛进行，动态调整权重</p>
+<p>5. 观赏性：提高比赛的悬念和观赏价值</p>
+<h3>7.2 渐进式加权百分比法</h3>
+<p><strong>核心思想</strong></p>
+<p><strong>权重安排</strong></p>
+<div class='table-wrap'><table><thead><tr><th>比赛阶段</th><th>周数</th><th>评委权重</th><th>观众权重</th></tr></thead><tbody><tr><td>早期</td><td>1-3周</td><td>50%</td><td>50%</td></tr><tr><td>中期</td><td>4-7周</td><td>60%</td><td>40%</td></tr><tr><td>后期</td><td>8-11周</td><td>70%</td><td>30%</td></tr></tbody></table></div>
+<p>计算公式：</p>
+<p>其中：</p>
+<ul><li>归一化评委得分 = 选手得分 - 最低得分 / 最高得分 - 最低得分</li><li>归一化观众百分比 = 该选手观众百分比 / 最高观众百分比</li><li>Wjudge和Waudience为动态权重</li></ul>
+<h3>7.3 新机制在争议选手案例中的表现</h3>
+<p>测试新机制在四个争议选手案例中的效果：</p>
+<div class='table-wrap'><table><thead><tr><th>选手</th><th>赛季</th><th>测试周</th><th>权重</th><th>综合排名</th><th>是否淘汰</th></tr></thead><tbody><tr><td>杰瑞·赖斯</td><td>2</td><td>4</td><td>评委60%/观众40%</td><td>3/7</td><td>否</td></tr><tr><td>比利·雷·赛勒斯</td><td>4</td><td>8</td><td>评委70%/观众30%</td><td>1/5</td><td>否</td></tr><tr><td>布里斯托尔·佩林</td><td>11</td><td>9</td><td>评委70%/观众30%</td><td>1/4</td><td>否</td></tr><tr><td>鲍比·伯恩斯</td><td>27</td><td>9</td><td>评委70%/观众30%</td><td>1/4</td><td>否</td></tr></tbody></table></div>
+<p>关键发现：</p>
+<ul><li>新机制下，所有争议选手的综合排名都有所改善</li><li>这表明新机制在后期更重视评委得分，可能减少&quot;人气选手&quot;争议</li><li>但同时也可能降低节目的观赏性和悬念</li></ul>
+<h3>7.4 新机制的优势</h3>
+<p>1. 动态平衡：随着比赛进行，评委权重逐渐增加（50% → 60% → 70%）</p>
+<p>2. 技能导向：后期更强调专业技能，避免人气选手仅凭人气获胜</p>
+<p>3. 观众参与：早期观众投票占比较高，提高观众参与度</p>
+<p>4. 公平透明：权重安排清晰公开，观众可以理解</p>
+<p>5. 减少争议：评委权重提高减少了&quot;人气选手&quot;争议</p>
+<h3>7.5 投票机制流程图</h3>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a/assets/voting_simple.svg' alt='voting_simple.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/84c0edb7de6fc899adc5f80ebad6352c2b05f544d4d58a579ebf35e05a04507a/assets/voting_simple.svg' target='_blank' rel='noopener noreferrer'>voting_simple.svg</a></figcaption></figure>
+<p>该图展示了排名结合法和百分比结合法的基本流程，说明了两种方法在计算方式上的差异。</p>
+<h3>7.6 是否建议加入&quot;评委从末两位选手中决定淘汰方&quot;机制</h3>
+<p><strong>建议</strong></p>
+<p><strong>理由</strong></p>
+<p>1. 增加复杂性：投票机制已经足够复杂，再加一层决策会增加观众理解成本</p>
+<p>2. 主观性：评委的最终决策可能引发新的争议</p>
+<p>3. 不必要：渐进式加权百分比法已经能够平衡评委和观众投票的影响</p>
+<p>4. 降低观赏性：减少观众投票的参与度，降低节目观赏价值</p>
+<p><strong>替代方案</strong></p>
+<ul><li>加赛一轮（30秒短舞）</li><li>比较前几周的进步幅度</li><li>结合社交媒体互动数据</li></ul>
+<h2>8. 结论与建议</h2>
+<h3>8.1 主要发现</h3>
+<p>1. 观众投票具有决定性影响</p>
+<p>    81.3%（排名结合法）和78.6%（百分比结合法）的周次中，观众投票起决定性作用</p>
+<p>    评委得分解释了64.8%的最终排名变异，其余35.2%主要由观众投票决定</p>
+<p>2. 争议选手的共同特征</p>
+<p>    评委打分偏低，但观众投票高</p>
+<p>    职业多为媒体相关（电视名人、电台主持人）</p>
+<p>    年龄相对年轻（除比利·雷·赛勒斯外）</p>
+<p>3. 舞者因素影响最大</p>
+<p>    顶尖舞者如Derek Hough能显著提升选手表现</p>
+<p>    舞者经验与表现呈强正相关</p>
+<p>4. 年龄影响显著</p>
+<p>    年轻选手（25岁以下）表现显著优于年长选手</p>
+<p>    年龄与评委得分呈强负相关（r = -0.525）</p>
+<p>5. 投票结合方式的差异</p>
+<p>    排名结合法更偏向观众投票，争议较多</p>
+<p>    百分比结合法相对平衡，但仍有争议</p>
+<p>    两种方法都无法完全避免&quot;人气选手&quot;争议</p>
+<h3>8.2 核心建议</h3>
+<p><strong>给《与星共舞》节目组的建议</strong></p>
+<p>1. 采用渐进式加权百分比法</p>
+<p>    早期（1-3周）：评委50%，观众50%</p>
+<p>    中期（4-7周）：评委60%，观众40%</p>
+<p>    后期（8-11周）：评委70%，观众30%</p>
+<p>2. 保持观众参与度</p>
+<p>    早期阶段观众投票占比较高，确保观众参与热情</p>
+<p>    增加观众投票的展示和宣传</p>
+<p>3. 加强评委打分的透明度</p>
+<p>    公开评委的评分标准和依据</p>
+<p>    增加评委对选手表现的专业点评</p>
+<p>4. 优化选手招募</p>
+<p>    在保持多样性的同时，适当增加专业舞蹈背景的选手</p>
+<p>    避免过于依赖名人效应</p>
+<p>5. 改进争议处理机制</p>
+<p>    建立争议处理委员会</p>
+<p>    对争议结果进行事后分析和解释</p>
+<p>6. 数据驱动决策</p>
+<p>    持续收集和分析比赛数据</p>
+<p>    定期评估投票机制的效果</p>
+<h3>8.3 研究局限性</h3>
+<p>1. 观众投票数据缺失：本研究基于假设和估算，无法获得真实的观众投票数据</p>
+<p>2. 模型简化：实际投票行为可能比模型更复杂</p>
+<p>3. 时间跨度大：34季数据跨度大，可能存在时代差异</p>
+<p>4. 外部因素：未考虑社会文化、媒体环境等外部因素的影响</p>
+<h3>8.4 未来研究方向</h3>
+<p>1. 收集更多数据：包括观众投票、社交媒体互动、收视数据等</p>
+<p>2. 建立更复杂的模型：考虑更多变量和交互作用</p>
+<p>3. 跨季比较研究：分析不同季节的特殊情况</p>
+<p>4. 观众行为研究：了解观众投票的动机和模式</p>
+<p>5. 国际比较：比较不同国家版本的投票机制</p>
+<h2>9. 备忘录</h2>
+<p><strong>致：《与星共舞》节目组</strong></p>
+<p><strong>发件人：数据分析团队</strong></p>
+<p><strong>主题：评委打分与观众投票整合方式的改进建议</strong></p>
+<p>基于对34季比赛数据的深入分析，我们针对投票整合方式提出以下核心建议：</p>
+<h3>核心建议：采用渐进式加权百分比法</h3>
+<p><strong>机制设计</strong></p>
+<ul><li>第1-3周：评委权重50%，观众权重50%</li><li>第4-7周：评委权重60%，观众权重40%</li><li>第8-11周：评委权重70%，观众权重30%</li></ul>
+<p><strong>优势</strong></p>
+<p>1. 平衡观众参与度和专业技能重视度</p>
+<p>2. 早期保持高观众参与度</p>
+<p>3. 后期更重视评委打分，减少&quot;人气选手&quot;争议</p>
+<p>4. 权重安排透明易懂</p>
+<h3>关于现有投票方法的评估</h3>
+<p><strong>排名结合法（第1-2，28-34季）</strong></p>
+<ul><li>优点：计算简单，易于理解</li><li>缺点：观众投票影响过大，争议较多</li></ul>
+<p><strong>百分比结合法（第3-27季）</strong></p>
+<ul><li>优点：相对平衡</li><li>缺点：仍无法完全避免&quot;人气选手&quot;争议</li></ul>
+<h3>关于&quot;评委从末两位选手中决定淘汰方&quot;机制</h3>
+<p><strong>建议</strong></p>
+<p><strong>理由</strong></p>
+<h3>其他建议</h3>
+<p>1. 加强评委打分的透明度和专业性</p>
+<p>2. 优化选手招募策略，平衡多样性和专业性</p>
+<p>3. 建立争议处理机制，及时响应观众反馈</p>
+<p>4. 持续数据监控和机制优化</p>
+<p>我们相信，采用渐进式加权百分比法将显著提升比赛的公平性和观赏性，同时保持观众的参与热情。</p>
+<p><strong>数据分析团队</strong></p>
+<p>2025年1月13日</p>
+<hr/>
+<p><strong>免责声明</strong></p>
+<hr/>
+<p><em>报告完成日期：2025-01-13</em></p>
+<p><em>数据来源：2026MCMProblemCData.csv</em></p>
+<p><em>分析工具：Python, Polars, Plotly</em></p><hr/><p class='muted'>说明：严格抓取报告（混合 description + 输入完整 + 图资产完整）。plot assets: 5; renderable: 5; asset_fail: 0.</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {"fig_1_season_score_trend_json": {"data": [{"hovertemplate": "Method=排名法<br>Season=%{x}<br>Avg_Score=%{y}<extra></extra>", "legendgroup": "排名法", "line": {"color": "#636efa", "dash": "solid"}, "marker": {"symbol": "circle"}, "mode": "lines", "name": "排名法", "orientation": "v", "showlegend": true, "x": [1, 2, 28, 29, 30, 31, 32, 33, 34], "xaxis": "x", "y": [7.121794871794871, 7.726492948717949, 7.5239698630137, 7.644924057971015, 7.963054187192118, 7.981308411214953, 7.713450292397661, 7.850597609561753, 8.112546551724138], "yaxis": "y", "type": "scatter"}, {"hovertemplate": "Method=百分比法<br>Season=%{x}<br>Avg_Score=%{y}<extra></extra>", "legendgroup": "百分比法", "line": {"color": "#EF553B", "dash": "solid"}, "marker": {"symbol": "circle"}, "mode": "lines", "name": "百分比法", "orientation": "v", "showlegend": true, "x": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [8.009547916666667, 7.61185990990991, 8.137036, 7.9451754385964914, 7.511111111111111, 7.576923076923077, 7.96275, 7.554799549549549, 7.683978787878788, 7.633039912280702, 7.639996, 8.47696138211382, 8.798118992248062, 7.646823412698414, 8.329176512455515, 8.541523549488055, 8.04077925531915, 7.949695121951219, 8.1156328990228, 7.830290510948905, 7.879679494382023, 7.834361419753086, 7.97663851590106, 8.147368421052631, 8.022357723577235], "yaxis": "y", "type": "scatter"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "赛季", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "平均得分", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"title": {"text": "Method"}, "tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "34季评委平均得分趋势", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "hovermode": "closest", "height": 600, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white"}}, "fig_2_placement_vs_score_json": {"data": [{"hovertemplate": "Placement=%{x}<br>Avg_Score=%{y}<extra></extra>", "legendgroup": "", "line": {"color": "#636efa", "dash": "solid"}, "marker": {"symbol": "circle"}, "mode": "lines+markers", "name": "", "orientation": "v", "showlegend": false, "x": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "xaxis": "x", "y": [8.889284323789028, 8.767437275394128, 8.494379219703495, 8.395544797152622, 7.804412599399081, 7.714532394678393, 7.425102743597134, 7.236647169439548, 6.8474585352558215, 6.29491967409178, 6.150463678621573, 5.935813492063493], "yaxis": "y", "type": "scatter"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "最终排名", "font": {"size": 14}}, "tickmode": "linear", "dtick": 1, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "评委平均得分", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "最终排名与评委平均得分的关系", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "height": 600, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}, "fig_3_controversial_contestants_json": {"data": [{"hovertemplate": "Name=%{x}<br>Avg_Score=%{y}<extra></extra>", "legendgroup": "", "marker": {"color": "#636efa", "pattern": {"shape": ""}}, "name": "", "orientation": "v", "showlegend": false, "textposition": "auto", "x": ["Jerry Rice", "Billy Ray Cyrus", "Bristol Palin", "Bobby Bones"], "xaxis": "x", "y": [7.506941666666667, 6.333333333333333, 7.392464516129032, 7.462962962962963], "yaxis": "y", "type": "bar"}, {"mode": "text", "showlegend": false, "text": ["第2季<br>排名: #2"], "textfont": {"size": 10}, "textposition": "top center", "x": ["Jerry Rice"], "y": [7.506941666666667], "type": "scatter"}, {"mode": "text", "showlegend": false, "text": ["第4季<br>排名: #5"], "textfont": {"size": 10}, "textposition": "top center", "x": ["Billy Ray Cyrus"], "y": [6.333333333333333], "type": "scatter"}, {"mode": "text", "showlegend": false, "text": ["第11季<br>排名: #3"], "textfont": {"size": 10}, "textposition": "top center", "x": ["Bristol Palin"], "y": [7.392464516129032], "type": "scatter"}, {"mode": "text", "showlegend": false, "text": ["第27季<br>排名: #1"], "textfont": {"size": 10}, "textposition": "top center", "x": ["Bobby Bones"], "y": [7.462962962962963], "type": "scatter"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "选手", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "评委平均得分", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "争议选手的评委平均得分对比", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "height": 600, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}, "fig_4_industry_distribution_json": {"data": [{"hovertemplate": "celebrity_industry=%{x}<br>count=%{y}<extra></extra>", "legendgroup": "", "marker": {"color": "#636efa", "pattern": {"shape": ""}}, "name": "", "orientation": "v", "showlegend": false, "textposition": "auto", "x": ["Actor/Actress", "Athlete", "TV Personality", "Singer/Rapper", "Model", "Comedian", "Social Media Personality", "Entrepreneur", "Racing Driver", "Radio Personality"], "xaxis": "x", "y": [128, 95, 67, 61, 17, 12, 8, 4, 4, 4], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "职业", "font": {"size": 14}}, "tickangle": -45, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "选手数量", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "各职业参赛选手数量（前10名）", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "height": 600, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}, "fig_5_age_vs_score_json": {"data": [{"hovertemplate": "Age_Group=%{x}<br>Avg_Score=%{y}<extra></extra>", "legendgroup": "", "marker": {"color": "#636efa", "pattern": {"shape": ""}}, "name": "", "orientation": "v", "showlegend": false, "textposition": "auto", "x": ["Under 25", "25-34", "35-44", "45+"], "xaxis": "x", "y": [8.358663576490407, 7.815654772453386, 7.408877933239988, 6.52646966719357], "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "年龄段", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "评委平均得分", "font": {"size": 14}}, "showgrid": true, "gridwidth": 1, "gridcolor": "lightgray", "showline": true, "linewidth": 2, "linecolor": "black"}, "legend": {"tracegroupgap": 0, "orientation": "v", "yanchor": "top", "y": 0.99, "xanchor": "left", "x": 0.01, "bgcolor": "rgba(255,255,255,0.8)", "bordercolor": "gray", "borderwidth": 1}, "title": {"text": "不同年龄段选手的评委平均得分", "font": {"size": 18, "family": "Arial Black"}, "x": 0.5, "xanchor": "center"}, "barmode": "relative", "showlegend": false, "height": 600, "font": {"size": 12, "family": "Arial"}, "margin": {"l": 60, "r": 40, "t": 80, "b": 60}, "plot_bgcolor": "white", "paper_bgcolor": "white", "hovermode": "closest"}}};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

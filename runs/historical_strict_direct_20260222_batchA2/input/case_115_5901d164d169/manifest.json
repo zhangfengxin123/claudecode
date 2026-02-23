@@ -1,0 +1,9 @@
+[
+  {
+    "name": "sample_k.csv",
+    "local": "sample_k.csv",
+    "ok": false,
+    "error": "curl_rc_28",
+    "size": 4521637
+  }
+]

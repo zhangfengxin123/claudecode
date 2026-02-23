@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：top 5 tech stock analysis</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：top 5 tech stock analysis</h1>
+    <p class='sub'>来源: /view/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1 ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;FAANG Stock Market Analysis: A Decade of Performance (2016-2026)&quot;
+description: &quot;Comprehensive analysis of FAANG stocks including price trends, technical indicators, correlation analysis, and prediction models. Discover which stock delivered the highest returns and understand risk-return profiles.&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>FAANG Stock Market Analysis: A Decade of Performance </h1>
+<p>2016-2026</p>
+<h2>Executive Summary</h2>
+<p>This comprehensive analysis examines the performance of FAANG stocks Facebook/Meta, Apple, Amazon, Netflix, Google, and NVIDIA from February 2016 to January 2026. The analysis reveals extraordinary growthwith NVDA leading the pack at an astonishing 23,880% total return, followed by MSFT at 899% and AAPL at 1,056%.</p>
+<p>Key Findings:</p>
+<ul><li>NVDAemerged as the top performer with over 238x returns</li><li>MSFToffers the best risk-adjusted returns highest Sharpe ratio: 0.92</li><li>All six stocksdelivered positive returns over the decade</li><li>Highest volatility: NVDA 2.75% and META 1.99%</li><li>Lowest risk profile: MSFT with smallest maximum drawdown -37.15%</li></ul>
+<div class='plot-card'><div class='plot-meta'><code>normalized_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/normalized_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h2>Data Overview</h2>
+<p>The dataset contains 14,964 daily recordsacross six major technology stocks spanning nearly 10 years:</p>
+<div class='table-wrap'><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Date Range</td><td>Feb 23, 2016 - Jan 22, 2026</td></tr><tr><td>Total Records</td><td>14,964</td></tr><tr><td>Stocks Analyzed</td><td>6 AAPL, AMZN, GOOGL, META, MSFT, NVDA</td></tr><tr><td>Data Points per Stock</td><td>2,494 trading days</td></tr></tbody></table></div>
+<details class='qblock'><summary>分析问题</summary><ul><li>What makes NVDA&#x27;s performance so exceptional compared to other FAANG stocks?</li><li>How did the 2022 market downturn affect each stock&#x27;s performance?</li></ul></details>
+<h2>Price Performance Analysis</h2>
+<h3>Normalized Price Trends</h3>
+<p>When comparing performance on a normalized basis starting all stocks at 100, NVDA&#x27;s explosive growth is immediately apparent:</p>
+<div class='plot-card'><div class='plot-meta'><code>price_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/price_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Total Returns Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>total_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/total_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Performance Ranking by Total Return:</p>
+<p>1. NVDA: +23,880% the clear standout</p>
+<p>2. AAPL: +1,056% strong consistent growth</p>
+<p>3. MSFT: +899% solid returns with lower volatility</p>
+<p>4. GOOGL: +828% steady growth</p>
+<p>5. AMZN: +747% consistent performance</p>
+<p>6. META: +518% lowest returns, highest volatility among top 6</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What factors contributed to NVDA&#x27;s massive outperformance?</li><li>Is the high return of NVDA sustainable given its volatility?</li></ul></details>
+<h2>Technical Analysis</h2>
+<h3>RSI Analysis </h3>
+<p>Relative Strength Index</p>
+<p>The RSI indicator helps identify overbought 70 and oversold 30 conditions:</p>
+<div class='plot-card'><div class='plot-meta'><code>rsi_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/rsi_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Key Observations:</p>
+<ul><li>All stocks show periods of extreme overbought conditions</li><li>NVDA exhibits the most extreme RSI swings reflecting high volatility</li><li>MSFT shows more moderate RSI movements indicating smoother price action</li></ul>
+<h3>Bollinger Bands </h3>
+<p>AAPL Example</p>
+<p>Bollinger Bands visualize price volatility and potential reversal points:</p>
+<div class='plot-card'><div class='plot-meta'><code>bollinger_bands.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/bollinger_bands.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Interpretation:</p>
+<ul><li>Prices touching the upper band often signal overbought conditions</li><li>Prices touching the lower band suggest oversold conditions</li><li>Band width indicates volatility - wider bands = higher volatility</li></ul>
+<h3>Moving Averages </h3>
+<p>AAPL Example</p>
+<div class='plot-card'><div class='plot-meta'><code>moving_averages.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/moving_averages.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Moving Average Signals:</p>
+<ul><li>SMA 7: Short-term trend indicator</li><li>SMA 21: Medium-term trend indicator</li><li>EMA 12: Exponential moving average more responsive</li><li>Crossovers can signal trend changes</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What do the RSI levels suggest about current market conditions for each stock?</li><li>How can Bollinger Bands help identify buying and selling opportunities?</li></ul></details>
+<h2>Volatility Analysis</h2>
+<h3>Volatility Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>volatility_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/volatility_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Volatility Over Time</h3>
+<div class='plot-card'><div class='plot-meta'><code>volatility_time.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/volatility_time.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Volatility Insights:</p>
+<ul><li>NVDA: Most volatile 2.75% avg, reflecting growth stock characteristics</li><li>META: Second most volatile 1.99%, experiencing significant price swings</li><li>MSFT: Lowest volatility 1.45%, demonstrating stability</li><li>All stocks showed increased volatility during market stress periods 2020, 2022</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>How does volatility correlate with returns across these stocks?</li><li>What periods showed the highest volatility across all stocks?</li></ul></details>
+<h2>Trading Volume Analysis</h2>
+<div class='plot-card'><div class='plot-meta'><code>volume_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/volume_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Volume Insights:</p>
+<ul><li>NVDA: Highest average daily volume 457M shares - reflects high investor interest</li><li>AAPL: Second highest 99M shares - most actively traded traditional FAANG</li><li>META: Lowest average volume 21M shares - less liquid than peers</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does high trading volume indicate about investor sentiment?</li><li>How does volume relate to price movements for these stocks?</li></ul></details>
+<h2>Correlation Analysis</h2>
+<h3>Daily Return Correlation Matrix</h3>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Correlation Insights:</p>
+<ul><li>Strongest correlation: AAPL-MSFT both mature tech companies</li><li>Moderate correlation: Most stock pairs show 0.4-0.6 correlation</li><li>Lowest correlation: Some pairs show weaker relationships diversification benefit</li><li>NVDAshows lower correlation with some peers due to unique AI/semiconductor focus</li></ul>
+<h3>Return Distribution Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>return_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/return_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Distribution Characteristics:</p>
+<ul><li>All stocks show roughly normal distributions with fat tails</li><li>NVDA: Widest distribution highest volatility</li><li>MSFT: Narrowest distribution most stable</li><li>Negative skew in some distributions indicates more frequent large negative returns</li></ul>
+<h3>Risk-Return Profile</h3>
+<div class='plot-card'><div class='plot-meta'><code>risk_return_profile.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/risk_return_profile.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Risk-Return Insights:</p>
+<ul><li>NVDA: Highest returns AND highest risk upper-right quadrant</li><li>MSFT: Good returns with lower risk efficient frontier</li><li>META: Moderate returns with high risk less favorable risk-adjusted profile</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What does the correlation matrix suggest about portfolio diversification?</li><li>Which stock offers the best risk-adjusted returns?</li></ul></details>
+<h2>Comparative Performance Metrics</h2>
+<h3>Annual Returns</h3>
+<div class='plot-card'><div class='plot-meta'><code>annual_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/annual_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Annual Performance Highlights:</p>
+<ul><li>NVDA: Exceptional returns in 2019-2021 AI boom period</li><li>2020: All stocks showed resilience during COVID-19 pandemic</li><li>2022: Significant drawdowns across all stocks market downturn</li><li>2023-2024: Strong recovery, especially for tech and AI stocks</li></ul>
+<h3>Maximum Drawdown Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>drawdown_analysis.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/drawdown_analysis.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Drawdown Insights Risk Analysis:</p>
+<ul><li>MSFT: Smallest maximum drawdown -37.15% - most resilient</li><li>META: Largest maximum drawdown -76.74% - most vulnerable</li><li>AAPL &amp; GOOGL: Moderate drawdowns  Investors should be prepared for potential 30-75% declines</li></ul>
+<h3>Sharpe Ratio Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>sharpe_ratio.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/sharpe_ratio.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Sharpe Ratio Analysis Risk-Adjusted Performance:</p>
+<ul><li>NVDA: 1.32 highest - exceptional risk-adjusted returns</li><li>AAPL &amp; MSFT: 0.92 tied for second - solid risk-adjusted performance</li><li>AMZN: 0.76 - moderate risk-adjusted returns</li><li>META: 0.62 - lowest risk-adjusted performance</li></ul>
+<h3>Cumulative Returns Over Time</h3>
+<div class='plot-card'><div class='plot-meta'><code>cumulative_returns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/cumulative_returns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Cumulative Returns Insights:</p>
+<ul><li>NVDA&#x27;s exponential growth clearly visible</li><li>All stocks showed strong long-term upward trends</li><li>Periods of consolidation and volatility are evident</li><li>The 2020 dip and subsequent recovery are visible across all stocks</li></ul>
+<h3>Performance Metrics Radar Chart</h3>
+<div class='plot-card'><div class='plot-meta'><code>performance_radar.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/performance_radar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Radar Chart Interpretation:</p>
+<ul><li>Shows relative strengths across multiple dimensions</li><li>NVDA: Dominates on returns, volume, volatility</li><li>MSFT: Strong on Sharpe ratio risk-adjusted, low drawdown</li><li>AAPL: Balanced performance across all metrics</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>What do the drawdown numbers suggest about potential investment risks?</li><li>Which stock would be best for a conservative investor vs. aggressive investor?</li></ul></details>
+<h2>Prediction Model Analysis</h2>
+<h3>Model Performance</h3>
+<div class='plot-card'><div class='plot-meta'><code>model_performance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/model_performance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Actual vs Predicted Prices </h3>
+<p>GOOGL</p>
+<div class='plot-card'><div class='plot-meta'><code>actual_vs_predicted.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/actual_vs_predicted.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Feature Importance</h3>
+<div class='plot-card'><div class='plot-meta'><code>feature_importance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/feature_importance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Prediction Model Insights:</p>
+<ul><li>Model Type: Linear Regression using technical indicators</li><li>Features: Close price, Volume, RSI14, MACD, SMA7, SMA21, Volatility7d</li><li>Performance: R² scores ranging from 0.93-0.99 very high</li><li>Most Important Features: Current close price and moving averages</li><li>Limitations: Linear models may not capture complex non-linear patterns</li></ul>
+<h3>Prediction Error Distribution</h3>
+<div class='plot-card'><div class='plot-meta'><code>error_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/027164fcbdf755eff44715cbd9d113c5739c50fba8ab23005b10505632d2b1d1/assets/error_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>Error Analysis:</p>
+<ul><li>Errors are roughly normally distributed around zero</li><li>Most predictions within ±5% of actual values</li><li>Some outliers indicate periods of unexpected market movement</li></ul>
+<details class='qblock'><summary>分析问题</summary><ul><li>How accurate are the linear regression models for predicting stock prices?</li><li>Which technical indicators are most predictive of future price movements?</li></ul></details>
+<h2>Investment Recommendations</h2>
+<h3>Based on Risk Tolerance</h3>
+<p>For Conservative Investors:</p>
+<ul><li>Primary Choice: MSFT - lowest volatility, smallest drawdown, solid returns</li><li>Secondary Choice: AAPL - strong returns, moderate volatility, consistent performance</li><li>Expected Drawdown: 35-40% in severe market conditions</li></ul>
+<p>For Moderate Risk Tolerance:</p>
+<ul><li>Primary Choice: GOOGL - strong returns, balanced risk profile</li><li>Secondary Choice: AMZN - consistent performer, moderate volatility</li><li>Expected Drawdown: 40-50% in severe market conditions</li></ul>
+<p>For Aggressive Growth Investors:</p>
+<ul><li>Primary Choice: NVDA - highest potential returns, AI/semiconductor growth story</li><li>Secondary Choice: META - potential for high returns, higher volatility</li><li>Expected Drawdown: 50-75% in severe market conditions</li></ul>
+<h3>Portfolio Allocation Suggestions</h3>
+<p>Balanced Portfolio:</p>
+<ul><li>30% MSFT anchor/low risk</li><li>25% AAPL core holding</li><li>20% GOOGL growth</li><li>15% AMZN diversification</li><li>10% NVDA growth exposure</li></ul>
+<p>Aggressive Growth Portfolio:</p>
+<ul><li>40% NVDA primary growth driver</li><li>25% MSFT stability anchor</li><li>20% GOOGL growth</li><li>10% AAPL diversification</li><li>5% META speculative</li></ul>
+<h3>Key Considerations</h3>
+<p>1. Diversification: Despite high correlations, owning all 6 stocks provides diversification</p>
+<p>2. Volatility Tolerance: Ensure you can stomach 30-75% drawdowns</p>
+<p>3. Time Horizon: Longer time horizons 10+ years favor growth stocks like NVDA</p>
+<p>4. Market Cycles: All stocks are cyclical and will experience downturns</p>
+<p>5. Concentration Risk: Avoid over-concentration in any single stock</p>
+<details class='qblock'><summary>分析问题</summary><ul><li>What is the optimal portfolio allocation for a 30-year-old investor?</li><li>How should portfolio allocation change as you approach retirement?</li></ul></details>
+<h2>Limitations and Future Research</h2>
+<h3>Study Limitations</h3>
+<p>1. Backward-Looking: Past performance does not guarantee future results</p>
+<p>2. Model Simplicity: Linear regression may not capture complex market dynamics</p>
+<p>3. Limited Variables: Analysis focuses on price data, excludes fundamentals</p>
+<p>4. No Transaction Costs: Analysis doesn&#x27;t account for trading costs or taxes</p>
+<h3>Future Research Directions</h3>
+<p>1. Advanced Models: Implement LSTM/Transformer models for better predictions</p>
+<p>2. Fundamental Analysis: Incorporate earnings, P/E ratios, revenue growth</p>
+<p>3. Sentiment Analysis: Analyze news, social media, analyst ratings</p>
+<p>4. Macro Factors: Include interest rates, inflation, economic indicators</p>
+<p>5. Portfolio Optimization: Use Modern Portfolio Theory for optimal allocation</p>
+<h2>Conclusion</h2>
+<p>This decade-long analysis of FAANG stocks reveals several key insights:</p>
+<p>Performance Highlights:</p>
+<ul><li>NVDAdelivered extraordinary returns 23,880% driven by the AI revolution</li><li>All six stocksprovided positive returns over the period</li><li>MSFToffered the best risk-adjusted returns with strong Sharpe ratio</li></ul>
+<p>Risk Considerations:</p>
+<ul><li>High volatilityis the price of exceptional returns NVDA</li><li>Maximum drawdownsof 37-77% occurred across all stocks</li><li>Diversificationis crucial given high correlations</li></ul>
+<p>Investment Implications:</p>
+<ul><li>Younger investorscan tolerate more NVDA exposure for growth</li><li>Conservative investorsshould favor MSFT and AAPL</li><li>Balanced portfolioscan benefit from combining all six stocks</li></ul>
+<p>The technology sector has been a wealth-creating machine over the past decade, but investors must carefully consider their risk tolerance and time horizon when selecting investments.</p>
+<hr/>
+<p>Note: This analysis is for educational purposes only and should not be considered as investment advice. Always conduct your own research and consult with a qualified financial advisor before making investment decisions.</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

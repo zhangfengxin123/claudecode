@@ -1,0 +1,37 @@
+[
+  {
+    "name": "df_matrix.csv",
+    "local": "df_matrix.csv",
+    "ok": true,
+    "error": "",
+    "size": 74156
+  },
+  {
+    "name": "df_past_order.csv",
+    "local": "df_past_order.csv",
+    "ok": true,
+    "error": "",
+    "size": 26648
+  },
+  {
+    "name": "df_loc.csv",
+    "local": "df_loc.csv",
+    "ok": true,
+    "error": "",
+    "size": 5914
+  },
+  {
+    "name": "df_proc.csv",
+    "local": "df_proc.csv",
+    "ok": true,
+    "error": "",
+    "size": 599
+  },
+  {
+    "name": "df_order.csv",
+    "local": "df_order.csv",
+    "ok": true,
+    "error": "",
+    "size": 4545
+  }
+]

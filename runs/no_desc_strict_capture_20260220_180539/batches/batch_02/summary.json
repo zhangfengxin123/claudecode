@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-02-21T02:18:57",
+  "sample_size": 20,
+  "rows": [
+    {
+      "idx": 1,
+      "case_id": "1684558c4d31d027b0cd61d17d5f9367d29890082de2bb004e939e40f2c4ce2f",
+      "title": "PPI Analysis",
+      "chart_count": 8,
+      "upload_count": 3,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_001_1684558c4d31.html",
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "case_id": "1cdb52aa1f0dd1f33aa743eae7528ffb05a80c341921cc2ac389682a86027d4f",
+      "title": "Apple 2026 Q1 Financial Statement",
+      "chart_count": 12,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_002_1cdb52aa1f0d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "case_id": "e104b387fd82759d21e6a647361e55cc5231793ca16fb4f4a0f0be2552a02b69",
+      "title": "BITCOIN HISTORICAL DATA",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_003_e104b387fd82.html",
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "case_id": "06ccf0225754b9ba7105c674e93f8a13831ea446f4e0f7a6907470179606bbc1",
+      "title": "2026 gold price predict",
+      "chart_count": 3,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_004_06ccf0225754.html",
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "case_id": "3f809c829a959fb1b3fb9e6441d49a7e7a7c7d9c1e1a63b5f6955f02d0d2d966",
+      "title": "123",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_005_3f809c829a95.html",
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "case_id": "0791b6b6f9b20abb2ba627bbf3a02e33d5765da8898b2e577688cffe57f71817",
+      "title": "spline_new",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_006_0791b6b6f9b2.html",
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "case_id": "66658823e9c3ac49c2b485cb16ecc3094b1c7d6b60099f36392074bca34b25a2",
+      "title": "野村中国互联网应用追踪",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_007_66658823e9c3.html",
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "case_id": "ec0a067dab1bee4c802957e1d5359939de224cb3eab7d1a629dbf74738eae949",
+      "title": "new_spline",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_008_ec0a067dab1b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "case_id": "7bb90b94e9fe6d99fe4d2e05f069f4fda6b1ad7d7d2c182567e3bdea732b4308",
+      "title": "spline",
+      "chart_count": 7,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_009_7bb90b94e9fe.html",
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "case_id": "ca6daed389778689619f0497ab31ef48a72c0c679f3586f6e9c3e4b2c0508aac",
+      "title": "roll",
+      "chart_count": 8,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_010_ca6daed38977.html",
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "case_id": "de2c6f2fd2e61093c206148436c3e1da9dc42ae7c63f7d17630320c85260833a",
+      "title": "gam",
+      "chart_count": 11,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_011_de2c6f2fd2e6.html",
+      "status": "ok"
+    },
+    {
+      "idx": 12,
+      "case_id": "d2cb2c615ce4fcb167063a9e4285ecc8ff60c65769bcc836b333d669ce617a3d",
+      "title": "rolling",
+      "chart_count": 6,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_012_d2cb2c615ce4.html",
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "case_id": "e47fcbfe4a48e1c3374c80a2d9716efd166d6b1e9af796ebe5af28b8a63e9dd4",
+      "title": "consinor",
+      "chart_count": 5,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_013_e47fcbfe4a48.html",
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "case_id": "3e5b8b524e7cd8750b03865bb17a1e61f5c2b18c1ef89f8babea8c0891d1425e",
+      "title": "spline",
+      "chart_count": 10,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_014_3e5b8b524e7c.html",
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "case_id": "70e94dd2b5d8f555416e49b4338476897920f848a25e5f138994e7ae1cc0e586",
+      "title": "世纪华通财报",
+      "chart_count": 6,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_015_70e94dd2b5d8.html",
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "case_id": "4254d2fd552b6554eba9de07164cbfa1b83b82ad98dcb6fd8a722ff7b24bb885",
+      "title": "savgol对比",
+      "chart_count": 5,
+      "upload_count": 2,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_016_4254d2fd552b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "case_id": "21bd9ee9a7c1c78dba47a3aa0853a7823bbd4dfe6e14a9314c8a10287d9e7abe",
+      "title": "test4",
+      "chart_count": 9,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_017_21bd9ee9a7c1.html",
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "case_id": "484445fdd29b30c36ea4fa9321f30b92c133172ff3d617da4d0c0b648150ba56",
+      "title": "polymarket all markets",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_018_484445fdd29b.html",
+      "status": "ok"
+    },
+    {
+      "idx": 19,
+      "case_id": "f3b5d8e7f38d88e992e8f5988d59a1045d75f1b8dde7830281b3fd9db4b7be40",
+      "title": "长期多资产配置",
+      "chart_count": 10,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_019_f3b5d8e7f38d.html",
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "case_id": "6c7c912356f2ca15e18d27fe1c87d4e05d1593bd8cbf9b48e14a31004d39b619",
+      "title": "ark",
+      "chart_count": 8,
+      "upload_count": 1,
+      "doc_status": 200,
+      "up_status": 200,
+      "html": "case_020_6c7c912356f2.html",
+      "status": "ok"
+    }
+  ]
+}

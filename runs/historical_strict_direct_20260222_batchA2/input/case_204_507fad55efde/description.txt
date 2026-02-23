@@ -1,0 +1,12 @@
+Context
+Airlines operate in one of the most cost-intensive industries in the world. Understanding the relationship between route characteristics, operational costs, and profitability is critical for network planning, fleet optimization, and revenue management. This dataset simulates a full year of flight-level financial data for a major Middle Eastern carrier operating out of Dubai (DXB), covering 30 routes across short-haul, medium-haul, and long-haul categories.
+
+Content
+The dataset contains ~7,500 flight records. Each record represents a single flight with comprehensive financial and operational attributes across 31 columns.
+
+Route Network
+Short-Haul (1–3.5 hrs): DOH, MCT, KWI, BAH, RUH, JED, CAI, AMM
+Medium-Haul (2.5–7 hrs): BOM, DEL, IST, LHR, BLR, HYD, MAA, KHI, LHE, CMB
+Long-Haul (6.5–16.5 hrs): JFK, SYD, MEL, SIN, HKG, BKK, KUL, CDG, FRA, LAX, SFO, ORD
+Fleet
+6 aircraft types: Boeing 737-800, Airbus A320, Boeing 777-300ER, Airbus A380, Boeing 787-9, Airbus A350-900

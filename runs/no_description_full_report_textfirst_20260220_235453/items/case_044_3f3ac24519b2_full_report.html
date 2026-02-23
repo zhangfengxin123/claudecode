@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：Twitter和YouTube的数据</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：Twitter和YouTube的数据</h1>
+    <p class='sub'>来源: /view/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;Social Media Traffic Analysis Report - June 2025&quot;
+description: &quot;Comprehensive analysis of Twitter and YouTube traffic performance, user acquisition funnels, and campaign effectiveness for June 2025&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-01-13&quot;
+</pre></details>
+<h1>Social Media Traffic Analysis Report - June 2025</h1>
+<h2>Executive Summary</h2>
+<p>This report presents a comprehensive analysis of social media traffic performance from Twitter and YouTube during June 2025. The analysis reveals significant differences in user acquisition efficiency between platforms, with YouTube demonstrating a 3.2x higher conversion rate from traffic to registration 24.39% vs 7.59%. Twitter generated higher total traffic volume 646 UV vs 246 UV but lower conversion efficiency.</p>
+<p><strong>Key Findings:</strong></p>
+<ul><li>YouTube converts visitors to registrations 3.2x more effectively than Twitter</li><li>Twitter drives 2.6x more total traffic but with lower quality leads</li><li>Product funnel shows strong engagement post-registration 85.71% enter editor</li><li>Top YouTube campaign ProSecrect drives 51% of total registrations</li><li>Monetization signals present but limited data on paid conversions</li></ul>
+<hr/>
+<h2>1. Traffic Overview</h2>
+<h3>1.1 Platform Performance Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>platform_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/platform_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Key Metrics:</strong></p>
+<div class='table-wrap'><table><thead><tr><th>Platform</th><th>Total UV</th><th>Registrations</th><th>Conversion Rate</th></tr></thead><tbody><tr><td>Twitter</td><td>646</td><td>49</td><td>7.59%</td></tr><tr><td>YouTube</td><td>246</td><td>60</td><td>24.39%</td></tr></tbody></table></div>
+<p>Analysis:</p>
+<ul><li>Twitter generates 2.6x more traffic volume than YouTube</li><li>YouTube achieves 3.2x higher conversion efficiency</li><li>Total registrations from both platforms: 109 users</li></ul>
+<h3>1.2 Twitter Daily Traffic Trend</h3>
+<div class='plot-card'><div class='plot-meta'><code>twitter_daily_trend.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/twitter_daily_trend.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Observations:</strong></p>
+<ul><li>Daily traffic shows volatility with peak days reaching over 100 UV</li><li>Mobile traffic consistently outperforms PC traffic 411 vs 235</li><li>Registration volume correlates with traffic spikes</li><li>Campaign timing appears to influence daily performance</li></ul>
+<h3>1.3 Twitter Device Usage Over Time</h3>
+<div class='plot-card'><div class='plot-meta'><code>twitter_device_usage.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/twitter_device_usage.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Device Split:</strong></p>
+<ul><li>Mobile: 411 UV 63.6%</li><li>PC: 235 UV 36.4%</li></ul>
+<p><strong>Insight:</strong></p>
+<hr/>
+<h2>2. User Acquisition Analysis</h2>
+<h3>2.1 Conversion Rate Comparison</h3>
+<div class='plot-card'><div class='plot-meta'><code>conversion_comparison.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/conversion_comparison.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Critical Finding:</strong></p>
+<p>YouTube demonstrates superior lead qualitywith a 24.39% UV-to-registration conversion rate, compared to Twitter&#x27;s 7.59%. This suggests:</p>
+<ul><li>YouTube viewers are more intent-driven and likely to sign up</li><li>Twitter traffic may be more casual or browsing-focused</li><li>Different user intent between platforms requires tailored messaging</li></ul>
+<h3>2.2 Data Flow Diagram</h3>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/data_flow.svg' alt='data_flow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/data_flow.svg' target='_blank' rel='noopener noreferrer'>data_flow.svg</a></figcaption></figure>
+<p><strong>Flow Analysis:</strong></p>
+<ul><li>Twitter: High volume, low conversion funnel entry</li><li>YouTube: Lower volume, high conversion funnel entry</li><li>Both platforms funnel users through consistent product journey</li><li>Monetization data primarily captured from YouTube campaigns</li></ul>
+<hr/>
+<h2>3. Product Funnel Analysis</h2>
+<h3>3.1 Twitter User Journey Funnel</h3>
+<div class='plot-card'><div class='plot-meta'><code>twitter_funnel.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/twitter_funnel.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Funnel Stages &amp; Conversion Rates:</strong></p>
+<div class='table-wrap'><table><thead><tr><th>Stage</th><th>Users</th><th>Conversion Rate</th><th>Cumulative Conversion</th></tr></thead><tbody><tr><td>Total UV</td><td>646</td><td>100%</td><td>-</td></tr><tr><td>Registrations</td><td>49</td><td>7.59%</td><td>7.59%</td></tr><tr><td>Editor Users</td><td>42</td><td>85.71%</td><td>6.50%</td></tr><tr><td>3D Generated</td><td>18</td><td>42.86%</td><td>2.79%</td></tr><tr><td>Exports</td><td>7</td><td>38.89%</td><td>1.08%</td></tr></tbody></table></div>
+<p>Key Insights:</p>
+<ul><li>Post-registration engagement is strong: 85.71% of registered users enter the editor</li><li>Product-market fit validation: High engagement indicates product resonates with users</li><li>Drop-off points: Largest drop-off occurs between editor and 3D generation 42.86%</li><li>Value extraction challenge: Only 1.08% of initial traffic completes full user journey</li></ul>
+<h3>3.2 Funnel Visualization</h3>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/twitter_funnel_diagram.svg' alt='twitter_funnel_diagram.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/twitter_funnel_diagram.svg' target='_blank' rel='noopener noreferrer'>twitter_funnel_diagram.svg</a></figcaption></figure>
+<h3>3.3 Funnel Stage Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>twitter_funnel_rates.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/twitter_funnel_rates.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Stage-Specific Observations:</strong></p>
+<p>1. UV → Registration 7.59%: Low conversion suggests need for:</p>
+<p>    Improved landing page optimization</p>
+<p>    Clearer value proposition</p>
+<p>    Reduced friction in sign-up process</p>
+<p>2. Registration → Editor 85.71%: Excellent engagement indicates:</p>
+<p>    Strong onboarding experience</p>
+<p>    Clear user guidance</p>
+<p>    Product meets immediate user needs</p>
+<p>3. Editor → 3D Generation 42.86%: Moderate drop-off suggests:</p>
+<p>    Technical barriers in 3D creation</p>
+<p>    Need for tutorials and templates</p>
+<p>    Feature discovery opportunities</p>
+<p>4. 3D Generation → Export 38.89%: Final conversion indicates:</p>
+<p>    Satisfaction with generated content</p>
+<p>    Value in export functionality</p>
+<p>    Potential for premium features</p>
+<hr/>
+<h2>4. YouTube Campaign Performance</h2>
+<h3>4.1 Campaign Overview</h3>
+<div class='plot-card'><div class='plot-meta'><code>youtube_campaigns.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/youtube_campaigns.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Top Performing Campaigns:</strong></p>
+<div class='table-wrap'><table><thead><tr><th>Campaign</th><th>Registrations</th><th>PC UV</th><th>Mobile UV</th><th>Paid Page Clicks</th></tr></thead><tbody><tr><td>ProSecrect</td><td>40</td><td>126</td><td>44</td><td>11</td></tr><tr><td>Brainproject</td><td>7</td><td>21</td><td>5</td><td>3</td></tr><tr><td>TheLearnUp</td><td>2</td><td>3</td><td>1</td><td>1</td></tr><tr><td>zeroai</td><td>1</td><td>3</td><td>1</td><td>1</td></tr><tr><td>AiGrow</td><td>4</td><td>7</td><td>1</td><td>0</td></tr></tbody></table></div>
+<p>Key Finding: ProSecrect campaign dominates performance, driving 67% of all YouTube registrations with 51% of total YouTube traffic.</p>
+<h3>4.2 Top Campaigns Breakdown</h3>
+<div class='plot-card'><div class='plot-meta'><code>youtube_top_campaigns_breakdown.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/youtube_top_campaigns_breakdown.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Campaign Analysis:</strong></p>
+<p>1. ProSecrect: </p>
+<p>    40 registrations from 170 UV 23.5% conversion</p>
+<p>    Strong monetization signals 11 paid page clicks, 4 subscribe clicks</p>
+<p>    Recommendation: Scale budget, analyze creative elements</p>
+<p>2. Brainproject:</p>
+<p>    7 registrations from 26 UV 26.9% conversion</p>
+<p>    Highest conversion rate among campaigns</p>
+<p>    Good monetization potential 3 paid, 2 subscribe clicks</p>
+<p>    Recommendation: A/B test scaling</p>
+<p>3. AiGrow &amp; Others:</p>
+<p>    Lower volume but varying conversion rates</p>
+<p>    Need deeper analysis of content themes</p>
+<p>    Recommendation: Review audience targeting</p>
+<h3>4.3 Paid Interest Analysis</h3>
+<div class='plot-card'><div class='plot-meta'><code>youtube_paid_interest.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/3f3ac24519b2053cfc780ff182ffbca1d6dc6e2e2ba9c7b3c9d25313276f0a0e/assets/youtube_paid_interest.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p><strong>Monetization Signals:</strong></p>
+<ul><li>Total paid page clicks: 18 30% of registrations</li><li>Total subscribe button clicks: 9 15% of registrations</li><li>Strongest monetization intent from ProSecrect and Brainproject campaigns</li></ul>
+<p><strong>Insight:</strong></p>
+<hr/>
+<h2>5. Strategic Recommendations</h2>
+<h3>5.1 Platform Allocation Strategy</h3>
+<p><strong>Immediate Actions:</strong></p>
+<p>1. Increase YouTube Investment</p>
+<p>    Shift 60-70% of budget to YouTube campaigns</p>
+<p>    Scale ProSecrect campaign by 2-3x</p>
+<p>    Test Brainproject campaign scaling</p>
+<p>2. Optimize Twitter Strategy</p>
+<p>    Focus on quality over volume</p>
+<p>    Refine targeting based on YouTube demographics</p>
+<p>    A/B test landing pages to improve 7.59% conversion</p>
+<p>3. Cross-Platform Testing</p>
+<p>    Test top YouTube creative on Twitter</p>
+<p>    Implement retargeting from YouTube to Twitter</p>
+<p>    Analyze audience overlap and behavior</p>
+<h3>5.2 Product Funnel Optimization</h3>
+<p><strong>Priority Actions:</strong></p>
+<p>1. Reduce Editor → 3D Generation Drop-off42.86% conversion</p>
+<p>    Implement interactive tutorials</p>
+<p>    Pre-load templates and examples</p>
+<p>    Add onboarding tooltips for 3D features</p>
+<p>2. Improve 3D Generation → Export Rate38.89% conversion</p>
+<p>    Highlight export value in UI</p>
+<p>    Add export preview functionality</p>
+<p>    Implement guided export process</p>
+<p>3. Enhance Registration Flow</p>
+<p>    Reduce form fields</p>
+<p>    Implement social sign-in options</p>
+<p>    Add preview of product capabilities</p>
+<h3>5.3 Monetization Strategy</h3>
+<p><strong>Revenue Opportunities:</strong></p>
+<p>1. Premium Feature Tiers</p>
+<p>    High-quality export options</p>
+<p>    Advanced 3D generation capabilities</p>
+<p>    Priority processing</p>
+<p>2. Freemium Model</p>
+<p>    Basic features free with watermarks</p>
+<p>    Premium tier for watermark-free exports</p>
+<p>    Enterprise solutions for business users</p>
+<p>3. Campaign-Specific Offers</p>
+<p>    Limited-time discounts for new YouTube registrations</p>
+<p>    Referral programs to leverage high-converting users</p>
+<h3>5.4 Campaign Optimization</h3>
+<p><strong>YouTube-Specific Tactics:</strong></p>
+<p>1. Content Themes Analysis</p>
+<p>    Analyze ProSecrect success factors</p>
+<p>    Identify common elements in top converters</p>
+<p>    Develop content template based on winners</p>
+<p>2. Audience Segmentation</p>
+<p>    Create lookalike audiences from converters</p>
+<p>    Test demographic and interest targeting</p>
+<p>    Implement custom audiences based on funnel stage</p>
+<p>3. Landing Page Optimization</p>
+<p>    Create YouTube-specific landing pages</p>
+<p>    Test messaging aligned with video content</p>
+<p>    Implement social proof from successful campaigns</p>
+<hr/>
+<h2>6. Future Analysis Opportunities</h2>
+<h3>6.1 Data Gaps &amp; Recommendations</h3>
+<p><strong>Missing Metrics to Track:</strong></p>
+<p>1. Time-to-Value: Measure time from registration to first 3D export</p>
+<p>2. User Retention: Track repeat usage over 30/60/90 days</p>
+<p>3. Revenue Attribution: Link specific campaigns to actual revenue</p>
+<p>4. Cross-Platform Journeys: Track users across multiple touchpoints</p>
+<p>5. Feature Usage: Analyze which features drive highest engagement</p>
+<h3>6.2 Advanced Analysis Proposed</h3>
+<p>1. Predictive Modeling</p>
+<p>    Build model to predict conversion probability</p>
+<p>    Identify high-value user segments early</p>
+<p>    Optimize ad spend allocation</p>
+<p>2. A/B Testing Framework</p>
+<p>    Test landing page variants</p>
+<p>    Experiment with call-to-action messaging</p>
+<p>    Validate pricing strategies</p>
+<p>3. Cohort Analysis</p>
+<p>    Analyze user behavior by acquisition channel</p>
+<p>    Measure LTV by campaign source</p>
+<p>    Optimize for high-value customer segments</p>
+<hr/>
+<h2>7. Conclusion</h2>
+<p>The June 2025 social media analysis reveals clear performance differentiation between platforms. YouTube demonstrates superior lead quality with a 24.39% conversion rate, while Twitter provides higher traffic volume with lower efficiency.</p>
+<p><strong>Strategic Priority:</strong></p>
+<ul><li>Shift focus to YouTube scaling while optimizing Twitter for quality</li><li>Address product funnel drop-offs, particularly between editor and 3D generation</li><li>Leverage strong monetization signals from YouTube users for premium feature development</li><li>Implement data-driven campaign optimization based on proven performers</li></ul>
+<p><strong>Expected Impact:</strong></p>
+<p>Following these recommendations should result in:</p>
+<ul><li>2-3x increase in registration rate</li><li>Improved user journey completion rates</li><li>Higher monetization potential from engaged users</li><li>More efficient marketing spend allocation</li></ul>
+<hr/>
+<h2>Appendix</h2>
+<h3>A. Data Sources</h3>
+<ul><li>Twitter Data: June 7-25, 2025 341 records</li><li>YouTube Data: June 2025 11 campaigns</li></ul>
+<h3>B. Metrics Definitions</h3>
+<ul><li>UV: Unique Visitors new user visits</li><li>Registration: Users completing sign-up process</li><li>Editor Users: Registrants entering product editor</li><li>3D Generated: Users successfully creating 3D content</li><li>Exports: Users exporting generated content</li></ul>
+<h3>C. Calculation Notes</h3>
+<ul><li>All conversion rates calculated as: StageN / StageN-1 × 100%</li><li>Cumulative conversion: StageN / TotalUV × 100%</li><li>Platform-specific analysis based on available data fields</li></ul><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>

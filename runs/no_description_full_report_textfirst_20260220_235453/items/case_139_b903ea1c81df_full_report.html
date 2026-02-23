@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>完整报告：乳腺癌</title>
+<script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
+<style>
+  :root { --bg:#f6f8fc; --card:#fff; --line:#e5e7eb; --text:#111827; --muted:#6b7280; }
+  body { margin:0; font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background:var(--bg); color:var(--text); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 8px; font-size: 30px; }
+  h2 { margin: 24px 0 10px; font-size: 24px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+  h3 { margin: 18px 0 8px; font-size: 20px; }
+  h4 { margin: 14px 0 6px; font-size: 17px; }
+  p, li { line-height: 1.68; font-size: 15px; }
+  .sub { color: var(--muted); margin-bottom: 16px; }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .plot-card { background:#fff; border:1px solid var(--line); border-radius: 10px; padding:10px; margin:10px 0; }
+  .plot { min-height: 420px; }
+  .plot-meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .asset { font-size: 12px; color:#2563eb; text-decoration: none; }
+  table { width:100%; border-collapse: collapse; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:#f3f4f6; }
+  .table-wrap { overflow-x:auto; }
+  .meta, .qblock { margin:10px 0; }
+  pre { background:#0b1020; color:#e5e7eb; padding:10px; border-radius:8px; overflow:auto; }
+  .svg-fig img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class='wrap'>
+    <h1>完整报告：乳腺癌</h1>
+    <p class='sub'>来源: /view/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d ｜ no description case</p>
+    <div class='card'>
+      <details class='meta'><summary>YAML Metadata</summary><pre>title: &quot;乳腺癌诊断数据分析报告&quot;
+description: &quot;基于569个样本的乳腺癌肿瘤特征分析，包含多维度可视化、特征重要性分析和机器学习模型评估&quot;
+author: &quot;Pardus Agent&quot;
+date: &quot;2025-02-03&quot;
+</pre></details>
+<h1>乳腺癌诊断数据分析报告</h1>
+<h2>执行摘要</h2>
+<p>本报告对威斯康星乳腺癌数据集进行了全面分析，该数据集包含569个乳腺肿瘤样本，通过30个数字特征（如半径、纹理、周长、面积等）来区分良性（B）和恶性（M）肿瘤。</p>
+<p>关键发现：</p>
+<ul><li>恶性肿瘤的平均面积比良性肿瘤大111.4%，平均凹陷度高248.8%</li><li>仅使用Top 5最重要特征（最坏凹点、最坏面积、平均凹点、最坏半径、最坏周长），随机森林模型即可达到94.20%的准确率</li><li>使用全部30个特征，逻辑回归模型可达到98.07%的交叉验证准确率</li><li>最强的预测指标是&quot;最坏凹点&quot;（concave pointsworst），特征重要性为0.1322</li></ul>
+<h2>数据概览</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>这个数据集的样本分布是否平衡？</li><li>数据集中有多少缺失值？</li></ul></details>
+<h3>数据集基本信息</h3>
+<p>数据集包含569个样本，其中：</p>
+<ul><li>良性肿瘤（B）: 357个样本（62.7%）</li><li>恶性肿瘤（M）: 212个样本（37.3%）</li></ul>
+<p>数据质量优秀，无缺失值，所有30个特征均为数值型，数据类型正确且完整。</p>
+<div class='plot-card'><div class='plot-meta'><code>diagnosis_distribution.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/diagnosis_distribution.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<figure class='svg-fig'><img src='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/analysis_workflow.svg' alt='analysis_workflow.svg' loading='lazy'/><figcaption><a href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/analysis_workflow.svg' target='_blank' rel='noopener noreferrer'>analysis_workflow.svg</a></figcaption></figure>
+<p>图：分析工作流程展示了从数据加载到结果输出的完整过程</p>
+<h2>特征分析：良恶性肿瘤差异</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>恶性肿瘤和良性肿瘤在哪些特征上差异最大？</li><li>为什么面积和凹陷度的差异如此显著？</li><li>这些差异在临床诊断中有什么意义？</li></ul></details>
+<h3>尺寸特征对比</h3>
+<p>恶性肿瘤在所有尺寸相关特征上均显著高于良性肿瘤：</p>
+<div class='table-wrap'><table><thead><tr><th>特征</th><th>良性 B</th><th>恶性 M</th><th>差异百分比</th></tr></thead><tbody><tr><td>平均半径</td><td>12.15</td><td>17.46</td><td>+43.7%</td></tr><tr><td>平均纹理</td><td>17.91</td><td>21.60</td><td>+20.6%</td></tr><tr><td>平均周长</td><td>78.08</td><td>115.37</td><td>+47.8%</td></tr><tr><td>平均面积</td><td>462.79</td><td>978.38</td><td>+111.4%</td></tr></tbody></table></div>
+<h3>形状不规则性对比</h3>
+<p>恶性肿瘤形状更不规则，这在凹陷度指标上体现最为明显：</p>
+<div class='table-wrap'><table><thead><tr><th>特征</th><th>良性 B</th><th>恶性 M</th><th>差异百分比</th></tr></thead><tbody><tr><td>平均凹陷度</td><td>0.0461</td><td>0.1608</td><td>+248.8%</td></tr></tbody></table></div>
+<p>这表明恶性肿瘤往往具有更复杂的形态，边缘更不规则。</p>
+<h3>箱线图分析</h3>
+<p>以下箱线图展示了关键特征在不同诊断类别中的分布：</p>
+<div class='plot-card'><div class='plot-meta'><code>boxplot_radius_mean.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/boxplot_radius_mean.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<div class='plot-card'><div class='plot-meta'><code>boxplot_area_mean.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/boxplot_area_mean.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>从箱线图可以看出：</p>
+<p>1. 恶性肿瘤（红色）的半径和面积分布明显向右偏移</p>
+<p>2. 恶性肿瘤的特征值变异性更大（箱体更宽）</p>
+<p>3. 两个类别之间存在清晰的分离边界</p>
+<h3>半径与面积关系</h3>
+<div class='plot-card'><div class='plot-meta'><code>radius_area_scatter.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/radius_area_scatter.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<p>散点图显示半径和面积之间存在强正相关性（r  0.9），且恶性肿瘤（红色点）主要集中在右上象限。</p>
+<h2>特征相关性分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些特征之间存在强相关性？</li><li>高相关性特征是否可以简化而不损失信息？</li><li>这种相关性对特征选择有什么启示？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>correlation_heatmap.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/correlation_heatmap.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>关键相关性发现</h3>
+<p>1. 尺寸特征强相关：</p>
+<p>    radiusmean、perimetermean、areamean 之间的相关系数  0.9</p>
+<p>    这三个特征可以互相替代，选择其中一个即可</p>
+<p>2. 形状特征强相关：</p>
+<p>    compactnessmean、concavitymean、concave pointsmean 之间存在显著相关性</p>
+<p>    这些特征共同描述肿瘤的形态复杂性</p>
+<p>3. worst特征与mean特征：</p>
+<p>    同一特征的worst值与mean值高度相关</p>
+<p>    worst值代表肿瘤最不规则的部分，对诊断更重要</p>
+<h3>特征选择建议</h3>
+<p>基于相关性分析，可以从30个特征中选择约10-15个核心特征，而不显著降低模型性能。</p>
+<h2>特征重要性分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>哪些特征对诊断最有价值？</li><li>为什么&quot;最坏凹点&quot;是最重要的特征？</li><li>如何利用特征重要性简化诊断流程？</li></ul></details>
+<p>使用随机森林算法计算的特征重要性排名（Top 15）：</p>
+<div class='plot-card'><div class='plot-meta'><code>feature_importance.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/feature_importance.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>Top 5 最重要的特征</h3>
+<div class='table-wrap'><table><thead><tr><th>排名</th><th>特征</th><th>重要性</th><th>含义</th></tr></thead><tbody><tr><td>1</td><td>areaworst</td><td>0.1394</td><td>肿瘤最大面积</td></tr><tr><td>2</td><td>concave pointsworst</td><td>0.1322</td><td>最不规则部分的凹点数量</td></tr><tr><td>3</td><td>concave pointsmean</td><td>0.1070</td><td>平均凹点数量</td></tr><tr><td>4</td><td>radiusworst</td><td>0.0828</td><td>肿瘤最大半径</td></tr><tr><td>5</td><td>perimeterworst</td><td>0.0808</td><td>肿瘤最大周长</td></tr></tbody></table></div>
+<h3>临床解读</h3>
+<p>最坏凹点（concave pointsworst）成为最重要特征，原因如下：</p>
+<ul><li>凹点数量直接反映肿瘤边缘的复杂程度</li><li>恶性肿瘤边缘通常呈现更多的不规则凹陷</li><li>&quot;最坏&quot;值捕捉了肿瘤最具侵袭性的部分</li></ul>
+<p>最坏面积紧随其后，表明肿瘤大小仍是关键的诊断指标。</p>
+<h2>层次化特征分析</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>肿瘤特征如何分层分布？</li><li>高半径和大面积的样本更可能是恶性吗？</li><li>如何快速筛选高风险样本？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>feature_sunburst.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/feature_sunburst.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>层次化分布洞察</h3>
+<p>旭日图展示了肿瘤在三维度上的分布：</p>
+<p>1. 第一层（诊断）：良性（62.7%）vs 恶性（37.3%）</p>
+<p>2. 第二层（半径分类）：低半径 vs 高半径</p>
+<p>3. 第三层（面积分类）：小面积 vs 大面积</p>
+<h3>关键模式</h3>
+<ul><li>高半径+大面积的组合中，恶性肿瘤占比显著高于良性</li><li>低半径+小面积的组合中，良性肿瘤占绝大多数</li><li>这为快速筛查提供了直观的筛选规则</li></ul>
+<h2>良恶性肿瘤特征对比</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>良性和恶性肿瘤在整体特征上有什么模式差异？</li><li>哪些特征最能区分两类肿瘤？</li><li>这种对比如何辅助临床决策？</li></ul></details>
+<div class='plot-card'><div class='plot-meta'><code>diagnosis_radar.json</code></div><div class='plot'><p class='muted'>该图表未在缓存中捕获，点击下方 asset 查看原始数据。</p></div><a class='asset' href='https://pardusai.org/v1/api/public/project/b903ea1c81dfdff56856ed3164192bf33e0e9a61058750554f44680be548946d/assets/diagnosis_radar.json' target='_blank' rel='noopener noreferrer'>asset</a></div>
+<h3>雷达图解读</h3>
+<p>雷达图展示了两类肿瘤在6个归一化特征上的对比：</p>
+<ul><li>红色（恶性）：在所有维度上均高于良性</li><li>绿色（良性）：所有特征值相对较低</li><li>面积差异最大：恶性肿瘤面积值接近归一化的1.0</li><li>纹理差异最小：说明纹理对诊断的区分度相对较低</li></ul>
+<h3>诊断启示</h3>
+<p>雷达图直观地展示了&quot;越大越不规则&quot;的模式，这为临床医生提供了快速判断依据。</p>
+<h2>机器学习模型性能</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>不同模型的准确率如何？</li><li>使用更少特征能达到什么性能？</li><li>哪个模型最适合实际应用？</li></ul></details>
+<h3>交叉验证结果</h3>
+<div class='table-wrap'><table><thead><tr><th>模型</th><th>特征数</th><th>5折交叉验证准确率</th><th>标准差</th></tr></thead><tbody><tr><td>逻辑回归</td><td>30</td><td>98.07%</td><td>±0.65%</td></tr><tr><td>随机森林（全特征）</td><td>30</td><td>95.61%</td><td>±2.28%</td></tr><tr><td>随机森林（Top 5特征）</td><td>5</td><td>94.20%</td><td>±1.72%</td></tr></tbody></table></div>
+<h3>关键发现</h3>
+<p>1. 逻辑回归表现最佳：达到98.07%的准确率</p>
+<p>2. 特征简化有效：仅用Top 5特征仍能达到94.20%准确率</p>
+<p>3. 标准差较低：所有模型都表现出良好的稳定性</p>
+<h3>混淆矩阵</h3>
+<p>使用逻辑回归模型的混淆矩阵：</p>
+<div class='table-wrap'><table><thead><tr><th>预测为良性</th><th>预测为恶性</th></tr></thead><tbody><tr><td>实际良性</td><td>357 真阴性</td><td>0 假阳性</td></tr><tr><td>实际恶性</td><td>0 假阴性</td><td>212 真阳性</td></tr></tbody></table></div>
+<p>关键指标：</p>
+<ul><li>ROC AUC: 1.0000</li><li>精确率: 100.00%</li><li>召回率: 100.00%</li><li>F1分数: 1.0000</li></ul>
+<h3>模型选择建议</h3>
+<ul><li>高精度需求：使用逻辑回归（98.07%准确率）</li><li>快速筛查：使用Top 5特征的随机森林（94.20%准确率，计算更快）</li><li>可解释性：逻辑回归提供清晰的系数解释</li></ul>
+<h2>临床应用建议</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>如何将分析结果应用于实际诊断？</li><li>哪些指标应该作为优先检查项？</li><li>如何平衡准确率和诊断效率？</li></ul></details>
+<h3>分层诊断流程</h3>
+<p>第一级筛查（快速筛查）：</p>
+<ul><li>检查最坏半径和最坏面积</li><li>如果两者都高于均值，进入第二级</li><li>如果两者都低于均值，标记为低风险</li></ul>
+<p>第二级诊断（深度分析）：</p>
+<ul><li>检查最坏凹点数量</li><li>评估平均凹陷度</li><li>计算综合风险分数</li></ul>
+<p>第三级确认（模型预测）：</p>
+<ul><li>使用逻辑回归模型</li><li>结合所有30个特征</li><li>输出诊断置信度</li></ul>
+<h3>关键监控指标</h3>
+<p>1. 最坏凹点 0.15：高度可疑</p>
+<p>2. 最坏面积 1000：高度可疑</p>
+<p>3. 最坏半径 17：中度可疑</p>
+<p>4. 平均凹陷度 0.10：中度可疑</p>
+<h3>误诊风险控制</h3>
+<ul><li>假阴性率接近0%（本数据集中为0）</li><li>建议在临床应用中设置保守阈值，宁可误判为良性也不要漏诊恶性</li></ul>
+<h2>局限性与未来工作</h2>
+<details class='qblock'><summary>分析问题</summary><ul><li>这个分析的局限性是什么？</li><li>如何进一步改进模型性能？</li><li>需要什么额外的临床数据？</li></ul></details>
+<h3>当前分析的局限性</h3>
+<p>1. 样本量限制：569个样本相对较小</p>
+<p>2. 特征局限性：仅包含图像特征，缺乏患者年龄、家族史等临床信息</p>
+<p>3. 单一数据源：所有样本来自同一医疗机构</p>
+<p>4. 过拟合风险：训练集准确率100%可能存在过拟合</p>
+<h3>未来改进方向</h3>
+<p>1. 集成更多临床数据：</p>
+<p>    患者年龄、激素水平</p>
+<p>    家族病史、基因检测结果</p>
+<p>    其他影像学检查结果</p>
+<p>2. 深度学习方法：</p>
+<p>    卷积神经网络（CNN）直接分析原始图像</p>
+<p>    迁移学习利用预训练模型</p>
+<p>3. 多中心验证：</p>
+<p>    在不同医疗机构的数据上验证模型</p>
+<p>    评估模型在不同人群中的泛化能力</p>
+<p>4. 实时诊断系统：</p>
+<p>    开发基于Web的诊断工具</p>
+<p>    集成到医疗影像系统中</p>
+<h2>结论</h2>
+<p>本分析对乳腺癌诊断数据集进行了全面探索，得出以下主要结论：</p>
+<h3>核心发现</h3>
+<p>1. 恶性肿瘤特征明显：</p>
+<p>    面积大111.4%，凹陷度高248.8%</p>
+<p>    形态更不规则，边缘更复杂</p>
+<p>2. 特征重要性明确：</p>
+<p>    最坏凹点、最坏面积、平均凹点是最强预测因子</p>
+<p>    Top 5特征即可达到94.20%准确率</p>
+<p>3. 模型性能优秀：</p>
+<p>    逻辑回归达到98.07%交叉验证准确率</p>
+<p>    零假阴性率在训练集上</p>
+<p>4. 临床应用可行：</p>
+<p>    可建立分层诊断流程</p>
+<p>    快速筛查和深度诊断结合</p>
+<h3>实践建议</h3>
+<ul><li>优先指标：最坏凹点、最坏面积、最坏半径</li><li>筛查规则：高半径+大面积 = 高风险</li><li>模型选择：逻辑回归用于诊断，Top 5特征用于筛查</li></ul>
+<p>这些发现为辅助乳腺癌诊断提供了数据驱动的决策支持，有助于提高诊断准确率和效率。</p>
+<hr/>
+<p>分析完成时间：2025-02-03</p>
+<p>数据来源：威斯康星乳腺癌数据集</p>
+<p>分析工具：Python, Polars, Scikit-learn, Plotly</p><hr/><p class='muted'>说明：这是完整报告结构抓取页（正文/章节/表格/图表位置原位）。图表可通过每个模块下方 asset 链接查看原始数据。</p>
+    </div>
+  </div>
+<script>
+(function() {
+  const FIG_PAYLOAD = {};
+  const nodes = Array.from(document.querySelectorAll('.plot[data-fig-key]'));
+  for (const el of nodes) {
+    const key = el.getAttribute('data-fig-key');
+    const fig = FIG_PAYLOAD[key];
+    if (!fig || typeof fig !== 'object') {
+      el.innerHTML = `<p class='muted'>图表数据缺失，请点击下方 asset 链接查看。</p>`;
+      continue;
+    }
+    try {
+      const data = Array.isArray(fig.data) ? fig.data : [];
+      const layout = (fig.layout && typeof fig.layout === 'object') ? fig.layout : {};
+      Plotly.newPlot(el, data, layout, {responsive:true, displaylogo:false});
+    } catch (e) {
+      el.innerHTML = `<p class='muted'>图表渲染失败，请点击下方 asset 链接查看。</p>`;
+    }
+  }
+})();
+</script>
+</body>
+</html>
